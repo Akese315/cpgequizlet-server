@@ -1,0 +1,1502 @@
+[
+    {
+        "uuid": "fluid-001",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Lagrangian_vs_eulerian.png",
+        "theme": "mécanique des fluides",
+        "question": "Quelle approche consiste à suivre une particule de fluide individuelle au cours de son mouvement ?",
+        "answers": [
+            "L'approche eulérienne",
+            "L'approche lagrangienne",
+            "L'approche statistique"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-002",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans la description eulérienne, de quelles variables dépendent généralement les grandeurs physiques ?",
+        "answers": [
+            "Uniquement du temps $t$",
+            "Uniquement de la position $\\vec{M}$",
+            "De la position $\\vec{M}$ et du temps $t$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-003",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Comment appelle-t-on un écoulement où le champ des vitesses ne dépend pas explicitement du temps ?",
+        "answers": [
+            "Écoulement uniforme",
+            "Écoulement permanent (ou stationnaire)",
+            "Écoulement incompressible"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-004",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Streamlines_and_equipotentials.svg",
+        "theme": "mécanique des fluides",
+        "question": "Par définition, une ligne de courant est une courbe qui est en tout point :",
+        "answers": [
+            "Parallèle à l'accélération $\\vec{a}$",
+            "Tangente au vecteur vitesse $\\vec{v}$",
+            "Normale au vecteur vitesse $\\vec{v}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-005",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Sous quelle condition les lignes de courant sont-elles confondues avec les trajectoires des particules ?",
+        "answers": [
+            "Si l'écoulement est irrotationnel",
+            "Si l'écoulement est incompressible",
+            "Si l'écoulement est stationnaire"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-006",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'expression correcte de la dérivée particulaire de la vitesse $\\frac{D\\vec{v}}{Dt}$ ?",
+        "answers": [
+            "$\\frac{\\partial\\vec{v}}{\\partial t} + (\\vec{v}\\cdot\\vec{grad})\\vec{v}$",
+            "$\\frac{\\partial\\vec{v}}{\\partial t} + \\vec{grad}(\\frac{v^2}{2})$",
+            "$(\\vec{v}\\cdot\\vec{grad})\\vec{v}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-007",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Comment nomme-t-on le terme $(\\vec{v}\\cdot\\vec{grad})\\vec{v}$ dans l'expression de l'accélération ?",
+        "answers": [
+            "Accélération locale",
+            "Accélération convective",
+            "Accélération centripète"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-008",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si un écoulement est stationnaire, que peut-on dire de la dérivée locale $\\frac{\\partial\\vec{v}}{\\partial t}$ ?",
+        "answers": [
+            "Elle est nulle",
+            "Elle est égale à l'accélération convective",
+            "Elle dépend de la position"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-009",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'unité du débit massique $D_m$ dans le Système International ?",
+        "answers": [
+            "$m^3 \\cdot s^{-1}$",
+            "$kg \\cdot m^{-3}$",
+            "$kg \\cdot s^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-010",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle relation lie le débit massique $D_m$ au vecteur densité de courant de masse $\\vec{j}_m = \\rho \\vec{v}$ ?",
+        "answers": [
+            "$D_m = \\iint_S \\vec{j}_m \\cdot \\vec{dS}$",
+            "$D_m = \\rho \\vec{v} \\cdot S$",
+            "$D_m = \\text{div}(\\vec{j}_m)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-011",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un écoulement est dit incompressible si la masse volumique $\\rho$ de chaque particule de fluide :",
+        "answers": [
+            "Est uniforme dans tout l'espace",
+            "Reste constante au cours du temps pour cette particule",
+            "Est nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-012",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement incompressible, quelle relation simple lie le débit massique $D_m$ au débit volumique $D_v$ ?",
+        "answers": [
+            "$D_m = \\frac{D_v}{\\rho_0}$",
+            "$D_v = \\rho_0 D_m$",
+            "$D_m = \\rho_0 D_v$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-013",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'équation locale de conservation de la masse en 3D ?",
+        "answers": [
+            "$\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\rho\\vec{v}) = 0$",
+            "$\\text{div}(\\vec{v}) = 0$",
+            "$\\frac{\\partial \\rho}{\\partial t} + \\vec{v}\\cdot\\vec{grad}(\\rho) = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-014",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement stationnaire, que devient l'intégrale du flux de $\\vec{j}_m$ à travers une surface fermée ?",
+        "answers": [
+            "Elle est proportionnelle au volume",
+            "Elle est nulle",
+            "Elle dépend de la pression"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-015",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans un tube de courant en régime stationnaire, comment évolue le débit massique entre deux sections $S_1$ et $S_2$ ?",
+        "answers": [
+            "Il augmente si la section diminue",
+            "Il diminue si la section diminue",
+            "Il reste identique ($D_{m1} = D_{m2}$)"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-016",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Conséquence du resserrement des lignes de courant dans un tube de courant en régime stationnaire :",
+        "answers": [
+            "La vitesse du fluide diminue",
+            "La vitesse du fluide augmente",
+            "La pression augmente nécessairement"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-017",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement incompressible et homogène, quelle est la condition sur la divergence du champ de vitesse ?",
+        "answers": [
+            "$\\text{div}(\\vec{v}) > 0$",
+            "$\\text{div}(\\vec{v}) = 0$",
+            "$\\text{rot}(\\vec{v}) = \\vec{0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-018",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "[Exercice 1] Si le débit de la Seine est de $300\\,m^3\\cdot s^{-1}$, la largeur de $200\\,m$ et la vitesse de $3\\,km\\cdot h^{-1}$, quelle est la profondeur approximative ?",
+        "answers": [
+            "$0,5\\,m$",
+            "$1,8\\,m$",
+            "$5,2\\,m$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-019",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "[Exercice 3] Pourquoi le diamètre d'un filet d'eau rétrécit-il en tombant d'un robinet ?",
+        "answers": [
+            "À cause de la tension superficielle uniquement",
+            "La vitesse augmente par gravité, donc la section doit diminuer pour conserver le débit volumique",
+            "La pression atmosphérique comprime le jet"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-020",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "[Exercice 4] Dans un écoulement de Poiseuille de profil $v(r) = v_0(1 - \\frac{r^2}{R^2})$, le débit volumique $D_v$ vaut :",
+        "answers": [
+            "$v_0 \\pi R^2$",
+            "$\\frac{1}{2} v_0 \\pi R^2$",
+            "$\\frac{1}{4} v_0 \\pi R^2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-021",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "[Exercice 4] Pour un écoulement de Poiseuille, quelle est la vitesse uniforme équivalente $v_{unif}$ donnant le même débit ?",
+        "answers": [
+            "$v_{unif} = v_0$",
+            "$v_{unif} = v_0/2$",
+            "$v_{unif} = v_0/\\sqrt{2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-022",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "[Exercice 5] Dans un modèle de tornade avec $\\vec{v} = v_\\theta(r) \\vec{e}_\\theta$, l'écoulement est incompressible si :",
+        "answers": [
+            "$\\frac{\\partial v_\\theta}{\\partial \\theta} = 0$",
+            "$v_r = 0$ et $v_\\theta$ ne dépend que de $r$",
+            "$\\text{rot}(\\vec{v}) = \\vec{0}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-023",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'opérateur $(\\vec{v}\\cdot\\vec{grad})$ agissant sur un champ scalaire $f$ donne :",
+        "answers": [
+            "Un vecteur",
+            "Un scalaire",
+            "Un tenseur"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-024",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle condition sur le gaz permet de considérer son écoulement comme incompressible ?",
+        "answers": [
+            "Il doit être à haute température",
+            "Il doit s'écouler à des vitesses faibles (Nombre de Mach < 0,3)",
+            "Il doit être un gaz parfait"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-025",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un volume mésoscopique en mécanique des fluides est un volume :",
+        "answers": [
+            "À l'échelle de la molécule unique",
+            "À l'échelle de l'objet macroscopique entier",
+            "Assez grand devant l'échelle moléculaire mais petit devant l'échelle macroscopique"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-026",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Comment appelle-t-on la surface formée par l'ensemble des lignes de courant s'appuyant sur un contour fermé ?",
+        "answers": [
+            "Une surface d'onde",
+            "Un tube de courant",
+            "Une surface de niveau"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-027",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La dérivée convective traduit la variation d'une grandeur due :",
+        "answers": [
+            "Au passage du temps en un point fixe",
+            "Au déplacement de la particule dans un champ spatialement non uniforme",
+            "À la compressibilité du fluide"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-028",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'équation de conservation de la masse, le terme $\\text{div}(\\rho\\vec{v})$ représente :",
+        "answers": [
+            "Le stockage de masse local",
+            "Le flux net sortant de masse par unité de volume",
+            "La création de masse par réaction chimique"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-029",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si $\\vec{v} = a x \\vec{e}_x - a y \\vec{e}_y$, cet écoulement est-il incompressible ?",
+        "answers": [
+            "Oui, car $\\text{div}(\\vec{v}) = a - a = 0$",
+            "Non, car la vitesse dépend de $x$ et $y$",
+            "Seulement si $a=0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-030",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Une particule fluide possède une vitesse $\\vec{v}$ nulle. Est-elle nécessairement au repos ?",
+        "answers": [
+            "Oui, par définition",
+            "Non, cela signifie juste que la moyenne des vitesses microscopiques est nulle en ce point",
+            "Seulement si sa dérivée particulaire est nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-031",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Que vaut le débit volumique $D_v$ à travers une surface parallèle aux lignes de courant ?",
+        "answers": [
+            "Sa valeur maximale",
+            "Zéro",
+            "$\\rho D_m$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-032",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un fluide s'écoule de gauche à droite dans un tuyau dont la section double. En régime permanent incompressible, la vitesse :",
+        "answers": [
+            "Est multipliée par 2",
+            "Reste la même",
+            "Est divisée par 2"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-033",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour visualiser les lignes de courant dans un écoulement permanent, on peut utiliser :",
+        "answers": [
+            "Des traceurs (fumée, colorants)",
+            "Un baromètre",
+            "Uniquement des calculs mathématiques"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-034",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'accélération d'une particule fluide est égale à :",
+        "answers": [
+            "La dérivée partielle $\\frac{\\partial\\vec{v}}{\\partial t}$",
+            "La dérivée particulaire $\\frac{D\\vec{v}}{Dt}$",
+            "La divergence de la vitesse"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-035",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'expression de la divergence en coordonnées cylindriques pour $\\vec{v} = v_r(r)\\vec{e}_r$ ?",
+        "answers": [
+            "$\\frac{\\partial v_r}{\\partial r}$",
+            "$\\frac{1}{r} \\frac{d(r v_r)}{dr}$",
+            "$\\frac{d^2 v_r}{dr^2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-036",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le vecteur densité de courant de masse $\\vec{j}_m$ s'exprime en :",
+        "answers": [
+            "$kg \\cdot m^{-2} \\cdot s^{-1}$",
+            "$kg \\cdot s^{-1}$",
+            "$m \\cdot s^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-037",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si $\\text{div}(\\vec{v}) = 0$, l'écoulement est dit :",
+        "answers": [
+            "Stationnaire",
+            "Irrotationnel",
+            "Isochore (ou incompressible)"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-038",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En régime permanent, la masse totale contenue dans un volume de contrôle fixe :",
+        "answers": [
+            "Augmente",
+            "Diminue",
+            "Reste constante"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-039",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un liquide, l'hypothèse d'incompressibilité est :",
+        "answers": [
+            "Toujours fausse",
+            "Une excellente approximation dans la plupart des cas",
+            "Valable seulement au repos"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-040",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "[Exercice 2] Le débit de l'aorte est $6\\,L/min$. Si elle se divise en $N$ artères de débit $2\\cdot 10^{-6}\\,m^3\\cdot s^{-1}$ chacune, que vaut environ $N$ ?",
+        "answers": [
+            "50",
+            "500",
+            "5000"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-041",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'accélération convective d'un fluide s'écoulant à vitesse constante dans un tuyau rectiligne de section constante est :",
+        "answers": [
+            "Positive",
+            "Nulle",
+            "Négative"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-042",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'expression $\\frac{D\\vec{v}}{Dt} = \\frac{\\partial\\vec{v}}{\\partial t} + (\\vec{v}\\cdot\\vec{grad})\\vec{v}$, le terme $(\\vec{v}\\cdot\\vec{grad})\\vec{v}$ est :",
+        "answers": [
+            "Linéaire en $\\vec{v}$",
+            "Quadratique en $\\vec{v}$",
+            "Indépendant de $\\vec{v}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-043",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le théorème de Green-Ostrogradsky permet de transformer :",
+        "answers": [
+            "Une intégrale curviligne en intégrale de surface",
+            "Une intégrale de volume en flux à travers une surface fermée",
+            "Une dérivée temporelle en dérivée spatiale"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-044",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Une ligne de courant ne peut jamais :",
+        "answers": [
+            "Être un cercle",
+            "Se couper elle-même (sauf point d'arrêt)",
+            "Traverser une paroi solide immobile"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-045",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La vitesse mésoscopique correspond à :",
+        "answers": [
+            "La vitesse d'une molécule individuelle",
+            "La vitesse moyenne des molécules dans un volume mésoscopique",
+            "La vitesse de la lumière dans le fluide"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-046",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement 1D selon $x$, l'équation de conservation de la masse est :",
+        "answers": [
+            "$\\frac{\\partial \\rho}{\\partial t} + \\frac{\\partial (\\rho v_x)}{\\partial x} = 0$",
+            "$\\frac{\\partial \\rho}{\\partial t} + v_x \\frac{\\partial \\rho}{\\partial x} = 0$",
+            "$\\rho = C^{te}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-047",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'unité du vecteur densité de courant de masse est identique à celle de :",
+        "answers": [
+            "La quantité de mouvement par unité de volume",
+            "La force par unité de surface",
+            "L'énergie par unité de temps"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-048",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans un écoulement stationnaire, si les lignes de courant s'écartent :",
+        "answers": [
+            "La vitesse augmente",
+            "La vitesse diminue",
+            "Le fluide devient compressible"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-049",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un écoulement est dit homogène si :",
+        "answers": [
+            "La vitesse est la même partout",
+            "La masse volumique est la même partout dans l'espace",
+            "Le fluide est de l'eau pure"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-050",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'élément de surface en coordonnées polaires $(r, \\theta)$ est $dS = $",
+        "answers": [
+            "$dr d\\theta$",
+            "$r dr d\\theta$",
+            "$r^2 dr d\\theta$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-051",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En régime stationnaire, le débit massique à travers une surface fermée est :",
+        "answers": [
+            "Toujours positif",
+            "Toujours nul",
+            "Égal à la variation de masse intérieure"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-052",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La condition aux limites sur une paroi solide immobile pour un fluide réel est :",
+        "answers": [
+            "Vitesse normale nulle",
+            "Vitesse tangente nulle",
+            "Vitesse totale nulle (adhérence)"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-053",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Que signifie un débit volumique négatif à travers une surface orientée ?",
+        "answers": [
+            "Le fluide recule",
+            "Le fluide traverse la surface dans le sens opposé à l'orientation choisie",
+            "C'est physiquement impossible"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-054",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement permanent, la trajectoire d'une particule est :",
+        "answers": [
+            "Identique à la ligne de courant passant par sa position initiale",
+            "Perpendiculaire à la ligne de courant",
+            "Indépendante du champ de vitesse"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-055",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'opérateur gradient appliqué à un vecteur $\\vec{A}$ produit un objet mathématique de quel type ?",
+        "answers": [
+            "Scalaire",
+            "Vecteur",
+            "Tenseur d'ordre 2"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-056",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "[Exercice 5] Si $\\vec{v} = \\omega r \\vec{e}_\\theta$ pour $r < a$ (rotation en bloc), quelle est la nature des lignes de courant ?",
+        "answers": [
+            "Des droites radiales",
+            "Des cercles concentriques",
+            "Des spirales"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-057",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La conservation de la masse est une conséquence directe de :",
+        "answers": [
+            "La deuxième loi de Newton",
+            "Le principe de conservation de la matière",
+            "Le premier principe de la thermodynamique"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-058",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si $\\frac{D\\rho}{Dt} = 0$, l'écoulement est :",
+        "answers": [
+            "Homogène",
+            "Stationnaire",
+            "Incompressible"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-059",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans un tube de courant, le fluide :",
+        "answers": [
+            "Peut sortir par les parois latérales",
+            "Ne peut pas traverser les parois latérales par définition",
+            "Doit être au repos"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-060",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un écoulement stationnaire est-il forcément uniforme ?",
+        "answers": [
+            "Oui",
+            "Non, la vitesse peut varier d'un point à l'autre de l'espace",
+            "Seulement pour les gaz"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-061",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Laquelle de ces grandeurs est une grandeur eulérienne ?",
+        "answers": [
+            "La position d'une particule $\\vec{r}_p(t)$",
+            "Le champ de pression $P(x,y,z,t)$",
+            "La vitesse d'un traceur suivi par caméra"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-062",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'accélération locale $\\frac{\\partial\\vec{v}}{\\partial t}$ est nulle pour un observateur :",
+        "answers": [
+            "En mouvement avec le fluide",
+            "Observant un écoulement stationnaire en un point fixe",
+            "En chute libre"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-063",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cas d'un jet d'eau qui tombe, la section $S$ et la vitesse $v$ vérifient $S(z)v(z) = C^{te}$. Si la vitesse double, le diamètre est divisé par :",
+        "answers": [
+            "2",
+            "$\\sqrt{2}$",
+            "4"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-064",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La divergence du champ de vitesse s'interprète comme :",
+        "answers": [
+            "Le taux de rotation local",
+            "Le taux de variation relative du volume d'une particule de fluide",
+            "La force de pression"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-065",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si $\\text{div}(\\vec{v}) > 0$ en un point, le fluide y est en train de :",
+        "answers": [
+            "Se comprimer",
+            "Se dilater",
+            "Tourner sur lui-même"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-066",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le débit volumique à travers une surface $S$ est $D_v = \\iint_S \\vec{v} \\cdot \\vec{n} dS$. Si $\\vec{v}$ est uniforme et perpendiculaire à $S$, alors :",
+        "answers": [
+            "$D_v = 0$",
+            "$D_v = v S$",
+            "$D_v = v / S$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-067",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En régime permanent, si un tuyau se divise en deux branches identiques, la vitesse dans chaque branche (de même section que l'entrée) est :",
+        "answers": [
+            "La même qu'à l'entrée",
+            "La moitié de celle de l'entrée",
+            "Le double de celle de l'entrée"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-068",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La relation $\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\rho\\vec{v}) = 0$ est appelée :",
+        "answers": [
+            "Équation d'Euler",
+            "Équation de continuité",
+            "Équation de Bernoulli"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-069",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un fluide incompressible, l'équation de continuité se réduit à :",
+        "answers": [
+            "$\\rho = 0$",
+            "$\\text{div}(\\vec{v}) = 0$",
+            "$\\vec{v} = \\vec{0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-070",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le débit massique sortant d'une baignoire qui se vide est égal à :",
+        "answers": [
+            "La masse d'eau restante",
+            "L'opposé de la variation de la masse d'eau dans la baignoire par unité de temps",
+            "Zéro"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-071",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'accélération convective est nulle dans un écoulement :",
+        "answers": [
+            "Permanent",
+            "Uniforme",
+            "Incompressible"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-072",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'exercice 4 (Poiseuille), la vitesse est maximale :",
+        "answers": [
+            "Au niveau des parois ($r=R$)",
+            "Au centre du tuyau ($r=0$)",
+            "À mi-chemin ($r=R/2$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-073",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la dimension d'un débit volumique ?",
+        "answers": [
+            "$L^3 T^{-1}$",
+            "$M T^{-1}$",
+            "$L^2 T^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-074",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Laquelle de ces affirmations sur les lignes de courant est fausse ?",
+        "answers": [
+            "Elles sont tangentes à la vitesse",
+            "Elles peuvent se croiser en un point où la vitesse est non nulle",
+            "Elles sont orientées dans le sens de l'écoulement"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-075",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le vecteur densité de courant de masse $\\vec{j}_m$ est aussi appelé :",
+        "answers": [
+            "Flux de masse",
+            "Impulsion volumique",
+            "Débit surfacique de masse"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-076",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'opérateur $\\vec{v} \\cdot \\vec{grad}$ en coordonnées cartésiennes s'écrit :",
+        "answers": [
+            "$v_x \\frac{\\partial}{\\partial x} + v_y \\frac{\\partial}{\\partial y} + v_z \\frac{\\partial}{\\partial z}$",
+            "$\\frac{\\partial v_x}{\\partial x} + \\frac{\\partial v_y}{\\partial y} + \\frac{\\partial v_z}{\\partial z}$",
+            "$\\vec{v} \\times \\vec{\\nabla}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-077",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si l'on injecte de la fumée de manière continue en un point fixe dans un écoulement permanent, on visualise :",
+        "answers": [
+            "Une ligne d'émission",
+            "Une ligne de courant",
+            "Les deux, car elles sont confondues en régime permanent"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-078",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la valeur typique de la masse volumique de l'eau ?",
+        "answers": [
+            "$1\\,kg \\cdot m^{-3}$",
+            "$1000\\,kg \\cdot m^{-3}$",
+            "$1000\\,g \\cdot cm^{-3}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-079",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'incompressibilité d'un écoulement de gaz à faible vitesse est due au fait que :",
+        "answers": [
+            "La pression reste constante partout",
+            "Les variations de pression induites par l'écoulement sont trop faibles pour modifier $\\rho$",
+            "Le gaz devient liquide"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-080",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le flux du vecteur vitesse à travers une surface fermée est nul si :",
+        "answers": [
+            "L'écoulement est stationnaire",
+            "L'écoulement est incompressible et homogène",
+            "La surface est très petite"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-081",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'exercice 5 (tornade), le champ $\\vec{v} = \\frac{K}{r} \\vec{e}_\\theta$ pour $r > a$ correspond à :",
+        "answers": [
+            "Un tourbillon irrotationnel (partout sauf en $r=0$)",
+            "Une rotation de solide rigide",
+            "Un écoulement divergent"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-082",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La relation $D_v = S \\cdot v$ suppose que la vitesse est :",
+        "answers": [
+            "Nulle aux parois",
+            "Uniforme sur la section $S$",
+            "Stationnaire"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-083",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si un fluide est au repos, sa vitesse mésoscopique est :",
+        "answers": [
+            "Nulle",
+            "Égale à l'agitation thermique",
+            "Indéfinie"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-084",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Une ligne de courant est toujours :",
+        "answers": [
+            "Fermée",
+            "Orientée dans le sens de $\\vec{v}$",
+            "Une droite"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-085",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La dérivée particulaire permet de passer :",
+        "answers": [
+            "Du point de vue lagrangien au point de vue eulérien",
+            "Du point de vue eulérien au point de vue lagrangien",
+            "De la pression à la vitesse"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-086",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans un écoulement de Poiseuille, la vitesse moyenne est égale à :",
+        "answers": [
+            "La vitesse maximale",
+            "La moitié de la vitesse maximale",
+            "Le quart de la vitesse maximale"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-087",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le produit $\\rho \\vec{v}$ représente :",
+        "answers": [
+            "L'énergie cinétique volumique",
+            "Le flux de masse surfacique",
+            "La pression dynamique"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-088",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si l'écoulement est incompressible, le débit volumique $D_v$ entrant dans un nœud est égal :",
+        "answers": [
+            "Au débit volumique sortant",
+            "À la dérivée de la pression",
+            "À zéro"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-089",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'équation $\\text{div}(\\vec{v}) = 0$ est-elle valable pour un écoulement stationnaire de gaz compressible ?",
+        "answers": [
+            "Oui, toujours",
+            "Non, l'équation correcte est $\\text{div}(\\rho\\vec{v}) = 0$",
+            "Seulement si le gaz est parfait"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-090",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle grandeur physique reste constante le long d'un tube de courant en régime permanent pour un fluide incompressible ?",
+        "answers": [
+            "La vitesse $v$",
+            "Le débit volumique $D_v$",
+            "La pression $P$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-091",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En coordonnées cylindriques, si $\\vec{v} = v_r \\vec{e}_r + v_\\theta \\vec{e}_\\theta + v_z \\vec{e}_z$, le terme $\\text{div}(\\vec{v})$ contient combien de termes de dérivées ?",
+        "answers": [
+            "3",
+            "4 (à cause du terme en $1/r$)",
+            "6"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-092",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si $\\vec{v}$ est uniforme dans tout l'espace, l'accélération convective est :",
+        "answers": [
+            "Nulle",
+            "Égale à $\\partial \\vec{v} / \\partial t$",
+            "Infinie"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-093",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'unité du débit volumique peut s'écrire $L \\cdot s^{-1}$ si $L$ est :",
+        "answers": [
+            "Une longueur",
+            "Un litre",
+            "Une masse"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-094",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le vecteur $\\vec{dS}$ utilisé pour calculer un débit est toujours :",
+        "answers": [
+            "Tangente à la surface",
+            "Normale à la surface",
+            "Vertical"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-095",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'exercice 3, si le diamètre du jet passe de 78 à 45 pixels, le rapport des vitesses $v_2/v_1$ est environ :",
+        "answers": [
+            "1,7",
+            "3,0",
+            "9,0"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-096",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Une particule fluide est un système :",
+        "answers": [
+            "Ouvert (échange de matière)",
+            "Fermé (masse constante par définition)",
+            "Isolé"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-097",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le champ des vitesses est un champ :",
+        "answers": [
+            "Scalaire",
+            "Vectoriel",
+            "Tensoriel"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-098",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un fluide compressible, si $\\text{div}(\\vec{v}) = 0$, que peut-on dire de $\\rho$ ?",
+        "answers": [
+            "$\\rho$ est forcément constante",
+            "La dérivée particulaire $D\\rho/Dt$ est nulle",
+            "Rien du tout"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-099",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la vitesse typique de l'eau dans la Seine (d'après l'exercice 1) ?",
+        "answers": [
+            "$3\\,m \\cdot s^{-1}$",
+            "$0,8\\,m \\cdot s^{-1}$",
+            "$30\\,km \\cdot h^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-100",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle condition assure la validité de l'approche mésoscopique ?",
+        "answers": [
+            "Le libre parcours moyen des molécules doit être très petit devant la taille du volume mésoscopique",
+            "Le fluide doit être parfait",
+            "La température doit être de $0\\,K$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    }
+]

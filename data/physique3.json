@@ -1,0 +1,1502 @@
+[
+    {
+        "uuid": "osc-001",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la définition d'un oscillateur électronique auto-entretenu ?",
+        "answers": [
+            "Un montage nécessitant un signal d'entrée périodique pour fonctionner.",
+            "Un montage capable de générer un signal périodique stable à partir d'une alimentation constante.",
+            "Un circuit passif RLC en régime libre."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-002",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/2/23/Wien_bridge_oscillator.svg",
+        "theme": "oscillateurs",
+        "question": "De quels blocs principaux est constitué un oscillateur quasi-sinusoïdal ?",
+        "answers": [
+            "Un amplificateur et un filtre passe-bande bouclés.",
+            "Un comparateur à hystérésis et un intégrateur.",
+            "Une diode et un circuit bouchon."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-003",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans un oscillateur à pont de Wien, quelle est l'expression du gain de l'amplificateur non-inverseur ?",
+        "answers": [
+            "$A = \\frac{R_1}{R_2}$",
+            "$A = 1 + \\frac{R_1}{R_2}$",
+            "$A = 1 - \\frac{R_1}{R_2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-004",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la valeur de la pulsation propre $\\omega_0$ du filtre de Wien ($R, C$ en série et $R, C$ en parallèle) ?",
+        "answers": [
+            "$\\omega_0 = RC$",
+            "$\\omega_0 = \\frac{1}{RC}$",
+            "$\\omega_0 = \\frac{1}{\\sqrt{RC}}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-005",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la valeur maximale $H_0$ de la fonction de transfert du filtre de Wien ?",
+        "answers": [
+            "$H_0 = 1$",
+            "$H_0 = 1/2$",
+            "$H_0 = 1/3$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-006",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour que les oscillations démarrent dans un pont de Wien, quelle condition sur le gain $A$ doit être vérifiée ?",
+        "answers": [
+            "$A < 3$",
+            "$A > 3$",
+            "$A = 1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-007",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'équation différentielle $\\frac{d^{2}u_{3}}{dt^{2}}+\\frac{\\omega_{0}}{Q}(1-AH_{0})\\frac{du_{3}}{dt}+\\omega_{0}^{2}u_{3}=0$, quelle condition assure des oscillations purement sinusoïdales ?",
+        "answers": [
+            "$1 - AH_0 > 0$",
+            "$1 - AH_0 = 0$",
+            "$1 - AH_0 < 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-008",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pourquoi les oscillations ne peuvent-elles pas être parfaitement sinusoïdales en pratique sans contrôle de gain ?",
+        "answers": [
+            "Car la condition de démarrage ($A>3$) est incompatible avec la condition de sinusoïde pure ($A=3$).",
+            "Car les composants $R$ et $C$ sont parfaits.",
+            "À cause de l'effet Joule uniquement."
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-009",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Qu'est-ce qui limite l'amplitude des oscillations dans un oscillateur sans contrôle automatique de gain ?",
+        "answers": [
+            "La résistance des fils.",
+            "La saturation en tension de l'ALI ($\\pm V_{sat}$).",
+            "La décharge du condensateur."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-010",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/0/05/Op-Amp_Integrator.svg",
+        "theme": "oscillateurs",
+        "question": "Un multivibrateur astable est un exemple d'oscillateur :",
+        "answers": [
+            "Quasi-sinusoïdal.",
+            "À relaxation.",
+            "À quartz uniquement."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-011",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans un multivibrateur astable, quels sont les deux blocs fonctionnels ?",
+        "answers": [
+            "Filtre passe-bas et Amplificateur.",
+            "Comparateur à hystérésis et Intégrateur.",
+            "Redresseur et Lissage."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-012",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la valeur des tensions de basculement d'un comparateur à hystérésis ($R_1, R_2$) ?",
+        "answers": [
+            "$\\pm V_{sat}$",
+            "$\\pm \\frac{R_1}{R_2} V_{sat}$",
+            "$\\pm \\frac{R_2}{R_1} V_{sat}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-013",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la forme du signal de sortie d'un intégrateur dans un multivibrateur astable ?",
+        "answers": [
+            "Sinusoïdale.",
+            "Triangulaire.",
+            "Carrée."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-014",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est l'expression de la période $T$ d'un multivibrateur astable (avec $\\beta = R_1/R_2$) ?",
+        "answers": [
+            "$T = 2\\beta RC$",
+            "$T = 4\\beta RC$",
+            "$T = RC \\ln(2)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-015",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 1 (RLC), quelle est l'expression du facteur de qualité $Q$ ?",
+        "answers": [
+            "$Q = R\\sqrt{\\frac{C}{L}}$",
+            "$Q = \\frac{1}{R}\\sqrt{\\frac{L}{C}}$",
+            "$Q = \\frac{1}{R}\\sqrt{\\frac{C}{L}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "TD - Exercice 1",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-016",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 1, à quelle condition sur $x$ le montage oscille-t-il ?",
+        "answers": [
+            "$x = 1$",
+            "$x < 1$",
+            "$x > 1$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 1",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-017",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 1, quel est le signal le plus sinusoïdal entre $e(t)$ et $s(t)$ ?",
+        "answers": [
+            "$e(t)$ car il sort de l'ALI.",
+            "$s(t)$ car il a traversé un filtre passe-bande sélectif.",
+            "Les deux sont identiques."
+        ],
+        "difficulty": 2,
+        "chapter": "TD - Exercice 1",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-018",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/8/82/Hartley_oscillator.svg",
+        "theme": "oscillateurs",
+        "question": "Quelle est la caractéristique principale d'une cellule de Hartley ?",
+        "answers": [
+            "Elle utilise deux condensateurs et une bobine.",
+            "Elle utilise deux bobines et un condensateur.",
+            "Elle utilise uniquement des résistances."
+        ],
+        "difficulty": 2,
+        "chapter": "TD - Exercice 2",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-019",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'oscillateur Hartley (Ex 2), quelle est la pulsation des oscillations ?",
+        "answers": [
+            "$\\omega = \\frac{1}{\\sqrt{LC}}$",
+            "$\\omega = \\frac{1}{\\sqrt{2LC}}$",
+            "$\\omega = \\frac{1}{\\sqrt{L(2C)}}$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 2",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-020",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 3, quelle est l'expression de la résistance négative $R'$ créée par le montage ?",
+        "answers": [
+            "$R' = \\frac{R_1 R_2}{R_3}$",
+            "$R' = \\frac{R_1 R_3}{R_2}$",
+            "$R' = R_1 + R_2 - R_3$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 3",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-021",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour que le circuit à résistance négative (Ex 3) oscille, on doit avoir :",
+        "answers": [
+            "$R > R'$ (stabilité)",
+            "$R < R'$ (instabilité permettant le démarrage)",
+            "$R = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 3",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-022",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'oscillateur sinus-cosinus (Ex 4), quel est le déphasage entre $V_1$ et $V_2$ ?",
+        "answers": [
+            "$0$",
+            "$\\pi$",
+            "$\\pi/2$"
+        ],
+        "difficulty": 2,
+        "chapter": "TD - Exercice 4",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-023",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la condition d'oscillation pour le montage sinus-cosinus ($\\tau_i = R_i C_i$) ?",
+        "answers": [
+            "$\\tau_1 = \\tau_2$",
+            "$\\tau_1 = \\tau_3$",
+            "$\\tau_2 = \\tau_3$"
+        ],
+        "difficulty": 4,
+        "chapter": "TD - Exercice 4",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-024",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 5, quel est l'intérêt d'utiliser une lampe à incandescence ?",
+        "answers": [
+            "Éclairer le circuit.",
+            "Réaliser un contrôle automatique de gain grâce à la variation de sa résistance avec la température.",
+            "Servir de fusible."
+        ],
+        "difficulty": 2,
+        "chapter": "TD - Exercice 5",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-025",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Si l'amplitude des oscillations augmente dans le montage à lampe (Ex 5) :",
+        "answers": [
+            "L'effet Joule diminue.",
+            "La température du filament augmente, donc sa résistance $R_1$ augmente, ce qui réduit le gain et stabilise l'amplitude.",
+            "L'ALI sature immédiatement."
+        ],
+        "difficulty": 4,
+        "chapter": "TD - Exercice 5",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-026",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la condition sur $R_1$ et $R_2$ pour avoir des oscillations sinusoïdales dans le montage à lampe ?",
+        "answers": [
+            "$R_1 = R_2$",
+            "$R_1 = R_2 / 2$",
+            "$R_1 = 2 R_2$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 5",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-027",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 6, quelle est l'expression de la période $T$ du multivibrateur (avec $\\alpha = R_1/(R_1+R_2)$) ?",
+        "answers": [
+            "$T = 4RC$",
+            "$T = 2\\tau \\ln(\\frac{1+\\alpha}{1-\\alpha})$",
+            "$T = \\tau \\ln(1+\\alpha)$"
+        ],
+        "difficulty": 4,
+        "chapter": "TD - Exercice 6",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-028",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans un oscillateur quasi-sinusoïdal, d'où provient l'énergie nécessaire pour entretenir les oscillations ?",
+        "answers": [
+            "Du bruit thermique.",
+            "De l'alimentation continue de l'ALI.",
+            "Du condensateur chargé initialement."
+        ],
+        "difficulty": 2,
+        "chapter": "TD - Exercice 7",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-029",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pourquoi dit-on qu'un oscillateur est un système instable au démarrage ?",
+        "answers": [
+            "Car il risque de brûler.",
+            "Car un pôle de sa fonction de transfert a une partie réelle positive, amplifiant le bruit.",
+            "Car l'ALI ne fonctionne pas en régime linéaire."
+        ],
+        "difficulty": 3,
+        "chapter": "Généralités",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-030",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle caractéristique de l'ALI peut limiter la fréquence de fonctionnement d'un oscillateur ?",
+        "answers": [
+            "Sa tension de déchet.",
+            "Son Slew-Rate (vitesse de balayage).",
+            "Sa résistance d'entrée infinie."
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 7",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-031",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quel est le rôle du filtre dans un oscillateur quasi-sinusoïdal ?",
+        "answers": [
+            "Amplifier le signal.",
+            "Sélectionner une unique fréquence (harmonique).",
+            "Éliminer la composante continue."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-032",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour un filtre de Wien, quelle est la valeur du facteur de qualité $Q$ ?",
+        "answers": [
+            "$Q = 1$",
+            "$Q = 1/2$",
+            "$Q = 1/3$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-033",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "En régime sinusoïdal établi, quelle condition doit vérifier le produit des fonctions de transfert de la boucle (critère de Barkhausen) ?",
+        "answers": [
+            "$\\underline{H}_{ampli} \\cdot \\underline{H}_{filtre} = 0$",
+            "$\\underline{H}_{ampli} \\cdot \\underline{H}_{filtre} = 1$",
+            "$\\underline{H}_{ampli} + \\underline{H}_{filtre} = 1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-034",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Si $A=3$ exactement dans un pont de Wien, l'amplitude des oscillations est :",
+        "answers": [
+            "Nulle.",
+            "Constante (théoriquement).",
+            "Divergente."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-035",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Un signal de sortie triangulaire est obtenu en intégrant un signal :",
+        "answers": [
+            "Sinusoïdal.",
+            "Carré.",
+            "Constant nul."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-036",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est l'unité de la pulsation $\\omega$ ?",
+        "answers": [
+            "$Hz$",
+            "$rad \\cdot s^{-1}$",
+            "$s$"
+        ],
+        "difficulty": 1,
+        "chapter": "Généralités",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-037",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 1, si $R=250\\Omega$, $L=740 mH$ et $C=4.7 nF$, le filtre est-il sélectif ?",
+        "answers": [
+            "Non, $Q=0.5$.",
+            "Oui, $Q=50$.",
+            "Moyennement, $Q=1$."
+        ],
+        "difficulty": 2,
+        "chapter": "TD - Exercice 1",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-038",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Comment appelle-t-on le régime où l'amplitude des oscillations croît ?",
+        "answers": [
+            "Régime linéaire transitoire.",
+            "Régime de saturation.",
+            "Régime stationnaire."
+        ],
+        "difficulty": 2,
+        "chapter": "Généralités",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-039",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 4, pourquoi l'appellation 'sinus-cosinus' est-elle justifiée ?",
+        "answers": [
+            "Car on utilise des fonctions trigonométriques.",
+            "Car le déphasage de $\\pi/2$ entre les sorties correspond à la relation entre sinus et cosinus.",
+            "Car l'ALI ne peut sortir que du sinus."
+        ],
+        "difficulty": 2,
+        "chapter": "TD - Exercice 4",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-040",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la condition d'oscillation pour l'oscillateur Hartley (Ex 2) ?",
+        "answers": [
+            "$R_1 < R_2$",
+            "$R_1 > R_2$",
+            "$R_1 = R_2$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 2",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-041",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le corrigé de l'Ex 3, quelle condition sur $Q$ mène au régime pseudo-périodique ?",
+        "answers": [
+            "$Q > 1/2$",
+            "$Q < 1/2$",
+            "$Q = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 3",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-042",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Un ALI idéal en régime linéaire vérifie :",
+        "answers": [
+            "$V^+ = V^-$",
+            "$V_s = \\pm V_{sat}$",
+            "$i^+ = i^- \\neq 0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Rappels Électronique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-043",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le montage à lampe (Ex 5), si l'amplitude dépasse la valeur d'équilibre :",
+        "answers": [
+            "La lampe refroidit.",
+            "La résistance $R_1$ augmente, ce qui rend le coefficient de $\\frac{ds}{dt}$ positif, stabilisant le système.",
+            "L'amplitude augmente encore plus."
+        ],
+        "difficulty": 4,
+        "chapter": "TD - Exercice 5",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-044",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour un oscillateur quasi-sinusoïdal, le spectre du signal de sortie idéal est :",
+        "answers": [
+            "Un spectre continu.",
+            "Un unique pic à $f_0$.",
+            "Une infinité de pics à $n f_0$ de même amplitude."
+        ],
+        "difficulty": 2,
+        "chapter": "Généralités",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-045",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est l'expression de l'impédance d'un condensateur ?",
+        "answers": [
+            "$jL\\omega$",
+            "$\\frac{1}{jC\\omega}$",
+            "$R$"
+        ],
+        "difficulty": 1,
+        "chapter": "Rappels Électronique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-046",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le multivibrateur astable, le basculement a lieu quand :",
+        "answers": [
+            "$\\epsilon = V^+ - V^-$ change de signe.",
+            "Le condensateur est totalement déchargé.",
+            "On appuie sur un bouton."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-047",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 7, comment pourrait-on améliorer la pureté spectrale ?",
+        "answers": [
+            "En augmentant le gain de l'ALI.",
+            "En utilisant un filtre plus sélectif (facteur de qualité $Q$ plus grand).",
+            "En supprimant le condensateur."
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 7",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-048",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la relation temporelle pour une bobine ?",
+        "answers": [
+            "$i = C \frac{du}{dt}$",
+            "$u = L \frac{di}{dt}$",
+            "$u = Ri$"
+        ],
+        "difficulty": 1,
+        "chapter": "Rappels Électronique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-049",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Un oscillateur 'quasi-sinusoïdal' possède des harmoniques de rang $n > 1$ :",
+        "answers": [
+            "D'amplitude nulle.",
+            "D'amplitude faible mais non nulle par rapport au fondamental.",
+            "D'amplitude plus grande que le fondamental."
+        ],
+        "difficulty": 2,
+        "chapter": "Généralités",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-050",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour l'Exercice 6, si $\\alpha \to 1$ (soit $R_2 \to 0$), que devient la période ?",
+        "answers": [
+            "Elle tend vers $0$.",
+            "Elle tend vers l'infini (logarithme d'une valeur tendant vers 0 au dénominateur).",
+            "Elle reste constante."
+        ],
+        "difficulty": 4,
+        "chapter": "TD - Exercice 6",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-051",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans un diagramme de Bode, un filtre passe-bande présente un maximum de gain à :",
+        "answers": [
+            "$\\omega = 0$",
+            "$\\omega = \\omega_0$",
+            "$\\omega = \\infty$"
+        ],
+        "difficulty": 1,
+        "chapter": "Filtres",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-052",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "L'amortissement dans l'équation différentielle du Wien est nul si :",
+        "answers": [
+            "$A = 1$",
+            "$A = 2$",
+            "$A = 3$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-053",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le cas $A > 3$, l'amplitude des oscillations croît de façon :",
+        "answers": [
+            "Linéaire.",
+            "Exponentielle.",
+            "Logarithmique."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-054",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pourquoi un oscillateur a-t-il besoin d'une alimentation continue ?",
+        "answers": [
+            "Pour charger le condensateur seulement au début.",
+            "Pour compenser les pertes (effet Joule) et permettre l'amplification.",
+            "Pour faire joli."
+        ],
+        "difficulty": 2,
+        "chapter": "Généralités",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-055",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quel composant stocke l'énergie sous forme magnétique ?",
+        "answers": [
+            "Résistance.",
+            "Condensateur.",
+            "Inductance (bobine)."
+        ],
+        "difficulty": 1,
+        "chapter": "Rappels Électronique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-056",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Le terme 'astable' signifie que le montage :",
+        "answers": [
+            "Possède un état stable unique.",
+            "Possède deux états stables.",
+            "N'a aucun état stable et bascule en permanence."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-057",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 1, quelle est l'amplitude de $s(t)$ en régime établi ?",
+        "answers": [
+            "$V_{sat}$",
+            "$x V_{sat}$",
+            "$V_{sat} / x$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 1",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-058",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 2, quelle est la condition sur les résistances $R_1, R_2$ de l'amplificateur ?",
+        "answers": [
+            "$R_1 > R_2$ car le gain du bloc filtre est $1/2$.",
+            "$R_1 = R_2$.",
+            "$R_1 < R_2$."
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 2",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-059",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 3, si $R > R'$, la solution de l'équation différentielle est :",
+        "answers": [
+            "Instable.",
+            "Stable (tend vers 0).",
+            "Purement sinusoïdale."
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 3",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-060",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Un filtre de Wien est un filtre :",
+        "answers": [
+            "Passe-bas.",
+            "Passe-haut.",
+            "Passe-bande."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-061",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour l'Exercice 5, la constante $\\alpha$ dans $R_1(T)$ est positive, cela signifie :",
+        "answers": [
+            "Que la résistance diminue quand $T$ augmente.",
+            "Que la résistance augmente quand $T$ augmente.",
+            "Que la résistance est indépendante de $T$."
+        ],
+        "difficulty": 2,
+        "chapter": "TD - Exercice 5",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-062",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Le cycle d'hystérésis d'un comparateur est parcouru :",
+        "answers": [
+            "Dans le sens horaire ou anti-horaire selon le signe de la rétroaction.",
+            "Uniquement dans un sens imposé par les seuils de basculement.",
+            "Il n'est pas parcouru."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-063",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le Wien, le facteur de qualité est $Q=1/3$. Cela signifie que le filtre est :",
+        "answers": [
+            "Très sélectif.",
+            "Peu sélectif.",
+            "Idéal."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-064",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 4, quelle est la pulsation d'oscillation ?",
+        "answers": [
+            "$\\omega = \\frac{1}{\\sqrt{\\tau_1 \\tau_2}}$",
+            "$\\omega = \\frac{1}{\\tau_2}$",
+            "$\\omega = \\sqrt{\\tau_1 \\tau_2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "TD - Exercice 4",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-065",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la phase d'évolution d'un signal due à un phénomène d'accumulation ?",
+        "answers": [
+            "Phase de relaxation.",
+            "Phase de croissance.",
+            "Phase de saturation."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-066",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Un oscillateur Hartley produit un signal de fréquence $f_{osc}$ :",
+        "answers": [
+            "$f_{osc} = \\frac{1}{2\\pi\\sqrt{2LC}}$",
+            "$f_{osc} = \\frac{1}{\\sqrt{2LC}}$",
+            "$f_{osc} = \\frac{2\\pi}{\\sqrt{LC}}$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 2",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-067",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 7, que vaut l'amplification $G$ du montage à pont de Wien ?",
+        "answers": [
+            "$G = 1 + R_2 / R_1$",
+            "$G = 1 + R_1 / R_2$",
+            "$G = R_2 / R_1$"
+        ],
+        "difficulty": 2,
+        "chapter": "TD - Exercice 7",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-068",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Si on multiplie $R$ et $C$ par 2 dans un multivibrateur, la période est :",
+        "answers": [
+            "Divisée par 4.",
+            "Multipliée par 2.",
+            "Multipliée par 4."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-069",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "L'ALI sature quand la tension de sortie s'approche de :",
+        "answers": [
+            "Sa tension d'alimentation.",
+            "0V.",
+            "La tension d'entrée."
+        ],
+        "difficulty": 1,
+        "chapter": "Rappels Électronique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-070",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour l'Exercice 6, le basculement de $+V_{sat}$ à $-V_{sat}$ se produit à l'instant $t_1$ tel que :",
+        "answers": [
+            "$V_3(t_1) = \\alpha V_{sat}$",
+            "$V_3(t_1) = 0$",
+            "$V_3(t_1) = V_{sat}$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 6",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-071",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Un signal triangulaire est la primitive d'un signal :",
+        "answers": [
+            "Sinusoïdal.",
+            "Constant (par morceaux).",
+            "Nul."
+        ],
+        "difficulty": 1,
+        "chapter": "Mathématiques",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-072",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la condition sur l'argument de la fonction de transfert en boucle ouverte pour osciller ?",
+        "answers": [
+            "$Arg(\\underline{H}_{BO}) = 0 \\pmod{2\\pi}$",
+            "$Arg(\\underline{H}_{BO}) = \\pi/2$",
+            "$Arg(\\underline{H}_{BO}) = \\pi$"
+        ],
+        "difficulty": 3,
+        "chapter": "Généralités",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-073",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "L'amplitude de sortie d'un intégrateur ALI idéal est limitée par :",
+        "answers": [
+            "La valeur du condensateur.",
+            "La saturation de l'ALI.",
+            "La fréquence."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-074",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le montage sinus-cosinus (Ex 4), $\\underline{H}_2 = j/(\\omega \\tau_2)$. L'argument est :",
+        "answers": [
+            "$0$",
+            "$\\pi/2$",
+            "$-\\pi/2$"
+        ],
+        "difficulty": 2,
+        "chapter": "TD - Exercice 4",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-075",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 5, si $R_2$ est fixée, cela impose :",
+        "answers": [
+            "La fréquence d'oscillation.",
+            "La température d'équilibre et donc l'amplitude des oscillations.",
+            "Le gain de l'ALI."
+        ],
+        "difficulty": 4,
+        "chapter": "TD - Exercice 5",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-076",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Le terme 'multivibrateur' vient de la présence de :",
+        "answers": [
+            "Nombreuses vibrations sinusoïdales.",
+            "Nombreuses harmoniques dans le signal carré/triangulaire.",
+            "Plusieurs ALI."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-077",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour un montage ALI, on suppose que les courants d'entrée sont :",
+        "answers": [
+            "Infinis.",
+            "Nuls ($i^+ = i^- = 0$).",
+            "Égaux au courant de sortie."
+        ],
+        "difficulty": 1,
+        "chapter": "Rappels Électronique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-078",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 1, la fonction de transfert du circuit RLC seul est de la forme :",
+        "answers": [
+            "$\\frac{1}{1+jRC\\omega}$",
+            "$\\frac{jRC\\omega}{1+jRC\\omega+LC(j\\omega)^2}$",
+            "$\\frac{1}{1+LC(j\\omega)^2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 1",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-079",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la dimension du produit $RC$ ?",
+        "answers": [
+            "Fréquence ($s^{-1}$)",
+            "Temps ($s$)",
+            "Sans dimension"
+        ],
+        "difficulty": 1,
+        "chapter": "Généralités",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-080",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le cas d'une instabilité (démarrage), les pôles sont :",
+        "answers": [
+            "À partie réelle strictement positive.",
+            "À partie réelle strictement négative.",
+            "Réels purs négatifs."
+        ],
+        "difficulty": 4,
+        "chapter": "Généralités",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-081",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "La condition $AH_0 = 1$ s'appelle :",
+        "answers": [
+            "Condition de Descartes.",
+            "Critère de Barkhausen.",
+            "Loi de Lenz."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-082",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans un multivibrateur, si $V_{sat} = 15V$ et $\beta = 0.1$, les seuils sont :",
+        "answers": [
+            "$\\pm 15V$",
+            "$\\pm 1.5V$",
+            "$0V$ et $1.5V$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-083",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 7, que se passe-t-il si l'on prend $G$ très grand devant 3 ?",
+        "answers": [
+            "Le signal est encore plus sinusoïdal.",
+            "Le signal devient très distordu (proche d'un signal carré) car l'ALI sature vite.",
+            "Le circuit s'arrête d'osciller."
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 7",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-084",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est l'impédance équivalente de deux inductances $L$ en série ?",
+        "answers": [
+            "$jL\\omega / 2$",
+            "$2jL\\omega$",
+            "$jL\\omega$"
+        ],
+        "difficulty": 1,
+        "chapter": "Rappels Électronique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-085",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 1, si le filtre est très sélectif, le signal $s(t)$ est :",
+        "answers": [
+            "Quasi-sinusoïdal.",
+            "Triangulaire.",
+            "Identique au bruit."
+        ],
+        "difficulty": 2,
+        "chapter": "TD - Exercice 1",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-086",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "La température d'équilibre de la lampe (Ex 5) est atteinte quand :",
+        "answers": [
+            "La puissance Joule compense les pertes thermiques.",
+            "La lampe grille.",
+            "Le gain est infini."
+        ],
+        "difficulty": 3,
+        "chapter": "TD - Exercice 5",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-087",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Une fonction de transfert $\\underline{H} = \frac{1}{1+jQ(x-1/x)}$ est celle d'un :",
+        "answers": [
+            "Passe-bas.",
+            "Passe-bande.",
+            "Passe-haut."
+        ],
+        "difficulty": 2,
+        "chapter": "Filtres",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-088",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Le signal de sortie d'un comparateur à hystérésis est :",
+        "answers": [
+            "Sinusoïdal.",
+            "Carré (alternant entre les saturations).",
+            "Triangulaire."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-089",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 4, si $\\tau_1 > \\tau_3$ :",
+        "answers": [
+            "Le système ne peut pas osciller de façon stable à une pulsation réelle.",
+            "Le système oscille plus vite.",
+            "Le système devient un filtre passe-bas."
+        ],
+        "difficulty": 4,
+        "chapter": "TD - Exercice 4",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-090",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Un quartz est souvent utilisé dans les oscillateurs car :",
+        "answers": [
+            "Il est joli.",
+            "Il possède un facteur de qualité $Q$ extrêmement élevé (stabilité de fréquence).",
+            "Il remplace l'ALI."
+        ],
+        "difficulty": 2,
+        "chapter": "Généralités",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-091",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Ex 6, le signal $V_3(t)$ évolue selon des portions de courbes :",
+        "answers": [
+            "Droites.",
+            "Exponentielles.",
+            "Sinusoïdales."
+        ],
+        "difficulty": 2,
+        "chapter": "TD - Exercice 6",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-092",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Le gain d'un amplificateur inverseur est :",
+        "answers": [
+            "$1 + R_2/R_1$",
+            "$-R_2/R_1$",
+            "$R_1/R_2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Rappels Électronique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-093",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Un filtre passif peut-il être un oscillateur auto-entretenu ?",
+        "answers": [
+            "Oui.",
+            "Non, car il ne contient pas de source d'énergie/amplification pour compenser les pertes.",
+            "Seulement s'il contient une bobine."
+        ],
+        "difficulty": 2,
+        "chapter": "Généralités",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-094",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Ex 3, le facteur de qualité tend vers $+\\infty$ quand :",
+        "answers": [
+            "$R' \\to R$ par valeurs supérieures.",
+            "$R' \\to 0$.",
+            "$R \\to \\infty$."
+        ],
+        "difficulty": 4,
+        "chapter": "TD - Exercice 3",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-095",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la fréquence $f$ si $\\omega = 1000 rad/s$ ?",
+        "answers": [
+            "$\\approx 159 Hz$",
+            "$1000 Hz$",
+            "$\\approx 6283 Hz$"
+        ],
+        "difficulty": 2,
+        "chapter": "Mathématiques",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-096",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Le Slew-Rate s'exprime en :",
+        "answers": [
+            "$V \\cdot s^{-1}$",
+            "$V \\cdot \\mu s^{-1}$",
+            "Les deux sont possibles."
+        ],
+        "difficulty": 2,
+        "chapter": "Rappels Électronique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-097",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "L'oscillateur de Wien n'est plus trop utilisé aujourd'hui car :",
+        "answers": [
+            "Il est trop simple.",
+            "Il est peu performant (stabilité, pureté).",
+            "Il coûte trop cher."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs quasi-sinusoïdaux",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-098",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Ex 7, l'énergie vient des bornes d'alimentation $\\pm 15V$ de l'ALI. C'est une conversion :",
+        "answers": [
+            "AC vers DC.",
+            "DC vers AC.",
+            "Thermique vers DC."
+        ],
+        "difficulty": 2,
+        "chapter": "TD - Exercice 7",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-099",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour un multivibrateur, si $\beta = 1$, la période devient :",
+        "answers": [
+            "$4RC$",
+            "$2RC$",
+            "Non défini (basculement impossible)."
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs à relaxation",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-100",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est l'hypothèse principale pour l'étude fréquentielle des oscillateurs ?",
+        "answers": [
+            "L'ALI est en saturation.",
+            "Le régime sinusoïdal permanent est établi.",
+            "Le condensateur est déchargé."
+        ],
+        "difficulty": 2,
+        "chapter": "Généralités",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    }
+]

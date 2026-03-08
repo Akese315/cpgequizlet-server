@@ -1,0 +1,1602 @@
+[
+    {
+        "uuid": "df-001",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Bernoullis_Law.svg",
+        "theme": "dynamique des fluides",
+        "question": "Quelle est l'hypothèse d'un 'écoulement parfait' dans le théorème de Bernoulli ?",
+        "answers": [
+            "La masse volumique est constante",
+            "La viscosité est négligée (pas de frottements)",
+            "Le régime est stationnaire",
+            "Le fluide est au repos"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-002",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Que signifie un écoulement 'permanent' ou 'stationnaire' ?",
+        "answers": [
+            "La vitesse est la même en tout point de l'espace",
+            "Le fluide est incompressible",
+            "Les dérivées temporelles des grandeurs sont nulles ($\\frac{\\partial}{\\partial t} = 0$)",
+            "Le fluide ne peut pas s'écouler"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-003",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Pour un fluide incompressible, quelle grandeur reste constante dans tout l'écoulement ?",
+        "answers": [
+            "La vitesse $v$",
+            "La pression $P$",
+            "La masse volumique $\\rho$",
+            "La température $T$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-004",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Quelle est l'unité SI du débit volumique $D_v$ ?",
+        "answers": [
+            "$kg \\cdot s^{-1}$",
+            "$m^2 \\cdot s^{-1}$",
+            "$m^3 \\cdot s^{-1}$",
+            "$L \\cdot min^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-005",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans l'équation de Bernoulli $P + \\rho gz + \\frac{1}{2}\\rho v^2 = cste$, que représente physiquement le terme $\\frac{1}{2}\\rho v^2$ ?",
+        "answers": [
+            "L'énergie potentielle par unité de volume",
+            "L'énergie cinétique par unité de volume",
+            "La pression statique",
+            "La puissance de l'écoulement"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-006",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Venturi_flow.svg",
+        "theme": "dynamique des fluides",
+        "question": "Effet Venturi : Dans un tube horizontal de section variable, si la section diminue, comment évolue la vitesse ?",
+        "answers": [
+            "Elle diminue",
+            "Elle reste constante",
+            "Elle augmente",
+            "Elle s'annule"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-007",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Effet Venturi : Dans une zone où la vitesse du fluide augmente (conduite horizontale), que fait la pression ?",
+        "answers": [
+            "Elle augmente",
+            "Elle diminue",
+            "Elle reste constante",
+            "Elle devient négative"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-008",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/0/07/Torricelli-law.svg",
+        "theme": "dynamique des fluides",
+        "question": "Formule de Torricelli : Quelle est la vitesse de sortie $v_B$ d'un petit trou situé à une distance $h$ sous la surface libre d'un réservoir ?",
+        "answers": [
+            "$v_B = gh$",
+            "$v_B = \\sqrt{gh}$",
+            "$v_B = \\sqrt{2gh}$",
+            "$v_B = \\frac{1}{2}gh^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-009",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "L'expérience de Torricelli suppose que la section du trou $s$ est très petite devant la section du réservoir $S$. Quelle en est la conséquence directe ?",
+        "answers": [
+            "La pression au fond est nulle",
+            "La vitesse à la surface libre $v_A$ est négligeable devant $v_B$",
+            "Le fluide devient visqueux",
+            "L'écoulement n'est plus stationnaire"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-010",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Pitot_tube_fixed_wing_aircraft.jpg",
+        "theme": "dynamique des fluides",
+        "question": "Dans un tube de Pitot, comment appelle-t-on le point où la vitesse du fluide s'annule ?",
+        "answers": [
+            "Le point de charge",
+            "Le point de Venturi",
+            "Le point d'arrêt",
+            "Le point de cavitation"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-011",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Quelle est la relation entre la pression totale $P_{tot}$ et la pression statique $P_s$ ?",
+        "answers": [
+            "$P_{tot} = P_s$",
+            "$P_{tot} = P_s + \\rho gz$",
+            "$P_{tot} = P_s + \\frac{1}{2}\\rho v^2$",
+            "$P_{tot} = P_s - \\frac{1}{2}\\rho v^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-012",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Un élément 'actif' (pompe, turbine) fournit une puissance $\\mathcal{P}$ au fluide. Si $\\mathcal{P} > 0$, l'élément est :",
+        "answers": [
+            "Une turbine",
+            "Une pompe",
+            "Une conduite forcée",
+            "Une perte de charge"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-013",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Théorème de Bernoulli généralisé : Quelle est l'expression correcte de la puissance $\\mathcal{P}$ échangée ?",
+        "answers": [
+            "$\\mathcal{P} = D_m (P_s - P_e)$",
+            "$\\mathcal{P} = D_v [ (P + \\rho gz + \\frac{1}{2}\\rho v^2)_s - (P + \\rho gz + \\frac{1}{2}\\rho v^2)_e ]$",
+            "$\\mathcal{P} = \\frac{1}{2} D_m v^2$",
+            "$\\mathcal{P} = \\rho g z D_v$"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-014",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans une fusée, le carburant est éjecté avec un débit $D_m$ à la vitesse $\\vec{u}$. Quelle est la force de poussée $\\vec{f}$ ?",
+        "answers": [
+            "$\\vec{f} = D_m \\vec{u}$",
+            "$\\vec{f} = -D_m \\vec{u}$",
+            "$\\vec{f} = \\frac{1}{2}D_m u^2$",
+            "$\\vec{f} = \\rho \\vec{g} D_v$"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-015",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Quelle est l'expression du couple $\\Gamma$ subi par un fluide passant dans une turbine de rayon $R$ ?",
+        "answers": [
+            "$\\Gamma = D_m (v_2 - v_1)$",
+            "$\\Gamma = D_m R (v_2 - v_1)$",
+            "$\\Gamma = P \\cdot S \\cdot R$",
+            "$\\Gamma = \\frac{\\mathcal{P}}{\\omega}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-016",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Pour une vidange de réservoir (TD Ex 2), quelle est l'équation de conservation du débit volumique ?",
+        "answers": [
+            "$P_A = P_B$",
+            "$S v_A = s v_B$",
+            "$S v_B = s v_A$",
+            "$v_A + v_B = cste$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-017",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Lors d'une vidange, comment la vitesse de descente de la surface $v_A$ est-elle reliée à la hauteur $H$ ?",
+        "answers": [
+            "$v_A = \\frac{dH}{dt}$",
+            "$v_A = -\\frac{dH}{dt}$",
+            "$v_A = H \\frac{dS}{dt}$",
+            "$v_A = \\sqrt{2gH}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-018",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Quel est le temps de vidange $T$ d'un réservoir cylindrique de section $S$ et hauteur initiale $H_0$ par un trou $s$ ?",
+        "answers": [
+            "$T = \\frac{S}{s}\\sqrt{\\frac{H_0}{2g}}$",
+            "$T = \\frac{2S}{s}\\sqrt{\\frac{H_0}{2g}}$",
+            "$T = \\frac{s}{S}\\sqrt{2gH_0}$",
+            "$T = \\frac{H_0}{v_B}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-019",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "TD Ex 3 : Si on ajoute un tuyau de longueur $L$ sous l'orifice de vidange, la vitesse de sortie $v_s$ devient :",
+        "answers": [
+            "$v_s = \\sqrt{2gh}$",
+            "$v_s = \\sqrt{2g(h-L)}$",
+            "$v_s = \\sqrt{2g(h+L)}$",
+            "$v_s = \\sqrt{2gL}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-020",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Pourquoi la vidange est-elle plus efficace avec un tuyau d'évacuation ajouté ?",
+        "answers": [
+            "Car cela réduit les frottements",
+            "Car cela augmente la différence de charge (hauteur de chute)",
+            "Car cela réduit le débit volumique",
+            "Car la pression atmosphérique pousse plus fort"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-021",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Qu'est-ce que la cavitation dans une conduite ?",
+        "answers": [
+            "Le fluide se fige sous l'effet du froid",
+            "La pression descend sous la pression de vapeur saturante $P_{sat}$, créant des bulles de gaz",
+            "Le débit devient turbulent",
+            "La conduite explose par surpression"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-022",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "TD Ex 3 : Où la pression est-elle la plus faible dans un tuyau de vidange vertical de diamètre uniforme ?",
+        "answers": [
+            "En bas du tuyau (sortie)",
+            "En haut du tuyau (juste après le réservoir)",
+            "Au milieu du tuyau",
+            "La pression est uniforme partout"
+        ],
+        "difficulty": 4,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-023",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Pour éviter la cavitation, la longueur $L$ du tuyau doit être :",
+        "answers": [
+            "$L < \\frac{P_{atm}-P_{sat}}{\\rho g}$",
+            "$L > \\frac{P_{atm}-P_{sat}}{\\rho g}$",
+            "$L = \\frac{v^2}{2g}$",
+            "$L < 100$ m"
+        ],
+        "difficulty": 4,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-024",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "TD Ex 4 : Dans un tube de Pitot mesurant la vitesse de l'air avec un manomètre à mercure, la vitesse $v_{\\infty}$ dépend de :",
+        "answers": [
+            "La hauteur $\\Delta H$ de mercure uniquement",
+            "$\\sqrt{\\Delta H}$ et du rapport des masses volumiques $\\frac{\\mu_{Hg}}{\\mu_{air}}$",
+            "$\\Delta H^2$ et de la pression atmosphérique",
+            "La température de l'air uniquement"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-025",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Water_turbine_schematic.svg",
+        "theme": "dynamique des fluides",
+        "question": "Centrale de Romanche-Gavet (Ex 5) : Quelle est la puissance théorique $\\mathcal{P}$ d'une chute d'eau de hauteur $h$ avec un débit $D_v$ ?",
+        "answers": [
+            "$\\mathcal{P} = D_v \\rho g h$",
+            "$\\mathcal{P} = D_v \\frac{1}{2} \\rho v^2$",
+            "$\\mathcal{P} = \\frac{D_v \\rho g}{h}$",
+            "$\\mathcal{P} = D_m g h^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-026",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans l'exercice 5, pourquoi peut-on simplifier l'équation de Bernoulli entre l'entrée et la sortie ?",
+        "answers": [
+            "Car les pressions sont égales à $P_{atm}$ et les vitesses sont supposées proches",
+            "Car le fluide est parfait",
+            "Car il n'y a pas de gravité",
+            "Car la section est constante"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-027",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Quel est l'ordre de grandeur de la puissance installée de la centrale de Romanche-Gavet ?",
+        "answers": [
+            "100 kW",
+            "100 MW",
+            "100 GW",
+            "10 MW"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-028",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "TD Ex 6 : Pour qu'un jet d'eau atteigne une hauteur $H$, quelle doit être sa vitesse initiale $v_0$ au niveau du sol ?",
+        "answers": [
+            "$v_0 = gH$",
+            "$v_0 = \\sqrt{2gH}$",
+            "$v_0 = \\frac{1}{2}gH^2$",
+            "$v_0 = \\sqrt{gH}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-029",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "TD Ex 7 : Le rendement d'une turbine est de 60%. Si la puissance disponible du fluide est de 5,8 MW, quelle est la puissance électrique produite ?",
+        "answers": [
+            "9,6 MW",
+            "3,5 MW",
+            "5,8 MW",
+            "2,3 MW"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-030",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "TD Ex 8 : Dans une lance incendie, pourquoi la vitesse d'éjection $v_e$ est-elle bien supérieure à la vitesse dans le tuyau $v$ ?",
+        "answers": [
+            "La pression augmente à la sortie",
+            "La section de la lance est beaucoup plus petite que celle du tuyau",
+            "La pompe accélère l'eau seulement à la fin",
+            "L'eau devient plus dense"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-031",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Si un débit volumique est de 500 L/min, quelle est sa valeur approximative en $m^3 \\cdot s^{-1}$ ?",
+        "answers": [
+            "$0,5 \\cdot 10^{-3}$",
+            "$8,3 \\cdot 10^{-3}$",
+            "$30 \\cdot 10^{-3}$",
+            "$0,5$"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-032",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "La 'charge hydraulique' est définie par la somme $P + \\rho g z + \\frac{1}{2} \\rho v^2$. Dans un écoulement parfait sans élément actif, cette charge :",
+        "answers": [
+            "Augmente",
+            "Diminue",
+            "Se conserve le long d'une ligne de courant",
+            "S'annule"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-033",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans le théorème de Bernoulli, quelle est l'unité de chaque terme ($P$, $\\rho g z$, $\\frac{1}{2}\\rho v^2$) ?",
+        "answers": [
+            "Le Joule ($J$)",
+            "Le Pascal ($Pa$ ou $N \\cdot m^{-2}$)",
+            "Le Watt ($W$)",
+            "Le Newton ($N$)"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-034",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Comment varie la pression statique dans un fluide incompressible au repos ?",
+        "answers": [
+            "Elle est constante",
+            "Elle suit la loi de l'hydrostatique : $P + \\rho gz = cste$",
+            "Elle est nulle",
+            "Elle augmente avec la vitesse"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-035",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans l'effet Venturi (Ex 1 TD), on note $\\Delta H$ la différence de hauteur entre deux tubes manométriques. La différence de pression est :",
+        "answers": [
+            "$P_1 - P_2 = \\rho g \\Delta H$",
+            "$P_1 - P_2 = \\frac{1}{2} \\rho v^2$",
+            "$P_1 - P_2 = \\Delta H$",
+            "$P_1 - P_2 = D_m g \\Delta H$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-036",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Si un fluide traverse une turbine, la puissance $\\mathcal{P}$ de l'élément actif est :",
+        "answers": [
+            "Positive (le fluide reçoit de l'énergie)",
+            "Négative (le fluide cède de l'énergie)",
+            "Nulle",
+            "Indéterminée"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-037",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Pour un écoulement permanent, les lignes de courant sont :",
+        "answers": [
+            "Confondues avec les trajectoires des particules",
+            "Perpendiculaires à la vitesse",
+            "Toujours des cercles",
+            "Dépendantes du temps"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-038",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Quelle est la masse volumique de l'eau douce environ ?",
+        "answers": [
+            "$1 kg \\cdot m^{-3}$",
+            "$100 kg \\cdot m^{-3}$",
+            "$1000 kg \\cdot m^{-3}$",
+            "$13600 kg \\cdot m^{-3}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-039",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Quelle est la masse volumique du mercure environ ?",
+        "answers": [
+            "$1000 kg \\cdot m^{-3}$",
+            "$13600 kg \\cdot m^{-3}$",
+            "$1,2 kg \\cdot m^{-3}$",
+            "$800 kg \\cdot m^{-3}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-040",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans le TD Ex 3, l'équation différentielle de vidange est $\\frac{dh}{dt} = -\\frac{d^2}{D^2}\\sqrt{2g(h+L)}$. Cette équation est résolue par :",
+        "answers": [
+            "Séparation des variables",
+            "Méthode de la constante complexe",
+            "Développement en série entière",
+            "Elle n'est pas résolvable"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-041",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Le débit massique $D_m$ est relié au débit volumique $D_v$ par :",
+        "answers": [
+            "$D_m = \\frac{D_v}{\\rho}$",
+            "$D_m = \\rho D_v$",
+            "$D_m = D_v^2$",
+            "$D_m = \\rho g D_v$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-042",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans un tube de Pitot (Ex 4), la pression mesurée latéralement en $C$ est :",
+        "answers": [
+            "La pression totale",
+            "La pression statique",
+            "La pression dynamique",
+            "La pression de vapeur"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-043",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "L'hypothèse de fluide incompressible est généralement valable pour :",
+        "answers": [
+            "Tous les gaz à haute vitesse",
+            "Les liquides et les gaz à faible nombre de Mach",
+            "Seulement les solides",
+            "Le vide"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-044",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans le bilan de quantité de mouvement, la force exercée par un jet de fluide sur une paroi est proportionnelle à :",
+        "answers": [
+            "La vitesse $v$",
+            "Le carré de la vitesse $v^2$",
+            "L'inverse de la vitesse $1/v$",
+            "La pression atmosphérique uniquement"
+        ],
+        "difficulty": 4,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-045",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Quelle est l'expression de la puissance utile d'une pompe ?",
+        "answers": [
+            "$\\mathcal{P} = D_v \\Delta P$",
+            "$\\mathcal{P} = F \\cdot v$",
+            "$\\mathcal{P} = \\frac{1}{2} m v^2$",
+            "$\\mathcal{P} = D_m c \\Delta T$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-046",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Si la section d'un tuyau est divisée par 2, par quel facteur est multipliée la vitesse (fluide incompressible) ?",
+        "answers": [
+            "1/2",
+            "2",
+            "4",
+            "$\\sqrt{2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-047",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Si la vitesse d'un fluide double dans une conduite horizontale, la pression dynamique $\\frac{1}{2}\\rho v^2$ est multipliée par :",
+        "answers": [
+            "2",
+            "4",
+            "8",
+            "16"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-048",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans l'exercice 8, la pression au point A est de 7,1 bar. Si la pression atmosphérique est de 1 bar, quelle est la surpression ?",
+        "answers": [
+            "7,1 bar",
+            "8,1 bar",
+            "6,1 bar",
+            "1 bar"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-049",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Une pompe de 6,8 kW avec un rendement de 100% élève de l'eau. Si le débit est doublé, la puissance nécessaire est :",
+        "answers": [
+            "Doublée",
+            "Quadruplée",
+            "Inchangée",
+            "Divisée par 2"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-050",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "L'unité du débit massique est :",
+        "answers": [
+            "$kg \\cdot s^{-1}$",
+            "$m^3 \\cdot s^{-1}$",
+            "$N \\cdot s$",
+            "$kg \\cdot m^{-3}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-051",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans le théorème de Bernoulli, le terme $\\rho gz$ traduit :",
+        "answers": [
+            "L'effet de la pression atmosphérique",
+            "L'effet de la pesanteur",
+            "L'effet de la vitesse",
+            "La viscosité"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-052",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Un fluide parfait s'écoule de manière adiabatique réversible. Cela implique que :",
+        "answers": [
+            "Il n'y a pas de transfert thermique ni de création d'entropie",
+            "La température est constante",
+            "La vitesse est nulle",
+            "Le fluide est un gaz parfait"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-053",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Le long d'une ligne de courant, si l'altitude $z$ augmente et la section est constante, que fait la pression statique ?",
+        "answers": [
+            "Elle augmente",
+            "Elle diminue",
+            "Elle reste constante",
+            "Elle s'annule"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-054",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "La pression atmosphérique standard est environ :",
+        "answers": [
+            "$10^3 Pa$",
+            "$10^5 Pa$",
+            "$10^6 Pa$",
+            "$1 Pa$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-055",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "TD Ex 3 : Quelle est la pression à la sortie d'un tuyau débouchant à l'air libre ?",
+        "answers": [
+            "Nulle",
+            "La pression atmosphérique $P_{atm}$",
+            "La pression de vapeur $P_{sat}$",
+            "Infinie"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-056",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans un bilan d'énergie, le travail des forces de pression en entrée d'une conduite est :",
+        "answers": [
+            "Moteur (positif pour le fluide)",
+            "Résistant (négatif pour le fluide)",
+            "Nul",
+            "Indépendant de la pression"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-057",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans un bilan d'énergie, le travail des forces de pression en sortie d'une conduite est :",
+        "answers": [
+            "Moteur",
+            "Résistant",
+            "Nul",
+            "Égal au travail d'entrée"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-058",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Quelle est l'expression de la puissance d'une force $\\vec{F}$ appliquée à un fluide se déplaçant à la vitesse $\\vec{v}$ ?",
+        "answers": [
+            "$\\mathcal{P} = \\vec{F} \\cdot \\vec{v}$",
+            "$\\mathcal{P} = F / v$",
+            "$\\mathcal{P} = \\frac{1}{2} F v^2$",
+            "$\\mathcal{P} = \\int F dt$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-059",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans le théorème du moment cinétique appliqué à une turbine, le terme $\\vec{OM} \\wedge \\vec{p}$ représente :",
+        "answers": [
+            "La force centrifuge",
+            "Le moment cinétique",
+            "Le couple moteur",
+            "L'énergie cinétique"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-060",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Pour une turbine, si $v_2 > v_1$ (vitesse de sortie supérieure à l'entrée), le couple exercé par le fluide sur la turbine est :",
+        "answers": [
+            "Moteur",
+            "Résistant",
+            "Nul",
+            "Indéterminé"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-061",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans la formule de Torricelli, si la hauteur $h$ est multipliée par 4, la vitesse de sortie est multipliée par :",
+        "answers": [
+            "4",
+            "16",
+            "2",
+            "$\\sqrt{2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-062",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Le 'point d'arrêt' dans un écoulement est caractérisé par :",
+        "answers": [
+            "Une pression nulle",
+            "Une vitesse nulle",
+            "Une altitude nulle",
+            "Un débit maximal"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-063",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans un tube de Venturi, où place-t-on les prises de pression pour mesurer le débit ?",
+        "answers": [
+            "Une dans la section large, une dans l'étranglement",
+            "Toutes les deux dans l'étranglement",
+            "Une à l'entrée, une à la sortie du laboratoire",
+            "On ne peut pas mesurer le débit ainsi"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-064",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Si la pression dans un tuyau descend à $0,02$ bar (alors que $P_{sat} = 0,023$ bar), que se passe-t-il ?",
+        "answers": [
+            "Le fluide s'arrête",
+            "Il y a cavitation",
+            "Le fluide s'échauffe brusquement",
+            "Rien de particulier"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-065",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Une pompe fournit une puissance de 1000 W. Si son rendement est de 70%, quelle puissance est réellement transmise au fluide ?",
+        "answers": [
+            "1428 W",
+            "700 W",
+            "1000 W",
+            "300 W"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-066",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans l'exercice 5, le débit est de $40 m^3/s$ et la chute de $280 m$. Quel est le débit massique ?",
+        "answers": [
+            "$40 kg/s$",
+            "$4000 kg/s$",
+            "$40000 kg/s$",
+            "$400 kg/s$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-067",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "La poussée d'une fusée $f = D_m u$ est une application directe de :",
+        "answers": [
+            "Le théorème de Bernoulli",
+            "La conservation de la charge",
+            "La seconde loi de Newton (bilan de quantité de mouvement)",
+            "La loi d'Ohm"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-068",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Pour un fluide réel (visqueux), la charge hydraulique le long d'une ligne de courant :",
+        "answers": [
+            "Reste constante",
+            "Augmente à cause des frottements",
+            "Diminue à cause des frottements (pertes de charge)",
+            "Dépend de la couleur du tube"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-069",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Unité de la pression dans le système international :",
+        "answers": [
+            "Bar",
+            "Atmosphère",
+            "Pascal",
+            "Torr"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-070",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans le théorème de Bernoulli, on peut écrire la relation entre deux points $A$ et $B$ SI :",
+        "answers": [
+            "Ils sont sur la même ligne de courant",
+            "Ils sont n'importe où dans le fluide",
+            "Le fluide est au repos",
+            "La vitesse est la même en $A$ et $B$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-071",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "TD Ex 3 : La pression $P(z)$ dans la conduite verticale de vidange est $P(z) = P_{atm} - \\rho g (L+z)$ avec $z$ allant de $-L$ à $0$. Où la pression est-elle minimale ?",
+        "answers": [
+            "En $z = -L$",
+            "En $z = 0$ (haut de la conduite)",
+            "En $z = -L/2$",
+            "La pression est constante"
+        ],
+        "difficulty": 4,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-072",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Quel est l'effet d'une pompe sur la charge hydraulique d'un fluide ?",
+        "answers": [
+            "Elle l'augmente",
+            "Elle la diminue",
+            "Elle la maintient constante",
+            "Elle la rend nulle"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-073",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans le tube de Pitot, la différence de pression $P_{tot} - P_s$ s'appelle :",
+        "answers": [
+            "La pression hydrostatique",
+            "La pression dynamique",
+            "La pression atmosphérique",
+            "La charge"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-074",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Un écoulement est dit 'homogène' si :",
+        "answers": [
+            "Sa masse volumique est la même en tout point",
+            "Sa vitesse est la même partout",
+            "Il ne contient qu'une seule phase",
+            "Il est parfait"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-075",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans la formule du débit volumique $D_v = S \\cdot v$, $v$ représente :",
+        "answers": [
+            "La vitesse maximale au centre",
+            "La vitesse moyenne (débitante) sur la section",
+            "La vitesse à la paroi",
+            "La vitesse du son"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-076",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Pour une turbine, la puissance indiquée $\\mathcal{P}$ est cédée PAR :",
+        "answers": [
+            "La turbine au fluide",
+            "Le fluide à la turbine",
+            "L'air extérieur au fluide",
+            "Le générateur à la turbine"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-077",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Quelle est la valeur de la constante de pesanteur $g$ environ ?",
+        "answers": [
+            "$10 m \\cdot s^{-2}$",
+            "$100 m \\cdot s^{-2}$",
+            "$1 m \\cdot s^{-2}$",
+            "$9,81 cm \\cdot s^{-2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-078",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Un fluide parfait ne peut pas exercer de force :",
+        "answers": [
+            "De pression",
+            "Tangente à la paroi (frottement)",
+            "Normale à la paroi",
+            "Gravitationnelle"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-079",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans l'exercice 3, la vitesse de surface du réservoir $V$ est reliée à la vitesse de sortie $v_s$ par $V = (d/D)^2 v_s$. Si $D = 10d$, alors :",
+        "answers": [
+            "$V = v_s / 10$",
+            "$V = v_s / 100$",
+            "$V = v_s / 2$",
+            "$V = 10 v_s$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-080",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Pourquoi la pression statique en $C$ est égale à celle en $A$ dans le tube de Pitot du cours (page 2) ?",
+        "answers": [
+            "Car les points sont à la même altitude et ont la même vitesse $v_A = v_C$",
+            "Car le fluide est immobile",
+            "Car ils sont à l'air libre",
+            "C'est une hypothèse toujours vraie"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-081",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Le travail 'indiqué' est défini comme :",
+        "answers": [
+            "Le travail par unité de volume",
+            "Le travail par unité de masse traversant",
+            "Le travail total sur la durée de l'expérience",
+            "La force fois la distance"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-082",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Comment appelle-t-on le dispositif qui mesure le débit par différence de pression dans un rétrécissement ?",
+        "answers": [
+            "Un manomètre",
+            "Un débitmètre à effet Venturi",
+            "Un tube de Pitot",
+            "Une pompe centrifuge"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-083",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans le TD Ex 4, le lien entre $P_{tot}$ et $P_{stat}$ via le mercure est $\\Delta P = \\mu_{Hg} g \\Delta H$. Si $\\Delta H = 10 cm$, $\\Delta P$ vaut environ :",
+        "answers": [
+            "$1330 Pa$",
+            "$13300 Pa$",
+            "$1000 Pa$",
+            "$10^5 Pa$"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-084",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Si on néglige les pertes de charge, on suppose que :",
+        "answers": [
+            "Le fluide est visqueux",
+            "L'écoulement est parfait",
+            "La vitesse est nulle",
+            "La pression est constante"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-085",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans une turbine, l'énergie cinétique du fluide est transformée en :",
+        "answers": [
+            "Énergie potentielle",
+            "Travail mécanique (rotation)",
+            "Chaleur uniquement",
+            "Masse"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-086",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Un jet d'eau sort verticalement. À quelle altitude sa vitesse s'annule-t-elle si $v_0$ est la vitesse de sortie ?",
+        "answers": [
+            "$z = v_0^2 / g$",
+            "$z = v_0^2 / (2g)$",
+            "$z = v_0 / g$",
+            "$z = 2v_0^2 / g$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-087",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Quelle est l'expression de la puissance d'une turbine en fonction du couple $\\Gamma$ et de la vitesse de rotation $\\omega$ ?",
+        "answers": [
+            "$\\mathcal{P} = \\Gamma \\omega$",
+            "$\\mathcal{P} = \\Gamma / \\omega$",
+            "$\\mathcal{P} = \\frac{1}{2} \\Gamma \\omega^2$",
+            "$\\mathcal{P} = \\Gamma + \\omega$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-088",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "En présence de pertes de charge régulières, la pression le long d'une conduite de section constante :",
+        "answers": [
+            "Augmente",
+            "Reste constante",
+            "Diminue linéairement avec la distance",
+            "Oscille"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-089",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "La pression de vapeur saturante de l'eau à $20^{\\circ}C$ est de l'ordre de :",
+        "answers": [
+            "1 bar",
+            "23 mbar ($2300 Pa$)",
+            "0 Pa",
+            "10 bar"
+        ],
+        "difficulty": 3,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-090",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans le théorème de Bernoulli, si le fluide est au repos ($v=0$), on retrouve :",
+        "answers": [
+            "La loi d'Ohm",
+            "La loi fondamentale de la statique des fluides",
+            "Le principe d'Archimède uniquement",
+            "La conservation de l'énergie cinétique"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-091",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans l'exercice 8, la pompe aspire l'eau d'un bassin à l'air libre. La pression à la surface du bassin est :",
+        "answers": [
+            "Nulle",
+            "$P_{atm}$",
+            "Inconnue",
+            "$P_{atm} + \\rho gh$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-092",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Si un jet d'eau a un débit de $100 L/h$, quel est son débit en $L/s$ ?",
+        "answers": [
+            "$1,67 L/s$",
+            "$0,028 L/s$",
+            "$2,7 L/s$",
+            "$0,1 L/s$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-093",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Pour une fusée, plus la vitesse d'éjection des gaz est grande :",
+        "answers": [
+            "Plus la poussée est faible",
+            "Plus la poussée est forte",
+            "Plus la masse augmente",
+            "Rien ne change"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-094",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "L'équation de Bernoulli est une forme de bilan :",
+        "answers": [
+            "De masse",
+            "D'énergie mécanique",
+            "De quantité de mouvement",
+            "D'entropie"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-095",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans un tube de section constante, pour un fluide incompressible en régime permanent, la vitesse :",
+        "answers": [
+            "Augmente avec la distance",
+            "Diminue avec la distance",
+            "Est la même dans toutes les sections",
+            "Est nulle"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-096",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Le terme 'perte de charge' représente une dissipation d'énergie sous forme de :",
+        "answers": [
+            "Travail mécanique",
+            "Chaleur (transfert thermique)",
+            "Énergie potentielle",
+            "Énergie chimique"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-097",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "La 'ligne de courant' est, à un instant donné, la courbe :",
+        "answers": [
+            "Tangente en tout point au vecteur vitesse",
+            "Suivie par une particule colorée",
+            "Où la pression est constante",
+            "Où l'altitude est constante"
+        ],
+        "difficulty": 2,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-098",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Dans le tube de Pitot, la mesure de $P_{tot} - P_s$ permet de trouver :",
+        "answers": [
+            "La pression atmosphérique",
+            "La vitesse du fluide",
+            "La viscosité",
+            "Le débit massique directement"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-099",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Le théorème de Bernoulli généralisé est utile pour étudier :",
+        "answers": [
+            "Uniquement les fluides au repos",
+            "Les machines hydrauliques (pompes, turbines)",
+            "La propagation du son",
+            "La tension superficielle"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df-100",
+        "image_path": null,
+        "theme": "dynamique des fluides",
+        "question": "Si on multiplie le rayon d'une conduite par 2, la section est multipliée par :",
+        "answers": [
+            "2",
+            "4",
+            "8",
+            "$\\pi$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dynamique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    }
+]

@@ -1,0 +1,1502 @@
+[
+    {
+        "uuid": "math-001",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "D'après le théorème de convergence dominée, quelle condition doit remplir la suite de fonctions $(f_n)$ vis-à-vis de la fonction limite $f$ sur l'intervalle $I$ ?",
+        "answers": [
+            "Convergence uniforme sur $I$",
+            "Convergence simple sur $I$ et les $f_n$ doivent être continues par morceaux",
+            "Convergence simple sur tout segment de $I$ uniquement"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-002",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Pour appliquer le théorème de convergence dominée, l'hypothèse de domination $|f_n(t)| \\le \\varphi(t)$ doit être vérifiée avec $\\varphi$ :",
+        "answers": [
+            "Continue et bornée sur $I$",
+            "Intégrable sur $I$ et indépendante de $n$",
+            "De carré intégrable sur $I$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-003",
+        "image_path": null,
+        "theme": "Limites d'intégrales",
+        "question": "Quelle est la limite de $I_n = \\int_{0}^{1} \\ln(1+t^n) dt$ lorsque $n \\to +\\infty$ ?",
+        "answers": [
+            "$\\ln(2)$",
+            "1",
+            "0"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-004",
+        "image_path": null,
+        "theme": "Équivalents",
+        "question": "Dans l'exercice 1 du TD, pour trouver un équivalent de $I_n = \\int_{0}^{1} \\ln(1+t^n) dt$, quel changement de variable est suggéré ?",
+        "answers": [
+            "$u = t^n$",
+            "$u = nt$",
+            "$u = e^t$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-005",
+        "image_path": null,
+        "theme": "Équivalents",
+        "question": "Un équivalent de $I_n = \\int_{0}^{1} \\ln(1+t^n) dt$ est de la forme $\\frac{C}{n}$. Quelle intégrale définit la constante $C$ ?",
+        "answers": [
+            "$\\int_{0}^{1} \\ln(1+u) du$",
+            "$\\int_{0}^{1} \\frac{\\ln(1+u)}{u} du$",
+            "$\\int_{0}^{+\\infty} e^{-u} du$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-006",
+        "image_path": null,
+        "theme": "Équivalents",
+        "question": "Pour déterminer un équivalent de $I_n = \\int_{0}^{1} \\frac{1}{(1+u^2)^n} du$, quel changement de variable est approprié ?",
+        "answers": [
+            "$u = t^n$",
+            "$u = t/\\sqrt{n}$",
+            "$u = \\tan(t)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-007",
+        "image_path": null,
+        "theme": "Intégrales de référence",
+        "question": "L'intégrale de Gauss $\\int_{0}^{+\\infty} e^{-u^2} du$ est égale à :",
+        "answers": [
+            "$\\sqrt{\\pi}$",
+            "$\\frac{\\sqrt{\\pi}}{2}$",
+            "$\\frac{\\pi}{2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-008",
+        "image_path": null,
+        "theme": "Intégration terme à terme",
+        "question": "Pour affirmer que $\\int_{I} \\sum u_n = \\sum \\int_{I} u_n$ avec le théorème d'intégration terme à terme, quelle condition de convergence sur les intégrales est requise ?",
+        "answers": [
+            "La série $\\sum \\int_{I} u_n$ converge",
+            "La série $\\sum \\int_{I} |u_n|$ converge",
+            "La suite $\\int_{I} u_n$ tend vers 0"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-009",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Soit $g(x) = \\int_{I} f(x,t) dt$. Pour montrer que $g$ est continue sur un intervalle $A$, il suffit de montrer la domination de $|f(x,t)|$ par une fonction intégrable $\\varphi(t)$ sur :",
+        "answers": [
+            "L'intervalle $A$ tout entier uniquement",
+            "Tout segment (compact) $K$ inclus dans $A$",
+            "Le voisinage de l'infini uniquement"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-010",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Pour appliquer la règle de Leibniz (dérivation sous le signe intégral) et montrer que $g$ est $C^1$, quelle fonction doit-on dominer par une fonction intégrable ?",
+        "answers": [
+            "La fonction $t \\mapsto f(x,t)$",
+            "La dérivée partielle $t \\mapsto \\frac{\\partial f}{\\partial x}(x,t)$",
+            "La fonction $x \\mapsto f(x,t)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-011",
+        "image_path": null,
+        "theme": "Fonction Gamma",
+        "question": "La fonction $\\Gamma(x) = \\int_{0}^{+\\infty} t^{x-1} e^{-t} dt$ est définie pour :",
+        "answers": [
+            "$x \\in \\mathbb{R}$",
+            "$x > 0$",
+            "$x \\ge 1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-012",
+        "image_path": null,
+        "theme": "Fonction Gamma",
+        "question": "Quelle est la valeur de $\\Gamma(n+1)$ pour $n \\in \\mathbb{N}$ ?",
+        "answers": [
+            "$n!$",
+            "$(n-1)!$",
+            "$\\sqrt{n\\pi}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-013",
+        "image_path": null,
+        "theme": "Fonction Gamma",
+        "question": "La fonction $\\Gamma$ est de classe :",
+        "answers": [
+            "$C^1$ seulement",
+            "$C^2$ seulement",
+            "$C^{\\infty}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-014",
+        "image_path": null,
+        "theme": "Constante d'Euler",
+        "question": "L'intégrale $\\int_{0}^{+\\infty} e^{-t} \\ln(t) dt$ est égale à :",
+        "answers": [
+            "$\\gamma$ (Constante d'Euler-Mascheroni)",
+            "$-\\gamma$",
+            "0"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-015",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "D'après l'exercice 3 du TD, l'intégrale $\\int_{0}^{+\\infty} \\frac{t}{\\cosh(t)} dt$ est égale à :",
+        "answers": [
+            "$2 \\sum_{n=0}^{+\\infty} \\frac{(-1)^n}{(2n+1)^2}$",
+            "$\\sum_{n=1}^{+\\infty} \\frac{1}{n^2}$",
+            "$\\frac{\\pi^2}{8}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-016",
+        "image_path": null,
+        "theme": "Limites d'intégrales",
+        "question": "Dans l'exercice 4 du TD, on étudie $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-t}}{t+x} dt$. Lorsque $x \\to +\\infty$, $g(x)$ est équivalent à :",
+        "answers": [
+            "$1/x$",
+            "$1/x^2$",
+            "$e^{-x}/x$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-017",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Soit $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-t} - e^{-xt}}{t} dt$ (Exercice 5). Que vaut $g'(x)$ ?",
+        "answers": [
+            "$\\int_{0}^{+\\infty} e^{-xt} dt$",
+            "$1/x$",
+            "$-e^{-x}/x$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-018",
+        "image_path": null,
+        "theme": "Méthodes",
+        "question": "Pour montrer la régularité d'une fonction définie par $g(x) = \\frac{f(x)-f(0)}{x}$, une technique classique (Ex 6) est d'écrire $g(x)$ sous la forme :",
+        "answers": [
+            "$\\int_{0}^{1} f'(xu) du$",
+            "$\\int_{0}^{x} f(t) dt$",
+            "$\\sum_{n=0}^{\\infty} f^{(n)}(0) \\frac{x^n}{n!}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-019",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Que vaut $\\int_{0}^{1} \\frac{\\ln(t)}{t-1} dt$ ?",
+        "answers": [
+            "$\\pi^2/6$",
+            "$\\pi^2/12$",
+            "1"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-020",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Que vaut $\\int_{0}^{1} \\frac{\\ln(t)}{t+1} dt$ ?",
+        "answers": [
+            "$-\\pi^2/12$",
+            "$\\pi^2/6$",
+            "$-\\pi^2/8$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-021",
+        "image_path": null,
+        "theme": "Intégration",
+        "question": "Quelle est la valeur de $\\int_{0}^{+\\infty} \\frac{\\ln(x)}{1+x^2} dx$ ?",
+        "answers": [
+            "$\\pi \\ln(2)$",
+            "0",
+            "$1/2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-022",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Si la domination $|f_n(t)| \\le \\varphi(t)$ n'est pas vérifiée, peut-on avoir convergence de l'intégrale sans interversion ?",
+        "answers": [
+            "Non, c'est impossible",
+            "Oui, la domination est une condition suffisante mais pas nécessaire",
+            "Oui, mais seulement si l'intervalle est borné"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-023",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Pour $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-xt}}{1+t^2} dt$, sur quel domaine peut-on montrer la continuité ?",
+        "answers": [
+            "$\\mathbb{R}_{+}^{*}$ uniquement",
+            "$\\mathbb{R}_{+}$",
+            "$\\mathbb{R}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-024",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Soit $g(x) = \\int_{0}^{+\\infty} \\frac{\\sin(t)}{t} e^{-xt} dt$. Quelle est l'expression de $g'(x)$ pour $x>0$ ?",
+        "answers": [
+            "$-1/(1+x^2)$",
+            "$1/(1+x^2)$",
+            "$\\arctan(x)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-025",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "L'égalité $\\int_{0}^{+\\infty} \\cos(\\sqrt{t}) e^{-t} dt = \\sum_{n=0}^{+\\infty} (-1)^n \\frac{n!}{(2n)!}$ (Ex 10) s'obtient par :",
+        "answers": [
+            "Le développement en série entière de cosinus et interversion",
+            "Un changement de variable $u = \\sqrt{t}$",
+            "Une intégration par parties répétée"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-026",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Quelle est la limite de $\\int_{1}^{\\infty} \\frac{1}{x^n + x^2} dx$ quand $n \\to +\\infty$ ?",
+        "answers": [
+            "1",
+            "0",
+            "$1/2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-027",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Quelle est la limite de $\\int_{0}^{\\infty} \\frac{e^{-5x/n}}{9+x^2} dx$ quand $n \\to +\\infty$ ?",
+        "answers": [
+            "$\\pi/6$",
+            "$\\pi/2$",
+            "0"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-028",
+        "image_path": null,
+        "theme": "Fonction Gamma",
+        "question": "La dérivée $k$-ième de $\\Gamma(x)$ est donnée par :",
+        "answers": [
+            "$\\int_{0}^{+\\infty} (\\ln t)^k t^{x-1} e^{-t} dt$",
+            "$\\int_{0}^{+\\infty} t^{x-k-1} e^{-t} dt$",
+            "$k! \\Gamma(x)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-029",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Si $\\int_{I} |u_n|$ diverge mais $\\sum u_n$ converge simplement, peut-on appliquer le théorème d'intégration terme à terme ?",
+        "answers": [
+            "Oui, si la somme est continue",
+            "Non, l'hypothèse (iii) du théorème 12 est cruciale",
+            "Seulement si l'intervalle est compact"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-030",
+        "image_path": null,
+        "theme": "Intégrales de Gauss",
+        "question": "Dans l'exercice 14, $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-x^2 t^2}}{1+t^2} dt$. Que vaut $g(0)$ ?",
+        "answers": [
+            "$\\pi/2$",
+            "1",
+            "0"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-031",
+        "image_path": null,
+        "theme": "Équations différentielles",
+        "question": "Dans l'exercice 14, la fonction $y(x) = \\int_{0}^{+\\infty} \\frac{e^{-x^2 t^2}}{1+t^2} dt$ vérifie quelle équation ?",
+        "answers": [
+            "$y' - 2xy = 2I$",
+            "$y' + 2xy = -2I$",
+            "$y'' + x^2 y = 0$"
+        ],
+        "difficulty": 5,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-032",
+        "image_path": null,
+        "theme": "Intégrales à paramètre",
+        "question": "Pour $g(x) = \\int_{0}^{1} t^x \\frac{t-1}{\\ln(t)} dt$ (Ex 13), quelle est la valeur de $g'(x)$ ?",
+        "answers": [
+            "$1/(x+2) - 1/(x+1)$",
+            "$1/(x+1)$",
+            "$\\ln(x+1)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-033",
+        "image_path": null,
+        "theme": "Intégrales à paramètre",
+        "question": "Pour $g(x) = \\int_{0}^{1} t^x \\frac{t-1}{\\ln(t)} dt$, que vaut $\\lim_{x \\to +\\infty} g(x)$ ?",
+        "answers": [
+            "0",
+            "1",
+            "$+\\infty$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-034",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Dans l'exercice 11 du cours, la domination $|(1-t^2/n)^n 1_{[0,\\sqrt{n}]}(t)| \\le e^{-t^2}$ repose sur :",
+        "answers": [
+            "Une inégalité de convexité ($1+u \\le e^u$)",
+            "La croissance de la fonction exponentielle",
+            "Les deux réponses précédentes"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-035",
+        "image_path": null,
+        "theme": "Théorème de la valeur initiale",
+        "question": "Si $Lf(p) = \\int_{0}^{+\\infty} e^{-pt} f(t) dt$, alors $\\lim_{p \\to +\\infty} p Lf(p)$ est égal à :",
+        "answers": [
+            "$\\lim_{t \\to 0^+} f(t)$",
+            "$\\lim_{t \\to +\\infty} f(t)$",
+            "$f(1)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-036",
+        "image_path": null,
+        "theme": "Théorème de la valeur finale",
+        "question": "Si $Lf(p) = \\int_{0}^{+\\infty} e^{-pt} f(t) dt$, alors $\\lim_{p \\to 0^+} p Lf(p)$ est égal à :",
+        "answers": [
+            "$\\lim_{t \\to 0^+} f(t)$",
+            "$\\lim_{t \\to +\\infty} f(t)$",
+            "0"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-037",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "La fonction $x \\mapsto \\int_{0}^{+\\infty} \\cos(t^2) e^{-xt} dt$ est définie et continue sur :",
+        "answers": [
+            "$\\mathbb{R}$",
+            "$\\mathbb{R}_{+}^{*}$",
+            "$[0, +\\infty[$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-038",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Pour montrer que $g$ est $C^k$, l'hypothèse de domination doit porter sur :",
+        "answers": [
+            "La dérivée partielle $\\frac{\\partial^k f}{\\partial x^k}$",
+            "Toutes les dérivées partielles de $0$ à $k$",
+            "Seulement la fonction $f$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-039",
+        "image_path": null,
+        "theme": "Séries de fonctions",
+        "question": "Pour la série $\\sum (-1)^n t^n \\ln(t)$ sur $]0,1]$, la convergence simple est assurée par :",
+        "answers": [
+            "La série géométrique de raison $|-t| < 1$",
+            "Le critère des séries alternées",
+            "La convergence uniforme"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-040",
+        "image_path": null,
+        "theme": "Calcul intégral",
+        "question": "Quelle est l'intégrale de $u_n(t) = -t^n \\ln(t)$ sur $[0,1]$ ?",
+        "answers": [
+            "$1/(n+1)^2$",
+            "$1/(n+1)$",
+            "$(n!)/(n+1)^n$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-041",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "La formule $\\int_{0}^{+\\infty} \\frac{x^2}{e^x - 1} dx = 2 \\sum_{n=1}^{+\\infty} \\frac{1}{n^3}$ utilise le développement :",
+        "answers": [
+            "$\\frac{1}{e^x - 1} = \\sum_{n=1}^{\\infty} e^{-nx}$",
+            "$\\frac{1}{e^x - 1} = \\sum_{n=0}^{\\infty} (-1)^n e^{-nx}$",
+            "$\\frac{1}{e^x - 1} = \\sum_{n=1}^{\\infty} \\frac{x^n}{n!}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-042",
+        "image_path": null,
+        "theme": "Intégrales à paramètre",
+        "question": "Soit $F(x) = \\int_{0}^{\\pi/2} \\frac{\\arctan(x \\tan t)}{\\tan t} dt$. Quel est son domaine de définition ?",
+        "answers": [
+            "$\\mathbb{R}$",
+            "$\\mathbb{R}_{+}$",
+            "$[-1, 1]$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-043",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Pour $F(x) = \\int_{0}^{\\pi/2} \\frac{\\arctan(x \\tan t)}{\\tan t} dt$, la dérivée $F'(x)$ est :",
+        "answers": [
+            "$\\frac{\\pi}{2(1+x)}$",
+            "$\\frac{\\pi}{2(1+|x|)}$",
+            "$\\frac{\\pi}{2(1+x^2)}$"
+        ],
+        "difficulty": 5,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-044",
+        "image_path": null,
+        "theme": "Convergence",
+        "question": "L'intégrale $I = \\int_{0}^{+\\infty} \\frac{\\ln x}{1+x^2} dx$ converge car :",
+        "answers": [
+            "En $0$, $\\ln x = o(1/\\sqrt{x})$ et en $+\\infty$, $\\ln x / x^2 = o(1/x^{3/2})$",
+            "La fonction est prolongeable par continuité en $0$",
+            "Elle est égale à $\\arctan(\\infty)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-045",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Dans l'exercice 9 du cours, pourquoi l'intégrale des $f_n(t) = n^2 t^{n-1}$ sur $[0,1]$ ne tend pas vers l'intégrale de la limite simple ?",
+        "answers": [
+            "La limite simple n'est pas continue",
+            "Il n'existe pas de fonction de domination $\\varphi$ intégrable",
+            "L'intervalle n'est pas ouvert"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-046",
+        "image_path": null,
+        "theme": "Dérivation complexe",
+        "question": "Si $f(x) = e^{ixt}$, alors sa dérivée par rapport à $x$ est :",
+        "answers": [
+            "$it e^{ixt}$",
+            "$ix e^{ixt}$",
+            "$i e^{ixt}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-047",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Dans l'exercice 20 du cours, la série $\\sum \\int_{1}^{+\\infty} |v_n(t)| dt$ diverge. Pourtant, on peut intervertir car :",
+        "answers": [
+            "Le reste $R_n$ de la série tend vers 0 en intégrale par convergence dominée",
+            "La série converge absolument",
+            "On ne peut en fait pas intervertir"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-048",
+        "image_path": null,
+        "theme": "Fonction Gamma",
+        "question": "Quelle limite définit $\\Gamma(x)$ dans l'exercice 8 du TD ?",
+        "answers": [
+            "$\\lim_{n\\to\\infty} \\int_{0}^{n} t^{x-1} (1-t/n)^n dt$",
+            "$\\lim_{n\\to\\infty} \\int_{0}^{1} t^{x-1} (1-t)^n dt$",
+            "$\\lim_{n\\to\\infty} \\sum_{k=1}^n k^{x-1} e^{-k}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-049",
+        "image_path": null,
+        "theme": "Constante d'Euler",
+        "question": "La constante $\\gamma$ est définie par la limite de :",
+        "answers": [
+            "$\\sum_{k=1}^n \\frac{1}{k} - \\ln(n)$",
+            "$\\ln(n) - \\sum_{k=1}^n \\frac{1}{k}$",
+            "$\\sum_{k=1}^n \\frac{1}{k} + \\ln(n)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-050",
+        "image_path": null,
+        "theme": "Dérivées partielles",
+        "question": "Pour $f(x,y) = 3x^2y - 5xy + 2$, que vaut $\\frac{\\partial f}{\\partial x}$ ?",
+        "answers": [
+            "$6xy - 5y$",
+            "$3x^2 - 5x$",
+            "$6x - 5$"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-051",
+        "image_path": null,
+        "theme": "Dérivées partielles",
+        "question": "Pour $f(x,y) = 3x^2y - 5xy + 2$, que vaut $\\frac{\\partial f}{\\partial y}$ ?",
+        "answers": [
+            "$3x^2 - 5x$",
+            "$3x^2y - 5xy$",
+            "$6xy - 5y$"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-052",
+        "image_path": null,
+        "theme": "Domination",
+        "question": "Pour $g(x) = \\int_{0}^{\\infty} \\frac{e^{-xt}}{\\sqrt{t+1}} dt$, on peut dominer sur $[a, +\\infty[$ ($a>0$) par :",
+        "answers": [
+            "$\\varphi(t) = \\frac{e^{-at}}{\\sqrt{t+1}}$",
+            "$\\varphi(t) = \\frac{1}{\\sqrt{t+1}}$",
+            "$\\varphi(t) = e^{-at}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-053",
+        "image_path": null,
+        "theme": "Intégrales à paramètre",
+        "question": "Pour $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-t}-e^{-xt}}{t} dt$, la valeur finale de $g(x)$ est :",
+        "answers": [
+            "$\\ln(x)$",
+            "$e^{-x}$",
+            "$1/x$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-054",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Dans le théorème 30 (limites), si $\\lim_{\\lambda \\to \\lambda_0} f(\\lambda, t) = F(t)$, alors $\\lim \\int f = \\int F$ sous réserve de :",
+        "answers": [
+            "Domination de $|f(\\lambda, t)|$ par une fonction intégrable",
+            "Continuité de $F$",
+            "Convergence uniforme de $f$ vers $F$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-055",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Quelle est la limite de $\\int_{1}^{\\infty} \\frac{-3}{5+t^{2n}} dt$ quand $n \\to +\\infty$ ?",
+        "answers": [
+            "0",
+            "$-3/5$",
+            "$-3$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-056",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Pour $I_n = \\int_{0}^{\\sqrt{n}} (1-t^2/n)^n dt$, la limite est :",
+        "answers": [
+            "$\\sqrt{\\pi}/2$",
+            "$\\sqrt{\\pi}$",
+            "1"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-057",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "L'exercice 13 du cours montre que $\\int_{0}^{1} \\frac{\\ln(t)}{t-1} dt = \\sum_{n=1}^{+\\infty} \\frac{1}{n^2}$. Quel est le terme général $u_n(t)$ de la série utilisée ?",
+        "answers": [
+            "$t^n \\ln(t)$",
+            "$-t^n \\ln(t)$",
+            "$\\frac{t^n}{n}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-058",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Pour $\\int_{0}^{+\\infty} \\frac{x^2}{e^x-1} dx$, l'intégrabilité de $u_n(x) = x^2 e^{-nx}$ sur $]0, +\\infty[$ est assurée par :",
+        "answers": [
+            "La règle du $x^2 f(x)$ à l'infini",
+            "La continuité en 0",
+            "Les deux réponses précédentes"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-059",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Si $f$ est continue sur $A \\times I$, l'intégrale $\\int_I f(x,t) dt$ est continue dès qu'il y a domination locale. Cette affirmation est :",
+        "answers": [
+            "Vraie",
+            "Fausse, il faut une domination globale",
+            "Vraie seulement si $I$ est compact"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-060",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Peut-on intervertir dérivée et intégrale si la dérivée partielle n'est pas dominée ?",
+        "answers": [
+            "Généralement non, c'est un risque d'erreur",
+            "Oui, si la fonction est $C^{\\infty}$",
+            "Oui, si l'intervalle est fini"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-061",
+        "image_path": null,
+        "theme": "Fonction Gamma",
+        "question": "Pour montrer que $\\Gamma$ est $C^{\\infty}$, on domine $\\frac{\\partial^k}{\\partial x^k} (t^{x-1} e^{-t})$. Sur quel type d'intervalle pour $x$ le fait-on ?",
+        "answers": [
+            "Sur $]0, +\\infty[$ directement",
+            "Sur tout segment $[a, b] \\subset ]0, +\\infty[$",
+            "Au voisinage de $+\\infty$ uniquement"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-062",
+        "image_path": null,
+        "theme": "Calcul intégral",
+        "question": "Soit $I(a) = \\int_{0}^{+\\infty} \\frac{\\ln x}{(1+x^2)(a^2+x^2)} dx$. Si $a=1$, on retrouve $I(1) = \\int_{0}^{+\\infty} \\frac{\\ln x}{(1+x^2)^2} dx$. Sa valeur est :",
+        "answers": [
+            "0",
+            "$\\pi/4$",
+            "$-1/2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-063",
+        "image_path": null,
+        "theme": "Intégrales de Gauss",
+        "question": "La fonction $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-x^2 t^2}}{1+t^2} dt$ tend vers quoi quand $x \\to +\\infty$ ?",
+        "answers": [
+            "0",
+            "$\\pi/2$",
+            "$\\sqrt{\\pi}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-064",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Dans l'exercice 8 du cours, $\\frac{1+t^n}{1+t^{n+2}}$ converge simplement vers quoi sur $]1, +\\infty[$ ?",
+        "answers": [
+            "$1/t^2$",
+            "1",
+            "0"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-065",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Toujours dans l'exercice 8 du cours, $\\int_{1}^{\\infty} \\frac{1+t^n}{1+t^{n+2}} dt$ tend vers :",
+        "answers": [
+            "$\\int_{1}^{\\infty} \\frac{1}{t^2} dt = 1$",
+            "0",
+            "$+\\infty$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-066",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Pour la série $\\sum \\frac{e^{-nt}}{\\sqrt{n}}$ (Ex 14), pourquoi peut-on intégrer terme à terme sur $]0, +\\infty[$ ?",
+        "answers": [
+            "La série $\\sum \\int_{0}^{\\infty} \\frac{e^{-nt}}{\\sqrt{n}} dt = \\sum \\frac{1}{n^{3/2}}$ converge",
+            "La série converge normalement sur $]0, +\\infty[$",
+            "Les fonctions sont positives"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-067",
+        "image_path": null,
+        "theme": "Constante d'Euler",
+        "question": "D'après l'exercice 9 du TD, $I_n = \\int_{0}^{n} (1-t/n)^{n-1} \\ln(t) dt$ est égal à :",
+        "answers": [
+            "$\\ln(n) - \\sum_{k=1}^n \\frac{1}{k}$",
+            "$\\sum_{k=1}^n \\frac{1}{k} - \\ln(n)$",
+            "$1/n$"
+        ],
+        "difficulty": 5,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-068",
+        "image_path": null,
+        "theme": "Limites d'intégrales",
+        "question": "Dans l'exercice 32 du cours, on étudie $f_{\\lambda}(t) = \\frac{1}{\\sqrt{1+t^2}\\sqrt{\\lambda^2+t^2}}$. Quelle est la limite de son intégrale quand $\\lambda \\to +\\infty$ ?",
+        "answers": [
+            "0",
+            "$+\\infty$",
+            "$\\pi/2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-069",
+        "image_path": null,
+        "theme": "Limites d'intégrales",
+        "question": "Pour l'exercice 32, quelle domination utilise-t-on pour $\\lambda \\in [1, +\\infty[$ ?",
+        "answers": [
+            "$f_{\\lambda}(t) \\le \\frac{1}{1+t^2}$",
+            "$f_{\\lambda}(t) \\le \\frac{1}{\\sqrt{1+t^2}}$",
+            "$f_{\\lambda}(t) \\le 1/\\lambda$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-070",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Soit $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-xt}}{\\sqrt{t+1}} dt$. Le domaine de définition de $g$ est :",
+        "answers": [
+            "$\\mathbb{R}_{+}^{*}$",
+            "$\\mathbb{R}_{+}$",
+            "$]1, +\\infty[$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-071",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Dans l'exercice 4 du cours, quelle est la limite de $f_n(t) = \\frac{1}{1+t^2+t^n e^{-t}}$ sur $[0,1]$ ?",
+        "answers": [
+            "$\\frac{1}{1+t^2}$",
+            "0",
+            "1"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-072",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Dans l'exercice 4 du cours, quelle est la limite de $f_n(t) = \\frac{1}{1+t^2+t^n e^{-t}}$ sur $]1, +\\infty[$ ?",
+        "answers": [
+            "0",
+            "$\\frac{1}{1+t^2}$",
+            "1"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-073",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Pour $g(x) = \\int_{0}^{\\infty} \\frac{e^{-xt}}{1+t^3} dt$, $g$ est $C^1$ sur $[0, +\\infty[$. Quelle est la domination pour $g'$ sur $[0, +\\infty[$ ?",
+        "answers": [
+            "Il n'y en a pas sur $[0, +\\infty[$, il faut se placer sur $[a, +\\infty[$ avec $a>0$",
+            "$\\varphi(t) = \\frac{t}{1+t^3}$",
+            "$\\varphi(t) = \\frac{1}{1+t^3}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-074",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Pourquoi la série $\\sum \\frac{(-1)^n}{3n+2}$ converge-t-elle (Ex 20 cours) ?",
+        "answers": [
+            "Critère spécial des séries alternées",
+            "Convergence absolue",
+            "Règle de d'Alembert"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-075",
+        "image_path": null,
+        "theme": "Intégrales à paramètre",
+        "question": "L'intégrale $\\int_{0}^{+\\infty} \\frac{\\sin t}{t} dt$ est :",
+        "answers": [
+            "Semi-convergente",
+            "Absolument convergente",
+            "Divergente"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-076",
+        "image_path": null,
+        "theme": "Méthodes",
+        "question": "Pour calculer $\\int_{0}^{+\\infty} \\frac{\\sin t}{t} dt$, on utilise souvent la fonction auxiliaire :",
+        "answers": [
+            "$g(x) = \\int_{0}^{+\\infty} \\frac{\\sin t}{t} e^{-xt} dt$",
+            "$g(x) = \\int_{0}^{+\\infty} \\frac{\\cos t}{t} e^{-xt} dt$",
+            "$g(x) = \\int_{0}^{+\\infty} \\sin(xt) dt$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-077",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "L'exercice 18 du cours montre un piège où $\\sum \\int u_n$ converge mais $\\int \\sum u_n$ n'a pas de sens car :",
+        "answers": [
+            "La somme n'est pas intégrable",
+            "La série ne converge pas simplement",
+            "Les fonctions ne sont pas continues"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-078",
+        "image_path": null,
+        "theme": "Régularité",
+        "question": "Si $f(x,t)$ est $C^{\\infty}$ par rapport à $x$ et que toutes ses dérivées partielles sont dominées localement, alors $g(x) = \\int f(x,t) dt$ est :",
+        "answers": [
+            "$C^{\\infty}$",
+            "$C^k$ pour un certain $k$",
+            "Analytique"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-079",
+        "image_path": null,
+        "theme": "Intégration",
+        "question": "Que vaut $\\int_{0}^{+\\infty} \\frac{1}{1+t^3} dt$ ?",
+        "answers": [
+            "$\\frac{2\\pi}{3\\sqrt{3}}$",
+            "$\\pi/3$",
+            "$\\frac{\\pi}{\\sqrt{3}}$"
+        ],
+        "difficulty": 5,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-080",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "D'après l'exercice 33 du cours, $\\lim_{x \\to +\\infty} x g(x)$ avec $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-t}}{t+x} dt$ vaut :",
+        "answers": [
+            "1",
+            "0",
+            "$e^{-1}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-081",
+        "image_path": null,
+        "theme": "Changement de variable",
+        "question": "Dans le calcul de la valeur initiale (Ex 34), on pose le changement de variable :",
+        "answers": [
+            "$u = pt$",
+            "$u = t/p$",
+            "$u = e^t$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-082",
+        "image_path": null,
+        "theme": "Dérivées partielles",
+        "question": "Pour $f(x,y) = \\frac{3x^2y}{x^2+y^2}$ (Ex 36), que vaut $\\frac{\\partial f}{\\partial x}$ au point $(x,y)$ ?",
+        "answers": [
+            "$\\frac{6xy^3}{(x^2+y^2)^2}$",
+            "$\\frac{6x y (x^2+y^2) - 3x^2y (2x)}{(x^2+y^2)^2}$",
+            "$\\frac{3x^2}{x^2+y^2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-083",
+        "image_path": null,
+        "theme": "Intégrales à paramètre",
+        "question": "La fonction $g(x) = \\int_{-\\infty}^{+\\infty} e^{-t^2} e^{ixt} dt$ (Ex 47) est la :",
+        "answers": [
+            "Transformée de Fourier de la Gaussienne",
+            "Transformée de Laplace de la Gaussienne",
+            "Fonction caractéristique d'une loi uniforme"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-084",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "La dérivée de la transformée de Fourier $g(x) = \\int_{-\\infty}^{+\\infty} e^{-t^2} e^{ixt} dt$ vérifie :",
+        "answers": [
+            "$g'(x) = -\\frac{x}{2} g(x)$",
+            "$g'(x) = x g(x)$",
+            "$g'(x) = -x^2 g(x)$"
+        ],
+        "difficulty": 5,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-085",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Une suite de fonctions $f_n$ converge simplement vers $f$. Si $|f_n| \\le \\varphi$ avec $\\int \\varphi < +\\infty$, alors $\\int |f_n - f| \\to$ ?",
+        "answers": [
+            "0",
+            "$\\int \\varphi$",
+            "$\\int f$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-086",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Que vaut la somme $\\sum_{n=0}^{+\\infty} \\frac{(-1)^n}{2n+1}$ ?",
+        "answers": [
+            "$\\pi/4$",
+            "$\\ln(2)$",
+            "$\\pi^2/6$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-087",
+        "image_path": null,
+        "theme": "Intégrales à paramètre",
+        "question": "Dans l'exercice 11 du TD, pour calculer $F(x)$, on montre que $F$ est :",
+        "answers": [
+            "Constante sur $]0, +\\infty[$",
+            "Nulle partout",
+            "Une fonction linéaire"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-088",
+        "image_path": null,
+        "theme": "Calcul intégral",
+        "question": "L'intégrale $\\int_{0}^{1} \\frac{t-1}{\\ln t} dt$ est égale à :",
+        "answers": [
+            "$\\ln 2$",
+            "1",
+            "$\\pi/2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-089",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Quelle est la condition nécessaire sur $f$ pour que $x \\mapsto \\int_{0}^{x} f(x,t) dt$ soit dérivable (cas général hors cours direct) ?",
+        "answers": [
+            "$f$ doit être $C^1$ en les deux variables",
+            "$f$ doit être continue par morceaux",
+            "$f$ doit être nulle en $x$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-090",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "$\\lim_{n\\to\\infty} \\int_{0}^{1} \\frac{dt}{1+t^n}$ est égale à :",
+        "answers": [
+            "1",
+            "$1/2$",
+            "$\\ln 2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-091",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "$\\lim_{n\\to\\infty} \\int_{0}^{+\\infty} \\frac{dt}{1+t^n}$ est égale à :",
+        "answers": [
+            "1",
+            "0",
+            "$+\\infty$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-092",
+        "image_path": null,
+        "theme": "Fonction Gamma",
+        "question": "La relation $\\Gamma(x+1) = x \\Gamma(x)$ se démontre par :",
+        "answers": [
+            "Intégration par parties",
+            "Changement de variable",
+            "Dérivation sous le signe intégral"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-093",
+        "image_path": null,
+        "theme": "Domination",
+        "question": "Pour dominer $f(x,t) = e^{-x^2 t^2}$, si $x \\in [a, b]$ avec $a>0$, on peut utiliser :",
+        "answers": [
+            "$\\varphi(t) = e^{-a^2 t^2}$",
+            "$\\varphi(t) = e^{-b^2 t^2}$",
+            "$\\varphi(t) = 1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-094",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Quelle est la valeur de $\\sum_{n=1}^{+\\infty} \\frac{1}{n^2}$ ?",
+        "answers": [
+            "$\\pi^2/6$",
+            "$\\pi^2/8$",
+            "1"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-095",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Quelle est la valeur de $\\sum_{n=0}^{+\\infty} \\frac{(-1)^n}{(n+1)^2}$ ?",
+        "answers": [
+            "$\\pi^2/12$",
+            "$\\pi^2/6$",
+            "$\\ln 2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-096",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Si $f(x,t)$ est continue sur $A \\times I$, et que l'intégrale converge simplement, $g$ est-elle forcément continue ?",
+        "answers": [
+            "Non, l'exemple $f_n$ du cours montre qu'il faut une domination",
+            "Oui, la continuité se transmet toujours",
+            "Seulement si $A$ est un segment"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-097",
+        "image_path": null,
+        "theme": "Calcul intégral",
+        "question": "L'intégrale de Wallis $W_n = \\int_{0}^{\\pi/2} \\sin^n t dt$ est liée à la fonction Gamma par :",
+        "answers": [
+            "Une formule faisant intervenir $\\Gamma(n/2)$",
+            "Elle n'a aucun lien",
+            "Elle est égale à $\\Gamma(n)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-098",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Pour appliquer le TDC sur un intervalle $I$ dépendant de $n$, on :",
+        "answers": [
+            "Prolonge les fonctions par 0 pour travailler sur un intervalle fixe",
+            "Ne peut pas appliquer le TDC",
+            "Doit utiliser le théorème de Fubini"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-099",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Si $g(x) = \\int_{0}^{+\\infty} e^{-t^2} \\cos(xt) dt$, alors $g$ vérifie :",
+        "answers": [
+            "$2g'(x) + xg(x) = 0$",
+            "$g'(x) + xg(x) = 0$",
+            "$g''(x) - xg(x) = 0$"
+        ],
+        "difficulty": 5,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-100",
+        "image_path": null,
+        "theme": "Intégrales de Gauss",
+        "question": "La valeur de $\\int_{-\\infty}^{+\\infty} e^{-t^2} dt$ est :",
+        "answers": [
+            "$\\sqrt{\\pi}$",
+            "$\\pi$",
+            "$1/2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    }
+]

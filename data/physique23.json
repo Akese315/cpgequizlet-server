@@ -1,0 +1,1502 @@
+[
+    {
+        "uuid": "disp-001",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la définition d'un milieu dispersif ?",
+        "answers": [
+            "La vitesse de groupe dépend de la fréquence.",
+            "La vitesse de phase dépend de la pulsation $\\omega$.",
+            "L'onde perd de l'énergie au cours de sa propagation."
+        ],
+        "difficulty": 1,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-002",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle relation définit la vitesse de phase $v_{\\varphi}$ ?",
+        "answers": [
+            "$v_{\\varphi} = \\frac{dk}{d\\omega}$",
+            "$v_{\\varphi} = \\omega \\cdot k$",
+            "$v_{\\varphi} = \\frac{\\omega}{\\mathfrak{Re}(k)}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-003",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle relation définit la vitesse de groupe $v_g$ ?",
+        "answers": [
+            "$v_g = \\frac{d\\omega}{dk}$",
+            "$v_g = \\frac{\\omega}{k}$",
+            "$v_g = \\frac{1}{\\sqrt{\\epsilon_0 \\mu_0}}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-004",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans un milieu non absorbant, que représente physiquement la vitesse de groupe ?",
+        "answers": [
+            "La vitesse de propagation des surfaces d'onde.",
+            "La vitesse de propagation de l'énergie et de l'information.",
+            "La vitesse de vibration des molécules du milieu."
+        ],
+        "difficulty": 2,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-005",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Skin_depth.svg",
+        "theme": "électromagnétisme",
+        "question": "Dans un conducteur ohmique, comment varie l'amplitude d'une onde plane pseudo-progressive ?",
+        "answers": [
+            "Elle décroît linéairement avec la distance.",
+            "Elle reste constante si le métal est parfait.",
+            "Elle décroît exponentiellement selon $e^{-z/\\delta}$."
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-006",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression de l'épaisseur de peau $\\delta$ dans un métal de conductivité $\\gamma$ ?",
+        "answers": [
+            "$\\delta = \\sqrt{\\frac{2}{\\omega \\mu_0 \\gamma}}$",
+            "$\\delta = \\sqrt{\\frac{\\omega \\mu_0 \\gamma}{2}}$",
+            "$\\delta = \\frac{1}{\\mu_0 \\gamma c}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-007",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour le cuivre à 50 Hz, quel est l'ordre de grandeur de l'épaisseur de peau $\\delta$ ?",
+        "answers": [
+            "9 mm",
+            "65 $\\mu m$",
+            "1 m"
+        ],
+        "difficulty": 3,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-008",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pourquoi la charge volumique $\\rho$ est-elle considérée comme nulle dans un métal à basse fréquence ?",
+        "answers": [
+            "Le métal est naturellement isolant.",
+            "Le temps de relaxation $\\tau = \\epsilon_0 / \\gamma$ est extrêmement court ($\\sim 10^{-18}$ s).",
+            "Les électrons ne bougent pas."
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-009",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans l'approximation des basses fréquences (métal), quel terme néglige-t-on devant le courant de conduction ?",
+        "answers": [
+            "Le courant de convection.",
+            "Le courant de déplacement $\\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$.",
+            "Le champ magnétique."
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-010",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est la structure de l'équation de propagation de $\\vec{E}$ dans un métal ?",
+        "answers": [
+            "Une équation de d'Alembert (onde pure).",
+            "Une équation de diffusion (type chaleur).",
+            "Une équation de Schrödinger."
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-011",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un plasma, comment définit-on la pulsation plasma $\\omega_P$ ?",
+        "answers": [
+            "$\\omega_P = \\sqrt{\\frac{n_0 e^2}{m \\epsilon_0}}$",
+            "$\\omega_P = \\frac{n_0 e^2}{m c}$",
+            "$\\omega_P = \\sqrt{\\frac{m \\epsilon_0}{n_0 e^2}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-012",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Que se passe-t-il pour une onde arrivant sur un plasma avec $\\omega < \\omega_P$ ?",
+        "answers": [
+            "L'onde est totalement transmise sans perte.",
+            "L'onde est évanescente (réflexion totale, pas de transmission d'énergie moyenne).",
+            "L'onde est absorbée par effet Joule."
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-013",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un plasma, pour $\\omega > \\omega_P$, la relation $v_{\\varphi} \\cdot v_g = c^2$ est-elle vérifiée ?",
+        "answers": [
+            "Oui.",
+            "Non, cela n'arrive que dans le vide.",
+            "Seulement à très basse fréquence."
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-014",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est la valeur de l'indice de réfraction $n$ d'un plasma pour $\\omega > \\omega_P$ ?",
+        "answers": [
+            "$n = \\sqrt{1 + \\frac{\\omega_P^2}{\\omega^2}}$",
+            "$n = \\sqrt{1 - \\frac{\\omega_P^2}{\\omega^2}}$",
+            "$n = 1 - \\frac{\\omega_P}{\\omega}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-015",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pourquoi un plasma est-il dit 'transparent' pour $\\omega > \\omega_P$ ?",
+        "answers": [
+            "Car $\\vec{j}$ et $\\vec{E}$ sont en phase.",
+            "Car la conductivité complexe est imaginaire pure, donc $\\langle \\vec{j} \\cdot \\vec{E} \\rangle = 0$.",
+            "Car il n'y a pas d'électrons libres."
+        ],
+        "difficulty": 3,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-016",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/1/14/Heat_diffusion.svg",
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'équation de diffusion thermique pour un milieu unidimensionnel sans source ?",
+        "answers": [
+            "$\\frac{\\partial T}{\\partial t} = D_{th} \\frac{\\partial^2 T}{\\partial x^2}$",
+            "$\\frac{\\partial^2 T}{\\partial t^2} = D_{th} \\frac{\\partial^2 T}{\\partial x^2}$",
+            "$\\frac{\\partial T}{\\partial t} + v \\frac{\\partial T}{\\partial x} = 0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-017",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Comment définit-on la diffusivité thermique $D_{th}$ ?",
+        "answers": [
+            "$D_{th} = \\lambda \\cdot \\rho \\cdot c$",
+            "$D_{th} = \\frac{\\lambda}{\\rho c}$",
+            "$D_{th} = \\frac{\\rho c}{\\lambda}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-018",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une onde thermique de pulsation $\\omega$, quelle est l'expression de la distance de pénétration $\\delta$ ?",
+        "answers": [
+            "$\\delta = \\sqrt{\\frac{2 D_{th}}{\\omega}}$",
+            "$\\delta = \\sqrt{\\frac{D_{th}}{\\omega}}$",
+            "$\\delta = \\frac{2 D_{th}}{\\omega}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-019",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quel est le déphasage entre la surface ($x=0$) et la profondeur $x$ pour une onde thermique ?",
+        "answers": [
+            "$\\phi = \\omega t$",
+            "$\\phi = -x/\\delta$",
+            "$\\phi = \\pi/2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-020",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Si la température de surface oscille avec une période de 24h, l'amplitude thermique à $x = 3\\delta$ est :",
+        "answers": [
+            "Réduite d'un facteur $e^{-3} \\approx 0,05$.",
+            "Identique à celle de la surface.",
+            "Nulle."
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-021",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 1: Quelle est l'orientation optimale d'un cadre pour capter une onde plane de champ $\\vec{B}$ ?",
+        "answers": [
+            "Le plan du cadre doit être parallèle à $\\vec{B}$.",
+            "Le plan du cadre doit être perpendiculaire à $\\vec{B}$.",
+            "Le plan du cadre doit être incliné à $45^\\circ$."
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-022",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 1: La f.e.m. efficace $U_{eff}$ aux bornes d'un cadre de $N$ spires de section $S$ est proportionnelle à :",
+        "answers": [
+            "La fréquence $f$.",
+            "Le carré de la fréquence $f^2$.",
+            "L'inverse de la fréquence $1/f$."
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-023",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/0/05/Coaxial_cable_cutaway.svg",
+        "theme": "électromagnétisme",
+        "question": "Ex 2: Dans un câble coaxial vide, quelle est la dépendance spatiale radiale du champ électrique $\\vec{E} = f(r) \\cos(\\omega t - kz) \\vec{u}_r$ ?",
+        "answers": [
+            "$f(r) \\propto r$",
+            "$f(r) \\propto 1/r$",
+            "$f(r) \\propto 1/r^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-024",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 2: Pour l'onde dans le câble coaxial (mode TEM), la relation de dispersion est :",
+        "answers": [
+            "$\\omega = k c$",
+            "$\\omega^2 = k^2 c^2 + \\omega_c^2$",
+            "$\\omega = k^2 D$"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-025",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 3: Entre deux plans conducteurs $z=0$ et $z=a$, quelle est la condition de propagation sur $\\omega$ ?",
+        "answers": [
+            "$\\omega > \\frac{\\pi c}{a}$",
+            "$\\omega < \\frac{\\pi c}{a}$",
+            "Toutes les fréquences passent."
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-026",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 3: Dans ce guide d'onde, comment se compare la vitesse de phase $v_{\\varphi}$ à $c$ ?",
+        "answers": [
+            "$v_{\\varphi} < c$",
+            "$v_{\\varphi} = c$",
+            "$v_{\\varphi} > c$"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-027",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 5: Quelle est la valeur moyenne temporelle du vecteur de Poynting $\\langle \\vec{\\Pi} \\rangle$ à la surface d'un métal ($z=0$) ?",
+        "answers": [
+            "$\\frac{E_0^2}{4} \\sqrt{\\frac{2 \\gamma}{\\mu_0 \\omega}} \\vec{u}_z$",
+            "$\\frac{E_0^2}{2 \\mu_0 c} \\vec{u}_z$",
+            "$\\vec{0}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Exercices : Métal",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-028",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 5: Le déphasage entre le champ électrique et le champ magnétique dans un conducteur ohmique est de :",
+        "answers": [
+            "$0$ (en phase)",
+            "$\\pi/4$",
+            "$\\pi/2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices : Métal",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-029",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 6: Pourquoi une plaque de métal bloque-t-elle les ondes de téléphone (2 GHz) ?",
+        "answers": [
+            "Car l'épaisseur de peau ($\\sim 2 \\mu m$) est très inférieure à l'épaisseur de la plaque.",
+            "Car le métal réfléchit l'onde par diffraction.",
+            "Car le téléphone est en court-circuit."
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices : Métal",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-030",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 7: Dans une plaque de cuisson à induction, la puissance dissipée est proportionnelle à :",
+        "answers": [
+            "La fréquence $f$.",
+            "Le carré de la fréquence $f^2$ (via $\\omega^2 \\delta$).",
+            "L'inverse de la fréquence $1/f$."
+        ],
+        "difficulty": 4,
+        "chapter": "Exercices : Induction",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-031",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la relation entre $v_{\\varphi}$ et $v_g$ pour une corde vibrante avec frottements fluides ?",
+        "answers": [
+            "$v_g < v_{\\varphi}$",
+            "$v_g > v_{\\varphi}$",
+            "$v_g = v_{\\varphi}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-032",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Un paquet d'ondes possède une extension temporelle $\\Delta t$. Sa largeur spectrale $\\Delta f$ est environ :",
+        "answers": [
+            "$1/\\Delta t$",
+            "$\\Delta t$",
+            "$\\sqrt{\\Delta t}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-033",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'approximation d'un conducteur parfait correspond à :",
+        "answers": [
+            "$\\gamma \\to 0$",
+            "$\\gamma \\to \\infty$",
+            "$\\delta \\to \\infty$"
+        ],
+        "difficulty": 1,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-034",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un métal parfait, le champ électromagnétique intérieur est :",
+        "answers": [
+            "Uniforme et constant.",
+            "Nul.",
+            "Oscillant sans atténuation."
+        ],
+        "difficulty": 1,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-035",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'effet de peau implique que le courant alternatif circule :",
+        "answers": [
+            "Au centre du conducteur.",
+            "Uniquement à la surface sur une épaisseur $\\delta$.",
+            "De manière uniforme dans toute la section."
+        ],
+        "difficulty": 1,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-036",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle force est négligée devant la force électrique pour un électron dans un conducteur (vitesse non relativiste) ?",
+        "answers": [
+            "La force gravitationnelle.",
+            "La force magnétique $q\\vec{v} \\wedge \\vec{B}$.",
+            "La force de Coriolis."
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-037",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un plasma, si $\\omega \\gg \\omega_P$, le milieu se comporte comme :",
+        "answers": [
+            "Un miroir.",
+            "Le vide (indice $n \\to 1$).",
+            "Un isolant parfait."
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-038",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'ionosphère réfléchit les ondes radio dont la fréquence est :",
+        "answers": [
+            "Inférieure à $f_P \\approx 1$ MHz.",
+            "Supérieure à 100 GHz.",
+            "Toutes les ondes radios."
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-039",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour communiquer avec un satellite, il faut utiliser une fréquence :",
+        "answers": [
+            "$f < f_P$",
+            "$f > f_P$",
+            "$f = f_P$"
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-040",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cas évanescent ($\\omega < \\omega_P$), le vecteur de Poynting moyen est :",
+        "answers": [
+            "$\\\\vec{0}$",
+            "Constant et non nul.",
+            "Décroissant linéairement."
+        ],
+        "difficulty": 3,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-041",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "La température moyenne $T_0$ du sol est-elle affectée par l'onde thermique sinusoïdale en profondeur ?",
+        "answers": [
+            "Oui, elle augmente.",
+            "Non, elle reste constante.",
+            "Elle diminue exponentiellement."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-042",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une variation annuelle (365 jours), l'épaisseur de peau thermique $\\delta$ est d'environ :",
+        "answers": [
+            "11 cm",
+            "2,1 m",
+            "10 m"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-043",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Si $k$ est complexe, $k = k_1 + i k_2$, et que l'onde se propage vers $x>0$, on doit avoir :",
+        "answers": [
+            "$k_2 > 0$ pour éviter la divergence.",
+            "$k_2 < 0$ pour avoir une atténuation.",
+            "$k_1 = 0$."
+        ],
+        "difficulty": 3,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-044",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle vitesse est limitée par $c$ dans le vide selon la relativité ?",
+        "answers": [
+            "La vitesse de phase.",
+            "La vitesse de groupe.",
+            "Les deux."
+        ],
+        "difficulty": 2,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-045",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un plasma, l'énergie est transportée à la vitesse :",
+        "answers": [
+            "$v_{\\varphi}$",
+            "$v_g$",
+            "$c$"
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-046",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'unité de la conductivité $\\gamma$ est :",
+        "answers": [
+            "$\\Omega \\cdot m$",
+            "$\\Omega^{-1} \\cdot m^{-1}$ (ou $S \\cdot m^{-1}$)",
+            "$V \\cdot m^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-047",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans l'ARQS, l'équation de Maxwell-Ampère dans un conducteur s'écrit :",
+        "answers": [
+            "$\\vec{rot} \\vec{B} = \\mu_0 \\vec{j}$",
+            "$\\vec{rot} \\vec{B} = \\mu_0 \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$",
+            "$\\vec{div} \\vec{B} = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-048",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Le vecteur d'onde complexe dans un métal est $\\underline{k} = \\frac{1-i}{\\delta}$. Cela implique :",
+        "answers": [
+            "Une propagation sans atténuation.",
+            "Un déphasage de l'onde entre deux points.",
+            "Une onde purement stationnaire."
+        ],
+        "difficulty": 3,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-049",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "La puissance dissipée par effet Joule volumique est donnée par :",
+        "answers": [
+            "$\\vec{j} \\cdot \\vec{E}$",
+            "$\\frac{1}{2} \\epsilon_0 E^2$",
+            "$\\vec{E} \\wedge \\vec{B} / \\mu_0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-050",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La relation de dispersion pour une corde avec frottements est $\\omega^2 - i \\frac{\\lambda}{\\mu} \\omega = \\frac{T}{\\mu} k^2$. Si $\\lambda = 0$, on retrouve :",
+        "answers": [
+            "$\\omega = k \\sqrt{T/\\mu}$",
+            "$\\omega = k^2 D$",
+            "$\\omega = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-051",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un plasma, les ions sont supposés immobiles car :",
+        "answers": [
+            "Ils sont fixés dans un réseau cristallin.",
+            "Leur masse $M$ est très supérieure à celle des électrons $m$.",
+            "Ils ne portent pas de charge."
+        ],
+        "difficulty": 1,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-052",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Le modèle du plasma est 'dilué' si :",
+        "answers": [
+            "On néglige les collisions entre particules.",
+            "Le gaz est à très haute pression.",
+            "La température est nulle."
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-053",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Un battement entre deux ondes de pulsations $\\omega_1$ et $\\omega_2$ produit une enveloppe de pulsation :",
+        "answers": [
+            "$(\\omega_1 + \\omega_2)/2$",
+            "$(\\omega_2 - \\omega_1)/2$",
+            "$\\sqrt{\\omega_1 \\omega_2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-054",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "L'équation caractéristique $r^2 = i \\omega / D_{th}$ donne pour racines :",
+        "answers": [
+            "$r = \\pm \\frac{1+i}{\\delta}$",
+            "$r = \\pm \\frac{1}{\\delta}$",
+            "$r = i \\omega$"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-055",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le vide, la relation de dispersion est :",
+        "answers": [
+            "Dispersive.",
+            "Non dispersive.",
+            "Evanescente."
+        ],
+        "difficulty": 1,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-056",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 1: Le vecteur de Poynting moyen dans le vide pour une OPPH est $\\langle \\vec{\\Pi} \\rangle = $ :",
+        "answers": [
+            "$\\frac{E_0^2}{2 \\mu_0 c} \\vec{u}_k$",
+            "$\\frac{E_0^2}{\\mu_0 c} \\vec{u}_k$",
+            "$\\frac{1}{2} \\epsilon_0 E_0^2 \\vec{u}_k$"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-057",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 2: La densité volumique d'énergie électromagnétique moyenne dans le câble coaxial est :",
+        "answers": [
+            "$\\frac{1}{2} \\epsilon_0 E^2$",
+            "$\\frac{1}{2} \\epsilon_0 \\langle E^2 \\rangle + \\frac{1}{2 \\mu_0} \\langle B^2 \\rangle$",
+            "$\\epsilon_0 E_0^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-058",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 3: La vitesse de groupe dans un guide d'onde à plaques est donnée par :",
+        "answers": [
+            "$v_g = c \\sqrt{1 - (\\omega_c/\\omega)^2}$",
+            "$v_g = c / \\sqrt{1 - (\\omega_c/\\omega)^2}$",
+            "$v_g = c$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-059",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 3: Le produit $v_{\\varphi} v_g$ dans un guide d'onde vide est :",
+        "answers": [
+            "$c$",
+            "$c^2$",
+            "Dépand de la fréquence."
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-060",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 4: La condition pour négliger la force magnétique sur les électrons du plasma est :",
+        "answers": [
+            "$v \\ll c$",
+            "$v \\ll v_{\\varphi}$",
+            "$v \\gg c$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices : Plasma",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-061",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 4: La conductivité complexe d'un plasma est :",
+        "answers": [
+            "Réelle.",
+            "Imaginaire pure.",
+            "Nulle."
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices : Plasma",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-062",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 5: Pour une plaque métallique d'épaisseur $h \\gg \\delta$, la puissance sortante est :",
+        "answers": [
+            "Egale à la puissance entrante.",
+            "Quasi nulle car l'onde est absorbée.",
+            "Plus grande que la puissance entrante."
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices : Métal",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-063",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 7: Pourquoi utilise-t-on 20 kHz pour l'induction au lieu de 50 Hz ?",
+        "answers": [
+            "C'est plus sécurisé pour l'utilisateur.",
+            "La puissance dissipée est beaucoup plus élevée à haute fréquence.",
+            "Le 50 Hz ne crée pas de courants de Foucault."
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices : Induction",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-064",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 1: La loi de Faraday s'énonce :",
+        "answers": [
+            "$e = -\\frac{d\\Phi}{dt}$",
+            "$e = L \\frac{di}{dt}$",
+            "$\\Phi = B S$"
+        ],
+        "difficulty": 1,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-065",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 2: La relation entre les amplitudes $E_0$ et $B_0$ dans le câble coaxial est :",
+        "answers": [
+            "$E_0 = c B_0$",
+            "$B_0 = c E_0$",
+            "$E_0 = B_0 / \\mu_0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-066",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le vecteur d'onde $k$ dans un milieu absorbant est complexe car :",
+        "answers": [
+            "L'onde change de direction.",
+            "L'amplitude décroît spatialement.",
+            "La fréquence est complexe."
+        ],
+        "difficulty": 2,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-067",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un plasma, si $\\omega = \\omega_P$, que vaut le vecteur d'onde $k$ ?",
+        "answers": [
+            "$k = 0$",
+            "$k = \\infty$",
+            "$k = \\omega/c$"
+        ],
+        "difficulty": 3,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-068",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'indice de réfraction d'un plasma peut être inférieur à 1.",
+        "answers": [
+            "Vrai.",
+            "Faux.",
+            "Impossible."
+        ],
+        "difficulty": 3,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-069",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Si $n < 1$ dans un plasma, la vitesse de phase est :",
+        "answers": [
+            "Supérieure à $c$.",
+            "Inférieure à $c$.",
+            "Egale à $c$."
+        ],
+        "difficulty": 3,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-070",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un conducteur, l'onde est dite 'pseudo-progressive' car :",
+        "answers": [
+            "Elle n'avance pas.",
+            "Son amplitude est modulée spatialement.",
+            "Sa vitesse est imaginaire."
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-071",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "La diffusivité thermique du sol est typiquement de l'ordre de $10^{-6}$ $m^2/s$.",
+        "answers": [
+            "Vrai.",
+            "Faux.",
+            "C'est celle des métaux."
+        ],
+        "difficulty": 4,
+        "chapter": "Onde thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-072",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 3: Le champ électrique dans le guide à plaques est de la forme $E_y \\propto \\sin(\\pi z / a)$. Cela assure :",
+        "answers": [
+            "La nullité du champ aux parois conductrices ($z=0, a$).",
+            "La propagation radiale.",
+            "La polarisation circulaire."
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-073",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 6: Pourquoi le métal est-il considéré dans l'ARQS à 2 GHz ?",
+        "answers": [
+            "Car sa conductivité est très grande.",
+            "Car la fréquence est faible devant $1/\\tau$.",
+            "En réalité, on ne devrait pas, mais c'est une simplification usuelle."
+        ],
+        "difficulty": 4,
+        "chapter": "Exercices : Métal",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-074",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans un milieu dispersif, un paquet d'ondes :",
+        "answers": [
+            "Garde sa forme.",
+            "S'étale au cours du temps (dispersion).",
+            "Se contracte."
+        ],
+        "difficulty": 2,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-075",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un métal, l'onde magnétique $\\vec{B}$ est en retard de $\\pi/4$ sur $\\vec{E}$.",
+        "answers": [
+            "Vrai.",
+            "Faux, elle est en avance.",
+            "Faux, ils sont en phase."
+        ],
+        "difficulty": 4,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-076",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'énergie moyenne par unité de longueur d'un guide d'onde se calcule en intégrant la densité d'énergie sur :",
+        "answers": [
+            "La section droite du guide.",
+            "Toute la longueur du guide.",
+            "Le temps uniquement."
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-077",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le câble coaxial (Ex 2), le flux de puissance moyen $\\Phi$ est proportionnel à :",
+        "answers": [
+            "$\\ln(R_2/R_1)$",
+            "$R_2 - R_1$",
+            "$1/R_1^2$"
+        ],
+        "difficulty": 5,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-078",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La vitesse de groupe peut-elle être supérieure à la vitesse de phase ?",
+        "answers": [
+            "Oui (dispersion anormale).",
+            "Non, jamais.",
+            "Seulement dans le vide."
+        ],
+        "difficulty": 3,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-079",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "La puissance moyenne totale dissipée dans la casserole (Ex 7) dépend du rayon $a$ selon :",
+        "answers": [
+            "$a^2$",
+            "$a^4$",
+            "$a$"
+        ],
+        "difficulty": 4,
+        "chapter": "Exercices : Induction",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-080",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un plasma, la conductivité $\\underline{\\gamma}$ tend vers quoi quand $\\omega \\to \\infty$ ?",
+        "answers": [
+            "L'infini.",
+            "Zéro.",
+            "Une valeur réelle constante."
+        ],
+        "difficulty": 3,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-081",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression de la densité de courant $\\vec{j}$ dans un plasma ?",
+        "answers": [
+            "$\\vec{j} = n q \\vec{v}$",
+            "$\\vec{j} = \\gamma \\vec{E}$",
+            "Les deux sont valables."
+        ],
+        "difficulty": 1,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-082",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour une onde thermique, la vitesse de phase est :",
+        "answers": [
+            "$v_{\\varphi} = \\delta \\omega$",
+            "$v_{\\varphi} = c$",
+            "$v_{\\varphi} = \\omega/k$"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-083",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde est dite monochromatique si :",
+        "answers": [
+            "Elle a une seule fréquence $f$.",
+            "Elle est blanche.",
+            "Elle se propage dans le vide."
+        ],
+        "difficulty": 1,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-084",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Le vecteur d'onde $k$ dans le guide d'onde à plaques est :",
+        "answers": [
+            "$k = \\frac{1}{c} \\sqrt{\\omega^2 - \\omega_c^2}$",
+            "$k = \\omega/c$",
+            "$k = i \\omega / c$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-085",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cas $\\omega < \\omega_P$ (plasma), le champ électrique décroît sur une distance :",
+        "answers": [
+            "$\\delta = c / \\sqrt{\\omega_P^2 - \\omega^2}$",
+            "$\\delta = 1/\\omega$",
+            "$\\delta = \\infty$"
+        ],
+        "difficulty": 4,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-086",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La vitesse de groupe est la pente de la courbe $\\omega = f(k)$.",
+        "answers": [
+            "Vrai.",
+            "Faux, c'est la vitesse de phase.",
+            "Seulement si la courbe est une droite."
+        ],
+        "difficulty": 2,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-087",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'unité de la permittivité du vide $\\epsilon_0$ ?",
+        "answers": [
+            "$F \\cdot m^{-1}$",
+            "$H \\cdot m^{-1}$",
+            "$\\Omega \\cdot m$"
+        ],
+        "difficulty": 1,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-088",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "La perméabilité magnétique de l'acier (Ex 7) est $\\mu = \\mu_0 \\mu_r$. Ici $\\mu_r = $ :",
+        "answers": [
+            "1",
+            "100",
+            "10^6"
+        ],
+        "difficulty": 1,
+        "chapter": "Exercices : Induction",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-089",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans un milieu absorbant, l'intensité de l'onde décroît selon :",
+        "answers": [
+            "$e^{-2z/\\delta}$",
+            "$e^{-z/\\delta}$",
+            "$1/z^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-090",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un plasma, les électrons subissent une force de rappel élastique.",
+        "answers": [
+            "Vrai.",
+            "Faux, ils sont libres (modèle de Drude sans collisions).",
+            "Seulement dans les isolants."
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-091",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Le champ magnétique d'une OPPH dans le vide est tel que :",
+        "answers": [
+            "$\\vec{B}$ est parallèle à $\\vec{E}$.",
+            "$\\vec{B} = \\frac{\\vec{u}_k \\wedge \\vec{E}}{c}$",
+            "$\\vec{B}$ est porté par $\\vec{u}_k$."
+        ],
+        "difficulty": 1,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-092",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un conducteur, le champ magnétique est beaucoup plus 'intense' que dans le vide par rapport à $E$.",
+        "answers": [
+            "Vrai, car $B \\approx \\frac{k}{\\omega} E$ et $|k| \\gg \\omega/c$.",
+            "Faux.",
+            "Ils sont toujours dans le même rapport $c$."
+        ],
+        "difficulty": 4,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-093",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Le flux thermique $\\vec{j}_Q$ est relié au gradient de température par la loi de :",
+        "answers": [
+            "Fourier.",
+            "Ohm.",
+            "Newton."
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-094",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde évanescente est une onde stationnaire spatialement amortie.",
+        "answers": [
+            "Vrai.",
+            "Faux, c'est une onde progressive.",
+            "Cela n'existe pas en physique."
+        ],
+        "difficulty": 3,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-095",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "La puissance moyenne dissipée par effet Joule dans un volume $V$ est $\\iiint \\frac{j^2}{2\\gamma} d\\tau$.",
+        "answers": [
+            "Vrai.",
+            "Faux, c'est $\\gamma E^2 / 2$.",
+            "Les deux sont identiques."
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices : Induction",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-096",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le guide d'onde (Ex 3), la vitesse de l'enveloppe du signal (battement) est :",
+        "answers": [
+            "La vitesse de phase.",
+            "La vitesse de groupe.",
+            "La vitesse de la lumière."
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices : Réception et Guidage",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-097",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Un plasma se comporte comme un filtre :",
+        "answers": [
+            "Passe-bas.",
+            "Passe-haut.",
+            "Passe-bande."
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un plasma",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-098",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un métal, l'énergie électromagnétique est principalement sous forme :",
+        "answers": [
+            "Électrique.",
+            "Magnétique.",
+            "Équipartitionnée."
+        ],
+        "difficulty": 5,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-099",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour une onde de 1 MHz, l'épaisseur de peau dans le cuivre est de :",
+        "answers": [
+            "65 $\\mu m$",
+            "9 mm",
+            "1 cm"
+        ],
+        "difficulty": 2,
+        "chapter": "Propagation dans un conducteur ohmique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-100",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'équation de d'Alembert décrit des ondes :",
+        "answers": [
+            "Atténuées.",
+            "Non dispersives et non absorbantes.",
+            "Stationnaires uniquement."
+        ],
+        "difficulty": 1,
+        "chapter": "Dispersion et absorption d'ondes",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    }
+]

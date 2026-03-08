@@ -1,0 +1,1502 @@
+[
+    {
+        "uuid": "prob-001",
+        "image_path": null,
+        "theme": "Tribus",
+        "chapter": "Espaces Probabilisés",
+        "question": "Selon la Définition 1, quelle condition est nécessaire pour qu'un sous-ensemble $\\mathcal{A}$ de $\\mathcal{P}(\\Omega)$ soit une tribu ?",
+        "answers": [
+            "$\\mathcal{A}$ est fini",
+            "$\\mathcal{A}$ est stable par passage au complémentaire",
+            "$\\mathcal{A}$ contient tous les singletons de $\\Omega$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-002",
+        "image_path": null,
+        "theme": "Tribus",
+        "chapter": "Espaces Probabilisés",
+        "question": "Une tribu $\\mathcal{A}$ est stable par union dénombrable. Qu'en est-il de l'intersection dénombrable d'éléments de $\\mathcal{A}$ ?",
+        "answers": [
+            "Elle n'appartient pas nécessairement à $\\mathcal{A}$",
+            "Elle appartient à $\\mathcal{A}$ par les lois de Morgan et la stabilité par complémentaire",
+            "Elle n'appartient à $\\mathcal{A}$ que si $\\Omega$ est fini"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-003",
+        "image_path": null,
+        "theme": "Tribus",
+        "chapter": "Espaces Probabilisés",
+        "question": "Comment appelle-t-on également une tribu dans la littérature mathématique ?",
+        "answers": [
+            "Une $\\sigma$-algèbre",
+            "Un espace vectoriel d'événements",
+            "Une topologie discrète"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-004",
+        "image_path": null,
+        "theme": "Tribus",
+        "chapter": "Espaces Probabilisés",
+        "question": "Soit $A \\subset \\Omega$ avec $A \\neq \\emptyset$ et $A \\neq \\Omega$. Quel est le cardinal minimal de la tribu engendrée par $A$ ?",
+        "answers": [
+            "2",
+            "3",
+            "4"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-005",
+        "image_path": null,
+        "theme": "Axiomes de probabilité",
+        "chapter": "Espaces Probabilisés",
+        "question": "Quelle est la définition de la $\\sigma$-additivité pour une application $\\mathbb{P}$ ?",
+        "answers": [
+            "$\\mathbb{P}(A \\cup B) = \\mathbb{P}(A) + \\mathbb{P}(B)$ pour tous $A, B$",
+            "$\\mathbb{P}(\\cup_{n \\in \\mathbb{N}} A_n) = \\sum_{n=0}^{+\\infty} \\mathbb{P}(A_n)$ pour toute suite d'événements deux à deux incompatibles",
+            "$\\mathbb{P}(\\cap_{n \\in \\mathbb{N}} A_n) = \\prod_{n=0}^{+\\infty} \\mathbb{P}(A_n)$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-006",
+        "image_path": null,
+        "theme": "Axiomes de probabilité",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $A \\subset B$, quelle relation est toujours vraie selon les propriétés de croissance de la probabilité ?",
+        "answers": [
+            "$\\mathbb{P}(B \\setminus A) = \\mathbb{P}(B) - \\mathbb{P}(A)$",
+            "$\\mathbb{P}(A) > \\mathbb{P}(B)$",
+            "$\\mathbb{P}(A \\cap B) = \\mathbb{P}(A) + \\mathbb{P}(B)$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-007",
+        "image_path": null,
+        "theme": "Événements",
+        "chapter": "Espaces Probabilisés",
+        "question": "Comment appelle-t-on un événement de probabilité 1 ?",
+        "answers": [
+            "Événement certain",
+            "Événement presque sûr",
+            "Événement plein"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-008",
+        "image_path": null,
+        "theme": "Systèmes complets",
+        "chapter": "Espaces Probabilisés",
+        "question": "Quelle est la différence entre un système complet d'événements (SCE) et un système quasi complet (SQCE) ?",
+        "answers": [
+            "Un SQCE ne dépend pas de la probabilité choisie",
+            "L'union des événements d'un SCE vaut $\\Omega$, alors que pour un SQCE, elle est seulement de probabilité 1",
+            "Un SCE peut être non dénombrable"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-009",
+        "image_path": null,
+        "theme": "Continuité monotone",
+        "chapter": "Espaces Probabilisés",
+        "question": "Soit $(A_n)$ une suite croissante d'événements. À quoi est égale $\\mathbb{P}(\\bigcup_{n=0}^{+\\infty} A_n)$ ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} \\mathbb{P}(A_n)$",
+            "$\\lim_{n \\to +\\infty} \\mathbb{P}(A_n)$",
+            "$1$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-010",
+        "image_path": null,
+        "theme": "Inégalités",
+        "chapter": "Espaces Probabilisés",
+        "question": "Quelle est l'autre nom de l'inégalité de sous-additivité $\\mathbb{P}(\\bigcup_{i \\in I} A_i) \\le \\sum_{i \\in I} \\mathbb{P}(A_i)$ ?",
+        "answers": [
+            "Inégalité de Jensen",
+            "Inégalité de Boole",
+            "Inégalité de Markov"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-011",
+        "image_path": null,
+        "theme": "Événements négligeables",
+        "chapter": "Espaces Probabilisés",
+        "question": "Selon le Corollaire 24, une réunion dénombrable d'événements négligeables est :",
+        "answers": [
+            "Toujours de probabilité égale à la somme des probabilités",
+            "Un événement négligeable",
+            "Un événement presque sûr"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-012",
+        "image_path": null,
+        "theme": "Univers dénombrable",
+        "chapter": "Espaces Probabilisés",
+        "question": "Sur un univers dénombrable $\\Omega$, comment définit-on la probabilité d'une partie $A$ à partir des probabilités élémentaires $p_\\omega = \\mathbb{P}(\\{\\omega\\})$ ?",
+        "answers": [
+            "$\\mathbb{P}(A) = \\max_{\\omega \\in A} p_\\omega$",
+            "$\\mathbb{P}(A) = \\sum_{\\omega \\in A} p_\\omega$",
+            "$\\mathbb{P}(A) = \\prod_{\\omega \\in A} p_\\omega$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-013",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "chapter": "Espaces Probabilisés",
+        "question": "Quelle condition sur $X(\\Omega)$ définit une variable aléatoire discrète (v.a.d) ?",
+        "answers": [
+            "$X(\\Omega)$ doit être fini",
+            "$X(\\Omega)$ doit être au plus dénombrable",
+            "$X(\\Omega)$ doit être un intervalle de $\\mathbb{R}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-014",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "chapter": "Espaces Probabilisés",
+        "question": "Soit $X$ une v.a.d. Pour toute partie $B \\subset X(\\Omega)$, l'ensemble $X^{-1}(B)$ est :",
+        "answers": [
+            "Un événement (élément de la tribu $\\mathcal{A}$)",
+            "Nécessairement l'ensemble vide",
+            "Une nouvelle variable aléatoire"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-015",
+        "image_path": null,
+        "theme": "Loi de probabilité",
+        "chapter": "Espaces Probabilisés",
+        "question": "Quel système d'événements est naturellement associé à une variable aléatoire discrète $X$ ?",
+        "answers": [
+            "$(\\{X \\le x\\})_{x \\in \\mathbb{R}}$",
+            "$(\\{X = x\\})_{x \\in X(\\Omega)}$",
+            "$(\\{X > x\\})_{x \\in \\mathbb{R}}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-016",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $X$ suit une loi uniforme sur $\\{1, \\dots, n\\}$, quelle est la valeur de $\\mathbb{P}(X = k)$ pour $k \\in \\{1, \\dots, n\\}$ ?",
+        "answers": [
+            "$1/k$",
+            "$1/n$",
+            "$k/n$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-017",
+        "image_path": null,
+        "theme": "Loi de Bernoulli",
+        "chapter": "Espaces Probabilisés",
+        "question": "Quelle est la loi de la fonction indicatrice $\\mathbb{1}_A$ d'un événement $A$ ?",
+        "answers": [
+            "Loi Uniforme sur $\\{0, 1\\}$",
+            "Loi de Bernoulli de paramètre $p = \\mathbb{P}(A)$",
+            "Loi Binomiale $\\mathcal{B}(n, \\mathbb{P}(A))$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-018",
+        "image_path": null,
+        "theme": "Loi Binomiale",
+        "chapter": "Espaces Probabilisés",
+        "question": "Soit $X \\sim \\mathcal{B}(n, p)$. Que représente physiquement cette variable ?",
+        "answers": [
+            "Le rang du premier succès dans une suite d'épreuves",
+            "Le nombre de succès dans une suite de $n$ épreuves de Bernoulli indépendantes",
+            "Le temps d'attente entre deux événements de Poisson"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-019",
+        "image_path": null,
+        "theme": "Loi Géométrique",
+        "chapter": "Espaces Probabilisés",
+        "question": "Pour $X \\sim \\mathcal{G}(p)$, quelle est l'expression de $\\mathbb{P}(X > k)$ pour $k \\in \\mathbb{N}$ (Prop. 74) ?",
+        "answers": [
+            "$p^k$",
+            "$q^k$ (où $q = 1-p$)",
+            "$1 - p^k$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-020",
+        "image_path": null,
+        "theme": "Loi de Poisson",
+        "chapter": "Espaces Probabilisés",
+        "question": "La loi de Poisson $\\mathcal{P}(\\lambda)$ est souvent appelée :",
+        "answers": [
+            "La loi des grands nombres",
+            "La loi des événements rares",
+            "La loi de l'équilibre"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-021",
+        "image_path": null,
+        "theme": "Approximation",
+        "chapter": "Espaces Probabilisés",
+        "question": "Sous quelle condition une loi binomiale $\\mathcal{B}(n, p_n)$ converge-t-elle vers une loi de Poisson $\\mathcal{P}(\\lambda)$ ?",
+        "answers": [
+            "$n \\to +\\infty$ et $p_n \\to 1$",
+            "$n \\to +\\infty$ et $n p_n \\to \\lambda$",
+            "$n$ est petit et $p_n$ est grand"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-022",
+        "image_path": null,
+        "theme": "Couples de V.A.",
+        "chapter": "Espaces Probabilisés",
+        "question": "Comment calcule-t-on la première loi marginale $\\mathbb{P}(X=x)$ à partir de la loi conjointe d'un couple $(X,Y)$ ?",
+        "answers": [
+            "$\\sum_{y \\in Y(\\Omega)} \\mathbb{P}(X=x, Y=y)$",
+            "$\\prod_{y \\in Y(\\Omega)} \\mathbb{P}(X=x, Y=y)$",
+            "$\\mathbb{P}(X=x, Y=y)$ pour un $y$ particulier"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-023",
+        "image_path": null,
+        "theme": "Couples de V.A.",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $X$ et $Y$ sont deux v.a.d., que peut-on dire de $X+Y$ ?",
+        "answers": [
+            "C'est une v.a.d. car c'est une fonction du couple $(X,Y)$",
+            "Ce n'est une v.a.d. que si $X$ et $Y$ sont indépendantes",
+            "Ce n'est jamais une v.a.d."
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-024",
+        "image_path": null,
+        "theme": "Loi de Poisson",
+        "chapter": "Espaces Probabilisés",
+        "question": "Pour $X \\sim \\mathcal{P}(\\lambda)$, quelle est la probabilité $\\mathbb{P}(X=0)$ ?",
+        "answers": [
+            "0",
+            "$e^{-\\lambda}$",
+            "$\\lambda e^{-\\lambda}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-025",
+        "image_path": null,
+        "theme": "Loi Géométrique",
+        "chapter": "Espaces Probabilisés",
+        "question": "Quel est l'univers image $X(\\Omega)$ d'une loi géométrique $\\mathcal{G}(p)$ ?",
+        "answers": [
+            "$\\mathbb{N}$",
+            "$\\mathbb{N}^*$",
+            "$[|0, n|]$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-026",
+        "image_path": null,
+        "theme": "TD - Exercice 2",
+        "chapter": "Espaces Probabilisés",
+        "question": "Dans l'exercice 2 du TD, on pose $\\mathbb{P}(\\{n\\}) = \\frac{1}{2^{n+1}}$ pour $n \\in \\mathbb{N}$. Quelle est la probabilité que l'entier soit pair (c'est-à-dire $n \\in \\{0, 2, 4, \\dots\\}$) ?",
+        "answers": [
+            "$1/2$",
+            "$2/3$",
+            "$3/4$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-027",
+        "image_path": null,
+        "theme": "TD - Exercice 5",
+        "chapter": "Espaces Probabilisés",
+        "question": "On lance une pièce (Pile avec proba $p$). Quelle est la probabilité que la séquence PP apparaisse avant FP ?",
+        "answers": [
+            "$p^2$",
+            "$p$",
+            "$1/2$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-028",
+        "image_path": null,
+        "theme": "TD - Exercice 7",
+        "chapter": "Espaces Probabilisés",
+        "question": "Soit $X$ une v.a. réelle. Quelle est la limite de $\\mathbb{P}(X \\le -n)$ quand $n \\to +\\infty$ ?",
+        "answers": [
+            "0",
+            "1",
+            "$-\\infty$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-029",
+        "image_path": null,
+        "theme": "Convergence presque sûre",
+        "chapter": "Espaces Probabilisés",
+        "question": "Une suite $(X_n)$ converge presque sûrement vers $X$ si $\\mathbb{P}(B)=1$. Que représente l'ensemble $B$ (Exercice 11) ?",
+        "answers": [
+            "$\\{\\omega, \\sum X_n(\\omega) < \\infty \\}$",
+            "$\\{\\omega, \\lim_{n \\to +\\infty} X_n(\\omega) = X(\\omega) \\}$",
+            "$\\{\\omega, \\exists n, X_n(\\omega) = X(\\omega) \\}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-030",
+        "image_path": null,
+        "theme": "Critère de Borel-Cantelli",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si pour tout $\\epsilon > 0$, la série $\\sum \\mathbb{P}(|X_n - X| > \\epsilon)$ converge, alors :",
+        "answers": [
+            "$(X_n)$ converge en loi vers $X$",
+            "$(X_n)$ converge presque sûrement vers $X$",
+            "$(X_n)$ est stationnaire"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-031",
+        "image_path": null,
+        "theme": "Tribus",
+        "chapter": "Espaces Probabilisés",
+        "question": "Quelle est la tribu la plus fine possible sur un univers $\\Omega$ ?",
+        "answers": [
+            "La tribu grossière $\\{\\emptyset, \\Omega\\}$",
+            "La tribu discrète $\\mathcal{P}(\\Omega)$",
+            "La tribu des boréliens"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-032",
+        "image_path": null,
+        "theme": "Loi de Poisson",
+        "chapter": "Espaces Probabilisés",
+        "question": "Selon l'Exercice 8 du TD, comment se comporte $\\mathbb{P}(X \\ge n)$ par rapport à $\\mathbb{P}(X = n)$ quand $n \\to +\\infty$ pour une loi de Poisson ?",
+        "answers": [
+            "$\\mathbb{P}(X \\ge n) \\sim \\mathbb{P}(X = n)$",
+            "$\\mathbb{P}(X \\ge n) = o(\\mathbb{P}(X = n))$",
+            "$\\mathbb{P}(X \\ge n) \\to 1$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-033",
+        "image_path": null,
+        "theme": "Loi Binomiale",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $X \\sim \\mathcal{B}(n, p)$, quelle est la loi de $Y = n - X$ ?",
+        "answers": [
+            "$\\mathcal{B}(n, 1-p)$",
+            "$\\mathcal{B}(n, p)$",
+            "Une loi uniforme"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-034",
+        "image_path": null,
+        "theme": "Axiomes de probabilité",
+        "chapter": "Espaces Probabilisés",
+        "question": "Quelle est la valeur de $\\mathbb{P}(\\emptyset)$ ?",
+        "answers": [
+            "1",
+            "0",
+            "Indéterminée"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-035",
+        "image_path": null,
+        "theme": "Complémentaire",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $\\mathbb{P}(A) = 0.3$, que vaut $\\mathbb{P}(\\bar{A})$ ?",
+        "answers": [
+            "0.3",
+            "0.7",
+            "0.5"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-036",
+        "image_path": null,
+        "theme": "Union d'événements",
+        "chapter": "Espaces Probabilisés",
+        "question": "Pour deux événements $A$ et $B$ quelconques, $\\mathbb{P}(A \\cup B) =$ ?",
+        "answers": [
+            "$\\mathbb{P}(A) + \\mathbb{P}(B)$",
+            "$\\mathbb{P}(A) + \\mathbb{P}(B) - \\mathbb{P}(A \\cap B)$",
+            "$\\mathbb{P}(A) \\cdot \\mathbb{P}(B)$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-037",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $X$ est une variable aléatoire constante égale à $c$, quelle est sa loi ?",
+        "answers": [
+            "$\\{ (c, 1) \\}$ (Presque sûrement constante)",
+            "Uniforme sur $\\mathbb{R}$",
+            "Loi de Bernoulli de paramètre $c$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-038",
+        "image_path": null,
+        "theme": "Loi de Poisson",
+        "chapter": "Espaces Probabilisés",
+        "question": "Quelle est la somme de la série $\\sum_{k=0}^{+\\infty} \\frac{\\lambda^k}{k!}$ ?",
+        "answers": [
+            "$1$",
+            "$\\lambda$",
+            "$e^\\lambda$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-039",
+        "image_path": null,
+        "theme": "Marginales",
+        "chapter": "Espaces Probabilisés",
+        "question": "La connaissance des lois marginales de $X$ et $Y$ suffit-elle à déterminer la loi conjointe du couple $(X,Y)$ ?",
+        "answers": [
+            "Oui, toujours",
+            "Non, il manque l'information sur la dépendance entre $X$ et $Y$",
+            "Oui, si l'univers est fini"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-040",
+        "image_path": null,
+        "theme": "SCE",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $(A_i)_{i \\in I}$ est un SQCE, que vaut $\\sum_{i \\in I} \\mathbb{P}(A_i \\cap B)$ pour tout événement $B$ ?",
+        "answers": [
+            "$1$",
+            "$\\mathbb{P}(B)$",
+            "$\\mathbb{P}(\\cup A_i)$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-041",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "chapter": "Espaces Probabilisés",
+        "question": "Une v.a. $X$ suit une loi de Bernoulli. Quelles sont les valeurs possibles pour $X^2$ ?",
+        "answers": [
+            "$\\{0, 1\\}$",
+            "$\\{0, 1, 2, 4\\}$",
+            "$[0, 1]$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-042",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $X \\sim \\mathcal{B}(p)$, quelle est la loi de $X^2$ ?",
+        "answers": [
+            "$\\mathcal{B}(p^2)$",
+            "$\\mathcal{B}(p)$",
+            "$\\mathcal{B}(\\sqrt{p})$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-043",
+        "image_path": null,
+        "theme": "Tribus",
+        "chapter": "Espaces Probabilisés",
+        "question": "Soit $\\Omega$ un ensemble. Laquelle de ces familles n'est PAS une tribu en général ?",
+        "answers": [
+            "$\\{\\emptyset, \\Omega\\}$",
+            "$\\{A \\subset \\Omega, A \\text{ est fini}\\}$",
+            "$\\mathcal{P}(\\Omega)$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-044",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "chapter": "Espaces Probabilisés",
+        "question": "On définit $Y(\\omega) = X_{N(\\omega)}(\\omega)$ (Ex 6 TD). Pour montrer que $Y$ est une v.a.d., on décompose l'événement $\\{Y=x\\}$ sur le système complet :",
+        "answers": [
+            "$(\\{N=n\\})_{n \\in \\mathbb{N}}$",
+            "$(\\{X_n=x\\})_{n \\in \\mathbb{N}}$",
+            "$(\\{X_n \\le x\\})_{n \\in \\mathbb{N}}$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-045",
+        "image_path": null,
+        "theme": "Loi de Poisson",
+        "chapter": "Espaces Probabilisés",
+        "question": "Pour $X \\sim \\mathcal{P}(\\lambda)$ et $Y \\sim \\mathcal{P}(\\mu)$ indépendantes, quelle est la loi de $X+Y$ ? (Résultat classique lié au cours)",
+        "answers": [
+            "$\\mathcal{P}(\\lambda + \\mu)$",
+            "$\\mathcal{P}(\\lambda \\mu)$",
+            "$\\mathcal{B}(\\lambda+\\mu, 1/2)$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-046",
+        "image_path": null,
+        "theme": "Inégalités",
+        "chapter": "Espaces Probabilisés",
+        "question": "Que dit l'inégalité de Boole pour une famille dénombrable d'événements ?",
+        "answers": [
+            "$\\mathbb{P}(\\cup A_n) = \\sum \\mathbb{P}(A_n)$",
+            "$\\mathbb{P}(\\cup A_n) \\le \\sum \\mathbb{P}(A_n)$",
+            "$\\mathbb{P}(\\cap A_n) \\le \\prod \\mathbb{P}(A_n)$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-047",
+        "image_path": null,
+        "theme": "TD - Exercice 1",
+        "chapter": "Espaces Probabilisés",
+        "question": "Sur un univers fini $\\Omega$, l'additivité finie et $\\mathbb{P}(\\Omega)=1$ suffisent-elles à définir une probabilité ?",
+        "answers": [
+            "Oui, car la $\\sigma$-additivité se réduit à l'additivité finie",
+            "Non, il faut aussi la continuité monotone",
+            "Seulement si tous les événements sont équiprobables"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-048",
+        "image_path": null,
+        "theme": "SCE",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $A$ et $B$ forment un SCE, alors $B$ est nécessairement :",
+        "answers": [
+            "L'ensemble vide",
+            "Le complémentaire de $A$",
+            "De même probabilité que $A$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-049",
+        "image_path": null,
+        "theme": "Loi Géométrique",
+        "chapter": "Espaces Probabilisés",
+        "question": "Quelle est la probabilité du premier succès au rang $n$ pour $X \\sim \\mathcal{G}(p)$ ?",
+        "answers": [
+            "$p^n$",
+            "$q^{n-1}p$",
+            "$pq^{n}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-050",
+        "image_path": null,
+        "theme": "Loi Binomiale",
+        "chapter": "Espaces Probabilisés",
+        "question": "Que vaut $\\mathbb{P}(X=n)$ pour $X \\sim \\mathcal{B}(n, p)$ ?",
+        "answers": [
+            "$p^n$",
+            "$n p$",
+            "$1 - p^n$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-051",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "chapter": "Espaces Probabilisés",
+        "question": "Soit $X$ une v.a.d. et $f$ une fonction. La loi de $f(X)$ dépend-elle de la tribu $\\mathcal{A}$ de l'espace de départ ?",
+        "answers": [
+            "Oui, directement",
+            "Non, elle ne dépend que de la loi de $X$ et de la fonction $f$",
+            "Seulement si $f$ n'est pas injective"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-052",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "chapter": "Espaces Probabilisés",
+        "question": "Un dé équilibré est lancé. On note $X$ le résultat. Quelle est l'espérance de $X$ ? (Bien que non explicitement dans le texte, c'est une application directe de la loi uniforme)",
+        "answers": [
+            "3",
+            "3.5",
+            "4"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-053",
+        "image_path": null,
+        "theme": "TD - Exercice 9",
+        "chapter": "Espaces Probabilisés",
+        "question": "Dans l'exercice 9, la loi conjointe est $\\mathbb{P}(X=i, Y=j) = a \\frac{(i+j)\\lambda^{i+j}}{i!j!}$. Pour déterminer $a$, on utilise $\\sum \\sum \\mathbb{P}(X=i, Y=j) = 1$. Quelle somme est utile ici ?",
+        "answers": [
+            "$\\sum \\frac{\\lambda^k}{k!} = e^\\lambda$",
+            "$\\sum k \\frac{\\lambda^k}{k!} = \\lambda e^\\lambda$",
+            "Les deux sont nécessaires"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-054",
+        "image_path": null,
+        "theme": "Événements presque sûrs",
+        "chapter": "Espaces Probabilisés",
+        "question": "L'intersection dénombrable d'événements presque sûrs est :",
+        "answers": [
+            "Négligeable",
+            "Presque sûre",
+            "De probabilité $0.5$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-055",
+        "image_path": null,
+        "theme": "Continuité monotone",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $A_n \\downarrow A$ (suite décroissante), alors $\\mathbb{P}(A) =$ ?",
+        "answers": [
+            "$\\lim_{n \\to +\\infty} \\mathbb{P}(A_n)$",
+            "$\\sum \\mathbb{P}(A_n)$",
+            "$0$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-056",
+        "image_path": null,
+        "theme": "Univers dénombrable",
+        "chapter": "Espaces Probabilisés",
+        "question": "Peut-on définir une probabilité uniforme sur $\\mathbb{N}$ ?",
+        "answers": [
+            "Oui, en posant $p_n = 0$",
+            "Non, car la somme d'une série constante positive divergerait ou serait nulle",
+            "Oui, comme limite de la loi uniforme sur $[|1, n|]$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-057",
+        "image_path": null,
+        "theme": "Loi de Poisson",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $X \\sim \\mathcal{P}(\\lambda)$, que vaut $\\mathbb{P}(X=1)$ ?",
+        "answers": [
+            "$e^{-\\lambda}$",
+            "$\\lambda e^{-\\lambda}$",
+            "$\\frac{\\lambda^2}{2} e^{-\\lambda}$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-058",
+        "image_path": null,
+        "theme": "TD - Exercice 11",
+        "chapter": "Espaces Probabilisés",
+        "question": "L'ensemble $C_k = \\bigcup_{n \\in \\mathbb{N}} \\bigcap_{p \\ge n} \\{ |X_p - X| \\le 1/k \\}$ représente les issues pour lesquelles :",
+        "answers": [
+            "La suite s'approche de $X$ à moins de $1/k$ à partir d'un certain rang",
+            "La suite est constante égale à $X$",
+            "La suite diverge"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-059",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $X \\sim \\mathcal{U}(\\{a_1, \\dots, a_n\\})$, quelle est la probabilité de chaque valeur ?",
+        "answers": [
+            "$1/n$",
+            "$1/a_i$",
+            "$p$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-060",
+        "image_path": null,
+        "theme": "Couples de V.A.",
+        "chapter": "Espaces Probabilisés",
+        "question": "Dans un tableau à double entrée représentant la loi conjointe, la somme de toutes les cases doit être :",
+        "answers": [
+            "0",
+            "1",
+            "$n+m$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-061",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "chapter": "Espaces Probabilisés",
+        "question": "Toute fonction constante sur $\\Omega$ est-elle une variable aléatoire finie ?",
+        "answers": [
+            "Oui, car l'image réciproque de $\\{c\\}$ est $\\Omega$ qui appartient à toute tribu",
+            "Non, cela dépend de la constante",
+            "Seulement si $\\Omega$ est fini"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-062",
+        "image_path": null,
+        "theme": "Loi Binomiale",
+        "chapter": "Espaces Probabilisés",
+        "question": "Quel est l'univers image $X(\\Omega)$ d'une v.a. $\\mathcal{B}(n, p)$ avec $p \\in ]0, 1[$ ?",
+        "answers": [
+            "$\\{0, 1\\}$",
+            "$[|0, n|]$",
+            "$\\mathbb{N}$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-063",
+        "image_path": null,
+        "theme": "Convergence",
+        "chapter": "Espaces Probabilisés",
+        "question": "Le Lemme de Borel-Cantelli est souvent utilisé pour prouver :",
+        "answers": [
+            "L'indépendance",
+            "La convergence presque sûre",
+            "La linéarité de l'espérance"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-064",
+        "image_path": null,
+        "theme": "TD - Exercice 10",
+        "chapter": "Espaces Probabilisés",
+        "question": "Soit $X$ le rang du 1er Pile et $Y$ le rang du 2ème Pile. Quelle est la condition sur les valeurs $(i, j)$ pour que $\\mathbb{P}(X=i, Y=j) > 0$ ?",
+        "answers": [
+            "$i = j$",
+            "$i < j$",
+            "$i > j$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-065",
+        "image_path": null,
+        "theme": "TD - Exercice 10",
+        "chapter": "Espaces Probabilisés",
+        "question": "Pour $X$ (1er Pile) et $Y$ (2ème Pile), quelle est la loi marginale de $X$ ?",
+        "answers": [
+            "Loi de Bernoulli",
+            "Loi Géométrique $\\mathcal{G}(p)$",
+            "Loi de Poisson"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-066",
+        "image_path": null,
+        "theme": "Marginales",
+        "chapter": "Espaces Probabilisés",
+        "question": "Dans un tableau de loi conjointe, comment obtient-on les lois marginales ?",
+        "answers": [
+            "En multipliant les lignes",
+            "En sommant les lignes ou les colonnes",
+            "En prenant la diagonale"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-067",
+        "image_path": null,
+        "theme": "Tribus",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $A$ est un événement, sa fonction indicatrice $\\mathbb{1}_A$ est une variable aléatoire car :",
+        "answers": [
+            "Elle est à valeurs dans $\\{0, 1\\}$",
+            "Les images réciproques de $\\{0\\}$ et $\\{1\\}$ (qui sont $\\bar{A}$ et $A$) sont dans la tribu",
+            "Elle est continue"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-068",
+        "image_path": null,
+        "theme": "Axiomes de probabilité",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $A$ et $B$ sont incompatibles, $\\mathbb{P}(A \\cup B) =$ ?",
+        "answers": [
+            "$\\mathbb{P}(A) + \\mathbb{P}(B)$",
+            "$\\mathbb{P}(A) \\cdot \\mathbb{P}(B)$",
+            "$\\max(\\mathbb{P}(A), \\mathbb{P}(B))$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-069",
+        "image_path": null,
+        "theme": "Loi Binomiale",
+        "chapter": "Espaces Probabilisés",
+        "question": "Que vaut $\\binom{n}{k}$ dans la formule de la loi binomiale ?",
+        "answers": [
+            "Le nombre de façons de placer $k$ succès dans $n$ épreuves",
+            "La probabilité de $k$ succès",
+            "Le rang du $k$-ème succès"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-070",
+        "image_path": null,
+        "theme": "Axiomes de probabilité",
+        "chapter": "Espaces Probabilisés",
+        "question": "Pourquoi la série $\\sum \\mathbb{P}(A_n)$ doit-elle converger dans la définition de la probabilité ?",
+        "answers": [
+            "Parce que sa somme est égale à $\\mathbb{P}(\\cup A_n)$, qui est $\\le 1$",
+            "C'est une hypothèse supplémentaire facultative",
+            "Parce que les $A_n$ sont finis"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-071",
+        "image_path": null,
+        "theme": "Loi de Poisson",
+        "chapter": "Espaces Probabilisés",
+        "question": "Quel est le paramètre d'une loi de Poisson approximant $\\mathcal{B}(1000, 0.01)$ ?",
+        "answers": [
+            "$\\lambda = 1$",
+            "$\\lambda = 10$",
+            "$\\lambda = 100$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-072",
+        "image_path": null,
+        "theme": "Tribus",
+        "chapter": "Espaces Probabilisés",
+        "question": "L'ensemble vide $\\emptyset$ appartient-il à toute tribu ?",
+        "answers": [
+            "Oui, car c'est le complémentaire de $\\Omega$",
+            "Non, seulement si la tribu est discrète",
+            "Seulement si $\\Omega$ est infini"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-073",
+        "image_path": null,
+        "theme": "Événements",
+        "chapter": "Espaces Probabilisés",
+        "question": "Deux événements $A$ et $B$ sont dits incompatibles si :",
+        "answers": [
+            "$\\mathbb{P}(A \\cap B) = 0$",
+            "$A \\cap B = \\emptyset$",
+            "$\\mathbb{P}(A) + \\mathbb{P}(B) = 1$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-074",
+        "image_path": null,
+        "theme": "Loi Géométrique",
+        "chapter": "Espaces Probabilisés",
+        "question": "La loi géométrique est-elle la seule loi discrète 'sans mémoire' ? (Propriété classique liée)",
+        "answers": [
+            "Oui",
+            "Non, la loi de Poisson aussi",
+            "Non, la loi uniforme aussi"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-075",
+        "image_path": null,
+        "theme": "TD - Exercice 5",
+        "chapter": "Espaces Probabilisés",
+        "question": "Dans une suite infinie de lancers, quelle est la probabilité que la séquence PF apparaisse avant FF ? (Ex 5.4.a)",
+        "answers": [
+            "$1/2$",
+            "$p$",
+            "$1-q^2$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-076",
+        "image_path": null,
+        "theme": "Couples de V.A.",
+        "chapter": "Espaces Probabilisés",
+        "question": "Soit $Z = (X, Y)$. L'événement $\\{Z = (x, y)\\}$ est égal à :",
+        "answers": [
+            "$\\{X = x\\} \\cup \\{Y = y\\}$",
+            "$\\{X = x\\} \\cap \\{Y = y\\}$",
+            "$\\{X+Y = x+y\\}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-077",
+        "image_path": null,
+        "theme": "Loi Géométrique",
+        "chapter": "Espaces Probabilisés",
+        "question": "Quelle est la somme de la série $\\sum_{n=1}^{+\\infty} pq^{n-1}$ ?",
+        "answers": [
+            "$p/(1-q) = 1$",
+            "$q$",
+            "$1/p$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-078",
+        "image_path": null,
+        "theme": "Tribus",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $A \\in \\mathcal{A}$ et $B \\in \\mathcal{A}$, alors $A \\setminus B$ est-il dans $\\mathcal{A}$ ?",
+        "answers": [
+            "Oui, car $A \\setminus B = A \\cap \\bar{B}$",
+            "Non, seulement pour l'union",
+            "Seulement si $B \\subset A$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-079",
+        "image_path": null,
+        "theme": "Loi de Poisson",
+        "chapter": "Espaces Probabilisés",
+        "question": "Pour une loi $\\mathcal{P}(\\lambda)$, l'espérance est $\\lambda$. Est-ce cohérent avec l'approximation de $\\mathcal{B}(n, p)$ ?",
+        "answers": [
+            "Oui, car l'espérance de la binomiale est $np \\approx \\lambda$",
+            "Non, car la binomiale est finie",
+            "Oui, mais seulement si $\\lambda < 1$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-080",
+        "image_path": null,
+        "theme": "TD - Exercice 4",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $\\mathbb{P}_1(A) = 0 \\Rightarrow \\mathbb{P}_2(A) = 0$, on dit que $\\mathbb{P}_2$ est absolument continue par rapport à $\\mathbb{P}_1$. L'exercice 4 montre que c'est équivalent à une condition avec :",
+        "answers": [
+            "Des intégrales",
+            "$\\epsilon$ et $\\alpha$ (type limite/continuité)",
+            "Des dérivées"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-081",
+        "image_path": null,
+        "theme": "Marginales",
+        "chapter": "Espaces Probabilisés",
+        "question": "Soit $X_1, \\dots, X_n$ un n-uplet. La loi marginale de $X_k$ s'obtient en sommant sur :",
+        "answers": [
+            "Toutes les valeurs possibles des $X_i$ pour $i \\neq k$",
+            "Toutes les valeurs de $X_k$",
+            "Seulement $X_1$ et $X_n$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-082",
+        "image_path": null,
+        "theme": "Loi de Poisson",
+        "chapter": "Espaces Probabilisés",
+        "question": "Laquelle de ces modélisations utilise typiquement une loi de Poisson ?",
+        "answers": [
+            "Le nombre d'appels reçus par un standard en une heure",
+            "Le résultat d'un pile ou face",
+            "La taille d'un individu choisi au hasard"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-083",
+        "image_path": null,
+        "theme": "TD - Exercice 3",
+        "chapter": "Espaces Probabilisés",
+        "question": "L'inégalité de l'exercice 3 du TD améliore l'inégalité de Boole en retranchant des termes d'intersection. C'est un cas particulier de :",
+        "answers": [
+            "L'inégalité de Bonferroni",
+            "La formule du crible",
+            "L'inégalité de Cauchy-Schwarz"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-084",
+        "image_path": null,
+        "theme": "SCE",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $\\Omega$ est au plus dénombrable, la famille $(\\{\\omega\\})_{\\omega \\in \\Omega}$ est-elle un SCE ?",
+        "answers": [
+            "Oui, c'est le système complet des événements élémentaires",
+            "Non, car les singletons ne sont pas des événements",
+            "Seulement si $\\Omega$ est fini"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-085",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "chapter": "Espaces Probabilisés",
+        "question": "Un dé est lancé. Soit $X$ le résultat. $X$ suit une loi uniforme sur $\\{1, \\dots, 6\\}$. $\\mathbb{P}(X \\text{ est pair}) =$ ?",
+        "answers": [
+            "$1/6$",
+            "$1/2$",
+            "$1/3$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-086",
+        "image_path": null,
+        "theme": "Loi Binomiale",
+        "chapter": "Espaces Probabilisés",
+        "question": "Pour $n=1$, la loi binomiale $\\mathcal{B}(1, p)$ se confond avec :",
+        "answers": [
+            "La loi uniforme",
+            "La loi de Bernoulli de paramètre $p$",
+            "La loi géométrique"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-087",
+        "image_path": null,
+        "theme": "Tribus",
+        "chapter": "Espaces Probabilisés",
+        "question": "Dans l'exercice 8 du cours, l'ensemble $B$ des éléments appartenant à une infinité de $A_n$ est défini par :",
+        "answers": [
+            "$B = \\bigcap_{n \\in \\mathbb{N}} \\bigcup_{p \\ge n} A_p$",
+            "$B = \\bigcup_{n \\in \\mathbb{N}} \\bigcap_{p \\ge n} A_p$",
+            "$B = \\bigcup A_n$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-088",
+        "image_path": null,
+        "theme": "Tribus",
+        "chapter": "Espaces Probabilisés",
+        "question": "L'ensemble $C$ des éléments appartenant à tous les $A_n$ sauf un nombre fini est défini par :",
+        "answers": [
+            "$C = \\bigcap_{n \\in \\mathbb{N}} \\bigcup_{p \\ge n} A_p$",
+            "$C = \\bigcup_{n \\in \\mathbb{N}} \\bigcap_{p \\ge n} A_p$",
+            "$C = \\bigcap A_n$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-089",
+        "image_path": null,
+        "theme": "Axiomes de probabilité",
+        "chapter": "Espaces Probabilisés",
+        "question": "$\\mathbb{P}(A \\setminus B) = \\mathbb{P}(A) - \\mathbb{P}(A \\cap B)$. Cette formule est-elle toujours vraie ?",
+        "answers": [
+            "Oui, par additivité sur $A = (A \\cap B) \\cup (A \\setminus B)$",
+            "Non, seulement si $B \\subset A$",
+            "Non, seulement si $A$ et $B$ sont incompatibles"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-090",
+        "image_path": null,
+        "theme": "Axiomes de probabilité",
+        "chapter": "Espaces Probabilisés",
+        "question": "Est-il possible qu'un événement non vide soit négligeable ?",
+        "answers": [
+            "Non, jamais",
+            "Oui, par exemple un singleton dans une loi continue (non abordé ici mais conceptuel)",
+            "Oui, si l'univers est infini"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-091",
+        "image_path": null,
+        "theme": "Loi Binomiale",
+        "chapter": "Espaces Probabilisés",
+        "question": "Que vaut la somme $\\sum_{k=0}^n \\binom{n}{k} p^k q^{n-k}$ ?",
+        "answers": [
+            "$1$",
+            "$(p+q)^n$",
+            "Les deux car $p+q=1$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-092",
+        "image_path": null,
+        "theme": "Loi Géométrique",
+        "chapter": "Espaces Probabilisés",
+        "question": "Pour $X \\sim \\mathcal{G}(p)$, que représente $X$ dans l'expérience du pile ou face infini ?",
+        "answers": [
+            "Le nombre de Piles obtenus",
+            "Le rang du premier Pile",
+            "Le nombre de Faces avant le premier Pile"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-093",
+        "image_path": null,
+        "theme": "Couples de V.A.",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $X(\\Omega) = \\{x_1, \\dots, x_n\\}$ et $Y(\\Omega) = \\{y_1, \\dots, y_m\\}$, combien de cases contient le tableau de la loi conjointe ?",
+        "answers": [
+            "$n+m$",
+            "$n \\times m$",
+            "$2^{n+m}$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-094",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si $X$ et $Y$ sont deux v.a.d., $XY$ est une v.a.d. Est-ce vrai ?",
+        "answers": [
+            "Oui, car l'image d'un produit est au plus dénombrable et l'image réciproque est un événement",
+            "Non, seulement pour la somme",
+            "Seulement si elles sont positives"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-095",
+        "image_path": null,
+        "theme": "Marginales",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si on somme toutes les probabilités d'une ligne $i$ dans le tableau de la loi conjointe, on obtient :",
+        "answers": [
+            "$\\mathbb{P}(X = x_i)$",
+            "$\\mathbb{P}(Y = y_j)$",
+            "$1$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-096",
+        "image_path": null,
+        "theme": "Marginales",
+        "chapter": "Espaces Probabilisés",
+        "question": "Si on somme toutes les probabilités d'une colonne $j$ dans le tableau de la loi conjointe, on obtient :",
+        "answers": [
+            "$\\mathbb{P}(X = x_i)$",
+            "$\\mathbb{P}(Y = y_j)$",
+            "$1$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-097",
+        "image_path": null,
+        "theme": "Loi de Poisson",
+        "chapter": "Espaces Probabilisés",
+        "question": "Quelle est la limite de $e^{-\\lambda} \\frac{\\lambda^k}{k!}$ quand $\\lambda \\to 0$ pour $k > 0$ ?",
+        "answers": [
+            "1",
+            "0",
+            "$1/k!$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-098",
+        "image_path": null,
+        "theme": "TD - Exercice 2",
+        "chapter": "Espaces Probabilisés",
+        "question": "Pour la loi $\\mathbb{P}(\\{n\\}) = 1/2^{n+1}$ sur $\\mathbb{N}$, que vaut $\\mathbb{P}(n \\ge 1)$ ?",
+        "answers": [
+            "$1/2$",
+            "$1/4$",
+            "$3/4$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-099",
+        "image_path": null,
+        "theme": "Loi Géométrique",
+        "chapter": "Espaces Probabilisés",
+        "question": "Dans l'exercice 72, pour montrer qu'on définit bien une v.a.d., il faut vérifier que :",
+        "answers": [
+            "$\\sum_{k=1}^{+\\infty} \\mathbb{P}(X=k) = 1$",
+            "$X(\\Omega)$ est infini",
+            "$p$ est petit"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "prob-100",
+        "image_path": null,
+        "theme": "Systèmes complets",
+        "chapter": "Espaces Probabilisés",
+        "question": "Soit $(A_i)$ un SQCE. Si $\\mathbb{P}(B) = 1$, alors la famille $(A_i \\cap B)$ est-elle encore un SQCE ?",
+        "answers": [
+            "Oui, car la probabilité de l'union reste 1",
+            "Non, l'intersection réduit la probabilité",
+            "Seulement si les $A_i$ sont indépendants de $B$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    }
+]

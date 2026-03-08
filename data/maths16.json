@@ -1,0 +1,1890 @@
+[
+    {
+        "uuid": "e4f8a1b2-1c2d-4e3f-8a9b-0c1d2e3f4g5h",
+        "image_path": null,
+        "theme": "Isométries vectorielles",
+        "question": "Quelle est la définition fondamentale d'une isométrie vectorielle $f$ dans un espace euclidien $E$ ?",
+        "answers": [
+            "Un endomorphisme qui conserve le produit scalaire : $\\forall (x,y) \\in E^2, (f(x)|f(y)) = (x|y)$ [cite: 14]",
+            "Un endomorphisme qui conserve la norme : $\\forall x \\in E, ||f(x)|| = ||x||$ [cite: 6, 7]",
+            "Un automorphisme dont la matrice dans une base quelconque est orthogonale",
+            "Les deux premières réponses sont équivalentes et correctes [cite: 14]"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 3,
+        "subject": "maths"
+    },
+    {
+        "uuid": "a7b8c9d0-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
+        "image_path": null,
+        "theme": "Isométries vectorielles",
+        "question": "Soit $f$ une isométrie vectorielle d'un espace euclidien $E$. Que peut-on dire de son spectre $Sp(f)$ ?",
+        "answers": [
+            "$Sp(f) \\subset \\mathbb{R}$",
+            "$Sp(f) \\subset \\{-1, 1\\}$ [cite: 13]",
+            "$Sp(f) = \\{1\\}$",
+            "$Sp(f) \\subset \\mathbb{C}$ et $|\\lambda| = 1$ pour tout $\\lambda \\in Sp(f)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "b2c3d4e5-f6g7-h8i9-j0k1-l2m3n4o5p6q",
+        "image_path": null,
+        "theme": "Isométries vectorielles",
+        "question": "Une projection orthogonale $p$ (différente de l'identité) est-elle une isométrie vectorielle ?",
+        "answers": [
+            "Oui, car elle conserve l'orthogonalité",
+            "Oui, car elle est associée à une décomposition orthogonale",
+            "Non, car elle n'est pas bijective (son noyau n'est pas réduit à $\\{0\\}$) [cite: 12]",
+            "Seulement si l'espace est de dimension 1"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "c3d4e5f6-a1b2-c3d4-e5f6-g7h8i9j0k1l",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Quelle condition définit une matrice orthogonale $M \\in \\mathcal{M}_n(\\mathbb{R})$ ?",
+        "answers": [
+            "$M^T = M$",
+            "$M^T M = I_n$ [cite: 47]",
+            "$det(M) = 1$",
+            "$M^2 = I_n$"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "d4e5f6g7-h8i9-j0k1-l2m3-n4o5p6q7r8s",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Si $M$ est une matrice orthogonale, quelles sont les valeurs possibles pour son déterminant ?",
+        "answers": [
+            "N'importe quel réel non nul",
+            "Uniquement $1$",
+            "$-1$ ou $1$ [cite: 70]",
+            "$0$ ou $1$"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8s9t",
+        "image_path": null,
+        "theme": "Isométries vectorielles",
+        "question": "Soit $u$ un endomorphisme de $E$. $u$ est une isométrie si et seulement si l'image d'une base orthonormale (BON) par $u$ est :",
+        "answers": [
+            "Une famille libre",
+            "Une famille génératrice",
+            "Une base orthonormale [cite: 20]",
+            "Une base orthogonale"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "f6g7h8i9-j0k1-l2m3-n4o5-p6q7r8s9t0u",
+        "image_path": null,
+        "theme": "Symétries orthogonales",
+        "question": "Comment appelle-t-on une symétrie orthogonale par rapport à un hyperplan ?",
+        "answers": [
+            "Une rotation",
+            "Une réflexion [cite: 32]",
+            "Une homothétie",
+            "Une projection"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "a1b2c3d4-e5f6-4a5b-b6c7-d8e9f0a1b2c",
+        "image_path": null,
+        "theme": "Symétries orthogonales",
+        "question": "Soit $s$ une symétrie par rapport à un sous-espace $F$ parallèlement à $G$. $s$ est une isométrie si et seulement si :",
+        "answers": [
+            "$F$ et $G$ sont supplémentaires [cite: 35]",
+            "$F$ et $G$ sont orthogonaux [cite: 35]",
+            "$dim(F) = dim(G)$",
+            "$F \\subset G$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "b2c3d4e5-f6g7-h8i9-j0k1-l2m3n4o5p6r",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Quel est l'inverse d'une matrice orthogonale $M$ ?",
+        "answers": [
+            "$-M$",
+            "$M$",
+            "$M^T$ [cite: 51]",
+            "$I_n$"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "c3d4e5f6-g7h8-i9j0-k1l2-m3n4o5p6q7s",
+        "image_path": null,
+        "theme": "Groupes orthogonaux",
+        "question": "Le groupe spécial orthogonal $SO_n(\\mathbb{R})$ est défini par :",
+        "answers": [
+            "$\\{M \\in \\mathcal{O}_n(\\mathbb{R}), det(M) = -1\\}$",
+            "$\\{M \\in \\mathcal{O}_n(\\mathbb{R}), det(M) = 1\\}$ [cite: 72]",
+            "$\\{M \\in \\mathcal{M}_n(\\mathbb{R}), det(M) = 1\\}$",
+            "$\\{M \\in \\mathcal{O}_n(\\mathbb{R}), M^T = M\\}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "d4e5f6g7-h8i9-j0k1-l2m3-n4o5p6q7r8t",
+        "image_path": null,
+        "theme": "Isométries vectorielles",
+        "question": "Si $f$ est un automorphisme orthogonal laissant stable un sous-espace $F$, alors $f$ laisse aussi stable :",
+        "answers": [
+            "N'importe quel sous-espace de même dimension",
+            "L'orthogonal de $F$, noté $F^{\\perp}$ [cite: 25]",
+            "Uniquement le vecteur nul",
+            "Seulement si $f$ est l'identité"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8s9v",
+        "image_path": null,
+        "theme": "Produit mixte",
+        "question": "Dans $\\mathbb{R}^3$, la valeur absolue du produit mixte $|[u, v, w]|$ correspond à :",
+        "answers": [
+            "L'aire du parallélogramme formé par $u$ et $v$",
+            "Le volume du parallélépipède construit sur $u, v, w$ [cite: 105]",
+            "La norme du vecteur $u \\wedge v$",
+            "La distance entre les vecteurs"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "f6g7h8i9-j0k1-l2m3-n4o5-p6q7r8s9t0w",
+        "image_path": null,
+        "theme": "Produit vectoriel",
+        "question": "Soit $u$ et $v$ deux vecteurs de $E$ (dimension 3). Le produit vectoriel $u \\wedge v$ est nul si et seulement si :",
+        "answers": [
+            "$u$ et $v$ sont orthogonaux",
+            "$u$ et $v$ sont colinéaires [cite: 117]",
+            "$u$ ou $v$ est unitaire",
+            "$u$ et $v$ forment une base"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6",
+        "image_path": null,
+        "theme": "Produit vectoriel",
+        "question": "Le produit vectoriel est une forme :",
+        "answers": [
+            "Linéaire symétrique",
+            "Bilinéaire symétrique",
+            "Bilinéaire antisymétrique [cite: 115]",
+            "Trilinéaire alternée"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "Un endomorphisme $u$ est dit symétrique (ou autoadjoint) si :",
+        "answers": [
+            "$\\forall (x,y) \\in E^2, (x|u(y)) = (u(x)|y)$ [cite: 137]",
+            "$\\forall x \\in E, (x|u(x)) = 0$",
+            "Sa matrice dans une base quelconque est symétrique",
+            "$u^2 = Id_E$"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "Dans une base orthonormale (BON), la matrice d'un endomorphisme autoadjoint est :",
+        "answers": [
+            "Orthogonale",
+            "Symétrique [cite: 140]",
+            "Antisymétrique",
+            "Triangulaire supérieure"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4d5e6f7g-8h9i-0j1k-2l3m-4n5o6p7q8r9",
+        "image_path": null,
+        "theme": "Théorème Spectral",
+        "question": "Que garantit le théorème spectral pour un endomorphisme autoadjoint d'un espace euclidien ?",
+        "answers": [
+            "Il est toujours inversible",
+            "Il admet une base orthonormée de vecteurs propres [cite: 168]",
+            "Toutes ses valeurs propres sont égales à 1 ou -1",
+            "Il est stable par composition"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5e6f7g8h-9i0j-1k2l-3m4n-5o6p7q8r9s0",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "Soit $u$ un endomorphisme symétrique. Que peut-on dire de ses sous-espaces propres ?",
+        "answers": [
+            "Ils sont de dimension 1",
+            "Ils sont deux à deux orthogonaux [cite: 162]",
+            "Leur somme n'est pas forcément directe",
+            "Ils contiennent tous le vecteur nul uniquement"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6f7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1",
+        "image_path": null,
+        "theme": "Valeurs propres",
+        "question": "Les valeurs propres d'une matrice symétrique réelle sont toujours :",
+        "answers": [
+            "Positives",
+            "Réelles [cite: 164, 166]",
+            "Complexes non réelles",
+            "Entières"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7g8h9i0j-1k2l-3m4n-5o6p-7q8r9s0t1u2",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "Un projecteur $p$ est une projection orthogonale si et seulement si :",
+        "answers": [
+            "$p^2 = p$",
+            "$p$ est symétrique [cite: 148]",
+            "$p$ est une isométrie",
+            "$p$ est de rang $n-1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8h9i0j1k-2l3m-4n5o-6p7q-8r9s0t1u2v3",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "L'ensemble $\\mathcal{S}(E)$ des endomorphismes symétriques est un espace vectoriel de dimension :",
+        "answers": [
+            "$n^2$",
+            "$\\frac{n(n-1)}{2}$",
+            "$\\frac{n(n+1)}{2}$ [cite: 145]",
+            "$n$"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9i0j1k2l-3m4n-5o6p-7q8r-9s0t1u2v3w4",
+        "image_path": null,
+        "theme": "Endomorphismes positifs",
+        "question": "Un endomorphisme symétrique $u$ est dit défini positif si :",
+        "answers": [
+            "$\\forall x \\in E, (x|u(x)) \\ge 0$",
+            "$\\forall x \\in E \\setminus \\{0\\}, (x|u(x)) > 0$ [cite: 194]",
+            "$Sp(u) \\subset \\mathbb{R}_+$",
+            "$det(u) > 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0j1k2l3m-4n5o-6p7q-8r9s-0t1u2v3w4x5",
+        "image_path": null,
+        "theme": "Endomorphismes positifs",
+        "question": "Soit $u \\in S(E)$. $u$ est autoadjoint positif si et seulement si son spectre est inclus dans :",
+        "answers": [
+            "$\\mathbb{R}^*_+$",
+            "$\\{0, 1\\}$",
+            "$\\mathbb{R}_+$ [cite: 198]",
+            "$[-1, 1]$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "k2l3m4n5-o6p7-q8r9-s0t1-u2v3w4x5y6z",
+        "image_path": null,
+        "theme": "Isométries en dimension 2",
+        "question": "Dans une base orthonormale directe du plan, une rotation d'angle $\\theta$ a pour matrice :",
+        "answers": [
+            "$\\begin{pmatrix} \\cos\\theta & \\sin\\theta \\\\ \\sin\\theta & -\\cos\\theta \\end{pmatrix}$",
+            "$\\begin{pmatrix} \\cos\\theta & -\\sin\\theta \\\\ \\sin\\theta & \\cos\\theta \\end{pmatrix}$ [cite: 226, 237]",
+            "$\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$",
+            "$\\begin{pmatrix} \\cos\\theta & \\sin\\theta \\\\ -\\sin\\theta & \\cos\\theta \\end{pmatrix}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "l3m4n5o6-p7q8-r9s0-t1u2-v3w4x5y6z7a",
+        "image_path": null,
+        "theme": "Isométries en dimension 2",
+        "question": "Une isométrie indirecte du plan est toujours :",
+        "answers": [
+            "Une rotation",
+            "Une réflexion par rapport à une droite [cite: 271]",
+            "Une homothétie",
+            "L'identité"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "m4n5o6p7-q8r9-s0t1-u2v3-w4x5y6z7a8b",
+        "image_path": null,
+        "theme": "Isométries en dimension 2",
+        "question": "La composée de deux réflexions du plan $s_{D'}$ et $s_D$ est :",
+        "answers": [
+            "Une réflexion",
+            "Une rotation d'angle $2\\widehat{(D, D')}$ [cite: 279]",
+            "Une symétrie centrale",
+            "Toujours l'identité"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "n5o6p7q8-r9s0-t1u2-v3w4-x5y6z7a8b9c",
+        "image_path": null,
+        "theme": "Isométries en dimension 3",
+        "question": "Quelle est la trace d'une rotation d'angle $\\theta$ en dimension 3 ?",
+        "answers": [
+            "$2\\cos\\theta$",
+            "$1 + 2\\cos\\theta$ [cite: 290, 294]",
+            "$3\\cos\\theta$",
+            "$\\cos\\theta$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "o6p7q8r9-s0t1-u2v3-w4x5-y6z7a8b9c0d",
+        "image_path": null,
+        "theme": "Isométries en dimension 3",
+        "question": "Pour trouver l'axe d'une rotation $f$ en dimension 3, on cherche l'espace propre associé à la valeur propre :",
+        "answers": [
+            "$-1$",
+            "$0$",
+            "$1$ [cite: 294]",
+            "$e^{i\\theta}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "p7q8r9s0-t1u2-v3w4-x5y6-z7a8b9c0d1e",
+        "image_path": null,
+        "theme": "Isométries en dimension 3",
+        "question": "Si $A \\in SO_3(\\mathbb{R})$ et $Tr(A) = -1$, quel est l'angle de la rotation ?",
+        "answers": [
+            "$0$",
+            "$\\pi/2$",
+            "$\\pi$",
+            "$\\pi/3$"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q8r9s0t1-u2v3-w4x5-y6z7-a8b9c0d1e2f",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Une matrice $M$ est orthogonale si et seulement si ses colonnes forment :",
+        "answers": [
+            "Une famille libre",
+            "Une base quelconque",
+            "Une famille orthonormale de $\\mathbb{R}^n$ [cite: 56]",
+            "Une famille de vecteurs de norme 1"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "r9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2f3g",
+        "image_path": null,
+        "theme": "Réflexions",
+        "question": "Quelle est la formule de la réflexion $s$ par rapport à $Vect(u)^{\\perp}$ ?",
+        "answers": [
+            "$s(x) = x - (x|u)u$",
+            "$s(x) = x - 2\\frac{(x|u)}{||u||^2}u$ [cite: 322]",
+            "$s(x) = -x$",
+            "$s(x) = 2\\frac{(x|u)}{||u||^2}u - x$"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "s0t1u2v3-w4x5-y6z7-a8b9-c0d1e2f3g4h",
+        "image_path": null,
+        "theme": "Produit vectoriel",
+        "question": "Dans une BON directe $(e_1, e_2, e_3)$, que vaut $e_1 \\wedge e_2$ ?",
+        "answers": [
+            "$e_1$",
+            "$e_2$",
+            "$e_3$ [cite: 127]",
+            "$-e_3$"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "t1u2v3w4-x5y6-z7a8-b9c0-d1e2f3g4h5i",
+        "image_path": null,
+        "theme": "Matrices et Isométries",
+        "question": "La matrice de passage entre deux bases orthonormales est toujours :",
+        "answers": [
+            "Symétrique",
+            "Orthogonale [cite: 63]",
+            "Diagonale",
+            "De trace nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "u2v3w4x5-y6z7-a8b9-c0d1-e2f3g4h5i6j",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "Soit $(u,v)$ deux endomorphismes symétriques. $u \\circ v$ est symétrique si et seulement si :",
+        "answers": [
+            "$u = v$",
+            "$u$ et $v$ commutent ($u \\circ v = v \\circ u$) [cite: 144]",
+            "$u$ ou $v$ est l'identité",
+            "$u \\circ v = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "v3w4x5y6-z7a8-b9c0-d1e2-f3g4h5i6j7k",
+        "image_path": null,
+        "theme": "Endomorphismes positifs",
+        "question": "Si $A$ est une matrice symétrique positive, que peut-on dire de ses coefficients diagonaux $a_{i,i}$ ?",
+        "answers": [
+            "Ils sont tous nuls",
+            "Ils peuvent être négatifs",
+            "Ils sont tous positifs ou nuls [cite: 213]",
+            "Leur somme est égale à 1"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "w4x5y6z7-a8b9-c0d1-e2f3-g4h5i6j7k8l",
+        "image_path": null,
+        "theme": "Inégalité d'Hadamard",
+        "question": "L'inégalité d'Hadamard pour une matrice $A$ de colonnes $C_1, ..., C_n$ stipule que :",
+        "answers": [
+            "$|det(A)| \\le \\sum ||C_j||$",
+            "$|det(A)| \\le \\prod_{j=1}^n ||C_j||$ [cite: 363]",
+            "$det(A) = \\prod ||C_j||$",
+            "$Tr(A) \\le \\prod ||C_j||$"
+        ],
+        "difficulty": 4,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "x5y6z7a8-b9c0-d1e2-f3g4-h5i6j7k8l9m",
+        "image_path": null,
+        "theme": "Isométries en dimension 2",
+        "question": "Une rotation d'angle $\\theta$ dans le sens indirect (ou une rotation d'angle $-\\theta$) a pour matrice :",
+        "answers": [
+            "$R(\\theta)$",
+            "$\\begin{pmatrix} \\cos\\theta & \\sin\\theta \\\\ -\\sin\\theta & \\cos\\theta \\end{pmatrix}$ [cite: 242]",
+            "$\\begin{pmatrix} -\\cos\\theta & \\sin\\theta \\\\ \\sin\\theta & \\cos\\theta \\end{pmatrix}$",
+            "$S(\\theta)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "y6z7a8b9-c0d1-e2f3-g4h5-i6j7k8l9m0n",
+        "image_path": null,
+        "theme": "Symétries",
+        "question": "Quels sont les seuls endomorphismes à la fois autoadjoints et orthogonaux ?",
+        "answers": [
+            "Les rotations",
+            "Les réflexions",
+            "Les symétries orthogonales [cite: 157, 387]",
+            "L'identité uniquement"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "z7a8b9c0-d1e2-f3g4-h5i6-j7k8l9m0n1o",
+        "image_path": null,
+        "theme": "Adjoint d'un endomorphisme",
+        "question": "L'adjoint $u^*$ d'un endomorphisme $u$ est caractérisé par :",
+        "answers": [
+            "$(u(x)|y) = (x|u^*(y))$ [cite: 400]",
+            "$u^* = u^{-1}$",
+            "$u^* = -u$",
+            "$(u^*(x)|y) = -(x|u(y))$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "a8b9c0d1-e2f3-g4h5-i6j7-k8l9m0n1o2p",
+        "image_path": null,
+        "theme": "Adjoint d'un endomorphisme",
+        "question": "Si $B$ est une BON, quelle est la matrice de $u^*$ ?",
+        "answers": [
+            "$Mat_B(u)$",
+            "$(Mat_B(u))^T$ [cite: 404]",
+            "$-(Mat_B(u))^T$",
+            "$(Mat_B(u))^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "b9c0d1e2-f3g4-h5i6-j7k8-l9m0n1o2p3q",
+        "image_path": null,
+        "theme": "Isométries vectorielles",
+        "question": "Le groupe orthogonal $O(E)$ est stable par :",
+        "answers": [
+            "Addition",
+            "Multiplication par un scalaire",
+            "Composition et inversion [cite: 21]",
+            "Passage à la trace"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "c0d1e2f3-g4h5-i6j7-k8l9-m0n1o2p3q4r",
+        "image_path": null,
+        "theme": "Endomorphismes positifs",
+        "question": "Soit $A \\in \\mathcal{M}_n(\\mathbb{R})$. La matrice $B = A^T A$ est toujours :",
+        "answers": [
+            "Orthogonale",
+            "Symétrique positive [cite: 211]",
+            "Symétrique définie positive",
+            "Antisymétrique"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "d1e2f3g4-h5i6-j7k8-l9m0-n1o2p3q4r5s",
+        "image_path": null,
+        "theme": "Produit mixte",
+        "question": "La relation de Chasles pour les angles orientés de vecteurs s'écrit :",
+        "answers": [
+            "$(u,v) + (v,w) \\equiv (u,w) [2\\pi]$ [cite: 252]",
+            "$(u,v) + (w,v) \\equiv (u,w) [2\\pi]$",
+            "$(u,v) - (v,w) \\equiv (u,w) [\\pi]$",
+            "$(u,w) \\equiv (u,v) \times (v,w) [2\\pi]$"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "e2f3g4h5-i6j7-k8l9-m0n1-o2p3q4r5s6t",
+        "image_path": null,
+        "theme": "Produit mixte",
+        "question": "Soit $u$ et $v$ deux vecteurs. Le déterminant $Det(u, v)$ dans le plan s'exprime par :",
+        "answers": [
+            "$||u|| \\cdot ||v|| \\cos(u,v)$",
+            "$||u|| \\cdot ||v|| \\sin(u,v)$ [cite: 256]",
+            "$||u|| + ||v||$",
+            "$(u|v)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "f3g4h5i6-j7k8-l9m0-n1o2-p3q4r5s6t7u",
+        "image_path": null,
+        "theme": "Orientation",
+        "question": "Deux bases orthonormales $B$ et $B'$ ont le même sens si la matrice de passage $P_{B,B'}$ :",
+        "answers": [
+            "Est symétrique",
+            "A un déterminant égal à 1 ($P_{B,B'} \\in SO_n(\\mathbb{R})$) [cite: 78]",
+            "A un déterminant égal à -1",
+            "Est la matrice identité"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "g4h5i6j7-k8l9-m0n1-o2p3-q4r5s6t7u8v",
+        "image_path": null,
+        "theme": "Produit vectoriel",
+        "question": "Quelle identité est correcte pour le double produit vectoriel ?",
+        "answers": [
+            "$u \\wedge (v \\wedge w) = (u|v)w - (u|w)v$",
+            "$u \\wedge (v \\wedge w) = (u|w)v - (u|v)w$ [cite: 328]",
+            "$u \\wedge (v \\wedge w) = (v|w)u$",
+            "$u \\wedge (v \\wedge w) = 0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "h5i6j7k8-l9m0-n1o2-p3q4-r5s6t7u8v9w",
+        "image_path": null,
+        "theme": "Isométries en dimension 3",
+        "question": "Soit $f$ une isométrie indirecte en dimension 3. Que peut-on dire de $-f$ ?",
+        "answers": [
+            "C'est aussi une isométrie indirecte",
+            "C'est une isométrie directe (une rotation) [cite: 313]",
+            "C'est une projection",
+            "Elle n'est pas forcément une isométrie"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "i6j7k8l9-m0n1-o2p3-q4r5-s6t7u8v9w0x",
+        "image_path": null,
+        "theme": "Isométries vectorielles",
+        "question": "Si $f$ est une homothétie de rapport $\\lambda$ et une isométrie, alors :",
+        "answers": [
+            "$\\lambda = 1$",
+            "$\\lambda = 1$ ou $\\lambda = -1$ [cite: 9]",
+            "$\\lambda = 0$",
+            "$\\lambda$ peut être n'importe quel réel"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "j7k8l9m0-n1o2-p3q4-r5s6-t7u8v9w0x1y",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Si $M$ est orthogonale, alors la somme des carrés des coefficients de chaque ligne vaut :",
+        "answers": [
+            "$0$",
+            "$n$",
+            "$1$ [cite: 61]",
+            "$det(M)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "k8l9m0n1-o2p3-q4r5-s6t7-u8v9w0x1y2z",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Laquelle de ces matrices est orthogonale ?",
+        "answers": [
+            "$\\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}$",
+            "$\\frac{1}{\\sqrt{2}} \\begin{pmatrix} 1 & -1 \\\\ 1 & 1 \\end{pmatrix}$ [cite: 226]",
+            "$\\begin{pmatrix} 1 & 0 \\\\ 0 & 2 \\end{pmatrix}$",
+            "$\\begin{pmatrix} 0 & 1 \\\\ 1 & 1 \\end{pmatrix}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "l9m0n1o2-p3q4-r5s6-t7u8-v9w0x1y2z3a",
+        "image_path": null,
+        "theme": "Théorème Spectral",
+        "question": "Une matrice $A$ est symétrique réelle si et seulement si elle est diagonalisable avec une matrice de passage $P$ telle que :",
+        "answers": [
+            "$P^{-1} = P^T$ ($P$ est orthogonale) [cite: 169]",
+            "$P^2 = I_n$",
+            "$Tr(P) = 0$",
+            "$det(P) = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "m0n1o2p3-q4r5-s6t7-u8v9-w0x1y2z3a4b",
+        "image_path": null,
+        "theme": "Endomorphismes positifs",
+        "question": "Soit $u \\in S^{++}(E)$. L'application $(x,y) \\mapsto (x|u(y))$ définit :",
+        "answers": [
+            "Une forme linéaire",
+            "Un nouveau produit scalaire sur $E$ [cite: 196]",
+            "Une isométrie",
+            "Toujours la valeur nulle"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "n1o2p3q4-r5s6-t7u8-v9w0-x1y2z3a4b5c",
+        "image_path": null,
+        "theme": "Endomorphismes positifs",
+        "question": "Toute matrice symétrique positive $A$ admet une 'racine carrée' $R$ symétrique positive telle que :",
+        "answers": [
+            "$R = A^2$",
+            "$R^2 = A$ [cite: 216, 415]",
+            "$R = A^T A$",
+            "$R = det(A) I_n$"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "o2p3q4r5-s6t7-u8v9-w0x1-y2z3a4b5c6d",
+        "image_path": null,
+        "theme": "Isométries en dimension 3",
+        "question": "Soit $r$ une rotation d'angle $\\theta$ et d'axe dirigé par $u$. Que vaut $r(u)$ ?",
+        "answers": [
+            "$0$",
+            "$u$ [cite: 294, 296]",
+            "$-u$",
+            "$\\cos\\theta u$"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "p3q4r5s6-t7u8-v9w0-x1y2-z3a4b5c6d7e",
+        "image_path": null,
+        "theme": "Isométries en dimension 3",
+        "question": "Si $v$ est un vecteur orthogonal à l'axe de rotation $D$ (dirigé par $u$ unitaire), alors $r(v) =$ :",
+        "answers": [
+            "$\\cos\\theta v + \\sin\\theta (u \\wedge v)$ [cite: 343]",
+            "$\\cos\\theta v$",
+            "$\\sin\\theta (u \\wedge v)$",
+            "$v$"
+        ],
+        "difficulty": 4,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q4r5s6t7-u8v9-w0x1-y2z3-a4b5c6d7e8f",
+        "image_path": null,
+        "theme": "Réflexions",
+        "question": "Combien existe-t-il de réflexions échangeant deux vecteurs distincts $x$ et $y$ de même norme ?",
+        "answers": [
+            "Aucune",
+            "Une seule [cite: 354]",
+            "Deux",
+            "Une infinité"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "r5s6t7u8-v9w0-x1y2-z3a4-b5c6d7e8f9g",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Une matrice $M$ est dans $O_n(\\mathbb{R})$ à coefficients entiers relatifs. Ses coefficients sont nécessairement dans :",
+        "answers": [
+            "$\\{0, 1\\}$",
+            "$\\{-1, 0, 1\\}$",
+            "$\\mathbb{Z}$ sans restriction",
+            "$\\{1\\}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "s6t7u8v9-w0x1-y2z3-a4b5-c6d7e8f9g0h",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "Si $u^2 = -Id_E$ et $u$ est une isométrie, alors $u$ est :",
+        "answers": [
+            "Symétrique",
+            "Antisymétrique [cite: 373, 374]",
+            "Une réflexion",
+            "L'identité"
+        ],
+        "difficulty": 4,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "t6u7v8w9-x0y1-z2a3-b4c5-d6e7f8g9h0i",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "Un endomorphisme $u$ vérifie $\\forall x \\in E, (x, u(x)) = 0$. Sa matrice en BON est :",
+        "answers": [
+            "Symétrique",
+            "Antisymétrique [cite: 373]",
+            "Diagonale",
+            "Orthogonale"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "u7v8w9x0-y1z2-a3b4-c5d6-e7f8g9h0i1j",
+        "image_path": null,
+        "theme": "Matrices et Isométries",
+        "question": "Si $M \\in \\mathcal{M}_n(\\mathbb{R})$ vérifie $M M^T M = I_n$, alors :",
+        "answers": [
+            "$M = 0$",
+            "$M = I_n$ [cite: 380]",
+            "$M$ est antisymétrique",
+            "$det(M) = 0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "v8w9x0y1-z2a3-b4c5-d6e7-f8g9h0i1j2k",
+        "image_path": null,
+        "theme": "Réflexions",
+        "question": "Le déterminant d'une réflexion est toujours :",
+        "answers": [
+            "$1$",
+            "$-1$ [cite: 74, 76]",
+            "$0$",
+            "Dépend de la dimension"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "w9x0y1z2-a3b4-c5d6-e7f8-g9h0i1j2k3l",
+        "image_path": null,
+        "theme": "Isométries en dimension 2",
+        "question": "Dans le plan, quelle est la nature de la composée de deux réflexions d'axes sécants ?",
+        "answers": [
+            "Une réflexion",
+            "Une rotation [cite: 279, 280]",
+            "Une translation",
+            "Une homothétie"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "x0y1z2a3-b4c5-d6e7-f8g9-h0i1j2k3l4m",
+        "image_path": null,
+        "theme": "Produit vectoriel",
+        "question": "Le vecteur $u \\wedge v$ est :",
+        "answers": [
+            "Parallèle à $u$",
+            "Orthogonal à $u$ et à $v$ [cite: 111]",
+            "De norme égale au produit des normes",
+            "Toujours unitaire"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "y1z2a3b4-c5d6-e7f8-g9h0-i1j2k3l4m5n",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Si $P$ est une matrice orthogonale, alors $P^{-1}$ est :",
+        "answers": [
+            "Pas forcément orthogonale",
+            "Orthogonale [cite: 67]",
+            "Symétrique",
+            "Nulle"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "z2a3b4c5-d6e7-f8g9-h0i1-j2k3l4m5n6o",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "Un endomorphisme dont la matrice en BON est $A = \\begin{pmatrix} 1 & 2 \\\\ 2 & 1 \\end{pmatrix}$ est :",
+        "answers": [
+            "Une isométrie",
+            "Autoadjoint [cite: 140]",
+            "Positif",
+            "Défini positif"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p",
+        "image_path": null,
+        "theme": "Isométries en dimension 3",
+        "question": "Le produit de deux rotations d'axes différents en dimension 3 est :",
+        "answers": [
+            "Une réflexion",
+            "Une rotation",
+            "Une symétrie orthogonale",
+            "Toujours l'identité"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "b4c5d6e7-f8g9-h0i1-j2k3-l4m5n6o7p8q",
+        "image_path": null,
+        "theme": "Endomorphismes positifs",
+        "question": "Une matrice symétrique $A$ est définie positive si et seulement si :",
+        "answers": [
+            "$Tr(A) > 0$ et $det(A) > 0$",
+            "Ses valeurs propres sont strictement positives [cite: 199, 209]",
+            "Ses coefficients sont strictement positifs",
+            "Elle est inversible"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "c5d6e7f8-g9h0-i1j2-k3l4-m5n6o7p8q9r",
+        "image_path": null,
+        "theme": "Adjoint d'un endomorphisme",
+        "question": "Que vaut l'adjoint de l'adjoint $(u^*)^*$ ?",
+        "answers": [
+            "$u$",
+            "$-u$",
+            "$u^*$",
+            "$Id$"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "d6e7f8g9-h0i1-j2k3-l4m5-n6o7p8q9r0s",
+        "image_path": null,
+        "theme": "Orientation",
+        "question": "Changer le signe d'un seul vecteur d'une BON :",
+        "answers": [
+            "Ne change pas le sens de la base",
+            "Change le sens de la base [cite: 91]",
+            "Rend la base non orthogonale",
+            "Double le déterminant"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "e7f8g9h0-i1j2-k3l4-m5n6-o7p8q9r0s1t",
+        "image_path": null,
+        "theme": "Isométries en dimension 2",
+        "question": "La matrice $S(\\theta) = \\begin{pmatrix} \\cos\\theta & \\sin\\theta \\\\ \\sin\\theta & -\\cos\\theta \\end{pmatrix}$ représente :",
+        "answers": [
+            "Une rotation d'angle $\\theta$",
+            "Une réflexion par rapport à la droite d'angle $\\theta/2$ [cite: 273]",
+            "Une homothétie",
+            "Une projection orthogonale"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "f7g8h9i0-j1k2-l3m4-n5o6-p7q8r9s0t1u",
+        "image_path": null,
+        "theme": "Isométries en dimension 3",
+        "question": "Si $r$ est une rotation d'angle $\\theta$, alors $r^{-1}$ est une rotation d'angle :",
+        "answers": [
+            "$\\theta$",
+            "$-\\theta$ [cite: 235]",
+            "$\\pi - \\theta$",
+            "$\\pi/2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "g8h9i0j1-k2l3-m4n5-o6p7-q8r9s0t1u2v",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "Le noyau d'un endomorphisme symétrique et son image sont :",
+        "answers": [
+            "Identiques",
+            "Orthogonaux et supplémentaires [cite: 403, 171]",
+            "Sans lien particulier",
+            "De même dimension"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "h9i0j1k2-l3m4-n5o6-p7q8-r9s0t1u2v3w",
+        "image_path": null,
+        "theme": "Endomorphismes positifs",
+        "question": "Si $u \\in S^+(E)$, alors $(u(x)|x) = 0$ implique :",
+        "answers": [
+            "$x = 0$",
+            "$x \\in Ker(u)$",
+            "$u = 0$",
+            "$x$ est unitaire"
+        ],
+        "difficulty": 4,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "i0j1k2l3-m4n5-o6p7-q8r9-s0t1u2v3w4x",
+        "image_path": null,
+        "theme": "Orientation",
+        "question": "Le produit mixte de $n$ vecteurs est :",
+        "answers": [
+            "Leur produit scalaire",
+            "Leur déterminant dans une base orthonormale directe [cite: 100]",
+            "La somme de leurs normes",
+            "Toujours positif"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "j1k2l3m4-n5o6-p7q8-r9s0-t1u2v3w4x5y",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "Tout endomorphisme symétrique est-il diagonalisable dans $\\mathbb{C}$ ?",
+        "answers": [
+            "Non",
+            "Oui, et même dans $\\mathbb{R}$ [cite: 168]",
+            "Seulement s'il est positif",
+            "Seulement en dimension 2"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "k2l3m4n5-o6p7-q8r9-s0t1-u2v3w4x5y6a",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Le produit de deux matrices orthogonales est :",
+        "answers": [
+            "Symétrique",
+            "Orthogonal [cite: 66]",
+            "De déterminant nul",
+            "Toujours l'identité"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "l3m4n5o6-p7q8-r9s0-t1u2-v3w4x5y6z7b",
+        "image_path": null,
+        "theme": "Orientation",
+        "question": "Pour orienter une droite vectorielle, il y a :",
+        "answers": [
+            "Un seul choix",
+            "Deux choix possibles [cite: 95]",
+            "Une infinité de choix",
+            "Aucun choix possible"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "m4n5o6p7-q8r9-s0t1-u2v3-w4x5y6z7a8c",
+        "image_path": null,
+        "theme": "Produit vectoriel",
+        "question": "L'ensemble des vecteurs orthogonaux à deux vecteurs non colinéaires $u$ et $v$ est :",
+        "answers": [
+            "Un plan",
+            "La droite engendrée par $u \\wedge v$ [cite: 122]",
+            "L'espace entier",
+            "Le vecteur nul uniquement"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "n5o6p7q8-r9s0-t1u2-v3w4-x5y6z7a8b9d",
+        "image_path": null,
+        "theme": "Isométries vectorielles",
+        "question": "Une isométrie vectorielle conserve :",
+        "answers": [
+            "L'orthogonalité [cite: 18]",
+            "La norme [cite: 6]",
+            "Le produit scalaire [cite: 14]",
+            "Toutes les réponses précédentes [cite: 6, 14, 18]"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 3,
+        "subject": "maths"
+    },
+    {
+        "uuid": "o6p7q8r9-s0t1-u2v3-w4x5-y6z7a8b9c0e",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Si les lignes d'une matrice forment une BON de $\\mathbb{R}^n$, alors la matrice est :",
+        "answers": [
+            "Symétrique",
+            "Orthogonale [cite: 57]",
+            "Inversible de déterminant 2",
+            "Nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "p7q8r9s0-t1u2-v3w4-x5y6-z7a8b9c0d1f",
+        "image_path": null,
+        "theme": "Isométries en dimension 2",
+        "question": "Le groupe spécial orthogonal $SO_2(\\mathbb{R})$ est :",
+        "answers": [
+            "Non commutatif",
+            "Commutatif [cite: 233]",
+            "Fini",
+            "Réduit à $\\{I_2, -I_2\\}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q8r9s0t1-u2v3-w4x5-y6z7-a8b9c0d1e2g",
+        "image_path": null,
+        "theme": "Théorème Spectral",
+        "question": "Soit $u \\in S(E)$ et $F$ un sous-espace stable par $u$. Alors $F^{\\perp}$ est :",
+        "answers": [
+            "Toujours stable par $u$ [cite: 167]",
+            "Jamais stable par $u$",
+            "Stable seulement si $u$ est l'identité",
+            "Stable seulement si $dim(F) = 1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "r9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2f3h",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Le déterminant d'une matrice de rotation en dimension $n$ est :",
+        "answers": [
+            "$-1$",
+            "$1$ [cite: 71, 72]",
+            "$0$",
+            "$(-1)^n$"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "s0t1u2v3-w4x5-y6z7-a8b9-c0d1e2f3g4i",
+        "image_path": null,
+        "theme": "Symétries orthogonales",
+        "question": "Une symétrie orthogonale $s$ vérifie $s^2 = Id$. Ses valeurs propres possibles sont :",
+        "answers": [
+            "$\\{0, 1\\}$",
+            "$\\{-1, 1\\}$ [cite: 31]",
+            "$\\{1\\}$ uniquement",
+            "$\\mathbb{R}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "t1u2v3w4-x5y6-z7a8-b9c0-d1e2f3g4h5j",
+        "image_path": null,
+        "theme": "Isométries en dimension 3",
+        "question": "Si une rotation $r$ en dimension 3 a pour matrice $\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 0 & -1 \\\\ 0 & 1 & 0 \\end{pmatrix}$, son angle $\\theta$ vérifie :",
+        "answers": [
+            "$\\cos\\theta = 0$ (donc $\\theta = \\pi/2$) [cite: 287, 290]",
+            "$\\cos\\theta = 1$",
+            "$\\cos\\theta = -1$",
+            "$\\cos\\theta = 1/2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "u2v3w4x5-y6z7-a8b9-c0d1-e2f3g4h5i6k",
+        "image_path": null,
+        "theme": "Projecteurs orthogonaux",
+        "question": "La composée de deux projecteurs orthogonaux $p$ et $q$ :",
+        "answers": [
+            "Est toujours un projecteur orthogonal",
+            "Est diagonalisable [cite: 413]",
+            "Est toujours nulle",
+            "Est une isométrie"
+        ],
+        "difficulty": 4,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "v3w4x5y6-z7a8-b9c0-d1e2-f3g4h5i6j7l",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "Un endomorphisme autoadjoint est nul si et seulement si :",
+        "answers": [
+            "Sa trace est nulle",
+            "Toutes ses valeurs propres sont nulles [cite: 168]",
+            "Il n'est pas inversible",
+            "Il est de rang 1"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "w4x5y6z7-a8b9-c0d1-e2f3-g4h5i6j7k8m",
+        "image_path": null,
+        "theme": "Endomorphismes positifs",
+        "question": "La somme de deux matrices symétriques positives est :",
+        "answers": [
+            "Orthogonale",
+            "Symétrique positive",
+            "Nulle",
+            "Symétrique définie positive"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "x5y6z7a8-b9c0-d1e2-f3g4-h5i6j7k8l9n",
+        "image_path": null,
+        "theme": "Produit mixte",
+        "question": "Le produit mixte est une forme $n$-linéaire :",
+        "answers": [
+            "Symétrique",
+            "Antisymétrique [cite: 103]",
+            "Positive",
+            "Non alternée"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "y6z7a8b9-c0d1-e2f3-g4h5-i6j7k8l9m0p",
+        "image_path": null,
+        "theme": "Isométries vectorielles",
+        "question": "Toute isométrie du plan est soit une réflexion, soit :",
+        "answers": [
+            "Une homothétie",
+            "Le produit de deux réflexions [cite: 282]",
+            "Une projection",
+            "Une symétrie centrale uniquement"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "z7a8b9c0-d1e2-f3g4-h5i6-j7k8l9m0n1q",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "Une matrice symétrique réelle $A$ vérifie $A^k = 0$ pour un $k \\ge 1$. Alors :",
+        "answers": [
+            "$A = I_n$",
+            "$A = 0$",
+            "$A$ est de rang $n-1$",
+            "$k$ doit être pair"
+        ],
+        "difficulty": 4,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "a8b9c0d1-e2f3-g4h5-i6j7-k8l9m0n1o2r",
+        "image_path": null,
+        "theme": "Isométries en dimension 3",
+        "question": "En dimension 3, si $u$ et $v$ sont unitaires et orthogonaux, alors $(u, v, u \\wedge v)$ est :",
+        "answers": [
+            "Une base quelconque",
+            "Une BON directe [cite: 128]",
+            "Une BON indirecte",
+            "Une famille liée"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "b9c0d1e2-f3g4-h5i6-j7k8-l9m0n1o2p3s",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Une matrice de $\\mathcal{O}_n(\\mathbb{R})$ a toutes ses lignes identiques. Est-ce possible ?",
+        "answers": [
+            "Oui, pour $n=1$ uniquement [cite: 61]",
+            "Oui, pour tout $n$",
+            "Non, jamais",
+            "Seulement si elle est nulle"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "c0d1e2f3-g4h5-i6j7-k8l9-m0n1o2p3q4t",
+        "image_path": null,
+        "theme": "Adjoint d'un endomorphisme",
+        "question": "$Ker(u^*)$ est égal à :",
+        "answers": [
+            "$Ker(u)$",
+            "$(Im(u))^{\\perp}$ [cite: 403]",
+            "$Im(u)$",
+            "$\\{0\\}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "d1e2f3g4-h5i6-j7k8-l9m0-n1o2p3q4r5u",
+        "image_path": null,
+        "theme": "Isométries vectorielles",
+        "question": "L'image de l'orthogonal d'un sous-espace $F$ par une isométrie $f$ est :",
+        "answers": [
+            "$f(F)$",
+            "$(f(F))^{\\perp}$ [cite: 25]",
+            "$F^{\\perp}$",
+            "$\\{0\\}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "e2f3g4h5-i6j7-k8l9-m0n1-o2p3q4r5s6v",
+        "image_path": null,
+        "theme": "Réflexions",
+        "question": "Soit $H$ un hyperplan. La réflexion $s_H$ est :",
+        "answers": [
+            "Une isométrie directe",
+            "Une isométrie indirecte [cite: 74]",
+            "Un endomorphisme de trace nulle",
+            "Une projection"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "f3g4h5i6-j7k8-l9m0-n1o2-p3q4r5s6t7w",
+        "image_path": null,
+        "theme": "Théorème Spectral",
+        "question": "Si $A \\in \\mathcal{S}_n(\\mathbb{R})$, alors $A$ est diagonalisable dans une base orthonormée. Cela signifie qu'il existe $P \\in \\mathcal{O}_n(\\mathbb{R})$ telle que :",
+        "answers": [
+            "$A = P D P^{-1} = P D P^T$ [cite: 169]",
+            "$A = P D P$",
+            "$A = P^T D P^T$",
+            "$A = D$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "g4h5i6j7-k8l9-m0n1-o2p3-q4r5s6t7u8x",
+        "image_path": null,
+        "theme": "Endomorphismes positifs",
+        "question": "Un endomorphisme symétrique $u$ est positif si et seulement si toutes ses valeurs propres sont :",
+        "answers": [
+            "Strictement positives",
+            "Positives ou nulles [cite: 198]",
+            "Égales à 1",
+            "Réelles"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "h5i6j7k8-l9m0-n1o2-p3q4-r5s6t7u8v9y",
+        "image_path": null,
+        "theme": "Orientation",
+        "question": "Le produit mixte $[u_1, ..., u_n]$ change de signe si :",
+        "answers": [
+            "On multiplie un vecteur par 2",
+            "On échange deux vecteurs [cite: 103]",
+            "On remplace un vecteur par une combinaison linéaire des autres",
+            "On change de base orthonormale directe"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "i6j7k8l9-m0n1-o2p3-q4r5-s6t7u8v9w0z",
+        "image_path": null,
+        "theme": "Isométries en dimension 3",
+        "question": "En dimension 3, si $det(f) = 1$ et $f \\neq Id$, l'ensemble des vecteurs invariants est :",
+        "answers": [
+            "Le vecteur nul",
+            "Une droite (l'axe) [cite: 294, 296]",
+            "Un plan",
+            "L'espace entier"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "j7k8l9m0-n1o2-p3q4-r5s6-t7u8v9w0x1a",
+        "image_path": null,
+        "theme": "Isométries en dimension 2",
+        "question": "L'isométrie du plan de matrice $\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$ est :",
+        "answers": [
+            "Une rotation",
+            "Une réflexion [cite: 271, 274]",
+            "Une projection",
+            "Une homothétie"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "k8l9m0n1-o2p3-q4r5-s6t7-u8v9w0x1y2b",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Si $A$ et $B$ sont orthogonales, $A + B$ est-elle orthogonale ?",
+        "answers": [
+            "Toujours",
+            "Jamais",
+            "Pas nécessairement",
+            "Seulement si $A = B$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "l9m0n1o2-p3q4-r5s6-t7u8-v9w0x1y2z3c",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "Une matrice symétrique $A$ est nilpotente. Que vaut $A$ ?",
+        "answers": [
+            "$I_n$",
+            "$0$ [cite: 168]",
+            "Une matrice de rang 1",
+            "On ne peut pas conclure"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "m0n1o2p3-q4r5-s6t7-u8v9-w0x1y2z3a4d",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Quelle est la trace d'une matrice de réflexion en dimension $n$ ?",
+        "answers": [
+            "$0$",
+            "$n-2$",
+            "$n$",
+            "$-1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "n1o2p3q4-r5s6-t7u8-v9w0-x1y2z3a4b5e",
+        "image_path": null,
+        "theme": "Endomorphismes positifs",
+        "question": "Si $A$ est symétrique définie positive, alors $det(A)$ est :",
+        "answers": [
+            "Positif ou nul",
+            "Strictement positif",
+            "Nul",
+            "Égal à 1"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "o2p3q4r5-s6t7-u8v9-w0x1-y2z3a4b5c6f",
+        "image_path": null,
+        "theme": "Isométries en dimension 3",
+        "question": "L'angle d'une rotation $r$ dépend-il de l'orientation choisie pour l'axe ?",
+        "answers": [
+            "Non",
+            "Oui, il change de signe si on inverse l'orientation [cite: 288, 290]",
+            "Oui, il devient $\\pi - \\theta$",
+            "Seulement si l'angle est $\\pi/2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "p3q4r5s6-t7u8-v9w0-x1y2-z3a4b5c6d7g",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "L'adjoint de la composée $(u \\circ v)^*$ est :",
+        "answers": [
+            "$u^* \\circ v^*$",
+            "$v^* \\circ u^*$",
+            "$u^* + v^*$",
+            "$(u \\circ v)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q4r5s6t7-u8v9-w0x1-y2z3-a4b5c6d7e8h",
+        "image_path": null,
+        "theme": "Matrices et Isométries",
+        "question": "Soit $A \\in \\mathcal{O}_n(\\mathbb{R})$. Quel est le module des valeurs propres complexes de $A$ ?",
+        "answers": [
+            "Inférieur à 1",
+            "Égal à 1",
+            "Supérieur à 1",
+            "Zéro"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "r5s6t7u8-v9w0-x1y2-z3a4-b5c6d7e8f9i",
+        "image_path": null,
+        "theme": "Isométries en dimension 2",
+        "question": "Le produit de deux réflexions d'axes orthogonaux est :",
+        "answers": [
+            "Une réflexion",
+            "Une symétrie centrale (rotation d'angle $\\pi$) [cite: 279]",
+            "L'identité",
+            "Une projection"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "s6t7u8v9-w0x1-y2z3-a4b5-c6d7e8f9g0j",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "Si $u$ est autoadjoint, alors $u^2$ est :",
+        "answers": [
+            "Toujours autoadjoint positif [cite: 198, 200]",
+            "Antisymétrique",
+            "Une isométrie",
+            "De trace nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "t7u8v9w0-x1y2-z3a4-b5c6-d7e8f9g0h1k",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Une matrice de passage d'une base $B$ à une base $B'$ est orthogonale si :",
+        "answers": [
+            "$B$ est une BON",
+            "$B'$ est une BON",
+            "$B$ et $B'$ sont toutes deux des BON [cite: 63]",
+            "$B$ et $B'$ ont le même sens"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "u8v9w0x1-y2z3-a4b5-c5d6-e7f8g9h0i1l",
+        "image_path": null,
+        "theme": "Produit vectoriel",
+        "question": "En dimension 3, si $u \\wedge v = u \\wedge w$ avec $u \\neq 0$, peut-on dire que $v = w$ ?",
+        "answers": [
+            "Oui",
+            "Non, cela signifie que $v-w$ est colinéaire à $u$ [cite: 117]",
+            "Non, cela signifie que $v$ et $w$ sont orthogonaux",
+            "Seulement si $u$ est unitaire"
+        ],
+        "difficulty": 4,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "v9w0x1y2-z3a4-b5c6-d7e8-f9g0h1i2j3m",
+        "image_path": null,
+        "theme": "Théorème Spectral",
+        "question": "Une matrice symétrique réelle $A$ possède une valeur propre complexe $\\lambda = a + ib$. Alors :",
+        "answers": [
+            "$a=0$",
+            "$b=0$ (donc $\\lambda \\in \\mathbb{R}$) [cite: 164]",
+            "$|\\lambda| = 1$",
+            "$\\lambda$ est forcément imaginaire pur"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "w0x1y2z3-a4b5-c6d7-e8f9-g0h1i2j3k4n",
+        "image_path": null,
+        "theme": "Endomorphismes autoadjoints",
+        "question": "Soit $p$ un projecteur. $p$ est une projection orthogonale si et seulement si :",
+        "answers": [
+            "$Im(p) = Ker(p)^{\\perp}$ [cite: 149, 150]",
+            "$Tr(p) = 0$",
+            "$p$ est inversible",
+            "$p$ est une rotation"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "x1y2z3a4-b5c6-d7e8-f9g0-h1i2j3k4l5o",
+        "image_path": null,
+        "theme": "Matrices orthogonales",
+        "question": "Laquelle de ces propriétés est fausse pour une matrice orthogonale $M$ ?",
+        "answers": [
+            "$M^T$ est orthogonale",
+            "$M^{-1} = M^T$",
+            "$M$ est diagonalisable dans $\\mathbb{R}$",
+            "$|det(M)| = 1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "y2z3a4b5-c6d7-e8f9-g0h1-i2j3k4l5m6p",
+        "image_path": null,
+        "theme": "Isométries en dimension 3",
+        "question": "Une rotation en dimension 3 est un endomorphisme :",
+        "answers": [
+            "Direct et orthogonal [cite: 286, 304]",
+            "Indirect et orthogonal",
+            "Symétrique et défini positif",
+            "De trace nulle"
+        ],
+        "difficulty": 1,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "z3a4b5c6-d7e8-f9g0-h1i2-j3k4l5m6n7q",
+        "image_path": null,
+        "theme": "Endomorphismes positifs",
+        "question": "Si $u$ est autoadjoint défini positif, alors $u$ est :",
+        "answers": [
+            "Nul",
+            "Inversible",
+            "Une réflexion",
+            "Une rotation"
+        ],
+        "difficulty": 2,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "a4b5c6d7-e8f9-g0h1-i2j3-k4l5m6n7o8r",
+        "image_path": null,
+        "theme": "Produit vectoriel",
+        "question": "Le produit mixte $[u, v, u \\wedge v]$ est :",
+        "answers": [
+            "Toujours nul",
+            "Égal à $||u \\wedge v||^2$ [cite: 121]",
+            "Négatif",
+            "Égal à $(u|v)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Endomorphismes d'un espace Euclidien",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    }
+]

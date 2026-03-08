@@ -1,0 +1,1517 @@
+[
+    {
+        "uuid": "8f3e1b2a-1234-4a5b-8c9d-1e2f3a4b5c6d",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Signals_analog_digital.svg",
+        "theme": "électronique numérique",
+        "question": "Quelle est la définition d'un signal analogique selon le cours ?",
+        "answers": [
+            "Un signal qui ne varie qu'à des instants discrets.",
+            "Une grandeur physique $X(t)$ pouvant prendre un ensemble continu de valeurs sur un intervalle de temps continu.",
+            "Un signal dont l'amplitude est quantifiée sur $n$ bits."
+        ],
+        "difficulty": 1,
+        "chapter": "Numérisation d'un signal",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "7d4c2e1f-5678-4b6c-9d0e-1f2a3b4c5d6e",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans une chaîne d'acquisition, quel est le rôle du transducteur ?",
+        "answers": [
+            "Convertir un signal analogique en valeur binaire.",
+            "Bloquer la tension à un niveau constant pendant une durée $T_e$.",
+            "Convertir une grandeur physique (température, vitesse) en tension analogique."
+        ],
+        "difficulty": 1,
+        "chapter": "Structure d'une chaîne d'acquisition",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "2a3b4c5d-9012-4d7e-8f9g-0h1i2j3k4l5m",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sample_and_hold.png",
+        "theme": "électronique numérique",
+        "question": "Quel composant maintient la tension constante pendant la conversion analogique-numérique ?",
+        "answers": [
+            "Le microprocesseur.",
+            "L'échantillonneur-bloqueur.",
+            "Le filtre anti-repliement."
+        ],
+        "difficulty": 1,
+        "chapter": "Structure d'une chaîne d'acquisition",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "1a2b3c4d-5e6f-7g8h-9i0j-k1l2m3n4o5p",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la relation entre la période d'échantillonnage $T_e$ et la fréquence d'échantillonnage $f_e$ ?",
+        "answers": [
+            "$f_e = T_e$",
+            "$f_e = \\frac{1}{T_e}$",
+            "$f_e = 2\\pi T_e$"
+        ],
+        "difficulty": 1,
+        "chapter": "Échantillonnage",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "b1c2d3e4-f5g6-7h8i-9j0k-l1m2n3o4p5q",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/e/ea/AliasingSines.svg",
+        "theme": "électronique numérique",
+        "question": "Énoncer le critère de Nyquist-Shannon pour éviter le repliement de spectre.",
+        "answers": [
+            "$f_e > f_{max}$",
+            "$f_e > 2 f_{max}$",
+            "$f_e < \\frac{f_{max}}{2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Critère de Nyquist-Shannon",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "c2d3e4f5-g6h7-8i9j-0k1l-m2n3o4p5q6r",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "On échantillonne un signal de fréquence $f_0 = 10\\text{ kHz}$ à une fréquence $f_e = 14,5\\text{ kHz}$. Que se passe-t-il ?",
+        "answers": [
+            "Le signal est fidèlement reproduit car $f_e > f_0$.",
+            "Il y a repliement de spectre car $f_e < 2 f_0$.",
+            "Le signal est parfaitement filtré."
+        ],
+        "difficulty": 2,
+        "chapter": "Choix de la fréquence d'échantillonnage",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "d3e4f5g6-h7i8-9j0k-1l2m-3n4o5p6q7r8s",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la formule du pas de quantification $q$ pour un CAN de $n$ bits sur une plage $[u_{min}, u_{max}]$ ?",
+        "answers": [
+            "$q = \\frac{u_{max} - u_{min}}{n}$",
+            "$q = \\frac{u_{max} - u_{min}}{2^n - 1}$",
+            "$q = \\frac{u_{max} + u_{min}}{2n}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Quantification",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e4f5g6h7-i8j9-0k1l-2m3n-4o5p6q7r8s9t",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un oscilloscope 8 bits affiche un signal sur un calibre de $5\\text{ V/div}$ avec 8 divisions verticales. Quel est le pas de quantification ?",
+        "answers": [
+            "$\\approx 0,16\\text{ V}$",
+            "$\\approx 0,04\\text{ V}$",
+            "$\\approx 1,25\\text{ V}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Quantification",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "f5g6h7i8-j9k0-1l2m-3n4o-5p6q7r8s9t0u",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Spectre_signal-%C3%A9chantillonn%C3%A9.png",
+        "theme": "électronique numérique",
+        "question": "L'échantillonnage d'un signal entraîne une réplication périodique de son spectre. À quelles fréquences se trouvent les répliques d'une composante $f$ ?",
+        "answers": [
+            "$k \\cdot f_e$",
+            "$k \\cdot f_e \\pm f$",
+            "$f \\pm k \\cdot f_0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Spectre d'un signal échantillonné",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "g6h7i8j9-k0l1-2m3n-4o5p-6q7r8s9t0u1v",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Où doit-on placer le filtre anti-repliement (filtre passe-bas) ?",
+        "answers": [
+            "Après l'échantillonneur-bloqueur.",
+            "Avant l'échantillonneur-bloqueur.",
+            "Après le stockage en mémoire."
+        ],
+        "difficulty": 2,
+        "chapter": "Critère de Nyquist-Shannon",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "h7i8j9k0-l1m2-3n4o-5p6q-7r8s9t0u1v2w",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la résolution fréquentielle $\\Delta f$ d'un spectre calculé sur une durée d'acquisition $T_a$ ?",
+        "answers": [
+            "$\\Delta f = T_a$",
+            "$\\Delta f = \\frac{1}{T_a}$",
+            "$\\Delta f = \\frac{f_e}{2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Durée d'acquisition",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "i8j9k0l1-m2n3-4o5p-6q7r-8s9t0u1v2w3x",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 1] Un disque tourne à $50\\text{ tr/s}$. On l'éclaire avec un stroboscope à $N_0 = 50\\text{ Hz}$. Que voit l'oeil ?",
+        "answers": [
+            "Le disque semble immobile car la fréquence de l'éclair est égale à la fréquence de rotation.",
+            "Le disque semble tourner lentement dans le sens inverse.",
+            "On voit plusieurs traits noirs clignoter."
+        ],
+        "difficulty": 2,
+        "chapter": "Approche stroboscopique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "j9k0l1m2-n3o4-5p6q-7r8s-9t0u1v2w3x4y",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 1] Avec $N=50\\text{ tr/s}$ (horaire) et $N_0 = 51\\text{ Hz}$, quel est le mouvement apparent ?",
+        "answers": [
+            "Rotation lente dans le bon sens (horaire).",
+            "Rotation lente dans le sens inverse (trigonométrique).",
+            "Immobilité parfaite."
+        ],
+        "difficulty": 3,
+        "chapter": "Approche stroboscopique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "k0l1m2n3-o4p5-6q7r-8s9t-0u1v2w3x4y5z",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 3] Pour un signal $s(t) = A\\cos^2(2\\pi \\cdot 1000t)$, quelle est la fréquence d'échantillonnage minimale de Shannon ?",
+        "answers": [
+            "$2000\\text{ Hz}$",
+            "$4000\\text{ Hz}$",
+            "$1000\\text{ Hz}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Analyse spectrale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "l1m2n3o4-p5q6-7r8s-9t0u-1v2w3x4y5z6a",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quel est le nombre de niveaux quantifiables pour un convertisseur 12 bits ?",
+        "answers": [
+            "$12$",
+            "$144$",
+            "$4096$"
+        ],
+        "difficulty": 1,
+        "chapter": "Quantification",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "m2n3o4p5-q6r7-8s9t-0u1v-2w3x4y5z6a7b",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 6] Pour un CD audio ($f_{max} = 20\\text{ kHz}$), pourquoi choisit-on $f_e = 44,1\\text{ kHz}$ plutôt que juste $40\\text{ kHz}$ ?",
+        "answers": [
+            "Pour augmenter la capacité de stockage.",
+            "Pour laisser une zone de transition pour le filtrage anti-repliement.",
+            "C'est une contrainte purement informatique sans lien physique."
+        ],
+        "difficulty": 2,
+        "chapter": "Signaux audios",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "n3o4p5q6-r7s8-9t0u-1v2w-3x4y5z6a7b8c",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans la relation de récurrence du filtre passe-bas numérique $s_{k+1} = s_k + 2\\pi f_c T_e(e_k - s_k)$, que se passe-t-il si $f_e$ est faible ?",
+        "answers": [
+            "Le signal numérique s'éloigne du comportement du filtre analogique.",
+            "Le filtre devient un filtre passe-haut.",
+            "La fréquence de coupure augmente spontanément."
+        ],
+        "difficulty": 3,
+        "chapter": "Filtrage numérique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "o4p5q6r7-s8t9-0u1v-2w3x-4y5z6a7b8c9d",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal téléphonique est limité à $3,4\\text{ kHz}$ et échantillonné à $8\\text{ kHz}$. La condition de Shannon est-elle respectée ?",
+        "answers": [
+            "Oui, car $8 > 2 \\times 3,4$.",
+            "Non, car $8 < 10$.",
+            "Seulement si le signal est sinusoïdal."
+        ],
+        "difficulty": 1,
+        "chapter": "Signaux audios",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "p5q6r7s8-t9u0-1v2w-3x4y-5z6a7b8c9d0e",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 5] Un signal de $1\\text{ kHz}$ est échantillonné à $f_e = 7,5\\text{ kHz}$. Quelle est la fréquence parasite associée à l'harmonique 7 ($7\\text{ kHz}$) ?",
+        "answers": [
+            "$500\\text{ Hz}$",
+            "$14,5\\text{ kHz}$",
+            "$7,5\\text{ kHz}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Repliement de spectre",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q6r7s8t9-u0v1-2w3x-4y5z-6a7b8c9d0e1f",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Combien de bits sont nécessaires pour obtenir une précision relative de $15\\text{ ppm}$ (parties par million) ?",
+        "answers": [
+            "8 bits",
+            "12 bits",
+            "16 bits"
+        ],
+        "difficulty": 3,
+        "chapter": "Quantification",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "r7s8t9u0-v1w2-3x4y-5z6a-7b8c9d0e1f2g",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Pourquoi est-il important d'adapter le calibre de l'oscilloscope au signal ?",
+        "answers": [
+            "Pour ne pas griller l'appareil.",
+            "Pour minimiser le pas de quantification et gagner en précision.",
+            "Pour augmenter la fréquence d'échantillonnage."
+        ],
+        "difficulty": 2,
+        "chapter": "Quantification",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "s8t9u0v1-w2x3-4y5z-6a7b-8c9d0e1f2g3h",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 9] Si $e(t) = A\\sin(2\\pi f_e t)$, que valent les échantillons prélevés à $t_k = k T_e$ ?",
+        "answers": [
+            "Ils sont tous nuls.",
+            "Ils valent tous $A$.",
+            "Ils alternent entre $A$ et $-A$."
+        ],
+        "difficulty": 3,
+        "chapter": "Échantillonnage",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "t9u0v1w2-x3y4-5z6a-7b8c-9d0e1f2g3h4i",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Le repliement spectral est-il corrigeable par filtrage après l'acquisition ?",
+        "answers": [
+            "Oui, avec un filtre numérique puissant.",
+            "Non, l'information est définitivement perdue ou corrompue.",
+            "Seulement pour les signaux de faible amplitude."
+        ],
+        "difficulty": 2,
+        "chapter": "Repliement de spectre",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "u0v1w2x3-y4z5-6a7b-8c9d-0e1f2g3h4i5j",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 3] On veut distinguer deux pics à $990\\text{ Hz}$ et $1010\\text{ Hz}$. Quelle doit être la durée d'acquisition minimale $T_a$ ?",
+        "answers": [
+            "$0,01\\text{ s}$",
+            "$0,1\\text{ s}$",
+            "$0,05\\text{ s}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Analyse spectrale",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "v1w2x3y4-z5a6-7b8c-9d0e-1f2g3h4i5j6k",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la limite de rafraîchissement de l'oeil humain utilisée dans les exercices de stroboscopie ?",
+        "answers": [
+            "$10\\text{ Hz}$",
+            "$25\\text{ Hz}$",
+            "$100\\text{ Hz}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Approche stroboscopique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "w2x3y4z5-a6b7-8c9d-0e1f-2g3h4i5j6k7l",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal numérique ne varie qu'à des instants discrets $t_n$. Comment sont généralement espacés ces instants ?",
+        "answers": [
+            "De façon aléatoire.",
+            "De façon régulière avec $t_n = n T_e$.",
+            "De façon logarithmique."
+        ],
+        "difficulty": 1,
+        "chapter": "Échantillonnage",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "x3y4z5a6-b7c8-9d0e-1f2g-3h4i5j6k7l8m",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Que signifie le terme 'Aliasing' ?",
+        "answers": [
+            "L'augmentation de la résolution binaire.",
+            "Le phénomène de recouvrement du spectre.",
+            "Le lissage d'un signal par un filtre."
+        ],
+        "difficulty": 1,
+        "chapter": "Repliement de spectre",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "y4z5a6b7-c8d9-0e1f-2g3h-4i5j6k7l8m9n",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 2] Un moteur tourne à $1500\\text{ tr/min}$. Quelle est sa fréquence en Hz ?",
+        "answers": [
+            "$1500\\text{ Hz}$",
+            "$25\\text{ Hz}$",
+            "$90\\text{ Hz}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Rotation d'un moteur",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "z5a6b7c8-d9e0-1f2g-3h4i-5j6k7l8m9n0o",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 2] Si on a 4 flashs par tour sur un disque avec un secteur noir, que voit-on ?",
+        "answers": [
+            "Un seul trait fixe.",
+            "Une croix (4 traits séparés par 90°).",
+            "Le disque totalement noir."
+        ],
+        "difficulty": 2,
+        "chapter": "Rotation d'un moteur",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "a6b7c8d9-e0f1-2g3h-4i5j-6k7l8m9n0o1p",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la fonction de transfert $\\underline{H}$ d'un filtre analogique passe-bas d'ordre 1 ?",
+        "answers": [
+            "$\\underline{H} = \\frac{1}{1+j\\frac{\\omega}{\\omega_c}}$",
+            "$\\underline{H} = 1 + j\\frac{\\omega}{\\omega_c}$",
+            "$\\underline{H} = \\frac{j\\omega/\\omega_c}{1+j\\omega/\\omega_c}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Filtrage numérique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "b7c8d9e0-f1g2-3h4i-5j6k-7l8m9n0o1p2q",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Pour obtenir un spectre précis, l'acquisition doit être :",
+        "answers": [
+            "La plus courte possible.",
+            "Longue et contenir un grand nombre de périodes.",
+            "Effectuée à une fréquence $f_e$ la plus basse possible."
+        ],
+        "difficulty": 1,
+        "chapter": "Durée d'acquisition",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "c8d9e0f1-g2h3-4i5j-6k7l-8m9n0o1p2q3r",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal de $440\\text{ Hz}$ est échantillonné à $8000\\text{ Hz}$. On monte d'octave en octave ($f \\times 2$). À quelle octave le son paraîtra-t-il plus grave à cause de l'aliasing ?",
+        "answers": [
+            "Dès que $f > 2000\\text{ Hz}$.",
+            "Dès que $f > 4000\\text{ Hz}$.",
+            "Jamais, le son devient juste plus aigu."
+        ],
+        "difficulty": 4,
+        "chapter": "Repliement de spectre musical",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "d9e0f1g2-h3i4-5j6k-7l8m-9n0o1p2q3r4s",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Le nombre de valeurs possibles pour un signal numérique est généralement :",
+        "answers": [
+            "Un nombre premier.",
+            "Une puissance de 2.",
+            "Un multiple de 10."
+        ],
+        "difficulty": 1,
+        "chapter": "Notion de signal",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e0f1g2h3-i4j5-5j6k-7l8m-9n0o1p2q3r4s",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cas d'un signal triangulaire, si on néglige les harmoniques < 2% du fondamental, quelle est la fréquence max à considérer pour Shannon ?",
+        "answers": [
+            "Celle du fondamental $f_0$.",
+            "L'harmonique 7 ($7f_0$).",
+            "L'harmonique 100."
+        ],
+        "difficulty": 4,
+        "chapter": "Analyse spectrale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1g2h3i4-j5k6-6k7l-8m9n-0o1p2q3r4s5t",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Une carte Arduino contient quels blocs de la chaîne d'acquisition ?",
+        "answers": [
+            "Uniquement le stockage.",
+            "L'échantillonneur-bloqueur et le CAN.",
+            "Le transducteur de température."
+        ],
+        "difficulty": 2,
+        "chapter": "Structure d'une chaîne d'acquisition",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la condition sur $f_e$ pour que le spectre du signal et ses répliques ne se recouvrent pas ?",
+        "answers": [
+            "$f_{max} < f_e - f_{max}$",
+            "$f_{max} < f_e + f_{max}$",
+            "$f_e < f_{max}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Critère de Nyquist-Shannon",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "b2c3d4e5-f6g7-8h9i-0j1k-l2m3n4o5p6q",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 8] Pourquoi ne peut-on pas utiliser un oscilloscope dont la bande passante est exactement égale à la fréquence maximale du signal ?",
+        "answers": [
+            "Car l'atténuation à la fréquence de coupure est déjà de $-3\\text{ dB}$ (trop importante).",
+            "Car l'appareil risque de surchauffer.",
+            "Pour des raisons de sécurité électrique."
+        ],
+        "difficulty": 3,
+        "chapter": "Oscilloscope numérique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "c3d4e5f6-g7h8-9i0j-1k2l-m3n4o5p6q7r",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Si $N_e$ est le nombre d'échantillons, quelle est la taille de la mémoire occupée en octets si chaque échantillon fait 2 octets ?",
+        "answers": [
+            "$2 \\cdot N_e$",
+            "$N_e / 2$",
+            "$N_e^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Oscilloscope numérique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "d4e5f6g7-h8i9-0j1k-2l3m-n4o5p6q7r8s",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 7] Pour un calibre de $200\\text{ mV/div}$ et 8 divisions, quelle est la tension pleine échelle ?",
+        "answers": [
+            "$0,2\\text{ V}$",
+            "$1,6\\text{ V}$",
+            "$1600\\text{ V}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Quantification",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e5f6g7h8-i9j0-1k2l-3m4n-o5p6q7r8s9t",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Le passage de la dérivée continue à la différence finie $\\frac{s_{k+1}-s_k}{T_e}$ s'appelle :",
+        "answers": [
+            "La linéarisation.",
+            "La discrétisation.",
+            "La quantification."
+        ],
+        "difficulty": 2,
+        "chapter": "Filtrage numérique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "f6g7h8i9-j0k1-2l3m-4n5o-p6q7r8s9t0u",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 9] Avec $s_{k+1} = s_k + 2\\pi \\beta (e_k - s_k)$, si l'entrée est constante $e_k = A$, quelle sera la valeur finale $s_{\\infty}$ ?",
+        "answers": [
+            "$0$",
+            "$A$",
+            "$2\\pi \\beta A$"
+        ],
+        "difficulty": 3,
+        "chapter": "Filtrage numérique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "g7h8i9j0-k1l2-3m4n-5o6p-q7r8s9t0u1v",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans un signal numérique, le nombre de valeurs possibles est généralement $2^n$. Que représente $n$ ?",
+        "answers": [
+            "Le nombre d'échantillons par seconde.",
+            "Le nombre de bits de codage.",
+            "La durée de l'acquisition."
+        ],
+        "difficulty": 1,
+        "chapter": "Notion de signal",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "h8i9j0k1-l2m3-4n5o-6p7q-r8s9t0u1v2w",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Si on multiplie la vitesse d'échantillonnage par 10 sans changer la durée $T_a$, la résolution $\\Delta f$ :",
+        "answers": [
+            "Est multipliée par 10.",
+            "Est divisée par 10.",
+            "Reste inchangée."
+        ],
+        "difficulty": 3,
+        "chapter": "Durée d'acquisition",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "i9j0k1l2-m3n4-5o6p-7q8r-s9t0u1v2w3x",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal analogique est défini sur :",
+        "answers": [
+            "Un intervalle de temps continu.",
+            "Des instants $t_n$ uniquement.",
+            "Seulement lorsque la tension est positive."
+        ],
+        "difficulty": 1,
+        "chapter": "Notion de signal",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "j0k1l2m3-n4o5-6p7q-8r9s-t0u1v2w3x4y",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quel filtre est utilisé pour supprimer les répliques du spectre après la numérisation lors de la restitution ?",
+        "answers": [
+            "Un filtre passe-haut.",
+            "Un filtre passe-bas (filtre de lissage).",
+            "Un filtre réjecteur de bande."
+        ],
+        "difficulty": 2,
+        "chapter": "Spectre d'un signal échantillonné",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "k1l2m3n4-o5p6-7q8r-9s0t-u1v2w3x4y5z",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 3] Pour $s_6(t) = A\\cos(2\\pi \\cdot 1000t) \\cdot \\cos(2\\pi \\cdot 10t)$, quelle est la fréquence maximale du spectre ?",
+        "answers": [
+            "$1000\\text{ Hz}$",
+            "$1010\\text{ Hz}$",
+            "$990\\text{ Hz}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Analyse spectrale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "l2m3n4o5-p6q7-8r9s-0t1u-v2w3x4y5z6a",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Que se passe-t-il si la période de rotation $T_0$ est égale à la période du stroboscope $T_e$ ?",
+        "answers": [
+            "Le mouvement semble s'accélérer.",
+            "L'objet semble immobile.",
+            "L'objet semble tourner à l'envers."
+        ],
+        "difficulty": 2,
+        "chapter": "Approche stroboscopique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "m3n4o5p6-q7r8-9s0t-1u2v-w3x4y5z6a7b",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cas d'un moteur [TD Ex 2], si la vitesse apparente s'accélère quand on freine, cela signifie :",
+        "answers": [
+            "Que le disque tournait déjà à l'envers.",
+            "Que le mouvement apparent était dans le sens inverse du réel.",
+            "Que le stroboscope a changé de fréquence."
+        ],
+        "difficulty": 4,
+        "chapter": "Rotation d'un moteur",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "n4o5p6q7-r8s9-0t1u-2v3w-x4y5z6a7b8c",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est l'unité de la fréquence d'échantillonnage ?",
+        "answers": [
+            "Seconde ($s$)",
+            "Hertz ($Hz$)",
+            "Volt ($V$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Échantillonnage",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "o5p6q7r8-s9t0-1u2v-3w4x-y5z6a7b8c9d",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Si $f_e = 2 f_{max}$, on est à la limite du critère de Shannon. Que se passe-t-il pour un signal $\\sin(2\\pi f_{max} t)$ ?",
+        "answers": [
+            "On peut reconstruire le signal parfaitement.",
+            "On peut obtenir un signal nul si on échantillonne aux passages par zéro.",
+            "Le signal est amplifié par 2."
+        ],
+        "difficulty": 4,
+        "chapter": "Critère de Nyquist-Shannon",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "p6q7r8s9-t0u1-2v3w-4x5y-z6a7b8c9d0e",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un CAN de 8 bits peut distinguer combien de niveaux ?",
+        "answers": [
+            "$8$",
+            "$64$",
+            "$256$"
+        ],
+        "difficulty": 1,
+        "chapter": "Quantification",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q7r8s9t0-u1v2-3w4x-5y6z-a7b8c9d0e1f",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est l'influence d'une acquisition plus longue sur le spectre ?",
+        "answers": [
+            "Le spectre est plus bruité.",
+            "La résolution fréquentielle est meilleure.",
+            "L'amplitude des pics diminue."
+        ],
+        "difficulty": 2,
+        "chapter": "Durée d'acquisition",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "r8s9t0u1-v2w3-4x5y-6z7a-b8c9d0e1f2g",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le théorème de Shannon, pourquoi prend-on strictement $f_e > 2 f_{max}$ en pratique ?",
+        "answers": [
+            "Pour éviter les problèmes de phase et permettre un filtrage réel.",
+            "Parce que les composants chauffent.",
+            "C'est une règle de sécurité pour l'utilisateur."
+        ],
+        "difficulty": 3,
+        "chapter": "Critère de Nyquist-Shannon",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "s9t0u1v2-w3x4-5y6z-7a8b-c9d0e1f2g3h",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un transducteur transforme une température en tension. S'il s'agit d'une Thermistance, le signal de sortie est :",
+        "answers": [
+            "Analogique.",
+            "Numérique.",
+            "Binaire."
+        ],
+        "difficulty": 2,
+        "chapter": "Notion de signal",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "t0u1v2w3-x4y5-6z7a-8b9c-d0e1f2g3h4i",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Si $f_e = 1000\\text{ Hz}$ et $\\beta = 0,1$, quelle est la fréquence de coupure du filtre numérique associé ?",
+        "answers": [
+            "$10\\text{ Hz}$",
+            "$100\\text{ Hz}$",
+            "$1000\\text{ Hz}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Filtrage numérique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "u1v2w3x4-y5z6-7a8b-9c0d-e1f2g3h4i5j",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Le stockage des valeurs se fait en général dans :",
+        "answers": [
+            "Un condensateur.",
+            "Une mémoire vive (RAM) ou morte.",
+            "Un réservoir d'électrons."
+        ],
+        "difficulty": 1,
+        "chapter": "Structure d'une chaîne d'acquisition",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "v2w3x4y5-z6a7-8b9c-0d1e-f2g3h4i5j6k",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal est dit numérique si :",
+        "answers": [
+            "Sa valeur est continue.",
+            "Il prend des valeurs dans un ensemble fini et ne varie qu'à des instants discrets.",
+            "Il provient d'une pile."
+        ],
+        "difficulty": 1,
+        "chapter": "Notion de signal",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "w3x4y5z6-a7b8-9c0d-1e2f-g3h4i5j6k7l",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Sur un oscilloscope, CH1 et CH2 permettent de régler :",
+        "answers": [
+            "Le calibre (zoom vertical).",
+            "La base de temps.",
+            "La luminosité de l'écran."
+        ],
+        "difficulty": 1,
+        "chapter": "Cartes d'acquisition",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "x4y5z6a7-b8c9-0d1e-2f3g-h4i5j6k7l8m",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la précision relative approximative d'un convertisseur 8 bits ?",
+        "answers": [
+            "$10\\%$",
+            "$0,4\\%$",
+            "$0,001\\%$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscilloscope numérique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "y5z6a7b8-c9d0-1e2f-3g4h-i5j6k7l8m9n",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Si on veut mesurer $240\\text{ V}$ avec une précision de $0,1\\text{ mV}$, combien de bits faut-il environ ?",
+        "answers": [
+            "8 bits",
+            "12 bits",
+            "Plus de 16 bits (environ 21 bits)."
+        ],
+        "difficulty": 4,
+        "chapter": "Oscilloscope numérique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "z6a7b8c9-d0e1-2f3g-4h5i-j6k7l8m9n0o",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "L'utilisation d'une sonde atténuatrice 10x sur un oscilloscope :",
+        "answers": [
+            "Divise la précision par 10.",
+            "Multiplie la précision par 10.",
+            "N'a aucun impact sur la précision."
+        ],
+        "difficulty": 3,
+        "chapter": "Oscilloscope numérique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "a7b8c9d0-e1f2-3g4h-5i6j-k7l8m9n0o1p",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Pour un signal de $10\\text{ MHz}$, Shannon impose $f_e > 20\\text{ MHz}$. Quel taux d'échantillonnage choisirait-on typiquement sur un appareil de qualité ?",
+        "answers": [
+            "$20,1\\text{ MHz}$",
+            "$100\\text{ MS/s}$ (méga-échantillons par seconde).",
+            "$5\\text{ MHz}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscilloscope numérique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "b8c9d0e1-f2g3-4h5i-6j7k-l8m9n0o1p2q",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 9] Pourquoi un filtre numérique peut-il 'voir' un signal sinusoïdal comme une constante ?",
+        "answers": [
+            "Si la fréquence d'échantillonnage est égale à la fréquence du signal.",
+            "Si le signal est trop faible.",
+            "Si le filtre est mal alimenté."
+        ],
+        "difficulty": 3,
+        "chapter": "Filtrage numérique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "c9d0e1f2-g3h4-5i6j-7k8l-m9n0o1p2q3r",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal de période $12\\text{ s}$ est observé à $T_e = 10\\text{ s}$. Quel est son sens apparent par rapport au sens réel ?",
+        "answers": [
+            "Le même sens.",
+            "Le sens inverse.",
+            "Immobile."
+        ],
+        "difficulty": 4,
+        "chapter": "Approche stroboscopique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "d0e1f2g3-h4i5-6j7k-8l9m-n0o1p2q3r4s",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la valeur de $\\Delta f$ pour une acquisition de $1\\text{ s}$ ?",
+        "answers": [
+            "$1\\text{ Hz}$",
+            "$10\\text{ Hz}$",
+            "$0,1\\text{ Hz}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Durée d'acquisition",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e1f2g3h4-i5j6-7k8l-9m0n-o1p2q3r4s5t",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans la discrétisation d'Euler $\\frac{ds}{dt} \\to \\frac{s_{k+1}-s_k}{T_e}$, on suppose que $T_e$ est :",
+        "answers": [
+            "Très grand devant la constante de temps du système.",
+            "Très petit devant la constante de temps du système.",
+            "Nul."
+        ],
+        "difficulty": 3,
+        "chapter": "Filtrage numérique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "f2g3h4i5-j6k7-8l9m-0n1o-p2q3r4s5t6u",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Le nombre de niveaux pour 16 bits est :",
+        "answers": [
+            "$65536$",
+            "$16000$",
+            "$1024$"
+        ],
+        "difficulty": 1,
+        "chapter": "Quantification",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "g3h4i5j6-k7l8-9m0n-1o2p-q3r4s5t6u7v",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Le repliement spectral peut apparaître si le signal d'entrée contient du :",
+        "answers": [
+            "Bruit haute fréquence.",
+            "Bruit basse fréquence.",
+            "Signal continu uniquement."
+        ],
+        "difficulty": 2,
+        "chapter": "Repliement de spectre",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "h4i5j6k7-l8m9-0n1o-2p3q-r4s5t6u7v8w",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Si $f_e = 44,1\\text{ kHz}$, quelle est la fréquence de coupure idéale du filtre anti-repliement ?",
+        "answers": [
+            "$44,1\\text{ kHz}$",
+            "$22,05\\text{ kHz}$",
+            "$20\\text{ kHz}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Critère de Nyquist-Shannon",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "i5j6k7l8-m9n0-1o2p-3q4r-s5t6u7v8w9x",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal analogique est défini par $X(t)$. Sa valeur à l'instant $n T_e$ est notée :",
+        "answers": [
+            "$X_n$",
+            "$X(n)$",
+            "$X^n$"
+        ],
+        "difficulty": 1,
+        "chapter": "Échantillonnage",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "j6k7l8m9-n0o1-2p3q-4r5s-t6u7v8w9x0y",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 1] Pourquoi ne voit-on pas un trait noir clignoter si $f > 25\\text{ Hz}$ ?",
+        "answers": [
+            "À cause de la persistance rétinienne.",
+            "À cause de la vitesse de la lumière.",
+            "Car le cerveau ignore les flashs."
+        ],
+        "difficulty": 1,
+        "chapter": "Approche stroboscopique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "k7l8m9n0-o1p2-3q4r-5s6t-u7v8w9x0y1z",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cas d'un oscilloscope numérique, la mémoire est souvent exprimée en :",
+        "answers": [
+            "Joules.",
+            "Octets (ou ko, Mo).",
+            "Hertz."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscilloscope numérique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "l7m8n9o0-p1q2-3r4s-5t6u-v7w8x9y0z1a",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "La fréquence de coupure d'un filtre analogique est :",
+        "answers": [
+            "Indépendante de l'échantillonnage.",
+            "Liée à $f_e$.",
+            "Toujours de $50\\text{ Hz}$."
+        ],
+        "difficulty": 1,
+        "chapter": "Filtrage numérique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "m7n8o9p0-q1r2-3s4t-5u6v-w7x8y9z0a1b",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "L'erreur de quantification est comprise entre :",
+        "answers": [
+            "$-q$ et $+q$",
+            "$-q/2$ et $+q/2$",
+            "$0$ et $q/2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Quantification",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "n7o8p9q0-r1s2-3t4u-5v6w-x7y8z9a0b1c",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal sinusoïdal de $10\\text{ kHz}$ est échantillonné à $10,1\\text{ kHz}$. On observera après reconstruction :",
+        "answers": [
+            "Un signal de $10\\text{ kHz}$.",
+            "Un signal de $100\\text{ Hz}$.",
+            "Rien du tout."
+        ],
+        "difficulty": 4,
+        "chapter": "Repliement de spectre",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "o7p8q9r0-s1t2-3u4v-5v6w-y7z8a9b0c1d",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "La période d'échantillonnage $T_e$ doit être :",
+        "answers": [
+            "Plus grande que $T_{max}/2$.",
+            "Plus petite que $T_{min}/2$.",
+            "Égale à la durée d'acquisition."
+        ],
+        "difficulty": 3,
+        "chapter": "Échantillonnage",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "p7q8r9s0-t1u2-3v4w-5w6x-z7a8b9c0d1e",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 6] La 'zone de transition' dans le spectre d'un signal audio échantillonné est égale à :",
+        "answers": [
+            "$f_e - 2 f_{max}$",
+            "$f_e / 2$",
+            "$f_{max}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Signaux audios",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q7r8s9t0-u1v2-3w4x-5x6y-a7b8c9d0e1f",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal de $1\\text{ kHz}$ est échantillonné à $f_e = 7,5\\text{ kHz}$. La réplique $f_e - f$ se situe à :",
+        "answers": [
+            "$6,5\\text{ kHz}$",
+            "$8,5\\text{ kHz}$",
+            "$1\\text{ kHz}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Spectre d'un signal échantillonné",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "r7s8t9u0-v1w2-3x4y-5y6z-b7c8d9e0f1g",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Le critère de Shannon assure la conservation de :",
+        "answers": [
+            "L'amplitude uniquement.",
+            "L'information fréquentielle.",
+            "La couleur du signal."
+        ],
+        "difficulty": 1,
+        "chapter": "Critère de Nyquist-Shannon",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "s7t8u9v0-w1x2-3y4z-5z6a-c7d8e9f0g1h",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal carré possède :",
+        "answers": [
+            "Uniquement un fondamental.",
+            "Une infinité d'harmoniques impaires.",
+            "Uniquement des harmoniques paires."
+        ],
+        "difficulty": 2,
+        "chapter": "Repliement de spectre",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "t7u8v9w0-x1y2-3z4a-5a6b-d7e8f9g0h1i",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Pour une note 'La 3' à $440\\text{ Hz}$, quelle est la fréquence de Shannon ?",
+        "answers": [
+            "$440\\text{ Hz}$",
+            "$880\\text{ Hz}$",
+            "$220\\text{ Hz}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Critère de Nyquist-Shannon",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "u7v8w9x0-y1z2-3a4b-5b6c-e7f8g9h0i1j",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 8] Si un échantillon occupe 2 octets, une mémoire de $256\\text{ ko}$ peut stocker combien d'échantillons ?",
+        "answers": [
+            "$128\\text{ kS}$",
+            "$256\\text{ kS}$",
+            "$512\\text{ kS}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscilloscope numérique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "v7w8x9y0-z1a2-3b4c-5c6d-f7g8h9i0j1k",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quel est l'intérêt d'un filtre anti-repliement ?",
+        "answers": [
+            "Éliminer les fréquences $f > f_e/2$ avant l'acquisition.",
+            "Lisser le signal après l'acquisition.",
+            "Augmenter l'amplitude du signal."
+        ],
+        "difficulty": 2,
+        "chapter": "Critère de Nyquist-Shannon",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "w7x8y9z0-a1b2-3c4d-5d6e-g7h8i9j0k1l",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "La résolution $\\Delta f$ est aussi appelée :",
+        "answers": [
+            "Pas fréquentiel.",
+            "Période fréquentielle.",
+            "Quantification en fréquence."
+        ],
+        "difficulty": 1,
+        "chapter": "Durée d'acquisition",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "x7y8z9a0-b1c2-3d4e-5e6f-h7i8j9k0l1m",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Pour une fréquence $f_e = 44,1\\text{ kHz}$, la durée entre deux échantillons est environ :",
+        "answers": [
+            "$22,7\\text{ μs}$",
+            "$44,1\\text{ ms}$",
+            "$1\\text{ s}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Échantillonnage",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "y7z8a9b0-c1d2-3e4f-5f6g-i7j8k9l0m1n",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "En stroboscopie, si $T_e = T_0 / 2$, on voit :",
+        "answers": [
+            "Un seul trait.",
+            "Deux traits diamétralement opposés.",
+            "Un disque gris uniforme."
+        ],
+        "difficulty": 3,
+        "chapter": "Approche stroboscopique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "z7a8b9c0-d1e2-3f4g-5g6h-j7k8l9m0n1o",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Si $f_e = 10\\text{ kHz}$ et $f_{max} = 7\\text{ kHz}$, le repliement se produit à :",
+        "answers": [
+            "$3\\text{ kHz}$",
+            "$17\\text{ kHz}$",
+            "$7\\text{ kHz}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Repliement de spectre",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "a8b9c0d1-e2f3-4g4h-5h6i-k7l8m9n0o1p",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans un CD, le signal est codé sur 16 bits. Combien de niveaux de tension cela représente-t-il ?",
+        "answers": [
+            "$16$",
+            "$65536$",
+            "$32768$"
+        ],
+        "difficulty": 1,
+        "chapter": "Signaux audios",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "b8c9d0e1-f2g3-4h5i-5i6j-l7m8n9o0p1q",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "L'échantillonneur-bloqueur maintient la tension constante pendant :",
+        "answers": [
+            "La durée d'acquisition $T_a$.",
+            "La période d'échantillonnage $T_e$.",
+            "Une fraction infiniment petite de $T_e$."
+        ],
+        "difficulty": 2,
+        "chapter": "Structure d'une chaîne d'acquisition",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "c8d9e0f1-g2h3-4i5j-6j7k-m7n8o9p0q1r",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal analogique de température varie de $0$ à $100°C$. Après un transducteur de sensibilité $10\\text{ mV/°C}$, la tension varie de :",
+        "answers": [
+            "$0$ à $100\\text{ mV}$",
+            "$0$ à $1\\text{ V}$",
+            "$0$ à $10\\text{ V}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Structure d'une chaîne d'acquisition",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "d8e9f0g1-h2i3-4j4k-5k6l-n7o8p9q0r1s",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Le critère de Shannon est :",
+        "answers": [
+            "Une condition nécessaire et suffisante.",
+            "Une condition nécessaire.",
+            "Une simple recommandation."
+        ],
+        "difficulty": 2,
+        "chapter": "Critère de Nyquist-Shannon",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e8f9g0h1-i2j3-4k4l-5l6m-o7p8q9r0s1t",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quel est le risque si on choisit $f_e$ trop grande ?",
+        "answers": [
+            "Saturer la mémoire de stockage rapidement.",
+            "Perdre en résolution fréquentielle.",
+            "Créer du repliement spectral."
+        ],
+        "difficulty": 2,
+        "chapter": "Durée d'acquisition",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "f8g9h0i1-j2k3-4l4m-5m6n-p7q8r9s0t1u",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Pour un signal de parole ($300\\text{ Hz}$ à $3400\\text{ Hz}$), une fréquence $f_e = 6000\\text{ Hz}$ est :",
+        "answers": [
+            "Suffisante.",
+            "Insuffisante (repliement).",
+            "Idéale."
+        ],
+        "difficulty": 2,
+        "chapter": "Signaux audios",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "g8h9i0j1-k2l3-4m4n-5n6o-q7r8s9t0u1v",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "La quantification transforme une valeur réelle en :",
+        "answers": [
+            "Un entier (code binaire).",
+            "Une autre valeur réelle.",
+            "Une fréquence."
+        ],
+        "difficulty": 1,
+        "chapter": "Quantification",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "h8i9j0k1-l2m3-4n4o-5o6p-r7s8t9u0v1w",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 2] Un disque avec un secteur noir tourne à $24\\text{ tr/s}$. On l'éclaire à $100\\text{ Hz}$. On voit :",
+        "answers": [
+            "Une croix qui tourne lentement.",
+            "Un seul trait fixe.",
+            "Un disque gris."
+        ],
+        "difficulty": 4,
+        "chapter": "Rotation d'un moteur",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "i8j9k0l1-m2n3-4o4p-5p6q-s7t8u9v0w1x",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la relation entre $T_a$, $N_e$ et $f_e$ ?",
+        "answers": [
+            "$T_a = N_e / f_e$",
+            "$T_a = N_e \\cdot f_e$",
+            "$T_a = f_e / N_e$"
+        ],
+        "difficulty": 2,
+        "chapter": "Durée d'acquisition",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "j8k9l0m1-n2o3-4p4q-5q6r-t7u8v9w0x1y",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal analogique peut-il être parfaitement reconstruit à partir de ses échantillons ?",
+        "answers": [
+            "Jamais.",
+            "Oui, si le critère de Shannon est respecté (théorème d'interpolation).",
+            "Seulement s'il est constant."
+        ],
+        "difficulty": 2,
+        "chapter": "Critère de Nyquist-Shannon",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "k8l9m0n1-o2p3-4q4r-5r6s-u7v8w9x0y1z",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Le filtrage numérique est effectué par :",
+        "answers": [
+            "Un algorithme (logiciel).",
+            "Un circuit RC.",
+            "Un transformateur."
+        ],
+        "difficulty": 1,
+        "chapter": "Filtrage numérique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "l8m9n0o1-p2q3-4r4s-5s6t-v7w8x9y0z1a",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Si $f_c$ est la fréquence de coupure, la pulsation de coupure est :",
+        "answers": [
+            "$\\omega_c = f_c$",
+            "$\\omega_c = 2\\pi f_c$",
+            "$\\omega_c = 1 / f_c$"
+        ],
+        "difficulty": 1,
+        "chapter": "Filtrage numérique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "m8n9o0p1-q2r3-4s4t-5t6u-w7x8y9z0a1b",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal échantillonné est représenté graphiquement par :",
+        "answers": [
+            "Une courbe lisse.",
+            "Un peigne de Dirac (ou des points isolés).",
+            "Une droite horizontale."
+        ],
+        "difficulty": 1,
+        "chapter": "Échantillonnage",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "n8o9p0q1-r2s3-4t4u-5u6v-x7y8z9a0b1c",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "La quantification est une opération :",
+        "answers": [
+            "Linéaire.",
+            "Non-linéaire (crée des paliers).",
+            "Toujours réversible sans perte."
+        ],
+        "difficulty": 3,
+        "chapter": "Quantification",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    }
+]

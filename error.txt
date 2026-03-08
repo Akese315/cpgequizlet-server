@@ -1,0 +1,126 @@
+    Checking quizletServer v0.1.0 (C:\Programmation\quizlet\quizletServer)
+error[E0659]: `id` is ambiguous
+   --> src\database\mod.rs:104:17
+    |
+104 |         .filter(id.eq(id_string))
+    |                 ^^ ambiguous name
+    |
+    = note: ambiguous because of multiple glob imports of a name in the same module
+note: `id` could refer to the unit struct imported here
+   --> src\database\mod.rs:2:5
+    |
+  2 | use crate::schema::quiz_images::dsl::*;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    = help: consider adding an explicit import of `id` to disambiguate
+note: `id` could also refer to the unit struct imported here
+   --> src\database\mod.rs:4:5
+    |
+  4 | use crate::schema::users::dsl::*;
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    = help: consider adding an explicit import of `id` to disambiguate
+
+warning: unused import: `NewUser`
+ --> src\database\mod.rs:1:44
+  |
+1 | use crate::models::{NewQuiz, NewQuizImage, NewUser, QuizImage, Quizs, Users};
+  |                                            ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+error[E0277]: the trait bound `&str: AsExpression<diesel::sql_types::Integer>` is not satisfied
+   --> src\database\mod.rs:104:20
+    |
+104 |         .filter(id.eq(id_string))
+    |                    ^^ the trait `AsExpression<diesel::sql_types::Integer>` is not implemented for `&str`
+    |
+help: the following other types implement trait `AsExpression<T>`
+   --> C:\Users\axelr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diesel-2.3.6\src\type_impls\primitives.rs:99:14
+    |
+ 99 |     #[derive(AsExpression)]
+    |              ^^^^^^^^^^^^
+    |              |
+    |              `&&str` implements `AsExpression<diesel::sql_types::Nullable<diesel::sql_types::Text>>`
+    |              `&&str` implements `AsExpression<diesel::sql_types::Text>`
+    |              `&str` implements `AsExpression<diesel::sql_types::Nullable<diesel::sql_types::Text>>`
+    |              `&str` implements `AsExpression<diesel::sql_types::Text>`
+    = note: this error originates in the derive macro `AsExpression` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: the trait bound `str: ValidGrouping<()>` is not satisfied
+   --> src\database\mod.rs:104:10
+    |
+104 |         .filter(id.eq(id_string))
+    |          ^^^^^^ the trait `ValidGrouping<()>` is not implemented for `str`
+    |
+    = help: the following other types implement trait `ValidGrouping<GroupByClause>`:
+              `&T` implements `ValidGrouping<GB>`
+              `()` implements `ValidGrouping<GB>`
+              `(T, T1)` implements `ValidGrouping<__GroupByClause>`
+              `(T, T1, T2)` implements `ValidGrouping<__GroupByClause>`
+              `(T, T1, T2, T3)` implements `ValidGrouping<__GroupByClause>`
+              `(T, T1, T2, T3, T4)` implements `ValidGrouping<__GroupByClause>`
+              `(T, T1, T2, T3, T4, T5)` implements `ValidGrouping<__GroupByClause>`
+              `(T, T1, T2, T3, T4, T5, T6)` implements `ValidGrouping<__GroupByClause>`
+            and 133 others
+    = note: required for `&str` to implement `ValidGrouping<()>`
+    = note: 1 redundant requirement hidden
+    = note: required for `expression::operators::Eq<schema::quiz_images::columns::id, &str>` to implement `ValidGrouping<()>`
+    = note: required for `Grouped<Eq<id, &str>>` to implement `NonAggregate`
+    = note: required for `SelectStatement<FromClause<schema::users::table>>` to implement `FilterDsl<Grouped<Eq<id, &str>>>`
+    = note: the full name for the type has been written to 'C:\Programmation\quizlet\quizletServer\target\debug\deps\quizletServer-9c05fda636f51f1f.long-type-12077128546097105840.txt'
+    = note: consider using `--verbose` to print the full type name to the console
+
+error[E0277]: the trait bound `str: diesel::Expression` is not satisfied
+   --> src\database\mod.rs:104:10
+    |
+104 |         .filter(id.eq(id_string))
+    |          ^^^^^^ the trait `diesel::Expression` is not implemented for `str`
+    |
+    = help: the following other types implement trait `diesel::Expression`:
+              &T
+              AliasedField<S, C>
+              Box<T>
+              CaseWhen<CaseWhenConditionsIntermediateNode<W, T, Whens>, E>
+              CaseWhen<CaseWhenConditionsLeaf<W, T>, ElseExpression<E>>
+              CaseWhen<CaseWhenConditionsLeaf<W, T>, NoElseExpression>
+              Exists<T>
+              In<T, U>
+            and 87 others
+    = note: required for `&str` to implement `diesel::Expression`
+    = note: 1 redundant requirement hidden
+    = note: required for `expression::operators::Eq<schema::quiz_images::columns::id, &str>` to implement `diesel::Expression`
+    = note: required for `SelectStatement<FromClause<schema::users::table>>` to implement `FilterDsl<Grouped<Eq<id, &str>>>`
+    = note: the full name for the type has been written to 'C:\Programmation\quizlet\quizletServer\target\debug\deps\quizletServer-9c05fda636f51f1f.long-type-6335693341122452539.txt'
+    = note: consider using `--verbose` to print the full type name to the console
+
+error[E0277]: the trait bound `SelectStatement<FromClause<table>, ..., ..., ...>: FilterDsl<_>` is not satisfied
+   --> src\database\mod.rs:105:10
+    |
+105 |         .filter(token.eq(token_str))
+    |          ^^^^^^ the trait `FilterDsl<_>` is not implemented for `SelectStatement<FromClause<table>, DefaultSelectClause<...>, ..., ...>`
+    |
+help: the trait `FilterDsl<Predicate>` is implemented for `SelectStatement<F, S, D, W, O, LOf, G, H, LC>`
+   --> C:\Users\axelr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diesel-2.3.6\src\query_builder\select_statement\dsl_impls.rs:198:1
+    |
+198 | / impl<F, S, D, W, O, LOf, G, H, LC, Predicate> FilterDsl<Predicate>
+199 | |     for SelectStatement<F, S, D, W, O, LOf, G, H, LC>
+200 | | where
+201 | |     Predicate: Expression + NonAggregate,
+202 | |     Predicate::SqlType: BoolOrNullableBool,
+203 | |     W: WhereAnd<Predicate>,
+    | |___________________________^
+    = note: the full name for the type has been written to 'C:\Programmation\quizlet\quizletServer\target\debug\deps\quizletServer-9c05fda636f51f1f.long-type-1915740993832196174.txt'
+    = note: consider using `--verbose` to print the full type name to the console
+
+error[E0282]: type annotations needed
+   --> src\database\mod.rs:103:18
+    |
+103 |       let result = users
+    |  __________________^
+104 | |         .filter(id.eq(id_string))
+105 | |         .filter(token.eq(token_str))
+    | |____________________________________^ cannot infer type
+
+Some errors have detailed explanations: E0277, E0282, E0659.
+For more information about an error, try `rustc --explain E0277`.
+warning: `quizletServer` (bin "quizletServer") generated 1 warning
+error: could not compile `quizletServer` (bin "quizletServer") due to 6 previous errors; 1 warning emitted

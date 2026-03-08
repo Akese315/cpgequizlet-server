@@ -1,0 +1,1 @@
+ALTER TABLE quizs DROP COLUMN user_id;

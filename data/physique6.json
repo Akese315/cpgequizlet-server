@@ -1,0 +1,1487 @@
+[
+    {
+        "uuid": "fc1a2b3c-4d5e-6f7g-8h9i-0j1k2l3m4n5o",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Gradient2.svg",
+        "theme": "électromagnétisme",
+        "question": "Quel est l'effet de l'opérateur gradient sur un champ scalaire $f$ ?",
+        "answers": [
+            "Il le transforme en un vecteur caractérisant la variation spatiale",
+            "Il le transforme en un scalaire représentant la courbure",
+            "Il le transforme en un vecteur dont le flux est nul"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ac2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est la direction du vecteur $\\vec{grad}(f)$ en un point donné ?",
+        "answers": [
+            "La direction de plus faible variation de $f$",
+            "La direction de plus grande variation de $f$",
+            "La direction orthogonale aux lignes de champ"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "bc3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Divergence_and_curl.svg",
+        "theme": "électromagnétisme",
+        "question": "Que mesure l'opérateur divergence pour un champ de vecteur ?",
+        "answers": [
+            "La rotation locale du champ",
+            "La tendance du champ à sortir d'un volume élémentaire",
+            "La variation temporelle de la norme du vecteur"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "cc4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8r",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression du théorème de Green-Ostrogradski pour un vecteur $\\vec{A}$ ?",
+        "answers": [
+            "$\\iint_{S}\\vec{A}\\cdot d\\vec{S} = \\iint_{V} div(\\vec{A}) d\\tau$",
+            "$\\oint \\vec{A}\\cdot d\\vec{l} = \\iint_{S} \\vec{rot}(\\vec{A})\\cdot d\\vec{S}$",
+            "$\\iint_{S}\\vec{A}\\cdot d\\vec{S} = \\iiint_{V} \\vec{grad}(A) d\\tau$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dc5e6f7g-8h9i-0j1k-2l3m-4n5o6p7q8r9s",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Comment définit-on le Laplacien scalaire $\\Delta f$ ?",
+        "answers": [
+            "$\\Delta f = \\vec{grad}(div(f))$",
+            "$\\Delta f = div(\\vec{grad}(f))$",
+            "$\\Delta f = \\vec{rot}(\\vec{grad}(f))$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ec6f7g8h-9i0j-1k2l-3m4n-5o6p7q8r9s0t",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Metallic_bond.svg",
+        "theme": "conducteurs",
+        "question": "Dans un métal, quels sont les porteurs de charge mobiles ?",
+        "answers": [
+            "Les cations du réseau cristallin",
+            "Les électrons de cœur",
+            "Les électrons de conduction (délocalisés)"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fc7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1u",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Qu'est-ce que le 'libre parcours moyen' $l^*$ d'un porteur ?",
+        "answers": [
+            "La distance séparant deux cations du réseau",
+            "La distance moyenne parcourue par le porteur entre deux chocs",
+            "Le rayon de l'orbite de l'électron autour du noyau"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "gc8h9i0j-1k2l-3m4n-5o6p-7q8r9s0t1u2v",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est l'unité de la densité volumique de charge $\\rho$ ?",
+        "answers": [
+            "$A \\cdot m^{-2}$",
+            "$C \\cdot m^{-3}$",
+            "$\\Omega \\cdot m$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "hc9i0j1k-2l3m-4n5o-6p7q-8r9s0t1u2v3w",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Si $n$ est le nombre de porteurs par unité de volume et $q$ leur charge, on a :",
+        "answers": [
+            "$\\rho = n / q$",
+            "$\\rho = n \\cdot q$",
+            "$\\rho = q / n$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ic0j1k2l-3m4n-5o6p-7q8r-9s0t1u2v3w4x",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "D'après le cours, quelle est la densité volumique de charge pour le cuivre ?",
+        "answers": [
+            "$\\approx 10^{10} C \\cdot m^{-3}$ (en valeur absolue)",
+            "$\\approx 10^{28} C \\cdot m^{-3}$",
+            "$\\approx 1,6 \\cdot 10^{-19} C \\cdot m^{-3}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "jc1k2l3m-4n5o-6p7q-8r9s-0t1u2v3w4x5y",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Comment définit-on le vecteur densité de courant $\\vec{j}$ ?",
+        "answers": [
+            "$\\vec{j} = \\rho \\cdot \\vec{v}$",
+            "$\\vec{j} = n \\cdot \\vec{v}$",
+            "$\\vec{j} = q \\cdot \\vec{v}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "kc2l3m4n-5o6p-7q8r-9s0t-1u2v3w4x5y6z",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est l'unité du vecteur densité de courant $\\vec{j}$ ?",
+        "answers": [
+            "$A \\cdot m^{-1}$",
+            "$A \\cdot m^{-2}$",
+            "$C \\cdot s^{-1} \\cdot m^{-3}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "lc3m4n5o-6p7q-8r9s-0t1u-2v3w4x5y6z7a",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "L'intensité $I$ à travers une surface $\\Sigma$ est le flux de quel vecteur ?",
+        "answers": [
+            "Le champ électrique $\\vec{E}$",
+            "Le vecteur densité de courant $\\vec{j}$",
+            "Le vecteur vitesse $\\vec{v}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mc4n5o6p-7q8r-9s0t-1u2v-3w4x5y6z7a8b",
+        "image_path": null,
+        "theme": "conservation",
+        "question": "Quelle est l'équation locale de la conservation de la charge ?",
+        "answers": [
+            "$\\frac{\\partial\\rho}{\\partial t} + div(\\vec{j}) = 0$",
+            "$\\frac{\\partial\\rho}{\\partial t} - div(\\vec{j}) = 0$",
+            "$div(\\vec{j}) = \\rho$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "nc5o6p7q-8r9s-0t1u-2v3w-4x5y6z7a8b9c",
+        "image_path": null,
+        "theme": "conservation",
+        "question": "En régime stationnaire, que devient l'équation de conservation de la charge ?",
+        "answers": [
+            "$div(\\vec{j}) = \\rho$",
+            "$div(\\vec{j}) = 0$",
+            "$\\vec{j} = \\vec{0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "oc6p7q8r-9s0t-1u2v-3w4x-5y6z7a8b9c0d",
+        "image_path": null,
+        "theme": "conservation",
+        "question": "La loi des nœuds en électricité est une conséquence directe de :",
+        "answers": [
+            "La conservation de l'énergie",
+            "La conservation de la charge en régime stationnaire",
+            "La loi d'Ohm locale"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "pc7q8r9s-0t1u-2v3w-4x5y-6z7a8b9c0d1e",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le modèle de Drude, comment est modélisée l'interaction avec le réseau ?",
+        "answers": [
+            "Par une force conservative dérivant d'un potentiel",
+            "Par une force de frottement fluide $\\vec{f} = -\\frac{m}{\\tau}\\vec{v}$",
+            "Par une force de répulsion électrostatique pure"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "qc8r9s0t-1u2v-3w4x-5y6z-7a8b9c0d1e2f",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quel est l'ordre de grandeur du temps de relaxation $\\tau$ dans un métal ?",
+        "answers": [
+            "$10^{-3}$ s",
+            "$10^{-9}$ s",
+            "$10^{-14}$ s"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "rc9s0t1u-2v3w-4x5y-6z7a-8b9c0d1e2f3g",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est l'expression de la conductivité $\\gamma$ dans le modèle de Drude ?",
+        "answers": [
+            "$\\gamma = \\frac{n e^2 \\tau}{m}$",
+            "$\\gamma = \\frac{n e \\tau}{m}$",
+            "$\\gamma = \\frac{n e^2}{m \\tau}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "sc0t1u2v-3w4x-5y6z-7a8b-9c0d1e2f3g4h",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est l'expression de la loi d'Ohm locale ?",
+        "answers": [
+            "$\\vec{j} = \\gamma \\vec{E}$",
+            "$\\vec{E} = \\gamma \\vec{j}$",
+            "$\\vec{j} = \\gamma^2 \\vec{E}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "tc1u2v3w-4x5y-6z7a-8b9c-0d1e2f3g4h5i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "L'unité de la conductivité $\\gamma$ est le Siemens par mètre ($S \\cdot m^{-1}$), ce qui équivaut à :",
+        "answers": [
+            "$\\Omega \\cdot m$",
+            "$\\Omega^{-1} \\cdot m^{-1}$",
+            "$\\Omega \\cdot m^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "uc2v3w4x-5y6z-7a8b-9c0d-1e2f3g4h5i6j",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Comment définit-on la résistivité d'un matériau ?",
+        "answers": [
+            "C'est la même chose que la résistance $R$",
+            "C'est l'inverse de la conductivité $\\gamma$",
+            "C'est le produit de la conductivité par la section"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "vc3w4x5y-6z7a-8b9c-0d1e-2f3g4h5i6j7k",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est la résistance $R$ d'un cylindre de longueur $L$, de section $S$ et de conductivité $\\gamma$ ?",
+        "answers": [
+            "$R = \\frac{\\gamma S}{L}$",
+            "$R = \\frac{L}{\\gamma S}$",
+            "$R = \\frac{\\gamma L}{S}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "wc4x5y6z-7a8b-9c0d-1e2f-3g4h5i6j7k8l",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Quelle est l'expression de la puissance volumique cédée aux charges (effet Joule local) ?",
+        "answers": [
+            "$\\mathcal{P}_{vol} = \\vec{j} \\cdot \\vec{E}$",
+            "$\\mathcal{P}_{vol} = \\rho \\vec{v} \\cdot \\vec{j}$",
+            "$\\mathcal{P}_{vol} = \\gamma E$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "xc5y6z7a-8b9c-0d1e-2f3g-4h5i6j7k8l9m",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "En utilisant la loi d'Ohm locale, la puissance volumique s'écrit aussi :",
+        "answers": [
+            "$\\gamma^2 E$",
+            "$\\gamma E^2$",
+            "$j^2 \\gamma$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "yc6z7a8b-9c0d-1e2f-3g4h-5i6j7k8l9m0n",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Pour le cuivre (bon conducteur), quel est l'ordre de grandeur de $\\gamma$ ?",
+        "answers": [
+            "$6 \\cdot 10^7 S \\cdot m^{-1}$",
+            "$1 S \\cdot m^{-1}$",
+            "$10^{-2} S \\cdot m^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "zc7a8b9c-0d1e-2f3g-4h5i-6j7k8l9m0n1o",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "D'après l'exercice 1, si $\\vec{A} = (ax, ay, -2az)$, quelle est sa divergence ?",
+        "answers": [
+            "$2a$",
+            "$0$",
+            "$-2a$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ad8b9c0d-1e2f-3g4h-5i6j-7k8l9m0n1o2p",
+        "image_path": null,
+        "theme": "semi-conducteurs",
+        "question": "Comment définit-on la mobilité $\\mu$ d'un porteur de charge ?",
+        "answers": [
+            "$\\mu = v / E$",
+            "$\\mu = E / v$",
+            "$\\mu = q \\cdot v$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "bd9c0d1e-2f3g-4h5i-6j7k-8l9m0n1o2p3q",
+        "image_path": null,
+        "theme": "semi-conducteurs",
+        "question": "Dans un semi-conducteur intrinsèque, la conductivité dépend de :",
+        "answers": [
+            "Seulement des électrons",
+            "Seulement des trous",
+            "Des électrons ET des trous"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "cd0d1e2f-3g4h-5i6j-7k8l-9m0n1o2p3q4r",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Pourquoi le silicium pur est-il beaucoup moins conducteur qu'un métal ?",
+        "answers": [
+            "Sa mobilité est quasi nulle",
+            "Sa densité de porteurs $n$ est très faible ($10^{16}$ vs $10^{29} m^{-3}$)",
+            "Les trous annulent le courant des électrons"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dd1e2f3g-4h5i-6j7k-8l9m-0n1o2p3q4r5s",
+        "image_path": null,
+        "theme": "géométrie",
+        "question": "En symétrie sphérique, quelle est l'intensité sortant d'une sphère de rayon $r$ ?",
+        "answers": [
+            "$I = 4\\pi r^2 j(r)$",
+            "$I = \\pi r^2 j(r)$",
+            "$I = \\frac{4}{3}\\pi r^3 j(r)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ed2f3g4h-5i6j-7k8l-9m0n-1o2p3q4r5s6t",
+        "image_path": null,
+        "theme": "géométrie",
+        "question": "En régime stationnaire et symétrie sphérique, comment varie $j(r)$ ?",
+        "answers": [
+            "$j(r)$ est constante",
+            "$j(r)$ est proportionnelle à $1/r$",
+            "$j(r)$ est proportionnelle à $1/r^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fd3g4h5i-6j7k-8l9m-0n1o-2p3q4r5s6t7u",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle loi régit la puissance rayonnée par un filament chauffé (Exercice 6) ?",
+        "answers": [
+            "Loi d'Ohm",
+            "Loi de Stefan ($P = \\sigma T^4 S$)",
+            "Loi de Newton"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "gd4h5i6j-7k8l-9m0n-1o2p-3q4r5s6t7u8v",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Si $div(\\vec{j}) = 0$, on dit que le champ $\\vec{j}$ est :",
+        "answers": [
+            "Uniforme",
+            "Solénoïdal (à flux conservatif)",
+            "Irrotationnel"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "hd5i6j7k-8l9m-0n1o-2p3q-4r5s6t7u8v9w",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le modèle de Drude, quelle est la vitesse limite $v_{\\infty}$ atteinte par l'électron ?",
+        "answers": [
+            "$v_{\\infty} = -\\frac{e E \\tau}{m}$",
+            "$v_{\\infty} = -\\frac{e E}{m \\tau}$",
+            "$v_{\\infty} = -\\frac{m E \\tau}{e}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "id6j7k8l-9m0n-1o2p-3q4r-5s6t7u8v9w0x",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Comment évolue la résistance d'un fil si on double son rayon (à longueur constante) ?",
+        "answers": [
+            "Elle est divisée par 2",
+            "Elle est divisée par 4",
+            "Elle est multipliée par 2"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "jd7k8l9m-0n1o-2p3q-4r5s-6t7u8v9w0x1y",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Un porteur est dit 'lié' si son mouvement est limité à des distances :",
+        "answers": [
+            "Très supérieures au pas du réseau $a$",
+            "Inférieures ou de l'ordre du pas du réseau $a$",
+            "Égales au libre parcours moyen"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "kd8l9m0n-1o2p-3q4r-5s6t-7u8v9w0x1y2z",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est la valeur de la charge élémentaire $e$ ?",
+        "answers": [
+            "$1,6 \\cdot 10^{-19} C$",
+            "$9,1 \\cdot 10^{-31} C$",
+            "$6,02 \\cdot 10^{23} C$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ld9m0n1o-2p3q-4r5s-6t7u-8v9w0x1y2z3a",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "La puissance dissipée par effet Joule dans un conducteur ohmique de résistance $R$ est :",
+        "answers": [
+            "$P = R I$",
+            "$P = R I^2$",
+            "$P = U^2 / I$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "md0n1o2p-3q4r-5s6t-7u8v-9w0x1y2z3a4b",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans l'expression $I = \\iint \\vec{j} \\cdot d\\vec{S}$, que représente $d\\vec{S}$ ?",
+        "answers": [
+            "Un vecteur tangent à la surface",
+            "Un vecteur normal à la surface",
+            "Le vecteur vitesse des charges"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "nd1o2p3q-4r5s-6t7u-8v9w-0x1y2z3a4b5c",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression de la divergence en coordonnées cartésiennes ?",
+        "answers": [
+            "$\\frac{\\partial A_x}{\\partial x} + \\frac{\\partial A_y}{\\partial y} + \\frac{\\partial A_z}{\\partial z}$",
+            "$\\frac{\\partial^2 f}{\\partial x^2} + \\frac{\\partial^2 f}{\\partial y^2} + \\frac{\\partial^2 f}{\\partial z^2}$",
+            "$(\\frac{\\partial f}{\\partial x}, \\frac{\\partial f}{\\partial y}, \\frac{\\partial f}{\\partial z})$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "od2p3q4r-5s6t-7u8v-9w0x-1y2z3a4b5c6d",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "L'échelle 'mésoscopique' est une échelle :",
+        "answers": [
+            "Inférieure à la taille de l'atome",
+            "Intermédiaire entre le microscopique et le macroscopique",
+            "Correspondant à la taille galactique"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "pd3q4r5s-6t7u-8v9w-0x1y-2z3a4b5c6d7e",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans un cristal de cuivre, chaque atome cède environ combien d'électron(s) ?",
+        "answers": [
+            "1",
+            "10",
+            "Tous ses électrons"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "qd4r5s6t-7u8v-9w0x-1y2z-3a4b5c6d7e8f",
+        "image_path": null,
+        "theme": "conservation",
+        "question": "Que signifie un $div(\\vec{j}) > 0$ en un point ?",
+        "answers": [
+            "Il y a accumulation de charges en ce point",
+            "Il y a appauvrissement (fuite) de charges depuis ce point",
+            "Le courant est stationnaire"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "rd5s6t7u-8v9w-0x1y-2z3a-4b5c6d7e8f9g",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "La force de Lorentz s'exerçant sur un électron dans un champ $\\vec{E}$ est :",
+        "answers": [
+            "$\\vec{F} = e \\vec{E}$",
+            "$\\vec{F} = -e \\vec{E}$",
+            "$\\vec{F} = -e (\\vec{v} \\wedge \\vec{B})$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "sd6t7u8v-9w0x-1y2z-3a4b-5c6d7e8f9g0h",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est la dimension de la conductivité $\\gamma$ ?",
+        "answers": [
+            "$[M]^{-1} [L]^{-3} [T]^3 [I]^2$",
+            "$[M] [L]^2 [T]^{-3} [I]^{-2}$",
+            "$[L]^2 [T]^{-1}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td7u8v9w-0x1y-2z3a-4b5c-6d7e8f9g0h1i",
+        "image_path": null,
+        "theme": "semi-conducteurs",
+        "question": "Dans le silicium, la mobilité des trous est :",
+        "answers": [
+            "Supérieure à celle des électrons",
+            "Inférieure à celle des électrons",
+            "Égale à celle des électrons"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ud8v9w0x-1y2z-3a4b-5c6d-7e8f9g0h1i2j",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Une ligne de courant est une courbe tangente en tout point à :",
+        "answers": [
+            "Le champ électrique $\\vec{E}$",
+            "Le vecteur densité de courant $\\vec{j}$ (ou la vitesse $\\vec{v}$)",
+            "Le vecteur surface $d\\vec{S}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "vd9w0x1y-2z3a-4b5c-6d7e-8f9g0h1i2j3k",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Un tube de courant est formé par :",
+        "answers": [
+            "L'ensemble des surfaces équipotentielles",
+            "L'ensemble des lignes de courant s'appuyant sur un contour fermé",
+            "Un fil de cuivre cylindrique uniquement"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "wd0x1y2z-3a4b-5c6d-7e8f-9g0h1i2j3k4l",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est la conductivité typique de l'eau pure ?",
+        "answers": [
+            "$6 \\cdot 10^7 S \\cdot m^{-1}$",
+            "$10^{-2} S \\cdot m^{-1}$",
+            "$10^2 S \\cdot m^{-1}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "xd1y2z3a-4b5c-6d7e-8f9g-0h1i2j3k4l5m",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le modèle de Drude, si $\\vec{E} = \\vec{0}$, la vitesse moyenne des électrons est :",
+        "answers": [
+            "Nulle",
+            "Égale à la vitesse thermique",
+            "Constante et non nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "yd2z3a4b-5c6d-7e8f-9g0h-1i2j3k4l5m6n",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Comment varie la résistivité du tungstène avec la température (Ex 6) ?",
+        "answers": [
+            "Elle diminue quand $T$ augmente",
+            "Elle augmente quand $T$ augmente (loi $\\rho = aT^2 + bT$)",
+            "Elle est indépendante de $T$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "zd3a4b5c-6d7e-8f9g-0h1i-2j3k4l5m6n7o",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quel est le signe de la densité de charge $\\rho$ dans un métal au repos ?",
+        "answers": [
+            "Positif (cations)",
+            "Négatif (électrons)",
+            "Nul (neutralité électrique)"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ae4b5c6d-7e8f-9g0h-1i2j-3k4l5m6n7o8p",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'expression $div(\\vec{j}) = \\frac{\\partial j_x}{\\partial x} + \\frac{\\partial j_y}{\\partial y} + \\frac{\\partial j_z}{\\partial z}$ est valable en :",
+        "answers": [
+            "Coordonnées cylindriques",
+            "Coordonnées cartésiennes",
+            "Coordonnées sphériques"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "be5c6d7e-8f9g-0h1i-2j3k-4l5m6n7o8p9q",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le modèle de Drude, l'équation différentielle sur la vitesse est :",
+        "answers": [
+            "$\\frac{d\\vec{v}}{dt} + \\frac{1}{\\tau}\\vec{v} = -\\frac{e}{m}\\vec{E}$",
+            "$\\frac{d\\vec{v}}{dt} - \\tau \\vec{v} = -\\frac{e}{m}\\vec{E}$",
+            "$\\frac{d\\vec{v}}{dt} = -\\frac{e}{m}\\vec{E}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ce6d7e8f-9g0h-1i2j-3k4l-5m6n7o8p9q0r",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "En régime permanent, la puissance électrique reçue par un conducteur est intégralement :",
+        "answers": [
+            "Stockée sous forme d'énergie électrostatique",
+            "Dissipée par effet Joule (chaleur)",
+            "Convertie en énergie cinétique macroscopique"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "de7e8f9g-0h1i-2j3k-4l5m-6n7o8p9q0r1s",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Pour un fil de cuivre de section $1,5 mm^2$ et de longueur $10 m$, la résistance est de l'ordre de :",
+        "answers": [
+            "$0,1 \\Omega$",
+            "$100 \\Omega$",
+            "$10 k\\Omega$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ee8f9g0h-1i2j-3k4l-5m6n-7o8p9q0r1s2t",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "La densité de courant $\\vec{j}$ est-elle toujours uniforme dans un conducteur ?",
+        "answers": [
+            "Oui, par définition",
+            "Non, elle peut dépendre de la position (ex: symétrie sphérique)",
+            "Seulement si le conducteur est parfait"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "fe9g0h1i-2j3k-4l5m-6n7o-8p9q0r1s2t3u",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quel opérateur permet de passer d'un vecteur à un scalaire ?",
+        "answers": [
+            "Gradient",
+            "Divergence",
+            "Rotationnel"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ge0h1i2j-3k4l-5m6n-7o8p-9q0r1s2t3u4v",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans un semi-conducteur, qu'est-ce qu'un 'trou' ?",
+        "answers": [
+            "Une absence d'atome dans le réseau",
+            "Une absence d'électron se comportant comme une charge $+e$",
+            "Une particule de masse nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "he1i2j3k-4l5m-6n7o-8p9q-0r1s2t3u4v5w",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Si on multiplie la tension $U$ par 2 aux bornes d'un conducteur ohmique, l'effet Joule est :",
+        "answers": [
+            "Multiplié par 2",
+            "Multiplié par 4",
+            "Divisé par 2"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ie2j3k4l-5m6n-7o8p-9q0r-1s2t3u4v5w6x",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "La vitesse de dérive des électrons dans un fil de cuivre est typiquement de l'ordre de :",
+        "answers": [
+            "$10^8 m \\cdot s^{-1}$",
+            "$10^3 m \\cdot s^{-1}$",
+            "$10^{-4} m \\cdot s^{-1}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "je3k4l5m-6n7o-8p9q-0r1s-2t3u4v5w6x7y",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Que vaut $div(\\vec{rot}(\\vec{A}))$ pour tout vecteur $\\vec{A}$ ?",
+        "answers": [
+            "$0$",
+            "$\\Delta \\vec{A}$",
+            "$1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ke4l5m6n-7o8p-9q0r-1s2t-3u4v5w6x7y8z",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le modèle de Drude, la solution pour $\\vec{v}(t)$ est de la forme :",
+        "answers": [
+            "$\\vec{v}(t) = \\vec{v}_{\\infty}(1 - e^{-t/\\tau})$",
+            "$\\vec{v}(t) = \\vec{v}_{\\infty} e^{-t/\\tau}$",
+            "$\\vec{v}(t) = \\vec{v}_{\\infty} t / \\tau$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "le5m6n7o-8p9q-0r1s-2t3u-4v5w6x7y8z9a",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "La conductivité d'un semi-conducteur pur $n_e e (\\mu_e + \\mu_t)$ :",
+        "answers": [
+            "Augmente fortement avec la température",
+            "Diminue quand la température augmente",
+            "Est indépendante de la température"
+        ],
+        "difficulty": 4,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "me6n7o8p-9q0r-1s2t-3u4v-5w6x7y8z9a0b",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "L'unité de la résistivité est :",
+        "answers": [
+            "$\\Omega / m$",
+            "$\\Omega \\cdot m$",
+            "$S \\cdot m$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ne7o8p9q-0r1s-2t3u-4v5w-6x7y8z9a0b1c",
+        "image_path": null,
+        "theme": "géométrie",
+        "question": "Pour une section circulaire de rayon $R$ avec $j(r) = \\beta r$, l'intensité vaut :",
+        "answers": [
+            "$\\pi R^2 \\beta$",
+            "$\\frac{2}{3}\\pi \\beta R^3$",
+            "$\\frac{1}{2}\\pi \\beta R^4$"
+        ],
+        "difficulty": 4,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "oe8p9q0r-1s2t-3u4v-5w6x-7y8z9a0b1c2d",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Si $div(\\vec{A}_2) = 3ax^2 + 3axz + 3axy$ (Exercice 1), alors $\\vec{A}_2$ vaut :",
+        "answers": [
+            "$(ax^3, 3axyz, 3axyz)$",
+            "$(ax^2, ay^2, az^2)$",
+            "$(ax, by, cz)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "pe9q0r1s-2t3u-4v5w-6x7y-8z9a0b1c2d3e",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Le nombre d'Avogadro $N_A$ vaut environ :",
+        "answers": [
+            "$6,02 \\cdot 10^{23} mol^{-1}$",
+            "$1,6 \\cdot 10^{-19} mol^{-1}$",
+            "$8,31 J \\cdot K^{-1} \\cdot mol^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "qe0r1s2t-3u4v-5w6x-7y8z-9a0b1c2d3e4f",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans l'expression $n = N_A \\frac{\\mu}{M}$, que représente $\\mu$ ?",
+        "answers": [
+            "La mobilité",
+            "La masse volumique",
+            "La viscosité"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "re1s2t3u-4v5w-6x7y-8z9a-0b1c2d3e4f5g",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "La loi d'Ohm locale $\\vec{j} = \\gamma \\vec{E}$ est-elle toujours valable ?",
+        "answers": [
+            "Oui, dans tout milieu conducteur",
+            "Seulement dans les conducteurs ohmiques",
+            "Seulement dans le vide"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "se2t3u4v-5w6x-7y8z-9a0b-1c2d3e4f5g6h",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'opérateur Laplacien scalaire d'une fonction $f$ en cartésiennes est :",
+        "answers": [
+            "La somme des dérivées partielles secondes",
+            "La somme des dérivées partielles premières",
+            "Le produit des dérivées partielles"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "te3u4v5w-6x7y-8z9a-0b1c-2d3e4f5g6h7i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Le courant électrique macroscopique est dû à :",
+        "answers": [
+            "L'agitation thermique désordonnée",
+            "Un mouvement d'ensemble ordonné des porteurs",
+            "La vibration des cations du réseau"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ue4u5v6w-7x8y-9z0a-1b2c-3d4e5f6g7h8i",
+        "image_path": null,
+        "theme": "conservation",
+        "question": "Que vaut la charge totale $Q$ traversant une surface $S$ pendant $dt$ ?",
+        "answers": [
+            "$dQ = I \\cdot dt$",
+            "$dQ = \\vec{j} \\cdot dt$",
+            "$dQ = \\rho \\cdot dt$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ve5u6v7w-8x9y-0z1a-2b3c-4d5e6f7g8h9i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est la masse d'un électron ?",
+        "answers": [
+            "$9,1 \\cdot 10^{-31} kg$",
+            "$1,67 \\cdot 10^{-27} kg$",
+            "$10^{-10} kg$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "we6u7v8w-9x0y-1z2a-3b4c-5d6e7f8g9h0i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "La conductivité thermique des métaux est souvent liée à leur conductivité électrique :",
+        "answers": [
+            "Vrai, car les électrons transportent aussi l'énergie thermique",
+            "Faux, ce sont deux phénomènes totalement indépendants",
+            "Seulement pour les supraconducteurs"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "xe7u8v9w-0x1y-2z3a-4b5c-6d7e8f9g0h1i",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est la valeur du flux d'un vecteur constant à travers une surface fermée ?",
+        "answers": [
+            "$0$",
+            "Le volume intérieur",
+            "La norme du vecteur fois la surface"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ye8u9v0w-1x2y-3z4a-5b6c-7d8e9f0g1h2i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans l'effet Joule, l'énergie cédée aux électrons est transmise au réseau par :",
+        "answers": [
+            "Rayonnement pur",
+            "Collisions avec les ions du réseau",
+            "Induction magnétique"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ze9u0v1w-2x3y-4z5a-6b7c-8d9e0f1g2h3i",
+        "image_path": null,
+        "theme": "semi-conducteurs",
+        "question": "Dans le silicium dopé N, les porteurs majoritaires sont :",
+        "answers": [
+            "Les trous",
+            "Les électrons",
+            "Les ions du réseau"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "af0u1v2w-3x4y-5z6a-7b8c-9d0e1f2g3h4i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "La résistance d'un filament de lampe à incandescence éteint est :",
+        "answers": [
+            "Plus grande que lorsqu'il est allumé",
+            "Plus petite que lorsqu'il est allumé",
+            "Identique"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "bf1u2v3w-4x5y-6z7a-8b9c-0d1e2f3g4h5i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Pourquoi utilise-t-on le cuivre pour les câbles électriques ?",
+        "answers": [
+            "Car il est isolant",
+            "Car il a une très grande conductivité $\\gamma \\approx 6 \\cdot 10^7 S \\cdot m^{-1}$",
+            "Car il est très léger"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "cf2u3v4w-5x6y-7z8a-9b0c-1d2e3f4g5h6i",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Que signifie $div(\\vec{j}) = 0$ physiquement ?",
+        "answers": [
+            "Le courant est nul partout",
+            "Il n'y a pas de création ni de disparition de charges dans le volume",
+            "Les charges sont immobiles"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "df3u4v5w-6x7y-8z9a-0b1c-2d3e4f5g6h7i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Si un conducteur a une résistivité $\\rho_r = 10^{-8} \\Omega \\cdot m$, sa conductivité est :",
+        "answers": [
+            "$10^8 S \\cdot m^{-1}$",
+            "$10^{-8} S \\cdot m^{-1}$",
+            "$1 S \\cdot m^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ef4u5v6w-7x8y-9z0a-1b2c-3d4e5f6g7h8i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est la section $S$ d'un fil de diamètre $d$ ?",
+        "answers": [
+            "$\\pi d^2 / 4$",
+            "$\\pi d^2$",
+            "$2\\pi d$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ff5u6v7w-8x9y-0z1a-2b3c-4d5e6f7g8h9i",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "La puissance dissipée dans une résistance $R$ est $P = U I$. C'est équivalent à :",
+        "answers": [
+            "$R I^2$",
+            "$U^2 / R$",
+            "Les deux réponses précédentes"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "gf6u7v8w-9x0y-1z2a-3b4c-5d6e7f8g9h0i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le modèle de Drude, le temps $\\tau$ dépend de :",
+        "answers": [
+            "La température du métal",
+            "Seulement de la tension appliquée",
+            "Il est universel pour tous les métaux"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "hf7u8v9w-0x1y-2z3a-4b5c-6d7e8f9g0h1i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "La loi d'Ohm macroscopique $U = RI$ suppose que :",
+        "answers": [
+            "Le régime est stationnaire",
+            "Le milieu est un conducteur ohmique",
+            "Les deux réponses précédentes"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "if8u9v0w-1x2y-3z4a-5b6c-7d8e9f0g1h2i",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Le gradient d'une fonction $f(x,y,z)$ est un vecteur de composantes :",
+        "answers": [
+            "$(\\frac{\\partial f}{\\partial x}, \\frac{\\partial f}{\\partial y}, \\frac{\\partial f}{\\partial z})$",
+            "$(\\frac{\\partial^2 f}{\\partial x^2}, \\frac{\\partial^2 f}{\\partial y^2}, \\frac{\\partial^2 f}{\\partial z^2})$",
+            "$(\\frac{\\partial f}{\\partial x} + \\frac{\\partial f}{\\partial y} + \\frac{\\partial f}{\\partial z})$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "jf9u0v1w-2x3y-4z5a-6b7c-8d9e0f1g2h3i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans un fil cylindrique, si $\\vec{E}$ est porté par $\\vec{e}_z$, alors $U = V_A - V_B$ vaut :",
+        "answers": [
+            "$E \\cdot L$",
+            "$E / L$",
+            "$E \\cdot S$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "kf0u1v2w-3x4y-5z6a-7b8c-9d0e1f2g3h4i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Comment s'appelle l'inverse de la résistance ?",
+        "answers": [
+            "La conductance $G$",
+            "La conductivité",
+            "L'impédance"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "lf1u2v3w-4x5y-6z7a-8b9c-0d1e2f3g4h5i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "L'unité de la conductance $G$ est :",
+        "answers": [
+            "Le Siemens (S)",
+            "L'Ohm ($\\Omega$)",
+            "Le Watt (W)"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mf2u3v4w-5x6y-7z8a-9b0c-1d2e3f4g5h6i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Si $\\vec{j} = \\gamma \\vec{E}$ et $\\vec{E} = -\\vec{grad}(V)$, alors $\\vec{j}$ va :",
+        "answers": [
+            "Des hauts potentiels vers les bas potentiels",
+            "Des bas potentiels vers les hauts potentiels",
+            "Perpendiculairement aux lignes de potentiel"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "nf3u4v5w-6x7y-8z9a-0b1c-2d3e4f5g6h7i",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est la divergence d'un champ uniforme ?",
+        "answers": [
+            "$0$",
+            "Sa norme",
+            "Une valeur dépendant de la direction"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "of4u5v6w-7x8y-9z0a-1b2c-3d4e5f6g7h8i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans l'exercice 5, quelle équation lie $\\rho$ et $j$ en sphérique ?",
+        "answers": [
+            "$\\frac{\\partial\\rho}{\\partial t} + \\frac{1}{r^2}\\frac{\\partial(r^2 j)}{\\partial r} = 0$",
+            "$\\frac{\\partial\\rho}{\\partial t} + \\frac{\\partial j}{\\partial r} = 0$",
+            "$\\frac{\\partial\\rho}{\\partial t} + div(\\vec{j}) = \\rho$"
+        ],
+        "difficulty": 4,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "pf5u6v7w-8x9y-0z1a-2b3c-4d5e6f7g8h9i",
+        "image_path": null,
+        "theme": "semi-conducteurs",
+        "question": "Pour le silicium, $\\gamma = n e (\\mu_e + \\mu_t)$. Si $\\mu_e = 0.14$ et $\\mu_t = 0.045$, la contribution des trous est-elle négligeable ?",
+        "answers": [
+            "Oui, elle représente moins de 1%",
+            "Non, elle représente environ 25-30% de la conductivité",
+            "Les trous ne conduisent pas réellement"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "qf6u7v8w-9x0y-1z2a-3b4c-5d6e7f8g9h0i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "La conductivité du cuivre $\\gamma \\approx 6 \\cdot 10^7 S/m$ correspond à une résistivité de :",
+        "answers": [
+            "$\\approx 1,7 \\cdot 10^{-8} \\Omega \\cdot m$",
+            "$\\approx 6 \\cdot 10^7 \\Omega \\cdot m$",
+            "$\\approx 1,7 \\cdot 10^8 \\Omega \\cdot m$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "rf7u8v9w-0x1y-2z3a-4b5c-6d7e8f9g0h1i",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Le gradient d'un scalaire $f$ est orthogonal aux surfaces :",
+        "answers": [
+            "Où $f$ est constante (iso-f)",
+            "Où $f$ est nulle",
+            "De plus grande variation"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "sf8u9v0w-1x2y-3z4a-5b6c-7d8e9f0g1h2i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le modèle de Drude, la force de frottement est $-\\frac{m}{\\tau}\\vec{v}$. $\\tau$ est :",
+        "answers": [
+            "Une période d'oscillation",
+            "Un temps de relaxation",
+            "Le temps de trajet total"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "tf9u0v1w-2x3y-4z5a-6b7c-8d9e0f1g2h3i",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Calculer le gradient de $f = 2xy$.",
+        "answers": [
+            "$(2y, 2x, 0)$",
+            "$(2x, 2y, 0)$",
+            "$2x + 2y$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    }
+]

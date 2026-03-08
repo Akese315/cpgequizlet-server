@@ -1,0 +1,1602 @@
+[
+    {
+        "uuid": "dalembert-001",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Waves_types.png",
+        "theme": "ondes",
+        "question": "Quelle est la caractéristique fondamentale d'une onde physique ?",
+        "answers": [
+            "Un déplacement de matière sans déplacement d'énergie",
+            "Un déplacement d'énergie sans déplacement global de matière",
+            "Un déplacement de matière et d'énergie simultané",
+            "Une perturbation statique de l'espace"
+        ],
+        "difficulty": 1,
+        "chapter": "Équation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-002",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Comment définit-on une onde transversale ?",
+        "answers": [
+            "La direction de la perturbation est parallèle à la direction de propagation",
+            "La direction de la perturbation est perpendiculaire à la direction de propagation",
+            "L'onde ne se déplace que dans un milieu solide",
+            "L'onde se propage dans toutes les directions de l'espace"
+        ],
+        "difficulty": 1,
+        "chapter": "Équation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-003",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le son dans l'air est un exemple de quel type d'onde ?",
+        "answers": [
+            "Onde transversale",
+            "Onde longitudinale",
+            "Onde stationnaire pure",
+            "Onde électromagnétique"
+        ],
+        "difficulty": 1,
+        "chapter": "Équation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-004",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le modèle de la corde vibrante, quelle hypothèse est faite sur la pesanteur ?",
+        "answers": [
+            "Elle est la force principale de rappel",
+            "Elle est négligée devant la tension de la corde",
+            "Elle est égale à la tension de la corde",
+            "Elle est prise en compte via la masse linéique"
+        ],
+        "difficulty": 1,
+        "chapter": "La corde vibrante",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-005",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'unité de la masse linéique $\\mu$ ?",
+        "answers": [
+            "$kg \\cdot m$",
+            "$kg \\cdot m^{-1}$",
+            "$kg \\cdot m^{-2}$",
+            "$kg \\cdot s^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "La corde vibrante",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-006",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'oscillation d'une corde vibrante $y(x,t)$ est qualifiée de propagation :",
+        "answers": [
+            "Tridimensionnelle",
+            "Bidimensionnelle",
+            "Unidimensionnelle",
+            "Sphérique"
+        ],
+        "difficulty": 1,
+        "chapter": "La corde vibrante",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-007",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle approximation est nécessaire pour établir l'équation de d'Alembert classique sur une corde ?",
+        "answers": [
+            "La tension est nulle",
+            "L'angle $\\alpha$ avec l'horizontale reste faible",
+            "La corde est infiniment lourde",
+            "La vitesse de l'onde est supérieure à celle du son"
+        ],
+        "difficulty": 2,
+        "chapter": "La corde vibrante",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-008",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lors de l'application du PFD à un tronçon de corde $dx$, comment s'exprime sa masse $dm$ ?",
+        "answers": [
+            "$dm = \\mu \\cdot dx$",
+            "$dm = \\frac{\\mu}{dx}$",
+            "$dm = T \\cdot dx$",
+            "$dm = \\rho \\cdot dx^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "La corde vibrante",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-009",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'approximation des petits angles, quelle relation lie la tension transversale $T_y$ et la pente de la corde ?",
+        "answers": [
+            "$T_y = T \\cdot \\frac{\\partial^2 y}{\\partial x^2}$",
+            "$T_y \\approx T \\cdot \\frac{\\partial y}{\\partial x}$",
+            "$T_y = T \\cdot y(x,t)$",
+            "$T_y = \\mu \\cdot \\frac{\\partial y}{\\partial t}$"
+        ],
+        "difficulty": 2,
+        "chapter": "La corde vibrante",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-010",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'expression de la célérité $c$ d'une onde sur une corde de tension $T$ et de masse linéique $\\mu$ ?",
+        "answers": [
+            "$c = \\frac{T}{\\mu}$",
+            "$c = \\sqrt{\\frac{\\mu}{T}}$",
+            "$c = \\sqrt{\\frac{T}{\\mu}}$",
+            "$c = \\frac{1}{\\sqrt{T\\mu}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "La corde vibrante",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-011",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la forme de l'équation de d'Alembert unidimensionnelle pour $y(x,t)$ ?",
+        "answers": [
+            "$\\frac{\\partial^2 y}{\\partial x^2} + \\frac{1}{c^2} \\frac{\\partial^2 y}{\\partial t^2} = 0$",
+            "$\\frac{\\partial y}{\\partial x} - \\frac{1}{c} \\frac{\\partial y}{\\partial t} = 0$",
+            "$\\frac{\\partial^2 y}{\\partial x^2} - \\frac{1}{c^2} \\frac{\\partial^2 y}{\\partial t^2} = 0$",
+            "$\\frac{\\partial^2 y}{\\partial x^2} - c^2 \\frac{\\partial^2 y}{\\partial t^2} = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équation de d'Alembert",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-012",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La solution générale $y(x,t) = f(x - ct) + g(x + ct)$ représente :",
+        "answers": [
+            "Uniquement une onde stationnaire",
+            "La superposition de deux ondes progressives se déplaçant en sens inverses",
+            "Une onde s'amortissant au cours du temps",
+            "Une onde harmonique pure"
+        ],
+        "difficulty": 2,
+        "chapter": "Ondes progressives",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-013",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le terme $f(x - ct)$ correspond à une onde se propageant vers :",
+        "answers": [
+            "Les $x$ croissants",
+            "Les $x$ décroissants",
+            "Le haut de l'axe $y$",
+            "L'origine $x=0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Ondes progressives",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-014",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la relation entre la pulsation $\\omega$ et la période $T$ ?",
+        "answers": [
+            "$\\omega = \\frac{T}{2\\pi}$",
+            "$\\omega = \\frac{2\\pi}{T}$",
+            "$\\omega = 2\\pi T$",
+            "$\\omega = \\frac{1}{T}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes planes progressives harmoniques",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-015",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'unité du vecteur d'onde $k$ ?",
+        "answers": [
+            "$m$",
+            "$rad \\cdot s^{-1}$",
+            "$m^{-1}$",
+            "$s \\cdot m^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes planes progressives harmoniques",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-016",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Que signifie le terme 'onde plane' ?",
+        "answers": [
+            "L'onde a une amplitude nulle",
+            "La phase est la même en tout point d'un plan perpendiculaire à la direction de propagation",
+            "L'onde ne se propage que sur un plan 2D",
+            "La surface d'onde est un cercle"
+        ],
+        "difficulty": 2,
+        "chapter": "Ondes planes progressives harmoniques",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-017",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Comment appelle-t-on l'intervalle spatial entre deux maximums successifs d'une onde harmonique ?",
+        "answers": [
+            "La période $T$",
+            "La longueur d'onde $\\lambda$",
+            "La phase $\\varphi$",
+            "L'amplitude $y_0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes planes progressives harmoniques",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-018",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la relation de dispersion pour une onde solution de l'équation de d'Alembert sans dispersion ?",
+        "answers": [
+            "$\\omega = k^2 c$",
+            "$\\omega = \\frac{k}{c}$",
+            "$\\omega = kc$",
+            "$\\omega = \\sqrt{kc}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équation de dispersion",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-019",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La vitesse de phase $v_{\\varphi}$ est définie par :",
+        "answers": [
+            "$v_{\\varphi} = \\omega k$",
+            "$v_{\\varphi} = \\frac{\\omega}{k}$",
+            "$v_{\\varphi} = \\frac{k}{\\omega}$",
+            "$v_{\\varphi} = \\lambda T$"
+        ],
+        "difficulty": 2,
+        "chapter": "Vitesse de phase",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-020",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Standing_waves_on_a_string.gif",
+        "theme": "ondes",
+        "question": "Une onde stationnaire se caractérise par :",
+        "answers": [
+            "Une propagation d'énergie infinie",
+            "L'existence de points dont l'amplitude est nulle en permanence (nœuds)",
+            "Une vitesse de phase infinie",
+            "Une absence de période temporelle"
+        ],
+        "difficulty": 2,
+        "chapter": "Ondes stationnaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-021",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la distance entre deux nœuds consécutifs d'une onde stationnaire ?",
+        "answers": [
+            "$\\lambda$",
+            "$\\frac{\\lambda}{2}$",
+            "$\\frac{\\lambda}{4}$",
+            "$2\\lambda$"
+        ],
+        "difficulty": 2,
+        "chapter": "Ondes stationnaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-022",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une corde de longueur $L$ fixée aux deux extrémités, quelles sont les longueurs d'onde possibles ?",
+        "answers": [
+            "$\\lambda_n = nL$",
+            "$\\lambda_n = \\frac{2L}{n}$",
+            "$\\lambda_n = \\frac{L}{2n}$",
+            "$\\lambda_n = \\frac{2n}{L}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Ondes stationnaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-023",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le mode de vibration $n=1$ d'une corde est appelé :",
+        "answers": [
+            "Premier harmonique",
+            "Fondamental",
+            "Mode résonant",
+            "Nœud principal"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes stationnaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-024",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Que se passe-t-il lors du phénomène de résonance pour une corde de Melde ?",
+        "answers": [
+            "L'onde s'arrête brusquement",
+            "L'amplitude des oscillations devient très grande",
+            "La corde devient longitudinale",
+            "La tension s'annule"
+        ],
+        "difficulty": 2,
+        "chapter": "Régime harmonique forcé",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-025",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Coaxial_cable_cutaway.svg",
+        "theme": "circuits électriques",
+        "question": "Dans un câble coaxial, comment s'exprime la capacité d'une portion $dx$ ?",
+        "answers": [
+            "$C = \\Gamma \\cdot dx$",
+            "$C = \\frac{\\Gamma}{dx}$",
+            "$C = \\sqrt{\\Gamma \\Lambda} dx$",
+            "$C = \\Lambda \\cdot dx$"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde dans un câble coaxial",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-026",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est l'unité de l'inductance linéique $\\Lambda$ ?",
+        "answers": [
+            "$H \\cdot m$",
+            "$H \\cdot m^{-1}$",
+            "$F \\cdot m^{-1}$",
+            "$\\Omega \\cdot m^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde dans un câble coaxial",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-027",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle équation relie la tension $u$ et le courant $i$ dans un câble idéal (équations des télégraphistes) ?",
+        "answers": [
+            "$\\frac{\\partial u}{\\partial x} = -\\Lambda \\frac{\\partial i}{\\partial t}$",
+            "$\\frac{\\partial u}{\\partial x} = -\\Gamma \\frac{\\partial i}{\\partial t}$",
+            "$\\frac{\\partial^2 u}{\\partial x^2} = \\frac{\\partial i}{\\partial t}$",
+            "$u = Ri$"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde dans un câble coaxial",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-028",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la célérité $c$ d'une onde électromagnétique dans un câble coaxial ?",
+        "answers": [
+            "$c = \\sqrt{\\Gamma \\Lambda}$",
+            "$c = \\frac{1}{\\sqrt{\\Gamma \\Lambda}}$",
+            "$c = \\frac{\\Lambda}{\\Gamma}$",
+            "$c = \\sqrt{\\frac{\\Lambda}{\\Gamma}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde dans un câble coaxial",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-029",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Comment définit-on l'impédance caractéristique $Z_c$ d'un câble ?",
+        "answers": [
+            "$Z_c = \\sqrt{\\Gamma \\Lambda}$",
+            "$Z_c = \\sqrt{\\frac{\\Lambda}{\\Gamma}}$",
+            "$Z_c = \\sqrt{\\frac{\\Gamma}{\\Lambda}}$",
+            "$Z_c = \\Lambda c^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Impédance caractéristique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-030",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour une onde incidente $u_i, i_i$, quelle relation lie ces grandeurs à $Z_c$ ?",
+        "answers": [
+            "$u_i = -Z_c i_i$",
+            "$u_i = Z_c i_i$",
+            "$u_i = \\frac{1}{Z_c} i_i$",
+            "$u_i = Z_c^2 i_i$"
+        ],
+        "difficulty": 2,
+        "chapter": "Impédance caractéristique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-031",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la valeur typique de l'impédance caractéristique des câbles de TP ?",
+        "answers": [
+            "$1 \\, \\Omega$",
+            "$50 \\, \\Omega$",
+            "$1000 \\, \\Omega$",
+            "$0,5 \\, \\Omega$"
+        ],
+        "difficulty": 1,
+        "chapter": "Impédance caractéristique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-032",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Comment s'exprime le coefficient de réflexion en amplitude $r_u$ pour la tension à l'extrémité chargée par $R$ ?",
+        "answers": [
+            "$r_u = \\frac{R+Z_c}{R-Z_c}$",
+            "$r_u = \\frac{R-Z_c}{R+Z_c}$",
+            "$r_u = \\frac{Z_c}{R}$",
+            "$r_u = 1 - \\frac{R}{Z_c}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Phénomène à l'extrémité du câble",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-033",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Que signifie une 'adaptation d'impédance' ($R = Z_c$) ?",
+        "answers": [
+            "L'onde est totalement réfléchie",
+            "Il n'y a pas d'onde réfléchie, toute l'énergie est transmise",
+            "La tension s'annule à l'extrémité",
+            "Le câble chauffe instantanément"
+        ],
+        "difficulty": 2,
+        "chapter": "Phénomène à l'extrémité du câble",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-034",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En court-circuit ($R \\to 0$), que vaut le coefficient de réflexion $r_u$ ?",
+        "answers": [
+            "$1$",
+            "$-1$",
+            "$0$",
+            "$\\infty$"
+        ],
+        "difficulty": 2,
+        "chapter": "Phénomène à l'extrémité du câble",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-035",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En circuit ouvert ($R \\to \\infty$), l'extrémité $x=0$ du câble est :",
+        "answers": [
+            "Un nœud de tension",
+            "Un ventre de tension",
+            "Un nœud d'intensité",
+            "Les deux réponses B et C sont correctes"
+        ],
+        "difficulty": 3,
+        "chapter": "Phénomène à l'extrémité du câble",
+        "correct_answer_index": 3,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-036",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'exercice sur la corde libre à une extrémité (anneau), quelle est la condition à la limite en $x=L$ ?",
+        "answers": [
+            "$y(L,t) = 0$",
+            "$\\frac{\\partial y}{\\partial x}(L,t) = 0$",
+            "$\\frac{\\partial y}{\\partial t}(L,t) = 0$",
+            "$y(L,t) = y_0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercice 3 : Modes propres",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-037",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une corde fixée en $x=0$ et libre en $x=L$, la condition $cos(kL)=0$ impose :",
+        "answers": [
+            "$kL = n\\pi$",
+            "$kL = \\frac{\\pi}{2} + n\\pi$",
+            "$kL = (2n+1)\\pi$",
+            "$kL = 2n\\pi$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercice 3 : Modes propres",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-038",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'exercice 7 (corde conductrice), quelle force supplémentaire est prise en compte ?",
+        "answers": [
+            "Force d'Archimède",
+            "Force de Laplace",
+            "Force de Coriolis",
+            "Force de frottement fluide"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercice 7 : Corde conductrice",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-039",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'expression de la force de Laplace sur un élément $d\\vec{l}$ est :",
+        "answers": [
+            "$d\\vec{f} = q(\\vec{E} + \\vec{v} \\wedge \\vec{B})$",
+            "$d\\vec{f} = i d\\vec{l} \\wedge \\vec{B}$",
+            "$d\\vec{f} = \\vec{j} d\\tau \\wedge \\vec{B}$",
+            "$d\\vec{f} = m \\vec{g}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Exercice 7 : Corde conductrice",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-040",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde stationnaire $y(x,t) = A \\cos(\\omega t) \\sin(kx)$ peut être vue comme la somme de :",
+        "answers": [
+            "Deux ondes de pulsations différentes",
+            "Deux ondes progressives de même amplitude circulant en sens opposés",
+            "Une onde progressive et une onde évanescente",
+            "Trois ondes longitudinales"
+        ],
+        "difficulty": 2,
+        "chapter": "Décomposition d'une onde stationnaire",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-041",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la dimension du terme $\\frac{1}{c^2}$ dans l'équation de d'Alembert ?",
+        "answers": [
+            "$L^2 T^{-2}$",
+            "$L^{-2} T^2$",
+            "$L T^{-1}$",
+            "$M L^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-042",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une corde de guitare, si on augmente la tension $T$, que devient la fréquence fondamentale ?",
+        "answers": [
+            "Elle diminue",
+            "Elle augmente",
+            "Elle reste identique",
+            "Elle s'annule"
+        ],
+        "difficulty": 2,
+        "chapter": "La corde vibrante",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-043",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Un accord de quarte ($f_2 = \\frac{4}{3} f_1$) entre deux cordes de même longueur et tension nécessite un rapport de masses linéiques $\\frac{\\mu_2}{\\mu_1}$ égal à :",
+        "answers": [
+            "$\\frac{4}{3}$",
+            "$\\frac{16}{9}$",
+            "$\\frac{9}{16}$",
+            "$\\frac{3}{4}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Exercice 4 : Corde de guitare",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-044",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le modèle de d'Alembert, la célérité dépend-elle de la fréquence (milieu dispersif) ?",
+        "answers": [
+            "Oui, car $\\omega = kc$",
+            "Non, la célérité est une constante du milieu",
+            "Seulement pour les ondes longitudinales",
+            "Uniquement à haute température"
+        ],
+        "difficulty": 2,
+        "chapter": "Équation de dispersion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-045",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Comment s'appelle le théorème permettant d'écrire $\\frac{\\partial^2 u}{\\partial x \\partial t} = \\frac{\\partial^2 u}{\\partial t \\partial x}$ ?",
+        "answers": [
+            "Théorème de Gauss",
+            "Théorème de Schwarz",
+            "Théorème d'Ampère",
+            "Théorème de Taylor"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde dans un câble coaxial",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-046",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La célérité $c$ dans un câble coaxial dépend de :",
+        "answers": [
+            "La tension appliquée par le générateur",
+            "Les propriétés géométriques et matériaux via $\\Lambda$ et $\\Gamma$",
+            "La longueur du câble uniquement",
+            "La résistance de charge $R$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde dans un câble coaxial",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-047",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Sur une onde stationnaire, un ventre de vibration est un point où :",
+        "answers": [
+            "L'amplitude est toujours nulle",
+            "L'amplitude d'oscillation est maximale",
+            "La phase est nulle",
+            "La corde se casse"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes stationnaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-048",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le vecteur d'onde $k$ est relié à la longueur d'onde par :",
+        "answers": [
+            "$k = \\frac{\\lambda}{2\\pi}$",
+            "$k = \\frac{2\\pi}{\\lambda}$",
+            "$k = 2\\pi \\lambda$",
+            "$k = \\frac{1}{\\lambda}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes planes progressives harmoniques",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-049",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La double périodicité d'une onde progressive harmonique est :",
+        "answers": [
+            "Temporelle ($T$) et fréquentielle ($f$)",
+            "Temporelle ($T$) et spatiale ($\\lambda$)",
+            "Spatiale ($\\lambda$) et angulaire ($\\theta$)",
+            "Amplitude ($y_0$) et phase ($\\varphi$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes planes progressives harmoniques",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-050",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'expression de la vitesse de phase ?",
+        "answers": [
+            "$v_{\\varphi} = \\lambda T$",
+            "$v_{\\varphi} = \\frac{\\lambda}{T}$",
+            "$v_{\\varphi} = \\frac{T}{\\lambda}$",
+            "$v_{\\varphi} = \\omega \\lambda$"
+        ],
+        "difficulty": 2,
+        "chapter": "Vitesse de phase",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-051",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'exercice 1, le signal $s(x,t) = 5 \\sin(2,4 \\cdot 10^3 \\pi t - 7,0 \\pi x + 0,7\\pi)$ a une pulsation $\\omega$ de :",
+        "answers": [
+            "$2,4 \\cdot 10^3 \\, rad/s$",
+            "$2,4 \\cdot 10^3 \\pi \\, rad/s$",
+            "$7,0 \\pi \\, rad/s$",
+            "$1,2 \\cdot 10^3 \\, rad/s$"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercice 1 : Ondes progressives",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-052",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour le même signal, le vecteur d'onde $k$ vaut :",
+        "answers": [
+            "$7,0 \\pi \\, m^{-1}$",
+            "$7,0 \\, m^{-1}$",
+            "$2,4 \\cdot 10^3 \\, m^{-1}$",
+            "$0,7 \\pi \\, m^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercice 1 : Ondes progressives",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-053",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la célérité $c$ calculée pour ce signal ($s = \\omega/k$) ?",
+        "answers": [
+            "$\\approx 343 \\, m/s$",
+            "$\\approx 171 \\, m/s$",
+            "$\\approx 2400 \\, m/s$",
+            "$0,7 \\, m/s$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercice 1 : Ondes progressives",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-054",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde sinusoïdale se propageant vers les $x$ décroissants s'écrit sous la forme :",
+        "answers": [
+            "$S_0 \\cos(\\omega t - kx)$",
+            "$S_0 \\cos(\\omega t + kx)$",
+            "$S_0 \\cos(kx - \\omega t)$",
+            "$S_0 \\sin(\\omega t) \\sin(kx)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercice 1 : Ondes progressives",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-055",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la pulsation spatiale ?",
+        "answers": [
+            "Un autre nom pour $\\omega$",
+            "Un autre nom pour le vecteur d'onde $k$",
+            "La période spatiale $\\lambda$",
+            "L'inverse de la célérité"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes planes progressives harmoniques",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-056",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La notation complexe d'une OPPH se propageant vers les $x$ croissants est :",
+        "answers": [
+            "$\\underline{y}(x,t) = y_0 e^{j(\\omega t + kx + \\varphi)}$",
+            "$\\underline{y}(x,t) = y_0 e^{j(\\omega t - kx + \\varphi)}$",
+            "$\\underline{y}(x,t) = y_0 e^{j(kx - \\omega t + \\varphi)}$",
+            "Les réponses B et C sont toutes deux conventionnellement possibles"
+        ],
+        "difficulty": 3,
+        "chapter": "Ondes planes progressives harmoniques",
+        "correct_answer_index": 3,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-057",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Si $R = 0$ (court-circuit) à la fin d'une ligne, la tension y est :",
+        "answers": [
+            "Maximale (ventre)",
+            "Nulle (nœud)",
+            "Égale à la tension incidente",
+            "Infinie"
+        ],
+        "difficulty": 2,
+        "chapter": "Phénomène à l'extrémité du câble",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-058",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Si $R \\to \\infty$ (circuit ouvert) à la fin d'une ligne, le courant y est :",
+        "answers": [
+            "Maximal",
+            "Nul",
+            "Égal au courant incident",
+            "Déphasé de $\\pi/2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Phénomène à l'extrémité du câble",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-059",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le terme $2j \\sin(kx) e^{j\\omega t}$ décrit :",
+        "answers": [
+            "Une onde progressive",
+            "Une onde stationnaire en notation complexe",
+            "Une onde évanescente",
+            "Une onde de choc"
+        ],
+        "difficulty": 2,
+        "chapter": "Ondes stationnaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-060",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la condition pour avoir des ondes stationnaires sur une corde de longueur $L$ fixée ?",
+        "answers": [
+            "La longueur $L$ doit être un multiple de $\\lambda/2$",
+            "La longueur $L$ doit être égale à $\\lambda$",
+            "La tension $T$ doit être nulle",
+            "La fréquence doit être infinie"
+        ],
+        "difficulty": 2,
+        "chapter": "Ondes stationnaires",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-061",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une corde de guitare en acier a une masse volumique $\\rho$. Sa masse linéique $\\mu$ pour un diamètre $d$ est :",
+        "answers": [
+            "$\\mu = \\rho \\pi d^2$",
+            "$\\mu = \\rho \\frac{\\pi d^2}{4}$",
+            "$\\mu = \\rho d$",
+            "$\\mu = \\frac{\\rho}{\\pi d^2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercice 5 : Corde de guitare",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-062",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La fréquence du fondamental est donnée par $f_1 = \\frac{c}{2L}$. En remplaçant $c$ par son expression sur une corde :",
+        "answers": [
+            "$f_1 = \\frac{1}{2L} \\sqrt{\\frac{T}{\\mu}}$",
+            "$f_1 = \\frac{1}{L} \\sqrt{\\frac{T}{\\mu}}$",
+            "$f_1 = 2L \\sqrt{\\frac{\\mu}{T}}$",
+            "$f_1 = \\frac{T}{2L\\mu}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercice 5 : Corde de guitare",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-063",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour doubler la fréquence du fondamental d'une corde sans changer sa longueur ni sa masse, il faut :",
+        "answers": [
+            "Doubler la tension $T$",
+            "Multiplier la tension $T$ par 4",
+            "Diviser la tension $T$ par 2",
+            "Multiplier la tension $T$ par $\\sqrt{2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "La corde vibrante",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-064",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Qu'appelle-t-on 'fuseau' dans l'étude des cordes vibrantes ?",
+        "answers": [
+            "L'intégralité de la corde",
+            "La partie de la corde entre deux nœuds consécutifs",
+            "Le point d'attache",
+            "Le dispositif excitateur"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes stationnaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-065",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Combien de ventres possède le mode harmonique $n=3$ d'une corde fixée aux deux bouts ?",
+        "answers": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes stationnaires",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-066",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'expérience de Melde, si la fréquence du vibreur est égale à une fréquence propre de la corde :",
+        "answers": [
+            "La corde reste immobile",
+            "On observe des fuseaux stables de grande amplitude",
+            "La corde se tend brusquement",
+            "L'onde devient purement progressive"
+        ],
+        "difficulty": 2,
+        "chapter": "Régime harmonique forcé",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-067",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'impédance caractéristique $Z_c$ a la dimension d'une :",
+        "answers": [
+            "Force",
+            "Résistance électrique",
+            "Inductance",
+            "Vitesse"
+        ],
+        "difficulty": 1,
+        "chapter": "Impédance caractéristique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-068",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le rapport $\\omega/k$ est constant pour l'équation de d'Alembert. On dit que le milieu est :",
+        "answers": [
+            "Dispersif",
+            "Non dispersif",
+            "Absorbant",
+            "Anisotrope"
+        ],
+        "difficulty": 2,
+        "chapter": "Équation de dispersion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-069",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La condition aux limites $y(0,t) = A \\cos(\\omega t)$ (vibreur) correspond à :",
+        "answers": [
+            "Une extrémité fixe",
+            "Une excitation imposée",
+            "Une extrémité libre",
+            "Une réflexion totale avec déphasage de $\\pi$"
+        ],
+        "difficulty": 2,
+        "chapter": "Régime harmonique forcé",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-070",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans un câble, l'énergie est transportée par :",
+        "answers": [
+            "Les électrons se déplaçant à la vitesse $c$",
+            "Le champ électromagnétique entre les conducteurs",
+            "La chaleur produite par effet Joule",
+            "Les ions du diélectrique"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde dans un câble coaxial",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-071",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la célérité typique dans un câble coaxial ?",
+        "answers": [
+            "$3 \\cdot 10^8 \\, m/s$ (vitesse de la lumière dans le vide)",
+            "Environ $2/3$ de $c_0$ selon le diélectrique",
+            "$340 \\, m/s$ (vitesse du son)",
+            "$1 \\, m/s$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde dans un câble coaxial",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-072",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Un ventre de tension dans un câble coaxial correspond à :",
+        "answers": [
+            "Un nœud d'intensité",
+            "Un ventre d'intensité",
+            "Un point où la tension est toujours nulle",
+            "Un court-circuit"
+        ],
+        "difficulty": 3,
+        "chapter": "Phénomène à l'extrémité du câble",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-073",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le coefficient de réflexion en intensité $r_i$ est relié à $r_u$ par :",
+        "answers": [
+            "$r_i = r_u$",
+            "$r_i = -r_u$",
+            "$r_i = 1/r_u$",
+            "$r_i = r_u^2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Exercice 9 : Ligne bifilaire",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-074",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'exercice 7, la fréquence de résonance est atteinte quand $\\omega$ s'approche de :",
+        "answers": [
+            "$\\frac{\\pi c}{L}$",
+            "$\\frac{2 \\pi c}{L}$",
+            "$\\frac{c}{L}$",
+            "$\\sqrt{\\frac{T}{\\mu}}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Exercice 7 : Corde conductrice",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-075",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'approximation 'petits angles' permet d'écrire $\\tan(\\alpha) \\approx$ :",
+        "answers": [
+            "$y(x,t)$",
+            "$\\frac{\\partial y}{\\partial x}$",
+            "$\\frac{\\partial y}{\\partial t}$",
+            "$\\sin(\\alpha)$"
+        ],
+        "difficulty": 2,
+        "chapter": "La corde vibrante",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-076",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le fondamental d'une corde de guitare de $63 \\, cm$ accordée à $82,5 \\, Hz$ a une longueur d'onde de :",
+        "answers": [
+            "$63 \\, cm$",
+            "$126 \\, cm$",
+            "$31,5 \\, cm$",
+            "$82,5 \\, cm$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercice 5 : Corde de guitare",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-077",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la relation entre $\\omega$ et $f$ ?",
+        "answers": [
+            "$\\omega = f$",
+            "$\\omega = 2\\pi f$",
+            "$f = 2\\pi \\omega$",
+            "$\\omega = \\frac{1}{f}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes planes progressives harmoniques",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-078",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'expression $y(x,t) = y_0 \\cos(\\omega t - kx + \\varphi)$, que représente $\\varphi$ ?",
+        "answers": [
+            "La fréquence",
+            "La phase à l'origine",
+            "L'amplitude",
+            "La vitesse de phase"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes planes progressives harmoniques",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-079",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde de forme $f(x+ct)$ se propage à la vitesse $c$ vers :",
+        "answers": [
+            "La droite ($x$ croissants)",
+            "La gauche ($x$ décroissants)",
+            "Elle est stationnaire",
+            "Elle ne se propage pas"
+        ],
+        "difficulty": 2,
+        "chapter": "Ondes progressives",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-080",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La célérité des ondes sur une corde dépend-elle de l'amplitude de la perturbation ?",
+        "answers": [
+            "Oui, plus l'amplitude est grande, plus elle va vite",
+            "Non, dans le cadre de l'approximation linéaire",
+            "Seulement pour les ondes stationnaires",
+            "Oui, elle est proportionnelle à $y_0^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-081",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la tension $T$ d'une corde de masse linéique $0,01 \\, kg/m$ où les ondes vont à $100 \\, m/s$ ?",
+        "answers": [
+            "$1 \\, N$",
+            "$100 \\, N$",
+            "$10 \\, N$",
+            "$1000 \\, N$"
+        ],
+        "difficulty": 3,
+        "chapter": "La corde vibrante",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-082",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Sur une corde de $1 \\, m$ fixée, le mode $n=2$ présente un nœud à $x =$ :",
+        "answers": [
+            "$0,25 \\, m$",
+            "$0,5 \\, m$",
+            "$0,75 \\, m$",
+            "Il n'y a pas de nœud entre les extrémités"
+        ],
+        "difficulty": 2,
+        "chapter": "Ondes stationnaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-083",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour un câble coaxial, si $\\Lambda$ augmente, la célérité $c$ :",
+        "answers": [
+            "Augmente",
+            "Diminue",
+            "Reste la même",
+            "S'annule"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde dans un câble coaxial",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-084",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Un signal de période $T = 1 \\, ms$ a une fréquence de :",
+        "answers": [
+            "$1 \\, Hz$",
+            "$1000 \\, Hz$",
+            "$100 \\, Hz$",
+            "$10 \\, Hz$"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes planes progressives harmoniques",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-085",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'unité de l'inductance est le Henry ($H$). Quelle est sa dimension en unités de base ?",
+        "answers": [
+            "$M L^2 T^{-2} A^{-2}$",
+            "$M L^2 T^{-2} A^{-1}$",
+            "$M L T^{-2} A^{-2}$",
+            "$L^2 A^{-1}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Onde dans un câble coaxial",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-086",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La puissance transportée par une onde progressive est proportionnelle à :",
+        "answers": [
+            "L'amplitude $A$",
+            "Le carré de l'amplitude $A^2$",
+            "L'inverse de l'amplitude $1/A$",
+            "La racine de l'amplitude $\\sqrt{A}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-087",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le mode fondamental d'une corde fixée, l'amplitude est maximale en :",
+        "answers": [
+            "$x = 0$",
+            "$x = L$",
+            "$x = L/2$",
+            "$x = L/4$"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes stationnaires",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-088",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Si on multiplie la longueur d'une corde de guitare par 2 (en gardant $T$ et $\\mu$ constants), la fréquence fondamentale :",
+        "answers": [
+            "Double",
+            "Est divisée par 2",
+            "Reste la même",
+            "Est multipliée par 4"
+        ],
+        "difficulty": 2,
+        "chapter": "Ondes stationnaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-089",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde stationnaire transporte-t-elle de l'énergie en moyenne temporelle ?",
+        "answers": [
+            "Oui, comme une onde progressive",
+            "Non, l'énergie 'oscille' sur place sans propagation globale",
+            "Seulement si elle est harmonique",
+            "Uniquement aux nœuds"
+        ],
+        "difficulty": 3,
+        "chapter": "Ondes stationnaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-090",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le vecteur d'onde pour une onde se propageant vers les $x$ décroissants est souvent noté :",
+        "answers": [
+            "$\\vec{k} = k \\vec{u}_x$",
+            "$\\vec{k} = -k \\vec{u}_x$",
+            "$\\vec{k} = 0$",
+            "$\\vec{k} = \\vec{k} \\wedge \\vec{B}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Ondes planes progressives harmoniques",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-091",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Que vaut la phase d'une onde à $x = \\lambda$ par rapport à $x = 0$ ?",
+        "answers": [
+            "$\\pi/2$",
+            "$\\pi$",
+            "$2\\pi$ (identique modulo $2\\pi$)",
+            "$0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes planes progressives harmoniques",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-092",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La vitesse de phase d'une onde lumineuse dans le vide est $c$. Son vecteur d'onde $k$ est :",
+        "answers": [
+            "$\\omega c$",
+            "$\\omega/c$",
+            "$c/\\omega$",
+            "$\\sqrt{\\omega c}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Vitesse de phase",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-093",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'équation $\\frac{\\partial^2 y}{\\partial x^2} - \\frac{1}{c^2} \\frac{\\partial^2 y}{\\partial t^2} = 0$ est :",
+        "answers": [
+            "Linéaire et du second ordre",
+            "Non linéaire",
+            "Du premier ordre en temps",
+            "D'ordre 4"
+        ],
+        "difficulty": 1,
+        "chapter": "Équation de d'Alembert",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-094",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La linéarité de l'équation de d'Alembert permet d'utiliser :",
+        "answers": [
+            "Le principe de superposition",
+            "La conservation de la charge",
+            "Le théorème de Millman",
+            "L'approximation d'Ohm"
+        ],
+        "difficulty": 1,
+        "chapter": "Équation de d'Alembert",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-095",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour un câble, si on remplit l'espace par un isolant de permittivité plus grande, $\\Gamma$ augmente. La vitesse $c$ :",
+        "answers": [
+            "Augmente",
+            "Diminue",
+            "Reste stable",
+            "Dépasse la vitesse de la lumière"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde dans un câble coaxial",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-096",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'exercice 8, la condition $i(0,t)=0$ (interrupteur ouvert) impose que $x=0$ est :",
+        "answers": [
+            "Un nœud d'intensité",
+            "Un ventre d'intensité",
+            "Un nœud de tension",
+            "Un point de court-circuit"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercice 8 : Câble en circuit ouvert",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-097",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'expression $y(x,t) = f(ct - x)$ décrit une onde allant vers :",
+        "answers": [
+            "Les $x$ croissants",
+            "Les $x$ décroissants",
+            "L'axe $y$",
+            "Le temps négatif"
+        ],
+        "difficulty": 2,
+        "chapter": "Ondes progressives",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-098",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le phénomène de 'dispersion' signifie que :",
+        "answers": [
+            "L'onde s'étale spatialement sans changer de forme",
+            "La vitesse de phase dépend de la fréquence",
+            "L'énergie est perdue par frottement",
+            "L'onde ne peut pas se propager"
+        ],
+        "difficulty": 2,
+        "chapter": "Équation de dispersion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-099",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la valeur de $\\cos(kx)$ au niveau d'un ventre de vibration (amplitude max) ?",
+        "answers": [
+            "$0$",
+            "$\\pm 1$",
+            "$1/2$",
+            "$\\infty$"
+        ],
+        "difficulty": 1,
+        "chapter": "Ondes stationnaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-100",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "En physique des concours, l'équation de d'Alembert est souvent associée à quel type de transfert ?",
+        "answers": [
+            "Transfert thermique",
+            "Transfert par rayonnement (sans perte)",
+            "Transfert diffusif",
+            "Transfert de charge statique"
+        ],
+        "difficulty": 2,
+        "chapter": "Équation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    }
+]

@@ -1,0 +1,1502 @@
+[
+    {
+        "uuid": "son-001",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/6/62/Longitudinal_wave.svg",
+        "theme": "ondes",
+        "question": "Quelle est la nature physique d'une onde sonore dans un fluide ?",
+        "answers": [
+            "Une onde transversale de cisaillement",
+            "Une onde longitudinale de compression-dilatation",
+            "Une onde de torsion de la structure moléculaire"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-002",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'approximation acoustique, comment est considérée la surpression $P_1$ par rapport à la pression d'équilibre $P_0$ ?",
+        "answers": [
+            "$P_1 \\gg P_0$",
+            "$P_1 \\sim P_0$",
+            "$P_1 \\ll P_0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-003",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'unité de l'impédance acoustique $Z$ dans le système international ?",
+        "answers": [
+            "$kg \\cdot m^{-2} \\cdot s^{-1}$",
+            "$Pa \\cdot s \\cdot m^{-1}$",
+            "Toutes ces réponses sont correctes car elles sont équivalentes"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-004",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle force est négligée dans l'approximation acoustique ?",
+        "answers": [
+            "La force de pression",
+            "La pesanteur",
+            "La force d'inertie"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-005",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'expression du PFD linéarisé dans le cours est $\\rho_0 \\frac{\\partial \\vec{v}_1}{\\partial t} = -\\vec{grad}(P_1)$. Quel terme a été négligé ?",
+        "answers": [
+            "Le terme convectif $(\\vec{v}_1 \\cdot \\vec{grad})\\vec{v}_1$",
+            "Le terme de viscosité $\\eta \\Delta \\vec{v}_1$",
+            "Les deux termes précédents"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-006",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'équation de conservation de la masse linéarisée au premier ordre ?",
+        "answers": [
+            "$\\frac{\\partial \\rho_1}{\\partial t} + \\rho_0 \\text{div}(\\vec{v}_1) = 0$",
+            "$\\frac{\\partial \\rho_0}{\\partial t} + \\rho_1 \\text{div}(\\vec{v}_1) = 0$",
+            "$\\text{div}(\\rho_1 \\vec{v}_1) = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-007",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pourquoi considère-t-on la transformation comme isentropique lors du passage d'une onde sonore ?",
+        "answers": [
+            "Parce que le fluide est un isolant thermique parfait",
+            "Car les vibrations sont assez lentes pour l'équilibre thermique",
+            "Car les vibrations sont assez rapides pour négliger les transferts thermiques"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-008",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Définition du coefficient de compressibilité isentropique $\\chi_s$ utilisé dans le cours :",
+        "answers": [
+            "$\\chi_s = \\frac{1}{\\rho_0} \\left(\\frac{\\partial \\rho}{\\partial P}\\right)_s$",
+            "$\\chi_s = -\\frac{1}{V} \\left(\\frac{\\partial V}{\\partial P}\\right)_s$",
+            "Les deux expressions sont liées et correctes pour un fluide"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-009",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'expression de la célérité $c$ du son en fonction de $\\rho_0$ et $\\chi_s$ ?",
+        "answers": [
+            "$c = \\sqrt{\\rho_0 \\chi_s}$",
+            "$c = \\frac{1}{\\sqrt{\\rho_0 \\chi_s}}$",
+            "$c = \\frac{\\rho_0}{\\chi_s}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-010",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour un gaz parfait, quelle est l'expression de la célérité de Laplace ?",
+        "answers": [
+            "$c = \\sqrt{\\frac{RT}{M}}$",
+            "$c = \\sqrt{\\frac{\\gamma RT}{M}}$",
+            "$c = \\sqrt{\\frac{\\gamma P_0}{M}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-011",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la valeur typique de la célérité du son dans l'air à $20^{\\circ}C$ ?",
+        "answers": [
+            "$300,000 km/s$",
+            "$1500 m/s$",
+            "$340 m/s$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-012",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Comment évolue la célérité du son dans un gaz parfait si la température absolue double ?",
+        "answers": [
+            "Elle double",
+            "Elle est multipliée par $\\sqrt{2}$",
+            "Elle reste constante"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-013",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'eau, la célérité du son est environ :",
+        "answers": [
+            "$340 m/s$",
+            "$1500 m/s$",
+            "$5000 m/s$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-014",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle équation différentielle régit la propagation de la surpression $P_1$ ?",
+        "answers": [
+            "Équation de diffusion",
+            "Équation de d'Alembert",
+            "Équation de Poisson"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-015",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'expression du vecteur de Poynting acoustique $\\vec{\\Pi}$ est :",
+        "answers": [
+            "$\\vec{\\Pi} = P_1 \\vec{v}_1$",
+            "$\\vec{\\Pi} = \\frac{P_1}{\\vec{v}_1}$",
+            "$\\vec{\\Pi} = \\rho_0 P_1 \\vec{v}_1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-016",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'unité du vecteur de Poynting acoustique ?",
+        "answers": [
+            "$J \\cdot m^{-3}$",
+            "$W \\cdot m^{-2}$",
+            "$N \\cdot m^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-017",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'énergie volumique cinétique d'une particule de fluide est donnée par :",
+        "answers": [
+            "$e_c = \\frac{1}{2} \\rho_0 v_1^2$",
+            "$e_c = \\rho_0 v_1^2$",
+            "$e_c = \\frac{1}{2} P_1 v_1$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-018",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'énergie volumique potentielle élastique est donnée par :",
+        "answers": [
+            "$e_p = \\frac{1}{2} \\chi_s P_1^2$",
+            "$e_p = \\frac{1}{2} \\rho_0 P_1^2$",
+            "$e_p = \\chi_s P_1^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-019",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une Onde Plane Progressive (OPP), quel est le rapport entre $e_c$ et $e_p$ ?",
+        "answers": [
+            "$e_c = 2 e_p$",
+            "$e_c = e_p$",
+            "$e_c = \\frac{1}{2} e_p$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-020",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'intensité acoustique $\\mathcal{I}$ est définie comme :",
+        "answers": [
+            "La valeur maximale de $\\Pi$",
+            "La moyenne temporelle de la norme du vecteur de Poynting",
+            "L'intégrale spatiale de $P_1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-021",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la valeur de référence $\\mathcal{I}_0$ pour le calcul du niveau sonore en décibels ?",
+        "answers": [
+            "$10^{-12} W\\cdot m^{-2}$",
+            "$1,0 W\\cdot m^{-2}$",
+            "$10^{-6} W\\cdot m^{-2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-022",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Si l'intensité acoustique est multipliée par 100, de combien de dB le niveau sonore augmente-t-il ?",
+        "answers": [
+            "10 dB",
+            "20 dB",
+            "100 dB"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-023",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la gamme de fréquences audibles par l'oreille humaine ?",
+        "answers": [
+            "20 Hz à 20 kHz",
+            "2 Hz à 2 kHz",
+            "200 Hz à 200 kHz"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-024",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une OPPH se propageant selon $+x$, quelle est la relation entre $\\underline{P}_1$ et $\\underline{v}_1$ ?",
+        "answers": [
+            "$\\underline{P}_1 = \\rho_0 c \\underline{v}_1$",
+            "$\\underline{P}_1 = -\\rho_0 c \\underline{v}_1$",
+            "$\\underline{P}_1 = \\frac{c}{\\rho_0} \\underline{v}_1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-025",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans une OPPH, la surpression et la vitesse particulaire sont :",
+        "answers": [
+            "En quadrature de phase",
+            "En opposition de phase",
+            "En phase"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-026",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Soit $\\xi(x,t)$ le déplacement des particules. Quelle est la relation entre $v_1$ et $\\xi$ ?",
+        "answers": [
+            "$v_1 = \\frac{\\partial \\xi}{\\partial t}$",
+            "$v_1 = \\frac{\\partial \\xi}{\\partial x}$",
+            "$v_1 = c \\xi$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-027",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une OPPH de pulsation $\\omega$, quel est le déphasage entre la vitesse $v_1$ et le déplacement $\\xi$ ?",
+        "answers": [
+            "0",
+            "$\\pi/2$",
+            "$\\pi$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-028",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'approximation acoustique est valide si l'amplitude du déplacement $\\xi_0$ est :",
+        "answers": [
+            "$\\xi_0 \\ll \\lambda$ (longueur d'onde)",
+            "$\\xi_0 \\gg \\lambda$",
+            "$\\xi_0 = \\lambda$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-029",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'expression de l'intensité $\\mathcal{I}$ pour une OPPH en fonction de l'amplitude de vitesse $v_1^0$ ?",
+        "answers": [
+            "$\\mathcal{I} = \\rho_0 c (v_1^0)^2$",
+            "$\\mathcal{I} = \\frac{1}{2} \\rho_0 c (v_1^0)^2$",
+            "$\\mathcal{I} = \\frac{1}{2} \\frac{(v_1^0)^2}{\\rho_0 c}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-030",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde sphérique divergente a une surpression de la forme $\\underline{P}_1(r,t) = \\frac{A}{r} e^{j(\\omega t - kr)}$. Comment évolue l'intensité $\\mathcal{I}$ avec la distance $r$ ?",
+        "answers": [
+            "En $1/r$",
+            "En $1/r^2$",
+            "Elle reste constante"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-031",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pourquoi l'intensité d'une onde sphérique diminue-t-elle en $1/r^2$ ?",
+        "answers": [
+            "À cause de la viscosité du fluide",
+            "À cause de la conservation de la puissance totale sur des sphères de plus en plus grandes",
+            "À cause de la dispersion chromatique"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-032",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le TD 21 (Ex 1), pour $P_1^0 = 10^{-2}$ Pa dans l'air, quel est l'ordre de grandeur de $v_1^0$ ?",
+        "answers": [
+            "$2,4 \\cdot 10^{-5} m/s$",
+            "$340 m/s$",
+            "$1 mm/s$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-033",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le TD 21 (Ex 1), l'amplitude du mouvement $\\xi_0$ pour un son de 1000 Hz et $P_1^0 = 10^{-2}$ Pa est environ :",
+        "answers": [
+            "4 mm",
+            "4 nm",
+            "4 $\\mu$m"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-034",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle équation exprime la conservation de l'énergie acoustique (Cours III.9 / TD Ex 1.9) ?",
+        "answers": [
+            "$\\text{div}(\\vec{\\Pi}) + \\frac{\\partial e}{\\partial t} = 0$",
+            "$\\text{div}(\\vec{v}_1) + \\frac{\\partial \\rho_1}{\\partial t} = 0$",
+            "$\\Delta P_1 - \\frac{1}{c^2} \\frac{\\partial^2 P_1}{\\partial t^2} = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-035",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans un tuyau fermé en $x=0$, quelle est la condition aux limites pour la vitesse particulaire ?",
+        "answers": [
+            "$v_1(0,t) = V_{max}$",
+            "$v_1(0,t) = 0$",
+            "$\\frac{\\partial v_1}{\\partial x}(0,t) = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-036",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Standing_wave_2.gif",
+        "theme": "ondes",
+        "question": "Une onde stationnaire est la superposition de deux ondes progressives :",
+        "answers": [
+            "De même fréquence se propageant dans le même sens",
+            "De fréquences différentes se propageant dans le même sens",
+            "De même fréquence se propageant en sens inverses"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-037",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le TD 21 (Ex 2), pour un tuyau fermé en $x=0$, l'onde réfléchie de pression est :",
+        "answers": [
+            "En phase avec l'onde incidente ($\\psi = 0$)",
+            "En opposition de phase ($\\psi = \\pi$)",
+            "En quadrature ($\\psi = \\pi/2$)"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-038",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'expression de la surpression totale $P_1(x,t)$ pour une onde stationnaire dans un tuyau fermé en $x=0$ ?",
+        "answers": [
+            "$P_1(x,t) = 2 P_1^0 \\cos(\\omega t) \\cos(kx)$",
+            "$P_1(x,t) = 2 P_1^0 \\sin(\\omega t) \\sin(kx)$",
+            "$P_1(x,t) = P_1^0 \\cos(\\omega t - kx)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-039",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans une onde stationnaire pure, quelle est la valeur moyenne temporelle du vecteur de Poynting $\\langle \\Pi \\rangle$ ?",
+        "answers": [
+            "Maximale aux ventres",
+            "Nulle partout",
+            "Constante et non nulle"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-040",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour un tuyau de longueur $L$ fermé aux deux extrémités, quelles sont les fréquences propres $f_n$ ?",
+        "answers": [
+            "$f_n = n \\frac{c}{L}$",
+            "$f_n = n \\frac{c}{2L}$",
+            "$f_n = (2n+1) \\frac{c}{4L}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-041",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Calcul (TD Ex 2.10) : Pour $L = 20$ cm, la plus basse fréquence (fondamental) d'un tuyau doublement fermé est :",
+        "answers": [
+            "170 Hz",
+            "850 Hz",
+            "425 Hz"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-042",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Un ventre de vibration pour la vitesse $v_1$ correspond à :",
+        "answers": [
+            "Un ventre de pression pour $P_1$",
+            "Un nœud de pression pour $P_1$",
+            "Rien de particulier"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-043",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Comment s'appelle la relation $c = \\frac{1}{\\sqrt{\\rho_0 \\chi_s}}$ ?",
+        "answers": [
+            "Formule d'Isaac Newton",
+            "Formule de Laplace",
+            "Relation de dispersion"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-044",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'énergie volumique totale moyenne $\\langle e \\rangle$ d'une onde stationnaire dans un tuyau est :",
+        "answers": [
+            "Dépendante de $x$ (nœuds et ventres)",
+            "Uniforme dans tout le tuyau",
+            "Nulle"
+        ],
+        "difficulty": 4,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-045",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Que signifie le fait que $\\langle \\Pi \\rangle = 0$ pour une onde stationnaire ?",
+        "answers": [
+            "Il n'y a pas d'énergie dans le tuyau",
+            "Il n'y a pas de transfert global d'énergie à travers le milieu",
+            "L'onde s'est amortie instantanément"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-046",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la définition de la surface d'onde ?",
+        "answers": [
+            "La surface où la vitesse est nulle",
+            "La surface où la phase de l'onde est identique à $t$ fixé",
+            "La surface extérieure du tuyau"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-047",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cas tridimensionnel, quel opérateur remplace $\\frac{\\partial^2}{\\partial x^2}$ dans l'équation de propagation ?",
+        "answers": [
+            "Le Gradient",
+            "La Divergence",
+            "Le Laplacien $\\Delta$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-048",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La loi de Laplace $PV^\\gamma = cste$ implique que $\\chi_s$ est égal à :",
+        "answers": [
+            "$\\frac{1}{P_0}$",
+            "$\\frac{1}{\\gamma P_0}$",
+            "$\\frac{\\gamma}{P_0}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-049",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour l'air (gaz diatomique), quelle est la valeur approximative de $\\gamma$ ?",
+        "answers": [
+            "1,0",
+            "1,4",
+            "1,6"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-050",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le vecteur d'onde $\\vec{k}$ est dirigé selon :",
+        "answers": [
+            "La direction de vibration des particules",
+            "La direction de propagation de l'onde",
+            "Les deux, car l'onde est longitudinale"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-051",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la relation entre la pulsation $\\omega$, le nombre d'onde $k$ et la célérité $c$ ?",
+        "answers": [
+            "$\\omega = k/c$",
+            "$\\omega = kc$",
+            "$k = \\omega c$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-052",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde se propageant vers les $x$ décroissants possède une impédance acoustique de :",
+        "answers": [
+            "$\\rho_0 c$",
+            "$-\\rho_0 c$",
+            "$1/(\\rho_0 c)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-053",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'intensité sonore $L_{dB}$ de la conversation humaine normale à 1m est d'environ :",
+        "answers": [
+            "20 dB",
+            "60 dB",
+            "100 dB"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-054",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quel est le seuil de douleur pour l'oreille humaine ?",
+        "answers": [
+            "80 dB",
+            "120 dB",
+            "160 dB"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-055",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une OPPH, si $P_1(x,t) = P_1^0 \\cos(\\omega t - kx)$, alors $v_1(x,t)$ s'écrit :",
+        "answers": [
+            "$\\frac{P_1^0}{\\rho_0 c} \\sin(\\omega t - kx)$",
+            "$\\frac{P_1^0}{\\rho_0 c} \\cos(\\omega t - kx)$",
+            "$\\rho_0 c P_1^0 \\cos(\\omega t - kx)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-056",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le TD Ex 1.2, la force volumique s'exprime comme :",
+        "answers": [
+            "$\\vec{f}_v = -\\vec{grad}(P)$",
+            "$\\vec{f}_v = \\rho \\vec{g}$",
+            "$\\vec{f}_v = P \\vec{S}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-057",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle hypothèse permet de remplacer $\\rho$ par $\\rho_0$ devant le terme d'accélération dans le PFD ?",
+        "answers": [
+            "L'approximation acoustique (ordre 1)",
+            "Le fluide est incompressible",
+            "L'absence de frottements"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-058",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'exercice 4 du TD (Sphère pulsante), comment varie la puissance moyenne rayonnée $\\mathcal{P}$ avec $r$ ?",
+        "answers": [
+            "Elle décroît en $1/r^2$",
+            "Elle est constante",
+            "Elle croît linéairement"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-059",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La relation $\\rho_1 = \\rho_0 \\chi_s P_1$ est appelée :",
+        "answers": [
+            "Équation d'état linéarisée",
+            "Équation thermodynamique linéarisée",
+            "Loi de Hooke acoustique"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-060",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans un nœud de pression d'une onde stationnaire :",
+        "answers": [
+            "La pression reste égale à $P_0$ à tout instant",
+            "La pression fluctue avec une amplitude maximale",
+            "La vitesse particulaire est nulle"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-061",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La distance séparant deux nœuds consécutifs de pression est :",
+        "answers": [
+            "$\\lambda$",
+            "$\\lambda/2$",
+            "$\\lambda/4$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-062",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'oreille humaine est sensible à :",
+        "answers": [
+            "La surpression instantanée $P_1$",
+            "L'intensité acoustique moyenne $\\mathcal{I}$",
+            "La vitesse particulaire $v_1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-063",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Un son dont le niveau augmente de 3 dB voit son intensité $\\mathcal{I}$ :",
+        "answers": [
+            "Tripler",
+            "Doubler (environ)",
+            "Augmenter de 3%"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-064",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la dimension physique de $\\chi_s$ ?",
+        "answers": [
+            "$Pa$",
+            "$Pa^{-1}$",
+            "$m^2 \\cdot s^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-065",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le théorème de Schwarz mentionné dans le cours sert à :",
+        "answers": [
+            "Intervertir les dérivées spatiales et temporelles",
+            "Calculer l'énergie potentielle",
+            "Démontrer que l'onde est longitudinale"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-066",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le TD Ex 1.5, on vérifie l'approximation acoustique en comparant $v_1^0$ à $c$. On trouve $v_1^0 / c \\approx$ :",
+        "answers": [
+            "$10^{-2}$",
+            "$7 \\cdot 10^{-8}$",
+            "$0,5$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-067",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde plane se propageant selon $\\vec{u}_x$ possède des surfaces d'onde qui sont :",
+        "answers": [
+            "Des plans parallèles à $(Oyz)$",
+            "Des cylindres d'axe $(Ox)$",
+            "Des sphères centrées sur l'origine"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-068",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La notation complexe $\\underline{P}_1 = P_1^0 e^{j(\\omega t - kx)}$ est pratique car :",
+        "answers": [
+            "La dérivation temporelle revient à multiplier par $j\\omega$",
+            "Elle permet de calculer directement des produits de fonctions",
+            "Elle évite d'utiliser des radians"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-069",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la condition sur l'impédance pour qu'il n'y ait aucune réflexion à l'interface entre deux milieux ?",
+        "answers": [
+            "Les impédances doivent être nulles",
+            "Les impédances doivent être égales (adaptation d'impédance)",
+            "La somme des impédances doit valoir $\\rho_0 c$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-070",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le TD Ex 3 (paroi oscillante), la vitesse du fluide au contact de la paroi est :",
+        "answers": [
+            "Nulle",
+            "Égale à la vitesse de la paroi",
+            "Maximale"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-071",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Si une onde plane progressive se propage dans un milieu dissipatif, son amplitude :",
+        "answers": [
+            "Reste constante",
+            "Décroît exponentiellement",
+            "Décroît en $1/r^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-072",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pourquoi dit-on que l'équation de d'Alembert est linéaire ?",
+        "answers": [
+            "Car elle ne contient que des dérivées premières",
+            "Car toute combinaison linéaire de solutions est aussi solution",
+            "Car les ondes se propagent en ligne droite"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-073",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le principe de superposition s'applique-t-il aux intensités sonores $\\mathcal{I}$ ?",
+        "answers": [
+            "Oui, toujours",
+            "Non, on additionne les surpressions $\\underline{P}_1$, pas les intensités (sauf si incohérentes)",
+            "Oui, si les sources sont en phase"
+        ],
+        "difficulty": 4,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-074",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cas d'une onde stationnaire pure (TD Ex 2.4), la surpression totale est nulle :",
+        "answers": [
+            "Tout le temps partout",
+            "À certains instants pour tout $x$ (nœuds temporels)",
+            "En certains points pour tout $t$ (nœuds spatiaux)"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-075",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'expression de la masse volumique totale lors du passage de l'onde ?",
+        "answers": [
+            "$\\rho = \\rho_0 + \\rho_1$",
+            "$\\rho = \\rho_0 \\rho_1$",
+            "$\\rho = \\rho_0 (1 + P_1)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-076",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans un tuyau d'orgue ouvert aux deux extrémités, les fréquences propres sont les mêmes que pour un tuyau fermé aux deux extrémités ?",
+        "answers": [
+            "Oui ($n \\frac{c}{2L}$)",
+            "Non, c'est $n \\frac{c}{4L}$",
+            "Non, il n'y a pas d'ondes stationnaires"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-077",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour un gaz parfait monoatomique, $\\gamma$ vaut :",
+        "answers": [
+            "1,4",
+            "1,67",
+            "1,33"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-078",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'énergie volumique moyenne d'une OPPH est $\\langle e \\rangle = $ :",
+        "answers": [
+            "$\\frac{1}{2} \\rho_0 (v_1^0)^2$",
+            "$\\frac{1}{4} \\rho_0 (v_1^0)^2$",
+            "$\\rho_0 (v_1^0)^2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-079",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La relation $\\omega \\chi_s = \\frac{k}{\\rho_0 c}$ (TD Ex 1.9) est utile pour démontrer :",
+        "answers": [
+            "L'équation de d'Alembert",
+            "La conservation de l'énergie",
+            "La loi de Laplace"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-080",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'air, si la fréquence du son augmente, la célérité $c$ :",
+        "answers": [
+            "Augmente",
+            "Diminue",
+            "Reste la même (milieu non dispersif)"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-081",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La pression atmosphérique standard $P_0$ est d'environ :",
+        "answers": [
+            "$10^5 Pa$",
+            "$10^3 Pa$",
+            "$1 Pa$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-082",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le terme $\\rho_0 \\text{div}(\\vec{v}_1)$ dans l'équation de conservation de la masse représente :",
+        "answers": [
+            "La création de matière",
+            "Le flux de masse sortant du volume élémentaire",
+            "La variation de la température"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-083",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le TD Ex 1.4, on calcule $\\frac{\\partial P_1}{\\partial x}$. Si $P_1 = P_1^0 \\cos(\\omega t - kx)$, alors :",
+        "answers": [
+            "$\\frac{\\partial P_1}{\\partial x} = k P_1^0 \\sin(\\omega t - kx)$",
+            "$\\frac{\\partial P_1}{\\partial x} = -k P_1^0 \\sin(\\omega t - kx)$",
+            "$\\frac{\\partial P_1}{\\partial x} = -k^2 P_1^0 \\cos(\\omega t - kx)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-084",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'approximation $\\rho_1 \\ll \\rho_0$ est équivalente à :",
+        "answers": [
+            "$P_1 \\ll 1/\\chi_s$",
+            "$v_1 \\ll c$",
+            "Les deux sont liées par l'approximation acoustique"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-085",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans une onde stationnaire, les ventres de pression sont situés aux positions $x$ telles que :",
+        "answers": [
+            "$\\cos(kx) = 0$",
+            "$\\cos(kx) = \\pm 1$",
+            "$\\sin(kx) = \\pm 1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-086",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la longueur d'onde $\\lambda$ d'un son de 1 kHz dans l'air ?",
+        "answers": [
+            "34 cm",
+            "3,4 m",
+            "3,4 cm"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-087",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le vecteur de Poynting moyen pour une onde plane progressive harmonique est $\\vec{\\mathcal{I}} = \\mathcal{I} \\vec{u}_x$. Quelle est la direction de $\\vec{u}_x$ ?",
+        "answers": [
+            "Perpendiculaire aux plans d'onde",
+            "Parallèle aux plans d'onde",
+            "N'importe laquelle"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-088",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une onde sphérique, l'amplitude de la surpression $P_1^0(r)$ décroît en :",
+        "answers": [
+            "$1/r$",
+            "$1/r^2$",
+            "Elle est constante"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-089",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Comment appelle-t-on une onde dont l'amplitude dépend de la direction (angle) ?",
+        "answers": [
+            "Onde isotrope",
+            "Onde anisotrope",
+            "Onde plane"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-090",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la relation fondamentale entre $c, \\gamma, P_0$ et $\\rho_0$ ?",
+        "answers": [
+            "$c^2 = \\frac{\\gamma P_0}{\\rho_0}$",
+            "$c^2 = \\frac{P_0}{\\gamma \\rho_0}$",
+            "$c^2 = \\gamma P_0 \\rho_0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-091",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Si on double la fréquence d'une onde sonore, sa longueur d'onde est :",
+        "answers": [
+            "Doublée",
+            "Divisée par 2",
+            "Inchangée"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-092",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le TD Ex 1.9, on définit $e = 2 e_c$. Pourquoi ?",
+        "answers": [
+            "C'est une définition arbitraire",
+            "Car pour une OPP, $e_c = e_p$, donc $e = e_c + e_p = 2 e_c$",
+            "Car l'énergie potentielle est nulle"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-093",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Un son de 0 dB correspond à une intensité $\\mathcal{I}$ égale à :",
+        "answers": [
+            "$0 W/m^2$",
+            "$10^{-12} W/m^2$",
+            "$1 W/m^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-094",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans un fluide parfait (sans viscosité), l'onde sonore est :",
+        "answers": [
+            "Amortie",
+            "Non amortie",
+            "Dispersive"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-095",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le flux du vecteur de Poynting à travers une surface fermée représente :",
+        "answers": [
+            "La variation de la masse",
+            "La puissance acoustique sortante",
+            "La force de pression totale"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-096",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une OPPH, le rapport $\\underline{P}_1 / \\underline{v}_1$ est réel. Cela signifie que :",
+        "answers": [
+            "Il n'y a pas de propagation",
+            "Les deux grandeurs vibrent en phase",
+            "L'onde est stationnaire"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-097",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Calcul (TD Ex 2.10) : Si $L$ double, comment évolue la fréquence fondamentale ?",
+        "answers": [
+            "Elle double",
+            "Elle est divisée par 2",
+            "Elle reste inchangée"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-098",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'impédance acoustique de l'air est environ :",
+        "answers": [
+            "$400 kg \\cdot m^{-2} \\cdot s^{-1}$",
+            "$1,2 kg \\cdot m^{-2} \\cdot s^{-1}$",
+            "$340 kg \\cdot m^{-2} \\cdot s^{-1}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-099",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde sonore se propageant dans un solide peut être :",
+        "answers": [
+            "Seulement longitudinale",
+            "Seulement transversale",
+            "Longitudinale ou transversale"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-100",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'expression de l'accélération d'une particule de fluide au premier ordre est :",
+        "answers": [
+            "$\\frac{\\partial \\vec{v}_1}{\\partial t}$",
+            "$(\\vec{v}_1 \\cdot \\vec{grad})\\vec{v}_1$",
+            "$\\frac{d\\vec{v}_1}{dt}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    }
+]

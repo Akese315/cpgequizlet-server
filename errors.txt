@@ -1,0 +1,36 @@
+﻿cargo :     Checking 
+quizletServer v0.1.0 (C:\Pro
+grammation\quizlet\quizletSe
+rver)
+Au caractère Ligne:1 : 1
++ cargo check 
+--message-format=short 2>&1 
+| Out-File -Encoding utf8 
+err ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (    C  
+  hecking qu...\quizletSe   
+ rver):String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+src\database\mod.rs:1:44: 
+warning: unused import: 
+`NewUser`
+src\main.rs:108:29: 
+error[E0277]: the trait 
+bound `Users: 
+serde::Serialize` is not 
+satisfied: unsatisfied 
+trait bound
+warning: `quizletServer` 
+(bin "quizletServer") 
+generated 1 warning
+error: could not compile 
+`quizletServer` (bin 
+"quizletServer") due to 1 
+previous error; 1 warning 
+emitted

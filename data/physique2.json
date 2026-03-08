@@ -1,0 +1,1502 @@
+[
+    {
+        "uuid": "ali-001",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/4/4c/DIP8_Package.jpg",
+        "theme": "circuits électriques",
+        "question": "Sous quel type de boîtier se présente classiquement un Amplificateur Linéaire Intégré (ALI) usuel ?",
+        "answers": [
+            "Un boîtier DIP à 4 pattes",
+            "Une puce électronique à 8 pattes",
+            "Un transistor à 3 broches"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-002",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la fonction principale d'un ALI ?",
+        "answers": [
+            "Amplifier la somme des potentiels d'entrée",
+            "Amplifier la différence de potentiel entre ses deux entrées",
+            "Stabiliser le courant de sortie indépendamment de la charge"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-003",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour fonctionner, un ALI doit être alimenté par une source de tension. Quelle est la valeur symétrique standard mentionnée dans le cours ?",
+        "answers": [
+            "$\\pm 5$ V",
+            "$\\pm 15$ V",
+            "$\\pm 230$ V"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-004",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "D'après le brochage standard, sur quelle patte se trouve la sortie $S$ de l'ALI ?",
+        "answers": [
+            "Patte 2",
+            "Patte 4",
+            "Patte 6"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-005",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Comment appelle-t-on l'entrée reliée à la patte 2 de l'ALI ?",
+        "answers": [
+            "Entrée non inverseuse $E^+$",
+            "Entrée inverseuse $E^-$",
+            "Entrée de compensation"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-006",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la définition de la tension différentielle d'entrée $\\epsilon$ ?",
+        "answers": [
+            "$\\epsilon = V^- - V^+$",
+            "$\\epsilon = V^+ - V^-$",
+            "$\\epsilon = V_s - V^+$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-007",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel est l'ordre de grandeur de l'impédance d'entrée $Z_e$ d'un ALI réel ?",
+        "answers": [
+            "$50$ $\\Omega$",
+            "$10^6$ $\\Omega$",
+            "$10^{12}$ $\\Omega$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-008",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En régime linéaire, quelle est la relation entre $V_s$ et $\\epsilon$ en régime permanent continu ?",
+        "answers": [
+            "$V_s = \\mu_0 \\cdot \\epsilon$",
+            "$V_s = \\pm V_{sat}$",
+            "$V_s = 0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-009",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour un ALI idéal, quelles sont les hypothèses sur les courants d'entrée $i_+$ et $i_-$ ?",
+        "answers": [
+            "$i_+ = i_- = \\infty$",
+            "$i_+ = i_- = 0$",
+            "$i_+ = -i_-$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-010",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le modèle de l'ALI idéal en régime linéaire, quelle simplification majeure utilise-t-on pour $\\epsilon$ ?",
+        "answers": [
+            "$\\epsilon = V_{sat}$",
+            "$\\epsilon = 0$ (donc $V^+ = V^-$)",
+            "$\\epsilon = V_s / 2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-011",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la valeur typique du gain statique $\\mu_0$ d'un ALI réel ?",
+        "answers": [
+            "$10^2$",
+            "$10^5$",
+            "$10^{12}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-012",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "L'ALI se comporte dynamiquement comme un filtre. De quel type ?",
+        "answers": [
+            "Passe-haut d'ordre 1",
+            "Passe-bas d'ordre 1",
+            "Passe-bande d'ordre 2"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-013",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la fréquence de coupure $f_c$ typique d'un ALI en boucle ouverte ?",
+        "answers": [
+            "$20$ Hz",
+            "$20$ kHz",
+            "$2$ MHz"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-014",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Qu'appelle-t-on le 'Slew Rate' (vitesse de balayage) d'un ALI ?",
+        "answers": [
+            "Le courant maximal en sortie",
+            "La limitation de la vitesse de variation de la tension de sortie",
+            "La fréquence maximale d'utilisation en régime linéaire"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-015",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la valeur usuelle du Slew Rate mentionnée dans le cours ?",
+        "answers": [
+            "$0,1$ $V\\cdot ms^{-1}$",
+            "$16$ $V\\cdot \\mu s^{-1}$",
+            "$3\\cdot 10^8$ $m\\cdot s^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-016",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En quoi consiste une rétroaction négative ?",
+        "answers": [
+            "Relier la sortie à l'entrée non inverseuse ($E^+$)",
+            "Relier la sortie à l'entrée inverseuse ($E^-$)",
+            "Relier les deux entrées ensemble à la masse"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-017",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel est l'effet principal d'une rétroaction négative sur le montage ?",
+        "answers": [
+            "Effet stabilisant, permettant souvent le régime linéaire",
+            "Effet déstabilisant, forçant la saturation",
+            "Annulation du gain statique $\\mu_0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-018",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour un montage non-inverseur avec résistances $R_1$ (vers masse) et $R_2$ (rétroaction), quel est le gain $G = V_s/e$ ?",
+        "answers": [
+            "$G = -R_2 / R_1$",
+            "$G = 1 + R_2 / R_1$",
+            "$G = R_1 / (R_1 + R_2)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-019",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Qu'est-ce qui reste constant pour un ALI bouclé par un retour constant (système du 1er ordre) ?",
+        "answers": [
+            "Le gain statique",
+            "La bande passante",
+            "Le produit gain-bande passante"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-020",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un montage inverseur, quelle est la relation entre $V_s$ et $e$ ?",
+        "answers": [
+            "$V_s = -(R_2 / R_1) e$",
+            "$V_s = (R_2 / R_1) e$",
+            "$V_s = e$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-021",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est l'impédance d'entrée $Z_e$ d'un montage suiveur idéal ?",
+        "answers": [
+            "$0$ $\\Omega$",
+            "$R$",
+            "Infinie"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-022",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel est l'intérêt principal d'un montage suiveur ?",
+        "answers": [
+            "Inverser le signe de la tension",
+            "Isoler une source de tension d'une charge (adaptateur d'impédance)",
+            "Intégrer le signal d'entrée"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-023",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le montage intégrateur idéal, comment s'exprime $V_s$ en fonction de $e$ ?",
+        "answers": [
+            "$\\underline{V_s} = -jRC\\omega \\underline{e}$",
+            "$\\underline{V_s} = -\\frac{1}{jRC\\omega} \\underline{e}$",
+            "$\\underline{V_s} = \\frac{1}{jRC\\omega} \\underline{e}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-024",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pourquoi le montage intégrateur pur est-il inutilisable en pratique avec des signaux continus ?",
+        "answers": [
+            "Il brûle instantanément",
+            "Il sature très rapidement à cause de l'intégration de la moindre composante continue (offset)",
+            "Il se comporte comme un court-circuit"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-025",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Comment réalise-t-on un montage pseudo-intégrateur ?",
+        "answers": [
+            "En ajoutant une résistance en série avec le condensateur",
+            "En ajoutant une résistance en parallèle du condensateur",
+            "En remplaçant le condensateur par une bobine"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-026",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel est le régime de fonctionnement d'un comparateur simple (sans rétroaction) ?",
+        "answers": [
+            "Toujours linéaire",
+            "Toujours saturé",
+            "Aléatoire"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-027",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour un comparateur simple comparant $e$ à une tension de référence $E_0$ sur l'entrée inverseuse, que vaut $V_s$ si $e > E_0$ ?",
+        "answers": [
+            "$+V_{sat}$",
+            "$-V_{sat}$",
+            "$0$ V"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-028",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Que signifie la 'génération d'harmoniques' par un montage non-linéaire (ex: comparateur) ?",
+        "answers": [
+            "Le signal de sortie est plus pur que celui d'entrée",
+            "Le spectre du signal de sortie comporte plus de fréquences que celui d'entrée",
+            "L'amplitude du signal est augmentée sans changer sa forme"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-029",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Schmitt_trigger_transfer_curve.svg",
+        "theme": "circuits électriques",
+        "question": "Un montage présentant une rétroaction positive unique fonctionne en quel régime ?",
+        "answers": [
+            "Linéaire",
+            "Saturé",
+            "Sinusoïdal"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-030",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un comparateur à hystérésis, de quoi dépend l'état de la sortie ?",
+        "answers": [
+            "Uniquement de la valeur instantanée de l'entrée $e$",
+            "De la valeur de l'entrée $e$ et de l'état antérieur de la sortie (mémoire)",
+            "Uniquement de la température"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-031",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est l'unité de la pulsation de coupure $\\omega_c$ ?",
+        "answers": [
+            "Hz",
+            "$rad\\cdot s^{-1}$",
+            "V"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-032",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel est le nom de la loi utilisée pour sommer les courants arrivant à un nœud en fonction des potentiels ?",
+        "answers": [
+            "Loi de Pouillet",
+            "Loi des Nœuds en Termes de Potentiels (LNTP)",
+            "Loi d'Ohm généralisée"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-033",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans l'exercice du TD sur le dérivateur, quelle est la relation temporelle obtenue ?",
+        "answers": [
+            "$s(t) = -RC \\frac{de}{dt}$",
+            "$s(t) = RC \\frac{de}{dt}$",
+            "$s(t) = \\frac{1}{RC} \\int e dt$"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-034",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour un montage sommateur non-inverseur avec deux entrées $e_1$ et $e_2$ et des résistances toutes identiques à $R$, que vaut $V_s$ ?",
+        "answers": [
+            "$V_s = e_1 + e_2$",
+            "$V_s = -(e_1 + e_2)$",
+            "$V_s = (e_1 + e_2) / 2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-035",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans l'étude du pseudo-intégrateur, comment se comporte le montage à haute fréquence ($f \\gg f_c$) ?",
+        "answers": [
+            "Comme un amplificateur simple de gain $-R'/R$",
+            "Comme un intégrateur idéal",
+            "Comme un circuit ouvert"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-036",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel est le rôle de la résistance $R'$ dans un montage pseudo-intégrateur ?",
+        "answers": [
+            "Augmenter le gain en haute fréquence",
+            "Empêcher la divergence de la sortie en basse fréquence (limiter le gain statique)",
+            "Protéger l'ALI contre les surtensions"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-037",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Un montage 'déphaseur' ou 'passe-tout' possède un gain complexe de module :",
+        "answers": [
+            "Dépendant de la fréquence",
+            "Constant et égal à 1",
+            "Nul à la résonance"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-038",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Si l'on applique un échelon de tension en entrée d'un filtre instable (rétroaction positive), que fait la sortie ?",
+        "answers": [
+            "Elle reste à 0",
+            "Elle diverge exponentiellement jusqu'à la saturation",
+            "Elle oscille de façon sinusoïdale amortie"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-039",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la condition de stabilité du filtre actif étudié dans l'exercice 8 du TD ?",
+        "answers": [
+            "$k > 1$",
+            "$k < 1$",
+            "$k = 1$"
+        ],
+        "difficulty": 4,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-040",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un montage Trigger de Schmitt, les seuils de basculement sont notés $V_1$ et $V_2$. Comment s'appelle la zone entre ces deux seuils ?",
+        "answers": [
+            "Zone linéaire",
+            "Plage d'hystérésis",
+            "Zone morte"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-041",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Un montage 'convertisseur de résistance négative' (NIC) permet d'obtenir un dipôle tel que :",
+        "answers": [
+            "$u = -R \\cdot i$",
+            "$u = R \\cdot i^2$",
+            "$u = R / i$"
+        ],
+        "difficulty": 4,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-042",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour le NIC, que se passe-t-il si le courant dépasse une valeur de basculement $I_{basc}$ ?",
+        "answers": [
+            "La résistance devient positive",
+            "L'ALI sature et la loi $u = -R \\cdot i$ n'est plus valable",
+            "Le montage explose"
+        ],
+        "difficulty": 4,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-043",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel est le type de filtre du montage de l'exercice 12 ($R, C$ en série sur l'entrée, $R'$ en rétroaction) ?",
+        "answers": [
+            "Passe-bas",
+            "Passe-haut",
+            "Passe-bande"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-044",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le filtre passe-haut actif, que vaut le gain en haute fréquence ?",
+        "answers": [
+            "$0$ dB",
+            "$-R'/R$",
+            "$-R/R'$"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-045",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Si la sortie théorique d'un filtre amplificateur est de 30V alors que $V_{sat} = 15V$, qu'observe-t-on ?",
+        "answers": [
+            "Un signal sinusoïdal de 30V",
+            "Un signal sinusoïdal de 15V",
+            "Un signal sinus écrêté à $\\pm 15$ V"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-046",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "L'impédance de sortie $Z_s$ d'un ALI réel est de l'ordre de :",
+        "answers": [
+            "$50$ à $200$ $\\Omega$",
+            "$1$ $M\\Omega$",
+            "$0$ $\\Omega$ strictement"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-047",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle borne de l'ALI n'est PAS utilisée dans le brochage standard à 8 pattes ?",
+        "answers": [
+            "Patte 1",
+            "Patte 2",
+            "Patte 3"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-048",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pourquoi dit-on qu'un ALI est un 'quadripôle' ?",
+        "answers": [
+            "Parce qu'il a 4 entrées",
+            "Parce qu'il possède deux bornes d'entrée et deux bornes de sortie (en comptant la masse commune)",
+            "Parce qu'il multiplie la tension par 4"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-049",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Que vaut approximativement le courant de saturation d'un ALI usuel ?",
+        "answers": [
+            "$40$ mA",
+            "$10$ A",
+            "$1$ $\\mu$A"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-050",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans la fonction de transfert $\\underline{H}_{ALI} = \\frac{\\mu_0}{1+j f/f_c}$, que représente $f_c$ ?",
+        "answers": [
+            "La fréquence centrale du filtre",
+            "La fréquence de coupure à $-3$ dB",
+            "La fréquence de résonance"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-051",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un montage non-inverseur, l'entrée $e$ est branchée sur :",
+        "answers": [
+            "L'entrée inverseuse",
+            "L'entrée non-inverseuse",
+            "La sortie"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-052",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour l'ALI idéal, quelle est l'impédance de sortie $Z_s$ ?",
+        "answers": [
+            "Infinie",
+            "$0$ $\\Omega$",
+            "$50$ $\\Omega$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-053",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En régime saturé, quelle est la valeur de $\\epsilon$ ?",
+        "answers": [
+            "Nulle",
+            "Non nulle et du même signe que $V_s$",
+            "Non nulle et de signe opposé à $V_s$"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-054",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la condition sur les coefficients du dénominateur d'une fonction de transfert pour assurer la stabilité ?",
+        "answers": [
+            "Ils doivent être tous négatifs",
+            "Ils doivent être tous de même signe (positifs par convention)",
+            "Leur somme doit être nulle"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-055",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le montage sommateur inverseur, que vaut la sortie $s$ pour deux entrées $e_1, e_2$ et résistances identiques $R$ ?",
+        "answers": [
+            "$s = e_1 + e_2$",
+            "$s = -(e_1 + e_2)$",
+            "$s = R(e_1 + e_2)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-056",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la définition du gain statique $\\mu_0$ ?",
+        "answers": [
+            "Le gain à fréquence infinie",
+            "Le gain à fréquence nulle",
+            "Le gain à la fréquence de coupure"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-057",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Que se passe-t-il si on permute les entrées $+$ et $-$ dans un montage suiveur ?",
+        "answers": [
+            "Le montage devient instable et sature",
+            "Le gain devient négatif",
+            "Rien ne change"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-058",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la dimension du produit Gain $\\times$ Bande Passante ?",
+        "answers": [
+            "Dimension d'une tension",
+            "Dimension d'une fréquence",
+            "Sans dimension"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-059",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pourquoi l'alimentation de l'ALI n'est-elle généralement pas représentée sur les schémas électriques ?",
+        "answers": [
+            "Car elle est inutile",
+            "Pour alléger le schéma",
+            "Car l'ALI crée sa propre énergie"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-060",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans la caractéristique statique $V_s = f(\\epsilon)$, quelle est la pente de la zone linéaire ?",
+        "answers": [
+            "$1$",
+            "$\\mu_0$",
+            "$\\infty$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-061",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Une rétroaction positive est-elle possible en régime linéaire ?",
+        "answers": [
+            "Oui, toujours",
+            "Non, car elle crée un pôle à partie réelle positive (instabilité)",
+            "Uniquement à très haute fréquence"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-062",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Que vaut la tension de sortie $V_s$ d'un ALI idéal si $V^+ = 3V$ et $V^- = 2V$ ?",
+        "answers": [
+            "$1V$",
+            "$+V_{sat}$",
+            "$-V_{sat}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-063",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le montage inverseur, le point $E^-$ est souvent appelé :",
+        "answers": [
+            "Masse mécanique",
+            "Masse virtuelle",
+            "Source de courant"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-064",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Le terme 'linéaire' dans ALI signifie :",
+        "answers": [
+            "Que l'ALI est toujours en régime linéaire",
+            "Que l'ALI est constitué de composants linéaires uniquement",
+            "Que le composant est conçu pour avoir une zone de fonctionnement proportionnelle entre sortie et entrée"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-065",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour un montage suiveur réel, si l'entrée varie de 0 à 20V et $V_{cc} = 15V$, que fait la sortie ?",
+        "answers": [
+            "Elle suit jusqu'à 20V",
+            "Elle suit jusqu'à environ 15V puis sature",
+            "Elle reste à 0V"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-066",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "L'ALI a été historiquement développé pour quel type d'appareils ?",
+        "answers": [
+            "Les radios à lampes",
+            "Les calculateurs analogiques",
+            "Les smartphones"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-067",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la patte de l'alimentation négative $-V_{cc}$ ?",
+        "answers": [
+            "4",
+            "7",
+            "8"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-068",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Un montage ALI avec rétroaction sur l'entrée $+$ et l'entrée $-$ nécessite quoi pour l'étude de son régime ?",
+        "answers": [
+            "On suppose toujours le régime linéaire",
+            "On ne peut pas anticiper, il faut étudier la stabilité temporelle",
+            "On utilise la LNTP et on conclut à la saturation"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-069",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le cas d'un montage intégrateur, la sortie est proportionnelle à :",
+        "answers": [
+            "La dérivée de l'entrée",
+            "La primitive (intégrale) de l'entrée",
+            "Le carré de l'entrée"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-070",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Si l'on met deux filtres passifs en cascade, le gain global est-il toujours le produit des gains ?",
+        "answers": [
+            "Oui, toujours",
+            "Non, à cause des effets de charge (courant non nul entre les deux)",
+            "Uniquement si les résistances sont nulles"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-071",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Comment corriger l'effet de charge lors de la mise en cascade de deux filtres ?",
+        "answers": [
+            "En augmentant la tension d'entrée",
+            "En intercalant un montage suiveur entre les deux filtres",
+            "En supprimant toutes les résistances"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-072",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "L'expression du gain d'un montage non-inverseur dépend-elle du gain statique $\\mu_0$ dans le modèle idéal ?",
+        "answers": [
+            "Oui, linéairement",
+            "Non, elle ne dépend que des résistances extérieures",
+            "Oui, mais seulement à haute fréquence"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-073",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour un montage dérivateur, quelle est l'impédance de la branche de rétroaction ?",
+        "answers": [
+            "Une résistance $R$",
+            "Un condensateur $C$",
+            "Une bobine $L$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-074",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le montage dérivateur, l'entrée comporte :",
+        "answers": [
+            "Une résistance",
+            "Un condensateur",
+            "Un fil direct"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-075",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pourquoi le dérivateur est-il sensible aux parasites de haute fréquence ?",
+        "answers": [
+            "Car son gain augmente avec la fréquence ($G \\propto \\omega$)",
+            "Car il sature en basse fréquence",
+            "Car le condensateur brûle"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-076",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Un montage comparateur à hystérésis possède une caractéristique $s = f(e)$ qui forme :",
+        "answers": [
+            "Une droite",
+            "Un cycle",
+            "Un cercle"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-077",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un montage inverseur, si $R_1 = R_2$, que vaut $V_s$ ?",
+        "answers": [
+            "$V_s = e$",
+            "$V_s = -e$",
+            "$V_s = 0V$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-078",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "L'unité de l'impédance est :",
+        "answers": [
+            "Le Volt (V)",
+            "L'Ohm ($\\Omega$)",
+            "Le Farad (F)"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-079",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Comment varie la bande passante d'un montage non-inverseur si on augmente son gain ?",
+        "answers": [
+            "Elle augmente aussi",
+            "Elle diminue (car le produit gain-bande est constant)",
+            "Elle reste identique"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-080",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la valeur typique de $V_{sat}$ si l'alimentation est de $\\pm 15$ V ?",
+        "answers": [
+            "Exactement $15$ V",
+            "Environ $13$ à $14,5$ V",
+            "$0$ V"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-081",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Un montage 'déphaseur' est utilisé pour :",
+        "answers": [
+            "Modifier l'amplitude sans toucher à la phase",
+            "Modifier la phase d'un signal sans modifier son amplitude",
+            "Supprimer les hautes fréquences"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-082",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En régime linéaire, quel courant circule à l'intérieur de l'ALI entre les bornes $+$ et $-$ ?",
+        "answers": [
+            "$i = \\epsilon / Z_e$ (quasiment nul)",
+            "$i = V_s / Z_s$",
+            "$i = \\infty$"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-083",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel est le signe du gain d'un montage non-inverseur ?",
+        "answers": [
+            "Toujours positif et $\\ge 1$",
+            "Toujours négatif",
+            "Dépend du signe de $e$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-084",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le montage inverseur, l'entrée non-inverseuse est généralement reliée à :",
+        "answers": [
+            "La sortie",
+            "La masse",
+            "L'entrée $e$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-085",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Le montage NIC (résistance négative) agit physiquement comme :",
+        "answers": [
+            "Un consommateur d'énergie pur",
+            "Une source d'énergie (car il fournit de la puissance au circuit)",
+            "Un simple fil"
+        ],
+        "difficulty": 4,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-086",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel est le danger d'un gain trop élevé dans un amplificateur réel ?",
+        "answers": [
+            "L'explosion du boîtier",
+            "La saturation de la sortie pour des signaux d'entrée même faibles",
+            "L'augmentation de la température de la pièce"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-087",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Un montage ALI qui sature dès que $e > 0$ et $s = -V_{sat}$ est un comparateur de type :",
+        "answers": [
+            "Non-inverseur",
+            "Inverseur",
+            "À hystérésis"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-088",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la valeur de l'impédance d'un condensateur en régime sinusoïdal ?",
+        "answers": [
+            "$Z_C = jC\\omega$",
+            "$Z_C = 1 / (jC\\omega)$",
+            "$Z_C = R$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-089",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un diagramme de Bode, que représente l'axe des abscisses ?",
+        "answers": [
+            "Le gain en dB",
+            "La fréquence ou pulsation en échelle logarithmique",
+            "Le temps"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-090",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour le montage suiveur, si $e(t) = 5 \\sin(\\omega t)$, que vaut $s(t)$ ?",
+        "answers": [
+            "$s(t) = 10 \\sin(\\omega t)$",
+            "$s(t) = 5 \\sin(\\omega t)$",
+            "$s(t) = -5 \\sin(\\omega t)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-091",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est l'expression de la fonction de transfert d'un filtre passe-bas du 1er ordre sous forme canonique ?",
+        "answers": [
+            "$H = H_0 (1 + j\\omega/\\omega_c)$",
+            "$H = H_0 / (1 + j\\omega/\\omega_c)$",
+            "$H = H_0 \\cdot j\\omega/\\omega_c$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-092",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Un signal 'écrêté' contient-il sa fréquence fondamentale ?",
+        "answers": [
+            "Non, elle disparaît",
+            "Oui, mais accompagnée d'harmoniques de fréquences multiples",
+            "Uniquement si l'écrêtage est symétrique"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-093",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Le gain en décibels est défini par :",
+        "answers": [
+            "$G_{dB} = 10 \\log(|H|)$",
+            "$G_{dB} = 20 \\log(|H|)$",
+            "$G_{dB} = \\ln(|H|)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-094",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Si $|H| = 10$, que vaut le gain en dB ?",
+        "answers": [
+            "$10$ dB",
+            "$20$ dB",
+            "$40$ dB"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-095",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le montage Trigger de Schmidt inverseur (rétroaction $+$ sur sortie, entrée $-$ sur $e$), si la sortie est à $+V_{sat}$, le basculement vers $-V_{sat}$ se produit quand :",
+        "answers": [
+            "$e$ devient très négatif",
+            "$e$ dépasse un seuil positif",
+            "$e$ est nul"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-096",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "L'hystérésis est-elle utile pour supprimer les basculements intempestifs dus au bruit ?",
+        "answers": [
+            "Non, elle les accentue",
+            "Oui, en créant une marge de sécurité entre les seuils",
+            "Seulement si le bruit est haute fréquence"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-097",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel composant passif est nécessaire pour réaliser un intégrateur ou un dérivateur ?",
+        "answers": [
+            "Une résistance uniquement",
+            "Un condensateur (ou une bobine)",
+            "Une diode"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-098",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "La tension de mode commun est la moyenne des tensions d'entrée. Un ALI idéal :",
+        "answers": [
+            "Amplifie énormément le mode commun",
+            "Rejette totalement le mode commun (ne l'amplifie pas)",
+            "Ne dépend que du mode commun"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-099",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Un montage dont l'équation différentielle est $\\frac{ds}{dt} - k s = e$ (avec $k > 0$) est :",
+        "answers": [
+            "Stable",
+            "Instable",
+            "Linéaire et permanent"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-100",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour un ALI, que se passe-t-il si la température augmente de façon excessive ?",
+        "answers": [
+            "Le gain statique devient infini",
+            "Les caractéristiques dérivent et le composant peut être détruit",
+            "Il se transforme en supraconducteur"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    }
+]

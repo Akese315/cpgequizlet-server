@@ -1,0 +1,1682 @@
+[
+    {
+        "uuid": "7a1b2c3d-e4f5-4g6h-8i9j-0k1l2m3n4o5p",
+        "image_path": null,
+        "theme": "Définitions de base",
+        "question": "Soit $u \\in \\mathcal{L}(E)$. Par définition, un scalaire $\\lambda \\in \\mathbb{K}$ est une valeur propre de $u$ si :",
+        "answers": [
+            "L'endomorphisme $u - \\lambda Id$ est surjectif.",
+            "L'endomorphisme $u - \\lambda Id$ est non injectif.",
+            "Il existe un vecteur $x \\in E$ tel que $u(x) = \\lambda x$.",
+            "$\\det(u) = \\lambda$."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8b2c3d4e-f5g6-5h7i-9j0k-1l2m3n4o5p6q",
+        "image_path": null,
+        "theme": "Vecteurs propres",
+        "question": "Lequel de ces énoncés concernant un vecteur propre $x$ associé à $\\lambda$ est correct ?",
+        "answers": [
+            "Le vecteur $x$ peut être nul.",
+            "Le vecteur $x$ appartient au noyau de $u$.",
+            "Le vecteur $x$ est nécessairement non nul.",
+            "L'image de $x$ par $u$ est toujours nulle."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9c3d4e5f-g6h7-6i8j-0k1l-2m3n4o5p6q7r",
+        "image_path": null,
+        "theme": "Sous-espaces propres",
+        "question": "Soit $E_\\lambda(u)$ le sous-espace propre associé à la valeur propre $\\lambda$. Quelle est sa définition exacte ?",
+        "answers": [
+            "$E_\\lambda(u) = \\text{Im}(u - \\lambda Id)$",
+            "$E_\\lambda(u) = \\ker(u - \\lambda Id)$",
+            "$E_\\lambda(u) = \\{x \\in E, u(x) = \\lambda x \\text{ et } x \\neq 0\\}$",
+            "$E_\\lambda(u) = \\ker(u) - \\lambda Id$"
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0d4e5f6g-h7i8-7j9k-1l2m-3n4o5p6q7r8s",
+        "image_path": null,
+        "theme": "Somme de sous-espaces propres",
+        "question": "Si $\\lambda_1, \\dots, \\lambda_p$ sont des valeurs propres deux à deux distinctes de $u$, alors les sous-espaces propres associés $E_{\\lambda_i}$ sont :",
+        "answers": [
+            "En somme directe.",
+            "Toujours supplémentaires dans $E$.",
+            "D'intersection non vide (contenant des vecteurs non nuls).",
+            "De même dimension."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1e5f6g7h-i8j9-8k0l-2m3n-4o5p6q7r8s9t",
+        "image_path": null,
+        "theme": "Spectre",
+        "question": "En dimension finie $n$, quel est le nombre maximal de valeurs propres distinctes d'un endomorphisme ?",
+        "answers": [
+            "$n-1$",
+            "$n$",
+            "$n+1$",
+            "Infini si $\\mathbb{K} = \\mathbb{C}$."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2f6g7h8i-j9k0-9l1m-3n4o-5p6q7r8s9t0u",
+        "image_path": null,
+        "theme": "Matrices semblables",
+        "question": "Si deux matrices $A$ et $B$ sont semblables ($B = P^{-1}AP$), laquelle de ces propriétés n'est pas forcément commune ?",
+        "answers": [
+            "Le déterminant.",
+            "La trace.",
+            "Le spectre.",
+            "Les vecteurs propres."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 3,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3g7h8i9j-k0l1-0m2n-4o5p-6q7r8s9t0u1v",
+        "image_path": null,
+        "theme": "Sous-espaces stables",
+        "question": "Soit $u$ et $v$ deux endomorphismes qui commutent ($u \\circ v = v \\circ u$). Que peut-on dire des sous-espaces propres de $u$ ?",
+        "answers": [
+            "Ils sont inclus dans le noyau de $v$.",
+            "Ils sont stables par $v$.",
+            "Ils sont égaux aux sous-espaces propres de $v$.",
+            "Leurs dimensions sont égales aux multiplicités des valeurs propres de $v$."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4h8i9j0k-l1m2-1n3o-5p6q-7r8s9t0u1v2w",
+        "image_path": null,
+        "theme": "Polynôme annulateur",
+        "question": "Si $P$ est un polynôme annulateur de $u$, que peut-on affirmer sur les valeurs propres de $u$ ?",
+        "answers": [
+            "Toutes les racines de $P$ sont des valeurs propres de $u$.",
+            "Toute valeur propre de $u$ est racine de $P$.",
+            "Le spectre de $u$ est exactement l'ensemble des racines de $P$.",
+            "$P$ est nécessairement le polynôme caractéristique."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5i9j0k1l-m2n3-2o4p-6q7r-8s9t0u1v2w3x",
+        "image_path": null,
+        "theme": "Projecteurs",
+        "question": "Soit $p$ un projecteur ($p^2 = p$). Quel est son spectre possible ?",
+        "answers": [
+            "$\\{1\\}$",
+            "$\\{0, 1\\}$",
+            "$\\{-1, 1\\}$",
+            "$\\{0\\}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6j0k1l2m-n3o4-3p5q-7r8s-9t0u1v2w3x4y",
+        "image_path": null,
+        "theme": "Symétries",
+        "question": "Soit $s$ une symétrie ($s^2 = Id$). Quel est son spectre possible ?",
+        "answers": [
+            "$\\{1\\}$",
+            "$\\{0, 1\\}$",
+            "$\\{-1, 1\\}$",
+            "$\\{i, -i\\}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7k1l2m3n-o4p5-4q6r-8s9t-0u1v2w3x4y5z",
+        "image_path": null,
+        "theme": "Nilpotence",
+        "question": "Soit $u$ un endomorphisme nilpotent. Quel est son spectre sur $\\mathbb{C}$ ?",
+        "answers": [
+            "$\\{0\\}$",
+            "$\\{1\\}$",
+            "L'ensemble vide.",
+            "L'ensemble des racines $n$-ièmes de l'unité."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8l2m3n4o-p5q6-5r7s-9t0u-1v2w3x4y5z6a",
+        "image_path": null,
+        "theme": "Polynôme caractéristique",
+        "question": "Le polynôme caractéristique d'une matrice $A \\in \\mathcal{M}_n(\\mathbb{K})$ est défini par $\\chi_A(X) = \\dots$",
+        "answers": [
+            "$\\det(A - X I_n)$",
+            "$\\det(X I_n - A)$",
+            "$\\text{Tr}(X I_n - A)$",
+            "$\\det(A) - X^n$"
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9m3n4o5p-q6r7-6s8t-0u1v-2w3x4y5z6a7b",
+        "image_path": null,
+        "theme": "Coefficients du polynôme caractéristique",
+        "question": "Dans $\\chi_A(X) = X^n + a_{n-1}X^{n-1} + \\dots + a_0$, que vaut le coefficient $a_{n-1}$ ?",
+        "answers": [
+            "$\\det(A)$",
+            "$\\text{Tr}(A)$",
+            "$-\\text{Tr}(A)$",
+            "$(-1)^{n-1}\\text{Tr}(A)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0n4o5p6q-r7s8-7t9u-1v2w-3x4y5z6a7b8c",
+        "image_path": null,
+        "theme": "Coefficients du polynôme caractéristique",
+        "question": "Dans $\\chi_A(X) = X^n + a_{n-1}X^{n-1} + \\dots + a_0$, que vaut le coefficient constant $a_0$ ?",
+        "answers": [
+            "$\\det(A)$",
+            "$(-1)^n \\det(A)$",
+            "$\\text{Tr}(A)$",
+            "$0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1o5p6q7r-s8t9-8u0v-2w3x-4y5z6a7b8c9d",
+        "image_path": null,
+        "theme": "Multiplicité",
+        "question": "Soit $m(\\lambda)$ la multiplicité algébrique de $\\lambda$ (ordre dans $\\chi_u$) et $d(\\lambda)$ sa multiplicité géométrique (dimension de $E_\\lambda$). Quelle relation est toujours vraie ?",
+        "answers": [
+            "$d(\\lambda) \\ge m(\\lambda)$",
+            "$1 \\le d(\\lambda) \\le m(\\lambda)$",
+            "$d(\\lambda) = m(\\lambda)$",
+            "$d(\\lambda) \\le n - m(\\lambda)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2p6q7r8s-t9u0-9v1w-3x4y-5z6a7b8c9d0e",
+        "image_path": null,
+        "theme": "Diagonalisabilité - Critère 1",
+        "question": "Un endomorphisme $u$ d'un espace de dimension $n$ est diagonalisable si et seulement si :",
+        "answers": [
+            "Il possède $n$ valeurs propres distinctes.",
+            "Son polynôme caractéristique est scindé.",
+            "La somme des dimensions de ses sous-espaces propres est égale à $n$.",
+            "Son déterminant est non nul."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3q7r8s9t-u0v1-0w2x-4y5z-6a7b8c9d0e1f",
+        "image_path": null,
+        "theme": "Diagonalisabilité - Valeurs propres distinctes",
+        "question": "Si $u \\in \\mathcal{L}(E)$ possède $n = \\dim E$ valeurs propres distinctes, alors :",
+        "answers": [
+            "$u$ est trigonalisable mais pas forcément diagonalisable.",
+            "$u$ est diagonalisable.",
+            "$u$ est inversible.",
+            "$u$ est une homothétie."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4r8s9t0u-v1w2-1x3y-5z6a-7b8c9d0e1f2g",
+        "image_path": null,
+        "theme": "Diagonalisabilité - Polynôme annulateur",
+        "question": "L'endomorphisme $u$ est diagonalisable si et seulement s'il admet un polynôme annulateur :",
+        "answers": [
+            "Scindé.",
+            "À racines simples.",
+            "Scindé à racines simples.",
+            "De degré $n$."
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5s9t0u1v-w2x3-2y4z-6a7b-8c9d0e1f2g3h",
+        "image_path": null,
+        "theme": "Trigonalisabilité",
+        "question": "Un endomorphisme $u \\in \\mathcal{L}(E)$ est trigonalisable si et seulement si :",
+        "answers": [
+            "$\\mathbb{K} = \\mathbb{C}$.",
+            "Son polynôme caractéristique est scindé sur $\\mathbb{K}$.",
+            "Il est diagonalisable.",
+            "Toutes ses valeurs propres sont simples."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6t0u1v2w-x3y4-3z5a-7b8c-9d0e1f2g3h4i",
+        "image_path": null,
+        "theme": "Trigonalisabilité sur C",
+        "question": "Quelle affirmation est vraie pour toute matrice $A \\in \\mathcal{M}_n(\\mathbb{C})$ ?",
+        "answers": [
+            "Elle est toujours diagonalisable.",
+            "Elle est toujours trigonalisable.",
+            "Elle possède $n$ valeurs propres distinctes.",
+            "Son spectre est inclus dans $\\mathbb{R}$."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7u1v2w3x-y4z5-4a6b-8c9d-0e1f2g3h4i5j",
+        "image_path": null,
+        "theme": "Théorème de Cayley-Hamilton",
+        "question": "Que stipule le théorème de Cayley-Hamilton ?",
+        "answers": [
+            "$\\chi_u(u) = 0$",
+            "Tout polynôme annulateur est un multiple de $\\chi_u$.",
+            "Les racines de $\\chi_u$ sont les valeurs propres.",
+            "$u^n = 0$ pour tout endomorphisme."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8v2w3x4y-z5a6-5b7c-9d0e-1f2g3h4i5j6k",
+        "image_path": null,
+        "theme": "Matrice de rang 1",
+        "question": "Soit $u$ un endomorphisme de rang 1. Quel est son polynôme caractéristique ?",
+        "answers": [
+            "$X^n - \\text{Tr}(u)X^{n-1}$",
+            "$X^{n-1}(X - \\text{Tr}(u))$",
+            "$(X - 1)(X - 0)^{n-1}$",
+            "$X^n$"
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9w3x4y5z-a6b7-6c8d-0e1f-2g3h4i5j6k7l",
+        "image_path": null,
+        "theme": "Matrice de rang 1",
+        "question": "Un endomorphisme $u$ de rang 1 est diagonalisable si et seulement si :",
+        "answers": [
+            "Il est de trace nulle.",
+            "Il est de trace non nulle.",
+            "Sa trace est égale à 1.",
+            "Il est toujours diagonalisable."
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0x4y5z6a-b7c8-7d9e-1f2g-3h4i5j6k7l8m",
+        "image_path": null,
+        "theme": "Trace et Valeurs propres",
+        "question": "Si $\\chi_u$ est scindé, la trace de $u$ est égale à :",
+        "answers": [
+            "Le produit des valeurs propres comptées avec multiplicité.",
+            "La somme des valeurs propres distinctes.",
+            "La somme des valeurs propres comptées avec multiplicité.",
+            "La somme des dimensions des sous-espaces propres."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1y5z6a7b-c8d9-8e0f-2g3h-4i5j6k7l8m9n",
+        "image_path": null,
+        "theme": "Déterminant et Valeurs propres",
+        "question": "Si $\\chi_u$ est scindé, le déterminant de $u$ est égal à :",
+        "answers": [
+            "Le produit des valeurs propres comptées avec multiplicité.",
+            "La somme des valeurs propres comptées avec multiplicité.",
+            "Le produit des valeurs propres distinctes.",
+            "$\\text{Tr}(u)^n$."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2z6a7b8c-d9e0-9f1g-3h4i-5j6k7l8m9n0o",
+        "image_path": null,
+        "theme": "Matrice triangulaire",
+        "question": "Quelles sont les valeurs propres d'une matrice triangulaire ?",
+        "answers": [
+            "Les éléments de sa première colonne.",
+            "Les éléments de sa diagonale principale.",
+            "Les racines de son déterminant.",
+            "Uniquement 0 et 1."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3a7b8c9d-e0f1-0g2h-4i5j-6k7l8m9n0o1p",
+        "image_path": null,
+        "theme": "Calcul de puissance",
+        "question": "Si $A = PDP^{-1}$ avec $D$ diagonale, alors $A^n = \\dots$",
+        "answers": [
+            "$P^n D^n (P^{-1})^n$",
+            "$P D^n P^{-1}$",
+            "$P^n D P^{-1}$",
+            "$(PDP^{-1})^n$ qui ne se simplifie pas."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4b8c9d0e-f1g2-1h3i-5j6k-7l8m9n0o1p2q",
+        "image_path": null,
+        "theme": "Matrice par blocs",
+        "question": "Quel est le polynôme caractéristique de $M = \\begin{pmatrix} A & C \\\\ 0 & B \\end{pmatrix}$ ?",
+        "answers": [
+            "$\\chi_A(X) + \\chi_B(X)$",
+            "$\\chi_A(X) \\times \\chi_B(X)$",
+            "$\\chi_A(X) \\times \\chi_B(X) - \\det(C)$",
+            "$\\chi_{A+B}(X)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5c9d0e1f-g2h3-2i4j-6k7l-8m9n0o1p2q3r",
+        "image_path": null,
+        "theme": "Inversibilité et Valeurs propres",
+        "question": "Une matrice $A$ est inversible si et seulement si :",
+        "answers": [
+            "$0$ n'est pas valeur propre de $A$.",
+            "$1$ est valeur propre de $A$.",
+            "Toutes ses valeurs propres sont réelles.",
+            "Son polynôme caractéristique est scindé."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6d0e1f2g-h3i4-3j5k-7l8m-9n0o1p2q3r4s",
+        "image_path": null,
+        "theme": "Diagonalisation simultanée",
+        "question": "Deux endomorphismes diagonalisables $u$ et $v$ sont simultanément diagonalisables si et seulement si :",
+        "answers": [
+            "Ils ont le même spectre.",
+            "Ils commutent ($u \\circ v = v \\circ u$).",
+            "Leur somme est diagonalisable.",
+            "L'un est l'inverse de l'autre."
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7e1f2g3h-i4j5-4k6l-8m9n-0o1p2q3r4s5t",
+        "image_path": null,
+        "theme": "Dimension du sous-espace propre",
+        "question": "Si $\\lambda$ est une valeur propre simple (multiplicité algébrique $1$), que vaut $\\dim E_\\lambda$ ?",
+        "answers": [
+            "$0$",
+            "$1$",
+            "Entre $1$ et $n$.",
+            "On ne peut pas savoir."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8f2g3h4i-j5k6-5l7m-9n0o-1p2q3r4s5t6u",
+        "image_path": null,
+        "theme": "Matrice compagnon",
+        "question": "Le polynôme caractéristique de la matrice compagnon associée à $P$ est :",
+        "answers": [
+            "$P$",
+            "$(-1)^n P$",
+            "Son polynôme minimal.",
+            "Le polynôme nul."
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9g3h4i5j-k6l7-6m8n-0o1p-2q3r4s5t6u7v",
+        "image_path": null,
+        "theme": "Diagonalisabilité et stabilité",
+        "question": "Si $u$ est un endomorphisme diagonalisable et $F$ un sous-espace stable par $u$, alors l'endomorphisme induit $u_{|F}$ est :",
+        "answers": [
+            "Toujours diagonalisable.",
+            "Diagonalisable si et seulement si $F$ est un sous-espace propre.",
+            "Trigonalisable mais pas forcément diagonalisable.",
+            "Jamais diagonalisable."
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0h4i5j6k-l7m8-7n9o-1p2q-3r4s5t6u7v8w",
+        "image_path": null,
+        "theme": "Spectre d'un polynôme d'endomorphisme",
+        "question": "Si $\\lambda$ est une valeur propre de $u$, alors $P(\\lambda)$ est une valeur propre de :",
+        "answers": [
+            "$u$",
+            "$P(u)$",
+            "$u^n$",
+            "L'identité."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1i5j6k7l-m8n9-8o0p-2q3r-4s5t6u7v8w9x",
+        "image_path": null,
+        "theme": "Matrice J_n",
+        "question": "Soit $J_n$ la matrice dont tous les coefficients valent $1$. Quelles sont ses valeurs propres ?",
+        "answers": [
+            "$\\{0, 1\\}$",
+            "$\\{0, n\\}$",
+            "$\\{1, n\\}$",
+            "$\\{n\\}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2j6k7l8m-n9o0-9p1q-3r4s-5t6u7v8w9x0y",
+        "image_path": null,
+        "theme": "Matrice J_n",
+        "question": "Quelle est la dimension du sous-espace propre associé à la valeur propre $0$ pour $J_n$ ($n \\ge 2$) ?",
+        "answers": [
+            "$1$",
+            "$n$",
+            "$n-1$",
+            "$0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3k7l8m9n-o0p1-0q2r-4s5t-6u7v8w9x0y1z",
+        "image_path": null,
+        "theme": "Spectre et transposée",
+        "question": "Comment sont les spectres d'une matrice $A$ et de sa transposée $A^T$ ?",
+        "answers": [
+            "Ils sont identiques.",
+            "Ils sont disjoints.",
+            "Les valeurs propres de $A^T$ sont les inverses de celles de $A$.",
+            "Les valeurs propres de $A^T$ sont les conjuguées de celles de $A$."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4l8m9n0o-p1q2-1r3s-5t6u-7v8w9x0y1z2a",
+        "image_path": null,
+        "theme": "Matrice nilpotente",
+        "question": "Une matrice $A \\in \\mathcal{M}_n(\\mathbb{C})$ est nilpotente si et seulement si :",
+        "answers": [
+            "Son déterminant est nul.",
+            "Sa trace est nulle.",
+            "$\\{0\\}$ est sa seule valeur propre.",
+            "Elle n'est pas inversible."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5m9n0o1p-q2r3-2s4t-6u7v-8w9x0y1z2a3b",
+        "image_path": null,
+        "theme": "Relation entre AB et BA",
+        "question": "Soit $(A, B) \\in \\mathcal{M}_n(\\mathbb{K})^2$. Les matrices $AB$ et $BA$ ont toujours :",
+        "answers": [
+            "Le même polynôme caractéristique.",
+            "Les mêmes vecteurs propres.",
+            "Le même rang.",
+            "Elles sont semblables."
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6n0o1p2q-r3s4-3t5u-7v8w-9x0y1z2a3b4c",
+        "image_path": null,
+        "theme": "C-ev vs R-ev",
+        "question": "Soit $A \\in \\mathcal{M}_n(\\mathbb{R})$. Si $\\lambda \\in \\mathbb{C}$ est une valeur propre de $A$, alors :",
+        "answers": [
+            "$\\lambda$ est nécessairement réelle.",
+            "$\\bar{\\lambda}$ est aussi une valeur propre de $A$.",
+            "Le vecteur propre associé est dans $\\mathbb{R}^n$.",
+            "$A$ n'est pas diagonalisable sur $\\mathbb{C}$."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7o1p2q3r-s4t5-4u6v-8w9x-0y1z2a3b4c5d",
+        "image_path": null,
+        "theme": "Endomorphisme induit",
+        "question": "Si $F$ est stable par $u$, quel est le lien entre $\\chi_{u_{|F}}$ et $\\chi_u$ ?",
+        "answers": [
+            "$\\chi_{u_{|F}}$ divise $\\chi_u$.",
+            "$\\chi_u$ divise $\\chi_{u_{|F}}$.",
+            "Ils sont égaux.",
+            "Leur somme vaut $X^n$."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8p2q3r4s-t5u6-5v7w-9x0y-1z2a3b4c5d6e",
+        "image_path": null,
+        "theme": "Multiplicité géométrique",
+        "question": "Comment se calcule la dimension du sous-espace propre $E_\\lambda(A)$ ?",
+        "answers": [
+            "$rg(A - \\lambda I_n)$",
+            "$n - rg(A - \\lambda I_n)$",
+            "L'ordre de multiplicité dans $\\chi_A$.",
+            "$\\text{Tr}(A - \\lambda I_n)$."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9q3r4s5t-u6v7-6w8x-0y1z-2a3b4c5d6e7f",
+        "image_path": null,
+        "theme": "Diagonalisabilité de la transposée",
+        "question": "Si $A$ est diagonalisable, alors $A^T$ est :",
+        "answers": [
+            "Trigonalisable mais pas forcément diagonalisable.",
+            "Diagonalisable.",
+            "Inversible.",
+            "Symétrique."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0r4s5t6u-v7w8-7x9y-1z2a-3b4c5d6e7f8g",
+        "image_path": null,
+        "theme": "Diagonalisabilité de l'identité",
+        "question": "L'endomorphisme $\\lambda Id$ est :",
+        "answers": [
+            "Diagonalisable si et seulement si $\\lambda = 0$.",
+            "Toujours diagonalisable.",
+            "Jamais diagonalisable.",
+            "Trigonalisable seulement."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1s5t6u7v-w8x9-8y0z-2a3b-4c5d6e7f8g9h",
+        "image_path": null,
+        "theme": "Matrice par blocs 2",
+        "question": "Soit $M = \\begin{pmatrix} A & B \\\\ 0 & A \\end{pmatrix}$. Si $M$ est diagonalisable, que peut-on dire de $B$ ?",
+        "answers": [
+            "$B = 0$ et $A$ diagonalisable.",
+            "$B$ doit être inversible.",
+            "$B$ doit commuter avec $A$.",
+            "$B$ peut être n'importe quelle matrice."
+        ],
+        "difficulty": 4,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2t6u7v8w-x9y0-9z1a-3b4c-5d6e7f8g9h0i",
+        "image_path": null,
+        "theme": "Diagonalisabilité et polynôme",
+        "question": "Si $A^2 = A$, $A$ est diagonalisable car :",
+        "answers": [
+            "Elle possède un polynôme annulateur scindé à racines simples ($X^2-X$).",
+            "Elle est de rang 1.",
+            "Toute matrice est diagonalisable sur $\\mathbb{C}$.",
+            "Elle est inversible."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3u7v8w9x-y0z1-0a2b-4c5d-6e7f8g9h0i1j",
+        "image_path": null,
+        "theme": "Polynôme minimal (conceptuel)",
+        "question": "Le plus petit degré d'un polynôme annulateur non nul de $u$ est appelé :",
+        "answers": [
+            "Polynôme caractéristique.",
+            "Polynôme minimal.",
+            "Polynôme de Newton.",
+            "Polynôme compagnon."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4v8w9x0y-z1a2-1b3c-5d6e-7f8g9h0i1j2k",
+        "image_path": null,
+        "theme": "Multiplicité algébrique simple",
+        "question": "Si toutes les racines de $\\chi_u$ sont simples sur $\\mathbb{K}$, alors :",
+        "answers": [
+            "$u$ est diagonalisable sur $\\mathbb{K}$.",
+            "$u$ est inversible.",
+            "$u$ est trigonalisable mais pas diagonalisable.",
+            "$u$ est une symétrie."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5w9x0y1z-a2b3-2c4d-6e7f-8g9h0i1j2k3l",
+        "image_path": null,
+        "theme": "Condition nécessaire de diagonalisabilité",
+        "question": "Si $u$ est diagonalisable, alors $\\chi_u$ est nécessairement :",
+        "answers": [
+            "À racines simples.",
+            "Scindé.",
+            "De degré pair.",
+            "Irréductible."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6x0y1z2a-b3c4-3d5e-7f8g-9h0i1j2k3l4m",
+        "image_path": null,
+        "theme": "Vecteurs propres et famille libre",
+        "question": "Une famille de vecteurs propres associés à des valeurs propres distinctes est :",
+        "answers": [
+            "Liée.",
+            "Libre.",
+            "Une base de $E$.",
+            "Génératrice de $E$."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7y1z2a3b-c4d5-4e6f-8g9h-0i1j2k3l4m5n",
+        "image_path": null,
+        "theme": "Commutation et vecteurs propres",
+        "question": "Si $u$ et $v$ commutent et sont diagonalisables, il existe une base :",
+        "answers": [
+            "De vecteurs propres de $u$ seulement.",
+            "De vecteurs propres commune à $u$ et $v$.",
+            "Où les matrices sont triangulaires.",
+            "Où $u+v$ est diagonale."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8z2a3b4c-d5e6-5f7g-9h0i-1j2k3l4m5n6o",
+        "image_path": null,
+        "theme": "Trace nulle",
+        "question": "Si $A^k = 0$ pour un $k \\ge 1$, alors $\\text{Tr}(A)$ vaut :",
+        "answers": [
+            "$0$",
+            "$1$",
+            "$k$",
+            "$n$."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9a3b4c5d-e6f7-6g8h-0i1j-2k3l4m5n6o7p",
+        "image_path": null,
+        "theme": "Nilpotence et spectre",
+        "question": "Une matrice est nilpotente si et seulement si son polynôme caractéristique est :",
+        "answers": [
+            "$(X-1)^n$",
+            "$X^n$",
+            "$(X-\\lambda)^n$",
+            "$X(X-1)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0b4c5d6e-f7g8-7h9i-1j2k-3l4m5n6o7p8q",
+        "image_path": null,
+        "theme": "Projecteur et Trace",
+        "question": "Pour un projecteur $p$, $\\text{Tr}(p)$ est égale à :",
+        "answers": [
+            "$\\det(p)$",
+            "$rg(p)$",
+            "$\\dim E$",
+            "$1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1c5d6e7f-g8h9-8i0j-2k3l-4m5n6o7p8q9r",
+        "image_path": null,
+        "theme": "Inverse et valeurs propres",
+        "question": "Si $\\lambda$ est valeur propre de $A$ (inversible), alors la valeur propre de $A^{-1}$ est :",
+        "answers": [
+            "$\\lambda$",
+            "$1/\\lambda$",
+            "$-\\lambda$",
+            "$\\lambda^n$"
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2d6e7f8g-h9i0-9j1k-3l4m-5n6o7p8q9r0s",
+        "image_path": null,
+        "theme": "Théorème spectral (prémices)",
+        "question": "Quelle condition sur $\\chi_u$ assure la trigonalisabilité sur $\\mathbb{R}$ ?",
+        "answers": [
+            "$\\chi_u$ n'a pas de racines réelles.",
+            "$\\chi_u$ est scindé sur $\\mathbb{R}$.",
+            "$\\chi_u$ est de degré impair.",
+            "$\\chi_u$ est irréductible."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3e6f7g8h-i9j0-0k1l-4m5n-6o7p8q9r0s1t",
+        "image_path": null,
+        "theme": "Somme des multiplicités",
+        "question": "Pour toute matrice $A \\in \\mathcal{M}_n(\\mathbb{C})$, la somme des multiplicités algébriques des valeurs propres est égale à :",
+        "answers": [
+            "$n$",
+            "$rg(A)$",
+            "$\\text{Tr}(A)$",
+            "Le nombre de valeurs propres distinctes."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4f7g8h9i-j0k1-1l2m-5n6o-7p8q9r0s1t2u",
+        "image_path": null,
+        "theme": "Dimension d'un espace propre",
+        "question": "Soit $A = I_n$. Que vaut la dimension de l'unique sous-espace propre ?",
+        "answers": [
+            "$1$",
+            "$n$",
+            "$0$",
+            "$n-1$"
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5g8h9i0j-k1l2-2m3n-6o7p-8q9r0s1t2u3v",
+        "image_path": null,
+        "theme": "Piège classique - Injectivité",
+        "question": "Si $u$ est injectif, alors :",
+        "answers": [
+            "$0$ est valeur propre de $u$.",
+            "$0$ n'est pas valeur propre de $u$.",
+            "$1$ est valeur propre de $u$.",
+            "$u$ est diagonalisable."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6h9i0j1k-l2m3-3n4o-7p8q-9r0s1t2u3v4w",
+        "image_path": null,
+        "theme": "Matrice compagnon - Spectre",
+        "question": "Les valeurs propres de la matrice compagnon de $P$ sont :",
+        "answers": [
+            "Les coefficients de $P$.",
+            "Les racines de $P$.",
+            "Les inverses des racines de $P$.",
+            "Uniquement $0$."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7i0j1k2l-m3n4-4o5p-8q9r-0s1t2u3v4w5x",
+        "image_path": null,
+        "theme": "Propriété de la trace",
+        "question": "Soit $u \\in \\mathcal{L}(E)$ de rang $r$. On sait que $X^{n-r}$ divise $\\chi_u(X)$. C'est :",
+        "answers": [
+            "Faux.",
+            "Vrai.",
+            "Vrai seulement si $u$ est diagonalisable.",
+            "Vrai seulement si $r=1$."
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8j1k2l3m-n4o5-5p6q-9r0s-1t2u3v4w5x6y",
+        "image_path": null,
+        "theme": "Diagonalisabilité sur R vs C",
+        "question": "Si une matrice réelle est diagonalisable sur $\\mathbb{R}$, elle est diagonalisable sur $\\mathbb{C}$ :",
+        "answers": [
+            "C'est vrai.",
+            "C'est faux.",
+            "Seulement si elle est inversible.",
+            "Seulement si son spectre est positif."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9k2l3m4n-o5p6-6q7r-0s1t-2u3v4w5x6y7z",
+        "image_path": null,
+        "theme": "Contre-exemple classique",
+        "question": "La matrice $\\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}$ est-elle diagonalisable ?",
+        "answers": [
+            "Oui, car elle est triangulaire.",
+            "Non, car sa valeur propre $1$ est double mais son sous-espace propre est de dimension $1$.",
+            "Oui, car son déterminant est non nul.",
+            "Non, car elle n'a pas de valeur propre réelle."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0l3m4n5o-p6q7-7r8s-1t2u-3v4w5x6y7z8a",
+        "image_path": null,
+        "theme": "Polynôme caractéristique deg 2",
+        "question": "Pour $A \\in \\mathcal{M}_2(\\mathbb{K})$, $\\chi_A(X) = \\dots$",
+        "answers": [
+            "$X^2 + \\text{Tr}(A)X + \\det(A)$",
+            "$X^2 - \\text{Tr}(A)X + \\det(A)$",
+            "$X^2 - \\text{Tr}(A)X - \\det(A)$",
+            "$X^2 + \\text{Tr}(A)X - \\det(A)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1m4n5o6p-q7r8-8s9t-2u3v-4w5x6y7z8a9b",
+        "image_path": null,
+        "theme": "Condition suffisante",
+        "question": "Si $\\chi_u$ est scindé à racines simples sur $\\mathbb{K}$, alors $u$ est :",
+        "answers": [
+            "Diagonalisable.",
+            "Trigonalisable seulement.",
+            "Inversible.",
+            "Nilpotent."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2n5o6p7q-r8s9-9t0u-3v4w-5x6y7z8a9b0c",
+        "image_path": null,
+        "theme": "Diagonalisabilité et Nilpotence",
+        "question": "Un endomorphisme nilpotent est diagonalisable si et seulement si :",
+        "answers": [
+            "Il est nul.",
+            "Il est de rang $n-1$.",
+            "Il est inversible.",
+            "$\\mathbb{K} = \\mathbb{C}$."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3o6p7q8r-s9t0-0u1v-4w5x-6y7z8a9b0c1d",
+        "image_path": null,
+        "theme": "Spectre d'un projecteur",
+        "question": "Si $p \\neq 0$ et $p \\neq Id$ est un projecteur, son spectre est :",
+        "answers": [
+            "$\\{0, 1\\}$",
+            "$\\{0\\}$",
+            "$\\{1\\}$",
+            "$\\{-1, 1\\}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4p7q8r9s-t0u1-1v2w-5x6y-7z8a9b0c1d2e",
+        "image_path": null,
+        "theme": "Polynôme annulateur simple",
+        "question": "Si $u^3 = u$, quelles sont les valeurs propres possibles de $u$ ?",
+        "answers": [
+            "$\\{0, 1, -1\\}$",
+            "$\\{1, -1\\}$",
+            "$\\{0, 1\\}$",
+            "$\\{0\\}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5q8r9s0t-u1v2-2w3x-6y7z-8a9b0c1d2e3f",
+        "image_path": null,
+        "theme": "Réduction de Jordan (allusion)",
+        "question": "Si $A$ n'est pas diagonalisable sur $\\mathbb{C}$, elle est au moins :",
+        "answers": [
+            "Symétrique.",
+            "Trigonalisable.",
+            "Inversible.",
+            "De trace nulle."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6r9s0t1u-v2w3-3x4y-7z8a-9b0c1d2e3f4g",
+        "image_path": null,
+        "theme": "Stabilité",
+        "question": "Si $F$ est stable par $u$, alors $F$ contient-il nécessairement un vecteur propre de $u$ (si $\\mathbb{K}=\\mathbb{C}$) ?",
+        "answers": [
+            "Oui, si $\\dim F \\ge 1$.",
+            "Non, jamais.",
+            "Seulement si $u$ est diagonalisable.",
+            "Seulement si $F=E$."
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7s0t1u2v-w3x4-4y5z-8a9b-0c1d2e3f4g5h",
+        "image_path": null,
+        "theme": "Coefficients de X^{n-1}",
+        "question": "Dans le développement de $\\det(X I_n - A)$, le terme en $X^{n-1}$ est :",
+        "answers": [
+            "$\\text{Tr}(A)$",
+            "$-\\text{Tr}(A)$",
+            "$\\det(A)$",
+            "$0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8t1u2v3w-x4y5-5z6a-9b0c-1d2e3f4g5h6i",
+        "image_path": null,
+        "theme": "Spectre de A^k",
+        "question": "Si $Sp(A) = \\{\\lambda_1, \\dots, \\lambda_p\\}$, alors $Sp(A^k) = \\dots$",
+        "answers": [
+            "$\\{\\lambda_1^k, \\dots, \\lambda_p^k\\}$",
+            "$\\{k\\lambda_1, \\dots, k\\lambda_p\\}$",
+            "$\\{\\lambda_1, \\dots, \\lambda_p\\}$",
+            "$\\{0\\}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9u2v3w4x-y5z6-6a7b-0c1d-2e3f4g5h6i7j",
+        "image_path": null,
+        "theme": "Somme de matrices diagonalisables",
+        "question": "La somme de deux matrices diagonalisables est-elle toujours diagonalisable ?",
+        "answers": [
+            "Oui.",
+            "Non.",
+            "Seulement si elles ont le même spectre.",
+            "Seulement si elles sont inversibles."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0v3w4x5y-z6a7-7b8c-1d2e-3f4g5h6i7j8k",
+        "image_path": null,
+        "theme": "Diagonalisabilité sur R",
+        "question": "Une matrice de rotation d'angle $\\theta \\in ]0, \\pi[$ dans $\\mathbb{R}^2$ est-elle diagonalisable sur $\\mathbb{R}$ ?",
+        "answers": [
+            "Oui, car c'est une isométrie.",
+            "Non, car son polynôme caractéristique n'a pas de racines réelles.",
+            "Oui, ses valeurs propres sont $1$ et $-1$.",
+            "Non, car son déterminant est nul."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1w4x5y6z-a7b8-8c9d-2e3f-4g5h6i7j8k9l",
+        "image_path": null,
+        "theme": "Rang et Spectre",
+        "question": "Si $0$ est valeur propre de multiplicité algébrique $k$, que peut-on dire du rang de $A$ ?",
+        "answers": [
+            "$rg(A) = n - k$",
+            "$rg(A) \\ge n - k$",
+            "$rg(A) \\le n - k$",
+            "$rg(A) = k$"
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2x5y6z7a-b8c9-9d0e-3f4g-5h6i7j8k9l0m",
+        "image_path": null,
+        "theme": "Matrice antisymétrique",
+        "question": "Les valeurs propres d'une matrice antisymétrique réelle sont :",
+        "answers": [
+            "Réelles.",
+            "Imaginaires pures (ou nulles).",
+            "Toutes nulles.",
+            "De module 1."
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3y6z7a8b-c9d0-0e1f-4g5h-6i7j8k9l0m1n",
+        "image_path": null,
+        "theme": "Diagonalisabilité de l'inverse",
+        "question": "Si $A$ est inversible et diagonalisable, alors $A^{-1}$ est :",
+        "answers": [
+            "Diagonalisable.",
+            "Trigonalisable seulement.",
+            "Nilpotente.",
+            "Identique à $A^T$."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4z7a8b9c-d0e1-1f2g-5h6i-7j8k9l0m1n2o",
+        "image_path": null,
+        "theme": "Famille de polynômes",
+        "question": "La famille $(t \\mapsto e^{\\lambda_i t})_{1 \\le i \\le n}$ pour des $\\lambda_i$ distincts est libre car :",
+        "answers": [
+            "Ce sont des vecteurs propres de l'opérateur de dérivation associés à des valeurs propres distinctes.",
+            "Ce sont des fonctions croissantes.",
+            "Leur limite en $+\\infty$ est différente.",
+            "Wronskien est nul."
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5a8b9c0d-e1f2-2g3h-6i7j-8k9l0m1n2o3p",
+        "image_path": null,
+        "theme": "Matrice de passage",
+        "question": "Dans $D = P^{-1}AP$, les colonnes de $P$ sont :",
+        "answers": [
+            "Les vecteurs propres de $A$.",
+            "Les vecteurs de la base canonique.",
+            "Les lignes de $A$.",
+            "Les vecteurs propres de $D$."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6b9c0d1e-f2g3-3h4i-7j8k-9l0m1n2o3p4q",
+        "image_path": null,
+        "theme": "Spectre d'un endomorphisme induit",
+        "question": "Si $u_{|F}$ est l'endomorphisme induit sur un sous-espace stable $F$, alors :",
+        "answers": [
+            "$Sp(u_{|F}) \\subset Sp(u)$",
+            "$Sp(u) \\subset Sp(u_{|F})$",
+            "$Sp(u_{|F}) = Sp(u)$",
+            "$Sp(u_{|F}) \\cap Sp(u) = \\emptyset$"
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7c0d1e2f-g3h4-4i5j-8k9l-0m1n2o3p4q5r",
+        "image_path": null,
+        "theme": "Valeur propre d'une somme",
+        "question": "Si $\\lambda$ est valeur propre de $u$, alors $\\lambda + \\mu$ est valeur propre de :",
+        "answers": [
+            "$u + \\mu Id$",
+            "$u + \\mu$",
+            "$\\mu u$",
+            "$u^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8d1e2f3g-h4i5-5j6k-9l0m-1n2o3p4q5r6s",
+        "image_path": null,
+        "theme": "Somme directe",
+        "question": "Si $u$ est diagonalisable, alors $E$ est la somme directe :",
+        "answers": [
+            "De ses sous-espaces propres.",
+            "De $\\ker(u)$ et $\\text{Im}(u)$.",
+            "De ses sous-espaces stables de dimension 1.",
+            "De n'importe quels sous-espaces propres."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9e2f3g4h-i5j6-6k7l-0m1n-2o3p4q5r6s7t",
+        "image_path": null,
+        "theme": "Multiplicité géométrique 2",
+        "question": "La multiplicité géométrique $d(\\lambda)$ est toujours au moins égale à :",
+        "answers": [
+            "$0$",
+            "$1$ (si $\\lambda$ est valeur propre)",
+            "$m(\\lambda)$",
+            "$n$."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0f3g4h5i-j6k7-7l8m-1n2o-3p4q5r6s7t8u",
+        "image_path": null,
+        "theme": "Vecteur propre commun",
+        "question": "Deux endomorphismes qui commutent sur un $\\mathbb{C}$-espace vectoriel ont toujours :",
+        "answers": [
+            "Le même spectre.",
+            "Un vecteur propre commun.",
+            "La même trace.",
+            "Sont tous deux diagonalisables."
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1g4h5i6j-k7l8-8m9n-2o3p-4q5r6s7t8u9v",
+        "image_path": null,
+        "theme": "Polynôme caractéristique deg impair",
+        "question": "Un endomorphisme d'un $\\mathbb{R}$-espace vectoriel de dimension impaire possède toujours :",
+        "answers": [
+            "Une valeur propre réelle.",
+            "Un déterminant positif.",
+            "Une trace nulle.",
+            "Il est diagonalisable."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2h5i6j7k-l8m9-9n0o-3p4q-5r6s7t8u9v0w",
+        "image_path": null,
+        "theme": "Spectre d'un bloc",
+        "question": "Soit $B = \\begin{pmatrix} 0 & A \\\\ A & 0 \\end{pmatrix}$. Si $\\lambda \\in Sp(A)$, alors quelles sont les valeurs propres de $B$ ?",
+        "answers": [
+            "$\\{\\lambda, -\\lambda\\}$",
+            "$\\{\\lambda^2\\}$",
+            "$\\{0, \\lambda\\}$",
+            "$\\{\\lambda\\}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3i6j7k8l-m9n0-0o1p-4q5r-6s7t8u9v0w1x",
+        "image_path": null,
+        "theme": "Diagonalisabilité par bloc",
+        "question": "Si $B = \\begin{pmatrix} 4A & 2A \\\\ -3A & -A \\end{pmatrix}$, $B$ est diagonalisable si et seulement si :",
+        "answers": [
+            "$A$ est diagonalisable.",
+            "$A = 0$.",
+            "$A$ est inversible.",
+            "$A$ est symétrique."
+        ],
+        "difficulty": 4,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4j7k8l9m-n0o1-1p2q-5r6s-7t8u9v0w1x2y",
+        "image_path": null,
+        "theme": "Valeurs propres de MM^T",
+        "question": "Les matrices $MM^T$ et $M^TM$ ont toujours :",
+        "answers": [
+            "Le même polynôme caractéristique.",
+            "Les mêmes valeurs propres non nulles.",
+            "Le même spectre.",
+            "Elles sont semblables."
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5k8l9m0n-o1p2-2q3r-6s7t-8u9v0w1x2y3z",
+        "image_path": null,
+        "theme": "Diagonalisabilité de la dérivation",
+        "question": "L'opérateur de dérivation sur $\\mathbb{R}_n[X]$ est-il diagonalisable ?",
+        "answers": [
+            "Oui, car il est de rang $n$.",
+            "Non, car sa seule valeur propre est $0$ mais il n'est pas nul.",
+            "Oui, ses valeurs propres sont $0, 1, \\dots, n$.",
+            "Oui, car son polynôme caractéristique est scindé."
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6l9m0n1o-p2q3-3r4s-7t8u-9v0w1x2y3z4a",
+        "image_path": null,
+        "theme": "Trace et puissances",
+        "question": "Si pour tout $k \\in \\{1, \\dots, n\\}$, $\\text{Tr}(A^k) = 0$, alors $A$ est :",
+        "answers": [
+            "Nulle.",
+            "Nilpotente.",
+            "Inversible.",
+            "Symétrique."
+        ],
+        "difficulty": 4,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7m0n1o2p-q3r4-4s5t-8u9v-0w1x2y3z4a5b",
+        "image_path": null,
+        "theme": "Matrice compagnon - deg 2",
+        "question": "Quelle est la matrice compagnon du polynôme $X^2 - 3X + 2$ ?",
+        "answers": [
+            "$\\begin{pmatrix} 0 & -2 \\\\ 1 & 3 \\end{pmatrix}$",
+            "$\\begin{pmatrix} 1 & 0 \\\\ 0 & 2 \\end{pmatrix}$",
+            "$\\begin{pmatrix} 3 & -2 \\\\ 1 & 0 \\end{pmatrix}$",
+            "$\\begin{pmatrix} 0 & 1 \\\\ -2 & 3 \\end{pmatrix}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8n1o2p3q-r4s5-5t6u-9v0w-1x2y3z4a5b6c",
+        "image_path": null,
+        "theme": "Stabilité par polynôme",
+        "question": "Si $F$ est stable par $u$, alors $F$ est stable par :",
+        "answers": [
+            "Tout polynôme $P(u)$.",
+            "Seulement les puissances de $u$.",
+            "L'inverse $u^{-1}$ (si existant).",
+            "Uniquement l'identité."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9o2p3q4r-s5t6-6u7v-0w1x-2y3z4a5b6c7d",
+        "image_path": null,
+        "theme": "C-ev de dimension finie",
+        "question": "Sur $\\mathbb{C}$, tout endomorphisme $u$ admet :",
+        "answers": [
+            "Au moins une valeur propre.",
+            "Exactement $n$ valeurs propres distinctes.",
+            "Une base de vecteurs propres.",
+            "Une matrice diagonale."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0p3q4r5s-t6u7-7v8w-1x2y-3z4a5b6c7d8e",
+        "image_path": null,
+        "theme": "VP de l'adjoint (allusion)",
+        "question": "Si $\\lambda$ est valeur propre de $u$, alors $\\bar{\\lambda}$ est valeur propre de l'endomorphisme adjoint (pour un produit scalaire) :",
+        "answers": [
+            "C'est vrai.",
+            "C'est faux.",
+            "Seulement si $\\lambda$ est réelle.",
+            "Seulement si $u$ est diagonalisable."
+        ],
+        "difficulty": 3,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1q4r5s6t-u7v8-8w9x-2y3z-4a5b6c7d8e9f",
+        "image_path": null,
+        "theme": "Théorème de Cayley-Hamilton et Inverse",
+        "question": "On peut utiliser Cayley-Hamilton pour exprimer $A^{-1}$ comme :",
+        "answers": [
+            "Un polynôme en $A$.",
+            "La transposée de $A$.",
+            "L'inverse de la trace.",
+            "C'est impossible."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2r5s6t7u-v8w9-9x0y-3z4a-5b6c7d8e9f0g",
+        "image_path": null,
+        "theme": "Diagonalisabilité - Dimension du noyau",
+        "question": "Si $0$ est valeur propre de $u$, la dimension de son sous-espace propre est :",
+        "answers": [
+            "La dimension du noyau de $u$.",
+            "La multiplicité de $0$ dans $\\chi_u$.",
+            "La dimension de l'image de $u$.",
+            "Le rang de $u$."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3s6t7u8v-w9x0-0y1z-4a5b-6c7d8e9f0g1h",
+        "image_path": null,
+        "theme": "Diagonalisabilité de l'endomorphisme canonique",
+        "question": "Un endomorphisme est diagonalisable si et seulement si sa matrice dans la base canonique est :",
+        "answers": [
+            "Diagonale.",
+            "Semblable à une matrice diagonale.",
+            "Symétrique.",
+            "Triangulaire."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4t7u8v9w-x0y1-1z2a-5b6c-7d8e9f0g1h2i",
+        "image_path": null,
+        "theme": "Critère de diagonalisabilité (SEP)",
+        "question": "L'espace $E$ est la somme directe des sous-espaces propres si et seulement si :",
+        "answers": [
+            "$u$ est diagonalisable.",
+            "$u$ est inversible.",
+            "$u$ est nilpotent.",
+            "$u$ est symétrique."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5u8v9w0x-y1z2-2a3b-6c7d-8e9f0g1h2i3j",
+        "image_path": null,
+        "theme": "Stabilité et valeur propre",
+        "question": "Si $x$ est un vecteur propre de $u$, alors la droite $Vect(x)$ est :",
+        "answers": [
+            "Stable par $u$.",
+            "Le noyau de $u$.",
+            "L'image de $u$.",
+            "Identique à $E$."
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6v9w0x1y-z2a3-3b4c-7d8e-9f0g1h2i3j4k",
+        "image_path": null,
+        "theme": "Spectre d'une matrice scalaire",
+        "question": "Quel est le spectre de $A = \\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix}$ ?",
+        "answers": [
+            "$\\{2\\}$",
+            "$\\{2, 2\\}$ (en tant qu'ensemble)",
+            "$\\{0, 2\\}$",
+            "$\\{4\\}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7w0x1y2z-a3b4-4c5d-8e9f-0g1h2i3j4k5l",
+        "image_path": null,
+        "theme": "Multiplicité de Cayley-Hamilton",
+        "question": "Est-ce que $\\chi_u$ est le seul polynôme annulant $u$ ?",
+        "answers": [
+            "Oui.",
+            "Non, tout multiple de $\\chi_u$ l'annule aussi.",
+            "Non, il peut exister des polynômes de degré plus petit.",
+            "Les deux réponses B et C sont correctes."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 3,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8x1y2z3a-b4c5-5d6e-9f0g-1h2i3j4k5l6m",
+        "image_path": null,
+        "theme": "Spectre et homothétie",
+        "question": "Un endomorphisme qui n'a qu'une seule valeur propre $\\lambda$ est diagonalisable si et seulement si :",
+        "answers": [
+            "Il est égal à $\\lambda Id$.",
+            "Il est nul.",
+            "Il est inversible.",
+            "C'est toujours vrai."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9y2z3a4b-c5d6-6e7f-0g1h-2i3j4k5l6m7n",
+        "image_path": null,
+        "theme": "Polynôme annulateur scindé",
+        "question": "Si $u$ possède un polynôme annulateur scindé sur $\\mathbb{K}$, alors $u$ est :",
+        "answers": [
+            "Trigonalisable.",
+            "Diagonalisable.",
+            "Inversible.",
+            "Nilpotent."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0z3a4b5c-d6e7-7f8g-1h2i-3j4k5l6m7n8o",
+        "image_path": null,
+        "theme": "Multiplicité algébrique simple",
+        "question": "Si $\\lambda$ est une racine simple de $\\chi_u$, alors la dimension du sous-espace propre associé est :",
+        "answers": [
+            "Nécessairement 1.",
+            "Au plus 1.",
+            "Au moins 1 mais peut être plus grande.",
+            "On ne peut pas savoir sans le rang."
+        ],
+        "difficulty": 2,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1a4b5c6d-e7f8-8g9h-2i3j-4k5l6m7n8o9p",
+        "image_path": null,
+        "theme": "Trace et dimension",
+        "question": "Soit $u$ un endomorphisme de dimension $n$. Si $u$ est une homothétie de rapport $\\lambda$, alors $\\text{Tr}(u) = \\dots$",
+        "answers": [
+            "$\\lambda$",
+            "$n\\lambda$",
+            "$\\lambda^n$",
+            "$0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Réduction des endomorphismes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    }
+]

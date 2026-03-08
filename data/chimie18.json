@@ -1,0 +1,1602 @@
+[
+    {
+        "uuid": "eq-001",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la définition de l'enthalpie libre $G$ (énergie de Gibbs) ?",
+        "answers": [
+            "$G = H + TS$",
+            "$G = H - TS$",
+            "$G = U + PV$",
+            "$G = U - TS$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-002",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un système fermé, quelle est la condition d'évolution spontanée à température et pression constantes, sans travail utile ($W' = 0$) ?",
+        "answers": [
+            "$dG \\ge 0$",
+            "$dG = 0$",
+            "$dG \\le 0$",
+            "$dS \\le 0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-003",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle identité différentielle correspond à l'enthalpie libre $G$ pour un système fermé ?",
+        "answers": [
+            "$dG = VdP + SdT$",
+            "$dG = -PdV + TdS$",
+            "$dG = VdP - SdT$",
+            "$dG = -VdP + SdT$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-004",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Comment s'exprime l'entropie $S$ en fonction de l'enthalpie libre $G$ ?",
+        "answers": [
+            "$S = \\left(\\frac{\\partial G}{\\partial T}\\right)_P$",
+            "$S = -\\left(\\frac{\\partial G}{\\partial T}\\right)_P$",
+            "$S = \\left(\\frac{\\partial G}{\\partial P}\\right)_T$",
+            "$S = -\\left(\\frac{\\partial G}{\\partial P}\\right)_T$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-005",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Comment s'exprime le volume $V$ en fonction de l'enthalpie libre $G$ ?",
+        "answers": [
+            "$V = \\left(\\frac{\\partial G}{\\partial P}\\right)_T$",
+            "$V = -\\left(\\frac{\\partial G}{\\partial P}\\right)_T$",
+            "$V = \\left(\\frac{\\partial G}{\\partial T}\\right)_P$",
+            "$V = -\\left(\\frac{\\partial G}{\\partial T}\\right)_P$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-006",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la définition du potentiel chimique $\\mu$ d'un corps pur ?",
+        "answers": [
+            "$\\mu = \\left(\\frac{\\partial G}{\\partial n}\\right)_{P,T}$",
+            "$\\mu = \\left(\\frac{\\partial H}{\\partial n}\\right)_{P,T}$",
+            "$\\mu = \\left(\\frac{\\partial U}{\\partial n}\\right)_{V,S}$",
+            "$\\mu = \\frac{G}{T}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-007",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Le potentiel chimique $\\mu$ est une grandeur :",
+        "answers": [
+            "Extensive",
+            "Intensive",
+            "Sans dimension",
+            "Qui dépend de la forme du récipient"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-008",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un corps pur, le potentiel chimique $\\mu$ est égal à :",
+        "answers": [
+            "L'enthalpie molaire $H_m$",
+            "L'entropie molaire $S_m$",
+            "L'enthalpie libre molaire $G_m$",
+            "L'énergie interne molaire $U_m$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-009",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est l'unité du potentiel chimique dans le Système International ?",
+        "answers": [
+            "$J.K^{-1}$",
+            "$J.mol^{-1}$",
+            "$J.K^{-1}.mol^{-1}$",
+            "$Pa.m^3$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-010",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "À pression et température fixées, si un corps pur est présent sous deux phases $\\alpha$ et $\\beta$, dans quel sens se produit le transfert de matière spontané ?",
+        "answers": [
+            "Vers la phase de potentiel chimique le plus élevé",
+            "Vers la phase de potentiel chimique le plus faible",
+            "Il n'y a jamais de transfert de matière",
+            "Cela dépend de la masse volumique des phases"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-011",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la condition d'équilibre chimique entre deux phases $\\alpha$ et $\\beta$ d'un corps pur ?",
+        "answers": [
+            "$\\mu_\\alpha > \\mu_\\beta$",
+            "$\\mu_\\alpha < \\mu_\\beta$",
+            "$\\mu_\\alpha = \\mu_\\beta$",
+            "$G = 0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-012",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/3/33/Phase-diag2.svg",
+        "theme": "thermodynamique",
+        "question": "Sur un diagramme $(P, T)$, que représentent les lignes de changement d'état ?",
+        "answers": [
+            "Les points où une seule phase existe",
+            "Les points d'équilibre où les potentiels chimiques de deux phases sont égaux",
+            "Les points où la température est constante",
+            "Les points où le système est hors équilibre"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-013",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Qu'est-ce que le 'point triple' sur un diagramme de phase ?",
+        "answers": [
+            "Le point où le liquide devient vapeur instantanément",
+            "Le point où les trois phases (solide, liquide, gaz) coexistent à l'équilibre",
+            "Le point où la pression est nulle",
+            "Le point au-delà duquel on ne distingue plus liquide et gaz"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-014",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Au-delà du point critique $C$, comment nomme-t-on l'état de la matière ?",
+        "answers": [
+            "Gaz parfait",
+            "Solide amorphe",
+            "Fluide supercritique",
+            "Plasma"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-015",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est l'expression générale du potentiel chimique d'un constituant $i$ dans un mélange ?",
+        "answers": [
+            "$\\mu_i = \\mu_i^0 + RT \\ln(a_i)$",
+            "$\\mu_i = \\mu_i^0 - RT \\ln(a_i)$",
+            "$\\mu_i = \\mu_i^0 + P \\ln(a_i)$",
+            "$\\mu_i = \\Delta_r G^0 + RT \\ln(Q)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-016",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans un mélange de gaz parfaits, quelle est l'activité $a_i$ du constituant $i$ ?",
+        "answers": [
+            "$a_i = 1$",
+            "$a_i = \\frac{p_i}{p^0}$ avec $p^0 = 1$ bar",
+            "$a_i = \\frac{[A_i]}{c^0}$",
+            "$a_i = x_i$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-017",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est l'activité d'un solide pur ou d'un liquide pur (solvant) ?",
+        "answers": [
+            "Elle dépend de la pression",
+            "0",
+            "1",
+            "$\\infty$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-018",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un soluté $i$ en solution diluée, l'activité est $a_i = \\frac{[A_i]}{c^0}$. Quelle est la valeur de $c^0$ ?",
+        "answers": [
+            "0,1 mol.L$^{-1}$",
+            "1 mol.L$^{-1}$",
+            "10 mol.L$^{-1}$",
+            "Elle dépend de la température"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-019",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Comment s'exprime l'enthalpie libre totale $G$ d'un mélange en fonction des potentiels chimiques ?",
+        "answers": [
+            "$G = \\sum n_i \\mu_i$",
+            "$G = \\sum \\mu_i$",
+            "$G = \\prod n_i \\mu_i$",
+            "$G = \\sum \\frac{\\mu_i}{n_i}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-020",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la définition de l'entropie de réaction $\\Delta_r S$ ?",
+        "answers": [
+            "$\\Delta_r S = \\sum \\nu_i S_{m,i}$",
+            "$\\Delta_r S = \\left(\\frac{\\partial G}{\\partial \\xi}\\right)_{T,P}$",
+            "$\\Delta_r S = \\sum S_{m,i}$",
+            "$\\Delta_r S = \\frac{Q}{T}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-021",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "De quoi dépend l'entropie standard de réaction $\\Delta_r S^0$ ?",
+        "answers": [
+            "De la pression uniquement",
+            "De la température uniquement",
+            "De la composition du système uniquement",
+            "De la pression et de la température"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-022",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Énoncé du principe de Nernst (Troisième principe) :",
+        "answers": [
+            "L'entropie d'un gaz parfait est nulle à 0 K",
+            "L'entropie d'un solide cristallin parfait est nulle à 0 K",
+            "L'enthalpie libre est nulle à l'équilibre",
+            "L'énergie interne est nulle à 0 K"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-023",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Comment définit-on l'enthalpie libre de réaction $\\Delta_r G$ ?",
+        "answers": [
+            "$\\Delta_r G = \\left(\\frac{\\partial G}{\\partial \\xi}\\right)_{T,P}$",
+            "$\\Delta_r G = G_{final} - G_{initial}$",
+            "$\\Delta_r G = \\sum \\mu_i$",
+            "$\\Delta_r G = \\Delta_r H + T \\Delta_r S$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-024",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Relation entre $\\Delta_r G$, $\\Delta_r H$ et $\\Delta_r S$ :",
+        "answers": [
+            "$\\Delta_r G = \\Delta_r H + T \\Delta_r S$",
+            "$\\Delta_r G = \\Delta_r H - T \\Delta_r S$",
+            "$\\Delta_r G = T \\Delta_r S - \\Delta_r H$",
+            "$\\Delta_r G = \\Delta_r H \\cdot T \\Delta_r S$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-025",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En quoi consiste l'approximation d'Ellingham ?",
+        "answers": [
+            "Supposer que $\\Delta_r G^0$ est nul",
+            "Supposer que $\\Delta_r H^0$ et $\\Delta_r S^0$ sont indépendants de la température",
+            "Supposer que tous les gaz sont parfaits",
+            "Supposer que la pression est toujours de 1 bar"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-026",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Relation liant $\\Delta_r G$ au quotient réactionnel $Q$ :",
+        "answers": [
+            "$\\Delta_r G = \\Delta_r G^0 - RT \\ln Q$",
+            "$\\Delta_r G = \\Delta_r G^0 + RT \\ln Q$",
+            "$\\Delta_r G = RT \\ln(Q/K^0)$",
+            "$\\Delta_r G = Q \\cdot \\Delta_r G^0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-027",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un système évoluant à $T$ et $P$ constantes, la variation d'enthalpie libre est $dG = \\Delta_r G \\, d\\xi$. Si le système évolue dans le sens direct ($d\\xi > 0$), alors :",
+        "answers": [
+            "$\\Delta_r G > 0$",
+            "$\\Delta_r G < 0$",
+            "$\\Delta_r G = 0$",
+            "$\\Delta_r G^0 < 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-028",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "À l'équilibre chimique, quelle est la valeur de l'enthalpie libre de réaction $\\Delta_r G$ ?",
+        "answers": [
+            "$\\Delta_r G = \\Delta_r G^0$",
+            "$\\Delta_r G = 1$",
+            "$\\Delta_r G = 0$",
+            "$\\Delta_r G = RT$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-029",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Expression de la constante d'équilibre $K^0$ en fonction de $\\Delta_r G^0$ :",
+        "answers": [
+            "$K^0 = \\exp\\left(\\frac{\\Delta_r G^0}{RT}\\right)$",
+            "$K^0 = \\exp\\left(-\\frac{\\Delta_r G^0}{RT}\\right)$",
+            "$K^0 = \\frac{-\\Delta_r G^0}{RT}$",
+            "$K^0 = 10^{-\\Delta_r G^0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-030",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "La constante d'équilibre $K^0$ d'une réaction ne dépend que de :",
+        "answers": [
+            "La pression totale",
+            "La présence d'un catalyseur",
+            "La température",
+            "La composition initiale"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-031",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Un système évolue dans le sens indirect si :",
+        "answers": [
+            "$Q < K^0$",
+            "$Q > K^0$",
+            "$Q = K^0$",
+            "$K^0 > 10^4$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-032",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est l'expression de la loi de Van't Hoff ?",
+        "answers": [
+            "$\\frac{d \\ln K^0}{dT} = \\frac{\\Delta_r H^0}{RT^2}$",
+            "$\\frac{d \\ln K^0}{dT} = -\\frac{\\Delta_r H^0}{RT}$",
+            "$\\frac{d K^0}{dT} = \\frac{\\Delta_r H^0}{RT^2}$",
+            "$\\ln K^0 = -\\frac{\\Delta_r G^0}{RT}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-033",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour une réaction endothermique ($\\Delta_r H^0 > 0$), comment évolue $K^0$ si la température augmente ?",
+        "answers": [
+            "$K^0$ diminue",
+            "$K^0$ augmente",
+            "$K^0$ reste constante",
+            "Cela dépend de la pression"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-034",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour une réaction exothermique ($\\Delta_r H^0 < 0$), une diminution de température favorise :",
+        "answers": [
+            "Le sens direct",
+            "Le sens indirect",
+            "La rupture de l'équilibre",
+            "L'augmentation de l'entropie"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-035",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "À partir de quelle valeur de $K^0$ considère-t-on généralement une réaction comme quasi-totale ?",
+        "answers": [
+            "$K^0 > 10^{-4}$",
+            "$K^0 > 1$",
+            "$K^0 > 10^4$",
+            "$K^0 > 10^{10}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-036",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quel est l'effet de l'ajout d'un catalyseur sur un équilibre chimique ?",
+        "answers": [
+            "Il déplace l'équilibre vers la droite",
+            "Il augmente la valeur de $K^0$",
+            "Il augmente la vitesse pour atteindre l'équilibre sans modifier l'état final",
+            "Il déplace l'équilibre vers la gauche"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-037",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérons la synthèse de l'ammoniac : $N_{2(g)} + 3H_{2(g)} = 2NH_{3(g)}$. Quel est l'effet d'une augmentation de pression totale à $T$ constante ?",
+        "answers": [
+            "Déplacement dans le sens direct (formation de $NH_3$)",
+            "Déplacement dans le sens indirect",
+            "Aucun effet car $K^0$ ne dépend que de $T$",
+            "Diminution de la vitesse de réaction"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-038",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans la réaction $CaCO_{3(s)} = CaO_{(s)} + CO_{2(g)}$, que se passe-t-il si l'on augmente le volume du récipient à température constante (en présence de solide) ?",
+        "answers": [
+            "La pression de $CO_2$ augmente",
+            "La pression de $CO_2$ reste égale à $K^0 P^0$ tant qu'il reste du $CaCO_3$",
+            "Tout le $CaO$ se transforme en $CaCO_3$",
+            "La constante $K^0$ change"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-039",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Une réaction chimique est athermique si $\\Delta_r H^0 = 0$. Quel est l'effet d'une variation de température sur $K^0$ ?",
+        "answers": [
+            "$K^0$ augmente avec $T$",
+            "$K^0$ diminue avec $T$",
+            "$K^0$ est indépendante de $T$",
+            "L'équilibre est rompu"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-040",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour la combustion du carbone : $C_{(s)} + O_{2(g)} = CO_{2(g)}$, quel est l'effet d'une augmentation de pression sur l'équilibre ?",
+        "answers": [
+            "Favorise le sens direct",
+            "Favorise le sens indirect",
+            "Aucun effet sur l'équilibre (autant de moles de gaz de chaque côté)",
+            "Le carbone fond"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-041",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "(Exercice TD) Entre le graphite et le diamant à 298 K et 1 bar, quelle est la forme la plus stable sachant que $\\mu^0_{graphite} - \\mu^0_{diamant} = -2870$ J/mol ?",
+        "answers": [
+            "Le diamant",
+            "Le graphite",
+            "Les deux sont aussi stables",
+            "On ne peut pas conclure"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-042",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "(Exercice TD) Pourquoi trouve-t-on du diamant à la surface de la Terre alors que le graphite est la forme stable ?",
+        "answers": [
+            "La thermodynamique dit que le diamant est stable",
+            "La transformation diamant $\\to$ graphite est cinétiquement extrêmement lente",
+            "À cause de la pression atmosphérique élevée",
+            "Le diamant n'existe pas à l'état naturel"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-043",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Comment varie le potentiel chimique avec la pression à température constante pour une phase condensée (supposée incompressible) ?",
+        "answers": [
+            "$\\mu(P) = \\mu^0 + RT \\ln(P/P^0)$",
+            "$\\mu(P) = \\mu^0 + V_m(P - P^0)$",
+            "$\\mu(P) = \\mu^0$",
+            "$\\mu(P) = \\mu^0 - S_m \\Delta T$"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-044",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un gaz parfait, comment varie le potentiel chimique avec la pression à $T$ constante ?",
+        "answers": [
+            "$\\mu = \\mu^0(T) + RT \\ln(P/P^0)$",
+            "$\\mu = \\mu^0(T) + V_m(P - P^0)$",
+            "$\\mu = \\mu^0(T)$",
+            "$\\mu = RT/P$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-045",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Variation de la pression de vapeur saturante : Si $\\Delta_{vap} H^0 > 0$ (vaporisation endothermique), alors une hausse de température :",
+        "answers": [
+            "Augmente la pression de vapeur saturante",
+            "Diminue la pression de vapeur saturante",
+            "Ne change rien",
+            "Provoque la solidification"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-046",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans l'exercice sur la chaux vive ($CaCO_3$), si l'avancement d'équilibre calculé $\\xi_{eq}$ est supérieur à l'avancement maximal $\\xi_{max}$ possible par les réactifs, on parle de :",
+        "answers": [
+            "Équilibre chimique",
+            "Rupture d'équilibre",
+            "Réaction impossible",
+            "Saturation"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-047",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Influence de l'ajout d'un gaz inerte à VOLUME constant sur un équilibre gazeux :",
+        "answers": [
+            "Déplace l'équilibre dans le sens direct",
+            "Déplace l'équilibre dans le sens indirect",
+            "Aucun effet (les pressions partielles ne changent pas)",
+            "Augmente $K^0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-048",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Influence de l'ajout d'un gaz inerte à PRESSION constante sur un équilibre gazeux où le nombre de moles de gaz augmente ($\\sum \\nu_{i,gaz} > 0$) :",
+        "answers": [
+            "Favorise le sens direct (dilution favorise le côté avec plus de gaz)",
+            "Favorise le sens indirect",
+            "Aucun effet",
+            "La température chute"
+        ],
+        "difficulty": 4,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-049",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la relation entre $\\Delta_r G^0(T)$, $\\Delta_r H^0(T)$ et $\\Delta_r S^0(T)$ ?",
+        "answers": [
+            "$\\Delta_r G^0(T) = \\Delta_r H^0(T) + T\\Delta_r S^0(T)$",
+            "$\\Delta_r G^0(T) = \\Delta_r H^0(T) - T\\Delta_r S^0(T)$",
+            "$\\Delta_r G^0(T) = T\\Delta_r S^0(T) - \\Delta_r H^0(T)$",
+            "$\\Delta_r G^0(T) = -RT \\ln K^0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-050",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "L'entropie de réaction est généralement positive si :",
+        "answers": [
+            "La réaction produit des solides",
+            "La réaction s'accompagne d'une augmentation du nombre de moles de gaz",
+            "La réaction est exothermique",
+            "La température est très basse"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-051",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour une transformation isotherme et isobare d'un système fermé, l'entropie créée $S_c$ est liée à $\\Delta G$ par :",
+        "answers": [
+            "$S_c = \\frac{\\Delta G}{T}$",
+            "$S_c = -\\frac{\\Delta G}{T}$",
+            "$S_c = \\Delta S - \\frac{\\Delta H}{T}$",
+            "Les deux réponses B et C sont correctes"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 3,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-052",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Une constante d'équilibre $K^0 = 1$ signifie que :",
+        "answers": [
+            "La réaction est totale",
+            "$\\Delta_r G^0 = 0$",
+            "Le système est à l'équilibre pour n'importe quelles concentrations",
+            "La réaction ne peut pas se produire"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-053",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans l'approximation d'Ellingham, la courbe $\\Delta_r G^0(T)$ est une :",
+        "answers": [
+            "Parabole",
+            "Droite de pente $-\\Delta_r S^0$",
+            "Droite de pente $\\Delta_r S^0$",
+            "Exponentielle"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-054",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour la réaction $N_2 + 3H_2 = 2NH_3$, le quotient de réaction $Q$ s'écrit :",
+        "answers": [
+            "$Q = \\frac{P_{NH3}^2}{P_{N2} P_{H2}^3} (P^0)^2$",
+            "$Q = \\frac{P_{NH3}^2}{P_{N2} P_{H2}^3} (P^0)^{-2}$",
+            "$Q = \\frac{n_{NH3}^2}{n_{N2} n_{H2}^3}$",
+            "$Q = \\frac{P_{NH3}}{P_{N2} P_{H2}} P^0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-055",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Si on retire un produit du milieu réactionnel au fur et à mesure de sa formation :",
+        "answers": [
+            "Le quotient $Q$ augmente, favorisant le sens indirect",
+            "Le quotient $Q$ diminue, favorisant le sens direct (optimisation du rendement)",
+            "Cela n'a aucun impact sur l'équilibre",
+            "$K^0$ augmente"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-056",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Unité de l'entropie molaire standard $S_m^0$ :",
+        "answers": [
+            "$J.mol^{-1}$",
+            "$J.K^{-1}.mol^{-1}$",
+            "$W.mol^{-1}$",
+            "Sans unité"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-057",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Variation de $\\mu^0$ avec la température :",
+        "answers": [
+            "$\\frac{\\partial \\mu^0}{\\partial T} = S_m^0$",
+            "$\\frac{\\partial \\mu^0}{\\partial T} = -S_m^0$",
+            "$\\frac{\\partial \\mu^0}{\\partial T} = H_m^0$",
+            "Elle est constante"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-058",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un gaz parfait, $V_m$ est égal à :",
+        "answers": [
+            "$P/RT$",
+            "$RT/P$",
+            "$RT$",
+            "$1/P$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-059",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Que signifie un quotient de réaction $Q$ très petit devant $K^0$ ?",
+        "answers": [
+            "Le système est proche de l'équilibre",
+            "Le système va évoluer fortement dans le sens direct",
+            "Le système est déjà à l'équilibre",
+            "La réaction est impossible"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-060",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "L'expression $K^0 = \\prod a_{i,eq}^{\\nu_i}$ est appelée :",
+        "answers": [
+            "Loi d'Ohm",
+            "Loi d'action de masse (ou loi de Guldberg et Waage)",
+            "Loi de Henry",
+            "Loi de Raoult"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-061",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Le terme $\\sum \\nu_i \\mu_i^0(T)$ est égal à :",
+        "answers": [
+            "$\\Delta_r G$",
+            "$\\Delta_r G^0(T)$",
+            "$RT \\ln Q$",
+            "$0$ à l'équilibre"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-062",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cas d'une solution idéale, le potentiel chimique s'écrit $\\mu_i = \\mu_i^0 + RT \\ln(x_i)$. Que représente $x_i$ ?",
+        "answers": [
+            "La pression partielle",
+            "La fraction molaire",
+            "La concentration en g/L",
+            "La masse"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-063",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Une réaction est dite spontanée dans le sens direct à $T,P$ constantes si :",
+        "answers": [
+            "$\\Delta_r G < 0$",
+            "$\\Delta_r G > 0$",
+            "$\\Delta_r G^0 < 0$",
+            "$\\Delta_r G^0 > 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-064",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est l'influence d'une augmentation de pression sur l'équilibre $H_{2(g)} + I_{2(g)} = 2HI_{(g)}$ ?",
+        "answers": [
+            "Déplacement à droite",
+            "Déplacement à gauche",
+            "Aucun déplacement",
+            "Solidification de HI"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-065",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Comment calcule-t-on l'enthalpie standard de réaction $\\Delta_r H^0$ à partir des enthalpies standard de formation ?",
+        "answers": [
+            "$\\Delta_r H^0 = \\sum \\nu_i \\Delta_f H_i^0$ (Loi de Hess)",
+            "$\\Delta_r H^0 = \\sum \\Delta_f H_i^0$",
+            "$\\Delta_r H^0 = G - TS$",
+            "$\\Delta_r H^0 = RT^2 \\frac{d \\ln K^0}{dT}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-066",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour la vaporisation de l'eau à 298 K (sous 1 bar), on donne $\\mu^0_{liq} = -237,2$ kJ/mol et $\\mu^0_{vap} = -228,6$ kJ/mol. Quel est l'état stable ?",
+        "answers": [
+            "La vapeur",
+            "Le liquide",
+            "Équilibre liquide-vapeur",
+            "Plasma"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-067",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Le quotient réactionnel $Q$ est une grandeur :",
+        "answers": [
+            "Sans dimension",
+            "En mol/L",
+            "En bar",
+            "En Joule"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-068",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "La pression de vapeur saturante de l'eau à 100°C est de :",
+        "answers": [
+            "0,1 bar",
+            "1 bar",
+            "10 bar",
+            "1013 Pa"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-069",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Relation de Gibbs-Helmholtz (forme utile pour Van't Hoff) :",
+        "answers": [
+            "$\\frac{d(G/T)}{dT} = -\\frac{H}{T^2}$",
+            "$\\frac{d(G/T)}{dT} = \\frac{H}{T^2}$",
+            "$\\frac{dG}{dT} = -S$",
+            "$\\frac{dH}{dT} = C_p$"
+        ],
+        "difficulty": 4,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-070",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Signe de $\\Delta_r S^0$ pour la dissociation $CaCO_{3(s)} = CaO_{(s)} + CO_{2(g)}$ ?",
+        "answers": [
+            "Négatif",
+            "Positif (création d'un gaz)",
+            "Nul",
+            "Dépend de la température"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-071",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Si $Q = 10$ et $K^0 = 0,1$, comment évolue le système ?",
+        "answers": [
+            "Sens direct",
+            "Sens indirect",
+            "Équilibre atteint",
+            "Rupture d'équilibre"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-072",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans un mélange, $\\mu_i$ est aussi appelé :",
+        "answers": [
+            "Enthalpie molaire partielle",
+            "Enthalpie libre molaire partielle",
+            "Entropie molaire partielle",
+            "Volume molaire partiel"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-073",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "L'activité d'un constituant exprime :",
+        "answers": [
+            "Sa vitesse de réaction",
+            "L'écart de son potentiel chimique par rapport à l'état standard",
+            "Sa concentration massique",
+            "Son énergie d'activation"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-074",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Que se passe-t-il pour l'équilibre $C_{(s)} + CO_{2(g)} = 2CO_{(g)}$ si on augmente la pression ?",
+        "answers": [
+            "Déplacement à droite",
+            "Déplacement à gauche (vers le côté ayant le moins de moles de gaz)",
+            "Aucun effet",
+            "Le carbone brûle"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-075",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "L'enthalpie libre $G$ est minimale à l'équilibre pour un système à $T$ et $P$ constantes.",
+        "answers": [
+            "Vrai",
+            "Faux",
+            "Seulement pour les gaz",
+            "Seulement pour les solides"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-076",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Unité de la constante des gaz parfaits $R$ :",
+        "answers": [
+            "$J.K.mol$",
+            "$J.K^{-1}.mol^{-1}$",
+            "$Pa.m^3.K.mol$",
+            "$L.bar.mol^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-077",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Comment s'écrit la loi de Van't Hoff sous forme intégrée (approximation d'Ellingham) ?",
+        "answers": [
+            "$\\ln\\frac{K^0(T_2)}{K^0(T_1)} = \\frac{\\Delta_r H^0}{R} \\left(\\frac{1}{T_1} - \\frac{1}{T_2}\\right)$",
+            "$\\ln\\frac{K^0(T_2)}{K^0(T_1)} = \\frac{\\Delta_r H^0}{R} (T_2 - T_1)$",
+            "$K^0(T_2) = K^0(T_1) \\cdot \\exp(T_2/T_1)$",
+            "$\\ln K^0 = -\\frac{\\Delta_r G^0}{RT}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-078",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la pente de la courbe $\\ln K^0 = f(1/T)$ ?",
+        "answers": [
+            "$\\Delta_r H^0 / R$",
+            "$-\\Delta_r H^0 / R$",
+            "$\\Delta_r S^0 / R$",
+            "$-\\Delta_r G^0 / R$"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-079",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Influence d'une hausse de température sur la synthèse de l'ammoniac (réaction exothermique) ?",
+        "answers": [
+            "Favorise la production de $NH_3$",
+            "Défavorise la production de $NH_3$ (déplacement en sens indirect)",
+            "Aucun effet sur le rendement",
+            "Augmente la constante d'équilibre"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-080",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pression partielle d'un gaz $i$ dans un mélange de gaz parfaits :",
+        "answers": [
+            "$P_i = x_i P_{tot}$",
+            "$P_i = n_i RT / V$",
+            "Les réponses A et B sont correctes",
+            "$P_i = P_{tot} / x_i$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-081",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "L'enthalpie standard de formation d'un corps pur simple dans son état standard est :",
+        "answers": [
+            "Toujours positive",
+            "Nulle par convention",
+            "Dépend de la température",
+            "Égale à son entropie"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-082",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Signe de $\\Delta_r H^0$ pour une réaction de combustion ?",
+        "answers": [
+            "Toujours positif",
+            "Toujours négatif (réaction très exothermique)",
+            "Nul",
+            "Dépend du combustible"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-083",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quel paramètre n'influence PAS la position d'un équilibre chimique ?",
+        "answers": [
+            "La température",
+            "La pression (si gaz impliqués)",
+            "La présence d'un catalyseur",
+            "Les concentrations initiales"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-084",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Variance d'un système en équilibre liquide-vapeur d'un corps pur ?",
+        "answers": [
+            "$v = 0$",
+            "$v = 1$ (on ne peut fixer qu'une variable, $P$ ou $T$)",
+            "$v = 2$",
+            "$v = 3$"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-085",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Si on double les coefficients stœchiométriques d'une équation, la nouvelle constante d'équilibre $K'$ est liée à l'ancienne $K$ par :",
+        "answers": [
+            "$K' = 2K$",
+            "$K' = K^2$",
+            "$K' = \\sqrt{K}$",
+            "$K' = K$"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-086",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "L'activité d'une espèce chimique est toujours :",
+        "answers": [
+            "Négative",
+            "Positive ou nulle",
+            "Plus grande que 1",
+            "Un nombre complexe"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-087",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En chimie industrielle, une température élevée est souvent utilisée pour les réactions endothermiques afin de :",
+        "answers": [
+            "Diminuer $K^0$",
+            "Augmenter le rendement et la vitesse",
+            "Réduire la pression",
+            "Conserver les réactifs"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-088",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Le principe de modération de Le Chatelier stipule que :",
+        "answers": [
+            "Le système s'oppose aux changements de température uniquement",
+            "Le système tend à s'opposer aux modifications imposées",
+            "Le système atteint toujours un état de désordre maximal",
+            "L'enthalpie libre est toujours nulle"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-089",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Que se passe-t-il si l'on ajoute du $CO_2$ à l'équilibre $CO_{2(g)} + H_{2(g)} = CO_{(g)} + H_2O_{(g)}$ ?",
+        "answers": [
+            "Déplacement à droite",
+            "Déplacement à gauche",
+            "Aucun effet",
+            "La pression chute"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-090",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour la réaction $CH_4 + CO_2 = 2CO + 2H_2$, l'effet d'une augmentation de pression est :",
+        "answers": [
+            "Favoriser la formation de $H_2$",
+            "Favoriser le sens inverse (formation de $CH_4$)",
+            "Aucun effet",
+            "Faire exploser le réacteur"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-091",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "L'entropie d'un gaz est plus élevée que celle du liquide correspondant car :",
+        "answers": [
+            "Le gaz est plus chaud",
+            "Le gaz est plus désordonné",
+            "Le gaz occupe moins de place",
+            "La masse du gaz est plus faible"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-092",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Que vaut la variation d'entropie lors d'une transition de phase réversible à $T,P$ ?",
+        "answers": [
+            "$\\Delta S = 0$",
+            "$\\Delta S = \\Delta H / T$",
+            "$\\Delta S = R \\ln(P/P^0)$",
+            "$\\Delta S = C_p \\ln(T_2/T_1)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-093",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Comment calcule-t-on la constante d'équilibre à 298 K si l'on connaît $\\Delta_r H^0 = 270$ kJ/mol et $\\Delta_r S^0 = 171$ J.K$^{-1}$.mol$^{-1}$ ?",
+        "answers": [
+            "$K^0 = \\exp(- (270000 - 298 \\times 171) / (8,314 \\times 298))$",
+            "$K^0 = \\exp(- 270 / (8,314 \\times 298))$",
+            "$K^0 = 270 / 171$",
+            "$K^0 = 171 / 270$"
+        ],
+        "difficulty": 4,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-094",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un système à l'équilibre, si $\\Delta_r H^0 > 0$, alors $\\ln K^0$ est une fonction :",
+        "answers": [
+            "Croissante de $T$",
+            "Décroissante de $T$",
+            "Constante de $T$",
+            "Linéaire de $T$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-095",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le corrigé du TD, on trouve $P = 15348$ bar pour l'équilibre Graphite/Diamant. Cela confirme que :",
+        "answers": [
+            "Le diamant se forme à basse pression",
+            "Le diamant se forme à très haute pression",
+            "Le diamant ne peut être que naturel",
+            "Le graphite est instable partout"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-096",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "La pression partielle d'un constituant peut-elle être supérieure à la pression totale ?",
+        "answers": [
+            "Oui",
+            "Non",
+            "Seulement si $T > 1000$ K",
+            "Seulement pour les gaz parfaits"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-097",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Unité de la fugacité (ou de $P^0$ par convention) :",
+        "answers": [
+            "Bar",
+            "Pascal",
+            "Sans unité",
+            "Atmosphère"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-098",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans la réaction $MgCO_{3(s)} = MgO_{(s)} + CO_{2(g)}$, si l'équilibre est atteint, la pression vaut :",
+        "answers": [
+            "$P = K^0 P^0$",
+            "$P = P^0 / K^0$",
+            "$P = \\sqrt{K^0} P^0$",
+            "$P = nRT/V$ (indépendamment de $K^0$)"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-099",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "L'enthalpie libre de réaction $\\Delta_r G$ est une grandeur :",
+        "answers": [
+            "Intensive",
+            "Extensive",
+            "Sans dimension",
+            "Qui ne dépend que de $P$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-100",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la valeur de l'entropie molaire standard de l'hydrogène gazeux $H_2$ à 298 K ?",
+        "answers": [
+            "0",
+            "Strictement positive (car $T > 0$ K)",
+            "Strictement négative",
+            "Indéterminée"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    }
+]

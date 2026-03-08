@@ -1,0 +1,1623 @@
+[
+    {
+        "uuid": "7c1a2b3c-1234-4a5b-8c9d-0e1f2a3b4c5d",
+        "image_path": null,
+        "theme": "Dérivabilité des fonctions vectorielles",
+        "question": "Soit $f: I \\to \\mathbb{R}^n$. Quelle est la condition nécessaire et suffisante pour que $f$ soit dérivable en $a \\in I$ ?",
+        "answers": [
+            "Chacune de ses fonctions coordonnées est continue en $a$.",
+            "Chacune de ses fonctions coordonnées est dérivable en $a$.",
+            "$f$ admet une limite finie en $a$."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8d2b3c4d-2345-5b6c-9d0e-1f2a3b4c5d6e",
+        "image_path": null,
+        "theme": "Dérivabilité des fonctions vectorielles",
+        "question": "Si $f: I \\to \\mathbb{R}^n$ est dérivable en $a$, quelle relation lie $f'(a)$ aux dérivées des fonctions coordonnées $f_i$ ?",
+        "answers": [
+            "$f'(a) = \\sum_{i=1}^n f_i'(a)$",
+            "$f'(a) = (f_1'(a), ..., f_n'(a))$",
+            "$f'(a) = \\max(f_1'(a), ..., f_n'(a))$"
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9e3c4d5e-3456-6c7d-0e1f-2a3b4c5d6e7f",
+        "image_path": null,
+        "theme": "Dérivabilité des fonctions vectorielles",
+        "question": "Que peut-on dire d'une application $f: I \\to \\mathbb{R}^n$ dont la dérivée est nulle en tout point d'un intervalle $I$ ?",
+        "answers": [
+            "Elle est nulle sur $I$.",
+            "Elle est constante sur $I$.",
+            "Elle est linéaire sur $I$."
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0f4d5e6f-4567-7d8e-1f2g-3b4c5d6e7f8g",
+        "image_path": null,
+        "theme": "Opérations sur les dérivées",
+        "question": "Soit $L \\in \\mathcal{L}(\\mathbb{R}^n, \\mathbb{R}^m)$. Si $f: I \\to \\mathbb{R}^n$ est dérivable, que vaut $(L \\circ f)'(a)$ ?",
+        "answers": [
+            "$L'(f(a)) \\cdot f'(a)$",
+            "$L(f'(a))$",
+            "$f'(L(a))$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1a5e6f7g-5678-8e9f-2g3h-4c5d6e7f8g9h",
+        "image_path": null,
+        "theme": "Opérations sur les dérivées",
+        "question": "Soit $L: \\mathbb{R}^p \\times \\mathbb{R}^q \\to \\mathbb{R}^m$ une application bilinéaire. Si $f$ et $g$ sont dérivables, quelle est la formule de la dérivée de $L(f, g)$ ?",
+        "answers": [
+            "$L(f', g')$",
+            "$L(f', g) + L(f, g')$",
+            "$L(f', g) - L(f, g')$"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2b6f7g8h-6789-9f0g-3h4i-5d6e7f8g9h0i",
+        "image_path": null,
+        "theme": "Opérations sur les dérivées",
+        "question": "Soit $f: I \\to \\mathbb{R}^n$ dérivable ne s'annulant pas. Quelle est la dérivée de $t \\mapsto \\|f(t)\\|^2$ (norme euclidienne) ?",
+        "answers": [
+            "$2 \\|f(t)\\|$",
+            "$2 (f(t) \\mid f'(t))$",
+            "$\\|f'(t)\\|^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3c7g8h9i-7890-0g1h-4i5j-6e7f8g9h0i1j",
+        "image_path": null,
+        "theme": "Opérations sur les dérivées",
+        "question": "Si $\\|f\\|^2$ est constante sur $I$, que peut-on dire de $f(t)$ et $f'(t)$ ?",
+        "answers": [
+            "Ils sont colinéaires.",
+            "Ils sont orthogonaux pour tout $t$.",
+            "$f'(t)$ est nul."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4d8h9i0j-8901-1h2i-5j6k-7f8g9h0i1j2k",
+        "image_path": null,
+        "theme": "Opérations sur les dérivées",
+        "question": "Quelle est la dérivée de $t \\mapsto \\det(f_1(t), ..., f_n(t))$ où les $f_i$ sont dérivables ?",
+        "answers": [
+            "$\\det(f_1'(t), ..., f_n'(t))$",
+            "$\\sum_{i=1}^n \\det(f_1(t), ..., f_i'(t), ..., f_n(t))$",
+            "$\\prod_{i=1}^n \\det(f_i'(t))$"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5e9i0j1k-9012-2i3j-6k7l-8g9h0i1j2k3l",
+        "image_path": null,
+        "theme": "Composition",
+        "question": "Soit $\\phi: J \\to I$ et $f: I \\to \\mathbb{R}^n$ dérivables. Quelle est la dérivée de $f \\circ \\phi$ ?",
+        "answers": [
+            "$f' \\circ \\phi'$",
+            "$\\phi' \\cdot (f' \\circ \\phi)$",
+            "$f' \\circ \\phi$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6f0j1k2l-0123-3j4k-7l8m-9h0i1j2k3l4m",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Comment définit-on la dérivée de $f: \\Omega \\to \\mathbb{R}$ en $a$ selon le vecteur $v$ ?",
+        "answers": [
+            "C'est la limite de $\\frac{f(a+v)-f(a)}{\\|v\\|}$ quand $\\|v\\| \\to 0$.",
+            "C'est la dérivée en $0$ de $t \\mapsto f(a+tv)$.",
+            "C'est le produit scalaire $(\\nabla f(a) \\mid v)$ uniquement si $f$ est $C^1$."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1k2l3m-1234-4k5l-8m9n-0i1j2k3l4m5n",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Une fonction peut-elle admettre des dérivées selon tout vecteur en un point sans y être continue ?",
+        "answers": [
+            "Non, l'existence des dérivées directionnelles implique la continuité.",
+            "Oui, c'est un piège classique.",
+            "Oui, mais seulement si elle est définie sur $\\mathbb{R}^2$."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8b2l3m4n-2345-5l6m-9n0o-1j2k3l4m5n6o",
+        "image_path": null,
+        "theme": "Dérivées partielles",
+        "question": "La $j$-ème dérivée partielle de $f$ en $a$ correspond à la dérivée selon quel vecteur ?",
+        "answers": [
+            "Le vecteur nul.",
+            "Le $j$-ème vecteur de la base canonique $e_j$.",
+            "Le vecteur gradient $\\nabla f(a)$."
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9c3m4n5o-3456-6m7n-0o1p-2k3l4m5n6o7p",
+        "image_path": null,
+        "theme": "Classe C1",
+        "question": "Par définition, une fonction $f$ est de classe $C^1$ sur un ouvert $\\Omega$ si :",
+        "answers": [
+            "Elle est continue et admet des dérivées partielles.",
+            "Ses dérivées partielles existent et sont continues sur $\\Omega$.",
+            "Elle est dérivable selon tout vecteur."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0d4n5o6p-4567-7n8o-1p2q-3l4m5n6o7p8q",
+        "image_path": null,
+        "theme": "Classe C1",
+        "question": "Quelle propriété est assurée par le théorème fondamental du calcul différentiel pour une fonction $f$ de classe $C^1$ ?",
+        "answers": [
+            "L'existence d'un développement limité à l'ordre 2.",
+            "L'existence d'un développement limité à l'ordre 1 en tout point.",
+            "La convexité de la fonction."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1e5o6p7q-5678-8o9p-2q3r-4m5n6o7p8q9r",
+        "image_path": null,
+        "theme": "Classe C1",
+        "question": "Si $f$ est de classe $C^1$ sur $\\Omega$, alors $f$ est nécessairement :",
+        "answers": [
+            "Uniformément continue.",
+            "Continue sur $\\Omega$.",
+            "Bornée sur $\\Omega$."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2f6p7q8r-6789-9p0q-3r4s-5n6o7p8q9r0s",
+        "image_path": null,
+        "theme": "Différentielle",
+        "question": "La différentielle de $f$ en $a$, notée $df(a)$, est une application :",
+        "answers": [
+            "Linéaire de $\\mathbb{R}^p$ dans $\\mathbb{R}$.",
+            "Bilinéaire symétrique.",
+            "Non linéaire en général."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3a7q8r9s-7890-0q1r-4s5t-6o7p8q9r0s1t",
+        "image_path": null,
+        "theme": "Différentielle",
+        "question": "Quelle est l'expression de $df(a)(h)$ en fonction des dérivées partielles ?",
+        "answers": [
+            "$\\prod_{i=1}^p h_i \\frac{\\partial f}{\\partial x_i}(a)$",
+            "$\\sum_{i=1}^p h_i \\frac{\\partial f}{\\partial x_i}(a)$",
+            "$\\max_{i} (h_i \\frac{\\partial f}{\\partial x_i}(a))$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4b8r9s0t-8901-1r2s-5t6u-7p8q9r0s1t2u",
+        "image_path": null,
+        "theme": "Opérations C1",
+        "question": "Que peut-on dire de toute fonction polynomiale sur $\\mathbb{R}^p$ ?",
+        "answers": [
+            "Elle est seulement $C^0$.",
+            "Elle est de classe $C^1$ (et même $C^\\infty$).",
+            "Elle n'est pas forcément $C^1$ si le degré est élevé."
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5c9s0t1u-9012-2s3t-6u7v-8q9r0s1t2u3v",
+        "image_path": null,
+        "theme": "Règle de la chaîne",
+        "question": "Soit $g(t) = f(x_1(t), ..., x_p(t))$. Quelle est la formule de $g'(t)$ si $f$ est $C^1$ et les $x_i$ sont dérivables ?",
+        "answers": [
+            "$\\sum_{i=1}^p \\frac{\\partial f}{\\partial x_i}(x(t))$",
+            "$\\sum_{i=1}^p x_i'(t) \\frac{\\partial f}{\\partial x_i}(x(t))$",
+            "$\\prod_{i=1}^p x_i'(t) \\frac{\\partial f}{\\partial x_i}(x(t))$"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6d0t1u2v-0123-3t4u-7v8w-9r0s1t2u3v4w",
+        "image_path": null,
+        "theme": "Coordonnées polaires",
+        "question": "Soit $g(r, \\theta) = f(r \\cos\\theta, r \\sin\\theta)$. Quelle est l'expression de $\\frac{\\partial g}{\\partial r}$ ?",
+        "answers": [
+            "$\\cos\\theta \\frac{\\partial f}{\\partial x} + \\sin\\theta \\frac{\\partial f}{\\partial y}$",
+            "$-r\\sin\\theta \\frac{\\partial f}{\\partial x} + r\\cos\\theta \\frac{\\partial f}{\\partial y}$",
+            "$\\frac{\\partial f}{\\partial x} + \\frac{\\partial f}{\\partial y}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7e1u2v3w-1234-4u5v-8w9x-0s1t2u3v4w5x",
+        "image_path": null,
+        "theme": "Coordonnées polaires",
+        "question": "Soit $g(r, \\theta) = f(r \\cos\\theta, r \\sin\\theta)$. Quelle est l'expression de $\\frac{\\partial g}{\\partial \\theta}$ ?",
+        "answers": [
+            "$\\cos\\theta \\frac{\\partial f}{\\partial x} + \\sin\\theta \\frac{\\partial f}{\\partial y}$",
+            "$-r\\sin\\theta \\frac{\\partial f}{\\partial x} + r\\cos\\theta \\frac{\\partial f}{\\partial y}$",
+            "$-r\\sin\\theta \\frac{\\partial f}{\\partial x} - r\\cos\\theta \\frac{\\partial f}{\\partial y}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8f2v3w4x-2345-5v6w-9x0y-1t2u3v4w5x6y",
+        "image_path": null,
+        "theme": "Fonctions constantes",
+        "question": "Une fonction $C^1$ sur un ouvert $\\Omega$ dont la différentielle est nulle est constante si :",
+        "answers": [
+            "$\\Omega$ est un ouvert quelconque.",
+            "$\\Omega$ est convexe (ou connexe par arcs).",
+            "$\\Omega$ est borné."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9a3w4x5y-3456-6w7x-0y1z-2u3v4w5x6y7z",
+        "image_path": null,
+        "theme": "Gradient",
+        "question": "Le gradient de $f$ en $a$, $\\nabla f(a)$, est l'unique vecteur tel que pour tout $h$ :",
+        "answers": [
+            "$\\nabla f(a) = df(a)(h)$",
+            "$(\\nabla f(a) \\mid h) = df(a)(h)$",
+            "$\\|\\nabla f(a)\\| = df(a)(h)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0b4x5y6z-4567-7x8y-1z2a-3v4w5x6y7z8a",
+        "image_path": null,
+        "theme": "Gradient",
+        "question": "Quelles sont les composantes du gradient dans la base canonique ?",
+        "answers": [
+            "Les différentielles successives.",
+            "Les dérivées partielles $(\\frac{\\partial f}{\\partial x_1}(a), ..., \\frac{\\partial f}{\\partial x_p}(a))$.",
+            "Les valeurs de la fonction aux points de la base."
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1c5y6z7a-5678-8y9z-2a3b-4w5x6y7z8a9b",
+        "image_path": null,
+        "theme": "Géométrie",
+        "question": "Un arc paramétré $(I, \\gamma)$ est dit régulier en $t$ si :",
+        "answers": [
+            "$\\gamma$ est continue.",
+            "$\\gamma$ est de classe $C^1$ et $\\gamma'(t) \\neq 0$.",
+            "$\\gamma$ est deux fois dérivable."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2d6z7a8b-6789-9z0a-3b4c-5x6y7z8a9b0c",
+        "image_path": null,
+        "theme": "Géométrie",
+        "question": "Soit $U = \\{x \\in \\Omega, f(x)=0\\}$. Si $a \\in U$ est un point régulier, que peut-on dire de $\\nabla f(a)$ ?",
+        "answers": [
+            "Il est nul.",
+            "Il est normal (orthogonal) à la tangente/plan tangent en $a$.",
+            "Il est tangent à la courbe en $a$."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3e7a8b9c-7890-0a1b-4c5d-6y7z8a9b0c1d",
+        "image_path": null,
+        "theme": "Géométrie",
+        "question": "Quelle est l'équation de la tangente à la courbe $f(x,y)=0$ en un point régulier $(x_0, y_0)$ ?",
+        "answers": [
+            "$\\frac{\\partial f}{\\partial x}(x_0)(x-x_0) - \\frac{\\partial f}{\\partial y}(x_0)(y-y_0) = 0$",
+            "$\\frac{\\partial f}{\\partial x}(x_0)(x-x_0) + \\frac{\\partial f}{\\partial y}(x_0)(y-y_0) = 0$",
+            "$y = f'(x_0)(x-x_0)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4f8b9c0d-8901-1b2c-5d6e-7z8a9b0c1d2e",
+        "image_path": null,
+        "theme": "Gradient",
+        "question": "Dans quelle direction la fonction $f$ augmente-t-elle le plus rapidement au point $a$ ?",
+        "answers": [
+            "Celle du vecteur nul.",
+            "Celle du gradient $\\nabla f(a)$.",
+            "Celle d'un vecteur orthogonal au gradient."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5a9c0d1e-9012-2c3d-6e7f-8a9b0c1d2e3f",
+        "image_path": null,
+        "theme": "Classe C2",
+        "question": "Qu'énonce le théorème de Schwarz pour une fonction de classe $C^2$ ?",
+        "answers": [
+            "Les dérivées partielles sont nulles au point critique.",
+            "L'ordre de dérivation partielle n'importe pas : $\\frac{\\partial^2 f}{\\partial x_i \\partial x_j} = \\frac{\\partial^2 f}{\\partial x_j \\partial x_i}$.",
+            "La matrice Hessienne est toujours définie positive."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6b0d1e2f-0123-3d4e-7f8g-9b0c1d2e3f4g",
+        "image_path": null,
+        "theme": "Hessienne",
+        "question": "La matrice Hessienne d'une fonction $C^2$ est toujours :",
+        "answers": [
+            "Antisymétrique.",
+            "Symétrique réelle.",
+            "Orthogonale."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7c1e2f3g-1234-4e5f-8g9h-0c1d2e3f4g5h",
+        "image_path": null,
+        "theme": "Laplacien",
+        "question": "Comment définit-on le Laplacien $\\Delta f$ d'une fonction $C^2$ ?",
+        "answers": [
+            "$\\sum_{i=1}^p \\frac{\\partial f}{\\partial x_i}$",
+            "$\\sum_{i=1}^p \\frac{\\partial^2 f}{\\partial x_i^2}$",
+            "$\\det(H_f)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8d2f3g4h-2345-5f6g-9h0i-1d2e3f4g5h6i",
+        "image_path": null,
+        "theme": "Taylor-Young",
+        "question": "Quelle est la forme du développement de Taylor-Young à l'ordre 2 en $a$ pour une fonction $C^2$ ?",
+        "answers": [
+            "$f(a+h) = f(a) + df(a)(h) + o(\\|h\\|^2)$",
+            "$f(a+h) = f(a) + df(a)(h) + \\frac{1}{2}h^T H_f(a) h + o(\\|h\\|^2)$",
+            "$f(a+h) = f(a) + h^T H_f(a) h + o(\\|h\\|^2)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9e3g4h5i-3456-6g7h-0i1j-2e3f4g5h6i7j",
+        "image_path": null,
+        "theme": "Extrema",
+        "question": "Si $f$ admet un extremum local en $a$ sur un ouvert $\\Omega$, alors $a$ est nécessairement :",
+        "answers": [
+            "Un point où la Hessienne est positive.",
+            "Un point critique ($df(a)=0$).",
+            "Un point de discontinuité."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0f4h5i6j-4567-7h8i-1j2k-3f4g5h6i7j8k",
+        "image_path": null,
+        "theme": "Hessienne",
+        "question": "Si $a$ est un point critique et que $H_f(a)$ est définie positive, alors $f$ admet en $a$ :",
+        "answers": [
+            "Un maximum local strict.",
+            "Un minimum local strict.",
+            "Un point selle."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1a5i6j7k-5678-8i9j-2k3l-4g5h6i7j8k9l",
+        "image_path": null,
+        "theme": "Hessienne",
+        "question": "Si $a$ est un point critique et que $\\det(H_f(a)) < 0$ en dimension 2, alors $f$ admet en $a$ :",
+        "answers": [
+            "Un minimum local.",
+            "Un point col (ou point selle).",
+            "Un maximum local."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2b6j7k8l-6789-9j0k-3l4m-5h6i7j8k9l0m",
+        "image_path": null,
+        "theme": "Extrema",
+        "question": "Un point critique qui n'est pas un extremum local est appelé :",
+        "answers": [
+            "Point nodal.",
+            "Point col (ou selle).",
+            "Point de rebroussement."
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3c7k8l9m-7890-0k1l-4m5n-6i7j8k9l0m1n",
+        "image_path": null,
+        "theme": "Théorème de Riesz",
+        "question": "Pourquoi le gradient existe-t-il et est-il unique ?",
+        "answers": [
+            "Par application du théorème de Riesz sur les formes linéaires en dimension finie.",
+            "Par définition de la dérivée.",
+            "Grâce au théorème des valeurs intermédiaires."
+        ],
+        "difficulty": 4,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4d8l9m0n-8901-1l2m-5n6o-7j8k9l0m1n2o",
+        "image_path": null,
+        "theme": "Inégalité des accroissements finis",
+        "question": "Pour $f: [a,b] \\to \\mathbb{R}^n$, l'égalité des accroissements finis $f(b)-f(a) = (b-a)f'(c)$ :",
+        "answers": [
+            "Est toujours vraie comme dans $\\mathbb{R}$.",
+            "Est généralement fausse, on n'a qu'une inégalité sur la norme.",
+            "N'a aucun sens pour les vecteurs."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5e9m0n1o-9012-2m3n-6o7p-8k9l0m1n2o3p",
+        "image_path": null,
+        "theme": "Extrema globaux",
+        "question": "Une fonction continue sur un ensemble fermé borné (compact) de $\\mathbb{R}^p$ :",
+        "answers": [
+            "N'atteint jamais ses bornes.",
+            "Est bornée et atteint ses bornes (maximum et minimum globaux).",
+            "Est nécessairement constante."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6f0n1o2p-0123-3n4o-7p8q-9l0m1n2o3p4q",
+        "image_path": null,
+        "theme": "Points critiques",
+        "question": "Pour $f(x,y) = x^2 - y^2$, l'origine $(0,0)$ est :",
+        "answers": [
+            "Un minimum local.",
+            "Un point selle.",
+            "Un maximum local."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1o2p3q-1234-4o5p-8q9r-0m1n2o3p4q5r",
+        "image_path": null,
+        "theme": "Schwarz",
+        "question": "Si $f$ n'est pas de classe $C^2$, que peut-on dire des dérivées croisées $\\partial_{xy} f$ et $\\partial_{yx} f$ ?",
+        "answers": [
+            "Elles sont toujours égales.",
+            "Elles peuvent exister mais être différentes.",
+            "Elles n'existent jamais."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8b2p3q4r-2345-5p6q-9r0s-1n2o3p4q5r6s",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Quelle est la différentielle d'une application linéaire $u$ ?",
+        "answers": [
+            "$du(x) = 0$",
+            "$du(x) = u$",
+            "$du(x) = u(x)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9c3q4r5s-3456-6q7r-0s1t-2n3o4p5q6r7s",
+        "image_path": null,
+        "theme": "Exercice TD",
+        "question": "Dans l'exercice 14, pour une fonction homogène de degré $\\alpha$, la relation d'Euler s'écrit :",
+        "answers": [
+            "$\\sum x_i \\frac{\\partial f}{\\partial x_i} = \\alpha f(x)$",
+            "$\\sum \\frac{\\partial f}{\\partial x_i} = f(x)$",
+            "$\\sum x_i^2 \\frac{\\partial^2 f}{\\partial x_i^2} = \\alpha f(x)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0d4r5s6t-4567-7r8s-1t2u-3o4p5q6r7s8t",
+        "image_path": null,
+        "theme": "Exercice TD",
+        "question": "Soit $f(x,y) = \\frac{x^2y}{x^4+y^2}$ et $f(0,0)=0$. En $(0,0)$, cette fonction :",
+        "answers": [
+            "Est continue.",
+            "Admet des dérivées selon tout vecteur mais n'est pas continue.",
+            "N'admet aucune dérivée directionnelle."
+        ],
+        "difficulty": 4,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1e5s6t7u-5678-8s9t-2u3v-4p5q6r7s8t9u",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Quelle est la différentielle de $f \\cdot g$ (produit de deux fonctions scalaires $C^1$) ?",
+        "answers": [
+            "$df \\cdot dg$",
+            "$g \\cdot df + f \\cdot dg$",
+            "$f \\cdot df + g \\cdot dg$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2f6t7u8v-6789-9t0u-3v4w-5q6r7s8t9u0v",
+        "image_path": null,
+        "theme": "Exercice TD",
+        "question": "Pour la norme $\\|x\\|_2$ sur $\\mathbb{R}^p$, où est-elle de classe $C^1$ ?",
+        "answers": [
+            "Partout sur $\\mathbb{R}^p$.",
+            "Sur $\\mathbb{R}^p \\setminus \\{0\\}$.",
+            "Uniquement à l'origine."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3a7u8v9w-7890-0u1v-4w5x-6r7s8t9u0v1w",
+        "image_path": null,
+        "theme": "Géométrie",
+        "question": "L'équation du plan tangent à la sphère $x^2+y^2+z^2=R^2$ en $(x_0, y_0, z_0)$ est :",
+        "answers": [
+            "$x+y+z = R$",
+            "$x_0 x + y_0 y + z_0 z = R^2$",
+            "$x_0 x + y_0 y + z_0 z = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4b8v9w0x-8901-1v2w-5x6y-7s8t9u0v1w2x",
+        "image_path": null,
+        "theme": "Extrema",
+        "question": "Si $a$ est un point critique et $\\det(H_f(a)) > 0$ avec $Tr(H_f(a)) < 0$, on a :",
+        "answers": [
+            "Un minimum local strict.",
+            "Un maximum local strict.",
+            "Un point selle."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5c9w0x1y-9012-2w3x-6y7z-8t9u0v1w2x3y",
+        "image_path": null,
+        "theme": "Hessienne",
+        "question": "Pour une forme quadratique $f(x) = x^T A x$ avec $A$ symétrique, que vaut la Hessienne $H_f(x)$ ?",
+        "answers": [
+            "$A$",
+            "$2A$",
+            "$A^2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6d0x1y2z-0123-3x4y-7z8a-9u0v1w2x3y4z",
+        "image_path": null,
+        "theme": "Dérivation vectorielle",
+        "question": "Quelle est la dérivée de $f: \\theta \\mapsto (\\cos\\theta, \\sin\\theta)$ ?",
+        "answers": [
+            "$(\\cos\\theta, \\sin\\theta)$",
+            "$(-\\sin\\theta, \\cos\\theta)$",
+            "$(\\sin\\theta, -\\cos\\theta)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7e1y2z3a-1234-4y5z-8a9b-0v1w2x3y4z5a",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "La différentielle de $f(x,y,z) = x^2 + y^2 + z^2$ en $(x,y,z)$ appliquée à $(h_1, h_2, h_3)$ est :",
+        "answers": [
+            "$h_1^2 + h_2^2 + h_3^2$",
+            "$2xh_1 + 2yh_2 + 2zh_3$",
+            "$x^2h_1 + y^2h_2 + z^2h_3$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8f2z3a4b-2345-5z6a-9b0c-1w2x3y4z5a6b",
+        "image_path": null,
+        "theme": "Exercice TD",
+        "question": "Un champ de vecteurs dérivant d'un potentiel ($V = \\nabla f$) vérifie nécessairement la condition de Schwarz $\\frac{\\partial P}{\\partial y} = \\frac{\\partial Q}{\\partial x}$. La réciproque est-elle toujours vraie ?",
+        "answers": [
+            "Oui, c'est le théorème de Poincaré.",
+            "Non, cela dépend de la topologie du domaine (ex: domaine non simplement connexe).",
+            "Seulement si le champ est polynomial."
+        ],
+        "difficulty": 4,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9a3a4b5c-3456-6a7b-0c1d-2x3y4z5a6b7c",
+        "image_path": null,
+        "theme": "Hessienne",
+        "question": "La Hessienne de $f(x,y) = xy$ à l'origine est :",
+        "answers": [
+            "$\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$",
+            "$\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$",
+            "$\\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0b4b5c6d-4567-7b8c-1d2e-3y4z5a6b7c8d",
+        "image_path": null,
+        "theme": "Extrema",
+        "question": "Pour $f(x,y) = xy$, l'origine est un :",
+        "answers": [
+            "Minimum local.",
+            "Point selle.",
+            "Maximum local."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1c5c6d7e-5678-8c9d-2e3f-4z5a6b7c8d9e",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Soit $f(x,y) = \\sin(x+y)$. Sa dérivée partielle $\\frac{\\partial f}{\\partial x}$ est :",
+        "answers": [
+            "$\\cos(x)$",
+            "$\\cos(x+y)$",
+            "$\\sin(x+y)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2d6d7e8f-6789-9d0e-3f4g-5a6b7c8d9e0f",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Si $f$ est $C^1$, quelle est la dérivée de $\\frac{1}{f}$ selon $x_i$ ?",
+        "answers": [
+            "$\\frac{1}{\\partial_i f}$",
+            "$-\\frac{\\partial_i f}{f^2}$",
+            "$\\frac{\\partial_i f}{f}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3e7e8f9g-7890-0e1f-4g5h-6b7c8d9e0f1g",
+        "image_path": null,
+        "theme": "Composition",
+        "question": "Soit $g(x,y) = f(x+y, xy)$. Alors $\\frac{\\partial g}{\\partial x}$ vaut :",
+        "answers": [
+            "$\\partial_1 f + y \\partial_2 f$",
+            "$\\partial_1 f + \\partial_2 f$",
+            "$x \\partial_1 f + y \\partial_2 f$"
+        ],
+        "difficulty": 4,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4f8f9g0h-8901-1f2g-5h6i-7c8d9e0f1g2h",
+        "image_path": null,
+        "theme": "Géométrie",
+        "question": "La tangente à l'ellipse $(\\frac{x}{a})^2 + (\\frac{y}{b})^2 = 1$ au point $(x_0, y_0)$ a pour équation :",
+        "answers": [
+            "$\\frac{x}{a} + \\frac{y}{b} = 1$",
+            "$\\frac{x x_0}{a^2} + \\frac{y y_0}{b^2} = 1$",
+            "$\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5a9g0h1i-9012-2g3h-6i7j-8d9e0f1g2h3i",
+        "image_path": null,
+        "theme": "Extrema",
+        "question": "Le point $(0,1)$ pour $f(x,y) = x^2y^3 + (y-1)^2$ est :",
+        "answers": [
+            "Un minimum local strict.",
+            "Un minimum global.",
+            "Un point selle."
+        ],
+        "difficulty": 4,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6b0h1i2j-0123-3h4i-7j8k-9e0f1g2h3i4j",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Que signifie l'homogénéité de degré $\\alpha$ pour une fonction $f$ ?",
+        "answers": [
+            "$f(x+t) = f(x) + t^\\alpha$",
+            "$f(tx) = t^\\alpha f(x)$",
+            "$f(x^t) = f(x)^t$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7c1i2j3k-1234-4i5j-8k9l-0f1g2h3i4j5k",
+        "image_path": null,
+        "theme": "Gradient",
+        "question": "$\\nabla(\\phi \\circ f)$ est égal à :",
+        "answers": [
+            "$\\nabla \\phi \\circ \\nabla f$",
+            "$(\\phi' \\circ f) \\nabla f$",
+            "$\\phi \\cdot \\nabla f$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8d2j3k4l-2345-5j6k-9l0m-1g2h3i4j5k6l",
+        "image_path": null,
+        "theme": "Inégalité des accroissements finis",
+        "question": "L'inégalité $\\|f(b)-f(a)\\| \\le (b-a) \\sup_{c \\in ]a,b[} \\|f'(c)\\|$ est valable pour :",
+        "answers": [
+            "Toute fonction continue.",
+            "Toute fonction dérivable sur $]a,b[$ et continue sur $[a,b]$.",
+            "Uniquement les fonctions réelles."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9e3k4l5m-3456-6k7l-0m1n-2h3i4j5k6l7m",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Soit $f$ de classe $C^1$. La fonction $f$ est constante sur un ouvert convexe si et seulement si :",
+        "answers": [
+            "$f(0) = 0$",
+            "$df = 0$",
+            "Ses dérivées partielles sont bornées."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0f4l5m6n-4567-7l8m-1n2o-3i4j5k6l7m8n",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Comment calcule-t-on la différentielle d'une somme $f+g$ ?",
+        "answers": [
+            "$df + dg$",
+            "$df \\circ dg$",
+            "$d(f \\circ g)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1a5m6n7o-5678-8m9n-2o3p-4j5k6l7m8n9o",
+        "image_path": null,
+        "theme": "Différentielle",
+        "question": "La différentielle d'une fonction constante est :",
+        "answers": [
+            "La fonction constante elle-même.",
+            "L'application linéaire nulle.",
+            "Indéterminée."
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2b6n7o8p-6789-9n0o-3p4q-5k6l7m8n9o0p",
+        "image_path": null,
+        "theme": "Extrema",
+        "question": "Si $f(x,y) = x^2 + y^2$, l'origine est :",
+        "answers": [
+            "Un maximum global.",
+            "Un minimum global.",
+            "Un point selle."
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3c7o8p9q-7890-0o1p-4q5r-6l7m8n9o0p1q",
+        "image_path": null,
+        "theme": "Hessienne",
+        "question": "En dimension 2, si $\\det(H_f(a)) > 0$, alors $a$ est :",
+        "answers": [
+            "Un extremum local.",
+            "Un point selle.",
+            "Un point régulier."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4d8p9q0r-8901-1p2q-5r6s-7m8n9o0p1q2r",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Quelle est la j-ème coordonnée du vecteur $f'(t)$ ?",
+        "answers": [
+            "$f_j(t)$",
+            "$f_j'(t)$",
+            "$\\int f_j(t) dt$"
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5e9q0r1s-9012-2q3r-6s7t-8n9o0p1q2r3s",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Si $f$ est dérivable en $a$, alors $f(a+h) = f(a) + hl + h\\alpha(h)$ avec $\\alpha(h) \\to 0$. Que vaut $l$ ?",
+        "answers": [
+            "$f(a)$",
+            "$f'(a)$",
+            "$0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6f0r1s2t-0123-3r4s-7t8u-9o0p1q2r3s4t",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Le vecteur vitesse à l'instant $t_0$ d'un point mobile de trajectoire $f(t)$ est :",
+        "answers": [
+            "$f(t_0)$",
+            "$f'(t_0)$",
+            "$f''(t_0)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1s2t3u-1234-4s5t-8u9v-0p1q2r3s4t5u",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Le vecteur accélération est défini par :",
+        "answers": [
+            "La dérivée première.",
+            "La dérivée seconde $f''(t)$.",
+            "La norme de la vitesse."
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8b2t3u4v-2345-5t6u-9v0w-1q2r3s4t5u6v",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Si $f$ est $k$ fois dérivable, sa dérivée $k$-ième est notée :",
+        "answers": [
+            "$f^k$",
+            "$f^{(k)}$",
+            "$k \\cdot f'$"
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9c3u4v5w-3456-6u7v-0w1x-2r3s4t5u6v7w",
+        "image_path": null,
+        "theme": "Classe Ck",
+        "question": "Une fonction est dite de classe $C^\\infty$ si :",
+        "answers": [
+            "Elle est de classe $C^1$.",
+            "Elle est de classe $C^k$ pour tout $k \\in \\mathbb{N}$.",
+            "Elle est polynomiale."
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0d4v5w6x-4567-7v8w-1x2y-3s4t5u6v7w8x",
+        "image_path": null,
+        "theme": "Dérivée partielle",
+        "question": "Pour $f(x,y) = x^y = e^{y \\ln x}$, la dérivée $\\frac{\\partial f}{\\partial x}$ est :",
+        "answers": [
+            "$y x^{y-1}$",
+            "$(\\ln x) x^y$",
+            "$x^y$"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1e5w6x7y-5678-8w9x-2y3z-4t5u6v7w8x9y",
+        "image_path": null,
+        "theme": "Dérivée partielle",
+        "question": "Pour $f(x,y) = x^y$, la dérivée $\\frac{\\partial f}{\\partial y}$ est :",
+        "answers": [
+            "$y x^{y-1}$",
+            "$(\\ln x) x^y$",
+            "$x^y \\ln y$"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2f6x7y8z-6789-9x0y-3z4a-5u6v7w8x9y0z",
+        "image_path": null,
+        "theme": "Gradient",
+        "question": "La direction du gradient est celle :",
+        "answers": [
+            "De la plus forte pente montante.",
+            "De la plus forte pente descendante.",
+            "De la ligne de niveau."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3a7y8z9a-7890-0y1z-4a5b-6v7w8x9y0z1a",
+        "image_path": null,
+        "theme": "Géométrie",
+        "question": "Le gradient est-il défini si $f$ n'est pas $C^1$ ?",
+        "answers": [
+            "Non, jamais.",
+            "Oui, s'il existe des dérivées partielles, mais il perd ses propriétés géométriques usuelles.",
+            "Seulement en dimension 1."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4b8z9a0b-8901-1z2a-5b6c-7w8x9y0z1a2b",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Soit $f(x,y) = \\frac{xy}{x^2+y^2}$ pour $(x,y) \\neq (0,0)$. Sa limite à l'origine :",
+        "answers": [
+            "Vaut 0.",
+            "Vaut 1.",
+            "N'existe pas (dépend du chemin)."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5c9a0b1c-9012-2a3b-6c7d-8x9y0z1a2b3c",
+        "image_path": null,
+        "theme": "Théorème de Schwarz",
+        "question": "Dans quel exercice du TD montre-t-on une fonction $C^1$ mais pas $C^2$ où $\\partial_{xy} f(0,0) \\neq \\partial_{yx} f(0,0)$ ?",
+        "answers": [
+            "Exercice 7",
+            "Exercice 19",
+            "Exercice 20"
+        ],
+        "difficulty": 4,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6d0b1c2d-0123-3b4c-7d8e-9y0z1a2b3c4d",
+        "image_path": null,
+        "theme": "Hessienne",
+        "question": "Une matrice Hessienne dont toutes les valeurs propres sont strictement négatives indique :",
+        "answers": [
+            "Un minimum local.",
+            "Un maximum local.",
+            "Un point selle."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7e1c2d3e-1234-4c5d-8e9f-0z1a2b3c4d5e",
+        "image_path": null,
+        "theme": "Hessienne",
+        "question": "Si la Hessienne possède une valeur propre strictement positive et une strictement négative, le point critique est :",
+        "answers": [
+            "Un extremum local.",
+            "Un point selle.",
+            "Un point d'inflexion."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8f2d3e4f-2345-5d6e-9f0g-1a2b3c4d5e6f",
+        "image_path": null,
+        "theme": "Extrema",
+        "question": "Pour $f(x,y) = x^4+y^4$, l'origine est :",
+        "answers": [
+            "Un point selle car $H_f(0,0)$ est nulle.",
+            "Un minimum global par étude directe du signe.",
+            "Un maximum local."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9a3e4f5g-3456-6e7f-0g1h-2b3c4d5e6f7g",
+        "image_path": null,
+        "theme": "Optimisation",
+        "question": "L'existence d'un point critique est une condition :",
+        "answers": [
+            "Suffisante pour un extremum.",
+            "Nécessaire pour un extremum sur un ouvert.",
+            "Nécessaire et suffisante pour un maximum."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0b4f5g6h-4567-7f8g-1h2i-3c4d5e6f7g8h",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "La différentielle de $x \\mapsto \\|x\\|^2$ en $x$ appliquée à $h$ est :",
+        "answers": [
+            "$\\|h\\|^2$",
+            "$2(x \\mid h)$",
+            "$(x \\mid h)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1c5g6h7i-5678-8g9h-2i3j-4d5e6f7g8h9i",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Quelle est la différentielle de l'inverse $1/f$ ?",
+        "answers": [
+            "$-df/f^2$",
+            "$df/f$",
+            "$-df/f$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2d6h7i8j-6789-9h0i-3j4k-5e6f7g8h9i0j",
+        "image_path": null,
+        "theme": "Hessienne",
+        "question": "Pour $f(x,y) = \\cos x + y^2$, le point $(0,0)$ est :",
+        "answers": [
+            "Un minimum local.",
+            "Un point selle.",
+            "Un maximum local."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3e7i8j9k-7890-0i1j-4k5l-6f7g8h9i0j1k",
+        "image_path": null,
+        "theme": "Géométrie",
+        "question": "Un point $a$ tel que $f(a)=0$ et $\\nabla f(a) = 0$ est dit :",
+        "answers": [
+            "Régulier.",
+            "Singulier (ou non régulier).",
+            "Extrémal."
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4f8j9k0l-8901-1j2k-5l6m-7g8h9i0j1k2l",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "La dérivée de $L(f,f,f)$ où $L$ est trilinéaire est :",
+        "answers": [
+            "$L(f', f', f')$",
+            "$3 L(f', f, f)$ si $L$ est symétrique.",
+            "$L(f', f, f) + L(f, f', f) + L(f, f, f')$",
+            "Les deux dernières réponses sont correctes."
+        ],
+        "difficulty": 4,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 3,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5a9k0l1m-9012-2k3l-6m7n-8h9i0j1k2l3m",
+        "image_path": null,
+        "theme": "Optimisation",
+        "question": "Soit $f$ $C^1$ sur $\\mathbb{R}^p$ telle que $f(x)/\\|x\\| \\to +\\infty$ quand $\\|x\\| \\to +\\infty$. Alors $f$ admet :",
+        "answers": [
+            "Un maximum global.",
+            "Un minimum global.",
+            "Aucun point critique."
+        ],
+        "difficulty": 4,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6b0l1m2n-0123-3l4m-7n8o-9i0j1k2l3m4n",
+        "image_path": null,
+        "theme": "Gradient",
+        "question": "Le gradient de $f(x) = (a \\mid x)$ est :",
+        "answers": [
+            "$x$",
+            "$a$",
+            "$0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7c1m2n3o-1234-4m5n-8o9p-0j1k2l3m4n5o",
+        "image_path": null,
+        "theme": "Exercice TD",
+        "question": "Si $f(x,y) = f(y,x)$, alors la dérivée partielle $\\partial_x f(x,y)$ est égale à :",
+        "answers": [
+            "$\\partial_x f(y,x)$",
+            "$\\partial_y f(y,x)$",
+            "$-\\partial_y f(x,y)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8d2n3o4p-2345-5n6o-9p0q-1k2l3m4n5o6p",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Soit $f: \\mathbb{R}^n \\to \\mathbb{R}^m$ dérivable. Sa différentielle $df(a)$ peut être représentée par une matrice appelée :",
+        "answers": [
+            "Matrice Hessienne.",
+            "Matrice Jacobienne.",
+            "Matrice de passage."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9e3o4p5q-3456-6o7p-0q1r-2l3m4n5o6p7q",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Le Laplacien de $f(x,y) = x^2 - y^2$ est :",
+        "answers": [
+            "$2$",
+            "$0$",
+            "$-2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0f4p5q6r-4567-7p8q-1r2s-3m4n5o6p7q8r",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Une fonction de Laplacien nul est dite :",
+        "answers": [
+            "Holomorphe.",
+            "Harmonique.",
+            "Analytique."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1a5q6r7s-5678-8q9r-2s3t-4n5o6p7q8r9s",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Si $f$ est $C^1$, alors $df$ est une application :",
+        "answers": [
+            "Continue de $\\Omega$ dans $\\mathcal{L}(\\mathbb{R}^p, \\mathbb{R})$.",
+            "Linéaire de $\\Omega$ dans $\\mathbb{R}$.",
+            "Constante."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2b6r7s8t-6789-9r0s-3t4u-5o6p7q8r9s0t",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Quelle est la différentielle de la norme $\\|x\\|_2^2$ ?",
+        "answers": [
+            "$2x$",
+            "$2(x \\mid \\cdot)$",
+            "$\\|x\\| \\cdot dx$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3c7s8t9u-7890-0s1t-4u5v-6p7q8r9s0t1u",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Pour $f(x,y) = e^{xy}$, $\\nabla f(x,y)$ est :",
+        "answers": [
+            "$(ye^{xy}, xe^{xy})$",
+            "$(xe^{xy}, ye^{xy})$",
+            "$(e^{xy}, e^{xy})$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4d8t9u0v-8901-1t2u-5v6w-7q8r9s0t1u2v",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "La dérivée de $t \\mapsto f(t, t^2)$ est :",
+        "answers": [
+            "$\\partial_x f(t, t^2) + \\partial_y f(t, t^2)$",
+            "$\\partial_x f(t, t^2) + 2t \\partial_y f(t, t^2)$",
+            "$2t \\partial_x f(t, t^2) + \\partial_y f(t, t^2)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "5e9u0v1w-9012-2u3v-6w7x-8r7s8t9u0v1w",
+        "image_path": null,
+        "theme": "Optimisation",
+        "question": "Un extremum global est-il toujours un extremum local ?",
+        "answers": [
+            "Oui, si le point est à l'intérieur du domaine.",
+            "Non, jamais.",
+            "Seulement pour les fonctions convexes."
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "6f0v1w2x-0123-3v4w-7x8y-9s8t9u0v1w2x",
+        "image_path": null,
+        "theme": "Géométrie",
+        "question": "Le vecteur normal au plan tangent de $z = g(x,y)$ en $(x_0, y_0, z_0)$ est :",
+        "answers": [
+            "$(\\partial_x g, \\partial_y g, 1)$",
+            "$(\\partial_x g, \\partial_y g, -1)$",
+            "$(1, 1, 1)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1w2x3y-1234-4w5x-8y9z-0t8u9v0w1x2y",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Si $f(x,y) = \\ln(x^2+y^2+1)$, $\\nabla f(0,0)$ est :",
+        "answers": [
+            "$(1,1)$",
+            "$(0,0)$",
+            "$(2,2)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "8b2x3y4z-2345-5x6y-9z0a-1u9v0w1x2y3z",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "La Hessienne de $f(x,y) = x^2 + 4xy + y^2$ est :",
+        "answers": [
+            "$\\begin{pmatrix} 2 & 4 \\\\ 4 & 2 \\end{pmatrix}$",
+            "$\\begin{pmatrix} 2 & 2 \\\\ 2 & 2 \\end{pmatrix}$",
+            "$\\begin{pmatrix} 1 & 4 \\\\ 4 & 1 \\end{pmatrix}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "9c3y4z5a-3456-6y7z-0a1b-2v0w1x2y3z4a",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Pour la Hessienne $\\begin{pmatrix} 2 & 4 \\\\ 4 & 2 \\end{pmatrix}$, le point critique $(0,0)$ est :",
+        "answers": [
+            "Un minimum local.",
+            "Un point selle.",
+            "Un maximum local."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "0d4z5a6b-4567-7z8a-1b2c-3w1x2y3z4a5b",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Le déterminant de la Hessienne de $f(x,y) = 3x^2-2xy+3y^2-8x+8y$ est :",
+        "answers": [
+            "32",
+            "8",
+            "0"
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "1e5a6b7c-5678-8a9b-2c3d-4x2y3z4a5b6c",
+        "image_path": null,
+        "theme": "Optimisation",
+        "question": "Pour $f(x,y) = 3x^2-2xy+3y^2-8x+8y$, le point critique est un :",
+        "answers": [
+            "Minimum local strict.",
+            "Maximum local strict.",
+            "Point selle."
+        ],
+        "difficulty": 3,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "2f6b7c8d-6789-9b0c-3d4e-5y3z4a5b6c7d",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "La différentielle de l'application déterminant en l'identité $I_n$ est :",
+        "answers": [
+            "L'application nulle.",
+            "La trace : $d(\\det)(I_n)(H) = Tr(H)$.",
+            "Le déterminant lui-même."
+        ],
+        "difficulty": 5,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "3a7c8d9e-7890-0c1d-4e5f-6z4a5b6c7d8e",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Soit $f$ $C^1$ sur $\\mathbb{R}^2$ telle que $\\partial_x f = \\partial_y f = 0$. Alors $f$ est :",
+        "answers": [
+            "Nulle.",
+            "Constante.",
+            "Linéaire."
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "4b8d9e0f-8901-1d2e-5f6g-7a5b6c7d8e9f",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "Un ouvert convexe $\\Omega$ contenant $a$ et $b$ contient aussi :",
+        "answers": [
+            "Le segment $[a,b]$.",
+            "Le cercle passant par $a$ et $b$.",
+            "L'origine."
+        ],
+        "difficulty": 1,
+        "chapter": "Calcul différentiel",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    }
+]

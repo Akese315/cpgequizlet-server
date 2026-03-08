@@ -1,0 +1,1602 @@
+[
+    {
+        "uuid": "mag-001",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Right_hand_rule_cross_product.svg",
+        "theme": "Magnétostatique",
+        "question": "Quelle est l'expression de la force de Lorentz magnétique s'exerçant sur une charge $q$ animée d'une vitesse $\\vec{v}$ dans un champ $\\vec{B}$ ?",
+        "answers": [
+            "$\\vec{F} = q(\\vec{E} + \\vec{v} \\wedge \\vec{B})$",
+            "$\\vec{F} = q\\vec{v} \\wedge \\vec{B}$",
+            "$\\vec{F} = q\\vec{B} \\wedge \\vec{v}$",
+            "$\\vec{F} = I\\vec{dl} \\wedge \\vec{B}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ magnétique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-002",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est la puissance développée par la force magnétique de Lorentz sur une charge ponctuelle ?",
+        "answers": [
+            "$\\mathcal{P} = qv^2B$",
+            "$\\mathcal{P} = \\vec{F} \\cdot \\vec{B}$",
+            "$\\mathcal{P} = 0$",
+            "$\\mathcal{P} = q(\\vec{v} \\cdot \\vec{B})$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ magnétique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-003",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Une particule chargée entre dans une zone de champ magnétique uniforme. Que peut-on dire de l'évolution de son énergie cinétique ?",
+        "answers": [
+            "Elle augmente proportionnellement à $B$",
+            "Elle diminue à cause du rayonnement",
+            "Elle reste constante car la force magnétique ne travaille pas",
+            "Elle oscille de façon sinusoïdale"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ magnétique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-004",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est l'unité du champ magnétique dans le Système International ?",
+        "answers": [
+            "Le Gauss (G)",
+            "Le Weber (Wb)",
+            "Le Tesla (T)",
+            "Le Henry (H)"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ magnétique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-005",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quel est l'ordre de grandeur du champ magnétique terrestre à la surface de la Terre ?",
+        "answers": [
+            "$50 \\text{ mT}$",
+            "$50 \\text{ \\mu T}$",
+            "$1 \\text{ T}$",
+            "$0,5 \\text{ G}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ magnétique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-006",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Si $\\Pi_S$ est un plan de symétrie de la distribution de courants, que peut-on dire du champ magnétique $\\vec{B}$ en un point $M$ appartenant à ce plan ?",
+        "answers": [
+            "$\\vec{B}$ est contenu dans le plan $\\Pi_S$",
+            "$\\vec{B}$ est orthogonal au plan $\\Pi_S$",
+            "$\\vec{B}$ est nul en tout point du plan",
+            "La composante normale de $\\vec{B}$ s'annule"
+        ],
+        "difficulty": 3,
+        "chapter": "Symétries et invariances",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-007",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Si $\\Pi_A$ est un plan d'antisymétrie de la distribution de courants, que peut-on dire du champ magnétique $\\vec{B}$ en un point $M$ appartenant à ce plan ?",
+        "answers": [
+            "$\\vec{B}$ est contenu dans le plan $\\Pi_A$",
+            "$\\vec{B}$ est orthogonal au plan $\\Pi_A$",
+            "$\\vec{B}$ est nécessairement nul",
+            "$\\vec{B}$ est dirigé selon le courant"
+        ],
+        "difficulty": 3,
+        "chapter": "Symétries et invariances",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-008",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Une distribution de courant est invariante par translation selon l'axe $(Oz)$. De quelle coordonnée le champ magnétique $\\vec{B}$ ne dépend-il PAS en coordonnées cylindriques ?",
+        "answers": [
+            "$r$",
+            "$\\theta$",
+            "$z$",
+            "Aucune, il dépend des trois"
+        ],
+        "difficulty": 2,
+        "chapter": "Symétries et invariances",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-009",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Magnetic_field_of_wire.svg",
+        "theme": "Magnétostatique",
+        "question": "Comment sont orientées les lignes de champ magnétique créées par un fil rectiligne infini parcouru par un courant $I$ ?",
+        "answers": [
+            "Ce sont des droites parallèles au fil",
+            "Ce sont des demi-droites radiales partant du fil",
+            "Ce sont des cercles concentriques centrés sur le fil",
+            "Ce sont des spirales s'éloignant du fil"
+        ],
+        "difficulty": 2,
+        "chapter": "Les lignes de champ",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-010",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est la forme locale de l'équation de Maxwell-Thomson pour le champ magnétique ?",
+        "answers": [
+            "$\\text{div}(\\vec{B}) = \\mu_0 \\rho$",
+            "$\\vec{\\text{rot}}(\\vec{B}) = \\vec{0}$",
+            "$\\text{div}(\\vec{B}) = 0$",
+            "$\\vec{\\text{rot}}(\\vec{B}) = \\mu_0 \\vec{j}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les équations de Maxwell",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-011",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Que signifie physiquement l'équation $\\text{div}(\\vec{B}) = 0$ ?",
+        "answers": [
+            "Le champ magnétique est uniforme",
+            "Il n'existe pas de monopôle magnétique",
+            "Les lignes de champ sont toujours ouvertes",
+            "Le champ magnétique ne dépend pas du temps"
+        ],
+        "difficulty": 2,
+        "chapter": "Les équations de Maxwell",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-012",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est l'unité de la densité volumique de courant $\\vec{j}$ ?",
+        "answers": [
+            "$\\text{A} \\cdot \\text{m}^{-1}$",
+            "$\\text{A} \\cdot \\text{m}^{-2}$",
+            "$\\text{A} \\cdot \\text{m}^{-3}$",
+            "$\\text{V} \\cdot \\text{m}^{-2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les équations de Maxwell",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-013",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est l'équation de Maxwell-Ampère en régime stationnaire ?",
+        "answers": [
+            "$\\vec{\\text{rot}}(\\vec{B}) = \\mu_0 \\vec{j}$",
+            "$\\vec{\\text{rot}}(\\vec{B}) = \\mu_0 \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$",
+            "$\\vec{\\text{rot}}(\\vec{B}) = \\frac{\\vec{j}}{\\mu_0}$",
+            "$\\text{div}(\\vec{B}) = \\mu_0 \\vec{j}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les équations de Maxwell",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-014",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est la valeur de la perméabilité du vide $\\mu_0$ ?",
+        "answers": [
+            "$8,85 \\cdot 10^{-12} \\text{ F} \\cdot \\text{m}^{-1}$",
+            "$4\\pi \\cdot 10^{-7} \\text{ H} \\cdot \\text{m}^{-1}$",
+            "$1,26 \\cdot 10^{-6} \\text{ T} \\cdot \\text{m} \\cdot \\text{A}^{-1}$",
+            "Les deux dernières réponses sont correctes"
+        ],
+        "difficulty": 2,
+        "chapter": "Les équations de Maxwell",
+        "correct_answer_index": 3,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-015",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Le flux du champ magnétique à travers une surface fermée $S$ est :",
+        "answers": [
+            "Toujours nul",
+            "Égal à $\\mu_0 I_{\\text{enlacé}}$",
+            "Égal à $Q_{\\text{int}} / \\epsilon_0$",
+            "Proportionnel au volume enfermé"
+        ],
+        "difficulty": 2,
+        "chapter": "Conséquences sur le flux magnétique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-016",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Énoncer le théorème d'Ampère pour une courbe fermée $\\mathcal{C}$ orientée :",
+        "answers": [
+            "$\\oint_{\\mathcal{C}} \\vec{B} \\cdot \\vec{dl} = \\mu_0 I_{\\text{traversant}}$",
+            "$\\iint_{S} \\vec{B} \\cdot \\vec{dS} = \\mu_0 I_{\\text{enlacé}}$",
+            "$\\oint_{\\mathcal{C}} \\vec{B} \\cdot \\vec{dl} = \\mu_0 I_{\\text{enlacé}}$",
+            "$\\vec{\\text{rot}}(\\vec{B}) = \\mu_0 I$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le théorème d'Ampère",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-017",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Pour un fil rectiligne infini, quel est le meilleur choix de contour d'Ampère pour calculer $\\vec{B}(M)$ ?",
+        "answers": [
+            "Un carré de côté $r$",
+            "Un cercle d'axe le fil et passant par $M$",
+            "Une sphère centrée sur le fil",
+            "Un cylindre entourant le fil"
+        ],
+        "difficulty": 2,
+        "chapter": "Le théorème d'Ampère",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-018",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est l'expression du champ magnétique créé par un fil infini fin à une distance $r$ ?",
+        "answers": [
+            "$\\vec{B} = \\frac{\\mu_0 I}{4\\pi r} \\vec{u}_\\theta$",
+            "$\\vec{B} = \\frac{\\mu_0 I}{2\\pi r} \\vec{u}_\\theta$",
+            "$\\vec{B} = \\frac{\\mu_0 I}{2 r} \\vec{u}_\\theta$",
+            "$\\vec{B} = \\mu_0 n I \\vec{u}_z$"
+        ],
+        "difficulty": 2,
+        "chapter": "Champ créé par un fil infiniment fin",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-019",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Pour un fil cylindrique épais de rayon $R$ parcouru par un courant $I$ uniforme, comment varie $B$ à l'intérieur ($r < R$) ?",
+        "answers": [
+            "En $1/r$",
+            "En $1/r^2$",
+            "Linéairement avec $r$",
+            "Il est nul"
+        ],
+        "difficulty": 2,
+        "chapter": "Champ créé par un fil épais",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-020",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans le cas du fil épais de rayon $R$, quelle est la valeur maximale du champ magnétique ?",
+        "answers": [
+            "$\\frac{\\mu_0 I}{2\\pi R}$",
+            "$\\frac{\\mu_0 I}{\\pi R^2}$",
+            "Elle est infinie en $r=0$",
+            "$\\frac{\\mu_0 I}{2 R}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Champ créé par un fil épais",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-021",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Que peut-on dire de la continuité du champ magnétique $\\vec{B}$ à la surface d'un conducteur parcouru par un courant volumique ?",
+        "answers": [
+            "Il est toujours discontinu",
+            "Il est continu",
+            "Seule la composante normale est continue",
+            "Il dépend de la conductivité"
+        ],
+        "difficulty": 3,
+        "chapter": "Champ créé par un fil épais",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-022",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Solenoid.svg",
+        "theme": "Magnétostatique",
+        "question": "Quelle est la direction du champ magnétique à l'intérieur d'un solénoïde infini d'axe $(Oz)$ ?",
+        "answers": [
+            "Orthoradiale $\\vec{u}_\\theta$",
+            "Radiale $\\vec{u}_r$",
+            "Axiale $\\vec{u}_z$",
+            "Nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Champ créé par un solénoïde",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-023",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est l'expression du champ magnétique à l'intérieur d'un solénoïde infini comportant $n$ spires par unité de longueur ?",
+        "answers": [
+            "$B = \\mu_0 N I$",
+            "$B = \\mu_0 \\frac{n}{I}$",
+            "$B = \\mu_0 n I$",
+            "$B = \\frac{\\mu_0 n I}{2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Champ créé par un solénoïde",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-024",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est la valeur du champ magnétique à l'extérieur d'un solénoïde infini idéal ?",
+        "answers": [
+            "$\\frac{\\mu_0 n I}{2}$",
+            "Nulle",
+            "$\\mu_0 n I$",
+            "Elle décroît en $1/r^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Champ créé par un solénoïde",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-025",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans un solénoïde réel de longueur finie, l'expression $B = \\mu_0 n I$ est une bonne approximation :",
+        "answers": [
+            "Près des extrémités",
+            "Au centre du solénoïde si $L \\gg R$",
+            "Partout à l'extérieur",
+            "Uniquement pour $r > R$"
+        ],
+        "difficulty": 2,
+        "chapter": "Champ créé par un solénoïde",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-026",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est la direction du champ magnétique dans une bobine torique d'axe $(Oz)$ ?",
+        "answers": [
+            "$\\vec{e}_z$",
+            "$\\vec{e}_r$",
+            "$\\vec{e}_\\theta$",
+            "$\\\\vec{0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Champ créé par une bobine torique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-027",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Pour une bobine torique de $N$ spires, le champ magnétique à l'intérieur du tore ($R_{int} < r < R_{ext}$) vaut :",
+        "answers": [
+            "$B = \\mu_0 n I$",
+            "$B = \\frac{\\mu_0 N I}{2\\pi r}$",
+            "$B = \\frac{\\mu_0 N I}{2\\pi R_{moyen}}$",
+            "$B = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Champ créé par une bobine torique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-028",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est l'expression de la force de Laplace élémentaire s'exerçant sur un élément de circuit filiforme $I\\vec{dl}$ ?",
+        "answers": [
+            "$d\\vec{F} = I\\vec{B} \\wedge \\vec{dl}$",
+            "$d\\vec{F} = q\\vec{v} \\wedge \\vec{B}$",
+            "$d\\vec{F} = I\\vec{dl} \\wedge \\vec{B}$",
+            "$d\\vec{F} = \\vec{j} \\wedge \\vec{B} d\\tau$"
+        ],
+        "difficulty": 1,
+        "chapter": "Force de Laplace",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-029",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "La force de Laplace totale exercée sur une portion de conducteur rectiligne de longueur $l$ parcourue par $I$ dans un champ $\\vec{B}$ uniforme est :",
+        "answers": [
+            "$\\vec{F} = I\\vec{l} \\cdot \\vec{B}$",
+            "$\\vec{F} = I\\vec{l} \\wedge \\vec{B}$",
+            "$\\vec{F} = \\vec{0}$",
+            "$\\vec{F} = IlB \\vec{u}_z$"
+        ],
+        "difficulty": 2,
+        "chapter": "Force de Laplace",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-030",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Comment s'exprime la force de Laplace volumique ?",
+        "answers": [
+            "$\\vec{f}_v = \\vec{j} \\wedge \\vec{B}$",
+            "$\\vec{f}_v = \\rho \\vec{E}$",
+            "$\\vec{f}_v = \\vec{j} \\cdot \\vec{B}$",
+            "$\\vec{f}_v = I\\vec{dl} \\wedge \\vec{B}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Force de Laplace",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-031",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Un aimant permanent a un champ de l'ordre de :",
+        "answers": [
+            "$10^{-4} \\text{ T}$",
+            "$0,1 \\text{ à } 1 \\text{ T}$",
+            "$100 \\text{ T}$",
+            "$10^6 \\text{ T}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Ordre de grandeur",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-032",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est l'unité de l'inductance $L$ ?",
+        "answers": [
+            "Le Tesla (T)",
+            "Le Henry (H)",
+            "Le Weber (Wb)",
+            "Le Farad (F)"
+        ],
+        "difficulty": 1,
+        "chapter": "Câble coaxial",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-033",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est la relation entre le flux $\\Phi$ et l'inductance $L$ d'un circuit parcouru par $I$ ?",
+        "answers": [
+            "$\\Phi = L/I$",
+            "$\\Phi = LI^2$",
+            "$\\Phi = LI$",
+            "$L = \\Phi I$"
+        ],
+        "difficulty": 1,
+        "chapter": "Solénoïde infini",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-034",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans l'Exercice 1, pour une conduction superficielle sur un cylindre de rayon $R$, que vaut le champ à l'intérieur ($r < R$) ?",
+        "answers": [
+            "$\\frac{\\mu_0 I}{2\\pi r}$",
+            "$\\frac{\\mu_0 I r}{2\\pi R^2}$",
+            "Nul",
+            "$\\mu_0 j_S$"
+        ],
+        "difficulty": 3,
+        "chapter": "Modèles de fils",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-035",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans l'Exercice 2 (Nappe de courants entre $z=-a/2$ et $z=a/2$), le plan $(xOy)$ est un plan de symétrie. Que vaut $\\vec{B}$ sur ce plan ?",
+        "answers": [
+            "$\\vec{B} = B_0 \\vec{u}_x$",
+            "$\\vec{B} = \\vec{0}$",
+            "$\\vec{B}$ est maximal",
+            "$\\vec{B} = \\mu_0 j a \\vec{u}_y$"
+        ],
+        "difficulty": 3,
+        "chapter": "Nappe de courants",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-036",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Pour la nappe de courants d'épaisseur $a$ et densité $\\vec{j} = j\\vec{u}_x$, quelle est la direction de $\\vec{B}$ ?",
+        "answers": [
+            "Selon $\\vec{u}_x$",
+            "Selon $\\vec{u}_y$",
+            "Selon $\\vec{u}_z$",
+            "Radiale"
+        ],
+        "difficulty": 3,
+        "chapter": "Nappe de courants",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-037",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est la parité de la fonction $B_y(z)$ pour la nappe de courants de l'exercice 2 ?",
+        "answers": [
+            "Paire",
+            "Impaire",
+            "Ni paire, ni impaire",
+            "Constante"
+        ],
+        "difficulty": 2,
+        "chapter": "Nappe de courants",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-038",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans l'exercice 3, le câble coaxial possède un courant $+I_0$ sur l'âme et $-I_0$ sur la gaine. Que vaut le champ pour $r > R_3$ ?",
+        "answers": [
+            "$\\frac{\\mu_0 I_0}{2\\pi r}$",
+            "$\\frac{\\mu_0 I_0}{\\pi r}$",
+            "Nul",
+            "Il dépend de l'épaisseur de la gaine"
+        ],
+        "difficulty": 2,
+        "chapter": "Câble coaxial",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-039",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est l'expression de l'énergie magnétique volumique ?",
+        "answers": [
+            "$w_m = \\frac{1}{2} LI^2$",
+            "$w_m = \\frac{B^2}{2\\mu_0}$",
+            "$w_m = \\frac{1}{2} \\mu_0 B^2$",
+            "$w_m = \\vec{j} \\cdot \\vec{A}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Câble coaxial",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-040",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Calculer l'inductance linéique $\\Lambda$ d'un câble coaxial entre les rayons $R_1$ et $R_2$ :",
+        "answers": [
+            "$\\Lambda = \\frac{\\mu_0}{2\\pi} \\ln(\\frac{R_2}{R_1})$",
+            "$\\Lambda = \\frac{\\mu_0}{4\\pi} \\frac{R_2}{R_1}$",
+            "$\\Lambda = \\frac{\\mu_0}{2\\pi} \\frac{1}{R_2-R_1}$",
+            "$\\Lambda = \\mu_0 \\pi R_1^2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Câble coaxial",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-041",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "D'après l'exercice 4, pourquoi refroidit-on le solénoïde du CERN à $-267^\\circ\\text{C}$ ?",
+        "answers": [
+            "Pour éviter que les câbles ne fondent par effet Joule",
+            "Pour permettre à la supraconductivité de s'établir",
+            "Pour augmenter la perméabilité du vide",
+            "Pour réduire la pression atmosphérique"
+        ],
+        "difficulty": 2,
+        "chapter": "Solénoïde infini",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-042",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quel est le champ magnétique produit par le solénoïde du CERN (Higgs) avec $nI \\approx 1.6 \\cdot 10^6 \\text{ A/m}$ ?",
+        "answers": [
+            "$0,4 \\text{ T}$",
+            "$4,0 \\text{ T}$",
+            "$40 \\text{ T}$",
+            "$0,04 \\text{ T}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Solénoïde infini",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-043",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Hall_effect.png",
+        "theme": "Magnétostatique",
+        "question": "Dans l'effet Hall, quelle est l'expression du champ de Hall $\\vec{E}_H$ en fonction de la densité de courant $\\vec{j}$ ?",
+        "answers": [
+            "$\\vec{E}_H = nq \\vec{j} \\wedge \\vec{B}$",
+            "$\\vec{E}_H = -\\frac{1}{nq} \\vec{j} \\wedge \\vec{B}$",
+            "$\\vec{E}_H = \\rho \\vec{v}$",
+            "$\\vec{E}_H = R_H (\\vec{j} \\cdot \\vec{B})$"
+        ],
+        "difficulty": 4,
+        "chapter": "Effet Hall",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-044",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est la relation entre la constante de Hall $R_H$ et la densité de porteurs $n$ ?",
+        "answers": [
+            "$R_H = nq$",
+            "$R_H = \\frac{1}{nq}$",
+            "$R_H = \\frac{\\mu_0}{nq}$",
+            "$R_H = -\\frac{nq}{B}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Effet Hall",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-045",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Pourquoi l'effet Hall est-il plus facile à mesurer dans un semi-conducteur que dans un conducteur métallique ?",
+        "answers": [
+            "Car $n$ est beaucoup plus faible, donc la tension de Hall $U_H$ est plus grande",
+            "Car les semi-conducteurs sont plus résistants",
+            "Car les électrons y vont plus vite",
+            "Il n'y a pas d'effet Hall dans les métaux"
+        ],
+        "difficulty": 3,
+        "chapter": "Effet Hall",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-046",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans l'exercice 6, quel est le lien vectoriel entre $\\vec{B}$, $\\vec{E}$ et $\\vec{v}$ pour un faisceau homocinétique ?",
+        "answers": [
+            "$\\vec{B} = c^2 (\\vec{v} \\wedge \\vec{E})$",
+            "$\\vec{B} = \\frac{1}{c^2} (\\vec{v} \\wedge \\vec{E})$",
+            "$\\vec{E} = \\vec{v} \\wedge \\vec{B}$",
+            "$\\vec{B} = \\mu_0 \\epsilon_0 \\vec{E}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Faisceau de particules",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-047",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "D'après l'exercice 8, pour un courant non-uniforme $j(r) = J_0(1-r^2/R^2)$, comment trouve-t-on $J_0$ ?",
+        "answers": [
+            "En utilisant $\\text{div}(\\vec{j}) = 0$",
+            "En intégrant $j(r)$ sur la section du fil : $I = \\int_0^R j(r) 2\\pi r dr$",
+            "Par application directe du théorème d'Ampère",
+            "$J_0 = I / (\\pi R^2)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Câble cylindrique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-048",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Que vaut $J_0$ en fonction de $I$ dans l'exercice 8 ?",
+        "answers": [
+            "$J_0 = \\frac{I}{\\pi R^2}$",
+            "$J_0 = \\frac{2I}{\\pi R^2}$",
+            "$J_0 = \\frac{4I}{\\pi R^2}$",
+            "$J_0 = \\frac{I}{2\\pi R^2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Câble cylindrique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-049",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "L'égalité $\\vec{\\text{rot}}(\\vec{B}) = \\mu_0 \\vec{j}$ est toujours vérifiée en magnétostatique. Si $\\vec{B}$ est uniforme dans une région, que peut-on dire du courant dans cette région ?",
+        "answers": [
+            "Il est uniforme également",
+            "Il est nul",
+            "Il est radial",
+            "Il est infini"
+        ],
+        "difficulty": 3,
+        "chapter": "Les équations de Maxwell",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-050",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle grandeur est conservée le long d'un tube de champ magnétique ?",
+        "answers": [
+            "La norme $B$",
+            "Le produit $B \\cdot S$ (flux magnétique élémentaire)",
+            "La densité de courant $j$",
+            "Le potentiel électrique $V$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conséquences sur le flux magnétique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-051",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est l'expression de l'inductance d'un solénoïde de longueur $l$, section $S$, avec $n$ spires par mètre ?",
+        "answers": [
+            "$L = \\mu_0 n S$",
+            "$L = \\mu_0 n^2 S l$",
+            "$L = \\mu_0 n I S$",
+            "$L = \\frac{\\mu_0 n S}{l}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Solénoïde infini",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-052",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans le cas d'un fil infini, le champ magnétique diverge en $r=0$. Pourquoi ?",
+        "answers": [
+            "C'est un phénomène physique réel",
+            "C'est un défaut de la modélisation filiforme pour $r \\to 0$",
+            "Car $\\mu_0$ devient infini",
+            "C'est dû à l'effet relativiste"
+        ],
+        "difficulty": 2,
+        "chapter": "Champ créé par un fil épais",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-053",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "L'intégrale $\\oint \\vec{B} \\cdot \\vec{dl}$ s'appelle :",
+        "answers": [
+            "Le flux de $\\vec{B}$",
+            "La circulation de $\\vec{B}$",
+            "La divergence de $\\vec{B}$",
+            "Le moment de $\\vec{B}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le théorème d'Ampère",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-054",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Un contour d'Ampère doit être :",
+        "answers": [
+            "Une surface ouverte",
+            "Une courbe fermée orientée",
+            "Un volume délimité",
+            "Une ligne de champ"
+        ],
+        "difficulty": 1,
+        "chapter": "Le théorème d'Ampère",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-055",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Comment détermine-t-on le signe du courant enlacé $I_{\\text{enlacé}}$ ?",
+        "answers": [
+            "Il est toujours positif",
+            "Par la règle de la main droite appliquée au contour",
+            "Selon le signe de la charge des porteurs",
+            "Il dépend du champ électrique"
+        ],
+        "difficulty": 2,
+        "chapter": "Le théorème d'Ampère",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-056",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Si la circulation de $\\vec{B}$ sur un contour est nulle, peut-on affirmer que $\\vec{B} = \\vec{0}$ partout ?",
+        "answers": [
+            "Oui, c'est le théorème d'Ampère",
+            "Non, cela signifie seulement que le courant net enlacé est nul",
+            "Oui, si le milieu est le vide",
+            "Seulement si le contour est un cercle"
+        ],
+        "difficulty": 2,
+        "chapter": "Le théorème d'Ampère",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-057",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Pour un cylindre infini, quelle invariance permet de dire que $\\vec{B}$ ne dépend pas de $z$ ?",
+        "answers": [
+            "Invariance par rotation autour de $(Oz)$",
+            "Invariance par translation selon $(Oz)$",
+            "Invariance par réflexion par rapport à $(xOy)$",
+            "Invariance de jauge"
+        ],
+        "difficulty": 1,
+        "chapter": "Symétries et invariances",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-058",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "En coordonnées cylindriques, si $\\vec{j} = j(r)\\vec{u}_z$, quelle est la direction de $\\vec{B}$ ?",
+        "answers": [
+            "$\\vec{u}_r$",
+            "$\\vec{u}_\\theta$",
+            "$\\vec{u}_z$",
+            "Nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Symétries et invariances",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-059",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Soit un plan de courant infini $(xOy)$ avec $\\vec{j}_s = j_s \\vec{u}_x$. Le champ $\\vec{B}$ juste au-dessus est :",
+        "answers": [
+            "Parallèle à $\\vec{u}_x$",
+            "Parallèle à $\\vec{u}_y$",
+            "Parallèle à $\\vec{u}_z$",
+            "Nul"
+        ],
+        "difficulty": 3,
+        "chapter": "Nappe de courants",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-060",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans l'Exercice 7 (Hall), que représente la constante $k$ ?",
+        "answers": [
+            "La conductivité électrique",
+            "Le coefficient de Hall $R_H$",
+            "La mobilité des porteurs",
+            "La perméabilité magnétique"
+        ],
+        "difficulty": 2,
+        "chapter": "Effet Hall",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-061",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est l'unité de la constante de Hall $R_H$ ?",
+        "answers": [
+            "$\\text{m}^3 \\cdot \\text{C}^{-1}$",
+            "$\\text{V} \\cdot \\text{T}^{-1}$",
+            "$\\text{A} \\cdot \\text{m}^{-2}$",
+            "$\\text{H} \\cdot \\text{m}^{-1}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Effet Hall",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-062",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est la relation entre le champ électrique $\\vec{E}$ et le potentiel $V$ (utilisée pour calculer $U_H$) ?",
+        "answers": [
+            "$\\vec{E} = \\text{grad}(V)$",
+            "$\\vec{E} = -\\text{grad}(V)$",
+            "$V = \\vec{E} \\cdot \\vec{dl}$",
+            "$\\text{div}(\\vec{E}) = V$"
+        ],
+        "difficulty": 1,
+        "chapter": "Effet Hall",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-063",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans le câble coaxial (Ex 3), l'inductance $L$ est-elle proportionnelle à la hauteur $h$ du câble ?",
+        "answers": [
+            "Oui",
+            "Non, elle est inversement proportionnelle",
+            "Elle est indépendante de $h$",
+            "Elle dépend de $h^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Câble coaxial",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-064",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "La capacité linéique $\\Gamma$ et l'inductance linéique $\\Lambda$ d'un câble coaxial vérifient :",
+        "answers": [
+            "$\\Gamma \\Lambda = 1$",
+            "$\\Gamma \\Lambda = \\epsilon_0 \\mu_0$",
+            "$\\Gamma / \\Lambda = c^2$",
+            "$\\Gamma \\Lambda = \\sqrt{\\epsilon_0 \\mu_0}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Câble coaxial",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-065",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est la vitesse de la lumière $c$ exprimée en fonction des constantes du vide ?",
+        "answers": [
+            "$c = \\sqrt{\\epsilon_0 \\mu_0}$",
+            "$c = 1 / \\sqrt{\\epsilon_0 \\mu_0}$",
+            "$c = \\epsilon_0 / \\mu_0$",
+            "$c = 1 / (\\epsilon_0 \\mu_0)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Câble coaxial",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-066",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans un solénoïde infini, si on double le nombre de spires par unité de longueur $n$ (à $I$ constant), le champ $B$ :",
+        "answers": [
+            "Reste le même",
+            "Est divisé par 2",
+            "Est doublé",
+            "Est quadruplé"
+        ],
+        "difficulty": 1,
+        "chapter": "Champ créé par un solénoïde",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-067",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Le champ magnétique à l'intérieur d'un tore est-il uniforme ?",
+        "answers": [
+            "Oui",
+            "Non, il décroît en $1/r$",
+            "Non, il croît avec $r$",
+            "Oui, si la section est carrée"
+        ],
+        "difficulty": 3,
+        "chapter": "Champ créé par une bobine torique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-068",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans le CERN (Ex 4), le champ est de $4\\text{ T}$. Si $I = 20000\\text{ A}$, quel est l'ordre de grandeur de $n$ ?",
+        "answers": [
+            "$10$ spires/m",
+            "$160$ spires/m",
+            "$1600$ spires/m",
+            "$1$ spire/m"
+        ],
+        "difficulty": 3,
+        "chapter": "Solénoïde infini",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-069",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quel théorème mathématique lie la circulation d'un vecteur sur un contour fermé au flux de son rotationnel ?",
+        "answers": [
+            "Théorème de Green-Ostrogradsky",
+            "Théorème de Stokes",
+            "Théorème de Gauss",
+            "Théorème d'Ampère"
+        ],
+        "difficulty": 2,
+        "chapter": "Le théorème d'Ampère",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-070",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle condition sur $\\vec{dl}$ facilite le calcul de $\\int \\vec{B} \\cdot \\vec{dl}$ ?",
+        "answers": [
+            "$\\vec{dl}$ perpendiculaire à $\\vec{B}$ partout",
+            "$\\vec{dl}$ colinéaire à $\\vec{B}$ et $B$ constant sur le contour",
+            "$\\vec{dl}$ dirigé selon $\\vec{u}_r$",
+            "$\\vec{dl} = \\vec{0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le théorème d'Ampère",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-071",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans l'Exercice 1, si le courant $I$ circule uniformément en volume dans un cylindre de rayon $R$, que vaut la densité $j$ ?",
+        "answers": [
+            "$j = I / (2\\pi R)$",
+            "$j = I / (\\pi R^2)$",
+            "$j = I / R$",
+            "$j = I / (\\pi R^3)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Modèles de fils",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-072",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Pour un fil épais, le champ $B(r)$ à l'extérieur ($r > R$) dépend-il de la répartition du courant à l'intérieur (tant que la symétrie cylindrique est respectée) ?",
+        "answers": [
+            "Oui, énormément",
+            "Non, il ne dépend que de l'intensité totale $I$",
+            "Uniquement si le courant est superficiel",
+            "Il dépend du matériau"
+        ],
+        "difficulty": 3,
+        "chapter": "Champ créé par un fil épais",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-073",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Que vaut la divergence du champ magnétique cré par un aimant ?",
+        "answers": [
+            "$\\\\mu_0 M$",
+            "Nulle partout",
+            "Positive au pôle Nord",
+            "Négative au pôle Sud"
+        ],
+        "difficulty": 2,
+        "chapter": "Les équations de Maxwell",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-074",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Une ligne de champ magnétique peut-elle se croiser elle-même ?",
+        "answers": [
+            "Oui, aux points de courant nul",
+            "Non, car le champ est défini de manière unique en chaque point",
+            "Uniquement dans les supraconducteurs",
+            "Oui, au centre d'une spire"
+        ],
+        "difficulty": 3,
+        "chapter": "Les lignes de champ",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-075",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Comment s'orientent les lignes de champ par rapport à un aimant permanent ?",
+        "answers": [
+            "Du Sud vers le Nord à l'extérieur",
+            "Du Nord vers le Sud à l'extérieur",
+            "Radialement vers l'extérieur",
+            "Elles ne sortent pas de l'aimant"
+        ],
+        "difficulty": 1,
+        "chapter": "Les lignes de champ",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-076",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans l'Exercice 2, quelle est la valeur de $B_y$ pour $z > a/2$ ?",
+        "answers": [
+            "$B_y = -\\mu_0 j z$",
+            "$B_y = -\\mu_0 j a/2$",
+            "$B_y = 0$",
+            "$B_y = \\mu_0 j a/2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Nappe de courants",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-077",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans l'Exercice 3, quelle intégrale permet de calculer l'énergie magnétique entre $R_1$ et $R_2$ ?",
+        "answers": [
+            "$\\int \\frac{B^2}{2\\mu_0} r dr d\\theta dz$",
+            "$\\int \\mu_0 I^2 dl$",
+            "$\\int \\frac{1}{2} j A d\\tau$",
+            "$\\int B dS$"
+        ],
+        "difficulty": 3,
+        "chapter": "Câble coaxial",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-078",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans un solénoïde, la circulation de $\\vec{B}$ sur un segment perpendiculaire à l'axe est :",
+        "answers": [
+            "Nulle car $\\vec{B}$ est parallèle à l'axe",
+            "Égale à $\\mu_0 I$",
+            "Égale à $B \\cdot L$",
+            "Maximale"
+        ],
+        "difficulty": 2,
+        "chapter": "Champ créé par un solénoïde",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-079",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Unité de la perméabilité $\\mu_0$ :",
+        "answers": [
+            "$\\text{H} \\cdot \\text{m}$",
+            "$\\text{H} \\cdot \\text{m}^{-1}$",
+            "$\\text{F} \\cdot \\text{m}^{-1}$",
+            "$\\text{T} \\cdot \\text{A}^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les équations de Maxwell",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-080",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Que vaut le champ magnétique au centre d'un solénoïde de longueur $L$ très petite devant son rayon ($L \\ll R$) ?",
+        "answers": [
+            "$\\mu_0 n I$",
+            "Il tend vers celui d'une spire unique",
+            "Il est nul",
+            "$\\mu_0 I / (2L)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Champ créé par un solénoïde",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-081",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "L'approximation du solénoïde infini consiste à négliger :",
+        "answers": [
+            "Le courant",
+            "Les effets de bord (extrémités)",
+            "Le rayon",
+            "La résistance du fil"
+        ],
+        "difficulty": 1,
+        "chapter": "Champ créé par un solénoïde",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-082",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est l'unité du flux magnétique $\\Phi$ ?",
+        "answers": [
+            "Le Tesla (T)",
+            "Le Weber (Wb)",
+            "Le Henry (H)",
+            "Le Joule (J)"
+        ],
+        "difficulty": 1,
+        "chapter": "Conséquences sur le flux magnétique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-083",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans le cas du faisceau de particules (Ex 6), que vaut la densité volumique de charge $\\rho$ ?",
+        "answers": [
+            "$\\rho = n / q$",
+            "$\\rho = nq$",
+            "$\\rho = nqv$",
+            "$\\rho = q / V$"
+        ],
+        "difficulty": 1,
+        "chapter": "Faisceau de particules",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-084",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quel est le champ électrique créé par un cylindre infini de rayon $R$ et charge $\\rho$ pour $r > R$ ?",
+        "answers": [
+            "$\\vec{E} = \\frac{\\rho R^2}{2\\epsilon_0 r} \\vec{u}_r$",
+            "$\\vec{E} = \\frac{\\rho r}{2\\epsilon_0} \\vec{u}_r$",
+            "$\\vec{E} = \\vec{0}$",
+            "$\\vec{E} = \\frac{\\rho R}{2\\epsilon_0} \\vec{u}_r$"
+        ],
+        "difficulty": 3,
+        "chapter": "Faisceau de particules",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-085",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "La relation $\\vec{B} = \\frac{1}{c^2} (\\vec{v} \\wedge \\vec{E})$ montre que pour $v \\ll c$ :",
+        "answers": [
+            "Le champ magnétique est dominant",
+            "Le champ magnétique est très faible devant $E/c$",
+            "Les deux champs sont égaux",
+            "La force électrique est nulle"
+        ],
+        "difficulty": 3,
+        "chapter": "Faisceau de particules",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-086",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est la dimension d'une plaque de semi-conducteur typique pour l'effet Hall (Ex 7) ?",
+        "answers": [
+            "Quelques mètres",
+            "Épaisseur de l'ordre du micromètre ($10 \\mu m$)",
+            "Épaisseur de $10 \\text{ cm}$",
+            "Indifférente"
+        ],
+        "difficulty": 2,
+        "chapter": "Effet Hall",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-087",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "La tension de Hall $U_H$ est proportionnelle à :",
+        "answers": [
+            "$B$ et $I$",
+            "$B^2$",
+            "$1/I$",
+            "La température"
+        ],
+        "difficulty": 2,
+        "chapter": "Effet Hall",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-088",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans l'Exercice 7, que se passe-t-il si on inverse le sens du courant $I$ ?",
+        "answers": [
+            "La tension de Hall reste la même",
+            "La tension de Hall change de signe",
+            "Le champ magnétique s'annule",
+            "La plaque chauffe"
+        ],
+        "difficulty": 2,
+        "chapter": "Effet Hall",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-089",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "L'effet Hall permet de déterminer :",
+        "answers": [
+            "Seulement la valeur de $B$",
+            "La valeur de $B$ et le signe des porteurs de charge",
+            "Seulement le courant $I$",
+            "La perméabilité du matériau"
+        ],
+        "difficulty": 2,
+        "chapter": "Effet Hall",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-090",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Pourquoi néglige-t-on le champ magnétique créé par le courant $I$ traversant la plaque dans l'effet Hall ?",
+        "answers": [
+            "Car il est nul par symétrie",
+            "Car il est très faible devant le champ extérieur $B$",
+            "Car il est parallèle à $\\vec{B}$",
+            "On ne le néglige jamais"
+        ],
+        "difficulty": 3,
+        "chapter": "Effet Hall",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-091",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans l'exercice 8, le rotationnel de $\\vec{B}$ donne $\\mu_0 \\vec{j}$. Si $\\vec{B} = B(r)\\vec{u}_\\theta$, quelle composante du rotationnel est non nulle ?",
+        "answers": [
+            "La composante selon $\\vec{u}_r$",
+            "La composante selon $\\vec{u}_\\theta$",
+            "La composante selon $\\vec{u}_z$",
+            "Toutes"
+        ],
+        "difficulty": 4,
+        "chapter": "Câble cylindrique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-092",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Le champ magnétique d'une étoile à neutrons est de l'ordre de :",
+        "answers": [
+            "$1 \\text{ T}$",
+            "$100 \\text{ T}$",
+            "$10^{11} \\text{ T}$",
+            "$10^{-10} \\text{ T}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Ordre de grandeur",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-093",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est l'expression de l'élément de volume $d\\tau$ en coordonnées cylindriques ?",
+        "answers": [
+            "$dr d\\theta dz$",
+            "$r dr d\\theta dz$",
+            "$r^2 \\sin\\theta dr d\\theta d\\phi$",
+            "$dx dy dz$"
+        ],
+        "difficulty": 1,
+        "chapter": "Câble coaxial",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-094",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Pour calculer l'inductance d'une bobine torique, on utilise $\\Phi = LI$. Le flux $\\Phi$ est celui à travers :",
+        "answers": [
+            "Une seule spire",
+            "Toutes les $N$ spires ($N \\Phi_{\\text{spire}}$)",
+            "La section du tore uniquement",
+            "Le contour d'Ampère"
+        ],
+        "difficulty": 3,
+        "chapter": "Bobine torique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-095",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Si un conducteur est parcouru par un courant alternatif haute fréquence, peut-on appliquer le théorème d'Ampère stationnaire ?",
+        "answers": [
+            "Oui, toujours",
+            "Non, il faut ajouter le courant de déplacement de Maxwell",
+            "Oui, si le fil est droit",
+            "Seulement dans le vide"
+        ],
+        "difficulty": 4,
+        "chapter": "Les équations de Maxwell",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-096",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans l'Exercice 4, le flux à travers une spire est $113\\text{ T}\\cdot\\text{m}^2$. Pour $N = 2120$, le flux total est environ :",
+        "answers": [
+            "$113 \\text{ T}\\cdot\\text{m}^2$",
+            "$2,4 \\cdot 10^5 \\text{ T}\\cdot\\text{m}^2$",
+            "$5 \\cdot 10^{-2} \\text{ T}\\cdot\\text{m}^2$",
+            "$2120 \\text{ T}\\cdot\\text{m}^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Solénoïde infini",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-097",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Une spire carrée de côté $a$ est dans un plan vertical. Le courant tourne dans le sens horaire. Le champ au centre est :",
+        "answers": [
+            "Vers le haut",
+            "Vers le bas",
+            "Entrant dans le plan",
+            "Sortant du plan"
+        ],
+        "difficulty": 2,
+        "chapter": "Les lignes de champ",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-098",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quelle est la valeur de $\\text{div}(\\vec{j})$ en régime stationnaire ?",
+        "answers": [
+            "$\\mu_0$",
+            "Nulle (conservation de la charge)",
+            "$\\rho / \\epsilon_0$",
+            "$\\vec{B} \\cdot \\vec{j}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les équations de Maxwell",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-099",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Dans le cas d'un fil infini, si on s'éloigne d'un facteur 2 ($r \\to 2r$), le champ $B$ est :",
+        "answers": [
+            "Divisé par 2",
+            "Divisé par 4",
+            "Inchangé",
+            "Doublé"
+        ],
+        "difficulty": 1,
+        "chapter": "Champ créé par un fil infiniment fin",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "mag-100",
+        "image_path": null,
+        "theme": "Magnétostatique",
+        "question": "Quel physicien a donné son nom au théorème reliant circulation de $\\vec{B}$ et courant ?",
+        "answers": [
+            "Maxwell",
+            "Ampère",
+            "Faraday",
+            "Lorentz"
+        ],
+        "difficulty": 1,
+        "chapter": "Le théorème d'Ampère",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    }
+]

@@ -1,0 +1,752 @@
+[
+    {
+        "uuid": "q1",
+        "image_path": null,
+        "theme": "Régime sinusoïdal",
+        "question": "Quelle est la définition de la valeur moyenne $S_m$ d'une grandeur physique dont la valeur instantanée est $s(t)$ de période $T$ ?  [cite: 8]",
+        "answers": [
+            "$S_{m}=\\frac{1}{T}\\int_{0}^{T}s(t)dt$ [cite: 10]",
+            "$S_{m}=\\sqrt{\\frac{1}{T}\\int_{0}^{T}s(t)dt}$",
+            "$S_{m}=\\int_{0}^{T}s(t)dt$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q2",
+        "image_path": null,
+        "theme": "Régime sinusoïdal",
+        "question": "Quelle est la définition de la valeur efficace $S_{eff}$ d'un signal $s(t)$ ? [cite: 9]",
+        "answers": [
+            "$S_{eff}=\\frac{1}{T}\\int_{0}^{T}s(t)dt$",
+            "$S_{eff}=\\sqrt{\\frac{1}{T}\\int_{0}^{T}s^{2}(t)dt}$ [cite: 10]",
+            "$S_{eff}=\\frac{S_{max}}{\\sqrt{2}}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q3",
+        "image_path": null,
+        "theme": "Régime sinusoïdal",
+        "question": "Pour un signal sinusoïdal $s(t)=S_{max}cos(\\omega t+\\varphi)$, que vaut la valeur moyenne $S_m$ ? [cite: 12]",
+        "answers": [
+            "$S_{m}=\\frac{S_{max}}{\\sqrt{2}}$",
+            "$S_{m}=S_{max}$",
+            "$S_{m}=0$ [cite: 13]"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q4",
+        "image_path": null,
+        "theme": "Régime sinusoïdal",
+        "question": "Pour un signal sinusoïdal $s(t)=S_{max}cos(\\omega t+\\varphi)$, que vaut la valeur efficace $S_{eff}$ ? [cite: 12]",
+        "answers": [
+            "$S_{eff}=0$",
+            "$S_{eff}=\\frac{S_{max}}{2}$",
+            "$S_{eff}=\\frac{S_{max}}{\\sqrt{2}}$ [cite: 14]"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q5",
+        "image_path": null,
+        "theme": "Régime sinusoïdal",
+        "question": "Que vaut la valeur moyenne $\\langle cos^2(\\omega t+\\varphi) \\rangle$ utilisée pour calculer la valeur efficace d'un signal sinusoïdal ? [cite: 16]",
+        "answers": [
+            "$\\frac{1}{2}$ [cite: 16]",
+            "$0$",
+            "$1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q6",
+        "image_path": null,
+        "theme": "Régime sinusoïdal",
+        "question": "Comment s'écrit la puissance instantanée $p(t)$ reçue par un dipôle électrique en convention récepteur ? [cite: 19]",
+        "answers": [
+            "$p(t)=u(t)+i(t)$",
+            "$p(t)=u(t)i(t)$ [cite: 20]",
+            "$p(t)=\\frac{u(t)}{i(t)}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q7",
+        "image_path": null,
+        "theme": "Régime sinusoïdal",
+        "question": "Comment s'écrit la puissance moyenne $\\mathcal{P}$ pour un dipôle recevant la tension $u(t)$ et le courant $i(t)$ ? [cite: 22]",
+        "answers": [
+            "$\\mathcal{P}=\\frac{1}{T}\\int_{0}^{T}u(t)dt \\int_{0}^{T}i(t)dt$",
+            "$\\mathcal{P}=\\frac{1}{T}\\int_{0}^{T}u(t)i(t)dt$ [cite: 23]",
+            "$\\mathcal{P}=U_{max}I_{max}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q8",
+        "image_path": null,
+        "theme": "Composants électriques",
+        "question": "À quoi correspond la puissance instantanée $p_c$ aux bornes d'un condensateur ? [cite: 31]",
+        "answers": [
+            "$p_c = \\frac{1}{2} C u^2$",
+            "$p_c = \\frac{d}{dt}(\\frac{1}{2}Cu^{2})$ [cite: 31]",
+            "$p_c = R i^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q9",
+        "image_path": null,
+        "theme": "Composants électriques",
+        "question": "Que vaut la puissance moyenne consommée par un condensateur alimenté en régime périodique ? [cite: 34]",
+        "answers": [
+            "$\\mathcal{P}_{c}=\\frac{1}{2}CU^2$",
+            "$\\mathcal{P}_{c}=0$ [cite: 35]",
+            "$\\mathcal{P}_{c}=RI_{eff}^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q10",
+        "image_path": null,
+        "theme": "Composants électriques",
+        "question": "À quoi correspond la puissance instantanée $p_L$ aux bornes d'une bobine ? [cite: 38]",
+        "answers": [
+            "$p_L = \\frac{d}{dt}(\\frac{1}{2}Li^{2})$ [cite: 38]",
+            "$p_L = \\frac{1}{2} L i^2$",
+            "$p_L = L \\frac{di}{dt}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q11",
+        "image_path": null,
+        "theme": "Composants électriques",
+        "question": "Que vaut la puissance moyenne consommée par une bobine alimentée en régime périodique ? [cite: 41]",
+        "answers": [
+            "$\\mathcal{P}_{L}=0$ [cite: 42]",
+            "$\\mathcal{P}_{L}=\\frac{1}{2}LI^2$",
+            "$\\mathcal{P}_{L}=U_{eff}I_{eff}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q12",
+        "image_path": null,
+        "theme": "Composants électriques",
+        "question": "Quelle est l'expression de la puissance moyenne consommée aux bornes d'une résistance ? [cite: 44]",
+        "answers": [
+            "$\\mathcal{P}_{R}=0$",
+            "$\\mathcal{P}_{R}=\\langle Ri^{2}\\rangle>0$ [cite: 45]",
+            "$\\mathcal{P}_{R}=Ri$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q13",
+        "image_path": null,
+        "theme": "Composants électriques",
+        "question": "Contrairement au condensateur et à la bobine, que fait la résistance en régime sinusoïdal ? [cite: 47]",
+        "answers": [
+            "Elle emmagasine de l'énergie magnétique.",
+            "Elle dissipe de l'énergie par effet Joule. [cite: 47]",
+            "Elle ne consomme aucune puissance moyenne."
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q14",
+        "image_path": null,
+        "theme": "Notation complexe",
+        "question": "Au signal réel $u(t)=U_{0}cos(\\omega t+\\varphi)$, quel signal complexe associe-t-on ? [cite: 57]",
+        "answers": [
+            "$\\underline{u}(t)=U_{0}e^{-j(\\omega t+\\varphi)}$",
+            "$\\underline{u}(t)=U_{0}e^{j(\\omega t+\\varphi)}$ [cite: 57]",
+            "$\\underline{u}(t)=U_{0}sin(\\omega t+\\varphi)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q15",
+        "image_path": null,
+        "theme": "Notation complexe",
+        "question": "Comment s'écrit l'amplitude complexe associée au signal $u(t)=U_{0}cos(\\omega t+\\varphi)$ ? [cite: 58]",
+        "answers": [
+            "$\\underline{U_{0}}=U_{0}e^{j\\omega t}$",
+            "$\\underline{U_{0}}=U_{0}e^{j\\varphi}$ [cite: 58]",
+            "$\\underline{U_{0}}=U_{0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q16",
+        "image_path": null,
+        "theme": "Impédance et admittance",
+        "question": "Comment s'écrit une impédance complexe $\\underline{Z}$ en fonction de la résistance R et de la réactance X ? [cite: 61]",
+        "answers": [
+            "$\\underline{Z}=R+jX$ [cite: 61]",
+            "$\\underline{Z}=X+jR$",
+            "$\\underline{Z}=R-jX$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q17",
+        "image_path": null,
+        "theme": "Impédance et admittance",
+        "question": "Comment est définie l'admittance complexe $\\underline{Y}$ ? [cite: 65]",
+        "answers": [
+            "$\\underline{Y}=\\underline{Z}$",
+            "$\\underline{Y}=\\frac{1}{\\underline{Z}}$ [cite: 69]",
+            "$\\underline{Y}=-\\underline{Z}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q18",
+        "image_path": null,
+        "theme": "Puissance en régime sinusoïdal",
+        "question": "La puissance moyenne reçue par un dipôle soumis à $u(t)$ et traversé par $i(t)$ dépend de la valeur moyenne de quel produit trigonométrique ? [cite: 77]",
+        "answers": [
+            "$cos(\\omega t)sin(\\omega t+\\varphi)$",
+            "$cos(\\omega t)cos(\\omega t+\\varphi)$ [cite: 77]",
+            "$sin(\\omega t)sin(\\omega t+\\varphi)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q19",
+        "image_path": null,
+        "theme": "Puissance en régime sinusoïdal",
+        "question": "Quelle est l'expression de la puissance moyenne consommée par un dipôle en régime sinusoïdal ? [cite: 83]",
+        "answers": [
+            "$\\mathcal{P}=U_{eff}I_{eff}$",
+            "$\\mathcal{P}=U_{eff}I_{eff}sin(\\varphi)$",
+            "$\\mathcal{P}=U_{eff}I_{eff}cos(\\varphi)$ [cite: 84]"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q20",
+        "image_path": null,
+        "theme": "Puissance en régime sinusoïdal",
+        "question": "Dans l'expression de la puissance moyenne $\\mathcal{P}=U_{eff}I_{eff}cos(\\varphi)$, comment appelle-t-on $cos(\\varphi)$ ? [cite: 85]",
+        "answers": [
+            "Le facteur de qualité",
+            "Le rendement",
+            "Le facteur de puissance [cite: 85]"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q21",
+        "image_path": null,
+        "theme": "Puissance en régime sinusoïdal",
+        "question": "Comment peut-on exprimer la puissance moyenne consommée en fonction de la partie réelle de l'impédance $\\underline{Z}$ ? [cite: 87]",
+        "answers": [
+            "$\\mathcal{P}=Re(\\underline{Z})U_{eff}^{2}$",
+            "$\\mathcal{P}=Re(\\underline{Z})I_{eff}^{2}$ [cite: 87]",
+            "$\\mathcal{P}=|\\underline{Z}|I_{eff}^{2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q22",
+        "image_path": null,
+        "theme": "Puissance en régime sinusoïdal",
+        "question": "Comment peut-on exprimer la puissance moyenne consommée en fonction de la partie réelle de l'admittance $\\underline{Y}$ ? [cite: 90]",
+        "answers": [
+            "$\\mathcal{P}=Re(\\underline{Y})U_{eff}^{2}$ [cite: 90]",
+            "$\\mathcal{P}=Re(\\underline{Y})I_{eff}^{2}$",
+            "$\\mathcal{P}=|\\underline{Y}|U_{eff}^{2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q23",
+        "image_path": null,
+        "theme": "Diagramme de Fresnel",
+        "question": "Que vaut le facteur de puissance $cos(\\varphi)$ pour les dipôles purement réactifs comme les bobines et les condensateurs ? [cite: 91]",
+        "answers": [
+            "$1$",
+            "$0$ [cite: 91]",
+            "$-1$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q24",
+        "image_path": null,
+        "theme": "Diagramme de Fresnel",
+        "question": "En notant $u(t)=u_{max}cos(\\omega t)$ et $i(t)=i_{max}cos(\\omega t-\\varphi)$, que signifie $\\varphi>0$ ?  [cite: 92]",
+        "answers": [
+            "u est en retard sur i",
+            "u est en avance sur i [cite: 92]",
+            "u et i sont en phase"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q25",
+        "image_path": null,
+        "theme": "Diagramme de Fresnel",
+        "question": "En quoi consiste le diagramme de Fresnel ? [cite: 94]",
+        "answers": [
+            "À représenter u et i dans le plan complexe [cite: 94]",
+            "À tracer l'évolution temporelle de la puissance",
+            "À représenter l'impédance en fonction de la fréquence"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q26",
+        "image_path": null,
+        "theme": "Diagramme de Fresnel",
+        "question": "Sachant que $\\underline{Z_{L}}=jL\\omega$, quel est l'argument $\\varphi=arg(\\underline{Z}_{L})$ pour une bobine idéale ? [cite: 98]",
+        "answers": [
+            "$-\\frac{\\pi}{2}$",
+            "$0$",
+            "$\\frac{\\pi}{2}$ [cite: 98]"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q27",
+        "image_path": null,
+        "theme": "Diagramme de Fresnel",
+        "question": "Sachant que $Z_{c}=\\frac{1}{jC\\omega}$, quel est l'argument $\\varphi=arg(\\underline{Z}_{c})$ pour un condensateur idéal ? [cite: 105]",
+        "answers": [
+            "$\\frac{\\pi}{2}$",
+            "$-\\frac{\\pi}{2}$ [cite: 105]",
+            "$0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q28",
+        "image_path": null,
+        "theme": "Diagramme de Fresnel",
+        "question": "Sachant que $\\underline{Z}_{R}=R$, quel est l'argument $\\varphi=arg(\\underline{Z}_{R})$ pour une résistance ? [cite: 112]",
+        "answers": [
+            "$\\frac{\\pi}{2}$",
+            "$0$ [cite: 112]",
+            "$\\pi$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q29",
+        "image_path": null,
+        "theme": "Diagramme de Fresnel",
+        "question": "Pour deux dipôles en parallèle dans un diagramme de Fresnel, à quoi sont proportionnels les courants ? [cite: 126]",
+        "answers": [
+            "Aux angles de déphasage",
+            "Aux longueurs des vecteurs du diagramme de Fresnel [cite: 126]",
+            "À la fréquence du signal"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q30",
+        "image_path": null,
+        "theme": "Puissance en régime sinusoïdal",
+        "question": "Comment s'écrit le courant efficace $I_{1eff}$ d'un dipôle en fonction de la puissance consommée $\\mathcal{P}_{1}$, de $U_{eff}$ et de son facteur de puissance $cos(\\varphi_{1})$ ? [cite: 143]",
+        "answers": [
+            "$I_{1eff}=\\mathcal{P}_{1} U_{eff} cos(\\varphi_{1})$",
+            "$I_{1eff}=\\frac{\\mathcal{P}_{1}}{U_{eff}cos(\\varphi_{1})}$ [cite: 143]",
+            "$I_{1eff}=\\frac{U_{eff}cos(\\varphi_{1})}{\\mathcal{P}_{1}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q31",
+        "image_path": null,
+        "theme": "Puissance en régime sinusoïdal",
+        "question": "Pour un moteur modélisé par une inductance L et une résistance R en série, comment s'écrit la puissance moyenne reçue $\\mathcal{P}$ ? [cite: 154, 161]",
+        "answers": [
+            "$\\mathcal{P}=U_{eff}I_{eff}sin(\\varphi)$",
+            "$\\mathcal{P}=U_{eff}I_{eff}cos(\\varphi)$ [cite: 161]",
+            "$\\mathcal{P}=\\frac{U_{eff}I_{eff}}{cos(\\varphi)}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q32",
+        "image_path": null,
+        "theme": "Puissance en régime sinusoïdal",
+        "question": "Pour un moteur (inductance L et résistance R) consommant une puissance de 1,2 kW sous une tension de 220 V avec un courant de 8,0 A, quel est son facteur de puissance ? [cite: 159, 160, 196]",
+        "answers": [
+            "$0,68$ [cite: 196]",
+            "$0,85$",
+            "$1,00$"
+        ],
+        "difficulty": 3,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q33",
+        "image_path": null,
+        "theme": "Composants électriques",
+        "question": "Dans le modèle d'un moteur RL série, que vaut la puissance moyenne $\\mathcal{P}_{L}$ consommée par la bobine ? [cite: 198, 199]",
+        "answers": [
+            "$\\mathcal{P}_{L}=LI_{eff}^{2}$",
+            "$\\mathcal{P}_{L}=0$ [cite: 199]",
+            "$\\mathcal{P}_{L}=\\frac{1}{2}LI_{max}^{2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q34",
+        "image_path": null,
+        "theme": "Composants électriques",
+        "question": "Dans le modèle d'un moteur RL série, d'où provient l'intégralité de la puissance électrique moyenne dissipée ? [cite: 200]",
+        "answers": [
+            "De la résistance R ($\\mathcal{P}_{R}=R.I_{eff}^{2}$) [cite: 200]",
+            "De l'inductance L",
+            "De l'interaction entre L et R"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q35",
+        "image_path": null,
+        "theme": "Impédance et admittance",
+        "question": "Pour un moteur modélisé par R et L en série, comment s'exprime le module de l'impédance $|\\underline{Z}|$ ? [cite: 206]",
+        "answers": [
+            "$|\\underline{Z}|=R+L\\omega$",
+            "$|\\underline{Z}|=\\sqrt{R^{2}+L^{2}\\omega^{2}}$ [cite: 206]",
+            "$|\\underline{Z}|=\\sqrt{R^{2}-L^{2}\\omega^{2}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q36",
+        "image_path": null,
+        "theme": "Impédance et admittance",
+        "question": "Comment s'écrit le module de l'impédance $|\\underline{Z}|$ en fonction des valeurs efficaces de la tension et du courant ? [cite: 205]",
+        "answers": [
+            "$|\\underline{Z}|=\\frac{U}{I_{eff}}$ [cite: 205]",
+            "$|\\underline{Z}|=U I_{eff}$",
+            "$|\\underline{Z}|=\\sqrt{U I_{eff}}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q37",
+        "image_path": null,
+        "theme": "Impédance et admittance",
+        "question": "Si l'on place un condensateur C en parallèle d'un dipôle d'impédance $R+jL\\omega$, quelle est l'admittance totale $Y_T$ ? [cite: 210]",
+        "answers": [
+            "$Y_{T}=jC\\omega+\\frac{1}{R+jL\\omega}$ [cite: 210]",
+            "$Y_{T}=\\frac{1}{jC\\omega}+R+jL\\omega$",
+            "$Y_{T}=jC\\omega+(R+jL\\omega)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q38",
+        "image_path": null,
+        "theme": "Relèvement du facteur de puissance",
+        "question": "Quelle condition sur l'admittance complexe $Y_T$ permet d'obtenir un facteur de puissance unitaire ($\\varphi=0$) ?  [cite: 212]",
+        "answers": [
+            "$Re(Y_T)=0$",
+            "$Im(Y_T)=0$ (c'est-à-dire $Y_T \\in \\mathbb{R}$) [cite: 212]",
+            "$|Y_T|=1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q39",
+        "image_path": null,
+        "theme": "Relèvement du facteur de puissance",
+        "question": "Quel est l'intérêt principal de placer un condensateur en parallèle avec une installation inductive (moteur) ? [cite: 192, 217]",
+        "answers": [
+            "Diminuer la tension efficace du réseau",
+            "Rapprocher le facteur de puissance de 1 ($\\cos(\\varphi)=1$) pour minimiser les pertes en ligne [cite: 217]",
+            "Augmenter la puissance active consommée par le moteur"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q40",
+        "image_path": null,
+        "theme": "Transfert de puissance maximal",
+        "question": "Pour un générateur de f.e.m $E$ et de résistance interne $R_0$ relié à un résistor $R$, quelle est l'expression de la puissance moyenne $P(R)$ dissipée dans $R$ ? [cite: 249]",
+        "answers": [
+            "$P(R)=R\\frac{E^2}{R_0^2}$",
+            "$P(R)=R\\frac{E^{2}}{(R+R_{0})^{2}}$ [cite: 249]",
+            "$P(R)=(R+R_0)\\frac{E^2}{R^2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q41",
+        "image_path": null,
+        "theme": "Transfert de puissance maximal",
+        "question": "Pour quelle valeur de $R$ la puissance dissipée $P(R)$ par un générateur (f.e.m $E$, résistance interne $R_0$) est-elle maximale ? [cite: 254]",
+        "answers": [
+            "$R=0$",
+            "$R=R_0/2$",
+            "$R=R_0$ [cite: 254]"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q42",
+        "image_path": null,
+        "theme": "Transfert de puissance maximal",
+        "question": "Si on insère une bobine d'inductance $L$ en série avec $R$ sur le générateur $E$ avec $R_0$, pour quelle valeur de $R$ la puissance est-elle maximale ? [cite: 259]",
+        "answers": [
+            "$R_{m}'=R_0$",
+            "$R_{m}'=\\sqrt{R_{0}^{2}+(L\\omega)^{2}}$ [cite: 259]",
+            "$R_{m}'=L\\omega$"
+        ],
+        "difficulty": 4,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q43",
+        "image_path": null,
+        "theme": "Quadripôles et transformateurs",
+        "question": "Pour un transformateur parfait dont les facteurs de puissance primaire et secondaire valent 1, que peut-on dire des puissances moyennes ? [cite: 241, 260]",
+        "answers": [
+            "$P_1 = P_2$ [cite: 260]",
+            "$P_2 = m P_1$",
+            "$P_1 = m P_2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q44",
+        "image_path": null,
+        "theme": "Quadripôles et transformateurs",
+        "question": "Si un transformateur parfait a un rapport de transformation $m=\\frac{U_2}{U_1}$, quel est le rapport des courants efficaces $\\frac{I_2}{I_1}$ ? [cite: 243, 261]",
+        "answers": [
+            "$\\frac{1}{m}$ [cite: 261]",
+            "$m$",
+            "$m^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q45",
+        "image_path": null,
+        "theme": "Quadripôles et transformateurs",
+        "question": "Quelle est l'impédance équivalente (résistance) ramenée au primaire d'un transformateur parfait de rapport $m$ chargé par une résistance $R$ ? [cite: 269]",
+        "answers": [
+            "$m R$",
+            "$\\frac{R}{m}$",
+            "$\\frac{R}{m^2}$ [cite: 269]"
+        ],
+        "difficulty": 3,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q46",
+        "image_path": null,
+        "theme": "Rendement",
+        "question": "Qu'appelle-t-on le rendement d'un moteur électrique ? [cite: 276]",
+        "answers": [
+            "Le rapport de la puissance mécanique utile à la puissance électrique active absorbée [cite: 276]",
+            "Le rapport de la puissance réactive à la puissance apparente",
+            "Le rapport de l'énergie thermique dissipée à la puissance utile"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q47",
+        "image_path": null,
+        "theme": "Bilan de puissance",
+        "question": "Lorsqu'on associe plusieurs dipôles en parallèle, que dit la loi des nœuds pour les courants complexes ? [cite: 283]",
+        "answers": [
+            "$\\underline{I}=\\underline{I_1}\\times\\underline{I_2}$",
+            "$\\underline{I}=\\underline{I_1}+\\underline{I_2}+\\underline{I_3}$ [cite: 283]",
+            "$\\underline{I}=|\\underline{I_1}|+|\\underline{I_2}|$"
+        ],
+        "difficulty": 1,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q48",
+        "image_path": null,
+        "theme": "Bilan de puissance",
+        "question": "Comment s'écrit la conservation de la composante active du courant total pour une installation avec plusieurs dipôles en parallèle ? [cite: 295]",
+        "answers": [
+            "$I~cos~\\varphi=I_{1}cos~\\varphi_{1}+I_{2}cos~\\varphi_{2}+I_{3}$ [cite: 295]",
+            "$I=I_{1}+I_{2}+I_{3}$",
+            "$I~sin~\\varphi=I_{1}sin~\\varphi_{1}+I_{2}sin~\\varphi_{2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q49",
+        "image_path": null,
+        "theme": "Relèvement du facteur de puissance",
+        "question": "Lorsqu'on ajoute une batterie de condensateurs pour relever le facteur de puissance d'une installation de $\\cos(\\varphi)$ à $\\cos(\\varphi')$, que se passe-t-il avec la composante active du courant ? [cite: 301]",
+        "answers": [
+            "Elle augmente",
+            "Elle diminue",
+            "Elle reste constante ($I~cos~\\varphi=I^{\\prime}cos~\\varphi^{\\prime}$) [cite: 301]"
+        ],
+        "difficulty": 3,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q50",
+        "image_path": null,
+        "theme": "Relèvement du facteur de puissance",
+        "question": "Dans le théorème de Boucherot (déduit du bilan des courants complexes), pour annuler la puissance réactive d'une installation inductive avec un condensateur, quelle relation relie $C$, la tension $U$ et la composante réactive du courant $I\\sin\\varphi$ ? [cite: 325]",
+        "answers": [
+            "$C=\\frac{I~cos~\\varphi}{\\omega U}$",
+            "$C=\\frac{I~sin~\\varphi}{\\omega U}=\\frac{I\\sqrt{1-cos^2\\varphi}}{\\omega U}$ [cite: 325]",
+            "$C=\\frac{\\omega U}{I~sin~\\varphi}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Puissance électrique en régime sinusoïdale",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    }
+]

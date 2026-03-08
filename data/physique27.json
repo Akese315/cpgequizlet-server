@@ -1,0 +1,324 @@
+{
+    "quizs": [
+        {
+            "uuid": "q001",
+            "image_path": null,
+            "theme": "conversion de puissance",
+            "question": "Qu'est-ce qu'un contacteur électromagnétique, également appelé relais ? [cite: 7, 12]",
+            "answers": [
+                "Un circuit ferromagnétique fixe muni d'un bobinage et d'une partie mobile en translation [cite: 7]",
+                "Un transformateur parfait permettant d'abaisser la tension",
+                "Un dispositif purement mécanique sans bobinage",
+                "Un circuit électrique permettant de stocker de l'énergie de manière capacitive"
+            ],
+            "difficulty": 1,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q002",
+            "image_path": null,
+            "theme": "conversion de puissance",
+            "question": "Dans le modèle du relais présenté, quel est l'état de l'interrupteur au repos (sans tension dans la bobine) ? [cite: 16, 17, 19]",
+            "answers": [
+                "Fermé, car un ressort maintient le contact [cite: 16, 17]",
+                "Ouvert, car la force électromagnétique est nulle [cite: 19]",
+                "Fermé, grâce à la force électromagnétique rémanente",
+                "Ouvert, car le circuit ferromagnétique attire la partie mobile"
+            ],
+            "difficulty": 2,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q003",
+            "image_path": null,
+            "theme": "conversion de puissance",
+            "question": "Comment s'ouvre l'interrupteur du contacteur étudié ? [cite: 18, 19]",
+            "answers": [
+                "L'application d'une tension crée une force qui ouvre l'interrupteur [cite: 19]",
+                "La coupure du courant permet au ressort d'ouvrir l'interrupteur",
+                "L'application d'une tension chauffe un bilame qui s'ouvre",
+                "Un opérateur mécanique doit tirer sur l'actionneur"
+            ],
+            "difficulty": 1,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q004",
+            "image_path": null,
+            "theme": "électromagnétisme",
+            "question": "Pour un milieu magnétique linéaire, quelle est l'expression de la force électromagnétique $\\vec{F}$ s'exerçant sur la partie mobile (déplacement selon x) à courant $i$ constant ? [cite: 22, 24, 25]",
+            "answers": [
+                "$\\vec{F} = (\\frac{\\partial\\mathcal{E}_{em}}{\\partial x})_{i}\\vec{u}_{x}$ [cite: 25]",
+                "$\\vec{F} = -(\\frac{\\partial\\mathcal{E}_{em}}{\\partial x})_{i}\\vec{u}_{x}$",
+                "$\\vec{F} = (\\frac{\\partial\\mathcal{E}_{em}}{\\partial i})_{x}\\vec{u}_{x}$",
+                "$\\vec{F} = \\frac{1}{2} L i^2 \\vec{u}_{x}$"
+            ],
+            "difficulty": 3,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q005",
+            "image_path": null,
+            "theme": "magnétostatique",
+            "question": "Quel théorème est utilisé pour lier le champ magnétique $\\vec{H}$, l'intensité $i$ et le nombre de spires $N$ dans le circuit ? [cite: 40, 43]",
+            "answers": [
+                "Le théorème d'Ampère : $\\oint\\vec{H}\\cdot\\vec{dl} = Ni$ [cite: 40, 43]",
+                "La loi de Biot et Savart : $dB = \\frac{\\mu_0 i \\vec{dl} \\wedge \\vec{u}}{4\\pi r^2}$",
+                "Le théorème de Gauss : $\\iint\\vec{B}\\cdot d\\vec{S} = 0$",
+                "La loi de Faraday : $e = -\\frac{d\\Phi}{dt}$"
+            ],
+            "difficulty": 2,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q006",
+            "image_path": null,
+            "theme": "magnétostatique",
+            "question": "Que traduit l'équation $\\iint\\vec{B}\\cdot d\\vec{S} = cste$ dans l'étude du circuit magnétique ? [cite: 42, 43]",
+            "answers": [
+                "La conservation du flux magnétique le long du tube de champ [cite: 42]",
+                "Le théorème d'Ampère généralisé",
+                "La saturation du matériau ferromagnétique",
+                "L'absence de pertes par courants de Foucault"
+            ],
+            "difficulty": 2,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q007",
+            "image_path": null,
+            "theme": "magnétostatique",
+            "question": "Lors de l'évaluation du champ dans l'air $\\vec{B}_{a}$, on suppose la perméabilité relative du ferromagnétique $\\mu_{r} \\gg 1$. Quelle conséquence cela a-t-il sur l'expression issue du théorème d'Ampère ? [cite: 49, 50, 51]",
+            "answers": [
+                "Les termes en $1/\\mu_{r}$ sont négligés, menant à $B_{a} = \\frac{\\mu_{0}Ni}{2e}$ [cite: 50, 51]",
+                "Le champ dans l'air devient nul car le flux reste confiné dans le fer",
+                "Le champ dans le ferromagnétique devient prédominant dans le calcul de la réluctance",
+                "L'inductance devient indépendante de l'entrefer $e$"
+            ],
+            "difficulty": 4,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q008",
+            "image_path": null,
+            "theme": "électromagnétisme",
+            "question": "Comment s'exprime le flux magnétique total $\\Phi^{\\prime}$ traversant les $N$ spires de la bobine en fonction de l'inductance $L$ et du courant $i$ ? [cite: 54, 55]",
+            "answers": [
+                "$\\Phi^{\\prime} = Li$ [cite: 55]",
+                "$\\Phi^{\\prime} = \\frac{1}{2}Li^2$",
+                "$\\Phi^{\\prime} = NLi$",
+                "$\\Phi^{\\prime} = \\frac{L}{i}$"
+            ],
+            "difficulty": 1,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q009",
+            "image_path": null,
+            "theme": "électromagnétisme",
+            "question": "Pour le relais du cours (noyau de section carrée de côté $a$, entrefer $2e$), quelle est l'expression de l'inductance $L(x)$ ? [cite: 56, 57]",
+            "answers": [
+                "$L = \\frac{\\mu_{0}N^{2}ax}{2e}$ [cite: 57]",
+                "$L = \\frac{\\mu_{0}N^{2}a^{2}}{2e}$",
+                "$L = \\frac{\\mu_{0}Nax}{e}$",
+                "$L = \\frac{\\mu_{0}N^{2}e}{2ax}$"
+            ],
+            "difficulty": 3,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q010",
+            "image_path": null,
+            "theme": "conversion de puissance",
+            "question": "En utilisant l'énergie électromagnétique $\\mathcal{E}_{em} = \\frac{1}{2}Li^{2}$, quelle est l'intensité de la force $\\vec{F}$ exercée sur la partie mobile dans le cours ? [cite: 66, 67]",
+            "answers": [
+                "$F = \\frac{\\mu_{0}aN^{2}i^{2}}{4e}$ [cite: 67]",
+                "$F = \\frac{\\mu_{0}aN^{2}i^{2}}{2e}$",
+                "$F = -\\frac{\\mu_{0}aN^{2}i^{2}}{4e^{2}}$",
+                "$F = \\frac{\\mu_{0}N^{2}i}{2e}$"
+            ],
+            "difficulty": 4,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q011",
+            "image_path": null,
+            "theme": "conversion de puissance",
+            "question": "Dans l'Exercice 1 du TD, comment exprime-t-on l'énergie magnétique $E_{mag}$ emmagasinée par la bobine en fonction du flux $\\Phi$ à travers une section ? [cite: 77, 90]",
+            "answers": [
+                "$E_{mag} = \\frac{1}{2}N\\Phi i$ [cite: 90]",
+                "$E_{mag} = \\frac{1}{2}\\Phi i$",
+                "$E_{mag} = N\\Phi i$",
+                "$E_{mag} = \\frac{N^2\\Phi^2}{2L}$"
+            ],
+            "difficulty": 2,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q012",
+            "image_path": null,
+            "theme": "magnétostatique",
+            "question": "Dans l'Exercice 1 du TD, on cherche l'intensité de la force de rappel en fonction de l'entrefer $e$. L'inductance s'écrivant $L = \\frac{\\mu_{0}N^{2}S}{2e}$, que vaut la norme de cette force ? [cite: 98, 99]",
+            "answers": [
+                "$F = \\frac{\\mu_{0}N^{2}SI^{2}}{4e^{2}}$ [cite: 99]",
+                "$F = \\frac{\\mu_{0}N^{2}SI^{2}}{2e}$",
+                "$F = \\frac{\\mu_{0}N^{2}SI^{2}}{2e^{2}}$",
+                "$F = -\\frac{\\mu_{0}N^{2}SI^{2}}{4e^{2}}$"
+            ],
+            "difficulty": 4,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q013",
+            "image_path": null,
+            "theme": "conversion de puissance",
+            "question": "Dans l'Exercice 2 (Pièce à soulever), le circuit est composé d'un noyau (perméabilité $\\mu_{r1}$, longueur $l_{1}$) et d'une pièce (perméabilité $\\mu_{r2}$, longueur $l_{2}$). Quelle est l'expression du champ $B$ ? [cite: 103, 114, 127]",
+            "answers": [
+                "$B = \\frac{\\mu_{0}NI}{2e + \\frac{l_{1}}{\\mu_{r1}} + \\frac{l_{2}}{\\mu_{r2}}}$ [cite: 127]",
+                "$B = \\frac{\\mu_{0}NI}{2e}$",
+                "$B = \\frac{\\mu_{0}NI}{e + \\frac{l_{1}}{\\mu_{r1}} + \\frac{l_{2}}{\\mu_{r2}}}$",
+                "$B = \\frac{\\mu_{0}\\mu_{r1}\\mu_{r2}NI}{2e + l_1 + l_2}$"
+            ],
+            "difficulty": 4,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q014",
+            "image_path": null,
+            "theme": "mécanique",
+            "question": "Dans l'Exercice 2 du TD, comment évolue l'épaisseur de l'entrefer $e$ à l'équilibre si la masse de la pièce à soulever augmente ? [cite: 116, 132]",
+            "answers": [
+                "L'entrefer $e$ doit diminuer car la force électromagnétique requise est plus grande [cite: 132]",
+                "L'entrefer $e$ doit augmenter pour emmagasiner plus d'énergie",
+                "L'entrefer $e$ reste constant, c'est le courant $I$ qui s'adapte automatiquement",
+                "L'entrefer $e$ diminue car la perméabilité de l'air augmente avec la masse"
+            ],
+            "difficulty": 3,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q015",
+            "image_path": null,
+            "theme": "mécanique",
+            "question": "Dans l'Exercice 2 du TD, à quelle condition la force de levage de l'électroaimant est-elle maximale ? [cite: 117, 135]",
+            "answers": [
+                "Lorsque l'entrefer est nul ($e=0$) [cite: 135]",
+                "Lorsque l'entrefer est infini ($e \\to \\infty$)",
+                "Lorsque la pièce à soulever a la même longueur que le noyau ($l_1 = l_2$)",
+                "Lorsque l'inductance est minimale"
+            ],
+            "difficulty": 2,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q016",
+            "image_path": null,
+            "theme": "magnétostatique",
+            "question": "Dans l'Exercice 2 du TD, l'électroaimant est sans effet sur l'aluminium. Pourquoi ? [cite: 120, 147]",
+            "answers": [
+                "L'aluminium est paramagnétique : il présente une très faible aimantation dans le sens du champ [cite: 147]",
+                "L'aluminium est diamagnétique : il s'oppose fortement au champ",
+                "L'aluminium est ferromagnétique mais sa température de Curie est dépassée",
+                "L'aluminium est un isolant électrique parfait"
+            ],
+            "difficulty": 3,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q017",
+            "image_path": null,
+            "theme": "magnétostatique",
+            "question": "Dans l'Exercice 2 du TD, l'électroaimant soulève l'acier mais pas le cuivre. Quelle propriété magnétique caractérise le cuivre ? [cite: 120, 148]",
+            "answers": [
+                "Le cuivre est diamagnétique : faible aimantation dans le sens opposé au champ [cite: 148]",
+                "Le cuivre est ferromagnétique doux",
+                "Le cuivre est paramagnétique : forte aimantation dans le sens du champ",
+                "Le cuivre ne possède aucun électron libre"
+            ],
+            "difficulty": 3,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q018",
+            "image_path": null,
+            "theme": "magnétostatique",
+            "question": "Quelle est l'unité de l'inductance $L$ dans le Système International ? [cite: 55, 56]",
+            "answers": [
+                "Le Henry (H)",
+                "Le Tesla (T)",
+                "Le Weber (Wb)",
+                "Le Farad (F)"
+            ],
+            "difficulty": 1,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q019",
+            "image_path": null,
+            "theme": "magnétostatique",
+            "question": "Dans les hypothèses de l'Exercice 1, que peut-on dire du champ magnétique aux interfaces ferromagnétique/air ? [cite: 39, 94]",
+            "answers": [
+                "On néglige les effets de bord, la section traversée $S$ est conservée et $B_e = B$ [cite: 39, 94]",
+                "Le champ double d'intensité dans l'air à cause de la faible perméabilité",
+                "Les lignes de champ se dispersent massivement, la conservation du flux est inapplicable",
+                "Le champ devient exclusivement tangentiel aux interfaces"
+            ],
+            "difficulty": 3,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        },
+        {
+            "uuid": "q020",
+            "image_path": null,
+            "theme": "conversion de puissance",
+            "question": "D'après les résultats de l'Exercice 1, comment la force d'attraction $F$ dépend-elle du courant $I$ ? [cite: 99]",
+            "answers": [
+                "La force est proportionnelle au carré du courant ($I^2$) [cite: 99]",
+                "La force est proportionnelle à la racine carrée du courant ($\\sqrt{I}$)",
+                "La force est proportionnelle au courant ($I$)",
+                "La force est inversement proportionnelle au courant ($1/I$)"
+            ],
+            "difficulty": 2,
+            "chapter": "Conversion électro-magnéto-mécanique",
+            "correct_answer_index": 0,
+            "subject": "physique"
+        }
+    ]
+}

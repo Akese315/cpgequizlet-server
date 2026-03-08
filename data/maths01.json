@@ -1,0 +1,1517 @@
+[
+    {
+        "uuid": "e98a123a-5678-4001-a1b2-c3d4e5f6g7h8",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $\\sum u_n$ une série convergente de somme $S$. Comment définit-on le reste d'ordre $n$, noté $R_n$ ?",
+        "answers": [
+            "$R_n = \\sum_{k=0}^{n} u_k$",
+            "$R_n = \\sum_{k=n}^{+\\infty} u_k$",
+            "$R_n = \\sum_{k=n+1}^{+\\infty} u_k$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "d12c3b4a-1111-4222-b333-c444d555e666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la limite de la suite des restes $(R_n)$ d'une série convergente ?",
+        "answers": [
+            "La somme de la série $S$",
+            "0",
+            "Elle n'existe pas forcément"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "f23d4e5f-2222-4333-c444-d555e666f777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si la série $\\sum u_n$ converge, que peut-on affirmer sur la suite $(u_n)$ ?",
+        "answers": [
+            "Elle est décroissante",
+            "Elle tend vers 0",
+            "Elle est positive"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "a34e5f6g-3333-4444-d555-e666f777g888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Comment appelle-t-on une série dont le terme général $u_n$ ne tend pas vers 0 ?",
+        "answers": [
+            "Une série absolument divergente",
+            "Une série grossièrement divergente",
+            "Une série alternée"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "b45f6g7h-4444-4555-e666-f777g888h999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de la série harmonique $\\sum_{n\\ge 1} \\frac{1}{n}$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "Absolument convergente"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "c56g7h8i-5555-4666-f777-g888h999i000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $q \\in \\mathbb{C}$. A quelle condition la série géométrique $\\sum q^n$ converge-t-elle ?",
+        "answers": [
+            "$|q| \\le 1$",
+            "$|q| < 1$",
+            "$q \\neq 1$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "d67h8i9j-6666-4777-g888-h999i000j111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $|q| < 1$, quelle est la somme de la série $\\sum_{n=0}^{+\\infty} q^n$ ?",
+        "answers": [
+            "$\\frac{1}{1-q}$",
+            "$\\frac{q}{1-q}$",
+            "$\\frac{1}{q-1}$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "e78i9j0k-7777-4888-h999-i000j111k222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = v_{n+1} - v_n$. La série $\\sum u_n$ converge si et seulement si :",
+        "answers": [
+            "La suite $(v_n)$ est bornée",
+            "La suite $(v_n)$ converge",
+            "La suite $(u_n)$ tend vers 0"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "f89j0k1l-8888-4999-i000-j111k222l333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la somme de la série télescopique $\\sum_{n=0}^{+\\infty} (v_{n+1} - v_n)$ si $(v_n)$ converge vers $L$ ?",
+        "answers": [
+            "$L$",
+            "$L - v_0$",
+            "$v_0 - L$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "g90k1l2m-9999-5000-j111-k222l333m444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soient $\\sum u_n$ convergente et $\\sum v_n$ divergente. Quelle est la nature de $\\sum (u_n + v_n)$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "On ne peut pas conclure"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "h01l2m3n-0000-5111-k222-l333m444n555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Une série à termes complexes $\\sum u_n$ converge si et seulement si :",
+        "answers": [
+            "$\\sum |u_n|$ converge",
+            "$\\sum Re(u_n)$ et $\\sum Im(u_n)$ convergent",
+            "$|u_n| \\to 0$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "i12m3n4o-1111-5222-l333-m444n555o666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la définition d'une série alternée ?",
+        "answers": [
+            "$u_n$ change de signe à chaque rang",
+            "$(-1)^n u_n$ est de signe constant",
+            "$(u_n)$ est une suite de signes alternés qui tend vers 0"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "j23n4o5p-2222-5333-m444-n555o666p777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelles sont les trois hypothèses du Critère Spécial des Séries Alternées (CSSA) pour $\\sum (-1)^n v_n$ ?",
+        "answers": [
+            "$v_n \\ge 0$, $(v_n)$ décroissante, $v_n \\to 0$",
+            "$(v_n)$ décroissante, $v_n \\to 0$",
+            "$v_n \\ge 0$, $v_n \\to 0$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "k34o5p6q-3333-5444-n555-o666p777q888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Sous les hypothèses du CSSA, que peut-on dire du reste $R_n$ ?",
+        "answers": [
+            "$|R_n| \\le v_n$",
+            "$|R_n| \\le v_{n+1}$",
+            "$R_n$ est du signe de $(-1)^n$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "l45p6q7r-4444-5555-o666-p777q888r999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\frac{(-1)^n}{n^\\alpha}$ avec $\\alpha > 0$. Cette série est toujours :",
+        "answers": [
+            "Absolument convergente",
+            "Convergente",
+            "Divergente"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "m56q7r8s-5555-5666-p777-q888r999s000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Dans la règle de d'Alembert, si $L = \\lim |u_{n+1}/u_n| = 1$, que conclut-on ?",
+        "answers": [
+            "La série converge",
+            "La série diverge",
+            "On ne peut pas conclure"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "n67r8s9t-6666-5777-q888-r999s000t111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la limite de $|u_{n+1}/u_n|$ pour la série $\\sum \\frac{z^n}{n!}$ ($z \\neq 0$) ?",
+        "answers": [
+            "$|z|$",
+            "0",
+            "$+\\infty$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "o78s9t0u-7777-5888-r999-s000t111u222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "D'après la formule de Stirling, quel est l'équivalent de $n!$ en $+\\infty$ ?",
+        "answers": [
+            "$n^n e^{-n} \\sqrt{2\\pi n}$",
+            "$(\\frac{n}{e})^n$",
+            "$n^n e^n \\sqrt{2\\pi n}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "p89t0u1v-8888-5999-s000-t111u222v333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Pour une série à termes positifs, la suite des sommes partielles est :",
+        "answers": [
+            "Décroissante",
+            "Croissante",
+            "Monotone si $u_n \\to 0$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q90u1v2w-9999-6000-t111-u222v333w444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $0 \\le u_n \\le v_n$ et $\\sum u_n$ diverge, alors :",
+        "answers": [
+            "$\\sum v_n$ converge",
+            "$\\sum v_n$ diverge",
+            "On ne peut pas conclure"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "r01v2w3x-0000-6111-u222-v333w444x555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $u_n \\sim v_n$ avec $u_n, v_n > 0$, que peut-on dire des séries $\\sum u_n$ et $\\sum v_n$ ?",
+        "answers": [
+            "Elles ont les mêmes sommes",
+            "Elles sont de même nature",
+            "L'une peut converger et l'autre diverger"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "s12w3x4y-1111-6222-v333-w444x555y666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $f$ une fonction continue par morceaux, positive et décroissante sur $[0, +\\infty[$. La série $\\sum f(n)$ converge si et seulement si :",
+        "answers": [
+            "$f(t) \\to 0$",
+            "$\\int_0^x f(t) dt$ possède une limite finie en $+\\infty$",
+            "$\\int_0^n f(t) dt \\to 0$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "t23x4y5z-2222-6333-w444-x555y666z777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la condition de convergence pour une série de Riemann $\\sum \\frac{1}{n^\\alpha}$ ?",
+        "answers": [
+            "$\\alpha \\ge 1$",
+            "$\\alpha > 1$",
+            "$\\alpha > 0$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "u34y5z6a-3333-6444-x555-y666z777a888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit la série de Bertrand $\\sum \\frac{1}{n(\\ln n)^\\alpha}$ ($n \\ge 2$). Elle converge si et seulement si :",
+        "answers": [
+            "$\\alpha > 1$",
+            "$\\alpha \\ge 1$",
+            "$\\alpha > 0$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "v45z6a7b-4444-6555-y666-z777a888b999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la définition de la constante d'Euler $\\gamma$ ?",
+        "answers": [
+            "$\\lim_{n\\to+\\infty} (\\sum_{k=1}^n \\frac{1}{k} - \\ln n)$",
+            "$\\sum_{n=1}^{+\\infty} \\frac{1}{n}$",
+            "$\\lim_{n\\to+\\infty} (\\sum_{k=1}^n \\frac{1}{k^2})$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "w56a7b8c-5555-6666-z777-a888b999c000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $\\lim_{n\\to+\\infty} n^2 u_n = 0$ et $u_n \\ge 0$, alors $\\sum u_n$ :",
+        "answers": [
+            "Converge",
+            "Diverge",
+            "Est de même nature que $\\sum 1/n$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "x67b8c9d-6666-6777-a888-b999c000d111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $\\lim_{n\\to+\\infty} n u_n = 1$ et $u_n \\ge 0$, alors $\\sum u_n$ :",
+        "answers": [
+            "Converge",
+            "Diverge",
+            "Converge absolument"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "y78c9d0e-7777-6888-b999-c000d111e222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Toute série absolument convergente est :",
+        "answers": [
+            "Divergente",
+            "Convergente",
+            "Alternée"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "z89d0e1f-8888-6999-c000-d111e222f333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\frac{(-1)^n}{\\sqrt{n}}$. Cette série est :",
+        "answers": [
+            "Absolument convergente",
+            "Semi-convergente (convergente mais pas absolument)",
+            "Grossièrement divergente"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "a90e1f2g-9999-7000-d111-e222f333g444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $\\sum w_n$ le produit de Cauchy de $\\sum u_n$ et $\\sum v_n$. Quelle est l'expression de $w_n$ ?",
+        "answers": [
+            "$w_n = u_n v_n$",
+            "$w_n = \\sum_{p=0}^n u_p v_{n-p}$",
+            "$w_n = \\sum_{p=0}^n u_p v_p$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "b01f2g3h-0000-7111-e222-f333g444h555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Le théorème sur le produit de Cauchy garantit la convergence de $\\sum w_n$ si :",
+        "answers": [
+            "Les deux séries $\\sum u_n$ et $\\sum v_n$ convergent",
+            "Les deux séries $\\sum u_n$ et $\\sum v_n$ convergent absolument",
+            "Une des deux séries au moins converge"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "c12g3h4i-1111-7222-f333-g444h555i666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $p \\in ]-1, 1[$. En utilisant le produit de Cauchy de $\\sum p^n$ par elle-même, on obtient $\\sum_{n=0}^{+\\infty} (n+1)p^n = $",
+        "answers": [
+            "$\\frac{1}{1-p}$",
+            "$\\frac{1}{(1-p)^2}$",
+            "$\\frac{p}{(1-p)^2}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "d23h4i5j-2222-7333-g444-h555i666j777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Nature de $\\sum \\ln(1 + \\frac{(-1)^n}{n^\\alpha})$ pour $\\alpha > 1$ ?",
+        "answers": [
+            "Convergente car $u_n \\sim \\frac{(-1)^n}{n^\\alpha}$",
+            "Absolument convergente par comparaison",
+            "Divergente"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "e34i5j6k-3333-7444-h555-i666j777k888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Nature de $\\sum \\ln(1 + \\frac{(-1)^n}{n^\\alpha})$ pour $1/2 < \\alpha \\le 1$ ?",
+        "answers": [
+            "Absolument convergente",
+            "Convergente (étudier $u_n$ par un DL)",
+            "Divergente"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "f45j6k7l-4444-7555-i666-j777k888l999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Nature de $\\sum \\ln(1 + \\frac{(-1)^n}{n^\\alpha})$ pour $0 < \\alpha \\le 1/2$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente car le terme de second ordre du DL diverge",
+            "Grossièrement divergente"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "g56k7l8m-5555-7666-j777-k222l333m444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $x \\in \\mathbb{R}\\backslash\\mathbb{N}$. Nature de $\\sum \\frac{(-1)^n}{n-x}$ ?",
+        "answers": [
+            "Divergente car $u_n \\sim \\frac{(-1)^n}{n}$",
+            "Convergente par le CSSA à partir d'un certain rang",
+            "Absolument convergente"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "h67l8m9n-6666-7777-k222-l333m444n555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Pour la série $\\sum \\frac{x^n}{\\binom{2n}{n}}$, le rayon de convergence par d'Alembert est :",
+        "answers": [
+            "1",
+            "4",
+            "$\\infty$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "i78m9n0o-7777-7888-l333-m444n555o666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\sum_{k=1}^{n-1} \\frac{1}{\\sqrt{k(n-k)}}$. Quelle est la limite de $u_n$ ?",
+        "answers": [
+            "0",
+            "$\\pi$",
+            "$+\\infty$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "j89n0o1p-8888-7999-m444-n555o666p777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $u_n$ et $v_n$ sont les termes généraux de deux séries alternées telles que $u_n \\sim v_n$, peut-on affirmer qu'elles sont de même nature ?",
+        "answers": [
+            "Oui, comme pour les séries à termes positifs",
+            "Non, c'est un piège classique",
+            "Seulement si elles convergent absolument"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "k90o1p2q-9999-8000-n555-o666p777q888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $v_n = \\frac{(-1)^n}{\\sqrt{n} + (-1)^{n+1}}$. Le CSSA s'applique-t-il directement ?",
+        "answers": [
+            "Oui, elle est alternée et tend vers 0",
+            "Non, car la suite $(|v_n|)$ n'est pas monotone",
+            "Non, car elle n'est pas alternée"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "l01p2q3r-0000-8111-o666-p777q888r999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\cos(\\pi \\sqrt{n^2+n+1})$. Quelle est la nature de $\\sum u_n$ ?",
+        "answers": [
+            "Divergente grossièrement",
+            "Convergente par le CSSA après développement de l'argument",
+            "Absolument convergente"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "m12q3r4s-1111-8222-p777-q888r999s000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quel est l'équivalent du reste $R_n$ pour la série de Riemann convergente $\\sum \\frac{1}{n^2}$ ?",
+        "answers": [
+            "$\\frac{1}{n}$",
+            "$\\frac{1}{2n^2}$",
+            "$\\frac{1}{n^2}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "n23r4s5t-2222-8333-q888-r999s000t111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $u_n \\le v_n \\le w_n$ et $\\sum u_n$, $\\sum w_n$ convergent, alors $\\sum v_n$ :",
+        "answers": [
+            "Diverge",
+            "Converge",
+            "On ne peut pas savoir car $v_n$ n'est pas forcément positive"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "o34s5t6u-3333-8444-r999-s000t111u222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $S_n = \\sum_{k=0}^n u_k$ avec $u_k > 0$ et $\\sum u_n$ divergente. Quelle est la nature de $\\sum \\frac{u_n}{S_n^2}$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "Cela dépend de $u_n$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "p45t6u7v-4444-8555-s000-t111u222v333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la somme de $\\sum_{n=1}^{+\\infty} \\frac{1}{n(n+1)}$ ?",
+        "answers": [
+            "1",
+            "0",
+            "$\\pi^2/6$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q56u7v8w-5555-8666-t111-u222v333w444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\frac{1}{n^2}$. Que vaut $\\sum_{n=1}^{+\\infty} (u_{n+1}-u_n)$ ?",
+        "answers": [
+            "0",
+            "-1",
+            "1"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "r67v8w9x-6666-8777-u222-v333w444x555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "L'inégalité triangulaire pour les séries absolument convergentes s'écrit :",
+        "answers": [
+            "$|\\sum u_n| \\le \\sum |u_n|$",
+            "$\\sum |u_n| \\le |\\sum u_n|$",
+            "$|\\sum u_n| = \\sum |u_n|$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "s78w9x0y-7777-8888-v333-w444x555y666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Une suite $(u_n)$ est décroissante et tend vers 0. On pose $S_n$ la somme partielle d'une série alternée. Les suites $(S_{2n})$ et $(S_{2n+1})$ sont :",
+        "answers": [
+            "Adjacentes",
+            "Divergentes",
+            "Égales"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "t89x0y1z-8888-8999-w444-x555y666z777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = (-1)^n v_n$ vérifiant le CSSA. La somme $S$ est toujours comprise entre :",
+        "answers": [
+            "$S_{2n}$ et $S_{2n+1}$",
+            "$0$ et $u_0$",
+            "Les deux réponses précédentes sont correctes"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "u90y1z2a-9999-9000-x555-y666z777a888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $u_n = O(1/n^2)$, alors $\\sum u_n$ est :",
+        "answers": [
+            "Absolument convergente",
+            "Divergente",
+            "Semi-convergente"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "v01z2a3b-0000-9111-y666-z777a888b999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Nature de $\\sum e^{-n}$ ?",
+        "answers": [
+            "Convergente (série géométrique)",
+            "Divergente grossièrement",
+            "Divergente par Riemann"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "w12a3b4c-1111-9222-z777-a888b999c000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de $\\sum e^{-n^2}$ ?",
+        "answers": [
+            "Divergente",
+            "Convergente car $e^{-n^2} = o(1/n^2)$",
+            "Semi-convergente"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "x23b4c5d-2222-9333-a888-b999c000d111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\frac{n!}{n^n}$. En utilisant d'Alembert, la limite de $u_{n+1}/u_n$ est :",
+        "answers": [
+            "1",
+            "$1/e$",
+            "0"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "y34c5d6e-3333-9444-b999-c000d111e222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $\\sum u_n$ est une série à termes positifs convergente, que dire de $\\sum u_n^2$ ?",
+        "answers": [
+            "Elle converge forcément",
+            "Elle diverge forcément",
+            "On ne peut pas conclure"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "z45d6e7f-4444-9555-c000-d111e222f333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "La série $\\sum \\frac{\\sin n}{n^2}$ est :",
+        "answers": [
+            "Absolument convergente",
+            "Semi-convergente",
+            "Divergente"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "a56e7f8g-5555-9666-d111-e222f333g444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Pour la série $\\sum \\frac{(-1)^n}{\\sqrt{n}}$, le signe du reste $R_n$ est celui de :",
+        "answers": [
+            "$(-1)^n$",
+            "$(-1)^{n+1}$",
+            "Constant"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "b67f8g9h-6666-9777-e222-f333g444h555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Nature de $\\sum \\frac{1}{n \\ln n}$ ?",
+        "answers": [
+            "Convergente par comparaison intégrale",
+            "Divergente par comparaison intégrale",
+            "Convergente car $1/(n \\ln n) \\to 0$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "c78g9h0i-7777-9888-f333-g444h555i666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n$ une suite positive telle que $u_n \\sim \\frac{1}{n^2}$. Alors $\\sum_{k=n+1}^{+\\infty} u_k \\sim$ :",
+        "answers": [
+            "$1/n$",
+            "$1/n^2$",
+            "$1/(2n)$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "d89h0i1j-8888-9999-g444-h555i666j777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $u_{n+1} = \\frac{1}{2} \\arctan(u_n)$ avec $u_0 > 0$, alors $u_n$ est équivalent à :",
+        "answers": [
+            "$l/2^n$",
+            "$l/n$",
+            "$l \\cdot n$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "e90i1j2k-9999-0000-h555-i666j777k888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Le produit de Cauchy de $\\sum \\frac{(-1)^n}{\\sqrt{n+1}}$ par elle-même :",
+        "answers": [
+            "Converge",
+            "Diverge (le terme général $w_n$ ne tend pas vers 0)",
+            "Est absolument convergent"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "f01j2k3l-0000-1111-i666-j777k888l999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n$ décroissante vers 0 telle que $u_{n+1} \\sim u_n$ et $u_n - u_{n+1}$ est décroissante. Un équivalent du reste alterné $R_n = \\sum_{k=n+1}^{+\\infty} (-1)^k u_k$ est :",
+        "answers": [
+            "$(-1)^{n+1} u_n$",
+            "$(-1)^{n+1} \\frac{u_n}{2}$",
+            "$(-1)^{n+1} \\frac{u_{n+1}}{2}$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "g12k3l4m-1111-2222-j777-k888l999m000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "La série $\\sum \\frac{(-1)^n}{n}$ converge vers :",
+        "answers": [
+            "$\\ln 2$",
+            "$-\\ln 2$",
+            "1"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "h23l4m5n-2222-3333-k888-l999m000n111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $\\sum u_n$ est absolument convergente, alors $\\sum \\cos(u_n)$ :",
+        "answers": [
+            "Converge",
+            "Diverge grossièrement car $\\cos(u_n) \\to 1$",
+            "Converge absolument"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "i34m5n6o-3333-4444-l999-m000n111o222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de $\\sum \\frac{n^2}{2^n}$ ?",
+        "answers": [
+            "Convergente par d'Alembert ($L=1/2$)",
+            "Divergente par Riemann",
+            "Divergente grossièrement"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "j45n6o7p-4444-5555-m000-n111o222p333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\sqrt{n+1} - \\sqrt{n}$. La série $\\sum u_n$ :",
+        "answers": [
+            "Converge car $u_n \\to 0$",
+            "Diverge (télescopique)",
+            "Converge vers 0"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "k56o7p8q-5555-6666-n111-o222p333q444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\frac{1}{\\sqrt{n+1}} - \\frac{1}{\\sqrt{n}}$. La série $\\sum u_n$ :",
+        "answers": [
+            "Converge car $u_n \\sim -1/(2n\\sqrt{n})$",
+            "Diverge",
+            "Converge vers 1"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "l67p8q9r-6666-7777-o222-p333q444r555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Nature de $\\sum \\ln(1 + 1/n)$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente car $\\ln(1+1/n) \\sim 1/n$",
+            "Absolument convergente"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "m78q9r0s-7777-8888-p333-q444r555s666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "La série $\\sum_{n\\ge 2} \\frac{1}{n(\\ln n)^2}$ est :",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "Grossièrement divergente"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "n89r0s1t-8888-9999-q444-r555s666t777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n \\ge 0$. Si $\\sum u_n$ converge, alors $\\sum \\ln(1+u_n)$ :",
+        "answers": [
+            "Converge",
+            "Diverge",
+            "On ne peut pas conclure"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "o90s1t2u-9999-0000-r555-s666t777u888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $u_n = (-1)^n/n$, alors $\\sum u_n^2$ :",
+        "answers": [
+            "Converge",
+            "Diverge",
+            "Est semi-convergente"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "p01t2u3v-0000-1111-s666-t777u888v999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Une série $\\sum u_n$ à termes positifs diverge. Quelle est la limite de ses sommes partielles ?",
+        "answers": [
+            "Un nombre réel $L$",
+            "$+\\infty$",
+            "Elle n'a pas de limite"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q12u3v4w-1111-2222-t777-u888v999w000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\frac{2}{n(n+2)}$. La somme $\\sum_{n=1}^{+\\infty} u_n$ vaut :",
+        "answers": [
+            "3/2",
+            "1",
+            "2"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "r23v4w5x-2222-3333-u888-v999w000x111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Pour étudier $\\sum_{n\\ge 2} \\frac{1}{n \\ln n}$, on utilise la fonction $f(t) = 1/(t \\ln t)$. Une primitive est :",
+        "answers": [
+            "$\\ln(t)$",
+            "$\\ln(\\ln t)$",
+            "$-1/(\\ln t)$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "s34w5x6y-3333-4444-v999-w000x111y222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de $\\sum \\frac{\\cos n}{n}$ ?",
+        "answers": [
+            "Absolument convergente",
+            "Divergente",
+            "Convergente (mais pas absolument)"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "t45x6y7z-4444-5555-w000-x111y222z333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\frac{(-1)^n}{\\sqrt{n} + (-1)^n}$. Cette série est :",
+        "answers": [
+            "Convergente par CSSA",
+            "Divergente (faire un DL)",
+            "Absolument convergente"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "u56y7z8a-5555-6666-x111-y222z333a444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Le reste d'ordre $n$ d'une série de Riemann convergente $\\sum 1/k^\\alpha$ ($\\alpha > 1$) est équivalent à :",
+        "answers": [
+            "$\\frac{1}{(\\alpha-1)n^{\\alpha-1}}$",
+            "$\\frac{1}{n^\\alpha}$",
+            "$\\frac{1}{\\alpha n^{\\alpha}}$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "v67z8a9b-6666-7777-y222-z333a444b555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Nature de $\\sum_{n\\ge 1} (n \\ln(1+1/n) - \\cos(1/\\sqrt{n}))$ ?",
+        "answers": [
+            "Convergente (terme général en $O(1/n^2)$)",
+            "Divergente grossièrement",
+            "Divergente car en $O(1/n)$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "w78a9b0c-7777-8888-z333-a444b555c666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $\\alpha \\le 0$. Nature de $\\sum e^{-n^\\alpha}$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente grossièrement",
+            "Divergente par Riemann"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "x89b0c1d-8888-9999-a444-b555c666d777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $u_n = o(1/n)$, peut-on affirmer que $\\sum u_n$ converge ?",
+        "answers": [
+            "Oui",
+            "Non (contre-exemple : $1/(n \\ln n)$)",
+            "Seulement si $u_n$ est positive"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "y90c1d2e-9999-0000-b555-c666d777e888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $1/n = o(u_n)$, alors $\\sum u_n$ :",
+        "answers": [
+            "Converge",
+            "Diverge",
+            "On ne peut pas conclure"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "z01d2e3f-0000-1111-c666-d777e888f999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "La série $\\sum \\frac{1}{1+2^n}$ est convergente par comparaison avec :",
+        "answers": [
+            "La série harmonique",
+            "Une série géométrique de raison 1/2",
+            "Une série de Riemann"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "a12e3f4g-1111-2222-d777-e888f999g000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n$ une suite positive telle que $\\sum u_n$ converge. Nature de $\\sum \\frac{u_n}{1+u_n}$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "Semi-convergente"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "b23f4g5h-2222-3333-e888-f999g000h111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Pour une série alternée $\\sum (-1)^n u_n$ (avec $u_n$ décroissant vers 0), les sommes partielles $S_n$ vérifient :",
+        "answers": [
+            "$|S_n| \\le u_0$",
+            "$S_n$ est du signe de $u_0$",
+            "Les deux réponses sont correctes"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "c34g5h6i-3333-4444-f999-g000h111i222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $\\sum u_n$ converge, que dire de $\\sum u_n^3$ ?",
+        "answers": [
+            "Converge forcément",
+            "Pas forcément (vrai seulement si convergence absolue)",
+            "Diverge forcément"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "d45h6i7j-4444-5555-g000-h111i222j333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "La série $\\sum \\frac{(-1)^n}{n^2 + (-1)^n}$ est :",
+        "answers": [
+            "Absolument convergente",
+            "Divergente",
+            "Semi-convergente"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "e56i7j8k-5555-6666-h111-i222j333k444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $u_n \\sim \\frac{1}{n}$ et $u_n > 0$, alors $S_n = \\sum_{k=1}^n u_k$ est équivalent à :",
+        "answers": [
+            "$\\ln n$",
+            "$1/n^2$",
+            "$n$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "f67j8k9l-6666-7777-i222-j333k444l555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "La série $\\sum_{n\\ge 1} \\frac{1}{n^\\alpha}$ converge si et seulement si l'intégrale $\\int_1^{+\\infty} \\frac{dt}{t^\\alpha}$ :",
+        "answers": [
+            "Converge",
+            "Diverge",
+            "Vaut 1"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "g78k9l0m-7777-8888-j333-k444l555m666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de $\\sum \\frac{\\ln n}{n^{1.1}}$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "Grossièrement divergente"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "h89l0m1n-8888-9999-k444-l555m666n777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = 1/(1+2+...+n)$. Cette série converge car :",
+        "answers": [
+            "$u_n \\sim 2/n^2$",
+            "$u_n \\sim 1/n$",
+            "$u_n$ est alternée"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "i90m1n2o-9999-0000-l555-m666n777o888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "La série $\\sum \\frac{i^n}{n^2}$ est :",
+        "answers": [
+            "Absolument convergente",
+            "Divergente",
+            "Semi-convergente"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "j01n2o3p-0000-1111-m666-n777o888p999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = v_n + w_n$ avec $\\sum v_n$ convergente. $\\sum u_n$ et $\\sum w_n$ :",
+        "answers": [
+            "Sont de même nature",
+            "Sont toujours divergentes",
+            "On ne peut pas conclure"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "k12o3p4q-1111-2222-n777-o888p999q000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Nature de $\\sum \\frac{1}{n^2 \\ln n}$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "Semi-convergente"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "l23p4q5r-2222-3333-o888-p999q000r111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $l = \\lim |u_{n+1}/u_n| > 1$, alors la série $\\sum u_n$ :",
+        "answers": [
+            "Diverge grossièrement",
+            "Converge",
+            "Est semi-convergente"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "m34q5r6s-3333-4444-p999-q000r111s222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "La série $\\sum \\frac{2^n}{n+3}$ :",
+        "answers": [
+            "Diverge par d'Alembert ($L=2$)",
+            "Converge",
+            "Est de même nature que $\\sum 1/n$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "n45r6s7t-4444-5555-q000-r111s222t333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Un équivalent de $\\binom{2n}{n}$ est :",
+        "answers": [
+            "$\\frac{4^n}{\\sqrt{\\pi n}}$",
+            "$2^n$",
+            "$n^n$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "o56s7t8u-5555-6666-r111-s222t333u444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $u_n = (-1)^n$, la série $\\sum u_n$ :",
+        "answers": [
+            "Diverge grossièrement",
+            "Converge vers 0",
+            "Est semi-convergente"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "p67t7u8v-6666-7777-s222-t333u444v555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Pour une série convergente, $S_n + R_n$ est égal à :",
+        "answers": [
+            "La somme $S$",
+            "$u_n$",
+            "0"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q78u8v9w-7777-8888-t333-u444v555w666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "La somme $\\sum_{n=0}^{+\\infty} \\frac{1}{n!}$ vaut :",
+        "answers": [
+            "$e$",
+            "1",
+            "$\\pi$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "r89v9w0x-8888-9999-u444-v555w666x777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $u_n$ est complexe, la convergence de $\\sum |u_n|$ s'appelle :",
+        "answers": [
+            "Convergence absolue",
+            "Convergence uniforme",
+            "Semi-convergence"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "s90w0x1y-9999-0000-v555-w666x777y888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quel est l'équivalent de $u_n = \\frac{n^n}{n!}$ d'après Stirling ?",
+        "answers": [
+            "$\\frac{e^n}{\\sqrt{2\\pi n}}$",
+            "$e^n$",
+            "$\\sqrt{n}$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "t01x1y2z-0000-1111-w666-x777y888z999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "La série $\\sum (\\sqrt{n+1} - \\sqrt{n} - \\frac{1}{2\\sqrt{n}})$ :",
+        "answers": [
+            "Converge",
+            "Diverge",
+            "Diverge grossièrement"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    }
+]

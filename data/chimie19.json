@@ -1,0 +1,1602 @@
+[
+    {
+        "uuid": "proc-ind-001",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/b/be/CSTR_Ideal.svg",
+        "theme": "génie chimique",
+        "question": "Dans un réacteur continu parfaitement agité (RCPA), quelle est la relation entre la concentration d'une espèce en tout point du réacteur ($C_{réac}$) et sa concentration en sortie ($C_s$) ?",
+        "answers": [
+            "$C_{réac} > C_s$",
+            "$C_{réac} = C_s$",
+            "$C_{réac} < C_s$",
+            "Il n'y a pas de relation car la concentration dépend de la position"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-002",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Plug_flow_reactor_model.svg",
+        "theme": "génie chimique",
+        "question": "Comment modélise-t-on le déplacement de la matière dans un réacteur piston (RP) idéal ?",
+        "answers": [
+            "Par un mélange instantané et total",
+            "Par des tranches parallèles qui n'échangent pas de matière entre elles",
+            "Par une diffusion turbulente vers l'arrière",
+            "Par une stagnation de la matière au centre"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-003",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Quelle est la définition du temps de passage $\\tau$ pour un réacteur de volume $V$ traversé par un débit volumique $D_v$ ?",
+        "answers": [
+            "$\\tau = V \\times D_v$",
+            "$\\tau = \\frac{D_v}{V}$",
+            "$\\tau = \\frac{V}{D_v}$",
+            "$\\tau = \\frac{1}{V \\cdot D_v}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-004",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "En régime stationnaire, quelle est la valeur du débit d'accumulation $\\frac{dn_A}{dt}$ dans un réacteur ouvert ?",
+        "answers": [
+            "$\\frac{dn_A}{dt} = F_e - F_s$",
+            "$\\frac{dn_A}{dt} = 0$",
+            "$\\frac{dn_A}{dt} = -k[A]$",
+            "$\\frac{dn_A}{dt} = \\infty$"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-005",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pour une réaction de type $A \\rightarrow Produits$, comment s'exprime le taux de conversion $X$ en réacteur ouvert ?",
+        "answers": [
+            "$X = \\frac{F_e + F_s}{F_e}$",
+            "$X = \\frac{F_s - F_e}{F_e}$",
+            "$X = \\frac{F_e - F_s}{F_e}$",
+            "$X = \\frac{F_e}{F_s}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-006",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Quelle est la condition nécessaire pour que le débit volumique $D_v$ soit conservé entre l'entrée et la sortie d'un réacteur ?",
+        "answers": [
+            "La réaction doit être d'ordre 1",
+            "Le fluide doit être compressible",
+            "Le liquide doit être incompressible et sa masse volumique constante",
+            "Le réacteur doit être parfaitement agité"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-007",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pour une réaction d'ordre 1 ($r = kC$), quelle est la relation liant $C_s$ et $C_e$ dans un RCPA en régime stationnaire ?",
+        "answers": [
+            "$C_s = C_e e^{-k\\tau}$",
+            "$C_s = \\frac{C_e}{1 + k\\tau}$",
+            "$C_s = C_e(1 - k\\tau)$",
+            "$C_s = C_e + k\\tau$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-008",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pour une réaction d'ordre 1 ($r = kC$), quelle est la relation liant $C_s$ et $C_e$ dans un réacteur piston (RP) en régime stationnaire ?",
+        "answers": [
+            "$C_s = \\frac{C_e}{1 + k\\tau}$",
+            "$C_s = C_e(1 - k\\tau)$",
+            "$C_s = C_e e^{-k\\tau}$",
+            "$C_s = C_e \\ln(k\\tau)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-009",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Lequel de ces réacteurs est considéré comme le plus performant pour obtenir un taux de conversion élevé pour une réaction d'ordre $n > 0$ ?",
+        "answers": [
+            "Le réacteur parfaitement agité continu (RCPA)",
+            "Le réacteur piston (RP)",
+            "Les deux ont la même performance à $\\tau$ identique",
+            "Cela dépend uniquement de la température d'entrée"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-010",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Que subit la concentration en réactifs à l'entrée d'un réacteur parfaitement agité continu ?",
+        "answers": [
+            "Une évolution continue et lente",
+            "Une discontinuité brutale",
+            "Aucune variation, elle reste égale à $C_e$",
+            "Une augmentation due à l'agitation"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-011",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour une réaction exothermique, quelle est la pente de la caractéristique thermodynamique $X(T)$ dans le plan $(T, X)$ ?",
+        "answers": [
+            "Négative",
+            "Positive",
+            "Nulle",
+            "Infinie"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-012",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour une réaction endothermique, quelle est la pente de la caractéristique thermodynamique $X(T)$ ?",
+        "answers": [
+            "Positive",
+            "Nulle",
+            "Négative",
+            "Elle dépend de la pression"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-013",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans le cas d'une réaction moyennement exothermique, combien de points de fonctionnement peuvent apparaître au maximum ?",
+        "answers": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-014",
+        "image_path": null,
+        "theme": "cinétique chimique",
+        "question": "Quelle est la condition de stabilité d'un point de fonctionnement dans un réacteur ouvert ?",
+        "answers": [
+            "$Slope(cinétique) > Slope(thermodynamique)$",
+            "$Slope(cinétique) < Slope(thermodynamique)$",
+            "$Slope(cinétique) = Slope(thermodynamique)$",
+            "La température de sortie doit être égale à la température d'entrée"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-015",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "À quoi correspond le 'risque d'emballement' d'un réacteur ?",
+        "answers": [
+            "À une chute brutale de la température",
+            "À une augmentation incontrôlée de la vitesse de réaction et de la température",
+            "À un blocage des pompes d'alimentation",
+            "À une saturation du catalyseur"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-016",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "L'extraction liquide-liquide consiste à isoler un composé par transfert sélectif dans un second solvant qui doit être :",
+        "answers": [
+            "Totalement miscible au premier",
+            "Peu miscible au premier et de masse volumique différente",
+            "De même masse volumique que le premier",
+            "Gazeux à température ambiante"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-017",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans un extracteur, comment appelle-t-on le solvant sortant qui contient initialement le soluté et dont la teneur a diminué ?",
+        "answers": [
+            "L'extrait",
+            "Le raffinat",
+            "Le distillat",
+            "Le précipité"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-018",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pour une réaction d'ordre 2 ($r = kC^2$) dans un RCPA, quelle est la relation entre $\\tau$ et $X$ ?",
+        "answers": [
+            "$\\tau = \\frac{X}{2kC_e(1-X)^2}$",
+            "$\\tau = \\frac{1}{kC_e} \\frac{X}{1-X}$",
+            "$\\tau = \\frac{X}{kC_e(1-X)}$",
+            "$\\tau = \\frac{X}{2kC_e(1-X)}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-019",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pour une réaction d'ordre 2 ($r = kC^2$) dans un réacteur piston (RP), quelle est la relation entre $\\tau$ et $X$ ?",
+        "answers": [
+            "$\\tau = \\frac{X}{kC_e(1-X)}$",
+            "$\\tau = \\frac{X}{2kC_e(1-X)}$",
+            "$\\tau = \\frac{1}{kC_e} \\ln(1-X)$",
+            "$\\tau = \\frac{X}{2kC_e(1-X)^2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-020",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Quel est le rapport $\\frac{\\tau_{RCPA}}{\\tau_{RP}}$ pour une réaction d'ordre 2 à taux de conversion $X$ fixé ?",
+        "answers": [
+            "$\\frac{1}{1-X}$",
+            "$1-X$",
+            "$\\frac{1}{(1-X)^2}$",
+            "$1$"
+        ],
+        "difficulty": 4,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-021",
+        "image_path": null,
+        "theme": "cinétique chimique",
+        "question": "Selon la loi d'Arrhénius, comment évolue la constante de vitesse $k$ avec la température ?",
+        "answers": [
+            "$k$ diminue quand $T$ augmente",
+            "$k$ augmente exponentiellement avec $T$",
+            "$k$ est indépendante de $T$",
+            "$k$ varie de façon linéaire avec $T$"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-022",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le bilan enthalpique d'un réacteur ouvert, à quoi correspond le terme $D_m c_p (T_s - T_e)$ ?",
+        "answers": [
+            "À la chaleur de réaction",
+            "À la puissance thermique sensible échangée par le fluide",
+            "Au travail utile des pompes",
+            "À l'énergie cinétique macroscopique"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-023",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Que représente physiquement le temps de passage $\\tau$ ?",
+        "answers": [
+            "La durée totale de la réaction chimique",
+            "Le temps nécessaire pour remplir le volume du réacteur avec le débit d'entrée",
+            "Le temps de demi-réaction",
+            "La période de l'agitateur"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-024",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans un réacteur piston, comment varie la concentration d'un réactif le long de l'axe du réacteur ?",
+        "answers": [
+            "Elle est constante",
+            "Elle augmente progressivement",
+            "Elle diminue progressivement de l'entrée vers la sortie",
+            "Elle oscille autour d'une valeur moyenne"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-025",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Quelle est l'unité habituelle d'un flux molaire $F$ ?",
+        "answers": [
+            "$mol \\cdot L^{-1}$",
+            "$mol \\cdot s^{-1}$",
+            "$kg \\cdot s^{-1}$",
+            "$L \\cdot s^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-026",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Un réacteur fermé (RF) est caractérisé par :",
+        "answers": [
+            "Un échange permanent de matière avec l'extérieur",
+            "L'absence d'échange de matière avec l'extérieur pendant la réaction",
+            "Une concentration qui ne dépend pas du temps",
+            "Un volume qui varie nécessairement au cours du temps"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-027",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "L'approximation du régime stationnaire (ou permanent) implique que :",
+        "answers": [
+            "La réaction est terminée",
+            "Les variables d'état en un point donné sont indépendantes du temps",
+            "La vitesse de réaction est nulle",
+            "Le débit d'entrée est nul"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-028",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pour une réaction $A \\rightarrow B$ de vitesse $r$, quel est le bilan de matière pour $A$ en régime stationnaire dans un RCPA ?",
+        "answers": [
+            "$F_e = F_s + rV$",
+            "$F_e = F_s - rV$",
+            "$F_s = F_e + rV$",
+            "$F_e = rV$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-029",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans un réacteur piston, quelle est la relation locale entre le flux molaire $F$ et le volume $V$ ?",
+        "answers": [
+            "$\\frac{dF}{dV} = r$",
+            "$\\frac{dF}{dV} = -r$",
+            "$\\frac{dF}{dt} = 0$",
+            "$F = rV$"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-030",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Le premier principe de la thermodynamique pour un système ouvert en écoulement stationnaire sans travail utile s'écrit :",
+        "answers": [
+            "$\\Delta h = q$",
+            "$\\Delta u = q$",
+            "$\\Delta h = w$",
+            "$\\Delta (h + e_c + e_p) = q$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-031",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Un avantage majeur du passage d'une production discontinue à une production continue est :",
+        "answers": [
+            "La réduction de la taille des équipements pour un même débit de production",
+            "L'augmentation des temps de vidange",
+            "La simplification du nettoyage entre deux cuvées",
+            "La suppression totale des catalyseurs"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-032",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Comment appelle-t-on les étapes successives (dissolution, filtration, réaction, etc.) d'un procédé industriel ?",
+        "answers": [
+            "Des cycles thermiques",
+            "Des opérations unitaires",
+            "Des phases cinétiques",
+            "Des échelons de production"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-033",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans le modèle du réacteur piston, on suppose que dans chaque tranche transversale :",
+        "answers": [
+            "La concentration est uniforme",
+            "La vitesse est nulle",
+            "La pression est infinie",
+            "La température est nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-034",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pour une réaction d'ordre 1 en réacteur piston, le temps de passage $\\tau$ est proportionnel à :",
+        "answers": [
+            "$X$",
+            "$\\ln(1-X)$",
+            "$-\\ln(1-X)$",
+            "$\\frac{X}{1-X}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-035",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans un RCPA, si le taux de conversion visé est de 99%, le volume nécessaire sera typiquement :",
+        "answers": [
+            "Bien plus petit que celui d'un RP",
+            "Bien plus grand que celui d'un RP",
+            "Identique à celui d'un RP",
+            "Nul"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-036",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans l'exercice 1 (extraction), le rendement est défini par :",
+        "answers": [
+            "Masse totale sortie / Masse totale entrée",
+            "Masse acide dans l'extrait / Masse acide entrée",
+            "Masse acide dans le raffinat / Masse acide entrée",
+            "Débit extrait / Débit raffinat"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-037",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans l'exercice 2 (désulfuration), comment a été déterminé l'ordre 1 de la réaction ?",
+        "answers": [
+            "Par une régression linéaire montrant que $k = \\frac{1}{\\tau} \\frac{C_e - C_s}{C_s}$ est constant",
+            "En supposant que $n=2$",
+            "À l'aide d'un manomètre",
+            "C'était une donnée de l'énoncé"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-038",
+        "image_path": null,
+        "theme": "cinétique chimique",
+        "question": "Pour un réacteur fermé et une réaction d'ordre 1, la loi de vitesse intégrée est :",
+        "answers": [
+            "$[A] = [A]_0 - kt$",
+            "$[A] = [A]_0 e^{-kt}$",
+            "$\\frac{1}{[A]} = \\frac{1}{[A]_0} + kt$",
+            "$\\ln[A] = kt$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-039",
+        "image_path": null,
+        "theme": "cinétique chimique",
+        "question": "Pour un réacteur fermé et une réaction d'ordre 2, le taux de conversion $X$ s'exprime par :",
+        "answers": [
+            "$X = 1 - e^{-kt}$",
+            "$X = \\frac{[A]_0 kt}{1 + [A]_0 kt}$",
+            "$X = kt$",
+            "$X = 1 - \\frac{1}{1 + [A]_0 kt}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-040",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans l'exercice 4 (saponification), quel volume de réacteur est nécessaire pour passer de $X=0,968$ ($V=5L$) à $X=0,95$ ?",
+        "answers": [
+            "$5,0 L$",
+            "$20,6 L$",
+            "$15,2 L$",
+            "$2,5 L$"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-041",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans l'exercice 6 (autocatalyse), la vitesse $r$ s'écrit $k[A][C]$. Que se passe-t-il si on n'introduit aucune trace de produit $C$ en entrée ?",
+        "answers": [
+            "La réaction est instantanée",
+            "La réaction ne peut pas démarrer ($r=0$)",
+            "La réaction est d'ordre 1 par rapport à A",
+            "Le volume du réacteur devient infini"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-042",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pour une réaction d'ordre 1 avec $k\\tau = 3$, quel est le taux de conversion dans un RCPA ?",
+        "answers": [
+            "$0,95$",
+            "$0,75$",
+            "$0,66$",
+            "$0,50$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-043",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pour une réaction d'ordre 1 avec $k\\tau = 3$, quel est le taux de conversion dans un réacteur piston ?",
+        "answers": [
+            "$1 - e^{-3} \\approx 0,95$",
+            "$0,75$",
+            "$0,50$",
+            "$0,99$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-044",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans l'exercice 9, pour traiter $10 m^3/h$ à 99% de conversion, quel réacteur demande le plus gros volume ?",
+        "answers": [
+            "Le réacteur fermé (en tenant compte des temps morts)",
+            "Le réacteur parfaitement agité continu (RCPA)",
+            "Le réacteur piston (RP)",
+            "Tous demandent $15 m^3$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-045",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Quelle est la valeur du volume calculé pour le RCPA dans l'exercice 9 ?",
+        "answers": [
+            "$11,5 m^3$",
+            "$15,0 m^3$",
+            "$247,5 m^3$",
+            "$1,15 m^3$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-046",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pourquoi le réacteur piston est-il plus performant que le RCPA pour une cinétique d'ordre positif ?",
+        "answers": [
+            "Parce qu'il fonctionne à une concentration moyenne plus élevée",
+            "Parce que l'agitation dans le RCPA dilue instantanément les réactifs entrants",
+            "Parce qu'il est toujours plus chaud",
+            "C'est dû à la pression plus forte en entrée"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-047",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Un réacteur ouvert fonctionnant en régime adiabatique ($\\mathcal{P}_{th} = 0$) pour une réaction exothermique verra sa température de sortie :",
+        "answers": [
+            "Diminuer par rapport à l'entrée",
+            "Rester égale à l'entrée",
+            "Augmenter par rapport à l'entrée",
+            "Devenir nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-048",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Le débit molaire d'une espèce $i$ est lié au débit volumique par la relation $F_i = ...$",
+        "answers": [
+            "$C_i / D_v$",
+            "$C_i \\cdot D_v$",
+            "$D_v / C_i$",
+            "$C_i \\cdot V$"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-049",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans le corrigé de l'exercice 10, l'expression de la vitesse de réaction $r_i$ en fonction du temps de passage $\\tau$ est :",
+        "answers": [
+            "$r_i = \\frac{dc_i}{d\\tau}$",
+            "$r_i = -\\frac{dc_i}{d\\tau}$",
+            "$r_i = c_i \\tau$",
+            "$r_i = k \\tau$"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-050",
+        "image_path": null,
+        "theme": "cinétique chimique",
+        "question": "Pour une réaction d'ordre $n$, l'intégration de la loi de vitesse en réacteur piston donne une relation entre $R_s$ et $R_e$ de la forme :",
+        "answers": [
+            "$\\ln(R_s/R_e) = -k\\tau$ (si $n=1$)",
+            "$\\frac{1}{1-n}(R_s^{1-n} - R_e^{1-n}) = -k\\tau$ (si $n \\neq 1$)",
+            "Les deux propositions précédentes sont exactes",
+            "Aucune de ces propositions"
+        ],
+        "difficulty": 4,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-051",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Quelle est la valeur typique de la constante de vitesse $k$ trouvée dans l'exercice 2 ?",
+        "answers": [
+            "$0,59 s^{-1}$",
+            "$0,59 h^{-1}$",
+            "$92,4 L \\cdot mol^{-1} \\cdot s^{-1}$",
+            "$1,5 s^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-052",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans l'exercice 5, pour une conversion de 80%, le temps de passage $\\tau$ calculé est de :",
+        "answers": [
+            "$1,15 min$",
+            "$2,22 min$",
+            "$24,75 h$",
+            "$6 s$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-053",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pour un réacteur piston, le temps de passage $\\tau$ est-il le même pour toutes les espèces chimiques ?",
+        "answers": [
+            "Oui, dans le modèle idéal",
+            "Non, cela dépend de leur masse molaire",
+            "Non, cela dépend de leur coefficient stœchiométrique",
+            "Seulement pour les réactifs"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-054",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Comment appelle-t-on le dispositif où l'on réalise une transformation chimique en continu ?",
+        "answers": [
+            "Un mélangeur stationnaire",
+            "Un réacteur ouvert",
+            "Un autoclave fermé",
+            "Une colonne de distillation"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-055",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Si $k\\tau \\ll 1$, quelle est l'expression approchée du taux de conversion $X$ en RCPA (ordre 1) ?",
+        "answers": [
+            "$X \\approx 1$",
+            "$X \\approx k\\tau$",
+            "$X \\approx 0$",
+            "$X \\approx 1/k\\tau$"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-056",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans un tableau d'avancement en flux molaires, la ligne 'entrée' correspond à quelle grandeur ?",
+        "answers": [
+            "La quantité de matière $n_0$",
+            "Le flux molaire initial $F_e$",
+            "La concentration $C_0$",
+            "La vitesse de réaction $r$"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-057",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pour une réaction d'ordre 1, le taux de conversion $X$ peut-il atteindre 1 dans un RCPA ?",
+        "answers": [
+            "Oui, pour un volume fini",
+            "Non, il tend vers 1 seulement quand $\\tau \\rightarrow \\infty$",
+            "Oui, si on agite très fort",
+            "Non, il est limité à 0,5"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-058",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Que signifie un point de fonctionnement stable graphiquement ?",
+        "answers": [
+            "Une intersection où la courbe cinétique 'croise' la droite thermique par le dessous en montant",
+            "Une intersection où la droite thermique a une pente plus forte que la courbe cinétique",
+            "Un point où $X = 1$",
+            "Un point où $T_s = T_e$"
+        ],
+        "difficulty": 4,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-059",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans l'exercice 1, la conservation de la masse totale s'écrit :",
+        "answers": [
+            "$A + B = C + D$",
+            "$A + D = B + C$",
+            "$A = B + C + D$",
+            "$A + B + C + D = 0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-060",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans l'exercice 1, quel est le débit massique en raffinat $C$ ?",
+        "answers": [
+            "$183 kg/h$",
+            "$117 kg/h$",
+            "$200 kg/h$",
+            "$100 kg/h$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-061",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Un réacteur piston peut être modélisé comme :",
+        "answers": [
+            "Un seul RCPA géant",
+            "Une infinité de RCPA en cascade",
+            "Un réacteur fermé en mouvement",
+            "Un tube vide sans réaction"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-062",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Quelle grandeur reste constante le long d'un réacteur piston idéal en régime stationnaire ?",
+        "answers": [
+            "La concentration",
+            "Le débit volumique (si fluide incompressible)",
+            "Le taux de conversion",
+            "La vitesse de réaction"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-063",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pour une réaction d'ordre 1, si on double le volume du RCPA à débit constant, le taux de conversion :",
+        "answers": [
+            "Double exactement",
+            "Augmente mais ne double pas",
+            "Reste identique",
+            "Diminue"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-064",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Quelle est l'unité de la constante de vitesse $k$ pour une réaction d'ordre 2 ?",
+        "answers": [
+            "$s^{-1}$",
+            "$L \\cdot mol^{-1} \\cdot s^{-1}$",
+            "$mol \\cdot L^{-1} \\cdot s^{-1}$",
+            "$L^2 \\cdot mol^{-2} \\cdot s^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-065",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Le terme 'Yellow cake' mentionné dans le cours correspond à une étape de :",
+        "answers": [
+            "Hydrofluoration",
+            "Purification de l'uranium",
+            "Saponification",
+            "Désulfuration"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-066",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Si une réaction est exothermique, la température de sortie $T_s$ est :",
+        "answers": [
+            "$T_s > T_e$",
+            "$T_s < T_e$",
+            "$T_s = T_e$",
+            "On ne peut pas savoir"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-067",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "L'avancement volumique est défini par $\\mathcal{x} = \\xi / V$. Sa dérivée temporelle est :",
+        "answers": [
+            "La vitesse de réaction $r$",
+            "Le flux molaire $F$",
+            "Le temps de passage $\\tau$",
+            "Le taux de conversion $X$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-068",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans un RCPA, la concentration en réactifs est-elle identique à l'entrée et à la sortie ?",
+        "answers": [
+            "Oui, car le mélange est parfait",
+            "Non, il y a une chute brutale à l'entrée",
+            "Seulement si la vitesse de réaction est nulle",
+            "Seulement si le réacteur est très petit"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-069",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans le cas d'une réaction d'ordre 1 en RPAC, si $k\\tau = 1$, le taux de conversion est :",
+        "answers": [
+            "$100\\%$",
+            "$50\\%$",
+            "$63\\%$",
+            "$37\\%$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-070",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans le cas d'une réaction d'ordre 1 en RP, si $k\\tau = 1$, le taux de conversion est :",
+        "answers": [
+            "$50\\%$",
+            "$63\\%$ ($1-1/e$)",
+            "$37\\%$",
+            "$90\\%$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-071",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "La principale différence entre un flux molaire $F$ et une quantité de matière $n$ est :",
+        "answers": [
+            "Le flux molaire est par unité de temps",
+            "Le flux molaire est par unité de volume",
+            "Il n'y a pas de différence",
+            "Le flux molaire ne concerne que les gaz"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-072",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans l'exercice 7, le taux de conversion pour le RCPA était de 0,75. Pour le RP, il était de :",
+        "answers": [
+            "$0,75$",
+            "$0,95$",
+            "$0,50$",
+            "$0,99$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-073",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Un point de fonctionnement instable est dangereux car :",
+        "answers": [
+            "La température peut chuter brusquement",
+            "Une légère hausse de T provoque une accélération de la réaction dégageant plus de chaleur que le système n'en évacue",
+            "Il nécessite trop d'énergie",
+            "Il ne produit rien"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-074",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Comment varie le taux de conversion $X$ en fonction du temps de passage $\\tau$ pour un réacteur idéal (ordre > 0) ?",
+        "answers": [
+            "C'est une fonction décroissante",
+            "C'est une fonction croissante",
+            "C'est une constante",
+            "Cela dépend de la pression"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-075",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Le débit massique total est conservé en régime permanent entre l'entrée et la sortie :",
+        "answers": [
+            "Seulement s'il n'y a pas de réaction chimique",
+            "Toujours",
+            "Seulement si le fluide est un liquide",
+            "Seulement dans un réacteur fermé"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-076",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans le cas d'un réacteur piston, le temps de séjour des molécules est-il distribué autour d'une moyenne ?",
+        "answers": [
+            "Oui, comme une courbe de Gauss",
+            "Non, toutes les molécules passent exactement le même temps $\\tau$",
+            "Oui, certaines sortent instantanément",
+            "Cela dépend de l'agitation"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-077",
+        "image_path": null,
+        "theme": "cinétique chimique",
+        "question": "Quelle est l'expression de l'avancement maximal $\\xi_{max}$ pour un réactif limitant $i$ de coefficient $\\nu_i$ ?",
+        "answers": [
+            "$\\xi_{max} = n_0 / \\nu_i$",
+            "$\\xi_{max} = -n_0 / \\nu_i$",
+            "$\\xi_{max} = n_0 \\cdot \\nu_i$",
+            "$\\xi_{max} = \\nu_i / n_0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-078",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Le temps de passage pour un réacteur piston de 600 mL avec un débit de 100 mL/s est :",
+        "answers": [
+            "$60 s$",
+            "$6 s$",
+            "$0,6 s$",
+            "$600 s$"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-079",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans l'exercice 8, le rapport $\\tau_{RCPA} / \\tau_{RP}$ pour un taux de conversion de 0,9 est de :",
+        "answers": [
+            "10",
+            "1",
+            "0,1",
+            "100"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-080",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Un mélange équimolaire de réactifs A et B pour une réaction $A+B \\rightarrow C$ d'ordre 1 par rapport à chaque réactif se comporte comme :",
+        "answers": [
+            "Une réaction d'ordre 1 globale",
+            "Une réaction d'ordre 2 globale",
+            "Une réaction d'ordre 0",
+            "Une réaction autocatalytique"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-081",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans un réacteur ouvert, le taux de conversion $X$ peut s'exprimer par $X = \\frac{\\alpha r V}{F_e}$. Cette formule est valable :",
+        "answers": [
+            "Seulement pour le RCPA",
+            "Pour n'importe quel réacteur en régime stationnaire avec $r$ la vitesse à la concentration de sortie",
+            "Seulement pour le RP",
+            "Seulement si la réaction est d'ordre 0"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-082",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans le cas d'un liquide, la relation entre flux molaire $F$, concentration $C$, section $S$ et vitesse d'écoulement $v$ est :",
+        "answers": [
+            "$F = C / (Sv)$",
+            "$F = C \\cdot S \\cdot v$",
+            "$F = S \\cdot v / C$",
+            "$F = C \\cdot v$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-083",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Le 'temps mort' d'un réacteur fermé correspond au temps nécessaire pour :",
+        "answers": [
+            "La réaction elle-même",
+            "Vidange, nettoyage et remplissage",
+            "Chauffer les réactifs",
+            "Atteindre le régime stationnaire"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-084",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans l'exercice 9, le temps de séjour en réacteur fermé pour 99% de conversion est de :",
+        "answers": [
+            "$1,15 h$",
+            "$0,35 h$",
+            "$1,50 h$",
+            "$24,75 h$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-085",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pour une réaction d'ordre 1, le temps de passage $\\tau$ est-il dépendant de la concentration initiale ?",
+        "answers": [
+            "Oui, il est proportionnel à $C_0$",
+            "Non, il est indépendant de $C_0$",
+            "Oui, il est inversement proportionnel à $C_0$",
+            "Seulement en réacteur piston"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-086",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pour une réaction d'ordre 2, le temps de passage $\\tau$ nécessaire pour un taux $X$ donné est :",
+        "answers": [
+            "Indépendant de $C_e$",
+            "Inversement proportionnel à $C_e$",
+            "Proportionnel à $C_e$",
+            "Indépendant de $k$"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-087",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans l'équation $X(T) = A(T - T_e) + B$, si la réaction est exothermique ($\\Delta_r H^\\circ < 0$), le signe de la pente $A$ est :",
+        "answers": [
+            "Négatif",
+            "Positif",
+            "Nul",
+            "Dépend de $c_p$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-088",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Quel type de réacteur est le mieux modélisé par un écoulement fortement turbulent ?",
+        "answers": [
+            "Le RCPA",
+            "Le réacteur piston",
+            "Le réacteur fermé",
+            "Aucun"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-089",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans un réacteur piston, le temps de passage $\\tau$ s'exprime par l'intégrale :",
+        "answers": [
+            "$\\tau = \\int_{X_e}^{X_s} \\frac{dX}{r}$",
+            "$\\tau = C_e \\int_{X_e}^{X_s} \\frac{dX}{r}$",
+            "$\\tau = \\frac{1}{C_e} \\int \\frac{dX}{r}$",
+            "$\\tau = \\int r dX$"
+        ],
+        "difficulty": 4,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-090",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Le débit volumique $D_v$ est défini par :",
+        "answers": [
+            "$D_v = dV/dt$",
+            "$D_v = dm/dt$",
+            "$D_v = dn/dt$",
+            "$D_v = V \\cdot t$"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-091",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Un avantage du RCPA par rapport au réacteur piston est :",
+        "answers": [
+            "Une meilleure efficacité massique",
+            "Une facilité de contrôle de la température par l'agitation",
+            "Un volume plus faible",
+            "Une conversion totale possible"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-092",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans l'exercice 4, la saponification de l'acétate de butyle, l'ordre partiel par rapport à HO⁻ est de :",
+        "answers": [
+            "0",
+            "1",
+            "2",
+            "0,5"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-093",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Si $X = 0,99$, combien vaut le rapport $(1-X)$ ?",
+        "answers": [
+            "0,1",
+            "0,01",
+            "0,001",
+            "0"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-094",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans un réacteur piston, le long d'une tranche $dV$, le bilan s'écrit $D_v C_V = dV \\cdot r + D_v C_{V+dV}$. Cela mène à :",
+        "answers": [
+            "$D_v dC = -r dV$",
+            "$D_v dC = r dV$",
+            "$C dV = D_v dt$",
+            "$r = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-095",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Pourquoi privilégie-t-on le taux de conversion $X$ à l'avancement $\\xi$ en milieu industriel ?",
+        "answers": [
+            "Parce qu'il est sans dimension et plus parlant (0 à 1)",
+            "Parce qu'il est plus facile à calculer",
+            "Parce qu'il ne dépend pas de la température",
+            "Parce qu'il est toujours égal à 1"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-096",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Le temps de passage $\\tau$ est-il égal au temps de séjour réel des molécules dans un RCPA ?",
+        "answers": [
+            "Oui, pour toutes",
+            "Non, c'est une valeur moyenne",
+            "Oui, seulement si elles ne réagissent pas",
+            "Non, le temps de séjour est toujours double"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-097",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Dans l'exercice 3, pour une réaction d'ordre 1 en réacteur fermé, le temps pour atteindre $X$ est :",
+        "answers": [
+            "$t = -\\frac{1}{k} \\ln(1-X)$",
+            "$t = \\frac{1}{k} \\ln(1-X)$",
+            "$t = X/k$",
+            "$t = 1/k$"
+        ],
+        "difficulty": 2,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-098",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "L'unité d'une vitesse de réaction $r$ est :",
+        "answers": [
+            "$mol \\cdot L^{-1} \\cdot s^{-1}$",
+            "$mol \\cdot s^{-1}$",
+            "$L \\cdot mol^{-1} \\cdot s^{-1}$",
+            "$mol \\cdot L^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-099",
+        "image_path": null,
+        "theme": "génie chimique",
+        "question": "Un réacteur piston de volume $V$ est équivalent à :",
+        "answers": [
+            "Un réacteur fermé travaillant pendant un temps $\\tau = V/D_v$",
+            "Un RCPA de volume $2V$",
+            "Un mélangeur simple",
+            "Un extracteur"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "proc-ind-100",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "La puissance thermique due à la réaction s'écrit $\\mathcal{P}_r = \\Delta_r H^\\circ \\cdot \\dot{\\xi}$. En régime stationnaire, $\\dot{\\xi} = ...$",
+        "answers": [
+            "$F_e \\cdot X$",
+            "$F_e / X$",
+            "$D_v \\cdot X$",
+            "$n_0 \\cdot X$"
+        ],
+        "difficulty": 3,
+        "chapter": "Procédés industriels continus",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    }
+]

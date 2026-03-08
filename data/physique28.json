@@ -1,0 +1,1602 @@
+[
+    {
+        "uuid": "ms_001",
+        "image_path": null,
+        "theme": "architecture",
+        "question": "Dans une machine synchrone, comment appelle-t-on la partie fixe externe en matériau ferromagnétique ?",
+        "answers": [
+            "Le rotor",
+            "Le stator",
+            "L'entrefer",
+            "Le collecteur"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_002",
+        "image_path": null,
+        "theme": "architecture",
+        "question": "Quelle est la nature du courant qui parcourt généralement le rotor d'une machine synchrone ?",
+        "answers": [
+            "Un courant alternatif monophasé",
+            "Un courant alternatif triphasé",
+            "Un courant continu constant",
+            "Il n'y a pas de courant au rotor"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_003",
+        "image_path": null,
+        "theme": "architecture",
+        "question": "Comment définit-on une machine synchrone diphasée au niveau de son stator ?",
+        "answers": [
+            "Elle possède deux circuits décalés de $\\pi$",
+            "Elle possède deux circuits décalés de $\\frac{\\pi}{2}$",
+            "Elle possède trois circuits décalés de $\\frac{2\\pi}{3}$",
+            "Elle possède un seul circuit parcouru par deux courants"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_004",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le modèle étudié, comment est considéré le matériau ferromagnétique de la machine ?",
+        "answers": [
+            "Dur et saturé",
+            "Doux et non saturé",
+            "Dur et non saturé",
+            "Doux et fortement saturé"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_005",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "En appliquant le théorème d'Ampère sur une ligne de champ fermée, comment s'exprime l'amplitude du champ magnétique dans l'entrefer $B_{entrefer}$ pour un stator à deux encoches (épaisseur $e$, courant $i_1$) ?",
+        "answers": [
+            "$B_{entrefer} = \\frac{\\mu_0 i_1}{e}$",
+            "$B_{entrefer} = \\frac{\\mu_0 i_1}{2e}$",
+            "$B_{entrefer} = \\frac{2 \\mu_0 i_1}{e}$",
+            "$B_{entrefer} = \\mu_0 i_1 e$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_006",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pourquoi néglige-t-on la circulation de l'excitation magnétique $\\vec{H}$ dans le ferromagnétique lors du calcul de $B_{entrefer}$ ?",
+        "answers": [
+            "Car $\\mu_r \\ll 1$",
+            "Car $\\mu_r = 0$",
+            "Car $\\mu_r \\gg 1$",
+            "Car l'épaisseur de l'entrefer est infinie"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_007",
+        "image_path": null,
+        "theme": "champs magnétiques",
+        "question": "Dans une machine synchrone diphasée, les courants statoriques $i_1(t)$ et $i_2(t)$ sont en quadrature temporelle. Que cela signifie-t-il ?",
+        "answers": [
+            "Ils ont la même phase",
+            "Ils sont déphasés de $\\pi$",
+            "Ils sont déphasés de $\\frac{\\pi}{2}$",
+            "L'un est continu, l'autre est alternatif"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_008",
+        "image_path": null,
+        "theme": "champs magnétiques",
+        "question": "Quelle est l'expression du champ magnétique total généré par le stator diphasé en un point $M$ repéré par $\\theta$ dans l'entrefer ?",
+        "answers": [
+            "$\\vec{B}(M,t) = K_S I_S \\cos(\\theta) \\vec{u}_r$",
+            "$\\vec{B}(M,t) = K_S I_S \\sin(\\omega t) \\vec{u}_r$",
+            "$\\vec{B}(M,t) = K_S I_S \\cos(\\theta - \\omega t) \\vec{u}_r$",
+            "$\\vec{B}(M,t) = K_S I_S \\cos(\\theta + \\omega t) \\vec{u}_r$"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_009",
+        "image_path": null,
+        "theme": "champs magnétiques",
+        "question": "Comment qualifie-t-on le champ total créé par le stator alimenté par des courants alternatifs ?",
+        "answers": [
+            "Un champ pulsant",
+            "Un champ glissant (ou tournant)",
+            "Un champ statique",
+            "Un champ constant en tout point"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_010",
+        "image_path": null,
+        "theme": "champs magnétiques",
+        "question": "Quelle est l'expression du champ généré par le rotor au point $M$ repéré par $\\theta$, si le rotor est à la position $\\alpha_R$ ?",
+        "answers": [
+            "$\\vec{B}_R = K_R I_R \\cos(\\theta - \\alpha_R) \\vec{u}_r$",
+            "$\\vec{B}_R = K_R I_R \\cos(\\theta - \\omega t) \\vec{u}_r$",
+            "$\\vec{B}_R = K_R I_R \\sin(\\theta + \\alpha_R) \\vec{u}_r$",
+            "$\\vec{B}_R = K_R I_R \\vec{u}_r$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_011",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Où est localisée la quasi-totalité de l'énergie magnétique dans la machine synchrone ?",
+        "answers": [
+            "Dans le rotor",
+            "Dans le stator",
+            "Dans l'entrefer",
+            "A l'extérieur de la machine"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_012",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Par quelle relation relie-t-on le couple électromagnétique $\\Gamma$ à l'énergie électromagnétique $\\mathcal{E}_{em}$ ?",
+        "answers": [
+            "$\\Gamma = \\frac{\\partial \\mathcal{E}_{em}}{\\partial t}$",
+            "$\\Gamma = \\frac{\\partial \\mathcal{E}_{em}}{\\partial \\alpha_R}$",
+            "$\\Gamma = \\frac{\\mathcal{E}_{em}}{\\alpha_R}$",
+            "$\\Gamma = \\frac{1}{2} J \\omega^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_013",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "À quelle condition temporelle le couple électromagnétique moyen fourni par une machine synchrone est-il non nul ?",
+        "answers": [
+            "$\\omega = 0$",
+            "$\\omega_R = 0$",
+            "$\\omega = \\omega_R$ (Condition de synchronisme)",
+            "$\\omega = 2\\omega_R$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_014",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "Que se passe-t-il au moment du démarrage si on alimente directement le stator avec une fréquence $\\omega$ élevée et que le rotor est à l'arrêt ($\\omega_R = 0$) ?",
+        "answers": [
+            "La machine démarre brutalement",
+            "Le couple a une valeur moyenne nulle, la machine ne démarre pas",
+            "Le rotor tourne dans le sens inverse",
+            "La machine produit un couple infini"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_015",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "En régime de synchronisme, le couple s'écrit $\\Gamma = \\Gamma_{max} \\sin(\\alpha)$. Que représente l'angle $\\alpha$ ?",
+        "answers": [
+            "L'angle géométrique entre le stator et le rotor",
+            "Le retard angulaire du rotor par rapport au champ statorique",
+            "La phase à l'origine du courant statorique",
+            "L'angle d'inclinaison de la machine"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_016",
+        "image_path": null,
+        "theme": "stabilité",
+        "question": "Pour une charge donnée, il existe généralement deux angles $\\alpha_1$ et $\\alpha_2$ possibles pour le régime permanent. Lequel est stable ?",
+        "answers": [
+            "Celui tel que $\\alpha < \\frac{\\pi}{2}$",
+            "Celui tel que $\\alpha > \\frac{\\pi}{2}$",
+            "Celui tel que $\\alpha = \\pi$",
+            "Les deux sont instables"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_017",
+        "image_path": null,
+        "theme": "stabilité",
+        "question": "Comment s'appelle le couple maximal au-delà duquel la machine synchrone ne peut plus entraîner la charge ?",
+        "answers": [
+            "Le couple de démarrage",
+            "Le couple de décrochage",
+            "Le couple nominal",
+            "Le couple asynchrone"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_018",
+        "image_path": null,
+        "theme": "stabilité",
+        "question": "Pourquoi la position $\\alpha_2 > \\frac{\\pi}{2}$ est-elle instable pour un moteur synchrone ?",
+        "answers": [
+            "Car une augmentation de $\\alpha$ (dû à un frottement) fait augmenter le couple d'entraînement.",
+            "Car une augmentation de $\\alpha$ fait diminuer le couple d'entraînement, aggravant le ralentissement.",
+            "Car la machine s'arrête instantanément à cet angle.",
+            "Car le courant rotorique s'annule à cet angle."
+        ],
+        "difficulty": 5,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_019",
+        "image_path": null,
+        "theme": "technologie",
+        "question": "Parmi les méthodes suivantes, laquelle n'est pas une méthode classique de démarrage d'un moteur synchrone ?",
+        "answers": [
+            "Utilisation d'un moteur lanceur auxiliaire",
+            "Utilisation d'un onduleur (moteur autopiloté)",
+            "Démarrage en régime asynchrone",
+            "Alimentation directe sur le réseau 50 Hz avec le rotor freiné"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 3,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_020",
+        "image_path": null,
+        "theme": "technologie",
+        "question": "Quel est le principe du démarrage dit 'autopiloté' ?",
+        "answers": [
+            "On lance la machine à la main",
+            "On augmente progressivement la fréquence de l'alimentation électrique pour rester synchronisé",
+            "On utilise un ressort mécanique",
+            "On court-circuite le stator"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_021",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le schéma équivalent d'une phase du stator, quel paramètre modélise la f.c.e.m. (force contre-électromotrice) $e'_1(t)$ en fonctionnement moteur ?",
+        "answers": [
+            "La tension générée par les courants statoriques uniquement",
+            "La tension induite par la variation du flux du rotor tournant",
+            "La chute de tension ohmique",
+            "La tension d'alimentation"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_022",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En notation complexe, comment s'écrit la loi des mailles pour une phase du stator en fonctionnement moteur (avec f.c.e.m $\\underline{E}'_1$) ?",
+        "answers": [
+            "$\\underline{U}_1 = R_S \\underline{I}_1 - j L_S \\omega \\underline{I}_1 + \\underline{E}'_1$",
+            "$\\underline{U}_1 = R_S \\underline{I}_1 + j L_S \\omega \\underline{I}_1 + \\underline{E}'_1$",
+            "$\\underline{U}_1 = R_S \\underline{I}_1 + j L_S \\omega \\underline{I}_1 - \\underline{E}'_1$",
+            "$\\underline{E}'_1 = \\underline{U}_1 + R_S \\underline{I}_1 + j L_S \\omega \\underline{I}_1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_023",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel nom donne-t-on au circuit qui produit le champ magnétique principal dans la machine (le rotor pour la machine synchrone) ?",
+        "answers": [
+            "L'induit",
+            "L'inducteur",
+            "Le collecteur",
+            "Le stator"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_024",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans la représentation de Fresnel du moteur synchrone, si l'on prend le courant $\\underline{I}_1$ comme origine des phases, comment est orienté le vecteur $j L_S \\omega \\underline{I}_1$ ?",
+        "answers": [
+            "En phase avec $\\underline{I}_1$ (horizontal)",
+            "En avance de $\\frac{\\pi}{2}$ par rapport à $\\underline{I}_1$ (vertical vers le haut)",
+            "En retard de $\\frac{\\pi}{2}$ par rapport à $\\underline{I}_1$ (vertical vers le bas)",
+            "En opposition de phase (déphasé de $\\pi$)"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_025",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Pourquoi le stator est-il généralement feuilleté dans une machine synchrone ?",
+        "answers": [
+            "Pour améliorer la rigidité mécanique",
+            "Pour minimiser les pertes par hystérésis",
+            "Pour minimiser les pertes par courants de Foucault",
+            "Pour faciliter l'insertion des bobines"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_026",
+        "image_path": null,
+        "theme": "puissance",
+        "question": "Dans le bilan de puissance du moteur synchrone diphasé, à quoi correspond le terme $e'_1 i_1 + e'_2 i_2$ ?",
+        "answers": [
+            "A la puissance absorbée au stator",
+            "Aux pertes par effet Joule",
+            "A la puissance réactive",
+            "A la puissance électromagnétique (convertie en mécanique)"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 3,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_027",
+        "image_path": null,
+        "theme": "puissance",
+        "question": "Quelle est la relation entre la puissance électromagnétique $P_{em}$, le couple $\\Gamma$ et la vitesse angulaire $\\omega$ ?",
+        "answers": [
+            "$P_{em} = \\frac{\\Gamma}{\\omega}$",
+            "$P_{em} = \\Gamma \\omega$",
+            "$P_{em} = \\frac{1}{2} \\Gamma \\omega^2$",
+            "$P_{em} = \\Gamma \\omega^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_028",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Lorsqu'une machine synchrone fonctionne en alternateur (génératrice), quelle convention utilise-t-on généralement pour le schéma du stator ?",
+        "answers": [
+            "La convention récepteur",
+            "La convention générateur ($\\underline{E} = \\underline{U} + R_S \\underline{I} + jL_S\\omega \\underline{I}$)",
+            "La convention courant continu",
+            "La convention symétrique"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_029",
+        "image_path": null,
+        "theme": "technologie",
+        "question": "Quelle application est typiquement associée aux alternateurs synchrones géants ?",
+        "answers": [
+            "Les petits ventilateurs d'ordinateur",
+            "La motorisation des vitres électriques de voiture",
+            "La production d'électricité dans les centrales (nucléaires, hydrauliques...)",
+            "Les compresseurs de réfrigérateur"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_030",
+        "image_path": null,
+        "theme": "grandeurs physiques",
+        "question": "Une machine synchrone bipolaire (1 paire de pôles) tourne à 3000 tr/min. Quelle est la fréquence électrique correspondante ?",
+        "answers": [
+            "3000 Hz",
+            "100 Hz",
+            "50 Hz",
+            "60 Hz"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_031",
+        "image_path": null,
+        "theme": "grandeurs physiques",
+        "question": "Un rotor tourne à 6000 tours par minute. Quelle est sa vitesse en tours par seconde (Hz) ?",
+        "answers": [
+            "100 Hz",
+            "50 Hz",
+            "600 Hz",
+            "60 Hz"
+        ],
+        "difficulty": 1,
+        "chapter": "Exercices",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_032",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "D'après l'exercice 1, en régime permanent, le flux $\\Phi$ et la fem efficace $E_{eff}$ sont liés. Si $e(t) = - \\frac{d\\Phi}{dt}$ avec $\\Phi$ sinusoïdal, quelle est la relation des modules ?",
+        "answers": [
+            "$|e| = \\Phi$",
+            "$|e| = \\omega \\Phi$",
+            "$|e| = \\frac{\\Phi}{\\omega}$",
+            "$|e| = \\omega^2 \\Phi$"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_033",
+        "image_path": null,
+        "theme": "méthodologie",
+        "question": "Afin de mesurer l'inductance $L$ du stator, l'exercice 1 propose de réaliser un essai particulier. Lequel ?",
+        "answers": [
+            "Un essai à vide",
+            "Un essai en charge résistive pure",
+            "Un essai en court-circuit au stator",
+            "Un essai en rotor bloqué"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_034",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Lors d'un essai en court-circuit (résistance statorique négligée), quelle équation relie l'intensité de court-circuit $I_s$, l'inductance $L$, la pulsation $\\omega$ et la fem $E$ ?",
+        "answers": [
+            "$E = R I_s$",
+            "$E = L I_s$",
+            "$E = L \\omega I_s$",
+            "$E = \\frac{I_s}{L \\omega}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_035",
+        "image_path": null,
+        "theme": "technologie",
+        "question": "Dans l'exercice 2, quelles doivent être les caractéristiques du matériau ferromagnétique pour limiter les pertes ?",
+        "answers": [
+            "Dur, massif et saturé",
+            "Doux, massif et non saturé",
+            "Doux, feuilleté et non saturé",
+            "Dur, feuilleté et saturé"
+        ],
+        "difficulty": 1,
+        "chapter": "Exercices",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_036",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Si un alternateur alimente une charge PUREMENT RÉSISTIVE, que peut-on dire du déphasage entre la tension $U$ délivrée et le courant $I$ ?",
+        "answers": [
+            "La tension est en avance de $\\pi/2$",
+            "Le courant est en avance de $\\pi/2$",
+            "Le déphasage est nul (tension et courant en phase)",
+            "Ils sont en opposition de phase"
+        ],
+        "difficulty": 1,
+        "chapter": "Exercices",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_037",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "D'après l'exercice 2, comment détermine-t-on la valeur efficace de la f.e.m $E_{eff}$ pour un alternateur de résistance négligeable débitant sur une résistance, avec le diagramme de Fresnel ?",
+        "answers": [
+            "$E_{eff} = U_{eff} + L\\omega I_{eff}$",
+            "$E_{eff} = \\sqrt{U_{eff}^2 + (L\\omega I_{eff})^2}$",
+            "$E_{eff} = U_{eff} - L\\omega I_{eff}$",
+            "$E_{eff} = \\sqrt{U_{eff}^2 - (L\\omega I_{eff})^2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_038",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "La valeur efficace de la fem induite est donnée par $E_{eff} = M_0 I_r \\omega$. Que représente le coefficient $M_0$ ?",
+        "answers": [
+            "L'inductance propre du rotor",
+            "La capacité parasite stator-rotor",
+            "Une constante de mutuelle inductance maximale entre rotor et stator",
+            "Le couple de freinage magnétique"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_039",
+        "image_path": null,
+        "theme": "puissance",
+        "question": "Dans une machine synchrone diphasée (2 phases identiques), si une phase produit la puissance $P_1 = U_{eff} I_{eff} \\cos(\\phi)$, quelle est la puissance totale produite ?",
+        "answers": [
+            "$P = P_1$",
+            "$P = \\sqrt{2} P_1$",
+            "$P = 2 P_1$",
+            "$P = 3 P_1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_040",
+        "image_path": null,
+        "theme": "architecture",
+        "question": "Que signifie l'adjectif 'monophasé' pour un alternateur (comme dans l'exercice 3) ?",
+        "answers": [
+            "Il y a une seule phase au rotor",
+            "Il n'y a qu'une seule phase au stator",
+            "Il y a trois phases mais on n'en utilise qu'une",
+            "Le champ magnétique ne tourne pas"
+        ],
+        "difficulty": 1,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_041",
+        "image_path": null,
+        "theme": "méthodologie",
+        "question": "Comment déduit-on la constante de flux $\\Phi_0$ à partir d'un essai à vide où l'on mesure la tension $U_{eff}$ (rappel: à vide $I=0$) ?",
+        "answers": [
+            "$\\Phi_0 = U_{eff} \\times \\omega$",
+            "$\\Phi_0 = \\frac{U_{eff}}{\\omega}$ car à vide $E_{eff} = U_{eff}$",
+            "$\\Phi_0 = U_{eff} \\times I_R$",
+            "$\\Phi_0 = \\frac{\\omega}{U_{eff}}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_042",
+        "image_path": null,
+        "theme": "puissance",
+        "question": "L'exercice 3 modélise les pertes mécaniques par des frottements fluides. Si $f$ est le coefficient de frottement, quelle est l'expression de la puissance perdue $P_{meca}$ ?",
+        "answers": [
+            "$P_{meca} = -f \\omega$",
+            "$P_{meca} = -f \\omega^2$",
+            "$P_{meca} = -\\frac{f}{\\omega}$",
+            "$P_{meca} = -f \\sin(\\omega t)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_043",
+        "image_path": null,
+        "theme": "puissance",
+        "question": "Comment calcule-t-on le rendement $\\eta$ d'un alternateur débitant sur une charge $P_{charge}$, avec des pertes mécaniques $P_{meca}$ et pertes Joule $P_J$ (les grandeurs P_meca et P_J sont en valeur absolue) ?",
+        "answers": [
+            "$\\eta = \\frac{P_{charge}}{P_{meca} + P_J}$",
+            "$\\eta = \\frac{P_{charge} + P_{meca} + P_J}{P_{charge}}$",
+            "$\\eta = \\frac{P_{charge}}{P_{charge} + P_{meca} + P_J}$",
+            "$\\eta = 1 - \\frac{P_{charge}}{P_{meca}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_044",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Dans l'exercice 4 (Traction de véhicule), quelle est la puissance supplémentaire que le moteur doit fournir pour monter une pente d'angle $\\alpha$ à vitesse constante $v$ (sans compter les frottements) ?",
+        "answers": [
+            "$P = mgv \\cos(\\alpha)$",
+            "$P = mgv \\sin(\\alpha)$",
+            "$P = \\frac{1}{2} mv^2$",
+            "$P = mgv \\tan(\\alpha)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_045",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Une pente de 10% en mathématiques et physique correspond approximativement à quel sinus d'angle $\\alpha$ (pour de petits angles) ?",
+        "answers": [
+            "$\\sin(\\alpha) \\approx 0.01$",
+            "$\\sin(\\alpha) \\approx 0.1$",
+            "$\\sin(\\alpha) \\approx 0.5$",
+            "$\\sin(\\alpha) \\approx 1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_046",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour trouver la tension d'alimentation d'un moteur synchrone, on utilise souvent un diagramme tracé à partir de la loi des mailles $\\underline{u} = \\underline{E} + jL\\omega\\underline{i}$. Quel est le nom usuel de ce diagramme de Fresnel particulier ?",
+        "answers": [
+            "Diagramme de Bode",
+            "Diagramme de Nyquist",
+            "Diagramme de Behn-Eschenburg",
+            "Diagramme de Blondel"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_047",
+        "image_path": null,
+        "theme": "architecture",
+        "question": "L'exercice 5 mentionne l'utilisation de $p$ paires de pôles. Quel est l'intérêt d'augmenter le nombre de paires de pôles pour une fréquence électrique $f$ imposée du réseau ?",
+        "answers": [
+            "Augmenter la tension de sortie",
+            "Diminuer la vitesse mécanique de rotation de la machine",
+            "Augmenter le rendement",
+            "Permettre l'utilisation de courant continu"
+        ],
+        "difficulty": 4,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_048",
+        "image_path": null,
+        "theme": "grandeurs physiques",
+        "question": "Pour une machine à $p$ paires de pôles, quelle relation relie la fréquence électrique $f$ et la vitesse de rotation en tr/s $n_s$ ?",
+        "answers": [
+            "$f = n_s$",
+            "$f = p \\times n_s$",
+            "$f = \\frac{n_s}{p}$",
+            "$f = 2\\pi p n_s$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_049",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "D'après les équations de l'alternateur, si l'on diminue la vitesse de rotation $\\omega$ par deux tout en gardant le courant d'excitation $I_r$ constant, comment évolue la force électromotrice à vide $E$ ?",
+        "answers": [
+            "Elle est multipliée par 2",
+            "Elle reste constante",
+            "Elle est divisée par 2",
+            "Elle est divisée par 4"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_050",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour un essai en charge résistive (résistance $r$ au stator incluse), les pertes Joule de l'alternateur s'évaluent avec quelle formule ?",
+        "answers": [
+            "$P_J = \\frac{r^2}{I}$",
+            "$P_J = r I^2$",
+            "$P_J = r E^2$",
+            "$P_J = \\frac{I^2}{r}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_051",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est la cause de la création d'une force électromotrice induite au stator d'une machine synchrone ?",
+        "answers": [
+            "La rotation du champ magnétique statorique pur",
+            "La variation du flux du champ magnétique rotorique à travers les bobines du stator",
+            "L'application d'une tension continue au stator",
+            "L'effet de peau dans les conducteurs"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_052",
+        "image_path": null,
+        "theme": "champs magnétiques",
+        "question": "Si $i_1(t) = I_S \\cos(\\omega t)$ parcourt l'encoche $\\mathcal{C}_1$ placée à l'axe des abscisses, quel champ génère-t-elle seul en un point de l'entrefer d'angle $\\theta$ ?",
+        "answers": [
+            "$\\vec{B}_{S1}(M,t) = K_S I_S \\cos(\\omega t) \\cos(\\theta) \\vec{u}_r$",
+            "$\\vec{B}_{S1}(M,t) = K_S I_S \\cos(\\omega t) \\vec{u}_r$",
+            "$\\vec{B}_{S1}(M,t) = K_S I_S \\cos(\\theta - \\omega t) \\vec{u}_r$",
+            "$\\vec{B}_{S1}(M,t) = K_S I_S \\sin(\\theta) \\vec{u}_r$"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_053",
+        "image_path": null,
+        "theme": "mathématiques appliquées",
+        "question": "Pour obtenir le champ glissant $K_S I_S \\cos(\\theta - \\omega t)$, on additionne le champ de $\\mathcal{C}_1$ et de $\\mathcal{C}_2$. Quelle identité trigonométrique est utilisée ?",
+        "answers": [
+            "$\\cos(a)\\cos(b) - \\sin(a)\\sin(b) = \\cos(a+b)$",
+            "$\\cos(a)\\cos(b) + \\sin(a)\\sin(b) = \\cos(a-b)$",
+            "$\\sin(a)\\cos(b) + \\cos(a)\\sin(b) = \\sin(a+b)$",
+            "$\\cos(a) + \\cos(b) = 2\\cos(\\frac{a+b}{2})\\cos(\\frac{a-b}{2})$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_054",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "Quelle affirmation sur le couple de décrochage est vraie ?",
+        "answers": [
+            "C'est le couple minimum pour que la machine tourne",
+            "C'est la limite de couple résistif au-delà de laquelle la machine perd le synchronisme",
+            "Il se produit à l'angle $\\alpha = \\pi$",
+            "Il est indépendant du courant d'excitation rotorique"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_055",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "Que représente l'angle $\\alpha$ dans l'expression de l'énergie $\\mathcal{E} \\propto \\cos(\\alpha_R - \\omega t)$ lorsque la machine est au synchronisme ($\\alpha_R = \\omega_R t - \\alpha$ et $\\omega_R = \\omega$) ?",
+        "answers": [
+            "Un angle qui croît indéfiniment avec le temps",
+            "Un retard de phase constant du rotor par rapport au champ glissant statorique",
+            "L'angle de calage des balais",
+            "L'angle entre les deux phases du stator"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_056",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "La mutuelle inductance entre la phase statorique 1 et le rotor dépend de la position $\\alpha_R$ du rotor. Quelle est sa forme typique ?",
+        "answers": [
+            "$M_{1R} = M_0 \\sin(\\omega_0 t)$",
+            "$M_{1R} = M_0 \\sqrt{2} \\cos(\\alpha_R)$",
+            "$M_{1R} = Constante$",
+            "$M_{1R} = L_S$"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_057",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Si le flux provenant du rotor vers la phase 1 du stator est $\\Phi_{R \\to 1} = M_0 \\sqrt{2} I_R \\cos(\\omega t - \\alpha)$, que vaut la force électromotrice induite $e_1 = - \\frac{d\\Phi_{R \\to 1}}{dt}$ ?",
+        "answers": [
+            "$e_1 = M_0 \\sqrt{2} I_R \\cos(\\omega t - \\alpha)$",
+            "$e_1 = - M_0 \\sqrt{2} I_R \\omega \\sin(\\omega t - \\alpha)$",
+            "$e_1 = M_0 \\sqrt{2} I_R \\omega \\sin(\\omega t - \\alpha)$",
+            "$e_1 = M_0 I_R \\omega$"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_058",
+        "image_path": null,
+        "theme": "puissance",
+        "question": "La puissance mécanique d'un moteur synchrone s'écrit $P_{m} = \\Gamma \\omega$. En régime nominal, d'où provient physiquement cette puissance selon le bilan électrique ?",
+        "answers": [
+            "De la puissance réactive du réseau",
+            "Du terme de conversion $e'_1 i_1 + e'_2 i_2$",
+            "Des pertes par effet Joule $R_S I^2$",
+            "De l'énergie magnétique stockée dans l'inductance $L_S$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_059",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Dans le calcul de l'énergie magnétique dans l'entrefer, on trouve trois intégrales ($B_S^2$, $B_R^2$, $2 B_S B_R$). À quoi donne naissance le terme croisé $2 B_S B_R$ ?",
+        "answers": [
+            "À l'inductance propre du stator",
+            "À l'inductance propre du rotor",
+            "Au couple électromagnétique",
+            "Aux pertes fer"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_060",
+        "image_path": null,
+        "theme": "stabilité",
+        "question": "Lorsqu'un frottement ralentit légèrement le rotor ($\\alpha$ augmente) autour de la position d'équilibre stable $\\alpha_1 < \\pi/2$, quelle est la réaction du couple électromagnétique ?",
+        "answers": [
+            "Il diminue, amplifiant le retard",
+            "Il augmente, ramenant le rotor au synchronisme",
+            "Il s'annule immédiatement",
+            "Il devient négatif"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_061",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Comment calcule-t-on le module de la tension complexe $\\underline{U}_1 = \\underline{E}'_1 + R_S \\underline{I}_1 + jL_S\\omega \\underline{I}_1$ si l'on néglige $R_S$ et que $\\underline{I}_1$ est réel ?",
+        "answers": [
+            "$U_1 = E'_1 + L_S \\omega I_1$",
+            "Il faut projeter $\\underline{E}'_1$ sur l'axe réel et imaginaire",
+            "$U_1 = \\sqrt{E'^2_1 + (L_S \\omega I_1)^2}$ (seulement si E'_1 et I_1 sont orthogonaux)",
+            "La question 2 est la seule méthode générale correcte."
+        ],
+        "difficulty": 4,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 3,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_062",
+        "image_path": null,
+        "theme": "architecture",
+        "question": "Pourquoi dit-on que la machine synchrone est réversible ?",
+        "answers": [
+            "Elle peut tourner dans les deux sens",
+            "Elle peut fonctionner avec des courants continus ou alternatifs",
+            "Elle peut convertir l'énergie électrique en mécanique (moteur) et vice versa (alternateur)",
+            "Son champ magnétique change de sens périodiquement"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_063",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle condition sur la perméabilité permet de dire que le ferromagnétique ne stocke pratiquement pas d'énergie magnétique par rapport à l'entrefer ?",
+        "answers": [
+            "$\\mu_r = 1$",
+            "$\\mu_r = 0$",
+            "$\\mu_r \\ll 1$",
+            "$\\mu_r \\gg 1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 3,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_064",
+        "image_path": null,
+        "theme": "grandeurs physiques",
+        "question": "La formule du volume élémentaire de l'entrefer en coordonnées cylindriques (longueur $l$, rayon $R$, épaisseur $e$) utilisée dans le cours est :",
+        "answers": [
+            "$d\\tau = \\pi R^2 l$",
+            "$d\\tau = R d\\theta dr dz$",
+            "$d\\tau = e \\times R d\\theta \\times l$",
+            "$d\\tau = \\frac{4}{3} \\pi R^3$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_065",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "Le TMC appliqué au rotor en régime permanent (vitesse constante) s'écrit :",
+        "answers": [
+            "$J \\frac{d\\omega_R}{dt} = \\Gamma + \\Gamma_{charge} = 0$",
+            "$J \\frac{d\\omega_R}{dt} = \\Gamma - \\Gamma_{charge} = 0$",
+            "$\\Gamma = J \\omega_R$",
+            "$\\Gamma_{charge} = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_066",
+        "image_path": null,
+        "theme": "stabilité",
+        "question": "Si $\\Gamma_{charge}$ est supérieur au couple de décrochage $\\Gamma_{max}$, que se passe-t-il ?",
+        "answers": [
+            "La machine s'emballe et tourne plus vite",
+            "La machine reste au synchronisme mais chauffe",
+            "La machine perd le synchronisme (elle 'décroche')",
+            "L'angle $\\alpha$ devient négatif"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_067",
+        "image_path": null,
+        "theme": "technologie",
+        "question": "Comment le champ rotorique est-il introduit physiquement dans la machine ?",
+        "answers": [
+            "Par des aimants permanents ou un bobinage parcouru par un courant continu $I_R$",
+            "Uniquement par induction depuis le stator (sans alimentation externe)",
+            "Par un enroulement triphasé au rotor",
+            "Par un matériau diamagnétique"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_068",
+        "image_path": null,
+        "theme": "champs magnétiques",
+        "question": "Que représente la valeur $\\frac{\\mu_0 i_1}{2e}$ dans le calcul du champ de l'entrefer ?",
+        "answers": [
+            "Le flux magnétique total",
+            "La circulation du champ H",
+            "L'amplitude uniforme (au signe près) du champ $B_{entrefer}$ créé par une spire",
+            "La force de Laplace"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_069",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans l'expression complexe $\\underline{e} = -j\\omega \\Phi$ tirée du TD 1, que traduit la présence de $-j$ ?",
+        "answers": [
+            "Une avance de phase de $\\pi/2$",
+            "Un retard de phase de $\\pi/2$ lié à la dérivation $-d\\Phi/dt$",
+            "Une inversion de signe pure",
+            "Une atténuation de l'amplitude"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_070",
+        "image_path": null,
+        "theme": "méthodologie",
+        "question": "Dans l'exercice 1, $u=0$ en court-circuit. L'équation devient $e = L \\frac{dI_s}{dt}$. Quelle hypothèse implicite cela valide-t-il sur le circuit ?",
+        "answers": [
+            "Le condensateur est déchargé",
+            "La résistance du stator est négligée",
+            "Le courant de court-circuit est infini",
+            "La fréquence est nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_071",
+        "image_path": null,
+        "theme": "puissance",
+        "question": "Si $E_{eff} = 120$ V, $I_{eff} = 30$ A, et le déphasage $\\Psi$ entre $E$ et $I$ est de $0.41$ rad. L'expression de la puissance électromagnétique (moteur diphasé) est :",
+        "answers": [
+            "$P_{em} = E_{eff} I_{eff} \\cos(\\Psi)$",
+            "$P_{em} = 2 E_{eff} I_{eff} \\cos(\\Psi)$",
+            "$P_{em} = 3 E_{eff} I_{eff} \\cos(\\Psi)$",
+            "$P_{em} = 2 E_{eff} I_{eff} \\sin(\\Psi)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_072",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Pour retrouver le couple $\\Gamma$ à partir de la puissance électromagnétique $P_{em}$ évaluée à $3.3$ kW à la vitesse angulaire $\\omega$, on utilise :",
+        "answers": [
+            "$\\Gamma = \\frac{P_{em}}{\\omega^2}$",
+            "$\\Gamma = P_{em} \\times \\omega$",
+            "$\\Gamma = \\frac{P_{em}}{\\omega}$",
+            "$\\Gamma = \\sqrt{P_{em}}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Exercices",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_073",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le schéma monophasé de l'exercice 3, la loi des mailles s'écrit $e(t) = L_s \\frac{di}{dt} + (R + R_s)i(t)$. Si on passe aux valeurs efficaces au carré avec le diagramme de Fresnel (orthogonalité), on obtient :",
+        "answers": [
+            "$E_{eff} = (R+R_s) I_{eff} + L_s \\omega I_{eff}$",
+            "$E_{eff}^2 = ((R+R_s)I_{eff})^2 + (X_s I_{eff})^2$ où $X_s = L_s \\omega$",
+            "$E_{eff} = X_s I_{eff} - (R+R_s) I_{eff}$",
+            "$E_{eff}^2 = ((R+R_s)I_{eff})^2 - (X_s I_{eff})^2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_074",
+        "image_path": null,
+        "theme": "puissance",
+        "question": "Dans le bilan du rendement de l'alternateur de l'exercice 3 : $\\eta = \\frac{P_{charge}}{P_{charge} + P_{meca} + P_J}$. Si $P_{charge} = 627$ W, $P_{meca} = 105$ W, $P_J = 5$ W, que vaut approximativement le rendement ?",
+        "answers": [
+            "0.85 (ou 85%)",
+            "0.98 (ou 98%)",
+            "1.00 (ou 100%)",
+            "0.70 (ou 70%)"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_075",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Un véhicule de masse $m$ monte une pente $\\alpha$ à vitesse constante $v$. La somme des forces projetée sur l'axe du mouvement s'écrit (avec la force de traction $F$, poids $P_x = mg \\sin\\alpha$, frottements $f$) :",
+        "answers": [
+            "$F - mg \\sin\\alpha - f = 0$",
+            "$F + mg \\sin\\alpha - f = 0$",
+            "$F - mg \\cos\\alpha - f = 0$",
+            "$F - mg = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_076",
+        "image_path": null,
+        "theme": "puissance",
+        "question": "En multipliant l'équation des forces de traction par $v$, on obtient l'équation des puissances : $P_{moteur} = mgv \\sin\\alpha + P_{frott}$. Quelle conversion d'unité est indispensable pour un $v$ donné en km/h ?",
+        "answers": [
+            "Diviser par 3.6 pour obtenir des m/s",
+            "Multiplier par 3.6 pour obtenir des m/s",
+            "Multiplier par 1000",
+            "Garder la vitesse en km/h car les kW compensent"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_077",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le diagramme de Behn-Eschenburg de l'exercice 4, la tension d'alimentation est $U = |\\underline{E} + jL\\omega\\underline{I}|$. Si $\\underline{E}$ est sur l'axe réel et $\\underline{I}$ fait un angle par rapport à $\\underline{E}$, on utilise :",
+        "answers": [
+            "Le théorème de Pythagore direct : $U^2 = E^2 + (L\\omega I)^2$",
+            "Le théorème d'Al-Kashi ou la projection vectorielle pour évaluer le module",
+            "L'addition simple des modules $U = E + L\\omega I$",
+            "La soustraction des modules $U = E - L\\omega I$"
+        ],
+        "difficulty": 4,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_078",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans l'exercice 4, la projection de $\\underline{U}$ sur l'axe des abscisses vaut $(E - \\omega L I \\cos(\\frac{\\pi}{6}))$ et sur les ordonnées $(\\omega L I \\sin(\\frac{\\pi}{6}))$. Comment en déduit-on la norme $U^2$ ?",
+        "answers": [
+            "$U^2 = (E - \\omega L I \\cos(\\frac{\\pi}{6}))^2 - (\\omega L I \\sin(\\frac{\\pi}{6}))^2$",
+            "$U^2 = (E - \\omega L I \\cos(\\frac{\\pi}{6}))^2 + (\\omega L I \\sin(\\frac{\\pi}{6}))^2$",
+            "$U^2 = E^2 + (\\omega L I)^2$",
+            "$U^2 = (E - \\omega L I \\sin(\\frac{\\pi}{6}))^2 + (\\omega L I \\cos(\\frac{\\pi}{6}))^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_079",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'exercice 5 décrit le principe de l'alternateur. Parmi ces étapes, laquelle est la cause initiale de l'induction au stator ?",
+        "answers": [
+            "Le courant dans le rotor crée un champ magnétique $B_r$ (excitation)",
+            "La création d'un champ magnétique tournant par le stator",
+            "L'apparition d'un couple de Laplace sur le stator",
+            "L'alimentation de l'onduleur"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_080",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "La variation du flux créé par le rotor au travers du stator s'écrit $\\frac{d\\Phi}{dt} = -M_0 i_r \\omega \\sin(\\omega t - \\alpha)$. L'amplitude de la fem $e(t)$ est donc proportionnelle à :",
+        "answers": [
+            "$\\omega$ uniquement",
+            "$i_r$ uniquement",
+            "$\\omega$ et $i_r$",
+            "Elle est constante"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_081",
+        "image_path": null,
+        "theme": "puissance",
+        "question": "Si l'alternateur de l'exercice 5 a des pertes de 450 W et débite un courant efficace $I = 30$ A sur une charge, et que les pertes sont uniquement de type Joule ($rI^2$), comment évaluer $r$ ?",
+        "answers": [
+            "$r = 450 \\times 30^2$",
+            "$r = \\frac{30^2}{450}$",
+            "$r = \\frac{450}{30^2}$",
+            "$r = \\sqrt{\\frac{450}{30}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_082",
+        "image_path": null,
+        "theme": "architecture",
+        "question": "Lequel de ces rôles n'est PAS rempli par l'entrefer dans une machine tournante ?",
+        "answers": [
+            "Permettre la rotation mécanique du rotor sans frottement solide contre le stator",
+            "Stocker la majeure partie de l'énergie électromagnétique",
+            "Canaliser parfaitement le flux magnétique (comme un matériau ferromagnétique le ferait)",
+            "Servir de milieu de couplage entre le champ statorique et rotorique"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_083",
+        "image_path": null,
+        "theme": "champs magnétiques",
+        "question": "En considérant que le champ magnétique dans l'entrefer est uniforme sous les encoches et change de signe, quelle forme d'onde dessine $B_{entrefer}(\\theta)$ d'après le graphique du cours ?",
+        "answers": [
+            "Une sinusoïde parfaite",
+            "Un signal triangulaire",
+            "Un créneau (ou signal carré-rectangulaire)",
+            "Une parabole"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_084",
+        "image_path": null,
+        "theme": "mathématiques appliquées",
+        "question": "Le terme $\\int_0^{2\\pi} \\cos^2(\\theta - \\omega t) d\\theta$ apparaît lors du calcul de l'énergie de l'entrefer. Que vaut cette intégrale (utilisée pour trouver $\\pi B_{S0}^2$) ?",
+        "answers": [
+            "0",
+            "$\\pi$",
+            "$2\\pi$",
+            "$\\frac{\\pi}{2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_085",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "Dans l'expression du couple $\\Gamma(t) = \\frac{B_{S0}B_{R0}}{2\\mu_0} V \\sin((\\omega - \\omega_R)t + \\alpha)$, si on est légèrement en dehors du synchronisme ($\\omega \\neq \\omega_R$), que fait le couple moyen ?",
+        "answers": [
+            "Il est maximal",
+            "Il est constant",
+            "Il est strictement nul (moyenné sur une ou plusieurs périodes de glissement)",
+            "Il diverge vers l'infini"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_086",
+        "image_path": null,
+        "theme": "stabilité",
+        "question": "Sur le graphe du couple synchrone en fonction de l'angle $\\alpha$, la courbe a la forme d'une sinusoïde $\\Gamma \\propto \\sin(\\alpha)$. Quelle droite horizontale vient couper cette courbe pour trouver le(s) point(s) de fonctionnement ?",
+        "answers": [
+            "La droite $\\Gamma = 0$",
+            "La droite $\\Gamma = \\Gamma_{charge}$",
+            "La droite $\\Gamma = \\Gamma_{max}$",
+            "La droite $\\Gamma = -\\Gamma_{charge}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_087",
+        "image_path": null,
+        "theme": "technologie",
+        "question": "Lors du démarrage en asynchrone d'un moteur synchrone, quel phénomène physique est exploité avant d'enclencher l'alimentation DC du rotor ?",
+        "answers": [
+            "L'effet Hall",
+            "La supraconductivité",
+            "L'induction électromagnétique dans les bobines fermées du rotor par le champ glissant",
+            "La résonance paramagnétique"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_088",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "La variation du flux mutuel $\\Phi_{1} = M_0 \\sqrt{2} I_R \\cos(\\omega t - \\alpha)$ est due à :",
+        "answers": [
+            "La variation du courant continu $I_R$",
+            "La rotation du rotor (angle $\\alpha_R = \\omega t - \\alpha$) modifiant l'alignement géométrique",
+            "Une variation de la géométrie de l'encoche",
+            "Un champ parasite externe"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_089",
+        "image_path": null,
+        "theme": "puissance",
+        "question": "Dans le bilan de puissance du moteur diphasé, le terme dissipatif au rotor s'écrit $R_R I_R^2$. Fait-il chuter le rendement global ?",
+        "answers": [
+            "Non, l'énergie du rotor est gratuite",
+            "Oui, car l'alimentation de l'inducteur consomme de la puissance $P_{excitation} = u_R I_R$",
+            "Non, car $I_R$ est alternatif de moyenne nulle",
+            "Oui, mais c'est compensé par l'effet de Foucault"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_090",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour identifier les paramètres $L_S$ (ou $X_s$) et $E'_1$ d'une machine, il est courant d'effectuer :",
+        "answers": [
+            "Seulement un essai en charge",
+            "Un essai à vide pour trouver $E$ et un essai en court-circuit pour trouver $L_S$",
+            "Une mesure au multimètre continu",
+            "Un démontage du rotor"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_091",
+        "image_path": null,
+        "theme": "grandeurs physiques",
+        "question": "Quel est l'ordre de grandeur classique de la fréquence du réseau électrique en Europe (et dans les exercices du TD) ?",
+        "answers": [
+            "60 Hz",
+            "50 Hz",
+            "400 Hz",
+            "100 Hz"
+        ],
+        "difficulty": 1,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_092",
+        "image_path": null,
+        "theme": "grandeurs physiques",
+        "question": "Si $f = 50$ Hz, quelle est la valeur approchée de la pulsation $\\omega = 2\\pi f$ ?",
+        "answers": [
+            "157 rad/s",
+            "314 rad/s",
+            "628 rad/s",
+            "50 rad/s"
+        ],
+        "difficulty": 1,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_093",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans l'exercice 2, avec $L\\omega = 1.6 \\Omega$, $I_{eff} = 30$ A, la chute de tension inductive est $L\\omega I_{eff}$. Que vaut-elle numériquement ?",
+        "answers": [
+            "1.6 V",
+            "30 V",
+            "48 V",
+            "4.8 V"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_094",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "La conversion électromagnétique parfaite implique quelle relation entre la puissance électromagnétique $P_{em}$ et la puissance mécanique interne $P_m$ ?",
+        "answers": [
+            "$P_{em} > P_m$",
+            "$P_{em} = P_m$",
+            "$P_{em} < P_m$",
+            "$P_{em} = P_m + P_{frott}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_095",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En utilisant la loi d'Ohm complexe, pourquoi la tension aux bornes d'une réactance inductive pure en régime sinusoïdal est-elle déphasée de $\\pi/2$ par rapport au courant ?",
+        "answers": [
+            "Car $\\underline{Z}_L = L\\omega$",
+            "Car $\\underline{Z}_L = j L\\omega$, et $j = e^{j\\pi/2}$",
+            "Car l'inductance consomme de la puissance active",
+            "Car le courant précède toujours la tension"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_096",
+        "image_path": null,
+        "theme": "technologie",
+        "question": "Pourquoi le rotor d'un grand alternateur nucléaire ne comporte typiquement qu'une seule paire de pôles ($p=1$) ?",
+        "answers": [
+            "Pour fournir une tension de 1 V",
+            "Pour tourner à la vitesse maximale de 3000 tr/min (50 Hz), adaptée à la turbine à vapeur",
+            "Pour éviter d'avoir à mettre du ferromagnétique",
+            "Pour tourner très lentement (50 tr/min)"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_097",
+        "image_path": null,
+        "theme": "technologie",
+        "question": "L'avantage d'une machine à 4 paires de pôles ($p=4$) devant générer du 50 Hz est :",
+        "answers": [
+            "De pouvoir tourner à 3000 tr/min",
+            "De pouvoir tourner à 750 tr/min, ce qui réduit les contraintes mécaniques ou s'adapte à une turbine lente (ex: hydraulique)",
+            "De quadrupler le rendement Joule",
+            "D'annuler la force contre-électromotrice"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_098",
+        "image_path": null,
+        "theme": "puissance",
+        "question": "Si un alternateur monophasé délivre 3.3 kW (charge résistive) avec un rendement de 0.88, quelle est approximativement la puissance totale absorbée (mécanique) ?",
+        "answers": [
+            "$P_{abs} = 3300 \\times 0.88 = 2904$ W",
+            "$P_{abs} = \\frac{3300}{0.88} = 3750$ W",
+            "$P_{abs} = 3300 + 0.88 = 3300.88$ W",
+            "$P_{abs} = 3300$ W"
+        ],
+        "difficulty": 3,
+        "chapter": "Exercices",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_099",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Le courant induit dans le stator de la génératrice crée à son tour un champ magnétique. Quelle loi fondamentale dicte qu'il va s'opposer à la cause qui lui a donné naissance (créant un couple résistant) ?",
+        "answers": [
+            "La loi de Biot-Savart",
+            "Le théorème de Gauss",
+            "La loi de Lenz (-Faraday)",
+            "L'équation de Maxwell-Ampère"
+        ],
+        "difficulty": 2,
+        "chapter": "Exercices",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ms_100",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un diagramme de Fresnel, si un courant $I_{eff}$ parcourt une résistance $R_s$, le vecteur tension $R_s I_{eff}$ est :",
+        "answers": [
+            "Colinéaire et de même sens au vecteur courant",
+            "Orthogonal au vecteur courant",
+            "Opposé au vecteur courant",
+            "Tournant à la vitesse $\\omega/2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine synchrone",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    }
+]

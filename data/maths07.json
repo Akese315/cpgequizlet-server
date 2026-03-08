@@ -1,0 +1,1650 @@
+[
+    {
+        "uuid": "math-se-001",
+        "image_path": null,
+        "theme": "Convergence dominée",
+        "chapter": "Séries entières",
+        "question": "Soit $(f_n)$ une suite de fonctions continues par morceaux sur $I$. Quelle condition de domination est requise par le Théorème de Convergence Dominée pour affirmer que $\\lim \\int_I f_n = \\int_I \\lim f_n$ ?",
+        "answers": [
+            "$\\exists \\varphi \\in L^1(I), \\forall n, |f_n| \\le \\varphi$",
+            "$\\forall n, f_n$ est bornée sur $I$",
+            "La suite $(\\int_I f_n)$ est bornée",
+            "$\\sum f_n$ converge uniformément"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-002",
+        "image_path": null,
+        "theme": "Suites d'intégrales",
+        "chapter": "Séries entières",
+        "question": "Déterminer la limite de $I_n = \\int_{0}^{1} \\ln(1+t^n) dt$ quand $n \\to +\\infty$.",
+        "answers": [
+            "$\\ln(2)$",
+            "1",
+            "0",
+            "$+\\infty$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-003",
+        "image_path": null,
+        "theme": "Séries de fonctions intégrables",
+        "chapter": "Séries entières",
+        "question": "Pour appliquer le théorème d'intégration terme à terme à une série de fonctions $\\sum u_n$, quelle condition sur les intégrales des modules est nécessaire ?",
+        "answers": [
+            "La suite $(\\int_I |u_n|)$ tend vers 0",
+            "La série $\\sum \\int_I |u_n|$ converge",
+            "$\\int_I (\\sum |u_n|)$ est finie",
+            "Toutes les propositions ci-dessus sont équivalentes"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-004",
+        "image_path": null,
+        "theme": "Séries Entières - Définition",
+        "chapter": "Séries entières",
+        "question": "Soit $\\sum a_n z^n$ une série entière. Le rayon de convergence $R$ est défini comme :",
+        "answers": [
+            "$\\inf \\{ r \\ge 0 \\mid (a_n r^n) \\text{ est bornée} \\}$",
+            "$\\sup \\{ r \\ge 0 \\mid (a_n r^n) \\text{ tend vers } 0 \\}$",
+            "$\\sup \\{ r \\ge 0 \\mid (a_n r^n) \\text{ est bornée} \\}$",
+            "$\\lim_{n \\to +\\infty} |a_n/a_{n+1}|$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-005",
+        "image_path": null,
+        "theme": "Lemme d'Abel",
+        "chapter": "Séries entières",
+        "question": "Si la suite $(a_n z_0^n)$ est bornée pour un certain $z_0 \\neq 0$, que peut-on dire de la série $\\sum a_n z^n$ pour tout $z$ tel que $|z| < |z_0|$ ?",
+        "answers": [
+            "Elle diverge",
+            "Elle converge absolument",
+            "Elle converge, mais pas forcément absolument",
+            "Elle est constante"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-006",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Si le rayon de convergence de $\\sum a_n z^n$ est $R$, quel est le rayon de convergence de $\\sum a_n z^{2n}$ ?",
+        "answers": [
+            "$R^2$",
+            "$R/2$",
+            "$\\sqrt{R}$",
+            "$R$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-007",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Soit $\\sum a_n z^n$ de rayon $R$. Quel est le rayon de convergence de la série $\\sum a_n^2 z^n$ ?",
+        "answers": [
+            "$R$",
+            "$2R$",
+            "$R^2$",
+            "$\\sqrt{R}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-008",
+        "image_path": null,
+        "theme": "Règle de d'Alembert",
+        "chapter": "Séries entières",
+        "question": "Si $|a_{n+1}/a_n| \\to L \\in [0, +\\infty]$, alors le rayon de convergence $R$ de $\\sum a_n z^n$ est :",
+        "answers": [
+            "$L$",
+            "$1/L$ (avec les conventions usuelles sur 0 et $\\infty$)",
+            "$e^L$",
+            "$\\ln(L)$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-009",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Déterminer le rayon de convergence de $\\sum n! z^n$.",
+        "answers": [
+            "1",
+            "$+\\infty$",
+            "0",
+            "$e$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-010",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Déterminer le rayon de convergence de $\\sum \\frac{z^n}{n!}$.",
+        "answers": [
+            "0",
+            "1",
+            "$e$",
+            "$+\\infty$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 3,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-011",
+        "image_path": null,
+        "theme": "Somme de série entière",
+        "chapter": "Séries entières",
+        "question": "Quelle est la somme de la série $\\sum_{n=0}^{+\\infty} z^n$ pour $|z| < 1$ ?",
+        "answers": [
+            "$e^z$",
+            "$\\frac{1}{1-z}$",
+            "$\\frac{1}{1+z}$",
+            "$\\ln(1-z)$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-012",
+        "image_path": null,
+        "theme": "Propriétés de la somme",
+        "chapter": "Séries entières",
+        "question": "Sur quel ensemble la somme d'une série entière de rayon $R > 0$ est-elle de classe $C^\\infty$ ?",
+        "answers": [
+            "Sur le disque fermé $\\bar{D}(0, R)$",
+            "Sur l'intervalle ouvert $]-R, R[$",
+            "Seulement en 0",
+            "Partout sur $\\mathbb{C}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-013",
+        "image_path": null,
+        "theme": "Dérivation terme à terme",
+        "chapter": "Séries entières",
+        "question": "Si $f(x) = \\sum_{n=0}^{+\\infty} a_n x^n$ a un rayon $R > 0$, que vaut $f'(x)$ pour $x \\in ]-R, R[$ ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} a_n x^{n-1}$",
+            "$\\sum_{n=1}^{+\\infty} n a_n x^{n-1}$",
+            "$\\sum_{n=0}^{+\\infty} a_{n+1} x^n$",
+            "$\\sum_{n=1}^{+\\infty} a_n \\frac{x^{n+1}}{n+1}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-014",
+        "image_path": null,
+        "theme": "Intégration terme à terme",
+        "chapter": "Séries entières",
+        "question": "Quelle est la série entière représentant $\\int_0^x \\frac{dt}{1-t}$ pour $|x| < 1$ ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} x^{n+1}$",
+            "$-\\sum_{n=1}^{+\\infty} \\frac{x^n}{n}$",
+            "$\\sum_{n=1}^{+\\infty} \\frac{x^n}{n}$",
+            "$\\sum_{n=0}^{+\\infty} (n+1)x^n$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-015",
+        "image_path": null,
+        "theme": "Théorème d'Abel (Continuité)",
+        "chapter": "Séries entières",
+        "question": "Si la série entière $\\sum a_n R^n$ converge, alors la somme $f(x) = \\sum a_n x^n$ est :",
+        "answers": [
+            "Toujours discontinue en $R$",
+            "Continue à gauche en $R$",
+            "Uniformément convergente sur $\\mathbb{R}$",
+            "Nulle en $R$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-016",
+        "image_path": null,
+        "theme": "Développement en série entière (DSE)",
+        "chapter": "Séries entières",
+        "question": "Quel est le DSE de $\\cos(x)$ en 0 ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^{2n}}{(2n)!}$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^{2n}}{(2n)!}$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^{2n+1}}{(2n+1)!}$",
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^n}{n!}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-017",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence du DSE de $f(x) = \\ln(1+x)$ ?",
+        "answers": [
+            "0",
+            "$1$",
+            "$+\\infty$",
+            "$1/e$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-018",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Quel est le DSE de $\\frac{1}{(1-x)^2}$ pour $|x| < 1$ ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} (n+1) x^n$",
+            "$\\sum_{n=0}^{+\\infty} n x^n$",
+            "$\\sum_{n=1}^{+\\infty} n x^{n+1}$",
+            "$\\sum_{n=0}^{+\\infty} x^n$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-019",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Pour la fonction $f(x) = (1+x)^\\alpha$, les coefficients du DSE sont donnés par :",
+        "answers": [
+            "$a_n = \\frac{\\alpha^n}{n!}$",
+            "$a_n = \\binom{\\alpha}{n} = \\frac{\\alpha(\\alpha-1)...(\\alpha-n+1)}{n!}$",
+            "$a_n = \\frac{1}{n!}$",
+            "$a_n = \\alpha^n$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-020",
+        "image_path": null,
+        "theme": "Unicité du DSE",
+        "chapter": "Séries entières",
+        "question": "Si $\\sum a_n x^n = \\sum b_n x^n$ sur un intervalle $]-\\alpha, \\alpha[$ avec $\\alpha > 0$, que peut-on conclure ?",
+        "answers": [
+            "$a_n = b_n$ pour tout $n$",
+            "$a_0 = b_0$ seulement",
+            "$a_n = (-1)^n b_n$",
+            "On ne peut rien conclure"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-021",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence de $\\sum \\cosh(n) x^n$ ?",
+        "answers": [
+            "1",
+            "$e$",
+            "$1/e$",
+            "$+\\infty$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-022",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Soit $d(n)$ le nombre de diviseurs de $n$. Quel est le rayon de convergence de $\\sum d(n) z^n$ ?",
+        "answers": [
+            "0",
+            "1",
+            "$+\\infty$",
+            "2"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-023",
+        "image_path": null,
+        "theme": "Produit de Cauchy",
+        "chapter": "Séries entières",
+        "question": "Si $\\sum a_n z^n$ et $\\sum b_n z^n$ ont pour rayons $R_a$ and $R_b$, quel est le rayon $R$ de leur produit de Cauchy ?",
+        "answers": [
+            "$R = R_a + R_b$",
+            "$R = \\min(R_a, R_b)$",
+            "$R \\ge \\min(R_a, R_b)$",
+            "$R = R_a R_b$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-024",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "Si $f(x) = \\sum a_n x^n$ est solution de $y' = y$ avec $f(0)=1$, quel est son coefficient $a_n$ ?",
+        "answers": [
+            "1",
+            "$1/n$",
+            "$1/n!$",
+            "$(-1)^n/n!$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-025",
+        "image_path": null,
+        "theme": "DSE et Parité",
+        "chapter": "Séries entières",
+        "question": "Si une fonction $f$ est impaire et développable en série entière $\\sum a_n x^n$, alors :",
+        "answers": [
+            "$a_n = 0$ pour tout $n$ pair",
+            "$a_n = 0$ pour tout $n$ impair",
+            "$a_n$ est toujours négatif",
+            "$a_n = a_{-n}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-026",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Soit $a_n = n^\\alpha$. Quel est le rayon de convergence de $\\sum n^\\alpha z^n$ pour $\\alpha \\in \\mathbb{R}$ ?",
+        "answers": [
+            "0",
+            "$\\alpha$",
+            "1",
+            "$+\\infty$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-027",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence de $\\sum \\frac{n!}{n^n} x^n$ ?",
+        "answers": [
+            "1",
+            "$e$",
+            "$1/e$",
+            "$+\\infty$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-028",
+        "image_path": null,
+        "theme": "Séries de Taylor",
+        "chapter": "Séries entières",
+        "question": "La série de Taylor de $f$ en 0 est $\\sum \\frac{f^{(n)}(0)}{n!} x^n$. Si $f$ est DSE de rayon $R$, cette série :",
+        "answers": [
+            "Converge vers $f(x)$ sur $]-R, R[$",
+            "Peut diverger partout sauf en 0",
+            "Converge vers $f(x)$ sur $\\mathbb{R}$",
+            "Est toujours un polynôme"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-029",
+        "image_path": null,
+        "theme": "Convergence dominée",
+        "chapter": "Séries entières",
+        "question": "On considère $f_n(t) = n^2 t^n(1-t)$ sur $[0,1]$. La suite $(f_n)$ converge simplement vers 0. L'intégrale $\\int_0^1 f_n(t) dt$ tend vers :",
+        "answers": [
+            "0",
+            "1",
+            "$\\frac{1}{2}$",
+            "$+\\infty$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-030",
+        "image_path": null,
+        "theme": "Interversion Intégrale/Série",
+        "chapter": "Séries entières",
+        "question": "Quelle identité est correcte d'après l'exercice 13 du cours ?",
+        "answers": [
+            "$\\int_0^1 \\frac{\\ln(t)}{t-1} dt = \\sum_{n=1}^{+\\infty} \\frac{1}{n^2}$",
+            "$\\int_0^1 \\frac{\\ln(t)}{t-1} dt = \\sum_{n=1}^{+\\infty} \\frac{(-1)^n}{n}$",
+            "$\\int_0^1 \\frac{\\ln(t)}{1+t} dt = \\sum_{n=1}^{+\\infty} \\frac{1}{n^2}$",
+            "$\\int_0^1 \\ln(t) dt = 1$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-031",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Déterminer le rayon de convergence de $\\sum a_n z^n$ avec $a_n = (1+1/\\sqrt{n})^n$.",
+        "answers": [
+            "1",
+            "$e$",
+            "$1/e$",
+            "0"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-032",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Si $\\frac{|a_{n+2}|}{|a_n|} \\to 2$, quel est le rayon de convergence de $\\sum a_n z^n$ ?",
+        "answers": [
+            "$1/2$",
+            "$2$",
+            "$1/\\sqrt{2}$",
+            "$\\sqrt{2}$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-033",
+        "image_path": null,
+        "theme": "Propriétés de la somme",
+        "chapter": "Séries entières",
+        "question": "Soit $S_n = \\sum_{k=0}^n a_k$. Si $\\sum a_n z^n$ a un rayon $R$, quel est le rayon de $\\sum S_n z^n$ ?",
+        "answers": [
+            "$R$",
+            "$\\min(R, 1)$",
+            "1",
+            "$R/2$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-034",
+        "image_path": null,
+        "theme": "Somme de série entière",
+        "chapter": "Séries entières",
+        "question": "Exprimer la somme de $\\sum_{n=0}^{+\\infty} S_n z^n$ en fonction de $f(z) = \\sum a_n z^n$.",
+        "answers": [
+            "$f(z)/(1-z)$",
+            "$f(z)(1-z)$",
+            "$f'(z)$",
+            "$f(z)/(1+z)$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-035",
+        "image_path": null,
+        "theme": "Opérations sur les séries",
+        "chapter": "Séries entières",
+        "question": "Si $\\sum a_n z^n$ a pour rayon $R$, quel est le rayon de $\\sum a_n e^{\\sqrt{n}} z^n$ ?",
+        "answers": [
+            "$R/e$",
+            "$R$",
+            "$R e$",
+            "$0$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-036",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence de la série $\\sum a_n z^{n^2}$ si le rayon de $\\sum a_n z^n$ est $R > 1$ ?",
+        "answers": [
+            "$R$",
+            "$1$",
+            "$\\sqrt{R}$",
+            "$+\\infty$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-037",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "Pour l'équation $xf''(x) + f'(x) + f(x) = 0$ avec $f(0)=1$, quel est le coefficient $a_n$ du DSE ?",
+        "answers": [
+            "$a_n = \\frac{(-1)^n}{(n!)^2}$",
+            "$a_n = \\frac{1}{n!}$",
+            "$a_n = \\frac{(-1)^n}{n!}$",
+            "$a_n = \\frac{1}{(n!)^2}$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-038",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Quel est le DSE de $\\arctan(x)$ ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^{2n+1}}{2n+1}$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^{2n+1}}{2n+1}$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^n}{n}$",
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^{2n}}{2n}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-039",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "Soit $f(x) = \\sum_{n=0}^{+\\infty} \\frac{x^n}{\\binom{2n}{n}}$. L'équation différentielle vérifiée par $f$ est :",
+        "answers": [
+            "$x(4-x)y' - (x+2)y = -2$",
+            "$y' = y + x$",
+            "$4xy'' + 2y' - y = 0$",
+            "$(1-x)y' = y$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-040",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Le développement en série entière de $\\sqrt{1+x}$ commence par :",
+        "answers": [
+            "$1 + x/2 + x^2/8$",
+            "$1 + x/2 - x^2/8$",
+            "$1 - x/2 + x^2/4$",
+            "$1 + x/2 + x^2/2$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-041",
+        "image_path": null,
+        "theme": "Séries de Bell",
+        "chapter": "Séries entières",
+        "question": "Soit $\\pi_n$ le nombre de partitions d'un ensemble à $n$ éléments. La fonction génératrice exponentielle $f(x) = \\sum \\frac{\\pi_n}{n!} x^n$ vérifie :",
+        "answers": [
+            "$f'(x) = f(x)$",
+            "$f'(x) = e^x f(x)$",
+            "$f'(x) = x f(x)$",
+            "$f(x) = e^{e^x}$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-042",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Si $a_n \\sim b_n$ avec $b_n > 0$, que peut-on dire des rayons de convergence $R_a$ et $R_b$ ?",
+        "answers": [
+            "$R_a = R_b$",
+            "$R_a \\le R_b$",
+            "$R_a \\ge R_b$",
+            "On ne peut pas conclure"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-043",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Déterminer le rayon de convergence de $\\sum \\sin(n) z^n$.",
+        "answers": [
+            "0",
+            "1",
+            "$+\\infty$",
+            "$\\pi$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-044",
+        "image_path": null,
+        "theme": "Théorème de Bernstein",
+        "chapter": "Séries entières",
+        "question": "Si $f \\in C^\\infty(]-r, r[)$ et $\\forall n, \\forall x, f^{(n)}(x) \\ge 0$, alors :",
+        "answers": [
+            "$f$ est un polynôme",
+            "$f$ est développable en série entière sur $]-r, r[$",
+            "$f$ est la fonction exponentielle",
+            "$f$ est nulle"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-045",
+        "image_path": null,
+        "theme": "Somme de série entière",
+        "chapter": "Séries entières",
+        "question": "Calculer $\\sum_{n=1}^{+\\infty} \\frac{n^2}{2^n}$.",
+        "answers": [
+            "2",
+            "4",
+            "6",
+            "8"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-046",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence de $\\sum e^{n^2} z^n$ ?",
+        "answers": [
+            "1",
+            "$+\\infty$",
+            "0",
+            "$1/e$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-047",
+        "image_path": null,
+        "theme": "Comparaison de sommes",
+        "chapter": "Séries entières",
+        "question": "Si $a_n = o(b_n)$ avec $b_n > 0$ et $R_b = 1$ avec $\\sum b_n$ divergente, alors quand $x \\to 1^-$ :",
+        "answers": [
+            "$f(x) \\sim g(x)$",
+            "$f(x) = o(g(x))$",
+            "$f(x) \\to a_0$",
+            "$f(x) \\to +\\infty$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-048",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Le DSE de $\\text{sh}(x)$ est :",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^{2n}}{(2n)!}$",
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^{2n+1}}{(2n+1)!}$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^{2n+1}}{(2n+1)!}$",
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^n}{n!}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-049",
+        "image_path": null,
+        "theme": "Intégration",
+        "chapter": "Séries entières",
+        "question": "Le rayon de convergence de la série intégrée $\\sum \\frac{a_n}{n+1} z^{n+1}$ est :",
+        "answers": [
+            "Plus grand que celui de $\\sum a_n z^n$",
+            "Plus petit que celui de $\\sum a_n z^n$",
+            "Identique à celui de $\\sum a_n z^n$",
+            "Toujours égal à 1"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-050",
+        "image_path": null,
+        "theme": "Somme de série entière",
+        "chapter": "Séries entières",
+        "question": "Quelle est la somme de $\\sum_{n=1}^{+\\infty} \\frac{x^n}{n}$ pour $x \\in ]-1, 1[$ ?",
+        "answers": [
+            "$\\ln(1-x)$",
+            "$-\\ln(1-x)$",
+            "$\\ln(1+x)$",
+            "$1/(1-x)$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-051",
+        "image_path": null,
+        "theme": "Séries Entières - Abel",
+        "chapter": "Séries entières",
+        "question": "Si $\\sum a_n z^n$ diverge pour $z=z_1$, que peut-on dire pour $z$ tel que $|z| > |z_1|$ ?",
+        "answers": [
+            "Elle diverge",
+            "Elle converge",
+            "Elle peut converger ou diverger",
+            "Elle est bornée"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-052",
+        "image_path": null,
+        "theme": "Opérations algébriques",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence de la somme de deux séries de rayons $R_1$ et $R_2$ si $R_1 \\neq R_2$ ?",
+        "answers": [
+            "$R_1 + R_2$",
+            "$\\max(R_1, R_2)$",
+            "$\\min(R_1, R_2)$",
+            "$\\sqrt{R_1 R_2}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-053",
+        "image_path": null,
+        "theme": "Séries Entières - Piège",
+        "chapter": "Séries entières",
+        "question": "Une série entière converge-t-elle toujours uniformément sur son intervalle ouvert de convergence $]-R, R[$ ?",
+        "answers": [
+            "Oui, toujours",
+            "Non, pas nécessairement",
+            "Seulement si $R = +\\infty$",
+            "Seulement si $a_n > 0$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-054",
+        "image_path": null,
+        "theme": "Calcul de Rayon",
+        "chapter": "Séries entières",
+        "question": "Calculer le rayon de $\\sum \\frac{n^2}{2^n} z^n$.",
+        "answers": [
+            "1",
+            "2",
+            "1/2",
+            "$\\sqrt{2}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-055",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Rayon de convergence de $\\sum a^n z^n$ pour $a \\neq 0$ :",
+        "answers": [
+            "$|a|$",
+            "$1/|a|$",
+            "1",
+            "0"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-056",
+        "image_path": null,
+        "theme": "DSE de fraction",
+        "chapter": "Séries entières",
+        "question": "Quel est le DSE de $1/(1+x)$ ?",
+        "answers": [
+            "$\\sum x^n$",
+            "$\\sum (-1)^n x^n$",
+            "$\\sum (-1)^n n x^n$",
+            "$\\sum x^{2n}$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-057",
+        "image_path": null,
+        "theme": "Analyticité",
+        "chapter": "Séries entières",
+        "question": "Si $f(z) = \\sum a_n z^n$ et $g(z) = \\sum b_n z^n$ coïncident sur un voisinage de 0, alors :",
+        "answers": [
+            "$f = g$ partout où elles sont définies",
+            "Les coefficients sont égaux",
+            "$f'(0) = g'(0)$ seulement",
+            "On ne peut rien dire"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-058",
+        "image_path": null,
+        "theme": "Convergence dominée",
+        "chapter": "Séries entières",
+        "question": "Soit $I_n = \\int_0^{+\\infty} \\frac{dt}{1+t^2+t^n e^{-t}}$. Quelle est la limite ?",
+        "answers": [
+            "$\\pi/2$",
+            "$\\int_0^1 \\frac{dt}{1+t^2}$",
+            "0",
+            "$1$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-059",
+        "image_path": null,
+        "theme": "Interversion",
+        "chapter": "Séries entières",
+        "question": "Pour la série $\\sum (-1)^n t^n \\ln(t)$ sur $]0,1[$, l'interversion $\\sum \\int = \\int \\sum$ est-elle licite ?",
+        "answers": [
+            "Oui car la série des intégrales des modules converge",
+            "Non car la série diverge",
+            "Oui par le théorème spécial des séries alternées",
+            "Seulement si $t < 1/2$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-060",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "L'équation $(1+x)y' = \\alpha y$ avec $y(0)=1$ admet pour solution DSE :",
+        "answers": [
+            "$e^{\\alpha x}$",
+            "$(1+x)^\\alpha$",
+            "$\\ln(1+\\alpha x)$",
+            "$\\cos(\\alpha x)$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-061",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Rayon de $\\sum \\frac{z^{2n}}{(2n)!}$ ?",
+        "answers": [
+            "1",
+            "$+\\infty$",
+            "0",
+            "2"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-062",
+        "image_path": null,
+        "theme": "Calcul de somme",
+        "chapter": "Séries entières",
+        "question": "Somme de $\\sum_{n=0}^{+\\infty} (n+1) x^n$ ?",
+        "answers": [
+            "$1/(1-x)$",
+            "$1/(1-x)^2$",
+            "$x/(1-x)^2$",
+            "$2/(1-x)^3$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-063",
+        "image_path": null,
+        "theme": "Calcul de somme",
+        "chapter": "Séries entières",
+        "question": "Somme de $\\sum_{n=1}^{+\\infty} n x^n$ ?",
+        "answers": [
+            "$x/(1-x)$",
+            "$x/(1-x)^2$",
+            "$1/(1-x)^2$",
+            "$n x^{n-1}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-064",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "Soit $y' = 2xy + 1$ avec $y(0)=0$. Le coefficient $a_{2p}$ du DSE est :",
+        "answers": [
+            "0",
+            "$1/(2p)!$",
+            "$2^p/p!$",
+            "$(-1)^p$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-065",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Rayon de $\\sum \\binom{2n}{n} z^n$ ?",
+        "answers": [
+            "1",
+            "1/2",
+            "1/4",
+            "4"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-066",
+        "image_path": null,
+        "theme": "Convergence",
+        "chapter": "Séries entières",
+        "question": "Si $R=1$, que dire de la convergence en $z=i$ de $\\sum \\frac{z^n}{n^2}$ ?",
+        "answers": [
+            "Diverge",
+            "Converge absolument",
+            "Converge mais pas absolument",
+            "On ne peut pas savoir"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-067",
+        "image_path": null,
+        "theme": "Convergence",
+        "chapter": "Séries entières",
+        "question": "Si $R=1$, que dire de la convergence en $z=1$ de $\\sum z^n$ ?",
+        "answers": [
+            "Converge",
+            "Diverge",
+            "Somme égale à 1/2",
+            "Converge vers 0"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-068",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Rayon de $\\sum \\frac{x^n}{n(n+2)}$ ?",
+        "answers": [
+            "0",
+            "1",
+            "2",
+            "$+\\infty$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-069",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence de $e^{z^2}$ ?",
+        "answers": [
+            "1",
+            "2",
+            "$+\\infty$",
+            "0"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-070",
+        "image_path": null,
+        "theme": "Propriétés de la somme",
+        "chapter": "Séries entières",
+        "question": "La série dérivée seconde $\\sum n(n-1) a_n x^{n-2}$ a pour rayon de convergence :",
+        "answers": [
+            "$R-2$",
+            "$R/2$",
+            "$R$",
+            "$R^2$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-071",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Rayon de $\\sum a_n z^n$ avec $a_n = 2^n + 5^n$ ?",
+        "answers": [
+            "1/2",
+            "1/5",
+            "1/7",
+            "5"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-072",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Rayon de $\\sum \\cos(n) z^n$ ?",
+        "answers": [
+            "0",
+            "1",
+            "$\\infty$",
+            "2"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-073",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "Soit $f'(x) = f(\\lambda x)$ avec $f(0)=1$ et $\\lambda \\in ]0,1[$. Quel est le coefficient $a_n$ ?",
+        "answers": [
+            "$\\lambda^n / n!$",
+            "$\\lambda^{n(n-1)/2} / n!$",
+            "$1/n!$",
+            "$\\lambda^{n^2} / n!$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-074",
+        "image_path": null,
+        "theme": "Théorème d'Abel",
+        "chapter": "Séries entières",
+        "question": "Si $\\sum a_n$ converge absolument, alors $f(x) = \\sum a_n x^n$ est continue sur :",
+        "answers": [
+            "$]-1, 1[$",
+            "$[-1, 1]$",
+            "$[-1, 1[$",
+            "$\\mathbb{R}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-075",
+        "image_path": null,
+        "theme": "Somme de série entière",
+        "chapter": "Séries entières",
+        "question": "Quelle est la somme de $\\sum_{n=0}^{+\\infty} (-1)^n x^{2n}$ ?",
+        "answers": [
+            "$1/(1-x^2)$",
+            "$1/(1+x^2)$",
+            "$\\cos(x)$",
+            "$\\arctan(x)$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-076",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Rayon de $\\sum \\frac{z^n}{n^k}$ pour $k \\in \\mathbb{N}^*$ ?",
+        "answers": [
+            "0",
+            "1",
+            "$+\\infty$",
+            "$k$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-077",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Rayon de $\\sum z^{n!}$ ?",
+        "answers": [
+            "0",
+            "1",
+            "$+\\infty$",
+            "1/2"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-078",
+        "image_path": null,
+        "theme": "Intégration",
+        "chapter": "Séries entières",
+        "question": "Si $f(x) = \\sum a_n x^n$ sur $]-R, R[$, une primitive $F$ est :",
+        "answers": [
+            "$\\sum a_n n x^{n-1}$",
+            "$F(0) + \\sum \\frac{a_n}{n+1} x^{n+1}$",
+            "$\\sum a_{n+1} x^n$",
+            "Toujours nulle"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-079",
+        "image_path": null,
+        "theme": "Analyticité",
+        "chapter": "Séries entières",
+        "question": "La fonction $f(x) = e^{-1/x^2}$ prolongée par $f(0)=0$ est-elle développable en série entière en 0 ?",
+        "answers": [
+            "Oui, car elle est $C^\\infty$",
+            "Non, car ses dérivées en 0 sont toutes nulles alors qu'elle n'est pas nulle",
+            "Seulement sur $]-1, 1[$",
+            "Oui, car elle est bornée"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-080",
+        "image_path": null,
+        "theme": "Série de Catalan",
+        "chapter": "Séries entières",
+        "question": "La série $f(x) = \\sum c_n x^n$ vérifiant $xf^2 - f + 1 = 0$ a pour coefficients :",
+        "answers": [
+            "$c_n = 1/(n+1) \\binom{2n}{n}$",
+            "$c_n = \\binom{2n}{n}$",
+            "$c_n = 1/n!$",
+            "$c_n = 2^n$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-081",
+        "image_path": null,
+        "theme": "Convergence dominée",
+        "chapter": "Séries entières",
+        "question": "Quelle est la limite de $\\int_1^{+\\infty} \\frac{-3}{5+t^{2n}} dt$ ?",
+        "answers": [
+            "-3/5",
+            "0",
+            "-3",
+            "$+\\infty$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-082",
+        "image_path": null,
+        "theme": "Calcul de Rayon",
+        "chapter": "Séries entières",
+        "question": "Rayon de $\\sum (1+1/n)^{n^2} z^n$ ?",
+        "answers": [
+            "1",
+            "e",
+            "1/e",
+            "0"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-083",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Le DSE de $\\text{ch}(x)$ est :",
+        "answers": [
+            "$\\sum \\frac{x^{2n}}{(2n)!}$",
+            "$\\sum \\frac{x^{2n+1}}{(2n+1)!}$",
+            "$\\sum (-1)^n \\frac{x^{2n}}{(2n)!}$",
+            "$\\sum \\frac{x^n}{n!}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-084",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "Solution DSE de $xy'' + (x-1)y' - y = 0$ avec $y(0)=1$ ?",
+        "answers": [
+            "$e^x$",
+            "$e^{-x}$",
+            "$(1-x)e^{-x}$",
+            "$(1+x)e^x$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-085",
+        "image_path": null,
+        "theme": "Interversion",
+        "chapter": "Séries entières",
+        "question": "L'intégrale $\\int_0^{+\\infty} \\frac{x^2}{e^x-1} dx$ est égale à :",
+        "answers": [
+            "$\\sum_{n=1}^{+\\infty} \\frac{1}{n^3}$",
+            "$2 \\sum_{n=1}^{+\\infty} \\frac{1}{n^3}$",
+            "$\\pi^2/6$",
+            "1"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-086",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Rayon de $\\sum 2^{n} z^{2n}$ ?",
+        "answers": [
+            "1/2",
+            "$1/\\sqrt{2}$",
+            "2",
+            "$\\sqrt{2}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-087",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "DSE de $\\frac{1}{1-x}$ ?",
+        "answers": [
+            "$\\sum x^n$",
+            "$\\sum (-1)^n x^n$",
+            "$\\sum n x^n$",
+            "$\\sum x^{2n}$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-088",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Rayon de $\\sum a_n z^n$ si $a_n = n^{(-1)^n}$ ?",
+        "answers": [
+            "0",
+            "1",
+            "$+\\infty$",
+            "2"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-089",
+        "image_path": null,
+        "theme": "Calcul de limite",
+        "chapter": "Séries entières",
+        "question": "Limite de $\\int_0^{+\\infty} \\frac{e^{-5x/n}}{9+x^2} dx$ ?",
+        "answers": [
+            "0",
+            "$\\pi/2$",
+            "$\\pi/6$",
+            "$1/9$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-090",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "DSE de $\\sin(x)$ ?",
+        "answers": [
+            "$\\sum (-1)^n \\frac{x^{2n}}{(2n)!}$",
+            "$\\sum (-1)^n \\frac{x^{2n+1}}{(2n+1)!}$",
+            "$\\sum \\frac{x^{2n+1}}{(2n+1)!}$",
+            "$\\sum (-1)^n \\frac{x^n}{n!}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-091",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Rayon de $\\sum \\frac{1}{2^n} z^{n^2}$ ?",
+        "answers": [
+            "0",
+            "1",
+            "$+\\infty$",
+            "1/2"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-092",
+        "image_path": null,
+        "theme": "Analyticité",
+        "chapter": "Séries entières",
+        "question": "Toute fonction polynomiale est développable en série entière au voisinage de 0.",
+        "answers": [
+            "Vrai, de rayon $+\\infty$",
+            "Faux, seulement au voisinage de ses racines",
+            "Vrai, mais de rayon fini",
+            "Seulement si le degré est pair"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-093",
+        "image_path": null,
+        "theme": "Somme de série entière",
+        "chapter": "Séries entières",
+        "question": "Somme de $\\sum_{n=0}^{+\\infty} \\frac{(-1)^n}{2n+1}$ ?",
+        "answers": [
+            "$\\pi/4$",
+            "1",
+            "$\\ln(2)$",
+            "$\\pi/2$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-094",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "DSE de $\\ln(1-x)$ pour $|x| < 1$ ?",
+        "answers": [
+            "$\\sum \\frac{x^n}{n}$",
+            "$-\\sum \\frac{x^n}{n}$",
+            "$\\sum (-1)^n \\frac{x^n}{n}$",
+            "$\\sum x^n$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-095",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "Soit $y' = y$ avec $y(0)=1$. Quelle fonction DSE est solution ?",
+        "answers": [
+            "$\\sum \\frac{x^n}{n!}$",
+            "$\\sum x^n$",
+            "$\\sum \\frac{(-1)^n x^n}{n!}$",
+            "$\\sum \\frac{x^n}{n}$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-096",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Rayon de $\\sum \\frac{n}{n^2+1} x^n$ ?",
+        "answers": [
+            "0",
+            "1",
+            "$+\\infty$",
+            "2"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-097",
+        "image_path": null,
+        "theme": "Propriétés",
+        "chapter": "Séries entières",
+        "question": "Si $f(x) = \\sum a_n x^n$ est paire, alors $f'(x)$ est :",
+        "answers": [
+            "Paire",
+            "Impaire",
+            "Ni l'un ni l'autre",
+            "Toujours nulle"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-098",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Rayon de $\\sum a_n z^n$ avec $a_n = \\frac{n!}{n^n}$ ?",
+        "answers": [
+            "1",
+            "e",
+            "1/e",
+            "0"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-099",
+        "image_path": null,
+        "theme": "Calcul de somme",
+        "chapter": "Séries entières",
+        "question": "Somme de $\\sum_{n=1}^{+\\infty} \\frac{1}{n 2^n}$ ?",
+        "answers": [
+            "$\\ln(2)$",
+            "1",
+            "$\\ln(1/2)$",
+            "2"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-100",
+        "image_path": null,
+        "theme": "Convergence dominée",
+        "chapter": "Séries entières",
+        "question": "Limite de $\\int_1^{+\\infty} \\frac{1}{x^n+x^2} dx$ ?",
+        "answers": [
+            "1",
+            "0",
+            "$\\ln(2)$",
+            "$+\\infty$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-101",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Si $\\sum a_n z^n$ a un rayon $R$, quel est le rayon de $\\sum n^k a_n z^n$ ?",
+        "answers": [
+            "$R/k$",
+            "$R$",
+            "$R^k$",
+            "$0$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-102",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "DSE de $\\text{sh}(x) + \\text{ch}(x)$ ?",
+        "answers": [
+            "$\\sum x^n / n!$",
+            "$\\sum x^{2n} / (2n)!$",
+            "$\\sum (-1)^n x^n / n!$",
+            "$\\sum x^n$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-103",
+        "image_path": null,
+        "theme": "Calcul de Rayon",
+        "chapter": "Séries entières",
+        "question": "Rayon de convergence de $\\sum_{n \\ge 1} \\frac{x^n}{n^n}$ ?",
+        "answers": [
+            "1",
+            "0",
+            "$+\\infty$",
+            "e"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    }
+]

@@ -1,0 +1,1503 @@
+[
+    {
+        "uuid": "ct-001",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Thermal_conduction.svg",
+        "theme": "transferts thermiques",
+        "question": "Quel mode de transfert thermique s'effectue sans mouvement de matière au sein d'un solide ou d'un fluide immobile ?",
+        "answers": [
+            "La convection",
+            "Le rayonnement",
+            "La conduction"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-002",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'unité de la conductivité thermique $\\lambda$ dans le système international ?",
+        "answers": [
+            "$W.m^{-2}.K^{-1}$",
+            "$W.m^{-1}.K^{-1}$",
+            "$J.K^{-1}.m^{-1}$",
+            "$W.K^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-003",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "D'après la loi de Fourier, dans quel sens s'effectue le transfert thermique par conduction ?",
+        "answers": [
+            "Vers les températures croissantes",
+            "Vers les températures décroissantes",
+            "Perpendiculairement au gradient de température"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-004",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'expression locale de la loi de Fourier ?",
+        "answers": [
+            "$\\vec{j}_{th} = \\lambda \\vec{grad}(T)$",
+            "$\\vec{j}_{th} = -\\lambda \\vec{grad}(T)$",
+            "$\\Phi = -\\lambda \\frac{dT}{dx}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-005",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'unité de la densité de courant thermique $\\vec{j}_{th}$ ?",
+        "answers": [
+            "$W.m^{-1}$",
+            "$J.m^{-2}$",
+            "$W.m^{-2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-006",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Comment définit-on le flux thermique $\\Phi$ à travers une surface $S$ ?",
+        "answers": [
+            "$\\Phi = \\iint_S \\vec{j}_{th} \\cdot d\\vec{S}$",
+            "$\\Phi = \\frac{dQ}{dt}$",
+            "Les deux réponses précédentes sont correctes"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-007",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la valeur typique de la conductivité thermique $\\lambda$ pour un bon isolant comme l'air ?",
+        "answers": [
+            "$\\sim 10^2 W.m^{-1}.K^{-1}$",
+            "$\\sim 1 W.m^{-1}.K^{-1}$",
+            "$\\sim 10^{-2} W.m^{-1}.K^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-008",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "En régime stationnaire, sans terme source, que peut-on dire du flux thermique $\\Phi$ ?",
+        "answers": [
+            "Il est nul",
+            "Il est conservatif (identique sur chaque section d'un tube de courant)",
+            "Il dépend du temps"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-009",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'équation de la diffusion thermique (équation de la chaleur) sans terme source ?",
+        "answers": [
+            "$\\Delta T = 0$",
+            "$\\frac{\\partial T}{\\partial t} = D_{th} \\Delta T$",
+            "$\\frac{\\partial T}{\\partial t} = \\lambda \\Delta T$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-010",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'expression du coefficient de diffusivité thermique $D_{th}$ ?",
+        "answers": [
+            "$D_{th} = \\frac{\\mu c}{\\lambda}$",
+            "$D_{th} = \\frac{\\lambda}{\\mu c}$",
+            "$D_{th} = \\lambda \\mu c$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-011",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'unité de la diffusivité thermique $D_{th}$ ?",
+        "answers": [
+            "$m.s^{-1}$",
+            "$m^2.s^{-1}$",
+            "$W.K^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-012",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "En ordre de grandeur, quelle est la distance de diffusion $l$ au bout d'un temps $\\tau$ ?",
+        "answers": [
+            "$l \\sim D_{th} \\tau$",
+            "$l \\sim \\sqrt{D_{th} \\tau}$",
+            "$l \\sim \\frac{D_{th}}{\\tau}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-013",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Loi de Newton : comment s'exprime le flux thermique reçu par un solide de la part d'un fluide ?",
+        "answers": [
+            "$\\Phi = h S (T_{flu} - T_{sol})$",
+            "$\\Phi = \\lambda S (T_{flu} - T_{sol})$",
+            "$\\Phi = R_{th} (T_{flu} - T_{sol})$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-014",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Que signifie un 'contact thermique parfait' à une interface ?",
+        "answers": [
+            "Le flux est nul",
+            "La température est continue à l'interface",
+            "La résistance thermique est infinie"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-015",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la définition de la résistance thermique $R_{th}$ en régime stationnaire ?",
+        "answers": [
+            "$R_{th} = \\frac{\\Phi}{\\Delta T}$",
+            "$R_{th} = \\frac{\\Delta T}{\\Phi}$",
+            "$R_{th} = \\frac{1}{\\lambda S}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-016",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'expression de la résistance thermique d'une paroi plane d'épaisseur $e$ et de surface $S$ ?",
+        "answers": [
+            "$R_{th} = \\frac{e \\lambda}{S}$",
+            "$R_{th} = \\frac{e}{\\lambda S}$",
+            "$R_{th} = \\frac{\\lambda S}{e}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-017",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Comment s'associent deux résistances thermiques en série ?",
+        "answers": [
+            "$R_{eq} = R_1 + R_2$",
+            "$\\frac{1}{R_{eq}} = \\frac{1}{R_1} + \\frac{1}{R_2}$",
+            "$R_{eq} = \\sqrt{R_1 R_2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-018",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans quel cas utilise-t-on l'association en parallèle de résistances thermiques ?",
+        "answers": [
+            "Matériaux superposés les uns sur les autres",
+            "Matériaux juxtaposés (côte à côte)",
+            "Uniquement pour les fluides"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-019",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'analogue thermique de l'intensité électrique $I$ ?",
+        "answers": [
+            "La température $T$",
+            "Le flux thermique $\\Phi$",
+            "La conductivité $\\lambda$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-020",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'analogue thermique du potentiel électrique $V$ ?",
+        "answers": [
+            "La chaleur $Q$",
+            "Le flux $\\Phi$",
+            "La température $T$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-021",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour un système thermique de capacité $C$ et de résistance $R_{th}$, quelle est la constante de temps $\\tau$ ?",
+        "answers": [
+            "$\\tau = \\frac{R_{th}}{C}$",
+            "$\\tau = R_{th} C$",
+            "$\\tau = \\frac{C}{R_{th}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-022",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'unité d'une résistance thermique ?",
+        "answers": [
+            "$W.K^{-1}$",
+            "$K.W^{-1}$",
+            "$J.K^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-023",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'exercice 1 du TD, un radiateur de 220V et 1A délivre 790 kJ en une heure. Quel est son rendement ?",
+        "answers": [
+            "100%",
+            "99,7%",
+            "90,5%"
+        ],
+        "difficulty": 3,
+        "chapter": "TD 7 - Exercice 1",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-024",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans quel sens pointe le vecteur densité de courant thermique dans la basse atmosphère (où $T$ diminue avec l'altitude) ?",
+        "answers": [
+            "Vers le bas",
+            "Vers le haut",
+            "Il est nul"
+        ],
+        "difficulty": 3,
+        "chapter": "TD 7 - Exercice 1",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-025",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Si $T(x,y,z) = \\alpha (x^2 + y^2 + z^2)$, quelle est l'unité de $\\alpha$ ?",
+        "answers": [
+            "$K.m$",
+            "$K.m^{-1}$",
+            "$K.m^{-2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD 7 - Exercice 1",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-026",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la relation entre l'énergie volumique $u_V$ et l'énergie massique $u_m$ ?",
+        "answers": [
+            "$u_V = \\mu u_m$",
+            "$u_m = \\mu u_V$",
+            "$u_V = u_m / \\mu$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-027",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cas d'un double vitrage (Vitre-Air-Vitre), comment s'associent les résistances thermiques des trois couches ?",
+        "answers": [
+            "En parallèle",
+            "En série",
+            "La couche d'air ne compte pas"
+        ],
+        "difficulty": 2,
+        "chapter": "TD 7 - Exercice 2",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-028",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pourquoi le double vitrage est-il plus isolant que le simple vitrage ?",
+        "answers": [
+            "Grâce à l'épaisseur totale du verre",
+            "Car l'air a une conductivité thermique très faible devant celle du verre",
+            "Car l'air empêche le rayonnement"
+        ],
+        "difficulty": 2,
+        "chapter": "TD 7 - Exercice 2",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-029",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans un double vitrage en régime stationnaire, où le gradient de température est-il le plus important ?",
+        "answers": [
+            "Dans les vitres en verre",
+            "Dans la lame d'air",
+            "Il est le même partout"
+        ],
+        "difficulty": 3,
+        "chapter": "TD 7 - Exercice 2",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-030",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle condition doit être vérifiée pour utiliser l'hypothèse quasi-statique lors du chauffage d'un corps ?",
+        "answers": [
+            "$\\tau_{evolution} \\gg \\tau_{diffusion}$",
+            "$\\tau_{evolution} \\ll \\tau_{diffusion}$",
+            "$\\tau_{evolution} = \\tau_{diffusion}$"
+        ],
+        "difficulty": 4,
+        "chapter": "TD 7 - Exercice 3",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-031",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'exercice 3, la condition quasi-statique implique que la capacité thermique du solide chauffé doit être :",
+        "answers": [
+            "Très inférieure à celle de la barre de liaison",
+            "Très supérieure à celle de la barre de liaison",
+            "Nulle"
+        ],
+        "difficulty": 4,
+        "chapter": "TD 7 - Exercice 3",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-032",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour isoler un pignon composé d'un mur en béton et de fenêtres, quel montage de résistances modélise le système global ?",
+        "answers": [
+            "Mur et fenêtres en série",
+            "Mur et fenêtres en parallèle",
+            "Mur et fenêtres indépendants"
+        ],
+        "difficulty": 3,
+        "chapter": "TD 7 - Exercice 4",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-033",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'exercice 4, quelle est la priorité pour améliorer l'isolation d'une maison ?",
+        "answers": [
+            "Isoler les murs en béton",
+            "Remplacer le simple vitrage par du double vitrage",
+            "Peindre les murs en blanc"
+        ],
+        "difficulty": 3,
+        "chapter": "TD 7 - Exercice 4",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-034",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la résistance thermique d'un cylindre de rayons $R_1, R_2$ et hauteur $H$ ?",
+        "answers": [
+            "$R_{th} = \\frac{R_2 - R_1}{\\lambda 2\\pi R_1 H}$",
+            "$R_{th} = \\frac{\\ln(R_2/R_1)}{2\\pi \\lambda H}$",
+            "$R_{th} = \\frac{1}{2\\pi \\lambda H (R_2-R_1)}$"
+        ],
+        "difficulty": 4,
+        "chapter": "TD 7 - Exercice 5",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-035",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans un cylindre, si l'épaisseur $e = R_2 - R_1$ est très petite, que devient l'expression de $R_{th}$ ?",
+        "answers": [
+            "Elle tend vers celle d'une paroi plane $e / (\\lambda S)$",
+            "Elle devient nulle",
+            "Elle reste logarithmique"
+        ],
+        "difficulty": 3,
+        "chapter": "TD 7 - Exercice 5",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-036",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour un fil parcouru par un courant $I$, quel terme source apparaît dans l'équation de la chaleur ?",
+        "answers": [
+            "La puissance rayonnée",
+            "La puissance volumique par effet Joule $\\mathcal{P}_V = \\frac{I^2}{\\gamma S^2}$",
+            "Il n'y a pas de terme source"
+        ],
+        "difficulty": 4,
+        "chapter": "TD 7 - Exercice 6",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-037",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans un fil chauffé par effet Joule avec $T(0)=T(L)=T_0$, où la température est-elle maximale ?",
+        "answers": [
+            "Aux extrémités",
+            "Au milieu du fil ($x = L/2$)",
+            "Elle est uniforme"
+        ],
+        "difficulty": 3,
+        "chapter": "TD 7 - Exercice 6",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-038",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quel est le profil de température dans un fil avec terme source constant en régime stationnaire ?",
+        "answers": [
+            "Linéaire",
+            "Parabolique",
+            "Exponentiel"
+        ],
+        "difficulty": 4,
+        "chapter": "TD 7 - Exercice 6",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-039",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'exercice 7, que représente la grandeur $\\delta = \\sqrt{\\frac{\\lambda a}{2h}}$ ?",
+        "answers": [
+            "Une longueur caractéristique d'atténuation (ailette)",
+            "La vitesse de diffusion",
+            "La résistance thermique"
+        ],
+        "difficulty": 4,
+        "chapter": "TD 7 - Exercice 7",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-040",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Si l'on ajoute un isolant de résistance $R_3$ sur un plafond de résistance $R_2$, quelle est la nouvelle résistance du plafond ?",
+        "answers": [
+            "$\\frac{R_2 R_3}{R_2 + R_3}$",
+            "$R_2 + R_3$",
+            "$R_2$"
+        ],
+        "difficulty": 2,
+        "chapter": "TD 7 - Exercice 8",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-041",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'expression infinitésimale du premier principe pour un système au repos ?",
+        "answers": [
+            "$\\Delta U = W + Q$",
+            "$dU = \\delta W + \\delta Q$",
+            "$dU = dW + dQ$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-042",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "L'entropie est-elle une grandeur conservée ?",
+        "answers": [
+            "Oui, toujours",
+            "Non, elle peut être créée si le processus est irréversible",
+            "Oui, uniquement dans les solides"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-043",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'expression de l'entropie échangée $S_e$ avec un thermostat à $T_{ext}$ ?",
+        "answers": [
+            "$S_e = Q \\cdot T_{ext}$",
+            "$S_e = \\frac{Q}{T_{ext}}$",
+            "$S_e = \\Delta S$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-044",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Que signifie l'Equilibre Thermodynamique Local (ETL) ?",
+        "answers": [
+            "La température est la même partout dans le système",
+            "L'équilibre est atteint à l'échelle mésoscopique mais pas forcément macroscopique",
+            "Le système est isolé"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-045",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'expression de l'opérateur Laplacien $\\Delta T$ à une dimension $x$ ?",
+        "answers": [
+            "$\\frac{\\partial T}{\\partial x}$",
+            "$\\frac{\\partial^2 T}{\\partial x^2}$",
+            "$\\int T dx$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-046",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "En régime stationnaire sans terme source, le profil de température d'une paroi plane est :",
+        "answers": [
+            "Exponentiel",
+            "Linéaire",
+            "Sinusoïdal"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-047",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'unité du coefficient de transfert conducto-convectif $h$ ?",
+        "answers": [
+            "$W.m^{-1}.K^{-1}$",
+            "$W.m^{-2}.K^{-1}$",
+            "$W.K^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-048",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour un gaz parfait, quelle loi relie $\\Delta U$ et $\\Delta T$ ?",
+        "answers": [
+            "Loi de Fourier",
+            "Première loi de Joule",
+            "Loi de Newton"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-049",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Comment s'écrit l'équation locale de conservation de l'énergie à 3D ?",
+        "answers": [
+            "$\\mu \\frac{\\partial u}{\\partial t} + div(\\vec{j}_{th}) = 0$",
+            "$\\frac{\\partial T}{\\partial t} + \\vec{grad}(T) = 0$",
+            "$\\Delta T = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-050",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cas d'une phase condensée, on considère généralement que :",
+        "answers": [
+            "$c_V \\gg c_p$",
+            "$c_V \\simeq c_p \\simeq c$",
+            "$c_p = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-051",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la conséquence d'une inversion du temps ($t \\to -t$) dans l'équation de la chaleur ?",
+        "answers": [
+            "L'équation reste inchangée",
+            "L'équation est modifiée (phénomène irréversible)",
+            "La diffusion devient instantanée"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-052",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Si l'on double l'épaisseur d'un mur, sa résistance thermique est :",
+        "answers": [
+            "Divisée par 2",
+            "Doublée",
+            "Inchangée"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-053",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Si l'on double la surface d'un mur, sa résistance thermique est :",
+        "answers": [
+            "Doublée",
+            "Divisée par 2",
+            "Inchangée"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-054",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "L'analogue de la conductivité électrique $\\gamma$ est :",
+        "answers": [
+            "La capacité thermique $c$",
+            "La conductivité thermique $\\lambda$",
+            "La diffusivité $D_{th}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-055",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la condition de validité de la notion de résistance thermique ?",
+        "answers": [
+            "Régime transitoire rapide",
+            "Cadre de l'ARQS thermique (ou régime stationnaire)",
+            "Uniquement dans le vide"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-056",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une paroi calorifugée, que peut-on dire de la densité de courant thermique $\\vec{j}_{th}$ ?",
+        "answers": [
+            "Elle est maximale",
+            "Elle est nulle",
+            "Elle dépend de la température extérieure"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-057",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'expression de la puissance volumique $\\mathcal{P}_V$ créée par effet Joule dans un matériau de conductivité électrique $\\gamma$ ?",
+        "answers": [
+            "$\\mathcal{P}_V = \\gamma E^2 = j^2 / \\gamma$",
+            "$\\mathcal{P}_V = R I^2$",
+            "$\\mathcal{P}_V = \\lambda \\Delta T$"
+        ],
+        "difficulty": 4,
+        "chapter": "TD 7 - Exercice 6",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-058",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'exercice 1, quelle est la surface d'un panneau solaire (rendement 16%) pour fournir 220W sous un flux de $1361 W.m^{-2}$ ?",
+        "answers": [
+            "$0,1 m^2$",
+            "$1 m^2$",
+            "$10 m^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD 7 - Exercice 1",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-059",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Comment varie la résistance thermique d'un cylindre avec sa longueur $L$ ?",
+        "answers": [
+            "Elle est proportionnelle à $L$",
+            "Elle est inversement proportionnelle à $L$",
+            "Elle est indépendante de $L$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-060",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Une barre cylindrique relie deux thermostats. L'équation de la chaleur y est :",
+        "answers": [
+            "$\\frac{\\partial T}{\\partial t} = D_{th} \\frac{\\partial^2 T}{\\partial x^2}$",
+            "$\\frac{\\partial T}{\\partial t} = D_{th} \\frac{1}{r} \\frac{\\partial}{\\partial r}(r \\frac{\\partial T}{\\partial r})$",
+            "$\\Delta T = 0$ car c'est un solide"
+        ],
+        "difficulty": 2,
+        "chapter": "TD 7 - Exercice 3",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-061",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quel est le temps caractéristique de diffusion thermique dans une barre de longueur $L$ ?",
+        "answers": [
+            "$\\tau_{diff} \\sim L / D_{th}$",
+            "$\\tau_{diff} \\sim L^2 / D_{th}$",
+            "$\\tau_{diff} \\sim \\sqrt{L / D_{th}}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-062",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cas d'un mur avec plusieurs fenêtres en parallèle, la conductance thermique totale $G_{tot} = 1/R_{tot}$ est :",
+        "answers": [
+            "La somme des conductances",
+            "La somme des résistances",
+            "La moyenne des conductances"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-063",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "La laine de verre est un bon isolant car sa conductivité thermique est :",
+        "answers": [
+            "Très élevée",
+            "Très faible ($\\sim 0,04 W.m^{-1}.K^{-1}$)",
+            "Nulle"
+        ],
+        "difficulty": 1,
+        "chapter": "TD 7 - Exercice 4",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-064",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'exercice 5, comment a-t-on obtenu $r \\frac{dT}{dr} = cste$ ?",
+        "answers": [
+            "Par l'équation de la chaleur en régime stationnaire",
+            "Par la conservation du flux thermique $\\Phi$ à travers un cylindre de rayon $r$",
+            "C'est une hypothèse de l'énoncé"
+        ],
+        "difficulty": 4,
+        "chapter": "TD 7 - Exercice 5",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-065",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Le profil de température entre deux cylindres coaxiaux en régime stationnaire est de la forme :",
+        "answers": [
+            "$T(r) = A r + B$",
+            "$T(r) = A \\ln(r) + B$",
+            "$T(r) = A / r + B$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD 7 - Exercice 5",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-066",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'exercice 6, quel est le bilan d'énergie sur une portion $dx$ de fil ?",
+        "answers": [
+            "$\\Phi(x) - \\Phi(x+dx) + RI^2 = 0$",
+            "$\\Phi(x) - \\Phi(x+dx) = 0$",
+            "$\\Delta U = RI^2 dt$"
+        ],
+        "difficulty": 4,
+        "chapter": "TD 7 - Exercice 6",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-067",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Que vaut la résistance électrique $R$ d'une portion de fil de longueur $dx$, de section $S$ et de conductivité électrique $\\gamma$ ?",
+        "answers": [
+            "$R = \\frac{\\gamma dx}{S}$",
+            "$R = \\frac{dx}{\\gamma S}$",
+            "$R = \\frac{S dx}{\\gamma}$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD 7 - Exercice 6",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-068",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'exercice 7 (ailette), l'équation différentielle sur $T(x)$ est de la forme :",
+        "answers": [
+            "$\\frac{d^2 T}{dx^2} - k^2 T = -k^2 T_e$",
+            "$\\frac{dT}{dt} + T/\\tau = T_e/\\tau$",
+            "$\\frac{d^2 T}{dx^2} = 0$"
+        ],
+        "difficulty": 4,
+        "chapter": "TD 7 - Exercice 7",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-069",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une barre très longue ($L \\to \\infty$), la température à l'extrémité tend vers :",
+        "answers": [
+            "$T_0$ (température de la base)",
+            "$T_e$ (température de l'air ambiant)",
+            "L'infini"
+        ],
+        "difficulty": 2,
+        "chapter": "TD 7 - Exercice 7",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-070",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'exercice 8, pour réduire la puissance de chauffage de 50%, il faut :",
+        "answers": [
+            "Doubler la résistance thermique totale",
+            "Diviser par deux la résistance thermique totale",
+            "Doubler la température extérieure"
+        ],
+        "difficulty": 3,
+        "chapter": "TD 7 - Exercice 8",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-071",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'unité de la puissance thermique ?",
+        "answers": [
+            "Joule ($J$)",
+            "Watt ($W$)",
+            "$W.m^{-2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-072",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Le flux thermique à travers une sphère de rayon $R$ en régime stationnaire sans source est :",
+        "answers": [
+            "Indépendant de $R$",
+            "Proportionnel à $R^2$",
+            "Inversement proportionnel à $R$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-073",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une sphère, la densité de courant thermique $\\vec{j}_{th}$ en régime stationnaire est :",
+        "answers": [
+            "Indépendante de $r$",
+            "Proportionnelle à $1/r^2$",
+            "Proportionnelle à $1/r$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-074",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quel est le mode de transfert thermique prédominant dans le vide ?",
+        "answers": [
+            "Conduction",
+            "Convection",
+            "Rayonnement"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-075",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "La conductivité thermique de l'acier est d'environ :",
+        "answers": [
+            "$0,02 W.m^{-1}.K^{-1}$",
+            "$16 W.m^{-1}.K^{-1}$",
+            "$400 W.m^{-1}.K^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-076",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "La conductivité thermique du cuivre est d'environ :",
+        "answers": [
+            "$1 W.m^{-1}.K^{-1}$",
+            "$15 W.m^{-1}.K^{-1}$",
+            "$400 W.m^{-1}.K^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-077",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'équation de la chaleur, si $D_{th}$ est grand :",
+        "answers": [
+            "La chaleur se propage lentement",
+            "La chaleur se propage rapidement",
+            "La température ne varie pas"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-078",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "En régime stationnaire, l'équation de la chaleur devient :",
+        "answers": [
+            "Equation de Poisson ($\\Delta T = f(M)$)",
+            "Equation de Laplace ($\\Delta T = 0$)",
+            "Equation d'onde"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-079",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la définition de la capacité thermique $C$ d'un corps ?",
+        "answers": [
+            "$C = \\delta Q / dT$",
+            "$C = m \\cdot c$",
+            "Les deux sont correctes"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-080",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une paroi de surface $S=1 m^2$, épaisseur $e=1 cm$ et $\\lambda=1 W.m^{-1}.K^{-1}$, quelle est la résistance thermique ?",
+        "answers": [
+            "$0,01 K.W^{-1}$",
+            "$1 K.W^{-1}$",
+            "$100 K.W^{-1}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-081",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Le second principe de la thermodynamique sous forme infinitésimale s'écrit :",
+        "answers": [
+            "$dS = \\delta S_e + \\delta S_c$",
+            "$dS = \\delta Q / T_{ext}$",
+            "$dS = 0$ en conduction"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-082",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Lorsqu'on intègre une variation infinitésimale $df$, on obtient :",
+        "answers": [
+            "Une quantité globale ($W$)",
+            "Une variation globale ($\\Delta f$)",
+            "Une dérivée"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-083",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Le vecteur densité de courant thermique par conduction est :",
+        "answers": [
+            "Dans le même sens que $\\vec{grad}(T)$",
+            "Opposé au gradient de température",
+            "Tangent aux isothermes"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-084",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "La loi de Fourier est une loi :",
+        "answers": [
+            "Fondamentale (comme les lois de Newton)",
+            "Phénoménologique",
+            "Uniquement valable pour les gaz"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-085",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le bilan thermique, l'énergie contenue dans un volume élémentaire $d\\tau$ est :",
+        "answers": [
+            "$dU = u \\cdot \\mu d\\tau$",
+            "$dU = c \\cdot dT$",
+            "$dU = \\vec{j}_{th} \\cdot d\\vec{S}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-086",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "L'équation locale de conservation de l'énergie à 1D en cartésiennes est :",
+        "answers": [
+            "$\\mu \\frac{\\partial u}{\\partial t} = - \\frac{\\partial j_{th}}{\\partial x}$",
+            "$\\mu \\frac{\\partial u}{\\partial t} = + \\frac{\\partial j_{th}}{\\partial x}$",
+            "$\\frac{\\partial u}{\\partial t} = \\Delta u$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-087",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Le terme source $\\mathcal{P}_V$ dans l'équation de la chaleur représente :",
+        "answers": [
+            "Le flux sortant",
+            "La puissance volumique créée in situ (ex: effet Joule)",
+            "La capacité thermique"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-088",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la relation entre le flux $\\Phi$ et la densité $j$ si la section $S$ est constante et $j$ uniforme ?",
+        "answers": [
+            "$\\Phi = j / S$",
+            "$\\Phi = j \\cdot S$",
+            "$j = \\Phi \\cdot S$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-089",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Que devient l'équation de la chaleur en présence d'un terme source $\\mathcal{P}_V$ ?",
+        "answers": [
+            "$\\frac{\\partial T}{\\partial t} = D_{th} \\Delta T$",
+            "$\\frac{\\partial T}{\\partial t} = D_{th} \\Delta T + \\frac{\\mathcal{P}_V}{\\mu c}$",
+            "$\\frac{\\partial T}{\\partial t} = \\mathcal{P}_V$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-090",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "A l'interface entre deux milieux, s'il n'y a pas de source surfacique, le flux thermique est :",
+        "answers": [
+            "Nul",
+            "Continu",
+            "Discontinu"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-091",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans la loi d'Ohm thermique $\\Delta T = R_{th} \\Phi$, $\\Delta T$ représente :",
+        "answers": [
+            "La variation de température au cours du temps",
+            "La différence de température entre les deux extrémités",
+            "Le gradient de température"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-092",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "L'analogue de la loi d'Ohm électrique $U = RI$ est :",
+        "answers": [
+            "$\\Delta T = R_{th} \\Phi$",
+            "$\\Phi = R_{th} \\Delta T$",
+            "$Q = m c \\Delta T$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-093",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Comment calcule-t-on la résistance équivalente de $n$ résistances identiques en parallèle ?",
+        "answers": [
+            "$R_{eq} = n R$",
+            "$R_{eq} = R / n$",
+            "$R_{eq} = R^n$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-094",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quel est l'ordre de grandeur de $\\lambda$ pour l'eau liquide ?",
+        "answers": [
+            "$0,026 W.m^{-1}.K^{-1}$",
+            "$0,6 W.m^{-1}.K^{-1}$",
+            "$16 W.m^{-1}.K^{-1}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-095",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans un montage série de deux parois, quelle grandeur est commune aux deux parois ?",
+        "answers": [
+            "L'écart de température $\\Delta T$",
+            "Le flux thermique $\\Phi$",
+            "Le gradient de température"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-096",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'exercice 2, la résistance d'une vitre de 3mm est $7,25.10^{-3} K/W$. Celle d'une couche d'air de 10mm est $1,11 K/W$. La résistance totale du double vitrage est environ :",
+        "answers": [
+            "$1,12 K/W$",
+            "$0,014 K/W$",
+            "$11,1 K/W$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD 7 - Exercice 2",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-097",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Le 'pont diviseur' de température pour deux résistances en série $R_1, R_2$ entre $T_i$ et $T_e$ donne pour la température intermédiaire $T_1$ :",
+        "answers": [
+            "$T_1 - T_i = \\frac{R_1}{R_1+R_2} (T_e - T_i)$",
+            "$T_1 - T_i = \\frac{R_1+R_2}{R_1} (T_e - T_i)$",
+            "$T_1 = (T_i + T_e) / 2$"
+        ],
+        "difficulty": 4,
+        "chapter": "TD 7 - Exercice 2",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-098",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'exercice 5, si $R_1=10cm$ et $R_2=11cm$, le terme $\\ln(R_2/R_1)$ peut être approximé par :",
+        "answers": [
+            "$0,1$",
+            "$1$",
+            "$\\ln(1,1) \\approx 0,1$"
+        ],
+        "difficulty": 3,
+        "chapter": "TD 7 - Exercice 5",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-099",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la dimension d'une diffusivité thermique ?",
+        "answers": [
+            "$L^2 T^{-1}$",
+            "$L T^{-1}$",
+            "$M L^2 T^{-3}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-100",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "En régime stationnaire sans source, si l'on divise l'épaisseur d'une paroi plane par 2, le flux thermique est :",
+        "answers": [
+            "Divisé par 2",
+            "Doublé",
+            "Inchangé"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction thermique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    }
+]
