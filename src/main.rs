@@ -10,6 +10,9 @@ use crate::database::{
     is_database_empty, is_email_already_used, is_token_valid, select_chapters, select_subjects,
     select_themes, update_user_token,
 };
+
+use actix_files::{Files, NamedFile};
+
 use crate::models::{
     GetChapterQuery, GetThemeQuery, LoginForm, NewQuiz, NewQuizImage, NewUser, QuizParams,
     RegisterForm, UploadQuizForm, UserInfoQuery,
@@ -397,15 +400,22 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .app_data(web::Data::new(pool.clone())) // Injection du State
             .wrap(Cors::permissive())
-            .service(get_user_info)
-            .service(register)
-            .service(login)
-            .service(get_quiz)
-            .service(create_quiz)
-            .service(get_image)
-            .service(get_subjects)
-            .service(get_themes)
-            .service(get_chapters)
+            .service(
+                web::scope("/api")
+                    .service(get_user_info)
+                    .service(register)
+                    .service(login)
+                    .service(get_quiz)
+                    .service(create_quiz)
+                    .service(get_image)
+                    .service(get_subjects)
+                    .service(get_themes)
+                    .service(get_chapters),
+            )
+            .service(Files::new("/", "./client").index_file("index.html"))
+            .default_service(web::route().to(|| async {
+                NamedFile::open("./client/index.html")
+            }))
     })
     .bind(("127.0.0.1", 8080))?
     .run()
