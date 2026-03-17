@@ -238,7 +238,7 @@ async fn get_themes(pool: web::Data<DbPool>, query: web::Query<GetThemeQuery>) -
         return HttpResponse::BadRequest().body("Please provide a subject");
     }
 
-    let subject = query_data.subject.unwrap();
+    let subject = query_data.subject.unwrap().replace('_', " ");
 
     let themes = match select_themes(&mut conn, &subject) {
         Ok(themes) => themes,
@@ -255,7 +255,8 @@ async fn get_chapters(
     let mut conn = pool.get().unwrap();
     let query_data = query.into_inner();
 
-    let chapters = match select_chapters(&mut conn, &query_data.subject) {
+    let subject_clean = query_data.subject.replace('_', " ");
+    let chapters = match select_chapters(&mut conn, &subject_clean) {
         Ok(chapters) => chapters,
         Err(_) => return HttpResponse::InternalServerError().body("Failed to get chapters"),
     };
@@ -266,13 +267,18 @@ async fn get_chapters(
 async fn get_quiz(query: web::Query<QuizParams>, pool: web::Data<DbPool>) -> impl Responder {
     let mut conn = pool.get().unwrap();
     let query_data = query.into_inner();
-    println!("ID: {:?}, Subject: {:?}", query_data.id, query_data.subject);
+    println!(
+        "ID: {:?}, Subject: {:?} Chapter: {:?}",
+        query_data.id, query_data.subject, query_data.chapter
+    );
     let result = if let Some(target_id) = query_data.id {
         // 1. Si on a un ID, on cherche par ID
         get_quiz_by_uuid(&mut conn, target_id)
     } else {
         // 2 & 3. Si on a un thème ou chapitre, on prend un random par ce filtre, sinon un random total
-        get_random_quiz_uuid(&mut conn, query_data.subject, query_data.chapter)
+        let subject_clean = query_data.subject.map(|s| s.replace('_', " "));
+        let chapter_clean = query_data.chapter.map(|c| c.replace('_', " "));
+        get_random_quiz_uuid(&mut conn, subject_clean, chapter_clean)
     };
 
     match result {
@@ -413,9 +419,7 @@ async fn main() -> std::io::Result<()> {
                     .service(get_chapters),
             )
             .service(Files::new("/", "./client").index_file("index.html"))
-            .default_service(web::route().to(|| async {
-                NamedFile::open("./client/index.html")
-            }))
+            .default_service(web::route().to(|| async { NamedFile::open("./client/index.html") }))
     })
     .bind(("127.0.0.1", 8080))?
     .run()
