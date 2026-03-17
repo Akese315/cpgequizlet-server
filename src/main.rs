@@ -271,8 +271,8 @@ async fn get_quiz(query: web::Query<QuizParams>, pool: web::Data<DbPool>) -> imp
         // 1. Si on a un ID, on cherche par ID
         get_quiz_by_uuid(&mut conn, target_id)
     } else {
-        // 2 & 3. Si on a un thème, on prend un random dans ce thème, sinon un random total
-        get_random_quiz_uuid(&mut conn, query_data.subject)
+        // 2 & 3. Si on a un thème ou chapitre, on prend un random par ce filtre, sinon un random total
+        get_random_quiz_uuid(&mut conn, query_data.subject, query_data.chapter)
     };
 
     match result {

@@ -103,6 +103,7 @@ pub struct UploadQuizForm {
 pub struct QuizParams {
     pub id: Option<String>,
     pub subject: Option<String>,
+    pub chapter: Option<String>,
 }
 
 #[derive(Deserialize)]

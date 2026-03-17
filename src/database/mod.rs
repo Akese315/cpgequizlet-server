@@ -52,18 +52,29 @@ pub fn insert_quiz(
 pub fn get_random_quiz_uuid(
     conn: &mut MysqlConnection,
     subject_theme: Option<String>,
+    chapter_opt: Option<String>,
 ) -> Result<Quizs, diesel::result::Error> {
-    let uuid_string = if let Some(t) = subject_theme {
-        quizs
+    let uuid_string = match (subject_theme, chapter_opt) {
+        (Some(t), Some(c)) => quizs
+            .filter(subject.eq(t))
+            .filter(chapter.eq(c))
+            .order(sql::<diesel::sql_types::Integer>("RAND()"))
+            .first::<Quizs>(conn)
+            .map(|quiz_record| quiz_record.uuid)?,
+        (Some(t), None) => quizs
             .filter(subject.eq(t))
             .order(sql::<diesel::sql_types::Integer>("RAND()"))
             .first::<Quizs>(conn)
-            .map(|quiz_record| quiz_record.uuid)?
-    } else {
-        quizs
+            .map(|quiz_record| quiz_record.uuid)?,
+        (None, Some(c)) => quizs
+            .filter(chapter.eq(c))
             .order(sql::<diesel::sql_types::Integer>("RAND()"))
             .first::<Quizs>(conn)
-            .map(|quiz_record| quiz_record.uuid)?
+            .map(|quiz_record| quiz_record.uuid)?,
+        (None, None) => quizs
+            .order(sql::<diesel::sql_types::Integer>("RAND()"))
+            .first::<Quizs>(conn)
+            .map(|quiz_record| quiz_record.uuid)?,
     };
 
     get_quiz_by_uuid(conn, uuid_string)
