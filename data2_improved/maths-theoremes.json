@@ -11,7 +11,7 @@
         ],
         "explication": "Le TVI garantit l'existence d'au moins une solution à l'équation $f(x)=y$ sur l'intervalle $[a,b]$ dès lors que $f$ est continue[cite: 3, 4]. L'unicité n'est garantie que si la fonction est, en plus, strictement monotone (Théorème de la bijection). L'hypothèse de continuité est cruciale ici car elle assure que la fonction ne 'saute' aucune valeur entre $f(a)$ et $f(b)$.",
         "difficulty": 1,
-        "chapter": "Analyse",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -27,7 +27,7 @@
         ],
         "explication": "Le Théorème de Rolle nécessite trois conditions : la continuité sur le segment fermé $[a,b]$, la dérivabilité sur l'ouvert $]a,b[$, et l'égalité des valeurs aux bornes $f(a)=f(b)$[cite: 5, 6, 9]. Si ces conditions sont réunies, il existe $c \\in ]a,b[$ tel que $f'(c)=0$[cite: 7]. Un piège classique est d'oublier de vérifier la continuité aux bornes.",
         "difficulty": 2,
-        "chapter": "Analyse",
+        "chapter": "Théorèmes",
         "correct_answer_index": 2,
         "subject": "maths"
     },
@@ -43,7 +43,7 @@
         ],
         "explication": "Le théorème de Bolzano-Weierstrass stipule que de toute suite bornée dans $\\mathbb{R}^n$, on peut extraire une sous-suite (ou suite extraite) qui converge[cite: 24, 25]. Attention : la suite elle-même n'est pas forcément convergente (pensez à $(-1)^n$), mais elle possède des valeurs d'adhérence.",
         "difficulty": 2,
-        "chapter": "Analyse",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -59,7 +59,7 @@
         ],
         "explication": "Contrairement à la récurrence simple qui ne suppose que le rang immédiatement précédent, la récurrence forte suppose que la propriété est vraie pour TOUS les rangs depuis l'initialisation jusqu'au rang $n$ pour démontrer $P_{n+1}$[cite: 38, 41]. C'est indispensable pour des suites définies par des relations complexes comme la suite de Fibonacci ou la décomposition en facteurs premiers.",
         "difficulty": 2,
-        "chapter": "Logique",
+        "chapter": "Théorèmes",
         "correct_answer_index": 2,
         "subject": "maths"
     },
@@ -75,7 +75,7 @@
         ],
         "explication": "Le théorème de Gauss pour les polynômes indique que si un polynôme $A$ divise un produit $BC$ et qu'il est premier avec le premier facteur $B$ (c'est-à-dire $A \\wedge B = 1$), alors il divise nécessairement le second facteur $C$[cite: 62, 63, 64].",
         "difficulty": 2,
-        "chapter": "Polynômes",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -91,7 +91,7 @@
         ],
         "explication": "Le théorème de la convergence uniforme stipule que la limite uniforme d'une suite de fonctions continues est elle-même continue[cite: 16, 17, 138]. Ce résultat est fondamental car la convergence simple ne suffit pas à préserver la continuité (ex: $x^n$ sur $[0,1]$).",
         "difficulty": 3,
-        "chapter": "Analyse",
+        "chapter": "Théorèmes",
         "correct_answer_index": 2,
         "subject": "maths"
     },
@@ -107,7 +107,7 @@
         ],
         "explication": "La règle de d'Alembert pour les séries entières énonce que si le rapport des coefficients successifs converge vers $l$, alors le rayon de convergence est l'inverse de cette limite, soit $R = 1/l$[cite: 102, 104, 105]. Si $l=0$, $R=+\\infty$ et si $l=+\\infty$, $R=0$[cite: 106, 108].",
         "difficulty": 2,
-        "chapter": "Série entière",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -123,7 +123,7 @@
         ],
         "explication": "Par définition et propriété fondamentale du noyau, l'injectivité d'une application linéaire est caractérisée par le fait que seul le vecteur nul est envoyé sur le vecteur nul de l'espace d'arrivée, soit $Ker(u) = \\{0_E\\}$[cite: 49, 50].",
         "difficulty": 1,
-        "chapter": "Application linéaire",
+        "chapter": "Théorèmes",
         "correct_answer_index": 0,
         "subject": "maths"
     },
@@ -139,7 +139,7 @@
         ],
         "explication": "Le CSSA impose deux conditions cumulatives sur la suite $(u_n)$ : elle doit être décroissante et tendre vers 0[cite: 283, 286, 288]. Si ces conditions sont vérifiées, la série alternée converge[cite: 289]. Le piège est d'oublier la décroissance.",
         "difficulty": 2,
-        "chapter": "Série numérique",
+        "chapter": "Théorèmes",
         "correct_answer_index": 2,
         "subject": "maths"
     },
@@ -155,7 +155,7 @@
         ],
         "explication": "L'inégalité de Cauchy-Schwarz stipule que la valeur absolue du produit scalaire de deux vecteurs est toujours inférieure ou égale au produit de leurs normes euclidiennes[cite: 328, 330]. L'égalité a lieu si et seulement si les vecteurs sont colinéaires[cite: 331].",
         "difficulty": 2,
-        "chapter": "Espace Euclidiens",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -171,7 +171,7 @@
         ],
         "explication": "Pour une fonction $f$ continue, l'intégrale à borne variable définit une fonction qui est non seulement une primitive de $f$ (sa dérivée est $f$), mais c'est l'unique primitive qui prend la valeur 0 au point $a$[cite: 205, 206].",
         "difficulty": 2,
-        "chapter": "Intégration",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -187,7 +187,7 @@
         ],
         "explication": "Le théorème de Cayley-Hamilton est un résultat majeur d'algèbre linéaire indiquant qu'en remplaçant l'indéterminée $X$ par la matrice $A$ dans son polynôme caractéristique, on obtient la matrice nulle[cite: 372, 373]. Cela permet notamment d'exprimer $A^n$ ou $A^{-1}$ comme des combinaisons linéaires des puissances inférieures de $A$.",
         "difficulty": 3,
-        "chapter": "Algèbre",
+        "chapter": "Théorèmes",
         "correct_answer_index": 2,
         "subject": "maths"
     },
@@ -203,7 +203,7 @@
         ],
         "explication": "L'inégalité de Markov donne une borne supérieure sur la probabilité qu'une variable aléatoire positive dépasse un seuil $a$. Elle est égale à l'espérance de la variable divisée par $a$[cite: 469, 470, 471]. C'est la base de l'inégalité de Bienaymé-Tchebychev.",
         "difficulty": 2,
-        "chapter": "Dénombrabilité",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -219,7 +219,7 @@
         ],
         "explication": "Le théorème de convergence dominée nécessite que la suite de fonctions soit dominée par une unique fonction $\\varphi$ qui soit intégrable sur l'intervalle considéré[cite: 20, 21, 91, 92]. Cette condition assure que l'on peut intervertir la limite et l'intégrale[cite: 94].",
         "difficulty": 3,
-        "chapter": "Analyse",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -235,7 +235,7 @@
         ],
         "explication": "Le théorème fondamental de l'algèbre (D'Alembert-Gauss) affirme que le corps des complexes $\\mathbb{C}$ est algébriquement clos : tout polynôme non constant y admet au moins une racine[cite: 56, 57]. Par récurrence, cela implique qu'il y est scindé.",
         "difficulty": 2,
-        "chapter": "Polynômes",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -251,7 +251,7 @@
         ],
         "explication": "Il s'agit d'une intégrale de référence (Riemann) au voisinage de $+\\infty$. La convergence est assurée si et seulement si l'exposant $\\alpha$ est strictement supérieur à 1[cite: 230, 232, 233]. Si $\\alpha \\le 1$, l'intégrale diverge[cite: 234].",
         "difficulty": 1,
-        "chapter": "Intégrales généralisées",
+        "chapter": "Théorèmes",
         "correct_answer_index": 2,
         "subject": "maths"
     },
@@ -267,7 +267,7 @@
         ],
         "explication": "D'après le théorème spectral, les matrices symétriques réelles sont exactement celles qui sont diagonalisables dans une base orthonormée (pour le produit scalaire canonique)[cite: 385, 386].",
         "difficulty": 3,
-        "chapter": "Algèbre",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -283,7 +283,7 @@
         ],
         "explication": "La convergence normale est la forme de convergence la plus forte : elle implique la convergence uniforme (par l'inégalité triangulaire sur la norme infini), qui elle-même implique la convergence simple[cite: 154, 155].",
         "difficulty": 2,
-        "chapter": "Série",
+        "chapter": "Théorèmes",
         "correct_answer_index": 0,
         "subject": "maths"
     },
@@ -299,7 +299,7 @@
         ],
         "explication": "Si $X$ admet une espérance finie, sa fonction génératrice est dérivable en 1 et l'espérance est donnée par la valeur de la dérivée en ce point : $E(X) = G_X'(1)$[cite: 478, 479, 480]. Note : le document contient une petite erreur de transcription en écrivant $E(X)=G_X(1)$ mais le théorème standard et la logique des séries entières confirment la dérivée.",
         "difficulty": 3,
-        "chapter": "Dénombrabilité",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -315,7 +315,7 @@
         ],
         "explication": "Le déterminant est une forme $n$-linéaire. Lorsqu'on multiplie l'endomorphisme par $\\lambda$, chaque colonne de sa matrice représentative est multipliée par $\\lambda$. Par linéarité par rapport à chaque colonne (il y en a $n$), on sort $\\lambda^n$[cite: 321, 323].",
         "difficulty": 2,
-        "chapter": "Déterminant",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -331,7 +331,7 @@
         ],
         "explication": "Le TAF est une généralisation du théorème de Rolle. Il stipule qu'il existe un point $c$ où la pente de la tangente ($f'(c)$) est égale à la pente de la corde reliant $(a, f(a))$ et $(b, f(b))$[cite: 8, 10, 11].",
         "difficulty": 1,
-        "chapter": "Analyse",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -347,7 +347,7 @@
         ],
         "explication": "L'indépendance de deux variables aléatoires est une condition suffisante pour que l'espérance de leur produit soit égale au produit de leurs espérances[cite: 454, 455, 456]. Si elles n'étaient pas indépendantes, il faudrait ajouter la covariance.",
         "difficulty": 2,
-        "chapter": "Dénombrabilité",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -363,7 +363,7 @@
         ],
         "explication": "Une famille est dite orthonormale si elle combine deux propriétés : l'orthogonalité (les produits scalaires croisés sont nuls) et la normalité (chaque vecteur a une norme égale à 1)[cite: 345].",
         "difficulty": 1,
-        "chapter": "Espace Euclidiens",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -379,7 +379,7 @@
         ],
         "explication": "C'est un résultat puissant qui transforme la continuité locale (en chaque point) en continuité uniforme sur tout le domaine, à condition que celui-ci soit un compact (fermé borné dans $\\mathbb{R}^n$)[cite: 30, 31].",
         "difficulty": 3,
-        "chapter": "Analyse",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -395,7 +395,7 @@
         ],
         "explication": "Le théorème de la base incomplète affirme que si l'on a une famille libre d'un espace vectoriel $E$, on peut toujours lui adjoindre des vecteurs (choisis dans une famille génératrice donnée) pour former une base de $E$[cite: 383, 384].",
         "difficulty": 2,
-        "chapter": "Algèbre",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -411,7 +411,7 @@
         ],
         "explication": "Sur l'intervalle ouvert de convergence, la somme d'une série entière possède une régularité maximale : elle est de classe $C^\\infty$. Le document mentionne spécifiquement la continuité [cite: 111] et le caractère $C^1$ par dérivation terme à terme[cite: 113], mais par itération, elle est indéfiniment dérivable.",
         "difficulty": 2,
-        "chapter": "Série entière",
+        "chapter": "Théorèmes",
         "correct_answer_index": 2,
         "subject": "maths"
     },
@@ -427,7 +427,7 @@
         ],
         "explication": "La formule de Taylor-Laplace donne une expression exacte de l'erreur entre la fonction et son polynôme de Taylor sous forme d'une intégrale faisant intervenir la dérivée $n+1$-ième[cite: 128, 131, 207, 209].",
         "difficulty": 3,
-        "chapter": "Série entière",
+        "chapter": "Théorèmes",
         "correct_answer_index": 0,
         "subject": "maths"
     },
@@ -443,7 +443,7 @@
         ],
         "explication": "C'est un théorème de structure fondamental en dimension finie : peu importe la norme choisie ($||.||_1, ||.||_2, ||.||_\\infty$), elles définissent toutes la même topologie, les mêmes ouverts et les mêmes notions de convergence[cite: 363].",
         "difficulty": 3,
-        "chapter": "Espace-vectoriel",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -459,7 +459,7 @@
         ],
         "explication": "La loi faible des grands nombres stipule que pour une suite de variables indépendantes et de même loi ayant une espérance $m$, la moyenne arithmétique des $n$ premiers résultats converge en probabilité vers l'espérance $m$ quand $n$ tend vers l'infini[cite: 474, 477].",
         "difficulty": 2,
-        "chapter": "Dénombrabilité",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -475,7 +475,7 @@
         ],
         "explication": "Ce théorème établit un pont entre l'espace dual $E^*$ et l'espace $E$ lui-même. Chaque forme linéaire (application vers les scalaires) peut être identifiée de manière unique à un vecteur de l'espace via le produit scalaire[cite: 348, 349].",
         "difficulty": 4,
-        "chapter": "Espace Euclidiens",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -491,7 +491,7 @@
         ],
         "explication": "Deux suites sont adjacentes si l'une est croissante, l'autre décroissante, et que leur différence tend vers 0. Le théorème des suites adjacentes garantit alors qu'elles sont convergentes et possèdent la même limite[cite: 26, 27].",
         "difficulty": 2,
-        "chapter": "Analyse",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -507,7 +507,7 @@
         ],
         "explication": "La condition stricte sur le degré du reste ($deg(R) < deg(B)$) est ce qui assure l'unicité du quotient et du reste dans la division euclidienne des polynômes[cite: 52, 53, 55].",
         "difficulty": 1,
-        "chapter": "Polynômes",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -523,7 +523,7 @@
         ],
         "explication": "Dans $\\mathbb{C}$, tout polynôme est scindé. Comme le polynôme caractéristique d'une matrice complexe est toujours scindé sur $\\mathbb{C}$, la matrice est nécessairement trigonalisable[cite: 381, 382]. Elle n'est pas forcément diagonalisable (ex: blocs de Jordan).",
         "difficulty": 2,
-        "chapter": "Algèbre",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -539,7 +539,7 @@
         ],
         "explication": "La dérivée d'une composée de fonctions de plusieurs variables fait intervenir les dérivées partielles de la fonction externe multipliées par les dérivées des fonctions internes, le tout sommé sur toutes les variables[cite: 492, 493, 494].",
         "difficulty": 3,
-        "chapter": "Fonctions vectorielles",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -555,7 +555,7 @@
         ],
         "explication": "Le théorème de transfert est un outil majeur car il permet de calculer l'espérance d'une fonction d'une variable aléatoire sans connaître la loi de $f(X)$, en utilisant directement la loi de $X$[cite: 443, 444, 446]. L'égalité $E(f(X))=f(E(X))$ est fausse en général (inégalité de Jensen si $f$ est convexe).",
         "difficulty": 2,
-        "chapter": "Dénombrabilité",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -571,7 +571,7 @@
         ],
         "explication": "Pour dériver sous le signe intégrale (Théorème de Leibniz), il est impératif d'avoir une hypothèse de domination sur la dérivée partielle $\\frac{\\partial f}{\\partial x}$ par une fonction intégrable ne dépendant pas de $x$[cite: 266, 272, 275].",
         "difficulty": 4,
-        "chapter": "Intégrales à paramètre",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -587,7 +587,7 @@
         ],
         "explication": "C'est une propriété classique de la réduction : si on écrit la matrice de $u$ dans une base adaptée à $F$, elle est triangulaire par blocs. Le déterminant (polynôme caractéristique) est alors le produit des déterminants des blocs diagonaux, d'où la divisibilité[cite: 392].",
         "difficulty": 3,
-        "chapter": "Algèbre",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -603,7 +603,7 @@
         ],
         "explication": "Le théorème de Cauchy garantit que le produit de deux séries absolument convergentes est une série absolument convergente, et que la somme de la série produit est égale au produit des sommes des deux séries initiales[cite: 298, 300, 301].",
         "difficulty": 3,
-        "chapter": "Série numérique",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -619,7 +619,7 @@
         ],
         "explication": "Le théorème des probabilités totales permet de 'découper' le calcul de la probabilité d'un événement $B$ en fonction de sa réalisation au travers de différents cas mutuellement exclusifs et dont la réunion couvre presque tout l'univers[cite: 432, 439, 440].",
         "difficulty": 2,
-        "chapter": "Dénombrabilité",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -635,7 +635,7 @@
         ],
         "explication": "Si une suite est coincée entre deux autres suites qui 'se rejoignent' en une même limite $l$, alors par 'pincement', la suite du milieu converge aussi vers $l$[cite: 28, 29].",
         "difficulty": 1,
-        "chapter": "Analyse",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -651,7 +651,7 @@
         ],
         "explication": "Une suite monotone ne converge pas nécessairement (ex: $n$ tend vers l'infini). Il faut impérativement qu'elle soit bornée pour garantir sa convergence vers une limite finie (sa borne supérieure si elle croît, inférieure si elle décroît)[cite: 14, 15].",
         "difficulty": 1,
-        "chapter": "Analyse",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -667,7 +667,7 @@
         ],
         "explication": "Cette inégalité découle de celle de Markov appliquée à la variable aléatoire $(X-E(X))^2$. Elle donne une borne de dispersion liée à la variance[cite: 471, 472, 473].",
         "difficulty": 2,
-        "chapter": "Dénombrabilité",
+        "chapter": "Théorèmes",
         "correct_answer_index": 0,
         "subject": "maths"
     },
@@ -683,7 +683,7 @@
         ],
         "explication": "C'est la version 'inégalité' du TAF. Si la vitesse de variation de la fonction (sa dérivée) est bornée par $M$, alors l'accroissement de la fonction est contrôlé par $M$ fois l'écart entre les points[cite: 210].",
         "difficulty": 1,
-        "chapter": "Intégration",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -699,7 +699,7 @@
         ],
         "explication": "La dérivation terme à terme (tout comme l'intégration) ne modifie pas le rayon de convergence d'une série entière[cite: 113, 121].",
         "difficulty": 2,
-        "chapter": "Série entière",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -715,7 +715,7 @@
         ],
         "explication": "Les sommes de Riemann constituent une approximation de l'aire sous la courbe par des rectangles. Quand le pas de la subdivision tend vers 0 (soit $n \\to +\\infty$), la somme converge vers l'intégrale de la fonction[cite: 200].",
         "difficulty": 2,
-        "chapter": "Intégration",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -731,7 +731,7 @@
         ],
         "explication": "La continuité étant une propriété locale, la convergence uniforme sur tout segment (convergence compacte) suffit pour garantir la continuité de la limite sur l'intervalle $I$ tout entier[cite: 157].",
         "difficulty": 3,
-        "chapter": "Série",
+        "chapter": "Théorèmes",
         "correct_answer_index": 0,
         "subject": "maths"
     },
@@ -747,7 +747,7 @@
         ],
         "explication": "La signature est l'unique morphisme de groupes de $\\mathfrak{S}_n$ vers $\\{-1, 1\\}$ qui associe $-1$ à chaque transposition (échange de deux éléments)[cite: 306, 307, 308]. C'est un élément clé pour définir le déterminant.",
         "difficulty": 2,
-        "chapter": "Déterminant",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -763,7 +763,7 @@
         ],
         "explication": "Dans un espace complet comme $\\mathbb{R}$ ou $\\mathbb{C}$, la convergence absolue (convergence de la série des modules) implique la convergence de la série elle-même[cite: 153, 296, 297]. La réciproque est fausse (ex: séries semi-convergentes).",
         "difficulty": 1,
-        "chapter": "Série",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -779,7 +779,7 @@
         ],
         "explication": "Le théorème du projecteur sur un convexe fermé stipule que $p(x)$ est l'unique point de $C$ minimisant la distance à $x$. Cette propriété est équivalente à ce que l'angle entre le vecteur $p(x)z$ et le vecteur $p(x)x$ soit obtus pour tout $z$ dans $C$[cite: 358, 359, 360].",
         "difficulty": 4,
-        "chapter": "Espace Euclidiens",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     },
@@ -795,7 +795,7 @@
         ],
         "explication": "La formule générale de la variance d'une somme inclut les covariances croisées. Si les variables sont décorrélées deux à deux (ce qui est le cas si elles sont indépendantes), alors les termes de covariance s'annulent[cite: 467, 468].",
         "difficulty": 2,
-        "chapter": "Dénombrabilité",
+        "chapter": "Théorèmes",
         "correct_answer_index": 1,
         "subject": "maths"
     }
