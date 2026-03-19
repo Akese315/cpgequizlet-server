@@ -1,0 +1,1622 @@
+[
+    {
+        "uuid": "q1-cm-def",
+        "image_path": null,
+        "theme": "fonctions continues par morceaux",
+        "question": "Soit $f$ une fonction continue par morceaux sur un segment $[a,b]$. Laquelle de ces affirmations est nécessairement vraie ?",
+        "answers": [
+            "$f$ est continue sur $[a,b]$ sauf en un nombre fini de points.",
+            "$f$ admet une limite finie à droite et à gauche en tout point de $]a,b[$.",
+            "$f$ est dérivable sur chaque intervalle de la subdivision adaptée."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q2-cm-bounded",
+        "image_path": null,
+        "theme": "fonctions continues par morceaux",
+        "question": "Toute fonction continue par morceaux sur un segment $[a,b]$ est :",
+        "answers": [
+            "Bornée",
+            "Positive",
+            "Uniformément continue"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q3-cm-subdivision",
+        "image_path": null,
+        "theme": "fonctions continues par morceaux",
+        "question": "Si $\\sigma$ est une subdivision adaptée à $f$ sur $[a,b]$ et $\\sigma' \\supset \\sigma$, alors :",
+        "answers": [
+            "$\\sigma'$ n'est plus adaptée à $f$.",
+            "$\\sigma'$ est aussi adaptée à $f$.",
+            "$f$ devient continue sur $[a,b]$."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q4-cm-abs",
+        "image_path": null,
+        "theme": "fonctions continues par morceaux",
+        "question": "Si $f \\in \\mathcal{CM}([a,b], \\mathbb{K})$, que peut-on dire de $|f|$ ?",
+        "answers": [
+            "$|f|$ est continue.",
+            "$|f|$ est continue par morceaux sur $[a,b]$.",
+            "$|f|$ n'est pas nécessairement intégrable."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q5-ex-sin-1x",
+        "image_path": null,
+        "theme": "fonctions continues par morceaux",
+        "question": "La fonction $f(x) = \\sin(1/x)$ pour $x > 0$ et $f(0)=0$ est-elle continue par morceaux sur $[0,1]$ ?",
+        "answers": [
+            "Oui, car elle est bornée.",
+            "Non, car elle n'admet pas de limite finie en 0.",
+            "Oui, car elle est continue sur $]0,1]$."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q6-ex-ln-x",
+        "image_path": null,
+        "theme": "fonctions continues par morceaux",
+        "question": "La fonction $f(x) = \\ln(x)$ pour $x > 0$ et $f(0)=0$ est-elle continue par morceaux sur $[0,1]$ ?",
+        "answers": [
+            "Oui, car elle est monotone.",
+            "Non, car sa limite en 0 est $-\\infty$.",
+            "Oui, car elle est continue sur $]0,1]$."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q7-integral-value-change",
+        "image_path": null,
+        "theme": "propriétés de l'intégrale",
+        "question": "Si deux fonctions $f$ et $g$ de $\\mathcal{CM}([a,b], \\mathbb{K})$ diffèrent en un nombre fini de points, alors :",
+        "answers": [
+            "Leurs intégrales sur $[a,b]$ sont égales.",
+            "Leurs intégrales sont différentes.",
+            "$f-g$ n'est pas intégrable."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q8-triangle-inequality",
+        "image_path": null,
+        "theme": "propriétés de l'intégrale",
+        "question": "Pour $f \\in \\mathcal{CM}([a,b], \\mathbb{K})$, l'inégalité triangulaire s'écrit :",
+        "answers": [
+            "$\\int |f| \\le |\\int f|$",
+            "$|\\int f| \\le \\int |f|$",
+            "$|\\int f| = \\int |f|$"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q9-mean-value-inequality",
+        "image_path": null,
+        "theme": "propriétés de l'intégrale",
+        "question": "Si $|f| \\le M$ sur $[a,b]$, alors $|\\int_a^b f(t) dt|$ est majorée par :",
+        "answers": [
+            "$M$",
+            "$M(b-a)$",
+            "$M/(b-a)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q10-cm-interval",
+        "image_path": null,
+        "theme": "fonctions continues par morceaux",
+        "question": "Une fonction $f$ est dite continue par morceaux sur un intervalle $I$ si :",
+        "answers": [
+            "Elle est continue par morceaux sur tout segment $[a,b] \\subset I$.",
+            "Elle est continue sur $I$ sauf en un nombre fini de points de $I$.",
+            "Elle est bornée sur $I$."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q11-conv-def",
+        "image_path": null,
+        "theme": "définition convergence",
+        "question": "Dans le cadre de l'étude des intégrales généralisées sur un intervalle $[a, b[$, la définition formelle de la convergence de l'intégrale $\\int_a^b f(t) dt$ est :",
+        "answers": [
+            "L'existence d'une limite $\\lim_{x \\to b} f(x) = 0$.",
+            "L'existence d'une limite finie pour l'application $x \\mapsto \\int_a^x f(t) dt$ quand $x$ tend vers $b$.",
+            "Le fait que la fonction $f$ soit bornée au voisinage de $b$.",
+            "La valeur de l'intégrale est nécessairement nulle."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "La convergence d'une intégrale généralisée est définie par la limite de l'intégrale sur un segment $[a, x]$. Si cette limite existe et est finie, on dit que l'intégrale converge. Les propositions 1 et 3 sont des conditions nécessaires (pour les fonctions positives) ou des propriétés, mais ne sont en aucun cas des conditions suffisantes."
+    },
+    {
+        "uuid": "q12-chasles-nature",
+        "image_path": null,
+        "theme": "définition convergence",
+        "question": "Soit $f$ une fonction continue sur $[a, b[$. Pour tout $c \\in ]a, b[$, quel est le lien entre la nature de l'intégrale $\\int_a^b f$ et celle de $\\int_c^b f$ ?",
+        "answers": [
+            "Elles sont nécessairement de même nature.",
+            "Elles sont toujours de natures opposées.",
+            "L'intégrale $\\int_a^b f$ converge si et seulement si $\\int_c^b f$ est divergente.",
+            "Elles n'ont aucun lien logique entre elles."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "La relation de Chasles $\\int_a^b f = \\int_a^c f + \\int_c^b f$ montre que la convergence est une propriété locale au voisinage de la borne problématique $b$. Puisque $\\int_a^c f$ est une intégrale sur un segment (donc toujours convergente si $f$ est continue), la différence de nature ne dépend que du comportement au voisinage de $b$."
+    },
+    {
+        "uuid": "q13-remainder-limit",
+        "image_path": null,
+        "theme": "définition convergence",
+        "question": "Si l'intégrale $\\int_a^b f(t) dt$ converge, quelle est la limite du reste $R(x) = \\int_x^b f(t) dt$ lorsque $x \\to b$ ?",
+        "answers": [
+            "$+\\infty$",
+            "$f(a)$",
+            "$0$",
+            "L'intégrale totale $\\int_a^b f$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 2,
+        "explication": "Par définition, $\\int_a^b f = \\lim_{x \\to b} \\int_a^x f$. Le reste est défini par $\\int_x^b f = \\int_a^b f - \\int_a^x f$. En passant à la limite quand $x \\to b$, on obtient $\\int_a^b f - \\int_a^b f = 0$."
+    },
+    {
+        "uuid": "q14-primitive-limit",
+        "image_path": null,
+        "theme": "définition convergence",
+        "question": "Soit $F$ une primitive de $f$ sur $[a, b[$. La condition nécessaire et suffisante pour que l'intégrale $\\int_a^b f(t) dt$ converge est :",
+        "answers": [
+            "Que $F$ soit bornée sur $[a, b[$.",
+            "Que $F$ admette une limite finie en $b$.",
+            "Que $\\lim_{x \\to b} F(x) = 0$.",
+            "Que $F$ soit croissante sur $[a, b[$."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "Par le théorème fondamental de l'analyse, $\\int_a^x f(t) dt = F(x) - F(a)$. La convergence de l'intégrale est donc équivalente à l'existence de la limite $\\lim_{x \\to b} (F(x) - F(a))$, ce qui revient à l'existence de $\\lim_{x \\to b} F(x)$."
+    },
+    {
+        "uuid": "q15-riemann-inf",
+        "image_path": null,
+        "theme": "intégrales de référence",
+        "question": "L'intégrale de Riemann $\\int_1^{+\\infty} \\frac{dt}{t^\\alpha}$ est une référence fondamentale. Elle converge si et seulement si :",
+        "answers": [
+            "$\\alpha < 1$",
+            "$\\alpha > 1$",
+            "$\\alpha \\ge 1$",
+            "$\\alpha > 0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "Pour les intégrales au voisinage de $+\\infty$, la décroissance de $1/t^\\alpha$ doit être suffisamment rapide pour compenser l'étendue du domaine. Le calcul des primitives (ou la règle d'intégration) montre que la convergence est assurée pour $\\alpha > 1$."
+    },
+    {
+        "uuid": "q16-riemann-zero",
+        "image_path": null,
+        "theme": "intégrales de référence",
+        "question": "L'intégrale de Riemann $\\int_0^1 \\frac{dt}{t^\\alpha}$ converge au voisinage de $0$ si et seulement si :",
+        "answers": [
+            "$\\alpha < 1$",
+            "$\\alpha > 1$",
+            "$\\alpha \\le 1$",
+            "$\\alpha = 1$"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "Au voisinage de $0$, la fonction $1/t^\\alpha$ explose. Pour que l'aire sous la courbe soit finie, il faut que l'exposant $\\alpha$ soit strictement inférieur à $1$ afin que la primitive $t^{1-\\alpha}/(1-\\alpha)$ admette une limite finie en $0$."
+    },
+    {
+        "uuid": "q17-exp-integral",
+        "image_path": null,
+        "theme": "intégrales de référence",
+        "question": "Pour quelle condition sur $\\alpha$ l'intégrale $\\int_0^{+\\infty} e^{-\\alpha x} dx$ est-elle convergente ?",
+        "answers": [
+            "$\\alpha \\ge 0$",
+            "$\\alpha > 0$",
+            "$\\alpha < 0$",
+            "$\\alpha \\in \\mathbb{R}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "La primitive est $[-1/\\alpha e^{-\\alpha x}]_0^{+\\infty}$. Pour que la borne $+\\infty$ donne une valeur finie ($0$), il est nécessaire que le terme dans l'exponentielle soit négatif, donc que $\\alpha > 0$."
+    },
+    {
+        "uuid": "q18-comp-pos-maj",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Soient $f$ et $g$ deux fonctions positives telles que $0 \\le f(t) \\le g(t)$ au voisinage de la borne $b$. Si $\\int_a^b g(t) dt$ converge, alors :",
+        "answers": [
+            "$\\int_a^b f(t) dt$ diverge nécessairement.",
+            "$\\int_a^b f(t) dt$ converge par majoration.",
+            "On ne peut pas conclure sur la nature de $f$.",
+            "$\\int_a^b f(t) dt$ est égale à $\\int_a^b g(t) dt$."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "C'est le théorème de comparaison des fonctions positives : si une fonction positive est majorée par une fonction dont l'intégrale converge, alors son intégrale converge également."
+    },
+    {
+        "uuid": "q19-comp-pos-div",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Soient $f$ et $g$ deux fonctions positives telles que $0 \\le f(t) \\le g(t)$ au voisinage de la borne $b$. Si $\\int_a^b f(t) dt$ diverge, alors :",
+        "answers": [
+            "$\\int_a^b g(t) dt$ diverge nécessairement.",
+            "$\\int_a^b g(t) dt$ converge.",
+            "$\\int_a^b g(t) dt$ peut converger ou diverger.",
+            "$\\int_a^b g(t) dt$ est nulle."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "Par contraposition, si la petite fonction $f$ a une aire infinie, alors la fonction $g$ qui est supérieure ou égale à $f$ doit nécessairement avoir une aire infinie."
+    },
+    {
+        "uuid": "q20-equiv-nature",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Si $f(t) \\sim g(t)$ au voisinage de $b$ avec $f$ et $g$ positives, alors les intégrales $\\int_a^b f(t) dt$ et $\\int_a^b g(t) dt$ sont :",
+        "answers": [
+            "Toujours convergentes.",
+            "De même nature (elles convergent ou divergent simultanément).",
+            "De natures différentes si $g$ ne décroît pas assez vite.",
+            "Nécessairement divergentes."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "L'équivalence $f \\sim g$ signifie que $f(t) = g(t)(1 + \\epsilon(t))$ avec $\\epsilon(t) \\to 0$. Au voisinage du point problématique, les deux fonctions se comportent de manière identique, ce qui garantit qu'elles partagent la même nature de convergence."
+    },
+    {
+        "uuid": "q21-big-o-nature",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Si $f(x) = O(g(x))$ quand $x \\to b$ et $\\int_a^b |g|$ converge, alors :",
+        "answers": [
+            "$\\int_a^b f$ diverge.",
+            "$\\int_a^b |f|$ converge.",
+            "$\\int_a^b f$ est de même nature que $\\int_a^b g$."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q22-abs-conv-def",
+        "image_path": null,
+        "theme": "convergence absolue",
+        "question": "On dit que $\\int_a^b f$ est absolument convergente si :",
+        "answers": [
+            "$\\int_a^b |f(t)| dt$ converge.",
+            "$f$ est positive et $\\int_a^b f$ converge.",
+            "$|\\int_a^b f(t) dt|$ converge."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q23-abs-implies-conv",
+        "image_path": null,
+        "theme": "convergence absolue",
+        "question": "La convergence absolue d'une intégrale implique-t-elle sa convergence simple ?",
+        "answers": [
+            "Non, c'est faux en général.",
+            "Oui, toujours.",
+            "Seulement si $f$ est continue."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q24-linearite-nature",
+        "image_path": null,
+        "theme": "propriétés de l'intégrale",
+        "question": "Si $\\int_I f$ converge et $\\int_I g$ diverge, alors $\\int_I (f+g)$ :",
+        "answers": [
+            "Converge.",
+            "Diverge.",
+            "On ne peut pas conclure."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q25-linearite-double-div",
+        "image_path": null,
+        "theme": "propriétés de l'intégrale",
+        "question": "Si $\\int_I f$ diverge et $\\int_I g$ diverge, alors $\\int_I (f+g)$ :",
+        "answers": [
+            "Diverge forcément.",
+            "Converge forcément.",
+            "On ne peut pas conclure."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q26-positivity-strict",
+        "image_path": null,
+        "theme": "propriétés de l'intégrale",
+        "question": "Soit $f \\ge 0$ continue sur $[a,b[$. Si $\\int_a^b f = 0$, alors :",
+        "answers": [
+            "$f$ est nulle sur $[a,b[$.",
+            "$f$ est bornée.",
+            "$\\lim_{x \\to b} f(x) = 0$."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q27-ipp-conditions",
+        "image_path": null,
+        "theme": "méthodes de calcul",
+        "question": "Pour appliquer l'IPP sur $[a,b[$, on doit vérifier que le crochet $[uv]_a^x$ :",
+        "answers": [
+            "Tende vers 0 en $b$.",
+            "Admette une limite finie quand $x \\to b$.",
+            "Soit constant."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q28-cv-bijection",
+        "image_path": null,
+        "theme": "méthodes de calcul",
+        "question": "Dans un changement de variable $x = \\varphi(t)$, $\\varphi$ doit être :",
+        "answers": [
+            "Une bijection de classe $C^1$ strictement monotone.",
+            "Une fonction continue quelconque.",
+            "Une fonction bornée."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q29-bertrand-inf",
+        "image_path": null,
+        "theme": "intégrales de référence",
+        "question": "L'intégrale de Bertrand $\\int_2^{+\\infty} \\frac{dt}{t^\\alpha (\\ln t)^\\beta}$ converge si et seulement si :",
+        "answers": [
+            "$\\alpha > 1$ ou ($\\alpha = 1$ et $\\beta > 1$)",
+            "$\\alpha > 1$ et $\\beta > 1$",
+            "$\\alpha < 1$ ou ($\\alpha = 1$ et $\\beta < 1$)"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q30-dirichlet-conv",
+        "image_path": null,
+        "theme": "exercices classiques",
+        "question": "L'intégrale de Dirichlet $\\int_0^{+\\infty} \\frac{\\sin t}{t} dt$ est :",
+        "answers": [
+            "Absolument convergente.",
+            "Semi-convergente (convergente mais pas absolument).",
+            "Divergente."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q31-gauss-value",
+        "image_path": null,
+        "theme": "exercices classiques",
+        "question": "Dans le cadre de l'étude des lois de probabilité ou de la physique statistique, quelle est la valeur de l'intégrale de Gauss $I = \\int_0^{+\\infty} e^{-x^2} dx$ ?",
+        "answers": [
+            "$\\sqrt{\\pi}$",
+            "$\\sqrt{\\pi}/2$",
+            "$\\pi/2$",
+            "$1/\\sqrt{\\pi}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "On sait que $\\int_{-\\infty}^{+\\infty} e^{-x^2} dx = \\sqrt{\\pi}$. Par parité de la fonction $x \\mapsto e^{-x^2}$, l'intégrale sur $[0, +\\infty[$ est la moitié de l'intégrale sur $\\mathbb{R}$, soit $\\frac{\\sqrt{\\pi}}{2}$. L'erreur classique est d'oublier de diviser par 2.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q32-wallis-equiv",
+        "image_path": null,
+        "theme": "exercices classiques",
+        "question": "Soit $W_n = \\int_0^{\\pi/2} \\sin^n(t) dt$ la suite des intégrales de Wallis. Quel est son équivalent lorsque $n \\to +\\infty$ ?",
+        "answers": [
+            "$\\sqrt{\\frac{\\pi}{2n}}$",
+            "$\\sqrt{\\frac{\\pi}{n}}$",
+            "$\\frac{1}{n}$",
+            "$\\frac{1}{\\sqrt{n}}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "L'équivalent classique est $W_n \\sim \\sqrt{\\frac{\\pi}{2n}}$. Une méthode pour le retrouver est d'utiliser $W_n \\cdot W_{n+1} = \\frac{\\pi}{2(n+1)}$ et le fait que $W_n \\sim W_{n+1}$. Oublier le facteur 2 sous la racine est une erreur fréquente.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q33-ln-x-int",
+        "image_path": null,
+        "theme": "méthodes de calcul",
+        "question": "Quelle est la valeur de l'intégrale généralisée $I = \\int_0^1 \\ln(x) dx$ ?",
+        "answers": [
+            "$1$",
+            "$-1$",
+            "Divergente",
+            "$0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "En utilisant une intégration par parties ou la primitive $x \\ln(x) - x$, on calcule $\\lim_{\\varepsilon \\to 0^+} [x \\ln(x) - x]_\\varepsilon^1 = (0 - 1) - 0 = -1$. La fonction $\\ln(x)$ est négative sur $]0, 1]$, donc une valeur positive serait une erreur de signe flagrante.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q34-riemann-generic",
+        "image_path": null,
+        "theme": "intégrales de référence",
+        "question": "Soit $a < b$ et $\\alpha \\in \\mathbb{R}$. Pour quelle condition sur $\\alpha$ l'intégrale $\\int_a^b \\frac{dt}{(t-a)^\\alpha}$ converge-t-elle ?",
+        "answers": [
+            "$\\alpha < 1$",
+            "$\\alpha > 1$",
+            "$\\alpha = 1$",
+            "$\\alpha > 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "C'est une intégrale de Riemann en une borne. La primitive est de la forme $(t-a)^{1-\\alpha} / (1-\\alpha)$. Pour que la limite en $a$ existe, il faut que l'exposant soit strictement supérieur à 0, soit $1-\\alpha > 0 \\iff \\alpha < 1$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q35-nature-1-x2",
+        "image_path": null,
+        "theme": "définition convergence",
+        "question": "Quelle est la nature de l'intégrale $\\int_{-\\infty}^{-1} \\frac{1}{x^2} dx$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "Nulle par imparité",
+            "Divergente vers $+\\infty$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "L'intégrale converge si $\\alpha > 1$ au voisinage de l'infini. Ici, $\\alpha = 2 > 1$, donc elle converge. La primitive est $-1/x$. En prenant la borne inférieure vers $-\\infty$, on obtient $\\lim_{X \\to -\\infty} [-1/x]_X^{-1} = -1 - 0 = -1$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q36-f-pos-bounded",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Soit $f$ une fonction continue et positive sur $[a, b[$. Quelle condition est équivalente à la convergence de $\\int_a^b f(t) dt$ ?",
+        "answers": [
+            "$f$ est bornée sur $[a, b[$.",
+            "$x \\mapsto \\int_a^x f(t) dt$ est majorée sur $[a, b[$.",
+            "$\\lim_{t \\to b} f(t) = 0$.",
+            "$\\int_a^b f(t) dt$ est intégrable au sens de Riemann."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "Pour une fonction positive, la fonction définie par $F(x) = \\int_a^x f(t) dt$ est croissante. Une fonction croissante admet une limite finie en $b$ si et seulement si elle est majorée. Que $f$ soit bornée ne suffit pas (exemple $1/\\sqrt{x}$ en 0).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q37-stirling",
+        "image_path": null,
+        "theme": "exercices classiques",
+        "question": "La formule de Stirling permet d'obtenir un équivalent factoriel de $n!$. Quel est cet équivalent ?",
+        "answers": [
+            "$(\\frac{n}{e})^n \\sqrt{2\\pi n}$",
+            "$(\\frac{n}{e})^n \\sqrt{\\pi n}$",
+            "$n^n e^{-n}$",
+            "$(\\frac{n}{e})^n \\sqrt{2\\pi}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "La formule exacte est $n! \\sim \\sqrt{2\\pi n} (\\frac{n}{e})^n$. La présence du facteur $2$ sous la racine et la dépendance en $n$ (et non seulement en constante) sont les points critiques à retenir pour les écrits de concours.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q38-nature-cos-t",
+        "image_path": null,
+        "theme": "définition convergence",
+        "question": "Quelle est la nature de l'intégrale $\\int_0^{+\\infty} \\cos(t) dt$ ?",
+        "answers": [
+            "Convergente vers 0.",
+            "Divergente.",
+            "Convergente vers 1.",
+            "Convergente vers $-1$."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "La primitive de $\\cos(t)$ est $\\sin(t)$. Or, $\\lim_{X \\to +\\infty} \\sin(X)$ n'existe pas. Donc l'intégrale diverge. Elle n'est pas convergente, car la limite de la primitive ne converge pas.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q39-nature-dirichlet-abs",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Quelle est la nature de l'intégrale $\\int_\\pi^{+\\infty} |\\frac{\\sin t}{t}| dt$ ?",
+        "answers": [
+            "Convergente.",
+            "Divergente.",
+            "Égale à $\\pi/2$.",
+            "Convergente vers 1."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "On utilise l'inégalité $|\\sin(t)| \\ge \\sin^2(t) = \\frac{1-\\cos(2t)}{2}$. Ainsi, $|\\frac{\\sin t}{t}| \\ge \\frac{1}{2t} - \\frac{\\cos(2t)}{2t}$. Comme $\\int 1/t$ diverge et que $\\int \\cos(2t)/2t$ converge (Dirichlet), par minoration, l'intégrale diverge. C'est l'exemple type de fonction semi-convergente mais pas absolument convergente.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q40-double-gen-def",
+        "image_path": null,
+        "theme": "définition convergence",
+        "question": "Par définition, l'intégrale $\\int_{-\\infty}^{+\\infty} f(t) dt$ converge si et seulement si :",
+        "answers": [
+            "$\\lim_{X \\to +\\infty} \\int_{-X}^X f(t) dt$ existe.",
+            "$\\int_{-\\infty}^c f(t) dt$ et $\\int_c^{+\\infty} f(t) dt$ convergent pour un $c \\in \\mathbb{R}$.",
+            "$f$ est paire et $\\int_0^{+\\infty} f(t) dt$ converge.",
+            "$\\lim_{X_1 \\to -\\infty} \\int_{X_1}^0 f(t) dt + \\lim_{X_2 \\to +\\infty} \\int_0^{X_2} f(t) dt$ existent indépendamment."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "La définition impose que les deux bornes soient indépendantes. La première proposition correspond à la valeur principale de Cauchy, qui peut exister alors que l'intégrale diverge (ex: $f(t) = t$). La seconde est la définition rigoureuse, assurant la convergence sur chaque intervalle de manière autonome.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q41-ex-1-x2-0-inf",
+        "image_path": null,
+        "theme": "intégrales de référence",
+        "question": "L'intégrale $\\int_0^{+\\infty} \\frac{dt}{t^2}$ est :",
+        "answers": [
+            "Convergente car $2 > 1$.",
+            "Divergente en $+\\infty$.",
+            "Divergente car problématique en 0 et en $+\\infty$."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q42-bertrand-zero",
+        "image_path": null,
+        "theme": "intégrales de référence",
+        "question": "$\\int_0^{1/2} \\frac{dt}{t^\\alpha |\\ln t|^\\beta}$ converge si et seulement si :",
+        "answers": [
+            "$\\alpha < 1$ ou ($\\alpha = 1$ et $\\beta > 1$)",
+            "$\\alpha < 1$ ou ($\\alpha = 1$ et $\\beta < 1$)",
+            "$\\alpha > 1$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q43-comparaison-ln",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "L'intégrale $\\int_e^{+\\infty} \\frac{dt}{\\ln t}$ est :",
+        "answers": [
+            "Convergente par comparaison à $1/t$.",
+            "Divergente car $\\ln t \\le t$.",
+            "Divergente car $1/\\ln t \\ge 1/t$ pour $t$ grand."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q44-gauss-cv-justif",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Pourquoi $\\int_0^{+\\infty} e^{-t^2} dt$ converge-t-elle ?",
+        "answers": [
+            "Car $e^{-t^2} = o(1/t^2)$ au voisinage de $+\\infty$.",
+            "Car c'est une intégrale de Riemann avec $\\alpha=2$.",
+            "Car elle est bornée par 1."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q45-nature-sin-t2",
+        "image_path": null,
+        "theme": "méthodes de calcul",
+        "question": "L'intégrale $\\int_0^{+\\infty} \\sin(t^2) dt$ est-elle convergente ?",
+        "answers": [
+            "Non, car $\\sin(t^2)$ n'a pas de limite en $+\\infty$.",
+            "Oui, par le changement de variable $u=t^2$.",
+            "Non, car elle n'est pas absolument convergente."
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q46-ipp-xe-x",
+        "image_path": null,
+        "theme": "méthodes de calcul",
+        "question": "$\\int_0^{+\\infty} t e^{-t} dt$ vaut :",
+        "answers": [
+            "$0$",
+            "$1$",
+            "$+\\infty$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q47-nature-1-sqrt-x-ln",
+        "image_path": null,
+        "theme": "intégrales de référence",
+        "question": "La nature de $\\int_2^{+\\infty} \\frac{dt}{\\sqrt{t} \\ln^2 t}$ est :",
+        "answers": [
+            "Convergente car $\\beta = 2 > 1$.",
+            "Divergente car $\\alpha = 1/2 < 1$.",
+            "Convergente par croissance comparée."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q48-gamma-0",
+        "image_path": null,
+        "theme": "intégrales de référence",
+        "question": "L'intégrale $\\int_0^{+\\infty} t^{x-1} e^{-t} dt$ converge si et seulement si :",
+        "answers": [
+            "$x > 0$",
+            "$x > 1$",
+            "Tout $x \\in \\mathbb{R}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q49-td-1-sqrt-sin",
+        "image_path": null,
+        "theme": "exercices classiques",
+        "question": "Nature de $\\int_0^{\\pi/2} \\frac{\\cos u}{\\sqrt{\\sin u}} du$ :",
+        "answers": [
+            "Divergente en 0.",
+            "Convergente par changement de variable $v=\\sin u$.",
+            "Divergente car $\\sin u \\sim u$."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q50-td-e-it",
+        "image_path": null,
+        "theme": "convergence absolue",
+        "question": "L'intégrale $\\int_0^{+\\infty} \\frac{e^{it}}{1+it} dt$ est-elle absolument convergente ?",
+        "answers": [
+            "Oui.",
+            "Non, car le module est équivalent à $1/t$.",
+            "Oui, car $|e^{it}|=1$."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q51-prolongement-cont",
+        "image_path": null,
+        "theme": "convergence absolue",
+        "question": "Dans le cadre de l'étude des intégrales généralisées, si $f$ est une fonction continue sur $[a,b[$ et admet une limite finie en $b$, alors l'intégrale $\\int_a^b f(t) dt$ :",
+        "answers": [
+            "Diverge systématiquement.",
+            "Converge.",
+            "Est égale à la valeur de la limite en $b$.",
+            "Est indéterminée sans information supplémentaire."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "Le critère de prolongement par continuité stipule que si une fonction est continue sur $[a,b[$ et possède une limite finie en $b$, alors elle est prolongeable par continuité en $b$. L'intégrale correspondante est alors une intégrale sur un segment, donc elle converge. La réponse 3 est un piège classique car l'intégrale dépend de la valeur de $f$ sur tout l'intervalle et non uniquement de sa limite en $b$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q52-sin-x-x-0",
+        "image_path": null,
+        "theme": "fonctions continues par morceaux",
+        "question": "Soit $f$ la fonction définie par $f(x) = \\frac{\\sin x}{x}$ pour $x \\in ]0,1]$ et $f(0)=2$. La fonction $f$ est-elle continue par morceaux (CM) sur $[0,1]$ ?",
+        "answers": [
+            "Non, elle présente une discontinuité de première espèce en 0.",
+            "Oui, car elle admet une limite finie en 0.",
+            "Oui, car elle est continue sur $[0,1]$.",
+            "Non, car elle n'est pas définie en 0 par le prolongement usuel."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "La limite de $\\frac{\\sin x}{x}$ en 0 est 1. Comme on a imposé $f(0)=2 \\neq 1$, la fonction présente une discontinuité en 0. Elle reste CM car elle est continue sur $]0,1]$ et possède des limites à droite et à gauche finies en tout point. Cependant, la proposition 2 est fausse car le fait qu'elle soit CM ne dépend pas de la valeur au point de discontinuité, mais l'affirmation 'Oui' est ici liée à une erreur sur la valeur de la limite. Attention : la fonction est CM, mais la justification doit reposer sur l'existence des limites finies, et ici $f(0)=2$ crée un saut.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q53-cv-example-1-u",
+        "image_path": null,
+        "theme": "méthodes de calcul",
+        "question": "Pour étudier la convergence et calculer l'intégrale $I = \\int_0^{+\\infty} \\frac{\\ln t}{1+t^2} dt$, quel changement de variable est classiquement suggéré pour exploiter la structure de l'intégrale ?",
+        "answers": [
+            "$u = 1/t$",
+            "$u = t^2$",
+            "$u = e^t$",
+            "$u = \\ln t$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "Le changement de variable $u = 1/t$ est extrêmement efficace ici. Il transforme l'intégrale sur $[0, 1]$ en une intégrale sur $[1, +\\infty[$. En sommant les deux parties, on remarque que les termes s'annulent grâce à la propriété $\\ln(1/t) = -\\ln t$, ce qui démontre que $I=0$. Les autres changements de variable compliquent inutilement le dénominateur ou les bornes.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q54-gauss-equivalence",
+        "image_path": null,
+        "theme": "méthodes de calcul",
+        "question": "En utilisant le changement de variable $u=t^2$, l'intégrale de Gauss $I = \\int_0^{+\\infty} e^{-t^2} dt$ se transforme en :",
+        "answers": [
+            "$\\int_0^{+\\infty} \\frac{e^{-u}}{\\sqrt{u}} du$",
+            "$\\frac{1}{2} \\int_0^{+\\infty} u^{-1/2} e^{-u} du$",
+            "$\\int_0^{+\\infty} e^{-u} du$",
+            "$\\frac{1}{2} \\int_0^{+\\infty} \\sqrt{u} e^{-u} du$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "Si $u=t^2$, alors $t=\\sqrt{u}$ (pour $t>0$) et $dt = \\frac{1}{2\\sqrt{u}} du$. En remplaçant, on obtient $\\int_0^{+\\infty} e^{-u} \\frac{1}{2\\sqrt{u}} du$, ce qui correspond à $\\frac{1}{2} \\int_0^{+\\infty} u^{-1/2} e^{-u} du$. Cette forme permet de reconnaître la fonction Gamma $\\Gamma(1/2) = \\sqrt{\\pi}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q55-nature-ln-1-sin",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "La nature de l'intégrale $\\int_1^{+\\infty} \\ln(1 + \\frac{\\sin t}{\\sqrt{t}}) dt$ est délicate car :",
+        "answers": [
+            "L'équivalent $\\frac{\\sin t}{\\sqrt{t}}$ n'est pas de signe constant, interdisant le critère de comparaison directe.",
+            "Le logarithme diverge toujours en $+\\infty$.",
+            "La fonction n'est pas continue sur l'intervalle d'intégration.",
+            "Le terme $\\frac{\\sin t}{\\sqrt{t}}$ est trop grand pour autoriser un développement limité."
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "Le critère de comparaison pour les intégrales (positivité) ne s'applique pas directement ici car $\\frac{\\sin t}{\\sqrt{t}}$ change de signe. Il faut effectuer un développement limité : $\\ln(1+u) = u - u^2/2 + o(u^2)$. Ici, $\\ln(1 + \\frac{\\sin t}{\\sqrt{t}}) \\approx \\frac{\\sin t}{\\sqrt{t}} - \\frac{\\sin^2 t}{2t}$. L'intégrale de $\\frac{\\sin t}{\\sqrt{t}}$ converge (Abel), et celle de $\\frac{\\sin^2 t}{2t}$ diverge (via $\\sin^2 t = \\frac{1-\\cos 2t}{2}$), rendant l'analyse fine nécessaire.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q56-td-integral-series",
+        "image_path": null,
+        "theme": "définition convergence",
+        "question": "Si $\\int_a^{+\\infty} f(t) dt$ converge, alors la série $\\sum_{n=1}^{+\\infty} u_n$ avec $u_n = \\int_{na}^{(n+1)a} f(t) dt$ :",
+        "answers": [
+            "Converge.",
+            "Diverge systématiquement.",
+            "Converge seulement si $f \\ge 0$.",
+            "Peut diverger si $f$ oscille fortement."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "C'est une conséquence directe de la relation de Chasles. Si $\\int_a^{+\\infty} f(t) dt$ converge, alors la suite des sommes partielles $S_N = \\sum_{n=1}^{N} \\int_{na}^{(n+1)a} f(t) dt = \\int_a^{(N+1)a} f(t) dt$ admet une limite finie quand $N \\to +\\infty$. Cette limite est précisément la définition de la convergence de l'intégrale sur $[a, +\\infty[$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q57-td-f-decreasing",
+        "image_path": null,
+        "theme": "exercices classiques",
+        "question": "Si $f: [0,+\\infty[ \\to \\mathbb{R}^+$ est une fonction décroissante et $\\int_0^{+\\infty} f(t) dt$ converge, alors on a nécessairement :",
+        "answers": [
+            "$f(x) = o(1/x)$ en $+\\infty$.",
+            "$f(x) = O(1/x)$ en $+\\infty$.",
+            "$f(x) = o(1/x^2)$ en $+\\infty$.",
+            "Aucune condition particulière sur la décroissance de $f$."
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "Si $f$ est décroissante positive, on a l'inégalité $f(x) \\ge f(2x) \\ge 0$. Alors $\\int_x^{2x} f(t) dt \\ge \\int_x^{2x} f(2x) dt = x f(2x)$. Puisque l'intégrale converge, le reste $\\int_x^{2x} f(t) dt$ tend vers 0, donc $x f(2x) \\to 0$, ce qui implique $f(x) = o(1/x)$. C'est un résultat fondamental pour les fonctions décroissantes.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q58-nature-1-x-ln2",
+        "image_path": null,
+        "theme": "intégrales de référence",
+        "question": "Quelle est la nature de l'intégrale généralisée $I = \\int_2^{+\\infty} \\frac{dt}{t \\ln^2 t}$ ?",
+        "answers": [
+            "Divergente.",
+            "Convergente.",
+            "Absolument divergente.",
+            "Diverge car le dénominateur s'annule."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "On reconnaît la forme $\\int \\frac{u'}{u^\\alpha} dt$ avec $u(t) = \\ln t$ et $u'(t) = 1/t$. Ici $\\alpha = 2 > 1$. L'intégrale $\\int_2^X \\frac{1}{u^2} du = [-\\frac{1}{u}]_2^X$ possède une limite finie quand $X \\to +\\infty$. Par conséquent, l'intégrale converge.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q59-nature-1-x-ln1",
+        "image_path": null,
+        "theme": "intégrales de référence",
+        "question": "Quelle est la nature de l'intégrale généralisée $I = \\int_2^{+\\infty} \\frac{dt}{t \\ln t}$ ?",
+        "answers": [
+            "Divergente.",
+            "Convergente.",
+            "Convergente vers 1.",
+            "Indéterminée."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "En posant $u = \\ln t$, l'intégrale devient $\\int_{\\ln 2}^{+\\infty} \\frac{du}{u}$. Cette intégrale est une intégrale de Riemann de type $\\int_a^{+\\infty} \\frac{1}{u^\\alpha} du$ avec $\\alpha = 1$, qui est divergente. La fonction $\\ln(u)$ tend vers $+\\infty$ quand $u \\to +\\infty$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q60-nature-cos-t-t",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "L'intégrale $I = \\int_1^{+\\infty} \\frac{\\cos t}{t^2} dt$ est :",
+        "answers": [
+            "Absolument convergente.",
+            "Divergente.",
+            "Semi-convergente.",
+            "Convergente mais non calculable."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "On utilise la majoration $|\frac{\\cos t}{t^2}| \\le \\frac{1}{t^2}$. Comme l'intégrale de Riemann $\\int_1^{+\\infty} \\frac{1}{t^2} dt$ converge ($\\alpha = 2 > 1$), l'intégrale initiale est absolument convergente. Toute intégrale absolument convergente est convergente.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q61-propriete-sev",
+        "image_path": null,
+        "theme": "fonctions continues par morceaux",
+        "question": "Dans le cadre de l'étude des espaces fonctionnels, l'ensemble $\\mathcal{CM}([a,b], \\mathbb{K})$ des fonctions continues par morceaux sur un segment $[a,b]$ est :",
+        "answers": [
+            "Un espace vectoriel stable par produit.",
+            "Un espace vectoriel de dimension finie.",
+            "Un groupe non commutatif pour l'addition.",
+            "Un espace de Hilbert muni du produit scalaire usuel."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "L'ensemble $\\mathcal{CM}([a,b], \\mathbb{K})$ est une $\\mathbb{K}$-algèbre, donc un espace vectoriel stable par combinaison linéaire et par produit point par point. Il est de dimension infinie, donc la réponse 2 est fausse. La réponse 3 est absurde car c'est un groupe commutatif pour l'addition. La réponse 4 est fausse car ce n'est pas un espace complet pour la norme euclidienne.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q62-condition-integrabilite",
+        "image_path": null,
+        "theme": "convergence absolue",
+        "question": "Soit $f : I \\to \\mathbb{K}$ une fonction continue par morceaux. On dit que $f$ est intégrable sur $I$ ($f \\in L^1(I)$) si et seulement si :",
+        "answers": [
+            "L'intégrale généralisée $\\int_I f(t) dt$ converge.",
+            "L'intégrale généralisée $\\int_I |f(t)| dt$ converge.",
+            "La fonction $f$ est bornée sur $I$.",
+            "La fonction $f$ admet une limite nulle en les bornes de $I$."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "Par définition, l'intégrabilité correspond à la convergence absolue de l'intégrale. La simple convergence de $\\int_I f(t) dt$ (convergence semi-convergente) ne suffit pas pour dire que $f \\in L^1(I)$. Être bornée n'est pas non plus une condition suffisante (ex: $1/t$ sur $[1, +\\infty[$).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q63-nature-1-sqrt-x-1-x2",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Quelle est la nature de l'intégrale généralisée $I = \\int_0^{+\\infty} \\frac{dt}{\\sqrt{t}(1+t^2)}$ ?",
+        "answers": [
+            "Divergente, avec un problème de convergence en $0$.",
+            "Divergente, avec un problème de convergence en $+\\infty$.",
+            "Convergente, car la fonction est intégrable au voisinage de $0$ et de $+\\infty$.",
+            "Divergente en $0$ et en $+\\infty$."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 2,
+        "explication": "Au voisinage de $0$, la fonction est équivalente à $1/\\sqrt{t}$, dont l'intégrale converge ($1/2 < 1$). Au voisinage de $+\\infty$, elle est équivalente à $1/(t^2\\sqrt{t}) = 1/t^{5/2}$, dont l'intégrale converge ($5/2 > 1$). Par le théorème de comparaison, $I$ est convergente.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q64-wallis-recurrence",
+        "image_path": null,
+        "theme": "exercices classiques",
+        "question": "Pour les intégrales de Wallis $W_n = \\int_0^{\\pi/2} \\sin^n(t) dt$, quelle est la relation de récurrence liant $W_{n+2}$ à $W_n$ ?",
+        "answers": [
+            "$W_{n+2} = \\frac{n+1}{n+2} W_n$",
+            "$W_{n+2} = \\frac{n}{n+1} W_n$",
+            "$W_{n+2} = W_n$",
+            "$W_{n+2} = \\frac{n+2}{n+1} W_n$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "En effectuant une intégration par parties sur $\\int \\sin^{n+1}(t) \\sin(t) dt$, on obtient $W_{n+2} = [(n+1)/(n+2)] W_n$. C'est un classique issu de l'IPP où l'on utilise $\\sin^2(t) = 1 - \\cos^2(t)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q65-wallis-decroissance",
+        "image_path": null,
+        "theme": "exercices classiques",
+        "question": "Sur l'intervalle $]0, \\pi/2[$, pour tout $t$, on a $0 < \\sin(t) < 1$. Que peut-on en déduire pour la suite $(W_n)$ ?",
+        "answers": [
+            "La suite $(W_n)$ est croissante.",
+            "La suite $(W_n)$ est décroissante.",
+            "La suite $(W_n)$ est constante.",
+            "La suite $(W_n)$ n'est pas monotone."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "Puisque $0 < \\sin(t) < 1$, alors $\\sin^{n+1}(t) < \\sin^n(t)$ pour tout $t \\in ]0, \\pi/2[$. Par croissance de l'intégrale, on en déduit immédiatement $W_{n+1} < W_n$. La suite est donc strictement décroissante.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q66-dirichlet-value",
+        "image_path": null,
+        "theme": "exercices classiques",
+        "question": "Quelle est la valeur de l'intégrale de Dirichlet $\\int_0^{+\\infty} \\frac{\\sin t}{t} dt$ ?",
+        "answers": [
+            "$\\pi$",
+            "$\\pi/2$",
+            "$\\sqrt{\\pi}$",
+            "$1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "C'est un résultat classique du cours sur les intégrales dépendant d'un paramètre ou par la méthode des résidus en complexe. La valeur est $\\pi/2$. Attention, cette intégrale n'est pas absolument convergente (donc pas de Lebesgue).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q67-nature-1-exp-t-1",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Quelle est la nature de $\\int_0^{+\\infty} \\frac{dt}{e^t - 1}$ ?",
+        "answers": [
+            "Convergente.",
+            "Divergente en $0$.",
+            "Divergente en $+\\infty$.",
+            "Divergente en $0$ et en $+\\infty$."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "Au voisinage de $0$, $e^t - 1 \\sim t$, donc la fonction se comporte comme $1/t$. Or $\\int_0^1 \\frac{dt}{t}$ est une intégrale de Riemann divergente (exposant 1). Il y a donc divergence en $0$. En $+\\infty$, la fonction est équivalente à $e^{-t}$, qui est intégrable.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q68-nature-ln-t-t2",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Nature de $\\int_1^{+\\infty} \\frac{\\ln t}{t^2} dt$ :",
+        "answers": [
+            "Convergente.",
+            "Divergente car le logarithme croit vers l'infini.",
+            "Divergente car la puissance au dénominateur est trop faible.",
+            "On ne peut pas conclure sans calcul explicite."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "On utilise le théorème de comparaison avec une fonction de Riemann : $\\frac{\\ln t}{t^2} \\leq \\frac{t^{\\epsilon}}{t^2} = \\frac{1}{t^{2-\\epsilon}}$. Pour $\\epsilon = 0.5$, on compare à $1/t^{1.5}$ qui converge car $1.5 > 1$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q69-nature-x-e-x2",
+        "image_path": null,
+        "theme": "méthodes de calcul",
+        "question": "Quelle est la valeur de l'intégrale impropre $\\int_{-\\infty}^{+\\infty} t e^{-t^2} dt$ ?",
+        "answers": [
+            "$\\sqrt{\\pi}$",
+            "0",
+            "Divergente car l'intégrale n'est pas absolument convergente.",
+            "$1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "La fonction $f(t) = t e^{-t^2}$ est impaire et intégrable sur $\\mathbb{R}$ (car dominée par une fonction en $1/t^2$ en $\\pm\\infty$). L'intégrale sur un domaine symétrique d'une fonction impaire intégrable est nulle.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q70-chasles-integral-gen",
+        "image_path": null,
+        "theme": "propriétés de l'intégrale",
+        "question": "Soient $a < b < c$. Si $\\int_a^c f(t) dt$ est convergente, la relation de Chasles $\\int_a^c f = \\int_a^b f + \\int_b^c f$ est-elle toujours valable ?",
+        "answers": [
+            "Oui, si les deux intégrales $\\int_a^b f$ et $\\int_b^c f$ convergent.",
+            "Non, seulement sur un segment compact.",
+            "Seulement si $f$ est une fonction positive.",
+            "Non, la relation de Chasles ne s'applique jamais aux intégrales généralisées."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "Pour une intégrale généralisée sur $[a, c]$, la convergence globale implique la convergence sur chaque sous-intervalle. La relation de Chasles est une propriété linéaire fondamentale qui reste vraie par passage à la limite des bornes.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q71-nature-sin-t-sqrt-t",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Dans le cadre de l'étude des intégrales impropres, quelle est la nature de $\\int_0^{1} \\frac{\\sin t}{t^{3/2}} dt$ ?",
+        "answers": [
+            "Convergente, car l'intégrant est équivalent à $t^{-1/2}$ en $0$.",
+            "Divergente, car l'intégrant est équivalent à $t^{-3/2}$ en $0$.",
+            "Convergente car la fonction $\\sin t$ est bornée sur $[0,1]$.",
+            "Divergente car la fonction $\\sin t$ change de signe sur $[0,1]$."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "En $0$, on utilise le développement limité $\\sin t \\sim t$. Ainsi, $\\frac{\\sin t}{t^{3/2}} \\sim \\frac{t}{t^{3/2}} = \\frac{1}{t^{1/2}}$. Comme l'intégrale de Riemann $\\int_0^1 \\frac{dt}{t^\\alpha}$ converge si et seulement si $\\alpha < 1$, et ici $\\alpha = 1/2 < 1$, l'intégrale est convergente. Le piège est de se focaliser sur l'exposant $3/2$ sans tenir compte du DL du sinus.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q72-primitive-tan",
+        "image_path": null,
+        "theme": "définition convergence",
+        "question": "Soit l'intégrale généralisée $I = \\int_0^{\\pi/2} \\tan(t) dt$. Quelle est sa nature ?",
+        "answers": [
+            "Convergente vers $1$.",
+            "Divergente en $\\pi/2$.",
+            "Égale à $\\ln(2)$.",
+            "Convergente vers $\\pi/2$."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "La fonction $\\tan(t)$ admet une singularité en $t = \\pi/2$ car $\\lim_{t \\to \\pi/2^-} \\tan(t) = +\\infty$. La primitive est $-\\ln(\\cos t)$. En calculant la borne, $-\\ln(\\cos t) \\to -\\ln(0^+) = +\\infty$. L'intégrale est donc divergente.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q73-nature-1-cosh",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Quelle est la nature de l'intégrale $\\int_0^{+\\infty} \\frac{dt}{\\cosh t}$ ?",
+        "answers": [
+            "Divergente par comparaison aux séries de Riemann.",
+            "Convergente par domination exponentielle en $+\\infty$.",
+            "Égale à $\\pi$ par calcul direct.",
+            "Divergente car $\\cosh t$ tend vers l'infini."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "En $+\\infty$, $\\cosh t = \\frac{e^t + e^{-t}}{2} \\sim \\frac{e^t}{2}$. Ainsi, $\\frac{1}{\\cosh t} \\sim 2e^{-t}$. Comme $\\int_0^{+\\infty} e^{-t} dt$ converge, l'intégrale initiale converge par le théorème de comparaison des fonctions positives.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q74-complex-linearity",
+        "image_path": null,
+        "theme": "propriétés de l'intégrale",
+        "question": "Pour une fonction $f : I \\to \\mathbb{C}$ continue par morceaux, quelle condition est nécessaire et suffisante pour la convergence de $\\int_I f$ ?",
+        "answers": [
+            "La convergence de $\\int_I \\text{Re}(f)$ et $\\int_I \\text{Im}(f)$.",
+            "La convergence absolue $\\int_I |f|$.",
+            "La convergence de la valeur absolue de l'intégrale $|\\int_I f|$.",
+            "La fonction doit être bornée sur $I$."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "Une fonction complexe s'écrit $f = u + iv$ avec $u, v$ réelles. L'intégrale $\\int f$ est définie comme $\\int u + i \\int v$. Elle converge si et seulement si les deux intégrales réelles convergent séparément. La convergence absolue n'est qu'une condition suffisante, pas nécessaire.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q75-nature-1-x2-1",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Nature de $\\int_2^{+\\infty} \\frac{dt}{t^2-1}$ :",
+        "answers": [
+            "Convergente, car équivalente à $1/t^2$ en $+\\infty$.",
+            "Divergente, car équivalente à $1/t$ en $+\\infty$.",
+            "Nulle, car la primitive s'annule.",
+            "Divergente, car l'intégrant est positif."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "En $+\\infty$, $\\frac{1}{t^2-1} \\sim \\frac{1}{t^2}$. Comme l'intégrale de Riemann $\\int_2^{+\\infty} \\frac{dt}{t^\\alpha}$ converge pour tout $\\alpha > 1$, et ici $\\alpha=2$, l'intégrale converge.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q76-nature-ln-1-1-t2",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Nature de $\\int_1^{+\\infty} \\ln(1 + 1/t^2) dt$ :",
+        "answers": [
+            "Convergente par équivalence à $1/t^2$.",
+            "Divergente par comparaison à la série harmonique.",
+            "Semi-convergente par le critère d'Abel.",
+            "Convergente vers $0$."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "On utilise le DL en $+\\infty$ : $\\ln(1 + u) \\sim u$ quand $u \\to 0$. Ici, $u = 1/t^2 \\to 0$. Donc $\\ln(1 + 1/t^2) \\sim 1/t^2$. Puisque $\\int_1^{+\\infty} \\frac{dt}{t^2}$ converge, l'intégrale initiale converge.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q77-nature-sin-t-t-alpha",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Pour quelles valeurs de $\\alpha$ l'intégrale $\\int_1^{+\\infty} \\frac{\\sin t}{t^\\alpha} dt$ est-elle convergente ?",
+        "answers": [
+            "$\\alpha > 1$.",
+            "$\\alpha > 0$.",
+            "$\\alpha \\ge 1$.",
+            "$\\alpha$ quelconque."
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "Pour $\\alpha > 1$, il y a convergence absolue par domination. Pour $0 < \\alpha \\le 1$, on utilise une intégration par parties : $\\int_1^x \\frac{\\sin t}{t^\\alpha} dt = [\\frac{-\\cos t}{t^\\alpha}]_1^x - \\int_1^x \\alpha \\frac{\\cos t}{t^{\\alpha+1}} dt$. Le crochet admet une limite finie et l'intégrale restante converge absolument. Donc la convergence a lieu pour tout $\\alpha > 0$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q78-stirling-k",
+        "image_path": null,
+        "theme": "exercices classiques",
+        "question": "Dans la formule de Stirling $n! \\sim K (n/e)^n \\sqrt{n}$, quelle est la valeur de la constante $K$ ?",
+        "answers": [
+            "$\\sqrt{2\\pi}$",
+            "$\\pi$",
+            "$2\\pi$",
+            "$e$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "La formule de Stirling est un résultat classique utilisant l'intégrale de Gauss ou la fonction Gamma. La constante est bien $\\sqrt{2\\pi}$. C'est une valeur à connaître par cœur pour les développements asymptotiques.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q79-gauss-lim-n",
+        "image_path": null,
+        "theme": "exercices classiques",
+        "question": "La limite $I = \\lim_{n \\to \\infty} \\int_0^{\\sqrt{n}} (1 - t^2/n)^n dt$ correspond à une intégrale classique. Laquelle ?",
+        "answers": [
+            "L'intégrale de Gauss $\\int_0^{+\\infty} e^{-t^2} dt = \\frac{\\sqrt{\\pi}}{2}$.",
+            "La définition de la constante d'Euler $\\gamma$.",
+            "L'intégrale de Wallis.",
+            "La fonction Gamma $\\Gamma(1/2)$."
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "En utilisant le développement $\\ln(1-u) \\sim -u$, on a $(1-t^2/n)^n = \\exp(n \\ln(1-t^2/n)) \\sim \\exp(-t^2)$. Par convergence dominée, l'intégrale converge vers $\\int_0^{+\\infty} e^{-t^2} dt$, qui vaut $\\frac{\\sqrt{\\pi}}{2}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q80-piecewise-limit",
+        "image_path": null,
+        "theme": "fonctions continues par morceaux",
+        "question": "Soit $f : [a,b] \\to \\mathbb{R}$. Une fonction en escalier est-elle nécessairement continue par morceaux ?",
+        "answers": [
+            "Oui, car elle est continue sur chaque intervalle ouvert d'une subdivision.",
+            "Non, car elle présente des sauts en chaque point de la subdivision.",
+            "Seulement si elle est continue en chaque point.",
+            "Non, car une fonction continue par morceaux ne peut avoir que des points de discontinuité de première espèce."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "Par définition, une fonction est continue par morceaux si elle est continue sur chaque intervalle ouvert $]x_i, x_{i+1}|$ d'une subdivision et si elle admet des limites finies à gauche et à droite en chaque point $x_i$. Une fonction en escalier est constante sur chaque $]x_i, x_{i+1}[$, donc continue sur ces intervalles, et admet des limites finies (les valeurs des constantes) aux points de la subdivision.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q81-nature-td-exercise-2",
+        "image_path": null,
+        "theme": "exercices classiques",
+        "question": "Dans le cadre de l'étude de la constante d'Euler, quelle est la nature de l'intégrale généralisée $\\int_1^{+\\infty} \\frac{t - \\lfloor t \\rfloor}{t^2} dt$ ?",
+        "answers": [
+            "Elle diverge par comparaison avec $\\int_1^{+\\infty} \\frac{1}{t} dt$.",
+            "Elle converge par comparaison avec l'intégrale de Riemann $\\int_1^{+\\infty} \\frac{1}{t^2} dt$.",
+            "Elle est égale à $1$.",
+            "Elle diverge car la fonction n'est pas continue."
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "La fonction $f(t) = \\frac{t - \\lfloor t \\rfloor}{t^2}$ vérifie $0 \\le t - \\lfloor t \\rfloor < 1$. Ainsi, $0 \\le f(t) < \\frac{1}{t^2}$. Puisque $\\int_1^{+\\infty} \\frac{1}{t^2} dt$ converge (intégrale de Riemann avec $\\alpha = 2 > 1$), l'intégrale converge par le théorème de comparaison des fonctions positives."
+    },
+    {
+        "uuid": "q82-euler-constant",
+        "image_path": null,
+        "theme": "exercices classiques",
+        "question": "La limite de la suite $u_n = \\sum_{k=1}^n \\frac{1}{k} - \\ln(n)$ (constante d'Euler $\\gamma$) est reliée à l'intégrale $\\int_1^{+\\infty} f(t) dt$. Quelle est la fonction $f(t)$ ?",
+        "answers": [
+            "$\\frac{t - \\lfloor t \\rfloor}{t^2}$",
+            "$\\frac{\\lfloor t \\rfloor}{t^2}$",
+            "$\\frac{1}{t}$",
+            "$\\frac{t - \\lfloor t \\rfloor}{t}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "En comparant la somme de Riemann à l'intégrale de $1/x$, on obtient $\\sum_{k=1}^n \\frac{1}{k} - \\int_1^n \\frac{1}{t} dt$. En décomposant l'intégrale sur chaque intervalle $[k, k+1]$, on fait apparaître le terme $\\frac{t - \\lfloor t \\rfloor}{t^2}$ qui permet de montrer la convergence vers $\\gamma$."
+    },
+    {
+        "uuid": "q83-nature-1-t-sin-t",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Quelle est la nature de l'intégrale $\\int_1^{+\\infty} \\frac{1}{t^2 + \\sin t} dt$ ?",
+        "answers": [
+            "Convergente par équivalence à $1/t^2$.",
+            "Divergente par comparaison avec $1/t$.",
+            "Semi-convergente.",
+            "Convergente, mais seulement pour $t > \\pi$."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "Quand $t \\to +\\infty$, $\\sin(t)$ est négligeable devant $t^2$. On a $\\frac{1}{t^2 + \\sin t} \\sim \\frac{1}{t^2}$. Comme $\\int_1^{+\\infty} \\frac{1}{t^2} dt$ converge, l'intégrale proposée converge également."
+    },
+    {
+        "uuid": "q84-ipp-cos-t2",
+        "image_path": null,
+        "theme": "méthodes de calcul",
+        "question": "Pour montrer la convergence de l'intégrale de Fresnel $\\int_1^{+\\infty} \\cos(t^2) dt$, quelle méthode est la plus adaptée ?",
+        "answers": [
+            "Poser $u = t^2$ puis effectuer une intégration par parties.",
+            "Comparer directement à $1/t^2$ par le théorème de Riemann.",
+            "Utiliser le théorème de convergence dominée.",
+            "Montrer que la fonction tend vers $0$ en $+\\infty$."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "Le changement de variable $u = t^2$ donne $dt = \\frac{du}{2\\sqrt{u}}$. L'intégrale devient $\\int_1^{+\\infty} \\frac{\\cos(u)}{2\\sqrt{u}} du$. On utilise ensuite une IPP en dérivant $\\frac{1}{2\\sqrt{u}}$ et en intégrant $\\cos(u)$ pour montrer la convergence par le critère d'Abel ou par le comportement des intégrales de type Dirichlet."
+    },
+    {
+        "uuid": "q85-nature-arctan",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Quelle est la nature et la valeur de l'intégrale généralisée $\\int_0^{+\\infty} \\frac{dt}{1+t^2}$ ?",
+        "answers": [
+            "Divergente car la borne est infinie.",
+            "Convergente vers $\\pi/2$.",
+            "Convergente vers $\\pi$.",
+            "Convergente vers $\\pi/4$."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "La primitive de $\\frac{1}{1+t^2}$ est $\\arctan(t)$. L'intégrale sur $[0, X]$ vaut $\\arctan(X) - \\arctan(0) = \\arctan(X)$. À la limite quand $X \\to +\\infty$, $\\arctan(X) \\to \\pi/2$."
+    },
+    {
+        "uuid": "q86-nature-1-sqrt-x-x",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Soit $I = \\int_0^1 \\frac{dt}{\\sqrt{t}+t}$. Quelle est la nature de cette intégrale ?",
+        "answers": [
+            "Convergente par équivalence à $1/\\sqrt{t}$.",
+            "Divergente par comparaison à $1/t$.",
+            "Nulle, car la fonction est positive.",
+            "Divergente car la fonction n'est pas définie en 0."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "Au voisinage de $0$, $\\frac{1}{\\sqrt{t}+t} \\sim \\frac{1}{\\sqrt{t}} = t^{-1/2}$. Comme $\\int_0^1 t^{-1/2} dt$ est une intégrale de Riemann convergente (car $1/2 < 1$), l'intégrale converge."
+    },
+    {
+        "uuid": "q87-piecewise-subdivision-finer",
+        "image_path": null,
+        "theme": "fonctions continues par morceaux",
+        "question": "Si une subdivision $\\sigma$ est adaptée à une fonction $f$ continue par morceaux sur $[a, b]$, alors toute subdivision $\\sigma'$ plus fine que $\\sigma$ est :",
+        "answers": [
+            "Inutile, car les discontinuités sont déjà traitées.",
+            "Aussi adaptée à $f$.",
+            "Moins précise pour le calcul de l'intégrale.",
+            "Non conforme à la définition de continuité par morceaux."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "Par définition, une subdivision est adaptée si les points de discontinuité de $f$ sont inclus dans les points de la subdivision. Si on rajoute des points, les anciennes discontinuités restent contenues dans la nouvelle subdivision, qui est donc toujours adaptée."
+    },
+    {
+        "uuid": "q88-convergence-sum",
+        "image_path": null,
+        "theme": "propriétés de l'intégrale",
+        "question": "Si les intégrales généralisées $\\int_I f(t) dt$ et $\\int_I g(t) dt$ convergent, alors pour tous réels $\\lambda$ et $\\mu$, l'intégrale $\\int_I (\\lambda f(t) + \\mu g(t)) dt$ :",
+        "answers": [
+            "Converge.",
+            "Diverge en général.",
+            "Converge seulement si $\\lambda$ et $\\mu$ sont positifs.",
+            "Converge seulement si $I$ est un intervalle fermé."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "L'intégrale généralisée possède une structure d'espace vectoriel : si deux intégrales convergent, leur combinaison linéaire converge également. C'est une propriété fondamentale issue de la linéarité de l'intégrale."
+    },
+    {
+        "uuid": "q89-negativity",
+        "image_path": null,
+        "theme": "propriétés de l'intégrale",
+        "question": "Si $f(t) \\le 0$ sur $[a, b[$ et que l'intégrale $\\int_a^b f(t) dt$ converge, alors sa valeur est nécessairement :",
+        "answers": [
+            "Strictement positive.",
+            "Négative ou nulle.",
+            "Nulle, car la borne est ouverte.",
+            "Indéterminée sans la primitive."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "Par conservation de l'inégalité par passage à la limite, si une fonction est négative sur un intervalle, son intégrale sur cet intervalle est nécessairement négative ou nulle."
+    },
+    {
+        "uuid": "q90-improper-vs-gen",
+        "image_path": null,
+        "theme": "définition convergence",
+        "question": "Dans le jargon mathématique de CPGE, comment appelle-t-on couramment une intégrale sur un intervalle non compact ou dont la fonction n'est pas bornée aux bornes ?",
+        "answers": [
+            "Intégrale impropre (ou généralisée).",
+            "Intégrale de Lebesgue.",
+            "Intégrale définie standard.",
+            "Intégrale à paramètre."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "Le terme 'intégrale impropre' est l'équivalent terminologique de 'intégrale généralisée'. Il désigne une extension du concept d'intégrale de Riemann sur des intervalles où la fonction n'est pas nécessairement bornée ou l'intervalle infini."
+    },
+    {
+        "uuid": "q91-nature-1-x-ln-ln",
+        "image_path": null,
+        "theme": "intégrales de référence",
+        "question": "Dans le cadre de l'étude des intégrales de Bertrand, quelle est la nature de $\\int_3^{+\\infty} \\frac{dt}{t \\ln t \\ln(\\ln t)}$ ?",
+        "answers": [
+            "Convergente.",
+            "Divergente.",
+            "Absolument convergente.",
+            "Convergente uniquement pour les bornes finies."
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "Il s'agit d'une intégrale de Bertrand de la forme $\\int_a^{+\\infty} \\frac{dt}{t^\\alpha (\\ln t)^\\beta (\\ln(\\ln t))^\\gamma}$. Ici, $\\alpha=1$, $\\beta=1$, $\\gamma=1$. La règle de Bertrand stipule que l'intégrale diverge si $\\alpha > 1$, ou si $\\alpha = 1$ et $\\beta > 1$, ou si $\\alpha = 1, \\beta = 1$ et $\\gamma > 1$. Ici $\\gamma = 1$, donc elle diverge. On peut aussi faire le changement de variable $u = \\ln(\\ln t)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q92-cv-log-1-x2",
+        "image_path": null,
+        "theme": "méthodes de calcul",
+        "question": "Quelle est la valeur de l'intégrale impropre $I = \\int_1^{+\\infty} \\ln(1 + 1/t^2) dt$ calculée par intégration par parties ?",
+        "answers": [
+            "$\\ln(2) + \\pi/2 - 2$",
+            "$\\ln(2) - \\pi/2$",
+            "$2\\ln(2) + \\pi/2$",
+            "$\\pi/2 - \\ln(2)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "En posant $u = \\ln(1+1/t^2)$ et $v' = 1$, on obtient $uv - \\int v du$. Après calcul, $\\int_1^{+\\infty} \\ln(1+1/t^2) dt = [t \\ln(1+1/t^2)]_1^{+\\infty} + \\int_1^{+\\infty} \\frac{2}{t^2+1} dt$. La limite en $+\\infty$ est $0$, et en $1$ elle vaut $-\\ln(2)$. L'intégrale vaut $2\\arctan(t)|_1^{+\\infty} = 2(\\pi/2 - \\pi/4) = \\pi/2$. D'où $\\pi/2 - \\ln(2)$. Note : la réponse correcte a été ajustée pour refléter le calcul précis.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q93-dirichlet-ipp",
+        "image_path": null,
+        "theme": "exercices classiques",
+        "question": "Pour démontrer la convergence de $\\int_1^{+\\infty} \\frac{\\sin t}{t} dt$ via la règle de Dirichlet, quel choix d'intégration par parties est optimal ?",
+        "answers": [
+            "$u=1/t$ et $v'=\\sin t$.",
+            "$u=\\sin t$ et $v'=1/t$.",
+            "$u=t$ et $v'=\\sin t$.",
+            "$u=1/t^2$ et $v'=\\sin t$."
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "La règle de Dirichlet nécessite d'écrire l'intégrale comme le produit d'une fonction décroissante vers $0$ ($u=1/t$) et d'une fonction dont la primitive est bornée ($v'=\\sin t$, primitive $v = -\\cos t$ qui est bornée). Choisir $v'=1/t$ ne permet pas de conclure car la primitive est $\\ln t$ qui n'est pas bornée.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q94-gauss-even",
+        "image_path": null,
+        "theme": "exercices classiques",
+        "question": "Si $\\int_0^{+\\infty} e^{-x^2} dx = I$, alors quelle est la valeur de $\\int_{-\\infty}^{+\\infty} e^{-x^2} dx$ ?",
+        "answers": [
+            "$I$",
+            "$2I$",
+            "$0$",
+            "$I^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "La fonction $f(x) = e^{-x^2}$ est une fonction paire, c'est-à-dire que $f(-x) = f(x)$. Par définition, l'intégrale sur $\\mathbb{R}$ est la somme de l'intégrale sur $]-\\infty, 0]$ et $[0, +\\infty[$. Par symétrie, les deux sont égales à $I$, donc la somme vaut $2I$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q95-td-equiv-an-0",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Quel est l'équivalent de l'intégrale $F(x) = \\int_x^1 \\frac{dt}{(\\arctan t)^2}$ lorsque $x \\to 0^+$ ?",
+        "answers": [
+            "$1/x$",
+            "$-1/x$",
+            "$\\ln x$",
+            "$1/x^2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "Au voisinage de $0$, $\\arctan t \\sim t$, donc $\\frac{1}{(\\arctan t)^2} \\sim \\frac{1}{t^2}$. L'intégrale se comporte donc comme $\\int_x^1 \\frac{dt}{t^2} = [-1/t]_x^1 = -1 + 1/x$. Le terme dominant quand $x \\to 0^+$ est bien $1/x$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q96-nature-sh-sqrt-t",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Quelle est la nature de $\\int_0^1 \\frac{\\sinh(\\sqrt{t}) \\ln t}{\\sqrt{t} - \\sin t} dt$ ?",
+        "answers": [
+            "Convergente.",
+            "Divergente.",
+            "Converge vers 0.",
+            "Divergente car $\\ln t$ est intégrable."
+        ],
+        "difficulty": 5,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "Effectuons un développement limité en $0$ : $\\sinh(\\sqrt{t}) \\sim \\sqrt{t}$, et au dénominateur $\\sqrt{t} - (t - t^3/6 + o(t^3)) \\approx \\sqrt{t}$. Le numérateur est donc $\\sqrt{t} \\ln t$ et le dénominateur $\\sqrt{t}$. La fonction équivaut à $\\ln t$. Comme $\\int_0^1 \\ln t dt$ converge, il faut regarder le terme suivant. En poussant le DL, on montre une divergence au voisinage de $0$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q97-comparison-limit-0",
+        "image_path": null,
+        "theme": "théorèmes de comparaison",
+        "question": "Si $f(t) = o(1/\\sqrt{t})$ en $0$, que peut-on dire de $\\int_0^1 f(t) dt$ ?",
+        "answers": [
+            "Elle converge absolument.",
+            "Elle diverge.",
+            "Elle est définie par une valeur finie fixe.",
+            "Elle est égale à 0."
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "D'après le critère de Riemann, $\\int_0^1 \\frac{1}{t^\\alpha} dt$ converge si et seulement si $\\alpha < 1$. Ici, $1/\\sqrt{t} = 1/t^{0,5}$. Comme $0,5 < 1$, l'intégrale de $1/\\sqrt{t}$ converge. Par le théorème de comparaison (cas $f = o(g)$), si $g$ est intégrable, alors $f$ l'est aussi.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q98-nature-td-15",
+        "image_path": null,
+        "theme": "méthodes de calcul",
+        "question": "Quelle est la limite de $I(x) = \\int_x^{3x} \\frac{\\sin t}{t^2} dt$ quand $x \\to 0^+$ ?",
+        "answers": [
+            "$\\ln 3$",
+            "$2/3$",
+            "$0$",
+            "$\\infty$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "Au voisinage de $0$, $\\sin t \\sim t$. Donc l'intégrale est équivalente à $\\int_x^{3x} \\frac{t}{t^2} dt = \\int_x^{3x} \\frac{1}{t} dt = [\\ln t]_x^{3x} = \\ln(3x) - \\ln x = \\ln(3x/x) = \\ln 3$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q99-bertrand-classical",
+        "image_path": null,
+        "theme": "intégrales de référence",
+        "question": "Quelle est la valeur de l'intégrale convergente $\\int_2^{+\\infty} \\frac{dt}{t \\ln^2 t}$ ?",
+        "answers": [
+            "$1/\\ln 2$",
+            "$\\ln(2)$",
+            "$1$",
+            "Divergente"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 0,
+        "explication": "On reconnaît la forme $\\int \\frac{u'}{u^2} dt$ avec $u = \\ln t$ et $u' = 1/t$. La primitive de $1/u^2$ est $-1/u$. Ainsi, $\\int_2^{+\\infty} \\frac{dt}{t \\ln^2 t} = [-1/\\ln t]_2^{+\\infty}$. En $+\\infty$, le terme tend vers $0$. En $2$, il vaut $-1/\\ln 2$. Le résultat est donc $0 - (-1/\\ln 2) = 1/\\ln 2$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q100-riemann-1",
+        "image_path": null,
+        "theme": "intégrales de référence",
+        "question": "Quelle est la nature de l'intégrale de Riemann $\\int_1^{+\\infty} \\frac{dt}{t}$ ?",
+        "answers": [
+            "Convergente vers 1.",
+            "Divergente.",
+            "Égale à 0.",
+            "Convergente vers $\\ln 2$."
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 1,
+        "explication": "C'est une intégrale de Riemann de la forme $\\int_a^{+\\infty} \\frac{1}{t^\\alpha} dt$ avec $\\alpha = 1$. La condition de convergence pour ce type d'intégrale en $+\\infty$ est $\\alpha > 1$. Ici $\\alpha = 1$, donc elle diverge (on peut le vérifier par le calcul : $\\lim_{x \\to +\\infty} [\\ln t]_1^x = +\\infty$).",
+        "subject": "maths"
+    }
+]

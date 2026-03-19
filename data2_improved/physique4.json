@@ -1,0 +1,1707 @@
+[
+    {
+        "uuid": "8f3e1b2a-1234-4a5b-8c9d-1e2f3a4b5c6d",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Signals_analog_digital.svg",
+        "theme": "électronique numérique",
+        "question": "Dans le cadre de l'étude des systèmes asservis, quelle est la définition précise d'un signal analogique ?",
+        "answers": [
+            "Un signal qui ne varie qu'à des instants discrets.",
+            "Une grandeur physique $X(t)$ pouvant prendre un ensemble continu de valeurs sur un intervalle de temps continu.",
+            "Un signal dont l'amplitude est quantifiée sur $n$ bits.",
+            "Un signal échantillonné dont les valeurs sont définies par une horloge."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un signal analogique est défini par sa continuité, tant au niveau temporel (il est défini pour tout $t$) qu'au niveau de son amplitude (il peut prendre une infinité de valeurs dans un intervalle donné). Les autres réponses décrivent des caractéristiques d'un signal numérique ou échantillonné."
+    },
+    {
+        "uuid": "7d4c2e1f-5678-4b6c-9d0e-1f2a3b4c5d6e",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans une chaîne d'acquisition de données, quel est le rôle fondamental du transducteur ?",
+        "answers": [
+            "Convertir un signal analogique en valeur binaire.",
+            "Bloquer la tension à un niveau constant pendant une durée $T_e$.",
+            "Convertir une grandeur physique (température, vitesse, pression) en tension analogique $U(t)$.",
+            "Assurer l'isolation galvanique entre le capteur et le convertisseur."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Le transducteur est l'élément d'interface entre le monde physique et le monde électrique. Il réalise la conversion d'une grandeur non électrique en un signal électrique, généralement une tension, exploitable par le reste de la chaîne."
+    },
+    {
+        "uuid": "2a3b4c5d-9012-4d7e-8f9g-0h1i2j3k4l5m",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sample_and_hold.png",
+        "theme": "électronique numérique",
+        "question": "Quel composant est indispensable pour maintenir la tension constante pendant la durée de conversion d'un convertisseur analogique-numérique (CAN) ?",
+        "answers": [
+            "Le microprocesseur de traitement.",
+            "L'échantillonneur-bloqueur (ou 'Sample and Hold').",
+            "Le filtre anti-repliement.",
+            "Le multiplexeur analogique."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le CAN nécessite un temps de conversion fini. Si le signal d'entrée varie pendant ce temps, l'erreur de conversion devient trop importante. L'échantillonneur-bloqueur fige la valeur à un instant $t_0$ pour permettre une conversion stable."
+    },
+    {
+        "uuid": "1a2b3c4d-5e6f-7g8h-9i0j-k1l2m3n4o5p",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la relation fondamentale entre la période d'échantillonnage $T_e$ et la fréquence d'échantillonnage $f_e$ ?",
+        "answers": [
+            "$f_e = T_e$",
+            "$f_e = \\frac{1}{T_e}$",
+            "$f_e = 2\\pi T_e$",
+            "$f_e = \\frac{T_e}{2\\pi}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par définition, la fréquence $f$ est l'inverse de la période $T$ ($f = 1/T$). En échantillonnage, cette relation est capitale pour dimensionner la résolution temporelle du système."
+    },
+    {
+        "uuid": "b1c2d3e4-f5g6-7h8i-9j0k-l1m2n3o4p5q",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/e/ea/AliasingSines.svg",
+        "theme": "électronique numérique",
+        "question": "Énoncer le critère de Nyquist-Shannon nécessaire pour garantir l'absence de repliement de spectre lors de l'échantillonnage d'un signal de fréquence maximale $f_{max}$.",
+        "answers": [
+            "$f_e > f_{max}$",
+            "$f_e > 2 f_{max}$",
+            "$f_e < \\frac{f_{max}}{2}$",
+            "$f_e = f_{max}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le théorème de Nyquist-Shannon stipule que pour reconstruire fidèlement un signal, il faut que la fréquence d'échantillonnage soit strictement supérieure au double de la fréquence maximale contenue dans le signal. Sinon, les hautes fréquences se 'replient' dans les basses fréquences."
+    },
+    {
+        "uuid": "c2d3e4f5-g6h7-8i9j-0k1l-m2n3o4p5q6r",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "On souhaite échantillonner un signal sinusoïdal pur de fréquence $f_0 = 10\\text{ kHz}$ à une fréquence $f_e = 14,5\\text{ kHz}$. Quelle est la conséquence immédiate ?",
+        "answers": [
+            "Le signal est fidèlement reproduit car $f_e > f_0$.",
+            "Il y a repliement de spectre car $f_e < 2 f_0$.",
+            "Le signal est parfaitement filtré sans aucune perte.",
+            "La fréquence est multipliée par $1,45$."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Comme $f_e = 14,5\\text{ kHz} < 2 f_0 = 20\\text{ kHz}$, le critère de Shannon n'est pas respecté. Il se produit un phénomène de repliement : le signal apparaîtra dans le spectre numérique à une fréquence parasite $f_{repli} = |f_0 - f_e| = 4,5\\text{ kHz}$."
+    },
+    {
+        "uuid": "d3e4f5g6-h7i8-9j0k-1l2m-3n4o5p6q7r8s",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la formule correcte définissant le pas de quantification $q$ pour un CAN de $n$ bits travaillant sur une pleine échelle (Full Scale) de $U_{FS} = u_{max} - u_{min}$ ?",
+        "answers": [
+            "$q = \\frac{U_{FS}}{n}$",
+            "$q = \\frac{U_{FS}}{2^n - 1}$",
+            "$q = \\frac{U_{FS}}{2^n}$",
+            "$q = U_{FS} \\cdot 2^n$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un CAN de $n$ bits permet de coder $2^n$ états (niveaux). Le nombre d'intervalles (pas) séparant le premier niveau du dernier est donc $2^n - 1$. La formule exacte du pas est le quotient de la pleine échelle par ce nombre d'intervalles."
+    },
+    {
+        "uuid": "e4f5g6h7-i8j9-0k1l-2m3n-4o5p6q7r8s9t",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un oscilloscope 8 bits affiche un signal sur un calibre de $5\\text{ V/div}$ avec 8 divisions verticales. Quel est le pas de quantification $q$ ?",
+        "answers": [
+            "$\\approx 0,157\\text{ V}$",
+            "$\\approx 0,04\\text{ V}$",
+            "$\\approx 1,25\\text{ V}$",
+            "$\\approx 0,625\\text{ V}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La pleine échelle est $U_{FS} = 5 \\times 8 = 40\\text{ V}$. Avec $n = 8$ bits, le nombre de niveaux est $2^8 = 256$, soit $255$ intervalles. $q = 40 / 255 \\approx 0,1568\\text{ V}$. L'erreur classique est de diviser par $2^n$ au lieu de $2^n - 1$ ou d'oublier la pleine échelle totale."
+    },
+    {
+        "uuid": "f5g6h7i8-j9k0-1l2m-3n4o-5p6q7r8s9t0u",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Spectre_signal-%C3%A9chantillonn%C3%A9.png",
+        "theme": "électronique numérique",
+        "question": "L'échantillonnage d'un signal analogique entraîne une réplication périodique de son spectre. À quelles fréquences se situent les centres des répliques d'une composante spectrale initiale située à $f$ ?",
+        "answers": [
+            "$k \\cdot f_e$",
+            "$k \\cdot f_e \\pm f$",
+            "$f \\pm k \\cdot f_0$",
+            "$\\frac{f_e}{k}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le signal échantillonné est le produit du signal analogique par un peigne de Dirac de période $T_e$. Par passage en transformée de Fourier, le spectre est convolué par un peigne de Dirac, ce qui décalque le spectre original autour de chaque multiple de la fréquence d'échantillonnage : $k \\cdot f_e \\pm f$."
+    },
+    {
+        "uuid": "g6h7i8j9-k0l1-2m3n-4o5p-6q7r8s9t0u1v",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Où doit-on placer le filtre anti-repliement (filtre passe-bas) dans une chaîne d'acquisition pour garantir la validité du théorème de Shannon ?",
+        "answers": [
+            "Après l'échantillonneur-bloqueur, pour lisser le signal.",
+            "Avant l'échantillonneur-bloqueur, pour éliminer les hautes fréquences du signal analogique.",
+            "Après le convertisseur analogique-numérique pour corriger les erreurs de calcul.",
+            "Avant le transducteur, pour protéger le capteur."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le filtre anti-repliement doit être placé AVANT l'échantillonnage. Son rôle est de supprimer toute composante fréquentielle supérieure à $f_e/2$ pour empêcher physiquement le repliement de spectre dans la bande utile."
+    },
+    {
+        "uuid": "h7i8j9k0-l1m2-3n4o-5p6q-7r8s9t0u1v2w",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cadre de l'analyse spectrale d'un signal échantillonné, quelle est la résolution fréquentielle $\\Delta f$ (ou pas spectral) d'un spectre calculé sur une durée d'acquisition totale $T_a$ ?",
+        "answers": [
+            "$\\Delta f = T_a$",
+            "$\\Delta f = \\frac{1}{T_a}$",
+            "$\\Delta f = \\frac{f_e}{N}$",
+            "$\\Delta f = \\frac{f_e}{2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La résolution fréquentielle est l'inverse de la durée totale d'observation $T_a$. Plus la fenêtre temporelle d'acquisition est longue, plus la résolution spectrale est fine. $\\Delta f = f_e/N$ est équivalent car $T_a = N/f_e$. Les autres propositions sont fausses car $f_e/2$ correspond à la fréquence de Nyquist."
+    },
+    {
+        "uuid": "i8j9k0l1-m2n3-4o5p-6q7r-8s9t0u1v2w3x",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 1] Un disque tourne à une fréquence de rotation $N = 50\\text{ tr/s}$. On l'éclaire avec un stroboscope réglé à une fréquence $N_0 = 50\\text{ Hz}$. Que voit l'observateur ?",
+        "answers": [
+            "Le disque semble immobile car $N = N_0$.",
+            "Le disque semble tourner lentement dans le sens inverse.",
+            "Le disque semble tourner à la vitesse réelle.",
+            "Le disque semble être arrêté et flou."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Lorsque la fréquence de l'éclair est égale à la fréquence de rotation (ou un multiple), le disque est éclairé à chaque tour au même point. L'œil, par persistance rétinienne, perçoit une image fixe."
+    },
+    {
+        "uuid": "j9k0l1m2-n3o4-5p6q-7r8s-9t0u1v2w3x4y",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 1] Un disque tourne à $N = 50\\text{ tr/s}$ (sens horaire). Si on l'éclaire avec un stroboscope à $N_0 = 51\\text{ Hz}$, quel est le mouvement apparent observé ?",
+        "answers": [
+            "Le disque semble immobile.",
+            "Rotation lente dans le sens inverse (trigonométrique).",
+            "Rotation lente dans le sens horaire.",
+            "Le disque semble vibrer rapidement."
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La fréquence apparente est $N_{app} = N - N_0$. Ici, $50 - 51 = -1\\text{ Hz}$. Le signe négatif indique un déphasage progressif dans le sens inverse du mouvement réel (sens trigonométrique)."
+    },
+    {
+        "uuid": "k0l1m2n3-o4p5-6q7r-8s9t-0u1v2w3x4y5z",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 3] Pour un signal complexe $s(t) = A\\cos^2(2\\pi f_0 t)$ avec $f_0 = 1000\\text{ Hz}$, quelle est la fréquence d'échantillonnage minimale $f_e$ respectant le critère de Shannon ?",
+        "answers": [
+            "$2000\\text{ Hz}$",
+            "$4000\\text{ Hz}$",
+            "$1000\\text{ Hz}$",
+            "$8000\\text{ Hz}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "On utilise l'identité $\\cos^2(\\theta) = \\frac{1 + \\cos(2\\theta)}{2}$. Le signal contient une composante à $f_0 = 1000\\text{ Hz}$ et une à $2f_0 = 2000\\text{ Hz}$. La fréquence maximale est donc $2000\\text{ Hz}$. Shannon impose $f_e > 2 \\cdot f_{max}$, soit $4000\\text{ Hz}$."
+    },
+    {
+        "uuid": "l1m2n3o4-p5q6-7r8s-9t0u-1v2w3x4y5z6a",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quel est le nombre de niveaux de quantification distincts possibles pour un convertisseur analogique-numérique (CAN) codé sur 12 bits ?",
+        "answers": [
+            "$12$",
+            "$144$",
+            "$2048$",
+            "$4096$"
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 3,
+        "subject": "physique",
+        "explication": "Un codage sur $n$ bits permet de distinguer $2^n$ niveaux. Pour $n=12$, on a $2^{12} = 4096$ niveaux."
+    },
+    {
+        "uuid": "m2n3o4p5-q6r7-8s9t-0u1v-2w3x4y5z6a7b",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 6] Pour un CD audio dont la bande passante maximale est $f_{max} = 20\\text{ kHz}$, pourquoi choisit-on une fréquence d'échantillonnage de $f_e = 44,1\\text{ kHz}$ au lieu de $40\\text{ kHz}$ (minimum théorique) ?",
+        "answers": [
+            "Pour augmenter la capacité de stockage du CD.",
+            "Pour laisser une zone de transition pour le filtrage anti-repliement.",
+            "Parce que $44,1\\text{ kHz}$ est un multiple de la fréquence du secteur.",
+            "Pour améliorer la résolution en amplitude (bits)."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le filtre anti-repliement analogique n'est pas idéal (il n'a pas une coupure brutale). On choisit une fréquence supérieure au minimum de Shannon pour laisser une marge (zone de transition) permettant d'atténuer les fréquences parasites situées au-dessus de $20\\text{ kHz}$ avant l'échantillonnage."
+    },
+    {
+        "uuid": "n3o4p5q6-r7s8-9t0u-1v2w-3x4y5z6a7b8c",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans la relation de récurrence du filtre passe-bas numérique $s_{k+1} = s_k + 2\\pi f_c T_e(e_k - s_k)$, que se passe-t-il si la période d'échantillonnage $T_e$ devient trop grande (faible fréquence $f_e$) ?",
+        "answers": [
+            "Le signal numérique diverge et s'éloigne du comportement analogique.",
+            "Le filtre devient un filtre passe-haut parfait.",
+            "Le gain du filtre augmente avec la fréquence.",
+            "Le délai de traitement diminue."
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Cette équation est une discrétisation d'Euler. Elle n'est valide que si $T_e \\ll \\frac{1}{f_c}$. Si $T_e$ est trop grand, l'approximation devient instable et le modèle ne représente plus fidèlement le filtre analogique continu, pouvant mener à une divergence des valeurs calculées."
+    },
+    {
+        "uuid": "o4p5q6r7-s8t9-0u1v-2w3x-4y5z6a7b8c9d",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal téléphonique est limité à $3,4\\text{ kHz}$ et échantillonné à $f_e = 8\\text{ kHz}$. La condition de Shannon est-elle respectée ?",
+        "answers": [
+            "Oui, car $8\\text{ kHz} > 2 \\times 3,4\\text{ kHz}$.",
+            "Non, car il faudrait $f_e = 10\\text{ kHz}$.",
+            "Oui, car le signal est purement sinusoïdal.",
+            "Non, car le repliement de spectre est inévitable."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le critère de Shannon-Nyquist impose $f_e > 2 \\cdot f_{max}$. Ici, $2 \\times 3,4 = 6,8\\text{ kHz}$. Comme $8 > 6,8$, la condition est respectée."
+    },
+    {
+        "uuid": "p5q6r7s8-t9u0-1v2w-3x4y-5z6a7b8c9d0e",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 5] Un signal de $f = 1\\text{ kHz}$ est échantillonné à $f_e = 7,5\\text{ kHz}$. Quelle est la fréquence parasite repliée associée à l'harmonique 7 (située à $7\\text{ kHz}$) ?",
+        "answers": [
+            "$500\\text{ Hz}$",
+            "$14,5\\text{ kHz}$",
+            "$7,5\\text{ kHz}$",
+            "$0\\text{ Hz}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Lors du repliement, une fréquence $f > f_e/2$ se retrouve en $f_{repliée} = |f - k \\cdot f_e|$. Ici, $7\\text{ kHz}$ est au-delà de $f_e/2 = 3,75\\text{ kHz}$. La fréquence la plus proche est $f_e$, soit $|7 - 7,5| = 0,5\\text{ kHz} = 500\\text{ Hz}$."
+    },
+    {
+        "uuid": "q6r7s8t9-u0v1-2w3x-4y5z-6a7b8c9d0e1f",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Combien de bits $n$ sont nécessaires pour obtenir une résolution relative (précision) de $15\\text{ ppm}$ ?",
+        "answers": [
+            "8 bits",
+            "12 bits",
+            "16 bits",
+            "10 bits"
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La précision relative est donnée par $1/2^n$. On cherche $n$ tel que $1/2^n \\leq 15 \\times 10^{-6}$. Soit $2^n \\geq 1/ (15 \\times 10^{-6}) \\approx 66666$. Comme $2^{16} = 65536$ (trop court) et $2^{17} = 131072$, il faut 17 bits. Dans les choix proposés, 16 bits est la valeur la plus proche permettant d'approcher cette précision."
+    },
+    {
+        "uuid": "r7s8t9u0-v1w2-3x4y-5z6a-7b8c9d0e1f2g",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cadre de l'acquisition numérique d'un signal par un convertisseur analogique-numérique (CAN), pourquoi est-il crucial d'adapter le calibre de l'entrée de l'oscilloscope (ou du CAN) à l'amplitude du signal ?",
+        "answers": [
+            "Pour éviter la saturation de l'étage d'entrée de l'appareil.",
+            "Pour maximiser l'utilisation de la plage dynamique et minimiser l'erreur de quantification.",
+            "Pour augmenter artificiellement la fréquence d'échantillonnage $f_e$.",
+            "Pour diminuer le bruit thermique intrinsèque des composants."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "La résolution d'un CAN est définie par $q = \\frac{U_{max} - U_{min}}{2^n}$. En adaptant le calibre au signal, on minimise l'étendue dynamique $[U_{min}, U_{max}]$, ce qui réduit le pas de quantification $q$ et donc l'erreur de quantification $e_q$ (comprise entre $-q/2$ et $q/2$). Une mauvaise adaptation conduit à une perte d'information par « écrasement » des valeurs numériques.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "s8t9u0v1-w2x3-4y5z-6a7b-8c9d0e1f2g3h",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 9] On considère un signal sinusoïdal $e(t) = A\\sin(2\\pi f_e t)$ où $f_e$ est la fréquence d'échantillonnage. Que valent les échantillons $e(t_k)$ prélevés à $t_k = k T_e$ avec $T_e = 1/f_e$ ?",
+        "answers": [
+            "Ils valent tous $0$.",
+            "Ils valent tous $A$.",
+            "Ils alternent entre $A$ et $-A$.",
+            "Ils suivent une progression géométrique."
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "explication": "À chaque instant $t_k = k T_e = k / f_e$, on calcule $e(k/f_e) = A \\sin(2\\pi f_e \\cdot k / f_e) = A \\sin(2\\pi k)$. Comme $k$ est un entier, $\\sin(2\\pi k) = 0$ pour tout $k$. Le signal est échantillonné sur ses passages par zéro : c'est un cas particulier de repliement où la fréquence du signal est égale à la fréquence d'échantillonnage.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "t9u0v1w2-x3y4-5z6a-7b8c-9d0e1f2g3h4i",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Le repliement spectral (aliasing) observé sur un signal échantillonné est-il corrigeable par filtrage numérique après l'acquisition ?",
+        "answers": [
+            "Oui, en utilisant un filtre passe-bas numérique de haute précision.",
+            "Non, l'information fréquentielle haute est irrémédiablement perdue ou mélangée avec les basses fréquences.",
+            "Seulement si le signal est périodique et de faible amplitude.",
+            "Oui, en multipliant le signal par une fenêtre de Hamming."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "Le repliement est une superposition spectrale : les fréquences supérieures à $f_e/2$ se « replient » dans la bande $[0, f_e/2]$. Une fois l'échantillonnage réalisé, il est impossible de distinguer une composante réelle d'une composante repliée. Le filtrage (anti-repliement) doit donc impérativement être effectué en amont, sur le signal analogique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "u0v1w2x3-y4z5-6a7b-8c9d-0e1f2g3h4i5j",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 3] On souhaite distinguer deux pics spectraux très proches à $f_1 = 990\\text{ Hz}$ et $f_2 = 1010\\text{ Hz}$ par une analyse de Fourier (TF). Quelle doit être la durée d'acquisition minimale $T_a$ ?",
+        "answers": [
+            "$0,01\\text{ s}$",
+            "$0,1\\text{ s}$",
+            "$0,05\\text{ s}$",
+            "$1\\text{ s}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 2,
+        "explication": "La résolution fréquentielle d'une Transformée de Fourier est donnée par $\\Delta f \\approx 1 / T_a$. Pour séparer deux fréquences distantes de $\\Delta f_{min} = |1010 - 990| = 20\\text{ Hz}$, il faut une durée d'acquisition $T_a \\geq 1 / \\Delta f_{min} = 1 / 20 = 0,05\\text{ s}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "v1w2x3y4-z5a6-7b8c-9d0e-1f2g3h4i5j6k",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cadre de l'étude de la persistance rétinienne en stroboscopie, quelle est la fréquence limite classiquement admise au-delà de laquelle l'œil perçoit un mouvement continu plutôt que des flashs distincts ?",
+        "answers": [
+            "$10\\text{ Hz}$",
+            "$25\\text{ Hz}$",
+            "$100\\text{ Hz}$",
+            "$1\\text{ kHz}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "La persistance rétinienne est évaluée à environ $0,04\\text{ s}$, soit une fréquence de $1/0,04 = 25\\text{ Hz}$. C'est la limite standard utilisée pour expliquer le rendu fluide des films cinématographiques ou la perception du mouvement en stroboscopie.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "w2x3y4z5-a6b7-8c9d-0e1f-2g3h4i5j6k7l",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans un système d'acquisition numérique, le signal est échantillonné à des instants discrets $t_n$. Quel est le mode d'échantillonnage standard dans les exercices de physique ?",
+        "answers": [
+            "Aléatoire, pour éviter les résonances avec le signal.",
+            "Régulier, avec $t_n = n T_e$ où $T_e = 1/f_e$ est la période d'échantillonnage.",
+            "Logarithmique, pour capturer les transitoires rapides.",
+            "Basé sur les passages par zéro du signal."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "L'échantillonnage périodique est la base de la théorie de Shannon. Il permet une reconstruction simple du signal grâce au théorème du filtrage idéal (reconstruction de Whittaker-Shannon) et une exploitation aisée via la Transformée de Fourier Discrète.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "x3y4z5a6-b7c8-9d0e-1f2g-3h4i5j6k7l8m",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Que décrit le phénomène d'« Aliasing » (ou repliement) lors de la numérisation d'un signal ?",
+        "answers": [
+            "Une augmentation artificielle de la précision due à une sur-échantillonnage.",
+            "Le recouvrement des spectres causé par le non-respect du critère de Shannon.",
+            "Le lissage d'un signal par un filtre passe-bas analogique.",
+            "La distorsion introduite par une quantification trop fine."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "Le repliement survient lorsque la fréquence d'échantillonnage $f_e$ est inférieure au double de la fréquence maximale contenue dans le signal ($f_e < 2 f_{max}$). Les hautes fréquences « apparaissent » alors comme de basses fréquences dans le spectre numérisé, créant des artefacts visuels ou auditifs.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "y4z5a6b7-c8d9-0e1f-2g3h-4i5j6k7l8m9n",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 2] Un moteur tourne à $1500\\text{ tr/min}$. Quelle est sa fréquence de rotation $f$ en Hz ?",
+        "answers": [
+            "$1500\\text{ Hz}$",
+            "$25\\text{ Hz}$",
+            "$90\\text{ Hz}$",
+            "$150\\text{ Hz}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "Une vitesse de rotation de $1500\\text{ tours par minute}$ signifie $1500$ tours en $60$ secondes. La fréquence est donc $f = 1500 / 60 = 25\\text{ Hz}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "z5a6b7c8-d9e0-1f2g-3h4i-5j6k7l8m9n0o",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "[TD Ex 2] On utilise un stroboscope pour observer un disque tournant. Le disque comporte 4 secteurs noirs répartis de façon équidistante ($90^{\\circ}$). Si la fréquence des flashs est égale à la fréquence de rotation du disque, que voit-on ?",
+        "answers": [
+            "Un seul trait fixe, car la persistance rétinienne moyenne tout.",
+            "Une image immobile montrant les 4 secteurs noirs.",
+            "Le disque totalement gris à cause du mélange des couleurs.",
+            "Un disque qui semble tourner lentement dans le sens inverse."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "Si $f_{flash} = f_{moteur}$, à chaque flash, le disque a effectué exactement un tour complet. La position des secteurs noirs coïncide avec leur position au flash précédent. L'œil, grâce à la persistance, voit une image stationnaire montrant les 4 secteurs noirs.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "a6b7c8d9-e0f1-2g3h-4i5j-6k7l8m9n0o1p",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la fonction de transfert complexe $\\underline{H}(j\\omega)$ canonique d'un filtre analogique passe-bas du premier ordre de pulsation de coupure $\\omega_c$ ?",
+        "answers": [
+            "$\\underline{H} = \\frac{H_0}{1+j\\frac{\\omega}{\\omega_c}}$",
+            "$\\underline{H} = 1 + j\\frac{\\omega}{\\omega_c}$",
+            "$\\underline{H} = \\frac{j\\frac{\\omega}{\\omega_c}}{1+j\\frac{\\omega}{\\omega_c}}$",
+            "$\\underline{H} = \\frac{1}{1 - j\\frac{\\omega_c}{\\omega}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "explication": "La forme canonique du passe-bas est $\\frac{H_0}{1+j\\frac{\\omega}{\\omega_c}}$. La réponse 2 correspond à un filtre passe-haut (comportement d'amplificateur à haute fréquence), et la réponse 3 à un filtre passe-haut du premier ordre.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "b7c8d9e0-f1g2-3h4i-5j6k-7l8m9n0o1p2q",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cadre de l'analyse spectrale par Transformée de Fourier Discrète (TFD) d'un signal périodique, pour obtenir une résolution fréquentielle fine et un spectre précis, l'acquisition doit être :",
+        "answers": [
+            "La plus courte possible pour minimiser le bruit.",
+            "Longue et contenir un grand nombre de périodes entières.",
+            "Effectuée à une fréquence d'échantillonnage $f_e$ la plus basse possible.",
+            "Réalisée sur une durée $T_{acq}$ arbitraire sans tenir compte du signal."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "explication": "La résolution fréquentielle $\\Delta f$ est inversement proportionnelle à la durée totale d'observation $T_{acq}$ ($\\Delta f = 1/T_{acq}$). Pour distinguer deux pics fréquentiels proches, il faut augmenter le temps d'acquisition. Il est crucial d'acquérir un nombre entier de périodes pour éviter le phénomène de fuite spectrale.",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "c8d9e0f1-g2h3-4i5j-6k7l-8m9n0o1p2q3r",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal de fréquence $f = 440\\text{ Hz}$ est échantillonné à $f_e = 8000\\text{ Hz}$. Si l'on considère le repliement de spectre (aliasing), à quelle condition sur la fréquence du signal $f$ observe-t-on ce phénomène par rapport à la fréquence de Nyquist $f_N = f_e/2$ ?",
+        "answers": [
+            "Dès que $f > 2000\\text{ Hz}$.",
+            "Dès que $f > 4000\\text{ Hz}$.",
+            "Jamais, car le signal est toujours bien échantillonné.",
+            "Dès que $f > 8000\\text{ Hz}$."
+        ],
+        "difficulty": 4,
+        "chapter": "Electronique numérique",
+        "explication": "Selon le théorème de Shannon-Nyquist, pour éviter l'aliasing, la fréquence maximale du signal doit être strictement inférieure à la moitié de la fréquence d'échantillonnage ($f_{max} < f_e / 2$). Ici, $f_N = 8000/2 = 4000\\text{ Hz}$. Si $f$ dépasse $4000\\text{ Hz}$, les répliques spectrales se chevauchent.",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "d9e0f1g2-h3i4-5j6k-7l8m-9n0o1p2q3r4s",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cadre de la numérisation d'un signal analogique, le nombre de niveaux de quantification possibles pour un convertisseur analogique-numérique (CAN) possédant une résolution de $n$ bits est :",
+        "answers": [
+            "Un nombre premier.",
+            "Une puissance de 2, soit $2^n$.",
+            "Un multiple de 10.",
+            "Indépendant du nombre de bits."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "explication": "Un CAN utilise un codage binaire. Avec $n$ bits, chaque bit pouvant prendre deux états (0 ou 1), le nombre total de combinaisons distinctes est $2^n$. C'est le nombre de pas de quantification disponibles pour représenter l'amplitude du signal.",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e0f1g2h3-i4j5-5j6k-7l8m-9n0o1p2q3r4s",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Pour un signal triangulaire de fréquence fondamentale $f_0$, si l'on souhaite reconstruire le signal en négligeant les harmoniques dont l'amplitude est inférieure à 2% du fondamental, quelle est la fréquence maximale à considérer pour le théorème de Shannon ?",
+        "answers": [
+            "Celle du fondamental $f_0$.",
+            "L'harmonique 7 ($7f_0$).",
+            "L'harmonique 100 ($100f_0$).",
+            "La fréquence nulle."
+        ],
+        "difficulty": 4,
+        "chapter": "Electronique numérique",
+        "explication": "Pour un signal triangulaire, les harmoniques décroissent comme $1/n^2$. L'harmonique $n$ a une amplitude égale à $1/n^2$ du fondamental. $1/n^2 < 0,02 \\Rightarrow n^2 > 50 \\Rightarrow n > 7,07$. Il faut donc conserver au moins l'harmonique 7. La fréquence max est donc $7f_0$.",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1g2h3i4-j5k6-6k7l-8m9n-0o1p2q3r4s5t",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans la chaîne d'acquisition d'une carte type Arduino, quels éléments sont principalement intégrés pour traiter un signal analogique provenant d'un capteur ?",
+        "answers": [
+            "Uniquement la mémoire de stockage.",
+            "L'échantillonneur-bloqueur et le CAN (Convertisseur Analogique-Numérique).",
+            "Le transducteur de température directement.",
+            "Un amplificateur de puissance de sortie."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "explication": "Le microcontrôleur d'une carte Arduino dispose de broches analogiques reliées à un multiplexeur puis à un convertisseur analogique-numérique (CAN) interne, qui intègre lui-même la fonction d'échantillonnage et de maintien.",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la condition rigoureuse sur la fréquence d'échantillonnage $f_e$ pour que le spectre du signal échantillonné et ses répliques ne se recouvrent pas, sachant que le signal a une bande passante limitée par $f_{max}$ ?",
+        "answers": [
+            "$f_e > 2 f_{max}$",
+            "$f_e < 2 f_{max}$",
+            "$f_e = f_{max}$",
+            "$f_e = f_{max} / 2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "explication": "Le spectre échantillonné est périodique de période $f_e$. Pour éviter le recouvrement, la réplique centrée en $f_e$ ne doit pas empiéter sur le spectre original s'étendant de $-f_{max}$ à $+f_{max}$. La condition est $f_e - f_{max} > f_{max}$, soit $f_e > 2 f_{max}$.",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "b2c3d4e5-f6g7-8h9i-0j1k-l2m3n4o5p6q",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Lors du choix d'un oscilloscope, pourquoi est-il déconseillé d'utiliser un appareil dont la bande passante $f_c$ est exactement égale à la fréquence maximale $f_{max}$ du signal ?",
+        "answers": [
+            "Car l'atténuation à $f_c$ est de $-3\\text{ dB}$, ce qui fausse l'amplitude mesurée.",
+            "Car l'appareil risque de saturer instantanément.",
+            "Pour des raisons de sécurité électrique liées à l'impédance d'entrée.",
+            "Car le bruit de fond augmente avec la fréquence."
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "explication": "La fréquence de coupure à $-3\\text{ dB}$ correspond à une réduction de l'amplitude du signal d'un facteur $\\sqrt{2} \\approx 1,41$ (soit environ 30% d'erreur sur l'amplitude). Pour une mesure précise, il faut une bande passante nettement supérieure à $f_{max}$.",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "c3d4e5f6-g7h8-9i0j-1k2l-m3n4o5p6q7r",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Si une acquisition comporte $N_e$ échantillons, et que chaque échantillon est codé sur 2 octets (16 bits), quelle est la taille de la mémoire occupée en octets ?",
+        "answers": [
+            "$2 \\cdot N_e$",
+            "$N_e / 2$",
+            "$N_e^2$",
+            "$16 \\cdot N_e$"
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "explication": "Si chaque échantillon occupe 2 octets, pour $N_e$ échantillons, la taille totale est simplement le produit du nombre d'échantillons par la taille unitaire : $2 \\times N_e$.",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "d4e5f6g7-h8i9-0j1k-2l3m-n4o5p6q7r8s",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Sur un oscilloscope, si le calibre vertical est réglé sur $200\\text{ mV/div}$ et que l'écran possède 8 divisions verticales, quelle est la tension maximale (pleine échelle) que l'on peut visualiser sans saturation ?",
+        "answers": [
+            "$0,2\\text{ V}$",
+            "$1,6\\text{ V}$",
+            "$1600\\text{ V}$",
+            "$0,8\\text{ V}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "explication": "La tension pleine échelle est égale au produit du calibre par le nombre de divisions. Ici : $200\\text{ mV/div} \\times 8\\text{ div} = 1600\\text{ mV} = 1,6\\text{ V}$.",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e5f6g7h8-i9j0-1k2l-3m4n-o5p6q7r8s9t",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cadre de la simulation numérique d'un système dynamique, le remplacement de la dérivée continue $ds/dt$ par le quotient différentiel $\\frac{s_{k+1}-s_k}{T_e}$ est une opération appelée :",
+        "answers": [
+            "La linéarisation.",
+            "La discrétisation (ou mise en équation aux différences).",
+            "La quantification.",
+            "Le filtrage passe-bas."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "explication": "La discrétisation consiste à transformer un système à temps continu (équations différentielles) en un système à temps discret (équations aux récurrences) pour permettre un calcul itératif par ordinateur.",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "f6g7h8i9-j0k1-2l3m-4n5o-p6q7r8s9t0u",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "chapter": "Electronique numérique",
+        "subject": "physique",
+        "question": "Dans le cadre d'un système asservi numérique décrit par l'équation de récurrence $s_{k+1} = s_k + 2\\pi \\beta (e_k - s_k)$, où $e_k$ est l'entrée et $s_k$ la sortie. Si l'entrée est un échelon constant $e_k = A$, quelle est la valeur finale du régime permanent $s_{\\infty}$ ?",
+        "answers": [
+            "$0$",
+            "$A$",
+            "$2\\pi \\beta A$",
+            "Indéterminée car le système diverge"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "En régime permanent, la sortie devient constante, soit $s_{k+1} = s_k = s_{\\infty}$. L'équation devient $s_{\\infty} = s_{\\infty} + 2\\pi \\beta (A - s_{\\infty})$. En simplifiant, on obtient $2\\pi \\beta (A - s_{\\infty}) = 0$. Comme $2\\pi \\beta \\neq 0$, alors $A - s_{\\infty} = 0$, donc $s_{\\infty} = A$. Le système est un correcteur proportionnel qui finit par suivre l'échelon."
+    },
+    {
+        "uuid": "g7h8i9j0-k1l2-3m4n-5o6p-q7r8s9t0u1v",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "chapter": "Electronique numérique",
+        "subject": "physique",
+        "question": "Lors de la conversion analogique-numérique (CAN), le nombre de valeurs distinctes que peut prendre le signal numérisé est donné par $2^n$. Que représente le paramètre $n$ ?",
+        "answers": [
+            "La fréquence d'échantillonnage en $\\text{Hz}$.",
+            "La résolution du convertisseur (nombre de bits).",
+            "Le nombre d'échantillons par seconde.",
+            "La dynamique totale du signal en $\\text{Volts}$."
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "explication": "Le paramètre $n$ représente la profondeur de quantification, c'est-à-dire le nombre de bits utilisés pour coder chaque échantillon. Un CAN $n$-bits divise la pleine échelle de tension en $2^n$ intervalles discrets."
+    },
+    {
+        "uuid": "h8i9j0k1-l2m3-4n5o-6p7q-r8s9t0u1v2w",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "chapter": "Electronique numérique",
+        "subject": "physique",
+        "question": "Lors d'une analyse spectrale par Transformée de Fourier Discrète (TFD) sur une durée d'acquisition $T_a$ fixée, si l'on multiplie la fréquence d'échantillonnage $f_e$ par $10$ (en augmentant le nombre de points $N$), comment évolue la résolution fréquentielle $\\Delta f = 1/T_a$ ?",
+        "answers": [
+            "Elle est multipliée par $10$.",
+            "Elle est divisée par $10$.",
+            "Elle reste inchangée.",
+            "Elle est multipliée par $\\sqrt{10}$."
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "explication": "La résolution fréquentielle $\\Delta f$ (l'écart entre deux raies adjacentes du spectre) est définie par l'inverse de la durée totale d'acquisition : $\\Delta f = 1/T_a$. Si $T_a$ est maintenue constante, la résolution ne change pas, même si le nombre de points $N$ augmente avec $f_e$."
+    },
+    {
+        "uuid": "i9j0k1l2-m3n4-5o6p-7q8r-s9t0u1v2w3x",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "chapter": "Electronique numérique",
+        "subject": "physique",
+        "question": "Par définition, un signal analogique est un signal :",
+        "answers": [
+            "Défini sur un intervalle de temps continu et pouvant prendre une infinité de valeurs.",
+            "Défini uniquement à des instants discrets $t_n = n T_e$.",
+            "Qui ne peut prendre que des valeurs binaires ($0$ ou $1$).",
+            "Défini seulement lorsque la tension est positive."
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "explication": "Le signal analogique est continu à la fois en temps et en amplitude. La numérisation (échantillonnage + quantification) est justement le processus qui transforme ce signal en valeurs discrètes."
+    },
+    {
+        "uuid": "j0k1l2m3-n4o5-6p7q-8r9s-t0u1v2w3x4y",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "chapter": "Electronique numérique",
+        "subject": "physique",
+        "question": "Lors de la conversion numérique-analogique (CNA), quel type de filtre est placé en sortie pour supprimer les répliques hautes fréquences dues à l'échantillonnage et lisser le signal en escalier ?",
+        "answers": [
+            "Un filtre passe-haut.",
+            "Un filtre passe-bas (filtre de lissage).",
+            "Un filtre passe-bande.",
+            "Un filtre réjecteur de bande."
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "Les répliques spectrales se situent autour des multiples de $f_e$. Pour ne conserver que le signal utile (basses fréquences), on utilise un filtre passe-bas dont la fréquence de coupure est choisie pour éliminer les hautes fréquences tout en conservant le spectre original."
+    },
+    {
+        "uuid": "k1l2m3n4-o5p6-7q8r-9s0t-u1v2w3x4y5z",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "chapter": "Electronique numérique",
+        "subject": "physique",
+        "question": "Considérons le signal modulé $s(t) = A\\cos(2\\pi \\cdot 1000t) \\cdot \\cos(2\\pi \\cdot 10t)$. Quelle est la fréquence maximale présente dans le spectre de ce signal ?",
+        "answers": [
+            "$1000\\text{ Hz}$",
+            "$1010\\text{ Hz}$",
+            "$990\\text{ Hz}$",
+            "$10000\\text{ Hz}$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "explication": "D'après la formule trigonométrique $\\cos(a)\\cos(b) = \\frac{1}{2}(\\cos(a-b) + \\cos(a+b))$, le signal s'écrit $\\frac{A}{2}(\\cos(2\\pi \\cdot 990t) + \\cos(2\\pi \\cdot 1010t)$. Les fréquences présentes sont donc $990\\text{ Hz}$ et $1010\\text{ Hz}$. La fréquence maximale est donc $1010\\text{ Hz}$."
+    },
+    {
+        "uuid": "l2m3n4o5-p6q7-8r9s-0t1u-v2w3x4y5z6a",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "chapter": "Electronique numérique",
+        "subject": "physique",
+        "question": "Dans une expérience de stroboscopie, si la période de rotation de l'objet $T_0$ est exactement égale à la période du stroboscope $T_e$, que perçoit l'observateur ?",
+        "answers": [
+            "Le mouvement semble accélérer indéfiniment.",
+            "L'objet semble immobile.",
+            "L'objet semble tourner deux fois plus vite.",
+            "Le mouvement semble saccadé mais aléatoire."
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "Lorsque $T_0 = T_e$ (ou $f_0 = f_e$), l'éclairement a lieu à la même position de l'objet à chaque cycle. La persistance rétinienne fait que l'objet paraît immobile. C'est le principe de base de la mesure de vitesse par stroboscopie."
+    },
+    {
+        "uuid": "m3n4o5p6-q7r8-9s0t-1u2v-w3x4y5z6a7b",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "chapter": "Electronique numérique",
+        "subject": "physique",
+        "question": "En stroboscopie, si l'on observe que la vitesse apparente du disque augmente alors que l'on ralentit sa vitesse réelle $f_0$ (en se rapprochant de $f_e$ par le bas), cela signifie que :",
+        "answers": [
+            "La fréquence stroboscopique est inférieure à la fréquence de rotation ($f_e < f_0$).",
+            "Le mouvement apparent est dans le sens inverse du mouvement réel (aliasing temporel).",
+            "L'objet a changé de direction de rotation.",
+            "L'œil humain n'est plus capable de suivre la cadence."
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "explication": "Le phénomène d'aliasing temporel fait apparaître un mouvement rétrograde quand $f_e$ est légèrement inférieur à $f_0$ (ou multiples). Si en ralentissant $f_0$ (en diminuant la différence $|f_0 - f_e|$), la fréquence de battement apparente diminue, c'est que l'on se rapproche du synchronisme parfait depuis une zone où le mouvement était inversé."
+    },
+    {
+        "uuid": "n4o5p6q7-r8s9-0t1u-2v3w-x4y5z6a7b8c",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "chapter": "Electronique numérique",
+        "subject": "physique",
+        "question": "Quelle est l'unité normalisée SI de la fréquence d'échantillonnage $f_e$ ?",
+        "answers": [
+            "La seconde ($s$)",
+            "Le Hertz ($Hz$)",
+            "Le Volt par seconde ($V/s$)",
+            "Le radian par seconde ($rad/s$)"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "explication": "La fréquence, qu'elle soit d'échantillonnage ou non, représente un nombre d'événements par unité de temps. Son unité dans le Système International est le Hertz ($Hz$), où $1 \\text{ Hz} = 1 \\text{ s}^{-1}$."
+    },
+    {
+        "uuid": "o5p6q7r8-s9t0-1u2v-3w4x-y5z6a7b8c9d",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "chapter": "Electronique numérique",
+        "subject": "physique",
+        "question": "Si la fréquence d'échantillonnage est choisie telle que $f_e = 2 f_{max}$ (critère de Shannon strict), que se passe-t-il si l'on échantillonne un signal $\\sin(2\\pi f_{max} t)$ exactement à ses passages par zéro ?",
+        "answers": [
+            "On obtient une reconstruction parfaite du signal sinusoïdal.",
+            "On obtient un signal nul, ce qui rend la reconstruction impossible.",
+            "On obtient un signal en créneaux.",
+            "On observe un repliement de spectre à $f_{max}/2$."
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "explication": "Le théorème de Shannon impose $f_e > 2 f_{max}$ pour une reconstruction parfaite. Si $f_e = 2 f_{max}$, l'échantillonnage est critique. Si les instants d'échantillonnage coïncident avec les zéros du signal, tous les échantillons valent zéro, perdant ainsi toute information sur l'amplitude du signal original."
+    },
+    {
+        "uuid": "p6q7r8s9-t0u1-2v3w-4x5y-z6a7b8c9d0e",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cadre de l'étude d'un convertisseur analogique-numérique (CAN), combien de niveaux de quantification distincts un système codé sur $n=8$ bits peut-il distinguer ?",
+        "answers": [
+            "$8$",
+            "$16$",
+            "$64$",
+            "$256$"
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 3,
+        "subject": "physique",
+        "explication": "Un système numérique utilisant $n$ bits permet de coder $2^n$ états distincts. Pour $n=8$, on a $2^8 = 256$ niveaux. Les autres réponses correspondent à des puissances de 2 erronées ou à une confusion entre le nombre de bits et le nombre de niveaux."
+    },
+    {
+        "uuid": "q7r8s9t0-u1v2-3w4x-5y6z-a7b8c9d0e1f",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Lors d'une Analyse Spectrale par Transformée de Fourier Discrète (TFD), quelle est l'influence d'une augmentation de la durée totale d'acquisition $T_{acq}$ sur le spectre obtenu ?",
+        "answers": [
+            "Le spectre est plus bruité car le signal est plus long.",
+            "La résolution fréquentielle $\\Delta f = 1/T_{acq}$ est meilleure (plus fine).",
+            "L'amplitude des pics diminue proportionnellement à la durée.",
+            "La fréquence d'échantillonnage augmente automatiquement."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La résolution fréquentielle est définie par l'inverse de la durée de la fenêtre d'observation ($1/T_{acq}$). Augmenter $T_{acq}$ permet de mieux distinguer deux fréquences proches, c'est-à-dire d'affiner le spectre. Le bruit peut être réduit par moyennage, mais ce n'est pas l'effet direct de l'allongement de $T_{acq}$."
+    },
+    {
+        "uuid": "r8s9t0u1-v2w3-4x5y-6z7a-b8c9d0e1f2g",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cadre de la numérisation d'un signal, pourquoi impose-t-on en pratique une fréquence d'échantillonnage $f_e$ telle que $f_e > 2 f_{max}$ plutôt que $f_e = 2 f_{max}$ ?",
+        "answers": [
+            "Pour permettre un filtrage anti-repliement réalisable (filtre non idéal).",
+            "Parce que les composants électroniques chauffent trop à la limite de Nyquist.",
+            "Pour éviter la saturation des buffers de mémoire.",
+            "Pour minimiser l'erreur de quantification du CAN."
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le théorème de Shannon dit que $f_e > 2 f_{max}$ est la condition théorique. En pratique, aucun filtre analogique n'est parfait (coupure brutale). On choisit $f_e$ strictement supérieur pour laisser une zone de transition au filtre anti-repliement analogique placé avant le CAN."
+    },
+    {
+        "uuid": "s9t0u1v2-w3x4-5y6z-7a8b-c9d0e1f2g3h",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans une chaîne d'acquisition de température, un transducteur (ex: thermistance) délivre un signal. Quelle est la nature électrique de ce signal avant passage dans le CAN ?",
+        "answers": [
+            "Analogique (continue en temps et en amplitude).",
+            "Numérique (codée sur 8 bits).",
+            "Binaire (seulement deux états 0 ou 1).",
+            "Impulsionnelle pure."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Les capteurs physiques (thermistance, thermocouple, etc.) produisent des grandeurs physiques continues qui sont converties en tensions ou courants analogiques. Le passage au monde numérique n'intervient qu'au niveau du convertisseur analogique-numérique (CAN)."
+    },
+    {
+        "uuid": "t0u1v2w3-x4y5-6z7a-8b9c-d0e1f2g3h4i",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Pour un filtre numérique du premier ordre régi par l'équation de récurrence $s_n = (1-\\beta)s_{n-1} + \beta e_n$, quelle relation lie la fréquence de coupure $f_c$ à la fréquence d'échantillonnage $f_e$ pour $\\beta \\ll 1$ ?",
+        "answers": [
+            "$f_c = \\beta f_e$",
+            "$f_c = \\beta f_e / (2\\pi)$",
+            "$f_c = f_e / (2\\pi \\beta)$",
+            "$f_c = \\beta^2 f_e$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par analogie avec un filtre passe-bas analogique $RC$ où $\\omega_c = 1/\\tau$, le filtre numérique a une fonction de transfert en $z$ telle que pour $\\beta$ faible, la coupure est située à $f_c \\approx \\beta f_e / (2\\pi)$. La réponse $f_c = \\beta f_e$ est une approximation très grossière qui oublie le facteur $2\\pi$ lié au passage de la pulsation à la fréquence."
+    },
+    {
+        "uuid": "u1v2w3x4-y5z6-7a8b-9c0d-e1f2g3h4i5j",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Où sont stockées les valeurs numériques d'un signal après leur acquisition par un microcontrôleur ?",
+        "answers": [
+            "Dans un condensateur de filtrage.",
+            "Dans une mémoire vive (RAM) ou un registre.",
+            "Dans une résistance de charge.",
+            "Dans une bobine d'inductance."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le stockage d'une valeur numérique (un nombre binaire) nécessite un dispositif capable de maintenir des états logiques (bistables), ce que fait une mémoire vive (RAM) ou des bascules intégrées dans le processeur. Les composants passifs (C, R, L) ne sont pas conçus pour stocker une information numérique complexe."
+    },
+    {
+        "uuid": "v2w3x4y5-z6a7-8b9c-0d1e-f2g3h4i5j6k",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la définition rigoureuse d'un signal numérique en physique ?",
+        "answers": [
+            "Un signal dont l'amplitude est discrète mais le temps continu.",
+            "Un signal quantifié en amplitude et échantillonné en temps (valeurs discrètes à instants discrets).",
+            "Un signal qui ne prend que les valeurs $\\pm 5\\text{ V}$.",
+            "Un signal dont la valeur est stockée sur un support magnétique."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un signal numérique est caractérisé par deux processus : l'échantillonnage (discrétisation temporelle) et la quantification (discrétisation de l'amplitude). S'il n'est que quantifié mais continu en temps, il est appelé signal échantillonné ou analogique à niveaux discrets."
+    },
+    {
+        "uuid": "w3x4y5z6-a7b8-9c0d-1e2f-g3h4i5j6k7l",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Sur un oscilloscope, à quoi servent les boutons de réglage nommés CH1 et CH2 (ou les menus associés) ?",
+        "answers": [
+            "À régler le calibre (sensibilité verticale) en $\\text{V/div}$ pour chaque voie.",
+            "À régler la base de temps globale du signal.",
+            "À modifier la fréquence d'échantillonnage de l'écran.",
+            "À régler le contraste de l'affichage."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Les commandes CH1/CH2 contrôlent les amplificateurs d'entrée verticaux. Elles permettent de définir combien de volts correspondent à une division verticale sur l'écran (le calibre). La base de temps (horizontale) se règle via un bouton séparé souvent nommé 'Time/Div'."
+    },
+    {
+        "uuid": "x4y5z6a7-b8c9-0d1e-2f3g-h4i5j6k7l8m",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la précision relative approximative d'un convertisseur 8 bits ?",
+        "answers": [
+            "$10\\%$",
+            "$0,4\\%$",
+            "$1,5\\%$",
+            "$0,001\\%$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La précision relative est donnée par le pas de quantification divisé par la pleine échelle, soit $1/2^n$. Pour $n=8$, cela vaut $1/256 \\approx 0,0039$, soit environ $0,4\\%$."
+    },
+    {
+        "uuid": "y5z6a7b8-c9d0-1e2f-3g4h-i5j6k7l8m9n",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Si on veut mesurer une tension de $240\\text{ V}$ avec une résolution (précision) de $0,1\\text{ mV}$, quel nombre de bits $n$ est nécessaire au minimum ?",
+        "answers": [
+            "8 bits ($2^8 = 256$)",
+            "12 bits ($2^{12} = 4096$)",
+            "22 bits ($2^{22} > 4 \\times 10^6$)",
+            "16 bits ($2^{16} = 65536$)"
+        ],
+        "difficulty": 4,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Le nombre de niveaux nécessaires est le rapport pleine échelle sur précision : $240 / 0,0001 = 2,4 \\times 10^6$. Il faut $2^n \\geq 2,4 \\times 10^6$. En calculant, $2^{21} \\approx 2,1 \\times 10^6$ (insuffisant) et $2^{22} \\approx 4,2 \\times 10^6$ (suffisant). Il faut donc 22 bits."
+    },
+    {
+        "uuid": "z6a7b8c9-d0e1-2f3g-4h5i-j6k7l8m9n0o",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Lors de l'utilisation d'une sonde atténuatrice $10\times$ sur un oscilloscope, quel est l'effet principal sur la mesure ?",
+        "answers": [
+            "Elle augmente l'impédance d'entrée, mais réduit le rapport signal sur bruit en divisant la tension par $10$.",
+            "Elle multiplie la résolution verticale par $10$.",
+            "Elle diminue l'impédance d'entrée, ce qui charge davantage le circuit testé.",
+            "Elle n'a aucun impact sur la qualité de mesure, le coefficient d'atténuation étant compensé électroniquement."
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Une sonde $10\times$ divise par $10$ la tension reçue par l'oscilloscope. Si cela protège l'étage d'entrée, cela réduit la sensibilité effective (le rapport signal sur bruit est dégradé car le signal utile est affaibli). L'intérêt majeur est cependant d'augmenter l'impédance d'entrée (diminuer la capacité parasite) pour moins perturber le signal mesuré."
+    },
+    {
+        "uuid": "a7b8c9d0-e1f2-3g4h-5i6j-k7l8m9n0o1p",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Pour un signal de fréquence $f_{max} = 10\\text{ MHz}$, le théorème de Shannon impose $f_e > 20\\text{ MHz}$. Sur un appareil de mesure réel, quelle fréquence d'échantillonnage choisirait-on pour une fidélité optimale ?",
+        "answers": [
+            "$20,1\\text{ MHz}$, juste au-dessus de la limite de Nyquist.",
+            "$100\\text{ MS/s}$ (méga-échantillons par seconde).",
+            "$5\\text{ MHz}$, car on peut reconstruire le signal par interpolation.",
+            "$10\\text{ MHz}$, car c'est la fréquence propre du signal."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Bien que la borne théorique de Shannon soit $f_e > 2f_{max}$, en pratique, il est nécessaire de suréchantillonner largement pour permettre un filtrage anti-repliement réaliste (filtres non parfaits) et améliorer la résolution temporelle. Un échantillonnage à $5\times$ ou $10\times$ la fréquence max est standard."
+    },
+    {
+        "uuid": "b8c9d0e1-f2g3-4h5i-6j7k-l8m9n0o1p2q",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Pourquoi, lors de l'étude d'un système échantillonné, un signal sinusoïdal de fréquence $f$ peut-il être interprété comme un signal constant ?",
+        "answers": [
+            "Si la fréquence d'échantillonnage $f_e$ est égale à la fréquence du signal $f$ (ou un multiple), on échantillonne toujours la même phase.",
+            "Si la fréquence du signal est trop faible, le CAN ne détecte pas les variations.",
+            "Si le filtre numérique est saturé par une composante continue trop élevée.",
+            "Si le signal est inférieur au pas de quantification du convertisseur."
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Si $f_e = f$, on échantillonne le signal à chaque période : on tombe donc toujours sur la même valeur instantanée, ce qui donne une suite constante. C'est un cas particulier de repliement spectral où la fréquence apparente devient nulle."
+    },
+    {
+        "uuid": "c9d0e1f2-g3h4-5i6j-7k8l-m9n0o1p2q3r",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal périodique de période $T = 12\\text{ s}$ est observé par échantillonnage à $T_e = 10\\text{ s}$. Quel est le phénomène observé sur le signal reconstruit ?",
+        "answers": [
+            "Le signal paraît identique au signal réel.",
+            "Le signal présente une fréquence de battement plus basse et semble se déplacer en sens inverse (alias).",
+            "Le signal est fixe car $T_e$ est proche de $T$.",
+            "Le signal est totalement aléatoire (bruit blanc)."
+        ],
+        "difficulty": 4,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Avec $T_e < T$, on observe un repliement. La fréquence apparente $f_{app}$ est donnée par la différence entre la fréquence réelle et la fréquence d'échantillonnage. Le signal reconstruit oscille à une fréquence beaucoup plus basse, ce qui donne l'illusion d'un mouvement inversé ou ralenti."
+    },
+    {
+        "uuid": "d0e1f2g3-h4i5-6j7k-8l9m-n0o1p2q3r4s",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la résolution fréquentielle $\\Delta f$ (ou écart entre deux raies spectrales) pour une durée d'acquisition totale de $T_{acq} = 1\\text{ s}$ ?",
+        "answers": [
+            "$1\\text{ Hz}$",
+            "$10\\text{ Hz}$",
+            "$0,1\\text{ Hz}$",
+            "Cela dépend de la fréquence d'échantillonnage $f_e$."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La résolution fréquentielle est définie par $\\Delta f = \\frac{1}{T_{acq}}$. Avec $T_{acq} = 1\\text{ s}$, on obtient une résolution de $1\\text{ Hz}$. Plus on observe longtemps, plus on peut distinguer des fréquences proches."
+    },
+    {
+        "uuid": "e1f2g3h4-i5j6-7k8l-9m0n-o1p2q3r4s5t",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Lors de l'implémentation numérique d'une équation différentielle par la méthode d'Euler : $\\frac{ds}{dt} \\approx \\frac{s_{k+1}-s_k}{T_e}$, quelle condition sur $T_e$ doit être vérifiée pour la stabilité du modèle ?",
+        "answers": [
+            "$T_e$ doit être égal à la constante de temps $\\tau$ du système.",
+            "$T_e$ doit être très petit devant la constante de temps $\\tau$ du système.",
+            "$T_e$ doit être très grand devant la constante de temps $\\tau$ du système.",
+            "$T_e$ n'a aucune influence sur la précision de la discrétisation."
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour que l'approximation de la dérivée par un accroissement fini soit valide, il faut que le signal varie peu entre deux instants d'échantillonnage. On impose donc $T_e \\ll \\tau$."
+    },
+    {
+        "uuid": "f2g3h4i5-j6k7-8l9m-0n1o-p2q3r4s5t6u",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quel est le nombre de niveaux de quantification accessibles pour un convertisseur analogique-numérique (CAN) codant sur $16\\text{ bits}$ ?",
+        "answers": [
+            "$65\\ 536$",
+            "$16\\ 000$",
+            "$1\\ 024$",
+            "$32\\ 768$"
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le nombre de niveaux est donné par $2^n$. Pour $n=16$, $2^{16} = 65\\ 536$ niveaux distincts."
+    },
+    {
+        "uuid": "g3h4i5j6-k7l8-9m0n-1o2p-q3r4s5t6u7v",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Le repliement spectral survient lorsque le signal d'entrée contient des fréquences supérieures à la fréquence de Nyquist. Quelles fréquences sont les plus critiques ?",
+        "answers": [
+            "Les fréquences situées au-delà de $f_e / 2$.",
+            "Les fréquences situées entre $0$ et $f_e / 2$.",
+            "Le bruit à basse fréquence.",
+            "Le signal continu uniquement."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le repliement (ou aliasing) est dû aux composantes spectrales du signal qui se trouvent au-delà de la fréquence de repliement $f_{Nyquist} = f_e / 2$. Ces composantes \"se rabattent\" dans la bande utile $[0, f_e/2]$."
+    },
+    {
+        "uuid": "h4i5j6k7-l8m9-0n1o-2p3q-r4s5t6u7v8w",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Si la fréquence d'échantillonnage est $f_e = 44,1\\text{ kHz}$, quelle est la fréquence de coupure idéale théorique pour le filtre anti-repliement ?",
+        "answers": [
+            "$44,1\\text{ kHz}$",
+            "$22,05\\text{ kHz}$",
+            "$20\\text{ kHz}$",
+            "$11\\text{ kHz}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Selon le théorème de Shannon, la fréquence maximale reconstructible est $f_{max} = f_e / 2$. Pour $44,1\\text{ kHz}$, cette fréquence est $22,05\\text{ kHz}$. Tout signal au-delà doit être éliminé par le filtre."
+    },
+    {
+        "uuid": "i5j6k7l8-m9n0-1o2p-3q4r-s5t6u7v8w9x",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Comment note-t-on formellement la valeur d'un signal analogique $X(t)$ après échantillonnage à l'instant $t = n T_e$ ?",
+        "answers": [
+            "$X_n$ ou $X(n T_e)$",
+            "$X(n)$",
+            "$X^n$",
+            "$X_t$"
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La notation $X_n$ est la plus rigoureuse pour une suite de valeurs discrètes. $X(n)$ est parfois utilisée par abus de langage, mais $X_n$ souligne bien que l'on manipule le $n$-ième échantillon."
+    },
+    {
+        "uuid": "j6k7l8m9-n0o1-2p3q-4r5s-t6u7v8w9x0y",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cadre de l'étude de la perception humaine appliquée à l'échantillonnage temporel, pourquoi ne perçoit-on pas un phénomène de clignotement pour un signal lumineux dont la fréquence de répétition est supérieure à $f = 25\\text{ Hz}$ ?",
+        "answers": [
+            "À cause du phénomène physiologique de la persistance rétinienne.",
+            "À cause de la limite de célérité de la lumière dans le milieu.",
+            "Car le cerveau possède un filtre passe-bas empêchant la perception des hautes fréquences.",
+            "Parce que l'énergie lumineuse devient trop faible pour exciter les photorécepteurs."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "explication": "La persistance rétinienne est la capacité de l'œil à conserver une image sur la rétine pendant un court laps de temps ($d'environ 1/25$ de seconde). Si la fréquence est supérieure à ce seuil, les images se superposent, donnant une impression de mouvement continu. Les autres réponses sont des distracteurs physiques ou biologiques non pertinents.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "k7l8m9n0-o1p2-3q4r-5s6t-u7v8w9x0y1z",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cadre de l'architecture d'un système de mesure type oscilloscope numérique, comment qualifie-t-on la profondeur de la mémoire tampon permettant de stocker les échantillons avant traitement ?",
+        "answers": [
+            "En Joules, unité d'énergie.",
+            "En Octets (ou ko, Mo), unité d'information numérique.",
+            "En Hertz, unité de fréquence.",
+            "En Volts, unité de tension électrique."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "La mémoire numérique stocke des données binaires (bits). Comme $8$ bits forment un octet, la capacité de stockage est nécessairement exprimée en octets. Les Joules, Hertz et Volts sont des grandeurs physiques incompatibles avec la définition d'une capacité de stockage numérique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "l7m8n9o0-p1q2-3r4s-5t6u-v7w8x9y0z1a",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Considérons un système de traitement de signal. La fréquence de coupure $f_c$ d'un filtre analogique de type passe-bas (utilisé par exemple comme filtre anti-repliement) est :",
+        "answers": [
+            "Définie par les caractéristiques intrinsèques du circuit ($R, L, C$) et indépendante de $f_e$.",
+            "Strictement égale à la fréquence d'échantillonnage $f_e$.",
+            "Toujours fixée arbitrairement à $50\\text{ Hz}$ pour éliminer le bruit secteur.",
+            "Inversément proportionnelle au nombre de bits de quantification du CAN."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "explication": "La fréquence de coupure d'un filtre analogique est déterminée par ses composants passifs ($R, C$ ou $R, L, C$). Bien que l'on doive choisir cette fréquence en fonction de $f_e$ (selon Shannon), elle reste une propriété physique du filtre, indépendante de la valeur choisie pour $f_e$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "m7n8o9p0-q1r2-3s4t-5u6v-w7x8y9z0a1b",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Lors de la conversion analogique-numérique (CAN), l'erreur de quantification maximale, notée $\\epsilon_{max}$, est définie par le pas de quantification $q$. Elle est comprise dans l'intervalle :",
+        "answers": [
+            "$-q$ et $+q$",
+            "$-q/2$ et $+q/2$",
+            "$0$ et $q/2$",
+            "$-q/4$ et $+q/4$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "Le convertisseur arrondit la valeur analogique à la valeur numérique la plus proche. L'erreur d'arrondi est au maximum de $\\pm 0,5$ LSB (Least Significant Bit), soit $\\pm q/2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "n7o8p9q0-r1s2-3t4u-5v6w-x7y8z9a0b1c",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal sinusoïdal de $f = 10\\text{ kHz}$ est échantillonné à une fréquence $f_e = 10,1\\text{ kHz}$. Que devient ce signal après reconstruction par un filtre idéal ?",
+        "answers": [
+            "Un signal de $10\\text{ kHz}$ (reconstruction parfaite).",
+            "Un signal de $100\\text{ Hz}$ (phénomène de repliement de spectre).",
+            "Un signal de $20,1\\text{ kHz}$ (somme des fréquences).",
+            "Un signal de $50\\text{ Hz}$."
+        ],
+        "difficulty": 4,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "Le critère de Shannon n'est pas respecté ($f_e < 2f$). Il y a repliement (aliasing). La fréquence observée est $|f - k f_e|$. Ici, pour $k=1$ : $|10\\text{ kHz} - 10,1\\text{ kHz}| = 0,1\\text{ kHz} = 100\\text{ Hz}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "o7p8q9r0-s1t2-3u4v-5v6w-y7z8a9b0c1d",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Pour respecter le critère de Shannon assurant une reconstruction sans perte d'information pour un signal contenant des fréquences jusqu'à $f_{max}$, la période d'échantillonnage $T_e$ doit vérifier :",
+        "answers": [
+            "$T_e > T_{max}/2$",
+            "$T_e < T_{min}/2$ (où $T_{min} = 1/f_{max}$)",
+            "$T_e = T_{max} / N$ avec $N$ nombre d'échantillons",
+            "$T_e > 2 T_{max}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "Le critère de Shannon impose $f_e > 2 f_{max}$. En passant aux périodes, sachant que $T = 1/f$, on obtient $1/T_e > 2 / T_{min}$, soit $T_e < T_{min}/2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "p7q8r9s0-t1u2-3v4w-5w6x-z7a8b9c0d1e",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le spectre d'un signal audio échantillonné, quelle expression mathématique représente la 'zone de transition' entre le lobe principal et la première réplique spectrale ?",
+        "answers": [
+            "$f_e - 2 f_{max}$",
+            "$f_e / 2$",
+            "$f_{max}$",
+            "$2 f_e - f_{max}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "explication": "Le spectre utile s'étend jusqu'à $f_{max}$. La première réplique commence à $f_e - f_{max}$. L'espace libre entre la fin du signal utile ($f_{max}$) et le début de la réplique ($f_e - f_{max}$) est donc $(f_e - f_{max}) - f_{max} = f_e - 2 f_{max}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q7r8s9t0-u1v2-3w4x-5x6y-a7b8c9d0e1f",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal sinusoïdal de $f = 1\\text{ kHz}$ est échantillonné à $f_e = 7,5\\text{ kHz}$. Où se situe la première réplique spectrale correspondant au repliement $f_e - f$ ?",
+        "answers": [
+            "$6,5\\text{ kHz}$",
+            "$8,5\\text{ kHz}$",
+            "$1\\text{ kHz}$",
+            "$7,5\\text{ kHz}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "explication": "Le repliement crée des raies spectrales aux fréquences $|f_e - f|$, $|2f_e - f|$, etc. Pour $f_e = 7,5\\text{ kHz}$ et $f = 1\\text{ kHz}$, la première réplique se situe à $7,5 - 1 = 6,5\\text{ kHz}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "r7s8t9u0-v1w2-3x4y-5y6z-b7c8d9e0f1g",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Le critère de Shannon-Nyquist est fondamental en traitement du signal car il assure la conservation de :",
+        "answers": [
+            "L'amplitude absolue du signal.",
+            "L'intégralité de l'information fréquentielle contenue dans le signal.",
+            "La phase relative entre deux signaux échantillonnés.",
+            "La puissance moyenne du signal."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "Le critère de Shannon garantit que le spectre du signal échantillonné ne présente pas de chevauchement (repliement) entre les répliques, permettant ainsi une reconstruction parfaite de l'information fréquentielle originale.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "s7t8u9v0-w1x2-3y4z-5z6a-c7d8e9f0g1h",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cadre de l'analyse spectrale, un signal périodique carré de période $T$ possède une décomposition en série de Fourier composée de :",
+        "answers": [
+            "Uniquement son fondamental de fréquence $f = 1/T$.",
+            "Une infinité d'harmoniques impaires de fréquences $n \\cdot f$ avec $n$ impair.",
+            "Uniquement des harmoniques paires.",
+            "Des harmoniques paires et impaires."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "La symétrie impaire du signal carré (en supposant $s(t) = -s(t + T/2)$) entraîne l'annulation des coefficients de Fourier pour les harmoniques paires. Seuls les termes harmoniques de rang impair subsistent.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "t7u8v9w0-x1y2-3z4a-5a6b-d7e8f9g0h1i",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cadre de la numérisation d'un signal audio, si une note 'La 3' possède une fréquence fondamentale $f_0 = 440\\text{ Hz}$, quelle est la fréquence d'échantillonnage minimale de Shannon $f_e$ à respecter pour éviter tout repliement spectral ?",
+        "answers": [
+            "$440\\text{ Hz}$",
+            "$880\\text{ Hz}$",
+            "$220\\text{ Hz}$",
+            "$1320\\text{ Hz}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "D'après le théorème de Shannon-Nyquist, pour échantillonner un signal sans perte d'information, il faut que la fréquence d'échantillonnage $f_e$ soit strictement supérieure à deux fois la fréquence maximale contenue dans le signal ($f_e > 2 f_{max}$). Ici, $2 \\times 440 = 880\\text{ Hz}$."
+    },
+    {
+        "uuid": "u7v8w9x0-y1z2-3a4b-5b6c-e7f8g9h0i1j",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Lors du stockage numérique d'un signal, si chaque échantillon est codé sur $2\\text{ octets}$, combien d'échantillons ($N$) une mémoire de capacité $C = 256\\text{ ko}$ ($1\\text{ ko} = 1024\\text{ octets}$) peut-elle stocker ?",
+        "answers": [
+            "$128\\text{ kS}$",
+            "$256\\text{ kS}$",
+            "$512\\text{ kS}$",
+            "$1024\\text{ kS}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le nombre d'échantillons est donné par le rapport de la capacité mémoire totale sur la taille d'un échantillon : $N = \\frac{256\\text{ ko}}{2\\text{ octets/échantillon}} = 128\\text{ kilo-échantillons}$."
+    },
+    {
+        "uuid": "v7w8x9y0-z1a2-3b4c-5c6d-f7g8h9i0j1k",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quel est l'intérêt fondamental d'un filtre anti-repliement (filtre passe-bas analogique) placé avant l'échantillonneur ?",
+        "answers": [
+            "Éliminer les composantes fréquentielles $f > f_e/2$ avant l'acquisition.",
+            "Lisser le signal numérique après l'acquisition.",
+            "Augmenter l'amplitude du signal pour saturer le CAN.",
+            "Réduire le bruit de quantification du CAN."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le repliement spectral survient lorsque des fréquences supérieures à la fréquence de Nyquist ($f_e/2$) sont présentes dans le signal d'entrée. Elles sont alors 'repliées' dans la bande de base. Le filtre passe-bas permet d'atténuer ces fréquences avant l'échantillonnage."
+    },
+    {
+        "uuid": "w7x8y9z0-a1b2-3c4d-5d6e-g7h8i9j0k1l",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Lors d'une analyse spectrale par Transformée de Fourier Discrète (TFD) sur $N$ points avec une fréquence d'échantillonnage $f_e$, la résolution fréquentielle $\\Delta f$ est définie par :",
+        "answers": [
+            "$\\Delta f = f_e / N$",
+            "$\\Delta f = 1 / f_e$",
+            "$\\Delta f = N / f_e$",
+            "$\\Delta f = f_e \\times N$"
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La résolution fréquentielle (ou pas fréquentiel) est l'espacement entre deux raies consécutives du spectre. Elle est donnée par $\\Delta f = \\frac{f_e}{N} = \\frac{1}{T_{total}}$, où $T_{total}$ est la durée totale de l'enregistrement."
+    },
+    {
+        "uuid": "x7y8z9a0-b1c2-3d4e-5e6f-h7i8j9k0l1m",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Pour un système audio standard avec une fréquence d'échantillonnage $f_e = 44,1\\text{ kHz}$, quelle est la durée $T_e$ séparant deux échantillons consécutifs ?",
+        "answers": [
+            "$22,7\\text{ μs}$",
+            "$44,1\\text{ ms}$",
+            "$1\\text{ s}$",
+            "$2,27\\text{ ms}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La période d'échantillonnage est l'inverse de la fréquence : $T_e = 1 / f_e = 1 / (44,1 \\times 10^3) \\approx 2,267 \\times 10^{-5}\\text{ s}$, soit $22,7\\text{ μs}$."
+    },
+    {
+        "uuid": "y7z8a9b0-c1d2-3e4f-5f6g-i7j8k9l0m1n",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "En stroboscopie, si l'on observe une roue tournant à la fréquence $f_0$ avec une fréquence de flash $f_e = 1/T_e$ telle que $T_e = T_0 / 2$ (soit $f_e = 2 f_0$), que voit-on ?",
+        "answers": [
+            "Un seul trait immobile.",
+            "Deux traits diamétralement opposés.",
+            "Un disque gris uniforme.",
+            "Un trait qui semble tourner lentement."
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Si $f_e = 2 f_0$, le flash éclaire la roue deux fois par tour. Si le trait est en position $0$ à $t=0$, il sera à $180°$ (position opposée) au moment du deuxième flash ($t = T_0/2$). L'œil, par persistance rétinienne, perçoit donc deux traits."
+    },
+    {
+        "uuid": "z7a8b9c0-d1e2-3f4g-5g6h-j7k8l9m0n1o",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Soit un signal de fréquence $f_{max} = 7\\text{ kHz}$ échantillonné à $f_e = 10\\text{ kHz}$. Quelle est la fréquence de repliement $f_{repli}$ observée dans le spectre ?",
+        "answers": [
+            "$3\\text{ kHz}$",
+            "$17\\text{ kHz}$",
+            "$7\\text{ kHz}$",
+            "$10\\text{ kHz}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le repliement survient car $f_{max} > f_e/2$ ($7 > 5$). La composante de fréquence $f$ est repliée en $|f - k \\cdot f_e|$. Ici, pour $f = 7\\text{ kHz}$ et $f_e = 10\\text{ kHz}$, la fréquence apparente est $|7 - 10| = 3\\text{ kHz}$."
+    },
+    {
+        "uuid": "a8b9c0d1-e2f3-4g4h-5h6i-k7l8m9n0o1p",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans un convertisseur Analogique-Numérique (CAN) codant sur $n = 16\\text{ bits}$, combien de niveaux de quantification distincts peut-on représenter ?",
+        "answers": [
+            "$16$",
+            "$65536$",
+            "$32768$",
+            "$256$"
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le nombre de niveaux de quantification est donné par $2^n$. Pour $n = 16$, on a $2^{16} = 65536$ niveaux de tension possibles."
+    },
+    {
+        "uuid": "b8c9d0e1-f2g3-4h5i-5i6j-l7m8n9o0p1q",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le fonctionnement d'un échantillonneur-bloqueur, quelle est la fonction du maintien (blocage) de la tension ?",
+        "answers": [
+            "Maintenir la tension constante pendant la durée d'acquisition $T_a$ du CAN.",
+            "Maintenir la tension constante pendant toute la période d'échantillonnage $T_e$.",
+            "Éliminer les harmoniques haute fréquence du signal.",
+            "Convertir le signal en valeur numérique."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le convertisseur a besoin d'un temps fini $T_a$ pour réaliser la conversion. Si le signal analogique varie trop vite pendant ce temps, l'erreur de conversion serait majeure. Le bloqueur fige la valeur pour laisser au CAN le temps de travailler."
+    },
+    {
+        "uuid": "c8d9e0f1-g2h3-4i5j-6j7k-m7n8o9p0q1r",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un capteur de température génère une tension $U_s$ variant linéairement de $0\\text{ V}$ à $1\\text{ V}$ pour une plage de température de $0°C$ à $100°C$. Quelle est la sensibilité $S$ du transducteur ?",
+        "answers": [
+            "$1\\text{ mV/°C}$",
+            "$10\\text{ mV/°C}$",
+            "$100\\text{ mV/°C}$",
+            "$10\\text{ V/°C}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La sensibilité est définie par $S = \\Delta U_s / \\Delta T$. Ici, $S = (1\\text{ V} - 0\\text{ V}) / (100°C - 0°C) = 1/100\\text{ V/°C} = 0,01\\text{ V/°C} = 10\\text{ mV/°C}$."
+    },
+    {
+        "uuid": "d8e9f0g1-h2i3-4j4k-5k6l-n7o8p9q0r1s",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cadre de l'échantillonnage d'un signal analogique, le critère de Shannon affirme que pour éviter le repliement spectral, la fréquence d'échantillonnage $f_e$ doit vérifier $f_e > 2 f_{max}$. Ce critère constitue-t-il une condition nécessaire ?",
+        "answers": [
+            "Une condition nécessaire et suffisante pour la reconstruction parfaite.",
+            "Une condition nécessaire pour éviter le repliement spectral.",
+            "Une condition suffisante mais non nécessaire.",
+            "Une simple recommandation technique sans fondement théorique."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "Le critère de Shannon ($f_e > 2 f_{max}$) est la condition nécessaire pour garantir que les répliques du spectre du signal échantillonné ne se chevauchent pas, évitant ainsi le repliement spectral. Il n'est pas 'suffisant' pour une reconstruction parfaite dans tous les cas réels, car il nécessite également un filtre passe-bas idéal (filtre de reconstruction) pour isoler le spectre original."
+    },
+    {
+        "uuid": "e8f9g0h1-i2j3-4k4l-5l6m-o7p8q9r0s1t",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Dans le cadre de l'acquisition de données, quel est l'inconvénient majeur d'un choix excessif de la fréquence d'échantillonnage $f_e$ par rapport à la bande passante du signal ?",
+        "answers": [
+            "La saturation rapide de la mémoire et des capacités de traitement.",
+            "La création systématique d'un repliement spectral.",
+            "La perte de résolution fréquentielle.",
+            "L'augmentation du bruit de quantification."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "explication": "Choisir une $f_e$ trop élevée par rapport au besoin augmente inutilement la quantité de données à traiter et à stocker, ce qui peut saturer la mémoire (buffer) ou limiter les capacités de traitement en temps réel du processeur, sans apporter d'information utile."
+    },
+    {
+        "uuid": "f8g9h0i1-j2k3-4l4m-5m6n-p7q8r9s0t1u",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal de parole est modélisé par une bande de fréquences allant de $f_{min} = 300\\text{ Hz}$ à $f_{max} = 3400\\text{ Hz}$. Pour un échantillonnage respectant le théorème de Shannon, une fréquence $f_e = 6000\\text{ Hz}$ est-elle adaptée ?",
+        "answers": [
+            "Oui, car $f_e$ est supérieure à $f_{max}$.",
+            "Non, elle est insuffisante et provoque un repliement spectral.",
+            "Oui, c'est la fréquence minimale théorique.",
+            "Non, car elle est trop élevée."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "Le critère de Shannon impose $f_e > 2 f_{max}$. Ici, $2 f_{max} = 2 \\times 3400 = 6800\\text{ Hz}$. Comme $6000\\text{ Hz} < 6800\\text{ Hz}$, le critère n'est pas respecté : les hautes fréquences du signal vont se replier dans les basses fréquences, rendant la reconstruction impossible sans altération."
+    },
+    {
+        "uuid": "g8h9i0j1-k2l3-4m4n-5n6o-q7r8s9t0u1v",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Lors de la chaîne de numérisation d'un signal, quelle est la nature de l'opération de quantification ?",
+        "answers": [
+            "La discrétisation de l'amplitude du signal vers des niveaux discrets (codes binaires).",
+            "La discrétisation temporelle du signal analogique.",
+            "La conversion d'une valeur réelle en une fréquence pure.",
+            "L'amplification du signal pour saturer le convertisseur."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "explication": "La quantification consiste à associer une valeur analogique continue à la valeur discrète la plus proche parmi un nombre fini de niveaux (définis par la résolution du CAN). La discrétisation temporelle, elle, est l'opération d'échantillonnage."
+    },
+    {
+        "uuid": "h8i9j0k1-l2m3-4n4o-5o6p-r7s8t9u0v1w",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un stroboscope éclaire un disque portant un secteur noir tournant à $f_{rot} = 24\\text{ tr/s}$. Si la fréquence de clignotement est $f_e = 100\\text{ Hz}$, que perçoit l'observateur ?",
+        "answers": [
+            "Le secteur semble tourner à une fréquence apparente $f_{app} = |f_e - k f_{rot}|$.",
+            "Un disque gris immobile car $f_e$ est trop élevée.",
+            "Un seul trait fixe car $f_e$ est un multiple de $f_{rot}$.",
+            "Le disque semble immobile."
+        ],
+        "difficulty": 4,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "explication": "Il s'agit d'un phénomène de repliement temporel (effet stroboscopique). La fréquence observée est donnée par $f_{app} = |f_e - n f_{rot}|$ où $n$ est l'entier tel que $f_{app}$ soit minimale. Ici, $100 / 24 \\approx 4.16$, le multiple entier le plus proche est $4$. $f_{app} = |100 - 4 \\times 24| = 4\\text{ Hz}$. L'observateur voit donc le secteur tourner lentement à $4\\text{ Hz}$."
+    },
+    {
+        "uuid": "i8j9k0l1-m2n3-4o4p-5p6q-s7t8u9v0w1x",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle relation lie la durée totale d'acquisition $T_a$, le nombre d'échantillons prélevés $N_e$ et la fréquence d'échantillonnage $f_e$ ?",
+        "answers": [
+            "$T_a = (N_e - 1) / f_e \\approx N_e / f_e$",
+            "$T_a = N_e \\cdot f_e$",
+            "$T_a = f_e / N_e$",
+            "$T_a = N_e / (2 f_e)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "explication": "La période d'échantillonnage est $T_e = 1/f_e$. Pour $N_e$ échantillons, il y a $N_e - 1$ intervalles de temps $T_e$. Ainsi, $T_a = (N_e - 1) T_e$. Pour un grand nombre d'échantillons, on utilise souvent l'approximation $T_a \\approx N_e / f_e$."
+    },
+    {
+        "uuid": "j8k9l0m1-n2o3-4p4q-5q6r-t7u8v9w0x1y",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Un signal analogique peut-il être parfaitement reconstruit à partir de ses échantillons ?",
+        "answers": [
+            "Non, car l'échantillonnage entraîne une perte d'information irréversible.",
+            "Oui, à condition que le signal soit limité en bande et que le critère de Shannon soit respecté.",
+            "Seulement si le signal est périodique.",
+            "Oui, sans aucune condition préalable sur le signal."
+        ],
+        "difficulty": 2,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "Selon le théorème d'échantillonnage de Nyquist-Shannon, si un signal est à bande limitée (spectre nul au-delà de $f_{max}$) et échantillonné à une fréquence $f_e > 2 f_{max}$, alors le signal original peut être parfaitement reconstruit par une interpolation idéale (formule de Whittaker-Shannon)."
+    },
+    {
+        "uuid": "k8l9m0n1-o2p3-4q4r-5r6s-u7v8w9x0y1z",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Comment est physiquement implémenté un filtre numérique dans un système de traitement de signal ?",
+        "answers": [
+            "Par un algorithme de calcul exécuté sur un processeur (DSP, microcontrôleur).",
+            "Par l'association de composants passifs $\\text{R}$, $\\text{L}$ et $\\text{C}$.",
+            "Par l'utilisation d'un transformateur d'impédance.",
+            "Par un pont de diodes commandé."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 0,
+        "explication": "Un filtre numérique traite des suites de nombres (échantillons) via une équation aux différences. Il est réalisé par un logiciel tournant sur un calculateur, contrairement au filtre analogique qui utilise des composants passifs ou actifs (amplificateurs opérationnels)."
+    },
+    {
+        "uuid": "l8m9n0o1-p2q3-4r4s-5s6t-v7w8x9y0z1a",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la relation fondamentale entre la fréquence de coupure $f_c$ (en Hz) et la pulsation de coupure $\\omega_c$ (en rad/s) ?",
+        "answers": [
+            "$\\omega_c = f_c / (2\\pi)$",
+            "$\\omega_c = 2\\pi f_c$",
+            "$\\omega_c = \\pi f_c$",
+            "$\\omega_c = f_c^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "La pulsation $\\omega$ est définie comme $\\omega = 2\\pi f$. Cette relation est universelle en physique des ondes et en électronique, indépendamment du type de filtre."
+    },
+    {
+        "uuid": "m8n9o0p1-q2r3-4s4t-5t6u-w7x8y9z0a1b",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "Quelle est la représentation graphique usuelle d'un signal analogique après une opération d'échantillonnage idéal ?",
+        "answers": [
+            "Une fonction continue par morceaux.",
+            "Un peigne de Dirac modulé par le signal (ou une suite de points isolés).",
+            "Un signal en escalier.",
+            "Une sinusoïde parfaite."
+        ],
+        "difficulty": 1,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "explication": "L'échantillonnage idéal multiplie le signal continu par un peigne de Dirac de période $T_e$. Graphiquement, cela revient à ne conserver que les valeurs du signal aux instants $n T_e$, ce qui se traduit par une suite de points ou des impulsions de Dirac."
+    },
+    {
+        "uuid": "n8o9p0q1-r2s3-4t4u-5u6v-x7y8z9a0b1c",
+        "image_path": null,
+        "theme": "électronique numérique",
+        "question": "La quantification est une opération :",
+        "answers": [
+            "Linéaire.",
+            "Non-linéaire (crée des paliers).",
+            "Toujours réversible sans perte."
+        ],
+        "difficulty": 3,
+        "chapter": "Electronique numérique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    }
+]

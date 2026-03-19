@@ -1,0 +1,1572 @@
+[
+    {
+        "uuid": "evn-001",
+        "image_path": null,
+        "theme": "Définitions",
+        "question": "Soit $E$ un $\\mathbb{K}$-espace vectoriel. Quelle propriété définit la séparation pour une norme $N$ sur $E$ ?",
+        "answers": [
+            "$\\forall x \\in E, N(x) = 0 \\implies x = 0$",
+            "$\\forall x \\in E, x = 0 \\implies N(x) = 0$",
+            "$\\forall (x,y) \\in E^2, N(x+y) = 0 \\implies x = -y$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-002",
+        "image_path": null,
+        "theme": "Définitions",
+        "question": "Parmi les propriétés suivantes, laquelle définit l'homogénéité d'une norme $N$ ?",
+        "answers": [
+            "$\\forall \\lambda \\in \\mathbb{K}, \\forall x \\in E, N(\\lambda x) = \\lambda N(x)$",
+            "$\\forall \\lambda \\in \\mathbb{K}, \\forall x \\in E, N(\\lambda x) = |\\lambda| N(x)$",
+            "$\\forall \\lambda \\in \\mathbb{K}, \\forall x \\in E, N(\\lambda x) = \\lambda^2 N(x)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-003",
+        "image_path": null,
+        "theme": "Inégalités",
+        "question": "Quelle est l'expression correcte de la double inégalité triangulaire pour deux vecteurs $x$ et $y$ ?",
+        "answers": [
+            "$| ||x|| - ||y|| | \\le ||x+y|| \\le ||x|| + ||y||$",
+            "$||x|| - ||y|| \\le ||x-y|| \\le ||x|| + ||y||$",
+            "$| ||x|| - ||y|| | \\le ||x+y|| \\le ||x|| - ||y||$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-004",
+        "image_path": null,
+        "theme": "Exemples de normes",
+        "question": "Sur $\\mathbb{R}^2$, l'application $N(x,y) = \\max(|x|, |y|)$ est-elle une norme ?",
+        "answers": [
+            "Non, car elle ne vérifie pas l'inégalité triangulaire",
+            "Oui, c'est la norme infinie sur $\\mathbb{R}^2$",
+            "Non, car $N(1,0) = N(0,1)$ contredit la séparation"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-005",
+        "image_path": null,
+        "theme": "Espaces préhilbertiens",
+        "question": "Soit $E$ un espace muni d'un produit scalaire $\\langle \\cdot, \\cdot \\rangle$. Comment est définie la norme euclidienne associée ?",
+        "answers": [
+            "$N(x) = \\langle x, x \\rangle$",
+            "$N(x) = \\sqrt{\\langle x, x \\rangle}$",
+            "$N(x) = \\sup \\langle x, y \\rangle$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-006",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Comment est définie la boule ouverte $B(a, r)$ dans un EVN ?",
+        "answers": [
+            "$\\{x \\in E, ||x-a|| \\le r\\}$",
+            "$\\{x \\in E, ||x-a|| < r\\}$",
+            "$\\{x \\in E, ||x-a|| = r\\}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-007",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Dans $\\mathbb{R}$ muni de la valeur absolue, à quoi correspond la boule ouverte $B(a, r)$ ?",
+        "answers": [
+            "Le segment $[a-r, a+r]$",
+            "L'intervalle ouvert $]a-r, a+r[$",
+            "L'ensemble $\\{a-r, a+r\\}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-008",
+        "image_path": null,
+        "theme": "Convexité",
+        "question": "Une partie $A$ d'un $\\mathbb{R}$-ev est dite convexe si :",
+        "answers": [
+            "$\\forall (x,y) \\in A^2, \\forall \\lambda \\in [0,1], (1-\\lambda)x + \\lambda y \\in A$",
+            "$\\forall (x,y) \\in A^2, \\forall \\lambda \\in \\mathbb{R}, (1-\\lambda)x + \\lambda y \\in A$",
+            "$\\forall x \\in A, -x \\in A$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-009",
+        "image_path": null,
+        "theme": "Convexité",
+        "question": "Dans un EVN, les boules ouvertes et fermées sont toujours :",
+        "answers": [
+            "Bornées mais pas forcément convexes",
+            "Convexes",
+            "Des sous-espaces vectoriels"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-010",
+        "image_path": null,
+        "theme": "Bornitude",
+        "question": "Une partie $A$ d'un EVN est dite bornée si :",
+        "answers": [
+            "Elle est contenue dans une boule de centre $0$",
+            "Son diamètre est infini",
+            "Elle est égale à son adhérence"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-011",
+        "image_path": null,
+        "theme": "Normes usuelles",
+        "question": "Dans le cadre de l'étude des espaces vectoriels de dimension finie $\\mathbb{K}^n$, quelle est l'expression analytique de la norme 1, notée $||x||_1$ ?",
+        "answers": [
+            "$\\max_{1 \\le k \\le n} |x_k|$",
+            "$\\sum_{k=1}^n |x_k|$",
+            "$\\sqrt{\\sum_{k=1}^n |x_k|^2}$",
+            "$\\sum_{k=1}^n x_k$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La norme $||x||_1$ correspond à la somme des valeurs absolues des composantes. La proposition 1 correspond à la norme infinie $||x||_\\infty$, et la proposition 3 à la norme euclidienne $||x||_2$. La proposition 4 est fausse car une norme doit être positive, ce que la somme des $x_k$ sans valeur absolue ne garantit pas."
+    },
+    {
+        "uuid": "evn-012",
+        "image_path": null,
+        "theme": "Normes usuelles",
+        "question": "Sur l'espace des fonctions bornées $\\mathcal{B}(X, \\mathbb{K})$, comment définit-on correctement la norme infinie $||f||_\\infty$ ?",
+        "answers": [
+            "$\\int_X |f(x)| dx$",
+            "$\\sup_{x \\in X} |f(x)|$",
+            "$\\max_{x \\in X} f(x)$",
+            "$\\sqrt{\\int_X |f(x)|^2 dx}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Pour une fonction, $||f||_\\infty$ est la borne supérieure des valeurs absolues. On utilise le 'sup' plutôt que le 'max' car une fonction bornée n'atteint pas nécessairement sa borne supérieure. L'intégrale (1 et 4) correspond à d'autres types de normes (normes $L^1$ ou $L^2$)."
+    },
+    {
+        "uuid": "evn-013",
+        "image_path": null,
+        "theme": "Suites",
+        "question": "Considérons une suite $(a_n)_{n\\in\\mathbb{N}}$ d'un espace vectoriel normé $(E, ||\\cdot||)$. La suite converge vers $l \\in E$ si et seulement si :",
+        "answers": [
+            "La suite réelle $(||a_n - l||)$ tend vers $0$",
+            "La suite $(a_n)$ est bornée",
+            "$\\forall n \\in \\mathbb{N}, ||a_n|| \\le ||l||$",
+            "La suite $(||a_n||)$ converge vers $||l||$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La convergence dans un EVN est définie par la limite de la distance entre $a_n$ et la limite $l$. Le fait que $||a_n|| \\to ||l||$ (proposition 4) est une condition nécessaire mais non suffisante (contre-exemple : $a_n = (-1)^n$ dans $\\mathbb{R}$)."
+    },
+    {
+        "uuid": "evn-014",
+        "image_path": null,
+        "theme": "Suites",
+        "question": "Soit $(a_n)_{n\\in\\mathbb{N}}$ une suite d'un EVN telle que $a_n \\to l$. Par application de l'inégalité triangulaire inversée, que peut-on affirmer sur la suite des normes $(||a_n||)$ ?",
+        "answers": [
+            "Elle diverge vers $+\\infty$",
+            "Elle converge vers $||l||$",
+            "Elle est stationnaire à partir d'un certain rang",
+            "Elle est constante"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "L'inégalité $|||a_n| - |l||| \\le ||a_n - l||$ assure que si $||a_n - l|| \\to 0$, alors $||a_n|| \\to ||l||$. C'est une conséquence directe de la continuité de l'application norme : $f: x \\mapsto ||x||$ est 1-lipschitzienne."
+    },
+    {
+        "uuid": "evn-015",
+        "image_path": null,
+        "theme": "Suites",
+        "question": "Toute suite convergente dans un espace vectoriel normé est nécessairement :",
+        "answers": [
+            "Stationnaire",
+            "Bornée",
+            "Monotone",
+            "Une suite de Cauchy"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Toute suite convergente est bornée (théorème classique). Elle est également de Cauchy, mais la proposition 2 est la propriété fondamentale la plus directe. Une suite convergente n'est ni nécessairement stationnaire, ni monotone (notamment dans $\\mathbb{K}^n$ pour $n > 1$ ou dans $\\mathbb{C}$)."
+    },
+    {
+        "uuid": "evn-016",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Soit $A$ une partie d'un EVN $E$. Un point $x \\in A$ est dit intérieur à $A$ si et seulement si :",
+        "answers": [
+            "Il existe un réel $\\epsilon > 0$ tel que la boule ouverte $B(x, \\epsilon) \\subset A$",
+            "Toute boule ouverte centrée en $x$ rencontre $A$",
+            "$x$ appartient à la frontière de $A$",
+            "Il existe une boule fermée $B_f(x, \\epsilon)$ telle que $B_f(x, \\epsilon) \\cap A = \\{x\\}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La définition d'un point intérieur exige que tout un voisinage de $x$ soit inclus dans $A$. La proposition 2 définit un point adhérent. La frontière (proposition 3) est l'ensemble des points dont tout voisinage rencontre à la fois $A$ et son complémentaire."
+    },
+    {
+        "uuid": "evn-017",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Soit $(O_i)_{i \\in I}$ une famille quelconque d'ouverts de $E$. Quelle est la nature de leur réunion $\\bigcup_{i \\in I} O_i$ ?",
+        "answers": [
+            "Toujours ouverte",
+            "Toujours fermée",
+            "Ouverte seulement si la famille est finie",
+            "Ni ouverte ni fermée en général"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par définition de la topologie, la réunion d'une famille quelconque d'ouverts est toujours un ouvert. L'intersection, elle, n'est ouverte que si la famille est finie."
+    },
+    {
+        "uuid": "evn-018",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Soit $(F_i)_{i \\in I}$ une famille quelconque de fermés de $E$. Quelle est la nature de leur intersection $\\bigcap_{i \\in I} F_i$ ?",
+        "answers": [
+            "Toujours fermée",
+            "Toujours ouverte",
+            "Fermée seulement si la famille est finie",
+            "Ni ouverte ni fermée en général"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par passage au complémentaire et utilisation des lois de Morgan, l'intersection quelconque de fermés est un fermé. La réunion, elle, n'est fermée que si la famille est finie."
+    },
+    {
+        "uuid": "evn-019",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Une partie $F$ d'un EVN $E$ est dite fermée si et seulement si :",
+        "answers": [
+            "Son complémentaire $E \\setminus F$ est un ouvert",
+            "Elle contient toutes ses boules ouvertes",
+            "Elle est bornée",
+            "Elle est égale à son intérieur"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "C'est la définition topologique fondamentale d'un fermé. Une partie bornée n'est pas nécessairement fermée (ex: $]0, 1[$ dans $\\mathbb{R}$). Une partie égale à son intérieur est un ouvert."
+    },
+    {
+        "uuid": "evn-020",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Soit $A$ une partie d'un EVN $E$. Quelle est la caractérisation séquentielle permettant d'affirmer que $A$ est fermée ?",
+        "answers": [
+            "Pour toute suite $(a_n)$ d'éléments de $A$ convergeant vers une limite $l \\in E$, on a $l \\in A$",
+            "Toute suite d'éléments de $A$ est bornée",
+            "Toute suite convergente de $E$ a une sous-suite dans $A$",
+            "Il existe une suite $(a_n)$ dans $A$ convergeant vers un point de $E \\setminus A$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Un fermé contient toutes les limites de ses suites convergentes. Si une suite de $A$ converge vers $l$ et que $l$ n'est pas dans $A$, cela signifie que $l$ est sur la frontière ou dans le complémentaire, ce qui contredit la fermeture de $A$."
+    },
+    {
+        "uuid": "evn-021",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Un point $x$ est adhérent à $A$ si :",
+        "answers": [
+            "Toute boule ouverte de centre $x$ rencontre $A$",
+            "Il existe une boule ouverte centrée en $x$ incluse dans $A$",
+            "$x$ n'est pas dans le complémentaire de l'intérieur de $A$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-022",
+        "image_path": null,
+        "theme": "Densité",
+        "question": "Une partie $D$ est dense dans $E$ si :",
+        "answers": [
+            "$\\bar{D} = E$",
+            "L'intérieur de $D$ est $E$",
+            "$D$ est un ouvert de $E$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-023",
+        "image_path": null,
+        "theme": "Comparaison de normes",
+        "question": "On dit que $N_1$ est dominée par $N_2$ s'il existe $\\alpha > 0$ tel que :",
+        "answers": [
+            "$N_1 \\le \\alpha N_2$",
+            "$N_2 \\le \\alpha N_1$",
+            "$N_1 = \\alpha N_2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-024",
+        "image_path": null,
+        "theme": "Comparaison de normes",
+        "question": "Deux normes $N_1$ et $N_2$ sont équivalentes si :",
+        "answers": [
+            "Chacune est dominée par l'autre",
+            "Elles définissent les mêmes suites bornées uniquement",
+            "Leur rapport est constant"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-025",
+        "image_path": null,
+        "theme": "Dimension finie",
+        "question": "Dans un espace vectoriel de dimension finie :",
+        "answers": [
+            "Toutes les normes sont équivalentes",
+            "Seules les normes $p$ sont équivalentes",
+            "Les normes ne sont jamais équivalentes"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-026",
+        "image_path": null,
+        "theme": "Dimension finie",
+        "question": "En dimension finie, la convergence d'une suite de vecteurs équivaut à :",
+        "answers": [
+            "La convergence de chaque suite de coordonnées dans une base donnée",
+            "La convergence de la norme de la suite",
+            "Le fait que la suite soit bornée"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-027",
+        "image_path": null,
+        "theme": "Méthodologie",
+        "question": "Pour montrer que deux normes ne sont pas équivalentes en dimension infinie, on peut chercher :",
+        "answers": [
+            "Une suite qui converge pour l'une mais pas pour l'autre",
+            "Un vecteur dont la norme est nulle",
+            "Une base de l'espace"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-028",
+        "image_path": null,
+        "theme": "Exercice conceptuel",
+        "question": "Si $F$ est un sous-espace vectoriel ouvert d'un EVN $E$, alors :",
+        "answers": [
+            "$F = E$",
+            "$F = \\{0\\}$",
+            "$F$ est de dimension finie"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-029",
+        "image_path": null,
+        "theme": "Exercice conceptuel",
+        "question": "L'ensemble $GL_n(\\mathbb{K})$ est-il dense dans $M_n(\\mathbb{K})$ ?",
+        "answers": [
+            "Oui",
+            "Non, il est fermé",
+            "Seulement si $\\mathbb{K} = \\mathbb{C}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-030",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Dans $\\mathbb{R}$, l'ensemble $\\mathbb{Q}$ est :",
+        "answers": [
+            "Dense et d'intérieur vide",
+            "Fermé",
+            "Ouvert"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-031",
+        "image_path": null,
+        "theme": "Espaces de fonctions",
+        "question": "Sur $C([0,1], \\mathbb{R})$, la norme $||f||_1$ est-elle dominée par $||f||_\\infty$ ?",
+        "answers": [
+            "Oui, car $||f||_1 \\le ||f||_\\infty$",
+            "Non, c'est l'inverse",
+            "Elles sont équivalentes"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-032",
+        "image_path": null,
+        "theme": "Suites",
+        "question": "Si une suite admet deux sous-suites convergeant vers des limites différentes, alors :",
+        "answers": [
+            "La suite diverge",
+            "La suite converge vers la moyenne des limites",
+            "L'espace n'est pas normé"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-033",
+        "image_path": null,
+        "theme": "Polynômes",
+        "question": "Sur $\\mathbb{R}_n[X]$, toutes les normes sont équivalentes car :",
+        "answers": [
+            "C'est un espace de dimension finie",
+            "Les polynômes sont continus",
+            "Le degré est borné par $n$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-034",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "L'adhérence d'une partie $A$, notée $\\bar{A}$, est le plus petit :",
+        "answers": [
+            "Fermé contenant $A$",
+            "Ouvert contenant $A$",
+            "Convexe contenant $A$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-035",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "L'intérieur d'une partie $A$, noté $\\mathring{A}$, est le plus grand :",
+        "answers": [
+            "Ouvert inclus dans $A$",
+            "Fermé inclus dans $A$",
+            "Borné inclus dans $A$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-036",
+        "image_path": null,
+        "theme": "Suites",
+        "question": "Dans un EVN, l'unicité de la limite d'une suite convergente est garantie par :",
+        "answers": [
+            "La propriété de séparation de la norme",
+            "L'inégalité triangulaire",
+            "L'homogénéité"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-037",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Toute boule fermée $B_f(a, r)$ est un :",
+        "answers": [
+            "Fermé",
+            "Ouvert",
+            "Sous-espace vectoriel"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-038",
+        "image_path": null,
+        "theme": "Distance",
+        "question": "La distance associée à une norme vérifie la symétrie car :",
+        "answers": [
+            "$||x-y|| = ||-(y-x)|| = |-1| \\cdot ||y-x|| = ||y-x||$",
+            "La distance est toujours positive",
+            "L'espace est commutatif"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-039",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Dans $\\mathbb{R}^2$, le cercle unité $S((0,0), 1)$ est un :",
+        "answers": [
+            "Fermé",
+            "Ouvert",
+            "Convexe"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-040",
+        "image_path": null,
+        "theme": "Comparaison de normes",
+        "question": "Si $N_1 \\le \\alpha N_2$, alors toute partie bornée pour $N_2$ est :",
+        "answers": [
+            "Bornée pour $N_1$",
+            "Bornée pour toutes les normes",
+            "Ouverte pour $N_1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-041",
+        "image_path": null,
+        "theme": "Exercice conceptuel",
+        "question": "Soit $H$ un hyperplan d'un espace vectoriel normé $E$. Que peut-on dire de sa fermeture $\\overline{H}$ ?",
+        "answers": [
+            "$H$ est soit fermé, soit dense dans $E$",
+            "$H$ est toujours fermé dans $E$",
+            "$H$ est toujours dense dans $E$",
+            "$H$ n'a aucune propriété de densité particulière"
+        ],
+        "difficulty": 4,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Un hyperplan $H$ est le noyau d'une forme linéaire non nulle $f$. Si $f$ est continue, $H = f^{-1}(\\{0\\})$ est fermé. Si $f$ est discontinue, alors $H$ est dense dans $E$. Il n'y a pas d'alternative intermédiaire."
+    },
+    {
+        "uuid": "evn-042",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Dans tout espace vectoriel normé $(E, ||\\cdot||)$, l'ensemble vide $\\emptyset$ est :",
+        "answers": [
+            "À la fois ouvert et fermé",
+            "Uniquement ouvert",
+            "Uniquement fermé",
+            "Ni ouvert ni fermé"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par définition topologique, l'ensemble vide et l'espace entier $E$ sont les deux seuls ensembles à être simultanément ouverts et fermés (clopen). L'ensemble vide est ouvert car il contient ses points intérieurs (il n'en a pas) et fermé car son complémentaire $E$ est ouvert."
+    },
+    {
+        "uuid": "evn-043",
+        "image_path": null,
+        "theme": "Espaces de fonctions",
+        "question": "Sur l'espace $C([0,1], \\mathbb{R})$, soit la suite de fonctions $f_n(x) = x^n$. La suite $(f_n)$ converge-t-elle vers la fonction nulle pour la norme $||\\cdot||_1$ et la norme $||\\cdot||_\\infty$ ?",
+        "answers": [
+            "Uniquement pour la norme $||\\cdot||_1$",
+            "Uniquement pour la norme $||\\cdot||_\\infty$",
+            "Pour les deux normes",
+            "Pour aucune des deux"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Pour $||\\cdot||_1$, $\\int_0^1 x^n dx = 1/(n+1) \\to 0$. Pour $||\\cdot||_\\infty$, on a $\\sup_{[0,1]} |x^n| = 1$ pour tout $n$, donc $f_n$ ne converge pas vers $0$ (elle converge vers une fonction discontinue). La convergence $L^1$ n'implique pas la convergence uniforme."
+    },
+    {
+        "uuid": "evn-044",
+        "image_path": null,
+        "theme": "Bornitude",
+        "question": "Une application $f: X \\to E$ (où $X$ est un ensemble et $(E, ||\\cdot||)$ un EVN) est dite bornée si :",
+        "answers": [
+            "$\\exists R \\ge 0, \\forall x \\in X, ||f(x)|| \\le R$",
+            "$\\forall x \\in X, f(x)$ est un vecteur unitaire",
+            "L'image $f(X)$ est un sous-espace vectoriel de $E$",
+            "$\\exists R > 0, \\forall x \\in X, ||f(x)|| = R$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Dire qu'une fonction est bornée signifie que son image est une partie bornée de l'espace d'arrivée $E$, c'est-à-dire qu'elle est contenue dans une boule fermée de rayon fini $R$ centrée en l'origine."
+    },
+    {
+        "uuid": "evn-045",
+        "image_path": null,
+        "theme": "Convexité",
+        "question": "Soit $C$ une partie convexe d'un espace vectoriel normé $E$. Que peut-on dire de son adhérence $\\overline{C}$ ?",
+        "answers": [
+            "$\\overline{C}$ est toujours convexe",
+            "$\\overline{C}$ est un sous-espace vectoriel de $E$",
+            "$\\overline{C}$ n'est pas nécessairement convexe",
+            "$\\overline{C}$ est nécessairement compact"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La convexité est conservée par passage à l'adhérence. Si $x, y \\in \\overline{C}$, il existe des suites $(x_n)$ et $(y_n)$ dans $C$ convergeant vers $x$ et $y$. Par convexité, $(1-t)x_n + ty_n \\in C$, et par continuité des opérations, cela converge vers $(1-t)x + ty \\in \\overline{C}$."
+    },
+    {
+        "uuid": "evn-046",
+        "image_path": null,
+        "theme": "Normes usuelles",
+        "question": "Dans l'espace $\\mathbb{R}^2$ muni de la norme $||(x,y)||_1 = |x| + |y|$, quelle est la forme géométrique de la boule unité fermée $B_1(0, 1)$ ?",
+        "answers": [
+            "Un carré dont les sommets sont sur les axes $(\\pm 1, 0)$ et $(0, \\pm 1)$",
+            "Un carré dont les côtés sont parallèles aux axes",
+            "Un disque de rayon 1 centré à l'origine",
+            "Un hexagone régulier"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La condition $|x| + |y| \\le 1$ définit dans $\\mathbb{R}^2$ un losange (carré tourné) dont les sommets sont les points $(1,0), (-1,0), (0,1), (0,-1)$."
+    },
+    {
+        "uuid": "evn-047",
+        "image_path": null,
+        "theme": "Normes usuelles",
+        "question": "Dans l'espace $\\mathbb{R}^2$ muni de la norme $||(x,y)||_\\infty = \\max(|x|, |y|)$, quelle est la forme géométrique de la boule unité fermée $B_\\infty(0, 1)$ ?",
+        "answers": [
+            "Un carré dont les côtés sont parallèles aux axes",
+            "Un carré dont les sommets sont sur les axes",
+            "Un losange",
+            "Un disque de rayon 1"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La condition $\\max(|x|, |y|) \\le 1$ équivaut à $|x| \\le 1$ et $|y| \\le 1$. Cela définit un carré centré à l'origine, de côté 2, dont les côtés sont parallèles aux axes de coordonnées."
+    },
+    {
+        "uuid": "evn-048",
+        "image_path": null,
+        "theme": "Espaces de fonctions",
+        "question": "Dans l'étude des suites de fonctions, la 'norme de la convergence uniforme' correspond à laquelle des normes usuelles sur $C([a,b], \\mathbb{R})$ ?",
+        "answers": [
+            "La norme infinie $||\\cdot||_\\infty$",
+            "La norme euclidienne $||\\cdot||_2$",
+            "La norme intégrale $||\\cdot||_1$",
+            "La norme de la dérivée"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La convergence d'une suite $(f_n)$ vers $f$ au sens de la norme $||f_n - f||_\\infty = \\sup_{x\\in[a,b]} |f_n(x) - f(x)|$ est précisément la définition de la convergence uniforme sur $[a,b]$."
+    },
+    {
+        "uuid": "evn-049",
+        "image_path": null,
+        "theme": "Produit d'EVN",
+        "question": "Soient $E$ et $F$ deux EVN. Si $A$ est un fermé de $E$ et $B$ est un fermé de $F$, alors le produit cartésien $A \\times B$ est :",
+        "answers": [
+            "Un fermé de $E \\times F$",
+            "Un ouvert de $E \\times F$",
+            "Un fermé si et seulement si $E=F$",
+            "Ni ouvert ni fermé en général"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Dans un produit d'espaces normés, le produit de deux fermés est toujours fermé. Cela découle de la continuité de la projection canonique ou du fait que le complémentaire $(A \\times B)^c = (A^c \\times F) \\cup (E \\times B^c)$ est une réunion d'ouverts."
+    },
+    {
+        "uuid": "evn-050",
+        "image_path": null,
+        "theme": "Dimension finie",
+        "question": "Sur $\\mathbb{R}^n$, on a l'encadrement $||x||_\\infty \\le ||x||_2 \\le ||x||_1$. Quelle est l'inégalité de comparaison complète pour $||x||_1$ ?",
+        "answers": [
+            "$||x||_1 \\le \\sqrt{n} ||x||_2$",
+            "$||x||_1 \\le n ||x||_\\infty$",
+            "$||x||_1 \\le n^2 ||x||_\\infty$",
+            "$||x||_1 \\le \\sqrt{n} ||x||_\\infty$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "En utilisant l'inégalité de Cauchy-Schwarz, on montre $||x||_1 \\le \\sqrt{n} ||x||_2$. De plus, comme $|x_i| \\le ||x||_\\infty$, on a $|x_1| + ... + |x_n| \\le n ||x||_\\infty$, soit $||x||_1 \\le n ||x||_\\infty$."
+    },
+    {
+        "uuid": "evn-051",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Une partie $A$ est fermée si et seulement si :",
+        "answers": [
+            "$A = \\bar{A}$",
+            "$A = \\mathring{A}$",
+            "$A$ est bornée"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-052",
+        "image_path": null,
+        "theme": "Polynômes",
+        "question": "Sur $\\mathbb{K}[X]$, l'application $N(P) = \\sup_{t \\in [0,1]} |P(t) - P'(t)|$ est une norme. La séparation est assurée car :",
+        "answers": [
+            "L'équation $P - P' = 0$ a pour seule solution polynomiale $P=0$",
+            "Le degré diminue par dérivation",
+            "Les polynômes sont de dimension finie"
+        ],
+        "difficulty": 4,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-053",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Dans $\\mathbb{R}$, l'intervalle $[0, 1[$ est :",
+        "answers": [
+            "Ni ouvert ni fermé",
+            "Ouvert",
+            "Fermé"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-054",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "L'intersection d'une famille finie d'ouverts est :",
+        "answers": [
+            "Ouverte",
+            "Fermée",
+            "Pas forcément ouverte"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-055",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "La réunion d'une famille finie de fermés est :",
+        "answers": [
+            "Fermée",
+            "Ouverte",
+            "Compacte"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-056",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Si $x$ est un point adhérent à $A$, alors :",
+        "answers": [
+            "Il existe une suite d'éléments de $A$ convergeant vers $x$",
+            "$x$ appartient nécessairement à $A$",
+            "$x$ est un point intérieur de $A$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-057",
+        "image_path": null,
+        "theme": "Espaces de fonctions",
+        "question": "Sur $C([a,b], \\mathbb{K})$, l'application $f \\mapsto \\int_a^b |f|$ est une norme. La séparation utilise :",
+        "answers": [
+            "La continuité des fonctions",
+            "La linéarité de l'intégrale",
+            "La positivité de l'intégrale"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-058",
+        "image_path": null,
+        "theme": "Comparaison de normes",
+        "question": "Si deux normes sont équivalentes, elles définissent :",
+        "answers": [
+            "Les mêmes ouverts et les mêmes fermés",
+            "Les mêmes valeurs pour chaque vecteur",
+            "Le même produit scalaire"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-059",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Un singleton $\\{x\\}$ dans un EVN est toujours :",
+        "answers": [
+            "Un fermé",
+            "Un ouvert",
+            "Un sous-espace vectoriel"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-060",
+        "image_path": null,
+        "theme": "Convexité",
+        "question": "Le segment $[x, y]$ est défini par l'ensemble des points :",
+        "answers": [
+            "$(1-\\lambda)x + \\lambda y$ pour $\\lambda \\in [0,1]$",
+            "$(1-\\lambda)x + \\lambda y$ pour $\\lambda \\in \\mathbb{R}$",
+            "$x + \\lambda y$ pour $\\lambda \\in \\mathbb{R}_+$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-061",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Dans $\\mathbb{R}$, l'ensemble $\\mathbb{R} \\setminus \\mathbb{Q}$ est :",
+        "answers": [
+            "Dense",
+            "Fermé",
+            "Ouvert"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-062",
+        "image_path": null,
+        "theme": "Inégalités",
+        "question": "L'inégalité triangulaire généralisée s'écrit :",
+        "answers": [
+            "$||\\sum \\lambda_k x_k|| \\le \\sum |\\lambda_k| ||x_k||$",
+            "$||\\sum \\lambda_k x_k|| \\le \\sum \\lambda_k ||x_k||$",
+            "$||\\sum x_k|| = \\sum ||x_k||$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-063",
+        "image_path": null,
+        "theme": "Espaces de fonctions",
+        "question": "La norme 2 sur $C([a,b], \\mathbb{K})$ est définie par :",
+        "answers": [
+            "$\\sqrt{\\int_a^b |f(t)|^2 dt}$",
+            "$\\int_a^b |f(t)|^2 dt$",
+            "$\\sup |f(t)|^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-064",
+        "image_path": null,
+        "theme": "Polynômes",
+        "question": "Soit $P \\in \\mathbb{K}_n[X]$. L'application $||P|| = \\max_{1 \\le i \\le n+1} |P(a_i)|$ où les $a_i$ sont distincts est une norme car :",
+        "answers": [
+            "Un polynôme de degré $n$ ayant $n+1$ racines est nul",
+            "C'est une norme induite par $\\mathbb{K}^{n+1}$",
+            "Les polynômes sont de dimension finie"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-065",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Soit $F$ un sous-espace vectoriel de $E$. Son adhérence $\\bar{F}$ est :",
+        "answers": [
+            "Un sous-espace vectoriel de $E$",
+            "Toujours égal à $E$",
+            "Seulement un sous-ensemble convexe"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-066",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Si $F$ possède un point intérieur, alors $F = E$. Cette propriété est vraie si :",
+        "answers": [
+            "$F$ est un sous-espace vectoriel",
+            "$F$ est une partie quelconque",
+            "$F$ est borné"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-067",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "L'adhérence de la boule ouverte $B(a, r)$ est :",
+        "answers": [
+            "La boule fermée $B_f(a, r)$",
+            "La sphère $S(a, r)$",
+            "L'ensemble $\\{a\\}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-068",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "L'intérieur d'une boule fermée $B_f(a, r)$ (avec $r>0$) est :",
+        "answers": [
+            "La boule ouverte $B(a, r)$",
+            "La boule fermée elle-même",
+            "L'ensemble vide"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-069",
+        "image_path": null,
+        "theme": "Espaces de suites",
+        "question": "Dans $l^1$ (suites de somme des modules convergente), la norme est :",
+        "answers": [
+            "$||x||_1 = \\sum_{n=0}^{+\\infty} |x_n|$",
+            "$||x||_1 = \\sup |x_n|$",
+            "$||x||_1 = \\sqrt{\\sum |x_n|^2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-070",
+        "image_path": null,
+        "theme": "Densité",
+        "question": "L'ensemble des suites nulles à partir d'un certain rang est dense dans $l^1$ pour la norme $||\\cdot||_1$ ?",
+        "answers": [
+            "Oui",
+            "Non",
+            "Seulement pour la norme infinie"
+        ],
+        "difficulty": 4,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-071",
+        "image_path": null,
+        "theme": "Comparaison de normes",
+        "question": "Sur $\\mathbb{R}[X]$, les normes $||\\cdot||_1, ||\\cdot||_2, ||\\cdot||_\\infty$ (basées sur les coefficients) :",
+        "answers": [
+            "Ne sont pas équivalentes",
+            "Sont toutes équivalentes",
+            "Sont équivalentes deux à deux"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-072",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Une partie qui est à la fois ouverte et fermée dans un EVN $E$ est :",
+        "answers": [
+            "Nécessairement $\\emptyset$ ou $E$",
+            "Nécessairement un sous-espace vectoriel",
+            "Nécessairement bornée"
+        ],
+        "difficulty": 4,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-073",
+        "image_path": null,
+        "theme": "Distance",
+        "question": "Le diamètre d'une partie bornée $A$ est défini par :",
+        "answers": [
+            "$\\sup \\{d(x,y) : (x,y) \\in A^2\\}$",
+            "$\\max \\{||x|| : x \\in A\\}$",
+            "$2 \\times \\sup \\{||x-a|| : x \\in A\\}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-074",
+        "image_path": null,
+        "theme": "Distance",
+        "question": "Le diamètre de la boule $B(a, r)$ dans un EVN est :",
+        "answers": [
+            "$2r$",
+            "$r$",
+            "Dépend de la norme choisie"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-075",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Si $x \\in \\bar{A}$, quelle proposition est fausse ?",
+        "answers": [
+            "$x$ est nécessairement un point intérieur de $A$",
+            "$x$ peut être sur la frontière de $A$",
+            "Il existe une suite d'éléments de $A$ convergeant vers $x$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-076",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "L'ensemble $\\{x \\in E, ||x-a|| > r\\}$ est un :",
+        "answers": [
+            "Ouvert",
+            "Fermé",
+            "Borné"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-077",
+        "image_path": null,
+        "theme": "Espaces de fonctions",
+        "question": "Soit $E = C([0,1], \\mathbb{R})$. L'ensemble $F = \\{f \\in E, f(0) = f(1) = 0\\}$ est :",
+        "answers": [
+            "Un fermé pour la norme infinie",
+            "Un ouvert pour la norme infinie",
+            "Dense pour la norme infinie"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-078",
+        "image_path": null,
+        "theme": "Espaces de fonctions",
+        "question": "L'ensemble $F = \\{f \\in C([0,1], \\mathbb{R}), f(0) = f(1) = 0\\}$ est :",
+        "answers": [
+            "Dense pour la norme 1",
+            "Fermé pour la norme 1",
+            "Borné pour la norme 1"
+        ],
+        "difficulty": 4,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-079",
+        "image_path": null,
+        "theme": "Suites",
+        "question": "Si $(a_n) \\to l$, alors $||a_n - a_p||$ tend vers $0$ quand $n, p \\to +\\infty$. Cette propriété définit les suites de :",
+        "answers": [
+            "Cauchy",
+            "Bolzano",
+            "Weierstrass"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-080",
+        "image_path": null,
+        "theme": "Polynômes",
+        "question": "L'ensemble des polynômes scindés unitaires de degré $n$ est-il fermé dans $\\mathbb{R}_n[X]$ ?",
+        "answers": [
+            "Oui",
+            "Non",
+            "Seulement si toutes les racines sont réelles"
+        ],
+        "difficulty": 4,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-081",
+        "image_path": null,
+        "theme": "Comparaison de normes",
+        "question": "Dans un espace vectoriel normé $E$, deux normes $N_1$ et $N_2$ sont dites équivalentes si et seulement si elles définissent la même topologie. Cette condition est équivalente à :",
+        "answers": [
+            "Le fait qu'elles définissent les mêmes suites convergentes.",
+            "Le fait qu'elles définissent les mêmes suites de Cauchy.",
+            "Le fait que l'espace soit complet pour ces deux normes.",
+            "Le fait qu'elles soient toutes deux équivalentes à la norme infinie."
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "Par définition, deux normes sont équivalentes si elles induisent la même topologie. Or, dans un espace vectoriel normé, la topologie est entièrement caractérisée par la convergence des suites. Si $x_n \\to x$ pour $N_1$, alors $x_n \\to x$ pour $N_2$ (et réciproquement). L'équivalence des normes signifie qu'il existe $c, C > 0$ tels que $c N_1(x) \\leq N_2(x) \\leq C N_1(x)$, ce qui garantit la préservation des propriétés topologiques.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-082",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Soit $(E, \\langle \\cdot, \\cdot \\rangle)$ un espace préhilbertien. Pour toute partie $A \\subset E$, l'orthogonal $A^{\\perp} = \\{x \\in E, \\forall a \\in A, \\langle x, a \\rangle = 0\\} $ est toujours :",
+        "answers": [
+            "Un sous-espace vectoriel fermé de $E$.",
+            "Un sous-espace vectoriel ouvert de $E$.",
+            "Une partie bornée de $E$.",
+            "Un sous-espace vectoriel de dimension finie."
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "$A^{\\perp}$ est l'intersection des noyaux des formes linéaires continues $f_a: x \\mapsto \\langle x, a \\rangle$. Comme chaque noyau est un fermé (image réciproque du singleton $\\{0\\}$ par une application continue) et que l'intersection de fermés est fermée, $A^{\\perp}$ est nécessairement fermé. Ce n'est pas forcément borné (ex: $E^{\\perp} = \\{0\\}$ est borné, mais $\\{0\\}^{\\perp} = E$ ne l'est pas).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-083",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Soit $U$ une partie d'un espace vectoriel normé $E$. Par définition, $U$ est un ouvert si pour tout $x \\in U$, il existe un réel $r > 0$ tel que la boule ouverte $B(x, r)$ soit incluse dans $U$. Qu'en est-il de la boule fermée $B_f(x, r)$ ?",
+        "answers": [
+            "La condition est équivalente si on exige l'existence d'une boule fermée $B_f(x, r) \\subset U$.",
+            "La boule fermée ne permet jamais de définir un ouvert.",
+            "La boule fermée est toujours incluse dans $U$ pour tout ouvert.",
+            "La condition n'est vraie que si l'espace est de dimension finie."
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "Si $U$ est ouvert et $x \\in U$, il existe $r > 0$ tel que $B(x, r) \\subset U$. Si on prend $r' = r/2$, alors la boule fermée $B_f(x, r') = \\{y \\in E, ||y-x|| \\leq r/2\\}$ est incluse dans $B(x, r)$ et donc dans $U$. Ainsi, l'existence d'une boule fermée incluse dans $U$ est une caractérisation tout à fait valide des ouverts.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-084",
+        "image_path": null,
+        "theme": "Définitions",
+        "question": "Dans l'étude d'un espace vectoriel normé $(E, ||\\cdot||)$, la propriété $||-x|| = ||x||$ est une conséquence directe de :",
+        "answers": [
+            "L'homogénéité de la norme : $||\\lambda x|| = |\\lambda| \\cdot ||x||$ avec $\\lambda = -1$.",
+            "L'inégalité triangulaire : $||x+y|| \\leq ||x|| + ||y||$.",
+            "La séparation : $||x|| = 0 \\implies x = 0_E$.",
+            "La définition de la norme comme application de $E$ dans $\\mathbb{R}^+$."
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "La définition d'une norme impose l'homogénéité absolue : pour tout scalaire $\\lambda$ et tout vecteur $x$, $||\\lambda x|| = |\\lambda| \\cdot ||x||$. En posant $\\lambda = -1$, on obtient $||-x|| = |-1| \\cdot ||x|| = 1 \\cdot ||x|| = ||x||$. C'est une propriété fondamentale de symétrie des normes.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-085",
+        "image_path": null,
+        "theme": "Définitions",
+        "question": "Dans un espace vectoriel normé, un vecteur $x$ est dit unitaire si et seulement si :",
+        "answers": [
+            "$||x|| = 1$",
+            "$||x|| = 0$",
+            "$||x|| \\leq 1$",
+            "$||x|| > 0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "Par définition, un vecteur unitaire est un vecteur dont la norme est égale à l'unité (1) de l'espace des scalaires associé à la norme. L'ensemble des vecteurs unitaires forme la 'sphère unité' de l'espace vectoriel normé.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-086",
+        "image_path": null,
+        "theme": "Suites",
+        "question": "Pour démontrer qu'une suite $(u_n)_{n \\in \\mathbb{N}}$ diverge dans un espace vectoriel normé $E$, une méthode classique consiste à :",
+        "answers": [
+            "Montrer que la suite n'est pas de Cauchy (si $E$ est complet).",
+            "Montrer que la suite $(||u_n||)$ est bornée.",
+            "Montrer que la suite est alternée.",
+            "Montrer que la suite $(u_n)$ possède une sous-suite convergente."
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "Si un espace $E$ est complet (espace de Banach), une suite converge si et seulement si elle est de Cauchy. Par contraposée, si la suite n'est pas de Cauchy, elle diverge nécessairement. Les autres propositions sont des conditions nécessaires mais non suffisantes à la convergence (une suite bornée peut diverger, ex: $(-1)^n$ dans $\\mathbb{R}$).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-087",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Soient $A$ et $B$ deux parties d'un espace vectoriel normé. L'adhérence de la réunion de $A$ et $B$, notée $\\overline{A \\cup B}$, est égale à :",
+        "answers": [
+            "$\\overline{A} \\cup \\overline{B}$",
+            "$\\overline{A} \\cap \\overline{B}$",
+            "$\\overline{A \\cap B}$",
+            "$\\overline{A} + \\overline{B}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "L'adhérence commute avec la réunion finie : $\\overline{\\bigcup_{i=1}^n A_i} = \\bigcup_{i=1}^n \\overline{A_i}$. Cela est dû au fait que l'adhérence est le plus petit fermé contenant l'ensemble. Attention : cette propriété est fausse pour une réunion infinie de parties (ex: $\\bigcup_{n \\in \\mathbb{N}^*} [1/n, 1] = ]0, 1]$, alors que l'adhérence est $[0, 1]$).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-088",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Soient $A$ et $B$ deux parties d'un espace vectoriel normé. L'intérieur de l'intersection de $A$ et $B$, noté $\\mathring{A \\cap B}$, est égal à :",
+        "answers": [
+            "$\\mathring{A} \\cap \\mathring{B}$",
+            "$\\mathring{A} \\cup \\mathring{B}$",
+            "$\\mathring{A \\cup B}$",
+            "L'intérieur de $\\mathring{A} \\cup \\mathring{B}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "L'intérieur commute avec l'intersection finie : $\\mathring{\\bigcap_{i=1}^n A_i} = \\bigcap_{i=1}^n \\mathring{A_i}$. L'intérieur est le plus grand ouvert inclus dans l'ensemble. Si un point est intérieur à une intersection, il est intérieur à chaque ensemble, d'où le résultat.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-089",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Dans $\\mathbb{R}$ muni de la valeur absolue usuelle, quelle est l'adhérence de l'ensemble $A = ]0, 1] \\cup \\{2\\}$ ?",
+        "answers": [
+            "$[0, 1] \\cup \\{2\\}$",
+            "$[0, 2]$",
+            "$]0, 1] \\cup \\{2\\}$",
+            "$[0, 1]$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "L'adhérence d'une partie est la réunion de la partie et de ses points d'accumulation (ou points frontières). Pour $]0, 1]$, les points limites sont $0$ et $1$. Comme $1$ est déjà dans l'ensemble, il faut rajouter $0$. Le point isolé $\\{2\\}$ est déjà un fermé (car fini), donc il reste tel quel. L'adhérence est donc $[0, 1] \\cup \\{2\\}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-090",
+        "image_path": null,
+        "theme": "Comparaison de normes",
+        "question": "Soient $N_1$ et $N_2$ deux normes sur un espace vectoriel $E$. On dit que $N_1$ est plus fine que $N_2$ si :",
+        "answers": [
+            "La topologie définie par $N_1$ contient celle définie par $N_2$ (tous les ouverts de $N_2$ sont des ouverts de $N_1$).",
+            "La topologie définie par $N_1$ est plus petite que celle définie par $N_2$.",
+            "Les deux normes sont équivalentes.",
+            "La boule unité de $N_1$ est incluse dans la boule unité de $N_2$."
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "Une norme $N_1$ est plus fine que $N_2$ si toute suite convergeant pour $N_1$ converge aussi pour $N_2$. Cela revient à dire qu'il existe $C > 0$ tel que $N_2(x) \\leq C N_1(x)$. En termes topologiques, cela signifie que tout ouvert pour $N_2$ est un ouvert pour $N_1$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "evn-091",
+        "image_path": null,
+        "theme": "Espaces de fonctions",
+        "question": "Sur l'espace vectoriel $\\mathbb{R}[X]$, on considère les deux normes $N_1(P) = \\int_0^1 |P(t)| dt$ et $N_2(P) = \\int_0^2 |P(t)| dt$. Quelle est la relation entre ces deux normes ?",
+        "answers": [
+            "Elles sont équivalentes",
+            "$N_1$ est dominée par $N_2$, mais pas l'inverse",
+            "Elles sont indépendantes",
+            "Elles ne sont pas des normes sur $\\mathbb{R}[X]$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "En dimension finie, toutes les normes sont équivalentes. Ici, $\\mathbb{R}[X]$ n'est pas de dimension finie, mais on travaille sur un sous-espace vectoriel de dimension finie si l'on fixe le degré. Cependant, pour tout polynôme $P$, les normes intégrales sur des intervalles compacts distincts sont comparables. Par l'inégalité de la moyenne et le théorème de Borel-Lebesgue, il existe des constantes $c, C > 0$ telles que $c N_2(P) \\leq N_1(P) \\leq C N_2(P)$."
+    },
+    {
+        "uuid": "evn-092",
+        "image_path": null,
+        "theme": "Espaces de suites",
+        "question": "Sur l'espace des suites bornées $\\ell^{\\infty}(\\mathbb{R})$, l'application $N(x) = \\sup_{n \\in \\mathbb{N}} |a_n / 2^n|$ est :",
+        "answers": [
+            "Une norme sur $\\ell^{\\infty}$",
+            "Une semi-norme non séparée",
+            "Pas une norme car non homogène",
+            "Pas une norme car elle ne vérifie pas l'inégalité triangulaire"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "Pour vérifier qu'il s'agit d'une norme, on vérifie la séparation ($N(x)=0 \\implies x=0$ car $2^n$ est fini pour tout $n$), l'homogénéité ($N(\\lambda x) = |\\lambda|N(x)$) et l'inégalité triangulaire (héritée de la propriété du supremum). Comme la suite $(1/2^n)$ est bornée et strictement positive, cette application est bien définie et définit une norme équivalente à la norme infinie classique."
+    },
+    {
+        "uuid": "evn-093",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Dans le plan complexe $\\mathbb{C}$ muni de la topologie usuelle, l'ensemble $I = \\{z \\in \\mathbb{R} : 0 < z < 1\\}$ est-il un ouvert ?",
+        "answers": [
+            "Non, car aucune boule ouverte de $\\mathbb{C}$ n'y est incluse",
+            "Oui, car c'est un intervalle ouvert dans $\\mathbb{R}$",
+            "Oui, car c'est un fermé",
+            "Cela dépend de la norme choisie"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "Un ensemble $U$ est un ouvert de $\\mathbb{C}$ si pour tout $z \\in U$, il existe un disque $D(z, r) \\subset U$. Ici, pour tout $x \\in ]0, 1[$, tout disque $D(x, r)$ contient des points avec une partie imaginaire non nulle, qui ne sont pas dans $I$. Donc $I$ n'est pas ouvert dans $\\mathbb{C}$."
+    },
+    {
+        "uuid": "evn-094",
+        "image_path": null,
+        "theme": "Bornitude",
+        "question": "Si $A$ et $B$ sont deux parties bornées d'un espace vectoriel normé $(E, \\| \\cdot \\|)$, alors l'union $A \\cup B$ est :",
+        "answers": [
+            "Nécessairement bornée",
+            "Nécessairement fermée",
+            "Nécessairement convexe",
+            "Nécessairement ouverte"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "Une partie $S$ est bornée s'il existe $M$ tel que pour tout $x \\in S$, $\\|x\\| \\leq M$. Si $A \\subset B(0, R_A)$ et $B \\subset B(0, R_B)$, alors $A \\cup B \\subset B(0, \\max(R_A, R_B))$. L'union de deux bornés est donc bornée."
+    },
+    {
+        "uuid": "evn-095",
+        "image_path": null,
+        "theme": "Normes usuelles",
+        "question": "L'inégalité de Cauchy-Schwarz est fondamentale pour démontrer l'inégalité triangulaire de quelle norme ?",
+        "answers": [
+            "La norme euclidienne issue du produit scalaire",
+            "La norme infinie $\\| \\cdot \\|_{\\infty}$",
+            "La norme $L^1$",
+            "La norme discrète"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "La norme euclidienne est définie par $\\|x\\| = \\sqrt{\\langle x, x \\rangle}$. L'inégalité triangulaire $\\|x+y\\| \\leq \\|x\\| + \\|y\\|$ se démontre en élevant au carré et en utilisant l'inégalité de Cauchy-Schwarz : $\\langle x, y \\rangle \\leq \\|x\\| \\cdot \\|y\\|$."
+    },
+    {
+        "uuid": "evn-096",
+        "image_path": null,
+        "theme": "Inégalités",
+        "question": "La double inégalité triangulaire, $|\\|x\\| - \\|y\\|| \\leq \\|x-y\\|$, implique que l'application norme est :",
+        "answers": [
+            "1-Lipschitzienne (donc continue)",
+            "Uniformément discontinue",
+            "Une application linéaire",
+            "Une application dérivable partout"
+        ],
+        "difficulty": 3,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "La double inégalité triangulaire montre que $|\\|x\\| - \\|y\\|| \\leq 1 \\cdot \\|x-y\\|$. Par définition, cela signifie que la fonction norme est Lipschitzienne de rapport 1, ce qui entraîne sa continuité sur tout l'espace."
+    },
+    {
+        "uuid": "evn-097",
+        "image_path": null,
+        "theme": "Suites",
+        "question": "Dans un espace vectoriel normé, si une suite $(u_n)_{n \\in \\mathbb{N}}$ converge vers $l$, alors toute sous-suite extraite $(u_{\\phi(n)})_{n \\in \\mathbb{N}}$ :",
+        "answers": [
+            "Converge nécessairement vers $l$",
+            "Diverge vers l'infini",
+            "Converge vers une valeur différente",
+            "N'est pas forcément convergente"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "C'est une propriété fondamentale : si une suite converge, toute suite extraite converge vers la même limite. Le piège est de croire que la réciproque est vraie (ce qui est faux)."
+    },
+    {
+        "uuid": "evn-098",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Quelle est l'adhérence de l'ensemble des rationnels $\\mathbb{Q}$ dans $\\mathbb{R}$ muni de la topologie usuelle ?",
+        "answers": [
+            "L'ensemble $\\mathbb{R}$ tout entier",
+            "L'ensemble $\\mathbb{Q}$ lui-même",
+            "L'ensemble $\\mathbb{Z}$",
+            "L'ensemble vide"
+        ],
+        "difficulty": 1,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "La propriété de densité des rationnels dans les réels signifie que tout intervalle ouvert de $\\mathbb{R}$ contient au moins un rationnel. Par conséquent, $\\mathbb{Q}$ est dense dans $\\mathbb{R}$, soit $\\overline{\\mathbb{Q}} = \\mathbb{R}$."
+    },
+    {
+        "uuid": "evn-099",
+        "image_path": null,
+        "theme": "Méthodologie",
+        "question": "Pour démontrer qu'une partie $A$ d'un espace vectoriel normé est fermée, quelle méthode est la plus classique ?",
+        "answers": [
+            "Montrer que son complémentaire $E \\setminus A$ est un ouvert",
+            "Montrer que $A$ est incluse dans une boule fermée",
+            "Montrer que $A$ est un sous-espace vectoriel",
+            "Montrer que toute suite d'éléments de $A$ est bornée"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "Par définition topologique, un fermé est le complémentaire d'un ouvert. Une autre méthode très utilisée est de montrer que $A$ est stable par passage à la limite : si $(x_n)$ est une suite d'éléments de $A$ convergeant vers $l$, alors $l \\in A$."
+    },
+    {
+        "uuid": "evn-100",
+        "image_path": null,
+        "theme": "Généralités",
+        "question": "Soit $X$ un ensemble et $(E, \\| \\cdot \\|_E)$ un espace vectoriel normé. L'espace $\\mathcal{B}(X, E)$ des applications bornées de $X$ dans $E$, muni de la norme $\\|f\\|_{\\infty} = \\sup_{x \\in X} \\|f(x)\\|_E$, est un espace vectoriel normé si :",
+        "answers": [
+            "C'est toujours un espace vectoriel normé",
+            "Seulement si $X$ est un ensemble fini",
+            "Seulement si $E$ est de dimension finie",
+            "Seulement si $X$ est compact"
+        ],
+        "difficulty": 2,
+        "chapter": "Espaces vectoriels normés",
+        "correct_answer_index": 0,
+        "explication": "L'espace des fonctions bornées $\\mathcal{B}(X, E)$ est naturellement un espace vectoriel. La norme infinie $\\sup \\|f(x)\\|$ est bien définie pour toute fonction bornée. Cette structure ne nécessite aucune hypothèse de dimension sur $E$ ni de compacité sur $X$ pour exister."
+    }
+]

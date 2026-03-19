@@ -1,0 +1,1690 @@
+[
+    {
+        "uuid": "fluid-001",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Lagrangian_vs_eulerian.png",
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude cinématique d'un écoulement, quelle approche consiste à identifier et suivre une particule de fluide individuelle au cours de son mouvement dans l'espace ?",
+        "answers": [
+            "L'approche eulérienne, qui observe le champ en des points fixes",
+            "L'approche lagrangienne, qui suit la trajectoire des particules marquées",
+            "L'approche statistique, qui traite la moyenne des vitesses",
+            "L'approche thermodynamique, qui étudie l'équilibre local"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "L'approche lagrangienne se concentre sur une particule matérielle précise (comme si on suivait un bouchon dans l'eau). À l'inverse, l'approche eulérienne consiste à placer un capteur à un point fixe de l'espace et à mesurer les grandeurs du fluide qui traverse ce point.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-002",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans la description eulérienne d'un champ de vitesse $\\vec{v}(\\vec{M}, t)$ en mécanique des fluides, de quelles variables dépendent généralement les grandeurs physiques ?",
+        "answers": [
+            "Uniquement du temps $t$",
+            "Uniquement de la position $\\vec{M}$",
+            "De la position $\\vec{M}$ et du temps $t$",
+            "Des coordonnées de la particule initiale $\\vec{M}_0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "explication": "La description eulérienne est un champ : on définit la valeur d'une grandeur (vitesse, pression, masse volumique) en chaque point $\\vec{M}$ de l'espace et à chaque instant $t$. Le choix des variables $\\vec{M}$ et $t$ est fondamental.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-003",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En mécanique des fluides, comment qualifie-t-on un écoulement où le champ des vitesses $\\vec{v}$ ne dépend pas explicitement du temps, c'est-à-dire $\\frac{\\partial \\vec{v}}{\\partial t} = \\vec{0}$ ?",
+        "answers": [
+            "Écoulement uniforme",
+            "Écoulement permanent (ou stationnaire)",
+            "Écoulement incompressible",
+            "Écoulement laminaire"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Par définition, un écoulement est dit permanent ou stationnaire si les caractéristiques du fluide en un point fixe donné de l'espace ne changent pas au cours du temps. Un écoulement peut être stationnaire et non-uniforme (vitesse différente selon le point).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-004",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Streamlines_and_equipotentials.svg",
+        "theme": "mécanique des fluides",
+        "question": "En cinématique des fluides, par définition, une ligne de courant à un instant $t$ donné est une courbe qui est en tout point :",
+        "answers": [
+            "Parallèle au vecteur accélération $\\vec{a}$",
+            "Tangente au vecteur vitesse $\\vec{v}$",
+            "Normale au vecteur vitesse $\\vec{v}$",
+            "Parallèle au gradient de pression $\\vec{grad} p$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "La ligne de courant est définie comme une ligne dont la tangente en tout point est dirigée par le vecteur vitesse $\\vec{v}$ à l'instant $t$. L'équation différentielle est $\\vec{dl} \\wedge \\vec{v} = \\vec{0}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-005",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Sous quelle condition mathématique et physique les lignes de courant sont-elles confondues avec les trajectoires des particules de fluide ?",
+        "answers": [
+            "Si l'écoulement est irrotationnel ($\\vec{rot} \\vec{v} = \\vec{0}$)",
+            "Si l'écoulement est incompressible ($\\text{div} \\vec{v} = 0$)",
+            "Si l'écoulement est stationnaire ($\\frac{\\partial \\vec{v}}{\\partial t} = \\vec{0}$)",
+            "Si l'écoulement est unidimensionnel"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "explication": "Si l'écoulement est stationnaire, le champ de vitesse $\\vec{v}$ ne dépend pas du temps. Par conséquent, les lignes de courant (définies par $\\vec{v}$) sont fixes dans le temps et coïncident avec les trajectoires réelles des particules fluides.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-006",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'expression correcte de la dérivée particulaire (ou lagrangienne) de la vitesse $\\frac{D\\vec{v}}{Dt}$ en coordonnées eulériennes ?",
+        "answers": [
+            "$\\frac{\\partial\\vec{v}}{\\partial t} + (\\vec{v}\\cdot\\vec{grad})\\vec{v}$",
+            "$\\frac{\\partial\\vec{v}}{\\partial t} + \\vec{grad}(\\frac{v^2}{2})$",
+            "$(\\vec{v}\\cdot\\vec{grad})\\vec{v}$",
+            "$\\frac{\\partial\\vec{v}}{\\partial t} + \\vec{v} \\times \\vec{rot} \\vec{v}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "explication": "La dérivée particulaire représente la variation de vitesse d'une particule au cours de son mouvement. Elle se compose de la variation temporelle au point considéré (dérivée locale) et de la variation spatiale due au déplacement de la particule vers une zone de vitesse différente (terme convectif).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-007",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'expression de l'accélération particulaire, comment nomme-t-on physiquement le terme $(\\vec{v}\\cdot\\vec{grad})\\vec{v}$ ?",
+        "answers": [
+            "Accélération locale",
+            "Accélération convective",
+            "Accélération centripète",
+            "Accélération de Coriolis"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Le terme $(\\vec{v}\\cdot\\vec{grad})\\vec{v}$ est l'accélération convective. Elle traduit le fait qu'une particule accélère (ou décélère) simplement en changeant de position dans un champ de vitesse inhomogène dans l'espace.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-008",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si un écoulement est dit stationnaire, que peut-on affirmer concernant la dérivée locale de la vitesse $\\frac{\\partial\\vec{v}}{\\partial t}$ ?",
+        "answers": [
+            "Elle est nulle partout dans le domaine d'écoulement",
+            "Elle est égale à l'accélération convective",
+            "Elle dépend uniquement de la position",
+            "Elle est égale à la dérivée particulaire"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "explication": "Par définition, un écoulement stationnaire implique une invariance temporelle : la dérivée locale $\\frac{\\partial}{\\partial t}$ de n'importe quelle propriété du fluide (vitesse, pression, masse volumique) est nulle en tout point de l'espace.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-009",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'unité du débit massique $D_m$ dans le Système International ?",
+        "answers": [
+            "$m^3 \\cdot s^{-1}$",
+            "$kg \\cdot m^{-3}$",
+            "$kg \\cdot s^{-1}$",
+            "$N \\cdot s^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "explication": "Le débit massique correspond à la masse de fluide traversant une surface par unité de temps. Son unité est donc le quotient d'une masse par un temps, soit le kilogramme par seconde ($kg \\cdot s^{-1}$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-010",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la relation générale liant le débit massique $D_m$ à travers une surface $S$ au vecteur densité de courant de masse $\\vec{j}_m = \\rho \\vec{v}$ ?",
+        "answers": [
+            "$D_m = \\iint_S \\vec{j}_m \\cdot \\vec{dS}$",
+            "$D_m = \\rho \\vec{v} \\cdot S$",
+            "$D_m = \\text{div}(\\vec{j}_m)$",
+            "$D_m = \\iint_S \\vec{j}_m \\wedge \\vec{dS}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "explication": "Le débit massique est le flux du vecteur densité de courant de masse $\\vec{j}_m = \\rho \\vec{v}$ à travers la surface $S$. La deuxième proposition n'est vraie que si le champ de vitesse et la masse volumique sont uniformes sur une surface plane.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-011",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude cinématique des milieux continus, un écoulement est dit incompressible si la masse volumique $\\rho$ de chaque particule de fluide :",
+        "answers": [
+            "Est uniforme dans tout l'espace ($\\vec{grad}(\\rho) = \\vec{0}$)",
+            "Reste constante au cours du temps pour cette particule ($\\frac{D\\rho}{Dt} = 0$)",
+            "Est nulle ($\\rho = 0$)",
+            "Est proportionnelle à la pression locale"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Par définition, l'incompressibilité signifie que la masse volumique d'une particule fluide ne varie pas lors de son mouvement. Mathématiquement, cela se traduit par une dérivée particulaire nulle : $\\frac{D\\rho}{Dt} = 0$. Il ne faut pas confondre avec l'homogénéité (uniformité dans l'espace) qui n'est pas requise pour l'incompressibilité.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-012",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement incompressible de masse volumique $\\rho_0$ constante, quelle relation lie le débit massique $D_m$ au débit volumique $D_v$ ?",
+        "answers": [
+            "$D_m = \\frac{D_v}{\\rho_0}$",
+            "$D_v = \\rho_0 D_m$",
+            "$D_m = \\rho_0 D_v$",
+            "$D_m = \\rho_0^2 D_v$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "explication": "Le débit massique correspond à la masse traversant une section par unité de temps : $D_m = \\iint_S \\rho \\vec{v} \\cdot d\\vec{S}$. Si le fluide est incompressible, $\\rho = \\rho_0$ est constant, d'où $D_m = \\rho_0 \\iint_S \\vec{v} \\cdot d\\vec{S} = \\rho_0 D_v$. L'erreur classique est d'inverser le rôle de la masse volumique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-013",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'équation locale de conservation de la masse (équation de continuité) pour un fluide en écoulement 3D ?",
+        "answers": [
+            "$\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\rho\\vec{v}) = 0$",
+            "$\\text{div}(\\vec{v}) = 0$",
+            "$\\frac{\\partial \\rho}{\\partial t} + \\vec{v}\\cdot\\vec{grad}(\\rho) = 0$",
+            "$\\text{div}(\\rho\\vec{v}) = \\text{constante}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "explication": "L'équation de continuité exprime la conservation de la masse : la variation locale de masse volumique est compensée par le flux sortant de matière. La forme générale est $\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\rho\\vec{v}) = 0$. La réponse $\\text{div}(\\vec{v}) = 0$ n'est vraie que pour un fluide incompressible.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-014",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement stationnaire ($\frac{\\partial}{\\partial t} = 0$), que devient le flux de masse $\\Phi_m = \\iint_S \\rho \\vec{v} \\cdot d\\vec{S}$ à travers une surface fermée $S$ ?",
+        "answers": [
+            "Il est proportionnel au volume contenu",
+            "Il est nul",
+            "Il dépend de la pression à la frontière",
+            "Il est égal à la dérivée temporelle de la masse"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "D'après le théorème de Green-Ostrogradski et l'équation de continuité, le flux sortant de masse à travers une surface fermée est égal à $-\\iiint_V \\frac{\\partial \\rho}{\\partial t} d\\tau$. En régime stationnaire, $\\frac{\\partial \\rho}{\\partial t} = 0$, donc le flux sortant est nul (la masse entrante est égale à la masse sortante).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-015",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans un tube de courant en régime stationnaire, comment évolue le débit massique entre deux sections $S_1$ et $S_2$ traversées par le fluide ?",
+        "answers": [
+            "Il augmente si la section diminue pour maintenir la pression",
+            "Il diminue si la section diminue à cause des frottements",
+            "Il reste identique ($D_{m1} = D_{m2}$)",
+            "Il est inversement proportionnel aux vitesses $v_1$ et $v_2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "explication": "Le tube de courant est une surface de courant, donc aucun fluide ne traverse ses parois latérales. En régime stationnaire, la conservation de la masse impose que tout ce qui entre par $S_1$ ressort par $S_2$ sans accumulation, d'où $D_{m1} = D_{m2}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-016",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la conséquence directe du resserrement des lignes de courant ($S_2 < S_1$) dans un tube de courant pour un écoulement incompressible en régime stationnaire ?",
+        "answers": [
+            "La vitesse du fluide diminue ($v_2 < v_1$)",
+            "La vitesse du fluide augmente ($v_2 > v_1$)",
+            "La pression augmente nécessairement ($P_2 > P_1$)",
+            "Le débit volumique diminue"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Pour un fluide incompressible, $D_v = S_1 v_1 = S_2 v_2$. Si la section $S$ diminue, la vitesse $v$ doit nécessairement augmenter pour conserver le débit. C'est l'effet Venturi (couplé à la conservation de l'énergie, cela entraîne une baisse de pression).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-017",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement incompressible et homogène, quelle est la condition mathématique portant sur le champ de vitesse $\\vec{v}$ ?",
+        "answers": [
+            "$\\text{div}(\\vec{v}) > 0$",
+            "$\\text{div}(\\vec{v}) = 0$",
+            "$\\text{rot}(\\vec{v}) = \\vec{0}$",
+            "$\\Delta \\vec{v} = \\vec{0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "L'incompressibilité se traduit par $\\text{div}(\\vec{v}) = 0$. Le champ est alors dit « à flux conservatif ». Attention, $\\text{rot}(\\vec{v}) = \\vec{0}$ caractérise un écoulement irrotationnel, ce qui est une propriété différente (non liée à l'incompressibilité).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-018",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si le débit de la Seine est de $D_v = 300\\,m^3\\cdot s^{-1}$, sa largeur $L = 200\\,m$ et la vitesse moyenne $v = 3\\,km\\cdot h^{-1}$, quelle est la profondeur moyenne $h$ approximative ?",
+        "answers": [
+            "$0,5\\,m$",
+            "$1,8\\,m$",
+            "$5,2\\,m$",
+            "$12\\,m$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "On utilise $D_v = S \\times v$ avec $S = L \\times h$. D'abord, convertir la vitesse : $3\\,km/h = 3000/3600 \\approx 0,833\\,m/s$. On a $h = D_v / (L \\times v) = 300 / (200 \\times 0,833) = 300 / 166,6 \\approx 1,8\\,m$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-019",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pourquoi le diamètre d'un filet d'eau diminue-t-il continûment en tombant verticalement d'un robinet (en régime stationnaire) ?",
+        "answers": [
+            "À cause de la tension superficielle qui resserre le jet",
+            "La vitesse augmente par accélération gravitationnelle, donc la section diminue pour conserver le débit",
+            "La pression atmosphérique extérieure est supérieure à la pression interne",
+            "Le fluide s'évapore au contact de l'air"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "En négligeant la tension superficielle et la viscosité, la conservation du débit massique implique $S(z)v(z) = \\text{constante}$. Comme le fluide accélère sous l'effet de la pesanteur ($v(z)$ augmente), la section $S(z)$ doit diminuer pour compenser.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-020",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans un écoulement de Poiseuille dans une conduite cylindrique de rayon $R$, avec un profil de vitesse $v(r) = v_0(1 - \\frac{r^2}{R^2})$, le débit volumique $D_v$ vaut :",
+        "answers": [
+            "$v_0 \\pi R^2$",
+            "$\\frac{1}{2} v_0 \\pi R^2$",
+            "$\\frac{1}{4} v_0 \\pi R^2$",
+            "$\\frac{1}{8} v_0 \\pi R^2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Le débit est $D_v = \\int_0^R v(r) \\cdot 2\\pi r dr$. En intégrant : $D_v = 2\\pi v_0 \\int_0^R (r - \\frac{r^3}{R^2}) dr = 2\\pi v_0 [\\frac{r^2}{2} - \\frac{r^4}{4R^2}]_0^R = 2\\pi v_0 (\\frac{R^2}{2} - \\frac{R^2}{4}) = 2\\pi v_0 \\frac{R^2}{4} = \\frac{1}{2} v_0 \\pi R^2$."
+    },
+    {
+        "uuid": "fluid-021",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 3,
+        "question": "Dans le cadre de l'étude d'un écoulement de Poiseuille dans une conduite cylindrique de rayon $R$, le profil de vitesse est parabolique : $v(r) = v_0 (1 - r^2/R^2)$. Quelle est la vitesse moyenne (ou uniforme équivalente) $v_{moy}$ correspondant au même débit volumique ?",
+        "answers": [
+            "$v_{moy} = v_0$",
+            "$v_{moy} = v_0 / 2$",
+            "$v_{moy} = v_0 / \\sqrt{2}$",
+            "$v_{moy} = v_0 / 4$"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le débit volumique est donné par $Q = \\int_0^R v(r) \\cdot 2\\pi r dr$. En intégrant $v_0(1-r^2/R^2)$, on obtient $Q = \\pi R^2 v_0 / 2$. Par définition, le débit est aussi $Q = v_{moy} \\cdot \\pi R^2$. En identifiant, on trouve $v_{moy} = v_0 / 2$. L'erreur classique est de confondre la valeur moyenne avec la valeur maximale ou de mal intégrer sur la section."
+    },
+    {
+        "uuid": "fluid-022",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 4,
+        "question": "Dans un modèle de tornade stationnaire en coordonnées cylindriques défini par $\\vec{v} = v_\\theta(r) \\vec{e}_\\theta$, quelle condition est nécessaire et suffisante pour que l'écoulement soit incompressible ?",
+        "answers": [
+            "$\\frac{\\partial v_\\theta}{\\partial \\theta} = 0$",
+            "Le champ de vitesse doit être tel que $\\text{div}(\\vec{v}) = 0$. Ici, cela impose $v_r = 0$ et $v_\\theta$ ne dépend que de $r$.",
+            "$\\text{rot}(\\vec{v}) = \\vec{0}$ (écoulement irrotationnel)",
+            "Le nombre de Mach doit être inférieur à $0,3$ dans tout le champ."
+        ],
+        "correct_answer_index": 1,
+        "explication": "La condition d'incompressibilité est $\\text{div}(\\vec{v}) = 0$. En coordonnées cylindriques : $\\text{div}(\\vec{v}) = \\frac{1}{r}\\frac{\\partial(r v_r)}{\\partial r} + \\frac{1}{r}\\frac{\\partial v_\\theta}{\\partial \\theta} + \\frac{\\partial v_z}{\\partial z}$. Avec $\\vec{v} = v_\\theta(r) \\vec{e}_\\theta$, le terme $\\frac{1}{r}\\frac{\\partial v_\\theta}{\\partial \\theta}$ est nul car $v_\\theta$ ne dépend pas de $\\theta$. Le terme en $v_r$ est nul, donc la condition est toujours satisfaite quel que soit $v_\\theta(r)$."
+    },
+    {
+        "uuid": "fluid-023",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "L'opérateur de transport $(\\vec{v}\\cdot\\vec{grad})$ agissant sur un champ scalaire $f$ (où $f$ est une fonction de $x, y, z$ et $t$) produit quel type de grandeur ?",
+        "answers": [
+            "Un vecteur résultant du produit scalaire",
+            "Un scalaire représentant la contribution de l'advection spatiale",
+            "Un tenseur d'ordre 2",
+            "Un scalaire proportionnel à la dérivée temporelle"
+        ],
+        "correct_answer_index": 1,
+        "explication": "L'opérateur $(\\vec{v}\\cdot\\vec{grad})$ est un scalaire car il s'agit d'un produit scalaire entre un vecteur ($\\vec{v}$) et un opérateur vectoriel ($\\vec{\\nabla}$). Appliqué à une fonction scalaire $f$, il donne la dérivée directionnelle de $f$ le long de la ligne de courant : $\\vec{v}\\cdot\\vec{\\nabla}f = v_x \\frac{\\partial f}{\\partial x} + v_y \\frac{\\partial f}{\\partial y} + v_z \\frac{\\partial f}{\\partial z}$."
+    },
+    {
+        "uuid": "fluid-024",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Quelle condition physique fondamentale permet de modéliser un écoulement gazeux comme étant incompressible dans les équations de Navier-Stokes ?",
+        "answers": [
+            "Le gaz doit être à haute température pour négliger les interactions moléculaires",
+            "L'écoulement doit être à bas nombre de Mach ($Ma < 0,3$), garantissant des variations de masse volumique négligeables",
+            "Le gaz doit être un gaz parfait suivant l'équation d'état $PV=nRT$",
+            "La pression doit être constante dans tout le domaine spatial"
+        ],
+        "correct_answer_index": 1,
+        "explication": "L'incompressibilité n'est pas une propriété intrinsèque du fluide, mais une approximation de l'écoulement. Si la vitesse est faible devant la célérité du son ($c$), les variations de pression $\\Delta P \\approx \\rho v^2$ n'entraînent pas de variations significatives de $\\rho$ ($\\Delta \\rho / \\rho \\approx Ma^2$). Pour $Ma < 0,3$, $Ma^2 < 0,1$, ce qui justifie l'hypothèse $\\text{div}(\\vec{v}) = 0$."
+    },
+    {
+        "uuid": "fluid-025",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Dans le cadre de l'approximation du milieu continu, comment définir un volume mésoscopique $d\\tau$ ?",
+        "answers": [
+            "Un volume contenant une unique molécule pour définir sa vitesse propre",
+            "Un volume total de l'écoulement permettant de calculer le débit massique global",
+            "Un volume contenant un nombre de molécules assez grand pour définir des grandeurs locales moyennes, mais petit devant l'échelle des variations macroscopiques",
+            "Un volume infinitésimal mathématique $dV \\to 0$"
+        ],
+        "correct_answer_index": 2,
+        "explication": "Le milieu continu repose sur l'existence d'une échelle intermédiaire. Si le volume est trop petit, les fluctuations statistiques sont trop grandes (on voit les molécules). S'il est trop grand, on perd la finesse des variations spatiales de pression ou de vitesse. La physique statistique justifie l'existence de cette échelle mésoscopique."
+    },
+    {
+        "uuid": "fluid-026",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Par définition, comment nomme-t-on la surface géométrique constituée par l'ensemble des lignes de courant s'appuyant sur un contour fermé ?",
+        "answers": [
+            "Une surface d'onde propagative",
+            "Un tube de courant",
+            "Une surface de niveau de pression",
+            "Un filet de courant"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Par définition, les lignes de courant sont tangentes à la vitesse $\\vec{v}$. Un tube de courant est la surface formée par ces lignes. Comme $\\vec{v} \\cdot \\vec{n} = 0$ sur cette surface, le fluide ne traverse pas la paroi du tube, ce qui permet de définir un débit conservé à l'intérieur."
+    },
+    {
+        "uuid": "fluid-027",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "La dérivée particulaire (ou matérielle) d'une grandeur scalaire $f$ s'écrit $\\frac{Df}{Dt} = \\frac{\\partial f}{\\partial t} + (\\vec{v}\\cdot\\vec{\\nabla})f$. Que représente physiquement le terme $(\\vec{v}\\cdot\\vec{\\nabla})f$ ?",
+        "answers": [
+            "La variation temporelle locale de $f$ en un point fixe de l'espace",
+            "La variation de $f$ subie par une particule fluide due à son déplacement dans un champ spatialement non uniforme",
+            "La variation de $f$ liée exclusivement à la compressibilité du fluide",
+            "La vitesse de propagation de l'information dans le fluide"
+        ],
+        "correct_answer_index": 1,
+        "explication": "La dérivée particulaire suit la particule dans son mouvement. Elle se décompose en la variation temporelle au point considéré (Euler) et la variation spatiale due au fait que la particule change de position et donc de milieu ambiant (advection). C'est le terme convectif."
+    },
+    {
+        "uuid": "fluid-028",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 3,
+        "question": "Dans l'équation de conservation de la masse (équation de continuité) sous la forme locale $\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\rho\\vec{v}) = 0$, que représente physiquement le terme $\\text{div}(\\rho\\vec{v})$ ?",
+        "answers": [
+            "La variation temporelle de la masse volumique en un point",
+            "Le flux net de masse sortant par unité de volume, traduisant le transport de matière",
+            "La création de masse par des sources internes (invalide en mécanique classique)",
+            "La force d'inertie volumique exercée par le fluide"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le théorème de flux-divergence appliqué à un petit volume de contrôle montre que le flux net de masse sortant à travers la surface est $\\iint \\rho \\vec{v} \\cdot d\\vec{S} = \\iiint \\text{div}(\\rho \\vec{v}) d\\tau$. C'est donc la quantité de matière qui quitte (ou entre dans) le volume par unité de temps."
+    },
+    {
+        "uuid": "fluid-029",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 3,
+        "question": "Soit un écoulement défini par le champ de vitesse $\\vec{v} = a x \\vec{e}_x - a y \\vec{e}_y$ où $a$ est une constante. Cet écoulement est-il incompressible ?",
+        "answers": [
+            "Oui, car la divergence $\\text{div}(\\vec{v}) = \\frac{\\partial v_x}{\\partial x} + \\frac{\\partial v_y}{\\partial y} = a - a = 0$",
+            "Non, car le champ de vitesse dépend explicitement des coordonnées spatiales $x$ et $y$",
+            "Seulement si $a=0$, sinon le fluide s'accélère",
+            "Cela dépend de la masse volumique $\\rho$ du fluide qui n'est pas donnée"
+        ],
+        "correct_answer_index": 0,
+        "explication": "La condition d'incompressibilité est $\\text{div}(\\vec{v}) = 0$. Ici, $\\frac{\\partial v_x}{\\partial x} = a$ et $\\frac{\\partial v_y}{\\partial y} = -a$. La somme est bien nulle. Cet écoulement est un écoulement de stagnation classique. Une erreur courante est de croire qu'une dépendance spatiale implique nécessairement une compressibilité."
+    },
+    {
+        "uuid": "fluid-030",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "En mécanique des fluides, si la vitesse macroscopique $\\vec{v}$ d'une particule fluide en un point donné est nulle, cela signifie-t-il que les molécules constituant cette particule sont au repos ?",
+        "answers": [
+            "Oui, la vitesse de la particule est par définition la vitesse de ses constituants",
+            "Non, la vitesse $\\vec{v}$ est une vitesse moyenne locale. Les molécules conservent une agitation thermique aléatoire dont la résultante vectorielle est nulle.",
+            "Cela signifie que la pression en ce point est nulle",
+            "Oui, car la particule fluide est un objet macroscopique sans mouvement interne"
+        ],
+        "correct_answer_index": 1,
+        "explication": "La vitesse $\\vec{v}$ définie dans les équations de Navier-Stokes est la vitesse barycentrique locale. À l'échelle microscopique, les molécules sont toujours en mouvement (agitation thermique). Le fait que $\\vec{v}=0$ indique seulement que le milieu n'a pas de mouvement d'ensemble net à cet instant et en ce lieu."
+    },
+    {
+        "uuid": "fluid-031",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude d'un écoulement stationnaire, que vaut le débit volumique $D_v$ à travers une surface $S$ strictement parallèle aux lignes de courant ?",
+        "answers": [
+            "La valeur maximale du débit local",
+            "Zéro, car le vecteur vitesse est partout tangent à la surface",
+            "Le produit $\\rho D_m$",
+            "Une valeur proportionnelle à la vitesse moyenne"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Par définition, le débit volumique est le flux du vecteur vitesse : $D_v = \\iint_S \\vec{v} \\cdot d\\vec{S}$. Si la surface est parallèle aux lignes de courant, le vecteur vitesse $\\vec{v}$ est en tout point tangent à la surface, donc perpendiculaire au vecteur surface $d\\vec{S}$. Ainsi, le produit scalaire $\\vec{v} \\cdot d\\vec{S}$ est nul en tout point de $S$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-032",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un fluide parfait, incompressible, s'écoule en régime permanent dans une conduite horizontale dont la section $S$ double entre l'amont et l'aval. D'après l'équation de continuité, comment évolue la vitesse moyenne $v$ ?",
+        "answers": [
+            "Elle est multipliée par 2",
+            "Elle est inchangée",
+            "Elle est divisée par 2",
+            "Elle est divisée par 4"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "explication": "En régime permanent incompressible, la conservation de la masse impose la conservation du débit volumique : $D_v = S_1 v_1 = S_2 v_2$. Si la section double ($S_2 = 2 S_1$), alors la vitesse doit être divisée par deux ($v_2 = v_1 / 2$) pour maintenir le produit $S \times v$ constant.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-033",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour visualiser expérimentalement les lignes de courant dans un écoulement permanent, laquelle de ces méthodes est classiquement utilisée en laboratoire de mécanique des fluides ?",
+        "answers": [
+            "L'injection de filets colorés ou de fumée (traceurs passifs)",
+            "L'utilisation d'un baromètre de précision",
+            "L'usage exclusif de solveurs numériques de Navier-Stokes",
+            "La mesure de la pression statique en chaque point"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "explication": "Les lignes de courant sont des courbes tangentes au vecteur vitesse en tout point. En régime permanent, elles coïncident avec les trajectoires des particules. L'injection de traceurs (colorants dans l'eau, fumée dans l'air) permet de matérialiser ces lignes, tandis qu'un baromètre ne mesure que la pression en un point et ne donne aucune information directionnelle.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-034",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'expression correcte de l'accélération $\\vec{a}$ d'une particule fluide dans le champ de vitesse eulérien $\\vec{v}(\\vec{r}, t)$ ?",
+        "answers": [
+            "La dérivée partielle temporelle $\\frac{\\partial\\vec{v}}{\\partial t}$",
+            "La dérivée particulaire $\\frac{D\\vec{v}}{Dt} = \\frac{\\partial\\vec{v}}{\\partial t} + (\\vec{v} \\cdot \\vec{\\nabla})\\vec{v}$",
+            "La divergence de la vitesse $\\text{div}(\\vec{v})$",
+            "Le rotationnel $\\vec{\\text{rot}}(\\vec{v})$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "En mécanique des fluides, on utilise le formalisme eulérien. L'accélération d'une particule fluide tient compte de la variation temporelle locale $\\frac{\\partial\\vec{v}}{\\partial t}$ et de la variation spatiale due au mouvement de la particule dans le champ de vitesse $(\\vec{v} \\cdot \\vec{\\nabla})\\vec{v}$, ce qui constitue la dérivée particulaire.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-035",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'expression correcte de la divergence en coordonnées cylindriques $(r, \\theta, z)$ pour un champ de vitesse radial $\\vec{v} = v_r(r)\\vec{e}_r$ ?",
+        "answers": [
+            "$\\frac{\\partial v_r}{\\partial r}$",
+            "$\\frac{1}{r} \\frac{d(r v_r)}{dr}$",
+            "$\\frac{d^2 v_r}{dr^2}$",
+            "$\\frac{\\partial v_r}{\\partial r} + \\frac{v_r}{r^2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "La divergence d'un vecteur $\\vec{A}$ en coordonnées cylindriques est donnée par $\\text{div}(\\vec{A}) = \\frac{1}{r} \\frac{\\partial (r A_r)}{\\partial r} + \\frac{1}{r} \\frac{\\partial A_{\\theta}}{\\partial \\theta} + \\frac{\\partial A_z}{\\partial z}$. Pour un champ purement radial ne dépendant que de $r$, les termes en $\\theta$ et $z$ s'annulent, conduisant à $\\frac{1}{r} \\frac{d(r v_r)}{dr}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-036",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'unité SI du vecteur densité de courant de masse $\\vec{j}_m = \\rho \\vec{v}$ ?",
+        "answers": [
+            "$kg \\cdot m^{-2} \\cdot s^{-1}$",
+            "$kg \\cdot s^{-1}$",
+            "$m \\cdot s^{-1}$",
+            "$kg \\cdot m^{-3}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "explication": "Le vecteur densité de courant de masse est défini par le produit de la masse volumique $\\rho$ ($kg \\cdot m^{-3}$) par la vitesse $\\vec{v}$ ($m \\cdot s^{-1}$). En multipliant les unités : $(kg \\cdot m^{-3}) \\times (m \\cdot s^{-1}) = kg \\cdot m^{-2} \\cdot s^{-1}$. Cela représente une masse traversant une surface unitaire par unité de temps.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-037",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si le champ de vitesse d'un fluide vérifie $\\text{div}(\\vec{v}) = 0$ en tout point, l'écoulement est qualifié de :",
+        "answers": [
+            "Stationnaire",
+            "Irrotationnel",
+            "Isochore (ou incompressible)",
+            "Laminaires"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "explication": "L'équation de conservation de la masse est $\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\rho \\vec{v}) = 0$. Si le fluide est incompressible, $\\rho$ est une constante, donc $\\text{div}(\\vec{v}) = 0$. Un tel écoulement est dit isochore car il préserve le volume des éléments fluides.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-038",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En régime permanent (stationnaire), quelle est la propriété de la masse totale $M$ contenue dans un volume de contrôle fixe arbitraire ?",
+        "answers": [
+            "Elle augmente proportionnellement au temps",
+            "Elle diminue",
+            "Elle reste constante",
+            "Elle oscille autour d'une valeur moyenne"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "explication": "Par définition, un écoulement est stationnaire si les propriétés du fluide en tout point de l'espace ne dépendent pas du temps ($\\frac{\\partial \\rho}{\\partial t} = 0$). Par conséquent, l'intégrale de la masse volumique sur un volume fixe, qui représente la masse totale contenue dans ce volume, est indépendante du temps.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-039",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un liquide s'écoulant dans un système de canalisations, l'hypothèse d'incompressibilité est :",
+        "answers": [
+            "Toujours fausse car les molécules sont compressibles",
+            "Une excellente approximation car les variations de pression induisent des variations de masse volumique négligeables",
+            "Valable seulement si la vitesse du fluide est très grande (supérieure à Mach 1)",
+            "Valable uniquement au repos"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Les liquides sont très peu compressibles. Même sous des variations de pression importantes, leur masse volumique $\\rho$ varie très peu, ce qui justifie l'hypothèse d'incompressibilité ($\rho = cste$) pour la grande majorité des problèmes d'hydraulique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-040",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le débit de l'aorte est estimé à $6\\,L/min$. Si elle se divise en $N$ artères de débit unitaire $2\\cdot 10^{-6}\\,m^3\\cdot s^{-1}$ chacune, quelle est la valeur entière de $N$ ?",
+        "answers": [
+            "50",
+            "500",
+            "5000",
+            "5"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "explication": "Il faut d'abord convertir le débit de l'aorte en unités SI : $6\\,L/min = 6 \\cdot 10^{-3} m^3 / 60 s = 10^{-4} m^3/s$. Le débit total se conserve : $D_{total} = N \\cdot D_{artère}$. Donc $N = \\frac{10^{-4}}{2 \\cdot 10^{-6}} = \\frac{100}{2} = 50$."
+    },
+    {
+        "uuid": "fluid-041",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude d'un écoulement permanent dans une conduite, comment caractériser l'accélération convective $\\vec{a}_{conv} = (\\vec{v}\\cdot\\vec{grad})\\vec{v}$ pour un fluide s'écoulant à vitesse $\\vec{v} = v_0 \\vec{e}_x$ dans un tuyau rectiligne de section constante ?",
+        "answers": [
+            "Positive, car le fluide avance",
+            "Nulle, car la vitesse ne varie pas spatialement",
+            "Négative, en raison des frottements visqueux",
+            "Proportionnelle à $\\frac{\\partial v}{\\partial t}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'accélération convective s'écrit $(\\vec{v}\\cdot\\vec{grad})\\vec{v}$. Si le tuyau est rectiligne et de section constante, pour un écoulement stationnaire, le vecteur vitesse $\\vec{v}$ est uniforme : il ne dépend ni du temps, ni de la position. Ainsi, le gradient de $\\vec{v}$ est nul, et par conséquent l'accélération convective est nulle."
+    },
+    {
+        "uuid": "fluid-042",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'expression de l'accélération particulaire $\\frac{D\\vec{v}}{Dt} = \\frac{\\partial\\vec{v}}{\\partial t} + (\\vec{v}\\cdot\\vec{grad})\\vec{v}$, quelle est la nature mathématique du terme $(\\vec{v}\\cdot\\vec{grad})\\vec{v}$ ?",
+        "answers": [
+            "Linéaire en $\\vec{v}$",
+            "Quadratique en $\\vec{v}$",
+            "Indépendant de $\\vec{v}$",
+            "Inversement proportionnel à $\\vec{v}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le terme $(\\vec{v}\\cdot\\vec{grad})\\vec{v}$ est quadratique en $\\vec{v}$. En effet, il fait intervenir le produit d'une composante de la vitesse par une dérivée spatiale d'une composante de la même vitesse (ex: $v_x \\frac{\\partial v_y}{\\partial x}$). C'est ce terme qui rend les équations de Navier-Stokes non linéaires et complexes à résoudre."
+    },
+    {
+        "uuid": "fluid-043",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le théorème de Green-Ostrogradsky (théorème de la divergence) est un outil fondamental en mécanique des fluides. Que permet-il de transformer ?",
+        "answers": [
+            "Une intégrale curviligne en intégrale de surface",
+            "Une intégrale de volume d'une divergence en un flux à travers la surface fermée délimitant ce volume",
+            "Une dérivée temporelle en une dérivée spatiale",
+            "Un rotationnel en une intégrale de ligne"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le théorème de Green-Ostrogradsky s'énonce $\\iiint_V \\text{div}(\\vec{A}) d\\tau = \\iint_S \\vec{A} \\cdot d\\vec{S}$. Il relie le comportement local d'un champ vectoriel (sa divergence) à son comportement global sur la frontière du domaine."
+    },
+    {
+        "uuid": "fluid-044",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Considérons un écoulement parfait incompressible. Parmi les propriétés suivantes des lignes de courant, laquelle est physiquement impossible ?",
+        "answers": [
+            "Une ligne de courant peut être un cercle",
+            "Une ligne de courant peut être une droite",
+            "Une ligne de courant peut traverser une paroi solide immobile",
+            "Deux lignes de courant distinctes ne peuvent jamais se couper"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Une ligne de courant est tangente au vecteur vitesse $\\vec{v}$. Si le fluide traverse une paroi immobile, cela signifie que la composante normale de la vitesse est non nulle à la paroi, ce qui contredit la condition d'imperméabilité des parois solides ($\\vec{v}\\cdot\\vec{n} = 0$)."
+    },
+    {
+        "uuid": "fluid-045",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'approche mésoscopique, comment définit-on la vitesse $\\vec{v}$ d'un fluide au point $M$ à l'instant $t$ ?",
+        "answers": [
+            "La vitesse d'une molécule individuelle située en $M$",
+            "La moyenne statistique des vitesses des molécules présentes dans un volume élémentaire $d\\tau$ centré en $M$",
+            "La vitesse de la lumière dans le milieu",
+            "La vitesse moyenne des molécules sur toute la section du tuyau"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La description mésoscopique consiste à définir des grandeurs macroscopiques (comme la vitesse) en faisant la moyenne statistique sur un grand nombre de molécules situées dans un volume très petit devant les dimensions du système, mais contenant assez de particules pour que la moyenne soit stable."
+    },
+    {
+        "uuid": "fluid-046",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement fluide 1D selon l'axe $x$, quelle est l'expression correcte de l'équation locale de conservation de la masse (équation de continuité) ?",
+        "answers": [
+            "$\\frac{\\partial \\rho}{\\partial t} + \\frac{\\partial (\\rho v_x)}{\\partial x} = 0$",
+            "$\\frac{\\partial \\rho}{\\partial t} + v_x \\frac{\\partial \\rho}{\\partial x} = 0$",
+            "$\\rho = C^{te}$",
+            "$\\frac{\\partial \\rho}{\\partial t} + \\rho \\frac{\\partial v_x}{\\partial x} = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'équation de continuité générale est $\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\rho \\vec{v}) = 0$. En projection 1D, cela donne bien $\\frac{\\partial \\rho}{\\partial t} + \\frac{\\partial (\\rho v_x)}{\\partial x} = 0$. La deuxième proposition ne serait correcte que pour un fluide incompressible ou sans gradient de vitesse."
+    },
+    {
+        "uuid": "fluid-047",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Soit le vecteur densité de courant de masse $\\vec{j}_m = \\rho \\vec{v}$. Quelle est la grandeur physique qui possède la même unité que $\\vec{j}_m$ ?",
+        "answers": [
+            "La quantité de mouvement par unité de volume ($kg \\cdot m^{-2} \\cdot s^{-1}$)",
+            "La force par unité de surface",
+            "L'énergie par unité de temps",
+            "La pression cinétique"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'unité de $\\rho \\vec{v}$ est $\\frac{kg}{m^3} \\cdot \\frac{m}{s} = kg \\cdot m^{-2} \\cdot s^{-1}$. La quantité de mouvement est $p = m v$, donc par unité de volume, cela donne $\\frac{kg \\cdot m \\cdot s^{-1}}{m^3} = kg \\cdot m^{-2} \\cdot s^{-1}$. Les deux grandeurs sont donc homogènes."
+    },
+    {
+        "uuid": "fluid-048",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans un écoulement stationnaire incompressible, si les lignes de courant s'écartent, que peut-on dire de la vitesse locale du fluide ?",
+        "answers": [
+            "La vitesse augmente par conservation du débit",
+            "La vitesse diminue par conservation du débit",
+            "La vitesse reste constante",
+            "Le fluide devient compressible pour compenser"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par conservation du débit massique (ou volumique pour un fluide incompressible), le débit $Q = v \\cdot S$ est constant. Si les lignes de courant s'écartent, la surface $S$ associée à un tube de courant augmente, donc la vitesse $v$ doit diminuer pour conserver le débit."
+    },
+    {
+        "uuid": "fluid-049",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Qu'est-ce qu'un fluide homogène dans le contexte d'un problème de mécanique des fluides ?",
+        "answers": [
+            "Un fluide dont la vitesse est uniforme dans tout l'espace",
+            "Un fluide dont la masse volumique $\\rho$ est la même en tout point de l'espace",
+            "Un fluide composé d'une seule espèce chimique pure",
+            "Un fluide dont la pression est constante"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par définition, un fluide est dit homogène si ses propriétés physico-chimiques, et en particulier sa masse volumique $\\rho$, ne dépendent pas de la position spatiale. Attention à ne pas confondre avec l'incompressibilité (qui signifie $\\frac{D\\rho}{Dt} = 0$)."
+    },
+    {
+        "uuid": "fluid-050",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En coordonnées polaires $(r, \\theta)$, quelle est l'expression correcte de l'élément d'aire infinitésimal $dS$ ?",
+        "answers": [
+            "$dr d\\theta$",
+            "$r dr d\\theta$",
+            "$r^2 dr d\\theta$",
+            "$dr \\cdot (r d\\theta)^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "En coordonnées polaires, un déplacement élémentaire est $d\\vec{l} = dr \\vec{e}_r + r d\\theta \\vec{e}_\\theta$. L'élément d'aire s'obtient par le produit des composantes, soit $dS = dr \\cdot (r d\\theta) = r dr d\\theta$. Le terme $r$ est le jacobien de la transformation vers les coordonnées cartésiennes."
+    },
+    {
+        "uuid": "fluid-051",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude d'un fluide en régime stationnaire, quelle est la valeur du débit massique $\\Phi_m$ sortant à travers une surface fermée $\\mathcal{S}$ entourant un volume fixe $\\mathcal{V}$ ?",
+        "answers": [
+            "Toujours positif, car il y a mouvement de matière",
+            "Toujours nul, par conservation de la masse en régime permanent",
+            "Égal à la variation de masse intérieure $\\frac{dM}{dt}$",
+            "Égal à $\\rho \\times \\mathcal{V}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "En régime stationnaire (ou permanent), les propriétés du fluide en tout point de l'espace sont indépendantes du temps ($\\frac{\\partial \\rho}{\\partial t} = 0$). Selon l'équation de conservation de la masse locale $\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\rho \\vec{v}) = 0$, le flux net de masse à travers une surface fermée est nul, car la masse contenue dans le volume ne varie pas.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-052",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la condition aux limites cinématique et dynamique imposée à un fluide réel visqueux au contact d'une paroi solide fixe ?",
+        "answers": [
+            "La composante normale de la vitesse est nulle uniquement",
+            "La composante tangentielle de la vitesse est nulle uniquement",
+            "La vitesse totale du fluide est nulle (condition d'adhérence)",
+            "La pression doit s'annuler sur la paroi"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "explication": "Pour un fluide réel, les forces de viscosité imposent la condition de non-glissement (adhérence) : la vitesse du fluide au contact de la paroi est celle de la paroi elle-même. Si la paroi est immobile, $\\vec{v} = \\vec{0}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-053",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'étude d'un écoulement, que signifie mathématiquement un débit volumique $Q_v = \\iint_{\\mathcal{S}} \\vec{v} \\cdot \\vec{n} dS < 0$ à travers une surface orientée par le vecteur normal $\\vec{n}$ ?",
+        "answers": [
+            "Le fluide ralentit au passage de la surface",
+            "Le fluide traverse la surface dans le sens opposé à celui du vecteur normal $\\vec{n}$",
+            "Le fluide traverse la surface dans le sens de $\\vec{n}$",
+            "Le débit n'est pas bien défini car le produit scalaire est négatif"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Le signe du flux dépend de l'orientation choisie pour la surface ($\\vec{n}$). Si $\\vec{v} \\cdot \\vec{n} < 0$, l'angle entre le vecteur vitesse et le vecteur normal est obtus, ce qui signifie que le fluide traverse la surface en allant du côté 'positif' vers le côté 'négatif'.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-054",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement permanent (stationnaire), quelle est la relation entre les lignes de courant et les trajectoires des particules fluides ?",
+        "answers": [
+            "Elles sont identiques",
+            "Elles sont toujours orthogonales",
+            "Elles sont indépendantes",
+            "Les trajectoires sont des droites et les lignes de courant des cercles"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "explication": "En régime stationnaire, le champ de vitesse $\\vec{v}(\\vec{r})$ ne dépend pas du temps. Par conséquent, la vitesse en un point fixe ne change pas, et la particule suit la ligne de courant passant par sa position à chaque instant.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-055",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude des contraintes visqueuses, quel est l'objet mathématique résultant du gradient d'un vecteur $\\vec{A}$ (noté $\\text{grad} \\vec{A}$ ou $\\nabla \\vec{A}$) ?",
+        "answers": [
+            "Un scalaire (le produit scalaire)",
+            "Un vecteur (le rotationnel)",
+            "Un tenseur d'ordre 2",
+            "Un vecteur (la divergence)"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "explication": "Le gradient d'un champ vectoriel $\\vec{A}$ de composantes $A_i$ est la matrice des dérivées partielles $\\partial_j A_i$. Il s'agit d'un tenseur d'ordre 2, essentiel pour exprimer le tenseur des contraintes visqueuses $\\bar{\\bar{\\tau}} = \\eta(\\nabla \\vec{v} + {}^t\\nabla \\vec{v})$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-056",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Soit un écoulement à deux dimensions en coordonnées polaires $(r, \\theta)$ défini par $\\vec{v} = \\omega r \\vec{e}_\\theta$. Quelle est la nature des lignes de courant ?",
+        "answers": [
+            "Des droites passant par l'origine",
+            "Des cercles concentriques centrés sur l'origine",
+            "Des spirales logarythmiques",
+            "Des paraboles"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "La ligne de courant est définie par l'équation différentielle $\\frac{dr}{v_r} = \\frac{r d\\theta}{v_\\theta}$. Ici $v_r = 0$, donc $dr = 0$, ce qui implique $r = \\text{constante}$. Dans le plan polaire, cette équation décrit des cercles centrés à l'origine.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-057",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La conservation de la masse, traduite par l'équation de continuité $\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\rho \\vec{v}) = 0$, est l'expression locale de :",
+        "answers": [
+            "La deuxième loi de Newton appliquée au fluide",
+            "Le principe de conservation de la matière (axiome fondamental)",
+            "Le premier principe de la thermodynamique",
+            "L'hypothèse de continuité de Cauchy"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Cette équation est la traduction mathématique du fait que la masse ne peut être ni créée ni détruite au sein du fluide. C'est le socle de la mécanique des milieux continus.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-058",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Soit $\\frac{D}{Dt}$ la dérivée particulaire. Si pour un fluide donné $\\frac{D\\rho}{Dt} = 0$, on en déduit que l'écoulement est :",
+        "answers": [
+            "Homogène (masse volumique spatiale constante)",
+            "Stationnaire ($\\frac{\\partial \\rho}{\\partial t} = 0$)",
+            "Incompressible",
+            "Irrotationnel"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "explication": "La dérivée particulaire $\\frac{D\\rho}{Dt}$ représente la variation de la masse volumique d'une particule fluide donnée au cours de son mouvement. Si elle est nulle, la masse volumique de la particule reste constante, ce qui définit un écoulement incompressible.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-059",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'étude d'un écoulement permanent, par définition, un tube de courant est une surface constituée :",
+        "answers": [
+            "De particules dont la vitesse est nulle",
+            "De lignes de courant s'appuyant sur une courbe fermée",
+            "De lignes de champ magnétique",
+            "De surfaces équipotentielles de pression"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Un tube de courant est la surface formée par l'ensemble des lignes de courant passant par tous les points d'une courbe fermée. Comme la vitesse est tangente aux lignes de courant, le fluide ne peut pas traverser cette surface : elle est imperméable.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-060",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un écoulement stationnaire est-il nécessairement uniforme ?",
+        "answers": [
+            "Oui, car la vitesse ne dépend pas du temps",
+            "Non, la vitesse peut varier d'un point à l'autre de l'espace",
+            "Oui, uniquement si l'écoulement est irrotationnel",
+            "Non, seulement dans les fluides compressibles"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Un écoulement stationnaire signifie que $\\frac{\\partial \\vec{v}}{\\partial t} = \\vec{0}$. Cela n'implique absolument pas que le champ $\\vec{v}(\\vec{r})$ est constant dans l'espace. Un écoulement dans une conduite divergente est stationnaire mais non uniforme.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-061",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude cinématique des écoulements, laquelle de ces grandeurs est définie selon une approche eulérienne ?",
+        "answers": [
+            "La position $\\vec{r}_p(t)$ d'une particule fluide particulière",
+            "Le champ de pression scalaire $P(x,y,z,t)$ défini en tout point de l'espace",
+            "La vitesse d'un traceur isolé suivi par une caméra",
+            "La trajectoire $\\vec{r}(t)$ d'un élément de fluide donné"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "L'approche eulérienne consiste à décrire le fluide par des champs de grandeurs (pression, vitesse) définis en chaque point fixe $(x,y,z)$ de l'espace au cours du temps $t$. Les autres propositions relèvent de l'approche lagrangienne, qui suit le mouvement d'une particule fluide identifiée par sa position initiale.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-062",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de la description d'un écoulement, l'accélération locale $\\frac{\\partial \\vec{v}}{\\partial t}$ est nulle pour un observateur :",
+        "answers": [
+            "Placé dans un référentiel en mouvement accéléré par rapport au fluide",
+            "Observant l'écoulement en un point fixe si le régime est stationnaire",
+            "Suivant le mouvement d'une particule fluide",
+            "Situé dans une zone de tourbillonnement intense"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Par définition, un écoulement est stationnaire (ou permanent) si toutes les grandeurs locales (dont $\\vec{v}$) sont indépendantes du temps, soit $\\frac{\\partial \\vec{v}}{\\partial t} = \\vec{0}$ en tout point fixe de l'espace. L'accélération particulaire, elle, contient un terme convectif $(\\vec{v} \\cdot \\vec{\\text{grad}})\\vec{v}$ qui ne s'annule généralement pas.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-063",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement stationnaire d'un fluide incompressible, la conservation du débit impose $S(z)v(z) = C^{te}$. Si la vitesse $v$ est multipliée par 2, de quel facteur le diamètre $d$ du jet est-il multiplié ?",
+        "answers": [
+            "1/2 (divisé par 2)",
+            "$1/\\sqrt{2}$ (divisé par $\\sqrt{2}$)",
+            "1/4 (divisé par 4)",
+            "$\\sqrt{2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Le débit est $D_v = S v = \\pi (d/2)^2 v$. Si $D_v$ est constant, alors $d^2 v = C^{te}$. Si $v$ est multiplié par 2, alors $d^2$ doit être divisé par 2, donc $d$ est divisé par $\\sqrt{2}$. L'erreur classique est de confondre la section $S$ avec le diamètre $d$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-064",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle interprétation physique donne-t-on à la divergence du champ de vitesse $\\text{div}(\\vec{v})$ ?",
+        "answers": [
+            "Le vecteur rotationnel du champ de vitesse",
+            "Le taux de variation relative du volume d'une particule fluide",
+            "La force de pression exercée sur une surface unité",
+            "La vitesse de transport de la quantité de mouvement"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "D'après le théorème de flux-divergence appliqué à un petit volume élémentaire $d\\tau$, $\\text{div}(\\vec{v}) = \\frac{1}{d\\tau} \\frac{Dd\\tau}{Dt}$. C'est donc la mesure de la dilatation ou de la contraction relative du volume de la particule. Le rotationnel ($\nabla \\wedge \\vec{v}$) correspondrait, lui, à la rotation locale.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-065",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si en un point de l'écoulement $\\text{div}(\\vec{v}) > 0$, alors la particule fluide située à cet endroit est en train de :",
+        "answers": [
+            "Se comprimer (volume décroissant)",
+            "Se dilater (volume croissant)",
+            "Tourner sur elle-même sans changer de volume",
+            "Subir une accélération nulle"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Comme démontré par la relation $\\frac{1}{d\\tau} \\frac{Dd\\tau}{Dt} = \\text{div}(\\vec{v})$, si la divergence est positive, le volume élémentaire $d\\tau$ augmente au cours du temps, ce qui correspond physiquement à une dilatation du fluide.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-066",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le débit volumique à travers une surface $S$ est $D_v = \\iint_S \\vec{v} \\cdot \\vec{n} dS$. Si $\\vec{v}$ est uniforme et perpendiculaire à $S$, quelle est la valeur de $D_v$ ?",
+        "answers": [
+            "$D_v = 0$ car le fluide ne tourne pas",
+            "$D_v = v \\cdot S$",
+            "$D_v = v / S$",
+            "$D_v = v^2 S$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Si $\\vec{v}$ est uniforme, il sort de l'intégrale. Si $\\vec{v}$ est colinéaire à la normale $\\vec{n}$ (perpendiculaire à la surface), alors $\\vec{v} \\cdot \\vec{n} = v$. L'intégrale devient alors $v \\iint_S dS = v S$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-067",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En régime permanent, un fluide incompressible circule dans un tuyau de section $S$ qui se divise en deux branches identiques, chacune de section $S$. Quelle est la vitesse $v_2$ dans chaque branche par rapport à la vitesse d'entrée $v_1$ ?",
+        "answers": [
+            "$v_2 = v_1$",
+            "$v_2 = v_1 / 2$",
+            "$v_2 = 2 v_1$",
+            "$v_2 = \\sqrt{2} v_1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Par conservation de la masse (débit), $D_{entree} = D_{sortie1} + D_{sortie2}$. Avec $S_1 v_1 = S_2 v_2 + S_2 v_2$. Si $S_1 = S_2 = S$, alors $S v_1 = 2 S v_2$, soit $v_2 = v_1 / 2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-068",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La relation $\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\rho \\vec{v}) = 0$ est un résultat fondamental de la mécanique des fluides. Comment est-elle nommée ?",
+        "answers": [
+            "Équation d'Euler",
+            "Équation de continuité",
+            "Équation de Bernoulli",
+            "Théorème de transport de Reynolds"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Cette équation exprime localement la conservation de la masse du fluide. Elle est universellement appelée équation de continuité. L'équation d'Euler concerne la conservation de la quantité de mouvement (pour un fluide parfait).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-069",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un fluide incompressible, que devient l'équation de continuité ?",
+        "answers": [
+            "$\\rho = 0$ (le fluide n'a pas de masse)",
+            "$\\text{div}(\\vec{v}) = 0$",
+            "$\\frac{\\partial \\rho}{\\partial t} = 0$",
+            "$\\vec{v} = \\vec{0}$ (fluide au repos)"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Un fluide incompressible a une masse volumique constante ($\rho = C^{te}$), donc $\\frac{\\partial \\rho}{\\partial t} = 0$ et $\\text{div}(\\rho \\vec{v}) = \\rho \\text{div}(\\vec{v}) = 0$. Comme $\\rho \\neq 0$, on obtient nécessairement $\\text{div}(\\vec{v}) = 0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-070",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre d'un bilan de masse sur une baignoire qui se vide, le débit massique sortant est égal à :",
+        "answers": [
+            "La masse totale d'eau restante",
+            "L'opposé de la dérivée temporelle de la masse d'eau contenue dans la baignoire",
+            "La dérivée temporelle de la masse d'eau",
+            "La masse volumique multipliée par le volume total"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Le bilan global de masse s'écrit $\\frac{dm_{syst}}{dt} = \\Phi_{masse, entrant} - \\Phi_{masse, sortant}$. Comme il n'y a pas d'entrée, $\\Phi_{sortant} = - \\frac{dm_{syst}}{dt}$. Le débit sortant est donc bien l'opposé de la variation de la masse dans le système.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fluid-071",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'analyse d'un champ de vitesse $\\vec{v}(\\vec{r}, t)$, l'accélération convective $(\\vec{v} \\cdot \\vec{\\nabla})\\vec{v}$ est nulle dans un écoulement :",
+        "answers": [
+            "Permanent (stationnaire)",
+            "Uniforme (indépendant de la position)",
+            "Incompressible",
+            "Turbulent"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "L'accélération convective s'écrit $(\\vec{v} \\cdot \\vec{\\nabla})\\vec{v}$. Si l'écoulement est uniforme, le champ de vitesse $\\vec{v}$ ne dépend pas de la position, donc ses dérivées spatiales sont nulles, ce qui annule l'accélération convective. Attention : un écoulement permanent signifie $\\partial \\vec{v} / \\partial t = 0$ (accélération locale nulle), mais l'accélération convective peut y être non nulle si le champ varie spatialement (ex: tuyau rétréci)."
+    },
+    {
+        "uuid": "fluid-072",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude de l'écoulement de Poiseuille dans une conduite cylindrique de rayon $R$ :",
+        "answers": [
+            "La vitesse est maximale au niveau des parois ($r=R$)",
+            "La vitesse est maximale au centre du tuyau ($r=0$)",
+            "La vitesse est maximale à mi-chemin ($r=R/2$)",
+            "La vitesse est constante dans toute la section"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Le profil de vitesse de Poiseuille est parabolique : $v(r) = v_{max} (1 - r^2/R^2)$. La condition d'adhérence aux parois impose $v(R) = 0$. Le maximum est donc atteint au centre ($r=0$) en raison de la symétrie cylindrique et de l'effet des forces de viscosité qui freinent le fluide près des bords."
+    },
+    {
+        "uuid": "fluid-073",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la dimension du débit volumique $D_v = \\iint_S \\vec{v} \\cdot \\vec{n} dS$ ?",
+        "answers": [
+            "$L^3 T^{-1}$",
+            "$M T^{-1}$",
+            "$L^2 T^{-1}$",
+            "$M L^{-3} T^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "explication": "Le débit volumique est défini par l'intégrale d'une vitesse ($L T^{-1}$) multipliée par une surface ($L^2$). La dimension est donc $[L T^{-1}] \\times [L^2] = L^3 T^{-1}$. $M T^{-1}$ correspond à un débit massique."
+    },
+    {
+        "uuid": "fluid-074",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Laquelle de ces affirmations concernant les lignes de courant dans un écoulement de fluide est fausse ?",
+        "answers": [
+            "Elles sont tangentes au vecteur vitesse en tout point",
+            "Elles peuvent se croiser en un point où la vitesse est non nulle",
+            "Elles sont orientées dans le sens de l'écoulement",
+            "En régime stationnaire, elles sont confondues avec les trajectoires des particules"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Par définition, une ligne de courant est tangente au champ de vitesse. Si deux lignes de courant se croisaient, le vecteur vitesse en ce point aurait deux directions distinctes, ce qui est mathématiquement impossible pour un champ de vecteur défini. Le croisement ne peut survenir qu'en des points singuliers où la vitesse est nulle."
+    },
+    {
+        "uuid": "fluid-075",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le vecteur densité de courant de masse $\\vec{j}_m = \\rho \\vec{v}$ est également nommé :",
+        "answers": [
+            "Flux de masse volumique",
+            "Impulsion volumique",
+            "Débit surfacique de masse",
+            "Vitesse massique"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "explication": "Le flux de $\\vec{j}_m$ à travers une surface élémentaire $d\\vec{S}$ est le débit massique $d\\dot{m} = \\rho \\vec{v} \\cdot d\\vec{S}$. Ainsi, $\\vec{j}_m$ représente le débit massique par unité de surface, d'où le terme 'débit surfacique de masse'."
+    },
+    {
+        "uuid": "fluid-076",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'opérateur d'advection $\\vec{v} \\cdot \\vec{\\nabla}$ appliqué à une grandeur scalaire ou vectorielle en coordonnées cartésiennes s'écrit :",
+        "answers": [
+            "$v_x \\frac{\\partial}{\\partial x} + v_y \\frac{\\partial}{\\partial y} + v_z \\frac{\\partial}{\\partial z}$",
+            "$\\frac{\\partial v_x}{\\partial x} + \\frac{\\partial v_y}{\\partial y} + \\frac{\\partial v_z}{\\partial z}$",
+            "$\\vec{v} \\times \\vec{\\nabla}$",
+            "$\\text{div}(\\vec{v})$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "explication": "L'opérateur $(\\vec{v} \\cdot \\vec{\\nabla})$ est un opérateur scalaire différentiel. Appliqué à une fonction, il donne la dérivée directionnelle dans la direction de $\\vec{v}$. La deuxième proposition correspond à la divergence $\\text{div}(\\vec{v})$, qui est un scalaire et non un opérateur."
+    },
+    {
+        "uuid": "fluid-077",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si l'on injecte de manière continue un traceur en un point fixe dans un écoulement, on visualise une ligne d'émission. Dans quel cas cette ligne est-elle confondue avec une ligne de courant ?",
+        "answers": [
+            "Dans tous les écoulements",
+            "Uniquement dans un écoulement laminaire",
+            "Si l'écoulement est permanent (stationnaire)",
+            "Si l'écoulement est incompressible"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 2,
+        "explication": "En régime permanent, les lignes de courant ne dépendent pas du temps. Une particule injectée suit la ligne de courant passant par le point d'injection. Comme le champ de vitesse est fixe, toutes les particules injectées ultérieurement suivent exactement le même chemin, faisant coïncider la ligne d'émission avec la ligne de courant."
+    },
+    {
+        "uuid": "fluid-078",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la valeur standard de la masse volumique de l'eau liquide dans les conditions normales ?",
+        "answers": [
+            "$1\\,kg \\cdot m^{-3}$",
+            "$1000\\,kg \\cdot m^{-3}$",
+            "$1\\,g \\cdot m^{-3}$",
+            "$10^3\\,g \\cdot cm^{-3}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "La masse volumique de l'eau est $\\rho_{eau} \\approx 1000 \\text{ kg/m}^3$ (ou $1 \\text{ g/cm}^3$). La réponse $1 \\text{ kg/m}^3$ correspondrait à l'air ambiant, et la dernière proposition est une erreur d'unité : $1000 \\text{ g/cm}^3 = 10^6 \\text{ kg/m}^3$."
+    },
+    {
+        "uuid": "fluid-079",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un écoulement de gaz peut être modélisé comme incompressible si le nombre de Mach $Ma = v/c$ vérifie :",
+        "answers": [
+            "La pression reste constante partout dans le fluide",
+            "$Ma \\ll 1$, car les variations de pression induites sont trop faibles pour modifier la masse volumique",
+            "Le gaz est à haute température",
+            "L'écoulement est irrotationnel"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "Pour un gaz, la compressibilité est liée à la variation de pression. Selon l'équation d'état, $\\delta \\rho / \\rho \\sim Ma^2$. Si $Ma \\ll 1$ (typiquement $< 0.3$), la variation relative de la masse volumique est négligeable, permettant l'approximation d'incompressibilité, même pour un gaz."
+    },
+    {
+        "uuid": "fluid-080",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le flux du vecteur vitesse à travers une surface fermée $\\mathcal{S}$ est nul si :",
+        "answers": [
+            "L'écoulement est stationnaire",
+            "L'écoulement est incompressible ($\\text{div}(\\vec{v}) = 0$)",
+            "L'écoulement est irrotationnel",
+            "La surface est plongée dans un fluide parfait"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "explication": "D'après le théorème de Green-Ostrogradsky, le flux du vecteur vitesse à travers une surface fermée est égal au volume de la divergence de la vitesse intégré sur le volume intérieur : $\\Phi = \\oiint \\vec{v} \\cdot d\\vec{S} = \\iiint \\text{div}(\\vec{v}) d\\tau$. Si l'écoulement est incompressible, $\\text{div}(\\vec{v}) = 0$, donc le flux est nul."
+    },
+    {
+        "uuid": "fluid-081",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude d'une tornade, le champ de vitesse est modélisé par $\\vec{v} = \\frac{K}{r} \\vec{e}_\\theta$ pour $r > a$. Que peut-on dire de cet écoulement ?",
+        "answers": [
+            "Un tourbillon irrotationnel (partout sauf en $r=0$)",
+            "Une rotation de solide rigide",
+            "Un écoulement divergent pur",
+            "Un écoulement à forte viscosité"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour vérifier le caractère irrotationnel, on calcule le rotationnel en coordonnées cylindriques : $\\vec{\\text{rot}}(\\vec{v}) = \\frac{1}{r} \\frac{\\partial (r v_\\theta)}{\\partial r} \\vec{e}_z$. Ici, $r v_\\theta = K$ (constante), donc le rotationnel est nul. Attention : le champ n'est pas défini en $r=0$, ce qui crée une singularité correspondant au cœur du tourbillon. Une rotation de solide rigide imposerait $v_\\theta = \\omega r$."
+    },
+    {
+        "uuid": "fluid-082",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude d'une conduite de section $S$, la relation de débit $D_v = S \\cdot v$ est utilisée. Quelle hypothèse est nécessaire pour que cette formule soit exacte ?",
+        "answers": [
+            "Le fluide doit être au repos",
+            "La vitesse doit être uniforme sur la section $S$",
+            "Le fluide doit être stationnaire",
+            "Le fluide doit être un gaz parfait"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La définition générale du débit est $D_v = \\iint_S \\vec{v} \\cdot d\\vec{S}$. Si la vitesse n'est pas uniforme (comme dans un profil parabolique de Poiseuille), on doit intégrer le profil de vitesse. La relation $D_v = Sv$ n'est strictement valide que si $v$ est constant sur toute la surface $S$ considérée."
+    },
+    {
+        "uuid": "fluid-083",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si un fluide est considéré au repos dans un référentiel galiléen, que vaut sa vitesse mésoscopique $\\vec{v}$ ?",
+        "answers": [
+            "Nulle",
+            "Égale à la vitesse quadratique moyenne des molécules",
+            "Indéfinie",
+            "Non nulle à cause de l'agitation thermique"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La vitesse mésoscopique (ou macroscopique) correspond à la moyenne statistique des vitesses des molécules dans un petit volume élémentaire autour d'un point. Au repos, cette moyenne vectorielle est nulle, bien que l'agitation thermique microscopique reste présente."
+    },
+    {
+        "uuid": "fluid-084",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Par définition, une ligne de courant à un instant $t$ donné est toujours :",
+        "answers": [
+            "Une trajectoire de particule fluide",
+            "Orientée dans le sens du vecteur vitesse $\\vec{v}$ local",
+            "Forcément une droite",
+            "Identique à une ligne d'émission"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Une ligne de courant est une ligne tangente en tout point au vecteur vitesse à un instant $t$. Elle n'est une trajectoire que si l'écoulement est stationnaire. L'orientation est imposée par le sens de $\\vec{v}$."
+    },
+    {
+        "uuid": "fluid-085",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'étude cinématique des fluides, la dérivée particulaire (ou lagrangienne) $\\frac{D}{Dt}$ permet de calculer la variation d'une grandeur :",
+        "answers": [
+            "En un point fixe de l'espace",
+            "En suivant une particule fluide donnée dans son mouvement",
+            "Uniquement pour les fluides compressibles",
+            "En passant de la pression à la vitesse"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La dérivée particulaire $\\frac{D}{Dt} = \\frac{\\partial}{\\partial t} + (\\vec{v} \\cdot \\vec{\\nabla})$ traduit le point de vue lagrangien (suivi de la particule) exprimé dans le formalisme eulérien (champs). Le terme $(\\vec{v} \\cdot \\vec{\\nabla})$ représente l'advection, c'est-à-dire le changement dû au déplacement de la particule vers une zone où la valeur du champ est différente."
+    },
+    {
+        "uuid": "fluid-086",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cas d'un écoulement de Poiseuille dans une conduite cylindrique de rayon $R$, quelle est la relation entre la vitesse moyenne $v_{moy}$ et la vitesse maximale $v_{max}$ (au centre) ?",
+        "answers": [
+            "v_{moy} = v_{max}",
+            "v_{moy} = \\frac{1}{2} v_{max}",
+            "v_{moy} = \\frac{1}{4} v_{max}",
+            "v_{moy} = \\frac{2}{3} v_{max}"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour un écoulement de Poiseuille, le profil de vitesse est parabolique : $v(r) = v_{max}(1 - r^2/R^2)$. En intégrant ce profil sur la section $S = \\pi R^2$, on obtient $D_v = \\int_0^R v(r) 2\\pi r dr = v_{max} \\frac{\\pi R^2}{2}$. Ainsi, $v_{moy} = D_v / S = v_{max} / 2$."
+    },
+    {
+        "uuid": "fluid-087",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de la conservation de la masse, le vecteur $\\vec{j}_m = \\rho \\vec{v}$ représente :",
+        "answers": [
+            "La densité d'énergie cinétique",
+            "Le vecteur densité de courant de masse",
+            "La force volumique exercée par le fluide",
+            "La quantité de mouvement par unité de volume"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le produit $\\rho \\vec{v}$ est homogène à une masse par unité de temps et par unité de surface ($kg \\cdot m^{-3} \\cdot m \\cdot s^{-1} = kg \\cdot m^{-2} \\cdot s^{-1}$). Il représente le flux de masse traversant une surface unitaire par unité de temps, d'où le nom de densité de courant de masse."
+    },
+    {
+        "uuid": "fluid-088",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement incompressible, que traduit la conservation de la masse au niveau d'un nœud (bifurcation) ?",
+        "answers": [
+            "La somme des débits volumiques entrants égale la somme des débits sortants",
+            "La conservation de la pression totale",
+            "La nullité du flux de masse",
+            "La conservation de la vitesse"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour un fluide incompressible ($\\rho = cste$), l'équation de continuité $\\text{div}(\\vec{v}) = 0$ implique la conservation du débit volumique $D_v$. Ainsi, pour tout nœud, $\\sum D_{v,in} = \\sum D_{v,out}$, ce qui est l'analogue fluidique de la loi des nœuds en électricité."
+    },
+    {
+        "uuid": "fluid-089",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'équation $\\text{div}(\\vec{v}) = 0$ est-elle valable pour un écoulement stationnaire d'un gaz compressible ?",
+        "answers": [
+            "Oui, toujours, car c'est la définition du régime stationnaire",
+            "Non, l'équation correcte est $\\text{div}(\\rho \\vec{v}) = 0$",
+            "Oui, si la vitesse est faible",
+            "Non, elle dépend de la viscosité du gaz"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La conservation de la masse sous forme locale est $\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\rho \\vec{v}) = 0$. En régime stationnaire, $\\frac{\\partial \\rho}{\\partial t} = 0$, donc $\\text{div}(\\rho \\vec{v}) = 0$. Si le gaz est compressible, $\\rho$ n'est pas constant et ne peut pas être sorti de la divergence, contrairement au cas incompressible."
+    },
+    {
+        "uuid": "fluid-090",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'écoulement d'un fluide parfait incompressible en régime permanent, quelle grandeur reste constante le long d'un tube de courant ?",
+        "answers": [
+            "La vitesse $v$ du fluide",
+            "Le débit volumique $D_v$ à travers une section du tube",
+            "La pression $P$ du fluide",
+            "La section $S$ du tube"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des écoulements",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par définition, un tube de courant est limité par des lignes de courant à travers lesquelles aucune matière ne traverse. En régime permanent, la masse entrant dans le tube par une section doit ressortir par une autre, donc le débit volumique $D_v = Sv$ est conservé (équation de continuité)."
+    },
+    {
+        "uuid": "fluid-091",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 4,
+        "question": "En coordonnées cylindriques $(r, \\theta, z)$, pour un champ de vitesse $\\vec{v} = v_r \\vec{e}_r + v_\\theta \\vec{e}_\\theta + v_z \\vec{e}_z$, combien de termes de dérivées apparaissent dans l'expression de la divergence $\\text{div}(\\vec{v})$ ?",
+        "answers": [
+            "3 : $\\partial_r v_r + \\partial_\\theta v_\\theta + \\partial_z v_z$",
+            "4 : $\\frac{1}{r} \\partial_r(r v_r) + \\frac{1}{r} \\partial_\\theta v_\\theta + \\partial_z v_z$",
+            "5 : $\\partial_r v_r + v_r/r + \\partial_\\theta v_\\theta + \\partial_z v_z + \\dots$",
+            "6 : deux dérivées par composante"
+        ],
+        "correct_answer_index": 1,
+        "explication": "La divergence en coordonnées cylindriques est donnée par $\\text{div}(\\vec{v}) = \\frac{1}{r} \\frac{\\partial}{\\partial r}(r v_r) + \\frac{1}{r} \\frac{\\partial v_\\theta}{\\partial \\theta} + \\frac{\\partial v_z}{\\partial z}$. Le terme en $1/r$ provient de la dépendance des vecteurs de base $\\vec{e}_r$ et $\\vec{e}_\\theta$ en fonction de $\\theta$ lors du calcul de la dérivée du produit. Ne pas oublier le terme de courbure $(1/r) \\partial_r (r v_r)$ est une erreur classique."
+    },
+    {
+        "uuid": "fluid-092",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Considérons un écoulement dont le champ de vitesse $\\vec{v}$ est uniforme dans tout l'espace (indépendant de la position). Quelle est la valeur de l'accélération convective $(\\vec{v} \\cdot \\vec{\\text{grad}})\\vec{v}$ ?",
+        "answers": [
+            "Nulle",
+            "Égale à $\\partial \\vec{v} / \\partial t$",
+            "Infinie car le gradient d'un champ uniforme est infini",
+            "Égale à $\\vec{v}^2$"
+        ],
+        "correct_answer_index": 0,
+        "explication": "L'accélération convective est définie par le terme $(\\vec{v} \\cdot \\vec{\\text{grad}})\\vec{v}$. Si le champ de vitesse est uniforme, ses dérivées spatiales sont nulles (le gradient de chaque composante de $\\vec{v}$ est le vecteur nul). Par conséquent, ce terme s'annule identiquement."
+    },
+    {
+        "uuid": "fluid-093",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "L'unité du débit volumique $Q_v$ peut s'écrire $L \\cdot s^{-1}$ si $L$ représente :",
+        "answers": [
+            "Une longueur au cube ($m^3$)",
+            "Un litre ($10^{-3} m^3$)",
+            "Une masse volumique ($kg \\cdot m^{-3}$)",
+            "Une surface ($m^2$)"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le débit volumique s'exprime en $m^3 \\cdot s^{-1}$. La notation $L \\cdot s^{-1}$ où $L$ est un volume (comme le litre) est une notation courante en hydraulique pour exprimer un débit en unité de volume par unité de temps. Les autres options ne correspondent pas dimensionnellement à un volume."
+    },
+    {
+        "uuid": "fluid-094",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Lors du calcul du débit massique $\\Phi_m = \\iint_S \\rho \\vec{v} \\cdot \\vec{dS}$ à travers une surface $S$, comment est orienté le vecteur surface $\\vec{dS}$ ?",
+        "answers": [
+            "Tangente à la surface en tout point",
+            "Normale à la surface en tout point",
+            "Verticale, quel que soit l'angle de la surface",
+            "Parallèle au champ de vitesse $\\vec{v}$"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Par convention mathématique et physique, le vecteur élémentaire de surface $\\vec{dS}$ est toujours défini comme $\\vec{dS} = dS \\, \\vec{n}$, où $\\vec{n}$ est le vecteur unitaire normal à la surface. Le produit scalaire $\\vec{v} \\cdot \\vec{dS}$ permet de ne conserver que la composante de la vitesse traversant la surface."
+    },
+    {
+        "uuid": "fluid-095",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 3,
+        "question": "Dans le cadre d'un écoulement incompressible en régime stationnaire dans une conduite, si le diamètre du jet passe de $D_1 = 78$ pixels à $D_2 = 45$ pixels, quel est le rapport des vitesses $v_2/v_1$ ?",
+        "answers": [
+            "1,7",
+            "3,0",
+            "0,58",
+            "9,0"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Pour un fluide incompressible, le débit est conservé : $v_1 S_1 = v_2 S_2$. Comme $S = \\pi D^2 / 4$, on a $v_1 D_1^2 = v_2 D_2^2$, d'où $v_2/v_1 = (D_1/D_2)^2$. Ici, $(78/45)^2 \\approx (1,733)^2 \\approx 3,0$. Le piège classique est de ne pas mettre le rapport des diamètres au carré."
+    },
+    {
+        "uuid": "fluid-096",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "En mécanique des fluides, une particule fluide est définie comme :",
+        "answers": [
+            "Un système ouvert (échange de matière permanent)",
+            "Un système fermé (masse constante par définition)",
+            "Un système isolé (aucune interaction)",
+            "Un volume de contrôle fixe dans l'espace"
+        ],
+        "correct_answer_index": 1,
+        "explication": "La particule fluide est une entité lagrangienne : on suit une même « portion » de fluide au cours du temps. Par définition, elle ne gagne ni ne perd de matière, c'est donc un système fermé. Elle se distingue du volume de contrôle qui est une région fixe de l'espace traversée par le fluide."
+    },
+    {
+        "uuid": "fluid-097",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Le champ des vitesses $\\vec{v}(M,t)$ dans un fluide est un champ :",
+        "answers": [
+            "Scalaire",
+            "Vectoriel",
+            "Tensoriel d'ordre 2",
+            "Temporel uniquement"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Un champ est qualifié par la nature mathématique de sa valeur en chaque point. Comme la vitesse possède une direction, un sens et une norme en chaque point $M$, c'est un champ vectoriel. La pression, par exemple, serait un champ scalaire."
+    },
+    {
+        "uuid": "fluid-098",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 4,
+        "question": "Pour un fluide compressible, que signifie physiquement la condition $\\text{div}(\\vec{v}) = 0$ ?",
+        "answers": [
+            "La masse volumique $\\rho$ est nécessairement constante partout",
+            "La dérivée particulaire de la masse volumique $\\frac{D\\rho}{Dt}$ est nulle",
+            "Le fluide est nécessairement au repos",
+            "La pression est uniforme"
+        ],
+        "correct_answer_index": 1,
+        "explication": "L'équation de conservation de la masse (équation de continuité) s'écrit $\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\rho \\vec{v}) = 0$, ce qui équivaut à $\\frac{D\\rho}{Dt} + \\rho \\text{div}(\\vec{v}) = 0$. Si $\\text{div}(\\vec{v}) = 0$, alors $\\frac{D\\rho}{Dt} = 0$. Cela signifie que la masse volumique d'une particule fluide reste constante au cours de son mouvement, même si $\\rho$ varie dans l'espace."
+    },
+    {
+        "uuid": "fluid-099",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Quelle est la vitesse typique de l'écoulement de l'eau dans la Seine au niveau du Pont des Arts ?",
+        "answers": [
+            "$3,0\\,m \\cdot s^{-1}$ (vitesse d'un sprinteur)",
+            "$0,8\\,m \\cdot s^{-1}$",
+            "$30\\,km \\cdot h^{-1}$ (vitesse d'un vélo)",
+            "$0,01\\,m \\cdot s^{-1}$ (vitesse d'un glacier)"
+        ],
+        "correct_answer_index": 1,
+        "explication": "La vitesse d'écoulement d'un fleuve comme la Seine est généralement comprise entre $0,5$ et $1,5\\,m \\cdot s^{-1}$. Une valeur de $0,8\\,m \\cdot s^{-1}$ est un ordre de grandeur réaliste pour un écoulement fluvial modéré. Les autres valeurs sont soit trop élevées (vitesse de courant dangereux), soit trop faibles."
+    },
+    {
+        "uuid": "fluid-100",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Description des écoulements",
+        "subject": "physique",
+        "difficulty": 3,
+        "question": "Quelle condition fondamentale assure la validité de l'approche mésoscopique (continuum) en mécanique des fluides ?",
+        "answers": [
+            "Le libre parcours moyen des molécules $\\ell$ doit être très petit devant la taille de la particule fluide $d$",
+            "Le nombre de Reynolds doit être infini",
+            "La température doit être proche du zéro absolu",
+            "La vitesse du fluide doit être très inférieure à la célérité du son"
+        ],
+        "correct_answer_index": 0,
+        "explication": "L'hypothèse du milieu continu suppose que l'on peut définir des grandeurs macroscopiques (pression, température, vitesse) dans un volume élémentaire de taille $d$. Pour que ces grandeurs soient statistiquement significatives, il faut que ce volume contienne un nombre très grand de molécules, ce qui impose $\\ell \\ll d$."
+    }
+]

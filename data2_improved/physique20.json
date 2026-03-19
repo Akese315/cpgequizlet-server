@@ -1,0 +1,1692 @@
+[
+    {
+        "uuid": "dalembert-001",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Waves_types.png",
+        "theme": "ondes",
+        "question": "Quelle est la caractéristique fondamentale d'une onde physique ?",
+        "answers": [
+            "Un déplacement de matière sans déplacement d'énergie",
+            "Un déplacement d'énergie sans déplacement global de matière",
+            "Un déplacement de matière et d'énergie simultané",
+            "Une perturbation statique de l'espace"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-002",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Comment définit-on une onde transversale ?",
+        "answers": [
+            "La direction de la perturbation est parallèle à la direction de propagation",
+            "La direction de la perturbation est perpendiculaire à la direction de propagation",
+            "L'onde ne se déplace que dans un milieu solide",
+            "L'onde se propage dans toutes les directions de l'espace"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-003",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le son dans l'air est un exemple de quel type d'onde ?",
+        "answers": [
+            "Onde transversale",
+            "Onde longitudinale",
+            "Onde stationnaire pure",
+            "Onde électromagnétique"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-004",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le modèle de la corde vibrante, quelle hypothèse est faite sur la pesanteur ?",
+        "answers": [
+            "Elle est la force principale de rappel",
+            "Elle est négligée devant la tension de la corde",
+            "Elle est égale à la tension de la corde",
+            "Elle est prise en compte via la masse linéique"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-005",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'unité de la masse linéique $\\mu$ ?",
+        "answers": [
+            "$kg \\cdot m$",
+            "$kg \\cdot m^{-1}$",
+            "$kg \\cdot m^{-2}$",
+            "$kg \\cdot s^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-006",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'oscillation d'une corde vibrante $y(x,t)$ est qualifiée de propagation :",
+        "answers": [
+            "Tridimensionnelle",
+            "Bidimensionnelle",
+            "Unidimensionnelle",
+            "Sphérique"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-007",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle approximation est nécessaire pour établir l'équation de d'Alembert classique sur une corde ?",
+        "answers": [
+            "La tension est nulle",
+            "L'angle $\\alpha$ avec l'horizontale reste faible",
+            "La corde est infiniment lourde",
+            "La vitesse de l'onde est supérieure à celle du son"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-008",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lors de l'application du PFD à un tronçon de corde $dx$, comment s'exprime sa masse $dm$ ?",
+        "answers": [
+            "$dm = \\mu \\cdot dx$",
+            "$dm = \\frac{\\mu}{dx}$",
+            "$dm = T \\cdot dx$",
+            "$dm = \\rho \\cdot dx^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-009",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'approximation des petits angles, quelle relation lie la tension transversale $T_y$ et la pente de la corde ?",
+        "answers": [
+            "$T_y = T \\cdot \\frac{\\partial^2 y}{\\partial x^2}$",
+            "$T_y \\approx T \\cdot \\frac{\\partial y}{\\partial x}$",
+            "$T_y = T \\cdot y(x,t)$",
+            "$T_y = \\mu \\cdot \\frac{\\partial y}{\\partial t}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-010",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'expression de la célérité $c$ d'une onde sur une corde de tension $T$ et de masse linéique $\\mu$ ?",
+        "answers": [
+            "$c = \\frac{T}{\\mu}$",
+            "$c = \\sqrt{\\frac{\\mu}{T}}$",
+            "$c = \\sqrt{\\frac{T}{\\mu}}$",
+            "$c = \\frac{1}{\\sqrt{T\\mu}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-011",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude de la propagation d'une perturbation transversale le long d'une corde, quelle est la forme correcte de l'équation de d'Alembert unidimensionnelle pour le déplacement $y(x,t)$ ?",
+        "answers": [
+            "$\\frac{\\partial^2 y}{\\partial x^2} + \\frac{1}{c^2} \\frac{\\partial^2 y}{\\partial t^2} = 0$",
+            "$\\frac{\\partial y}{\\partial x} - \\frac{1}{c} \\frac{\\partial y}{\\partial t} = 0$",
+            "$\\frac{\\partial^2 y}{\\partial x^2} - \\frac{1}{c^2} \\frac{\\partial^2 y}{\\partial t^2} = 0$",
+            "$\\frac{\\partial^2 y}{\\partial x^2} - c^2 \\frac{\\partial^2 y}{\\partial t^2} = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "L'équation de d'Alembert est une équation aux dérivées partielles du second ordre. La forme canonique est $\\frac{\\partial^2 y}{\\partial x^2} - \\frac{1}{c^2} \\frac{\\partial^2 y}{\\partial t^2} = 0$. Le signe opposé entre les deux termes est crucial : si les signes étaient identiques (réponse 1), on obtiendrait l'équation de Laplace, qui décrit des phénomènes de diffusion et non de propagation ondulatoire."
+    },
+    {
+        "uuid": "dalembert-012",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La solution générale de l'équation de d'Alembert s'écrit $y(x,t) = f(x - ct) + g(x + ct)$. Que représente physiquement cette solution ?",
+        "answers": [
+            "Uniquement une onde stationnaire",
+            "La superposition de deux ondes progressives se déplaçant en sens inverses",
+            "Une onde s'amortissant au cours du temps",
+            "Une onde harmonique pure"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "D'après le théorème de d'Alembert, la solution générale est la somme de deux ondes progressives : $f(x-ct)$ se propage dans le sens des $x$ croissants et $g(x+ct)$ dans le sens des $x$ décroissants. Ce n'est pas nécessairement une onde harmonique (cela dépend de la forme de $f$ et $g$), ni stationnaire (qui nécessite des conditions aux limites particulières)."
+    },
+    {
+        "uuid": "dalembert-013",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "En considérant une onde se propageant selon l'axe $(Ox)$, le terme $f(x - ct)$ correspond à une onde se propageant vers :",
+        "answers": [
+            "Les $x$ croissants",
+            "Les $x$ décroissants",
+            "Le haut de l'axe $y$",
+            "L'origine $x=0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour maintenir la phase constante ($x-ct = cste$), si le temps $t$ augmente, il faut que $x$ augmente également. Ainsi, la perturbation se déplace dans la direction des $x$ positifs. L'erreur classique est d'inverser le signe : le terme $(x+ct)$ correspondrait à une propagation vers les $x$ décroissants."
+    },
+    {
+        "uuid": "dalembert-014",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une onde harmonique de période temporelle $T$, quelle est la relation entre la pulsation $\\omega$ et cette période ?",
+        "answers": [
+            "$\\omega = \\frac{T}{2\\pi}$",
+            "$\\omega = \\frac{2\\pi}{T}$",
+            "$\\omega = 2\\pi T$",
+            "$\\omega = \\frac{1}{T}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La pulsation $\\omega$ (en $rad \\cdot s^{-1}$) correspond à la vitesse angulaire de la phase. Comme la phase totale doit varier de $2\\pi$ en une période $T$, on a $\\omega T = 2\\pi$, soit $\\omega = 2\\pi / T$. La réponse $\\omega = 1/T$ correspond à la fréquence $f$ (en Hertz)."
+    },
+    {
+        "uuid": "dalembert-015",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'expression d'une onde plane progressive $y(x,t) = A \\cos(\\omega t - kx + \\varphi)$, quelle est l'unité du vecteur d'onde $k$ ?",
+        "answers": [
+            "$m$",
+            "$rad \\cdot s^{-1}$",
+            "$m^{-1}$",
+            "$s \\cdot m^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Dans l'argument du cosinus, le produit $kx$ doit être sans dimension. Comme $x$ est une longueur en mètres ($m$), $k$ doit nécessairement être homogène à l'inverse d'une longueur, soit des $m^{-1}$ (ou radians par mètre)."
+    },
+    {
+        "uuid": "dalembert-016",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "En acoustique ou en électromagnétisme, que signifie le terme 'onde plane' ?",
+        "answers": [
+            "L'onde a une amplitude nulle",
+            "La phase est la même en tout point d'un plan perpendiculaire à la direction de propagation",
+            "L'onde ne se propage que sur un plan 2D",
+            "La surface d'onde est un cercle"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Une onde est dite plane si ses surfaces d'onde (lieux où la phase est constante) sont des plans. Par conséquent, en tout point d'un tel plan, la perturbation possède la même phase à un instant donné. Cela n'implique pas que l'onde est confinée dans un plan (elle occupe tout l'espace)."
+    },
+    {
+        "uuid": "dalembert-017",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cas d'une onde sinusoïdale, comment nomme-t-on la distance séparant deux points consécutivement en phase ?",
+        "answers": [
+            "La période $T$",
+            "La longueur d'onde $\\lambda$",
+            "La phase $\\varphi$",
+            "L'amplitude $y_0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La longueur d'onde $\\lambda$ est la période spatiale de l'onde. Elle est reliée à la période temporelle par $\\lambda = c T$ ou $\\lambda = 2\\pi / k$. La confusion classique est de confondre la période temporelle (en secondes) et la période spatiale (en mètres)."
+    },
+    {
+        "uuid": "dalembert-018",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Considérant une corde idéale sans dispersion, quelle est la relation de dispersion (relation entre $\\omega$ et $k$) issue de l'équation de d'Alembert ?",
+        "answers": [
+            "$\\omega = k^2 c$",
+            "$\\omega = \\frac{k}{c}$",
+            "$\\omega = kc$",
+            "$\\omega = \\sqrt{kc}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "En injectant une solution harmonique $y(x,t) = A e^{j(\\omega t - kx)}$ dans l'équation de d'Alembert, on obtient $(-k^2) - (1/c^2)(-\\omega^2) = 0$, ce qui simplifie en $\\omega^2 = k^2 c^2$, d'où $\\omega = kc$. Cette relation linéaire montre que la vitesse de phase est indépendante de $k$ (absence de dispersion)."
+    },
+    {
+        "uuid": "dalembert-019",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une onde, la vitesse de phase $v_{\\varphi}$ est définie par la relation :",
+        "answers": [
+            "$v_{\\varphi} = \\omega k$",
+            "$v_{\\varphi} = \\frac{\\omega}{k}$",
+            "$v_{\\varphi} = \\frac{k}{\\omega}$",
+            "$v_{\\varphi} = \\lambda T$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La vitesse de phase correspond à la célérité avec laquelle un point de phase constante (par exemple un maximum) se déplace. Elle se calcule par le rapport de la pulsation sur le nombre d'onde : $v_{\\varphi} = \\omega / k$. Une erreur courante est d'inverser le rapport."
+    },
+    {
+        "uuid": "dalembert-020",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Standing_waves_on_a_string.gif",
+        "theme": "ondes",
+        "question": "Une onde stationnaire, obtenue par superposition de deux ondes progressives, se caractérise par :",
+        "answers": [
+            "Une propagation d'énergie infinie",
+            "L'existence de points dont l'amplitude est nulle en permanence (nœuds)",
+            "Une vitesse de phase infinie",
+            "Une absence de période temporelle"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Une onde stationnaire ne propage pas d'énergie globalement. Elle se caractérise par des points fixes, appelés 'nœuds', où l'amplitude est toujours nulle, et des 'ventres' où l'amplitude est maximale. L'erreur de penser qu'elle a une vitesse infinie vient d'une mauvaise interprétation du vecteur d'onde."
+    },
+    {
+        "uuid": "dalembert-021",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude d'une corde vibrante formant une onde stationnaire, quelle est la distance séparant deux nœuds de vibration consécutifs ?",
+        "answers": [
+            "$\\lambda$",
+            "$\\frac{\\lambda}{2}$",
+            "$\\frac{\\lambda}{4}$",
+            "$2\\lambda$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Une onde stationnaire s'écrit sous la forme $y(x,t) = A(x)\\cos(\\omega t + \\phi)$. Les nœuds correspondent aux annulations de l'amplitude spatiale $A(x) = A_0 \\sin(kx)$ (ou cosinus selon l'origine), ce qui implique $kx = n\\pi$. La distance entre deux racines consécutives est $\\Delta x = \\frac{\\pi}{k}$. Comme $k = \\frac{2\\pi}{\\lambda}$, on obtient $\\Delta x = \\frac{\\pi}{2\\pi/\\lambda} = \\frac{\\lambda}{2}$."
+    },
+    {
+        "uuid": "dalembert-022",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une corde de longueur $L$ fixée aux deux extrémités, quelles sont les longueurs d'onde $\\lambda_n$ des modes propres de vibration possibles ?",
+        "answers": [
+            "$\\lambda_n = nL$",
+            "$\\lambda_n = \\frac{2L}{n}$",
+            "$\\lambda_n = \\frac{L}{2n}$",
+            "$\\lambda_n = \\frac{2n}{L}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Les conditions aux limites imposent des nœuds en $x=0$ et $x=L$. Ainsi, $L = n \\frac{\\lambda_n}{2}$ avec $n \\in \\mathbb{N}^*$, ce qui donne $\\lambda_n = \\frac{2L}{n}$. L'erreur classique est d'inverser $L$ et $\\lambda$ ou d'oublier le facteur 2 propre à la distance inter-nœuds."
+    },
+    {
+        "uuid": "dalembert-023",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'étude des fréquences propres d'une corde vibrante, comment désigne-t-on le mode de vibration associé à $n=1$ ?",
+        "answers": [
+            "Premier harmonique",
+            "Fondamental",
+            "Mode résonant",
+            "Nœud principal"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le mode $n=1$ correspond à la fréquence la plus basse, appelée mode fondamental (ou première harmonique). Attention, le terme 'premier harmonique' est parfois source de confusion : si le fondamental est l'harmonique 1, le mode $n=2$ est l'harmonique 2, etc."
+    },
+    {
+        "uuid": "dalembert-024",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Que se passe-t-il physiquement lors du phénomène de résonance pour une corde de Melde excitée à une fréquence propre ?",
+        "answers": [
+            "L'onde devient non-linéaire",
+            "L'amplitude des oscillations stationnaires devient très grande",
+            "La corde cesse de vibrer",
+            "La célérité de l'onde change brutalement"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La résonance se produit lorsque la fréquence de l'excitateur correspond à une fréquence propre du système. L'énergie injectée permet d'entretenir des oscillations de grande amplitude, limitées uniquement par les forces dissipatives (frottements), créant ainsi une onde stationnaire visible."
+    },
+    {
+        "uuid": "dalembert-025",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Coaxial_cable_cutaway.svg",
+        "theme": "circuits électriques",
+        "question": "Dans le modèle des lignes de transmission, comment s'exprime la capacité $C$ d'une portion élémentaire de longueur $dx$ du câble coaxial, où $\\Gamma$ est la capacité linéique ?",
+        "answers": [
+            "$C = \\Gamma \\cdot dx$",
+            "$C = \\frac{\\Gamma}{dx}$",
+            "$C = \\sqrt{\\Gamma \\Lambda} dx$",
+            "$C = \\Lambda \\cdot dx$"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La capacité linéique $\\Gamma$ est définie par la capacité par unité de longueur ($F \\cdot m^{-1}$). Ainsi, pour un tronçon infinitésimal $dx$, la capacité est le produit $dC = \\Gamma dx$."
+    },
+    {
+        "uuid": "dalembert-026",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est l'unité SI de l'inductance linéique $\\Lambda$ utilisée dans l'équation des télégraphistes ?",
+        "answers": [
+            "$H \\cdot m$",
+            "$H \\cdot m^{-1}$",
+            "$F \\cdot m^{-1}$",
+            "$\\Omega \\cdot m^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'inductance $L$ s'exprime en Henry ($H$). Une inductance linéique $\\Lambda$ représente une inductance par unité de longueur, soit des $H \\cdot m^{-1}$. Ne pas confondre avec la capacité linéique qui s'exprime en $F \\cdot m^{-1}$."
+    },
+    {
+        "uuid": "dalembert-027",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle équation locale, issue des équations des télégraphistes, relie la tension $u(x,t)$ et le courant $i(x,t)$ pour une ligne sans pertes ?",
+        "answers": [
+            "$\\frac{\\partial u}{\\partial x} = -\\Lambda \\frac{\\partial i}{\\partial t}$",
+            "$\\frac{\\partial u}{\\partial x} = -\\Gamma \\frac{\\partial i}{\\partial t}$",
+            "$\\frac{\\partial^2 u}{\\partial x^2} = \\frac{\\partial i}{\\partial t}$",
+            "$u = Ri$"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour une ligne sans pertes, la loi de maille sur un élément $dx$ donne $u(x+dx) - u(x) = -L_{tronçon} \\frac{\\partial i}{\\partial t}$. Comme $L_{tronçon} = \\Lambda dx$, on obtient à la limite : $\\frac{\\partial u}{\\partial x} = -\\Lambda \\frac{\\partial i}{\\partial t}$."
+    },
+    {
+        "uuid": "dalembert-028",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la célérité $c$ de propagation d'une onde électromagnétique dans un câble coaxial de paramètres linéiques $\\Lambda$ et $\\Gamma$ ?",
+        "answers": [
+            "$c = \\sqrt{\\Gamma \\Lambda}$",
+            "$c = \\frac{1}{\\sqrt{\\Gamma \\Lambda}}$",
+            "$c = \\frac{\\Lambda}{\\Gamma}$",
+            "$c = \\sqrt{\\frac{\\Lambda}{\\Gamma}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "En combinant les deux équations des télégraphistes, on obtient l'équation d'onde $\\frac{\\partial^2 u}{\\partial x^2} = \\Lambda \\Gamma \\frac{\\partial^2 u}{\\partial t^2}$. Par identification avec l'équation de d'Alembert $\\frac{1}{c^2}$, on trouve $\\frac{1}{c^2} = \\Lambda \\Gamma$, soit $c = \\frac{1}{\\sqrt{\\Gamma \\Lambda}}$."
+    },
+    {
+        "uuid": "dalembert-029",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Comment définit-on l'impédance caractéristique $Z_c$ d'une ligne de transmission ?",
+        "answers": [
+            "$Z_c = \\sqrt{\\Gamma \\Lambda}$",
+            "$Z_c = \\sqrt{\\frac{\\Lambda}{\\Gamma}}$",
+            "$Z_c = \\sqrt{\\frac{\\Gamma}{\\Lambda}}$",
+            "$Z_c = \\Lambda c^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour une onde se propageant dans le sens des $x$ croissants, le rapport $u/i$ est constant et vaut $Z_c = \\sqrt{\\frac{\\Lambda}{\\Gamma}}$. L'analyse dimensionnelle confirme : $\\sqrt{\\frac{H \\cdot m^{-1}}{F \\cdot m^{-1}}} = \\sqrt{\\frac{H}{F}} = \\sqrt{\\frac{H^2}{s^2}} = \\Omega$."
+    },
+    {
+        "uuid": "dalembert-030",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour une onde incidente $u_i(x,t)$ et $i_i(x,t)$ se propageant vers les $x$ croissants, quelle relation est correcte ?",
+        "answers": [
+            "$u_i = -Z_c i_i$",
+            "$u_i = Z_c i_i$",
+            "$u_i = \\frac{1}{Z_c} i_i$",
+            "$u_i = Z_c^2 i_i$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour une onde directe (incidente), le courant et la tension sont en phase et liés par l'impédance caractéristique : $u_i(x,t) = Z_c i_i(x,t)$. Pour une onde réfléchie (sens des $x$ décroissants), la relation devient $u_r = -Z_c i_r$."
+    },
+    {
+        "uuid": "dalembert-031",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le cadre de l'étude de la propagation sur une ligne de transmission, quelle est la valeur normalisée typique de l'impédance caractéristique $Z_c$ des câbles coaxiaux utilisés en TP (type BNC) ?",
+        "answers": [
+            "$1 \\, \\Omega$",
+            "$50 \\, \\Omega$",
+            "$1000 \\, \\Omega$",
+            "$0,5 \\, \\Omega$"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "Les câbles coaxiaux standards utilisés en électronique et en physique expérimentale sont conçus pour présenter une impédance caractéristique de $50 \\, \\Omega$ (ou parfois $75 \\, \\Omega$ pour la vidéo). Cette valeur est un compromis standard entre la tenue en puissance et l'atténuation. Les valeurs très faibles ($1 \\, \\Omega$) ou très élevées ($1000 \\, \\Omega$) ne sont pas standards pour ces applications.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-032",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Soit une ligne de transmission de longueur $L$ et d'impédance caractéristique $Z_c$, terminée par une charge résistive $R$. Comment s'exprime le coefficient de réflexion en amplitude $r_u$ pour la tension à l'extrémité de la ligne ($x=L$) ?",
+        "answers": [
+            "$r_u = \\frac{R+Z_c}{R-Z_c}$",
+            "$r_u = \\frac{R-Z_c}{R+Z_c}$",
+            "$r_u = \\frac{Z_c}{R}$",
+            "$r_u = 1 - \\frac{R}{Z_c}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "À l'extrémité chargée, la continuité de la tension et de l'intensité impose la relation $u(L,t) = u_i(L,t) + u_r(L,t) = R \\cdot i(L,t)$. En utilisant $i = (u_i - u_r) / Z_c$, on obtient par identification $r_u = \\frac{u_r}{u_i} = \\frac{R-Z_c}{R+Z_c}$. L'option A est l'inverse, et les autres sont des erreurs classiques de dimension ou de signe.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-033",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le contexte de la transmission d'un signal, que signifie physiquement une 'adaptation d'impédance' réalisée lorsque la charge est choisie telle que $R = Z_c$ ?",
+        "answers": [
+            "L'onde incidente est totalement réfléchie par la charge",
+            "Il n'y a pas d'onde réfléchie, toute l'énergie incidente est dissipée dans la charge",
+            "La tension s'annule nécessairement à l'extrémité de la ligne",
+            "Le régime permanent est atteint instantanément sans effet thermique"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "Lorsque $R = Z_c$, le coefficient de réflexion $r_u = \\frac{R-Z_c}{R+Z_c}$ est nul. Il n'y a donc aucune onde réfléchie repartant vers la source. Toute l'énergie véhiculée par l'onde incidente est absorbée par la charge. C'est la condition recherchée pour éviter les phénomènes d'échos ou de pertes par désadaptation.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-034",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Considérons le cas limite d'une ligne court-circuitée à son extrémité ($R \\to 0$). Quelle est alors la valeur du coefficient de réflexion en tension $r_u$ ?",
+        "answers": [
+            "$1$",
+            "$-1$",
+            "$0$",
+            "$\\infty$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "Si la ligne est en court-circuit, la tension totale à l'extrémité doit être nulle ($u(L,t) = 0$). Cela implique $u_i + u_r = 0$, donc $r_u = u_r/u_i = -1$. Le signe négatif indique une réflexion avec inversion de phase de la tension.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-035",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Lorsqu'une ligne est en circuit ouvert à son extrémité ($R \\to \\infty$), quelles sont les caractéristiques du signal de tension et d'intensité en ce point ?",
+        "answers": [
+            "La tension présente un nœud et l'intensité un ventre",
+            "La tension présente un ventre et l'intensité un nœud",
+            "La tension et l'intensité présentent toutes deux un ventre",
+            "La tension et l'intensité présentent toutes deux un nœud"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "En circuit ouvert ($R \\to \\infty$), le courant $i$ doit s'annuler à l'extrémité (nœud d'intensité). Par les équations de propagation, la tension $u$ présente alors un maximum (ventre de tension). L'analyse des ondes stationnaires confirme que le nœud de l'un correspond au ventre de l'autre.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-036",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une corde de longueur $L$, tendue suivant l'axe $Ox$, fixée en $x=0$ et attachée à un anneau sans masse pouvant coulisser sans frottement sur une tige verticale en $x=L$, quelle est la condition aux limites en $x=L$ ?",
+        "answers": [
+            "$y(L,t) = 0$",
+            "$\\frac{\\partial y}{\\partial x}(L,t) = 0$",
+            "$\\frac{\\partial y}{\\partial t}(L,t) = 0$",
+            "$y(L,t) = y_0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "L'anneau sans masse coulissant sans frottement ne peut supporter aucune force transversale. Comme la force transversale exercée par la corde est proportionnelle à la pente $\\frac{\\partial y}{\\partial x}$, l'absence de force impose $\\frac{\\partial y}{\\partial x}(L,t) = 0$. C'est la condition d'extrémité libre.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-037",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Soit une corde fixée en $x=0$ ($y(0,t)=0$) et libre en $x=L$ ($\\frac{\\partial y}{\\partial x}(L,t)=0$). La solution spatiale est de la forme $\\sin(kx)$. Quelle relation sur $k$ cette condition impose-t-elle ?",
+        "answers": [
+            "$k_n L = n\\pi$",
+            "$k_n L = (n + \\frac{1}{2})\\pi$",
+            "$k_n L = (2n+1)\\pi$",
+            "$k_n L = 2n\\pi$"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "La condition $y(0,t)=0$ est satisfaite par $\\sin(kx)$. La condition de dérivée nulle en $L$ impose $\\cos(kL)=0$. Les racines du cosinus sont les multiples impairs de $\\frac{\\pi}{2}$, soit $kL = (n + \\frac{1}{2})\\pi$. Les autres options correspondent soit à une corde fixée aux deux bouts, soit à des erreurs de calcul trigonométrique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-038",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'étude d'une corde conductrice de masse linéique $\\mu$ parcourue par un courant $i$ dans un champ magnétique $\\vec{B}$, quelle force volumique modifie l'équation de d'Alembert classique ?",
+        "answers": [
+            "La force d'Archimède",
+            "La force de Laplace",
+            "La force de Coriolis",
+            "La force de frottement fluide"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "explication": "La présence d'un courant dans un champ magnétique exerce sur chaque élément de longueur de la corde une force de Laplace. Cette force transversale doit être ajoutée au bilan dynamique de la corde, modifiant ainsi l'équation aux dérivées partielles régissant le déplacement $y(x,t)$.",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-039",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'expression correcte de la force élémentaire de Laplace $d\\vec{f}$ s'exerçant sur un élément de conducteur $d\\vec{l}$ parcouru par un courant $i$ dans un champ magnétique $\\vec{B}$ ?",
+        "answers": [
+            "$d\\vec{f} = q(\\vec{E} + \\vec{v} \\wedge \\vec{B})$",
+            "$d\\vec{f} = i \\cdot d\\vec{l} \\wedge \\vec{B}$",
+            "$d\\vec{f} = \\vec{j} \\cdot d\\tau \\wedge \\vec{B}$",
+            "$d\\vec{f} = m \\cdot \\vec{g}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "La force de Laplace est donnée par le produit vectoriel entre l'élément de courant $i \\cdot d\\vec{l}$ et le champ magnétique local $\\vec{B}$. L'option A correspond à la force de Lorentz pour une particule chargée, et l'option C est la forme locale volumique (souvent utilisée mais $d\\vec{f} = i \\cdot d\\vec{l} \\wedge \\vec{B}$ est la définition classique pour une corde).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-040",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde stationnaire décrite par $y(x,t) = A \\cos(\\omega t) \\sin(kx)$ peut être décomposée mathématiquement comme la superposition de deux ondes progressives de même amplitude et même fréquence, mais se propageant dans des directions opposées. Quelle est cette décomposition ?",
+        "answers": [
+            "$y(x,t) = \\frac{A}{2} [\\sin(kx+\\omega t) + \\sin(kx-\\omega t)]$",
+            "$y(x,t) = \\frac{A}{2} [\\cos(kx-\\omega t) - \\cos(kx+\\omega t)]$",
+            "$y(x,t) = A \\cos(kx) \\cos(\\omega t)$",
+            "$y(x,t) = A [\\sin(kx-\\omega t) + \\sin(kx+\\omega t)]$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "En utilisant la formule trigonométrique $\\cos(a-b) - \\cos(a+b) = 2\\sin(a)\\sin(b)$, on montre que $\\sin(kx)\\cos(\\omega t) = \\frac{1}{2} [\\cos(kx-\\omega t) - \\cos(kx+\\omega t)]$. Cette forme montre clairement la superposition d'une onde se propageant vers les $x$ croissants et une autre vers les $x$ décroissants.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-041",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'équation d'onde de d'Alembert $\\frac{\\partial^2 u}{\\partial x^2} - \\frac{1}{c^2} \\frac{\\partial^2 u}{\\partial t^2} = 0$, quelle est la dimension physique du coefficient $\\frac{1}{c^2}$ ?",
+        "answers": [
+            "$L^2 T^{-2}$",
+            "$L^{-2} T^2$",
+            "$L T^{-1}$",
+            "$M L^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "L'équation est homogène. Le terme $\\frac{\\partial^2 u}{\\partial x^2}$ a pour dimension $[u] L^{-2}$ et le terme $\\frac{1}{c^2} \\frac{\\partial^2 u}{\\partial t^2}$ a pour dimension $[\frac{1}{c^2}] [u] T^{-2}$. Pour que la soustraction soit possible, il faut $[L^{-2}] = [\frac{1}{c^2}] [T^{-2}]$, soit $[\frac{1}{c^2}] = L^{-2} T^2$. C'est l'inverse du carré d'une vitesse ($v^2 = L^2 T^{-2}$ donc $1/v^2 = L^{-2} T^2$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-042",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une corde vibrante de longueur $L$ et de masse linéique $\\mu$ soumise à une tension $T$, comment évolue la fréquence fondamentale $f_1$ si l'on augmente la tension $T$ ?",
+        "answers": [
+            "Elle diminue car la corde est plus lourde",
+            "Elle augmente proportionnellement à $\\sqrt{T}$",
+            "Elle reste identique car elle ne dépend que de la longueur",
+            "Elle devient nulle car la corde ne vibre plus"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "La célérité des ondes sur la corde est $c = \\sqrt{\\frac{T}{\\mu}}$. La fréquence fondamentale est donnée par $f_1 = \\frac{c}{2L} = \\frac{1}{2L} \\sqrt{\\frac{T}{\\mu}}$. Ainsi, $f_1$ est proportionnelle à $\\sqrt{T}$. Une augmentation de la tension augmente donc la fréquence.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-043",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "On considère deux cordes identiques en longueur et en tension. Pour obtenir un accord de quarte tel que $f_2 = \\frac{4}{3} f_1$, quel doit être le rapport des masses linéiques $\\frac{\\mu_2}{\\mu_1}$ ?",
+        "answers": [
+            "$\\frac{4}{3}$",
+            "$\\frac{16}{9}$",
+            "$\\frac{9}{16}$",
+            "$\\frac{3}{4}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 2,
+        "explication": "On a $f = \\frac{1}{2L} \\sqrt{\\frac{T}{\\mu}}$. Le rapport $\\frac{f_2}{f_1} = \\sqrt{\\frac{\\mu_1}{\\mu_2}} = \\frac{4}{3}$. En élevant au carré, on obtient $\\frac{\\mu_1}{\\mu_2} = \\frac{16}{9}$, donc le rapport inverse $\\frac{\\mu_2}{\\mu_1} = \\frac{9}{16}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-044",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le modèle idéal de l'équation de d'Alembert unidimensionnelle, la célérité $c$ dépend-elle de la fréquence ?",
+        "answers": [
+            "Non, c'est un milieu non dispersif",
+            "Oui, car la relation de dispersion est $\\omega = kc$",
+            "Seulement pour les hautes fréquences",
+            "Oui, car la célérité dépend de l'amplitude"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "explication": "L'équation de d'Alembert classique implique une relation de dispersion linéaire $\\omega = kc$, ce qui signifie que la vitesse de phase $v_{\\varphi} = \\frac{\\omega}{k} = c$ est indépendante de la fréquence. Le milieu est donc non dispersif.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-045",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quel théorème mathématique permet d'affirmer que dans l'équation de d'Alembert, l'ordre de dérivation croisée importe peu pour une fonction $u(x,t)$ de classe $\\mathcal{C}^2$ : $\\frac{\\partial^2 u}{\\partial x \\partial t} = \\frac{\\partial^2 u}{\\partial t \\partial x}$ ?",
+        "answers": [
+            "Théorème de Gauss",
+            "Théorème de Schwarz",
+            "Théorème d'Ampère",
+            "Théorème de Taylor"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "Le théorème de Schwarz stipule que pour une fonction de classe $\\mathcal{C}^2$, les dérivées partielles secondes mixtes sont égales. C'est un résultat fondamental pour justifier la manipulation des opérateurs différentiels en physique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-046",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude d'un câble coaxial, de quels paramètres dépend la célérité $c$ de l'onde de tension/courant ?",
+        "answers": [
+            "De la tension du générateur et de la charge",
+            "Uniquement de la longueur du câble",
+            "Des propriétés linéiques du câble : inductance $\\Lambda$ et capacité $\\Gamma$ via $c = 1/\\sqrt{\\Lambda\\Gamma}$",
+            "Uniquement de la résistance linéique"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 2,
+        "explication": "L'équation des télégraphistes sans perte conduit à une équation de d'Alembert où la célérité est donnée par $c = 1/\\sqrt{\\Lambda\\Gamma}$. Elle ne dépend ni du générateur, ni de la charge, mais uniquement des caractéristiques électromagnétiques du milieu et de la géométrie du câble.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-047",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lors de l'observation d'une onde stationnaire sur une corde de longueur $L$ fixée aux deux extrémités, un 'ventre de vibration' désigne un point où :",
+        "answers": [
+            "Le déplacement est nul en permanence",
+            "L'amplitude d'oscillation est maximale",
+            "La corde subit une discontinuité",
+            "La vitesse de l'onde est maximale"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "Dans une onde stationnaire, un nœud est un point où l'amplitude est nulle en permanence, tandis qu'un ventre est un point où l'amplitude d'oscillation atteint sa valeur maximale (deux fois l'amplitude de l'onde progressive composante).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-048",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la relation correcte entre le nombre d'onde $k$ et la longueur d'onde spatiale $\\lambda$ ?",
+        "answers": [
+            "$k = \\frac{\\lambda}{2\\pi}$",
+            "$k = \\frac{2\\pi}{\\lambda}$",
+            "$k = 2\\pi \\lambda$",
+            "$k = \\frac{1}{\\lambda}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "Le nombre d'onde $k$ représente le nombre de radians par unité de longueur. Sur une période spatiale $\\lambda$, la phase varie de $2\\pi$. On a donc $k \\lambda = 2\\pi$, soit $k = 2\\pi / \\lambda$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-049",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde progressive harmonique $u(x,t) = A \\cos(\\omega t - kx + \\varphi)$ possède une double périodicité. Quelles en sont les natures ?",
+        "answers": [
+            "Temporelle et fréquentielle",
+            "Temporelle et spatiale",
+            "Spatiale et angulaire",
+            "Amplitude et phase"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "L'onde est périodique dans le temps (période $T = 2\\pi/\\omega$) et périodique dans l'espace (période spatiale ou longueur d'onde $\\lambda = 2\\pi/k$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-050",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'expression correcte de la vitesse de phase $v_{\\varphi}$ pour une onde progressive ?",
+        "answers": [
+            "$v_{\\varphi} = \\lambda T$",
+            "$v_{\\varphi} = \\frac{\\lambda}{T}$",
+            "$v_{\\varphi} = \\frac{T}{\\lambda}$",
+            "$v_{\\varphi} = \\omega \\lambda$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "La vitesse de phase est la vitesse à laquelle un point de phase constante se déplace. Comme l'onde parcourt une distance $\\lambda$ pendant une durée $T$, on a $v_{\\varphi} = \\frac{\\text{distance}}{\\text{temps}} = \\frac{\\lambda}{T}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-051",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude d'une onde progressive, le signal $s(x,t) = 5 \\sin(2,4 \\cdot 10^3 \\pi t - 7,0 \\pi x + 0,7\\pi)$ est donné. Quelle est la valeur de la pulsation $\\omega$ ?",
+        "answers": [
+            "$2,4 \\cdot 10^3 \\, rad/s$",
+            "$2,4 \\cdot 10^3 \\pi \\, rad/s$",
+            "$7,0 \\pi \\, rad/s$",
+            "$1,2 \\cdot 10^3 \\pi \\, rad/s$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La forme générale d'une onde est $s(x,t) = A \\sin(\\omega t \\mp kx + \\varphi)$. Le coefficient devant le temps $t$ est la pulsation $\\omega$. Ici, il s'agit bien de $2,4 \\cdot 10^3 \\pi \\, rad/s$. L'erreur classique est d'oublier le facteur $\\pi$ ou de confondre avec la fréquence $f = \\omega / (2\\pi)$."
+    },
+    {
+        "uuid": "dalembert-052",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour le même signal $s(x,t) = 5 \\sin(2,4 \\cdot 10^3 \\pi t - 7,0 \\pi x + 0,7\\pi)$, quel est le vecteur d'onde $k$ ?",
+        "answers": [
+            "$7,0 \\pi \\, m^{-1}$",
+            "$7,0 \\, m^{-1}$",
+            "$2,4 \\cdot 10^3 \\pi \\, m^{-1}$",
+            "$0,7 \\pi \\, m^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le vecteur d'onde $k$ est le coefficient multiplicateur de la variable spatiale $x$ dans la phase. Ici, la phase est $(... - 7,0 \\pi x + ...)$, donc par identification, $k = 7,0 \\pi \\, m^{-1}$. Ne confondez pas le signe devant $x$ (qui indique le sens de propagation) avec la valeur de $k$ qui est toujours positive par définition."
+    },
+    {
+        "uuid": "dalembert-053",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la célérité $c$ de l'onde définie par $\\omega = 2,4 \\cdot 10^3 \\pi$ et $k = 7,0 \\pi$ ?",
+        "answers": [
+            "$\\approx 343 \\, m/s$",
+            "$\\approx 171 \\, m/s$",
+            "$\\approx 2400 \\, m/s$",
+            "$0,7 \\, m/s$"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La célérité est donnée par la relation de dispersion $c = \\omega / k$. En faisant le calcul : $c = (2,4 \\cdot 10^3 \\pi) / (7,0 \\pi) \\approx 2400 / 7 \\approx 342,8 \\, m/s$. Cette valeur est caractéristique de la vitesse du son dans l'air à température ambiante."
+    },
+    {
+        "uuid": "dalembert-054",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde sinusoïdale se propageant vers les $x$ décroissants s'écrit sous la forme suivante (avec $\\omega, k > 0$) :",
+        "answers": [
+            "$S_0 \\cos(\\omega t - kx)$",
+            "$S_0 \\cos(\\omega t + kx)$",
+            "$S_0 \\cos(kx - \\omega t)$",
+            "$S_0 \\sin(\\omega t) \\cos(kx)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Une onde progressive de la forme $f(t + x/c)$ se propage vers les $x$ décroissants. En factorisant par $\\omega$, on obtient une dépendance en $(\\omega t + kx)$. L'inverse $(\\omega t - kx)$ correspond à une propagation vers les $x$ croissants."
+    },
+    {
+        "uuid": "dalembert-055",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de la description spectrale d'une onde, qu'appelle-t-on pulsation spatiale ?",
+        "answers": [
+            "Le taux de variation temporelle $\\omega$",
+            "Le vecteur d'onde $k$ (ou nombre d'onde)",
+            "La longueur d'onde $\\lambda$",
+            "La vitesse de phase $v_{\\varphi}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La pulsation temporelle $\\omega$ est liée au temps, tandis que le vecteur d'onde $k$ (parfois appelé pulsation spatiale car $k = 2\\pi / \\lambda$) décrit la périodicité dans l'espace. C'est l'analogue spatial de la pulsation temporelle."
+    },
+    {
+        "uuid": "dalembert-056",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La notation complexe $\\underline{y}(x,t)$ d'une OPPH se propageant vers les $x$ croissants peut s'écrire de plusieurs manières selon la convention choisie. Laquelle est correcte ?",
+        "answers": [
+            "$\\underline{y}(x,t) = y_0 e^{j(\\omega t + kx + \\varphi)}$",
+            "$\\underline{y}(x,t) = y_0 e^{j(\\omega t - kx + \\varphi)}$",
+            "$\\underline{y}(x,t) = y_0 e^{j(kx - \\omega t + \\varphi)}$",
+            "Les réponses B et C sont toutes deux conventionnellement possibles"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 3,
+        "subject": "physique",
+        "explication": "En physique, deux conventions coexistent pour le complexe : $e^{j(\\omega t - kx)}$ (utilisée en optique/acoustique) et $e^{j(kx - \\omega t)}$ (courante en électromagnétisme). Les deux décrivent correctement une onde progressant vers les $x$ croissants, pourvu que l'on reste cohérent avec l'opérateur dérivée."
+    },
+    {
+        "uuid": "dalembert-057",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lorsqu'une ligne de transmission est terminée par un court-circuit ($Z_L = 0$), quelle est la condition aux limites pour la tension $u(x,t)$ à cette extrémité ?",
+        "answers": [
+            "La tension est un ventre (maximale)",
+            "La tension est un nœud (nulle)",
+            "La tension est égale à la tension incidente",
+            "Le courant est nul"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un court-circuit impose par définition une différence de potentiel nulle entre les deux bornes, donc $u(L,t) = 0$. C'est un nœud de tension. Le courant, lui, y sera un ventre (maximal)."
+    },
+    {
+        "uuid": "dalembert-058",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lorsqu'une ligne est terminée par un circuit ouvert ($Z_L \\to \\infty$), quelle est la condition aux limites pour le courant $i(x,t)$ ?",
+        "answers": [
+            "Le courant est un ventre",
+            "Le courant est un nœud (nul)",
+            "Le courant est égal au courant incident",
+            "Le courant est en avance de $\\pi/2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un circuit ouvert empêche toute circulation de charges électriques, donc le courant est nécessairement nul à l'extrémité. Le courant présente donc un nœud à cette position."
+    },
+    {
+        "uuid": "dalembert-059",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le terme $\\underline{S}(x) = 2j S_0 \\sin(kx) e^{j\\omega t}$ (notation complexe) décrit quel type de phénomène ?",
+        "answers": [
+            "Une onde progressive simple",
+            "Une onde stationnaire",
+            "Une onde évanescente",
+            "Une onde de choc"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La séparation des variables entre le terme spatial (ici en $\\sin(kx)$) et le terme temporel ($e^{j\\omega t}$) est la signature d'une onde stationnaire. Contrairement à l'onde progressive où la phase dépend de $(t \\pm x/c)$, ici la phase est constante dans le temps en chaque point $x$."
+    },
+    {
+        "uuid": "dalembert-060",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une corde de longueur $L$ fixée aux deux extrémités, quelle condition permet l'existence d'ondes stationnaires ?",
+        "answers": [
+            "$L = n \\frac{\\lambda}{2}$ avec $n \\in \\mathbb{N}^*$",
+            "$L = n \\lambda$ avec $n \\in \\mathbb{N}^*$",
+            "$L = \\frac{\\lambda}{4}$",
+            "$L$ est indépendante de $\\lambda$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Les deux extrémités étant fixées, elles constituent des nœuds de vibration. La distance entre deux nœuds consécutifs est $\\lambda/2$. Pour que la corde puisse vibrer, il faut que sa longueur $L$ soit un multiple entier de cette distance, d'où $L = n \\frac{\\lambda}{2}$."
+    },
+    {
+        "uuid": "dalembert-061",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude des ondes sur une corde, considérant une corde cylindrique de section droite de diamètre $d$, de masse volumique $\\rho$ et de longueur $L$, quelle est l'expression correcte de sa masse linéique $\\mu$ ?",
+        "answers": [
+            "$\\mu = \\rho \\pi d^2$",
+            "$\\mu = \\rho \\frac{\\pi d^2}{4}$",
+            "$\\mu = \\rho d$",
+            "$\\mu = \\frac{\\rho}{\\pi d^2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "La masse linéique est définie par $\\mu = m/L$. Le volume d'un tronçon de longueur $L$ est $V = S \\cdot L = (\\pi (d/2)^2) \\cdot L = \\frac{\\pi d^2}{4} L$. Ainsi, $\\mu = \\rho \\frac{V}{L} = \\rho \\frac{\\pi d^2}{4}$. L'erreur classique est d'oublier le facteur $1/4$ lié au diamètre au lieu du rayon.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-062",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La célérité des ondes transversales sur une corde tendue sous une tension $T$ est donnée par $c = \\sqrt{T/\\mu}$. Sachant que la fréquence du fondamental pour une corde de longueur $L$ fixée aux deux extrémités est $f_1 = \\frac{c}{2L}$, quelle est l'expression de $f_1$ en fonction de $T$ et $\\mu$ ?",
+        "answers": [
+            "$f_1 = \\frac{1}{2L} \\sqrt{\\frac{T}{\\mu}}$",
+            "$f_1 = \\frac{1}{L} \\sqrt{\\frac{T}{\\mu}}$",
+            "$f_1 = 2L \\sqrt{\\frac{\\mu}{T}}$",
+            "$f_1 = \\frac{T}{2L\\mu}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "explication": "En substituant $c = \\sqrt{T/\\mu}$ dans la relation $f_1 = c/(2L)$, on obtient directement $f_1 = \\frac{1}{2L}\\sqrt{\\frac{T}{\\mu}}$. L'erreur de facteur 2 est fréquente par confusion avec la longueur d'onde du mode fondamental $\\lambda_1 = 2L$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-063",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'accordage d'une corde, comment doit-on ajuster la tension $T$ pour doubler la fréquence du mode fondamental $f_1$ sans modifier la longueur $L$ ni la masse linéique $\\mu$ ?",
+        "answers": [
+            "Doubler la tension $T$",
+            "Multiplier la tension $T$ par 4",
+            "Diviser la tension $T$ par 2",
+            "Multiplier la tension $T$ par $\\sqrt{2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "La relation $f_1 \\propto \\sqrt{T}$ implique que si l'on veut multiplier $f_1$ par un facteur $k=2$, il faut multiplier la tension par $k^2 = 4$. C'est une application directe de la proportionnalité entre fréquence et racine carrée de la tension.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-064",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lors de l'observation d'ondes stationnaires sur une corde, que désigne précisément le terme 'fuseau' ?",
+        "answers": [
+            "L'intégralité de la corde vibrante",
+            "La partie de la corde située entre deux nœuds d'amplitude consécutifs",
+            "Le point d'attache de la corde (nœud)",
+            "L'amplitude maximale au centre du mode"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "Par définition, une onde stationnaire présente des points fixes (nœuds) et des points d'amplitude maximale (ventres). La portion de corde comprise entre deux nœuds consécutifs forme une boucle appelée fuseau, de longueur $\\lambda/2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-065",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une corde de longueur $L$ fixée aux deux extrémités, combien de ventres d'amplitude possède le mode harmonique $n=3$ ?",
+        "answers": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 2,
+        "explication": "Pour le mode d'ordre $n$ d'une corde fixée aux deux bouts, le nombre de ventres est exactement égal à $n$. Le mode $n=3$ présente donc 3 ventres et 4 nœuds (en comptant les extrémités).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-066",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'expérience de Melde, on excite une corde à une fréquence $f$. Que se passe-t-il lorsque cette fréquence est égale à l'une des fréquences propres de la corde ?",
+        "answers": [
+            "La corde ne présente aucun mouvement visible",
+            "On observe un régime d'ondes stationnaires avec des fuseaux stables",
+            "La corde s'échauffe et sa tension diminue",
+            "L'onde se propage sans réflexion aux extrémités"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "La résonance se produit lorsque la fréquence excitatrice coïncide avec une fréquence propre. Le phénomène d'ondes stationnaires s'établit par interférence constructive entre l'onde incidente et l'onde réfléchie, créant des fuseaux stables.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-067",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'étude des ondes électromagnétiques dans une ligne bifilaire, l'impédance caractéristique $Z_c$ est définie par $Z_c = u(x,t)/i(x,t)$. Quelle est l'unité de cette grandeur dans le système international ?",
+        "answers": [
+            "Le Newton (N)",
+            "L'Ohm ($\\Omega$)",
+            "L'Henry (H)",
+            "Le mètre par seconde (m/s)"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "Par analogie avec la loi d'Ohm, le rapport d'une tension par un courant s'exprime en Ohms. Bien qu'elle dépende des caractéristiques géométriques et électriques (inductance et capacité linéiques), $Z_c$ conserve la dimension d'une résistance.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-068",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une corde vibrante idéale, la relation de dispersion est $\\omega = ck$ avec $c$ constant. Comment qualifie-t-on ce milieu de propagation ?",
+        "answers": [
+            "Dispersif",
+            "Non dispersif",
+            "Absorbant",
+            "Anisotrope"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "Un milieu est dit non dispersif si la vitesse de phase $v_{\\phi} = \\omega/k$ est indépendante de la fréquence (ou du nombre d'onde $k$). Ici, $\\omega/k = c$ (constante), le milieu est donc non dispersif.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-069",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "En physique des ondes, si l'on impose en $x=0$ une condition $y(0,t) = A \\cos(\\omega t)$, de quel type de condition s'agit-il ?",
+        "answers": [
+            "Une condition de Dirichlet (extrémité fixe)",
+            "Une condition d'excitation imposée (source)",
+            "Une condition de Neumann (extrémité libre)",
+            "Une condition de réflexion partielle"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "Imposer le déplacement $y$ en un point revient à piloter la corde par une source externe (un vibreur). Ce n'est ni une extrémité fixe ($y=0$), ni une extrémité libre (pente nulle), mais une excitation forcée.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-070",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le modèle de la ligne de transmission (câble coaxial ou bifilaire), comment s'effectue physiquement le transport de l'énergie ?",
+        "answers": [
+            "Par le déplacement des électrons à la vitesse $c$",
+            "Par le champ électromagnétique guidé entre les deux conducteurs",
+            "Par la vibration mécanique du métal des conducteurs",
+            "Par le courant de conduction interne au matériau"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "L'énergie ne voyage pas 'dans' les fils sous forme de courant de déplacement rapide, mais via le vecteur de Poynting $\\vec{\\Pi} = \\frac{1}{\\mu_0} \\vec{E} \\wedge \\vec{B}$ situé dans le diélectrique entre les conducteurs. Les conducteurs servent uniquement de guide au champ électromagnétique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-071",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude de la propagation d'un signal électrique dans un câble coaxial idéal, quelle est la valeur typique de la célérité de l'onde par rapport à la célérité de la lumière dans le vide $c_0$ ?",
+        "answers": [
+            "$c = c_0$ (propagation identique au vide)",
+            "$c \\approx 0.6$ à $0.7 c_0$ selon la permittivité relative $\\varepsilon_r$ du diélectrique",
+            "$c \\approx 340 \\, m/s$ (propagation acoustique)",
+            "$c \\ll 1 \\, m/s$ (diffusion thermique)"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La célérité dans un câble est donnée par $c = 1/\\sqrt{L_l C_l} = c_0/\\sqrt{\\varepsilon_r \\mu_r}$. Comme le diélectrique isolant a une permittivité $\\varepsilon_r > 1$, la célérité est toujours inférieure à $c_0$. Les autres réponses sont physiquement aberrantes pour une onde électromagnétique guidée."
+    },
+    {
+        "uuid": "dalembert-072",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Considérant un régime d'ondes stationnaires dans un câble coaxial, quelle est la relation entre les extremums de tension $u(x,t)$ et d'intensité $i(x,t)$ ?",
+        "answers": [
+            "Un ventre de tension correspond à un nœud d'intensité",
+            "Un ventre de tension correspond à un ventre d'intensité",
+            "La tension et l'intensité sont en phase en tout point",
+            "Un ventre de tension correspond à un court-circuit"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Dans un système sans pertes, les ondes de courant et de tension sont déphasées de $\\pi/2$ spatialement et temporellement. Par conséquent, les points où la tension est maximale (ventre) correspondent aux points où le courant est nul (nœud), car l'impédance locale impose ce déphasage."
+    },
+    {
+        "uuid": "dalembert-073",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Soient $r_u = \\frac{u_{refl}}{u_{inc}}$ et $r_i = \\frac{i_{refl}}{i_{inc}}$ les coefficients de réflexion respectifs de la tension et de l'intensité. Quelle est la relation correcte entre ces deux grandeurs ?",
+        "answers": [
+            "$r_i = r_u$",
+            "$r_i = -r_u$",
+            "$r_i = 1/r_u$",
+            "$r_i = r_u^2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour une onde incidente se propageant dans le sens $x > 0$ avec $i_{inc} = u_{inc}/Z_c$, l'onde réfléchie dans le sens $x < 0$ vérifie $i_{refl} = -u_{refl}/Z_c$. En divisant ces expressions, on obtient immédiatement $r_i = -r_u$. C'est un résultat fondamental lié à l'inversion du sens de propagation."
+    },
+    {
+        "uuid": "dalembert-074",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une corde de longueur $L$ fixée aux deux extrémités, vers quelle pulsation $\\omega$ tendent les résonances successives du système ?",
+        "answers": [
+            "$\\omega_n = n \\frac{\\pi c}{L}$ avec $n \\in \\mathbb{N}^*$",
+            "$\\omega = \\frac{2 \\pi c}{L}$",
+            "$\\omega = \\frac{c}{L}$",
+            "$\\omega = \\sqrt{\\frac{T}{\\mu}}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La condition aux limites de Dirichlet (corde fixée en $0$ et $L$) impose $k_n = n\\pi/L$. Comme $\\omega = ck$, on en déduit $\\omega_n = n\\pi c / L$. L'erreur classique est d'oublier le facteur $n$ ou de confondre avec la vitesse de phase."
+    },
+    {
+        "uuid": "dalembert-075",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le modèle de la corde vibrante, l'approximation des 'petits angles' utilisée pour linéariser l'équation du mouvement permet d'écrire $\\tan(\\alpha) \\approx \\sin(\\alpha) \\approx$ :",
+        "answers": [
+            "$y(x,t)$",
+            "$\\frac{\\partial y}{\\partial x}$",
+            "$\\frac{\\partial y}{\\partial t}$",
+            "$\\cos(\\alpha)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'angle $\\alpha$ de la corde par rapport à l'horizontale est défini par $\\tan(\\alpha) = \\text{pente} = \\partial y / \\partial x$. Pour de petits angles, $\\tan(\\alpha) \\approx \\alpha$, donc $\\alpha \\approx \\partial y / \\partial x$. La dérivée temporelle représente la vitesse transverse, non la pente géométrique."
+    },
+    {
+        "uuid": "dalembert-076",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une corde de guitare de longueur $L = 63 \\, cm$ est fixée aux deux extrémités. Quelle est la longueur d'onde $\\lambda$ du mode fondamental ?",
+        "answers": [
+            "$\\lambda = L = 63 \\, cm$",
+            "$\\lambda = 2L = 126 \\, cm$",
+            "$\\lambda = L/2 = 31,5 \\, cm$",
+            "$\\lambda = c/f = 82,5 \\, cm$"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour le mode fondamental, la corde présente un ventre au centre et deux nœuds aux extrémités. La longueur $L$ correspond donc à une demi-longueur d'onde : $L = \\lambda/2$, soit $\\lambda = 2L$. La fréquence donnée est une information redondante qui ne change pas cette condition géométrique."
+    },
+    {
+        "uuid": "dalembert-077",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la relation fondamentale entre la pulsation $\\omega$ (en $rad/s$) et la fréquence $f$ (en $Hz$) ?",
+        "answers": [
+            "$\\omega = f$",
+            "$\\omega = 2\\pi f$",
+            "$f = 2\\pi \\omega$",
+            "$\\omega = 1/f$"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par définition, un cycle correspond à une phase de $2\\pi$ radians. Le lien est donc $\\omega = 2\\pi f$. Les autres réponses sont des erreurs dimensionnelles ou des inversions de formules classiques."
+    },
+    {
+        "uuid": "dalembert-078",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'expression d'une onde plane progressive sinusoïdale $y(x,t) = y_0 \\cos(\\omega t - kx + \\varphi)$, que représente le terme $\\varphi$ ?",
+        "answers": [
+            "La pulsation temporelle",
+            "La phase à l'origine (en $x=0, t=0$)",
+            "L'amplitude maximale de l'oscillation",
+            "Le vecteur d'onde"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La phase totale de l'onde est l'argument du cosinus : $\\Phi = \\omega t - kx + \\varphi$. À l'origine ($x=0, t=0$), la phase vaut $\\varphi$, d'où son nom de phase à l'origine."
+    },
+    {
+        "uuid": "dalembert-079",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde décrite par une fonction du type $f(x+ct)$ se propage à la célérité $c$ dans quelle direction ?",
+        "answers": [
+            "Vers les $x$ croissants (droite)",
+            "Vers les $x$ décroissants (gauche)",
+            "C'est une onde stationnaire sans direction de propagation",
+            "La direction est indéterminée sans le signe de $c$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour qu'un point de phase constante reste sur la courbe, il faut que $x+ct = Cte$. En dérivant par rapport au temps, on obtient $dx/dt = -c$. La vitesse est donc négative, l'onde se déplace vers les $x$ décroissants."
+    },
+    {
+        "uuid": "dalembert-080",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La célérité $c$ des ondes se propageant sur une corde vibrante dépend-elle de l'amplitude $y_0$ de la perturbation ?",
+        "answers": [
+            "Oui, elle augmente avec $y_0$",
+            "Non, dans le cadre de l'approximation linéaire des petites oscillations",
+            "Oui, elle diminue avec $y_0$",
+            "Cela dépend uniquement de la masse linéique $\\mu$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans l'approximation linéaire, l'équation de d'Alembert est homogène et sa solution est indépendante de l'amplitude. La célérité est uniquement fixée par les propriétés du milieu : $c = \\sqrt{T/\\mu}$. Toute dépendance en amplitude sortirait du cadre de la linéarité (non-linéarités géométriques)."
+    },
+    {
+        "uuid": "dalembert-081",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude des ondes mécaniques sur une corde vibrante, sachant que la célérité est donnée par $c = \\sqrt{T/\\mu}$, quelle est la tension $T$ d'une corde de masse linéique $\\mu = 0,01 \\, kg/m$ pour laquelle la célérité des ondes est $c = 100 \\, m/s$ ?",
+        "answers": [
+            "$1 \\, N$",
+            "$100 \\, N$",
+            "$10 \\, N$",
+            "$1000 \\, N$"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "La célérité est $c = \\sqrt{T/\\mu}$, donc $T = \\mu c^2$. Avec $\\mu = 10^{-2} \\, kg/m$ et $c = 10^2 \\, m/s$, on obtient $T = 10^{-2} \\times (10^2)^2 = 10^{-2} \\times 10^4 = 100 \\, N$. L'erreur classique est d'oublier de mettre la célérité au carré.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-082",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Sur une corde de longueur $L = 1 \\, m$ fixée à ses deux extrémités ($x=0$ et $x=L$), le mode de vibration harmonique de rang $n=2$ présente un nœud de vibration à la position $x$ égale à :",
+        "answers": [
+            "$0,25 \\, m$",
+            "$0,5 \\, m$",
+            "$0,75 \\, m$",
+            "Il n'y a pas de nœud entre les extrémités"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "Les positions des nœuds pour une corde fixée sont données par $x_k = k \\frac{L}{n}$ pour $k=0, 1, ..., n$. Pour $n=2$, les nœuds sont à $x=0$, $x=L/2 = 0,5 \\, m$ et $x=L$. Le point $x=0,5 \\, m$ est le nœud central.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-083",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour un câble coaxial modélisé par une inductance linéique $L'$ et une capacité linéique $C'$, la célérité des ondes est $c = 1/\\sqrt{L'C'}$. Si l'inductance linéique $L'$ (souvent notée $\\Lambda$ en notation simplifiée) augmente, la célérité $c$ :",
+        "answers": [
+            "Augmente",
+            "Diminue",
+            "Reste la même",
+            "S'annule"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "La formule $c = 1/\\sqrt{L'C'}$ montre une relation de proportionnalité inverse entre la célérité et la racine carrée de l'inductance linéique. Si $L'$ augmente, le dénominateur augmente, donc $c$ diminue.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-084",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Un signal périodique de période temporelle $T = 1 \\, ms$ possède une fréquence $f$ égale à :",
+        "answers": [
+            "$1 \\, Hz$",
+            "$1000 \\, Hz$",
+            "$100 \\, Hz$",
+            "$10 \\, Hz$"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "La fréquence est l'inverse de la période : $f = 1/T$. Ici, $T = 10^{-3} \\, s$, donc $f = 1/10^{-3} = 10^3 \\, Hz = 1000 \\, Hz$. Attention aux conversions d'unités de temps.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-085",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'inductance $L$ est définie par $u = L \\frac{di}{dt}$. En utilisant l'analyse dimensionnelle, quelle est la dimension de l'inductance en unités de base ($M$ : masse, $L$ : longueur, $T$ : temps, $I$ : intensité $A$) ?",
+        "answers": [
+            "$M L^2 T^{-2} I^{-2}$",
+            "$M L^2 T^{-2} I^{-1}$",
+            "$M L T^{-2} I^{-2}$",
+            "$L^2 I^{-1} T$"
+        ],
+        "difficulty": 4,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "explication": "D'après $U = L \\frac{dI}{dt}$, on a $[L] = [U][T][I]^{-1}$. Or, la puissance $P = UI = RI^2$ impose $[U] = [P][I]^{-1} = M L^2 T^{-3} I^{-1}$. Ainsi $[L] = (M L^2 T^{-3} I^{-1}) \\cdot T \\cdot I^{-1} = M L^2 T^{-2} I^{-2}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-086",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une onde progressive se propageant sur une corde, la puissance moyenne transportée par l'onde est proportionnelle à :",
+        "answers": [
+            "L'amplitude $A$",
+            "Le carré de l'amplitude $A^2$",
+            "L'inverse de l'amplitude $1/A$",
+            "La racine de l'amplitude $\\sqrt{A}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "L'énergie d'une onde mécanique dépend du carré de son amplitude (énergie cinétique et potentielle liées au déplacement $y(x,t)$). La puissance, étant une énergie par unité de temps, suit également cette loi en $A^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-087",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le mode fondamental ($n=1$) d'une corde de longueur $L$ fixée en $x=0$ et $x=L$, où l'amplitude du mouvement est-elle maximale ?",
+        "answers": [
+            "$x = 0$",
+            "$x = L$",
+            "$x = L/2$",
+            "$x = L/4$"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 2,
+        "explication": "Le mode fondamental d'une corde fixée est une demi-sinusoïde. Les nœuds sont aux extrémités ($0$ et $L$), et le ventre (amplitude maximale) se situe au milieu de la corde, soit à $x = L/2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-088",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La fréquence fondamentale d'une corde est donnée par $f_1 = \\frac{1}{2L} \\sqrt{T/\\mu}$. Si l'on double la longueur $L$ de la corde (toutes choses égales par ailleurs), que devient la fréquence fondamentale ?",
+        "answers": [
+            "Elle est multipliée par 2",
+            "Elle est divisée par 2",
+            "Elle reste inchangée",
+            "Elle est multipliée par 4"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "D'après la formule $f_1 \\propto 1/L$, la fréquence est inversement proportionnelle à la longueur. Si $L$ est multiplié par $2$, la fréquence est divisée par $2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-089",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde stationnaire transporte-t-elle de l'énergie en moyenne temporelle le long de sa direction de propagation ?",
+        "answers": [
+            "Oui, comme une onde progressive",
+            "Non, l'énergie reste confinée dans des fuseaux sans propagation nette",
+            "Seulement si elle est de forte amplitude",
+            "Uniquement aux ventres de vibration"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "Par définition, une onde stationnaire résulte de la superposition de deux ondes progressives de sens opposés. Le vecteur de Poynting (ou flux d'énergie) moyen est nul : il n'y a pas de transport d'énergie à travers une section droite.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-090",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le vecteur d'onde $\\vec{k}$ caractérise la direction et le sens de propagation d'une onde plane. Pour une onde se propageant dans la direction des $x$ décroissants, le vecteur d'onde est :",
+        "answers": [
+            "$\\vec{k} = k \\vec{u}_x$",
+            "$\\vec{k} = -k \\vec{u}_x$",
+            "$\\vec{k} = 0$",
+            "$\\vec{k} = -k \\vec{u}_y$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "explication": "Le vecteur d'onde $\\vec{k}$ est porté par le vecteur unitaire de propagation. Si l'onde se propage vers les $x$ décroissants, elle est dirigée selon $-\\vec{u}_x$. Donc $\\vec{k} = -k \\vec{u}_x$ avec $k > 0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dalembert-091",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude d'une onde progressive harmonique $s(x,t) = A \\cos(\\omega t - kx + \\phi)$, quelle est la différence de phase $\\Delta \\phi = \\phi(x=\\lambda) - \\phi(x=0)$ ?",
+        "answers": [
+            "$\\pi/2$ rad",
+            "$\\pi$ rad",
+            "$2\\pi$ rad (identique modulo $2\\pi$)",
+            "$0$ rad"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La phase est donnée par $\\phi(x) = -kx$. Pour $x=\\lambda$, la phase est $-k\\lambda = -(2\\pi / \\lambda) \\cdot \\lambda = -2\\pi$. Comme les fonctions trigonométriques sont $2\\pi$-périodiques, un déphasage de $2\\pi$ correspond à une remise en phase identique de l'onde."
+    },
+    {
+        "uuid": "dalembert-092",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une onde électromagnétique plane progressive harmonique se propageant dans le vide avec une célérité $c$, quelle est la relation entre le vecteur d'onde $k$ (nombre d'onde) et la pulsation $\\omega$ ?",
+        "answers": [
+            "$\\omega c$",
+            "$\\omega/c$",
+            "$c/\\omega$",
+            "$\\sqrt{\\omega c}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La relation de dispersion dans le vide est $\\omega = c k$. En isolant $k$, on obtient $k = \\omega / c$. L'erreur classique est d'inverser le rapport, ce qui conduirait à une unité de vitesse au lieu d'une unité de m$^{-1}$."
+    },
+    {
+        "uuid": "dalembert-093",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Soit l'équation aux dérivées partielles $\\frac{\\partial^2 y}{\\partial x^2} - \\frac{1}{c^2} \\frac{\\partial^2 y}{\\partial t^2} = 0$ régissant la propagation d'une perturbation. Quelle est la nature mathématique de cette équation ?",
+        "answers": [
+            "Linéaire et du second ordre",
+            "Non linéaire",
+            "Du premier ordre en temps",
+            "D'ordre 4"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'équation est linéaire car si $y_1$ et $y_2$ sont solutions, alors $a y_1 + b y_2$ est solution. Elle est du second ordre car elle fait intervenir des dérivées secondes par rapport à $x$ et $t$."
+    },
+    {
+        "uuid": "dalembert-094",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La propriété de linéarité de l'équation de d'Alembert est fondamentale en physique des ondes. Quelle conséquence pratique en découle pour la résolution de problèmes complexes ?",
+        "answers": [
+            "Le principe de superposition",
+            "La conservation de la charge",
+            "Le théorème de Millman",
+            "L'approximation d'Ohm"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le principe de superposition permet de décomposer un signal complexe (via une série de Fourier) en une somme de signaux harmoniques simples et de traiter chaque composante indépendamment avant de les sommer."
+    },
+    {
+        "uuid": "dalembert-095",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le modèle d'une ligne de transmission (câble coaxial), la vitesse de propagation est donnée par $c = 1/\\sqrt{LC}$. Si l'on remplace l'isolant par un matériau de permittivité $\\varepsilon$ plus élevée, que devient la célérité $c$ ?",
+        "answers": [
+            "Augmente",
+            "Diminue",
+            "Reste stable",
+            "Dépasse la vitesse de la lumière"
+        ],
+        "difficulty": 3,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'inductance linéique $L$ et la capacité linéique $C$ dépendent des propriétés du milieu. En particulier, $C$ est proportionnelle à $\\varepsilon$. Si $\\varepsilon$ augmente, $C$ augmente, donc le produit $LC$ augmente, ce qui entraîne une diminution de $c = 1/\\sqrt{LC}$."
+    },
+    {
+        "uuid": "dalembert-096",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lors de l'étude d'un régime transitoire sur une ligne, la condition aux limites $i(0,t)=0$ (extrémité ouverte) impose quel comportement physique à l'intensité au point $x=0$ ?",
+        "answers": [
+            "Un nœud d'intensité",
+            "Un ventre d'intensité",
+            "Un nœud de tension",
+            "Un point de court-circuit"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Un nœud correspond à un point où l'amplitude de la grandeur considérée est identiquement nulle. Si $i(0,t)=0$ pour tout $t$, le courant s'annule toujours en ce point, ce qui définit un nœud d'intensité."
+    },
+    {
+        "uuid": "dalembert-097",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Soit la solution de l'équation de d'Alembert $y(x,t) = f(ct - x)$. Dans quel sens se propage cette onde ?",
+        "answers": [
+            "Les $x$ croissants",
+            "Les $x$ décroissants",
+            "L'axe $y$",
+            "Le temps négatif"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour maintenir la phase constante $ct-x = cste$, si $t$ augmente, $x$ doit augmenter pour compenser. L'onde se déplace donc dans le sens des $x$ croissants. Attention au signe : $f(ct+x)$ se déplacerait vers les $x$ décroissants."
+    },
+    {
+        "uuid": "dalembert-098",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Que traduit mathématiquement et physiquement le phénomène de 'dispersion' pour une onde se propageant dans un milieu donné ?",
+        "answers": [
+            "L'onde s'étale spatialement sans changer de forme",
+            "La vitesse de phase dépend de la fréquence",
+            "L'énergie est perdue par frottement",
+            "L'onde ne peut pas se propager"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La dispersion signifie que $v_{\\phi} = \\omega/k$ n'est pas constante. Par conséquent, les différentes composantes fréquentielles d'un paquet d'ondes se propagent à des vitesses différentes, ce qui provoque une déformation du signal au cours du temps."
+    },
+    {
+        "uuid": "dalembert-099",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "En considérant une onde stationnaire de forme spatiale $A \\cos(kx + \\phi)$, quelle est la valeur de la fonction spatiale au niveau d'un ventre de vibration ?",
+        "answers": [
+            "Le module est nul ($0$)",
+            "Le module est maximal ($\\pm 1$ multiplié par l'amplitude)",
+            "Le module est $1/2$",
+            "Le module est infini"
+        ],
+        "difficulty": 1,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un ventre de vibration est un point où l'amplitude de l'oscillation est maximale. Mathématiquement, cela correspond aux extremums de la fonction trigonométrique, soit $\\cos(kx+\\phi) = \\pm 1$."
+    },
+    {
+        "uuid": "dalembert-100",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'équation de d'Alembert idéale sans terme d'amortissement décrit un transfert d'énergie particulier. Lequel ?",
+        "answers": [
+            "Un transfert thermique diffusif",
+            "Un transfert par onde de propagation (sans perte d'énergie)",
+            "Un transfert par convection forcée",
+            "Un transfert de charge électrique statique"
+        ],
+        "difficulty": 2,
+        "chapter": "Equation de d'Alembert",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'absence de terme de dissipation (pas de dérivée première) indique que l'énergie est conservée et transportée par l'onde. Le transfert thermique, lui, est régi par l'équation de la chaleur (diffusive), qui est du premier ordre en temps."
+    }
+]

@@ -19,6 +19,7 @@ use crate::models::{
 };
 use actix_cors::Cors;
 use actix_multipart::form::MultipartForm;
+use actix_multipart::form::text::Text;
 use actix_web::{App, HttpResponse, HttpServer, Responder, get, post, web};
 use folder_manager::{add_image, download_and_save_image, read_image};
 
@@ -94,6 +95,7 @@ async fn init_database(pool: &DbPool) {
                 correct_answer_index: quiz_data.correct_answer_index,
                 chapter: quiz_data.chapter,
                 user_id: String::from("Native"),
+                explication: quiz_data.explication.clone(),
             };
 
             if let Err(e) = insert_quiz(&mut conn, new_quiz) {
@@ -291,6 +293,7 @@ async fn get_quiz(query: web::Query<QuizParams>, pool: web::Data<DbPool>) -> imp
             "difficulty": u.difficulty,
             "subject": u.subject,
             "chapter": u.chapter,
+            "explication": u.explication,
         })),
         Err(_) => HttpResponse::NotFound().body("Aucun quiz correspondant"),
     }
@@ -328,6 +331,16 @@ async fn create_quiz(
     let chapter = form.chapter.into_inner();
     let user_id = form.user_id.into_inner();
     let user_token = form.user_token.into_inner();
+    let explication = form
+        .explication
+        .unwrap_or(Text(String::from("")))
+        .into_inner();
+
+    let explication_option = if explication.is_empty() {
+        None
+    } else {
+        Some(explication)
+    };
 
     let _answers = form
         .answers
@@ -383,6 +396,7 @@ async fn create_quiz(
         correct_answer_index: _correct_answer_index.clone(),
         chapter: chapter.clone(),
         user_id: user_id.clone(),
+        explication: explication_option,
     };
 
     match insert_quiz(&mut conn, new_quiz) {

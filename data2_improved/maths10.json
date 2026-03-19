@@ -1,0 +1,1622 @@
+[
+    {
+        "uuid": "cond-001",
+        "image_path": null,
+        "theme": "Probabilités conditionnelles",
+        "question": "Dans le cadre de l'étude d'un espace probabilisé $(\\Omega, \\mathcal{A}, \\mathbb{P})$, si deux événements $A$ et $B$ sont tels que $\\mathbb{P}(A) > 0$, quelle est la définition formelle de la probabilité conditionnelle de $B$ sachant $A$, notée $\\mathbb{P}_A(B)$ ?",
+        "answers": [
+            "$\\frac{\\mathbb{P}(A \\cap B)}{\\mathbb{P}(A)}$",
+            "$\\frac{\\mathbb{P}(A \\cap B)}{\\mathbb{P}(B)}$",
+            "$\\mathbb{P}(A) \\times \\mathbb{P}(B)$",
+            "$\\frac{\\mathbb{P}(A \\cup B)}{\\mathbb{P}(A)}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "La probabilité conditionnelle $\\mathbb{P}_A(B)$ mesure la probabilité que $B$ se réalise sachant que l'univers est restreint à l'événement $A$. La formule est $\\mathbb{P}_A(B) = \\frac{\\mathbb{P}(A \\cap B)}{\\mathbb{P}(A)}$. L'erreur classique est d'inverser le dénominateur ou de confondre avec la formule de l'indépendance."
+    },
+    {
+        "uuid": "cond-002",
+        "image_path": null,
+        "theme": "Probabilités conditionnelles",
+        "question": "Soit $A$ un événement tel que $\\mathbb{P}(A) > 0$. L'application $P_A : B \\mapsto \\mathbb{P}_A(B)$ définit-elle une mesure de probabilité sur $(\\Omega, \\mathcal{A})$ ?",
+        "answers": [
+            "Non, ce n'est qu'une application de $\\mathcal{A}$ dans $[0, 1]$",
+            "Oui, elle vérifie les axiomes de Kolmogorov",
+            "Seulement si $A$ et $B$ sont indépendants",
+            "Non, car $\\mathbb{P}_A(\\Omega)$ n'est pas forcément égal à 1"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "explication": "Pour tout événement $A$ de probabilité non nulle, l'application $B \\mapsto \\mathbb{P}_A(B)$ est une probabilité. Elle vérifie bien les trois axiomes de Kolmogorov : positivité, $\\mathbb{P}_A(\\Omega) = 1$, et $\\sigma$-additivité."
+    },
+    {
+        "uuid": "cond-003",
+        "image_path": null,
+        "theme": "Probabilités composées",
+        "question": "En utilisant la formule des probabilités composées, comment exprimer $\\mathbb{P}(A \\cap B \\cap C)$ pour des événements quelconques ?",
+        "answers": [
+            "$\\mathbb{P}(A)\\mathbb{P}(B)\\mathbb{P}(C)$",
+            "$\\mathbb{P}(A) \\times \\mathbb{P}_A(B) \\times \\mathbb{P}_{A \\cap B}(C)$",
+            "$\\mathbb{P}(A \\cap B) \\times \\mathbb{P}(C|B)$",
+            "$\\mathbb{P}(A) + \\mathbb{P}(B|A) + \\mathbb{P}(C|A \\cap B)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "explication": "La formule des probabilités composées s'écrit $\\mathbb{P}(A_1 \\cap ... \\cap A_n) = \\mathbb{P}(A_1)\\mathbb{P}(A_2|A_1)\\mathbb{P}(A_3|A_1 \\cap A_2)...$. Il faut s'assurer que les événements conditionnants sont de probabilité strictement positive."
+    },
+    {
+        "uuid": "cond-004",
+        "image_path": null,
+        "theme": "Probabilités totales",
+        "question": "Soit $(A_i)_{i \\in I}$ un système complet d'événements (S.C.E) de $\\Omega$. Quelle est la relation fondamentale permettant de calculer $\\mathbb{P}(B)$ ?",
+        "answers": [
+            "$\\sum_{i \\in I} \\mathbb{P}(A_i) \\mathbb{P}(B|A_i)$",
+            "$\\prod_{i \\in I} \\mathbb{P}(B|A_i)$",
+            "$\\sum_{i \\in I} \\mathbb{P}(B|A_i)$",
+            "$\\sum_{i \\in I} \\mathbb{P}(A_i \\cap B)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "La formule des probabilités totales est $\\mathbb{P}(B) = \\sum_{i \\in I} \\mathbb{P}(B \\cap A_i) = \\sum_{i \\in I} \\mathbb{P}(B|A_i)\\mathbb{P}(A_i)$. Elle est cruciale pour décomposer un calcul complexe en cas plus simples."
+    },
+    {
+        "uuid": "cond-005",
+        "image_path": null,
+        "theme": "Formule de Bayes",
+        "question": "Dans le cadre d'un test de dépistage, la formule de Bayes permet de calculer $\\mathbb{P}(A|B)$. Quel est son rôle principal ?",
+        "answers": [
+            "Calculer la probabilité de l'intersection $A \\cap B$",
+            "Inverser le conditionnement pour obtenir la probabilité d'une cause sachant une observation",
+            "Vérifier si deux événements sont indépendants",
+            "Calculer la probabilité de l'union de plusieurs causes"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "explication": "La formule de Bayes $\\mathbb{P}(A|B) = \\frac{\\mathbb{P}(B|A)\\mathbb{P}(A)}{\\mathbb{P}(B)}$ sert à 'inverser' le conditionnement. Elle est fondamentale pour les inférences bayésiennes (ex: calculer la probabilité d'être malade sachant un test positif)."
+    },
+    {
+        "uuid": "cond-006",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Par définition, deux événements $A$ et $B$ sont dits indépendants si et seulement si :",
+        "answers": [
+            "Ils sont incompatibles : $\\mathbb{P}(A \\cap B) = 0$",
+            "Leur union est la somme de leurs probabilités : $\\mathbb{P}(A \\cup B) = \\mathbb{P}(A) + \\mathbb{P}(B)$",
+            "La réalisation de l'un n'influence pas l'autre : $\\mathbb{P}(A \\cap B) = \\mathbb{P}(A)\\mathbb{P}(B)$",
+            "$\\mathbb{P}(A|B) = \\mathbb{P}(B)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 2,
+        "explication": "L'indépendance signifie que l'information de l'un n'apporte rien sur l'autre. La condition $\\mathbb{P}(A \\cap B) = \\mathbb{P}(A)\\mathbb{P}(B)$ est la définition mathématique rigoureuse, valide même si $\\mathbb{P}(A)=0$ ou $\\mathbb{P}(B)=0$."
+    },
+    {
+        "uuid": "cond-007",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Si $A$ et $B$ sont deux événements indépendants, que peut-on dire des événements $\\bar{A}$ (contraire de $A$) et $B$ ?",
+        "answers": [
+            "Ils sont nécessairement indépendants",
+            "Ils sont incompatibles",
+            "Ils sont dépendants",
+            "On ne peut rien conclure"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "Si $A$ et $B$ sont indépendants, alors $\\bar{A}$ et $B$ le sont aussi, tout comme $\\bar{A}$ et $\\bar{B}$, et $A$ et $\\bar{B}$. Cela se démontre facilement en utilisant $\\mathbb{P}(\\bar{A} \\cap B) = \\mathbb{P}(B) - \\mathbb{P}(A \\cap B)$."
+    },
+    {
+        "uuid": "cond-008",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Soit $(A_1, A_2, ..., A_n)$ une famille d'événements. Si cette famille est mutuellement indépendante, que peut-on affirmer ?",
+        "answers": [
+            "La famille est nécessairement indépendante deux à deux",
+            "La famille n'est indépendante que deux à deux",
+            "La famille est indépendante si et seulement si ils sont disjoints",
+            "La famille n'est pas nécessairement indépendante deux à deux"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "L'indépendance mutuelle est une condition beaucoup plus forte que l'indépendance deux à deux. Si une famille est mutuellement indépendante, alors toute sous-famille est également mutuellement indépendante, et donc les événements sont indépendants deux à deux."
+    },
+    {
+        "uuid": "cond-009",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "L'indépendance deux à deux d'une famille d'événements $(A_i)_{i \\in I}$ implique-t-elle l'indépendance mutuelle ?",
+        "answers": [
+            "Oui, toujours",
+            "Non, le contre-exemple de Bernstein montre que l'indépendance deux à deux est insuffisante",
+            "Oui, à condition que $\\mathbb{P}(A_i) > 0$ pour tout $i$",
+            "Oui, si la famille est finie"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "explication": "L'indépendance deux à deux ne suffit pas à garantir l'indépendance mutuelle. Un exemple classique est le lancer de deux pièces : l'événement 'la 1ère est Pile', 'la 2ème est Face' et 'les deux sont identiques' sont indépendants deux à deux mais pas mutuellement."
+    },
+    {
+        "uuid": "cond-010",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "question": "Deux variables aléatoires discrètes $X$ et $Y$ définies sur le même espace probabilisé sont indépendantes si pour tout couple $(x, y) \\in X(\\Omega) \\times Y(\\Omega)$ :",
+        "answers": [
+            "$\\mathbb{P}(X=x \\cap Y=y) = \\mathbb{P}(X=x) + \\mathbb{P}(Y=y)$",
+            "$\\mathbb{P}(X=x \\cap Y=y) = \\mathbb{P}(X=x) \\times \\mathbb{P}(Y=y)$",
+            "$\\mathbb{P}(X=x) = \\mathbb{P}(Y=y)$",
+            "$\\mathbb{P}(X=x \\cup Y=y) = \\mathbb{P}(X=x) \\times \\mathbb{P}(Y=y)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "explication": "C'est la définition fondamentale de l'indépendance de deux variables aléatoires : la probabilité de l'intersection de leurs événements élémentaires doit être le produit de leurs probabilités marginales."
+    },
+    {
+        "uuid": "cond-011",
+        "image_path": null,
+        "theme": "Loi de transfert",
+        "question": "Si $X$ et $Y$ sont indépendantes, alors $f(X)$ et $g(Y)$ sont :",
+        "answers": [
+            "Indépendantes quelles que soient $f$ et $g$",
+            "Indépendantes seulement si $f$ et $g$ sont linéaires",
+            "Dépendantes en général"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-012",
+        "image_path": null,
+        "theme": "Lois classiques",
+        "question": "Soient $X \\sim \\mathcal{P}(\\lambda)$ et $Y \\sim \\mathcal{P}(\\mu)$ deux variables indépendantes. Quelle est la loi de $X+Y$ ?",
+        "answers": [
+            "$\\mathcal{P}(\\lambda \\mu)$",
+            "$\\mathcal{P}(\\lambda + \\mu)$",
+            "$\\mathcal{B}(\\lambda + \\mu)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-013",
+        "image_path": null,
+        "theme": "Loi Géométrique",
+        "question": "Une v.a. $X$ suit une loi géométrique si et seulement si elle est à valeurs dans $\\mathbb{N}^*$ et :",
+        "answers": [
+            "Elle est sans mémoire",
+            "Elle est presque sûrement constante",
+            "Son espérance est nulle"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-014",
+        "image_path": null,
+        "theme": "Matrice de loi conjointe",
+        "question": "Soient $X$ et $Y$ deux v.a. finies. Ils sont indépendants si et seulement si le rang de la matrice de leur loi conjointe est égal à :",
+        "answers": [
+            "0",
+            "1",
+            "La dimension de l'espace"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-015",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Si $\\mathbb{P}(A) = 0$, alors $A$ est indépendant de tout événement $B$ :",
+        "answers": [
+            "Vrai",
+            "Faux",
+            "Seulement si $\\mathbb{P}(B) = 1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-016",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Si $\\mathbb{P}(A) = 1$, alors $A$ est indépendant de tout événement $B$ :",
+        "answers": [
+            "Vrai",
+            "Faux",
+            "Seulement si $B = \\Omega$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-017",
+        "image_path": null,
+        "theme": "Lemme des coalitions",
+        "question": "Soient $X_1, X_2, X_3, X_4$ mutuellement indépendantes. Les variables $Y = X_1X_2$ et $Z = X_3+X_4$ sont-elles indépendantes ?",
+        "answers": [
+            "Oui, par le lemme des coalitions",
+            "Non, car elles partagent le même espace",
+            "On ne peut pas savoir sans les lois de chaque $X_i$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-018",
+        "image_path": null,
+        "theme": "Loi Géométrique",
+        "question": "Propriété d'absence de mémoire : $\\mathbb{P}(X > k+l | X > k) = \\dots$",
+        "answers": [
+            "$\\mathbb{P}(X > k)$",
+            "$\\mathbb{P}(X > l)$",
+            "$\\mathbb{P}(X > k) \\mathbb{P}(X > l)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-019",
+        "image_path": null,
+        "theme": "Formule de Bayes",
+        "question": "Dans un test médical, si $M$ est l'événement 'être malade' et $P$ 'avoir un test positif', que représente $\\mathbb{P}(M|P)$ ?",
+        "answers": [
+            "La sensibilité du test",
+            "La valeur prédictive positive",
+            "La probabilité d'un faux positif"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-020",
+        "image_path": null,
+        "theme": "Probabilités conditionnelles",
+        "question": "Si $A \\subset B$ et $\\mathbb{P}(A) \\neq 0$, alors $\\mathbb{P}_A(B) = \\dots$",
+        "answers": [
+            "$\\mathbb{P}(B)$",
+            "1",
+            "$\\mathbb{P}(A)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-021",
+        "image_path": null,
+        "theme": "TD - Taux de panne",
+        "question": "Dans l'exercice 4 du TD, le taux de panne $x_n = \\mathbb{P}(X=n | X \\geq n)$ est constant si et seulement si $X$ suit :",
+        "answers": [
+            "Une loi de Poisson",
+            "Une loi géométrique",
+            "Une loi binomiale"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-022",
+        "image_path": null,
+        "theme": "Loi de Pascal",
+        "question": "La loi de Pascal $Y_r$ correspond au rang du :",
+        "answers": [
+            "Premier succès",
+            "$r$-ième succès dans une suite d'épreuves de Bernoulli i.i.d.",
+            "Dernier succès avant $n$ échecs"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-023",
+        "image_path": null,
+        "theme": "Convergence d'événements",
+        "question": "Si une suite d'événements $(A_n)$ converge vers $A$, alors $\\lim_{n \\to \\infty} \\mathbb{P}(A_n) = \\dots$",
+        "answers": [
+            "$\\mathbb{P}(A)$",
+            "0",
+            "1"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-024",
+        "image_path": null,
+        "theme": "TD - Ruine du joueur",
+        "question": "Dans le problème de la ruine du joueur, si $p=q=1/2$, la probabilité de ruine de $A$ avec capital $a$ et capital total $S=a+b$ est :",
+        "answers": [
+            "$1 - a/S$",
+            "$a/S$",
+            "$(1/2)^a$"
+        ],
+        "difficulty": 4,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-025",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Soient $A$ et $B$ deux événements indépendants. $\\mathbb{P}(A \\cup B) = \\dots$",
+        "answers": [
+            "$\\mathbb{P}(A) + \\mathbb{P}(B)$",
+            "$\\mathbb{P}(A) + \\mathbb{P}(B) - \\mathbb{P}(A)\\mathbb{P}(B)$",
+            "$\\mathbb{P}(A)\\mathbb{P}(B)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-026",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "question": "Si $X$ et $Y$ sont deux variables aléatoires indépendantes, alors $Cov(X,Y) = \\dots$",
+        "answers": [
+            "1",
+            "0",
+            "$V(X)V(Y)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-027",
+        "image_path": null,
+        "theme": "Loi conjointe",
+        "question": "Pour deux v.a.d. $X$ et $Y$, $\\mathbb{P}(X=x) = \\dots$ (Formule des probabilités totales)",
+        "answers": [
+            "$\\sum_{y \\in Y(\\Omega)} \\mathbb{P}(X=x \\cap Y=y)$",
+            "$\\prod_{y \\in Y(\\Omega)} \\mathbb{P}(X=x | Y=y)$",
+            "$\\sum_{y \\in Y(\\Omega)} \\mathbb{P}(Y=y | X=x)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-028",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Un système complet d'événements $(A_i)$ est composé d'événements :",
+        "answers": [
+            "Mutuellement indépendants",
+            "Deux à deux incompatibles et dont l'union est $\\Omega$",
+            "De même probabilité"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-029",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Si $A$ et $B$ sont incompatibles ($A \\cap B = \\emptyset$) et de probabilités non nulles, sont-ils indépendants ?",
+        "answers": [
+            "Oui",
+            "Non, jamais",
+            "Seulement si $\\mathbb{P}(A) + \\mathbb{P}(B) = 1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-030",
+        "image_path": null,
+        "theme": "Suites i.i.d.",
+        "question": "Que signifie l'abréviation 'i.i.d.' pour une suite de v.a. ?",
+        "answers": [
+            "Indépendantes et Inégalement Distribuées",
+            "Indépendantes et Identiquement Distribuées",
+            "Incompatibles et Indépendantes"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-031",
+        "image_path": null,
+        "theme": "Probabilités conditionnelles",
+        "question": "Soit $X \\sim \\mathcal{G}(p)$. Quelle est la loi de $X$ sachant $X>k$ ?",
+        "answers": [
+            "La loi de $X+k$",
+            "La loi de $X$",
+            "Une loi de Bernoulli"
+        ],
+        "difficulty": 4,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-032",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "question": "Si $X$ et $Y$ sont indépendantes et suivent des lois de Bernoulli $\\mathcal{B}(p)$ et $\\mathcal{B}(q)$, alors $X Y$ suit une loi :",
+        "answers": [
+            "$\\mathcal{B}(p+q)$",
+            "$\\mathcal{B}(pq)$",
+            "Géométrique"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-033",
+        "image_path": null,
+        "theme": "TD - Somme de Poisson",
+        "question": "Dans l'exercice 11 du TD, la loi de $X$ sachant $X+Y=n$ (avec $X,Y$ Poisson indépendantes) est une loi :",
+        "answers": [
+            "De Poisson",
+            "Binomiale $\\mathcal{B}(n, \\frac{\\lambda}{\\lambda+\\mu})$",
+            "Uniforme"
+        ],
+        "difficulty": 4,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-034",
+        "image_path": null,
+        "theme": "Probabilités conditionnelles",
+        "question": "L'égalité $\\mathbb{P}(A|B) = \\mathbb{P}(B|A)$ est vraie si et seulement si :",
+        "answers": [
+            "$A$ et $B$ sont indépendants",
+            "$\\mathbb{P}(A) = \\mathbb{P}(B)$",
+            "$\\mathbb{P}(A) + \\mathbb{P}(B) = 1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-035",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Soit $(A_n)$ une suite d'événements mutuellement indépendants. La probabilité que l'un au moins se réalise est :",
+        "answers": [
+            "$\\sum \\mathbb{P}(A_n)$",
+            "$1 - \\prod (1 - \\mathbb{P}(A_n))$",
+            "$\\prod \\mathbb{P}(A_n)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-036",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "question": "Si $X$ est presque sûrement constante, est-elle indépendante de toute v.a. $Y$ ?",
+        "answers": [
+            "Oui (Exercice 48 du cours)",
+            "Non",
+            "Seulement si $Y$ est aussi constante"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-037",
+        "image_path": null,
+        "theme": "TD - Parapluies",
+        "question": "Dans l'exercice 6 du TD (le banquier), le système $(\\begin{smallmatrix} p_{n+1} \\\\ q_{n+1} \\end{smallmatrix}) = S (\\begin{smallmatrix} p_n \\\\ q_n \\end{smallmatrix})$ fait intervenir une matrice $S$ appelée :",
+        "answers": [
+            "Matrice de passage",
+            "Matrice stochastique",
+            "Matrice d'adjacence"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-038",
+        "image_path": null,
+        "theme": "Formule des probabilités totales",
+        "question": "Si on cherche la probabilité d'un événement $B$ dépendant d'un tirage dans plusieurs urnes, on utilise généralement :",
+        "answers": [
+            "La formule de Bayes",
+            "La formule des probabilités totales",
+            "Le lemme des coalitions"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-039",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Trois événements $A, B, C$ sont mutuellement indépendants si $\\mathbb{P}(A\\cap B\\cap C) = \\mathbb{P}(A)\\mathbb{P}(B)\\mathbb{P}(C)$ :",
+        "answers": [
+            "Vrai, c'est la définition",
+            "Faux, il faut aussi l'indépendance deux à deux",
+            "Vrai si les probabilités sont non nulles"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-040",
+        "image_path": null,
+        "theme": "Loi de Poisson",
+        "question": "La somme de deux variables de Poisson indépendantes est une loi de Poisson. Est-ce vrai pour le produit ?",
+        "answers": [
+            "Oui",
+            "Non",
+            "Seulement si $\\lambda = \\mu$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-041",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "question": "Dans le cadre de l'étude de l'espérance de produits de variables aléatoires (v.a.), si $X$ et $Y$ sont deux v.a. indépendantes admettant une espérance, que vaut $E(XY)$ ?",
+        "answers": [
+            "$E(X) + E(Y)$",
+            "$E(X) E(Y)$",
+            "$E(X)^E(Y)$",
+            "Il n'y a pas de relation générale sans connaître la loi jointe"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "explication": "Le produit des espérances est égal à l'espérance du produit si et seulement si les variables sont indépendantes. La première réponse est l'espérance de la somme (valable même sans indépendance), et la troisième est une confusion fréquente avec l'exponentiation."
+    },
+    {
+        "uuid": "cond-042",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Soient deux événements $A$ et $B$ avec $\\mathbb{P}(B) > 0$. Si $A$ et $B$ sont indépendants, que vaut la probabilité conditionnelle $\\mathbb{P}(A|B)$ ?",
+        "answers": [
+            "$\\mathbb{P}(A)$",
+            "$\\mathbb{P}(B)$",
+            "$\\frac{\\mathbb{P}(A \\cap B)}{\\mathbb{P}(A)}$",
+            "0"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "Par définition de l'indépendance, le fait que $B$ se réalise n'apporte aucune information sur la probabilité de $A$. Ainsi, $\\mathbb{P}(A|B) = \\frac{\\mathbb{P}(A \\cap B)}{\\mathbb{P}(B)} = \\frac{\\mathbb{P}(A)\\mathbb{P}(B)}{\\mathbb{P}(B)} = \\mathbb{P}(A)$."
+    },
+    {
+        "uuid": "cond-043",
+        "image_path": null,
+        "theme": "Probabilités composées",
+        "question": "Dans une urne contenant des boules, on effectue un tirage sans remise de 2 boules. Soient $N_1$ et $N_2$ les événements 'la $k$-ième boule est noire'. Quelle est la probabilité d'obtenir deux boules noires ?",
+        "answers": [
+            "$\\mathbb{P}(N_1) \\times \\mathbb{P}(N_2|N_1)$",
+            "$\\mathbb{P}(N_1) \\times \\mathbb{P}(N_2)$",
+            "$\\mathbb{P}(N_1) + \\mathbb{P}(N_2)$",
+            "$\\mathbb{P}(N_2|N_1) + \\mathbb{P}(N_1|N_2)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "La formule des probabilités composées stipule que $\\mathbb{P}(N_1 \\cap N_2) = \\mathbb{P}(N_1) \\mathbb{P}(N_2|N_1)$. Dans un tirage sans remise, les événements ne sont pas indépendants, donc $\\mathbb{P}(N_2) \\neq \\mathbb{P}(N_2|N_1)$."
+    },
+    {
+        "uuid": "cond-044",
+        "image_path": null,
+        "theme": "Loi Géométrique",
+        "question": "Soit $X$ une variable aléatoire à valeurs dans $\\mathbb{N}^*$. Si $X$ possède la propriété 'sans mémoire', alors $X$ suit nécessairement une loi :",
+        "answers": [
+            "$\\mathcal{P}(\\lambda)$ (Poisson)",
+            "$\\mathcal{G}(p)$ (Géométrique)",
+            "Uniforme sur $\\{1, \\dots, n\\}$",
+            "Exponentielle $\\mathcal{E}(\\lambda)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "explication": "La loi géométrique est la seule loi discrète sur $\\mathbb{N}^*$ possédant la propriété d'absence de mémoire : $\\mathbb{P}(X > n+k | X > n) = \\mathbb{P}(X > k)$. La loi de Poisson ne possède pas cette propriété."
+    },
+    {
+        "uuid": "cond-045",
+        "image_path": null,
+        "theme": "Lois de Bernoulli",
+        "question": "Soient $X, Y \\sim \\mathcal{B}(1/2)$ indépendantes. On pose $Z = |X-Y|$. Parmi les propositions suivantes, laquelle est vraie ?",
+        "answers": [
+            "$Z$ est indépendante de $X$ et de $Y$ (deux à deux)",
+            "$Z$ est dépendante de $X$ et de $Y$",
+            "$Z$ est une variable constante",
+            "$Z$ suit une loi $\\mathcal{B}(1/4)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "Si $X, Y$ sont des Bernoulli de paramètre 1/2, on vérifie par le calcul des probabilités jointes que $P(Z=z, X=x) = P(Z=z)P(X=x)$, ce qui démontre l'indépendance. C'est un résultat classique sur les variables de Rademacher ou Bernoulli."
+    },
+    {
+        "uuid": "cond-046",
+        "image_path": null,
+        "theme": "Formule de Bayes",
+        "question": "Soit un test médical de sensibilité $S$ et de spécificité $Sp$. Si on augmente la prévalence $p$ d'une maladie dans la population, la valeur prédictive positive (VPP) :",
+        "answers": [
+            "Reste identique",
+            "Augmente",
+            "Diminue",
+            "Devient égale à 1"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "explication": "D'après Bayes, $VPP = \\frac{S \\times p}{S \\times p + (1-Sp) \\times (1-p)}$. Si $p$ augmente, le numérateur augmente et le dénominateur diminue (ou augmente moins vite), ce qui fait croître la VPP. Plus une maladie est fréquente, plus un test positif est fiable."
+    },
+    {
+        "uuid": "cond-047",
+        "image_path": null,
+        "theme": "Probabilités conditionnelles",
+        "question": "Dans un QCM à $m$ réponses dont une seule est juste, un étudiant connaît la réponse avec probabilité $p$ et répond au hasard sinon. Quelle est la probabilité qu'il connaisse la réponse sachant qu'il a répondu juste ?",
+        "answers": [
+            "$\\frac{mp}{1+(m-1)p}$",
+            "$\\frac{p}{p + (1-p)/m}$",
+            "1",
+            "$p + \\frac{1-p}{m}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "explication": "On utilise la formule de Bayes. Soit $C$ l'événement 'connaît la réponse' et $J$ 'répond juste'. $\\mathbb{P}(C|J) = \\frac{\\mathbb{P}(J|C)\\mathbb{P}(C)}{\\mathbb{P}(J)}$. Or $\\mathbb{P}(J|C)=1$, $\\mathbb{P}(C)=p$, et $\\mathbb{P}(J) = p + (1-p) \\times 1/m$."
+    },
+    {
+        "uuid": "cond-048",
+        "image_path": null,
+        "theme": "Loi binômiale",
+        "question": "Soit $X \\sim \\mathcal{P}(\\lambda)$. On suppose que la loi conditionnelle de $Y$ sachant $X=n$ est $\\mathcal{B}(n, p)$. Quelle est la loi de $Y$ ?",
+        "answers": [
+            "$\\mathcal{P}(\\lambda)$",
+            "$\\mathcal{P}(\\lambda p)$",
+            "$\\mathcal{G}(p)$",
+            "$\\mathcal{B}(n, p)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "explication": "C'est un résultat classique de mélange de lois : si $Y|X=n \\sim \\mathcal{B}(n, p)$ et $X \\sim \\mathcal{P}(\\lambda)$, alors $Y \\sim \\mathcal{P}(\\lambda p)$. On peut le démontrer via les fonctions génératrices des probabilités."
+    },
+    {
+        "uuid": "cond-049",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "question": "Soient $X$ et $Y$ deux variables aléatoires indépendantes. Quelle est l'expression de la variance de leur somme $V(X+Y)$ ?",
+        "answers": [
+            "$V(X) + V(Y)$",
+            "$V(X) + V(Y) + 2Cov(X,Y)$",
+            "$V(X) - V(Y)$",
+            "$V(X) + V(Y) - 2Cov(X,Y)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "Pour des variables indépendantes, la covariance est nulle : $Cov(X,Y) = 0$. La formule générale est $V(X+Y) = V(X) + V(Y) + 2Cov(X,Y)$, qui se simplifie donc en $V(X)+V(Y)$."
+    },
+    {
+        "uuid": "cond-050",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Soient $X_1, \\dots, X_n$ des variables aléatoires indépendantes et identiquement distribuées (i.i.d.) suivant une loi de Bernoulli $\\mathcal{B}(p)$. Quelle est la loi de la somme $S_n = \\sum_{i=1}^n X_i$ ?",
+        "answers": [
+            "$\\mathcal{B}(n, p)$",
+            "$\\mathcal{G}(p)$",
+            "$\\mathcal{P}(np)$",
+            "$\\mathcal{B}(1, p)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "La somme de $n$ variables de Bernoulli indépendantes de même paramètre $p$ définit, par définition, une loi binomiale de paramètres $n$ et $p$. C'est le comptage du nombre de succès en $n$ épreuves de Bernoulli."
+    },
+    {
+        "uuid": "cond-051",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Dans le cadre d'un espace probabilisé $(\\Omega, \\mathcal{F}, \\mathbb{P})$, si $A, B, C$ sont trois événements mutuellement indépendants, alors les événements $A \\cup B$ et $C$ sont-ils :",
+        "answers": [
+            "Indépendants",
+            "Dépendants",
+            "Incompatibles",
+            "Indépendants seulement si $\\mathbb{P}(C) \\neq 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Si $A, B, C$ sont indépendants, alors $A \\cup B$ est indépendant de $C$. En effet, $\\mathbb{P}((A \\cup B) \\cap C) = \\mathbb{P}((A \\cap C) \\cup (B \\cap C)) = \\mathbb{P}(A \\cap C) + \\mathbb{P}(B \\cap C) - \\mathbb{P}(A \\cap B \\cap C)$. Par indépendance, cela vaut $\\mathbb{P}(A)\\mathbb{P}(C) + \\mathbb{P}(B)\\mathbb{P}(C) - \\mathbb{P}(A)\\mathbb{P}(B)\\mathbb{P}(C) = \\mathbb{P}(C) \\times (\\mathbb{P}(A) + \\mathbb{P}(B) - \\mathbb{P}(A)\\mathbb{P}(B)) = \\mathbb{P}(C) \\times \\mathbb{P}(A \\cup B)$."
+    },
+    {
+        "uuid": "cond-052",
+        "image_path": null,
+        "theme": "Probabilités",
+        "question": "Considérons une famille de deux enfants où chaque sexe est équiprobable. On sait que l'aîné est une fille. Quelle est la probabilité que les deux enfants soient des filles ?",
+        "answers": [
+            "1/2",
+            "1/3",
+            "1/4",
+            "1"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "L'espace des possibles est $\\{FF, FG, GF, GG\\}$. L'information 'l'aîné est une fille' réduit l'univers à $\\{FF, FG\\}$. Dans ce sous-ensemble, un seul cas sur deux est composé de deux filles. L'indépendance des sexes des enfants rend ce calcul trivial : $\\mathbb{P}(F_2 | F_1) = \\mathbb{P}(F_2) = 1/2$."
+    },
+    {
+        "uuid": "cond-053",
+        "image_path": null,
+        "theme": "Probabilités",
+        "question": "Considérons une famille de deux enfants où chaque sexe est équiprobable. On sait qu'il y a au moins une fille. Quelle est la probabilité que les deux soient des filles ?",
+        "answers": [
+            "1/2",
+            "1/3",
+            "1/4",
+            "2/3"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Ici, l'événement 'au moins une fille' correspond à $\\{FF, FG, GF\\}$ (3 issues équiprobables). Parmi ces trois issues, une seule correspond à 'deux filles'. La probabilité est donc $1/3$. C'est un piège classique où l'information 'au moins un' ne concerne pas un individu précis mais l'ensemble."
+    },
+    {
+        "uuid": "cond-054",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Dans le cadre de la théorie des probabilités, quelle est la caractérisation mathématique de la négation de l'assertion 'les événements $A$ et $B$ sont indépendants' ?",
+        "answers": [
+            "$A$ et $B$ sont incompatibles",
+            "$\\mathbb{P}(A \\cap B) \\neq \\mathbb{P}(A)\\mathbb{P}(B)$",
+            "$\\mathbb{P}(A|B) = 0$",
+            "$\\mathbb{P}(A \\cup B) \\neq \\mathbb{P}(A) + \\mathbb{P}(B)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Par définition, deux événements sont indépendants si et seulement si $\\mathbb{P}(A \\cap B) = \\mathbb{P}(A)\\mathbb{P}(B)$. La négation logique est donc simplement le remplacement du signe $=$ par $\\neq$. L'incompatibilité est une condition beaucoup plus forte et différente."
+    },
+    {
+        "uuid": "cond-055",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "question": "Soient $X$ et $Y$ deux variables aléatoires. L'indépendance de $X$ et $Y$ est une propriété structurelle qui :",
+        "answers": [
+            "Dépend de la mesure de probabilité $\\mathbb{P}$ choisie",
+            "Est purement ensembliste et indépendante de $\\mathbb{P}$",
+            "Ne dépend que des valeurs prises par $X$ et $Y$",
+            "Est équivalente à l'absence de corrélation"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "L'indépendance repose sur la mesure $\\mathbb{P}$. Si l'on change la loi de probabilité sur l'univers, des variables initialement indépendantes peuvent devenir dépendantes. Ce n'est pas une propriété ensembliste intrinsèque aux variables."
+    },
+    {
+        "uuid": "cond-056",
+        "image_path": null,
+        "theme": "TD - Ruine du joueur",
+        "question": "Dans le modèle classique de la ruine du joueur (avec probabilité de gain $p \\neq 1/2$ ou $p=1/2$ et capital fini), le jeu s'arrête presque sûrement au bout d'un nombre fini de parties. Cette affirmation est-elle :",
+        "answers": [
+            "Vraie, car $\\mathbb{P}(\\text{durée infinie}) = 0$",
+            "Fausse, il existe toujours une probabilité non nulle que le jeu dure indéfiniment",
+            "Vraie seulement si $p > 1/2$",
+            "Fausse car le temps d'arrêt a une espérance infinie"
+        ],
+        "difficulty": 4,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "marche aléatoire",
+        "explication": "Dans le problème de la ruine du joueur avec deux barrières (0 et $N$), la probabilité que la marche aléatoire n'atteigne aucune des bornes avant un temps $n$ tend vers 0 quand $n \\to +\\infty$. L'événement 'le jeu ne s'arrête jamais' est de probabilité nulle."
+    },
+    {
+        "uuid": "cond-057",
+        "image_path": null,
+        "theme": "Loi Géométrique",
+        "question": "Soit $X$ une variable aléatoire suivant une loi géométrique $\\mathcal{G}(p)$, représentant le rang du premier succès. Pour tout entier $n \\geq 1$, la probabilité $\\mathbb{P}(X > n)$ vaut :",
+        "answers": [
+            "$(1-p)^n$",
+            "$p^n$",
+            "$1 - (1-p)^n$",
+            "$(1-p)^{n-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "L'événement $X > n$ signifie que les $n$ premières épreuves ont été des échecs. Comme les épreuves sont indépendantes de probabilité d'échec $q = 1-p$, la probabilité est $q \\times q \\times \\dots \\times q$ ($n$ fois), soit $(1-p)^n$."
+    },
+    {
+        "uuid": "cond-058",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Si $A_1, \\dots, A_n$ sont des événements mutuellement indépendants, alors la probabilité de leur intersection $\\mathbb{P}(\\bigcap_{i=1}^n A_i)$ est égale à :",
+        "answers": [
+            "$\\sum_{i=1}^n \\mathbb{P}(A_i)$",
+            "$\\prod_{i=1}^n \\mathbb{P}(A_i)$",
+            "$\\min_{i} \\mathbb{P}(A_i)$",
+            "$\\max_{i} \\mathbb{P}(A_i)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "C'est la définition même de l'indépendance mutuelle pour une famille finie d'événements : la probabilité de l'intersection est égale au produit des probabilités individuelles."
+    },
+    {
+        "uuid": "cond-059",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Soient $X, Y, Z$ trois variables aléatoires réelles. On dit qu'elles sont mutuellement indépendantes si la loi du vecteur aléatoire $(X, Y, Z)$ est :",
+        "answers": [
+            "Le produit des lois marginales",
+            "La somme des lois marginales",
+            "Une loi normale multidimensionnelle",
+            "Leur fonction de répartition jointe vaut $\\mathbb{P}(X) + \\mathbb{P}(Y) + \\mathbb{P}(Z)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "L'indépendance mutuelle de variables aléatoires équivaut au fait que la fonction de répartition jointe est le produit des fonctions de répartition marginales, ce qui revient à dire que la mesure de probabilité image du vecteur est le produit tensoriel des lois marginales."
+    },
+    {
+        "uuid": "cond-060",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "question": "Si $X$ et $Y$ sont deux variables aléatoires réelles indépendantes admettant des densités $f_X$ et $f_Y$, la densité de leur somme $Z = X+Y$ est donnée par :",
+        "answers": [
+            "Le produit de convolution $(f_X * f_Y)(z)$",
+            "La composition des fonctions $f_X(f_Y(z))$",
+            "Le produit simple $f_X(z)f_Y(z)$",
+            "La somme des densités $f_X(z) + f_Y(z)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La loi de la somme de deux variables indépendantes est le produit de convolution de leurs lois respectives. Pour des variables à densité, cela s'exprime par l'intégrale : $f_Z(z) = \\int_{-\\infty}^{+\\infty} f_X(t)f_Y(z-t) dt$."
+    },
+    {
+        "uuid": "cond-061",
+        "image_path": null,
+        "theme": "Loi conditionnelle",
+        "question": "Dans le cadre de l'étude de variables aléatoires réelles, si $X$ et $Y$ sont deux variables indépendantes, quelle est la loi conditionnelle de $X$ sachant $Y=y$ pour tout $y$ tel que $\\mathbb{P}(Y=y) > 0$ ?",
+        "answers": [
+            "La loi marginale de $X$",
+            "La loi marginale de $Y$",
+            "La loi uniforme sur le support de $X$",
+            "La loi conditionnelle de $Y$ sachant $X=x$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par définition, deux variables $X$ et $Y$ sont indépendantes si pour tout $x, y$, $\\mathbb{P}(X=x, Y=y) = \\mathbb{P}(X=x)\\mathbb{P}(Y=y)$. Ainsi, $\\mathbb{P}(X=x | Y=y) = \\frac{\\mathbb{P}(X=x, Y=y)}{\\mathbb{P}(Y=y)} = \\mathbb{P}(X=x)$. L'information sur $Y$ n'apporte aucune modification à la loi de $X$."
+    },
+    {
+        "uuid": "cond-062",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Soit $A$ un événement d'un espace probabilisé. Si l'événement $A$ est indépendant de lui-même, quelle est la valeur possible de $\\mathbb{P}(A)$ ?",
+        "answers": [
+            "0 ou 1",
+            "1/2",
+            "Toute valeur dans $[0, 1]$",
+            "Uniquement 1"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "L'indépendance de $A$ avec lui-même signifie $\\mathbb{P}(A \\cap A) = \\mathbb{P}(A)\\mathbb{P}(A)$, soit $\\mathbb{P}(A) = \\mathbb{P}(A)^2$. L'équation $x = x^2$ a pour solutions $x=0$ et $x=1$. Ces événements sont dits triviaux."
+    },
+    {
+        "uuid": "cond-063",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Soient $A$ et $B$ deux événements indépendants tels que $\\mathbb{P}(A)=0.2$ et $\\mathbb{P}(B)=0.5$. Quelle est la valeur de $\\mathbb{P}(A \\cup B)$ ?",
+        "answers": [
+            "0.7",
+            "0.6",
+            "0.1",
+            "0.3"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On utilise la formule $\\mathbb{P}(A \\cup B) = \\mathbb{P}(A) + \\mathbb{P}(B) - \\mathbb{P}(A \\cap B)$. Par indépendance, $\\mathbb{P}(A \\cap B) = \\mathbb{P}(A)\\mathbb{P}(B) = 0.2 \\times 0.5 = 0.1$. Ainsi, $0.2 + 0.5 - 0.1 = 0.6$."
+    },
+    {
+        "uuid": "cond-064",
+        "image_path": null,
+        "theme": "TD - Jeu de pile ou face",
+        "question": "Dans le modèle classique du tournoi où chaque joueur $j_n$ joue avec une probabilité $q_n$ d'atteindre un stade, si le passage au tour suivant se joue sur un tirage équiprobable entre les participants, quelle relation lie la probabilité $p_n$ de gain final à $q_n$ ?",
+        "answers": [
+            "$p_n = q_n/2$",
+            "$p_n = q_n/8$",
+            "$p_n = q_n^3$",
+            "$p_n = 3q_n$"
+        ],
+        "difficulty": 4,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Dans ce type d'exercice, le passage de trois tours successifs (chacun étant une épreuve de Bernoulli de paramètre $1/2$) impose de multiplier les probabilités : $(1/2)^3 = 1/8$. La probabilité totale est donc le produit des probabilités conditionnelles de succès à chaque étape."
+    },
+    {
+        "uuid": "cond-065",
+        "image_path": null,
+        "theme": "Loi Géométrique",
+        "question": "Soit $X$ une variable aléatoire suivant une loi géométrique $\\mathcal{G}(p)$ représentant le nombre d'essais nécessaires pour obtenir le premier succès. Quelle est l'espérance $E(X)$ ?",
+        "answers": [
+            "$1/p$",
+            "$(1-p)/p$",
+            "$p$",
+            "$1/p^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Pour une loi géométrique sur $\\mathbb{N}^*$, l'espérance est bien $\\sum_{k=1}^{+\\infty} k p(1-p)^{k-1} = 1/p$. L'erreur classique est de confondre avec la loi binomiale ou la variance."
+    },
+    {
+        "uuid": "cond-066",
+        "image_path": null,
+        "theme": "Probabilités",
+        "question": "Une urne contient 4 boules blanches et 2 noires. On tire une boule, puis on la remet dans l'urne en ajoutant une autre boule de même couleur. Quelle est la probabilité d'avoir 2 boules noires lors des deux premiers tirages ?",
+        "answers": [
+            "2/6 * 3/7",
+            "1/3 * 1/3",
+            "1/9",
+            "2/6 * 2/6"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Probabilité du premier tirage noir : $P(N_1) = 2/6$. Après remise et ajout, l'urne contient 3 noires sur 7 boules. La probabilité du second tirage noir sachant le premier est $P(N_2|N_1) = 3/7$. La probabilité totale est $P(N_1 \\cap N_2) = (2/6) \\times (3/7)$."
+    },
+    {
+        "uuid": "cond-067",
+        "image_path": null,
+        "theme": "Loi de transfert",
+        "question": "Soient $X$ et $Y$ deux variables aléatoires indépendantes. Peut-on affirmer que $X^2$ et $\\exp(Y)$ sont indépendantes ?",
+        "answers": [
+            "Oui, d'après le lemme des coalitions",
+            "Non, car les fonctions ne sont pas linéaires",
+            "Seulement si $X$ et $Y$ sont positives",
+            "Non, car le support est modifié"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Le lemme des coalitions stipule que si $X$ et $Y$ sont indépendantes, alors toute fonction mesurable $f(X)$ et $g(Y)$ sont indépendantes. Ici $f(x)=x^2$ et $g(y)=e^y$ sont des fonctions mesurables."
+    },
+    {
+        "uuid": "cond-068",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "question": "Soient $X$ et $Y$ deux variables aléatoires indépendantes et identiquement distribuées (i.i.d.) suivant une loi de Bernoulli $\\mathcal{B}(1/2)$. Quelle est la loi de $Z = X+Y$ ?",
+        "answers": [
+            "$\\mathcal{B}(2, 1/2)$",
+            "Uniforme sur {0, 1, 2}",
+            "Bernoulli de paramètre 1",
+            "Loi binomiale $\\mathcal{B}(2, 1/4)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La somme de $n$ variables de Bernoulli indépendantes de même paramètre $p$ suit une loi binomiale $\\mathcal{B}(n, p)$. Ici $n=2$ et $p=1/2$, donc $Z \\sim \\mathcal{B}(2, 1/2)$."
+    },
+    {
+        "uuid": "cond-069",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Soient $A$ et $B$ deux événements indépendants. Quelle est la probabilité de $\\mathbb{P}(A \\cap \\bar{B})$ ?",
+        "answers": [
+            "$\\mathbb{P}(A)(1 - \\mathbb{P}(B))$",
+            "$\\mathbb{P}(A) - \\mathbb{P}(B)$",
+            "0",
+            "$\\mathbb{P}(A)\\mathbb{P}(B)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Si $A$ et $B$ sont indépendants, alors $A$ et $\\bar{B}$ le sont aussi. Ainsi $\\mathbb{P}(A \\cap \\bar{B}) = \\mathbb{P}(A)\\mathbb{P}(\\bar{B})$. Comme $\\mathbb{P}(\\bar{B}) = 1 - \\mathbb{P}(B)$, on obtient le résultat."
+    },
+    {
+        "uuid": "cond-070",
+        "image_path": null,
+        "theme": "Probabilités conditionnelles",
+        "question": "Dans une population, 20% sont à risque (A). La probabilité d'accident (B) est de 0.5 pour les individus à risque et de 0.1 pour les autres. Quelle est la probabilité globale d'accident ?",
+        "answers": [
+            "0.18",
+            "0.30",
+            "0.10",
+            "0.60"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On utilise la formule des probabilités totales : $\\mathbb{P}(B) = \\mathbb{P}(B|A)\\mathbb{P}(A) + \\mathbb{P}(B|\\bar{A})\\mathbb{P}(\\bar{A})$. Ici, $\\mathbb{P}(B) = 0.5 \\times 0.2 + 0.1 \\times 0.8 = 0.1 + 0.08 = 0.18$."
+    },
+    {
+        "uuid": "cond-071",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Dans le cadre de l'étude de la structure des probabilités, pour une famille finie d'événements $(A_1, \\dots, A_n)$, l'indépendance mutuelle est une propriété :",
+        "answers": [
+            "Plus forte que l'indépendance deux à deux",
+            "Plus faible que l'indépendance deux à deux",
+            "Équivalente à l'indépendance deux à deux",
+            "N'ayant aucun lien logique avec l'indépendance deux à deux"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "L'indépendance mutuelle implique l'indépendance deux à deux (pour tout couple, $\\mathbb{P}(A_i \\cap A_j) = \\mathbb{P}(A_i)\\mathbb{P}(A_j)$), mais la réciproque est fausse. Un contre-exemple classique est celui de Bernstein : deux événements peuvent être indépendants deux à deux sans être mutuellement indépendants."
+    },
+    {
+        "uuid": "cond-072",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "question": "Soient $X$ et $Y$ deux variables aléatoires discrètes indépendantes. Pour tout $x$ dans le support de $X$ et tout événement $B$ tel que $\\mathbb{P}(Y \\in B) > 0$, quelle est la valeur de $\\mathbb{P}(X=x | Y \\in B)$ ?",
+        "answers": [
+            "$\\mathbb{P}(X=x)$",
+            "$\\mathbb{P}(X=x) / \\mathbb{P}(Y \\in B)$",
+            "$\\mathbb{P}(X=x) \\cdot \\mathbb{P}(Y \\in B)$",
+            "1"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par définition de l'indépendance de deux variables aléatoires, tout événement relatif à $X$ est indépendant de tout événement relatif à $Y$. Ainsi, le conditionnement par un événement portant sur $Y$ ne modifie pas la loi de probabilité de $X$."
+    },
+    {
+        "uuid": "cond-073",
+        "image_path": null,
+        "theme": "TD - Convergence",
+        "question": "Dans le cadre de l'exercice 9 sur le lemme de Borel-Cantelli, si $(A_n)$ est une suite d'événements indépendants, alors $\\mathbb{P}(\\limsup A_n)$ est nécessairement égal à 0 ou 1. C'est ce qu'on appelle :",
+        "answers": [
+            "La loi du 0-1 de Kolmogorov",
+            "La loi faible des grands nombres",
+            "Le théorème de convergence dominée",
+            "L'inégalité de Bienaymé-Tchebychev"
+        ],
+        "difficulty": 5,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La loi du 0-1 de Kolmogorov stipule que tout événement appartenant à la tribu asymptotique d'une suite de variables indépendantes a une probabilité égale à 0 ou 1. La limite supérieure $\\limsup A_n$ est un exemple typique d'événement tail (asymptotique)."
+    },
+    {
+        "uuid": "cond-074",
+        "image_path": null,
+        "theme": "Probabilités",
+        "question": "Dans l'exercice classique de la marche aléatoire sur un triangle (sommets A, B, C, départ en A, à chaque étape mouvement vers un sommet adjacent avec probabilité 1/2), la puce ne peut arriver en C qu'à des instants :",
+        "answers": [
+            "Impairs",
+            "Pairs",
+            "Multiples de 3",
+            "Toute valeur de $n \\in \\mathbb{N}^*$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Le graphe est biparti ou présente une structure de parité : à $n=1$, la puce est en B ou C. À $n=2$, elle revient en A ou va sur l'autre sommet. Pour arriver en C, la puce doit effectuer un nombre impair de pas depuis A, car le chemin le plus court est de 1 pas, puis tout ajout de pas se fait par un aller-retour (2 pas)."
+    },
+    {
+        "uuid": "cond-075",
+        "image_path": null,
+        "theme": "Loi de Poisson",
+        "question": "Soient $X \\sim \\mathcal{P}(\\lambda)$ et $Y \\sim \\mathcal{P}(\\mu)$ deux variables aléatoires indépendantes. Quelle est la loi conditionnelle de $X$ sachant $X+Y=n$ ?",
+        "answers": [
+            "$\\mathcal{B}(n, \\frac{\\lambda}{\\lambda+\\mu})$",
+            "$\\mathcal{P}(\\lambda+\\mu)$",
+            "Une loi géométrique de paramètre $\\lambda/(\\lambda+\\mu)$",
+            "$\\mathcal{B}(n, \\frac{\\mu}{\\lambda+\\mu})$"
+        ],
+        "difficulty": 4,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Il s'agit d'un résultat fondamental : la somme de deux lois de Poisson indépendantes est une loi de Poisson $\\mathcal{P}(\\lambda+\\mu)$, et la loi conditionnelle de l'une des variables sachant la somme est une loi binomiale dont le paramètre de succès est le rapport des intensités."
+    },
+    {
+        "uuid": "cond-076",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Si les variables aléatoires $X_1, \\dots, X_n$ sont mutuellement indépendantes, alors toute sous-famille de ces variables est :",
+        "answers": [
+            "Mutuellement indépendante",
+            "Dépendante",
+            "Incompatible",
+            "Indépendante seulement si $n=2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "L'indépendance mutuelle est une propriété très forte qui se transmet par restriction à toute sous-partie de la famille. Si la tribu engendrée par l'ensemble est produit des tribus individuelles, cela reste vrai pour toute sous-collection."
+    },
+    {
+        "uuid": "cond-077",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "question": "Soient $X$ et $Y$ deux variables aléatoires indépendantes et de même loi normale $\\mathcal{N}(0, 1)$. Les variables $X+Y$ et $X-Y$ sont-elles indépendantes ?",
+        "answers": [
+            "Oui, toujours",
+            "Non, pas nécessairement",
+            "Seulement si elles sont de Bernoulli",
+            "Non, leur covariance est toujours non nulle"
+        ],
+        "difficulty": 4,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Pour des variables gaussiennes, l'indépendance est équivalente à la nullité de la covariance. Ici, $\\text{Cov}(X+Y, X-Y) = \\text{Var}(X) - \\text{Var}(Y) = 1 - 1 = 0$. Comme elles sont gaussiennes et non corrélées, elles sont indépendantes."
+    },
+    {
+        "uuid": "cond-078",
+        "image_path": null,
+        "theme": "Formule de Bayes",
+        "question": "Quelle est l'expression correcte de la probabilité conditionnelle $\\mathbb{P}(A|B)$ selon le théorème de Bayes, supposant $\\mathbb{P}(B) > 0$ ?",
+        "answers": [
+            "$\\frac{\\mathbb{P}(A)\\mathbb{P}(B|A)}{\\mathbb{P}(B)}$",
+            "$\\frac{\\mathbb{P}(B)\\mathbb{P}(A|B)}{\\mathbb{P}(A)}$",
+            "$\\mathbb{P}(A) \\cdot \\mathbb{P}(B)$",
+            "$\\frac{\\mathbb{P}(B|A)}{\\mathbb{P}(A)}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La formule de Bayes découle directement de la définition de la probabilité conditionnelle $\\mathbb{P}(A|B) = \\mathbb{P}(A \\cap B) / \\mathbb{P}(B)$ en remplaçant le numérateur par $\\mathbb{P}(B|A)\\mathbb{P}(A)$."
+    },
+    {
+        "uuid": "cond-079",
+        "image_path": null,
+        "theme": "Loi Géométrique",
+        "question": "Soit $X$ une variable aléatoire suivant une loi géométrique $\\mathcal{G}(p)$ (nombre d'essais jusqu'au premier succès). Quelle est la valeur de $\\mathbb{P}(X=k)$ pour $k \\in \\mathbb{N}^*$ ?",
+        "answers": [
+            "$(1-p)^{k-1} p$",
+            "$p^{k-1} (1-p)$",
+            "$(1-p)^k p$",
+            "$p^k (1-p)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Pour obtenir le succès à l'essai $k$, il faut avoir eu $(k-1)$ échecs consécutifs (probabilité $1-p$ à chaque fois) suivis d'un succès (probabilité $p$)."
+    },
+    {
+        "uuid": "cond-080",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Si $A$ et $B$ sont deux événements indépendants, les événements complémentaires $\\bar{A}$ et $\\bar{B}$ sont-ils indépendants ?",
+        "answers": [
+            "Vrai",
+            "Faux",
+            "Seulement si $\\mathbb{P}(A) = \\mathbb{P}(B)$",
+            "Seulement si $\\mathbb{P}(A) = 0,5$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par les lois de Morgan et les propriétés des probabilités, si $A$ et $B$ sont indépendants, alors $\\mathbb{P}(\\bar{A} \\cap \\bar{B}) = 1 - \\mathbb{P}(A \\cup B) = 1 - (\\mathbb{P}(A) + \\mathbb{P}(B) - \\mathbb{P}(A)\\mathbb{P}(B))$. En factorisant, on obtient $(1-\\mathbb{P}(A))(1-\\mathbb{P}(B)) = \\mathbb{P}(\\bar{A})\\mathbb{P}(\\bar{B})$."
+    },
+    {
+        "uuid": "cond-081",
+        "image_path": null,
+        "theme": "Loi de Pascal",
+        "question": "Dans le cadre de l'étude des lois discrètes usuelles, la loi de Pascal (ou loi binomiale négative) est une généralisation directe de quelle loi fondamentale représentant le temps d'attente du premier succès ?",
+        "answers": [
+            "La loi géométrique $\\mathcal{G}(p)$",
+            "La loi de Poisson $\\mathcal{P}(\\lambda)$",
+            "La loi uniforme discrète $\\mathcal{U}(\\{1,n\\})$",
+            "La loi binomiale $\\mathcal{B}(n, p)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "La loi géométrique $\\mathcal{G}(p)$ modélise le nombre d'essais jusqu'au premier succès. La loi de Pascal modélise le nombre d'essais nécessaires pour obtenir le $k$-ième succès, soit une somme de $k$ variables indépendantes suivant une loi géométrique.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-082",
+        "image_path": null,
+        "theme": "Variables Aléatoires",
+        "question": "Soit $(X_n)_{n \\geq 1}$ une suite de variables aléatoires indépendantes et identiquement distribuées (i.i.d.) suivant une loi de Bernoulli de paramètre $p \\in ]0, 1[$. La variable aléatoire $T = \\inf \\{n \\geq 1, X_n=1 \\}$ suit :",
+        "answers": [
+            "Une loi géométrique $\\mathcal{G}(p)$",
+            "Une loi de Poisson $\\mathcal{P}(p)$",
+            "Une loi binomiale $\\mathcal{B}(n, p)$",
+            "Une loi exponentielle $\\mathcal{E}(p)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "$T$ représente l'indice du premier succès. Par définition, $P(T=k) = P(X_1=0, \\dots, X_{k-1}=0, X_k=1) = (1-p)^{k-1}p$. C'est la définition de la loi géométrique.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-083",
+        "image_path": null,
+        "theme": "TD - Ruine du joueur",
+        "question": "Dans le problème de la ruine du joueur avec des probabilités de gain $p$ et de perte $q=1-p$, où $p \\neq q$, la probabilité de ruine $R_i$ partant d'un capital initial $i$ avec un objectif $N$ fait intervenir quel terme géométrique ?",
+        "answers": [
+            "$(q/p)^i$",
+            "$i/N$",
+            "$\\exp(p-q)i$",
+            "$(p/q)^i$"
+        ],
+        "difficulty": 4,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "La relation de récurrence $R_i = pR_{i+1} + qR_{i-1}$ conduit à une équation caractéristique $pr^2 - r + q = 0$. Les racines sont $1$ et $q/p$. La solution générale est de la forme $A + B(q/p)^i$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-084",
+        "image_path": null,
+        "theme": "Somme de v.a.",
+        "question": "Soient $X$ et $Y$ deux variables aléatoires indépendantes à valeurs dans $\\mathbb{N}$. Quelle formule donne la loi de la somme $S = X + Y$ ?",
+        "answers": [
+            "$\\mathbb{P}(X+Y=n) = \\sum_{k=0}^n \\mathbb{P}(X=k) \\mathbb{P}(Y=n-k)$",
+            "$\\mathbb{P}(X+Y=n) = \\sum_{k=0}^n \\mathbb{P}(X=k) \\mathbb{P}(Y=k)$",
+            "$\\mathbb{P}(X+Y=n) = \\mathbb{P}(X=n) + \\mathbb{P}(Y=n)$",
+            "$\\mathbb{P}(X+Y=n) = \\sum_{k=0}^n \\mathbb{P}(X=k) + \\mathbb{P}(Y=n-k)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "Il s'agit du produit de convolution des lois de $X$ et $Y$. Comme $X$ et $Y$ sont indépendantes, $\\mathbb{P}(X=k \\cap Y=n-k) = \\mathbb{P}(X=k)\\mathbb{P}(Y=n-k)$. On somme sur tous les cas possibles $k+j=n$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-085",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Soient $A$ et $B$ deux événements d'un espace probabilisé $(\\Omega, \\mathcal{A}, P)$. Si $A$ et $B$ sont indépendants, est-ce que le passage au complémentaire préserve l'indépendance ?",
+        "answers": [
+            "Oui, $A$ et $\\overline{B}$ sont indépendants",
+            "Non, l'indépendance est brisée",
+            "Seulement si $P(A) = 0,5$",
+            "Oui, mais seulement si $P(A) \\cap P(B) \\neq 0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "Si $A$ et $B$ sont indépendants, alors $P(A \\cap \\overline{B}) = P(A) - P(A \\cap B) = P(A) - P(A)P(B) = P(A)(1-P(B)) = P(A)P(\\overline{B})$. Donc $A$ et $\\overline{B}$ sont indépendants.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-086",
+        "image_path": null,
+        "theme": "Matrice de loi conjointe",
+        "question": "Soit $M$ la matrice de loi conjointe du couple $(X,Y)$ telle que $M_{i,j} = \\mathbb{P}(X=x_i, Y=y_j)$. Si $rg(M) = 1$, que peut-on dire des variables aléatoires $X$ et $Y$ ?",
+        "answers": [
+            "Elles sont indépendantes",
+            "Elles sont corrélées",
+            "Elles sont identiques",
+            "Elles sont incompatibles"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "Le rang $1$ signifie que $M_{i,j} = u_i v_j$. Or, la condition d'indépendance est $\\mathbb{P}(X=x_i, Y=y_j) = \\mathbb{P}(X=x_i)\\mathbb{P}(Y=y_j)$, ce qui correspond exactement à la structure d'une matrice de rang $1$ formée par le produit des vecteurs des lois marginales.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-087",
+        "image_path": null,
+        "theme": "TD - Taux de panne",
+        "question": "Dans l'étude de la fiabilité d'un système, un taux de panne $\\lambda(t)$ croissant signifie que l'objet a :",
+        "answers": [
+            "Une probabilité de défaillance instantanée qui augmente avec l'âge",
+            "Une probabilité de défaillance qui diminue avec l'âge",
+            "Une probabilité de défaillance constante (loi exponentielle)",
+            "Une durée de vie limitée strictement à $\\lambda(t)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "Le taux de panne est défini par $\\lambda(t) = f(t) / R(t)$, où $R(t)$ est la fonction de fiabilité. Une fonction croissante indique un phénomène d'usure, où la probabilité de tomber en panne sachant que l'objet a survécu jusqu'à $t$ augmente.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-088",
+        "image_path": null,
+        "theme": "Probabilités",
+        "question": "On tire simultanément 4 boules dans une urne contenant $r$ boules rouges et $n-r$ boules noires (tirage sans remise). Quelle est la probabilité d'obtenir 4 boules rouges ?",
+        "answers": [
+            "$\\binom{r}{4} / \\binom{n}{4}$",
+            "$(r/n)^4$",
+            "$A_r^4 / A_n^4$",
+            "$\\binom{n}{4} / \\binom{r}{4}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "Pour un tirage simultané (ou sans remise), on utilise le dénombrement par les combinaisons. Le nombre de cas favorables est le choix de 4 boules parmi $r$, et le nombre total de cas est le choix de 4 boules parmi $n$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-089",
+        "image_path": null,
+        "theme": "Lemme des coalitions",
+        "question": "Soient $X_1, X_2, X_3$ trois variables aléatoires mutuellement indépendantes. Que peut-on dire de l'indépendance entre $X_1$ et $Y = X_2 + X_3$ ?",
+        "answers": [
+            "Elles sont indépendantes",
+            "Elles sont dépendantes",
+            "Cela dépend de la loi des variables",
+            "Elles sont corrélées"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "D'après le lemme des coalitions, si des variables sont mutuellement indépendantes, toute fonction mesurable d'un sous-ensemble de ces variables est indépendante de toute fonction mesurable d'un autre sous-ensemble disjoint.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-090",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Soient $A$ et $B$ deux événements indépendants. Si $\\mathbb{P}(A) = 1$, que vaut $\\mathbb{P}(A \\cap B)$ ?",
+        "answers": [
+            "$\\mathbb{P}(B)$",
+            "$1$",
+            "$0$",
+            "$\\mathbb{P}(A) + \\mathbb{P}(B)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "explication": "Par définition de l'indépendance, $\\mathbb{P}(A \\cap B) = \\mathbb{P}(A) \\times \\mathbb{P}(B)$. Si $\\mathbb{P}(A) = 1$, alors $\\mathbb{P}(A \\cap B) = 1 \\times \\mathbb{P}(B) = \\mathbb{P}(B)$. Cela illustre que si $A$ est presque sûr, l'intersection avec $B$ est presque $B$ lui-même.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "cond-091",
+        "image_path": null,
+        "theme": "Suites i.i.d.",
+        "question": "Dans le cadre d'une suite d'épreuves de Bernoulli indépendantes de paramètre $p \\in ]0, 1[$, soit $T$ la variable aléatoire représentant le rang du premier succès. Quelle est la valeur de $\\mathbb{P}(T = +\\infty)$ ?",
+        "answers": [
+            "$0$",
+            "$1$",
+            "$1-p$",
+            "$p$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La variable $T$ suit une loi géométrique $\\mathcal{G}(p)$. La probabilité de ne jamais obtenir de succès est $\\lim_{n \\to +\\infty} (1-p)^n$. Puisque $p > 0$, alors $0 \\leq 1-p < 1$, donc cette limite est nulle. Un succès finit donc presque sûrement par arriver."
+    },
+    {
+        "uuid": "cond-092",
+        "image_path": null,
+        "theme": "Formule des probabilités totales",
+        "question": "Soit un espace probabilisé muni d'un système complet d'événements $\\{A, \\bar{A}\\}$. Si $\\mathbb{P}(A) = 0.4$, $\\mathbb{P}(B|A) = 0.5$ et $\\mathbb{P}(B|\\bar{A}) = 0.2$, quelle est la probabilité de l'événement $B$ ?",
+        "answers": [
+            "$0.32$",
+            "$0.35$",
+            "$0.70$",
+            "$0.28$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "D'après la formule des probabilités totales : $\\mathbb{P}(B) = \\mathbb{P}(B|A)\\mathbb{P}(A) + \\mathbb{P}(B|\\bar{A})\\mathbb{P}(\\bar{A})$. Ici, $\\mathbb{P}(\\bar{A}) = 1 - 0.4 = 0.6$. Donc $\\mathbb{P}(B) = (0.5 \\times 0.4) + (0.2 \\times 0.6) = 0.2 + 0.12 = 0.32$."
+    },
+    {
+        "uuid": "cond-093",
+        "image_path": null,
+        "theme": "Probabilités conditionnelles",
+        "question": "La condition $\\mathbb{P}(A) > 0$ est-elle nécessaire pour définir la probabilité conditionnelle $\\mathbb{P}_A(B)$ ?",
+        "answers": [
+            "Oui, la définition axiomatique repose sur le quotient $\\mathbb{P}(A \\cap B) / \\mathbb{P}(A)$",
+            "Non, on peut toujours utiliser le prolongement par continuité",
+            "Non, si $\\mathbb{P}(A)=0$ alors $\\mathbb{P}(A \\cap B)$ est nécessairement nul",
+            "Oui, uniquement si l'univers est fini"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par définition, $\\mathbb{P}(B|A) = \\frac{\\mathbb{P}(A \\cap B)}{\\mathbb{P}(A)}$. La division par zéro n'étant pas définie dans $\\mathbb{R}$, on ne peut pas conditionner par un événement de probabilité nulle dans le cadre classique. Les approches par limites (type probabilités conditionnelles par rapport à une tribu) sont hors programme de CPGE."
+    },
+    {
+        "uuid": "cond-094",
+        "image_path": null,
+        "theme": "Loi Géométrique",
+        "question": "Parmi les lois discrètes à valeurs dans $\\mathbb{N}^*$ ou $\\mathbb{N}$, quelle est la seule loi possédant la propriété d'absence de mémoire (i.e. $\\mathbb{P}(X > n+k | X > n) = \\mathbb{P}(X > k)$) ?",
+        "answers": [
+            "La loi géométrique",
+            "La loi de Poisson",
+            "La loi uniforme discrète",
+            "La loi binomiale"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La loi géométrique (qui modélise le temps d'attente du premier succès) est l'analogue discret de la loi exponentielle. Elle est la seule loi discrète à supporter sans mémoire, ce qui signifie que la probabilité d'attendre encore $k$ instants supplémentaires sachant que l'on a déjà attendu $n$ instants ne dépend pas de $n$."
+    },
+    {
+        "uuid": "cond-095",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Soient $X$ et $Y$ deux variables de Bernoulli indépendantes de même paramètre $p \\in [0, 1]$. Quelle est la probabilité que $X=Y$ ?",
+        "answers": [
+            "$p^2 + (1-p)^2$",
+            "$2p(1-p)$",
+            "$p^2$",
+            "$1-p$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "L'événement $\\{X=Y\\}$ est la réunion disjointe de $\\{X=1 \\cap Y=1\\}$ et $\\{X=0 \\cap Y=0\\}$. Par indépendance, $\\mathbb{P}(X=Y) = \\mathbb{P}(X=1)\\mathbb{P}(Y=1) + \\mathbb{P}(X=0)\\mathbb{P}(Y=0) = p^2 + (1-p)^2$."
+    },
+    {
+        "uuid": "cond-096",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Si $A$ et $B$ sont deux événements indépendants, alors $A$ et $\\bar{B}$ le sont aussi. Cette propriété s'étend-elle à une famille $(A_i)_{i \\in I}$ d'événements ?",
+        "answers": [
+            "Oui, si la famille est mutuellement indépendante",
+            "Non, l'indépendance deux à deux ne suffit pas",
+            "Non, jamais pour plus de deux événements",
+            "Oui, indépendamment de la structure de la famille"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Si une famille d'événements est mutuellement indépendante, on peut remplacer n'importe quel sous-ensemble de ces événements par leur complémentaire sans briser l'indépendance mutuelle de la famille. C'est un résultat classique de cours souvent utilisé en probabilités."
+    },
+    {
+        "uuid": "cond-097",
+        "image_path": null,
+        "theme": "TD - Loi de Pascal",
+        "question": "Si $Y_r$ désigne le temps d'attente du $r$-ième succès dans une suite d'épreuves de Bernoulli indépendantes de paramètre $p$, alors $Y_r$ peut se décomposer comme une somme $\\sum_{k=1}^r X_k$ où les $X_k$ suivent une loi :",
+        "answers": [
+            "Géométrique $\\mathcal{G}(p)$",
+            "Bernoulli $\\mathcal{B}(p)$",
+            "Poisson $\\mathcal{P}(p)$",
+            "Binomiale $\\mathcal{B}(r, p)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Le temps d'attente global est la somme des temps d'attente entre chaque succès. Le premier succès survient au temps $X_1$ (loi géométrique). Le deuxième succès survient après $X_2$ essais supplémentaires, où $X_2$ est également une loi géométrique, et ainsi de suite. Par indépendance des épreuves, ces variables sont i.i.d."
+    },
+    {
+        "uuid": "cond-098",
+        "image_path": null,
+        "theme": "Formule de Bayes",
+        "question": "La formule de Bayes permet de calculer $\\mathbb{P}(A|B)$ à partir de $\\mathbb{P}(B|A)$. Elle est communément appelée :",
+        "answers": [
+            "Formule de probabilité des causes",
+            "Formule de probabilité totale",
+            "Formule de composition des probabilités",
+            "Formule de l'espérance conditionnelle"
+        ],
+        "difficulty": 1,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La formule de Bayes $\\mathbb{P}(A|B) = \\frac{\\mathbb{P}(B|A)\\mathbb{P}(A)}{\\mathbb{P}(B)}$ est appelée 'probabilité des causes' car elle permet de remonter de l'effet ($B$) vers la cause ($A$) en inversant le conditionnement."
+    },
+    {
+        "uuid": "cond-099",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Soient $X_1, \\dots, X_n$ des variables aléatoires discrètes. L'indépendance mutuelle de ces variables est équivalente à :",
+        "answers": [
+            "Pour tout $(x_1, \\dots, x_n)$, $\\mathbb{P}(X_1=x_1, \\dots, X_n=x_n) = \\prod_{i=1}^n \\mathbb{P}(X_i=x_i)$",
+            "$\\mathbb{P}(\\cup \\{X_i=x_i\\}) = \\sum_{i=1}^n \\mathbb{P}(X_i=x_i)$",
+            "$\\mathbb{E}(\\prod X_i) = \\prod \\mathbb{E}(X_i)$ uniquement pour les espérances",
+            "La somme des variables suit une loi binomiale"
+        ],
+        "difficulty": 3,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La définition de l'indépendance mutuelle pour des variables aléatoires repose sur la factorisation de la probabilité de l'intersection de tous les événements $\\{X_i = x_i\\}$. La factorisation des espérances est une conséquence de l'indépendance, mais n'est pas suffisante pour caractériser l'indépendance mutuelle."
+    },
+    {
+        "uuid": "cond-100",
+        "image_path": null,
+        "theme": "Probabilités conditionnelles",
+        "question": "Soient deux événements $A$ et $B$ avec $\\mathbb{P}(A) > 0$. Si $\\mathbb{P}(A \\cap B) = \\mathbb{P}(A)$, que peut-on en déduire pour $\\mathbb{P}(B|A)$ ?",
+        "answers": [
+            "$\\mathbb{P}(B|A) = 1$",
+            "$\\mathbb{P}(B|A) = \\mathbb{P}(B)$",
+            "$\\mathbb{P}(B|A) = 0$",
+            "$\\mathbb{P}(B|A) = \\mathbb{P}(A)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conditionnement, Indépendance",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Si $\\mathbb{P}(A \\cap B) = \\mathbb{P}(A)$, alors l'événement $A$ est inclus dans $B$ (presque sûrement). Par définition, $\\mathbb{P}(B|A) = \\frac{\\mathbb{P}(A \\cap B)}{\\mathbb{P}(A)} = \\frac{\\mathbb{P}(A)}{\\mathbb{P}(A)} = 1$. Cela signifie que si $A$ est réalisé, $B$ est nécessairement réalisé."
+    }
+]

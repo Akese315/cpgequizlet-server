@@ -1,0 +1,1684 @@
+[
+    {
+        "uuid": "fc1a2b3c-4d5e-6f7g-8h9i-0j1k2l3m4n5o",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Gradient2.svg",
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude des potentiels scalaires, quel est l'effet de l'opérateur gradient $\\vec{grad}$ appliqué à une fonction scalaire $f(x, y, z)$ ?",
+        "answers": [
+            "Il le transforme en un vecteur caractérisant la direction et l'intensité de la variation spatiale de $f$",
+            "Il le transforme en un scalaire représentant la courbure locale de la fonction $f$",
+            "Il le transforme en un vecteur dont le flux à travers toute surface fermée est nécessairement nul",
+            "Il le transforme en un champ de vecteurs solénoïdal"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le gradient d'une fonction scalaire $\\vec{grad}(f) = \\vec{\\nabla} f$ est un vecteur pointant vers la zone de plus forte croissance de $f$. Il est défini par ses composantes $(\\partial_x f, \\partial_y f, \\partial_z f)$. La réponse 3 est fausse car cela caractérise un champ à divergence nulle (solénoïdal), ce qui n'est pas le cas général d'un gradient."
+    },
+    {
+        "uuid": "ac2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est la direction du vecteur $\\vec{grad}(f)$ en un point $M$ donné par rapport aux surfaces isovaleurs de $f$ ?",
+        "answers": [
+            "La direction de plus faible variation de $f$",
+            "La direction normale à la surface isovaleur passant par $M$ et orientée dans le sens des $f$ croissants",
+            "La direction tangente à la ligne de niveau passant par $M$",
+            "Une direction aléatoire indépendante de la topographie de $f$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par définition, $\\vec{grad}(f)$ est orthogonal à la surface isovaleur ($f = Cte$). Si on se déplace le long de cette surface, la variation $df$ est nulle, ce qui implique $d\\vec{l} \\cdot \\vec{grad}(f) = 0$. La direction est celle de la plus grande pente."
+    },
+    {
+        "uuid": "bc3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Divergence_and_curl.svg",
+        "theme": "électromagnétisme",
+        "question": "Que mesure physiquement l'opérateur divergence $\\text{div}(\\vec{A})$ pour un champ de vecteur $\\vec{A}$ ?",
+        "answers": [
+            "La circulation locale du champ le long d'un contour fermé",
+            "La densité volumique de source (ou de puits) du champ $\\vec{A}$ en un point donné",
+            "La variation temporelle de la norme du vecteur $\\vec{A}$ en un point fixe",
+            "La capacité du champ à engendrer un mouvement de rotation"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La divergence mesure le flux net sortant par unité de volume quand le volume tend vers zéro. Un $\\text{div}(\\vec{A}) > 0$ indique une source, tandis qu'un $\\text{div}(\\vec{A}) < 0$ indique un puits. La réponse 1 décrit le rotationnel, pas la divergence."
+    },
+    {
+        "uuid": "cc4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8r",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression correcte du théorème de Green-Ostrogradski reliant un flux à travers une surface fermée $S$ et une intégrale de volume $V$ ?",
+        "answers": [
+            "$\\iint_{S}\\vec{A}\\cdot d\\vec{S} = \\iiint_{V} \\text{div}(\\vec{A}) d\\tau$",
+            "$\\oint_{\\partial S} \\vec{A}\\cdot d\\vec{l} = \\iint_{S} \\vec{\\text{rot}}(\\vec{A})\\cdot d\\vec{S}$",
+            "$\\iint_{S}\\vec{A}\\cdot d\\vec{S} = \\iiint_{V} \\vec{grad}(A) d\\tau$",
+            "$\\iiint_{V} \\text{div}(\\vec{A}) d\\tau = \\iint_{S} \\vec{A} \\wedge d\\vec{S}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le théorème de Green-Ostrogradski (ou théorème de flux-divergence) transforme un flux à travers une surface fermée en une intégrale de volume de la divergence. La réponse 2 correspond au théorème de Stokes (lien circulation/rotationnel)."
+    },
+    {
+        "uuid": "dc5e6f7g-8h9i-0j1k-2l3m-4n5o6p7q8r9s",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Comment définit-on rigoureusement le Laplacien scalaire $\\Delta f$ ?",
+        "answers": [
+            "$\\Delta f = \\vec{grad}(\\text{div}(f))$",
+            "$\\Delta f = \\text{div}(\\vec{grad}(f))$",
+            "$\\Delta f = \\vec{\\text{rot}}(\\vec{grad}(f))$",
+            "$\\Delta f = \\vec{grad}(\\vec{grad}(f))$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le Laplacien scalaire est défini comme la divergence du gradient : $\\text{div}(\\vec{\\text{grad}}(f))$. En coordonnées cartésiennes, cela donne $\\Delta f = \\frac{\\partial^2 f}{\\partial x^2} + \\frac{\\partial^2 f}{\\partial y^2} + \\frac{\\partial^2 f}{\\partial z^2}$. Notez que $\\vec{\\text{rot}}(\\vec{\\text{grad}}(f))$ est toujours identiquement nul."
+    },
+    {
+        "uuid": "ec6f7g8h-9i0j-1k2l-3m4n-5o6p7q8r9s0t",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Metallic_bond.svg",
+        "theme": "conducteurs",
+        "question": "Dans le cadre du modèle de Drude pour un métal, quels sont les porteurs de charge responsables du courant électrique ?",
+        "answers": [
+            "Les ions positifs du réseau cristallin",
+            "Les électrons de cœur fortement liés au noyau",
+            "Les électrons de conduction libres de se déplacer dans tout le métal",
+            "Les trous de valence"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Dans un métal, les électrons de la couche de valence sont délocalisés : ils forment une 'mer d'électrons' et sont libres de se déplacer sous l'effet d'un champ électrique, contrairement aux électrons de cœur ou aux ions du réseau qui forment une structure fixe."
+    },
+    {
+        "uuid": "fc7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1u",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans la théorie cinétique des gaz appliquée aux électrons (modèle de Drude), qu'est-ce que le 'libre parcours moyen' $l^*$ ?",
+        "answers": [
+            "La distance moyenne entre deux ions du réseau cristallin",
+            "La distance moyenne parcourue par un électron entre deux collisions successives",
+            "Le rayon moyen de la trajectoire d'un électron soumis à un champ magnétique",
+            "La longueur d'onde de de Broglie associée à l'électron"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le libre parcours moyen est défini par $l^* = v_{th} \\cdot \\tau$, où $v_{th}$ est la vitesse thermique et $\\tau$ le temps moyen entre deux collisions (temps de relaxation). Il représente l'échelle de distance sur laquelle l'électron 'perd la mémoire' de sa vitesse initiale."
+    },
+    {
+        "uuid": "gc8h9i0j-1k2l-3m4n-5o6p-7q8r9s0t1u2v",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est l'unité SI cohérente pour la densité volumique de charge $\\rho$ ?",
+        "answers": [
+            "Le Ampère par mètre carré ($A \\cdot m^{-2}$)",
+            "Le Coulomb par mètre cube ($C \\cdot m^{-3}$)",
+            "Le Ohm-mètre ($\\Omega \\cdot m$)",
+            "Le Coulomb par mètre carré ($C \\cdot m^{-2}$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La densité volumique de charge représente la quantité de charge électrique contenue dans un volume élémentaire. Son unité est donc le Coulomb ($C$) divisé par le volume ($m^3$). L'unité $A \\cdot m^{-2}$ correspond à la densité de courant $\\vec{j}$."
+    },
+    {
+        "uuid": "hc9i0j1k-2l3m-4n5o-6p7q-8r9s0t1u2v3w",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Si $n$ est la densité particulaire (nombre de porteurs par unité de volume) et $q$ la charge d'un porteur, quelle est l'expression de la densité volumique de charge $\\rho$ ?",
+        "answers": [
+            "$\\rho = n / q$",
+            "$\\rho = n \\cdot q$",
+            "$\\rho = q / n$",
+            "$\\rho = n^2 \\cdot q$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La densité volumique est simplement la somme des charges par unité de volume. Si chaque porteur porte une charge $q$ et qu'il y en a $n$ par unité de volume, alors $\\rho = n \\cdot q$."
+    },
+    {
+        "uuid": "ic0j1k2l-3m4n-5o6p-7q8r-9s0t1u2v3w4x",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Pour un conducteur métallique comme le cuivre, que peut-on dire de sa densité volumique de charge totale $\\rho$ en régime stationnaire ?",
+        "answers": [
+            "$\\rho$ est quasiment nulle en tout point du volume du conducteur",
+            "$\\rho$ est très élevée (de l'ordre de $10^{28} C \\cdot m^{-3}$)",
+            "$\\rho$ vaut environ $1,6 \\cdot 10^{-19} C \\cdot m^{-3}$",
+            "$\\rho$ dépend linéairement du champ électrique appliqué"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Bien que les porteurs de charge soient mobiles et très nombreux, le conducteur reste électriquement neutre en volume. Les charges mobiles compensent exactement la charge des ions du réseau. Toute accumulation de charge $\\rho$ entraînerait des champs électriques internes immenses qui se dissiperaient instantanément."
+    },
+    {
+        "uuid": "jc1k2l3m-4n5o-6p7q-8r9s-0t1u2v3w4x5y",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le cadre de l'étude du transport de charge dans un milieu conducteur, comment définit-on le vecteur densité de courant volumique $\\vec{j}$ ?",
+        "answers": [
+            "$\\vec{j} = \\rho \\cdot \\vec{v}$",
+            "$\\vec{j} = n \\cdot \\vec{v}$",
+            "$\\vec{j} = q \\cdot \\vec{v}$",
+            "$\\vec{j} = \\rho / \\vec{v}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "Le vecteur densité de courant $\\vec{j}$ représente le débit de charges par unité de surface. Il est défini par $\\vec{j} = \\rho \\vec{v}$ où $\\rho$ est la densité volumique de charge (en $C \\cdot m^{-3}$) et $\\vec{v}$ le vecteur vitesse des porteurs. $n \\cdot \\vec{v}$ serait incomplet (il manque la charge $q$), et $q \\cdot \\vec{v}$ est une charge ponctuelle.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "kc2l3m4n-5o6p-7q8r-9s0t-1u2v3w4x5y6z",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est l'unité SI du vecteur densité de courant $\\vec{j}$ ?",
+        "answers": [
+            "$A \\cdot m^{-1}$",
+            "$A \\cdot m^{-2}$",
+            "$C \\cdot s^{-1} \\cdot m^{-3}$",
+            "$A \\cdot m^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "Par définition, $\\vec{j}$ est un flux de courant par unité de surface. Comme $I = \\iint_{\\Sigma} \\vec{j} \\cdot \\vec{dS}$, on en déduit que l'unité est $[I] / [S] = A \\cdot m^{-2}$. L'unité $C \\cdot s^{-1} \\cdot m^{-3}$ est dimensionnellement cohérente ($C/s = A$) mais ne correspond pas à la définition de $\\vec{j}$ qui est une densité de courant par unité de surface et non de volume.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "lc3m4n5o-6p7q-8r9s-0t1u-2v3w4x5y6z7a",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "L'intensité du courant électrique $I$ traversant une surface orientée $\\Sigma$ est égale au flux de quel vecteur à travers cette surface ?",
+        "answers": [
+            "Le champ électrique $\\vec{E}$",
+            "Le vecteur densité de courant $\\vec{j}$",
+            "Le vecteur vitesse $\\vec{v}$",
+            "Le vecteur polarisation $\\vec{P}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "L'intensité $I$ est définie comme le débit de charges traversant une surface, soit $I = \\iint_{\\Sigma} \\vec{j} \\cdot d\\vec{S}$. Le flux du champ électrique est lié à la charge intérieure (théorème de Gauss), tandis que le flux du vecteur vitesse n'a pas de signification physique directe pour l'intensité.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "mc4n5o6p-7q8r-9s0t-1u2v-3w4x5y6z7a8b",
+        "image_path": null,
+        "theme": "conservation",
+        "question": "Quelle est l'équation locale traduisant la conservation de la charge électrique ?",
+        "answers": [
+            "$\\frac{\\partial\\rho}{\\partial t} + \\text{div}(\\vec{j}) = 0$",
+            "$\\frac{\\partial\\rho}{\\partial t} - \\text{div}(\\vec{j}) = 0$",
+            "$\\text{div}(\\vec{j}) = \\rho$",
+            "$\\frac{\\partial\\rho}{\\partial t} + \\text{div}(\\vec{j}) = \\rho$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "L'équation de continuité exprime que la variation temporelle de charge dans un volume est égale au flux sortant de courant à travers sa frontière : $\\frac{d}{dt} \\iiint \\rho d\\tau = - \\iint \\vec{j} \\cdot d\\vec{S}$. En appliquant le théorème de Green-Ostrogradski, on obtient $\\frac{\\partial\\rho}{\\partial t} + \\text{div}(\\vec{j}) = 0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "nc5o6p7q-8r9s-0t1u-2v3w-4x5y6z7a8b9c",
+        "image_path": null,
+        "theme": "conservation",
+        "question": "En régime stationnaire (indépendant du temps), que devient l'équation locale de conservation de la charge ?",
+        "answers": [
+            "$\\text{div}(\\vec{j}) = \\rho$",
+            "$\\text{div}(\\vec{j}) = 0$",
+            "$\\vec{j} = \\vec{0}$",
+            "$\\frac{\\partial \\rho}{\\partial t} = \\text{div}(\\vec{j})$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "En régime stationnaire, les grandeurs ne dépendent pas du temps, donc $\\frac{\\partial \\rho}{\\partial t} = 0$. L'équation de continuité $\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\vec{j}) = 0$ devient alors $\\text{div}(\\vec{j}) = 0$. Cela signifie que les lignes de courant sont à flux conservatif.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "oc6p7q8r-9s0t-1u2v-3w4x-5y6z7a8b9c0d",
+        "image_path": null,
+        "theme": "conservation",
+        "question": "La loi des nœuds en électronique est une conséquence directe de :",
+        "answers": [
+            "La conservation de l'énergie",
+            "La conservation de la charge en régime stationnaire",
+            "La loi d'Ohm locale",
+            "L'effet Joule"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "La loi des nœuds stipule que la somme algébrique des courants entrant dans un nœud est nulle. Comme $\\text{div}(\\vec{j}) = 0$ en régime stationnaire, l'intégrale de ce flux sur un volume entourant un nœud est nulle, ce qui conduit à $\\sum I = 0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "pc7q8r9s-0t1u-2v3w-4x5y-6z7a8b9c0d1e",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le modèle de Drude pour la conduction métallique, comment est modélisée l'interaction entre les électrons et le réseau cristallin ?",
+        "answers": [
+            "Par une force conservative dérivant d'un potentiel",
+            "Par une force de frottement fluide $\\vec{f} = -\\frac{m}{\\tau}\\vec{v}$",
+            "Par une force de répulsion électrostatique pure",
+            "Par un potentiel périodique complexe"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "Le modèle de Drude (modèle classique) considère les électrons comme un gaz frappant régulièrement les ions du réseau. Ces chocs sont modélisés par une force de rappel ou de frottement proportionnelle à la vitesse : $\\vec{f} = -m\\vec{v}/\\tau$, où $\\tau$ est le temps moyen entre deux chocs.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "qc8r9s0t-1u2v-3w4x-5y6z-7a8b9c0d1e2f",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quel est l'ordre de grandeur du temps de relaxation moyen $\\tau$ entre deux chocs dans un métal à température ambiante ?",
+        "answers": [
+            "$10^{-3} s$",
+            "$10^{-9} s$",
+            "$10^{-14} s$",
+            "$1 s$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "explication": "Le temps de relaxation $\\tau$ correspond au temps moyen entre deux collisions électron-réseau. Pour un métal, il est de l'ordre de $10^{-14}$ s. Les valeurs plus élevées sont physiquement impossibles car elles impliqueraient une conductivité bien trop grande.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "rc9s0t1u-2v3w-4x5y-6z7a-8b9c0d1e2f3g",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est l'expression de la conductivité électrique $\\gamma$ issue du modèle de Drude ?",
+        "answers": [
+            "$\\gamma = \\frac{n e^2 \\tau}{m}$",
+            "$\\gamma = \\frac{n e \\tau}{m}$",
+            "$\\gamma = \\frac{n e^2}{m \\tau}$",
+            "$\\gamma = \\frac{n m \\tau}{e^2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "En régime permanent, l'équation du mouvement $m \\frac{d\\vec{v}}{dt} = q\\vec{E} - m\\frac{\\vec{v}}{\\tau} = 0$ donne $\\vec{v} = \\frac{q\\tau}{m}\\vec{E}$. En remplaçant dans $\\vec{j} = n q \\vec{v}$, on trouve $\\vec{j} = \\frac{nq^2\\tau}{m}\\vec{E}$. Avec $q = -e$, le terme au carré rend le signe positif : $\\gamma = \\frac{n e^2 \\tau}{m}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "sc0t1u2v-3w4x-5y6z-7a8b-9c0d1e2f3g4h",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est l'expression mathématique de la loi d'Ohm locale ?",
+        "answers": [
+            "$\\vec{j} = \\gamma \\vec{E}$",
+            "$\\vec{E} = \\gamma \\vec{j}$",
+            "$\\vec{j} = \\gamma^2 \\vec{E}$",
+            "$\\vec{j} = \\vec{E} / \\gamma^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "La loi d'Ohm locale est une relation linéaire entre la densité de courant $\\vec{j}$ et le champ électrique $\\vec{E}$. La constante de proportionnalité $\\gamma$ est la conductivité électrique (en $S \\cdot m^{-1}$). L'expression $\\vec{E} = \\gamma \\vec{j}$ est erronée car elle inverserait le rôle de la résistivité.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "tc1u2v3w-4x5y-6z7a-8b9c-0d1e2f3g4h5i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le cadre de l'étude de la loi d'Ohm locale $\\vec{j} = \\gamma \\vec{E}$, l'unité de la conductivité $\\gamma$ est le Siemens par mètre ($S \\cdot m^{-1}$). Laquelle des expressions suivantes est équivalente à cette unité ?",
+        "answers": [
+            "$\\Omega \\cdot m$",
+            "$\\Omega^{-1} \\cdot m^{-1}$",
+            "$\\Omega \\cdot m^{-1}$",
+            "$\\Omega^{-1} \\cdot m$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "Le Siemens ($S$) est l'unité de conductance, définie comme l'inverse de l'Ohm ($\\Omega^{-1}$ ou $A/V$). Ainsi, $S \\cdot m^{-1}$ est strictement équivalent à $\\Omega^{-1} \\cdot m^{-1}$. Les autres propositions confondent les unités de la résistivité ($\\Omega \\cdot m$) ou des inverses de longueurs.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "uc2v3w4x-5y6z-7a8b-9c0d-1e2f3g4h5i6j",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Soit un milieu conducteur ohmique de conductivité $\\gamma$. Comment définit-on sa résistivité $\\rho$ (ne pas confondre avec la densité volumique de charge) ?",
+        "answers": [
+            "C'est la même chose que la résistance électrique $R$ du matériau",
+            "C'est la grandeur définie par $\\rho = 1 / \\gamma$",
+            "C'est le produit de la conductivité par la section droite",
+            "C'est la dérivée de la conductivité par rapport à la température"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "La résistivité $\\rho$ est, par définition, l'inverse de la conductivité $\\gamma$. Elle s'exprime en $\\Omega \\cdot m$. La résistance $R$ est une grandeur macroscopique liée à la géométrie, tandis que la résistivité est une grandeur physique intrinsèque au matériau.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "vc3w4x5y-6z7a-8b9c-0d1e-2f3g4h5i6j7k",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "On considère un conducteur cylindrique homogène de longueur $L$ et de section droite $S$, parcouru par un courant uniforme. Quelle est l'expression de sa résistance électrique $R$ ?",
+        "answers": [
+            "$R = \\frac{\\gamma S}{L}$",
+            "$R = \\frac{L}{\\gamma S}$",
+            "$R = \\frac{\\gamma L}{S}$",
+            "$R = \\frac{1}{\\gamma L S}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "D'après la loi d'Ohm macroscopique $U=RI$ et en utilisant $U=E\\cdot L$ et $I=jS=\\gamma E S$, on obtient $EL = R(\\gamma E S)$, soit $R = \\frac{L}{\\gamma S}$. Notez que la résistance augmente avec la longueur et diminue avec la conductivité et la section.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "wc4x5y6z-7a8b-9c0d-1e2f-3g4h5i6j7k8l",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "En régime permanent, quelle est l'expression correcte de la puissance volumique $\\mathcal{P}_{vol}$ dissipée par effet Joule local en un point du conducteur ?",
+        "answers": [
+            "$\\mathcal{P}_{vol} = \\vec{j} \\cdot \\vec{E}$",
+            "$\\mathcal{P}_{vol} = \\rho \\vec{v} \\cdot \\vec{j}$",
+            "$\\mathcal{P}_{vol} = \\gamma E$",
+            "$\\mathcal{P}_{vol} = \\frac{1}{2} \\epsilon_0 E^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "La puissance thermique dégagée par effet Joule est donnée par le produit scalaire du vecteur densité de courant $\\vec{j}$ et du champ électrique local $\\vec{E}$. Puisque $\\vec{j} = \\gamma \\vec{E}$, on a $\\mathcal{P}_{vol} = \\gamma E^2$, qui est toujours positive.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "xc5y6z7a-8b9c-0d1e-2f3g-4h5i6j7k8l9m",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "En utilisant la loi d'Ohm locale $\\vec{j} = \\gamma \\vec{E}$, comment se réécrit la puissance volumique $\\mathcal{P}_{vol}$ en fonction de la conductivité $\\gamma$ et du champ électrique $E$ ?",
+        "answers": [
+            "$\\mathcal{P}_{vol} = \\gamma^2 E$",
+            "$\\mathcal{P}_{vol} = \\gamma E^2$",
+            "$\\mathcal{P}_{vol} = j^2 / \\gamma$",
+            "$\\mathcal{P}_{vol} = E^2 / \\gamma$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "En remplaçant $\\vec{j}$ par $\\gamma \\vec{E}$ dans l'expression $\\vec{j} \\cdot \\vec{E}$, on obtient $\\gamma \\vec{E} \\cdot \\vec{E} = \\gamma E^2$. Cette formule montre que la dissipation est proportionnelle à la conductivité du matériau et au carré du champ électrique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "yc6z7a8b-9c0d-1e2f-3g4h-5i6j7k8l9m0n",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Pour le cuivre (métal pur à température ambiante), quel est l'ordre de grandeur réaliste de sa conductivité électrique $\\gamma$ ?",
+        "answers": [
+            "$6 \\cdot 10^7 S \\cdot m^{-1}$",
+            "$1 S \\cdot m^{-1}$",
+            "$10^{-2} S \\cdot m^{-1}$",
+            "$10^3 S \\cdot m^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "Le cuivre est un excellent conducteur. Sa conductivité est de l'ordre de $6 \\cdot 10^7 S \\cdot m^{-1}$. Les autres valeurs correspondent soit à des isolants, soit à des semi-conducteurs intrinsèques, ce qui est très éloigné des propriétés d'un métal.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "zc7a8b9c-0d1e-2f3g-4h5i-6j7k8l9m0n1o",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Considérons un champ vectoriel $\\vec{A} = (ax, ay, -2az)$ en coordonnées cartésiennes. Quelle est la valeur de sa divergence $\\text{div}(\\vec{A})$ ?",
+        "answers": [
+            "$2a$",
+            "$0$",
+            "$-2a$",
+            "$4a$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "La divergence est définie par $\\frac{\\partial A_x}{\\partial x} + \\frac{\\partial A_y}{\\partial y} + \\frac{\\partial A_z}{\\partial z}$. Ici, $\\frac{\\partial (ax)}{\\partial x} = a$, $\\frac{\\partial (ay)}{\\partial y} = a$, et $\\frac{\\partial (-2az)}{\\partial z} = -2a$. La somme donne $a + a - 2a = 0$. Un champ à divergence nulle indique l'absence de sources locales.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ad8b9c0d-1e2f-3g4h-5i6j-7k8l9m0n1o2p",
+        "image_path": null,
+        "theme": "semi-conducteurs",
+        "question": "La mobilité $\\mu$ d'un porteur de charge est une grandeur caractéristique du transport dans le réseau cristallin. Comment est-elle définie en relation avec la vitesse de dérive $\\vec{v}$ et le champ électrique $\\vec{E}$ ?",
+        "answers": [
+            "$\\vec{v} = \\mu \\vec{E}$",
+            "$\\vec{v} = \\mu / \\vec{E}$",
+            "$\\vec{v} = q \\cdot \\vec{E} \\cdot \\mu$",
+            "$\\mu = v^2 / E$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "La mobilité $\\mu$ traduit la capacité d'un porteur à se déplacer sous l'action d'un champ électrique. On définit la vitesse de dérive par $\\vec{v} = \\mu \\vec{E}$. Elle s'exprime en $m^2 \\cdot V^{-1} \\cdot s^{-1}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "bd9c0d1e-2f3g-4h5i-6j7k-8l9m0n1o2p3q",
+        "image_path": null,
+        "theme": "semi-conducteurs",
+        "question": "Dans un semi-conducteur intrinsèque, la conductivité totale $\\gamma$ provient de la contribution conjointe de deux types de porteurs. Lesquels ?",
+        "answers": [
+            "Seulement des électrons de la bande de conduction",
+            "Seulement des trous de la bande de valence",
+            "Des électrons dans la bande de conduction ET des trous dans la bande de valence",
+            "Des ions du réseau cristallin et des électrons libres"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "explication": "Dans un semi-conducteur, le passage du courant est assuré par deux porteurs de charges opposées : les électrons (charge $-e$) dans la bande de conduction et les trous (charge $+e$) dans la bande de valence. La conductivité s'écrit alors $\\gamma = n e \\mu_e + p e \\mu_h$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "cd0d1e2f-3g4h-5i6j-7k8l-9m0n1o2p3q4r",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Comparé à un métal comme le cuivre, pourquoi le silicium pur possède-t-il une conductivité électrique beaucoup plus faible ?",
+        "answers": [
+            "Parce que la mobilité des porteurs y est rigoureusement nulle",
+            "Parce que sa densité de porteurs libres $n$ est extrêmement faible comparée à celle d'un métal",
+            "Parce que les trous et les électrons s'annulent exactement dans le silicium",
+            "Parce que le silicium n'est pas un matériau solide à température ambiante"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "La conductivité dépend de la densité de porteurs libres ($n$) et de leur mobilité ($\\mu$). Dans un métal, $n \\approx 10^{29} m^{-3}$, tandis que dans le silicium intrinsèque, $n$ est de l'ordre de $10^{16} m^{-3}$ à température ambiante. Cette différence de 13 ordres de grandeur explique la faible conductivité du silicium pur.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "dd1e2f3g-4h5i-6j7k-8l9m-0n1o2p3q4r5s",
+        "image_path": null,
+        "theme": "géométrie",
+        "question": "Dans le cadre de l'étude du transport de charge à symétrie sphérique, quelle est l'expression de l'intensité $I$ sortant d'une surface sphérique de rayon $r$, sachant que le vecteur densité de courant est $\\vec{j} = j(r)\\vec{u}_r$ ?",
+        "answers": [
+            "$I = 4\\pi r^2 j(r)$",
+            "$I = \\pi r^2 j(r)$",
+            "$I = \\frac{4}{3}\\pi r^3 j(r)$",
+            "$I = 2\\pi r j(r)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'intensité $I$ est le flux du vecteur densité de courant $\\vec{j}$ à travers la surface $S$ : $I = \\iint_S \\vec{j} \\cdot d\\vec{S}$. En symétrie sphérique, $\\vec{j} = j(r)\\vec{u}_r$ et le vecteur surface élémentaire est $d\\vec{S} = r^2 \\sin(\\theta) d\\theta d\\phi \\vec{u}_r$. L'intégrale sur la sphère donne $I = j(r) \\times 4\\pi r^2$. Les autres réponses correspondent soit à l'aire d'un disque, soit au volume d'une sphère, soit à une erreur de périmètre."
+    },
+    {
+        "uuid": "ed2f3g4h-5i6j-7k8l-9m0n-1o2p3q4r5s6t",
+        "image_path": null,
+        "theme": "géométrie",
+        "question": "Dans un milieu conducteur homogène, en régime stationnaire et avec une symétrie sphérique où aucune charge ne s'accumule localement, comment varie la norme de la densité de courant $j(r)$ ?",
+        "answers": [
+            "$j(r)$ est constante",
+            "$j(r) \\propto r$",
+            "$j(r) \\propto 1/r^2$",
+            "$j(r) \\propto 1/r$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "explication": "En régime stationnaire, la conservation de la charge impose $\\text{div}(\\vec{j}) = 0$, ce qui signifie que le flux de $\\vec{j}$ à travers toute surface fermée est nul (le courant total $I$ est conservé). Comme $I = j(r) \\times 4\\pi r^2 = \\text{cste}$, on en déduit immédiatement que $j(r) = \\frac{I}{4\\pi r^2}$, soit une variation en $1/r^2$."
+    },
+    {
+        "uuid": "fd3g4h5i-6j7k-8l9m-0n1o-2p3q4r5s6t7u",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle loi physique fondamentale, issue du rayonnement du corps noir, permet de modéliser la puissance thermique $P$ rayonnée par un filament métallique chauffé à la température $T$ ?",
+        "answers": [
+            "Loi d'Ohm",
+            "Loi de Stefan-Boltzmann ($P = \\sigma T^4 S$)",
+            "Loi de Newton sur le refroidissement",
+            "Loi de Kirchhoff"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La puissance rayonnée par une surface noire (ou grise via l'émissivité) est proportionnelle à la puissance quatrième de la température absolue $T$. La loi d'Ohm concerne le transport électrique, et la loi de Newton est une approximation linéaire valable uniquement pour de faibles écarts de température."
+    },
+    {
+        "uuid": "gd4h5i6j-7k8l-9m0n-1o2p-3q4r5s6t7u8v",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude des milieux conducteurs, si le champ vectoriel densité de courant $\\vec{j}$ vérifie $\\text{div}(\\vec{j}) = 0$, on qualifie ce champ de :",
+        "answers": [
+            "Uniforme",
+            "Solénoïdal (ou à flux conservatif)",
+            "Irrotationnel",
+            "Conservatif"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un champ vectoriel dont la divergence est nulle est dit 'solénoïdal'. Cela signifie que ses lignes de champ ne commencent ni ne finissent en un point (pas de source ni de puits), et que le flux à travers toute surface fermée est nul. 'Irrotationnel' signifierait $\\vec{\\text{rot}}(\\vec{j}) = \\vec{0}$, ce qui est faux en général."
+    },
+    {
+        "uuid": "hd5i6j7k-8l9m-0n1o-2p3q-4r5s6t7u8v9w",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le modèle microscopique de Drude, en présence d'un champ électrique $\\vec{E}$, quelle est la vitesse limite $\\vec{v}_{lim}$ acquise par un électron entre deux collisions (de temps moyen $\\tau$) ?",
+        "answers": [
+            "$\\vec{v}_{lim} = -\\frac{e \\tau}{m} \\vec{E}$",
+            "$\\vec{v}_{lim} = -\\frac{e}{m \\tau} \\vec{E}$",
+            "$\\vec{v}_{lim} = -\\frac{m \\tau}{e} \\vec{E}$",
+            "$\\vec{v}_{lim} = \\frac{e \\tau}{m} \\vec{E}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'équation du mouvement dans le modèle de Drude est $m \\frac{d\\vec{v}}{dt} = -e\\vec{E} - m \\frac{\\vec{v}}{\\tau}$. En régime permanent (vitesse limite), l'accélération est nulle, d'où $\\vec{0} = -e\\vec{E} - m \\frac{\\vec{v}_{lim}}{\\tau}$, ce qui donne bien $\\vec{v}_{lim} = -\\frac{e\\tau}{m}\\vec{E}$."
+    },
+    {
+        "uuid": "id6j7k8l-9m0n-1o2p-3q4r-5s6t7u8v9w0x",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Soit un fil cylindrique de cuivre de longueur $L$ et de rayon $a$. Comment évolue la résistance électrique $R$ du fil si l'on double le rayon $a$, la résistivité et la longueur restant constantes ?",
+        "answers": [
+            "Elle est divisée par 2",
+            "Elle est divisée par 4",
+            "Elle est multipliée par 4",
+            "Elle reste inchangée"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La résistance d'un conducteur cylindrique est donnée par $R = \\rho \\frac{L}{S}$, où $S = \\pi a^2$ est la section. Si on double le rayon $a$, la section $S$ est multipliée par $2^2 = 4$. Comme $R$ est inversement proportionnelle à $S$, la résistance est divisée par 4."
+    },
+    {
+        "uuid": "jd7k8l9m-0n1o-2p3q-4r5s-6t7u8v9w0x1y",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "En physique du solide, un porteur de charge est qualifié de 'lié' (par opposition à 'libre') si son mouvement est confiné à des distances caractéristiques :",
+        "answers": [
+            "Très supérieures au libre parcours moyen",
+            "Inférieures ou de l'ordre de grandeur du pas du réseau cristallin $a$",
+            "Egales à la longueur d'onde de de Broglie uniquement",
+            "Proportionnelles à la température $T$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un porteur est 'lié' lorsqu'il est attaché à un atome ou à une maille du réseau cristallin par une force de rappel ou un potentiel attractif fort. Son déplacement est alors limité spatialement à l'échelle de la maille, contrairement aux électrons de conduction qui se déplacent sur des distances macroscopiques."
+    },
+    {
+        "uuid": "kd8l9m0n-1o2p-3q4r-5s6t-7u8v9w0x1y2z",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est la valeur de la charge élémentaire $e$ exprimée dans le système international ?",
+        "answers": [
+            "$1,6 \\cdot 10^{-19} \\text{ C}$",
+            "$9,1 \\cdot 10^{-31} \\text{ C}$",
+            "$6,02 \\cdot 10^{23} \\text{ C}$",
+            "$1,6 \\cdot 10^{-19} \\text{ J}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La charge élémentaire $e$ est une constante fondamentale égale à environ $1,602 \\cdot 10^{-19} \\text{ C}$. $9,1 \\cdot 10^{-31} \\text{ kg}$ est la masse de l'électron, et $6,02 \\cdot 10^{23} \\text{ mol}^{-1}$ est le nombre d'Avogadro."
+    },
+    {
+        "uuid": "ld9m0n1o-2p3q-4r5s-6t7u-8v9w0x1y2z3a",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Quelle est l'expression correcte de la puissance volumique $p$ dissipée par effet Joule dans un conducteur ohmique de conductivité $\\gamma$ traversé par une densité de courant $\\vec{j}$ ?",
+        "answers": [
+            "$p = R I$",
+            "$p = \\frac{j^2}{\\gamma}$",
+            "$p = \\gamma E^2$",
+            "$p = \\gamma j$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La loi d'Ohm locale est $\\vec{j} = \\gamma \\vec{E}$. La puissance volumique dissipée est $\\vec{j} \\cdot \\vec{E} = \\vec{j} \\cdot (\\vec{j}/\\gamma) = j^2/\\gamma$. Les expressions avec $R$ ou $I$ concernent le composant global (dipôle), pas le milieu continu."
+    },
+    {
+        "uuid": "md0n1o2p-3q4r-5s6t-7u8v-9w0x1y2z3a4b",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans l'expression de l'intensité $I = \\iint_S \\vec{j} \\cdot d\\vec{S}$, quelle est la définition précise du vecteur élémentaire $d\\vec{S}$ ?",
+        "answers": [
+            "Un vecteur tangent à la surface en tout point",
+            "Un vecteur normal à la surface, orienté vers l'extérieur pour une surface fermée",
+            "Le vecteur vitesse des charges instantanées",
+            "Un vecteur colinéaire au champ électrique $\\vec{E}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le vecteur surface élémentaire $d\\vec{S}$ est défini par sa norme $dS$ (aire élémentaire) et sa direction, qui est la normale à la surface. Par convention, pour un flux sortant, on choisit l'orientation de la normale pointant vers l'extérieur de la surface."
+    },
+    {
+        "uuid": "nd1o2p3q-4r5s-6t7u-8v9w-0x1y2z3a4b5c",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude des champs vectoriels en électromagnétisme, quelle est l'expression de la divergence d'un champ vectoriel $\\vec{A}$ en coordonnées cartésiennes ?",
+        "answers": [
+            "$\\frac{\\partial A_x}{\\partial x} + \\frac{\\partial A_y}{\\partial y} + \\frac{\\partial A_z}{\\partial z}$",
+            "$\\frac{\\partial^2 f}{\\partial x^2} + \\frac{\\partial^2 f}{\\partial y^2} + \\frac{\\partial^2 f}{\\partial z^2}$",
+            "$(\\frac{\\partial A_x}{\\partial x}, \\frac{\\partial A_y}{\\partial y}, \\frac{\\partial A_z}{\\partial z})$",
+            "$\\vec{\\nabla} \\wedge \\vec{A}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "La divergence d'un champ vectoriel est un scalaire défini par le produit scalaire $\\vec{\\nabla} \\cdot \\vec{A}$. La réponse 2 est le Laplacien scalaire, la réponse 3 est une erreur de notation vectorielle, et la réponse 4 correspond au rotationnel.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "od2p3q4r-5s6t-7u8v-9w0x-1y2z3a4b5c6d",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le cadre de la modélisation statistique, l'échelle 'mésoscopique' est définie comme étant une échelle :",
+        "answers": [
+            "Inférieure à la taille de l'atome",
+            "Intermédiaire entre le microscopique (échelle atomique) et le macroscopique (échelle de l'échantillon)",
+            "Correspondant strictement à la longueur d'onde de de Broglie",
+            "Correspondant à la taille galactique"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "L'échelle mésoscopique est suffisamment grande pour définir des grandeurs moyennes (comme la densité de charge ou la vitesse moyenne), mais suffisamment petite pour que les fluctuations statistiques ne soient pas négligeables.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "pd3q4r5s-6t7u-8v9w-0x1y-2z3a4b5c6d7e",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le modèle de Drude appliqué à un cristal de cuivre, combien d'électrons de conduction chaque atome de cuivre cède-t-il environ à la 'mer' d'électrons ?",
+        "answers": [
+            "1",
+            "10",
+            "Tous ses électrons",
+            "0.1"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "Le cuivre appartient à la colonne 11 de la classification périodique. Son électron de valence (couche $4s^1$) est délocalisé dans la structure cristalline, formant le gaz d'électrons libres.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "qd4r5s6t-7u8v-9w0x-1y2z-3a4b5c6d7e8f",
+        "image_path": null,
+        "theme": "conservation",
+        "question": "Pour un fluide de charges en mouvement modélisé par un vecteur densité de courant $\\vec{j}$, que signifie physiquement la condition locale $div(\\vec{j}) > 0$ en un point donné ?",
+        "answers": [
+            "Il y a accumulation de charges en ce point",
+            "Il y a appauvrissement (fuite) de charges depuis ce point",
+            "Le courant est stationnaire en ce point",
+            "Le champ électrique est conservatif"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "D'après la loi de conservation de la charge locale, $\\frac{\\partial \\rho}{\\partial t} + div(\\vec{j}) = 0$. Si $div(\\vec{j}) > 0$, alors $\\frac{\\partial \\rho}{\\partial t} < 0$, ce qui traduit une diminution locale de la densité de charge (une 'source' de courant).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "rd5s6t7u-8v9w-0x1y-2z3a-4b5c6d7e8f9g",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "La force de Lorentz s'exerçant sur un électron (charge $q = -e$) placé dans un champ électrique $\\vec{E}$ et un champ magnétique $\\vec{B}$ (avec $\\vec{v}$ la vitesse) est donnée par :",
+        "answers": [
+            "$\\vec{F} = -e (\\vec{E} + \\vec{v} \\wedge \\vec{B})$",
+            "$\\vec{F} = -e \\vec{E} - e (\\vec{v} \\wedge \\vec{B})$",
+            "$\\vec{F} = -e \\vec{E} + e (\\vec{v} \\wedge \\vec{B})$",
+            "$\\vec{F} = -e \\vec{E} - e (\\vec{B} \\wedge \\vec{v})$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "La force de Lorentz est $\\vec{F} = q(\\vec{E} + \\vec{v} \\wedge \\vec{B})$. Avec $q = -e$, on obtient $\\vec{F} = -e\\vec{E} - e(\\vec{v} \\wedge \\vec{B})$. La réponse 2 est équivalente à la définition standard avec $q=-e$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "sd6t7u8v-9w0x-1y2z-3a4b-5c6d7e8f9g0h",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est l'analyse dimensionnelle correcte de la conductivité électrique $\\gamma$ (unité SI : $S \\cdot m^{-1}$) ?",
+        "answers": [
+            "$[M]^{-1} [L]^{-3} [T]^3 [I]^2$",
+            "$[M] [L]^2 [T]^{-3} [I]^{-2}$",
+            "$[L]^2 [T]^{-1}$",
+            "$[M] [L] [T]^{-2} [I]^{-1}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "La conductivité est définie par $\\vec{j} = \\gamma \\vec{E}$. On a $[\\gamma] = [j]/[E]$. Comme $[j] = [I][L]^{-2}$ et $[E] = [M][L][T]^{-3}[I]^{-1}$, on trouve $[M]^{-1}[L]^{-3}[T]^3[I]^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td7u8v9w-0x1y-2z3a-4b5c-6d7e8f9g0h1i",
+        "image_path": null,
+        "theme": "semi-conducteurs",
+        "question": "Dans le cristal de silicium intrinsèque à 300K, comment comparer la mobilité $\\mu_h$ des trous à la mobilité $\\mu_e$ des électrons ?",
+        "answers": [
+            "$\\mu_h > \\mu_e$",
+            "$\\mu_h < \\mu_e$",
+            "$\\mu_h = \\mu_e$",
+            "$\\mu_h$ est négligeable devant $\\mu_e$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "Les électrons ont une mobilité plus grande car ils se déplacent dans la bande de conduction, tandis que les trous se déplacent par des sauts d'électrons de la bande de valence, ce qui est un processus moins efficace.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ud8v9w0x-1y2z-3a4b-5c6d-7e8f9g0h1i2j",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "En régime stationnaire, une ligne de courant est une courbe tangente en tout point au vecteur :",
+        "answers": [
+            "Champ électrique $\\vec{E}$",
+            "Densité de courant $\\vec{j}$",
+            "Potentiel scalaire $V$",
+            "Vecteur surface $d\\vec{S}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "Par définition, les lignes de courant matérialisent la direction de l'écoulement des charges, donc elles suivent le vecteur densité de courant $\\vec{j}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "vd9w0x1y-2z3a-4b5c-6d7e-8f9g0h1i2j3k",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Un 'tube de courant' dans un conducteur est défini par :",
+        "answers": [
+            "L'ensemble des surfaces équipotentielles",
+            "L'ensemble des lignes de courant s'appuyant sur un contour fermé",
+            "Un tube cylindrique isolant le courant",
+            "Le volume où le courant est nul"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "Un tube de courant est une surface latérale formée par les lignes de courant passant par les points d'une courbe fermée. Le flux de $\\vec{j}$ à travers toute section droite de ce tube est conservé en régime permanent.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "wd0x1y2z-3a4b-5c6d-7e8f-9g0h1i2j3k4l",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est la valeur approximative de la conductivité $\\gamma$ de l'eau pure à 25°C ?",
+        "answers": [
+            "$6 \\cdot 10^7 S \\cdot m^{-1}$",
+            "$5 \\cdot 10^{-6} S \\cdot m^{-1}$",
+            "$10^2 S \\cdot m^{-1}$",
+            "$10^7 S \\cdot m^{-1}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "L'eau pure est un très mauvais conducteur. $6 \\cdot 10^7$ correspond au cuivre (conducteur métallique). L'eau pure possède une conductivité très faible, de l'ordre de quelques $\\mu S \\cdot cm^{-1}$, soit $10^{-4}$ à $10^{-6} S \\cdot m^{-1}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "xd1y2z3a-4b5c-6d7e-8f9g-0h1i2j3k4l5m",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le modèle de Drude pour la conduction électrique d'un métal, en l'absence de champ électrique extérieur ($\\vec{E} = \\vec{0}$), quelle est la vitesse moyenne des électrons de conduction ?",
+        "answers": [
+            "Nulle, car les collisions des électrons avec le réseau sont isotropes",
+            "Égale à la vitesse thermique moyenne, soit $\\approx 10^5 \\text{ m/s}$",
+            "Non nulle et orientée aléatoirement",
+            "Égale à la vitesse de dérive $\\vec{v}_d$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "Dans le modèle de Drude, les électrons sont assimilés à un gaz parfait subissant des chocs incessants avec les ions du réseau. En l'absence de champ électrique, le mouvement est purement thermique et isotrope : la somme des vitesses est statistiquement nulle. L'agitation thermique est importante, mais la vitesse *moyenne* est nulle.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "yd2z3a4b-5c6d-7e8f-9g0h-1i2j3k4l5m6n",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Comment évolue la résistivité $\\rho$ d'un métal comme le tungstène en fonction de la température $T$ à l'échelle macroscopique ?",
+        "answers": [
+            "Elle décroît avec la température à cause de l'agitation thermique",
+            "Elle croît avec la température selon une loi du type $\\rho(T) = \\rho_0(1 + \\alpha(T - T_0))$",
+            "Elle est constante, car le nombre de porteurs de charge est fixe",
+            "Elle augmente proportionnellement à $T^2$ selon la loi de Wiedemann-Franz"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "Pour les métaux, la résistivité augmente avec la température. Cela s'explique par l'augmentation de la fréquence des collisions entre les électrons et les ions du réseau cristallin, qui vibrent de plus en plus intensément lorsque $T$ augmente. La loi affine $\\rho(T) = \\rho_0(1 + \\alpha \\Delta T)$ est le modèle classique utilisé en CPGE.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "zd3a4b5c-6d7e-8f9g-0h1i-2j3k4l5m6n7o",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est la densité de charge volumique $\\rho$ à l'intérieur d'un métal en équilibre électrostatique ?",
+        "answers": [
+            "Positive, à cause des ions du réseau",
+            "Négative, à cause du gaz d'électrons libres",
+            "Nulle, par neutralité électrique globale du milieu conducteur",
+            "Non nulle en surface uniquement"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "explication": "En électrostatique, un métal est globalement neutre. Toute charge excédentaire se retrouve en surface. À l'intérieur, la densité volumique de charge est nulle car le champ électrique y est nul, ce qui implique par l'équation de Maxwell-Gauss ($\\text{div} \\vec{E} = \\rho / \\varepsilon_0$) que $\\rho = 0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ae4b5c6d-7e8f-9g0h-1i2j-3k4l5m6n7o8p",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'expression du vecteur divergence $\\text{div}(\\vec{j}) = \\frac{\\partial j_x}{\\partial x} + \\frac{\\partial j_y}{\\partial y} + \\frac{\\partial j_z}{\\partial z}$ est spécifique à quel système de coordonnées ?",
+        "answers": [
+            "Coordonnées cylindriques $(r, \\theta, z)$",
+            "Coordonnées cartésiennes $(x, y, z)$",
+            "Coordonnées sphériques $(r, \\theta, \\phi)$",
+            "Coordonnées curvilignes générales"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "explication": "L'opérateur divergence possède une forme simple et additive uniquement en coordonnées cartésiennes. Dans les autres systèmes (cylindriques ou sphériques), l'expression fait intervenir des facteurs d'échelle (ex: $\\frac{1}{r} \\frac{\\partial (r j_r)}{\\partial r}$ en cylindriques) pour tenir compte de la courbure des lignes de coordonnées.",
+        "subject": "physique",
+        "correct_answer_index": 1
+    },
+    {
+        "uuid": "be5c6d7e-8f9g-0h1i-2j3k-4l5m6n7o8p9q",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le modèle de Drude, quelle est l'équation différentielle régissant la vitesse $\\vec{v}(t)$ d'un électron de masse $m$ et de charge $-e$ soumis à un champ $\\vec{E}$ ?",
+        "answers": [
+            "$\\frac{d\\vec{v}}{dt} + \\frac{\\vec{v}}{\\tau} = -\\frac{e}{m}\\vec{E}$",
+            "$\\frac{d\\vec{v}}{dt} - \\frac{\\vec{v}}{\\tau} = -\\frac{e}{m}\\vec{E}$",
+            "$\\frac{d\\vec{v}}{dt} = -\\frac{e}{m}\\vec{E}$",
+            "$\\frac{d\\vec{v}}{dt} + \\tau \\vec{v} = -\\frac{e}{m}\\vec{E}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "Le terme $\\frac{d\\vec{v}}{dt}$ représente l'accélération. La force exercée est $\\vec{F} = -e\\vec{E}$. Le terme de frottement visqueux $-\\frac{m\\vec{v}}{\\tau}$ modélise les collisions. En divisant par $m$, on obtient bien l'équation du mouvement avec un temps de relaxation $\\tau$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ce6d7e8f-9g0h-1i2j-3k4l-5m6n7o8p9q0r",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "En régime permanent, que devient la puissance électrique fournie à un conducteur ohmique par un champ électrique ?",
+        "answers": [
+            "Elle est stockée sous forme d'énergie potentielle électrostatique",
+            "Elle est intégralement dissipée sous forme de chaleur par effet Joule",
+            "Elle augmente l'énergie cinétique moyenne des électrons",
+            "Elle est rayonnée sous forme d'ondes électromagnétiques"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "En régime permanent, la vitesse moyenne des porteurs est constante. Le travail fourni par le champ électrique est compensé par les chocs avec les ions du réseau. Cette énergie cinétique acquise par les électrons entre deux chocs est transférée au réseau lors des collisions, ce qui se manifeste par un dégagement de chaleur (effet Joule).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "de7e8f9g-0h1i-2j3k-4l5m-6n7o8p9q0r1s",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est la résistance approximative d'un fil de cuivre de longueur $L = 10 \\text{ m}$ et de section $S = 1,5 \\text{ mm}^2$ ? (Donnée : $\\rho_{cu} \\approx 1,7 \\times 10^{-8} \\, \\Omega \\cdot \\text{m}$)",
+        "answers": [
+            "$0,1 \\, \\Omega$",
+            "$10 \\, \\Omega$",
+            "$100 \\, \\Omega$",
+            "$0,01 \\, \\Omega$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "La formule est $R = \\rho \\frac{L}{S}$. Avec $L=10$, $S=1,5 \\times 10^{-6} \\text{ m}^2$ et $\\rho \\approx 1,7 \\times 10^{-8}$, on obtient $R = 1,7 \\times 10^{-8} \\times 10 / (1,5 \\times 10^{-6}) \\approx 0,11 \\, \\Omega$. Il est crucial de convertir la section en $m^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ee8f9g0h-1i2j-3k4l-5m6n-7o8p9q0r1s2t",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "La densité de courant volumique $\\vec{j}$ est-elle nécessairement uniforme dans un conducteur ?",
+        "answers": [
+            "Oui, dans tous les cas pour un conducteur ohmique",
+            "Non, elle peut dépendre de la géométrie du conducteur et de la source",
+            "Oui, car la loi d'Ohm locale $\\vec{j} = \\gamma \\vec{E}$ l'impose",
+            "Non, elle est toujours nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "La densité de courant dépend du champ électrique local $\\vec{j} = \\gamma \\vec{E}$. Si le conducteur a une géométrie complexe ou si le régime est variable (effet de peau par exemple), $\\vec{j}$ peut varier spatialement. La loi d'Ohm locale ne garantit l'uniformité que si le champ $\\vec{E}$ lui-même est uniforme.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "fe9g0h1i-2j3k-4l5m-6n7o-8p9q0r1s2t3u",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Parmi les opérateurs différentiels suivants, lequel transforme un champ vectoriel en un champ scalaire ?",
+        "answers": [
+            "Gradient",
+            "Divergence",
+            "Rotationnel",
+            "Laplacien scalaire"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "La divergence d'un champ vectoriel $\\vec{A}$ est définie par $\\text{div}(\\vec{A}) = \\nabla \\cdot \\vec{A}$. Comme il s'agit d'un produit scalaire entre l'opérateur nabla et le vecteur, le résultat est un scalaire. Le gradient transforme un scalaire en vecteur, et le rotationnel transforme un vecteur en vecteur.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ge0h1i2j-3k4l-5m6n-7o8p-9q0r1s2t3u4v",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le cadre de la physique des semi-conducteurs, qu'est-ce qu'un 'trou' ?",
+        "answers": [
+            "Une vacance cristalline (absence d'atome dans le réseau)",
+            "Une lacune électronique dans la bande de valence se comportant comme une charge $+e$",
+            "Une particule élémentaire de masse nulle et charge positive",
+            "Un électron ayant une énergie cinétique très élevée"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "Le trou n'est pas une particule réelle mais une quasi-particule. Lorsqu'un électron quitte la bande de valence pour la bande de conduction, il laisse une place libre. Ce manque d'électron dans une mer d'électrons se déplace comme une charge positive $+e$ sous l'effet d'un champ électrique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "he1i2j3k-4l5m-6n7o-8p9q-0r1s2t3u4v5w",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le cadre de l'étude d'un conducteur ohmique soumis à une différence de potentiel $U$, comment évolue la puissance dissipée par effet Joule $P_J$ si la tension $U$ est doublée ?",
+        "answers": [
+            "Multipliée par 2",
+            "Multipliée par 4",
+            "Divisée par 2",
+            "Inchangée"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "La puissance dissipée par effet Joule est donnée par $P_J = U^2 / R$. Si on multiplie la tension $U$ par 2, alors $U' = 2U$. La nouvelle puissance est $P'_J = (2U)^2 / R = 4(U^2/R) = 4 P_J$. L'erreur classique est de confondre avec la loi d'Ohm $I=U/R$ où $I$ est proportionnel à $U$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ie2j3k4l-5m6n-7o8p-9q0r-1s2t3u4v5w6x",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "En régime permanent, dans un fil de cuivre de section standard traversé par un courant continu, quelle est l'ordre de grandeur de la vitesse de dérive $\\vec{v}_d$ des électrons ?",
+        "answers": [
+            "$10^8 \\, m \\cdot s^{-1}$",
+            "$10^3 \\, m \\cdot s^{-1}$",
+            "$10^{-4} \\, m \\cdot s^{-1}$",
+            "$10^0 \\, m \\cdot s^{-1}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "explication": "La vitesse de dérive est très faible, typiquement de l'ordre du millimètre par seconde ($10^{-4} \\, m \\cdot s^{-1}$), contrairement à la vitesse de propagation du signal électrique qui est proche de $c$ ($10^8 \\, m \\cdot s^{-1}$), et à la vitesse thermique des électrons qui est bien plus élevée.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "je3k4l5m-6n7o-8p9q-0r1s-2t3u4v5w6x7y",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "En analyse vectorielle, que vaut la divergence du rotationnel d'un champ vectoriel $\\vec{A}$ de classe $C^2$ ?",
+        "answers": [
+            "$0$",
+            "$\\Delta \\vec{A}$",
+            "$1$",
+            "$\\text{grad}(\\text{div}(\\vec{A}))$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "L'identité fondamentale de l'analyse vectorielle stipule que pour tout champ de vecteur $\\vec{A}$ suffisamment régulier, $\\text{div}(\\vec{\\text{rot}}(\\vec{A})) = 0$. Cela traduit physiquement l'absence de sources magnétiques (loi de Gauss pour le magnétisme).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ke4l5m6n-7o8p-9q0r-1s2t-3u4v5w6x7y8z",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le modèle de Drude pour un électron dans un conducteur soumis à un champ électrique $\\vec{E}$, l'équation du mouvement est $m \\frac{d\\vec{v}}{dt} = -m \\frac{\\vec{v}}{\\tau} - e\\vec{E}$. Quelle est la solution pour $\\vec{v}(t)$ si $\\vec{v}(0) = \\vec{0}$ ?",
+        "answers": [
+            "$\\vec{v}(t) = \\vec{v}_{\\infty}(1 - e^{-t/\\tau})$",
+            "$\\vec{v}(t) = \\vec{v}_{\\infty} e^{-t/\\tau}$",
+            "$\\vec{v}(t) = \\vec{v}_{\\infty} t / \\tau$",
+            "$\\vec{v}(t) = \\vec{v}_{\\infty}(1 + e^{-t/\\tau})$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "Il s'agit d'une équation différentielle linéaire du premier ordre avec second membre constant. La solution est de la forme $\\vec{v}(t) = \\vec{A} + \\vec{B}e^{-t/\\tau}$. La condition initiale $\\vec{v}(0)=0$ impose $\\vec{A} = -\\vec{B}$, menant à la forme $\\vec{v}(t) = \\vec{v}_{\\infty}(1 - e^{-t/\\tau})$ avec $\\vec{v}_{\\infty} = -e\\tau\\vec{E}/m$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "le5m6n7o-8p9q-0r1s-2t3u-4v5w6x7y8z9a",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Comment évolue la conductivité $\\gamma$ d'un semi-conducteur intrinsèque pur lorsque la température augmente ?",
+        "answers": [
+            "Augmente fortement avec la température",
+            "Diminue quand la température augmente",
+            "Est indépendante de la température",
+            "Est nulle à température ambiante"
+        ],
+        "difficulty": 4,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "Pour un semi-conducteur, la conductivité est dominée par le nombre de porteurs libres (électrons et trous) qui suit une loi en $e^{-E_g / (2k_B T)}$. L'augmentation de la température permet de franchir le gap d'énergie $E_g$, augmentant drastiquement le nombre de porteurs, dominant la diminution de mobilité due aux chocs.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "me6n7o8p-9q0r-1s2t-3u4v-5w6x7y8z9a0b",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est l'unité SI correcte de la résistivité électrique $\\rho$ ?",
+        "answers": [
+            "$\\Omega / m$",
+            "$\\Omega \\cdot m$",
+            "$S \\cdot m$",
+            "$\\Omega \\cdot m^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "D'après la loi d'Ohm locale $\\vec{E} = \\rho \\vec{j}$, on a $\\rho = E/j$. En unités SI, cela donne $[V/m] / [A/m^2] = [V/A] \\cdot [m^2/m] = \\Omega \\cdot m$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ne7o8p9q-0r1s-2t3u-4v5w-6x7y8z9a0b1c",
+        "image_path": null,
+        "theme": "géométrie",
+        "question": "Soit un conducteur filiforme de section circulaire de rayon $R$. Le vecteur densité de courant est selon $\\vec{e}_z$ et vaut $\\vec{j}(r) = \\beta r \\vec{e}_z$ (où $\\beta$ est une constante). Quelle est l'intensité totale $I$ traversant la section ?",
+        "answers": [
+            "$\\pi R^2 \\beta$",
+            "$\\frac{2}{3}\\pi \\beta R^3$",
+            "$\\frac{1}{2}\\pi \\beta R^4$",
+            "$\\frac{1}{3}\\pi \\beta R^3$"
+        ],
+        "difficulty": 4,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "L'intensité est le flux de $\\vec{j}$ à travers la section : $I = \\int \\vec{j} \\cdot d\\vec{S} = \\int_0^R (\\beta r) (2\\pi r dr) = 2\\pi \\beta \\int_0^R r^2 dr = 2\\pi \\beta [r^3/3]_0^R = \\frac{2}{3}\\pi \\beta R^3$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "oe8p9q0r-1s2t-3u4v-5w6x-7y8z9a0b1c2d",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Soit un champ de vecteur $\\vec{A}$ tel que $\\text{div}(\\vec{A}) = 3ax^2 + 3ay^2 + 3az^2$. Lequel de ces champs vectoriels est une solution possible pour $\\vec{A}$ ?",
+        "answers": [
+            "$(ax^3, ay^3, az^3)$",
+            "$(ax^2, ay^2, az^2)$",
+            "$(ax, ay, az)$",
+            "$(ax^2, ay^2, 0)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "La divergence d'un vecteur $\\vec{A} = (A_x, A_y, A_z)$ est $\\frac{\\partial A_x}{\\partial x} + \\frac{\\partial A_y}{\\partial y} + \\frac{\\partial A_z}{\\partial z}$. Pour $\\vec{A} = (ax^3, ay^3, az^3)$, on obtient $3ax^2 + 3ay^2 + 3az^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "pe9q0r1s-2t3u-4v5w-6x7y-8z9a0b1c2d3e",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est la valeur approximative du nombre d'Avogadro $N_A$ ?",
+        "answers": [
+            "$6,02 \\cdot 10^{23} \\, mol^{-1}$",
+            "$1,6 \\cdot 10^{-19} \\, mol^{-1}$",
+            "$8,31 \\, J \\cdot K^{-1} \\cdot mol^{-1}$",
+            "$6,62 \\cdot 10^{-34} \\, mol^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "Le nombre d'Avogadro représente le nombre d'entités élémentaires dans une mole de matière. La valeur est standard : $6,022 \\cdot 10^{23} \\, mol^{-1}$. Les autres propositions correspondent à la charge élémentaire $e$, la constante des gaz parfaits $R$, et la constante de Planck $h$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "qe0r1s2t-3u4v-5w6x-7y8z-9a0b1c2d3e4f",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans l'expression de la densité de porteurs de charge $n = \\frac{N_A \\rho_m}{M}$, où $M$ est la masse molaire, que représente $\\rho_m$ ?",
+        "answers": [
+            "La mobilité électronique",
+            "La masse volumique",
+            "La résistivité",
+            "La viscosité cinématique"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "Cette formule permet d'estimer la densité volumique de porteurs à partir de données macroscopiques. $\\rho_m$ est la masse volumique ($kg/m^3$). L'erreur est de confondre la lettre grecque rho $\\rho$ utilisée ici pour la masse volumique avec la résistivité.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "re1s2t3u-4v5w-6x7y-8z9a-0b1c2d3e4f5g",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le cadre de l'étude du transport de charge, la loi d'Ohm locale $\\vec{j} = \\gamma \\vec{E}$ est-elle une loi universelle ?",
+        "answers": [
+            "Oui, elle est valide pour tout milieu conducteur en tout régime.",
+            "Non, elle n'est valable que pour les conducteurs ohmiques dans des conditions stationnaires ou quasi-stationnaires.",
+            "Non, elle ne s'applique que dans le vide en présence d'un champ électrique.",
+            "Oui, elle découle directement des équations de Maxwell sans hypothèse supplémentaire."
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "La loi d'Ohm locale est une loi phénoménologique. Elle suppose une relation linéaire entre $\\vec{j}$ et $\\vec{E}$, ce qui n'est pas le cas pour les semi-conducteurs à fort champ, les supraconducteurs, ou en régime haute fréquence où les effets d'inertie des porteurs deviennent dominants (modèle de Drude).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "se2t3u4v-5w6x-7y8z-9a0b-1c2d3e4f5g6h",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "En coordonnées cartésiennes, comment se définit l'opérateur Laplacien scalaire $\\Delta f$ d'une fonction scalaire $f(x, y, z)$ ?",
+        "answers": [
+            "$\\Delta f = \\frac{\\partial^2 f}{\\partial x^2} + \\frac{\\partial^2 f}{\\partial y^2} + \\frac{\\partial^2 f}{\\partial z^2}$",
+            "$\\Delta f = \\frac{\\partial f}{\\partial x} + \\frac{\\partial f}{\\partial y} + \\frac{\\partial f}{\\partial z}$",
+            "$\\Delta f = \\frac{\\partial^2 f}{\\partial x^2} \\cdot \\frac{\\partial^2 f}{\\partial y^2} \\cdot \\frac{\\partial^2 f}{\\partial z^2}$",
+            "$\\Delta f = \\text{div}(\\vec{f})$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "Le Laplacien scalaire est défini par l'opérateur $\\vec{\\nabla} \\cdot \\vec{\\nabla} f$ (divergence du gradient). En cartésiennes, cela correspond à la somme des dérivées secondes par rapport à chaque coordonnée d'espace. Les autres options mélangent l'ordre des dérivées ou la nature de l'opérateur.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "te3u4v5w-6x7y-8z9a-0b1c-2d3e4f5g6h7i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Lors du passage d'un courant électrique dans un conducteur métallique, quelle est la nature physique du vecteur densité de courant $\\vec{j}$ ?",
+        "answers": [
+            "Il représente l'agitation thermique désordonnée des électrons.",
+            "Il traduit le mouvement d'ensemble (moyenné) ordonné des porteurs de charge.",
+            "Il est causé uniquement par la vibration des ions du réseau cristallin.",
+            "Il correspond à la vitesse instantanée de chaque électron libre."
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "La densité de courant est définie par $\\vec{j} = n q \\langle \\vec{v} \\rangle$, où $\\langle \\vec{v} \\rangle$ est la vitesse moyenne (vitesse de dérive) des porteurs. L'agitation thermique est désordonnée et sa moyenne est nulle, elle ne contribue donc pas au courant macroscopique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ue4u5v6w-7x8y-9z0a-1b2c-3d4e5f6g7h8i",
+        "image_path": null,
+        "theme": "conservation",
+        "question": "Soit une surface $S$ traversée par une densité de courant $\\vec{j}$. Quelle est l'expression de la charge élémentaire $dQ$ traversant $S$ pendant $dt$ ?",
+        "answers": [
+            "$dQ = dt \\iint_S \\vec{j} \\cdot \\vec{dS}$",
+            "$dQ = \\vec{j} \\cdot dt$",
+            "$dQ = \\rho \\cdot dt$",
+            "$dQ = \\iint_S \\vec{j} \\cdot d\\vec{S} / dt$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "Le courant $I$ est le flux de $\\vec{j}$ à travers la surface $S$, soit $I = \\iint_S \\vec{j} \\cdot d\\vec{S}$. La charge $dQ$ est alors $I dt$, d'où l'intégration du flux sur la surface.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ve5u6v7w-8x9y-0z1a-2b3c-4d5e6f7g8h9i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Quelle est la valeur approximative de la masse d'un électron au repos ?",
+        "answers": [
+            "$9,1 \\cdot 10^{-31} \\text{ kg}$",
+            "$1,67 \\cdot 10^{-27} \\text{ kg}$",
+            "$10^{-10} \\text{ kg}$",
+            "$9,1 \\cdot 10^{-28} \\text{ g}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "La masse de l'électron est une constante fondamentale : $m_e \\approx 9,11 \\cdot 10^{-31} \\text{ kg}$. $1,67 \\cdot 10^{-27} \\text{ kg}$ est l'ordre de grandeur de la masse d'un nucléon (proton ou neutron).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "we6u7v8w-9x0y-1z2a-3b4c-5d6e7f8g9h0i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Pourquoi la conductivité thermique $\\lambda$ et la conductivité électrique $\\gamma$ des métaux sont-elles liées par la loi de Wiedemann-Franz ?",
+        "answers": [
+            "Car les électrons libres sont les principaux vecteurs de transport pour la charge et l'énergie thermique.",
+            "Parce que les vibrations du réseau (phonons) dictent uniquement ces deux phénomènes.",
+            "Car les métaux sont des isolants thermiques par nature.",
+            "Il s'agit d'une coïncidence numérique sans fondement microscopique."
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "Dans les métaux, les électrons de conduction transportent à la fois la charge électrique et l'énergie thermique. La loi de Wiedemann-Franz stipule que le rapport $\\lambda / (\\gamma T)$ est approximativement constant (nombre de Lorenz).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "xe7u8v9w-0x1y-2z3a-4b5c-6d7e8f9g0h1i",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour un vecteur constant $\\vec{C}$, quelle est la valeur du flux $\\Phi = \\iint_S \\vec{C} \\cdot d\\vec{S}$ à travers une surface fermée $S$ ?",
+        "answers": [
+            "$0$",
+            "Le volume intérieur à $S$ multiplié par $\\vec{C}$",
+            "La norme de $\\vec{C}$ fois la surface $S$",
+            "La circulation de $\\vec{C}$ sur le bord de $S$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "D'après le théorème de flux-divergence (théorème d'Ostrogradsky), $\\iint_S \\vec{C} \\cdot d\\vec{S} = \\iiint_V \\text{div}(\\vec{C}) dV$. Comme $\\vec{C}$ est constant, $\\text{div}(\\vec{C}) = 0$, donc le flux est nul.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ye8u9v0w-1x2y-3z4a-5b6c-7d8e9f0g1h2i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Lors d'un phénomène de conduction ohmique, comment se produit la dissipation d'énergie par effet Joule ?",
+        "answers": [
+            "Par émission de rayonnement électromagnétique de freinage.",
+            "Par des collisions inélastiques successives entre les électrons et les ions du réseau cristallin.",
+            "Par création de courants de Foucault au sein de chaque ion du réseau.",
+            "Par une augmentation de la masse effective des porteurs de charge."
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "L'effet Joule est le résultat macroscopique du transfert d'énergie cinétique ordonnée des électrons vers l'agitation thermique des ions du réseau lors des chocs (phénomène de diffusion).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ze9u0v1w-2x3y-4z5a-6b7c-8d9e0f1g2h3i",
+        "image_path": null,
+        "theme": "semi-conducteurs",
+        "question": "Dans le cas d'un silicium dopé N, quels sont les porteurs de charge majoritaires ?",
+        "answers": [
+            "Les trous (charges positives).",
+            "Les électrons de conduction (charges négatives).",
+            "Les ions donneurs fixes du réseau.",
+            "Les protons du noyau atomique."
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "Le dopage N (N pour Négatif) consiste à introduire des impuretés possédant plus d'électrons de valence que le silicium. Ces électrons surnuméraires sont libérés dans la bande de conduction, devenant ainsi les porteurs majoritaires.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "af0u1v2w-3x4y-5z6a-7b8c-9d0e1f2g3h4i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Comment évolue la résistance électrique $R$ d'un filament de lampe à incandescence lorsqu'il passe de l'état éteint (froid) à l'état allumé (chaud) ?",
+        "answers": [
+            "Elle augmente, car la résistivité des métaux croît avec la température.",
+            "Elle diminue, car les porteurs de charge circulent mieux à haute température.",
+            "Elle reste identique, car la résistance est une caractéristique géométrique.",
+            "Elle devient nulle par effet de supraconductivité."
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "Dans un métal, la résistance augmente avec la température car l'agitation thermique des ions du réseau augmente, ce qui accroît la fréquence des collisions avec les électrons, diminuant ainsi le temps de relaxation $\\tau$ et donc la conductivité.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "bf1u2v3w-4x5y-6z7a-8b9c-0d1e2f3g4h5i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le cadre de l'ingénierie électrique, pourquoi le cuivre est-il le matériau de référence pour les câbles de transport d'énergie ?",
+        "answers": [
+            "Car il est intrinsèquement isolant et évite les courts-circuits",
+            "Car il présente une très grande conductivité électrique, $\\gamma \\approx 6 \\cdot 10^7 \\, S \\cdot m^{-1}$",
+            "Car il possède une masse volumique très faible facilitant le déploiement",
+            "Car sa susceptibilité magnétique est très élevée, permettant de guider le courant"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "Le choix du cuivre repose sur sa haute conductivité électrique $\\gamma$ (l'inverse de la résistivité $\\rho_r$). Une conductivité élevée minimise les pertes par effet Joule ($P = R I^2$). L'affirmation qu'il est isolant est un contresens total ; le cuivre est un métal conducteur. Quant à sa légèreté, l'aluminium est bien plus léger que le cuivre.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "cf2u3v4w-5x6y-7z8a-9b0c-1d2e3f4g5h6i",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'équation locale de conservation de la charge s'écrit $\\text{div}(\\vec{j}) + \\frac{\\partial \\rho}{\\partial t} = 0$. En régime stationnaire, on obtient $\\text{div}(\\vec{j}) = 0$. Quelle est la signification physique de cette équation ?",
+        "answers": [
+            "Le champ électrique est nul dans tout le conducteur",
+            "Il n'y a ni création ni disparition de charges nettes dans le volume étudié",
+            "Les charges sont figées au sein du réseau cristallin",
+            "Le vecteur densité de courant est nécessairement uniforme"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "explication": "L'équation $\\text{div}(\\vec{j}) = 0$ exprime que le flux net de courant sortant d'une surface fermée est nul, ce qui signifie qu'aucune charge ne s'accumule localement dans le volume. En régime stationnaire, la charge volumique $\\rho$ est constante au cours du temps, donc $\\partial \\rho / \\partial t = 0$. Cela n'implique pas que les charges soient immobiles (c'est même le contraire) ni que $\\vec{j}$ soit uniforme.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "df3u4v5w-6x7y-8z9a-0b1c-2d3e4f5g6h7i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Un conducteur ohmique possède une résistivité $\\rho_r = 10^{-8} \\, \\Omega \\cdot m$. Quelle est sa conductivité $\\gamma$ ?",
+        "answers": [
+            "$10^8 \\, S \\cdot m^{-1}$",
+            "$10^{-8} \\, S \\cdot m^{-1}$",
+            "$1 \\, S \\cdot m^{-1}$",
+            "$10^7 \\, S \\cdot m^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "La conductivité $\\gamma$ est définie comme l'inverse de la résistivité : $\\gamma = 1 / \\rho_r$. Ainsi, $1 / 10^{-8} = 10^8 \\, S \\cdot m^{-1}$. L'erreur classique est de confondre les deux grandeurs ou de se tromper sur l'exposant lors de l'inversion.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ef4u5v6w-7x8y-9z0a-1b2c-3d4e5f6g7h8i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Pour un conducteur filiforme de section circulaire de diamètre $d$, quelle est l'expression de la surface de section $S$ utilisée dans la loi d'Ohm locale $\\vec{j} = \\gamma \\vec{E}$ ?",
+        "answers": [
+            "$\\pi d^2 / 4$",
+            "$\\pi d^2$",
+            "$2 \\pi d$",
+            "$\\pi d / 2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "La section d'un disque est $S = \\pi r^2$. Comme le rayon $r$ est la moitié du diamètre $d$ ($r = d/2$), on obtient $S = \\pi (d/2)^2 = \\pi d^2 / 4$. L'erreur $\\pi d^2$ correspond à une confusion entre diamètre et rayon.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ff5u6v7w-8x9y-0z1a-2b3c-4d5e6f7g8h9i",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Dans le cadre d'un dipôle linéaire passif de résistance $R$ parcouru par un courant $I$ sous une tension $U$, laquelle de ces expressions représente la puissance instantanée dissipée par effet Joule ?",
+        "answers": [
+            "$P = R I^2$",
+            "$P = U^2 / R$",
+            "Les deux réponses précédentes sont équivalentes",
+            "$P = U I^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "explication": "La puissance est $P = U I$. Selon la loi d'Ohm $U = R I$, en remplaçant $U$ on obtient $P = (RI)I = RI^2$. En remplaçant $I$ par $U/R$, on obtient $P = U(U/R) = U^2/R$. Les deux expressions sont donc parfaitement rigoureuses pour un conducteur ohmique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "gf6u7v8w-9x0y-1z2a-3b4c-5d6e7f8g9h0i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le modèle de Drude pour la conduction métallique, de quels paramètres dépend principalement le temps moyen entre deux collisions $\\tau$ ?",
+        "answers": [
+            "De la température du métal et des impuretés du réseau",
+            "Uniquement de l'intensité du champ électrique appliqué",
+            "Il est une constante universelle indépendante du matériau",
+            "De la fréquence du courant alternatif uniquement"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "Dans le modèle de Drude, $\\tau$ (le temps de relaxation) dépend de la probabilité de collision des électrons avec les ions du réseau. Cette probabilité augmente avec l'agitation thermique (donc la température) et la présence d'impuretés ou de défauts dans le cristal.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "hf7u8v9w-0x1y-2z3a-4b5c-6d7e8f9g0h1i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "La loi d'Ohm macroscopique $U = RI$ est une relation fondamentale en électricité. Quelles hypothèses sont nécessaires à sa validité ?",
+        "answers": [
+            "Le régime doit être stationnaire (ou quasi-stationnaire)",
+            "Le milieu doit être un conducteur ohmique (relation linéaire $\\vec{j} = \\gamma \\vec{E}$)",
+            "Les deux réponses précédentes sont nécessaires",
+            "Le conducteur doit être parcouru par un courant alternatif haute fréquence"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 2,
+        "explication": "La loi $U=RI$ suppose que le dipôle est ohmique (linéarité entre $U$ et $I$) et que les effets d'auto-induction sont négligeables, ce qui est garanti en régime stationnaire. En haute fréquence, l'effet de peau rend cette loi plus complexe.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "if8u9v0w-1x2y-3z4a-5b6c-7d8e9f0g1h2i",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Soit une fonction scalaire $f(x,y,z)$. Comment définit-on le gradient de $f$, noté $\\vec{\\nabla} f$ ?",
+        "answers": [
+            "$\\vec{\\nabla} f = \\frac{\\partial f}{\\partial x} \\vec{e}_x + \\frac{\\partial f}{\\partial y} \\vec{e}_y + \\frac{\\partial f}{\\partial z} \\vec{e}_z$",
+            "$\\vec{\\nabla} f = \\frac{\\partial^2 f}{\\partial x^2} + \\frac{\\partial^2 f}{\\partial y^2} + \\frac{\\partial^2 f}{\\partial z^2}$",
+            "$\\vec{\\nabla} f = \\frac{\\partial f}{\\partial x} + \\frac{\\partial f}{\\partial y} + \\frac{\\partial f}{\\partial z}$",
+            "$\\vec{\\nabla} f = (\\vec{e}_x \\cdot \\vec{e}_y) \\frac{\\partial f}{\\partial z}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "Le gradient est un opérateur vectoriel qui, appliqué à un champ scalaire, donne un champ vectoriel dont les composantes sont les dérivées partielles par rapport aux coordonnées cartésiennes. La deuxième réponse correspond au laplacien scalaire, et la troisième n'est pas un vecteur.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "jf9u0v1w-2x3y-4z5a-6b7c-8d9e0f1g2h3i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Soit un fil cylindrique de longueur $L$ et de section $S$, parcouru par un courant créant un champ électrique uniforme $\\vec{E} = E \\vec{e}_z$. Quelle est la tension $U = V_A - V_B$ entre les deux extrémités ?",
+        "answers": [
+            "$U = E \\cdot L$",
+            "$U = E / L$",
+            "$U = E \\cdot S$",
+            "$U = E / S$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "Par définition, $U = V_A - V_B = \\int_A^B \\vec{E} \\cdot d\\vec{l}$. Comme $\\vec{E}$ est uniforme et colinéaire au chemin d'intégration, l'intégrale se simplifie en $E \\times L$. L'unité confirme ce résultat : $[V] = [V/m] \\times [m]$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "kf0u1v2w-3x4y-5z6a-7b8c-9d0e1f2g3h4i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Comment nomme-t-on la grandeur $G$ définie par l'inverse de la résistance électrique $R$ ?",
+        "answers": [
+            "La conductance, exprimée en Siemens ($S$)",
+            "La conductivité, exprimée en Siemens par mètre ($S \\cdot m^{-1}$)",
+            "L'impédance, exprimée en Ohms ($\\Omega$)",
+            "La susceptance, exprimée en Siemens ($S$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "explication": "La conductance est bien $G = 1/R$ et s'exprime en Siemens ($S$). Ne pas confondre avec la conductivité (grandeur locale, $S \\cdot m^{-1}$) ou l'impédance (grandeur complexe en régime alternatif).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "lf1u2v3w-4x5y-6z7a-8b9c-0d1e2f3g4h5i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le cadre de l'étude des circuits électriques en régime stationnaire, quelle est l'unité SI de la conductance $G$, définie par la relation $I = G U$ ?",
+        "answers": [
+            "Le Siemens (S)",
+            "L'Ohm ($\\Omega$)",
+            "Le Watt (W)",
+            "Le Farad (F)"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La conductance $G$ est l'inverse de la résistance $R$ ($G = 1/R$). Puisque la résistance s'exprime en Ohm ($\\Omega$), la conductance s'exprime en $\\Omega^{-1}$, unité nommée le Siemens (S). L'Ohm est l'unité de résistance, le Watt est l'unité de puissance, et le Farad celle de la capacité."
+    },
+    {
+        "uuid": "mf2u3v4w-5x6y-7z8a-9b0c-1d2e3f4g5h6i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "En utilisant la loi d'Ohm locale $\\vec{j} = \\gamma \\vec{E}$ et la relation $\\vec{E} = -\\vec{grad}(V)$, quel est le sens de circulation du vecteur densité de courant $\\vec{j}$ ?",
+        "answers": [
+            "Des hauts potentiels vers les bas potentiels",
+            "Des bas potentiels vers les hauts potentiels",
+            "Perpendiculairement aux lignes de potentiel",
+            "Il n'a pas de sens physique défini"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le vecteur $\\vec{grad}(V)$ pointe vers les valeurs croissantes de $V$. Comme $\\vec{E} = -\\vec{grad}(V)$, le champ électrique est dirigé des hauts potentiels vers les bas potentiels. Puisque $\\gamma > 0$ et $\\vec{j} = \\gamma \\vec{E}$, le courant suit la direction du champ électrique."
+    },
+    {
+        "uuid": "nf3u4v5w-6x7y-8z9a-0b1c-2d3e4f5g6h7i",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Soit un champ vectoriel uniforme $\\vec{A} = \\vec{A_0}$ où $\\vec{A_0}$ est un vecteur constant. Quelle est la valeur de sa divergence $\\text{div}(\\vec{A})$ ?",
+        "answers": [
+            "$0$",
+            "La norme du vecteur",
+            "Une valeur dépendant de la direction",
+            "$\\vec{A_0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La divergence d'un champ $\\vec{A} = A_x \\vec{u_x} + A_y \\vec{u_y} + A_z \\vec{u_z}$ est $\\frac{\\partial A_x}{\\partial x} + \\frac{\\partial A_y}{\\partial y} + \\frac{\\partial A_z}{\\partial z}$. Si le champ est uniforme, ses composantes sont des constantes, leurs dérivées partielles sont donc nulles."
+    },
+    {
+        "uuid": "of4u5v6w-7x8y-9z0a-1b2c-3d4e5f6g7h8i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le cadre de l'étude d'une distribution de charge en symétrie sphérique, quelle est l'expression correcte de la conservation de la charge $\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\vec{j}) = 0$ en coordonnées sphériques pour un courant purement radial $\\vec{j} = j(r, t) \\vec{u_r}$ ?",
+        "answers": [
+            "$\\frac{\\partial\\rho}{\\partial t} + \\frac{1}{r^2}\\frac{\\partial(r^2 j)}{\\partial r} = 0$",
+            "$\\frac{\\partial\\rho}{\\partial t} + \\frac{\\partial j}{\\partial r} = 0$",
+            "$\\frac{\\partial\\rho}{\\partial t} + \\text{div}(\\vec{j}) = \\rho$",
+            "$\\frac{\\partial\\rho}{\\partial t} + \\frac{1}{r}\\frac{\\partial(r j)}{\\partial r} = 0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "En coordonnées sphériques, la divergence d'un champ radial $\\vec{A} = A_r \\vec{u_r}$ est donnée par $\\frac{1}{r^2} \\frac{\\partial (r^2 A_r)}{\\partial r}$. L'erreur classique est d'oublier le terme $r^2$ ou de confondre avec la divergence en coordonnées cartésiennes."
+    },
+    {
+        "uuid": "pf5u6v7w-8x9y-0z1a-2b3c-4d5e6f7g8h9i",
+        "image_path": null,
+        "theme": "semi-conducteurs",
+        "question": "Pour le silicium, la conductivité est $\\gamma = n e (\\mu_e + \\mu_h)$. Avec des mobilités $\\mu_e = 0.14 \\text{ m}^2 \\cdot \\text{V}^{-1} \\cdot \\text{s}^{-1}$ et $\\mu_h = 0.045 \\text{ m}^2 \\cdot \\text{V}^{-1} \\cdot \\text{s}^{-1}$, quelle est la part relative de la contribution des trous dans la conduction ?",
+        "answers": [
+            "Oui, elle représente moins de 1%",
+            "Non, elle représente environ 24-25% de la conductivité totale",
+            "Les trous ne conduisent pas réellement",
+            "Elle représente 50% exactement"
+        ],
+        "difficulty": 3,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La contribution des trous est proportionnelle à $\\mu_h$. Le rapport est $\\frac{\\mu_h}{\\mu_e + \\mu_h} = \\frac{0.045}{0.14 + 0.045} = \\frac{0.045}{0.185} \\approx 0.243$. Les trous contribuent donc pour environ 24%, ce qui est loin d'être négligeable."
+    },
+    {
+        "uuid": "qf6u7v8w-9x0y-1z2a-3b4c-5d6e7f8g9h0i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "La conductivité du cuivre étant $\\gamma \\approx 6 \\cdot 10^7 \\text{ S/m}$, quelle est sa résistivité $\\rho = 1/\\gamma$ ?",
+        "answers": [
+            "$\\approx 1,7 \\cdot 10^{-8} \\Omega \\cdot \\text{m}$",
+            "$\\approx 6 \\cdot 10^7 \\Omega \\cdot \\text{m}$",
+            "$\\approx 1,7 \\cdot 10^8 \\Omega \\cdot \\text{m}$",
+            "$\\approx 0,6 \\cdot 10^{-7} \\Omega \\cdot \\text{m}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La résistivité $\\rho$ est l'inverse de la conductivité $\\gamma$. On calcule $1 / (6 \\cdot 10^7) \\approx 0,166 \\cdot 10^{-7} \\approx 1,7 \\cdot 10^{-8} \\Omega \\cdot \\text{m}$. Une erreur commune consiste à multiplier au lieu de diviser."
+    },
+    {
+        "uuid": "rf7u8v9w-0x1y-2z3a-4b5c-6d7e8f9g0h1i",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "D'un point de vue géométrique, le vecteur gradient d'un champ scalaire $f(x,y,z)$ en un point M possède quelle propriété remarquable ?",
+        "answers": [
+            "Il est orthogonal aux surfaces iso-scalaires de $f$",
+            "Il est toujours colinéaire au vecteur position $\\vec{OM}$",
+            "Il est tangent aux lignes de niveau de $f$",
+            "Il est nul là où $f$ est maximum"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le gradient est par définition le vecteur qui indique la direction de la plus grande variation de la fonction. Par conséquent, il est nécessairement normal aux surfaces sur lesquelles la fonction ne varie pas (surfaces équipotentielles ou iso-f)."
+    },
+    {
+        "uuid": "sf8u9v0w-1x2y-3z4a-5b6c-7d8e9f0g1h2i",
+        "image_path": null,
+        "theme": "conducteurs",
+        "question": "Dans le modèle de Drude pour la conduction électronique, la force de frottement est modélisée par $-\\frac{m}{\\tau}\\vec{v}$. Que représente le temps $\\tau$ ?",
+        "answers": [
+            "Une période d'oscillation propre",
+            "Un temps moyen entre deux collisions (temps de relaxation)",
+            "Le temps de trajet total de l'électron dans le conducteur",
+            "Le temps de vie de l'électron"
+        ],
+        "difficulty": 1,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans le modèle de Drude, les électrons subissent des chocs aléatoires avec le réseau cristallin. $\\tau$ représente le temps moyen entre deux chocs, appelé temps de relaxation. Cela permet de traduire l'aspect dissipatif de la conduction."
+    },
+    {
+        "uuid": "tf9u0v1w-2x3y-4z5a-6b7c-8d9e0f1g2h3i",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Soit la fonction scalaire $f(x, y, z) = 2xy$. Quel est son gradient $\\vec{grad}(f)$ ?",
+        "answers": [
+            "$(2y, 2x, 0)$",
+            "$(2x, 2y, 0)$",
+            "$2x + 2y$",
+            "$(x^2, y^2, 0)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Transport de charge",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le gradient est le vecteur composé des dérivées partielles : $\\vec{grad}(f) = \\frac{\\partial f}{\\partial x}\\vec{u_x} + \\frac{\\partial f}{\\partial y}\\vec{u_y} + \\frac{\\partial f}{\\partial z}\\vec{u_z}$. Ici, $\\frac{\\partial(2xy)}{\\partial x} = 2y$, $\\frac{\\partial(2xy)}{\\partial y} = 2x$ et $\\frac{\\partial(2xy)}{\\partial z} = 0$."
+    }
+]

@@ -1,0 +1,1684 @@
+[
+    {
+        "uuid": "f1a2b3c4-0001",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de la modélisation en mécanique des milieux continus, comment définit-on un fluide à l'échelle macroscopique ?",
+        "answers": [
+            "Un milieu indéformable qui conserve sa forme propre sous l'action de contraintes.",
+            "Un milieu capable de se déformer et de s'écouler pour épouser la forme du récipient qui le contient sous l'action d'une contrainte tangentielle.",
+            "Un milieu cristallin dont la structure atomique est ordonnée.",
+            "Un système thermodynamique dont la pression est nécessairement uniforme."
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un fluide est caractérisé par sa faible résistance à la déformation : sous l'effet d'une contrainte tangentielle (cisaillement), il se déforme continûment pour s'écouler. La réponse 1 décrit un solide, et la 3 un cristal."
+    },
+    {
+        "uuid": "f1a2b3c4-0002",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la condition microscopique fondamentale qui permet de qualifier un milieu de 'fluide' ?",
+        "answers": [
+            "Les interactions intermoléculaires sont nulles, typique du gaz parfait.",
+            "L'énergie d'agitation thermique est négligeable devant l'énergie d'interaction potentielle.",
+            "Les interactions intermoléculaires sont suffisamment faibles par rapport à l'agitation thermique pour permettre un réarrangement permanent des molécules.",
+            "Les particules sont immobiles les unes par rapport aux autres à cause des forces de Van der Waals."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Pour qu'un milieu soit fluide, il faut que les molécules puissent se déplacer les unes par rapport aux autres. Si l'agitation thermique est dominante sur les forces de cohésion (ou si ces dernières sont faibles), les molécules ne sont pas confinées dans un réseau cristallin fixe."
+    },
+    {
+        "uuid": "f1a2b3c4-0003",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude de la microstructure des liquides, quel est l'ordre de grandeur typique du libre parcours moyen $\\ell$ des molécules ?",
+        "answers": [
+            "$10^{-9}$ m",
+            "$10^{-7}$ m",
+            "$10^{-10}$ m",
+            "$10^{-3}$ m"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Dans un liquide, la densité est élevée, les molécules sont très proches les unes des autres. Le libre parcours moyen $\\ell$, distance moyenne parcourue entre deux chocs, est de l'ordre de la taille d'une molécule, soit environ le nanomètre ($10^{-9}$ m). La valeur $10^{-7}$ m correspondrait plutôt à un gaz à pression intermédiaire."
+    },
+    {
+        "uuid": "f1a2b3c4-0004",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'approche du milieu continu, comment définit-on l'échelle mésoscopique ?",
+        "answers": [
+            "Longueur caractéristique $L$ telle que $L \\gg a$, où $a$ est la distance intermoléculaire, et $L \\ll L_{système}$.",
+            "Échelle atomique où l'on observe individuellement chaque molécule.",
+            "Échelle macroscopique où le fluide est considéré comme un système homogène.",
+            "Échelle quantique où les effets d'incertitude dominent."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'échelle mésoscopique est le compromis nécessaire : il faut un volume assez grand pour contenir assez de particules afin de définir des grandeurs statistiques (masse volumique, pression) stables, mais assez petit devant les variations macroscopiques du système."
+    },
+    {
+        "uuid": "f1a2b3c4-0005",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Lors du suivi d'un écoulement, quelle est la propriété invariante associée à une 'particule fluide' ?",
+        "answers": [
+            "Son volume est constant, car le fluide est nécessairement incompressible.",
+            "Sa masse $dm$ est constante au cours de son mouvement.",
+            "Sa température est nécessairement uniforme.",
+            "Sa pression est égale à la pression extérieure."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Une particule fluide est un volume matériel défini. Par définition, un système matériel fermé possède une masse constante, même si son volume peut varier (si le fluide est compressible)."
+    },
+    {
+        "uuid": "f1a2b3c4-0006",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'étude d'un écoulement, que signifie l'adjectif 'incompressible' pour un fluide ?",
+        "answers": [
+            "La pression $P$ est constante dans tout le domaine.",
+            "La viscosité $\\eta$ est nulle (fluide parfait).",
+            "La masse volumique $\\rho$ de chaque particule fluide reste constante au cours du temps.",
+            "Le fluide ne peut pas être mis en mouvement."
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "L'incompressibilité signifie que la masse volumique $\\rho$ ne dépend ni du temps ni de la pression pour une particule donnée. $\\frac{D\\rho}{Dt} = 0$. La confusion avec l'absence de viscosité est un piège classique : un fluide peut être incompressible et visqueux."
+    },
+    {
+        "uuid": "f1a2b3c4-0007",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la définition mathématique rigoureuse de la force volumique $\\vec{f}$ ?",
+        "answers": [
+            "$\\vec{f} = \\frac{d\\vec{F}}{dm}$ (force par unité de masse)",
+            "$\\vec{f} = \\frac{d\\vec{F}}{d\\tau}$ (force par unité de volume)",
+            "$\\vec{f} = \\iint P d\\vec{S}$ (résultante des forces de pression)",
+            "$\\vec{f} = \\rho \\vec{g}$ (poids par unité de volume)"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La force volumique est par définition la force exercée sur un élément de volume infinitésimal $d\\tau$. On a donc $\\vec{dF} = \\vec{f} d\\tau$. La réponse 0 correspond à la force massique."
+    },
+    {
+        "uuid": "f1a2b3c4-0008",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'expression de la force volumique de pesanteur $\\vec{f}_{pes}$ exercée sur une particule fluide de masse volumique $\\rho$ ?",
+        "answers": [
+            "$\\vec{f}_{pes} = m\\vec{g}$",
+            "$\\vec{f}_{pes} = \\rho \\vec{g}$",
+            "$\\vec{f}_{pes} = \\vec{grad}(P)$",
+            "$\\vec{f}_{pes} = \\rho \\vec{g} / d\\tau$"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le poids d'une particule de volume $d\\tau$ est $d\\vec{P} = dm \\vec{g} = \\rho d\\tau \\vec{g}$. La force volumique est le poids par unité de volume, donc $\\vec{f}_{pes} = d\\vec{P} / d\\tau = \\rho \\vec{g}$."
+    },
+    {
+        "uuid": "f1a2b3c4-0009",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la valeur approximative de la masse volumique de l'air dans les conditions usuelles de température et de pression (T=293 K, P=1 bar) ?",
+        "answers": [
+            "$1,2$ kg.m$^{-3}$",
+            "$1,0$ kg.m$^{-3}$",
+            "$1000$ kg.m$^{-3}$",
+            "$13600$ kg.m$^{-3}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La masse volumique de l'air est environ $1,2$ kg.m$^{-3}$ à $20^{\\circ}$C. $1000$ kg.m$^{-3}$ est la masse volumique de l'eau, et $13600$ kg.m$^{-3}$ celle du mercure."
+    },
+    {
+        "uuid": "f1a2b3c4-0010",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans un fluide au repos (statique des fluides), les forces de contact exercées par une partie du fluide sur une autre à travers une surface sont :",
+        "answers": [
+            "Purement tangentielles.",
+            "Purement normales.",
+            "À la fois normales et tangentielles selon la viscosité.",
+            "Nul dans un fluide parfait uniquement."
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Au repos, il n'y a pas de mouvement relatif, donc pas de cisaillement. Les forces de contact sont uniquement dues à la pression, qui agit toujours perpendiculairement à la surface de contact (normale)."
+    },
+    {
+        "uuid": "f1a2b3c4-0011",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le modèle du fluide newtonien, comment nomme-t-on la composante tangentielle de la force surfacique exercée par une couche de fluide sur une autre, liée au mouvement relatif du fluide ?",
+        "answers": [
+            "Force pressante (normale à la surface)",
+            "Force de pesanteur (force volumique)",
+            "Force visqueuse (tangentielle)",
+            "Force d'inertie"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La force surfacique exercée sur une surface peut se décomposer en une composante normale, dite force pressante, et une composante tangentielle, appelée force visqueuse, qui s'oppose au glissement des couches de fluide entre elles."
+    },
+    {
+        "uuid": "f1a2b3c4-0012",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude de la mécanique des fluides, quelle est la condition nécessaire et suffisante pour que les forces de viscosité (frottements internes) soient nulles ?",
+        "answers": [
+            "Le fluide doit être incompressible ($\rho = cste$).",
+            "Le fluide doit être au repos dans le référentiel d'étude.",
+            "Le fluide doit être un gaz parfait.",
+            "Le fluide doit être en écoulement laminaire."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Les forces de viscosité sont proportionnelles au gradient de vitesse (tenseur des contraintes visqueuses). Si le fluide est au repos, la vitesse est nulle partout, donc son gradient est nul : les forces de viscosité disparaissent. C'est le postulat de base de la statique des fluides."
+    },
+    {
+        "uuid": "f1a2b3c4-0013",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans la définition de la force pressante $d\\vec{F} = -P d\\vec{S}$ exercée sur une paroi, quelle est la convention d'orientation choisie pour le vecteur surface élémentaire $d\\vec{S}$ ?",
+        "answers": [
+            "Le vecteur $d\\vec{S}$ est orienté du fluide vers l'extérieur du volume de contrôle.",
+            "Le vecteur $d\\vec{S}$ est orienté de l'extérieur vers le fluide.",
+            "Le vecteur $d\\vec{S}$ est orienté suivant la verticale ascendante.",
+            "Le vecteur $d\\vec{S}$ est arbitraire."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Par convention, le vecteur surface $d\\vec{S}$ est orienté vers l'extérieur du volume délimité. Comme la force pressante est dirigée vers l'intérieur, le signe 'moins' dans $d\\vec{F} = -P d\\vec{S}$ est indispensable pour assurer que la force repousse le fluide."
+    },
+    {
+        "uuid": "f1a2b3c4-0014",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'unité légale du Système International (SI) pour la grandeur physique pression $P$ ?",
+        "answers": [
+            "Le bar ($10^5$ Pa)",
+            "Le Pascal (Pa), équivalent à $1 \\text{ kg} \\cdot \\text{m}^{-1} \\cdot \\text{s}^{-2}$",
+            "L'atmosphère (atm)",
+            "Le Torr (millimètre de mercure)"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le Pascal (Pa) est l'unité SI. Par définition, $P = F/S$, d'où $1 \\text{ Pa} = 1 \\text{ N/m}^2 = (\\text{kg} \\cdot \\text{m/s}^2) / \\text{m}^2 = \\text{kg} \\cdot \\text{m}^{-1} \\cdot \\text{s}^{-2}$."
+    },
+    {
+        "uuid": "f1a2b3c4-0015",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la conversion correcte entre l'unité usuelle 'bar' et l'unité légale Pascal ?",
+        "answers": [
+            "1 bar = $10^3$ Pa",
+            "1 bar = $10^5$ Pa",
+            "1 bar = $1,013 \\times 10^5$ Pa",
+            "1 bar = $10^2$ Pa"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le bar est défini comme valant exactement $10^5$ Pa. Attention à ne pas le confondre avec l'atmosphère standard qui vaut $1,01325 \\times 10^5$ Pa."
+    },
+    {
+        "uuid": "f1a2b3c4-0016",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la valeur de la pression atmosphérique normale ($P_0 = 1 \\text{ atm}$) exprimée en bar ?",
+        "answers": [
+            "1,000 bar",
+            "0,987 bar",
+            "1,013 bar",
+            "1,100 bar"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Par définition, $1 \\text{ atm} = 101325 \\text{ Pa}$. Comme $1 \\text{ bar} = 100000 \\text{ Pa}$, alors $1 \\text{ atm} \\approx 1,013 \\text{ bar}$."
+    },
+    {
+        "uuid": "f1a2b3c4-0017",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'interprétation microscopique de la pression dans un gaz, liée à la théorie cinétique des gaz ?",
+        "answers": [
+            "La manifestation macroscopique de l'attraction gravitationnelle entre les molécules.",
+            "La force moyenne exercée par unité de surface par les chocs incessants des molécules contre la paroi.",
+            "L'énergie cinétique totale des molécules contenues dans le volume.",
+            "La conséquence de la viscosité du gaz."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La pression est le transfert moyen de quantité de mouvement des particules vers la paroi lors de leurs collisions. C'est une grandeur statistique à l'échelle macroscopique."
+    },
+    {
+        "uuid": "f1a2b3c4-0018",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'établissement du principe fondamental de la statique, quelle est l'expression correcte de la résultante des forces de pression $d\\vec{F}_P$ s'exerçant sur une particule fluide de volume $d\\tau$ ?",
+        "answers": [
+            "$d\\vec{F}_P = P d\\tau$",
+            "$d\\vec{F}_P = \\vec{\\text{grad}}(P) d\\tau$",
+            "$d\\vec{F}_P = -\\vec{\\text{grad}}(P) d\\tau$",
+            "$d\\vec{F}_P = -P \\vec{\\text{grad}}(d\\tau)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "En utilisant le théorème de flux-divergence (ou théorème d'Ostrogradski), on montre que la somme des forces de pression sur un petit volume élémentaire est égale à $-\\vec{\\text{grad}}(P) d\\tau$. Le signe '-' indique que la force s'exerce des hautes pressions vers les basses pressions."
+    },
+    {
+        "uuid": "f1a2b3c4-0019",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la relation vectorielle fondamentale traduisant l'équilibre d'une particule fluide soumise à son poids et aux forces de pression ?",
+        "answers": [
+            "$\\vec{\\text{grad}}(P) = \\vec{g}$",
+            "$\\vec{\\text{grad}}(P) = \\rho \\vec{g}$",
+            "$\\vec{\\text{grad}}(P) = -\\rho \\vec{g}$",
+            "$\\vec{\\text{grad}}(P) + \\rho \\vec{g} = \\vec{0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Le bilan des forces sur un élément de volume $d\\tau$ est $d\\vec{F}_{press} + d\\vec{F}_{pes} = \\vec{0}$, soit $-\\vec{\\text{grad}}(P) d\\tau + \\rho d\\tau \\vec{g} = \\vec{0}$. En simplifiant par $d\\tau$, on obtient $\\vec{\\text{grad}}(P) = \\rho \\vec{g}$. Si $\\vec{g}$ est dirigé vers le bas, $\\vec{\\text{grad}}(P)$ est donc dirigé vers le bas."
+    },
+    {
+        "uuid": "f1a2b3c4-0020",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En considérant un axe $(Oz)$ vertical ascendant, quelle est l'équation différentielle régissant l'évolution de la pression $P(z)$ en statique des fluides ?",
+        "answers": [
+            "$\\frac{dP}{dz} = \\rho g$",
+            "$\\frac{dP}{dz} = -\\rho g$",
+            "$\\frac{dP}{dz} = 0$",
+            "$\\frac{dP}{dz} = \\rho g z$"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Comme $\\vec{\\text{grad}}(P) = \\rho \\vec{g}$ et que $\\vec{g} = -g \\vec{u}_z$, alors $\\frac{dP}{dz} \\vec{u}_z = -\\rho g \\vec{u}_z$. La pression diminue donc avec l'altitude (le fameux 'plus on monte, moins il y a de pression')."
+    },
+    {
+        "uuid": "f1a2b3c4-0021",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude de la statique des fluides pour un liquide incompressible de masse volumique $\\rho_0$ au repos dans le champ de pesanteur $\\vec{g} = -g\\vec{e}_z$, comment varie la pression $P$ avec l'altitude $z$ ?",
+        "answers": [
+            "$P(z) = -\\rho_0 g z + C^{ste}$",
+            "$P(z) = \\rho_0 g z + C^{ste}$",
+            "$P(z) = P_0 e^{-\\rho_0 g z}$",
+            "$P(z) = -\\frac{1}{2} \\rho_0 g z^2 + C^{ste}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La relation fondamentale de la statique des fluides s'écrit $\\vec{\\text{grad}} P = \\rho \\vec{g}$. En projection sur l'axe vertical $\\vec{e}_z$, on obtient $\\frac{dP}{dz} = -\\rho_0 g$. L'intégration directe donne $P(z) = -\\rho_0 g z + C^{ste}$. La réponse avec un signe $+$ est l'erreur classique d'oubli de l'orientation de $\\vec{g}$."
+    },
+    {
+        "uuid": "f1a2b3c4-0022",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un liquide de masse volumique $\\rho_0$ au repos, quelle est la relation donnant la différence de pression $\\Delta P = P_1 - P_2$ entre deux points situés aux altitudes $z_1$ et $z_2$ (avec $\\Delta z = z_1 - z_2$ positif) ?",
+        "answers": [
+            "$\\Delta P = \\frac{\\Delta z}{\\rho_0 g}$",
+            "$\\Delta P = -\\rho_0 g \\Delta z$",
+            "$\\Delta P = \\rho_0 g \\Delta z$",
+            "$\\Delta P = \\rho_0 g (z_1^2 - z_2^2)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "D'après la loi $P_1 - P_2 = -\\rho_0 g (z_1 - z_2)$, si $z_1 > z_2$, la pression diminue avec l'altitude. Ainsi, pour $z_1 > z_2$, $P_1 < P_2$, ce qui implique une différence négative : $\\Delta P = -\\rho_0 g \\Delta z$."
+    },
+    {
+        "uuid": "f1a2b3c4-0023",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En considérant la masse volumique de l'eau $\\rho_{eau} \\approx 1000 \\text{ kg.m}^{-3}$ et $g \\approx 9,81 \\text{ m.s}^{-2}$, de combien augmente la pression hydrostatique pour chaque tranche de profondeur supplémentaire ?",
+        "answers": [
+            "Elle augmente de 1 bar tous les 1 mètre.",
+            "Elle augmente de 1 bar tous les 10 mètres.",
+            "Elle diminue de 1 bar tous les 10 mètres.",
+            "Elle reste constante quel que soit le fluide."
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Avec $\\Delta P = \\rho g h$, pour $h = 10$ m, $\\Delta P = 1000 \\times 9,81 \\times 10 \\approx 10^5$ Pa, soit environ 1 bar. C'est un ordre de grandeur classique à retenir pour les plongeurs et l'ingénierie navale."
+    },
+    {
+        "uuid": "f1a2b3c4-0024",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le modèle de l'atmosphère isotherme à température $T_0$, en combinant la loi de l'hydrostatique et la loi des gaz parfaits, comment varie la pression $P$ en fonction de l'altitude $z$ ?",
+        "answers": [
+            "Linéairement",
+            "De manière parabolique",
+            "Exponentiellement",
+            "Inversement proportionnelle à $z$"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La relation $\\frac{dP}{dz} = -\\frac{Mg}{RT_0} P$ est une équation différentielle linéaire du premier ordre à variables séparables dont la solution est une fonction exponentielle décroissante $P(z) = P_0 \\exp(-\\frac{Mgz}{RT_0})$."
+    },
+    {
+        "uuid": "f1a2b3c4-0025",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'expression de la hauteur d'échelle $\\delta$ (telle que $P(z) = P_0 e^{-z/\\delta}$) dans le modèle de l'atmosphère isotherme ?",
+        "answers": [
+            "$\\delta = \\frac{Mg}{RT_0}$",
+            "$\\delta = \\frac{RT_0}{Mg}$",
+            "$\\delta = \\frac{P_0}{\\rho_0 g}$",
+            "$\\delta = \\frac{R T_0}{M}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La hauteur d'échelle s'obtient par identification dans l'exponentielle : $P(z) = P_0 \\exp(-z \\cdot \\frac{Mg}{RT_0})$. Ainsi, $\\delta = \\frac{RT_0}{Mg}$. Dimensionnellement, cela correspond bien à une longueur."
+    },
+    {
+        "uuid": "f1a2b3c4-0026",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle loi d'état est indispensable pour fermer le système d'équations permettant de modéliser l'atmosphère isotherme ?",
+        "answers": [
+            "Loi de l'hydrostatique",
+            "Loi des gaz parfaits",
+            "Loi de Mariotte",
+            "Loi de Laplace"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La loi de l'hydrostatique ($dP/dz = -\\rho g$) lie pression et altitude, mais introduit la masse volumique $\\rho$. La loi des gaz parfaits $\\rho = \\frac{MP}{RT_0}$ est nécessaire pour exprimer $\\rho$ en fonction de $P$ et ainsi résoudre l'équation différentielle."
+    },
+    {
+        "uuid": "f1a2b3c4-0027",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Comment définit-on physiquement la poussée d'Archimède exercée sur un solide totalement immergé ?",
+        "answers": [
+            "Comme la résultante des forces de viscosité à l'interface.",
+            "Comme la force de pesanteur compensant le poids apparent.",
+            "Comme la résultante des forces de pression exercées par le fluide sur la surface du corps.",
+            "Comme la force de tension superficielle agissant sur le périmètre mouillé."
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La poussée d'Archimède est l'intégration des forces de pression élémentaires $d\\vec{F} = -P \\vec{n} dS$ sur toute la surface fermée du solide immergé. Par le théorème d'Ostrogradski, cela équivaut au poids du fluide déplacé."
+    },
+    {
+        "uuid": "f1a2b3c4-0028",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Soit un solide de volume $V$ immergé dans un fluide de masse volumique $\\rho_f$. Quelle est l'expression vectorielle correcte de la poussée d'Archimède $\\vec{\\Pi}_A$ ?",
+        "answers": [
+            "$\\vec{\\Pi}_A = \\rho_s V \\vec{g}$",
+            "$\\vec{\\Pi}_A = -\\rho_f V \\vec{g}$",
+            "$\\vec{\\Pi}_A = \\rho_f V \\vec{g}$",
+            "$\\vec{\\Pi}_A = \\rho_f V \\vec{a}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La poussée d'Archimède est opposée au poids du fluide déplacé. Comme le poids du fluide déplacé est $\\vec{P}_{fluide} = m_f \\vec{g} = \\rho_f V \\vec{g}$, la poussée est $\\vec{\\Pi}_A = -\\rho_f V \\vec{g}$. Le signe moins est crucial car la force est dirigée vers le haut, alors que $\\vec{g}$ est vers le bas."
+    },
+    {
+        "uuid": "f1a2b3c4-0029",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En quel point particulier du solide immergé applique-t-on le vecteur force de la poussée d'Archimède pour un calcul de moment ?",
+        "answers": [
+            "Au centre de gravité du solide.",
+            "Au centre de poussée (centre de masse du volume de fluide déplacé).",
+            "Au point de contact le plus proche de la surface libre.",
+            "Au centre géométrique de la surface immergée."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La poussée d'Archimède s'applique au centre de poussée, qui coïncide avec le barycentre du volume de fluide déplacé. Il ne faut pas le confondre avec le centre de gravité du solide, qui peut être différent si le solide n'est pas homogène."
+    },
+    {
+        "uuid": "f1a2b3c4-0030",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'expérience du baromètre de Torricelli, quelle hypothèse est faite sur la pression au sommet du tube au-dessus de la colonne de mercure ?",
+        "answers": [
+            "Elle est égale à la pression atmosphérique $P_{atm}$.",
+            "Elle est négligeable (considérée comme un vide).",
+            "Elle dépend de la hauteur de la colonne.",
+            "Elle correspond à la pression de vapeur saturante, souvent négligée."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans le modèle classique, on considère que l'espace au-dessus du mercure est un vide parfait. La pression y est donc nulle, ce qui permet d'écrire $P_{atm} = \\rho g h$. En réalité, il y a de la vapeur de mercure, mais sa pression est très faible devant $P_{atm}$."
+    },
+    {
+        "uuid": "f1a2b3c4-0031",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude de la statique des fluides, quelle est la hauteur $h$ d'une colonne de mercure ($\rho = 1,36 \\times 10^4 \\text{ kg.m}^{-3}$) permettant d'équilibrer une pression atmosphérique standard de $P_{atm} = 1,013 \\times 10^5 \\text{ Pa}$ ($g = 9,81 \\text{ m.s}^{-2}$) ?",
+        "answers": [
+            "$76 \\text{ cm}$",
+            "$10 \\text{ m}$",
+            "$1,36 \\text{ m}$",
+            "$760 \\text{ m}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "La relation fondamentale de l'hydrostatique donne $P_{atm} = \rho gh$. D'où $h = \\frac{P_{atm}}{\\rho g} \\approx \\frac{10^5}{1,36 \\times 10^4 \\times 9,81} \\approx 0,76 \\text{ m} = 76 \\text{ cm}$. Les autres réponses résultent d'erreurs d'ordres de grandeur ou de confusion avec la hauteur d'une colonne d'eau ($10 \\text{ m}$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0032",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le modèle de l'atmosphère standard (ISA), quelle est la loi de variation de la température $T$ en fonction de l'altitude $z$ dans la troposphère ?",
+        "answers": [
+            "$T = T_0$ (constante)",
+            "$T(z) = T_0 - kz$",
+            "$T(z) = T_0 e^{-z/H}$",
+            "$T(z) = T_0 + kz$"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Le modèle ISA modélise la troposphère comme une couche où la température diminue linéairement avec l'altitude, avec un gradient $k \\approx 6,5 \\text{ K.km}^{-1}$. La réponse exponentielle correspond au modèle d'isothermie.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0033",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la valeur numérique standard du gradient thermique $k = -\\frac{dT}{dz}$ dans la troposphère ?",
+        "answers": [
+            "$6,5 \\text{ K.m}^{-1}$",
+            "$6,5 \\text{ K.km}^{-1}$",
+            "$0,65 \\text{ K.km}^{-1}$",
+            "$65 \\text{ K.km}^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Le gradient thermique standard vaut $6,5 \\text{ K}$ pour chaque kilomètre d'élévation, soit $6,5 \\text{ K.km}^{-1}$. Attention aux unités : $6,5 \\text{ K.m}^{-1}$ serait physiquement insoutenable pour la vie terrestre.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0034",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Considérant l'atmosphère comme un gaz parfait ($P = \\rho R_{massique} T$) avec $T(z) = T_0 - kz$, quelle est l'équation différentielle vérifiée par la pression $P(z)$ ?",
+        "answers": [
+            "$\\frac{dP}{dz} = -\\frac{Mg}{R(T_0 - kz)} P(z)$",
+            "$\\frac{dP}{dz} = -\\frac{Mg}{RT_0} P(z)$",
+            "$\\frac{dP}{dz} = -\\rho_0 g$",
+            "$\\frac{dP}{dz} = -\\frac{Mg}{R(T_0 - kz)}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "En combinant $\\frac{dP}{dz} = -\\rho g$ et $\\rho = \\frac{PM}{RT}$, on obtient $\\frac{dP}{P} = -\\frac{Mg}{R T(z)} dz$. En remplaçant $T(z)$, on trouve bien l'expression dépendant de $z$. L'oubli de $P$ dans l'expression est une erreur dimensionnelle.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0035",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Lors de la résolution de l'équation différentielle de l'atmosphère avec $T(z) = T_0 - kz$, quelle est la nature de la solution $P(z)$ ?",
+        "answers": [
+            "Une exponentielle décroissante $P_0 e^{-az}$.",
+            "Une loi de puissance : $P(z) = P_0 (1 - \\frac{kz}{T_0})^{\\alpha}$.",
+            "Une fonction linéaire $P_0 - az$.",
+            "Une fonction en $1/z$."
+        ],
+        "difficulty": 4,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "L'intégration de $\\frac{dP}{P} = -\\frac{Mg}{R(T_0-kz)} dz$ fait apparaître un logarithme après changement de variable, ce qui donne, après exponentiation, une forme de puissance avec $\\alpha = \\frac{Mg}{Rk}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0036",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'étude d'un tube en U contenant deux liquides non miscibles de masses volumiques différentes, quelle condition assure l'équilibre mécanique ?",
+        "answers": [
+            "L'égalité des hauteurs de liquide de chaque côté.",
+            "L'égalité des pressions aux points situés à la même cote dans le même fluide.",
+            "La conservation de la masse totale du système.",
+            "L'égalité des pressions à la surface libre."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Par définition de l'équilibre hydrostatique, les surfaces isobares sont horizontales. Dans un tube en U, on égalise les pressions à la cote la plus basse de l'interface pour résoudre l'exercice.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0037",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si on ajoute de l'huile (densité $0,6$) dans la branche gauche d'un tube en U initialement rempli d'eau, que devient le niveau d'eau dans la branche droite ?",
+        "answers": [
+            "Il monte.",
+            "Il descend.",
+            "Il reste identique.",
+            "Il oscille indéfiniment."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "L'ajout d'huile augmente la pression hydrostatique au niveau de l'interface dans la branche gauche. Pour rétablir l'équilibre, le liquide est repoussé, forçant le niveau dans la branche opposée à monter.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0038",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'expression de la force pressante résultante $F$ exercée par l'eau sur une paroi verticale rectangulaire de largeur $L$ et de profondeur $h$, en tenant compte de la pression atmosphérique $P_0$ ?",
+        "answers": [
+            "$(P_0 + \\rho gh) Lh$",
+            "$(P_0 + \\frac{1}{2} \\rho gh) Lh$",
+            "$\\rho g \\frac{h^2}{2} L + P_0 Lh$",
+            "$\\rho g h L$"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 2,
+        "explication": "La force est l'intégrale de la pression sur la surface : $F = \\int_0^h (P_0 + \\rho gz) L dz = P_0 Lh + \\rho g L \\int_0^h z dz = P_0 Lh + \\rho g L \\frac{h^2}{2}$. L'option 2 est une confusion courante avec la force due à la seule variation de pression.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0039",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Gordon_Dam_Vaucluse_2.jpg/300px-Gordon_Dam_Vaucluse_2.jpg",
+        "theme": "mécanique des fluides",
+        "question": "Pour quelle raison mécanique un barrage-voûte est-il conçu avec une forme arquée ?",
+        "answers": [
+            "Pour minimiser la pression hydrostatique au pied du barrage.",
+            "Pour reporter la poussée de l'eau latéralement sur les parois rocheuses (culées).",
+            "Pour augmenter la surface d'échange thermique avec l'eau.",
+            "Pour éviter les phénomènes de cavitation."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "L'arche permet de transformer la poussée hydrostatique (dirigée vers l'aval) en une force de compression dirigée vers les rives rocheuses. Le béton travaillant mieux en compression qu'en traction, cela permet d'affiner l'ouvrage.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0040",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'étude d'un barrage en forme de quart de cylindre, pourquoi la composante verticale $F_z$ de la force pressante n'est-elle pas nulle ?",
+        "answers": [
+            "Car l'eau exerce une poussée sur la face horizontale imaginaire située au-dessus du barrage.",
+            "Car le poids du volume d'eau situé au-dessus de la surface courbe doit être compensé.",
+            "Car la pression atmosphérique s'exerce uniquement sur les faces verticales.",
+            "La composante $F_z$ est réellement nulle dans tous les cas."
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "La composante verticale de la force pressante sur une surface courbe correspond au poids du volume de fluide situé verticalement au-dessus de cette surface (volume 'témoin'). Elle est donc non nulle et dirigée vers le bas.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0041",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude statique d'un barrage symétrique par rapport au plan $(xOz)$, où $Oz$ est l'axe vertical ascendant, la résultante des forces de pression exercées par le fluide sur la paroi est portée par :",
+        "answers": [
+            "L'axe $(Oy)$ uniquement.",
+            "Le plan de symétrie $(xOz)$.",
+            "L'axe $(Oz)$ uniquement.",
+            "Un vecteur quelconque sans lien avec la géométrie."
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Par symétrie, si la géométrie du barrage et la distribution des pressions sont symétriques par rapport au plan $(xOz)$, les composantes des forces suivant $Oy$ s'annulent deux à deux. La résultante doit donc nécessairement appartenir au plan de symétrie.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0042",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle intégrale vectorielle permet de calculer la force de pression $\\vec{F}$ exercée par un fluide de pression $P(z)$ sur une surface immergée $S$ ?",
+        "answers": [
+            "$\\iint_S P(z) dS$",
+            "$\\iint_S P(z) \\vec{n} dS$",
+            "$\\int_S P(z) dz \\vec{n}$",
+            "$\\iint_S P(z) \\vec{u}_z dS$"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "La force élémentaire de pression est définie par $d\\vec{F} = -P(z) \\vec{n}_{ext} dS$, où $\\vec{n}$ est le vecteur normal sortant à la surface. Pour obtenir la force totale, il faut intégrer ce vecteur sur toute la surface concernée.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0043",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Nausica%C3%A1_-_Grand_bac.jpg/300px-Nausica%C3%A1_-_Grand_bac.jpg",
+        "theme": "mécanique des fluides",
+        "question": "Considérant le tunnel de Nausicaa modélisé par un demi-cylindre ouvert vers le haut, quelle est la direction de la résultante des forces de pression exercées par l'eau sur la paroi vitrée ?",
+        "answers": [
+            "Vers le haut (sens des $z$ croissants).",
+            "Vers le bas (sens des $z$ décroissants).",
+            "Horizontale.",
+            "Dirigée vers le centre du cylindre."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "La pression augmente avec la profondeur ($z$ décroissant). La force locale $d\\vec{F} = P \\vec{n} dS$ étant dirigée vers l'intérieur du volume fluide (donc vers l'extérieur de la paroi), la résultante globale pointe vers le bas pour maintenir l'équilibre de la colonne d'eau au-dessus du tunnel.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0044",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'unité SI cohérente pour la masse volumique $\\rho$ ?",
+        "answers": [
+            "kg.m$^{-2}$",
+            "kg.m$^{-3}$",
+            "g.cm$^{-2}$",
+            "kg/L"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Par définition, $\\rho = \\frac{dm}{dV}$. Le rapport d'une masse (en kg) par un volume (en m$^3$) donne l'unité SI : kg.m$^{-3}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0045",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'établissement de l'équation locale de la statique des fluides, que représente le terme $-\\vec{grad}(P) d\\tau$ ?",
+        "answers": [
+            "Le poids de la particule élémentaire.",
+            "La résultante des forces de pression sur la particule de volume $d\\tau$.",
+            "La force de viscosité interne.",
+            "La force d'inertie d'entraînement."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "D'après le théorème du gradient, la résultante des forces de pression sur un volume $d\\tau$ est donnée par $-\\iint_S P \\vec{n} dS = -\\iiint_{d\\tau} \\vec{grad}(P) d\\tau$. Ce terme est bien la résultante des forces de pression.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0046",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la masse volumique de l'eau liquide dans les conditions usuelles, exprimée en g.cm$^{-3}$ ?",
+        "answers": [
+            "1000",
+            "1",
+            "10",
+            "0.1"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "La masse volumique de l'eau est de $1000 \\text{ kg.m}^{-3}$. En convertissant : $1000 \\times 10^3 \\text{ g} / (10^6 \\text{ cm}^3) = 1 \\text{ g.cm}^{-3}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0047",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un corps solide, plongé dans un fluide, flotte en surface si sa masse volumique $\\rho_s$ est :",
+        "answers": [
+            "Supérieure à celle du fluide $\\rho_f$.",
+            "Égale à celle du fluide $\\rho_f$.",
+            "Inférieure à celle du fluide $\\rho_f$.",
+            "Indépendante de la densité du fluide."
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 2,
+        "explication": "Pour qu'un corps flotte (équilibre en surface), il faut que le poids soit compensé par la poussée d'Archimède pour un volume immergé strictement inférieur au volume total, ce qui impose $\\rho_s < \\rho_f$. Si $\\rho_s = \\rho_f$, le corps est en équilibre indifférent (immersion totale).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0048",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "À l'équilibre, pour un corps solide flottant de poids $\\vec{P}$ et soumis à la poussée d'Archimède $\\vec{\\Pi}_A$, quelle relation vectorielle est vérifiée ?",
+        "answers": [
+            "$\\vec{P} + \\vec{\\Pi}_A = \\vec{0}$",
+            "$\\vec{P} + \\vec{\\Pi}_A > 0$",
+            "$\\vec{P} = \\vec{\\Pi}_A$ (en norme)",
+            "$\\vec{P} - \\vec{\\Pi}_A = \\vec{0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "Le principe fondamental de la statique impose que la somme des forces soit nulle. Le poids est dirigé vers le bas et la poussée d'Archimède vers le haut, donc $\\vec{P} + \\vec{\\Pi}_A = \\vec{0}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0049",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un cylindre de hauteur $H$, de section $S$ et de masse volumique $\\rho$ flottant verticalement dans un liquide de masse volumique $\\rho_0$, quelle est la hauteur immergée $z_0$ ?",
+        "answers": [
+            "$z_0 = H$",
+            "$z_0 = \\frac{\\rho}{\\rho_0} H$",
+            "$z_0 = \\frac{\\rho_0}{\\rho} H$",
+            "$z_0 = \\rho \\rho_0 H$"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "À l'équilibre, le poids $mg = \\rho S H g$ est égal à la poussée d'Archimède $\\Pi_A = \\rho_0 S z_0 g$. En simplifiant par $S$ et $g$, on obtient $z_0 = \\frac{\\rho}{\\rho_0} H$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0050",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la pulsation propre $\\omega_0$ des petites oscillations verticales d'un flotteur cylindrique de masse volumique $\\rho$ et de hauteur $H$ dans un liquide de masse volumique $\\rho_0$ ?",
+        "answers": [
+            "$\\omega_0 = \\sqrt{\\frac{\\rho_0 g}{\\rho H}}$",
+            "$\\omega_0 = \\sqrt{\\frac{g}{H}}$",
+            "$\\omega_0 = \\frac{\\rho_0 g}{\\rho H}$",
+            "$\\omega_0 = \\sqrt{\\frac{\\rho g}{\\rho_0 H}}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "En écartant le cylindre de sa position d'équilibre $z_{eq}$ d'une petite valeur $x$, la variation de force de rappel est $F_r = -\rho_0 S g x$. Appliquant le PFD : $m \\ddot{x} = -\\rho_0 S g x$. Avec $m = \\rho S H$, on obtient $\\ddot{x} + \\frac{\\rho_0 g}{\\rho H} x = 0$, d'où $\\omega_0 = \\sqrt{\\frac{\\rho_0 g}{\\rho H}}$."
+    },
+    {
+        "uuid": "f1a2b3c4-0051",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre d'un oscillateur de type flotteur (cylindre de masse $m$ et de section $S$ flottant dans un liquide de masse volumique $\\rho_0$), comment évolue la période propre des oscillations $T_0$ si la masse volumique $\\rho_0$ du liquide augmente ?",
+        "answers": [
+            "Elle augmente.",
+            "Elle diminue.",
+            "Elle reste constante.",
+            "Elle est proportionnelle au carré de $\\rho_0$."
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "La période propre est donnée par $T_0 = 2\\pi \\sqrt{\\frac{m}{k}}$ où $k$ est la raideur équivalente. Pour un flotteur, la force de rappel est due à la variation de la poussée d'Archimède : $F_{rap} = -\rho_0 g S z$. On identifie $k = \rho_0 g S$. Ainsi $T_0 = 2\\pi \\sqrt{\\frac{m}{\\rho_0 g S}}$. Si $\\rho_0$ augmente, $T_0$ diminue.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0052",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un flotteur de section $S$ et de hauteur immergée $h$ dans un liquide de masse volumique $\\rho_0$ est en équilibre. Quelle force supplémentaire $F$ faut-il exercer verticalement vers le bas pour l'immerger totalement si sa hauteur totale est $H$ ?",
+        "answers": [
+            "$F = \\rho_0 S H g$",
+            "$F = (\\rho_0 - \\rho_{objet}) S (H - h) g$",
+            "$F = \\rho_0 S g (H-h)$",
+            "$F = \\rho_{objet} S H g$"
+        ],
+        "difficulty": 4,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 2,
+        "explication": "À l'équilibre, le poids est compensé par la poussée d'Archimède sur la partie immergée $h$ : $mg = \\rho_0 g S h$. Pour immerger totalement le flotteur, il faut compenser la poussée d'Archimède supplémentaire due au volume complémentaire $S(H-h)$. La force additionnelle est $F = \rho_0 g V_{sup} = \rho_0 g S (H-h)$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0053",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'hydrostatique, la pression est-elle identique en tout point d'un même plan horizontal dans un fluide au repos, monophasique et en équilibre ?",
+        "answers": [
+            "Oui, toujours.",
+            "Non, elle dépend de la viscosité du fluide.",
+            "Non, cela dépend de la forme du récipient.",
+            "Seulement si le fluide est incompressible."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "D'après la relation fondamentale de la statique des fluides $\\vec{\\text{grad}} P = \\rho \\vec{g}$. En projection sur un plan horizontal ($z=cste$), $\\frac{\\partial P}{\\partial x} = 0$ et $\\frac{\\partial P}{\\partial y} = 0$, donc la pression est uniforme dans tout plan horizontal, quelle que soit la forme du récipient.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0054",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la justification physique fondamentale de la diminution de la pression atmosphérique $P(z)$ avec l'altitude $z$ ?",
+        "answers": [
+            "La diminution de la température en altitude.",
+            "La nécessité de supporter le poids de la colonne d'air située au-dessus.",
+            "L'augmentation du taux d'humidité en altitude.",
+            "La diminution de la constante universelle des gaz parfaits $R$."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "La relation $\\frac{dP}{dz} = -\\rho(z)g$ montre que la variation de pression est due au poids de la tranche de fluide considérée. Intégrer cette équation revient à sommer le poids de toute la colonne d'air au-dessus d'un point donné.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0055",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le modèle de l'atmosphère isotherme à la température $T_0$, la pression suit une loi en $P(z) = P_0 e^{-z/\\delta}$. Quelle est la valeur de l'échelle de hauteur $\\delta$ ?",
+        "answers": [
+            "Environ 800 m",
+            "Environ 8 km",
+            "Environ 80 km",
+            "Environ 800 km"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "En utilisant la loi des gaz parfaits $P = \\rho R T_0 / M$, on obtient $\\delta = \\frac{R T_0}{Mg}$. Avec $T_0 \\approx 273$ K, $M \\approx 29 \\times 10^{-3}$ kg.mol$^{-1}$ et $g \\approx 9,81$ m.s$^{-2}$, on trouve $\\delta \\approx 8$ km.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0056",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la valeur numérique approximative de la masse molaire moyenne $M$ de l'air sec ?",
+        "answers": [
+            "2,9 g.mol$^{-1}$",
+            "29 g.mol$^{-1}$",
+            "44 g.mol$^{-1}$",
+            "14 g.mol$^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "L'air est composé d'environ 80% de diazote ($N_2$, $M=28$ g.mol$^{-1}$) et 20% de dioxygène ($O_2$, $M=32$ g.mol$^{-1}$). La moyenne pondérée donne $0,8 \\times 28 + 0,2 \\times 32 = 22,4 + 6,4 = 28,8$ g.mol$^{-1}$, couramment arrondi à 29 g.mol$^{-1}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0057",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un solide est totalement immergé dans un fluide incompressible au repos. La poussée d'Archimède $\\vec{\\Pi}$ dépend-elle de la profondeur $z$ à laquelle se situe le solide ?",
+        "answers": [
+            "Oui, elle augmente linéairement avec la profondeur.",
+            "Non, elle ne dépend que du volume immergé et de la masse volumique du fluide.",
+            "Oui, car la pression augmente avec la profondeur.",
+            "Non, sauf si le fluide est un gaz."
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "La poussée d'Archimède est égale au poids du fluide déplacé : $\\Pi = \\rho_{fluide} V_{immergé} g$. Pour un fluide incompressible, $\\rho$ est constant. La profondeur n'intervient pas, car l'augmentation de pression sur la face inférieure est exactement compensée par celle sur la face supérieure.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0058",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le modèle de l'atmosphère, le gradient thermique est défini par $k = -\\frac{dT}{dz}$. Quelle est l'unité de $k$ ?",
+        "answers": [
+            "K.m",
+            "K.m$^{-1}$",
+            "K.s$^{-1}$",
+            "m.K$^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Le gradient est une dérivée par rapport à une coordonnée spatiale ($z$ en mètres). L'unité est donc le rapport de l'unité de température (Kelvin) par l'unité de longueur (mètre), soit K.m$^{-1}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0059",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour intégrer l'équation différentielle $\\frac{dP}{P} = -\\frac{Mg}{RT(z)} dz$ dans une atmosphère réelle, quelle donnée supplémentaire est indispensable ?",
+        "answers": [
+            "La vitesse du vent à l'altitude $z$.",
+            "Le profil de température $T(z)$ en fonction de l'altitude.",
+            "L'humidité relative de l'air.",
+            "La pression au sommet de l'atmosphère."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Pour intégrer l'équation, il faut exprimer $T$ en fonction de $z$. Comme $T$ n'est pas constante dans l'atmosphère réelle, la connaissance de la fonction $T(z)$ est nécessaire pour résoudre l'équation différentielle.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0060",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans un tube en U contenant deux liquides non miscibles à l'équilibre, où se situe le liquide le plus dense ?",
+        "answers": [
+            "À la surface de l'autre liquide.",
+            "En dessous de l'autre liquide, au fond du tube.",
+            "Il n'y a pas de règle, cela dépend du volume versé.",
+            "Il se répartit uniformément dans tout le tube."
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Dans un champ de pesanteur, le système minimise son énergie potentielle de pesanteur. Le liquide le plus dense occupe la position la plus basse possible pour réduire l'énergie du système. Il se place donc sous le liquide moins dense.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0061",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude de la poussée d'Archimède exercée sur un solide de volume $V$ immergé, que signifie le symbole $\\rho_F$ dans la formule $\\vec{\\Pi} = -\\rho_F V g \\vec{u}_z$ ?",
+        "answers": [
+            "Masse volumique du solide immergé.",
+            "Masse volumique du fluide déplacé.",
+            "Rayon de courbure de la surface du fluide.",
+            "Masse volumique moyenne du système fluide-solide."
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "La poussée d'Archimède résulte de l'intégration des forces de pression sur la surface du corps. Par le théorème d'Ostrogradski, cela conduit à $\\vec{\\Pi} = -\\iiint_V \\vec{grad}(P) d\\tau$. Or, d'après la relation fondamentale de la statique des fluides $\\vec{grad}(P) = \\rho_F \\vec{g}$, on obtient bien une force égale au poids du fluide déplacé. Confondre avec la masse du solide est l'erreur classique du débutant.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0062",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "D'un point de vue thermodynamique et mécanique, la pression $P$ est-elle une grandeur scalaire, vectorielle ou tensorielle au sein d'un fluide au repos ?",
+        "answers": [
+            "Scalaire",
+            "Vectorielle",
+            "Tensorielle d'ordre 2",
+            "Pseudo-scalaire"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "Dans un fluide au repos, la pression est une grandeur scalaire car elle est définie en tout point comme le rapport d'une force normale à une surface, indépendamment de l'orientation de celle-ci. Bien que la contrainte de pression soit formellement un tenseur $\\bar{\\bar{\\sigma}} = -P \\bar{\\bar{Id}}$, la pression elle-même reste un scalaire.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0063",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de la modélisation de l'atmosphère terrestre, pourquoi l'approximation du gaz parfait est-elle souvent utilisée ?",
+        "answers": [
+            "Non, car l'atmosphère est un mélange complexe.",
+            "Oui, car c'est une approximation standard robuste pour les basses altitudes.",
+            "Seulement à très haute altitude où la densité est quasi nulle.",
+            "Non, car les interactions intermoléculaires sont prédominantes."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Bien que l'atmosphère soit un mélange, elle se comporte à température ambiante et pression modérée comme un gaz parfait car les molécules sont suffisamment éloignées les unes des autres pour que les interactions attractives soient négligeables. C'est l'approximation de base pour établir la loi de variation de la pression avec l'altitude (modèle isotherme).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0064",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la valeur numérique et l'unité S.I. correcte de la constante des gaz parfaits $R$ ?",
+        "answers": [
+            "$8,314 \\text{ J.K}^{-1}\\text{.mol}^{-1}$",
+            "$0,082 \\text{ L.atm.K}^{-1}\\text{.mol}^{-1}$",
+            "$1,38 \\times 10^{-23} \\text{ J.K}^{-1}$",
+            "$8,314 \\text{ J.mol}^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "$R = 8,314 \\text{ J.K}^{-1}\\text{.mol}^{-1}$ est la constante universelle. La proposition 2 utilise des unités hors S.I. (litres, atmosphères) et la proposition 3 correspond à la constante de Boltzmann $k_B$, qui est la constante par particule et non par mole ($R = N_A k_B$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0065",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude d'un baromètre à mercure, pourquoi le niveau de mercure monte-t-il dans le tube si la pression atmosphérique $P_{atm}$ augmente ?",
+        "answers": [
+            "Parce que l'air exerce une force d'aspiration sur le mercure dans le tube.",
+            "Parce que l'air exerce une pression plus forte sur la surface libre du réservoir.",
+            "Parce que la capillarité augmente avec la pression atmosphérique.",
+            "Parce que le mercure se dilate sous l'effet de l'augmentation de pression."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Le baromètre repose sur l'équilibre entre la pression atmosphérique à la surface libre du réservoir et la pression exercée par la colonne de mercure $h$ dans le tube ($P_{atm} = \\rho g h$). Si $P_{atm}$ augmente, la force pressante sur la surface libre augmente, chassant le mercure vers le tube jusqu'à ce que la nouvelle hauteur équilibre la pression.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0066",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'équivalence correcte entre l'unité de pression 'Torr' (millimètre de mercure) et les autres unités ?",
+        "answers": [
+            "$1 \\text{ Torr} = 1 \\text{ cmHg}$",
+            "$1 \\text{ Torr} = 1 \\text{ mmHg}$",
+            "$1 \\text{ Torr} = 1 \\text{ Pa}$",
+            "$1 \\text{ Torr} = 101325 \\text{ Pa}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Le Torr est défini historiquement par la pression exercée par une colonne de mercure de $1$ millimètre de hauteur sous l'effet de la pesanteur standard. Il est donc strictement équivalent à $1 \\text{ mmHg}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0067",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En statique des fluides, si l'on définit l'axe $z$ comme étant orienté vers le bas (profondeur), quelle est la relation locale correcte entre pression $P$ et profondeur $z$ ?",
+        "answers": [
+            "$\\frac{dP}{dz} = \\rho g$",
+            "$\\frac{dP}{dz} = -\\rho g$",
+            "$\\frac{dP}{dz} = \\rho g z$",
+            "$\\frac{dP}{dz} = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "La loi fondamentale de la statique des fluides est $\\vec{grad} P = \\rho \\vec{g}$. Si l'axe $z$ est descendant, le vecteur $\\vec{g}$ est colinéaire à $\\vec{u}_z$, donc $\\vec{g} = g \\vec{u}_z$. La projection sur l'axe $z$ donne donc $\\frac{dP}{dz} = \\rho g$. Si l'axe $z$ était ascendant, on aurait un signe négatif.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0068",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un fluide dont la masse volumique $\\rho$ dépend significativement de la pression est dit :",
+        "answers": [
+            "Incompressible",
+            "Compressible",
+            "Visqueux",
+            "Newtonien"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Par définition, un fluide est compressible si son volume (et donc sa masse volumique) varie avec la pression. Les gaz sont typiquement compressibles, tandis que la plupart des liquides sont modélisés comme incompressibles ($\\rho = \\text{cste}$) dans les conditions usuelles.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0069",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'expression de la densité particulaire $n^*$ (nombre de molécules par unité de volume) d'un gaz parfait en fonction de la pression $P$, de la température $T$ et de la constante de Boltzmann $k_B$ ?",
+        "answers": [
+            "$n^* = \\frac{P}{k_B T}$",
+            "$n^* = \\frac{P}{RT}$",
+            "$n^* = \\frac{\\rho}{M}$",
+            "$n^* = \\frac{P}{k_B}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "L'équation d'état du gaz parfait est $PV = N k_B T$. En divisant par le volume $V$, on obtient $P = (N/V) k_B T$. Comme $n^* = N/V$, on a bien $n^* = P / (k_B T)$. La formule avec $R$ concerne le nombre de moles ($n = P/RT$), et non le nombre de particules.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0070",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la condition de validité physique pour appliquer le modèle de l'hydrostatique (pression ne dépendant que de l'altitude) à un gaz comme l'atmosphère ?",
+        "answers": [
+            "Le gaz doit impérativement être enfermé dans un volume restreint.",
+            "La température doit être uniforme et très basse.",
+            "On peut l'utiliser si les variations d'altitude $\\Delta z$ sont faibles devant l'échelle de hauteur $H = \\frac{k_B T}{mg}$.",
+            "Le gaz doit être en mouvement stationnaire rapide."
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 2,
+        "explication": "L'hydrostatique suppose l'absence de mouvement macroscopique. Pour un gaz, la pression varie exponentiellement avec l'altitude ($P(z) = P_0 e^{-z/H}$). Si on se limite à une petite échelle verticale ($\\Delta z \\ll H$), on peut effectuer un développement limité qui redonne le modèle linéaire $\\Delta P \\approx -\\rho g \\Delta z$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0071",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude statique d'une colonne de liquide de masse volumique $\\rho_0$, quelle est l'expression correcte de la pression $P$ à une profondeur $z$ sous la surface libre (où $z=0$ est la surface et l'axe $Oz$ est orienté vers le bas) ?",
+        "answers": [
+            "$P(z) = P_0 + \\rho_0 g z$",
+            "$P(z) = P_0 - \\rho_0 g z$",
+            "$P(z) = \\rho_0 g z$",
+            "$P(z) = P_0 + \\rho_0 g / z$"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "La relation fondamentale de la statique des fluides (RFSF) s'écrit $\\vec{\\text{grad}} P = \\rho \\vec{g}$. Avec $Oz$ orienté vers le bas, $\\vec{g} = g \\vec{e}_z$. En projetant, on obtient $\\frac{dP}{dz} = \\rho_0 g$. L'intégration donne $P(z) = \\rho_0 g z + C$. À $z=0$, $P(0)=P_{atm}=P_0$, d'où $P(z) = P_0 + \\rho_0 g z$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0072",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un cylindre vertical de hauteur $h$ totalement immergé dans un fluide homogène au repos, où se situe le centre de poussée (point d'application de la résultante des forces de pression) ?",
+        "answers": [
+            "Au centre de poussée d'Archimède : le centre géométrique du cylindre.",
+            "Sur la base inférieure.",
+            "Sur la base supérieure.",
+            "Sur la paroi latérale inférieure."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "La poussée d'Archimède est la résultante des forces de pression exercées par le fluide sur le solide. Par définition, elle est appliquée au centre de carène, qui coïncide avec le centre de gravité du volume déplacé. Pour un cylindre homogène, c'est le centre géométrique (milieu de l'axe).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0073",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Par définition, le vecteur gradient de pression $\\vec{\\text{grad}} P$ en un point d'un fluide au repos est un vecteur dont la direction et le sens sont orientés vers les zones de pressions :",
+        "answers": [
+            "Croissantes",
+            "Décroissantes",
+            "Il est nul par définition du repos.",
+            "Perpendiculairement aux isobares."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "Mathématiquement, le gradient d'une fonction scalaire $P$ est orienté dans la direction de la plus forte croissance de cette fonction. Le vecteur $\\vec{\\text{grad}} P$ pointe donc toujours vers les pressions les plus élevées.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0074",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Sur une surface élémentaire $d\\vec{S}$ immergée, la force pressante élémentaire $d\\vec{F} = -P d\\vec{S}$ (où $d\\vec{S}$ est le vecteur aire orienté vers l'extérieur de la surface) est dirigée vers les pressions :",
+        "answers": [
+            "Croissantes",
+            "Décroissantes",
+            "Perpendiculairement à l'accélération de la pesanteur",
+            "Parallèlement à la surface"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "La force pressante est définie par $d\\vec{F} = P d\\vec{n}$ où $d\\vec{n}$ est orienté vers l'intérieur. Comme le fluide 'pousse' de la zone de haute pression vers la zone de basse pression, la force est dirigée vers les pressions décroissantes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0075",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En dynamique des fluides, un fluide est qualifié de 'parfait' s'il possède la propriété suivante :",
+        "answers": [
+            "Sa viscosité $\\eta$ est nulle.",
+            "Sa masse volumique $\\rho$ est constante.",
+            "Sa vitesse est uniforme.",
+            "Sa pression est nulle partout."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "Un fluide parfait est un modèle théorique simplifié où l'on néglige les frottements visqueux (viscosité nulle). Cela permet d'utiliser l'équation d'Euler plutôt que celle de Navier-Stokes. L'incompressibilité est une propriété supplémentaire (fluide parfait incompressible), mais pas intrinsèque au terme 'parfait'.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0076",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Considérant un corps immergé dans un milieu, la poussée d'Archimède peut-elle s'exercer dans le vide ?",
+        "answers": [
+            "Oui, en raison de la gravité.",
+            "Non, car elle résulte de la différence de pression exercée par un fluide.",
+            "Oui, si l'objet est dans une enceinte fermée.",
+            "Non, seulement pour les objets en chute libre."
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "La poussée d'Archimède est la résultante des forces de pression sur les parois d'un objet. Dans le vide, il n'y a pas de molécules de fluide pour exercer une pression, donc la poussée d'Archimède est nulle.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0077",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'unité homogène au produit $\\rho g z$ dans le système international ?",
+        "answers": [
+            "Le Newton ($N$)",
+            "Le Pascal ($Pa$)",
+            "Le Joule ($J$)",
+            "Le Watt ($W$)"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Par analyse dimensionnelle : $[\\rho] = M L^{-3}$, $[g] = L T^{-2}$, $[z] = L$. Le produit donne $M L^{-3} \\cdot L T^{-2} \\cdot L = M L^{-1} T^{-2}$. C'est la dimension d'une pression, soit le Pascal ($Pa$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0078",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'hypothèse d'isothermie de l'atmosphère terrestre pour modéliser la variation de pression avec l'altitude est :",
+        "answers": [
+            "Une loi physique universelle.",
+            "Une modélisation approchée valable localement sur de faibles variations d'altitude.",
+            "Une condition nécessaire pour que le fluide soit en équilibre.",
+            "Absurde car la température augmente avec l'altitude."
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "L'atmosphère n'est pas isotherme. Cependant, pour simplifier les calculs de variation de pression ($P(z) = P_0 e^{-Mgz/RT}$), on suppose une température constante $T$ sur une couche fine : c'est une approximation utile mais limitée.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0079",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Soit $z_s$ l'altitude de la surface libre d'un liquide au repos. Pour une profondeur telle que $z < z_s$ (dans le liquide), quelle est la relation entre $P$ et $P_{atm}$ ?",
+        "answers": [
+            "$P > P_{atm}$",
+            "$P < P_{atm}$",
+            "$P = P_{atm}$",
+            "La pression est indépendante de $P_{atm}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "Si l'axe $Oz$ est vertical ascendant, la pression diminue avec l'altitude selon $P(z) = P_{atm} + \\rho g (z_s - z)$. Comme $z < z_s$, le terme $\\rho g (z_s - z)$ est positif, donc $P$ est strictement supérieure à la pression atmosphérique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0080",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans un repère cartésien $(O, \\vec{e}_x, \\vec{e}_y, \\vec{e}_z)$ où $\\vec{e}_z$ est un vecteur unitaire dirigé vers le haut (altitude croissante), comment s'exprime le vecteur accélération de la pesanteur $\\vec{g}$ ?",
+        "answers": [
+            "$\\vec{g} = g \\vec{e}_z$",
+            "$\\vec{g} = -g \\vec{e}_z$",
+            "$\\vec{g} = g \\vec{e}_x$",
+            "$\\vec{g} = -g \\vec{e}_y$"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Le champ de pesanteur est toujours dirigé vers le centre de la Terre, soit vers le bas. Si $\\vec{e}_z$ est orienté vers le haut, alors $\\vec{g}$ est nécessairement dans le sens opposé, donc $-\\vec{g} \\vec{e}_z$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0081",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude d'un ballon sonde à l'équilibre en ascension lente dans l'atmosphère, quelle force compense principalement la poussée d'Archimède $\\vec{\\Pi}$ ?",
+        "answers": [
+            "La force de Coriolis, car le ballon se déplace dans un référentiel tournant.",
+            "Le poids total du ballon (enveloppe, gaz porteur et nacelle).",
+            "La tension superficielle de l'enveloppe du ballon.",
+            "La force de traînée visqueuse, dominant toute autre force à l'équilibre."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "À l'équilibre statique (ou quasi-statique), le principe fondamental de la statique des fluides impose $\\vec{P} + \\vec{\\Pi} = \\vec{0}$. Le poids $\\vec{P}$ (orienté vers le bas) compense exactement la poussée d'Archimède $\\vec{\\Pi}$ (orientée vers le haut). La force de Coriolis est négligeable devant les forces de pesanteur pour ce type d'objet.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0082",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la pression absolue au fond d'un verre d'eau de hauteur $h = 10 \\text{ cm}$, sachant que la pression atmosphérique est $P_{atm} = 1013 \\text{ hPa}$ et $\\rho_{eau} \\approx 1000 \\text{ kg.m}^{-3}$ ?",
+        "answers": [
+            "1,013 bar",
+            "1,023 bar",
+            "1,043 bar",
+            "0,980 bar"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "D'après la loi fondamentale de la statique des fluides, $P_{fond} = P_{atm} + \\rho g h$. Avec $g \\approx 9,81 \\text{ m.s}^{-2}$ et $h = 0,1 \\text{ m}$, la surpression hydrostatique est $\\Delta P \\approx 1000 \\times 9,81 \\times 0,1 = 981 \\text{ Pa} \\approx 0,01 \\text{ bar}$. Donc $P_{fond} \\approx 1,013 + 0,01 = 1,023 \\text{ bar}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0083",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'analyse dimensionnelle correcte d'une pression $P$ dans le système international ?",
+        "answers": [
+            "$M.L^{-1}.T^{-2}$",
+            "$M.L.T^{-2}$",
+            "$M.L^{-2}.T^{-1}$",
+            "$M.L^2.T^{-2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "La pression est une force par unité de surface : $P = F/S$. La dimension d'une force est $[F] = M.L.T^{-2}$ (d'après $F=ma$) et celle d'une surface est $[S] = L^2$. Ainsi, $[P] = \\frac{M.L.T^{-2}}{L^2} = M.L^{-1}.T^{-2}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0084",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La poussée d'Archimède est-elle toujours définie par $\\vec{\\Pi} = - \\iiint_{\\mathcal{V}} \\vec{\\text{grad}}(P) d\\tau$ dans un fluide inhomogène ?",
+        "answers": [
+            "Oui, cette expression est la définition générale issue du théorème de gradient.",
+            "Non, le fluide doit être homogène pour que le champ de pression soit linéaire.",
+            "Seulement si le solide est de très petite dimension.",
+            "Non, la poussée d'Archimède n'existe pas dans les fluides inhomogènes."
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "La poussée d'Archimède est la résultante des forces de pression exercées par le fluide sur le solide : $\\vec{\\Pi} = \\iint_{\\partial \\mathcal{V}} -P \\vec{n} dS$. D'après le théorème de Green-Ostrogradsky (ou théorème du gradient), cette intégrale de surface est égale à l'intégrale de volume du gradient de pression. Cette relation est universelle, que le fluide soit homogène ou non.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0085",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Que stipule le principe de Pascal en statique des fluides ?",
+        "answers": [
+            "La pression est uniforme dans tout le volume d'un fluide au repos.",
+            "Toute variation de pression appliquée en un point d'un fluide incompressible au repos se transmet intégralement en tout point du fluide.",
+            "Le gradient de pression est proportionnel à la vitesse du fluide.",
+            "La pression diminue toujours avec la profondeur."
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Le principe de Pascal concerne les fluides incompressibles : si l'on modifie la pression à une frontière, cette variation $\\Delta P$ s'ajoute à la pression en tout point intérieur, conformément à l'équation $\\vec{\\text{grad}}(P) = \\rho \\vec{g}$. Les autres propositions sont physiquement fausses ou imprécises.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0086",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'étude d'un barrage-voûte où l'eau exerce une poussée sur la face interne, si l'axe $x$ est orienté vers l'extérieur du barrage, la force de pression résultante de l'eau est dirigée selon :",
+        "answers": [
+            "$\\vec{e}_x$",
+            "$-\\vec{e}_x$",
+            "$\\vec{e}_y$",
+            "$- \\vec{e}_z$"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "La force de pression exercée par un fluide est toujours dirigée vers la paroi (donc vers l'intérieur du barrage). Si l'axe $\\vec{e}_x$ pointe vers l'extérieur du barrage, la force exercée par l'eau sur la paroi interne est orientée dans le sens de $\\vec{e}_x$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0087",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pourquoi, dans le bilan des forces sur un barrage, considère-t-on l'action de l'air sur la face externe ?",
+        "answers": [
+            "Car l'air a une masse volumique non négligeable pour le calcul du moment.",
+            "Car la pression atmosphérique $P_{atm}$ agit sur la face externe, s'opposant partiellement à la pression de l'eau.",
+            "Par pure convention de signe lors de l'intégration.",
+            "Parce que la pression de l'air crée un couple de basculement."
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "La force résultante sur une paroi est due à la différence de pression de part et d'autre de celle-ci. Si on ne considère que la pression de l'eau $P_{eau}$, on néglige le fait que $P_{atm}$ agit sur les deux faces du barrage. La force nette est proportionnelle à $P_{eau} - P_{atm} = \\rho g h$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0089",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un navire passe d'un estuaire d'eau douce ($\\rho_1$) à la pleine mer ($\\rho_2 > \\rho_1$). Comment évolue sa ligne de flottaison ?",
+        "answers": [
+            "Le navire monte (il s'enfonce moins) car la poussée d'Archimède est plus intense pour un même volume immergé.",
+            "Le navire descend (il s'enfonce plus) car il est plus attiré par la gravité.",
+            "La ligne de flottaison reste identique car le poids du navire ne change pas.",
+            "Le navire est instable et subit une poussée latérale."
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "À l'équilibre, le poids $P = m g$ est compensé par la poussée d'Archimède $\\Pi = \\rho_{fluide} V_{imm} g$. Comme le poids est constant, $\\rho_{fluide} V_{imm} = cste$. Si $\\rho$ augmente, le volume immergé $V_{imm}$ doit diminuer. Le navire ressort donc de l'eau, il monte.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0090",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le calcul de la force de pression sur une paroi cylindrique (tunnel), quelle est la valeur de l'intégrale $I = \\int_{-\\pi/2}^{\\pi/2} \\cos(2\\theta) d\\theta$ ?",
+        "answers": [
+            "1",
+            "0",
+            "$\\pi$",
+            "$-1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "L'intégrale de $\\cos(2\\theta)$ est $\\frac{1}{2} \\sin(2\\theta)$. En évaluant entre $-\\pi/2$ et $\\pi/2$, on obtient $\\frac{1}{2} (\\sin(\\pi) - \\sin(-\\pi)) = \\frac{1}{2} (0 - 0) = 0$. C'est un résultat classique dans les intégrations de symétrie pour des surfaces courbes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0091",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre d'un exercice de statique des fluides, un solide est pesé dans l'air ($P = 10\\text{ N}$) puis totalement immergé dans l'eau ($P_{apparent} = 8\\text{ N}$). Quelle est la valeur de la poussée d'Archimède $\\vec{\\Pi}$ ?",
+        "answers": [
+            "18 N",
+            "2 N",
+            "8 N",
+            "0 N"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Le poids apparent est défini par $P_{apparent} = P - \\Pi$. Ainsi, $\\Pi = P - P_{apparent} = 10 - 8 = 2\\text{ N}$. L'erreur classique est d'additionner les valeurs ou de confondre le poids apparent avec la poussée d'Archimède.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0092",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un pendule simple de longueur $L$ soumis à un champ de pesanteur $g$, quelle est l'expression de sa période propre $T_0$ en régime de petites oscillations ?",
+        "answers": [
+            "$2\\pi \\sqrt{L/g}$",
+            "$2\\pi \\sqrt{g/L}$",
+            "$\\sqrt{L/g}$",
+            "$2\\pi \\sqrt{Lg}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "Par analyse dimensionnelle, la période doit être homogène à un temps. Seule la formule $2\\pi \\sqrt{L/g}$ donne une dimension de $\\sqrt{m / (m.s^{-2})} = s$. L'inversion des termes sous la racine est une erreur fréquente.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0093",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Lors de l'étude dynamique d'un flotteur à section constante $S$ et masse $m$ autour de sa position d'équilibre, l'équation obtenue est de la forme $\\ddot{z} + \\omega_0^2 z = 0$. Il s'agit d'un :",
+        "answers": [
+            "Oscillateur harmonique",
+            "Oscillateur amorti",
+            "Mouvement rectiligne uniforme",
+            "Oscillateur forcé"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "La forme $\\ddot{x} + \\omega_0^2 x = 0$ caractérise l'oscillateur harmonique. L'absence de terme en $\\dot{z}$ indique qu'il n'y a pas de force de frottement visqueux modélisée, donc le système n'est pas amorti.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0094",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quel instrument de mesure utilise-t-on pour déterminer la pression atmosphérique ambiante ?",
+        "answers": [
+            "Thermomètre",
+            "Manomètre",
+            "Baromètre",
+            "Piézomètre"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 2,
+        "explication": "Le baromètre est l'instrument dédié à la mesure de la pression atmosphérique. Le manomètre mesure une différence de pression par rapport à une pression de référence, souvent la pression atmosphérique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0095",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quel instrument est spécifiquement conçu pour mesurer une différence de pression entre deux milieux (ou par rapport à la pression atmosphérique) ?",
+        "answers": [
+            "Baromètre",
+            "Manomètre",
+            "Anémomètre",
+            "Hydromètre"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "Un manomètre mesure la pression relative ou différentielle. L'anémomètre mesure une vitesse de fluide, et le baromètre est réservé à la pression atmosphérique absolue.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0096",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Soit un fluide au repos dans le champ de pesanteur $\\vec{g} = -g\\vec{e}_z$. La pression $P(x, y, z)$ dépend-elle des coordonnées horizontales $x$ et $y$ ?",
+        "answers": [
+            "Non, car le gradient de pression $\\vec{\\text{grad}} P = \\rho\\vec{g}$ impose $\\partial_x P = 0$ et $\\partial_y P = 0$.",
+            "Oui, si le fluide est en rotation.",
+            "Seulement si le fluide est visqueux.",
+            "Oui, car la pression dépend de la masse volumique."
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "La loi fondamentale de la statique des fluides est $\\vec{\\text{grad}} P = \\rho\\vec{g}$. Comme $\\vec{g} = -g\\vec{e}_z$, les composantes selon $x$ et $y$ du gradient sont nulles, impliquant que $P$ est uniforme dans tout plan horizontal.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0097",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Lors du calcul de la force pressante sur une paroi plane inclinée d'un angle $\\theta$ par rapport à l'horizontale, pourquoi projette-t-on la force sur l'axe normal à la paroi avec un terme en $\\cos\\theta$ ?",
+        "answers": [
+            "Pour projeter la surface élémentaire $dS$ ou la profondeur selon la normale.",
+            "C'est la définition du vecteur surface cylindrique.",
+            "Pour tenir compte de la variation de pression avec la profondeur.",
+            "Pour annuler la composante tangentielle."
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 0,
+        "explication": "La force pressante est $\\vec{F} = \\iint P\\vec{n} dS$. Si la surface est inclinée, projeter le vecteur normale $\\vec{n}$ dans le repère cartésien nécessite des fonctions trigonométriques pour isoler la composante normale selon la géométrie du problème.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0098",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour une paroi verticale immergée à une profondeur moyenne $h$, si la force pressante calculée est de $3 \\times 10^6 \\text{ N}$, quelle masse équivalente cela représente-t-il (prendre $g \\approx 10 \\text{ m/s}^2$) ?",
+        "answers": [
+            "3 tonnes",
+            "30 tonnes",
+            "300 tonnes",
+            "3000 tonnes"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 2,
+        "explication": "La force est $F = mg$, donc $m = F/g$. Avec $F = 3 \\times 10^6 \\text{ N}$ et $g = 10 \\text{ m/s}^2$, on obtient $m = 3 \\times 10^5 \\text{ kg} = 300 \\text{ tonnes}$. Attention aux ordres de grandeur lors de la conversion kg/tonnes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0099",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La relation $\\Delta P = \\rho g h$ peut-elle être appliquée directement pour calculer la différence de pression dans l'atmosphère sur une hauteur $h = 1000 \\text{ m}$ ?",
+        "answers": [
+            "Oui, car l'air est un fluide.",
+            "Non, car l'air est un gaz compressible et $\\rho$ varie significativement avec l'altitude.",
+            "Oui, si la température est de 15°C.",
+            "Non, car il y a des courants d'air."
+        ],
+        "difficulty": 3,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "La formule $\\Delta P = \\rho g h$ suppose que $\\rho$ est constant. Pour un gaz sur 1000m, la variation de pression est suffisante pour changer la masse volumique de façon non négligeable : il faut utiliser le modèle de l'atmosphère isotherme (loi exponentielle).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "f1a2b3c4-0100",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "À l'échelle mésoscopique, en mécanique des fluides, comment modélise-t-on le milieu ?",
+        "answers": [
+            "Comme un ensemble discret de molécules.",
+            "Comme un milieu continu et dérivable.",
+            "Comme un espace vide sans interaction.",
+            "Comme un cristal parfait."
+        ],
+        "difficulty": 1,
+        "chapter": "Statique des fluides",
+        "correct_answer_index": 1,
+        "explication": "L'hypothèse du milieu continu permet de définir des grandeurs macroscopiques (P, $\\rho$, $T$) en tout point par une moyenne statistique sur un volume élémentaire mésoscopique, rendant les champs dérivables.",
+        "subject": "physique"
+    }
+]

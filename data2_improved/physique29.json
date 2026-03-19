@@ -1,0 +1,1632 @@
+[
+    {
+        "uuid": "q001",
+        "image_path": null,
+        "theme": "structure",
+        "question": "Dans le cadre de l'étude d'une Machine à Courant Continu (MCC), quelle est la partie fixe, appelée stator, qui assure la création du champ magnétique inducteur $\\vec{B}$ ?",
+        "answers": [
+            "Le stator (inducteur)",
+            "Le rotor (induit)",
+            "Le collecteur à lames",
+            "Le circuit d'induit"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le stator est la partie fixe de la machine. Dans une MCC classique, il porte l'inducteur (bobinage ou aimants) chargé de créer le flux magnétique principal. Le rotor est la partie tournante, et le collecteur est un organe de commutation mécanique."
+    },
+    {
+        "uuid": "q002",
+        "image_path": null,
+        "theme": "structure",
+        "question": "Comment nomme-t-on la partie interne mobile de la MCC, siège de la conversion électromécanique et traversée par un courant circulant au sein de conducteurs soumis au champ $\\vec{B}$ ?",
+        "answers": [
+            "L'inducteur",
+            "Le rotor",
+            "Le stator",
+            "Le balai"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La partie mobile de la machine est le rotor. C'est en son sein que se produit la force de Laplace $\\vec{F} = I \\vec{l} \\land \\vec{B}$ lors du fonctionnement en moteur, ou l'induction lors du fonctionnement en génératrice."
+    },
+    {
+        "uuid": "q003",
+        "image_path": null,
+        "theme": "structure",
+        "question": "Dans la terminologie des machines électriques, quel est le terme technique désignant spécifiquement le bobinage rotorique d'une MCC ?",
+        "answers": [
+            "L'induit",
+            "L'inducteur",
+            "Le collecteur",
+            "L'entrefer"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Par définition, l'induit est la partie de la machine où circule le courant induit (ou courant principal d'alimentation). Dans une MCC, ce bobinage est situé sur le rotor pour permettre la commutation."
+    },
+    {
+        "uuid": "q004",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Lors du mouvement de rotation du rotor dans le champ magnétique $\\vec{B}$ produit par le stator, quel phénomène physique est à l'origine de la force électromotrice $e$ aux bornes de l'induit ?",
+        "answers": [
+            "La création d'un champ gravitationnel induit",
+            "L'induction électromagnétique (loi de Faraday)",
+            "L'usure mécanique des balais par frottement",
+            "L'effet Joule pur dans les conducteurs"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Selon la loi de Faraday, toute variation de flux magnétique à travers un circuit mobile induit une force électromotrice $e = -d\\Phi/dt$. C'est ce phénomène qui permet la conversion d'énergie mécanique en énergie électrique (génératrice)."
+    },
+    {
+        "uuid": "q005",
+        "image_path": null,
+        "theme": "structure",
+        "question": "Quel organe mécanique, solidaire de l'arbre de rotation, permet d'assurer la continuité électrique entre le circuit tournant (rotor) et le circuit fixe via des balais ?",
+        "answers": [
+            "L'entrefer",
+            "Le collecteur",
+            "Le stator",
+            "L'inducteur"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le collecteur est un commutateur mécanique composé de lames de cuivre isolées. Il assure le redressement mécanique du courant pour que le couple reste unidirectionnel malgré la rotation."
+    },
+    {
+        "uuid": "q006",
+        "image_path": null,
+        "theme": "structure",
+        "question": "Le système de commutation, essentiel au fonctionnement d'une MCC, est composé de deux éléments principaux. Lesquels ?",
+        "answers": [
+            "Des balais fixes et des lames de collecteur solidaires du rotor",
+            "Des aimants permanents et des bobines de champ",
+            "Des bagues collectrices et un stator feuilleté",
+            "Des contacts magnétiques et un rotor bobiné"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le système de balais (fixe, souvent en graphite) frotte sur les lames du collecteur (tournant) pour inverser le sens du courant dans les spires au moment opportun, assurant ainsi la persistance du couple moteur."
+    },
+    {
+        "uuid": "q007",
+        "image_path": null,
+        "theme": "structure",
+        "question": "Pour quelle raison technologique majeure cherche-t-on souvent à remplacer le système collecteur-balais dans les machines modernes ?",
+        "answers": [
+            "L'usure mécanique due aux frottements et la maintenance associée",
+            "L'impossibilité de créer un champ magnétique inverse",
+            "L'augmentation du moment d'inertie du rotor",
+            "La production de champs électriques continus"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le contact glissant balais-collecteur est une faiblesse : il génère des frottements, des arcs électriques lors de la commutation, et nécessite un remplacement périodique des charbons (maintenance)."
+    },
+    {
+        "uuid": "q008",
+        "image_path": null,
+        "theme": "structure",
+        "question": "Dans la terminologie des machines à courant continu, quel est le terme alternatif pour désigner la partie inductrice, c'est-à-dire le circuit créant le flux magnétique ?",
+        "answers": [
+            "Le collecteur",
+            "L'inducteur",
+            "L'induit",
+            "Le rotor"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'inducteur est la partie qui 'induit' le champ magnétique $\\vec{B}$ nécessaire à la conversion d'énergie. Il est situé au stator dans les machines à courant continu classiques."
+    },
+    {
+        "uuid": "q009",
+        "image_path": null,
+        "theme": "structure",
+        "question": "Comment nomme-t-on l'espace d'air situé entre la pièce polaire du stator et la surface du rotor, qui doit être le plus faible possible pour optimiser le flux magnétique ?",
+        "answers": [
+            "Le collecteur",
+            "La ligne neutre",
+            "L'entrefer",
+            "L'induit"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "L'entrefer est l'espace vide entre le stator et le rotor. Comme la perméabilité magnétique de l'air ($\\mu_0$) est très faible par rapport au fer, il faut réduire l'entrefer au maximum pour minimiser la réluctance du circuit magnétique."
+    },
+    {
+        "uuid": "q010",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Par quels moyens technologiques le champ magnétique inducteur est-il généralement généré dans le stator d'une machine à courant continu ?",
+        "answers": [
+            "Par des balais en carbone",
+            "Par des bobinages alimentés ou des aimants permanents",
+            "Par une spire mobile en rotation",
+            "Par des courants de Foucault statoriques"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'inducteur peut être créé par des aimants permanents (pour les petites machines) ou par des bobinages excités par un courant continu (électroaimants) pour permettre le réglage du flux."
+    },
+    {
+        "uuid": "q011",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le cadre d'une machine à courant continu à excitation séparée ou série, en quelle configuration physique sont connectés les deux bobinages (enroulements inducteurs) placés de part et d'autre du stator ?",
+        "answers": [
+            "En série",
+            "En dérivation",
+            "En antiparallèle",
+            "En pont de Wheatstone"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "explication": "Pour assurer une symétrie du champ magnétique $\\vec{B}$ dans l'entrefer, les bobines inductrices sont classiquement montées en série. Cela garantit que le courant qui les traverse est identique, assurant ainsi l'égalité des ampère-tours et donc une répartition spatiale symétrique du flux magnétique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q012",
+        "image_path": null,
+        "theme": "magnétostatique",
+        "question": "Pour une machine à courant continu classique, quelle est la direction préférentielle du vecteur champ magnétique inducteur $\\vec{B}$ dans l'entrefer pour assurer une conversion électromécanique efficace ?",
+        "answers": [
+            "Orthoradiale ($\\vec{u}_\\theta$)",
+            "Axiale ($\\vec{u}_z$)",
+            "Radiale ($\\vec{u}_r$)",
+            "Hélicoïdale"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "explication": "Dans une MCC, le champ inducteur est produit par les pôles statoriques. Par construction, les lignes de champ sortent du pôle Nord et entrent dans le pôle Sud en traversant l'entrefer de manière radiale, soit selon $\\vec{u}_r$, afin d'être perpendiculaires aux conducteurs du rotor.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q013",
+        "image_path": null,
+        "theme": "magnétostatique",
+        "question": "Pour obtenir un couple électromagnétique maximal dans une MCC, comment doit être orienté le vecteur moment dipolaire magnétique $\\vec{m}$ du rotor par rapport au champ magnétique statorique $\\vec{B}$ ?",
+        "answers": [
+            "Parallèlement",
+            "Perpendiculairement",
+            "En sens opposé",
+            "Avec un angle de $\\pi/4$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "Le couple s'exprime par $\\vec{\\Gamma} = \\vec{m} \\wedge \\vec{B}$. Pour que la norme du couple soit maximale, il faut que le produit vectoriel soit maximal, ce qui impose que les vecteurs $\\vec{m}$ (porté par l'axe du rotor) et $\\vec{B}$ (porté par l'axe du stator) soient perpendiculaires.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q014",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Lors de la rotation d'une spire unique dans un champ magnétique uniforme, à quelle période angulaire le sens du courant induit s'inverserait-il si aucun collecteur n'était présent ?",
+        "answers": [
+            "$2\\pi$",
+            "$\\pi/2$",
+            "$\\pi$",
+            "$4\\pi$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "explication": "Le flux $\\Phi$ à travers la spire varie comme $\\cos(\\theta)$. La force électromotrice induite est proportionnelle à $-d\\Phi/dt$, soit $\\sin(\\theta)$. Le signe de la f.e.m. change donc tous les $\\pi$ radians (un demi-tour), ce qui impose l'inversion du courant.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q015",
+        "image_path": null,
+        "theme": "structure",
+        "question": "Quel est le rôle fondamental du collecteur à lames et balais lors de la rotation de l'induit d'une machine à courant continu ?",
+        "answers": [
+            "Augmenter la valeur du champ magnétique inducteur",
+            "Inverser périodiquement le sens du courant dans les bobinages pour maintenir un couple unidirectionnel",
+            "Refroidir les enroulements rotoriques par ventilation forcée",
+            "Convertir le courant continu en courant alternatif triphasé"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "Le collecteur agit comme un commutateur mécanique. Il inverse le sens du courant dans les conducteurs du rotor au moment précis où ils passent d'un pôle à l'autre, permettant ainsi de maintenir le couple moteur dans le même sens de rotation.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q016",
+        "image_path": null,
+        "theme": "structure",
+        "question": "Comment nomme-t-on les éléments conducteurs (généralement en graphite) assurant le transfert du courant électrique entre le circuit fixe et les lames tournantes du collecteur ?",
+        "answers": [
+            "Les inducteurs",
+            "Les entretoises",
+            "Les balais",
+            "Les collecteurs à bagues"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "explication": "Les balais (ou charbons) sont les pièces fixes qui frottent sur les lames du collecteur tournant pour assurer la continuité électrique. L'erreur classique est de les confondre avec les bobinages inducteurs qui génèrent le champ magnétique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q017",
+        "image_path": null,
+        "theme": "magnétostatique",
+        "question": "Si le champ magnétique radial est défini comme $+\\vec{u}_r$ pour $\\theta \\in [0, \\pi[$, quelle est son orientation pour $\\theta \\in [\\pi, 2\\pi[$ ?",
+        "answers": [
+            "Selon $-\\vec{u}_r$",
+            "Selon $+\\vec{u}_r$",
+            "Selon $\\vec{u}_\\theta$",
+            "Le champ est nul"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "explication": "Par symétrie des pôles statoriques, si le flux sort par le pôle Nord dans le demi-espace supérieur (positif), il entre par le pôle Sud dans le demi-espace inférieur (négatif). Le vecteur champ change donc de signe, passant de $+\\vec{u}_r$ à $-\\vec{u}_r$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q018",
+        "image_path": null,
+        "theme": "magnétostatique",
+        "question": "Comment appelle-t-on l'axe perpendiculaire à l'axe des pôles où la force électromotrice induite est nulle et où le champ magnétique change de direction ?",
+        "answers": [
+            "La ligne polaire",
+            "L'axe de symétrie",
+            "La ligne neutre",
+            "L'axe d'entrefer"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "explication": "La ligne neutre correspond aux zones situées entre les pôles statoriques. C'est le lieu où le flux traversant les conducteurs de l'induit est nul au moment de la commutation, ce qui permet de limiter les étincelles lors du passage des balais sur les lames.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q019",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "Dans une MCC classique, la condition de synchronisme entre le courant induit et le champ inducteur dépend-elle de la position angulaire $\\theta$ du rotor ?",
+        "answers": [
+            "Non, le collecteur assure mécaniquement le synchronisme quelle que soit la position",
+            "Oui, elle dépend linéairement de l'angle $\\theta$",
+            "Uniquement au démarrage du moteur",
+            "Oui, elle dépend de $\\sin(\\theta)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "explication": "C'est l'avantage majeur de la MCC : la commutation mécanique par le collecteur maintient l'angle entre le champ rotorique et statorique constant (proche de $\\pi/2$) automatiquement, quelle que soit la vitesse ou la position.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q020",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "En fonctionnement moteur stationnaire, quel est le déphasage idéal de l'axe magnétique du rotor par rapport à l'axe statorique pour maximiser le couple ?",
+        "answers": [
+            "En avance de $\\pi/2$",
+            "En quadrature de phase ($\\pi/2$)",
+            "En opposition de phase ($\\pi$)",
+            "En phase ($0$)"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "Le couple maximal est obtenu lorsque les deux champs sont perpendiculaires. La position des balais est justement réglée pour maintenir cette 'quadrature' : le courant rotorique crée un champ magnétique (réaction d'induit) perpendiculaire au champ inducteur.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q021",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "Dans le cadre de l'étude d'une machine à courant continu (MCC), quel est le signe du couple électromagnétique $\\Gamma_{em}$ en fonctionnement moteur, sachant que la puissance mécanique développée $P_{em} = \\Gamma_{em} \\Omega$ est positive avec une vitesse de rotation $\\Omega > 0$ et un courant induit $I > 0$ ?",
+        "answers": [
+            "$\\Gamma_{em} < 0$",
+            "$\\Gamma_{em} = 0$",
+            "$\\Gamma_{em} > 0$",
+            "Le signe dépend de la résistance interne $r$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "explication": "En fonctionnement moteur, la machine convertit l'énergie électrique en énergie mécanique. La puissance électromagnétique $P_{em} = \\Gamma_{em} \\Omega$ doit être positive (reçue par la charge). Si $\\Omega > 0$, alors $\\Gamma_{em}$ doit nécessairement être du même signe, soit $\\Gamma_{em} > 0$."
+    },
+    {
+        "uuid": "q022",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "Quelle est l'expression fondamentale du couple électromagnétique $\\Gamma_{em}$ d'une MCC à excitation constante, où $\\Phi_0$ représente la constante de flux ?",
+        "answers": [
+            "$\\Gamma_{em} = \\Phi_0 \\Omega$",
+            "$\\Gamma_{em} = \\Phi_0 I$",
+            "$\\Gamma_{em} = R I^2$",
+            "$\\Gamma_{em} = \\frac{E}{\\Omega}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "Par le théorème de la puissance électromagnétique, on a $P_{em} = E I = \\Gamma_{em} \\Omega$. Comme $E = \\Phi_0 \\Omega$, on en déduit par identification que $\\Gamma_{em} = \\Phi_0 I$. L'erreur classique est de confondre la constante de couple avec la force électromotrice."
+    },
+    {
+        "uuid": "q023",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "La constante de flux $\\Phi_0$ caractérise le couplage électromagnétique dans une MCC. De quel paramètre physique dépend-elle principalement dans une machine à excitation séparée ?",
+        "answers": [
+            "La vitesse de rotation $\\Omega$",
+            "La résistance interne $r$ du rotor",
+            "Le courant d'excitation $I_e$ traversant l'inducteur",
+            "Le couple de charge appliqué"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "explication": "La constante $\\Phi_0$ dépend du flux magnétique produit par l'inducteur. Dans une machine à excitation séparée, ce flux est directement proportionnel au courant d'excitation $I_e$. La vitesse $\\Omega$ n'influence pas $\\Phi_0$, elle définit la valeur de $E$."
+    },
+    {
+        "uuid": "q024",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "En fonctionnement générateur, quelle est l'orientation relative de l'axe magnétique du rotor par rapport à l'axe statorique pour assurer le signe de la conversion d'énergie ?",
+        "answers": [
+            "En avance d'un angle $\\pi/2$ par rapport à l'axe statorique",
+            "En retard d'un angle $\\pi/2$ par rapport à l'axe statorique",
+            "Parfaitement aligné avec l'axe statorique",
+            "Déphasé de $\\pi$ (opposition de phase)"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "explication": "Pour une conversion d'énergie mécanique en électrique, le décalage angulaire doit permettre au champ magnétique rotorique de s'opposer au mouvement, nécessitant une avance d'un angle électrique de $\\pi/2$ (quadrature) pour maximiser le couple moteur inverse et la f.é.m."
+    },
+    {
+        "uuid": "q025",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "En fonctionnement générateur ($I < 0$ et $\\Omega > 0$), quel est le signe du couple électromagnétique $\\Gamma_{em}$ ?",
+        "answers": [
+            "$\\Gamma_{em} > 0$",
+            "$\\Gamma_{em} < 0$",
+            "$\\Gamma_{em} = 0$",
+            "Il dépend du signe de la résistance $r$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "En générateur, le couple électromagnétique est un couple résistant s'opposant au mouvement. Si $\\Omega > 0$, alors $\\Gamma_{em}$ doit être négatif ($\\Gamma_{em} < 0$) pour s'opposer à la rotation."
+    },
+    {
+        "uuid": "q026",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour une MCC idéale de f.é.m $E$ en convention générateur, quelle est l'expression de la puissance électrique $P_{elec}$ fournie par la machine au circuit extérieur ?",
+        "answers": [
+            "$P_{elec} = E I$",
+            "$P_{elec} = -E I$",
+            "$P_{elec} = E^2 / R$",
+            "$P_{elec} = E I^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "En convention générateur, le courant $I$ sort de la borne positive. La puissance fournie est $P = V I$. Avec $V = E$ et $I < 0$ (ou $V = -E$ selon l'orientation), le produit scalaire des grandeurs électriques donne $-E I$ pour une puissance reçue par le circuit."
+    },
+    {
+        "uuid": "q027",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le modèle électrique équivalent du rotor d'une MCC, comment s'écrit la relation entre la force contre-électromotrice $E_{cem}$ et la f.é.m $E$ ?",
+        "answers": [
+            "$E_{cem} = E$",
+            "$E_{cem} = -E$",
+            "$E_{cem} = 1/E$",
+            "$E_{cem} = E - rI$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "Par définition, la f.c.e.m. est la tension aux bornes du rotor en convention récepteur. Si $E$ est la f.é.m. orientée en convention générateur (borne positive), alors $E_{cem} = -E$ pour respecter la convention récepteur."
+    },
+    {
+        "uuid": "q028",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une MCC idéale (sans pertes par effet Joule ni frottements), quelle équation exprime la conservation de la puissance entre les domaines mécanique et électrique ?",
+        "answers": [
+            "$E_{cem} \\Omega = \\Gamma_{em} I$",
+            "$E_{cem} I = \\Gamma_{em} \\Omega$",
+            "$E_{cem} + I = \\Gamma_{em} + \\Omega$",
+            "$E_{cem} I = \\Gamma_{em} / \\Omega$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "Le bilan de puissance d'une machine idéale est $P_{elec} = P_{meca}$. Soit $U_{induit} I = \\Gamma_{em} \\Omega$. Comme $E_{cem} = U_{induit}$ dans le cas idéal, on obtient $E_{cem} I = \\Gamma_{em} \\Omega$."
+    },
+    {
+        "uuid": "q029",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression correcte de la force contre-électromotrice $E_{cem}$ du rotor en fonction du flux $\\Phi_0$ et de la vitesse angulaire $\\Omega$ ?",
+        "answers": [
+            "$E_{cem} = \\Phi_0 \\Omega$",
+            "$E_{cem} = \\Phi_0 / \\Omega$",
+            "$E_{cem} = \\Phi_0 I$",
+            "$E_{cem} = \\Omega / \\Phi_0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "explication": "La f.c.e.m. est générée par le mouvement du rotor dans le champ magnétique statorique. Elle est proportionnelle au flux et à la vitesse de rotation : $E = k \\Phi \\Omega$. Par convention, $E_{cem} = \\Phi_0 \\Omega$."
+    },
+    {
+        "uuid": "q030",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "Dans le cadre de l'étude d'un système asservi, en fonctionnement moteur, comment caractérise-t-on le couple appliqué par la charge mécanique sur l'arbre du rotor ?",
+        "answers": [
+            "Un couple moteur $\\Gamma_{charge} > 0$",
+            "Un couple résistif $\\Gamma_{charge} < 0$ (ou $\\Gamma_{résistif} > 0$)",
+            "Un couple nul constant",
+            "Un couple qui s'ajoute toujours au couple électromagnétique"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "En régime moteur, le moteur doit vaincre le couple de la charge. La charge exerce donc un couple opposé au mouvement de rotation, dit couple résistif, soit $\\Gamma_{charge} < 0$ si l'on compte positivement le sens de rotation."
+    },
+    {
+        "uuid": "q031",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Dans le cadre de l'étude dynamique d'un moteur à courant continu, quelle est l'équation issue du théorème du moment cinétique projetée sur l'axe de rotation du rotor ?",
+        "answers": [
+            "$J \\frac{d\\Omega}{dt} = \\Gamma_{em} + \\Gamma_{charge}$",
+            "$J \\frac{d\\Omega}{dt} = \\Gamma_{em} - \\Gamma_{charge}$",
+            "$J \\frac{d\\Omega}{dt} = \\Gamma_{charge} - \\Gamma_{em}$",
+            "$J \\Omega = \\Gamma_{em} - \\Gamma_{charge}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "En convention moteur, le couple électromagnétique $\\Gamma_{em}$ est moteur (positif) et s'oppose au couple résistant de la charge $\\Gamma_{charge}$ (négatif). L'équation fondamentale de la dynamique en rotation s'écrit $\\sum \\Gamma = J \\frac{d\\Omega}{dt}$, soit $\\Gamma_{em} - \\Gamma_{charge} = J \\frac{d\\Omega}{dt}$. La réponse D est fausse car elle omet la dynamique (dérivée).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q032",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour une machine à courant continu en fonctionnement moteur, laquelle de ces expressions représente la puissance électromécanique convertie ?",
+        "answers": [
+            "$\\mathcal{P} = R I^2$",
+            "$\\mathcal{P} = E_{cem} I$",
+            "$\\mathcal{P} = U I$",
+            "$\\mathcal{P} = \\Gamma_{em} \\Omega$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "La puissance convertie est la puissance électrique de la f.é.m. $E_{cem}$ traversée par le courant $I$ de l'induit. $\\mathcal{P} = R I^2$ correspond aux pertes par effet Joule dans l'induit, et $U I$ représente la puissance électrique totale absorbée par le moteur. La relation $\\mathcal{P} = \\Gamma_{em} \\Omega$ est également vraie par équivalence, mais $E_{cem} I$ est la définition électrique fondamentale.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q033",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la relation tension-courant aux bornes de l'induit d'un moteur à courant continu, en tenant compte de sa résistance $R$ et de son inductance $L$ ?",
+        "answers": [
+            "$u(t) = R i(t) - L \\frac{di}{dt} - \\Phi_0 \\Omega$",
+            "$u(t) = R i(t) + L \\frac{di}{dt} + \\Phi_0 \\Omega$",
+            "$u(t) = R i(t) + \\Phi_0 \\Omega$",
+            "$u(t) = R i(t) + L \\frac{di}{dt} - \\Phi_0 \\Omega$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "En convention récepteur (moteur), la tension aux bornes est la somme de la chute de tension résistive ($R i$), inductive ($L di/dt$) et de la force contre-électromotrice ($E = \\Phi_0 \\Omega$). Les signes doivent être positifs dans la maille.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q034",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "En fonctionnement générateur (dynamo), quel est le signe du couple $\\Gamma_{mec}$ appliqué par l'actionneur mécanique sur l'arbre du rotor ?",
+        "answers": [
+            "Un couple résistant $\\Gamma_{mec} < 0$",
+            "Un couple d'entrainement $\\Gamma_{mec} > 0$",
+            "Un couple d'inertie pur",
+            "Un couple nul"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "Pour produire de l'énergie électrique, le générateur doit être entraîné par un moteur extérieur. Le couple mécanique externe $\\Gamma_{mec}$ doit être dans le sens du mouvement (moteur) pour vaincre le couple électromagnétique résistant de la génératrice.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q035",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Quelle est l'équation du théorème du moment cinétique en fonctionnement générateur, sachant que $\\Gamma_{em}$ est ici le couple électromagnétique résistant ?",
+        "answers": [
+            "$J \\frac{d\\Omega}{dt} = \\Gamma_{em} - \\Gamma_{mec}$",
+            "$J \\frac{d\\Omega}{dt} = \\Gamma_{mec} - \\Gamma_{em}$",
+            "$J \\frac{d\\Omega}{dt} = -\\Gamma_{em} - \\Gamma_{mec}$",
+            "$J \\frac{d\\Omega}{dt} = \\Gamma_{em} + \\Gamma_{mec}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "En générateur, le couple électromagnétique $\\Gamma_{em}$ s'oppose à la rotation (freinage). Le bilan des couples sur l'arbre est $\\Gamma_{mec} - \\Gamma_{em} = J \\frac{d\\Omega}{dt}$, où $\\Gamma_{mec}$ est le couple moteur externe.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q036",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Comment s'oriente la f.é.m $E_G$ en fonctionnement générateur par rapport au courant débité $I_G$ ?",
+        "answers": [
+            "Elle est orientée en sens opposé au courant",
+            "Elle est orientée dans le même sens que le courant",
+            "Elle est perpendiculaire au courant",
+            "Elle est indépendante de l'orientation du courant"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "En convention générateur, la machine fournit de la puissance au circuit extérieur. La f.é.m $E_G$ est la source de tension, elle pousse le courant dans le circuit, donc elle est orientée dans le même sens que $I_G$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q037",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle conversion de puissance opère une machine à courant continu lorsqu'elle est utilisée en fonctionnement générateur ?",
+        "answers": [
+            "Conversion d'énergie électrique vers thermique",
+            "Conversion d'énergie électrique vers mécanique",
+            "Conversion d'énergie mécanique vers électrique",
+            "Conversion d'énergie chimique vers électrique"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "explication": "Le fonctionnement en génératrice consiste à transformer un mouvement mécanique (rotation de l'arbre) en un courant électrique. C'est le principe de la dynamo.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q038",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la relation tension-courant aux bornes de l'induit en fonctionnement générateur ?",
+        "answers": [
+            "$u(t) = E_G + R i(t) + L \\frac{di}{dt}$",
+            "$u(t) = E_G - R i(t) - L \\frac{di}{dt}$",
+            "$u(t) = R i(t) - E_G$",
+            "$u(t) = E_G + R i(t)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "En convention générateur, la tension à la sortie est la f.é.m produite diminuée des chutes de tension internes (résistance et inductance). D'où $u = E_G - R i - L di/dt$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q039",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quel phénomène physique limite la croissance du flux magnétique lorsque l'intensité dans l'inducteur augmente trop fortement ?",
+        "answers": [
+            "La saturation magnétique",
+            "L'effet Hall",
+            "La résonance paramagnétique",
+            "L'hystérésis"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "explication": "La saturation magnétique survient lorsque les domaines de Weiss du matériau ferromagnétique sont tous alignés. Au-delà d'un seuil, augmenter le courant d'excitation ne permet plus d'augmenter le champ magnétique dans le fer.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q040",
+        "image_path": null,
+        "theme": "magnétostatique",
+        "question": "Dans un modèle réel de machine à courant continu, pourquoi le champ $\\vec{B}$ n'est-il pas strictement proportionnel à l'excitation $\\vec{H}$ ?",
+        "answers": [
+            "À cause des forces de Laplace",
+            "À cause de la non-linéarité du matériau ferromagnétique",
+            "À cause des pertes cuivre (effet Joule)",
+            "À cause de la résistance ohmique de l'induit"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "La relation $\\vec{B} = \\mu \\vec{H}$ n'est valable que dans le domaine linéaire. Les matériaux ferromagnétiques présentent un cycle d'hystérésis et une zone de saturation, rendant la perméabilité $\\mu$ non constante.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q041",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Machine à courant continu",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Dans le cadre de l'étude des matériaux ferromagnétiques d'un moteur, comment appelle-t-on le cycle parcouru par la relation $B(H)$ qui traduit le retard de l'aimantation sur le champ excitateur et est responsable d'une dissipation d'énergie ?",
+        "answers": [
+            "Le cycle de Carnot, propre aux échanges thermiques",
+            "Le cycle d'hystérésis, dû au phénomène de rémanence",
+            "Le cycle de Foucault, lié aux courants induits",
+            "Le cycle de Brayton, utilisé dans les turbomachines"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le cycle d'hystérésis représente l'énergie perdue sous forme de chaleur lors de l'aimantation cyclique d'un matériau ferromagnétique. Les autres cycles (Carnot, Brayton) concernent la thermodynamique, et les courants de Foucault sont un phénomène distinct de dissipation par effet Joule."
+    },
+    {
+        "uuid": "q042",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Machine à courant continu",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Les courants de Foucault apparaissent dans les pièces métalliques massives soumises à un champ magnétique variable. Par quel mécanisme physique ces courants dissipent-ils de l'énergie ?",
+        "answers": [
+            "L'effet Joule au sein du matériau",
+            "L'effet Peltier aux interfaces de jonction",
+            "L'effet Seebeck par création d'une f.e.m. parasite",
+            "L'effet Hall par déviation des porteurs de charge"
+        ],
+        "correct_answer_index": 0,
+        "explication": "Les courants de Foucault sont des courants induits se refermant dans la masse du conducteur. Comme tout courant traversant un matériau de conductivité non nulle, ils engendrent des pertes par effet Joule ($P = R I^2$). L'effet Peltier et Seebeck concernent des phénomènes thermoélectriques."
+    },
+    {
+        "uuid": "q043",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "chapter": "Machine à courant continu",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Lors du bilan énergétique d'une machine à courant continu, comment définit-on les 'pertes fer' qui échauffent le circuit magnétique ?",
+        "answers": [
+            "Elles correspondent uniquement aux frottements mécaniques des paliers",
+            "Elles sont la somme des pertes par hystérésis et des pertes par courants de Foucault",
+            "Elles sont dues à l'effet Joule dans les enroulements en cuivre",
+            "Elles représentent l'énergie mécanique convertie en énergie thermique par convection"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Les 'pertes fer' regroupent deux phénomènes magnétiques dissipatifs : l'hystérésis (dû au cycle de retournement des domaines de Weiss) et les courants de Foucault (induits par les variations de flux). Les pertes cuivre sont distinctes et liées à la résistance des conducteurs."
+    },
+    {
+        "uuid": "q044",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "chapter": "Machine à courant continu",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Dans le modèle électrique d'une machine à courant continu, à quoi sont principalement liées les 'pertes cuivre' ?",
+        "answers": [
+            "Aux frottements secs au niveau du collecteur",
+            "Au cycle d'hystérésis des tôles du stator",
+            "À la résistance électrique des bobinages du rotor",
+            "Aux fuites de flux magnétique entre le stator et le rotor"
+        ],
+        "correct_answer_index": 2,
+        "explication": "Les 'pertes cuivre' correspondent aux pertes par effet Joule dans les enroulements du circuit électrique de la machine, notées $P_j = R_R I^2$. Elles dépendent directement de la résistance $R_R$ du cuivre utilisé pour le bobinage."
+    },
+    {
+        "uuid": "q045",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "chapter": "Machine à courant continu",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "En régime permanent continu (où les courants sont constants), que vaut la tension $u_L$ aux bornes de l'inductance $L$ du bobinage de l'induit d'un moteur à courant continu ?",
+        "answers": [
+            "$u_L = L \\frac{d\\Omega}{dt}$",
+            "$u_L = 0$",
+            "$u_L = R_R I$",
+            "$u_L = L \\frac{dI}{dt} + R_R I$"
+        ],
+        "correct_answer_index": 1,
+        "explication": "En régime permanent, les grandeurs électriques sont constantes dans le temps, donc $\\frac{dI}{dt} = 0$. La tension aux bornes d'une bobine parfaite est $u_L = L \\frac{dI}{dt}$, elle est donc nulle. Le terme $R_R I$ est la chute de tension résistive, pas la tension aux bornes de l'inductance."
+    },
+    {
+        "uuid": "q046",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "chapter": "Machine à courant continu",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "En régime permanent, quelle est l'expression correcte de la tension d'alimentation $U$ aux bornes de l'induit d'un moteur, en notant $R_R$ la résistance d'induit et $E_{cem}$ la force contre-électromotrice ?",
+        "answers": [
+            "$U = R_R I + E_{cem}$",
+            "$U = E_{cem} - R_R I$",
+            "$U = R_R I$",
+            "$U = E_{cem} + L \\frac{dI}{dt}$"
+        ],
+        "correct_answer_index": 0,
+        "explication": "D'après la loi des mailles appliquée à l'induit, la tension imposée $U$ doit compenser la chute de tension résistive $R_R I$ et la force contre-électromotrice $E_{cem}$ générée par la rotation dans le champ magnétique. En régime permanent, le terme inductif est nul."
+    },
+    {
+        "uuid": "q047",
+        "image_path": null,
+        "theme": "mécanique",
+        "chapter": "Machine à courant continu",
+        "subject": "physique",
+        "difficulty": 4,
+        "question": "En considérant une machine à courant continu en régime établi, quelle est l'expression du couple électromagnétique $\\Gamma_{em}$ en fonction de la tension $U$, de la résistance d'induit $R_R$, de la constante de couple $k$ (où $E_{cem} = k\\Omega$) et de la vitesse angulaire $\\Omega$ ?",
+        "answers": [
+            "$\\Gamma_{em} = \\frac{k}{R_R} U + \\frac{k^2}{R_R} \\Omega$",
+            "$\\Gamma_{em} = \\frac{k}{R_R} U - \\frac{k^2}{R_R} \\Omega$",
+            "$\\Gamma_{em} = \\frac{R_R}{k} U - \\Omega$",
+            "$\\Gamma_{em} = \\frac{k}{R_R} (U - k \\Omega)$"
+        ],
+        "correct_answer_index": 1,
+        "explication": "On a $\\Gamma_{em} = k I$ et $I = (U - E_{cem})/R_R = (U - k\\Omega)/R_R$. En substituant $I$, on obtient $\\Gamma_{em} = \\frac{k}{R_R}(U - k\\Omega) = \\frac{kU}{R_R} - \\frac{k^2}{R_R}\\Omega$. C'est l'équation caractéristique mécanique du moteur."
+    },
+    {
+        "uuid": "q048",
+        "image_path": null,
+        "theme": "mécanique",
+        "chapter": "Machine à courant continu",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "À l'instant du démarrage (vitesse $\\Omega = 0$), à quoi le couple électromagnétique de démarrage $\\Gamma_d$ est-il proportionnel ?",
+        "answers": [
+            "À la résistance de l'induit $R_R$ uniquement",
+            "À la tension $U$ d'alimentation",
+            "À l'inductance de fuite du stator",
+            "À la vitesse de rotation maximale"
+        ],
+        "correct_answer_index": 1,
+        "explication": "À l'arrêt, $\\Omega = 0$, donc $E_{cem} = 0$. Le courant est maximal : $I_{dem} = U/R_R$. Le couple est alors $\\Gamma_d = k I_{dem} = k \\frac{U}{R_R}$. Il est donc directement proportionnel à la tension d'alimentation $U$."
+    },
+    {
+        "uuid": "q049",
+        "image_path": null,
+        "theme": "mécanique",
+        "chapter": "Machine à courant continu",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Que se passe-t-il si la tension $U$ appliquée au démarrage est trop faible, de sorte que le couple moteur $\\Gamma_{em}$ reste inférieur au couple résistant $\\Gamma_r$ ?",
+        "answers": [
+            "La machine accélère très lentement jusqu'à sa vitesse nominale",
+            "La machine ne démarre pas et reste à l'arrêt",
+            "La machine tourne en sens inverse pour compenser",
+            "La machine subit une surtension interne"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Pour qu'un moteur démarre, il faut que la condition $\\Gamma_{em} > \\Gamma_r$ soit vérifiée. Si le couple moteur est insuffisant pour vaincre le couple résistant, l'accélération angulaire (donnée par le principe fondamental de la dynamique) reste nulle ou négative, empêchant le mouvement."
+    },
+    {
+        "uuid": "q050",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "chapter": "Machine à courant continu",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Quel composant électronique de puissance permet de faire varier la tension moyenne $U$ aux bornes d'un moteur à courant continu pour contrôler sa vitesse ou son démarrage ?",
+        "answers": [
+            "Un redresseur commandé de type pont de Graetz",
+            "Un hacheur série (convertisseur continu-continu)",
+            "Un transformateur à fer plein",
+            "Un rhéostat de puissance monté en parallèle"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le hacheur est le convertisseur statique privilégié en basse tension pour moduler une tension continue. En modifiant le rapport cyclique $\\alpha$ de la commande, on ajuste la tension moyenne $U = \\alpha U_{source}$, permettant ainsi un contrôle précis du couple et de la vitesse."
+    },
+    {
+        "uuid": "q051",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Dans le cadre de l'étude dynamique d'un moteur à courant continu, comment modélise-t-on couramment les couples de frottements fluides visqueux s'opposant à la rotation ?",
+        "answers": [
+            "Par un terme constant $C_f$",
+            "Par un terme linéaire $-\\lambda \\Omega$",
+            "Par un terme quadratique $+\\lambda \\Omega^2$",
+            "Par un terme proportionnel à l'accélération $J \\frac{d\\Omega}{dt}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "Le frottement fluide visqueux est classiquement modélisé par une force (ou un couple) opposée au mouvement et proportionnelle à la vitesse angulaire $\\Omega$. Le signe moins indique bien que le couple de frottement s'oppose à la rotation.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q052",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Soit $J$ le moment d'inertie de l'ensemble rotor, $\\Gamma_{em}$ le couple électromagnétique, $\\Gamma_r$ le couple résistant extérieur et $-\\lambda \\Omega$ le couple de frottements visqueux. Quelle est l'équation différentielle régissant le mouvement ?",
+        "answers": [
+            "$J \\frac{d\\Omega}{dt} = \\Gamma_{em} - \\Gamma_r - \\lambda \\Omega$",
+            "$J \\frac{d\\Omega}{dt} = \\Gamma_{em} + \\Gamma_r - \\lambda \\Omega$",
+            "$J \\frac{d\\Omega}{dt} = \\Gamma_{em} - \\lambda \\Omega$",
+            "$J \\frac{d\\Omega}{dt} = \\Gamma_{em} - \\Gamma_r + \\lambda \\Omega$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "explication": "D'après le théorème du moment cinétique projeté sur l'axe de rotation, la somme des couples moteurs et résistants est égale à $J \\frac{d\\Omega}{dt}$. Le couple moteur $\\Gamma_{em}$ est positif, tandis que le couple résistant $\\Gamma_r$ et le couple de frottement $\\lambda \\Omega$ s'opposent au mouvement (signes négatifs).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q053",
+        "image_path": null,
+        "theme": "structure",
+        "question": "Quel est l'avantage principal des machines à courant continu (MCC) dans les applications industrielles nécessitant un asservissement précis ?",
+        "answers": [
+            "Leur structure sans balais",
+            "La simplicité du réglage de la vitesse par la tension et du couple par le courant",
+            "Leur capacité à fonctionner directement sur le réseau alternatif 50Hz",
+            "Leur rendement énergétique supérieur aux machines synchrones"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "La MCC possède des relations de couplage très simples : la f.é.m $E$ est proportionnelle à la vitesse de rotation $\\Omega$, et le couple $\\Gamma$ est proportionnel à l'intensité $I$. Cela rend le contrôle linéaire et très intuitif.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q054",
+        "image_path": null,
+        "theme": "structure",
+        "question": "Quelle est la raison technique imposant un entretien régulier sur les machines à courant continu à collecteur mécanique ?",
+        "answers": [
+            "Le vieillissement des aimants permanents",
+            "L'usure par frottement des balais en graphite sur le collecteur tournant",
+            "La nécessité de remplacer régulièrement le bobinage d'inducteur",
+            "L'évaporation de l'huile de lubrification des paliers"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "Le collecteur à lames et les balais forment une liaison glissante indispensable à l'inversion du courant dans les bobines du rotor. Ce contact mécanique génère une usure physique et de la poussière conductrice, nécessitant maintenance et remplacement.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q055",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le modèle équivalent de l'induit d'une MCC, où $U$ est la tension aux bornes, $r$ la résistance interne et $I$ le courant, quelle relation lie ces grandeurs en fonctionnement moteur ?",
+        "answers": [
+            "$E = U + r I$",
+            "$E = U - r I$",
+            "$E = r I - U$",
+            "$U = E + r I^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "En convention récepteur pour un moteur, la loi des mailles s'écrit $U = E + rI$. Par conséquent, la f.é.m. de la machine est $E = U - rI$. L'erreur $U + rI$ correspondrait à un générateur, ce qui est physiquement incorrect ici.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q056",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "La f.é.m $E$ est définie par $E = K \\Phi \\Omega$. Quelle est l'unité de la constante de flux $\\Phi$ (ou constante de machine) dans le Système International ?",
+        "answers": [
+            "Le Tesla ($T$)",
+            "Le Weber ($Wb$)",
+            "Le Henry ($H$)",
+            "Le Weber par radian ($Wb/rad$)"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "Le flux magnétique $\\Phi$ à travers une surface se mesure en Weber ($Wb$). La constante $\\Phi$ représente la valeur du flux magnétique produit par l'inducteur, dont l'unité SI est le Weber.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q057",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Quelle est l'unité dimensionnelle du couple électromagnétique $\\Gamma_{em}$ dans le Système International ?",
+        "answers": [
+            "Le Watt ($W$)",
+            "Le Newton-mètre ($N.m$)",
+            "Le Joule ($J$)",
+            "Le Newton par mètre ($N/m$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "Un couple est une force multipliée par une distance de bras de levier, soit $[M L T^{-2}] \\cdot [L] = [M L^2 T^{-2}]$. L'unité est donc le Newton-mètre ($N.m$). Attention à ne pas confondre avec le Joule, qui possède la même dimension mais représente une énergie.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q058",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "En régime permanent, que vaut le couple de charge extérieur $C_{charge}$ lorsque la machine fonctionne « à vide » ?",
+        "answers": [
+            "Nul ($C_{charge} = 0$)",
+            "Égal au couple électromagnétique",
+            "Infiniment grand",
+            "Égal à la tension $U$"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "explication": "Le terme « à vide » signifie qu'aucun couple résistant extérieur n'est appliqué sur l'arbre de la machine. Seuls les frottements internes subsistent.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q059",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "À vide et en régime permanent, l'équation dynamique devient $0 = \\Gamma_{em} + \\Gamma_{frott}$. Que vaut alors le couple de frottements $\\Gamma_{frott}$ ?",
+        "answers": [
+            "$\\Gamma_{frott} = 0$",
+            "$\\Gamma_{frott} = -\\Gamma_{em} = -\\Phi_0 I_0$",
+            "$\\Gamma_{frott} = \\Gamma_{em} = \\Phi_0 I_0$",
+            "$\\Gamma_{frott} = -U I_0 / \\Omega_0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "Le régime permanent impose $\\frac{d\\Omega}{dt} = 0$. Ainsi, $\\Gamma_{em} + \\Gamma_{frott} = 0$, d'où $\\Gamma_{frott} = -\\Gamma_{em}$. Comme $\\Gamma_{em} = \\Phi_0 I_0$, on en déduit que $\\Gamma_{frott} = -\\Phi_0 I_0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q060",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Lors d'un essai à vide sous tension $U$, on mesure un courant d'induit $I_0$. Quelle est l'expression de la f.é.m $E_0$ correspondante ?",
+        "answers": [
+            "$E_0 = U - r I_0$",
+            "$E_0 = U / (r I_0)$",
+            "$E_0 = U + r I_0$",
+            "$E_0 = r I_0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "explication": "La loi des mailles de l'induit reste valable en tout point de fonctionnement : $U = E + rI$. En remplaçant $I$ par $I_0$ et $E$ par $E_0$, on obtient directement $E_0 = U - rI_0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q061",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "Dans le cadre de l'étude d'une machine à courant continu (MCC) fonctionnant en moteur, la force contre-électromotrice est donnée par $E = \\Phi_0 \\Omega$. Comment s'exprime la vitesse de rotation à vide $\\Omega_0$ lorsque le moteur est alimenté sous une tension $E_0$ et sans couple de charge ?",
+        "answers": [
+            "$\\Omega_0 = E_0 / \\Phi_0$",
+            "$\\Omega_0 = \\Phi_0 / E_0$",
+            "$\\Omega_0 = E_0 \\cdot \\Phi_0$",
+            "$\\Omega_0 = E_0^2 / \\Phi_0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "explication": "À vide, le courant dans l'induit est négligeable (si on néglige les frottements), donc $U \\approx E$. Comme $E = \\Phi_0 \\Omega$, on en déduit immédiatement $\\Omega = E/\\Phi_0$. L'erreur classique est d'inverser le rapport par confusion avec une impédance.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q062",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Lors du bilan de puissance d'une machine à courant continu alimentée par une tension $U$ et parcourue par une intensité $I$, quelle est la formule de la puissance électrique totale reçue par le moteur ?",
+        "answers": [
+            "$P_{mot} = U / I$",
+            "$P_{mot} = E I$",
+            "$P_{mot} = U I$",
+            "$P_{mot} = r I^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "explication": "La puissance électrique reçue par un dipôle électrique est toujours le produit de la tension à ses bornes par le courant qui le traverse, soit $P = UI$. $E I$ est la puissance électromagnétique et $r I^2$ la puissance dissipée par effet Joule.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q063",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le modèle équivalent d'une MCC, l'induit présente une résistance interne $r$. Quelle est l'expression de la puissance dissipée par effet Joule $P_J$ dans cette résistance ?",
+        "answers": [
+            "$P_J = U I$",
+            "$P_J = r I^2$",
+            "$P_J = E I$",
+            "$P_J = r I$"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "La puissance dissipée par effet Joule dans un conducteur ohmique de résistance $r$ parcouru par un courant $I$ est donnée par la loi de Joule : $P_J = r I^2$. L'expression $r I$ est erronée dimensionnellement.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q064",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Dans une MCC, la puissance électrique reçue se répartit en pertes Joule et en puissance électromagnétique $P_{em}$ transformée en puissance mécanique. Comment s'exprime $P_{em}$ ?",
+        "answers": [
+            "$P_{em} = E I$",
+            "$P_{em} = U I - r I$",
+            "$P_{em} = \\Gamma_{charge} \\Omega$",
+            "$P_{em} = U I + r I^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "explication": "Le bilan de puissance s'écrit $UI = rI^2 + EI$. Le terme $EI$ représente la puissance convertie, appelée puissance électromagnétique. $P = \\Gamma \\Omega$ est la puissance mécanique de sortie (si l'on néglige les frottements).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q065",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "En régime permanent (vitesse constante), quelle est la relation de conservation de la puissance au sein du moteur (avec $P_{charge}$ la puissance utile et $P_{frott}$ les pertes mécaniques) ?",
+        "answers": [
+            "$P_{em} = P_{charge} - P_{frott}$",
+            "$P_{em} = P_{charge} + P_{frott}$",
+            "$P_{em} = P_{charge} \\cdot P_{frott}$",
+            "$P_{em} = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "Le principe de conservation de l'énergie en régime permanent impose que la puissance entrante convertie ($P_{em}$) soit égale à la somme des puissances sortantes utiles ($P_{charge}$) et des puissances dissipées par les frottements ($P_{frott}$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q066",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la caractéristique idéale d'une alimentation électrique stabilisée en tension utilisée pour commander un moteur ?",
+        "answers": [
+            "Elle délivre un courant constant quel que soit le couple",
+            "Elle délivre une tension $U$ constante quelle que soit l'intensité appelée par le moteur",
+            "Sa tension décroît linéairement avec l'intensité",
+            "Elle délivre une puissance constante"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "Une alimentation stabilisée en tension est un générateur réel qui se comporte comme une source de tension idéale, maintenant une tension $U$ constante indépendamment de la charge imposée au moteur (tant que les limites de courant ne sont pas atteintes).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q067",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans l'étude dynamique d'une MCC, l'équation électrique est $U = E + r i + L \\frac{di}{dt}$. En régime permanent, si l'intensité $i$ est constante, que devient le terme $L \\frac{di}{dt}$ ?",
+        "answers": [
+            "Il est égal à $U$",
+            "Il est égal à $r i$",
+            "Il est nul",
+            "Il est égal à $E$"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "explication": "En régime permanent, les grandeurs électriques sont constantes dans le temps. La dérivée d'une constante étant nulle, le terme d'auto-induction $L \\frac{di}{dt}$ s'annule.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q068",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "En régime permanent, si l'on néglige les pertes mécaniques (frottements), quelle relation lie le couple électromagnétique $\\Gamma_{em}$ au couple de charge $\\Gamma_c$ appliqué sur l'arbre ?",
+        "answers": [
+            "$\\Gamma_{em} = 0$",
+            "$\\Gamma_{em} = \\Gamma_c$",
+            "$\\Gamma_{em} = -\\Gamma_c$",
+            "$\\Gamma_{em} = \\Gamma_c^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "explication": "Selon le principe fondamental de la dynamique en rotation, $J \\frac{d\\Omega}{dt} = \\sum \\Gamma$. En régime permanent, $\\frac{d\\Omega}{dt} = 0$, donc $\\Gamma_{em} - \\Gamma_c = 0$, soit $\\Gamma_{em} = \\Gamma_c$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q069",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Sachant que le couple électromagnétique est relié au courant par $\\Gamma_{em} = \\Phi_0 i$ et qu'en régime permanent $\\Gamma_{em} = \\Gamma_c$, comment exprimer l'intensité $i$ en fonction du couple de charge $\\Gamma_c$ ?",
+        "answers": [
+            "$i = \\Phi_0 / \\Gamma_c$",
+            "$i = \\Gamma_c \\cdot \\Phi_0$",
+            "$i = \\Gamma_c / \\Phi_0$",
+            "$i = \\Phi_0 - \\Gamma_c$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "explication": "On a l'équation $\\Gamma_c = \\Phi_0 i$. En isolant $i$, on obtient $i = \\Gamma_c / \\Phi_0$. C'est une relation fondamentale montrant que le courant est directement proportionnel au couple demandé.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q070",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Quelle est l'expression du rendement $\\rho$ de la conversion de puissance pour une machine à courant continu (puissance utile mécanique sur puissance électrique absorbée) ?",
+        "answers": [
+            "$\\rho = \\frac{\\Gamma_c \\Omega}{U I}$",
+            "$\\rho = \\frac{U I}{\\Gamma_c \\Omega}$",
+            "$\\rho = \\frac{E I}{U I}$",
+            "$\\rho = \\frac{\\Gamma_c}{\\Omega}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "explication": "Le rendement est par définition le rapport de la puissance utile ($P_{util} = \\Gamma_c \\Omega$) sur la puissance absorbée ($P_{abs} = UI$). L'option $\\frac{EI}{UI}$ représente le rendement interne de conversion (ou rendement électromécanique), pas le rendement global.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q071",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pourquoi le rendement calculé de 0,94 dans l'Exercice 2 est-il qualifié d'excessif ? [cite: 222]",
+        "answers": [
+            "Car il ne tient pas compte de l'effet Joule",
+            "Car il ne tient pas compte des pertes mécaniques",
+            "Car le moteur n'a pas atteint son régime permanent"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q072",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Comment savoir si une machine fonctionne dans ses conditions nominales ? [cite: 223]",
+        "answers": [
+            "Ses valeurs réelles (U, I) correspondent à ses valeurs nominales ($U_n, I_n$)",
+            "Son rendement dépasse $100\\%$",
+            "Sa vitesse est nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q073",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Dans l'Exercice 3, comment est modélisé le moment du couple de frottement fluide proportionnel à la vitesse ? [cite: 226]",
+        "answers": [
+            "$\\Gamma_p = f \\omega^2$",
+            "$\\Gamma_p = f \\omega$",
+            "$\\Gamma_p = constante$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q074",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "En phase de récupération (freinage), que devient le couple électromagnétique de la machine ? [cite: 231]",
+        "answers": [
+            "Il devient moteur",
+            "Il s'annule",
+            "Il devient résistant"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q075",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "L'ensemble rotor-charge possède un moment d'inertie J. Quelle est son unité SI ? [cite: 233]",
+        "answers": [
+            "$kg.m^2$",
+            "$kg/m^2$",
+            "$N.m$"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q076",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Si l'on freine à courant constant $I_a$ et couple résistant constant $\\Gamma_r$, comment évolue la vitesse $\\omega(t)$ ? [cite: 234, 235]",
+        "answers": [
+            "Elle décroît exponentiellement",
+            "Elle décroît linéairement en fonction du temps",
+            "Elle oscille de façon amortie"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q077",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Quelle est l'expression de l'énergie cinétique $E_c$ de l'ensemble rotor-charge ? [cite: 240]",
+        "answers": [
+            "$E_c = J \\omega$",
+            "$E_c = \\frac{1}{2} J \\omega^2$",
+            "$E_c = J \\omega^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q078",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Lors du couplage de deux machines $M_1$ et $M_2$ (Ex 4), l'arbre mécanique tourne à une vitesse $\\omega$. À quelle condition est-elle positive ? [cite: 244]",
+        "answers": [
+            "Lorsque $M_1$ fonctionne en récepteur pur",
+            "Lorsque $M_1$ fonctionne en moteur",
+            "Lorsque l'interrupteur $K_2$ est ouvert"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q079",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est l'expression de la force électromotrice pour les machines couplées selon la convention de l'exercice 4 ? [cite: 243]",
+        "answers": [
+            "$e'_i = \\Phi_0 \\omega$",
+            "$e'_i = -\\Phi_0 \\omega$",
+            "$e'_i = R i$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q080",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le couplage (Ex 4), si $M_1$ est un moteur, que doit être le signe de $e'_1$ sachant que $\\omega > 0$ ? [cite: 258]",
+        "answers": [
+            "$e'_1 < 0$",
+            "$e'_1 > 0$",
+            "$e'_1 = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q081",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Du point de vue électrique, $M_1$ fonctionnant en moteur est un dipôle de quel type ? [cite: 259]",
+        "answers": [
+            "Générateur",
+            "Récepteur",
+            "Passif pur"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q082",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Du point de vue mécanique, l'arbre d'un moteur $M_1$ agit comme un composant de quel type ? [cite: 260]",
+        "answers": [
+            "Récepteur",
+            "Générateur",
+            "Oscillateur"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q083",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Si $M_1$ fonctionne en moteur, quel est le signe du produit $\\Gamma_1 \\omega$ ? [cite: 261]",
+        "answers": [
+            "Négatif",
+            "Nul",
+            "Positif"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q084",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Pour l'arbre mobile avec deux machines couplées $M_1$ et $M_2$, comment s'écrit le théorème du moment cinétique en régime permanent ? [cite: 265]",
+        "answers": [
+            "$0 = \\Gamma_1 + \\Gamma_2$",
+            "$J \\frac{d\\omega}{dt} = \\Gamma_1 - \\Gamma_2$",
+            "$0 = \\Gamma_1 - \\Gamma_2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q085",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelles tensions aux bornes des MCC note-t-on $u_1$ et $u_2$ dans le montage de couplage ? [cite: 266]",
+        "answers": [
+            "Des tensions d'alimentation internes",
+            "Des tensions orientées vers le bas",
+            "Des tensions orientées vers le haut"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q086",
+        "image_path": null,
+        "theme": "structure",
+        "question": "Dans quel composant le champ magnétique statorique est-il créé ? [cite: 14]",
+        "answers": [
+            "L'entrefer",
+            "L'inducteur",
+            "L'induit"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q087",
+        "image_path": null,
+        "theme": "structure",
+        "question": "Laquelle de ces propositions décrit la forme du champ dans l'entrefer ? [cite: 18]",
+        "answers": [
+            "Alternatif et homogène",
+            "Permanent, radial et de direction constante",
+            "Variable et sinusoïdal"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q088",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "L'axe polaire rotorique doit produire un champ magnétique par rapport au champ statorique de quelle manière ? [cite: 20]",
+        "answers": [
+            "D'axe mobile",
+            "D'axe fixe dirigé perpendiculairement",
+            "D'axe colinéaire"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q089",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pourquoi la spire rotorique ne peut-elle pas être directement branchée à l'alimentation sans collecteur ? [cite: 34]",
+        "answers": [
+            "Parce qu'elle ne tournerait pas",
+            "Parce que le sens de circulation du courant s'inverserait périodiquement",
+            "Parce que la tension d'alimentation est trop faible"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q090",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "La f.é.m induite $E_{cem}$ est homogène à un produit de deux termes. Lesquels ? [cite: 68, 69]",
+        "answers": [
+            "Un flux multiplié par une vitesse angulaire",
+            "Une inductance par une dérivée de courant",
+            "Une résistance par un courant au carré"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q091",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Lorsqu'on connecte un dipôle de charge au rotor (en mode générateur), que devient la machine ? [cite: 103]",
+        "answers": [
+            "Un récepteur mécanique",
+            "Une source de chaleur pure",
+            "Un court-circuit"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q092",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Qu'observe-t-on concernant la tension à vide quand l'inducteur atteint la saturation ? [cite: 109]",
+        "answers": [
+            "La tension s'annule immédiatement",
+            "Il n'y a plus proportionnalité entre la tension à vide et l'intensité $I_e$",
+            "La tension croît de façon exponentielle"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q093",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quel effet est responsable des pertes associées au matériau ferromagnétique à chaque cycle de variation ? [cite: 111]",
+        "answers": [
+            "La saturation magnétique",
+            "L'hystérésis",
+            "L'effet de peau"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q094",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "En régime permanent, pourquoi l'inductance $L$ n'intervient-elle plus dans la loi des mailles du moteur ? [cite: 119]",
+        "answers": [
+            "Car l'inductance d'une MCC est toujours nulle",
+            "Car le courant est constant donc $L \\frac{di}{dt} = 0$",
+            "Car la vitesse de rotation annule cet effet"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q095",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "Au démarrage ($\\Omega=0$), quelle est l'expression simplifiée de l'intensité du courant ? [cite: 121, 128]",
+        "answers": [
+            "$I_m = 0$",
+            "$I_m = U / R_R$",
+            "$I_m = U \\cdot R_R$"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q096",
+        "image_path": null,
+        "theme": "dynamique",
+        "question": "Quelle est la condition minimale pour qu'un moteur démarre sous un couple résistant $\\Gamma_r$ ? [cite: 129]",
+        "answers": [
+            "La tension doit être nulle",
+            "La tension doit être suffisamment élevée pour vaincre $\\Gamma_r$",
+            "Le hacheur doit être débranché"
+        ],
+        "difficulty": 1,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q097",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel dispositif d'électronique de puissance permet de faire varier U au démarrage pour l'ajuster ? [cite: 131]",
+        "answers": [
+            "Un redresseur commandé",
+            "Un pont de diodes pur",
+            "Un hacheur"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q098",
+        "image_path": null,
+        "theme": "mécanique",
+        "question": "Le couple utile $\\Gamma_u$ représente : [cite: 147, 164]",
+        "answers": [
+            "Le couple électromagnétique plus les frottements",
+            "Le couple fourni par la charge",
+            "Le couple électromagnétique déduit des pertes par frottement"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q099",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "À l'instant initial $t=0$, lors de la fermeture d'un interrupteur $K_1$ alimentant une MCC à l'arrêt, que vaut la vitesse $\\omega$ juste après fermeture ? [cite: 271]",
+        "answers": [
+            "$\\omega = \\Omega_{nominale}$",
+            "$\\omega = 0$ par continuité de la vitesse (inertie mécanique)",
+            "$\\omega$ est infinie"
+        ],
+        "difficulty": 3,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "q100",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un essai à vide idéal, la puissance électrique absorbée $P_{mot}$ sert uniquement à : [cite: 180, 181, 189]",
+        "answers": [
+            "Compenser les pertes joules et les frottements",
+            "Entraîner la charge utile",
+            "Recharger l'alimentation"
+        ],
+        "difficulty": 2,
+        "chapter": "Machine à courant continu",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    }
+]

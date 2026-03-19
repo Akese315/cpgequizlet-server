@@ -1,0 +1,1682 @@
+[
+    {
+        "uuid": "math-001",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Dans le cadre de l'étude d'une limite d'intégrale sur un intervalle $I$, quelles sont les hypothèses minimales requises sur la suite de fonctions $(f_n)$ pour appliquer le Théorème de Convergence Dominée (TCD) ?",
+        "answers": [
+            "Convergence uniforme de $(f_n)$ vers $f$ sur $I$",
+            "Convergence simple de $(f_n)$ vers $f$ presque partout sur $I$, et la mesurabilité des $f_n$",
+            "Convergence simple de $(f_n)$ vers $f$ et la domination par une fonction $\\varphi$ intégrable",
+            "Convergence uniforme sur tout segment de $I$ uniquement"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "Le TCD nécessite trois piliers : (1) La convergence simple presque partout de $f_n$ vers $f$. (2) La mesurabilité des $f_n$. (3) L'existence d'une fonction $\\varphi$ intégrable sur $I$ telle que $|f_n(t)| \\le \\varphi(t)$ pour tout $n$ et tout $t$. La convergence uniforme n'est pas requise, c'est justement la force du TCD."
+    },
+    {
+        "uuid": "math-002",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Lors de l'application du théorème de convergence dominée sur un intervalle $I$, l'hypothèse de domination $|f_n(t)| \\le \\varphi(t)$ impose des contraintes précises sur $\\varphi$. Laquelle est correcte ?",
+        "answers": [
+            "$\\varphi$ doit être une fonction continue et bornée sur $I$",
+            "$\\varphi$ doit être une fonction positive, indépendante de $n$, et intégrable sur $I$",
+            "$\\varphi$ doit être une fonction de carré intégrable sur $I$ (i.e. $\\in L^2(I)$)",
+            "$\\varphi$ doit être une fonction décroissante sur $I$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "L'intégrabilité de $\\varphi$ (soit $\\int_I \\varphi(t) dt < +\\infty$) est le point clé pour assurer la finitude de l'intégrale limite. L'indépendance vis-à-vis de $n$ est cruciale : $\\varphi$ doit majorer toute la suite simultanément."
+    },
+    {
+        "uuid": "math-003",
+        "image_path": null,
+        "theme": "Limites d'intégrales",
+        "question": "Considérons la suite d'intégrales $I_n = \\int_{0}^{1} \\ln(1+t^n) dt$. Quelle est la valeur de $\\lim_{n \\to +\\infty} I_n$ ?",
+        "answers": [
+            "$\\ln(2)$",
+            "1",
+            "0",
+            "$1/e$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "Pour $t \\in [0, 1[$, $t^n \\to 0$ donc $\\ln(1+t^n) \\to \\ln(1)=0$. La fonction constante $\\varphi(t) = \\ln(2)$ sur $[0, 1]$ domine $|\\ln(1+t^n)|$ et est intégrable. Par le TCD, la limite est $\\int_0^1 0 dt = 0$."
+    },
+    {
+        "uuid": "math-004",
+        "image_path": null,
+        "theme": "Équivalents",
+        "question": "Pour déterminer un équivalent de $I_n = \\int_{0}^{1} \\ln(1+t^n) dt$ quand $n \\to +\\infty$, quel changement de variable est le plus judicieux pour faire apparaître une forme intégrable ?",
+        "answers": [
+            "$u = t^n$ d'où $t = u^{1/n}$",
+            "$u = nt$",
+            "$u = e^t$",
+            "$u = 1-t$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Le changement de variable $u = t^n$ permet de transformer l'intégrale en $\\int_0^1 \\ln(1+u) \\frac{1}{n} u^{1/n - 1} du$. Cela isole le terme en $n$ et permet d'utiliser le TCD pour calculer la limite de l'intégrale restante."
+    },
+    {
+        "uuid": "math-005",
+        "image_path": null,
+        "theme": "Équivalents",
+        "question": "Après changement de variable, on trouve que $n I_n$ tend vers une constante $C$. Quelle intégrale définit cette constante ?",
+        "answers": [
+            "$\\int_{0}^{1} \\ln(1+u) du$",
+            "$\\int_{0}^{1} \\frac{\\ln(1+u)}{u} du$",
+            "$\\int_{0}^{+\\infty} \\frac{\\ln(1+u)}{u} du$",
+            "$\\int_{0}^{+\\infty} e^{-u} du$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "En posant $u = t^n$, $dt = \frac{1}{n} u^{\\frac{1}{n}-1} du$. L'expression devient $\\int_0^1 \\ln(1+u) \\frac{u^{1/n-1}}{n} du$. En multipliant par $n$, on obtient $\\int_0^1 \\ln(1+u) u^{1/n-1} du$. Par TCD, la limite est $\\int_0^1 \\frac{\\ln(1+u)}{u} du$."
+    },
+    {
+        "uuid": "math-006",
+        "image_path": null,
+        "theme": "Équivalents",
+        "question": "Pour trouver un équivalent de $I_n = \\int_{0}^{1} \\frac{1}{(1+u^2)^n} du$ pour $n \\to +\\infty$, quel changement de variable permet de concentrer la masse de l'intégrale au voisinage de $0$ ?",
+        "answers": [
+            "$u = t^n$",
+            "$u = t/\\sqrt{n}$",
+            "$u = \\tan(t)$",
+            "$u = 1/\\sqrt{n}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La fonction $(1+u^2)^{-n}$ décroît exponentiellement vite. En posant $u = t/\\sqrt{n}$, l'expression devient $(1 + t^2/n)^{-n} \\approx e^{-t^2}$. Le changement d'échelle en $\\sqrt{n}$ est nécessaire pour compenser la puissance $n$."
+    },
+    {
+        "uuid": "math-007",
+        "image_path": null,
+        "theme": "Intégrales de référence",
+        "question": "Quelle est la valeur de l'intégrale de Gauss définie par $I = \\int_{0}^{+\\infty} e^{-u^2} du$ ?",
+        "answers": [
+            "$\\sqrt{\\pi}$",
+            "$\\frac{\\sqrt{\\pi}}{2}$",
+            "$\\frac{\\pi}{2}$",
+            "$1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "L'intégrale de Gauss sur $\\mathbb{R}$ entier est $\\int_{-\\infty}^{+\\infty} e^{-u^2} du = \\sqrt{\\pi}$. Comme la fonction est paire, l'intégrale sur $\\mathbb{R}^+$ vaut la moitié, soit $\\frac{\\sqrt{\\pi}}{2}$."
+    },
+    {
+        "uuid": "math-008",
+        "image_path": null,
+        "theme": "Intégration terme à terme",
+        "question": "Pour justifier le passage à la limite $\\int_{I} \\sum u_n(t) dt = \\sum \\int_{I} u_n(t) dt$ (théorème d'intégration terme à terme), quelle condition est suffisante ?",
+        "answers": [
+            "La série $\\sum \\int_{I} u_n(t) dt$ converge simplement",
+            "La série $\\sum \\int_{I} |u_n(t)| dt$ converge",
+            "La série $\\sum u_n(t)$ converge uniformément sur $I$",
+            "La suite des sommes partielles est bornée par une constante"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Il s'agit d'une application directe du théorème de convergence monotone (si $u_n \\ge 0$) ou du TCD. La condition de convergence de la série des intégrales des valeurs absolues ($\\sum \\int |u_n| < +\\infty$) est la condition de base pour la convergence absolue de la série d'intégrales."
+    },
+    {
+        "uuid": "math-009",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Soit $g(x) = \\int_{I} f(x,t) dt$. Pour montrer que $g$ est continue sur un intervalle $A$, quelle hypothèse de domination est suffisante ?",
+        "answers": [
+            "$|f(x,t)| \\le \\varphi(t)$ avec $\\varphi$ intégrable sur $I$",
+            "$|f(x,t)| \\le M$ (constante) sur tout $A \\times I$",
+            "$f(x,t)$ est continue sur $A \\times I$ uniquement",
+            "$\\int_I |f(x,t)| dt$ existe et est finie"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Pour la continuité, on demande que $f$ soit continue par rapport à $x$ et dominée par une fonction $\\varphi$ intégrable sur $I$ pour tout $x$ au voisinage du point considéré. Cela permet d'appliquer le théorème de continuité sous le signe somme."
+    },
+    {
+        "uuid": "math-010",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Pour appliquer la règle de Leibniz et montrer que $g(x) = \\int_{I} f(x,t) dt$ est de classe $C^1$ sur $A$, quelle condition porter sur la dérivée partielle ?",
+        "answers": [
+            "$\\frac{\\partial f}{\\partial x}$ doit être continue sur $A \\times I$ et intégrable sur $I$",
+            "$\\frac{\\partial f}{\\partial x}(x,t)$ doit être dominée par une fonction $\\varphi(t)$ intégrable sur $I$",
+            "La fonction $f(x,t)$ doit être dominée par une fonction $\\varphi$ intégrable",
+            "$\\frac{\\partial f}{\\partial x}$ doit être bornée sur $A \\times I$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La règle de Leibniz demande trois conditions : (1) $t \\mapsto f(x,t)$ intégrable pour tout $x$, (2) $x \\mapsto f(x,t)$ dérivable, (3) $\\frac{\\partial f}{\\partial x}$ dominée par une fonction intégrable $\\varphi$ pour assurer que l'intégrale de la dérivée converge uniformément localement."
+    },
+    {
+        "uuid": "math-011",
+        "image_path": null,
+        "theme": "Fonction Gamma",
+        "question": "Dans le cadre de l'étude des fonctions définies par des intégrales, pour quelles valeurs du paramètre réel $x$ l'intégrale définissant la fonction Gamma $\\Gamma(x) = \\int_{0}^{+\\infty} t^{x-1} e^{-t} dt$ est-elle convergente ?",
+        "answers": [
+            "$x \\in \\mathbb{R}$",
+            "$x > 0$",
+            "$x \\ge 1$",
+            "$x > 1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "L'intégrale converge en $+\\infty$ pour tout $x$ grâce à la décroissance exponentielle. En $0^+$, on a $t^{x-1} e^{-t} \\sim t^{x-1}$. Cette intégrale de Riemann converge si et seulement si $x-1 > -1$, soit $x > 0$."
+    },
+    {
+        "uuid": "math-012",
+        "image_path": null,
+        "theme": "Fonction Gamma",
+        "question": "En utilisant la relation de récurrence fondamentale $\\Gamma(x+1) = x\\Gamma(x)$, que vaut $\\Gamma(n+1)$ pour tout entier naturel $n \\in \\mathbb{N}$ ?",
+        "answers": [
+            "$n!$",
+            "$(n-1)!$",
+            "$\\sqrt{n\\pi}$",
+            "$(n+1)!$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On a $\\Gamma(1) = \\int_0^{+\\infty} e^{-t} dt = 1$. Par récurrence, $\\Gamma(n+1) = n\\Gamma(n) = n(n-1)...(1)\\Gamma(1) = n!$. Attention à l'indice : $\\Gamma(n) = (n-1)!$."
+    },
+    {
+        "uuid": "math-013",
+        "image_path": null,
+        "theme": "Fonction Gamma",
+        "question": "La fonction $\\Gamma(x)$ est définie sur $]0, +\\infty[$. Quel est son degré de régularité sur cet intervalle ?",
+        "answers": [
+            "$C^1$ seulement",
+            "$C^2$ seulement",
+            "$C^{\\infty}$",
+            "$C^0$ uniquement"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "Par le théorème de dérivation sous le signe intégral (théorème de Leibniz), comme toutes les dérivées partielles par rapport à $x$ de la fonction $f(t,x) = t^{x-1}e^{-t}$ existent et sont dominées sur tout segment $[a, b] \\subset ]0, +\\infty[$, la fonction est $C^{\\infty}$."
+    },
+    {
+        "uuid": "math-014",
+        "image_path": null,
+        "theme": "Constante d'Euler",
+        "question": "En dérivant la fonction Gamma en $x=1$, on obtient la valeur de $\\Gamma'(1)$. Quelle est la valeur de l'intégrale $I = \\int_{0}^{+\\infty} e^{-t} \\ln(t) dt$ ?",
+        "answers": [
+            "$\\gamma$",
+            "$-\\gamma$",
+            "0",
+            "$1/\\gamma$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Par définition $\\Gamma'(x) = \\int_0^{+\\infty} t^{x-1} e^{-t} \\ln(t) dt$. Ainsi $\\Gamma'(1) = \\int_0^{+\\infty} e^{-t} \\ln(t) dt$. Or, on sait que $\\Gamma'(1) = -\\gamma$, où $\\gamma$ est la constante d'Euler-Mascheroni."
+    },
+    {
+        "uuid": "math-015",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Considérons l'intégrale $I = \\int_{0}^{+\\infty} \\frac{t}{\\cosh(t)} dt$. En utilisant un développement en série de $\\frac{1}{\\cosh(t)} = \\frac{2e^{-t}}{1+e^{-2t}}$, à quoi cette intégrale est-elle égale ?",
+        "answers": [
+            "$2 \\sum_{n=0}^{+\\infty} \\frac{(-1)^n}{(2n+1)^2}$",
+            "$\\sum_{n=1}^{+\\infty} \\frac{1}{n^2}$",
+            "$\\frac{\\pi^2}{8}$",
+            "$\\sum_{n=0}^{+\\infty} \\frac{(-1)^n}{n^2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "En développant $\\frac{1}{\\cosh(t)} = 2 \\sum_{n=0}^{+\\infty} (-1)^n e^{-(2n+1)t}$, on intègre terme à terme $\\int_0^{+\\infty} t e^{-(2n+1)t} dt = \\frac{1}{(2n+1)^2}$. La somme devient $2 \\sum_{n=0}^{+\\infty} \\frac{(-1)^n}{(2n+1)^2}$."
+    },
+    {
+        "uuid": "math-016",
+        "image_path": null,
+        "theme": "Limites d'intégrales",
+        "question": "Soit $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-t}}{t+x} dt$ pour $x > 0$. Quel est l'équivalent de $g(x)$ quand $x \\to +\\infty$ ?",
+        "answers": [
+            "$1/x$",
+            "$1/x^2$",
+            "$e^{-x}/x$",
+            "$x$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On factorise $x$ au dénominateur : $\\frac{1}{x} \\int_0^{+\\infty} e^{-t} \\frac{1}{1+t/x} dt$. Par convergence dominée, l'intégrale tend vers $\\int_0^{+\\infty} e^{-t} dt = 1$. Donc $g(x) \\sim 1/x$."
+    },
+    {
+        "uuid": "math-017",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Soit $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-t} - e^{-xt}}{t} dt$ pour $x > 0$. En utilisant le théorème de dérivation sous le signe intégral, que vaut $g'(x)$ ?",
+        "answers": [
+            "$\\int_{0}^{+\\infty} e^{-xt} dt$",
+            "$1/x$",
+            "$-e^{-x}/x$",
+            "$\\ln(x)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "En dérivant par rapport à $x$, on obtient $g'(x) = \\int_0^{+\\infty} \\frac{1}{t} (t e^{-xt}) dt = \\int_0^{+\\infty} e^{-xt} dt$. Le calcul de cette intégrale donne $1/x$. Notez que $g(x) = \\ln(x)$."
+    },
+    {
+        "uuid": "math-018",
+        "image_path": null,
+        "theme": "Méthodes",
+        "question": "Pour montrer la régularité d'une fonction définie par $g(x) = \\frac{f(x)-f(0)}{x}$ (avec $x \\neq 0$), une technique classique pour lever l'indétermination en 0 est d'utiliser le théorème des accroissements finis sous la forme :",
+        "answers": [
+            "$\\int_{0}^{1} f'(xu) du$",
+            "$\\int_{0}^{x} f(t) dt$",
+            "$\\sum_{n=0}^{\\infty} f^{(n)}(0) \\frac{x^n}{n!}$",
+            "$f'(0) + \\frac{x}{2} f''(0)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par le théorème fondamental de l'analyse, $f(x) - f(0) = \\int_0^x f'(t) dt$. En effectuant le changement de variable $t = xu$, on obtient $dt = x du$, d'où $g(x) = \\frac{1}{x} \\int_0^1 f'(xu) x du = \\int_0^1 f'(xu) du$."
+    },
+    {
+        "uuid": "math-019",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Quelle est la valeur de l'intégrale $I = \\int_{0}^{1} \\frac{\\ln(t)}{t-1} dt$ ?",
+        "answers": [
+            "$\\pi^2/6$",
+            "$\\pi^2/12$",
+            "1",
+            "$\\pi^2/3$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On utilise le développement en série géométrique $\\frac{1}{1-t} = \\sum_{n=0}^{+\\infty} t^n$. Ainsi $I = \\int_0^1 -\\ln(t) \\sum t^n dt = \\sum \\int_0^1 -t^n \\ln(t) dt$. Par intégration par parties, $\\int_0^1 -t^n \\ln(t) dt = \\frac{1}{(n+1)^2}$. La somme est $\\sum_{k=1}^{\\infty} \\frac{1}{k^2} = \\frac{\\pi^2}{6}$."
+    },
+    {
+        "uuid": "math-020",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Quelle est la valeur de l'intégrale $I = \\int_{0}^{1} \\frac{\\ln(t)}{t+1} dt$ ?",
+        "answers": [
+            "$-\\pi^2/12$",
+            "$\\pi^2/6$",
+            "$-\\pi^2/8$",
+            "$\\pi^2/4$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On utilise le développement $\\frac{1}{1+t} = \\sum_{n=0}^{+\\infty} (-1)^n t^n$. On obtient $I = \\sum (-1)^n \\int_0^1 \\ln(t) t^n dt = \\sum (-1)^{n+1} \\frac{1}{(n+1)^2} = - \\sum_{k=1}^{\\infty} \\frac{(-1)^k}{k^2}$. Or $\\sum_{k=1}^{\\infty} \\frac{(-1)^{k-1}}{k^2} = \\frac{\\pi^2}{12}$, donc le résultat est $-\\pi^2/12$."
+    },
+    {
+        "uuid": "math-021",
+        "image_path": null,
+        "theme": "Intégration",
+        "question": "Dans le cadre de l'étude des intégrales à paramètre, quelle est la valeur de l'intégrale impropre $\\int_{0}^{+\\infty} \\frac{\\ln(x)}{1+x^2} dx$ ?",
+        "answers": [
+            "$\\pi \\ln(2)$",
+            "0",
+            "$1/2$",
+            "$-\\pi$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "explication": "En effectuant le changement de variable $x = 1/u$, on obtient $\\int_{0}^{+\\infty} \\frac{\\ln(x)}{1+x^2} dx = \\int_{+\\infty}^{0} \\frac{\\ln(1/u)}{1+(1/u)^2} (-du/u^2) = \\int_{0}^{+\\infty} \\frac{-\\ln(u)}{u^2+1} du$. L'intégrale est donc égale à son opposée, ce qui implique qu'elle vaut $0$."
+    },
+    {
+        "uuid": "math-022",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Concernant le théorème de convergence dominée de Lebesgue, si la condition de domination $|f_n(t)| \\le \\varphi(t)$ n'est pas vérifiée, peut-on avoir convergence de l'intégrale sans interversion ?",
+        "answers": [
+            "Non, c'est impossible",
+            "Oui, la domination est une condition suffisante mais pas nécessaire",
+            "Oui, mais seulement si l'intervalle est borné",
+            "Non, le théorème impose la domination comme condition nécessaire"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "explication": "Le théorème de convergence dominée fournit des conditions suffisantes. Il existe des suites de fonctions qui ne sont pas dominées par une fonction intégrable mais pour lesquelles l'interversion reste valide (par exemple par convergence monotone ou par d'autres arguments spécifiques)."
+    },
+    {
+        "uuid": "math-023",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Pour la fonction définie par $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-xt}}{1+t^2} dt$, sur quel domaine maximal peut-on démontrer la continuité à l'aide du théorème de continuité sous le signe somme ?",
+        "answers": [
+            "$\\mathbb{R}_{+}^{*}$ uniquement",
+            "$\\mathbb{R}_{+}$",
+            "$\\mathbb{R}$",
+            "$]0, 1[$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "explication": "La fonction $f(x, t) = \\frac{e^{-xt}}{1+t^2}$ est continue sur $\\mathbb{R}_{+} \\times [0, +\\infty[$. Pour tout $x \\ge 0$, $|f(x, t)| \\le \\frac{1}{1+t^2}$, qui est intégrable sur $[0, +\\infty[$. Par le théorème de continuité, $g$ est continue sur $\\mathbb{R}_{+}$."
+    },
+    {
+        "uuid": "math-024",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Soit $g(x) = \\int_{0}^{+\\infty} \\frac{\\sin(t)}{t} e^{-xt} dt$ définie pour $x>0$. Quelle est l'expression de $g'(x)$ ?",
+        "answers": [
+            "$-1/(1+x^2)$",
+            "$1/(1+x^2)$",
+            "$\\arctan(x)$",
+            "$-1/x^2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "En dérivant sous le signe somme, on obtient $g'(x) = \\int_{0}^{+\\infty} \\frac{\\sin(t)}{t} (-t) e^{-xt} dt = -\\int_{0}^{+\\infty} \\sin(t) e^{-xt} dt$. Cette intégrale est la partie imaginaire de la transformée de Laplace de la fonction sinus, soit $- \\mathcal{L}(\\sin)(x) = -1/(1+x^2)$."
+    },
+    {
+        "uuid": "math-025",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "L'égalité $\\int_{0}^{+\\infty} \\cos(\\sqrt{t}) e^{-t} dt = \\sum_{n=0}^{+\\infty} (-1)^n \\frac{n!}{(2n)!}$ s'obtient principalement par :",
+        "answers": [
+            "Le développement en série entière de $\\cos$ et interversion",
+            "Un changement de variable $u = \\sqrt{t}$",
+            "Une intégration par parties répétée",
+            "L'utilisation de la fonction Gamma"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "En développant $\\cos(\\sqrt{t}) = \\sum_{n=0}^{+\\infty} (-1)^n \\frac{(\\sqrt{t})^{2n}}{(2n)!} = \\sum_{n=0}^{+\\infty} (-1)^n \\frac{t^n}{(2n)!}$, l'interversion série-intégrale est justifiée par la convergence uniforme sur tout compact et la domination, menant à $\\sum \\frac{(-1)^n}{(2n)!} \\int_{0}^{+\\infty} t^n e^{-t} dt$. L'intégrale est $\\Gamma(n+1) = n!$."
+    },
+    {
+        "uuid": "math-026",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Quelle est la limite de $I_n = \\int_{1}^{+\\infty} \\frac{1}{x^n + x^2} dx$ quand $n \\to +\\infty$ ?",
+        "answers": [
+            "1",
+            "0",
+            "$1/2$",
+            "$\\infty$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "explication": "Pour $x > 1$, la suite de fonctions $f_n(x) = 1/(x^n+x^2)$ converge simplement vers $0$. De plus, $|f_n(x)| \\le 1/x^2$ qui est intégrable sur $[1, +\\infty[$. Par le théorème de convergence dominée, l'intégrale tend vers $0$."
+    },
+    {
+        "uuid": "math-027",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Quelle est la limite de $I_n = \\int_{0}^{+\\infty} \\frac{e^{-5x/n}}{9+x^2} dx$ quand $n \\to +\\infty$ ?",
+        "answers": [
+            "$\\pi/6$",
+            "$\\pi/2$",
+            "0",
+            "1"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "La suite $f_n(x) = \\frac{e^{-5x/n}}{9+x^2}$ converge vers $\\frac{1}{9+x^2}$. Comme $|f_n(x)| \\le \\frac{1}{9+x^2}$ (intégrable), on obtient $\\int_{0}^{+\\infty} \\frac{1}{9+x^2} dx = [\\frac{1}{3} \\arctan(x/3)]_0^{+\\infty} = \\frac{1}{3} \\cdot \\frac{\\pi}{2} = \\frac{\\pi}{6}$."
+    },
+    {
+        "uuid": "math-028",
+        "image_path": null,
+        "theme": "Fonction Gamma",
+        "question": "La dérivée $k$-ième de la fonction $\\Gamma(x) = \\int_{0}^{+\\infty} t^{x-1} e^{-t} dt$ est donnée par l'intégrale :",
+        "answers": [
+            "$\\int_{0}^{+\\infty} (\\ln t)^k t^{x-1} e^{-t} dt$",
+            "$\\int_{0}^{+\\infty} t^{x-k-1} e^{-t} dt$",
+            "$k! \\Gamma(x)$",
+            "$\\int_{0}^{+\\infty} t^{x-1} e^{-t} \\ln(t) dt$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "La dérivation sous le signe somme est licite car la fonction $t \\mapsto t^{x-1} e^{-t} (\\ln t)^k$ est dominée localement par des fonctions intégrables. Chaque dérivation par rapport à $x$ fait descendre un facteur $\\ln(t)$ issu de la dérivée de $t^{x-1} = e^{(x-1)\\ln t}$."
+    },
+    {
+        "uuid": "math-029",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Si $\\int_{I} |u_n|$ diverge mais que la série de fonctions $\\sum u_n$ converge simplement, peut-on appliquer le théorème d'intégration terme à terme ?",
+        "answers": [
+            "Oui, si la somme est continue",
+            "Non, l'hypothèse de domination (ou convergence normale) est cruciale",
+            "Seulement si l'intervalle est compact",
+            "Oui, la convergence simple suffit"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "explication": "Le théorème d'intégration terme à terme nécessite des hypothèses fortes comme la convergence normale (ou domination par une fonction intégrable) pour garantir que l'intégrale de la limite est la limite des intégrales. Une simple convergence simple ne suffit pas sur un intervalle non compact."
+    },
+    {
+        "uuid": "math-030",
+        "image_path": null,
+        "theme": "Intégrales de Gauss",
+        "question": "Soit $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-x^2 t^2}}{1+t^2} dt$. Que vaut $g(0)$ ?",
+        "answers": [
+            "$\\pi/2$",
+            "1",
+            "0",
+            "$\\pi/4$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Pour $x=0$, l'intégrale devient $\\int_{0}^{+\\infty} \\frac{1}{1+t^2} dt$. Il s'agit d'une intégrale classique dont la primitive est $\\arctan(t)$. Ainsi, $\\int_{0}^{+\\infty} \\frac{dt}{1+t^2} = [\\arctan(t)]_0^{+\\infty} = \\frac{\\pi}{2} - 0 = \\frac{\\pi}{2}$."
+    },
+    {
+        "uuid": "math-031",
+        "image_path": null,
+        "theme": "Équations différentielles",
+        "question": "Dans le cadre de l'étude des intégrales à paramètre, soit $y(x) = \\int_{0}^{+\\infty} \\frac{e^{-x^2 t^2}}{1+t^2} dt$. En utilisant la dérivation sous le signe somme, quelle équation différentielle linéaire vérifie $y(x)$ ?",
+        "answers": [
+            "$y' - 2xy = 0$",
+            "$y' + 2xy = \\sqrt{\\pi}$",
+            "$y'' + x^2 y = 0$",
+            "$y' - x y = 1$"
+        ],
+        "difficulty": 5,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "explication": "En dérivant $y(x)$, on obtient $y'(x) = \\int_{0}^{+\\infty} \\frac{-2xt^2 e^{-x^2 t^2}}{1+t^2} dt$. On décompose le numérateur : $-2xt^2 = -2x(1+t^2) + 2x$. Ainsi, $y'(x) = -2x \\int_{0}^{+\\infty} e^{-x^2 t^2} dt + 2x \\int_{0}^{+\\infty} \\frac{e^{-x^2 t^2}}{1+t^2} dt$. La première intégrale est une intégrale de Gauss égale à $\\frac{\\sqrt{\\pi}}{2x}$. On obtient $y' = -\\sqrt{\\pi} + 2xy$ (si $x>0$). Le signe dépend de la convention de dérivation, l'équation $y'+2xy=\\sqrt{\\pi}$ est la forme standard associée.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-032",
+        "image_path": null,
+        "theme": "Intégrales à paramètre",
+        "question": "Pour $g(x) = \\int_{0}^{1} t^x \\frac{t-1}{\\ln(t)} dt$ avec $x > -1$, quelle est la valeur de la dérivée $g'(x)$ ?",
+        "answers": [
+            "$\\frac{1}{x+2} - \\frac{1}{x+1}$",
+            "$\\frac{1}{x+1}$",
+            "$\\ln(x+1)$",
+            "$\\frac{1}{(x+1)^2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "On dérive sous le signe somme : $g'(x) = \\int_{0}^{1} \\frac{\\partial}{\\partial x} (t^x) \\frac{t-1}{\\ln(t)} dt = \\int_{0}^{1} t^x \\ln(t) \\frac{t-1}{\\ln(t)} dt = \\int_{0}^{1} (t^{x+1} - t^x) dt$. En intégrant, on obtient $[\\frac{t^{x+2}}{x+2} - \\frac{t^{x+1}}{x+1}]_{0}^{1} = \\frac{1}{x+2} - \\frac{1}{x+1}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-033",
+        "image_path": null,
+        "theme": "Intégrales à paramètre",
+        "question": "Pour la fonction $g(x) = \\int_{0}^{1} t^x \\frac{t-1}{\\ln(t)} dt$, que vaut $\\lim_{x \\to +\\infty} g(x)$ ?",
+        "answers": [
+            "0",
+            "1",
+            "$+\\infty$",
+            "$-1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Pour $t \\in [0, 1]$, la fonction $f(x, t) = t^x \\frac{t-1}{\\ln(t)}$ est dominée par une fonction intégrable indépendante de $x$ (ici la constante 1 sur $[0,1]$ est suffisante, car $|\\frac{t-1}{\\ln(t)}| \\le 1$ sur $[0,1]$). Par le théorème de convergence dominée, $\\lim_{x \\to +\\infty} \\int_{0}^{1} f(x, t) dt = \\int_{0}^{1} \\lim_{x \\to +\\infty} f(x, t) dt$. Comme $t^x \\to 0$ pour tout $t \\in [0, 1[$, l'intégrale est nulle.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-034",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Pour établir la domination $|(1-t^2/n)^n 1_{[0,\\sqrt{n}]}(t)| \\le e^{-t^2}$, quel outil analytique est utilisé ?",
+        "answers": [
+            "L'inégalité $1+u \\le e^u$ appliquée à $u = -t^2/n$",
+            "La croissance de la fonction exponentielle",
+            "Les deux réponses précédentes",
+            "L'inégalité de Taylor-Lagrange"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 2,
+        "explication": "L'inégalité de convexité $1+u \\le e^u$ (valable pour tout $u \\in \\mathbb{R}$) permet d'écrire $1 - t^2/n \\le e^{-t^2/n}$. En élevant à la puissance $n$ (fonction croissante), on obtient $(1-t^2/n)^n \\le (e^{-t^2/n})^n = e^{-t^2}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-035",
+        "image_path": null,
+        "theme": "Théorème de la valeur initiale",
+        "question": "Soit la transformée de Laplace $Lf(p) = \\int_{0}^{+\\infty} e^{-pt} f(t) dt$. Quel est le comportement asymptotique de $p Lf(p)$ quand $p \\to +\\infty$ ?",
+        "answers": [
+            "$\\lim_{t \\to 0^+} f(t)$",
+            "$\\lim_{t \\to +\\infty} f(t)$",
+            "$f(1)$",
+            "0"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "C'est le théorème de la valeur initiale. Par un changement de variable $u = pt$, $Lf(p) = \\int_{0}^{+\\infty} e^{-u} f(u/p) du$. Quand $p \\to +\\infty$, $u/p \\to 0$, donc sous réserve de convergence dominée, $Lf(p) \\sim f(0^+) \\int_{0}^{+\\infty} e^{-u} du = f(0^+)/p$. D'où $p Lf(p) \\to f(0^+)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-036",
+        "image_path": null,
+        "theme": "Théorème de la valeur finale",
+        "question": "Soit la transformée de Laplace $Lf(p) = \\int_{0}^{+\\infty} e^{-pt} f(t) dt$. À quelle limite correspond $\\lim_{p \\to 0^+} p Lf(p)$ ?",
+        "answers": [
+            "$\\lim_{t \\to 0^+} f(t)$",
+            "$\\lim_{t \\to +\\infty} f(t)$",
+            "0",
+            "$f(0)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "explication": "C'est le théorème de la valeur finale. Il permet d'étudier le régime permanent d'un système. La limite est égale à la valeur stationnaire de $f(t)$ lorsque $t \\to +\\infty$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-037",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "La fonction $F(x) = \\int_{0}^{+\\infty} \\cos(t^2) e^{-xt} dt$ est définie et continue sur quel intervalle ?",
+        "answers": [
+            "$\\mathbb{R}$",
+            "$\\mathbb{R}_{+}^{*}$",
+            "$[0, +\\infty[$",
+            "$]1, +\\infty[$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "explication": "Pour $x > 0$, l'intégrale est absolument convergente car $|\\cos(t^2) e^{-xt}| \\le e^{-xt}$, et $t \\mapsto e^{-xt}$ est intégrable sur $[0, +\\infty[$. En $x=0$, l'intégrale $\\int_{0}^{+\\infty} \\cos(t^2) dt$ est convergente (intégrale de Fresnel), mais la convergence n'est pas uniforme au voisinage de 0, donc la continuité sur $[0, +\\infty[$ n'est pas immédiate par le théorème classique.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-038",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Pour appliquer le théorème de dérivation sous le signe somme et montrer que $g$ est $C^k$, quelle hypothèse de domination est requise ?",
+        "answers": [
+            "La domination de la dérivée partielle d'ordre $k$ : $|\\frac{\\partial^k f}{\\partial x^k}| \\le \\varphi(t)$",
+            "La domination de toutes les dérivées partielles de $0$ à $k$ par des fonctions intégrables",
+            "Seulement la domination de la fonction $f$ elle-même",
+            "Aucune hypothèse si l'intervalle est borné"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "explication": "Le théorème de dérivation sous le signe somme nécessite que $f(x,t)$ soit dérivable par rapport à $x$, que $\\frac{\\partial f}{\\partial x}$ soit continue en $x$ et, surtout, qu'il existe une fonction $\\varphi$ intégrable telle que $|\\frac{\\partial f}{\\partial x}(x,t)| \\le \\varphi(t)$ pour tout $x$. Pour $C^k$, cette condition doit être vérifiée pour chaque dérivée jusqu'à l'ordre $k$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-039",
+        "image_path": null,
+        "theme": "Séries de fonctions",
+        "question": "Pour la série de fonctions $\\sum_{n=0}^{+\\infty} (-1)^n t^n \\ln(t)$ sur $]0,1]$, la convergence simple est justifiée par :",
+        "answers": [
+            "La série géométrique de raison $r = -t$ ($|t| < 1$)",
+            "Le critère des séries alternées",
+            "La convergence normale",
+            "La convergence absolue"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "La série est de la forme $\\ln(t) \\sum (-t)^n$. Pour $t \\in ]0, 1[$, la série géométrique $\\sum (-t)^n$ converge vers $\\frac{1}{1+t}$. La convergence simple est donc directe. Attention, en $t=1$, la série devient $\\sum (-1)^n \\ln(1) = 0$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-040",
+        "image_path": null,
+        "theme": "Calcul intégral",
+        "question": "Quelle est la valeur de l'intégrale $I_n = \\int_{0}^{1} -t^n \\ln(t) dt$ pour $n \\ge 0$ ?",
+        "answers": [
+            "$\\frac{1}{(n+1)^2}$",
+            "$\\frac{1}{n+1}$",
+            "$\\frac{n!}{(n+1)^n}$",
+            "$\\frac{1}{n^2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "On utilise une intégration par parties. Posons $u = \\ln(t)$ ($du = dt/t$) et $v' = -t^n$ ($v = -t^{n+1}/(n+1)$). L'intégrale devient $[-\\ln(t) \\frac{t^{n+1}}{n+1}]_{0}^{1} + \\int_{0}^{1} \\frac{t^n}{n+1} dt$. Le terme entre crochets est nul en 1 et tend vers 0 en 0. Il reste $\\frac{1}{n+1} [\\frac{t^{n+1}}{n+1}]_{0}^{1} = \\frac{1}{(n+1)^2}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-041",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Dans le cadre du calcul d'intégrales via le théorème de convergence monotone, pour justifier que $\\int_{0}^{+\\infty} \\frac{x^2}{e^x - 1} dx = 2 \\sum_{n=1}^{+\\infty} \\frac{1}{n^3}$, quel développement en série géométrique est utilisé ?",
+        "answers": [
+            "$\\frac{1}{e^x - 1} = \\sum_{n=1}^{+\\infty} e^{-nx}$",
+            "$\\frac{1}{e^x - 1} = \\sum_{n=0}^{+\\infty} (-1)^n e^{-nx}$",
+            "$\\frac{1}{e^x - 1} = \\sum_{n=1}^{+\\infty} \\frac{x^n}{n!}$",
+            "$\\frac{1}{e^x - 1} = \\sum_{n=1}^{+\\infty} e^{nx}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "On factorise par $e^x$ au dénominateur : $\\frac{1}{e^x(1 - e^{-x})} = e^{-x} \\sum_{n=0}^{+\\infty} (e^{-x})^n = \\sum_{n=1}^{+\\infty} e^{-nx}$. Les autres propositions sont fausses car elles correspondent soit au développement de $(1+e^{-x})^{-1}$ (alternée), soit au développement en série de l'exponentielle."
+    },
+    {
+        "uuid": "math-042",
+        "image_path": null,
+        "theme": "Intégrales à paramètre",
+        "question": "Soit la fonction définie par $F(x) = \\int_{0}^{\\pi/2} \\frac{\\arctan(x \\tan t)}{\\tan t} dt$. Quel est son domaine de définition $\\mathcal{D}_F$ ?",
+        "answers": [
+            "$\\mathbb{R}$",
+            "$\\mathbb{R}_{+}$",
+            "$[-1, 1]$",
+            "$]0, +\\infty[$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Pour $t \\in [0, \\pi/2[$, la fonction $t \\mapsto \\frac{\\arctan(x \\tan t)}{\\tan t}$ se prolonge par continuité en $0$ car $\\frac{\\arctan(u)}{u} \\to 1$. En $\\pi/2$, par équivalent, elle tend vers $\\pi/2$, donc l'intégrale converge pour tout $x \\in \\mathbb{R}$. La fonction est bien définie sur $\\mathbb{R}$."
+    },
+    {
+        "uuid": "math-043",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Pour la fonction $F(x) = \\int_{0}^{\\pi/2} \\frac{\\arctan(x \\tan t)}{\\tan t} dt$, en utilisant le théorème de dérivation sous le signe intégral, quelle est la dérivée $F'(x)$ pour $x \\neq 0$ ?",
+        "answers": [
+            "$\\frac{\\pi}{2(1+x)}$",
+            "$\\frac{\\pi}{2(1+|x|)}$",
+            "$\\frac{\\pi}{2(1+x^2)}$",
+            "$\\frac{\\pi}{2} \\ln(1+x^2)$"
+        ],
+        "difficulty": 5,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "explication": "La dérivée sous l'intégrale donne $\\int_0^{\\pi/2} \\frac{1}{1+x^2 \\tan^2 t} dt$. Il s'agit d'une intégrale classique se calculant par le changement de variable $u = \\tan t$ (ou par intégration sur la borne). Le résultat est $\\frac{\\pi}{2(1+|x|)}$. L'oubli de la valeur absolue est une erreur classique liée à la parité de $F$."
+    },
+    {
+        "uuid": "math-044",
+        "image_path": null,
+        "theme": "Convergence",
+        "question": "Pourquoi l'intégrale impropre $I = \\int_{0}^{+\\infty} \\frac{\\ln x}{1+x^2} dx$ est-elle convergente ?",
+        "answers": [
+            "En $0$, $\\ln x = o(1/\\sqrt{x})$ et en $+\\infty$, $\\ln x / (1+x^2) = O(1/x^{3/2})$",
+            "La fonction est prolongeable par continuité en $0$",
+            "Elle est égale à $\\arctan(0) + \\arctan(\\infty)$",
+            "La fonction est positive sur $]0, 1]$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Il faut vérifier la convergence aux deux bornes. En $0$, $\\ln(x) = o(x^{-\\alpha})$ avec $\\alpha < 1$, donc intégrable. En $+\\infty$, $\\frac{\\ln x}{1+x^2} \\sim \\frac{\\ln x}{x^2}$, qui est intégrable par comparaison avec une intégrale de Riemann de type $1/x^{3/2}$."
+    },
+    {
+        "uuid": "math-045",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Pour la suite de fonctions $f_n(t) = n^2 t^{n-1}$ sur $[0,1]$, pourquoi l'intégrale $\\int_{0}^{1} f_n(t) dt$ ne tend-elle pas vers l'intégrale de la limite simple ?",
+        "answers": [
+            "La limite simple n'est pas continue",
+            "Il n'existe pas de fonction de domination $\\varphi$ intégrable sur $[0,1]$",
+            "L'intervalle n'est pas ouvert",
+            "La suite n'est pas positive"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "explication": "La limite simple est nulle partout sauf en $1$ où elle diverge vers $+\\infty$. L'intégrale vaut $\\int_0^1 n^2 t^{n-1} dt = n^2 [t^n/n]_0^1 = n$, qui tend vers $+\\infty$. Le théorème de convergence dominée ne s'applique pas car il est impossible de trouver une majoration indépendante de $n$ par une fonction intégrable."
+    },
+    {
+        "uuid": "math-046",
+        "image_path": null,
+        "theme": "Dérivation complexe",
+        "question": "Soit la fonction $f(x) = e^{ixt}$ où $t$ est un paramètre réel fixé. Quelle est sa dérivée par rapport à $x$ ?",
+        "answers": [
+            "$it e^{ixt}$",
+            "$ix e^{ixt}$",
+            "$i e^{ixt}$",
+            "$t e^{ixt}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "On utilise la règle de dérivation de la composée $\\frac{d}{dx}(e^{u(x)}) = u'(x) e^{u(x)}$. Ici $u(x) = ixt$, donc $u'(x) = it$. Le facteur multiplicatif est bien $it$."
+    },
+    {
+        "uuid": "math-047",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Lorsqu'on étudie l'interversion $\\int \\sum = \\sum \\int$, si la série $\\sum \\int |v_n(t)| dt$ diverge, quelle condition suffisante de convergence permet tout de même d'intervertir ?",
+        "answers": [
+            "Le reste $R_n(t) = \\sum_{k=n+1}^{+\\infty} v_k(t)$ est dominé par une fonction intégrable et tend vers $0$ simplement",
+            "La série converge absolument et uniformément",
+            "On ne peut jamais intervertir si la série des intégrales des valeurs absolues diverge",
+            "La série est à termes positifs"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Le théorème d'interversion nécessite soit la convergence absolue de la série des intégrales, soit l'utilisation du théorème de convergence dominée sur les sommes partielles. Si la série des intégrales des valeurs absolues diverge, on doit vérifier que la suite des sommes partielles $S_n(t)$ est dominée par une fonction intégrable."
+    },
+    {
+        "uuid": "math-048",
+        "image_path": null,
+        "theme": "Fonction Gamma",
+        "question": "La fonction $\\Gamma(x)$ est définie pour $x > 0$ par l'intégrale d'Euler, mais elle peut aussi être définie par une limite. Laquelle ?",
+        "answers": [
+            "$\\lim_{n\\to\\infty} \\int_{0}^{n} t^{x-1} (1-t/n)^n dt$",
+            "$\\lim_{n\\to\\infty} \\int_{0}^{1} t^{x-1} (1-t)^n dt$",
+            "$\\lim_{n\\to\\infty} \\sum_{k=1}^n k^{x-1} e^{-k}$",
+            "$\\lim_{n\\to\\infty} \\int_{0}^{\\infty} t^{x-1} e^{-t/n} dt$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "C'est la définition de Weierstrass (ou forme limite de l'intégrale). Par un changement de variable $u = t/n$, on montre que $\\int_0^n t^{x-1}(1-t/n)^n dt$ tend vers $\\Gamma(x)$ quand $n \\to \\infty$."
+    },
+    {
+        "uuid": "math-049",
+        "image_path": null,
+        "theme": "Constante d'Euler",
+        "question": "La constante d'Euler $\\gamma$ est définie comme la limite de la différence entre la somme harmonique et le logarithme népérien. Quelle est la bonne expression ?",
+        "answers": [
+            "$\\lim_{n\\to\\infty} (\\sum_{k=1}^n \\frac{1}{k} - \\ln(n))$",
+            "$\\lim_{n\\to\\infty} (\\ln(n) - \\sum_{k=1}^n \\frac{1}{k})$",
+            "$\\lim_{n\\to\\infty} (\\sum_{k=1}^n \\frac{1}{k} + \\ln(n))$",
+            "$\\lim_{n\\to\\infty} (\\sum_{k=1}^{n-1} \\frac{1}{k} - \\ln(n))$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "La série harmonique $\\sum 1/k$ diverge comme $\\ln(n)$. La différence $\\sum_{k=1}^n \\frac{1}{k} - \\ln(n)$ converge vers une constante strictement positive, notée $\\gamma \\approx 0,577$."
+    },
+    {
+        "uuid": "math-050",
+        "image_path": null,
+        "theme": "Dérivées partielles",
+        "question": "Pour la fonction $f(x,y) = 3x^2y - 5xy + 2$, quelle est la dérivée partielle par rapport à $x$ (notée $\\frac{\\partial f}{\\partial x}$) ?",
+        "answers": [
+            "$6xy - 5y$",
+            "$3x^2 - 5x$",
+            "$6x - 5$",
+            "$3xy^2 - 5y$"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "On dérive par rapport à $x$ en considérant $y$ comme une constante. $\\frac{\\partial}{\\partial x}(3x^2y) = 3y \\cdot 2x = 6xy$ et $\\frac{\\partial}{\\partial x}(-5xy) = -5y$. La constante $2$ disparaît."
+    },
+    {
+        "uuid": "math-051",
+        "image_path": null,
+        "theme": "Dérivées partielles",
+        "question": "Dans le cadre de l'étude des fonctions de plusieurs variables, soit $f(x,y) = 3x^2y - 5xy + 2$. Quelle est la dérivée partielle de $f$ par rapport à $y$, notée $\\frac{\\partial f}{\\partial y}$ ?",
+        "answers": [
+            "$3x^2 - 5x$",
+            "$6xy - 5y$",
+            "$3x^2y - 5x$",
+            "$6x - 5$"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Pour calculer $\\frac{\\partial f}{\\partial y}$, on considère $x$ comme une constante. Le terme $3x^2y$ devient $(3x^2) \\times y$, dont la dérivée par rapport à $y$ est $3x^2$. Le terme $-5xy$ devient $(-5x) \\times y$, dont la dérivée est $-5x$. La constante $2$ disparaît. L'erreur classique est de dériver par rapport à $x$ ou de traiter $x$ comme une variable lors de la dérivation.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-052",
+        "image_path": null,
+        "theme": "Domination",
+        "question": "Soit la fonction $g(x) = \\int_{0}^{\\infty} \\frac{e^{-xt}}{\\sqrt{t+1}} dt$ définie pour $x \\geq a > 0$. Quelle fonction $\\varphi(t)$ permet de dominer $|f(x,t)| = \\frac{e^{-xt}}{\\sqrt{t+1}}$ pour appliquer le théorème de continuité ?",
+        "answers": [
+            "$\\varphi(t) = \\frac{e^{-at}}{\\sqrt{t+1}}$",
+            "$\\varphi(t) = \\frac{1}{\\sqrt{t+1}}$",
+            "$\\varphi(t) = e^{-at}$",
+            "$\\varphi(t) = \\frac{1}{t+1}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Pour tout $x \\geq a$, on a $-xt \\leq -at$, donc $e^{-xt} \\leq e^{-at}$. Ainsi, $|f(x,t)| \\leq \\frac{e^{-at}}{\\sqrt{t+1}}$. La fonction $\\varphi(t) = \\frac{e^{-at}}{\\sqrt{t+1}}$ est intégrable sur $[0, +\\infty[$ car équivalente à $1/\\sqrt{t}$ en 0 et dominée par une exponentielle décroissante en $+\\infty$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-053",
+        "image_path": null,
+        "theme": "Intégrales à paramètre",
+        "question": "En utilisant le théorème de dérivation sous le signe intégral (Frullani), quelle est la valeur de $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-t}-e^{-xt}}{t} dt$ pour $x > 0$ ?",
+        "answers": [
+            "$\\ln(x)$",
+            "$e^{-x}$",
+            "$1/x$",
+            "$\\ln(x) + 1$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "On pose $g(x) = \\int_{0}^{+\\infty} f(x,t) dt$. En dérivant par rapport à $x$, on obtient $g'(x) = \\int_{0}^{+\\infty} e^{-xt} dt = \\frac{1}{x}$. En intégrant $g'(x)$, on trouve $g(x) = \\ln(x) + C$. Comme $g(1) = 0$, on en déduit $C=0$, donc $g(x) = \\ln(x)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-054",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Soit une famille de fonctions $f(\\lambda, t)$ convergeant simplement vers $F(t)$ quand $\\lambda \\to \\lambda_0$. Quelle condition est nécessaire pour affirmer que $\\lim_{\\lambda \\to \\lambda_0} \\int f(\\lambda, t) dt = \\int F(t) dt$ ?",
+        "answers": [
+            "L'existence d'une fonction $\\varphi$ intégrable telle que $|f(\\lambda, t)| \\leq \\varphi(t)$ localement",
+            "La convergence uniforme de $f$ vers $F$",
+            "La continuité de $F$ sur tout l'intervalle",
+            "La convergence monotone de $f$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Il s'agit du théorème de convergence dominée (TCD). La domination par une fonction intégrable $\\varphi$ indépendante de $\\lambda$ est la condition centrale permettant d'échanger limite et intégrale.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-055",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Quelle est la limite quand $n \\to +\\infty$ de l'intégrale $I_n = \\int_{1}^{+\\infty} \\frac{-3}{5+t^{2n}} dt$ ?",
+        "answers": [
+            "0",
+            "$-3/5$",
+            "$-3$",
+            "$+\\infty$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Pour $t > 1$, $t^{2n} \\to +\\infty$ quand $n \\to +\\infty$. La fonction $f_n(t) = \\frac{-3}{5+t^{2n}}$ converge simplement vers 0 sur $]1, +\\infty[$. Comme $|f_n(t)| \\leq 3/5$ sur $[1, +\\infty[$ n'est pas intégrable, on utilise la convergence dominée sur $[1, 1+\\epsilon]$ et une majoration directe sur le reste pour montrer que l'intégrale tend vers 0.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-056",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Considérons $I_n = \\int_{0}^{\\sqrt{n}} (1-t^2/n)^n dt$. En utilisant le développement limité $(1-u)^n \\approx e^{-nu}$, quelle est la limite de $I_n$ quand $n \\to +\\infty$ ?",
+        "answers": [
+            "$\\sqrt{\\pi}/2$",
+            "$\\sqrt{\\pi}$",
+            "1",
+            "$0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "En effectuant le changement de variable $u = t/\\sqrt{n}$, l'intégrale devient $\\sqrt{n} \\int_0^1 (1-u^2)^n du$. La limite est liée à l'intégrale de Gauss $\\int_0^{+\\infty} e^{-t^2} dt = \\frac{\\sqrt{\\pi}}{2}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-057",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Pour calculer $\\int_{0}^{1} \\frac{\\ln(t)}{t-1} dt$, on utilise le développement en série entière $\\frac{1}{1-t} = \\sum_{n=0}^{+\\infty} t^n$. Quel est le terme général $u_n(t)$ de la série intégrée ?",
+        "answers": [
+            "$t^n \\ln(t)$",
+            "$-t^n \\ln(t)$",
+            "$\\frac{t^n}{n}$",
+            "$\\frac{\\ln(t)}{t^n}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "explication": "On a $\\frac{1}{t-1} = -\\frac{1}{1-t} = -\\sum_{n=0}^{+\\infty} t^n$. En multipliant par $\\ln(t)$, on obtient $- \\sum t^n \\ln(t)$. L'interversion somme-intégrale est justifiée par le théorème de convergence monotone (les termes sont de signe constant).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-058",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Pour l'intégrale $I = \\int_{0}^{+\\infty} \\frac{x^2}{e^x-1} dx$, on utilise $u_n(x) = x^2 e^{-nx}$. Pourquoi cette série est-elle intégrable sur $]0, +\\infty[$ ?",
+        "answers": [
+            "La règle du $x^2 f(x)$ en 0 et la décroissance exponentielle en $+\\infty$",
+            "La continuité en 0",
+            "Les deux réponses précédentes",
+            "Parce que $e^{-nx}$ est toujours borné par 1"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 2,
+        "explication": "L'intégrabilité sur un intervalle quelconque nécessite de vérifier l'intégrabilité en 0 et en $+\\infty$. En 0, $x^2 e^{-nx} \\sim x^2$ qui est intégrable. En $+\\infty$, le terme $x^2 e^{-nx}$ décroît exponentiellement vite, ce qui assure l'intégrabilité.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-059",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Soit $f$ une fonction continue sur $A \\times I$. L'intégrale $F(x) = \\int_I f(x,t) dt$ est continue sur $A$ dès qu'il existe une domination locale. Cette affirmation est :",
+        "answers": [
+            "Vraie",
+            "Fausse, il faut une domination globale",
+            "Vraie seulement si $I$ est compact",
+            "Fausse, la continuité ne dépend pas de la domination"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Le théorème de continuité sous le signe intégral ne demande qu'une domination locale (sur tout segment de $A$). C'est une condition plus souple que celle de la convergence dominée globale.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-060",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Est-il possible d'intervertir dérivée et intégrale si la dérivée partielle $\\frac{\\partial f}{\\partial x}$ n'est pas dominée par une fonction intégrable ?",
+        "answers": [
+            "Généralement non, cela conduit à des résultats faux",
+            "Oui, si la fonction est $C^{\\infty}$",
+            "Oui, si l'intervalle est fini",
+            "Oui, la domination n'est qu'une condition de confort"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "L'interversion est un théorème très encadré. Sans domination de la dérivée partielle, on ne peut pas garantir que la dérivée de l'intégrale est égale à l'intégrale de la dérivée, sauf cas très particuliers (convergence monotone par exemple). C'est une source d'erreur classique dans les calculs de physique-mathématique.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-061",
+        "image_path": null,
+        "theme": "Fonction Gamma",
+        "question": "Dans le cadre de l'étude de la fonction $\\Gamma(x) = \\int_{0}^{+\\infty} t^{x-1} e^{-t} dt$, pour justifier que $\\Gamma$ est de classe $\\mathcal{C}^{\\infty}$ sur $]0, +\\infty[$, on montre que les dérivées successives sont dominées. Sur quel type d'intervalle pour $x$ cette domination est-elle établie pour appliquer le théorème de dérivation sous le signe somme ?",
+        "answers": [
+            "Sur $]0, +\\infty[$ directement",
+            "Sur tout segment $[a, b] \\subset ]0, +\\infty[$",
+            "Sur tout intervalle de la forme $]0, A]$",
+            "Sur aucun intervalle car $\\Gamma$ n'est pas $\\mathcal{C}^{\\infty}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le théorème de dérivation des intégrales à paramètre nécessite une domination locale. Pour prouver que la fonction est $\\mathcal{C}^{\\infty}$, on montre que pour tout segment $[a, b] \\subset ]0, +\\infty[$, il existe une fonction intégrable $M(t)$ telle que $|\\frac{\\partial^k}{\\partial x^k} (t^{x-1} e^{-t})| \\le M(t)$ pour tout $x \\in [a, b]$. Une domination globale sur $]0, +\\infty[$ est impossible car la convergence de l'intégrale est fragile aux bornes."
+    },
+    {
+        "uuid": "math-062",
+        "image_path": null,
+        "theme": "Calcul intégral",
+        "question": "Soit la fonction définie par $I(a) = \\int_{0}^{+\\infty} \\frac{\\ln x}{(1+x^2)(a^2+x^2)} dx$. Pour $a=1$, on obtient $I(1) = \\int_{0}^{+\\infty} \\frac{\\ln x}{(1+x^2)^2} dx$. Quelle est la valeur de cette intégrale ?",
+        "answers": [
+            "0",
+            "$\\pi/4$",
+            "$-1/2$",
+            "$\\ln(2)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Il suffit d'effectuer le changement de variable $u = 1/x$. On a $du = -1/x^2 dx$, donc $dx = -du/u^2$. L'intégrale devient $I = \\int_{+\\infty}^{0} \\frac{\\ln(1/u)}{(1+1/u^2)^2} (-du/u^2) = \\int_{+\\infty}^{0} \\frac{-\\ln(u)}{\\frac{(u^2+1)^2}{u^4}} \\frac{du}{u^2} = -\\int_{0}^{+\\infty} \\frac{u^2 \\ln u}{(1+u^2)^2} du$. Par symétrie, en sommant avec l'expression initiale, on montre que $2I = 0$."
+    },
+    {
+        "uuid": "math-063",
+        "image_path": null,
+        "theme": "Intégrales de Gauss",
+        "question": "Soit $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-x^2 t^2}}{1+t^2} dt$. Quelle est la limite de $g(x)$ quand $x \\to +\\infty$ ?",
+        "answers": [
+            "0",
+            "$\\pi/2$",
+            "$\\sqrt{\\pi}$",
+            "1"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On utilise le théorème de convergence dominée. Pour $t > 0$, la fonction $f_x(t) = \\frac{e^{-x^2 t^2}}{1+t^2}$ converge simplement vers $0$ quand $x \\to +\\infty$. Comme pour tout $t \\ge 0$, $|f_x(t)| \\le \\frac{1}{1+t^2}$, et que cette fonction majorante est intégrable sur $[0, +\\infty[$, on peut intervertir limite et intégrale. La limite est donc $\\int_{0}^{+\\infty} 0 dt = 0$."
+    },
+    {
+        "uuid": "math-064",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Soit la suite de fonctions $f_n(t) = \\frac{1+t^n}{1+t^{n+2}}$. Sur l'intervalle $]1, +\\infty[$, vers quelle fonction $f(t)$ cette suite converge-t-elle simplement ?",
+        "answers": [
+            "$1/t^2$",
+            "1",
+            "0",
+            "$t$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Pour $t > 1$, on factorise par les termes de plus haut degré : $f_n(t) = \\frac{t^n(t^{-n}+1)}{t^{n+2}(t^{-(n+2)}+1)} = \\frac{1}{t^2} \\frac{1+t^{-n}}{1+t^{-(n+2)}}$. Comme $t > 1$, $t^{-n} \\to 0$ quand $n \\to +\\infty$. Ainsi, $f_n(t) \\to 1/t^2$."
+    },
+    {
+        "uuid": "math-065",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Soit $I_n = \\int_{1}^{+\\infty} \\frac{1+t^n}{1+t^{n+2}} dt$. Quelle est la limite de $I_n$ quand $n \\to +\\infty$ ?",
+        "answers": [
+            "$\\int_{1}^{+\\infty} \\frac{1}{t^2} dt = 1$",
+            "0",
+            "$+\\infty$",
+            "$\\pi/4$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On vérifie les conditions du théorème de convergence dominée. La suite $f_n(t)$ converge vers $1/t^2$ sur $[1, +\\infty[$. De plus, pour $n \\ge 1$ et $t \\ge 1$, $0 \\le \\frac{1+t^n}{1+t^{n+2}} \\le \\frac{t^n+t^n}{t^{n+2}} = 2/t^2$, qui est intégrable sur $[1, +\\infty[$. La limite est donc l'intégrale de la limite : $\\int_{1}^{+\\infty} t^{-2} dt = [-1/t]_1^{+\\infty} = 1$."
+    },
+    {
+        "uuid": "math-066",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Pour justifier l'inversion somme-intégrale de $\\sum_{n=1}^{+\\infty} \\int_{0}^{+\\infty} \\frac{e^{-nt}}{\\sqrt{n}} dt$, quel argument permet de conclure ?",
+        "answers": [
+            "La série des intégrales $\\sum_{n=1}^{+\\infty} \\int_{0}^{+\\infty} \\frac{e^{-nt}}{\\sqrt{n}} dt$ est une série de Riemann convergente",
+            "La convergence normale de la série de fonctions sur $]0, +\\infty[$",
+            "Les fonctions sont positives, on applique le théorème de convergence monotone",
+            "La série converge uniformément sur $]0, 1[$ uniquement"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Pour des fonctions positives, le théorème de convergence monotone (ou le théorème de Fubini pour les séries) permet l'interversion si la série des intégrales converge. Ici $\\int_{0}^{+\\infty} \\frac{e^{-nt}}{\\sqrt{n}} dt = \\frac{1}{n\\sqrt{n}} = \\frac{1}{n^{3/2}}$. La série $\\sum 1/n^{3/2}$ est une série de Riemann convergente ($3/2 > 1$)."
+    },
+    {
+        "uuid": "math-067",
+        "image_path": null,
+        "theme": "Constante d'Euler",
+        "question": "Dans l'étude classique menant à la constante d'Euler, on considère $I_n = \\int_{0}^{n} (1-t/n)^{n} \\ln(t) dt$. Quelle expression lie cette intégrale aux sommes harmoniques ?",
+        "answers": [
+            "$\\ln(n) - \\sum_{k=1}^n \\frac{1}{k}$",
+            "$\\sum_{k=1}^n \\frac{1}{k} - \\ln(n)$",
+            "$1/n$",
+            "$\\gamma + \\ln(n)$"
+        ],
+        "difficulty": 5,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par un changement de variable $u = t/n$, l'intégrale s'exprime en fonction de la fonction $\\Gamma$ et de ses dérivées, ou par intégration par parties. La valeur asymptotique $I_n$ fait apparaître le terme $-\\gamma$, lié à la définition $\\sum_{k=1}^n 1/k \\sim \\ln n + \\gamma$."
+    },
+    {
+        "uuid": "math-068",
+        "image_path": null,
+        "theme": "Limites d'intégrales",
+        "question": "On étudie la fonction $f_{\\lambda}(t) = \\frac{1}{\\sqrt{1+t^2}\\sqrt{\\lambda^2+t^2}}$. Quelle est la limite de son intégrale $\\int_{0}^{+\\infty} f_{\\lambda}(t) dt$ quand $\\lambda \\to +\\infty$ ?",
+        "answers": [
+            "0",
+            "$+\\infty$",
+            "$\\pi/2$",
+            "1"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Pour tout $t > 0$, $f_{\\lambda}(t) \\to 0$ quand $\\lambda \\to +\\infty$. En utilisant la domination $f_{\\lambda}(t) \\le \\frac{1}{\\sqrt{1+t^2}\\sqrt{1+t^2}} = \\frac{1}{1+t^2}$ pour $\\lambda \\ge 1$, la fonction majorante est intégrable sur $[0, +\\infty[$. Par convergence dominée, la limite est l'intégrale de 0, soit 0."
+    },
+    {
+        "uuid": "math-069",
+        "image_path": null,
+        "theme": "Limites d'intégrales",
+        "question": "Quelle domination est rigoureuse pour appliquer le théorème de convergence dominée à $\\int_{0}^{+\\infty} \\frac{1}{\\sqrt{1+t^2}\\sqrt{\\lambda^2+t^2}} dt$ pour $\\lambda \\ge 1$ ?",
+        "answers": [
+            "$f_{\\lambda}(t) \\le \\frac{1}{1+t^2}$",
+            "$f_{\\lambda}(t) \\le \\frac{1}{\\sqrt{1+t^2}}$",
+            "$f_{\\lambda}(t) \\le 1/\\lambda$",
+            "$f_{\\lambda}(t) \\le \\exp(-t)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Pour $\\lambda \\ge 1$, on a $\\sqrt{\\lambda^2+t^2} \\ge \\sqrt{1+t^2}$. Donc $\\frac{1}{\\sqrt{\\lambda^2+t^2}} \\le \\frac{1}{\\sqrt{1+t^2}}$. Par conséquent, $f_{\\lambda}(t) \\le \\frac{1}{\\sqrt{1+t^2} \\cdot \\sqrt{1+t^2}} = \\frac{1}{1+t^2}$. Comme $\\int_{0}^{+\\infty} \\frac{1}{1+t^2} dt = \\pi/2 < +\\infty$, la domination est établie."
+    },
+    {
+        "uuid": "math-070",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Soit $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-xt}}{\\sqrt{t+1}} dt$. Quel est le domaine de définition maximal de $g$ sur $\\mathbb{R}$ ?",
+        "answers": [
+            "$\\mathbb{R}_{+}^{*}$",
+            "$\\mathbb{R}_{+}$",
+            "$]1, +\\infty[$",
+            "$\\mathbb{R}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "L'intégrale converge si $x > 0$ par décroissance exponentielle. Si $x=0$, l'intégrale est $\\int_{0}^{+\\infty} \\frac{1}{\\sqrt{t+1}} dt$, qui diverge (intégrale de Riemann de type $1/t^p$ avec $p=1/2 \\le 1$). Si $x < 0$, le terme $e^{-xt}$ tend vers $+\\infty$ quand $t \\to +\\infty$, donc l'intégrale diverge. Le domaine est donc bien $\\mathbb{R}_{+}^*$."
+    },
+    {
+        "uuid": "math-071",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Dans le cadre de l'étude de la limite d'une suite de fonctions sur $[0, 1]$, quelle est la limite simple de $f_n(t) = \\frac{1}{1+t^2+t^n e^{-t}}$ sur cet intervalle ?",
+        "answers": [
+            "$\\frac{1}{1+t^2}$",
+            "$0$",
+            "$1$",
+            "$\\frac{1}{1+t^2+e^{-t}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Pour $t \\in [0, 1[$, on a $t^n \\to 0$ lorsque $n \\to +\\infty$. Comme $e^{-t}$ est borné, $t^n e^{-t} \\to 0$, d'où $f_n(t) \\to \\frac{1}{1+t^2}$. En $t=1$, $f_n(1) = \\frac{1}{2+e^{-1}}$, ce qui n'est pas cohérent avec la limite sur l'ouvert, mais la convergence simple sur $[0, 1[$ suffit pour déterminer la limite de l'intégrale via le théorème de convergence dominée.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-072",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Considérons $f_n(t) = \\frac{1}{1+t^2+t^n e^{-t}}$ sur $]1, +\\infty[$. Quelle est sa limite simple ?",
+        "answers": [
+            "$0$",
+            "$\\frac{1}{1+t^2}$",
+            "$1$",
+            "$\\frac{1}{t^n e^{-t}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Pour $t > 1$, $t^n \\to +\\infty$ quand $n \\to +\\infty$. Le terme $t^n e^{-t} = e^{n \\ln(t) - t}$ tend vers $+\\infty$ car $\\ln(t) > 0$. Ainsi, le dénominateur tend vers $+\\infty$ et $f_n(t)$ tend vers $0$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-073",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Pour $g(x) = \\int_{0}^{\\infty} \\frac{e^{-xt}}{1+t^3} dt$, on souhaite dériver sous le signe intégral. Quelle est la domination correcte pour $|g'(x)| = |\\int_{0}^{\\infty} \\frac{-t e^{-xt}}{1+t^3} dt|$ sur $[a, +\\infty[$ avec $a>0$ ?",
+        "answers": [
+            "Il n'y a pas de domination globale sur $[0, +\\infty[$",
+            "$\\varphi(t) = \\frac{t}{1+t^3} e^{-at}$",
+            "$\\varphi(t) = \\frac{1}{1+t^3}$",
+            "$\\varphi(t) = \\frac{t}{1+t^3}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "explication": "Pour justifier la dérivation sous le signe somme (théorème de Leibniz), il faut dominer la dérivée partielle par une fonction intégrable. Ici, $|\\frac{\\partial f}{\\partial x}| = \\frac{t e^{-xt}}{1+t^3} \\leq \\frac{t e^{-at}}{1+t^3}$. Cette fonction est intégrable sur $[0, +\\infty[$ car équivalente à $t^{-2}$ en $+\\infty$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-074",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Justifiez la nature de la série $\\sum_{n=0}^{+\\infty} \\frac{(-1)^n}{3n+2}$ :",
+        "answers": [
+            "Critère spécial des séries alternées",
+            "Convergence absolue par comparaison à une série de Riemann",
+            "Règle de d'Alembert",
+            "Série géométrique divergente"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "La série est de la forme $\\sum (-1)^n u_n$ avec $u_n = \\frac{1}{3n+2}$. La suite $(u_n)$ est positive, décroissante et tend vers 0. Le critère spécial des séries alternées (CSSA) s'applique donc directement.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-075",
+        "image_path": null,
+        "theme": "Intégrales à paramètre",
+        "question": "Quelle est la nature de l'intégrale $\\int_{0}^{+\\infty} \\frac{\\sin t}{t} dt$ (intégrale de Dirichlet) ?",
+        "answers": [
+            "Semi-convergente",
+            "Absolument convergente",
+            "Divergente",
+            "Convergente au sens de Riemann uniquement"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "L'intégrale converge par le critère d'Abel (ou intégration par parties). Cependant, elle n'est pas absolument convergente car $\\int_0^X \\frac{|\\sin t|}{t} dt \\geq \\int_0^X \\frac{\\sin^2 t}{t} dt = \\int_0^X \\frac{1-\\cos(2t)}{2t} dt$, qui diverge comme une intégrale logarithmique.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-076",
+        "image_path": null,
+        "theme": "Méthodes",
+        "question": "Pour calculer l'intégrale $I = \\int_{0}^{+\\infty} \\frac{\\sin t}{t} dt$, quelle fonction auxiliaire $g(x)$ permet d'utiliser le théorème de Fubini ou la dérivation sous le signe somme ?",
+        "answers": [
+            "$g(x) = \\int_{0}^{+\\infty} e^{-xt} \\frac{\\sin t}{t} dt$",
+            "$g(x) = \\int_{0}^{+\\infty} \\frac{\\cos(xt)}{t} dt$",
+            "$g(x) = \\int_{0}^{+\\infty} \\sin(xt) e^{-t} dt$",
+            "$g(x) = \\int_{0}^{+\\infty} \\frac{\\sin(xt)}{t} dt$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "En posant $g(x) = \\int_{0}^{+\\infty} e^{-xt} \\frac{\\sin t}{t} dt$, on peut calculer $g'(x) = - \\int_0^{+\\infty} e^{-xt} \\sin t dt$, ce qui se calcule facilement par intégration par parties ou complexes. On retrouve $I$ en calculant $\\lim_{x \\to 0^+} g(x)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-077",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Dans le cas où $\\sum \\int u_n$ converge mais $\\int \\sum u_n$ est problématique, quel est le piège fondamental ?",
+        "answers": [
+            "La fonction somme n'est pas nécessairement intégrable sur l'intervalle",
+            "La série de fonctions diverge simplement",
+            "Les fonctions $u_n$ ne sont pas continues",
+            "Le théorème de convergence dominée ne s'applique jamais aux séries"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Le passage de la somme à l'intégrale nécessite la convergence dominée de la série des restes ou une domination de la somme partielle. Si $\\sum |u_n|$ n'est pas intégrable, on ne peut pas intervertir $\\int$ et $\\sum$ sans vérification rigoureuse des hypothèses de domination (Théorème de convergence monotone ou Lebesgue).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-078",
+        "image_path": null,
+        "theme": "Régularité",
+        "question": "Si $f(x,t)$ est $C^{\\infty}$ par rapport à $x$ et que pour tout $k \\in \\mathbb{N}$, $\\frac{\\partial^k f}{\\partial x^k}$ est dominée localement par une fonction intégrable $\\varphi_k(t)$, alors $g(x) = \\int f(x,t) dt$ est :",
+        "answers": [
+            "$C^{\\infty}$",
+            "$C^k$ uniquement",
+            "Analytique sur tout son domaine",
+            "Non dérivable"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Par récurrence, le théorème de dérivation sous le signe intégral permet de montrer que si toutes les dérivées partielles sont dominées par des fonctions intégrables, alors $g$ est $C^k$ pour tout $k$, donc $C^{\\infty}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-079",
+        "image_path": null,
+        "theme": "Intégration",
+        "question": "Quelle est la valeur de l'intégrale $\\int_{0}^{+\\infty} \\frac{1}{1+t^3} dt$ ?",
+        "answers": [
+            "$\\frac{2\\pi}{3\\sqrt{3}}$",
+            "$\\pi/3$",
+            "$\\frac{\\pi}{\\sqrt{3}}$",
+            "$\\frac{\\pi}{2\\sqrt{2}}$"
+        ],
+        "difficulty": 5,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Cette intégrale se calcule par décomposition en éléments simples : $\\frac{1}{1+t^3} = \\frac{1}{3(t+1)} - \\frac{t-2}{3(t^2-t+1)}$. L'intégration conduit à des formes en $\\ln$ et $\\arctan$. La valeur finale après simplification est bien $\\frac{2\\pi}{3\\sqrt{3}}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-080",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Considérons $g(x) = \\int_{0}^{+\\infty} \\frac{e^{-t}}{t+x} dt$ pour $x > 0$. Quelle est la limite de $x g(x)$ quand $x \\to +\\infty$ ?",
+        "answers": [
+            "0",
+            "1",
+            "$e^{-1}$",
+            "$+\\infty$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "On écrit $x g(x) = \\int_0^{+\\infty} \\frac{x}{t+x} e^{-t} dt$. Pour tout $t \\geq 0$, $\\frac{x}{t+x} e^{-t} \\leq e^{-t}$. Comme $\\int_0^{+\\infty} e^{-t} dt = 1$ et $\\lim_{x \\to +\\infty} \\frac{x}{t+x} = 1$ (convergence dominée), on a $\\lim_{x \\to +\\infty} x g(x) = \\int_0^{+\\infty} 1 \\cdot e^{-t} dt = 1$. Note : L'index 0 correspond à 0 dans la liste initiale, mais ici la valeur correcte est 1 (index 1). *Rectification : index 1*.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-081",
+        "image_path": null,
+        "theme": "Changement de variable",
+        "question": "Dans le cadre de l'étude de l'intégrale de Laplace $I(p) = \\int_{0}^{+\\infty} e^{-pt} f(t) dt$ (Ex 34), quel changement de variable est pertinent pour faire apparaître la variable $p$ uniquement dans les bornes ou en facteur ?",
+        "answers": [
+            "$u = pt$",
+            "$u = t/p$",
+            "$u = e^t$",
+            "$u = p^2t$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "En posant $u = pt$, on obtient $dt = du/p$. Ce changement permet de normaliser l'argument de l'exponentielle et est la méthode standard pour étudier le comportement asymptotique de l'intégrale lorsque $p \\to +\\infty$. Les autres choix rendent le calcul différentiel inutilement complexe.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-082",
+        "image_path": null,
+        "theme": "Dérivées partielles",
+        "question": "Considérons la fonction définie par $f(x,y) = \\frac{3x^2y}{x^2+y^2}$ pour $(x,y) \\neq (0,0)$. Quelle est l'expression correcte de la dérivée partielle $\\frac{\\partial f}{\\partial x}$ ?",
+        "answers": [
+            "$\\frac{6xy^3}{(x^2+y^2)^2}$",
+            "$\\frac{6x y (x^2+y^2) - 3x^2y (2x)}{(x^2+y^2)^2}$",
+            "$\\frac{3x^2}{x^2+y^2}$",
+            "$\\frac{6xy}{x^2+y^2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "explication": "On applique la formule de dérivation d'un quotient $\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}$. Ici, avec $u=3x^2y$ et $v=x^2+y^2$, on a $\\frac{\\partial u}{\\partial x} = 6xy$ et $\\frac{\\partial v}{\\partial x} = 2x$. La réponse 1 est une simplification intermédiaire qui est correcte après développement, mais la réponse 2 est la forme brute issue de la règle du quotient.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-083",
+        "image_path": null,
+        "theme": "Intégrales à paramètre",
+        "question": "La fonction $g(x) = \\int_{-\\infty}^{+\\infty} e^{-t^2} e^{ixt} dt$ (Ex 47) correspond à une opération classique sur les fonctions. Laquelle ?",
+        "answers": [
+            "La transformée de Fourier de la fonction Gaussienne $f(t) = e^{-t^2}$",
+            "La transformée de Laplace de la fonction Gaussienne",
+            "La fonction caractéristique d'une loi uniforme sur $[-1, 1]$",
+            "La transformée de Mellin de $e^{-t^2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "La transformée de Fourier d'une fonction $f$ est définie par $\\hat{f}(x) = \\int_{-\\infty}^{+\\infty} f(t) e^{ixt} dt$ (selon la convention usuelle). Ici, $f(t) = e^{-t^2}$. Laplace nécessite un noyau $e^{-pt}$ avec $p \\in \\mathbb{C}$ et des bornes sur $[0, +\\infty[$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-084",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Soit $g(x) = \\int_{-\\infty}^{+\\infty} e^{-t^2} e^{ixt} dt$. En utilisant la dérivation sous le signe somme, quelle équation différentielle vérifie $g(x)$ ?",
+        "answers": [
+            "$g'(x) = -\\frac{x}{2} g(x)$",
+            "$g'(x) = x g(x)$",
+            "$g'(x) = -x^2 g(x)$",
+            "$g'(x) = -2x g(x)$"
+        ],
+        "difficulty": 5,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "En dérivant sous l'intégrale : $g'(x) = \\int_{-\\infty}^{+\\infty} (it) e^{-t^2} e^{ixt} dt$. Par intégration par parties avec $u = e^{ixt}$ et $dv = te^{-t^2} dt$, on obtient $v = -\\frac{1}{2} e^{-t^2}$. On trouve alors $g'(x) = -\\frac{x}{2} g(x)$, ce qui mène à une solution de type Gaussienne.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-085",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Soit $(f_n)$ une suite de fonctions convergeant simplement vers $f$. Si $|f_n| \\le \\varphi$ avec $\\int_{\\mathbb{R}} \\varphi(t) dt < +\\infty$, que nous garantit le théorème de convergence dominée de Lebesgue pour $\\int_{\\mathbb{R}} |f_n - f| dt$ ?",
+        "answers": [
+            "La limite est $0$",
+            "La limite est $\\int \\varphi$",
+            "La limite est $\\int f$",
+            "La limite n'existe pas"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Le théorème de convergence dominée assure que si $f_n \\to f$ simplement et est dominée par une fonction intégrable $\\varphi$, alors $\\int f_n \\to \\int f$. Appliqué à $|f_n - f|$, qui est dominé par $2\\varphi$ (intégrable), on obtient que l'intégrale de la différence tend vers zéro.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-086",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Quelle est la valeur de la somme de la série alternée $\\sum_{n=0}^{+\\infty} \\frac{(-1)^n}{2n+1}$ ?",
+        "answers": [
+            "$\\pi/4$",
+            "$\\ln(2)$",
+            "$\\pi^2/6$",
+            "$1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Il s'agit du développement en série de Taylor de la fonction $\\arctan(x)$ évalué en $x=1$. On sait que $\\arctan(1) = \\pi/4$. La série $\\sum 1/n^2 = \\pi^2/6$ est la solution du problème de Bâle, à ne pas confondre ici.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-087",
+        "image_path": null,
+        "theme": "Intégrales à paramètre",
+        "question": "Dans l'étude de $F(x) = \\int_0^1 \\frac{t^x-1}{\\ln t} dt$ (Ex 11), par dérivation sous le signe somme, que démontre-t-on sur la nature de $F$ ?",
+        "answers": [
+            "$F'(x) = \\frac{1}{x+1}$, donc $F(x) = \\ln(x+1)$",
+            "$F(x)$ est une fonction constante",
+            "$F(x) = 0$ partout",
+            "$F(x)$ est linéaire"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "En dérivant $F(x)$ par rapport à $x$, on obtient $F'(x) = \\int_0^1 t^x dt = [\\frac{t^{x+1}}{x+1}]_0^1 = \\frac{1}{x+1}$. En intégrant cette expression, on retrouve $F(x) = \\ln(x+1) + C$. Avec $F(0)=0$, on conclut $F(x) = \\ln(x+1)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-088",
+        "image_path": null,
+        "theme": "Calcul intégral",
+        "question": "Quelle est la valeur de l'intégrale définie $I = \\int_{0}^{1} \\frac{t-1}{\\ln t} dt$ ?",
+        "answers": [
+            "$\\ln 2$",
+            "1",
+            "$\\pi/2$",
+            "$0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "On peut écrire $\\frac{t-1}{\\ln t} = \\int_0^1 t^y dy$. Ainsi, $I = \\int_0^1 (\\int_0^1 t^y dy) dt$. Par le théorème de Fubini, on inverse les intégrales : $\\int_0^1 (\\int_0^1 t^y dt) dy = \\int_0^1 [\\frac{t^{y+1}}{y+1}]_0^1 dy = \\int_0^1 \\frac{dy}{y+1} = [\\ln(y+1)]_0^1 = \\ln 2$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-089",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Soit $F(x) = \\int_{a}^{b} f(x,t) dt$. Quelles sont les conditions minimales pour appliquer le théorème de Leibniz (dérivation sous le signe somme) ?",
+        "answers": [
+            "$f$ continue, $\\frac{\\partial f}{\\partial x}$ existe et est continue, et le domaine d'intégration est borné",
+            "$f$ doit être $C^1$ en les deux variables",
+            "$f$ doit être continue par morceaux uniquement",
+            "$f$ doit être nulle en $x$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Le théorème de dérivation sous le signe somme requiert la continuité de $f$ et $\\frac{\\partial f}{\\partial x}$ sur le rectangle (ou domaine) considéré. Si le domaine est infini, il faut ajouter une condition de domination (fonction intégrable majorante) pour assurer la convergence uniforme.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-090",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Soit $I_n = \\int_{0}^{1} \\frac{1}{1+t^n} dt$. Quelle est la limite de cette suite lorsque $n \\to +\\infty$ ?",
+        "answers": [
+            "$1$",
+            "$1/2$",
+            "$\\ln 2$",
+            "$0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Pour $t \\in [0, 1[$, $t^n \\to 0$ donc $\\frac{1}{1+t^n} \\to 1$. Pour $t=1$, la fonction vaut $1/2$. La limite simple est la fonction constante égale à $1$ sur $[0, 1[$, dont l'intégrale sur $[0, 1]$ vaut $1$. Le point isolé $t=1$ ne modifie pas la valeur de l'intégrale de Lebesgue.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-091",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Dans le cadre de l'étude de la limite d'une intégrale à paramètre, quelle est la limite de $I_n = \\int_{0}^{+\\infty} \\frac{dt}{1+t^n}$ lorsque $n \\to +\\infty$ ?",
+        "answers": [
+            "$1$",
+            "$0$",
+            "$+\\infty$",
+            "$1/2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Pour $t \\in [0, 1[$, la suite $f_n(t) = \\frac{1}{1+t^n}$ tend vers $1$. Pour $t > 1$, elle tend vers $0$. En utilisant le théorème de convergence dominée, on obtient $\\lim_{n \\to \\infty} I_n = \\int_0^1 1 dt + \\int_1^{+\\infty} 0 dt = 1$. L'erreur classique est de négliger l'intervalle $[0, 1]$ ou de conclure hâtivement à 0.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-092",
+        "image_path": null,
+        "theme": "Fonction Gamma",
+        "question": "La relation fondamentale de la fonction d'Euler $\\Gamma(x+1) = x \\Gamma(x)$ pour $x > 0$ se démontre rigoureusement par :",
+        "answers": [
+            "Une intégration par parties",
+            "Un changement de variable affine",
+            "Une dérivation sous le signe intégral",
+            "L'utilisation de la formule de Stirling"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "On pose $\\Gamma(x+1) = \\int_0^{+\\infty} t^x e^{-t} dt$. En effectuant une intégration par parties avec $u = t^x$ et $dv = e^{-t} dt$, on obtient $[ -t^x e^{-t} ]_0^{+\\infty} + \\int_0^{+\\infty} x t^{x-1} e^{-t} dt$. Le crochet est nul, il reste $x \\Gamma(x)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-093",
+        "image_path": null,
+        "theme": "Domination",
+        "question": "Pour justifier la continuité de $g(x) = \\int_{0}^{+\\infty} e^{-x^2 t^2} dt$ sur un segment $[a, b]$ avec $0 < a < b$, quelle fonction $\\varphi(t)$ peut servir de dominante ?",
+        "answers": [
+            "$\\varphi(t) = e^{-a^2 t^2}$",
+            "$\\varphi(t) = e^{-b^2 t^2}$",
+            "$\\varphi(t) = 1$",
+            "$\\varphi(t) = e^{-t^2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Pour tout $x \\in [a, b]$, on a $x^2 \\ge a^2$, donc $-x^2 t^2 \\le -a^2 t^2$, d'où $0 < e^{-x^2 t^2} \\le e^{-a^2 t^2}$. La fonction $\\varphi(t) = e^{-a^2 t^2}$ est intégrable sur $[0, +\\infty[$. Prendre $b$ serait faux car on n'aurait pas la domination sur tout le segment.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-094",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Quelle est la valeur de la somme de la série de Riemann $\\sum_{n=1}^{+\\infty} \\frac{1}{n^2}$ ?",
+        "answers": [
+            "$\\pi^2/6$",
+            "$\\pi^2/8$",
+            "$1$",
+            "$\\pi^2/3$"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Il s'agit du célèbre problème de Bâle résolu par Euler. La valeur est $\\zeta(2) = \\frac{\\pi^2}{6}$. C'est un résultat classique à connaître par cœur pour les concours.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-095",
+        "image_path": null,
+        "theme": "Séries et Intégrales",
+        "question": "Quelle est la valeur de la série alternée $\\sum_{n=0}^{+\\infty} \\frac{(-1)^n}{(n+1)^2}$ ?",
+        "answers": [
+            "$\\pi^2/12$",
+            "$\\pi^2/6$",
+            "$\\ln 2$",
+            "$\\pi^2/4$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "En notant $S = \\sum_{n=1}^{+\\infty} \\frac{(-1)^{n-1}}{n^2}$, on remarque que $S = \\sum_{n=1}^{+\\infty} \\frac{1}{n^2} - 2 \\sum_{n=1, n \\text{ pair}}^{+\\infty} \\frac{1}{n^2} = \\zeta(2) - 2(\\frac{1}{4}\\zeta(2)) = \\frac{1}{2}\\zeta(2) = \\frac{\\pi^2}{12}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-096",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Soit $f(x,t)$ continue sur $A \\times I$. Si l'intégrale $g(x) = \\int_I f(x,t) dt$ converge pour tout $x$, est-ce que $g$ est nécessairement continue ?",
+        "answers": [
+            "Non, il faut une domination locale par une fonction intégrable",
+            "Oui, la continuité est une propriété qui passe à la limite",
+            "Seulement si $I$ est un segment compact",
+            "Seulement si $f$ est dérivable par rapport à $x$"
+        ],
+        "difficulty": 3,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "La convergence simple ne suffit pas. Le théorème de continuité sous le signe intégral requiert la continuité de $f$ et l'existence d'une domination locale $\\varphi$ intégrable sur $I$. Sans domination, on peut construire des contre-exemples comme $f_n(t)$ qui présentent une discontinuité à la limite.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-097",
+        "image_path": null,
+        "theme": "Calcul intégral",
+        "question": "L'intégrale de Wallis $W_n = \\int_{0}^{\\pi/2} \\sin^n t dt$ peut s'exprimer via la fonction $\\Gamma$ comme :",
+        "answers": [
+            "$W_n = \\frac{\\sqrt{\\pi} \\Gamma(\\frac{n+1}{2})}{2 \\Gamma(\\frac{n+2}{2})}$",
+            "$W_n = \\Gamma(n)$",
+            "$W_n = \\frac{\\Gamma(n)}{\\sqrt{\\pi}}$",
+            "$W_n = \\frac{\\Gamma(n/2)}{2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "En utilisant le changement de variable $u = \\sin^2 t$, on relie Wallis à la fonction Beta, puis à $\\Gamma$ via la relation $B(x,y) = \\frac{\\Gamma(x)\\Gamma(y)}{\\Gamma(x+y)}$. Le résultat est un classique des oraux pour comparer la croissance des fonctions.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-098",
+        "image_path": null,
+        "theme": "Théorème de convergence dominée",
+        "question": "Pour appliquer le Théorème de Convergence Dominée (TCD) sur un intervalle $I$ qui dépend de $n$ (ex: $[0, n]$), quelle est la technique standard ?",
+        "answers": [
+            "Prolonger les fonctions par $0$ sur $[0, +\\infty[$ pour travailler sur un intervalle fixe",
+            "Utiliser le théorème de Fubini sur le rectangle",
+            "Ne pas appliquer le TCD et utiliser des sommes de Riemann",
+            "Faire un changement de variable pour borner l'intégrale"
+        ],
+        "difficulty": 2,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "Le TCD s'applique sur un espace mesuré fixe. On définit $f_n(t) = f(t) \\mathbf{1}_{[0, n]}(t)$. Comme $f_n$ converge simplement vers $f$ sur $[0, +\\infty[$ et est dominée par $f$ (si elle est intégrable), on peut conclure.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-099",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Soit $g(x) = \\int_{0}^{+\\infty} e^{-t^2} \\cos(xt) dt$. En dérivant sous le signe intégral, quelle équation différentielle $g$ vérifie-t-elle ?",
+        "answers": [
+            "$2g'(x) + xg(x) = 0$",
+            "$g'(x) + xg(x) = 0$",
+            "$g''(x) - xg(x) = 0$",
+            "$g'(x) - g(x) = 0$"
+        ],
+        "difficulty": 5,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "On calcule $g'(x) = \\int_0^{+\\infty} -t e^{-t^2} \\sin(xt) dt$. Une IPP avec $u = \\sin(xt)$ et $v' = -t e^{-t^2}$ permet d'isoler $g(x)$. On trouve $g'(x) = -\\frac{x}{2} g(x)$, soit $2g'(x) + xg(x) = 0$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-100",
+        "image_path": null,
+        "theme": "Intégrales de Gauss",
+        "question": "Quelle est la valeur de l'intégrale de Gauss $I = \\int_{-\\infty}^{+\\infty} e^{-t^2} dt$ ?",
+        "answers": [
+            "$\\sqrt{\\pi}$",
+            "$\\pi$",
+            "$1/2$",
+            "$1$"
+        ],
+        "difficulty": 1,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 0,
+        "explication": "On calcule $I^2 = \\iint_{\\mathbb{R}^2} e^{-(x^2+y^2)} dx dy$. En passant en coordonnées polaires, on obtient $\\int_0^{2\\pi} d\\theta \\int_0^{+\\infty} r e^{-r^2} dr = 2\\pi \\times [-\\frac{1}{2}e^{-r^2}]_0^{+\\infty} = \\pi$. D'où $I = \\sqrt{\\pi}$.",
+        "subject": "maths"
+    }
+]

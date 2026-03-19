@@ -1,0 +1,1603 @@
+[
+    {
+        "uuid": "corr-001",
+        "image_path": null,
+        "theme": "Corrosion",
+        "chapter": "Corrosion",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Dans le cadre de l'étude thermodynamique des systèmes électrochimiques, quelle est la définition rigoureuse de la corrosion d'un métal $M$ ?",
+        "answers": [
+            "L'oxydation d'un métal en cations métalliques par réaction avec son environnement.",
+            "La réduction de cations métalliques en métal solide par les molécules d'eau.",
+            "La transformation du métal en un sel complexe stable par réaction acido-basique.",
+            "La formation d'un oxyde non poreux à la surface du métal."
+        ],
+        "correct_answer_index": 0,
+        "explication": "La corrosion est définie par le passage de l'état métallique solide ($M_{(s)}$) à un état oxydé (souvent des ions $M^{n+}_{(aq)}$ ou des oxydes). La réponse 1 est fausse car elle décrit le phénomène inverse (dépôt). La réponse 3 confond corrosion et passivation. La réponse 4 décrit une couche protectrice, or la corrosion implique une dégradation ou une dissolution."
+    },
+    {
+        "uuid": "corr-002",
+        "image_path": null,
+        "theme": "Corrosion",
+        "chapter": "Corrosion",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Dans les conditions courantes d'exposition atmosphérique ou en milieu aqueux, quels sont les deux couples redox majoritairement responsables de la corrosion ?",
+        "answers": [
+            "Le couple du diazote ($N_2/NH_4^+$) et du dioxyde de carbone ($CO_2/HCO_3^-$).",
+            "Le couple de l'eau ($H_2O/H_2$) et du dioxygène ($O_2/H_2O$).",
+            "Le couple des ions chlorures ($Cl_2/Cl^-$) et des ions sulfates ($SO_4^{2-}/SO_2$).",
+            "Le couple des protons ($H^+/H_2$) et des ions ferriques ($Fe^{3+}/Fe^{2+}$)."
+        ],
+        "correct_answer_index": 1,
+        "explication": "La corrosion est une réaction couplée : le métal s'oxyde tandis qu'un oxydant du milieu est réduit. En milieu aqueux, les oxydants les plus courants sont les protons ($H^+$) en milieu acide et le dioxygène ($O_2$) dissous. Les autres options ne correspondent pas aux réactifs dominants dans les milieux naturels classiques."
+    },
+    {
+        "uuid": "corr-003",
+        "image_path": null,
+        "theme": "Diagrammes E-pH",
+        "chapter": "Corrosion",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Dans l'analyse d'un diagramme de Pourbaix (E-pH), que désigne spécifiquement le domaine d'immunité d'un métal $M$ ?",
+        "answers": [
+            "Le domaine de prédominance des cations solubles $M^{n+}$.",
+            "Le domaine de stabilité thermodynamique du métal solide $M_{(s)}$.",
+            "Le domaine de stabilité des oxydes et hydroxydes métalliques solides.",
+            "Le domaine où le métal est sous forme gazeuse à haute température."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le domaine d'immunité correspond aux zones du diagramme E-pH où le potentiel et le pH sont tels que le métal pur est l'espèce thermodynamiquement stable. Dans ce domaine, le métal ne peut pas s'oxyder spontanément, il est donc 'immunisé' contre la corrosion. Le domaine des cations solubles est le domaine de corrosion, celui des oxydes est le domaine de passivation."
+    },
+    {
+        "uuid": "corr-004",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Pourbaix_Diagram_of_Iron.svg/500px-Pourbaix_Diagram_of_Iron.svg.png",
+        "theme": "Diagrammes E-pH",
+        "chapter": "Corrosion",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Sur un diagramme de Pourbaix, le domaine dit de 'corrosion' se caractérise par la stabilité de quelles espèces ?",
+        "answers": [
+            "Des espèces solides protectrices type $M_xO_y$.",
+            "Du métal pur $M_{(s)}$.",
+            "Des cations métalliques solubles $M^{n+}$.",
+            "Des espèces neutres en suspension colloïdale."
+        ],
+        "correct_answer_index": 2,
+        "explication": "Le domaine de corrosion correspond aux zones où le métal est oxydé en espèces solubles dans l'eau (généralement des ions). Si le métal passe en solution, il y a perte de matière. La réponse 1 correspond à la passivation, la réponse 2 à l'immunité."
+    },
+    {
+        "uuid": "corr-005",
+        "image_path": null,
+        "theme": "Diagrammes E-pH",
+        "chapter": "Corrosion",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Pour tracer les frontières d'un diagramme de Pourbaix (E-pH), quelle est la valeur conventionnelle de la concentration totale en espèces dissoutes choisie pour définir la limite de solubilité ?",
+        "answers": [
+            "$1 \\text{ mol.L}^{-1}$",
+            "$10^{-1} \\text{ mol.L}^{-1}$",
+            "$10^{-6} \\text{ mol.L}^{-1}$",
+            "$10^{-14} \\text{ mol.L}^{-1}$"
+        ],
+        "correct_answer_index": 2,
+        "explication": "La valeur de $10^{-6} \\text{ mol.L}^{-1}$ est le standard IUPAC pour tracer les frontières entre les domaines de solides et les domaines d'ions dissous. En deçà de cette concentration, on considère que la quantité de métal dissous est négligeable, définissant ainsi la limite entre immunité/passivation et corrosion."
+    },
+    {
+        "uuid": "corr-006",
+        "image_path": null,
+        "theme": "Corrosion",
+        "chapter": "Corrosion",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Un métal est dit 'noble' au sens thermodynamique si son comportement face à l'eau est particulier. Quelle condition doit être vérifiée ?",
+        "answers": [
+            "Son domaine de passivation est très large sur tout le diagramme.",
+            "La frontière de stabilité de l'eau ($O_2/H_2O$) se situe au-dessus de son domaine d'immunité.",
+            "Sa tension de surface est très élevée par rapport aux autres métaux.",
+            "Il ne réagit jamais avec les acides, même à chaud."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Un métal est noble si son domaine d'immunité est inclus dans la zone de stabilité thermodynamique de l'eau. Cela signifie que l'eau n'est pas un oxydant assez fort pour oxyder le métal. Si la frontière $O_2/H_2O$ est au-dessus du domaine d'immunité, le métal est stable en présence d'eau oxygénée."
+    },
+    {
+        "uuid": "corr-007",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Pourbaix_Diagram_of_Aluminium.svg/500px-Pourbaix_Diagram_of_Aluminium.svg.png",
+        "theme": "Passivation",
+        "chapter": "Corrosion",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "L'aluminium est un métal très réducteur (potentiel standard très bas). Comment expliquer sa remarquable résistance à la corrosion dans les conditions naturelles ?",
+        "answers": [
+            "Il est thermodynamiquement stable en présence d'eau à tout pH.",
+            "Il forme une couche d'oxyde $Al_2O_3$ continue, adhérente et imperméable (passivation).",
+            "Il forme un alliage spontané avec le dioxygène de l'air.",
+            "La cinétique de sa réaction avec $H^+$ est infiniment lente par nature."
+        ],
+        "correct_answer_index": 1,
+        "explication": "L'aluminium est un métal thermodynamiquement instable dans l'eau, mais il est protégé par la formation d'une couche d'oxyde d'aluminium très stable et compacte qui isole le métal de l'environnement : c'est la passivation. La réponse 4 est un abus de langage, car c'est la structure de l'oxyde qui protège, et non une lenteur intrinsèque de la réaction redox."
+    },
+    {
+        "uuid": "corr-008",
+        "image_path": null,
+        "theme": "Passivation",
+        "chapter": "Corrosion",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Le fer, contrairement à l'aluminium, subit une corrosion importante dans les conditions naturelles. Pourquoi ses oxydes ne permettent-ils pas une protection efficace ?",
+        "answers": [
+            "Parce que les oxydes de fer sont solubles dans l'eau, quel que soit le pH.",
+            "Parce que la couche d'oxyde de fer est poreuse et non adhérente, permettant la diffusion de l'oxydant.",
+            "Parce que le fer ne forme pas d'oxyde en présence de dioxygène.",
+            "Parce que le fer nécessite une température très élevée pour se passiver."
+        ],
+        "correct_answer_index": 1,
+        "explication": "La rouille (mélange d'oxydes et d'hydroxydes de fer) est poreuse et peu adhérente. Elle ne constitue pas une barrière physique étanche, ce qui laisse l'eau et le dioxygène atteindre le métal sous-jacent, permettant à la corrosion de se poursuivre en profondeur."
+    },
+    {
+        "uuid": "corr-009",
+        "image_path": null,
+        "theme": "Cinétique",
+        "chapter": "Corrosion",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Lorsqu'un métal est plongé dans un électrolyte, il adopte un potentiel stable dit 'potentiel de corrosion' ($E_{corr}$). Comment se définit-il ?",
+        "answers": [
+            "Il est égal au potentiel standard $E^0$ du couple $M^{n+}/M$.",
+            "Il est le potentiel où le courant total traversant l'électrode est nul.",
+            "Il s'agit du potentiel d'équilibre thermodynamique de la pile.",
+            "Il est toujours fixé par la concentration en ions métalliques uniquement."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le potentiel de corrosion ($E_{corr}$) est le potentiel mixte atteint à l'état stationnaire où la vitesse d'oxydation du métal (courant anodique) égale exactement la vitesse de réduction de l'oxydant du milieu (courant cathodique). La somme algébrique des courants est nulle : $I_{anodique} + I_{cathodique} = 0$."
+    },
+    {
+        "uuid": "corr-010",
+        "image_path": null,
+        "theme": "Cinétique",
+        "chapter": "Corrosion",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Soit $i_a$ la densité de courant anodique et $i_c$ la densité de courant cathodique. À l'état stationnaire de corrosion, quelle relation vectorielle est vérifiée ?",
+        "answers": [
+            "$i_a = i_c$",
+            "$i_a + i_c = 0$",
+            "$i_a - i_c = i_{total}$ avec $i_{total} > 0$",
+            "$i_a = - 2 i_c$"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Par convention, les densités de courant anodique sont positives et cathodiques négatives. À l'état stationnaire, il n'y a pas d'accumulation de charges électriques à l'interface, donc la somme des flux de charges (courants) est nulle : $\\sum i = i_a + i_c = 0$, soit $i_a = |i_c|$. Les autres propositions ignorent la convention de signe ou la loi de conservation de la charge."
+    },
+    {
+        "uuid": "corr-011",
+        "image_path": null,
+        "theme": "Cinétique",
+        "question": "Qu'est-ce qu'un blocage cinétique en corrosion ?",
+        "answers": [
+            "Quand la réaction est thermodynamiquement impossible.",
+            "Quand il n'existe pas de potentiel mixte donnant des courants non nuls malgré la possibilité thermodynamique[cite: 371].",
+            "Quand le métal est dans son domaine d'immunité[cite: 358]."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-012",
+        "image_path": null,
+        "theme": "Corrosion",
+        "question": "D'après le cours, quel est l'effet de la corrosion sur le pH du milieu local ?",
+        "answers": [
+            "Elle l'acidifie par production de $H^+$.",
+            "Elle n'a aucun effet sur le pH.",
+            "Elle le basifie par production de $HO^-$[cite: 396]."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-013",
+        "image_path": null,
+        "theme": "Corrosion différentielle",
+        "question": "Qu'est-ce que la corrosion différentielle ?",
+        "answers": [
+            "L'oxydation non uniforme d'un métal due à une hétérogénéité du support ou du milieu[cite: 413].",
+            "La corrosion qui a lieu à des températures différentes.",
+            "La réaction entre deux métaux nobles."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-014",
+        "image_path": null,
+        "theme": "Corrosion différentielle",
+        "question": "Lors d'une jonction fer/zinc en solution aqueuse, quel métal s'oxyde préférentiellement ?",
+        "answers": [
+            "Le fer car il est plus noble.",
+            "Le zinc car il est plus réducteur[cite: 434].",
+            "Les deux s'oxydent à la même vitesse."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-015",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "En quoi consiste la protection par 'anode sacrificielle' ?",
+        "answers": [
+            "Appliquer une peinture étanche[cite: 449].",
+            "Relier le métal à un métal plus facilement corrodable qui s'oxydera à sa place[cite: 475, 477].",
+            "Relier le métal au pôle positif d'un générateur[cite: 459]."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-016",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Cathodic_protection_impressed_current.svg/500px-Cathodic_protection_impressed_current.svg.png",
+        "theme": "Protection",
+        "question": "Dans la protection par courant imposé, la pièce à protéger est reliée à quelle borne du générateur ?",
+        "answers": [
+            "La borne positive (anode).",
+            "La borne négative (elle joue le rôle de cathode)[cite: 460, 469].",
+            "Cela n'a pas d'importance."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-017",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Quel est l'inconvénient majeur de la protection par courant imposé par rapport à l'anode sacrificielle ?",
+        "answers": [
+            "Elle est moins efficace.",
+            "Elle nécessite une source d'énergie électrique continue[cite: 462].",
+            "Elle détruit la pièce à protéger."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-018",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Qu'est-ce que le zingage (galvanisation) ?",
+        "answers": [
+            "Recouvrir une pièce de fer par une fine couche de zinc[cite: 454].",
+            "Mélanger du fer et du zinc pour former un alliage.",
+            "Plonger du zinc dans de l'acide chlorhydrique."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-019",
+        "image_path": null,
+        "theme": "Exercice 1",
+        "question": "Dans l'expérience du plomb dans l'acide (Ex 1), quel gaz est produit lors du dégagement observé ?",
+        "answers": [
+            "Le dichlore ($Cl_2$).",
+            "Le dioxygène ($O_2$).",
+            "Le dihydrogène ($H_2$)[cite: 18]."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-020",
+        "image_path": null,
+        "theme": "Exercice 1",
+        "question": "Pourquoi le dégagement gazeux est-il plus abondant quand on touche le plomb avec un fil de platine ?",
+        "answers": [
+            "Parce que le platine réagit avec l'acide.",
+            "Car la réduction de l'eau est plus rapide sur le platine que sur le plomb[cite: 19].",
+            "Car le platine augmente la température de la solution."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-021",
+        "image_path": null,
+        "theme": "Exercice 2",
+        "question": "Pourquoi l'attaque de l'aluminium non décapé dans HCl est-elle très lente (Ex 2) ?",
+        "answers": [
+            "L'aluminium est un métal noble.",
+            "Le système est dans le domaine de passivité de l'alumine ($Al_2O_3$)[cite: 51].",
+            "HCl n'est pas un acide assez fort."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-022",
+        "image_path": null,
+        "theme": "Exercice 2",
+        "question": "Pourquoi l'aluminium est-il vivement attaqué par une solution de soude concentrée ?",
+        "answers": [
+            "La soude réduit l'aluminium en métal.",
+            "La couche de passivation est dissoute pour former l'ion complexe soluble $Al(OH)_4^-$[cite: 53].",
+            "L'aluminium ne réagit qu'avec les bases."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-023",
+        "image_path": null,
+        "theme": "Exercice 3",
+        "question": "Dans la courbe i(E) du plomb dans $H_2SO_4$, à quoi correspond le palier (v) où l'intensité chute (Ex 3) ?",
+        "answers": [
+            "Au domaine d'immunité.",
+            "À la formation d'une couche d'oxyde isolante ($PbO_2$) qui passive le métal[cite: 82].",
+            "Au dégagement d'hydrogène."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-024",
+        "image_path": null,
+        "theme": "Exercice 3",
+        "question": "Quelle est la demi-équation du processus d'oxydation (iii) observé pour le plomb ?",
+        "answers": [
+            "$Pb = Pb^{2+} + 2e^-$[cite: 78].",
+            "$Pb + 2H_2O = PbO_2 + 4H^+ + 4e^-$[cite: 79].",
+            "$2H^+ + 2e^- = H_2$[cite: 77]."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-025",
+        "image_path": null,
+        "theme": "Exercice 4",
+        "question": "Pourquoi la corrosion du cuivre dans une eau acidifiée aérée est-elle très lente (Ex 4) ?",
+        "answers": [
+            "La réaction est thermodynamiquement impossible.",
+            "À cause des surtensions, l'intensité au potentiel mixte est très faible[cite: 117].",
+            "Le cuivre se passive immédiatement."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-026",
+        "image_path": null,
+        "theme": "Exercice 4",
+        "question": "Quel est l'effet de l'ajout d'ammoniac ($NH_3$) sur le potentiel d'équilibre du couple $Cu^{2+}/Cu$ ?",
+        "answers": [
+            "Il le décale vers la droite (valeurs plus grandes).",
+            "Il n'a aucun effet.",
+            "Il le décale vers la gauche (valeurs plus faibles) par complexation[cite: 125]."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-027",
+        "image_path": null,
+        "theme": "Exercice 5",
+        "question": "Dans le diagramme E-pH du zinc (Ex 5), à quoi correspondent les zones B et D ?",
+        "answers": [
+            "Domaines de corrosion[cite: 164].",
+            "Domaine d'immunité[cite: 164].",
+            "Domaine de passivation[cite: 164]."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-028",
+        "image_path": null,
+        "theme": "Exercice 5",
+        "question": "Quelle est la pente de la frontière entre le zinc métal et l'oxyde $Zn(OH)_2$ (Frontière A/C) ?",
+        "answers": [
+            "$0 \\text{ V/pH}$",
+            "$-0,06 \\text{ V/pH}$[cite: 180].",
+            "$-0,12 \\text{ V/pH}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-029",
+        "image_path": null,
+        "theme": "Exercice 5",
+        "question": "Pourquoi aucun dégagement de $H_2$ n'est observé sur du zinc pur à pH 6 alors que c'est thermodynamiquement possible ?",
+        "answers": [
+            "Le zinc est dans son domaine d'immunité.",
+            "La surtension à la réduction de $H^+$ sur le zinc est trop élevée (blocage cinétique)[cite: 192].",
+            "L'eau n'est pas assez acide."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-030",
+        "image_path": null,
+        "theme": "Exercice 6",
+        "question": "Dans un circuit de chauffage (Cu/Fe), pourquoi est-ce le radiateur en fer qui est attaqué (Ex 6) ?",
+        "answers": [
+            "Le fer a un potentiel standard plus bas (-0,44 V) que le cuivre (+0,34 V)[cite: 206, 229].",
+            "Le cuivre est un meilleur conducteur.",
+            "L'eau chaude n'attaque que le fer."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-031",
+        "image_path": null,
+        "theme": "Exercice 6",
+        "question": "Dans le cadre d'une pile de corrosion galvanique entre le fer ($Fe$) et le cuivre ($Cu$) immergés dans une solution aqueuse acide, sur quel métal se produit préférentiellement la réaction de réduction du solvant $2H^+ + 2e^- = H_2(g)$ ?",
+        "answers": [
+            "Sur le fer, car c'est lui qui s'oxyde.",
+            "Sur le cuivre, qui joue le rôle de cathode grâce à sa surtension plus faible pour le dégagement d'hydrogène.",
+            "Directement dans la solution, loin des interfaces métalliques.",
+            "Sur aucun des deux, la réduction a lieu sur les impuretés du fer uniquement."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "Le métal le moins noble ($Fe$) s'oxyde, tandis que le métal le plus noble ($Cu$) sert de siège à la réduction de l'eau (ou des protons). Le cuivre présente une surtension de dégagement d'hydrogène beaucoup plus faible que le fer, ce qui favorise cinétiquement la réduction cathodique en surface du cuivre."
+    },
+    {
+        "uuid": "corr-032",
+        "image_path": null,
+        "theme": "Exercice 6",
+        "question": "Soit un système de protection cathodique par anode sacrificielle en magnésium ($Mg$). Quelle est la masse de fer ($Fe$) théoriquement épargnée si l'anode de $500 \\text{ g}$ est consommée à $75\\%$ ? (Masses molaires : $M_{Mg} = 24,3 \\text{ g/mol}$, $M_{Fe} = 55,8 \\text{ g/mol}$)",
+        "answers": [
+            "$500 \\text{ g}$",
+            "$860 \\text{ g}$",
+            "$400 \\text{ g}$",
+            "$1150 \\text{ g}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "On utilise le bilan électronique : $Mg \\rightarrow Mg^{2+} + 2e^-$ et $Fe^{2+} + 2e^- \\rightarrow Fe$. Pour chaque mole de $Mg$ consommée, une mole de $Fe$ est protégée. Masse de $Mg$ consommée : $0,75 \\times 500 = 375 \\text{ g}$. Soit $n_{Mg} = 375 / 24,3 \\approx 15,43 \\text{ mol}$. La masse de fer équivalente est $m_{Fe} = n_{Mg} \\times M_{Fe} \\approx 15,43 \\times 55,8 \\approx 861 \\text{ g}$."
+    },
+    {
+        "uuid": "corr-033",
+        "image_path": null,
+        "theme": "Corrosion",
+        "question": "Lorsqu'une attaque corrosive se répartit de manière homogène sur toute la surface exposée d'un matériau, on parle de :",
+        "answers": [
+            "Corrosion différentielle.",
+            "Corrosion par piqûres.",
+            "Corrosion uniforme.",
+            "Corrosion intergranulaire."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 2,
+        "explication": "La corrosion uniforme est caractérisée par une perte d'épaisseur constante sur toute la surface. Les autres types (piqûres, différentielle) sont des formes de corrosion localisées, beaucoup plus insidieuses car difficiles à détecter."
+    },
+    {
+        "uuid": "corr-034",
+        "image_path": null,
+        "theme": "Diagrammes E-pH",
+        "question": "Dans le cadre de l'étude thermodynamique de la corrosion, deux espèces d'un diagramme $E-pH$ sont dites 'compatibles' si :",
+        "answers": [
+            "Elles ne peuvent pas réagir ensemble car elles sont situées dans la même zone de pH.",
+            "Il existe un domaine de potentiel $E$ et de $pH$ où leurs zones de stabilité thermodynamique se chevauchent ou sont adjacentes, permettant leur coexistence.",
+            "Leur réaction d'oxydoréduction est cinétiquement bloquée.",
+            "Leur différence de potentiel standard est nulle."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "La compatibilité signifie que les espèces peuvent coexister sans réagir spontanément. Sur un diagramme $E-pH$, cela correspond à des zones de stabilité qui se touchent ou se chevauchent sans qu'une réaction thermodynamiquement favorisée (réaction avec le solvant ou entre elles) n'impose leur transformation."
+    },
+    {
+        "uuid": "corr-035",
+        "image_path": null,
+        "theme": "Corrosion",
+        "question": "Comment nomme-t-on le composé d'oxyde d'aluminium de formule chimique $Al_2O_3$, responsable de la passivation naturelle de l'aluminium ?",
+        "answers": [
+            "La rouille.",
+            "L'alumine.",
+            "La magnésie.",
+            "La bauxite."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "L'alumine ($Al_2O_3$) forme une couche imperméable et adhérente sur l'aluminium, ce qui le protège de la corrosion ultérieure (phénomène de passivation). La rouille concerne uniquement le fer."
+    },
+    {
+        "uuid": "corr-036",
+        "image_path": null,
+        "theme": "Cinétique",
+        "question": "Lors du tracé d'une courbe de polarisation $i(E)$, que représente le 'mur du solvant' ?",
+        "answers": [
+            "Le potentiel de passivation du métal.",
+            "La limite de potentiel au-delà de laquelle l'eau est électrolysée ($2H_2O = O_2 + 4H^+ + 4e^-$ ou $2H_2O + 2e^- = H_2 + 2OH^-$), provoquant une hausse exponentielle du courant.",
+            "La zone de transition entre corrosion uniforme et localisée.",
+            "La saturation de l'électrode en ions métalliques."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "Le mur du solvant correspond à la zone où le solvant lui-même devient le réactif principal de la réaction redox. L'intensité augmente très brutalement car il n'y a pas de limitation par la diffusion du métal, mais uniquement par les propriétés redox de l'eau."
+    },
+    {
+        "uuid": "corr-037",
+        "image_path": null,
+        "theme": "Corrosion",
+        "question": "Pourquoi la présence d'impuretés métalliques (ex: cuivre dans le zinc) accélère-t-elle la corrosion du métal hôte ?",
+        "answers": [
+            "Les impuretés modifient la conductivité thermique du métal.",
+            "Elles créent des micro-piles de corrosion où l'impureté joue le rôle de cathode, abaissant la surtension de réduction du proton.",
+            "Elles augmentent la solubilité des ions métalliques dans l'eau.",
+            "Elles forment un film protecteur qui empêche la passivation."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "L'impureté, si elle est plus noble que le métal hôte, constitue des sites cathodiques locaux très efficaces. Cela permet au couple redox (généralement $H^+/H_2$) de se réduire plus facilement, augmentant ainsi le courant de corrosion total par couplage galvanique local."
+    },
+    {
+        "uuid": "corr-038",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Quel est le principe physique fondamental d'une peinture anti-corrosion (barrière) ?",
+        "answers": [
+            "Créer un revêtement étanche et isolant électriquement pour empêcher le contact entre le métal et les espèces agressives ($O_2, H_2O, H^+$).",
+            "Modifier le potentiel standard du métal pour le rendre inattaquable.",
+            "Assurer une protection cathodique par effet tunnel.",
+            "Transformer la surface du métal en un sel insoluble."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "explication": "La protection par barrière vise à rompre le contact physique entre le métal et le milieu corrosif. Si la barrière est altérée, la corrosion reprend immédiatement par piqûre."
+    },
+    {
+        "uuid": "corr-039",
+        "image_path": null,
+        "theme": "Cinétique",
+        "question": "Selon la loi de Faraday, le courant de corrosion $i_{corr}$ est directement proportionnel à :",
+        "answers": [
+            "La tension appliquée à l'électrode.",
+            "La vitesse de disparition (flux de matière) du métal dans la solution.",
+            "La température du bain électrolytique.",
+            "La concentration initiale en ions métalliques dans la solution."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "D'après la loi de Faraday, le flux d'électrons est proportionnel à la quantité de matière transformée ($I = nFv$). Ainsi, mesurer $i_{corr}$ revient à mesurer la vitesse de la réaction d'oxydation du métal."
+    },
+    {
+        "uuid": "corr-040",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Dans un système de protection cathodique par courant imposé, quel type d'anode est généralement utilisé pour sa durabilité ?",
+        "answers": [
+            "Une anode de zinc, car elle se consomme lentement.",
+            "Une anode inerte (ex: graphite, platine, titane platiné) qui ne se consomme pas car elle n'est pas le siège de la réaction d'oxydation du métal à protéger.",
+            "Une anode de fer pur, car elle est moins coûteuse.",
+            "Une anode en aluminium hautement purifié."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "En protection par courant imposé, on utilise une source de courant extérieur. L'anode doit être inerte pour ne pas se dissoudre, contrairement à l'anode sacrificielle où le métal de l'anode est consommé volontairement."
+    },
+    {
+        "uuid": "corr-041",
+        "image_path": null,
+        "theme": "Exercice 3",
+        "question": "Dans le cadre de l'étude de la corrosion du plomb en milieu acide sulfurique, quelle est la demi-équation traduisant le dégagement gazeux cathodique ?",
+        "answers": [
+            "$2H^+ + 2e^- = H_2$",
+            "$2H_2O = O_2 + 4H^+ + 4e^-$",
+            "$Pb = Pb^{2+} + 2e^-$",
+            "$2H_2O + 2e^- = H_2 + 2OH^-$"
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "explication": "En milieu acide, la réduction de l'eau se fait préférentiellement par les ions oxonium $H^+$. La réponse 2 correspond à une oxydation, et la 3 à l'oxydation du métal (anodique). La réponse 4 est réservée aux milieux basiques.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-042",
+        "image_path": null,
+        "theme": "Exercice 5",
+        "question": "Lors de l'étude du diagramme de Pourbaix du zinc, quelle est la valeur du $pH$ de début de précipitation de $Zn(OH)_2$ pour une concentration en ions $Zn^{2+}$ de $10^{-2} \\text{ mol.L}^{-1}$ ?",
+        "answers": [
+            "$7,0$",
+            "$8,8$",
+            "$11,8$",
+            "$5,2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "La précipitation commence quand $[Zn^{2+}][OH^-]^2 = K_s$. En utilisant $pKs$ du $Zn(OH)_2 \\approx 15,6$, on trouve $pH = 14 + \\log([OH^-]) = 14 + 0,5 \\log(K_s/[Zn^{2+}])$. Pour $10^{-2} \\text{ mol.L}^{-1}$, on obtient environ $8,8$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-043",
+        "image_path": null,
+        "theme": "Exercice 5",
+        "question": "Pour le couple $Zn^{2+}/Zn$, quelle est la valeur du potentiel d'équilibre $E_{eq}$ à $25^{\\circ}\\text{C}$ pour une activité en ions $Zn^{2+}$ égale à $10^{-6} \\text{ mol.L}^{-1}$ ?",
+        "answers": [
+            "$-0,76 \\text{ V}$",
+            "$-0,94 \\text{ V}$",
+            "$-0,13 \\text{ V}$",
+            "$-0,58 \\text{ V}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "D'après la formule de Nernst : $E = E^0(Zn^{2+}/Zn) + \\frac{0,059}{2} \\log(10^{-6})$. Avec $E^0 = -0,76 \\text{ V}$, on obtient $E = -0,76 + 0,0295 \\times (-6) \\approx -0,94 \\text{ V}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-044",
+        "image_path": null,
+        "theme": "Exercice 6",
+        "question": "Dans une pile de corrosion galvanique entre le cuivre et le fer (ex: radiateur), pourquoi la dissolution du fer est-elle localisée préférentiellement à la jonction des deux métaux ?",
+        "answers": [
+            "La densité de courant est maximale là où le trajet des électrons et des ions est le plus court pour fermer le circuit.",
+            "La température est plus élevée à la jonction suite à l'effet Joule.",
+            "Le cuivre est un isolant thermique qui bloque les échanges ailleurs.",
+            "La différence de potentiel est plus élevée à la jonction."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "explication": "La corrosion galvanique est limitée par la résistance ohmique de l'électrolyte. Le courant circule là où la résistance est minimale, soit au point de contact entre les deux métaux.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-045",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Dans les systèmes de protection cathodique, comment qualifie-t-on le métal, comme le magnésium, dont le rôle est de se sacrifier pour protéger une structure en fer ?",
+        "answers": [
+            "Électrode de référence.",
+            "Anode sacrificielle.",
+            "Cathode de protection.",
+            "Inhibiteur de corrosion."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "Le métal le plus réducteur (magnésium, $E^0$ plus bas) s'oxyde préférentiellement (anode), polarisant le fer en cathode, ce qui stoppe sa dissolution.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-046",
+        "image_path": null,
+        "theme": "Diagrammes E-pH",
+        "question": "Sur un diagramme de Pourbaix, que représente la pente d'une frontière oblique entre deux espèces $Ox_1$ et $Red_1$ ?",
+        "answers": [
+            "La température du milieu.",
+            "Le nombre d'électrons échangés seulement.",
+            "Le rapport entre le nombre de protons et le nombre d'électrons échangés ($-0,06 \\times \\frac{m}{n}$).",
+            "La concentration des espèces dissoutes."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 2,
+        "explication": "L'équation de Nernst fait apparaître le terme $\\frac{0,06}{n} \\log(H^+)^m$. En passant au $pH$, cela donne un terme en $-0,06 \\frac{m}{n} pH$. Les frontières horizontales correspondent à $m=0$ (pas de protons).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-047",
+        "image_path": null,
+        "theme": "Cinétique",
+        "question": "Comment définit-on la surtension $\\eta$ d'une électrode parcourue par un courant d'intensité $I \\neq 0$ ?",
+        "answers": [
+            "$\\eta = E_{imposé} - E_{équilibre}$",
+            "$\\eta = E_{équilibre} - E_{imposé}$",
+            "$\\eta = E - E^0$",
+            "$\\eta = |E_{imposé} - E_{équilibre}|$"
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "explication": "La convention IUPAC définit la surtension comme $\\eta = E - E_{eq}$. Si $\\eta > 0$ (anode), le métal s'oxyde ; si $\\eta < 0$ (cathode), on réduit l'espèce oxydante.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-048",
+        "image_path": null,
+        "theme": "Exercice 4",
+        "question": "La constante d'équilibre $K^0$ de la réaction de corrosion du cuivre par le dioxygène en milieu acide ($2Cu + O_2 + 4H^+ = 2Cu^{2+} + 2H_2O$) est-elle élevée ?",
+        "answers": [
+            "$10^{12}$",
+            "$10^{59}$",
+            "$10^{-5}$",
+            "$10^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "La constante $K^0$ se calcule par $\\log(K^0) = \\frac{n(E^0_{O_2} - E^0_{Cu})}{0,06}$. Avec $E^0(O_2/H_2O) = 1,23 \\text{ V}$ et $E^0(Cu^{2+}/Cu) = 0,34 \\text{ V}$, on obtient un écart important, d'où une valeur très grande de $K^0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-049",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Dans le cadre de la protection contre la corrosion marine, quel est le principe physique utilisé lors de la pose de blocs de zinc sur une coque en acier ?",
+        "answers": [
+            "Le zinc forme une couche isolante imperméable.",
+            "Le zinc est un métal moins noble que le fer, il joue le rôle d'anode et s'oxyde à la place du fer.",
+            "Le zinc modifie le $pH$ de l'eau de mer au contact de la coque.",
+            "Le zinc empêche mécaniquement la fixation du dioxygène sur l'acier."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "Le couple $Zn^{2+}/Zn$ possède un potentiel standard plus bas que $Fe^{2+}/Fe$. Le zinc est donc l'anode : il est consommé (sacrificiel) pour maintenir le fer à un potentiel où il ne peut pas s'oxyder.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-050",
+        "image_path": null,
+        "theme": "Exercice 6",
+        "question": "Quelle est l'ordre de grandeur de l'intensité du courant de corrosion d'une anode de magnésium protégeant un chauffe-eau standard ?",
+        "answers": [
+            "$1,9 \\text{ A}$",
+            "$1,9 \\times 10^{-2} \\text{ A}$",
+            "$19 \\text{ mA}$",
+            "$1,9 \\times 10^{-6} \\text{ A}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "Les réponses $1,9 \\times 10^{-2} \\text{ A}$ et $19 \\text{ mA}$ sont identiques. Dans le cadre d'un exercice classique, le calcul via la loi de Faraday et la durée de vie de l'anode conduit à une valeur de l'ordre de $20 \\text{ mA}$, soit $0,02 \\text{ A}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-051",
+        "image_path": null,
+        "theme": "Diagrammes E-pH",
+        "question": "Le domaine de prédominance de l'ion $AlO_2^-$ se situe à :",
+        "answers": [
+            "pH acide.",
+            "pH neutre.",
+            "pH très basique ($pH > 9,2$)[cite: 327, 328]."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-052",
+        "image_path": null,
+        "theme": "Corrosion",
+        "question": "Quelle condition sur les électrons assure que la charge ne s'accumule pas sur un métal corrodé ?",
+        "answers": [
+            "Ils sont produits et consommés à la même vitesse[cite: 365].",
+            "Ils sont tous stockés dans la solution.",
+            "Ils circulent uniquement vers la terre."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-053",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Que se passe-t-il si un revêtement protecteur (peinture) est éraflé ?",
+        "answers": [
+            "Le métal reste protégé par l'air.",
+            "Le métal est attaqué localement par le milieu[cite: 451].",
+            "La corrosion s'arrête immédiatement."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-054",
+        "image_path": null,
+        "theme": "Exercice 3",
+        "question": "Quel est l'avantage d'utiliser une anode en plomb pour une électrolyse en milieu très acide ?",
+        "answers": [
+            "Elle est très bon marché.",
+            "Sa surtension anodique est telle qu'elle reste stable (passivée) au lieu d'être consommée[cite: 83].",
+            "Elle produit plus d'oxygène que le platine."
+        ],
+        "difficulty": 4,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-055",
+        "image_path": null,
+        "theme": "Cinétique",
+        "question": "Sur une courbe i(E), un palier d'intensité nulle entre l'immunité et le mur du solvant indique :",
+        "answers": [
+            "Une corrosion rapide.",
+            "Une passivation efficace[cite: 360, 361].",
+            "Une erreur de mesure."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-056",
+        "image_path": null,
+        "theme": "Corrosion",
+        "question": "L'équation bilan de corrosion en milieu naturel ne doit jamais faire apparaître :",
+        "answers": [
+            "D'ions métalliques.",
+            "Ni $H^+$, ni $HO^-$ parmi les réactifs[cite: 395].",
+            "D'eau."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-057",
+        "image_path": null,
+        "theme": "Diagrammes E-pH",
+        "question": "Dans le diagramme du fer, le domaine d'immunité est-il accessible en présence d'eau ?",
+        "answers": [
+            "Oui, à pH basique.",
+            "Non, le fer est thermodynamiquement instable en présence d'eau à tout pH[cite: 314].",
+            "Oui, à très haut potentiel."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-058",
+        "image_path": null,
+        "theme": "Exercice 5",
+        "question": "Quelle est la valeur de $pH_2$ (limite $Zn(OH)_2 / Zn(OH)_4^{2-}$) calculée dans l'exercice 5 ?",
+        "answers": [
+            "$8,8$",
+            "$11,8$[cite: 175].",
+            "$14,0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-059",
+        "image_path": null,
+        "theme": "Exercice 4",
+        "question": "De combien est décalé le potentiel d'équilibre du cuivre par complexation avec $NH_3$ (Ex 4) ?",
+        "answers": [
+            "$0,381 \\text{ V}$ vers la gauche[cite: 124, 125].",
+            "$0,381 \\text{ V}$ vers la droite.",
+            "$0,06 \\text{ V}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-060",
+        "image_path": null,
+        "theme": "Exercice 6",
+        "question": "Pourquoi l'anode de magnésium est-elle dite 'sacrificielle' ?",
+        "answers": [
+            "Parce qu'elle coûte très cher.",
+            "Parce qu'elle se dissout et disparaît pour assurer la protection du fer[cite: 244].",
+            "Parce qu'elle explose après 5 ans."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-061",
+        "image_path": null,
+        "theme": "Corrosion",
+        "question": "Dans le cadre d'un couplage galvanique entre deux métaux de natures différentes immergés dans un électrolyte, quel terme désigne la pile élémentaire ainsi formée ?",
+        "answers": [
+            "Pile Daniell : une pile électrochimique classique à compartiments séparés.",
+            "Micro-pile de corrosion : le couplage local entre zones anodiques et cathodiques à la surface du matériau.",
+            "Accumulateur : un système électrochimique réversible permettant le stockage d'énergie.",
+            "Pile à combustible : un système convertissant l'énergie chimique en énergie électrique par oxydation d'un combustible."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "La corrosion galvanique résulte de la formation de micro-piles (ou macro-piles) à la surface des métaux. Les différences de potentiel local créent des zones d'oxydation (anode) et de réduction (cathode), provoquant la dissolution du métal le moins noble. La pile Daniell est un dispositif expérimental de laboratoire, non une structure de corrosion spontanée."
+    },
+    {
+        "uuid": "corr-062",
+        "image_path": null,
+        "theme": "Cinétique",
+        "question": "Pour l'étude de la corrosion du fer en milieu aqueux à $\\text{pH} = 4$, on trace la courbe intensité-potentiel $i(E)$. À quoi correspond le point $B$ situé sur la branche anodique croissante ?",
+        "answers": [
+            "Domaine d'immunité : le métal est thermodynamiquement stable, il ne s'oxyde pas.",
+            "Domaine de corrosion active : le courant anodique augmente avec le potentiel $E$ selon la loi de Tafel.",
+            "Domaine de passivation : le métal se recouvre d'une couche d'oxyde protectrice limitant le courant.",
+            "Potentiel de réversibilité du couple $H^+/H_2$."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "Dans le domaine de corrosion active, le courant d'oxydation du métal $M \\rightarrow M^{n+} + ne^-$ augmente exponentiellement avec le potentiel $E$ (loi de Tafel). La passivation survient à des potentiels plus élevés, lorsque la formation d'un film solide (ex: oxyde) bloque la dissolution."
+    },
+    {
+        "uuid": "corr-063",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "En protection cathodique par courant imposé, quelle est la réaction électrochimique prédominante qui se produit à la surface de la structure métallique protégée (la cathode) ?",
+        "answers": [
+            "Oxydation du métal : $M \\rightarrow M^{n+} + ne^-$.",
+            "Réduction des espèces oxydantes du milieu : typiquement $2H_2O + 2e^- \\rightarrow H_2(g) + 2OH^-(aq)$.",
+            "Dissolution du graphite : réaction complexe liée à l'anode.",
+            "Réduction du métal : $M^{n+} + ne^- \\rightarrow M(s)$."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "La protection cathodique consiste à abaisser le potentiel du métal pour le maintenir dans son domaine d'immunité. Pour ce faire, on impose une réduction forcée à la surface du métal, consommant ainsi les électrons, ce qui empêche l'oxydation du métal (la corrosion). En milieu aqueux, c'est généralement la réduction de l'eau ou du dioxygène qui se produit."
+    },
+    {
+        "uuid": "corr-064",
+        "image_path": null,
+        "theme": "Exercice 2",
+        "question": "Lors de l'attaque d'une plaque d'aluminium par une solution d'acide chlorhydrique $\\text{HCl}$, pourquoi le décapage préalable de la surface accélère-t-il la cinétique de la réaction ?",
+        "answers": [
+            "Le décapage élimine la couche d'alumine ($Al_2O_3$) naturellement protectrice qui passivait le métal.",
+            "L'aluminium réagit avec le papier de verre pour former un catalyseur actif.",
+            "Le décapage augmente la température de la solution, favorisant l'activation thermique.",
+            "La concentration en ions $H^+$ augmente localement par effet de surface."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "explication": "L'aluminium est naturellement protégé par une couche d'alumine très adhérente et isolante. Le décapage (mécanique ou chimique) retire cette barrière, permettant à l'acide d'entrer en contact direct avec le métal, ce qui permet la dissolution rapide par l'attaque acide."
+    },
+    {
+        "uuid": "corr-065",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Dans le cadre de la protection contre la corrosion d'un chauffe-eau domestique, quelle est la durée de vie moyenne estimée d'une anode sacrificielle en magnésium ?",
+        "answers": [
+            "$1 \\text{ an}$ : trop courte pour une maintenance industrielle standard.",
+            "$5 \\text{ ans}$ : durée classique correspondant à la consommation de la masse de magnésium.",
+            "$20 \\text{ ans}$ : trop longue, dépassant les capacités de protection de la masse d'anode.",
+            "$6$ mois : durée correspondant à une eau extrêmement agressive."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "L'anode sacrificielle est consommée au fur et à mesure qu'elle protège la cuve du chauffe-eau. En condition d'utilisation normale, la quantité de magnésium est calculée pour durer environ 5 ans. Au-delà, l'anode est devenue trop fine pour assurer sa fonction de protection."
+    },
+    {
+        "uuid": "corr-066",
+        "image_path": null,
+        "theme": "Diagrammes E-pH",
+        "question": "Dans l'étude des diagrammes de Pourbaix ($E$ en fonction du $\\text{pH}$), que représentent mathématiquement les frontières constituées de droites obliques ?",
+        "answers": [
+            "Des équilibres acido-basiques où le potentiel $E$ n'intervient pas.",
+            "Des équilibres d'oxydoréduction mettant en jeu des ions $H^+$ ou $OH^-$ : la pente dépend de $n_e$ et $n_H$.",
+            "Des équilibres de solubilité : la droite dépend du produit de solubilité $K_s$.",
+            "Le domaine de stabilité de l'eau, indépendant de la nature du métal."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "Une droite oblique sur un diagramme $E-\\text{pH}$ traduit une équation de Nernst où les électrons et les ions $H^+$ interviennent. L'équation s'écrit généralement $E = E^0 - 0.06 \\frac{n_H}{n_e} \\text{pH}$. Les droites horizontales correspondent aux échanges d'électrons seuls, les verticales aux échanges de $H^+$ seuls."
+    },
+    {
+        "uuid": "corr-067",
+        "image_path": null,
+        "theme": "Exercice 1",
+        "question": "Lors d'une expérience de corrosion galvanique entre une électrode de plomb et une électrode de platine immergées dans un électrolyte, où observe-t-on le dégagement gazeux de dihydrogène ?",
+        "answers": [
+            "Sur le plomb, car il est le métal le plus réducteur.",
+            "Sur le platine, qui joue le rôle de cathode et favorise la cinétique de réduction des protons.",
+            "Sur les deux, avec une intensité égale car le milieu est homogène.",
+            "Le dégagement est impossible car le platine est un métal noble."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "Le plomb étant moins noble que le platine, il s'oxyde (anode). Le platine, plus noble, devient la cathode du couple. La réduction des protons $2H^+ + 2e^- \\rightarrow H_2$ s'effectue préférentiellement sur le platine, car le platine possède une faible surtension pour cette réaction, contrairement au plomb."
+    },
+    {
+        "uuid": "corr-068",
+        "image_path": null,
+        "theme": "Cinétique",
+        "question": "Pour une électrode se corrodant spontanément, comment appelle-t-on la valeur commune du courant d'oxydation et du courant de réduction au potentiel de corrosion ?",
+        "answers": [
+            "Courant de saturation : valeur limite lors d'un transport par diffusion.",
+            "Courant de corrosion ($i_{corr}$) : intensité résultant du court-circuit interne.",
+            "Courant de court-circuit : terme spécifique aux générateurs électriques.",
+            "Courant d'échange : courant circulant à l'équilibre en absence de réaction nette."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "Au potentiel de corrosion, la vitesse d'oxydation (anodique) est égale à la vitesse de réduction (cathodique). Le courant global est nul, mais le flux d'électrons circulant de l'anode vers la cathode est le courant de corrosion $i_{corr}$, qui conditionne la vitesse de dégradation du métal."
+    },
+    {
+        "uuid": "corr-069",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Dans le cas d'une anode sacrificielle, pourquoi est-il impératif d'effectuer le remplacement avant la consommation totale du matériau (ex: à 75% de son volume) ?",
+        "answers": [
+            "L'anode devient instable et peut libérer des composés toxiques.",
+            "Pour garantir une continuité électrique optimale et éviter la rupture du circuit de protection.",
+            "Parce que la loi impose une sécurité de 25% de marge pour les équipements sous pression.",
+            "Une anode trop fine augmente inutilement la résistance de l'électrolyte."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "La protection est efficace uniquement si l'anode est reliée électriquement à la structure à protéger. Si l'anode est trop consommée, elle peut se fragmenter ou perdre son contact électrique (fixation), cessant ainsi toute protection cathodique alors que la structure est toujours exposée."
+    },
+    {
+        "uuid": "corr-070",
+        "image_path": null,
+        "theme": "Diagrammes E-pH",
+        "question": "Sur le diagramme de Pourbaix du zinc, quelle est l'espèce majoritaire dans le domaine de $\\text{pH}$ compris entre 8,8 et 11,8, correspondant au domaine de passivité ?",
+        "answers": [
+            "Les ions $Zn^{2+}$ : espèce stable en milieu acide.",
+            "L'hydroxyde de zinc $Zn(OH)_2$ solide : il forme une couche de passivation adhérente.",
+            "Les ions zincates $Zn(OH)_4^{2-}$ : espèce stable en milieu fortement basique.",
+            "Le zinc métallique $Zn(s)$ : domaine d'immunité."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "explication": "Le zinc se corrode en milieu acide ($Zn^{2+}$) et en milieu très basique ($Zn(OH)_4^{2-}$). Entre ces deux valeurs, il forme un précipité d'hydroxyde de zinc $Zn(OH)_2$ (ou oxyde de zinc) qui est solide et insolubles, protégeant le métal : c'est le domaine de passivation."
+    },
+    {
+        "uuid": "corr-071",
+        "image_path": null,
+        "theme": "Corrosion",
+        "question": "Quel métal est utilisé pour la 'galvanisation' ?",
+        "answers": [
+            "Le cuivre.",
+            "Le zinc[cite: 454].",
+            "L'étain."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-072",
+        "image_path": null,
+        "theme": "Exercice 3",
+        "question": "Le processus (vi) sur la courbe du plomb correspond à :",
+        "answers": [
+            "L'oxydation de $Pb$ en $PbO_2$.",
+            "L'oxydation de l'eau en dioxygène ($2H_2O = O_2 + 4H^+ + 4e^-$)[cite: 80].",
+            "La réduction des protons."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-073",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Dans le cas d'une éraflure sur du fer galvanisé (zinc), le fer est-il protégé ?",
+        "answers": [
+            "Non, il rouille immédiatement.",
+            "Oui, car le zinc environnant joue le rôle d'anode sacrificielle[cite: 456].",
+            "Oui, car le fer ne s'oxyde jamais."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-074",
+        "image_path": null,
+        "theme": "Exercice 4",
+        "question": "Quelle est la demi-équation de réduction du dioxygène en milieu acide ?",
+        "answers": [
+            "$O_2 + 4H^+ + 4e^- = 2H_2O$[cite: 103].",
+            "$O_2 + 2H_2O + 4e^- = 4HO^-$",
+            "$O_2 + 2e^- = O_2^{2-}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-075",
+        "image_path": null,
+        "theme": "Diagrammes E-pH",
+        "question": "Pour le couple $Zn^{2+}/Zn$, comment varie le potentiel d'équilibre avec le pH ?",
+        "answers": [
+            "Il diminue de 0,06 V par unité de pH.",
+            "Il augmente avec le pH.",
+            "Il est indépendant du pH tant qu'il n'y a pas d'espèces hydroxylées[cite: 166]."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-076",
+        "image_path": null,
+        "theme": "Cinétique",
+        "question": "L'égalité des potentiels des deux couples lors d'une corrosion locale définit :",
+        "answers": [
+            "Le potentiel de Nernst.",
+            "Le potentiel mixte[cite: 369].",
+            "Le potentiel standard."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-077",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Pourquoi la protection cathodique par courant imposé est-elle utilisée pour les pipelines enterrés ?",
+        "answers": [
+            "Car elle est la plus simple à mettre en œuvre.",
+            "Pour forcer le métal dans son domaine d'immunité malgré l'agressivité du sol[cite: 470, 473].",
+            "Pour chauffer le pipeline."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-078",
+        "image_path": null,
+        "theme": "Exercice 1",
+        "question": "Dans l'exercice 1, pourquoi l'ion $H^+$ est-il le seul oxydant considéré ?",
+        "answers": [
+            "Car la solution est désaérée (pas de dioxygène dissous)[cite: 5].",
+            "Car le dioxygène ne réagit pas avec le plomb.",
+            "Car le plomb est plus noble que le dioxygène."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-079",
+        "image_path": null,
+        "theme": "Diagrammes E-pH",
+        "question": "Un domaine de 'passivation' correspond à la stabilité :",
+        "answers": [
+            "D'un gaz.",
+            "D'un solide (oxyde ou hydroxyde)[cite: 277].",
+            "D'un complexe soluble."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-080",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Quelle est la masse molaire du magnésium ?",
+        "answers": [
+            "$55,8 \\text{ g.mol}^{-1}$",
+            "$24,3 \\text{ g.mol}^{-1}$[cite: 208].",
+            "$63,5 \\text{ g.mol}^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "corr-081",
+        "image_path": null,
+        "theme": "Corrosion",
+        "question": "Dans le cadre de l'étude thermodynamique de la stabilité des métaux, le terme 'corrosion' peut-il être appliqué à l'or dans les conditions naturelles (eau aérée à pH neutre) ?",
+        "answers": [
+            "Oui, car il s'oxyde spontanément en or massif.",
+            "Non, car l'or est un métal noble dont le domaine d'immunité recouvre la zone de stabilité de l'eau.",
+            "Oui, mais uniquement en présence de bases fortes.",
+            "Non, car l'or est un isolant électrique dans les conditions standard."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un métal est dit 'noble' lorsque son potentiel standard d'oxydoréduction est supérieur au potentiel de réduction de l'eau. Pour l'or, le domaine d'immunité (zone de stabilité du métal seul) englobe les conditions naturelles, rendant l'oxydation spontanée impossible."
+    },
+    {
+        "uuid": "corr-082",
+        "image_path": null,
+        "theme": "Cinétique",
+        "question": "Dans l'étude du potentiel mixte d'un système corrodant possédant deux processus cathodiques possibles, si les densités de courant d'échange vérifient $i_{cath,2} \\gg i_{cath,1}$, quel processus impose le potentiel mixte ?",
+        "answers": [
+            "Celui donnant le courant d'échange le plus faible.",
+            "Celui donnant le courant d'échange le plus élevé ($i_{cath,2}$).",
+            "La moyenne arithmétique des deux courants.",
+            "Le processus dont le potentiel d'équilibre est le plus bas."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le potentiel mixte est déterminé par l'intersection des courbes de polarisation anodique et cathodique globale. Lorsqu'un processus cathodique est largement dominant en termes de courant, c'est sa courbe de Tafel qui impose le potentiel de travail du système."
+    },
+    {
+        "uuid": "corr-083",
+        "image_path": null,
+        "theme": "Diagrammes E-pH",
+        "question": "Lors de l'établissement d'un diagramme de Pourbaix ($E$-pH), comment est tracée la frontière entre deux espèces dissoutes $Ox_1$ et $Red_1$ ?",
+        "answers": [
+            "Par l'égalité de leurs concentrations : $[Ox_1] = [Red_1]$.",
+            "Par l'annulation de la concentration de l'une des deux : $[Ox_1] = 0$.",
+            "Par une concentration fixée à $1 \\text{ mol/L}$ pour les deux espèces.",
+            "Par la condition d'électroneutralité de la solution."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La frontière entre deux espèces dissoutes correspond au point où leurs activités sont égales (généralement $1$ pour les concentrations $1 \\text{ mol/L}$), c'est-à-dire là où le potentiel du système est égal au potentiel standard du couple considéré."
+    },
+    {
+        "uuid": "corr-084",
+        "image_path": null,
+        "theme": "Exercice 3",
+        "question": "Dans le cadre de l'étude du comportement électrochimique du plomb, pourquoi l'intensité de corrosion est-elle théoriquement nulle dans la zone d'immunité ?",
+        "answers": [
+            "Car c'est le domaine thermodynamique de stabilité du métal seul (pas d'oxydation possible).",
+            "Car le plomb est passivé par la formation d'une couche d'oxyde protectrice.",
+            "Car l'eau utilisée n'est plus conductrice dans ces conditions de pH.",
+            "Car la surtension de dégagement d'hydrogène est trop élevée."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le domaine d'immunité correspond aux zones du diagramme E-pH où le métal est la forme thermodynamiquement stable. Par conséquent, l'oxydation du métal en ions est impossible dans ces conditions."
+    },
+    {
+        "uuid": "corr-085",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Lors de l'utilisation d'une anode sacrificielle pour protéger une structure, quelle relation lie la charge électrique $Q$ traversant l'anode, le courant $I$ et la durée de vie $\\Delta t$ ?",
+        "answers": [
+            "$Q = I / \\Delta t$",
+            "$Q = I \\cdot \\Delta t$",
+            "$Q = V \\cdot I$",
+            "$Q = I^2 \\cdot \\Delta t$"
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par définition, l'intensité du courant est le débit de charge : $I = \\frac{dQ}{dt}$. Pour un courant constant, la charge totale échangée est donnée par l'intégrale du courant sur le temps, soit $Q = I \\cdot \\Delta t$."
+    },
+    {
+        "uuid": "corr-086",
+        "image_path": null,
+        "theme": "Exercice 4",
+        "question": "Pourquoi l'oxydation du cuivre (corrosion) est-elle cinétiquement accélérée en présence d'ammoniac $NH_3$ ?",
+        "answers": [
+            "L'ammoniac agit comme un oxydant puissant sur le cuivre.",
+            "La formation d'un complexe $Cu(NH_3)_n^{2+}$ déplace la courbe d'oxydation vers les potentiels plus faibles, augmentant le courant au potentiel mixte.",
+            "L'ammoniac augmente la température de la solution.",
+            "L'ammoniac diminue la résistance ohmique de la solution."
+        ],
+        "difficulty": 4,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La complexation d'un métal par un ligand (comme $NH_3$) abaisse son potentiel d'oxydation (loi de Nernst). Cela décale la courbe de polarisation anodique vers la gauche (potentiels plus négatifs), augmentant ainsi la valeur de l'intensité au point d'intersection avec la courbe cathodique."
+    },
+    {
+        "uuid": "corr-087",
+        "image_path": null,
+        "theme": "Cinétique",
+        "question": "Dans l'étude cinétique des processus électrochimiques, qu'appelle-t-on 'surtension anodique' $\\eta_a$ ?",
+        "answers": [
+            "Une tension négative imposée par rapport à l'équilibre.",
+            "La différence $E - E_{eq} > 0$ nécessaire pour faire circuler un courant d'oxydation.",
+            "Le potentiel de Nernst du couple considéré.",
+            "La chute de tension ohmique dans l'électrolyte."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La surtension est l'écart entre le potentiel de travail $E$ et le potentiel d'équilibre thermodynamique $E_{eq}$. Pour une réaction d'oxydation (anodique), cet écart est positif pour permettre le franchissement de la barrière d'activation."
+    },
+    {
+        "uuid": "corr-088",
+        "image_path": null,
+        "theme": "Diagrammes E-pH",
+        "question": "Dans le diagramme E-pH classique du zinc, la zone A, située aux faibles potentiels et quel que soit le pH, correspond généralement à :",
+        "answers": [
+            "La zone de stabilité du zinc métallique ($Zn_{(s)}$).",
+            "La zone de stabilité des ions $Zn^{2+}$.",
+            "La zone de stabilité de l'hydroxyde de zinc $Zn(OH)_{2(s)}$.",
+            "La zone de stabilité de l'ion complexe $Zn(OH)_4^{2-}$."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le zinc étant un métal réducteur, sa zone d'immunité (métal solide) se situe aux potentiels les plus bas du diagramme, sous les domaines de prédominance de ses formes oxydées."
+    },
+    {
+        "uuid": "corr-089",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Comment qualifie-t-on la méthode de protection consistant à appliquer une couche de plastique ou de peinture sur un grillage métallique ?",
+        "answers": [
+            "Protection cathodique par courant imposé.",
+            "Revêtement étanche (protection par barrière).",
+            "Protection par anode sacrificielle.",
+            "Passivation chimique."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Il s'agit d'une protection par barrière isolante. Le plastique isole physiquement le métal du milieu corrosif (électrolyte), empêchant ainsi les réactions électrochimiques de surface."
+    },
+    {
+        "uuid": "corr-090",
+        "image_path": null,
+        "theme": "Exercice 5",
+        "question": "Pour la frontière entre le zinc métal et l'ion complexe $Zn(OH)_4^{2-}$, quelle est la pente de la droite dans le diagramme $E = f(pH)$ ?",
+        "answers": [
+            "$-0,06 \\text{ V/pH}$",
+            "$-0,12 \\text{ V/pH}$",
+            "$-0,18 \\text{ V/pH}$",
+            "$0 \\text{ V/pH}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La réaction est $Zn + 4H_2O \\rightleftharpoons Zn(OH)_4^{2-} + 4H^+ + 2e^-$. En appliquant Nernst, le potentiel est $E = E^0 - 0,06 \\cdot pH - 0,03 \\log([Zn(OH)_4^{2-}])$. La pente est de $-0,06 \\times (\\text{nombre de } H^+ / \\text{nombre de } e^-)$, soit $-0,06 \\times (4/2) = -0,12 \\text{ V/pH}$."
+    },
+    {
+        "uuid": "corr-091",
+        "image_path": null,
+        "theme": "Cinétique",
+        "question": "Dans le cadre de l'étude thermodynamique d'une interface métallique, lorsqu'une électrode est à l'équilibre de corrosion (électrode isolée, sans courant imposé), que vaut le courant total mesuré ?",
+        "answers": [
+            "Le courant total est nul, car le courant d'oxydation compense exactement le courant de réduction.",
+            "Il est égal au courant de corrosion $I_{corr}$ mesuré en valeur absolue.",
+            "Il est égal à la somme des densités de courant d'échange.",
+            "Il est infini car la réaction est spontanée."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour une électrode isolée, il n'y a pas d'apport ou de soutirage d'électrons extérieur. Le courant total est donc nul. Cela signifie que la vitesse d'oxydation (courant anodique $I_a$) est égale à la vitesse de réduction (courant cathodique $I_c$ en valeur absolue) : $I_{total} = I_a + I_c = 0$."
+    },
+    {
+        "uuid": "corr-092",
+        "image_path": null,
+        "theme": "Diagrammes E-pH",
+        "question": "Dans l'étude de la corrosion de l'aluminium, dans quel domaine de pH l'ion solvaté $Al^{3+}$ est-il l'espèce prédominante et stable ?",
+        "answers": [
+            "En milieu très basique ($pH > 12$).",
+            "En milieu acide ($pH < 4,2$).",
+            "En milieu neutre ($pH \\approx 7$).",
+            "Sur tout le domaine de pH de $0$ à $14$."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'ion $Al^{3+}$ est un acide de Lewis qui s'hydrolyse facilement. Selon le diagramme $E-pH$ de l'aluminium, il n'est stable qu'à pH acide. Pour des pH plus élevés, il précipite sous forme d'hydroxyde $Al(OH)_3$ (solide) ou forme des complexes solubles comme $Al(OH)_4^-$ en milieu très basique."
+    },
+    {
+        "uuid": "corr-093",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Lors de la protection cathodique par anode sacrificielle, quel est le principe physique assurant la protection du métal à protéger ?",
+        "answers": [
+            "L'anode sacrificielle doit être électriquement isolée du métal.",
+            "L'anode, plus réductrice que le métal à protéger, s'oxyde préférentiellement et doit être remplacée périodiquement.",
+            "L'anode agit comme un isolant électrique recouvrant la pièce métallique.",
+            "L'anode est bénie pour augmenter sa durée de vie."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le terme 'sacrificielle' désigne le métal qui, ayant un potentiel standard plus bas (plus réducteur), va subir l'oxydation à la place de la structure à protéger. Par conséquent, cette anode se consomme et nécessite un remplacement régulier pour maintenir la protection."
+    },
+    {
+        "uuid": "corr-094",
+        "image_path": null,
+        "theme": "Exercice 3",
+        "question": "Quelle est la valeur du potentiel standard de référence pour le couple $Pb^{2+}/Pb$ à $25^{\\circ}\\text{C}$ ?",
+        "answers": [
+            "$0,00 \\text{ V}$ (potentiel de l'électrode standard à hydrogène).",
+            "$-0,13 \\text{ V}$.",
+            "$+0,13 \\text{ V}$.",
+            "$-0,76 \\text{ V}$ (potentiel du zinc)."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La valeur conventionnelle du potentiel standard du couple $Pb^{2+}/Pb$ est $-0,13 \\text{ V}$ par rapport à l'électrode standard à hydrogène (ESH). L'erreur de signe est un piège classique : une valeur positive impliquerait que le plomb est plus noble que l'hydrogène."
+    },
+    {
+        "uuid": "corr-095",
+        "image_path": null,
+        "theme": "Exercice 4",
+        "question": "Dans le cadre de la formation de complexes, quelle est l'unité de la constante de formation globale $\\beta_n$ définie par la loi d'action de masse ?",
+        "answers": [
+            "La constante $\\beta_n$ est sans unité, car elle est définie à partir des activités thermodynamiques.",
+            "$\\text{mol.L}^{-1}$.",
+            "$(\\text{L.mol}^{-1})^n$.",
+            "$\\text{mol}^{-1}.\\text{L}$."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Les constantes d'équilibre (dont les constantes de formation $\\beta_n$) sont définies à partir des activités chimiques, qui sont des grandeurs adimensionnées. Par conséquent, $\\beta_n$ est une grandeur sans unité, bien que les calculs pratiques utilisent souvent des concentrations molaires."
+    },
+    {
+        "uuid": "corr-096",
+        "image_path": null,
+        "theme": "Cinétique",
+        "question": "Pourquoi la formation d'un film passivant (couche d'oxyde compacte) à la surface d'un métal permet-elle de ralentir la corrosion ?",
+        "answers": [
+            "Le film augmente la résistance thermique de la pièce.",
+            "Le film agit comme une barrière physique et cinétique qui ralentit fortement le transfert de charge et la diffusion des réactifs.",
+            "Le film modifie les propriétés optiques du métal, empêchant les UV de catalyser la corrosion.",
+            "Il neutralise les ions $H^+$ présents dans le milieu."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La passivation est un phénomène où un produit de corrosion forme une couche protectrice. Cette couche bloque physiquement les sites actifs du métal et empêche le transfert d'électrons ou la diffusion des espèces oxydantes vers le métal, augmentant considérablement la résistance à la corrosion."
+    },
+    {
+        "uuid": "corr-097",
+        "image_path": null,
+        "theme": "Protection",
+        "question": "Quelle est la valeur de la constante de Faraday $F$, représentant la charge d'une mole d'électrons ?",
+        "answers": [
+            "$8,31 \\text{ J.K}^{-1}.\\text{mol}^{-1}$ (constante des gaz parfaits $R$).",
+            "$9,65 \\times 10^4 \\text{ C.mol}^{-1}$.",
+            "$6,02 \\times 10^{23} \\text{ mol}^{-1}$ (nombre d'Avogadro $N_A$).",
+            "$1,60 \\times 10^{-19} \\text{ C}$ (charge élémentaire $e$)."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La constante de Faraday est donnée par $F = N_A \\times e \\approx 96485 \\text{ C.mol}^{-1}$, souvent arrondie à $9,65 \\times 10^4 \\text{ C.mol}^{-1}$. Il ne faut pas la confondre avec la constante des gaz parfaits $R$ ou le nombre d'Avogadro $N_A$."
+    },
+    {
+        "uuid": "corr-098",
+        "image_path": null,
+        "theme": "Diagrammes E-pH",
+        "question": "En considérant le diagramme $E-pH$ du zinc, quelle est l'espèce majoritaire stable en milieu très basique ($pH > 13$) ?",
+        "answers": [
+            "$Zn^{2+}$ (ion libre).",
+            "$Zn(OH)_4^{2-}$ (ion zincate).",
+            "$Zn(OH)_2$ (précipité).",
+            "$Zn$ (métal)."
+        ],
+        "difficulty": 2,
+        "chapter": "Corrosion",
+        "correct_answer_string": "ion zincate",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "En milieu très basique, le zinc forme des espèces solubles par complexation avec les ions hydroxyde. L'ion tétrahydroxozincate(II) $Zn(OH)_4^{2-}$ est l'espèce dominante dans les zones de pH élevé, expliquant pourquoi le zinc peut se corroder dans des bases fortes."
+    },
+    {
+        "uuid": "corr-099",
+        "image_path": null,
+        "theme": "Exercice 6",
+        "question": "Quelle est la valeur approchée du potentiel standard du couple $Mg^{2+}/Mg$ ?",
+        "answers": [
+            "$-0,44 \\text{ V}$ (potentiel du fer).",
+            "$-2,37 \\text{ V}$.",
+            "$0,34 \\text{ V}$ (potentiel du cuivre).",
+            "$-0,76 \\text{ V}$ (potentiel du zinc)."
+        ],
+        "difficulty": 1,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le magnésium est un métal très réducteur, ce qui est cohérent avec son potentiel standard très négatif, voisin de $-2,37 \\text{ V}$. Les autres valeurs correspondent à des métaux plus nobles comme le fer ($-0,44 \\text{ V}$) ou le cuivre ($+0,34 \\text{ V}$)."
+    },
+    {
+        "uuid": "corr-100",
+        "image_path": null,
+        "theme": "Corrosion",
+        "question": "Dans le contexte des diagrammes $E-pH$ et de la chimie des solutions, quel lien existe-t-il entre la charge de l'espèce et son caractère acide/basique ?",
+        "answers": [
+            "Il n'existe aucune corrélation entre la charge et le comportement acido-basique.",
+            "Une espèce est d'autant plus basique qu'elle est chargée négativement (enrichissement en électrons).",
+            "Plus une espèce est chargée positivement, plus elle est basique (attraction des protons).",
+            "L'acidité dépend uniquement du nombre de liaisons avec l'oxygène."
+        ],
+        "difficulty": 3,
+        "chapter": "Corrosion",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans un diagramme $E-pH$, les espèces riches en électrons (chargées négativement comme les oxydes ou hydroxydes) ont une plus grande affinité pour les ions $H^+$ (protons), manifestant ainsi un caractère basique. À l'inverse, les espèces chargées positivement (comme $M^{n+}$) sont souvent des acides de Lewis ou des acides au sens de Brønsted par hydrolyse."
+    }
+]

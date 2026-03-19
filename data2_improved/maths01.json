@@ -1,0 +1,1719 @@
+[
+    {
+        "uuid": "e98a123a-5678-4001-a1b2-c3d4e5f6g7h8",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Dans le cadre de l'étude de la convergence d'une série numérique $\\sum u_n$, comment définit-on rigoureusement le reste d'ordre $n$, noté $R_n$, pour une série convergente de somme $S = \\sum_{k=0}^{+\\infty} u_k$ ?",
+        "answers": [
+            "$R_n = \\sum_{k=0}^{n} u_k$",
+            "$R_n = \\sum_{k=n}^{+\\infty} u_k$",
+            "$R_n = \\sum_{k=n+1}^{+\\infty} u_k$",
+            "$R_n = \\sum_{k=0}^{n+1} u_k$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "Par définition, la somme partielle est $S_n = \\sum_{k=0}^n u_k$. Le reste $R_n$ représente ce qu'il reste à sommer après l'ordre $n$ pour atteindre la somme totale $S$. On a donc $S = S_n + R_n$, d'où $R_n = S - S_n = \\sum_{k=n+1}^{+\\infty} u_k$."
+    },
+    {
+        "uuid": "d12c3b4a-1111-4222-b333-c444d555e666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $\\sum u_n$ une série convergente de somme $S$ et $(R_n)$ la suite de ses restes. Quelle est la limite de la suite $(R_n)$ quand $n$ tend vers $+\\infty$ ?",
+        "answers": [
+            "La somme de la série $S$",
+            "0",
+            "Le premier terme $u_0$",
+            "La série diverge"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Comme $R_n = S - S_n$ où $(S_n)$ est la suite des sommes partielles qui converge par définition vers $S$, on en déduit par limite de différence que $\\lim_{n \\to +\\infty} R_n = S - S = 0$."
+    },
+    {
+        "uuid": "f23d4e5f-2222-4333-c444-d555e666f777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Considérons une série $\\sum u_n$ convergente. Quelle propriété fondamentale doit nécessairement vérifier la suite $(u_n)$ ?",
+        "answers": [
+            "La suite $(u_n)$ est monotone",
+            "La limite de la suite $(u_n)$ est 0",
+            "La suite $(u_n)$ est positive",
+            "La suite $(u_n)$ est bornée par 1"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "C'est une condition nécessaire de convergence (souvent appelée théorème du terme général) : si $\\sum u_n$ converge, alors $\\lim_{n \\to +\\infty} u_n = 0$. Attention : la réciproque est fausse (ex: série harmonique)."
+    },
+    {
+        "uuid": "a34e5f6g-3333-4444-d555-e666f777g888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Lorsqu'on étudie une série $\\sum u_n$, comment qualifie-t-on la divergence si la condition nécessaire de convergence n'est pas satisfaite, c'est-à-dire si $\\lim_{n \\to +\\infty} u_n \\neq 0$ ?",
+        "answers": [
+            "Série absolument divergente",
+            "Série grossièrement divergente",
+            "Série alternée divergente",
+            "Série à termes quelconques"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Une série est dite grossièrement divergente si son terme général ne tend pas vers 0. C'est le moyen le plus rapide d'établir la divergence d'une série sans avoir à calculer de somme partielle."
+    },
+    {
+        "uuid": "b45f6g7h-4444-4555-e666-f777g888h999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de la série harmonique $\\sum_{n\\ge 1} \\frac{1}{n}$ ?",
+        "answers": [
+            "Convergente car $\\frac{1}{n} \\to 0$",
+            "Divergente",
+            "Absolument convergente",
+            "Semi-convergente"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Bien que le terme général tende vers 0, la série harmonique diverge. On peut le montrer par comparaison avec une intégrale ou en utilisant le critère de Riemann ($\\alpha = 1 \\le 1$)."
+    },
+    {
+        "uuid": "c56g7h8i-5555-4666-f777-g888h999i000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $q \\in \\mathbb{C}$. Quelle est la condition nécessaire et suffisante sur le module de $q$ pour que la série géométrique $\\sum q^n$ converge ?",
+        "answers": [
+            "$|q| \\le 1$",
+            "$|q| < 1$",
+            "$|q| > 1$",
+            "$q \\neq 1$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La série géométrique converge si et seulement si $|q| < 1$. Si $|q| = 1$, le terme général ne tend pas vers 0 (sauf pour $q=1$ où il est constant égal à 1), la série diverge donc grossièrement."
+    },
+    {
+        "uuid": "d67h8i9j-6666-4777-g888-h999i000j111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Dans le cas où $|q| < 1$, quelle est la formule donnant la somme de la série $\\sum_{n=0}^{+\\infty} q^n$ ?",
+        "answers": [
+            "$\\frac{1}{1-q}$",
+            "$\\frac{q}{1-q}$",
+            "$\\frac{1}{q-1}$",
+            "$\\frac{1}{1+q}$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La somme d'une série géométrique de premier terme $1$ (pour $n=0$) et de raison $q$ est $\\frac{\\text{premier terme}}{1 - \\text{raison}}$, soit $\\frac{1}{1-q}$."
+    },
+    {
+        "uuid": "e78i9j0k-7777-4888-h999-i000j111k222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = v_{n+1} - v_n$. La série $\\sum u_n$ est une série télescopique. À quelle condition converge-t-elle ?",
+        "answers": [
+            "La suite $(v_n)$ est bornée",
+            "La suite $(v_n)$ converge",
+            "La suite $(u_n)$ tend vers 0",
+            "La suite $(v_n)$ est monotone"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La somme partielle est $S_n = \\sum_{k=0}^n (v_{k+1} - v_k) = v_{n+1} - v_0$. La série converge si et seulement si la suite des sommes partielles $S_n$ a une limite finie, donc si $(v_n)$ converge."
+    },
+    {
+        "uuid": "f89j0k1l-8888-4999-i000-j111k222l333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $(v_n)$ une suite convergeant vers $L$. Quelle est la somme de la série télescopique $\\sum_{n=0}^{+\\infty} (v_{n+1} - v_n)$ ?",
+        "answers": [
+            "$L$",
+            "$L - v_0$",
+            "$v_0 - L$",
+            "$0$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La somme est $\\lim_{n \\to +\\infty} S_n = \\lim_{n \\to +\\infty} (v_{n+1} - v_0)$. Comme $(v_{n+1})$ tend vers $L$, la limite est $L - v_0$."
+    },
+    {
+        "uuid": "g90k1l2m-9999-5000-j111-k222l333m444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soient $\\sum u_n$ une série convergente et $\\sum v_n$ une série divergente. Quelle est la nature de la série somme $\\sum (u_n + v_n)$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "Absolument convergente",
+            "On ne peut pas conclure sans connaître les signes"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Si $\\sum (u_n + v_n)$ convergeait, alors comme $\\sum u_n$ converge, leur différence $\\sum (u_n + v_n) - \\sum u_n = \\sum v_n$ convergerait aussi par linéarité. C'est une contradiction, donc la somme diverge."
+    },
+    {
+        "uuid": "h01l2m3n-0000-5111-k222-l333m444n555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Dans le cadre de l'étude des séries à termes complexes $\\sum u_n$ où $u_n = a_n + i b_n$ ($a_n, b_n \\in \\mathbb{R}$), quelle est la condition nécessaire et suffisante de convergence ?",
+        "answers": [
+            "La série $\\sum |u_n|$ converge",
+            "Les deux séries réelles $\\sum Re(u_n)$ et $\\sum Im(u_n)$ convergent",
+            "Le terme général vérifie $|u_n| \\to 0$",
+            "La série $\\sum u_n^2$ converge"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "Une série complexe converge si et seulement si les suites des parties réelles et imaginaires convergent. L'erreur classique est de confondre avec la convergence absolue ($\\sum |u_n|$), qui est une condition suffisante mais pas nécessaire, ou avec la condition nécessaire de convergence ($u_n \\to 0$), qui est nécessaire mais pas suffisante.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "i12m3n4o-1111-5222-l333-m444n555o666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit une série $\\sum u_n$. Quelle est la définition rigoureuse d'une série alternée ?",
+        "answers": [
+            "La suite $(u_n)$ change de signe à chaque rang : $u_n u_{n+1} < 0$",
+            "Il existe une suite $(v_n)$ à termes positifs telle que $u_n = (-1)^n v_n$ ou $u_n = (-1)^{n+1} v_n$",
+            "La suite $(u_n)$ est une suite de signes alternés qui tend vers $0$",
+            "La suite $(u_n)$ vérifie $|u_{n+1}| \\le |u_n|$ pour tout $n$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "explication": "Une série est dite alternée si le signe de son terme général change à chaque rang de manière strictement opposée. La forme mathématique standard est $(-1)^n v_n$ avec $v_n \\ge 0$. Les autres propositions sont soit des conditions suffisantes pour le CSSA, soit des définitions incomplètes.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "j23n4o5p-2222-5333-m444-n555o666p777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelles sont les trois hypothèses requises par le Critère Spécial des Séries Alternées (CSSA) pour assurer la convergence de $\\sum (-1)^n v_n$ ?",
+        "answers": [
+            "$v_n \\ge 0$, la suite $(v_n)$ est décroissante, et $\\lim_{n \\to +\\infty} v_n = 0$",
+            "La suite $(v_n)$ est décroissante et $\\lim_{n \\to +\\infty} v_n = 0$",
+            "$v_n \\ge 0$ et $\\lim_{n \\to +\\infty} v_n = 0$",
+            "La suite $(v_n)$ est monotone et bornée"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "explication": "Le CSSA demande trois conditions : la positivité des $v_n$ (pour garantir l'alternance), la décroissance de la valeur absolue des termes, et la limite nulle. Oublier l'une de ces conditions (notamment la décroissance) rend le critère inapplicable.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "k34o5p6q-3333-5444-n555-o666p777q888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit une série $\\sum (-1)^n v_n$ vérifiant les hypothèses du CSSA. Que peut-on affirmer concernant le reste $R_n = \\sum_{k=n+1}^{+\\infty} (-1)^k v_k$ ?",
+        "answers": [
+            "$|R_n| \\le v_n$",
+            "$|R_n| \\le v_{n+1}$",
+            "$|R_n| \\ge v_{n+1}$",
+            "$R_n = (-1)^n v_n$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "Le CSSA permet d'encadrer le reste : le module du reste est inférieur ou égal à la valeur absolue du premier terme négligé, soit $v_{n+1}$. C'est une propriété cruciale pour les estimations numériques.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "l45p6q7r-4444-5555-o666-p777q888r999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit la série de terme général $u_n = \\frac{(-1)^n}{n^\\alpha}$ avec $\\alpha > 0$. Quelle est la nature de cette série ?",
+        "answers": [
+            "Elle est toujours absolument convergente",
+            "Elle est convergente (semi-convergente si $\\alpha \\le 1$)",
+            "Elle est divergente si $\\alpha \\le 1$",
+            "Elle converge si et seulement si $\\alpha > 1$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "D'après le CSSA, pour tout $\\alpha > 0$, la série converge car $(1/n^\\alpha)$ est décroissante vers 0. Cependant, elle n'est absolument convergente que si $\\alpha > 1$ (série de Riemann). Si $0 < \\alpha \\le 1$, elle est seulement semi-convergente.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "m56q7r8s-5555-5666-p777-q888r999s000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Dans le cadre de la règle de d'Alembert pour une série $\\sum u_n$, si $L = \\lim_{n \\to +\\infty} |u_{n+1}/u_n| = 1$, que peut-on conclure sur la nature de la série ?",
+        "answers": [
+            "La série converge",
+            "La série diverge",
+            "On ne peut pas conclure (cas douteux)",
+            "La série converge absolument"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 2,
+        "explication": "Lorsque la limite $L=1$, la règle de d'Alembert ne permet pas de conclure. Il faut alors chercher un développement asymptotique plus précis ou utiliser la règle de Raabe-Duhamel ou une comparaison avec une série de Riemann.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "n67r8s9t-6666-5777-q888-r999s000t111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la limite $L = \\lim_{n \\to +\\infty} |u_{n+1}/u_n|$ pour la série exponentielle $\\sum \\frac{z^n}{n!}$ avec $z \\in \\mathbb{C}^*$ ?",
+        "answers": [
+            "$|z|$",
+            "0",
+            "$1$",
+            "$+\\infty$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "Calculons $|u_{n+1}/u_n| = |z^{n+1}/(n+1)! \\cdot n!/z^n| = |z|/(n+1)$. Lorsque $n \\to +\\infty$, cette quantité tend vers $0$. Comme $0 < 1$, la série converge absolument pour tout $z$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "o78s9t0u-7777-5888-r999-s000t111u222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "D'après la formule de Stirling, quel est l'équivalent de $n!$ lorsque $n$ tend vers $+\\infty$ ?",
+        "answers": [
+            "$n! \\sim \\sqrt{2\\pi n} \\left(\\frac{n}{e}\\right)^n$",
+            "$n! \\sim \\left(\\frac{n}{e}\\right)^n$",
+            "$n! \\sim n^n e^n \\sqrt{2\\pi n}$",
+            "$n! \\sim \\sqrt{2\\pi n} n^n$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "explication": "La formule de Stirling est $n! \\sim \\sqrt{2\\pi n} (n/e)^n$. Il est fréquent de l'oublier ou d'inverser le $e$ ou la racine. C'est un outil indispensable pour étudier la nature de séries contenant des factorielles.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "p89t0u1v-8888-5999-s000-t111u222v333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Pour une série $\\sum u_n$ à termes positifs, que peut-on dire de la suite des sommes partielles $(S_n)$ ?",
+        "answers": [
+            "Elle est décroissante",
+            "Elle est croissante",
+            "Elle est monotone si et seulement si $u_n \\to 0$",
+            "Elle est toujours convergente"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "explication": "Comme $S_{n+1} - S_n = u_{n+1} \\ge 0$, la suite $(S_n)$ est croissante. Une suite croissante converge si et seulement si elle est majorée. C'est le théorème fondamental pour les séries à termes positifs.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q90u1v2w-9999-6000-t111-u222v333w444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $0 \\le u_n \\le v_n$ pour tout $n$, et que la série $\\sum u_n$ diverge, que peut-on conclure sur la série $\\sum v_n$ ?",
+        "answers": [
+            "La série $\\sum v_n$ converge",
+            "La série $\\sum v_n$ diverge",
+            "On ne peut pas conclure",
+            "La série $\\sum v_n$ est bornée"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "Par contraposée du théorème de comparaison : si la série minorante $\\sum u_n$ diverge, alors la série majorante $\\sum v_n$ diverge également (principe du garde-fou).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "r01v2w3x-0000-6111-u222-v333w444x555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Dans le cadre de l'étude de la convergence de séries à termes positifs, si $u_n \\sim v_n$ avec $u_n, v_n > 0$, que peut-on affirmer concernant les séries $\\sum u_n$ et $\\sum v_n$ ?",
+        "answers": [
+            "Elles ont nécessairement la même somme.",
+            "Elles sont de même nature (toutes deux convergentes ou toutes deux divergentes).",
+            "La série $\\sum u_n$ converge si et seulement si $\\sum v_n$ diverge.",
+            "L'équivalence n'apporte aucune information sur la nature des séries."
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le théorème de comparaison des séries à termes positifs stipule que si $u_n \\sim v_n$, alors les séries sont de même nature. Attention, cela ne signifie pas que les sommes sont égales (ex: $\\sum 1/n^2$ et $\\sum 1/(n^2+n)$ sont équivalentes mais ont des sommes différentes)."
+    },
+    {
+        "uuid": "s12w3x4y-1111-6222-v333-w444x555y666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $f$ une fonction continue par morceaux, positive et décroissante sur $[0, +\\infty[$. D'après le théorème de comparaison série-intégrale, la série $\\sum f(n)$ converge si et seulement si :",
+        "answers": [
+            "$\\lim_{t \\to +\\infty} f(t) = 0$",
+            "L'intégrale généralisée $\\int_0^{+\\infty} f(t) dt$ possède une limite finie.",
+            "La suite des sommes partielles $\\sum_{k=0}^n f(k)$ est majorée par $f(0)$.",
+            "La dérivée $f'$ est intégrable sur $[0, +\\infty[$."
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Pour une fonction positive et décroissante, le théorème de comparaison série-intégrale établit une équivalence entre la convergence de la série et celle de l'intégrale associée. La condition $f(t) \\to 0$ est nécessaire mais non suffisante (exemple de la série harmonique)."
+    },
+    {
+        "uuid": "t23x4y5z-2222-6333-w444-x555y666z777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la condition nécessaire et suffisante sur le paramètre réel $\\alpha$ pour que la série de Riemann $\\sum_{n=1}^{+\\infty} \\frac{1}{n^\\alpha}$ soit convergente ?",
+        "answers": [
+            "$\\alpha \\ge 1$",
+            "$\\alpha > 1$",
+            "$\\alpha > 0$",
+            "$\\alpha$ est un entier strictement supérieur à 0"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La série de Riemann converge si et seulement si $\\alpha > 1$. Si $\\alpha = 1$, il s'agit de la série harmonique qui diverge. Si $\\alpha < 1$, le terme général décroît trop lentement vers 0 pour assurer la convergence."
+    },
+    {
+        "uuid": "u34y5z6a-3333-6444-x555-y666z777a888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit la série de Bertrand $\\sum_{n=2}^{+\\infty} \\frac{1}{n^\\alpha (\\ln n)^\\beta}$. Dans le cas particulier où $\\alpha = 1$, la série converge si et seulement si :",
+        "answers": [
+            "$\\beta > 1$",
+            "$\\beta \\ge 1$",
+            "$\\beta > 0$",
+            "$\\beta$ est un réel quelconque"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Pour une série de Bertrand avec $\\alpha=1$, la convergence est dictée par l'exposant du logarithme : la série converge si et seulement si $\\beta > 1$. C'est un résultat classique obtenu par comparaison avec une intégrale."
+    },
+    {
+        "uuid": "v45z6a7b-4444-6555-y666-z777a888b999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Comment définit-on la constante d'Euler $\\gamma$ ?",
+        "answers": [
+            "$\\gamma = \\lim_{n\\to+\\infty} \\left(\\sum_{k=1}^n \\frac{1}{k} - \\ln n\\right)$",
+            "$\\gamma = \\sum_{n=1}^{+\\infty} \\frac{1}{n}$",
+            "$\\gamma = \\lim_{n\\to+\\infty} \\sum_{k=1}^n \\frac{1}{k^2}$",
+            "$\\gamma = \\lim_{n\\to+\\infty} \\ln(n)$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La constante d'Euler $\\gamma \\approx 0.577$ est la limite de la différence entre la somme partielle de la série harmonique et le logarithme népérien, ce qui mesure la vitesse de divergence de la série harmonique."
+    },
+    {
+        "uuid": "w56a7b8c-5555-6666-z777-a888b999c000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $(u_n)$ une suite de réels positifs. Si $\\lim_{n\\to+\\infty} n^2 u_n = 0$, que peut-on dire de la série $\\sum u_n$ ?",
+        "answers": [
+            "La série $\\sum u_n$ converge.",
+            "La série $\\sum u_n$ diverge.",
+            "La série $\\sum u_n$ est de même nature que la série harmonique.",
+            "On ne peut rien conclure sur la convergence."
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par le critère de Riemann, puisque $u_n = o(1/n^2)$, et que la série de Riemann $\\sum 1/n^2$ converge, alors la série $\\sum u_n$ converge par comparaison."
+    },
+    {
+        "uuid": "x67b8c9d-6666-6777-a888-b999c000d111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $(u_n)$ une suite de réels positifs telle que $u_n \\sim \\frac{1}{n}$ (i.e. $\\lim_{n\\to+\\infty} n u_n = 1$). Alors la série $\\sum u_n$ :",
+        "answers": [
+            "Converge par le critère de d'Alembert.",
+            "Diverge par comparaison avec la série harmonique.",
+            "Converge vers 1.",
+            "Est semi-convergente."
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Si $u_n \\sim 1/n$ avec $u_n > 0$, la série $\\sum u_n$ est de même nature que la série harmonique $\\sum 1/n$, qui est une série de Riemann divergente ($\\alpha = 1 \\le 1$)."
+    },
+    {
+        "uuid": "y78c9d0e-7777-6888-b999-c000d111e222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est l'implication correcte concernant la convergence absolue d'une série ?",
+        "answers": [
+            "Une série absolument convergente est toujours divergente.",
+            "Toute série absolument convergente est convergente.",
+            "Une série absolument convergente est forcément une série à termes positifs.",
+            "La convergence absolue n'implique rien sur la convergence simple."
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Par définition, si $\\sum |u_n|$ converge, alors $\\sum u_n$ converge. C'est un théorème fondamental en analyse : l'absolue convergence est une condition plus forte que la convergence simple."
+    },
+    {
+        "uuid": "z89d0e1f-8888-6999-c000-d111e222f333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit la série de terme général $u_n = \\frac{(-1)^n}{\\sqrt{n}}$. Cette série est :",
+        "answers": [
+            "Absolument convergente.",
+            "Semi-convergente (convergente mais pas absolument).",
+            "Grossièrement divergente.",
+            "Convergente, mais sans rapport avec le critère des séries alternées."
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La série converge par le critère des séries alternées (CSSA) car $1/\\sqrt{n} \\to 0$ en décroissant. Cependant, $\\sum |u_n| = \\sum 1/\\sqrt{n}$ est une série de Riemann divergente ($\\alpha = 1/2 \\le 1$). Elle est donc semi-convergente."
+    },
+    {
+        "uuid": "a90e1f2g-9999-7000-d111-e222f333g444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $\\sum w_n$ le produit de Cauchy des séries $\\sum u_n$ et $\\sum v_n$. Quelle est l'expression du terme général $w_n$ ?",
+        "answers": [
+            "$w_n = u_n v_n$",
+            "$w_n = \\sum_{k=0}^n u_k v_{n-k}$",
+            "$w_n = \\sum_{k=0}^n u_k v_k$",
+            "$w_n = \\sum_{k=0}^n u_{n-k} v_{n-k}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le produit de Cauchy correspond à la multiplication des séries entières associées. La formule est $w_n = \\sum_{k=0}^n u_k v_{n-k}$. C'est l'analogue discret du produit de convolution."
+    },
+    {
+        "uuid": "b01f2g3h-0000-7111-e222-f333g444h555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Dans le cadre de l'étude du produit de deux séries, le théorème sur le produit de Cauchy garantit la convergence de la série produit $\\sum w_n$ (où $w_n = \\sum_{k=0}^n u_k v_{n-k}$) si :",
+        "answers": [
+            "Les deux séries $\\sum u_n$ et $\\sum v_n$ convergent simplement",
+            "Les deux séries $\\sum u_n$ et $\\sum v_n$ convergent absolument",
+            "Une des deux séries converge absolument et l'autre converge simplement",
+            "Les deux séries sont à termes positifs"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "Le théorème de Mertens assure que si $\\sum u_n$ converge absolument vers $U$ et $\\sum v_n$ converge vers $V$, alors le produit de Cauchy converge vers $UV$. Si les deux convergent absolument, la convergence de la série produit est garantie. La convergence simple des deux séries ne suffit pas à garantir la convergence de la série produit.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "c12g3h4i-1111-7222-f333-g444h555i666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $p \\in ]-1, 1[$. En utilisant le produit de Cauchy de la série géométrique $\\sum_{n=0}^{+\\infty} p^n$ par elle-même, quelle est la valeur de la somme $\\sum_{n=0}^{+\\infty} (n+1)p^n$ ?",
+        "answers": [
+            "$\\frac{1}{1-p}$",
+            "$\\frac{1}{(1-p)^2}$",
+            "$\\frac{p}{(1-p)^2}$",
+            "$\\frac{1}{1+p}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "Le produit de Cauchy de la série $\\sum p^n$ par elle-même est $\\sum w_n$ avec $w_n = \\sum_{k=0}^n p^k p^{n-k} = \\sum_{k=0}^n p^n = (n+1)p^n$. Comme la série géométrique converge absolument pour $|p|<1$, le produit converge vers le carré de la somme : $(\\frac{1}{1-p})^2 = \\frac{1}{(1-p)^2}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "d23h4i5j-2222-7333-g444-h555i666j777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de la série de terme général $u_n = \\ln(1 + \\frac{(-1)^n}{n^\\alpha})$ pour $\\alpha > 1$ ?",
+        "answers": [
+            "Convergente, car $u_n \\sim \\frac{(-1)^n}{n^\\alpha}$",
+            "Absolument convergente",
+            "Divergente",
+            "Semi-convergente"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "Pour $\\alpha > 1$, on a $u_n = \\frac{(-1)^n}{n^\\alpha} + O(\\frac{1}{n^{2\\alpha}})$. La série $\\sum \\frac{(-1)^n}{n^\\alpha}$ est absolument convergente (série de Riemann avec $\\alpha > 1$). Par comparaison avec une série absolument convergente, $\\sum u_n$ est absolument convergente.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "e34i5j6k-3333-7444-h555-i666j777k888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de la série de terme général $u_n = \\ln(1 + \\frac{(-1)^n}{n^\\alpha})$ pour $1/2 < \\alpha \\le 1$ ?",
+        "answers": [
+            "Absolument convergente",
+            "Convergente (mais non absolument)",
+            "Divergente",
+            "Convergente si $\\alpha > 2/3$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "explication": "Par le développement limité : $u_n = \\frac{(-1)^n}{n^\\alpha} - \\frac{1}{2n^{2\\alpha}} + o(\\frac{1}{n^{2\\alpha}})$. $\\sum \\frac{(-1)^n}{n^\\alpha}$ converge (CSSA). $\\sum \\frac{1}{2n^{2\\alpha}}$ converge si $2\\alpha > 1$ (soit $\\alpha > 1/2$). La somme des deux converge.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "f45j6k7l-4444-7555-i666-j777k888l999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de la série de terme général $u_n = \\ln(1 + \\frac{(-1)^n}{n^\\alpha})$ pour $0 < \\alpha \\le 1/2$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "Divergente uniquement si $\\alpha$ est pair",
+            "Absolument convergente"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "explication": "Avec $u_n = \\frac{(-1)^n}{n^\\alpha} - \\frac{1}{2n^{2\\alpha}} + o(\\frac{1}{n^{2\\alpha}})$, le terme $-\\frac{1}{2n^{2\\alpha}}$ est le terme général d'une série de Riemann divergente car $2\\alpha \\le 1$. La série est donc divergente.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "g56k7l8m-5555-7666-j777-k222l333m444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $x \\in \\mathbb{R}\\backslash\\mathbb{Z}$. Quelle est la nature de la série de terme général $u_n = \\frac{(-1)^n}{n-x}$ ?",
+        "answers": [
+            "Divergente car le terme général ne tend pas vers 0",
+            "Convergente par le critère spécial des séries alternées (CSSA)",
+            "Absolument convergente",
+            "Divergente par comparaison aux séries de Riemann"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "La suite $(|u_n|) = (\\frac{1}{|n-x|})$ est décroissante vers 0 pour $n$ assez grand. La série est alternée. Le CSSA s'applique donc, assurant la convergence de la série. Elle n'est pas absolument convergente car $|u_n| \\sim 1/n$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "h67l8m9n-6666-7777-k222-l333m444n555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Pour la série entière $\\sum_{n=0}^{+\\infty} \\frac{x^n}{\\binom{2n}{n}}$, quel est son rayon de convergence $R$ ?",
+        "answers": [
+            "$R = 1$",
+            "$R = 4$",
+            "$R = \\infty$",
+            "$R = 1/2$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "explication": "En utilisant la règle de d'Alembert sur le rapport $|a_{n+1}/a_n|$ : $\\frac{\\binom{2n}{n}}{\\binom{2n+2}{n+1}} = \\frac{(2n)! (n+1)! (n+1)!}{n! n! (2n+2)!} = \\frac{(n+1)^2}{(2n+2)(2n+1)} = \\frac{n+1}{2(2n+1)} \\to 1/4$. Le rayon est donc $R = 4$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "i78m9n0o-7777-7888-l333-m444n555o666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\sum_{k=1}^{n-1} \\frac{1}{\\sqrt{k(n-k)}}$. Quelle est la limite de $u_n$ lorsque $n \\to +\\infty$ ?",
+        "answers": [
+            "$0$",
+            "$\\pi$",
+            "$1$",
+            "$+\\infty$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 1,
+        "explication": "On écrit $u_n = \\frac{1}{n} \\sum_{k=1}^{n-1} \\frac{1}{\\sqrt{\\frac{k}{n}(1-\\frac{k}{n})}}$. Il s'agit d'une somme de Riemann pour la fonction $f(x) = \\frac{1}{\\sqrt{x(1-x)}}$ sur $[0, 1]$. L'intégrale $\\int_0^1 \\frac{dx}{\\sqrt{x(1-x)}}$ vaut $\\pi$ (en posant $x = \\sin^2 \\theta$).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "j89n0o1p-8888-7999-m444-n555o666p777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $u_n$ et $v_n$ sont les termes généraux de deux séries alternées telles que $u_n \\sim v_n$, peut-on affirmer qu'elles sont de même nature ?",
+        "answers": [
+            "Oui, comme pour les séries à termes positifs",
+            "Non, car le signe de $u_n$ peut diverger du comportement de $v_n$",
+            "Oui, car l'équivalent préserve la convergence des séries alternées",
+            "Non, il faut obligatoirement une convergence absolue"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "L'équivalence ne préserve pas la nature des séries qui ne sont pas à termes de signe constant. Par exemple, si $v_n = \\frac{(-1)^n}{\\sqrt{n}}$ (converge) et $u_n = v_n + \\frac{1}{n}$ (diverge), on a $u_n \\sim v_n$. Le CSSA est très sensible à la monotonie de la valeur absolue.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "k90o1p2q-9999-8000-n555-o666p777q888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $v_n = \\frac{(-1)^n}{\\sqrt{n} + (-1)^{n+1}}$. Le critère spécial des séries alternées (CSSA) s'applique-t-il directement pour montrer la convergence ?",
+        "answers": [
+            "Oui, car elle est alternée et tend vers 0",
+            "Non, car la suite $(|v_n|)$ n'est pas monotone",
+            "Non, car elle n'est pas alternée",
+            "Oui, par comparaison à la série de Riemann"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "explication": "Le CSSA exige que la valeur absolue du terme général soit décroissante. Ici, $|v_n| = \\frac{1}{|\\sqrt{n} + (-1)^{n+1}|}$. Le terme $(-1)^{n+1}$ fait osciller le dénominateur autour de $\\sqrt{n}$, ce qui rompt la monotonie pour les petites valeurs de $n$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "l01p2q3r-0000-8111-o666-p777q888r999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Dans le cadre de l'étude de la convergence de séries, soit $u_n = \\cos(\\pi \\sqrt{n^2+n+1})$. Quelle est la nature de la série $\\sum u_n$ ?",
+        "answers": [
+            "Divergente grossièrement",
+            "Convergente par le Critère Spécial des Séries Alternées (CSSA) après développement asymptotique",
+            "Absolument convergente",
+            "Divergente par comparaison avec une série de Riemann"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 1,
+        "explication": "En utilisant un développement limité, $\\sqrt{n^2+n+1} = n(1 + 1/n + 1/n^2)^{1/2} = n + 1/2 + O(1/n)$. Ainsi, $\\cos(\\pi \\sqrt{n^2+n+1}) \\approx \\cos(n\\pi + \\pi/2) = -\\sin(n\\pi) = 0$. Un développement plus fin montre que $u_n$ est alternée et décroissante en valeur absolue vers 0, ce qui permet d'appliquer le CSSA.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "m12q3r4s-1111-8222-p777-q888r999s000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quel est l'équivalent du reste $R_n = \\sum_{k=n+1}^{+\\infty} \\frac{1}{k^2}$ pour la série de Riemann convergente $\\sum \\frac{1}{n^2}$ quand $n \\to +\\infty$ ?",
+        "answers": [
+            "$\\frac{1}{n}$",
+            "$\\frac{1}{2n^2}$",
+            "$\\frac{1}{n^2}$",
+            "$\\frac{1}{n^3}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "explication": "Pour une série convergente de terme général $u_n \\sim 1/n^\\alpha$ avec $\\alpha > 1$, le reste est équivalent à $\\int_n^{+\\infty} t^{-\\alpha} dt$. Ici, $\\int_n^{+\\infty} t^{-2} dt = [-1/t]_n^{+\\infty} = 1/n$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "n23r4s5t-2222-8333-q888-r999s000t111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soient $(u_n)$, $(v_n)$, $(w_n)$ des suites réelles telles que $\\forall n \\in \\mathbb{N}, u_n \\le v_n \\le w_n$. Si les séries $\\sum u_n$ et $\\sum w_n$ convergent, alors la série $\\sum v_n$ :",
+        "answers": [
+            "Diverge",
+            "Converge",
+            "On ne peut pas savoir, le critère nécessite des termes positifs",
+            "Converge seulement si $v_n$ est positive"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "Par linéarité de la somme, si $\\sum u_n$ et $\\sum w_n$ convergent, alors la série $\\sum (w_n - u_n)$ converge. Comme $0 \\le v_n - u_n \\le w_n - u_n$, on peut appliquer le théorème de comparaison des séries à termes positifs pour $\\sum (v_n - u_n)$. La convergence de $\\sum v_n$ s'en déduit par $\\sum v_n = \\sum (v_n - u_n) + \\sum u_n$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "o34s5t6u-3333-8444-r999-s000t111u222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $(S_n)$ la somme partielle d'une série à termes strictement positifs $\\sum u_n$ divergente. Quelle est la nature de la série $\\sum \\frac{u_n}{S_n^2}$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "Cela dépend de la croissance de $u_n$",
+            "Dépend de la limite de $S_n$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "explication": "On remarque que $\\frac{u_n}{S_n^2} \\le \\int_{S_{n-1}}^{S_n} \\frac{dt}{t^2} = \\frac{1}{S_{n-1}} - \\frac{1}{S_n}$. La série $\\sum (\\frac{1}{S_{n-1}} - \\frac{1}{S_n})$ est une série télescopique convergente (car $S_n \\to +\\infty$). Par comparaison, $\\sum \\frac{u_n}{S_n^2}$ converge.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "p45t6u7v-4444-8555-s000-t111u222v333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la somme de la série télescopique $\\sum_{n=1}^{+\\infty} \\frac{1}{n(n+1)}$ ?",
+        "answers": [
+            "1",
+            "0",
+            "$\\pi^2/6$",
+            "1/2"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "explication": "On utilise la décomposition en éléments simples : $\\frac{1}{n(n+1)} = \\frac{1}{n} - \\frac{1}{n+1}$. La somme partielle vaut $S_N = \\sum_{n=1}^N (\\frac{1}{n} - \\frac{1}{n+1}) = 1 - \\frac{1}{N+1}$, qui tend vers 1 quand $N \\to +\\infty$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q56u7v8w-5555-8666-t111-u222v333w444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\frac{1}{n^2}$. Que vaut la somme $\\sum_{n=1}^{+\\infty} (u_{n+1}-u_n)$ ?",
+        "answers": [
+            "0",
+            "-1",
+            "1",
+            "$\\pi^2/6 - 1$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "Il s'agit d'une série télescopique : $\\sum_{n=1}^N (u_{n+1} - u_n) = u_{N+1} - u_1$. Comme $u_n = 1/n^2$, $u_{N+1} \\to 0$ quand $N \\to +\\infty$, donc la somme vaut $0 - u_1 = 0 - 1 = -1$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "r67v8w9x-6666-8777-u222-v333w444x555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "L'inégalité triangulaire pour les séries absolument convergentes s'écrit de la manière suivante :",
+        "answers": [
+            "$|\\sum_{n=0}^{+\\infty} u_n| \\le \\sum_{n=0}^{+\\infty} |u_n|$",
+            "$\\sum_{n=0}^{+\\infty} |u_n| \\le |\\sum_{n=0}^{+\\infty} u_n|$",
+            "$|\\sum_{n=0}^{+\\infty} u_n| = \\sum_{n=0}^{+\\infty} |u_n|$",
+            "$\\sum_{n=0}^{+\\infty} u_n \\le |\\sum_{n=0}^{+\\infty} u_n|$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "explication": "C'est une propriété fondamentale issue de l'inégalité triangulaire sur les sommes finies. Par passage à la limite, la valeur absolue de la somme est toujours inférieure ou égale à la somme des valeurs absolues.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "s78w9x0y-7777-8888-v333-w444x555y666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $(u_n)$ une suite décroissante tendant vers 0. On pose $S_n = \\sum_{k=0}^n (-1)^k u_k$. Les suites $(S_{2n})$ et $(S_{2n+1})$ sont :",
+        "answers": [
+            "Adjacentes",
+            "Divergentes",
+            "Égales",
+            "Croissantes"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "explication": "D'après le théorème du CSSA, $S_{2n}$ est décroissante, $S_{2n+1}$ est croissante, et leur différence $S_{2n+1} - S_{2n} = -u_{2n+1}$ tend vers 0. Elles sont donc adjacentes et convergent vers la même limite.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "t89x0y1z-8888-8999-w444-x555y666z777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = (-1)^n v_n$ vérifiant les hypothèses du CSSA. La somme $S$ est toujours comprise entre :",
+        "answers": [
+            "$S_{2n}$ et $S_{2n+1}$",
+            "$0$ et $v_0$",
+            "Les deux réponses précédentes sont correctes",
+            "Aucune des réponses"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "explication": "Le CSSA assure que les sommes partielles oscillent autour de la limite $S$. $S$ est toujours située entre deux sommes partielles consécutives ($S_{2n}$ et $S_{2n+1}$). De plus, $S$ est comprise entre $S_0 = v_0$ et $S_1 = v_0 - v_1$, donc entre $0$ et $v_0$ si $v_n$ décroît.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "u90y1z2a-9999-9000-x555-y666z777a888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $u_n = O(1/n^2)$, alors la série $\\sum u_n$ est :",
+        "answers": [
+            "Absolument convergente",
+            "Divergente",
+            "Semi-convergente",
+            "Ne peut pas être déterminée"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "explication": "La série $\\sum 1/n^2$ est une série de Riemann convergente ($\\alpha = 2 > 1$). Par le critère de comparaison des séries à termes positifs (ou en valeur absolue), si $|u_n| \\le M/n^2$, alors $\\sum |u_n|$ converge, donc $\\sum u_n$ est absolument convergente.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "v01z2a3b-0000-9111-y666-z777a888b999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Dans le cadre de l'étude de la convergence de séries, quelle est la nature de la série numérique $\\sum_{n=0}^{+\\infty} e^{-n}$ ?",
+        "answers": [
+            "Convergente, car c'est une série géométrique de raison $q = 1/e$ avec $|q| < 1$.",
+            "Divergente grossièrement, car le terme général ne tend pas vers 0.",
+            "Divergente, car c'est une série de Riemann avec $\\alpha = 1$.",
+            "Convergente par application du critère de d'Alembert avec une limite égale à 1."
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La série est de la forme $\\sum q^n$ avec $q = e^{-1} \\approx 0,36$. Puisque $|q| < 1$, la série géométrique converge absolument. Les autres options sont des erreurs classiques de classification des séries de référence."
+    },
+    {
+        "uuid": "w12a3b4c-1111-9222-z777-a888b999c000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de la série à termes positifs $\\sum_{n=1}^{+\\infty} e^{-n^2}$ ?",
+        "answers": [
+            "Divergente car le terme général ne tend pas vers 0.",
+            "Convergente car $e^{-n^2} = o(1/n^2)$ lorsque $n \\to +\\infty$.",
+            "Semi-convergente car les termes sont de signe variable.",
+            "Convergente par comparaison avec une série géométrique de raison $1/e$."
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Par croissance comparée, $n^2 e^{-n^2} \\to 0$, donc $e^{-n^2} = o(1/n^2)$. Comme $\\sum 1/n^2$ est une série de Riemann convergente ($\\alpha=2>1$), la série étudiée converge par critère de comparaison. Attention, la série n'est pas géométrique."
+    },
+    {
+        "uuid": "x23b4c5d-2222-9333-a888-b999c000d111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\frac{n!}{n^n}$. En utilisant la règle de d'Alembert pour étudier la convergence, quelle est la limite de $u_{n+1}/u_n$ ?",
+        "answers": [
+            "$1$",
+            "$1/e$",
+            "$e$",
+            "$0$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On calcule $\\frac{u_{n+1}}{u_n} = \\frac{(n+1)!}{(n+1)^{n+1}} \\cdot \\frac{n^n}{n!} = \\frac{n+1}{(n+1)^{n+1}} \\cdot n^n = (\\frac{n}{n+1})^n = (1 + 1/n)^{-n}$. Cette limite est bien connue pour être $e^{-1} = 1/e$."
+    },
+    {
+        "uuid": "y34c5d6e-3333-9444-b999-c000d111e222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $\\sum u_n$ une série à termes positifs convergente. Que peut-on affirmer sur la série $\\sum u_n^2$ ?",
+        "answers": [
+            "Elle converge forcément.",
+            "Elle diverge forcément.",
+            "On ne peut pas conclure sans connaître le signe de $u_n$.",
+            "Elle converge si et seulement si $\\sum u_n$ est absolument convergente."
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Puisque $\\sum u_n$ converge, $\\lim_{n \\to +\\infty} u_n = 0$. Il existe donc un rang $N$ tel que pour $n \\geq N$, $u_n \\leq 1$. Ainsi $u_n^2 \\leq u_n$ pour tout $n \\geq N$. Par le critère de comparaison, la série $\\sum u_n^2$ converge."
+    },
+    {
+        "uuid": "z45d6e7f-4444-9555-c000-d111e222f333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "La série $\\sum_{n=1}^{+\\infty} \\frac{\\sin n}{n^2}$ est :",
+        "answers": [
+            "Absolument convergente.",
+            "Semi-convergente.",
+            "Divergente.",
+            "Convergente par le critère des séries alternées."
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On a $|\\frac{\\sin n}{n^2}| \\leq \\frac{1}{n^2}$. La série $\\sum \\frac{1}{n^2}$ est une série de Riemann convergente ($\\alpha=2$). Par comparaison, la série est absolument convergente."
+    },
+    {
+        "uuid": "a56e7f8g-5555-9666-d111-e222f333g444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Pour la série alternée $\\sum_{n=1}^{+\\infty} \\frac{(-1)^n}{\\sqrt{n}}$, le signe du reste $R_n = \\sum_{k=n+1}^{+\\infty} u_k$ est celui de :",
+        "answers": [
+            "$(-1)^n$",
+            "$(-1)^{n+1}$",
+            "constant et positif",
+            "$(-1)^{n+2}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "D'après le théorème spécial des séries alternées (TSSA), le reste $R_n$ a le même signe que le premier terme négligé, soit $u_{n+1}$. Ici $u_{n+1} = \\frac{(-1)^{n+1}}{\\sqrt{n+1}}$. Le signe est donc celui de $(-1)^{n+1}$."
+    },
+    {
+        "uuid": "b67f8g9h-6666-9777-e222-f333g444h555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de la série $\\sum_{n=2}^{+\\infty} \\frac{1}{n \\ln n}$ ?",
+        "answers": [
+            "Convergente par comparaison intégrale.",
+            "Divergente par comparaison intégrale.",
+            "Convergente car $1/(n \\ln n) \\to 0$.",
+            "Divergente par comparaison avec la série harmonique."
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La fonction $f(x) = \\frac{1}{x \\ln x}$ est positive et décroissante sur $[2, +\\infty[$. L'intégrale $\\int_2^{+\\infty} \\frac{dx}{x \\ln x} = [\\ln(\\ln x)]_2^{+\\infty} = +\\infty$. Par comparaison série-intégrale, la série diverge."
+    },
+    {
+        "uuid": "c78g9h0i-7777-9888-f333-g444h555i666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n$ une suite positive telle que $u_n \\sim \\frac{1}{n^2}$. Alors le reste $R_n = \\sum_{k=n+1}^{+\\infty} u_k$ vérifie :",
+        "answers": [
+            "$R_n \\sim 1/n$",
+            "$R_n \\sim 1/n^2$",
+            "$R_n \\sim 1/(2n)$",
+            "$R_n \\sim 1/n^3$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par comparaison série-intégrale, $R_n \\sim \\int_n^{+\\infty} \\frac{dt}{t^2} = [-\\frac{1}{t}]_n^{+\\infty} = \\frac{1}{n}$. C'est un résultat classique sur les séries de Riemann convergentes."
+    },
+    {
+        "uuid": "d89h0i1j-8888-9999-g444-h555i666j777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit la suite définie par $u_{n+1} = \\frac{1}{2} \\arctan(u_n)$ avec $u_0 > 0$. Quel est le comportement asymptotique de $u_n$ ?",
+        "answers": [
+            "$u_n \\sim C \\cdot (1/2)^n$",
+            "$u_n \\sim C/n$",
+            "$u_n \\sim C \\cdot n$",
+            "$u_n \\to \\pi/4$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La suite converge vers 0 car $|f'(0)| = 1/2 < 1$. Par le théorème de convergence locale, $u_{n+1} \\sim f'(0)u_n = \\frac{1}{2} u_n$. La suite est donc géométrique à la limite, soit $u_n \\sim C \\cdot (1/2)^n$."
+    },
+    {
+        "uuid": "e90i1j2k-9999-0000-h555-i666j777k888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $S$ la somme de la série alternée $\\sum_{n=0}^{+\\infty} \\frac{(-1)^n}{\\sqrt{n+1}}$. Que dire du produit de Cauchy de cette série par elle-même ?",
+        "answers": [
+            "Il converge.",
+            "Il diverge car le terme général $w_n$ ne tend pas vers 0.",
+            "Il est absolument convergent.",
+            "Il converge vers $S^2$."
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le terme général du produit de Cauchy $w_n = \\sum_{k=0}^n \\frac{(-1)^k}{\\sqrt{k+1}} \\cdot \\frac{(-1)^{n-k}}{\\sqrt{n-k+1}} = (-1)^n \\sum_{k=0}^n \\frac{1}{\\sqrt{(k+1)(n-k+1)}}$. Pour $k \\approx n/2$, chaque terme est $\\approx 4/n$. Il y a $n+1$ termes, donc $|w_n| \\approx n \\cdot (4/n) = 4$. Comme $w_n \\not\\to 0$, la série diverge grossièrement."
+    },
+    {
+        "uuid": "f01j2k3l-0000-1111-i666-j777k888l999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Dans le cadre de l'étude des séries alternées vérifiant le critère spécial (CSA), soit $(u_n)$ une suite décroissante vers $0$ telle que $u_{n+1} \\sim u_n$ et $(u_n - u_{n+1})$ est décroissante. Quel est l'équivalent du reste $R_n = \\sum_{k=n+1}^{+\\infty} (-1)^k u_k$ ?",
+        "answers": [
+            "$(-1)^{n+1} u_n$",
+            "$(-1)^{n+1} \\frac{u_n}{2}$",
+            "$(-1)^{n+1} \\frac{u_{n+1}}{2}$",
+            "$(-1)^n \\frac{u_n}{2}$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 1,
+        "explication": "D'après la formule de Taylor ou l'encadrement des séries alternées, lorsque $u_n$ vérifie les conditions du CSA, le reste $R_n$ est du signe du premier terme négligé, soit $(-1)^{n+1}$. Un développement asymptotique plus fin montre que $R_n = \\frac{(-1)^{n+1}}{2} u_n + o(u_n)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "g12k3l4m-1111-2222-j777-k888l999m000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la somme de la série alternée harmonique $\\sum_{n=1}^{+\\infty} \\frac{(-1)^{n-1}}{n} = 1 - \\frac{1}{2} + \\frac{1}{3} - \\dots$ ?",
+        "answers": [
+            "$\\ln 2$",
+            "$- \\ln 2$",
+            "$1$",
+            "$0$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "explication": "La série donnée est $\\sum_{n=1}^{+\\infty} \\frac{(-1)^{n-1}}{n} = - \\sum_{n=1}^{+\\infty} \\frac{(-1)^n}{n}$. Comme le développement en série entière de $\\ln(1+x)$ est $\\sum_{n=1}^{+\\infty} (-1)^{n-1} \\frac{x^n}{n}$, en posant $x=1$, on obtient bien $\\ln 2$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "h23l4m5n-2222-3333-k888-l999m000n111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $(u_n)$ une suite de réels telle que $\\sum u_n$ converge absolument. Quelle est la nature de la série $\\sum \\cos(u_n)$ ?",
+        "answers": [
+            "Elle converge",
+            "Elle diverge grossièrement",
+            "Elle converge absolument",
+            "Elle est semi-convergente"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "Si $\\sum u_n$ converge absolument, alors $u_n \\to 0$. Par conséquent, $\\cos(u_n) \\to \\cos(0) = 1$. La condition nécessaire de convergence ($\\lim_{n \\to +\\infty} v_n = 0$) n'est pas remplie pour le terme général $v_n = \\cos(u_n)$. La série diverge donc grossièrement.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "i34m5n6o-3333-4444-l999-m000n111o222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de la série de terme général $u_n = \\frac{n^2}{2^n}$ ?",
+        "answers": [
+            "Convergente par la règle de d'Alembert",
+            "Divergente par la règle de Riemann",
+            "Divergente grossièrement",
+            "Convergente par comparaison avec $\\sum n^2$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "explication": "En utilisant la règle de d'Alembert, on étudie $\\frac{u_{n+1}}{u_n} = \\frac{(n+1)^2}{2^{n+1}} \\cdot \\frac{2^n}{n^2} = \\frac{1}{2} (1 + 1/n)^2$. La limite est $1/2 < 1$, donc la série converge.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "j45n6o7p-4444-5555-m000-n111o222p333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\sqrt{n+1} - \\sqrt{n}$. Quelle est la nature de la série $\\sum u_n$ ?",
+        "answers": [
+            "Converge car $u_n \\to 0$",
+            "Diverge par équivalence avec une série harmonique",
+            "Converge vers 0",
+            "Diverge vers $+\\infty$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 3,
+        "explication": "En utilisant la quantité conjuguée, $u_n = \\frac{(\\sqrt{n+1}-\\sqrt{n})(\\sqrt{n+1}+\\sqrt{n})}{\\sqrt{n+1}+\\sqrt{n}} = \\frac{1}{\\sqrt{n+1}+\\sqrt{n}} \\sim \\frac{1}{2\\sqrt{n}}$. Comme la série de Riemann $\\sum 1/n^{1/2}$ diverge (exposant $1/2 \\le 1$), la série diverge.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "k56o7p8q-5555-6666-n111-o222p333q444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\frac{1}{\\sqrt{n+1}} - \\frac{1}{\\sqrt{n}}$. Quelle est la nature de la série $\\sum u_n$ ?",
+        "answers": [
+            "Convergente par télescopage",
+            "Divergente par équivalent",
+            "Convergente par le critère de Riemann",
+            "Divergente grossièrement"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "explication": "Il s'agit d'une série télescopique. La somme partielle $S_N = \\sum_{n=1}^N (v_{n+1} - v_n)$ avec $v_n = \\frac{1}{\\sqrt{n}}$ vaut $v_{N+1} - v_1 = \\frac{1}{\\sqrt{N+1}} - 1$. La limite quand $N \\to +\\infty$ est $-1$. La série converge.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "l67p8q9r-6666-7777-o222-p333q444r555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de la série de terme général $u_n = \\ln(1 + 1/n)$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "Absolument convergente",
+            "Convergente par le critère de d'Alembert"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "Par un développement limité au voisinage de $0$, $\\ln(1 + 1/n) \\sim 1/n$. Comme la série harmonique $\\sum 1/n$ diverge, la série $\\sum \\ln(1+1/n)$ diverge par comparaison.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "m78q9r0s-7777-8888-p333-q444r555s666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit la série de Bertrand $\\sum_{n\\ge 2} \\frac{1}{n(\\ln n)^\\alpha}$ avec $\\alpha = 2$. Quelle est sa nature ?",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "Grossièrement divergente",
+            "Semi-convergente"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "explication": "Une série de Bertrand $\\sum \\frac{1}{n^a (\\ln n)^b}$ converge si et seulement si ($a > 1$) ou ($a = 1$ et $b > 1$). Ici $a=1$ et $b=2$, donc la série converge.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "n89r0s1t-8888-9999-q444-r555s666t777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $(u_n)$ une suite positive. Si $\\sum u_n$ converge, quelle est la nature de $\\sum \\ln(1+u_n)$ ?",
+        "answers": [
+            "Converge",
+            "Diverge",
+            "On ne peut pas conclure",
+            "Converge si $u_n < 1$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "explication": "Comme $\\sum u_n$ converge, $u_n \\to 0$. Or, $\\ln(1+u_n) \\sim u_n$ quand $u_n \\to 0$. Par le théorème de comparaison des séries à termes positifs, $\\sum \\ln(1+u_n)$ est de même nature que $\\sum u_n$, donc elle converge.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "o90s1t2u-9999-0000-r555-s666t777u888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = (-1)^n/n$. Quelle est la nature de la série $\\sum u_n^2$ ?",
+        "answers": [
+            "Converge",
+            "Diverge",
+            "Est semi-convergente",
+            "Diverge par le critère du terme général"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "explication": "$u_n^2 = ((-1)^n/n)^2 = 1/n^2$. La série $\\sum 1/n^2$ est une série de Riemann convergente (exposant $2 > 1$).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "p01t2u3v-0000-1111-s666-t777u888v999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Dans le cadre de l'étude de la convergence d'une série numérique à termes positifs $\\sum u_n$, si la série diverge, que peut-on dire de la limite de la suite des sommes partielles $S_N = \\sum_{n=0}^{N} u_n$ quand $N \\to +\\infty$ ?",
+        "answers": [
+            "La suite $S_N$ converge vers un nombre réel $L$",
+            "La suite $S_N$ tend vers $+\\infty$",
+            "La suite $S_N$ est stationnaire",
+            "La suite $S_N$ n'admet pas de limite"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Pour une série à termes positifs, la suite des sommes partielles $(S_N)$ est croissante. Si elle ne converge pas vers une limite finie, le théorème de la limite monotone impose qu'elle diverge nécessairement vers $+\\infty$."
+    },
+    {
+        "uuid": "q12u3v4w-1111-2222-t777-u888v999w000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\frac{2}{n(n+2)}$. Quelle est la valeur de la somme $\\sum_{n=1}^{+\\infty} u_n$ ?",
+        "answers": [
+            "3/2",
+            "1",
+            "2",
+            "5/4"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On utilise la décomposition en éléments simples : $\\frac{2}{n(n+2)} = \\frac{1}{n} - \\frac{1}{n+2}$. La somme partielle est une somme télescopique : $S_N = (1 - 1/3) + (1/2 - 1/4) + (1/3 - 1/5) + \\dots + (1/N - 1/(N+2))$. Il reste $1 + 1/2 - 1/(N+1) - 1/(N+2)$, qui tend vers $3/2$."
+    },
+    {
+        "uuid": "r23v4w5x-2222-3333-u888-v999w000x111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Pour étudier la nature de la série $\\sum_{n\\ge 2} \\frac{1}{n \\ln n}$ via le théorème de comparaison série-intégrale, quelle est la primitive de $f(t) = \\frac{1}{t \\ln t}$ ?",
+        "answers": [
+            "$\\ln(t)$",
+            "$\\ln(\\ln t)$",
+            "$-1/(\\ln t)$",
+            "$\\ln(t \\ln t)$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On reconnaît la forme $u'/u$ avec $u(t) = \\ln t$, donc $u'(t) = 1/t$. La primitive de $u'/u$ est $\\ln |u|$. Ici, pour $t \\ge 2$, $\\ln t > 0$, donc la primitive est bien $\\ln(\\ln t)$."
+    },
+    {
+        "uuid": "s34w5x6y-3333-4444-v999-w000x111y222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de la série $\\sum_{n=1}^{+\\infty} \\frac{\\cos n}{n}$ ?",
+        "answers": [
+            "Absolument convergente",
+            "Divergente",
+            "Convergente (semi-convergente)",
+            "Convergente de somme nulle"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "La série ne converge pas absolument (comparaison avec la série harmonique). En revanche, elle converge via la transformation d'Abel, car la suite $(\\cos n)$ a des sommes partielles bornées et $1/n$ est une suite décroissante tendant vers 0."
+    },
+    {
+        "uuid": "t45x6y7z-4444-5555-w000-x111y222z333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\frac{(-1)^n}{\\sqrt{n} + (-1)^n}$. Quelle est la nature de cette série ?",
+        "answers": [
+            "Convergente par le critère spécial des séries alternées (CSSA)",
+            "Divergente par développement limité",
+            "Absolument convergente",
+            "Convergente car $u_n \\to 0$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "En effectuant un DL : $u_n = \\frac{(-1)^n}{\\sqrt{n}(1 + (-1)^n/\\sqrt{n})} = \\frac{(-1)^n}{\\sqrt{n}} (1 - \\frac{(-1)^n}{\\sqrt{n}} + O(1/n)) = \\frac{(-1)^n}{\\sqrt{n}} - \\frac{1}{n} + O(n^{-3/2})$. La série de terme $\\frac{(-1)^n}{\\sqrt{n}}$ converge (CSSA) mais la série de terme $-1/n$ diverge. La somme des deux diverge."
+    },
+    {
+        "uuid": "u56y7z8a-5555-6666-x111-y222z333a444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Pour une série de Riemann convergente $\\sum_{k=1}^{+\\infty} \\frac{1}{k^\\alpha}$ avec $\\alpha > 1$, quel est l'équivalent du reste d'ordre $n$, $R_n = \\sum_{k=n+1}^{+\\infty} \\frac{1}{k^\\alpha}$ ?",
+        "answers": [
+            "$\\frac{1}{(\\alpha-1)n^{\\alpha-1}}$",
+            "$\\frac{1}{n^\\alpha}$",
+            "$\\frac{1}{\\alpha n^{\\alpha}}$",
+            "$\\frac{1}{(\\alpha+1)n^{\\alpha+1}}$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On compare la série à l'intégrale : $R_n \\sim \\int_{n}^{+\\infty} \\frac{1}{t^\\alpha} dt = [\\frac{t^{1-\\alpha}}{1-\\alpha}]_n^{+\\infty} = \\frac{1}{(\\alpha-1)n^{\\alpha-1}}$."
+    },
+    {
+        "uuid": "v67z8a9b-6666-7777-y222-z333a444b555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de la série de terme général $u_n = n \\ln(1+1/n) - \\cos(1/\\sqrt{n})$ pour $n \\ge 1$ ?",
+        "answers": [
+            "Convergente (terme général en $O(1/n^2)$)",
+            "Divergente grossièrement",
+            "Divergente par comparaison",
+            "Convergente par le CSSA"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Avec les DL en $1/n$ : $n(1/n - 1/(2n^2) + 1/(3n^3) + o(1/n^3)) = 1 - 1/(2n) + 1/(3n^2) + o(1/n^2)$. Et $\\cos(1/\\sqrt{n}) = 1 - 1/(2n) + 1/(24n^2) + o(1/n^2)$. La soustraction donne $u_n \\sim \\frac{1}{3n^2} - \\frac{1}{24n^2} = \\frac{7}{24n^2}$. La série converge par comparaison avec Riemann ($\\alpha=2 > 1$)."
+    },
+    {
+        "uuid": "w78a9b0c-7777-8888-z333-a444b555c666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $\\alpha \\le 0$. Quelle est la nature de la série de terme général $u_n = e^{-n^\\alpha}$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente grossièrement",
+            "Divergente par le critère de Riemann",
+            "Convergente par le test de d'Alembert"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Si $\\alpha = 0$, $u_n = e^{-1} \\to 1/e \\neq 0$. Si $\\alpha < 0$, $u_n = e^{-n^{-|\\alpha|}} \\to e^0 = 1 \\neq 0$. Dans les deux cas, la condition nécessaire de convergence $\\lim u_n = 0$ n'est pas respectée."
+    },
+    {
+        "uuid": "x89b0c1d-8888-9999-a444-b555c666d777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $u_n = o(1/n)$, peut-on affirmer que la série $\\sum u_n$ converge ?",
+        "answers": [
+            "Oui, toujours",
+            "Non, le contre-exemple classique est $\\sum \\frac{1}{n \\ln n}$",
+            "Seulement si $u_n$ est de signe constant",
+            "Seulement si $\\sum u_n$ est alternée"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La condition $u_n = o(1/n)$ est trop faible pour garantir la convergence. La série de Bertrand $\\sum \\frac{1}{n \\ln n}$ est un exemple de série divergente dont le terme général est bien négligeable devant $1/n$ au sens des limites, mais pas assez pour assurer la convergence."
+    },
+    {
+        "uuid": "y90c1d2e-9999-0000-b555-c666d777e888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $1/n = o(u_n)$ pour des termes positifs $u_n$, que peut-on dire de la série $\\sum u_n$ ?",
+        "answers": [
+            "Elle converge",
+            "Elle diverge",
+            "On ne peut pas conclure",
+            "Elle est équivalente à la série harmonique"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Si $1/n = o(u_n)$, alors à partir d'un certain rang, $u_n \\ge \\frac{1}{n}$. Comme la série harmonique $\\sum 1/n$ diverge, par le théorème de comparaison des séries à termes positifs, $\\sum u_n$ diverge également."
+    },
+    {
+        "uuid": "z01d2e3f-0000-1111-c666-d777e888f999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Dans le cadre de l'étude de la convergence de séries à termes positifs, la série $\\sum \\frac{1}{1+2^n}$ est convergente par comparaison avec :",
+        "answers": [
+            "La série harmonique $\\sum \\frac{1}{n}$",
+            "Une série géométrique de raison $\\frac{1}{2}$",
+            "Une série de Riemann de paramètre $\\alpha = 2$",
+            "La série $\\sum n$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "Le terme général est équivalent à $\\frac{1}{2^n} = (\\frac{1}{2})^n$ quand $n \\to +\\infty$. Comme il s'agit d'une série géométrique de raison $q = 1/2$ avec $|q| < 1$, elle converge. Comparer à une série de Riemann ou harmonique est une erreur de croissance comparée.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "a12e3f4g-1111-2222-d777-e888f999g000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $(u_n)_{n \\in \\mathbb{N}}$ une suite à termes positifs telle que la série $\\sum u_n$ converge. Quelle est la nature de la série $\\sum \\frac{u_n}{1+u_n}$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "Semi-convergente",
+            "La nature dépend du signe de $u_n$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "explication": "Comme $\\sum u_n$ converge, le terme général $u_n$ tend vers $0$. Ainsi, $\\frac{u_n}{1+u_n} \\sim u_n$ au voisinage de $+\\infty$. Par le théorème de comparaison des séries à termes positifs, $\\sum \\frac{u_n}{1+u_n}$ est de même nature que $\\sum u_n$, donc elle converge.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "b23f4g5h-2222-3333-e888-f999g000h111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Pour une série alternée $\\sum (-1)^n u_n$ où $(u_n)$ est une suite positive décroissante tendant vers $0$, que peut-on affirmer sur ses sommes partielles $S_n = \\sum_{k=0}^n (-1)^k u_k$ ?",
+        "answers": [
+            "On a $|S_n| \\le u_0$",
+            "$S_n$ est toujours du signe de $u_0$",
+            "Les deux affirmations précédentes sont correctes",
+            "La série est nécessairement absolument convergente"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "explication": "D'après le critère spécial des séries alternées (CSSA), les sommes partielles vérifient $|S_n - S| \\le u_{n+1}$. La première somme partielle est $S_0 = u_0$. Comme la suite est décroissante, $S_n$ reste encadré par ses deux premiers termes $S_0$ et $S_1 = u_0 - u_1$, confirmant les deux propriétés.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "c34g5h6i-3333-4444-f999-g000h111i222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $(u_n)$ une suite réelle telle que la série $\\sum u_n$ converge. Que peut-on dire de la série $\\sum u_n^3$ ?",
+        "answers": [
+            "Elle converge forcément",
+            "Elle ne converge pas forcément (vrai seulement si convergence absolue)",
+            "Elle diverge forcément",
+            "Elle converge si $u_n > 0$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "explication": "La convergence simple de $\\sum u_n$ n'implique pas $\\sum u_n^3$. Contre-exemple classique : une série alternée dont le terme général décroît lentement en valeur absolue mais pas assez pour compenser le cube. Si $\\sum |u_n|$ converge (convergence absolue), alors $|u_n^3| \\le |u_n|^3 \\le |u_n|$ pour $|u_n| < 1$, assurant la convergence.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "d45h6i7j-4444-5555-g000-h111i222j333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de la série $\\sum_{n=1}^{+\\infty} \\frac{(-1)^n}{n^2 + (-1)^n}$ ?",
+        "answers": [
+            "Absolument convergente",
+            "Divergente",
+            "Semi-convergente",
+            "Grossièrement divergente"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "explication": "Le terme général est équivalent à $\\frac{(-1)^n}{n^2}$ en valeur absolue. Comme $\\sum \\frac{1}{n^2}$ est une série de Riemann convergente ($\\alpha = 2 > 1$), la série est absolument convergente.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "e56i7j8k-5555-6666-h111-i222j333k444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $u_n \\sim \\frac{1}{n}$ avec $u_n > 0$, quel est l'équivalent de la somme partielle $S_n = \\sum_{k=1}^n u_k$ quand $n \\to +\\infty$ ?",
+        "answers": [
+            "$\\ln(n)$",
+            "$\\frac{1}{n^2}$",
+            "$n$",
+            "$\\sqrt{n}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "explication": "Par comparaison série-intégrale, $\\sum_{k=1}^n \\frac{1}{k} \\sim \\int_1^n \\frac{dt}{t} = \\ln(n)$. C'est un résultat fondamental à connaître pour les sommes divergentes.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "f67j8k9l-6666-7777-i222-j333k444l555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "La série de Riemann $\\sum_{n\\ge 1} \\frac{1}{n^\\alpha}$ converge si et seulement si l'intégrale impropre $I = \\int_1^{+\\infty} \\frac{dt}{t^\\alpha}$ :",
+        "answers": [
+            "Converge",
+            "Diverge",
+            "Vaut 1",
+            "Est égale à $\\frac{1}{\\alpha - 1}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "explication": "Le théorème de comparaison série-intégrale établit que, pour une fonction positive décroissante $f$, la série $\\sum f(n)$ et l'intégrale $\\int f(t)dt$ sont de même nature. Ici, $\\int_1^{+\\infty} t^{-\\alpha} dt$ converge ssi $\\alpha > 1$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "g78k9l0m-7777-8888-j333-k444l555m666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de la série $\\sum_{n=2}^{+\\infty} \\frac{\\ln(n)}{n^{1.1}}$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "Grossièrement divergente",
+            "Semi-convergente"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "explication": "On utilise la règle de Riemann : $\\frac{\\ln n}{n^{1.1}} = \\frac{1}{n^{1.1 - \\epsilon}}$ avec $\\epsilon$ tel que $1.1 - \\epsilon > 1$. Comme $n^{1.1} / \\ln n$ croît plus vite que $n^a$ pour un certain $a > 1$, la série converge par comparaison avec une série de Riemann $\\sum \\frac{1}{n^p}$ avec $1 < p < 1.1$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "h89l0m1n-8888-9999-k444-l555m666n777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = \\frac{1}{1+2+...+n}$. La série $\\sum u_n$ converge car :",
+        "answers": [
+            "$u_n \\sim \\frac{2}{n^2}$",
+            "$u_n \\sim \\frac{1}{n}$",
+            "$u_n$ est alternée",
+            "La suite $u_n$ est croissante"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "explication": "On sait que $\\sum_{k=1}^n k = \\frac{n(n+1)}{2}$. Donc $u_n = \\frac{2}{n(n+1)} \\sim \\frac{2}{n^2}$. Comme $\\sum \\frac{2}{n^2}$ est une série de Riemann convergente, $\\sum u_n$ converge.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "i90m1n2o-9999-0000-l555-m666n777o888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "La série complexe $\\sum_{n\\ge 1} \\frac{i^n}{n^2}$ est :",
+        "answers": [
+            "Absolument convergente",
+            "Divergente",
+            "Semi-convergente",
+            "Convergente seulement si $n$ est pair"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "explication": "Pour une série complexe, on regarde la convergence absolue : $\\sum |\\frac{i^n}{n^2}| = \\sum \\frac{|i|^n}{n^2} = \\sum \\frac{1}{n^2}$. Cette série converge (Riemann, $\\alpha = 2 > 1$), donc la série complexe est absolument convergente.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "j01n2o3p-0000-1111-m666-n777o888p999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Dans le cadre de l'étude des séries à termes réels ou complexes, si on pose $u_n = v_n + w_n$ avec $\\sum v_n$ une série convergente, que peut-on dire de la nature de $\\sum u_n$ et $\\sum w_n$ ?",
+        "answers": [
+            "Elles sont de même nature",
+            "Elles sont toujours divergentes",
+            "On ne peut pas conclure sur leur nature",
+            "La série $\\sum u_n$ converge nécessairement"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Il s'agit d'une propriété fondamentale de linéarité : si $\\sum v_n$ converge, alors $\\sum (u_n - v_n)$ et $\\sum u_n$ sont de même nature. Comme $w_n = u_n - v_n$, la convergence de l'une entraîne la convergence de l'autre."
+    },
+    {
+        "uuid": "k12o3p4q-1111-2222-n777-o888p999q000",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de la série numérique de terme général $u_n = \\frac{1}{n^2 \\ln n}$ pour $n \\ge 2$ ?",
+        "answers": [
+            "Convergente",
+            "Divergente",
+            "Semi-convergente",
+            "Convergente uniquement pour $n > 10$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On utilise la comparaison avec la série de Riemann $\\sum \\frac{1}{n^\\alpha}$. Puisque $\\ln n > 1$ pour $n \\ge 3$, on a $0 < u_n < \\frac{1}{n^2}$. Comme $\\sum \\frac{1}{n^2}$ converge, par le théorème de comparaison des séries à termes positifs, la série $\\sum u_n$ converge."
+    },
+    {
+        "uuid": "l23p4q5r-2222-3333-o888-p999q000r111",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $\\sum u_n$ une série à termes non nuls. Si $\\lim_{n \\to +\\infty} |\\frac{u_{n+1}}{u_n}| = l > 1$, alors la série $\\sum u_n$ :",
+        "answers": [
+            "Diverge grossièrement",
+            "Converge",
+            "Est semi-convergente",
+            "Est de nature indéterminée"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Selon la règle de d'Alembert, si $l > 1$, alors $|u_n| \\to +\\infty$. La condition nécessaire de convergence ($u_n \\to 0$) n'est pas vérifiée, donc la série diverge grossièrement."
+    },
+    {
+        "uuid": "m34q5r6s-3333-4444-p999-q000r111s222",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la nature de la série de terme général $u_n = \\frac{2^n}{n+3}$ ?",
+        "answers": [
+            "Diverge grossièrement car $\\lim u_n \\neq 0$",
+            "Converge par le critère de d'Alembert",
+            "Est de même nature que $\\sum 1/n$",
+            "Converge par comparaison avec une série géométrique"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Pour tout $n$, $\\frac{2^n}{n+3} > \\frac{2^n}{2^n} = 1$ pour $n$ assez grand. La limite du terme général est $+\\infty$, donc $u_n$ ne tend pas vers 0 : la série diverge grossièrement. L'erreur classique est d'appliquer d'Alembert pour trouver $l=2 > 1$, ce qui conclut à la divergence, mais la justification n'est pas le test de d'Alembert lui-même."
+    },
+    {
+        "uuid": "n45r6s7t-4444-5555-q000-r111s222t333",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "En utilisant la formule de Stirling, quel est l'équivalent simple de la suite factorielle centrale $u_n = \\binom{2n}{n}$ ?",
+        "answers": [
+            "$\\frac{4^n}{\\sqrt{\\pi n}}$",
+            "$2^n$",
+            "$n^n / e^n$",
+            "$\\frac{2^n}{n}$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La formule de Stirling $n! \\sim \\sqrt{2\\pi n} (n/e)^n$ appliquée à $\\frac{(2n)!}{(n!)^2}$ donne après simplification le résultat classique $\\frac{4^n}{\\sqrt{\\pi n}}$. C'est un équivalent incontournable en CPGE."
+    },
+    {
+        "uuid": "o56s7t8u-5555-6666-r111-s222t333u444",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Soit $u_n = (-1)^n$. Que peut-on dire de la série $\\sum u_n$ ?",
+        "answers": [
+            "Diverge grossièrement",
+            "Converge vers 0",
+            "Est semi-convergente",
+            "Converge absolument"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La suite $(u_n)$ ne tend pas vers 0 (elle oscille entre -1 et 1). La condition nécessaire de convergence n'est pas respectée, donc la série diverge grossièrement."
+    },
+    {
+        "uuid": "p67t7u8v-6666-7777-s222-t333u444v555",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Pour une série convergente de somme $S$ et de sommes partielles $S_n$, que représente $R_n = S - S_n$ ?",
+        "answers": [
+            "Le reste d'ordre $n$",
+            "Le terme général $u_n$",
+            "La somme totale $S$",
+            "La limite de la série"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par définition, $S = \\sum_{k=0}^{+\\infty} u_k$ et $S_n = \\sum_{k=0}^n u_k$. Donc $R_n = S - S_n = \\sum_{k=n+1}^{+\\infty} u_k$ est le reste de la série, qui doit tendre vers 0 quand $n \\to +\\infty$."
+    },
+    {
+        "uuid": "q78u8v9w-7777-8888-t333-u444v555w666",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quelle est la valeur de la somme de la série exponentielle $\\sum_{n=0}^{+\\infty} \\frac{1}{n!}$ ?",
+        "answers": [
+            "$e$",
+            "1",
+            "$\\pi$",
+            "$e-1$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Il s'agit du développement en série entière de la fonction exponentielle $e^x = \\sum_{n=0}^{+\\infty} \\frac{x^n}{n!}$ évalué en $x=1$."
+    },
+    {
+        "uuid": "r89v9w0x-8888-9999-u444-v555w666x777",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Si $u_n$ est une suite de nombres complexes, comment qualifie-t-on la convergence de la série $\\sum u_n$ lorsque la série des modules $\\sum |u_n|$ converge ?",
+        "answers": [
+            "Convergence absolue",
+            "Convergence uniforme",
+            "Semi-convergence",
+            "Convergence simple"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La convergence absolue est définie par la convergence de la série des valeurs absolues (ou des modules dans $\\mathbb{C}$). Elle implique toujours la convergence de la série initiale."
+    },
+    {
+        "uuid": "s90w0x1y-9999-0000-v555-w666x777y888",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "question": "Quel est l'équivalent de $u_n = \\frac{n^n}{n!}$ utilisant la formule de Stirling ?",
+        "answers": [
+            "$\\frac{e^n}{\\sqrt{2\\pi n}}$",
+            "$e^n$",
+            "$\\sqrt{n} e^n$",
+            "$\\frac{1}{\\sqrt{2\\pi n}}$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "D'après Stirling, $n! \\sim \\sqrt{2\\pi n} (n/e)^n$. En remplaçant $n!$ au dénominateur, on obtient $u_n \\sim \\frac{n^n}{\\sqrt{2\\pi n} (n^n / e^n)} = \\frac{e^n}{\\sqrt{2\\pi n}}$."
+    },
+    {
+        "uuid": "t01x1y2z-0000-1111-w666-x777y888z999",
+        "image_path": null,
+        "theme": "séries",
+        "chapter": "Séries numériques",
+        "subject": "maths",
+        "difficulty": 4,
+        "question": "Dans le cadre de l'étude de la convergence de séries numériques, soit la série de terme général $u_n = \\sqrt{n+1} - \\sqrt{n} - \\frac{1}{2\\sqrt{n}}$. Quelle est la nature de cette série ?",
+        "answers": [
+            "La série converge",
+            "La série diverge",
+            "La série diverge grossièrement vers $+\\infty$",
+            "La série est divergente par application du critère de d'Alembert"
+        ],
+        "correct_answer_index": 0,
+        "explication": "Pour étudier cette série, on utilise un développement limité. On factorise $\\sqrt{n}$ pour obtenir $\\sqrt{n}(\\sqrt{1+\\frac{1}{n}} - 1) - \\frac{1}{2\\sqrt{n}}$. En utilisant le DL de $(1+x)^{\\alpha} = 1 + \\alpha x + \\frac{\\alpha(\\alpha-1)}{2}x^2 + o(x^2)$ en $0$, on a $\\sqrt{1+\\frac{1}{n}} = 1 + \\frac{1}{2n} - \\frac{1}{8n^2} + o(\\frac{1}{n^2})$. Ainsi, $u_n = \\sqrt{n}(1 + \\frac{1}{2n} - \\frac{1}{8n^2} + o(\\frac{1}{n^2}) - 1) - \\frac{1}{2\\sqrt{n}} = \\frac{1}{2\\sqrt{n}} - \\frac{1}{8n^{3/2}} + o(n^{-3/2}) - \\frac{1}{2\\sqrt{n}} = -\\frac{1}{8n^{3/2}} + o(n^{-3/2})$. Comme $u_n \\sim -\\frac{1}{8n^{3/2}}$, la série converge par comparaison avec une série de Riemann $\\sum \\frac{1}{n^{\\alpha}}$ avec $\\alpha = 3/2 > 1$. Le piège est de croire que la divergence des termes de racine carrée implique la divergence de la somme sans effectuer le DL au second ordre."
+    }
+]

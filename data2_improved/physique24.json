@@ -1,0 +1,784 @@
+[
+    {
+        "uuid": "q001",
+        "image_path": null,
+        "theme": "ondes acoustiques",
+        "question": "Dans le cadre de l'étude de la propagation acoustique dans un fluide, quelle est la relation entre l'amplitude de la surpression acoustique $P_{0i}$ et celle de la vitesse particulaire $v_{0i}$ pour une onde plane progressive se propageant dans le sens des $x$ croissants ?",
+        "answers": [
+            "$P_{0i} = +Z_1 v_{0i}$",
+            "$P_{0i} = -Z_1 v_{0i}$",
+            "$P_{0i} = +Z_2 v_{0i}$",
+            "$P_{0i} = -Z_2 v_{0i}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "explication": "Pour une onde se propageant dans le sens des $x$ croissants, la relation de structure est $p = Z_1 v$. Le signe est positif car la célérité et la vitesse particulaire sont dans le même sens. Une erreur classique est d'inverser le signe ou de confondre les impédances $Z_1$ et $Z_2$ du milieu incident et du milieu transmis.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q002",
+        "image_path": null,
+        "theme": "ondes acoustiques",
+        "question": "Considérant une onde acoustique réfléchie sur une interface en $x=0$, quelle est la relation entre l'amplitude de pression $P_{0r}$ et la vitesse $v_{0r}$ pour cette onde se propageant dans le sens des $x$ décroissants ?",
+        "answers": [
+            "$P_{0r} = -Z_1 v_{0r}$",
+            "$P_{0r} = +Z_1 v_{0r}$",
+            "$P_{0r} = -Z_2 v_{0r}$",
+            "$P_{0r} = +Z_2 v_{0r}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "explication": "Pour une onde se propageant vers les $x$ décroissants, la relation devient $p = -Z_1 v$. Le signe opposé provient du changement de direction de la célérité par rapport à l'axe des $x$. Utiliser $Z_2$ serait une erreur car l'onde réfléchie se propage dans le milieu 1.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q003",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Reflection_and_refraction.svg",
+        "theme": "ondes acoustiques",
+        "question": "Lorsqu'une onde incidente rencontre une discontinuité d'impédance, comment est défini, par convention, le coefficient de réflexion en amplitude pour la vitesse, noté $r_v$ ?",
+        "answers": [
+            "$r_v = \\frac{v_{0r}}{v_{0i}}$",
+            "$r_v = \\frac{v_{0i}}{v_{0r}}$",
+            "$r_v = \\frac{P_{0r}}{P_{0i}}$",
+            "$r_v = \\frac{v_{0t}}{v_{0i}}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "explication": "Le coefficient de réflexion est le rapport de l'amplitude de la grandeur réfléchie sur celle de la grandeur incidente. Ici, il s'agit de la vitesse. L'inverser (réponse 2) ou utiliser la pression (réponse 3) constitue une confusion classique sur les définitions.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q004",
+        "image_path": null,
+        "theme": "ondes acoustiques",
+        "question": "Au niveau d'une interface parfaitement rigide ou séparant deux fluides, quelles sont les conditions aux limites traduisant la continuité de la vitesse particulaire normale à l'interface en $x=0$ ?",
+        "answers": [
+            "$v_i(0,t) + v_r(0,t) = v_t(0,t)$",
+            "$v_i(0,t) = v_r(0,t) + v_t(0,t)$",
+            "$v_i(0,t) - v_r(0,t) = v_t(0,t)$",
+            "$v_r(0,t) + v_t(0,t) = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "explication": "La continuité de la vitesse particulaire normale impose que la somme des vitesses dans le milieu 1 (incidente + réfléchie) soit égale à la vitesse dans le milieu 2 (transmise). L'erreur de signe dans la relation entre $v_i$ et $v_r$ provient souvent d'une mauvaise orientation des vecteurs vitesse.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q005",
+        "image_path": null,
+        "theme": "ondes acoustiques",
+        "question": "Considérant des ondes harmoniques de la forme $e^{j(\\omega t - kx)}$, quelle condition sur les pulsations $\\omega$ doit être respectée pour que les conditions de continuité en $x=0$ soient vérifiées à tout instant $t$ ?",
+        "answers": [
+            "$\\omega_i = \\omega_r = \\omega_t$",
+            "$\\omega_i + \\omega_r = \\omega_t$",
+            "$\\omega_i = \\omega_r - \\omega_t$",
+            "$\\omega_r = \\omega_t / 2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "explication": "Pour que les conditions aux limites (continuité de la pression et de la vitesse) soient satisfaites pour tout temps $t$, il est nécessaire que les dépendances temporelles soient identiques. Cela impose l'égalité des pulsations entre les ondes incidente, réfléchie et transmise.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q006",
+        "image_path": null,
+        "theme": "ondes acoustiques",
+        "question": "En résolvant le système d'équations de continuité pour la pression et la vitesse à l'interface $x=0$, quelle est l'expression correcte du coefficient de réflexion en vitesse $r_v$ ?",
+        "answers": [
+            "$r_v = \\frac{Z_1 - Z_2}{Z_1 + Z_2}$",
+            "$r_v = \\frac{Z_2 - Z_1}{Z_1 + Z_2}$",
+            "$r_v = \\frac{2Z_1}{Z_1 + Z_2}$",
+            "$r_v = \\frac{Z_1 Z_2}{Z_1 + Z_2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "explication": "Le coefficient de réflexion en vitesse est $r_v = (Z_1 - Z_2) / (Z_1 + Z_2)$. Attention, le coefficient de réflexion en *pression* possède un signe opposé pour le numérateur. Une erreur commune est d'inverser l'ordre des impédances.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q007",
+        "image_path": null,
+        "theme": "ondes acoustiques",
+        "question": "Quelle relation fondamentale lie le coefficient de transmission en vitesse $t_v$ au coefficient de réflexion en vitesse $r_v$ à l'interface ?",
+        "answers": [
+            "$1 + r_v = t_v$",
+            "$1 - r_v = t_v$",
+            "$r_v + t_v = 0$",
+            "$Z_1 r_v = Z_2 t_v$"
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "explication": "D'après la condition de continuité de la vitesse $v_i + v_r = v_t$, en divisant par $v_i$, on obtient immédiatement $1 + r_v = t_v$. Cette relation est purement géométrique et découle de la continuité de la vitesse.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q008",
+        "image_path": null,
+        "theme": "ondes acoustiques",
+        "question": "Quelle est l'expression du coefficient de réflexion en pression $r_p = P_{0r} / P_{0i}$ en fonction des impédances acoustiques $Z_1$ et $Z_2$ ?",
+        "answers": [
+            "$r_p = \\frac{Z_2 - Z_1}{Z_2 + Z_1}$",
+            "$r_p = \\frac{Z_1 - Z_2}{Z_1 + Z_2}$",
+            "$r_p = \\frac{2Z_2}{Z_1 + Z_2}$",
+            "$r_p = \\frac{Z_1 + Z_2}{Z_2 - Z_1}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "explication": "Le coefficient de réflexion en pression est $r_p = (Z_2 - Z_1) / (Z_2 + Z_1)$. Il diffère du coefficient de réflexion en vitesse par un signe moins. Il est crucial de retenir que si $Z_2 > Z_1$, la pression réfléchie est en phase avec la pression incidente.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q009",
+        "image_path": null,
+        "theme": "ondes acoustiques",
+        "question": "Quelle est la relation de dualité entre le coefficient de réflexion en pression $r_p$ et celui en vitesse $r_v$ ?",
+        "answers": [
+            "$r_p = -r_v$",
+            "$r_p = r_v$",
+            "$r_p = 1 - r_v$",
+            "$r_p = \\frac{1}{r_v}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "explication": "Comme $r_v = (Z_1 - Z_2)/(Z_1 + Z_2)$ et $r_p = (Z_2 - Z_1)/(Z_1 + Z_2)$, on a bien $r_p = -r_v$. Cette relation souligne le changement de phase introduit par la réflexion selon la grandeur considérée.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q010",
+        "image_path": null,
+        "theme": "ondes acoustiques",
+        "question": "Dans le cas particulier où il y a adaptation d'impédance, c'est-à-dire $Z_1 = Z_2$, quel est l'effet sur l'onde réfléchie ?",
+        "answers": [
+            "L'onde réfléchie est nulle.",
+            "L'onde est totalement réfléchie.",
+            "La vitesse de l'onde est divisée par deux.",
+            "La pression incidente est doublée."
+        ],
+        "difficulty": 1,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "explication": "Si $Z_1 = Z_2$, alors $r_p = 0$ et $r_v = 0$. Il n'y a donc aucune onde réfléchie : toute l'énergie de l'onde incidente est transmise dans le second milieu. C'est le principe de l'adaptation d'impédance utilisé dans les technologies d'imagerie ultrasonore.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q011",
+        "image_path": null,
+        "theme": "ondes acoustiques",
+        "question": "Dans le cadre de l'étude de la propagation d'une onde acoustique traversant une interface entre deux milieux de même impédance acoustique ($Z_1 = Z_2$), quel est le comportement du transfert de puissance ?",
+        "answers": [
+            "Le transfert de puissance est maximal (transmission totale).",
+            "Le transfert de puissance est nul par réflexion totale.",
+            "La puissance incidente est entièrement dissipée par effet Joule.",
+            "Le transfert de puissance est divisé par deux à cause de l'interface."
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'adaptation d'impédance correspond à la condition $Z_1 = Z_2$. Dans ce cas, le coefficient de réflexion en amplitude est nul ($r = (Z_1-Z_2)/(Z_1+Z_2) = 0$), ce qui entraîne une transmission totale de l'onde. La puissance transmise est alors égale à la puissance incidente."
+    },
+    {
+        "uuid": "q012",
+        "image_path": null,
+        "theme": "énergétique acoustique",
+        "question": "Comment définit-on rigoureusement le coefficient de réflexion en puissance $R$ pour une onde acoustique plane arrivant normalement sur une interface ?",
+        "answers": [
+            "$R = \\frac{\\langle \\Pi_r \\rangle}{\\langle \\Pi_i \\rangle}$",
+            "$R = \\frac{\\langle \\Pi_i \\rangle}{\\langle \\Pi_r \\rangle}$",
+            "$R = \\langle \\Pi_r \\rangle + \\langle \\Pi_i \\rangle$",
+            "$R = \\frac{\\langle \\Pi_t \\rangle}{\\langle \\Pi_i \\rangle}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le coefficient de réflexion en puissance $R$ est le rapport entre la valeur moyenne temporelle du vecteur de Poynting (ou densité de puissance acoustique) de l'onde réfléchie $\\langle \\Pi_r \\rangle$ et celle de l'onde incidente $\\langle \\Pi_i \\rangle$. $R$ est une grandeur sans dimension."
+    },
+    {
+        "uuid": "q013",
+        "image_path": null,
+        "theme": "énergétique acoustique",
+        "question": "Soient deux milieux d'impédances acoustiques caractéristiques $Z_1$ et $Z_2$. Quelle est l'expression du coefficient de réflexion en puissance $R$ à l'interface ?",
+        "answers": [
+            "$R = \\left(\\frac{Z_1 - Z_2}{Z_1 + Z_2}\\right)^2$",
+            "$R = \\frac{Z_1 - Z_2}{Z_1 + Z_2}$",
+            "$R = \\frac{4Z_1 Z_2}{(Z_1 + Z_2)^2}$",
+            "$R = \\frac{Z_1^2 - Z_2^2}{Z_1^2 + Z_2^2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le coefficient de réflexion en amplitude est $r = \\frac{Z_1 - Z_2}{Z_1 + Z_2}$. Comme la puissance est proportionnelle au carré de l'amplitude, le coefficient de réflexion en puissance est le carré de ce terme : $R = r^2$."
+    },
+    {
+        "uuid": "q014",
+        "image_path": null,
+        "theme": "énergétique acoustique",
+        "question": "Pour une interface séparant deux milieux non dissipatifs, quelle relation traduit la conservation de la puissance acoustique ?",
+        "answers": [
+            "$R + T = 1$",
+            "$R = T$",
+            "$r_v + t_v = 1$",
+            "$R \\times T = 1$"
+        ],
+        "difficulty": 1,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "En l'absence d'absorption à l'interface, l'énergie se conserve : la puissance incidente est égale à la somme de la puissance réfléchie et de la puissance transmise. D'où $\\Pi_i = \\Pi_r + \\Pi_t$, ce qui donne $R + T = 1$ en divisant par $\\Pi_i$."
+    },
+    {
+        "uuid": "q015",
+        "image_path": null,
+        "theme": "énergétique acoustique",
+        "question": "Quelle est l'expression correcte du coefficient de transmission en puissance $T$ en fonction des impédances acoustiques $Z_1$ et $Z_2$ ?",
+        "answers": [
+            "$T = \\frac{4Z_1 Z_2}{(Z_1 + Z_2)^2}$",
+            "$T = \\left(\\frac{2Z_2}{Z_1 + Z_2}\\right)^2$",
+            "$T = \\frac{Z_1 - Z_2}{Z_1 + Z_2}$",
+            "$T = \\frac{2Z_1 Z_2}{Z_1 + Z_2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "D'après la conservation de l'énergie, $T = 1 - R$. En utilisant $R = \\left(\\frac{Z_1 - Z_2}{Z_1 + Z_2}\\right)^2$, on obtient $T = 1 - \\frac{(Z_1 - Z_2)^2}{(Z_1 + Z_2)^2} = \\frac{(Z_1+Z_2)^2 - (Z_1-Z_2)^2}{(Z_1+Z_2)^2} = \\frac{4Z_1 Z_2}{(Z_1+Z_2)^2}$."
+    },
+    {
+        "uuid": "q016",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Lorsqu'une onde électromagnétique plane rencontre un conducteur, comment l'amplitude de l'onde réfléchie évolue-t-elle avec la conductivité $\\gamma$ du milieu ?",
+        "answers": [
+            "L'amplitude de l'onde réfléchie augmente avec la conductivité, tendant vers l'amplitude incidente.",
+            "L'amplitude de l'onde réfléchie diminue lorsque la conductivité augmente.",
+            "L'onde est totalement absorbée dans le conducteur, aucune réflexion n'a lieu.",
+            "L'onde réfléchie est indépendante de la conductivité du milieu."
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Plus un milieu est conducteur, plus il s'oppose à la pénétration du champ électrique. Dans la limite d'un conducteur parfait ($\\gamma \\to \\infty$), l'onde est totalement réfléchie par la surface, avec une amplitude réfléchie égale à l'amplitude incidente (en valeur absolue)."
+    },
+    {
+        "uuid": "q017",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est la particularité des champs électrique $\\vec{E}$ et magnétique $\\vec{B}$ à l'intérieur d'un conducteur parfait en régime stationnaire ou variable ?",
+        "answers": [
+            "Ils sont nuls dans tout le volume du conducteur.",
+            "Ils sont uniformes et égaux aux champs extérieurs.",
+            "Le champ électrique est nul, mais le champ magnétique peut être arbitrairement grand.",
+            "Ils subissent un effet de peau qui les confine à la surface."
+        ],
+        "difficulty": 1,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour un conducteur parfait, la conductivité est infinie. Toute force électromotrice induirait un courant infini si le champ n'était pas nul. Par conséquent, les champs électrique et magnétique s'annulent à l'intérieur du volume pour maintenir l'équilibre."
+    },
+    {
+        "uuid": "q018",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Malgré la nullité des champs dans le volume d'un conducteur parfait, quelles grandeurs physiques sont autorisées à exister à sa surface ?",
+        "answers": [
+            "Des densités surfaciques de charge $\\sigma$ et de courant $\\vec{j}_S$.",
+            "Uniquement des charges volumiques internes.",
+            "Aucune, la surface d'un conducteur parfait est toujours électriquement neutre.",
+            "Des courants de conduction internes uniquement."
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Bien que les champs soient nuls à l'intérieur, les discontinuités des composantes normales et tangentielles des champs à l'interface imposent l'existence de sources surfaciques : une densité surfacique de charge $\\sigma$ et une densité surfacique de courant $\\vec{j}_S$."
+    },
+    {
+        "uuid": "q019",
+        "image_path": null,
+        "theme": "relations de passage",
+        "question": "Quelle est la relation de passage liant la discontinuité de la composante normale du champ électrique à la densité surfacique de charge $\\sigma$ ?",
+        "answers": [
+            "$(\\vec{E_2} - \\vec{E_1}) \\cdot \\vec{n} = \\frac{\\sigma}{\\epsilon_0}$",
+            "$\\vec{E_2} - \\vec{E_1} = \\sigma \\epsilon_0 \\vec{n}$",
+            "$(\\vec{E_2} - \\vec{E_1}) \\cdot \\vec{n} = \\mu_0 \\sigma$",
+            "$(\\vec{E_2} + \\vec{E_1}) \\cdot \\vec{n} = \\frac{\\sigma}{\\epsilon_0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "D'après le théorème de Gauss appliqué à un petit cylindre entourant l'interface, la composante normale du champ électrique est discontinue d'une valeur égale à $\\sigma / \\epsilon_0$. L'expression vectorielle est $(\\vec{E_2} - \\vec{E_1}) \\cdot \\vec{n} = \\sigma / \\epsilon_0$."
+    },
+    {
+        "uuid": "q020",
+        "image_path": null,
+        "theme": "relations de passage",
+        "question": "Quelle est la propriété de la composante tangentielle du champ électrique lors de la traversée d'une interface séparant deux milieux ?",
+        "answers": [
+            "Elle est toujours continue, soit $\\vec{E}_{2,t} = \\vec{E}_{1,t}$.",
+            "Elle est discontinue proportionnellement à la densité de courant surfacique.",
+            "Elle est toujours nulle à l'interface.",
+            "Elle subit une discontinuité proportionnelle à la densité de charge surfacique."
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La relation de passage issue de l'équation de Maxwell-Faraday (circulation du champ électrique sur un contour fermé) impose que la composante tangentielle du champ électrique $\\vec{E}_t$ est toujours continue à travers une interface, même en présence de charges ou de courants surfaciques."
+    },
+    {
+        "uuid": "q021",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de la modélisation des courants circulant à la surface d'un conducteur, en quelle unité SI s'exprime la densité surfacique de courant $\\vec{j}_S$ ?",
+        "answers": [
+            "$\\text{A.m}^{-1}$",
+            "$\\text{A.m}^{-2}$",
+            "$\\text{A.m}$",
+            "$\\text{C.m}^{-2}.\\text{s}^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La densité surfacique de courant $\\vec{j}_S$ représente un courant par unité de largeur. Puisqu'un courant s'exprime en Ampères ($\\text{A}$) et qu'une largeur s'exprime en mètres ($\\text{m}$), l'unité est nécessairement le $\\text{A.m}^{-1}$. $\\text{A.m}^{-2}$ correspond à une densité volumique de courant $\\vec{j}$."
+    },
+    {
+        "uuid": "q022",
+        "image_path": null,
+        "theme": "relations de passage",
+        "question": "Lors de l'étude d'une interface séparant deux milieux (1 et 2) comportant une nappe de courant surfacique $\\vec{j}_S$, quelle est la relation locale correcte traduisant la discontinuité du champ magnétique $\\vec{B}$ (avec $\\vec{n}_{1\\rightarrow2}$ le vecteur normal unitaire orienté de 1 vers 2) ?",
+        "answers": [
+            "$\\vec{B}_2 - \\vec{B}_1 = \\mu_0 \\vec{j}_S \\wedge \\vec{n}_{1\\rightarrow2}$",
+            "$\\vec{B}_2 - \\vec{B}_1 = \\mu_0 \\vec{n}_{1\\rightarrow2} \\wedge \\vec{j}_S$",
+            "$\\vec{B}_2 - \\vec{B}_1 = \\frac{\\vec{j}_S}{\\mu_0} \\wedge \\vec{n}_{1\\rightarrow2}$",
+            "$\\vec{B}_2 - \\vec{B}_1 = \\mu_0 (\\vec{j}_S \\cdot \\vec{n}_{1\\rightarrow2}) \\vec{u}_z$"
+        ],
+        "difficulty": 3,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La relation de passage du champ magnétique est issue du théorème d'Ampère appliqué sur un contour rectangulaire infinitésimal à cheval sur l'interface. Elle s'écrit $\\vec{n}_{1\\rightarrow2} \\wedge (\\vec{B}_2 - \\vec{B}_1) = \\mu_0 \\vec{j}_S$. En effectuant un produit vectoriel à gauche par $\\vec{n}_{1\\rightarrow2}$, on retrouve bien $\\vec{B}_2 - \\vec{B}_1 = \\mu_0 \\vec{j}_S \\wedge \\vec{n}_{1\\rightarrow2}$."
+    },
+    {
+        "uuid": "q023",
+        "image_path": null,
+        "theme": "relations de passage",
+        "question": "Considérant une interface quelconque séparant deux milieux, que peut-on affirmer concernant la composante normale du champ magnétique $\\vec{B} \\cdot \\vec{n}$ ?",
+        "answers": [
+            "Elle est toujours continue.",
+            "Elle est toujours discontinue en présence de $\\vec{j}_S$.",
+            "Elle est toujours nulle.",
+            "Elle dépend de la densité surfacique de charge."
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La loi de flux pour le champ magnétique ($\text{div } \\vec{B} = 0$) impose que le flux de $\\vec{B}$ à travers toute surface fermée est nul. En appliquant ceci à un petit cylindre dont les faces sont de part et d'autre de l'interface, on montre que $\\vec{B}_{1,n} = \\vec{B}_{2,n}$. La composante normale est donc toujours continue, indépendamment des courants ou charges surfaciques."
+    },
+    {
+        "uuid": "q024",
+        "image_path": null,
+        "theme": "réflexion ondes EM",
+        "question": "Une OPPH arrive sous incidence normale sur un conducteur parfait situé en $z=0$. Quelle condition aux limites sur le champ électrique total $\\vec{E}_{total}$ doit être satisfaite à la surface du conducteur ?",
+        "answers": [
+            "$\\vec{E}_{total}(z=0) = \\vec{0}$",
+            "$\\vec{E}_{total}(z=0) = 2 E_0 e^{i\\omega t} \\vec{u}_x$",
+            "$\\vec{E}_{total}(z=0) = \\vec{E}_i(z=0)$",
+            "$\\vec{E}_{total}(z=0) = -\\vec{E}_i(z=0) / 2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Dans un conducteur parfait, la conductivité est infinie, ce qui implique que le champ électrique à l'intérieur est nul. Par continuité de la composante tangentielle du champ électrique à l'interface, le champ électrique tangentiel total doit donc s'annuler exactement en $z=0$."
+    },
+    {
+        "uuid": "q025",
+        "image_path": null,
+        "theme": "réflexion ondes EM",
+        "question": "Une onde incidente $\\vec{E}_i = E_0 e^{i(\\omega t - kz)} \\vec{u}_x$ se réfléchit sur un conducteur parfait en $z=0$. Quelle relation lie l'amplitude complexe de l'onde réfléchie $\\underline{E}_{0r}$ à $E_0$ ?",
+        "answers": [
+            "$\\underline{E}_{0r} = -E_0$",
+            "$\\underline{E}_{0r} = E_0$",
+            "$\\underline{E}_{0r} = i E_0$",
+            "$\\underline{E}_{0r} = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La condition au limite est $\\vec{E}_i(z=0) + \\vec{E}_r(z=0) = \\vec{0}$. Comme $\\vec{E}_i(z=0) = E_0 e^{i\\omega t} \\vec{u}_x$ et $\\vec{E}_r(z=0) = \\underline{E}_{0r} e^{i(\\omega t + kz)} \\vec{u}_x$ (avec $k$ vers les $z < 0$), en $z=0$ on obtient $E_0 + \\underline{E}_{0r} = 0$, soit $\\underline{E}_{0r} = -E_0$."
+    },
+    {
+        "uuid": "q026",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Standing_wave_2.gif",
+        "theme": "réflexion ondes EM",
+        "question": "La superposition de l'onde incidente et de l'onde réfléchie par un conducteur parfait crée une structure particulière. Quelle est la nature de l'onde résultante ?",
+        "answers": [
+            "C'est une onde stationnaire.",
+            "C'est une onde plane progressive harmonique.",
+            "C'est une onde évanescente.",
+            "C'est une onde sphérique."
+        ],
+        "difficulty": 1,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'addition d'une onde plane se propageant dans le sens $+z$ et d'une onde se propageant dans le sens $-z$ avec la même amplitude conduit à la formation de nœuds et de ventres fixes dans l'espace : c'est la définition d'une onde stationnaire."
+    },
+    {
+        "uuid": "q027",
+        "image_path": null,
+        "theme": "ondes stationnaires",
+        "question": "Dans le cadre de l'étude d'une onde stationnaire de longueur d'onde $\\lambda$ créée par réflexion, quelle distance sépare deux nœuds consécutifs du champ électrique ?",
+        "answers": [
+            "$\\lambda / 2$",
+            "$\\lambda$",
+            "$\\lambda / 4$",
+            "$2 \\lambda$"
+        ],
+        "difficulty": 1,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour une onde stationnaire de la forme $E(z,t) = 2E_0 \\sin(kz) \\sin(\\omega t)$, les nœuds correspondent aux endroits où le champ est nul quel que soit le temps, soit $\\sin(kz) = 0$. Cela arrive pour $kz = n\\pi$, soit $z = n \\frac{\\lambda}{2}$. La distance entre deux racines est donc $\\frac{\\lambda}{2}$."
+    },
+    {
+        "uuid": "q028",
+        "image_path": null,
+        "theme": "énergétique électromagnétique",
+        "question": "Considérant l'onde stationnaire créée devant un miroir conducteur parfait, que vaut la valeur moyenne temporelle du vecteur de Poynting $\\langle \\vec{\\Pi} \\rangle$ ?",
+        "answers": [
+            "Elle est nulle.",
+            "Elle vaut $\\frac{E_0^2}{2\\mu_0 c}$.",
+            "Elle vaut $\\epsilon_0 c E_0^2$.",
+            "Elle est infinie."
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Dans une onde purement stationnaire, l'énergie oscille localement sans transfert net de puissance. Mathématiquement, le vecteur de Poynting est en quadrature de phase avec lui-même, ce qui conduit à une valeur moyenne temporelle nulle sur une période."
+    },
+    {
+        "uuid": "q029",
+        "image_path": null,
+        "theme": "courant surfacique",
+        "question": "Pour une interface constituée d'un conducteur parfait (milieu 2, $z>0$) où l'onde transmise est nulle, que vaut le champ magnétique $\\vec{B}_2$ juste après l'interface ($z = 0^+$) ?",
+        "answers": [
+            "$\\vec{B}_2 = \\vec{0}$",
+            "$\\vec{B}_2 = \\vec{B}_1$",
+            "$\\vec{B}_2 = 2 \\vec{B}_1$",
+            "$\\vec{B}_2 = -\\vec{B}_1$"
+        ],
+        "difficulty": 1,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Si le conducteur est parfait, il expulse totalement le champ électromagnétique. Puisque $\\vec{E} = \\vec{0}$ dans le conducteur, la loi de Maxwell-Faraday $\\text{rot } \\vec{E} = -\\partial \\vec{B} / \\partial t$ impose alors que $\\vec{B} = \\vec{0}$ à l'intérieur du conducteur."
+    },
+    {
+        "uuid": "q030",
+        "image_path": null,
+        "theme": "courant surfacique",
+        "question": "En utilisant la condition de passage $\\vec{n} \\wedge (\\vec{B}_2 - \\vec{B}_1) = \\mu_0 \\vec{j}_S$ et sachant qu'en $z=0^-$, le champ est la somme de l'incident et du réfléchi, quelle est la densité surfacique $\\vec{j}_S$ induite sur le plan conducteur ?",
+        "answers": [
+            "$\\vec{j}_S = 2 \\frac{E_0}{\\mu_0 c} \\cos(\\omega t) \\vec{u}_x$",
+            "$\\vec{j}_S = \\frac{E_0}{\\mu_0 c} \\cos(\\omega t) \\vec{u}_y$",
+            "$\\vec{j}_S = \\vec{0}$",
+            "$\\vec{j}_S = - 2 \\frac{E_0}{\\mu_0 c} \\sin(\\omega t) \\vec{u}_x$"
+        ],
+        "difficulty": 4,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "On a $\\vec{B}_1 = \\vec{B}_{inc} + \\vec{B}_{ref}$. Comme $\\vec{B} = \\frac{1}{c} \\vec{u}_k \\wedge \\vec{E}$, on trouve que les composantes magnétiques s'ajoutent à l'interface, doublant ainsi leur amplitude. En appliquant $\\vec{n} \\wedge (-\\vec{B}_1) = \\mu_0 \\vec{j}_S$ avec $\\vec{n} = \\vec{u}_z$, on obtient le double du courant, soit $2 \\frac{E_0}{\\mu_0 c}$."
+    },
+    {
+        "uuid": "q031",
+        "image_path": null,
+        "theme": "réflexion ondes EM",
+        "question": "Dans le cadre de l'étude de la propagation d'une onde plane progressive harmonique (OPPH) rencontrant une interface plane, que vaut le coefficient de réflexion en puissance $R$ lors de la réflexion totale sur un conducteur parfait ?",
+        "answers": [
+            "$R = 1$",
+            "$R = 0$",
+            "$R = 1/2$",
+            "$R = -1$"
+        ],
+        "difficulty": 1,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour un conducteur parfait, la conductivité est infinie, ce qui impose l'annulation du champ électrique tangentiel en surface. L'onde incidente ne pénètre pas dans le métal, toute la puissance est réfléchie. Attention : $R = |r|^2$ où $r = -1$ est le coefficient de réflexion en amplitude, donc $R = |-1|^2 = 1$. $R=-1$ est impossible car une puissance est nécessairement positive."
+    },
+    {
+        "uuid": "q032",
+        "image_path": null,
+        "theme": "pression de radiation",
+        "question": "Lors de l'incidence d'une OPPH sur un conducteur parfait, quel phénomène physique microscopique est à l'origine de la pression de radiation exercée sur la paroi ?",
+        "answers": [
+            "L'apparition d'une force de Laplace due au courant surfacique induit $\\vec{J}_s$ et au champ magnétique incident $\\vec{B}$.",
+            "L'échauffement thermique du conducteur par effet Joule.",
+            "L'émission de photoélectrons par le métal dû au travail d'extraction.",
+            "La force de Coulomb exercée par le champ électrique oscillant sur les ions du réseau cristallin."
+        ],
+        "difficulty": 3,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le champ incident induit des courants de surface $\\vec{J}_s$ pour maintenir la condition de continuité. Ces courants sont plongés dans le champ magnétique de l'onde, ce qui crée une force de Laplace volumique (ou surfacique) $\\vec{f} = \\vec{J}_s \\times \\vec{B}$. L'effet Joule est nul dans un conducteur parfait car le champ électrique total y est nul."
+    },
+    {
+        "uuid": "q033",
+        "image_path": null,
+        "theme": "pression de radiation",
+        "question": "En considérant une OPPH de champ électrique incident $E_0 \\cos(\\omega t - kz)$ arrivant normalement sur un conducteur parfait, quelle est la valeur moyenne de la pression de radiation $\\langle P_{rad} \\rangle$ exercée sur la paroi ?",
+        "answers": [
+            "$\\langle P_{rad} \\rangle = \\epsilon_0 E_0^2$",
+            "$\\langle P_{rad} \\rangle = \\frac{1}{2} \\epsilon_0 E_0^2$",
+            "$\\langle P_{rad} \\rangle = 2 \\epsilon_0 E_0^2$",
+            "$\\langle P_{rad} \\rangle = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La densité d'énergie moyenne d'une onde incidente est $w = \\frac{1}{2}\\epsilon_0 E_0^2$. Lors de la réflexion sur un conducteur parfait, l'onde réfléchie est identique à l'incidente en norme, ce qui double la pression exercée par rapport à une onde absorbée. On obtient donc $\\langle P_{rad} \\rangle = 2 w = \\epsilon_0 E_0^2$."
+    },
+    {
+        "uuid": "q034",
+        "image_path": null,
+        "theme": "acoustique",
+        "question": "Dans l'étude d'une lame d'épaisseur $2a$ placée entre deux milieux acoustiques, quelle condition sur le nombre d'onde $k_1$ et l'épaisseur $a$ doit être vérifiée pour obtenir une annulation de l'onde réfléchie (couche anti-reflet) ?",
+        "answers": [
+            "$\\sin(2k_1a) = 0$",
+            "$\\cos(2k_1a) = 0$",
+            "$\\tan(k_1a) = 1$",
+            "$Z_1 = 0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'annulation du coefficient de réflexion global pour une couche nécessite que les ondes réfléchies par les deux interfaces soient en opposition de phase destructive. Cela conduit à une condition sur le déphasage accumulé dans la couche, lié à $\\sin(2k_1a) = 0$ (soit $2k_1a$ multiple de $\\pi$)."
+    },
+    {
+        "uuid": "q035",
+        "image_path": null,
+        "theme": "acoustique",
+        "question": "Pour réaliser une couche anti-reflet acoustique parfaite, sachant que la condition est $2k_1a = n\\pi$, quelle doit être l'épaisseur $2a$ de la couche en fonction de la longueur d'onde $\\lambda_1$ ?",
+        "answers": [
+            "$2a = n \\frac{\\lambda_1}{2}$",
+            "$2a = n \\lambda_1$",
+            "$2a = (2n+1) \\frac{\\lambda_1}{4}$",
+            "$2a = 0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "En utilisant $k_1 = \\frac{2\\pi}{\\lambda_1}$, la condition $2k_1a = n\\pi$ devient $2 \\cdot \\frac{2\\pi}{\\lambda_1} \\cdot a = n\\pi$, soit $4a = n\\lambda_1$, ou encore $2a = n \\frac{\\lambda_1}{2}$. La confusion classique est de chercher une épaisseur de $\\lambda/4$, ce qui est une condition pour des indices optiques spécifiques, mais ici on traite d'une condition d'épaisseur sur une interface standard."
+    },
+    {
+        "uuid": "q036",
+        "image_path": null,
+        "theme": "membrane acoustique",
+        "question": "Dans le cadre de l'approximation acoustique d'une membrane mobile, quelle condition le déplacement $\\xi(t)$ de la membrane doit-il vérifier par rapport à la longueur d'onde $\\lambda$ ?",
+        "answers": [
+            "$\\xi \\ll \\lambda$",
+            "$\\xi \\approx \\lambda$",
+            "$\\xi \\gg \\lambda$",
+            "$\\xi = c \\cdot T$"
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'approximation acoustique repose sur la linéarisation des équations. Pour justifier le développement limité de la pression autour de $x=0$, il est nécessaire que l'amplitude du mouvement de la membrane soit très faible devant la longueur d'onde spatiale de l'onde acoustique, soit $\\xi \\ll \\lambda$."
+    },
+    {
+        "uuid": "q037",
+        "image_path": null,
+        "theme": "membrane acoustique",
+        "question": "Pourquoi est-il licite, dans l'approximation acoustique, d'écrire $P_i(\\xi, t) \\approx P_i(0, t)$ ?",
+        "answers": [
+            "Car le terme correctif $\\xi \\frac{\\partial P_i}{\\partial x}$ est un infiniment petit du deuxième ordre dans le développement en série de Taylor.",
+            "Car la pression acoustique est spatialement uniforme en tout point du milieu.",
+            "Car la membrane est supposée de masse nulle et ne perturbe pas le champ de pression.",
+            "Car la vitesse de la membrane est négligeable devant la célérité du son."
+        ],
+        "difficulty": 3,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "D'après Taylor, $P(\\xi) = P(0) + \\xi \\frac{\\partial P}{\\partial x}|_{x=0} + ...$. Comme $\\xi$ est petit, le terme d'ordre 1 est déjà pris en compte dans les conditions aux limites linéarisées. L'approximation consiste à négliger les termes d'ordre supérieur pour maintenir la linéarité du système."
+    },
+    {
+        "uuid": "q038",
+        "image_path": null,
+        "theme": "membrane acoustique",
+        "question": "Considérant une membrane séparant deux milieux, quelle est la condition aux limites cinématique sur la vitesse particulaire $\\underline{u}$ au niveau de la membrane en $x=0$ ?",
+        "answers": [
+            "$\\underline{u}_0 + \\underline{u}_{0r} = \\underline{u}_{0t}$",
+            "$\\underline{u}_0 - \\underline{u}_{0r} = \\underline{u}_{0t}$",
+            "$\\underline{u}_0 = \\underline{u}_{0r}$",
+            "$\\underline{u}_{0t} = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La condition de continuité des vitesses signifie que la vitesse de la particule fluide immédiatement à gauche de la membrane doit être égale à la vitesse de la membrane, qui doit elle-même être égale à la vitesse de la particule fluide immédiatement à droite. Ainsi, la somme des ondes incidentes et réfléchies à gauche est égale à l'onde transmise à droite."
+    },
+    {
+        "uuid": "q039",
+        "image_path": null,
+        "theme": "membrane acoustique",
+        "question": "En appliquant le Principe Fondamental de la Dynamique à une membrane de masse surfacique $\\sigma$ soumise aux pressions acoustiques des deux milieux, quelle équation obtient-on ?",
+        "answers": [
+            "$\\sigma \\frac{\\partial u}{\\partial t}(0,t) = p_i(0,t) + p_r(0,t) - p_t(0,t)$",
+            "$\\sigma \\frac{\\partial u}{\\partial x}(0,t) = p_i(0,t) - p_r(0,t)$",
+            "$\\sigma \\frac{\\partial^2 u}{\\partial t^2}(0,t) = p_t(0,t)$",
+            "$\\sigma u(0,t) = p_i(0,t) + p_r(0,t)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La force résultante sur une surface élémentaire $S$ de la membrane est due à la différence de pression de part et d'autre : $(P_{gauche} - P_{droite})S$. En appliquant $\\vec{F} = m\\vec{a} = (\\sigma S) \\frac{\\partial u}{\\partial t}$, on obtient l'équation du mouvement où la masse surfacique crée une discontinuité dans la pression acoustique totale."
+    },
+    {
+        "uuid": "q040",
+        "image_path": null,
+        "theme": "membrane acoustique",
+        "question": "Pour une membrane mobile, que devient le coefficient de réflexion en amplitude $r$ lorsque la masse surfacique $\\sigma$ tend vers l'infini (cas d'une paroi rigide fixe) ?",
+        "answers": [
+            "$r \\rightarrow 1$",
+            "$r \\rightarrow 0$",
+            "$r \\rightarrow -1$",
+            "$r \\rightarrow \\infty$"
+        ],
+        "difficulty": 3,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Si $\\sigma \\rightarrow \\infty$, la membrane devient immobile (vitesse nulle). Une paroi fixe en acoustique impose une condition de réflexion totale avec un coefficient en amplitude $r = 1$ (car la pression est doublée au niveau du nœud de vitesse). Attention : dans le cas d'une onde électromagnétique sur un conducteur, $r = -1$, mais en acoustique sur une paroi rigide, $r=1$."
+    },
+    {
+        "uuid": "q041",
+        "image_path": null,
+        "theme": "membrane acoustique",
+        "question": "Dans le cadre de l'étude de la propagation d'une onde acoustique à travers une interface, que vaut le coefficient de réflexion en amplitude $r$ s'il n'y a pas de membrane (cas de continuité totale, $\\sigma \\rightarrow 0$) et que les deux milieux sont identiques ?",
+        "answers": [
+            "$r = 0$",
+            "$r = 1$",
+            "$r = -1$",
+            "$r = \\frac{1}{2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le coefficient de réflexion $r$ mesure la discontinuité à l'interface. Si les deux milieux sont identiques et qu'aucune membrane (discontinuité de masse surfacique) n'est présente, il n'y a aucune raison physique pour que l'onde soit réfléchie : l'onde se propage sans perturbation, donc $r=0$. Un résultat $r=1$ correspondrait à une réflexion totale (milieu rigide), et $r=-1$ à une inversion de phase (extrémité libre)."
+    },
+    {
+        "uuid": "q042",
+        "image_path": null,
+        "theme": "onde confinée",
+        "question": "Lorsqu'on étudie une onde électromagnétique plane se propageant dans le vide sous la forme $\\vec{E}_i = E_0 e^{j(\\omega t - kz)} \\vec{e}_x$, quelle est la relation de dispersion caractéristique du vide ?",
+        "answers": [
+            "$\\omega = k c$",
+            "$\\omega = \\frac{k}{c}$",
+            "$\\omega = k^2 c$",
+            "$\\omega = \\sqrt{kc}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Dans le vide, les équations de Maxwell conduisent à l'équation de d'Alembert $\\Delta \\vec{E} - \\frac{1}{c^2} \\frac{\\partial^2 \\vec{E}}{\\partial t^2} = \\vec{0}$. En injectant la solution plane, on obtient $-k^2 + \\frac{\\omega^2}{c^2} = 0$, soit $\\omega^2 = k^2 c^2$. La relation $\\omega = k c$ (où $c \\approx 3 \\cdot 10^8 \\text{ m/s}$) est la relation de dispersion des ondes électromagnétiques dans le vide."
+    },
+    {
+        "uuid": "q043",
+        "image_path": null,
+        "theme": "onde confinée",
+        "question": "Dans le cadre de l'étude d'une cavité de longueur $L$ formée par deux plans conducteurs parfaits situés en $z=0$ et $z=-L$, quelle condition aux limites doit satisfaire le champ électrique pour obtenir les modes propres de la cavité ?",
+        "answers": [
+            "$k = \\frac{n\\pi}{L}$ avec $n \\in \\mathbb{N}^*$",
+            "$k = \\frac{2n\\pi}{L}$",
+            "$k = \\frac{n\\lambda}{L}$",
+            "$k = \\frac{L}{n\\pi}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Un conducteur parfait impose que la composante tangentielle du champ électrique soit nulle à sa surface. Ici, $E(z=0) = 0$ et $E(z=-L) = 0$. Le champ électrique doit donc être de la forme $\\sin(kz)$ pour s'annuler en $z=0$, et la condition $E(-L)=0$ impose $\\sin(-kL) = 0$, soit $kL = n\\pi$. L'erreur classique est de confondre avec les conditions de périodicité d'une onde progressive."
+    },
+    {
+        "uuid": "q044",
+        "image_path": null,
+        "theme": "onde confinée",
+        "question": "À partir de la condition de quantification $k_n = \\frac{n\\pi}{L}$ obtenue pour une cavité résonante de longueur $L$, quelles sont les longueurs d'onde $\\lambda_n$ des modes propres correspondants ?",
+        "answers": [
+            "$\\lambda_n = \\frac{2L}{n}$",
+            "$\\lambda_n = \\frac{L}{n}$",
+            "$\\lambda_n = nL$",
+            "$\\lambda_n = \\frac{4L}{2n+1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "On utilise la relation $k = \\frac{2\\pi}{\\lambda}$. En remplaçant $k$ par $\\frac{n\\pi}{L}$, on obtient $\\frac{2\\pi}{\\lambda} = \\frac{n\\pi}{L}$, d'où l'on tire $\\lambda = \\frac{2L}{n}$. Cela signifie que dans la cavité, il doit y avoir un nombre entier de demi-longueurs d'onde entre les deux parois."
+    },
+    {
+        "uuid": "q045",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Ikaros_solar_sail.jpg",
+        "theme": "voile solaire",
+        "question": "En considérant une voile solaire modélisée par un conducteur parfait, quelle expression permet de calculer la force surfacique moyenne $\\langle \\vec{f}_{surf} \\rangle$ exercée par une onde électromagnétique incidente ?",
+        "answers": [
+            "$\\langle \\vec{f}_{surf} \\rangle = \\frac{1}{2} \\text{Re}(\\vec{j}_S \\wedge \\vec{B}^*)$",
+            "$\\langle \\vec{f}_{surf} \\rangle = \\vec{j}_S \\wedge \\vec{B}$",
+            "$\\langle \\vec{f}_{surf} \\rangle = \\frac{1}{2} \\text{Re}(\\vec{E} \\wedge \\vec{H}^*)$",
+            "$\\langle \\vec{f}_{surf} \\rangle = \\epsilon_0 E_0^2 \\vec{e}_x$"
+        ],
+        "difficulty": 4,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La force de Lorentz s'exerçant sur un élément de surface conductrice parcouru par un courant surfacique $\\vec{j}_S$ dans un champ magnétique $\\vec{B}$ est donnée par $d\\vec{F} = (\\vec{j}_S \\wedge \\vec{B}) dS$. Pour une moyenne temporelle d'une onde harmonique, on utilise la notation complexe : $\\langle \\vec{f} \\rangle = \\frac{1}{2} \\text{Re}(\\vec{j}_S \\wedge \\vec{B}^*)$. Les autres propositions sont soit des erreurs de notation (oubli de la moyenne), soit des confusions avec le vecteur de Poynting."
+    },
+    {
+        "uuid": "q046",
+        "image_path": null,
+        "theme": "voile solaire",
+        "question": "Dans le cadre de l'étude de la pression de radiation sur une voile solaire, dans quel sens est dirigée la force surfacique moyenne $\\langle \\vec{f}_{surf} \\rangle$ s'exerçant sur la face éclairée ?",
+        "answers": [
+            "Dans le sens de propagation du rayonnement solaire incident ($\\vec{e}_z$ si l'onde est en $z=0$ avec propagation vers les $z>0$).",
+            "Dans le sens opposé au rayonnement solaire.",
+            "Perpendiculairement au rayonnement solaire.",
+            "Elle est nulle en moyenne."
+        ],
+        "difficulty": 2,
+        "chapter": "Interfaces entre deux milieux",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le rayonnement solaire transporte une quantité de mouvement. Lorsqu'une onde est réfléchie par une surface conductrice parfaite, elle transfère cette quantité de mouvement à la voile. Par conservation, la force exercée sur la voile est dirigée dans le sens du vecteur d'onde incident, poussant la voile vers l'avant (pression de radiation)."
+    }
+]

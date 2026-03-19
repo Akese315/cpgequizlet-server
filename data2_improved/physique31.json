@@ -1,0 +1,1672 @@
+[
+    {
+        "uuid": "q001",
+        "image_path": null,
+        "theme": "réactions d'oxydoréduction",
+        "question": "Dans le cadre de l'étude thermodynamique des systèmes redox, comment définit-on précisément un oxydant ?",
+        "answers": [
+            "Une espèce chimique susceptible de céder un ou plusieurs électrons au cours d'une réaction.",
+            "Une espèce chimique susceptible de capter un ou plusieurs électrons au cours d'une réaction.",
+            "Une espèce chimique capable de céder un proton $H^+$ en solution aqueuse.",
+            "Une espèce qui n'échange aucune charge avec son environnement immédiat."
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Par définition, un oxydant est une entité chimique capable de gagner (capter) des électrons. À l'inverse, le réducteur est l'espèce qui cède des électrons. La confusion avec l'acidité (échange de protons) est un piège classique."
+    },
+    {
+        "uuid": "q002",
+        "image_path": null,
+        "theme": "réactions d'oxydoréduction",
+        "question": "Lors d'une transformation électrochimique, comment qualifie-t-on la réaction qui se déroule selon le schéma : $Ox + n e^- \\rightarrow Red$ ?",
+        "answers": [
+            "Une réduction : gain d'électrons par l'oxydant.",
+            "Une oxydation : perte d'électrons par le réducteur.",
+            "Une réaction de dismutation.",
+            "Une réaction acido-basique de transfert de protons."
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "La réduction correspond par définition à une diminution du nombre d'oxydation de l'espèce, ce qui s'accompagne d'un gain d'électrons ($Ox + n e^- \\rightarrow Red$). L'oxydation est le processus inverse."
+    },
+    {
+        "uuid": "q003",
+        "image_path": null,
+        "theme": "réactions d'oxydoréduction",
+        "question": "Pour le couple $Cr_2O_7^{2-} / Cr^{3+}$, quelle est l'écriture correcte de la demi-équation électronique en milieu acide ?",
+        "answers": [
+            "$Cr_2O_7^{2-} + 14 H^+ + 6 e^- = 2 Cr^{3+} + 7 H_2O$",
+            "$Cr_2O_7^{2-} + 7 H^+ + 3 e^- = Cr^{3+} + 3,5 H_2O$",
+            "$Cr_2O_7^{2-} + 14 H^+ = 2 Cr^{3+} + 7 H_2O + 6 e^-$",
+            "$Cr_2O_7^{2-} + 6 e^- = 2 Cr^{3+}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Pour équilibrer cette demi-équation : on conserve le Chrome ($2 Cr^{3+}$), on équilibre les Oxygènes avec l'eau ($7 H_2O$), puis les Hydrogènes avec les protons ($14 H^+$). Enfin, on équilibre la charge totale ($+12$ à gauche, $+6$ à droite, donc ajout de $6 e^-$ à gauche)."
+    },
+    {
+        "uuid": "q004",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est l'expression correcte de l'équation de Nernst pour un couple $Ox + n e^- = Red$ à $T = 298 K$ ?",
+        "answers": [
+            "$E = E^\\circ + \\frac{0,06}{n} \\ln\\left(\\frac{a_{Ox}}{a_{Red}}\\right)$",
+            "$E = E^\\circ - \\frac{0,06}{n} \\log\\left(\\frac{a_{Ox}}{a_{Red}}\\right)$",
+            "$E = E^\\circ + \\frac{0,06}{n} \\log\\left(\\frac{a_{Ox}}{a_{Red}}\\right)$",
+            "$E = E^\\circ + 0,06 \\cdot n \\log\\left(\\frac{a_{Ox}}{a_{Red}}\\right)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "L'équation de Nernst est $E = E^\\circ + \\frac{RT}{nF} \\ln(Q)$. À $298 K$, le terme $\\frac{RT}{F} \\ln(10) \\approx 0,059 \\approx 0,06 V$. On utilise le log décimal et le rapport $\\frac{[Ox]}{[Red]}$ pour l'oxydant sur le réducteur."
+    },
+    {
+        "uuid": "q005",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Soit le couple $MnO_4^- / Mn^{2+}$. Sachant que la demi-équation est $MnO_4^- + 8 H^+ + 5 e^- = Mn^{2+} + 4 H_2O$, quel est le potentiel de Nernst à $298 K$ ?",
+        "answers": [
+            "$E = E^\\circ - \\frac{0,48}{5} pH + \\frac{0,06}{5} \\log\\left(\\frac{[MnO_4^-]}{[Mn^{2+}]}\\right)$",
+            "$E = E^\\circ + \\frac{0,06}{5} \\log\\left(\\frac{[MnO_4^-]}{[Mn^{2+}]}\\right)$",
+            "$E = E^\\circ - 0,06 pH + \\frac{0,06}{5} \\log\\left(\\frac{[MnO_4^-]}{[Mn^{2+}]}\\right)$",
+            "$E = E^\\circ + \\frac{0,48}{5} pH + \\frac{0,06}{5} \\log\\left(\\frac{[MnO_4^-]}{[Mn^{2+}]}\\right)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "En intégrant les ions $H^+$ dans le quotient de réaction $Q = \\frac{[MnO_4^-][H^+]^8}{[Mn^{2+}]}$, on obtient un terme en $\\log([H^+]^8) = 8 \\log[H^+] = -8 pH$. Multiplié par $\\frac{0,06}{5}$, cela donne $-\\frac{0,48}{5} pH$."
+    },
+    {
+        "uuid": "q006",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Potentiostat_setup.svg",
+        "theme": "montage expérimental",
+        "question": "Dans un montage potentiostatique à trois électrodes, quel est le rôle fondamental de l'électrode de référence (ER) ?",
+        "answers": [
+            "Assurer le passage du courant imposé par le potentiostat.",
+            "Fixer un potentiel stable pour servir de point de comparaison lors de la mesure du potentiel de l'électrode de travail.",
+            "Limiter la vitesse de diffusion des espèces électroactives vers la surface de l'électrode.",
+            "Convertir le courant ionique de la solution en courant électronique dans le circuit."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'électrode de référence doit avoir un potentiel thermodynamique stable et connu pour mesurer avec précision la différence de potentiel $U = E_{travail} - E_{ref}$. Elle ne doit pas être polarisée par le passage d'un courant."
+    },
+    {
+        "uuid": "q007",
+        "image_path": null,
+        "theme": "montage expérimental",
+        "question": "Pourquoi est-il crucial, lors d'une mesure électrochimique, d'éviter que le courant ne traverse l'électrode de référence ?",
+        "answers": [
+            "Cela provoquerait une surchauffe immédiate de l'électrode par effet Joule.",
+            "Le passage d'un courant ferait varier la concentration locale, modifiant le potentiel selon la loi de Nernst.",
+            "Le courant risquerait de saturer l'impédance d'entrée du potentiostat.",
+            "Une réaction d'électrolyse parasite se produirait sur l'électrode de référence."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Si un courant traverse l'électrode de référence, le rapport des concentrations $[Ox]/[Red]$ à sa surface change. Par la loi de Nernst, son potentiel dévie, rendant la mesure du potentiel de l'électrode de travail erronée."
+    },
+    {
+        "uuid": "q008",
+        "image_path": null,
+        "theme": "montage expérimental",
+        "question": "Dans un montage à trois électrodes, comment nomme-t-on l'électrode qui permet la fermeture du circuit et le passage du courant avec l'électrode de travail ?",
+        "answers": [
+            "L'électrode de référence (ER)",
+            "La contre-électrode (CE)",
+            "L'électrode de travail (ET)",
+            "L'électrode au calomel saturée (ECS)"
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La contre-électrode (ou électrode auxiliaire) est nécessaire pour boucler le circuit électrique et permettre au courant de circuler dans la cellule électrochimique sans passer par l'électrode de référence."
+    },
+    {
+        "uuid": "q009",
+        "image_path": null,
+        "theme": "montage expérimental",
+        "question": "Pour quelle raison dimensionne-t-on la contre-électrode avec une surface beaucoup plus grande que celle de l'électrode de travail ?",
+        "answers": [
+            "Pour diminuer la résistance du milieu électrolytique entre les deux électrodes.",
+            "Pour minimiser la densité de courant à sa surface afin que son potentiel n'évolue pas significativement.",
+            "Pour augmenter la capacité de la double couche électrique de la cellule.",
+            "Pour permettre une meilleure agitation convective de la solution."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "En augmentant la surface de la contre-électrode, on diminue la densité de courant $j = I/S$. Cela permet de limiter les phénomènes de surtension à son niveau, garantissant que c'est bien l'électrode de travail qui contrôle la réaction étudiée."
+    },
+    {
+        "uuid": "q010",
+        "image_path": null,
+        "theme": "cinétique électrochimique",
+        "question": "Soit une réaction électrochimique se produisant sur une surface $S$. Comment définit-on la vitesse surfacique $v_s$ de cette réaction ?",
+        "answers": [
+            "$v_s = \\frac{1}{V} \\frac{d\\xi}{dt}$ où $V$ est le volume de la solution.",
+            "$v_s = \\frac{1}{S} \\frac{d\\xi}{dt}$ où $S$ est la surface de l'électrode.",
+            "$v_s = S \\cdot \\frac{d\\xi}{dt}$ où $\\xi$ est l'avancement.",
+            "$v_s = \\frac{d[Red]}{dt}$ qui représente la vitesse de production du réducteur."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La vitesse d'une réaction électrochimique est localisée à la surface de l'électrode. La vitesse surfacique est définie par la variation de l'avancement par unité de temps et par unité de surface : $v_s = \\frac{1}{S} \\frac{d\\xi}{dt}$."
+    },
+    {
+        "uuid": "q011",
+        "image_path": null,
+        "theme": "cinétique électrochimique",
+        "question": "Dans le cadre de l'étude cinétique d'une réaction d'oxydoréduction à une interface électrode-électrolyte, quelle est la relation reliant l'avancement $\\xi$ à la quantité d'électrons échangés $n_e$ et au nombre stœchiométrique des électrons $\\nu_e$ dans l'équation de demi-réaction ?",
+        "answers": [
+            "$\\xi = n_e \\cdot \\nu_e$",
+            "$\\xi = \\frac{\\nu_e}{n_e}$",
+            "$\\xi = \\frac{n_e}{\\nu_e}$",
+            "$\\xi = n_e - \\nu_e$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "La relation fondamentale est $n_e = \\nu_e \\cdot \\xi$. Par définition, $\\nu_e$ est le nombre d'électrons mis en jeu pour une mole de réaction. Si $\\xi$ moles de réaction ont eu lieu, le nombre total de moles d'électrons échangés est donc le produit de $\\xi$ par $\\nu_e$. D'où $\\xi = n_e / \\nu_e$.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q012",
+        "image_path": null,
+        "theme": "conventions",
+        "question": "Conformément à la convention d'orientation des systèmes électrochimiques (convention 'anodique'), quel est le signe de l'intensité $i$ mesurée lorsque l'électrode est le siège d'une oxydation ?",
+        "answers": [
+            "$i < 0$",
+            "$i = 0$",
+            "$i > 0$",
+            "Le signe est arbitraire"
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Selon la convention usuelle en électrochimie, un courant positif ($i > 0$) correspond à une oxydation (le courant sort de l'électrode vers la solution), tandis qu'un courant négatif ($i < 0$) correspond à une réduction (les électrons rentrent dans l'électrode).",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q013",
+        "image_path": null,
+        "theme": "conventions",
+        "question": "Pourquoi, selon la convention d'orientation, l'intensité $i$ est-elle négative lors d'une réaction de réduction se produisant à une cathode ?",
+        "answers": [
+            "Car les électrons quittent le conducteur métallique pour entrer dans la solution, ce qui correspond à un flux de charge opposé au sens positif conventionnel.",
+            "Car les ions positifs sont consommés à l'interface.",
+            "Car la réduction est un processus endothermique imposé.",
+            "Car la densité de courant est définie par le vecteur normal à l'électrode."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "explication": "Le courant $i$ est défini par le flux net de charges positives. Lors d'une réduction, les électrons arrivent de l'électrode vers l'oxydant. Le flux d'électrons est orienté vers l'interface, donc le flux de charge positive (courant) est dirigé vers l'intérieur de l'électrode, ce qui est compté négativement par convention.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q014",
+        "image_path": null,
+        "theme": "cinétique électrochimique",
+        "question": "En considérant une électrode de surface active $S$, quelle est l'équation correcte liant l'intensité du courant électrique $i$ à la vitesse surfacique de réaction $v_s$ ?",
+        "answers": [
+            "$i = F \\nu_e S v_s$",
+            "$i = e N_A \\nu_e S v_s$",
+            "$i = \\frac{F S}{v_s}$",
+            "$i = S \\cdot v_s$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "La vitesse surfacique est $v_s = \\frac{1}{S} \\frac{d\\xi}{dt}$. Comme $i = n F \\frac{d\\xi}{dt}$ (avec $n = \\nu_e$), on obtient $i = \\nu_e F S v_s$. Comme $F = e N_A$, la réponse $i = e N_A \\nu_e S v_s$ est rigoureusement exacte.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q015",
+        "image_path": null,
+        "theme": "cinétique électrochimique",
+        "question": "Comment nomme-t-on la grandeur physique définie par le rapport $j = \\frac{i}{S}$, où $S$ représente la surface de l'électrode ?",
+        "answers": [
+            "La vitesse volumique de réaction",
+            "La densité de courant surfacique",
+            "Le flux molaire",
+            "Le surpotentiel"
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "La densité de courant $j$ (exprimée en $A \\cdot m^{-2}$) est une grandeur intensive qui permet de s'affranchir de la taille de l'électrode. C'est elle qui est directement reliée à la vitesse de réaction surfacique.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q016",
+        "image_path": null,
+        "theme": "transport de matière",
+        "question": "Parmi les phénomènes de transport de matière dans une solution électrolytique, lequel est induit par l'existence d'un champ électrique ?",
+        "answers": [
+            "La diffusion",
+            "La migration",
+            "La convection",
+            "L'effet Joule"
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "La migration est le déplacement ordonné des ions sous l'effet d'une force électrostatique exercée par un champ électrique. La diffusion, elle, est due à un gradient de concentration, et la convection à un mouvement macroscopique du fluide.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q017",
+        "image_path": null,
+        "theme": "transport de matière",
+        "question": "Dans le voisinage immédiat d'une électrode en fonctionnement, quel phénomène explique principalement le transfert des espèces réactives si l'on néglige la migration ?",
+        "answers": [
+            "L'application d'un champ électrique intense.",
+            "Le déplacement forcé par agitation thermique.",
+            "La diffusion, provoquée par le gradient de concentration dû à la consommation (ou production) des espèces à l'électrode.",
+            "La précipitation des ions."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Dès qu'une réaction électrochimique a lieu, la concentration de l'espèce à la surface de l'électrode diffère de celle du sein de la solution. Ce gradient de concentration induit un flux de diffusion décrit par la première loi de Fick.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q018",
+        "image_path": null,
+        "theme": "transport de matière",
+        "question": "Quel mécanisme de transport de matière est associé au déplacement d'ensemble des espèces chimiques dans une solution en mouvement (agitation, flux hydrodynamique) ?",
+        "answers": [
+            "La convection",
+            "La diffusion thermique",
+            "La migration ionique",
+            "L'effet de pointe"
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "explication": "La convection désigne le transport de matière lié au mouvement macroscopique du solvant, qu'il soit naturel (gradients de densité) ou forcé (agitateur, électrode tournante).",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q019",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Pour un système rédox rapide, que signifie physiquement le point d'intersection d'une courbe intensité-potentiel avec l'axe des abscisses ($i = 0$) ?",
+        "answers": [
+            "La cinétique de réaction est bloquée par l'absence de réactif.",
+            "L'électrode est à son potentiel de corrosion.",
+            "Le système est à l'équilibre thermodynamique, le potentiel est égal au potentiel de Nernst.",
+            "La résistance du milieu est infinie."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "À l'équilibre, le potentiel d'électrode est défini par la relation de Nernst. Comme aucune réaction nette n'est observée à l'équilibre, l'intensité globale qui traverse l'interface est nulle.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q020",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Lorsqu'on impose à une électrode un potentiel $E > E_{Nernst}$ pour un couple Ox/Red, quelle est la réaction thermodynamiquement favorisée ?",
+        "answers": [
+            "La réduction de l'oxydant.",
+            "L'oxydation du réducteur, provoquant un courant anodique ($i > 0$).",
+            "La précipitation du réducteur.",
+            "Aucune réaction n'est possible au-dessus du potentiel de Nernst."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "Si $E > E_{eq}$, l'enthalpie libre de réaction $\\Delta_r G = nF(E - E_{eq})$ devient positive, ce qui correspond au sens inverse de la réduction. C'est donc l'oxydation qui est thermodynamiquement favorisée, générant un courant anodique positif.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q021",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Dans le cadre de l'étude d'une courbe voltampérométrique, la zone de courant obtenue pour un potentiel imposé $E < E_{Nernst}$ correspond à une réduction à l'électrode. Comment nomme-t-on cette partie de la courbe ?",
+        "answers": [
+            "Vague anodique",
+            "Vague cathodique",
+            "Vague de diffusion limite",
+            "Vague de solvant"
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Par définition, une réduction se produit à la cathode. Le courant cathodique est conventionnellement compté négativement dans le système international des courbes $i=f(E)$. La 'vague cathodique' désigne l'augmentation de l'intensité liée à la réduction d'une espèce."
+    },
+    {
+        "uuid": "q022",
+        "image_path": null,
+        "theme": "systèmes rapides et lents",
+        "question": "Un système électrochimique est qualifié de « rapide » lorsque la cinétique de transfert de charge est élevée. Quelle est la conséquence sur le tracé de la courbe $i(E)$ au voisinage du potentiel d'équilibre $E_{eq}$ ?",
+        "answers": [
+            "Le transfert de matière est instantané.",
+            "L'intensité devient non négligeable pour de très faibles écarts de potentiel par rapport à $E_{Nernst}$.",
+            "L'intensité ne décolle que pour des potentiels très éloignés de $E_{Nernst}$.",
+            "La réaction ne présente jamais de palier de diffusion."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Pour un système rapide, la densité de courant d'échange $j_0$ est très élevée. Ainsi, la moindre variation de potentiel par rapport à $E_{eq}$ induit une cinétique importante, rendant la courbe quasi-verticale au passage par zéro."
+    },
+    {
+        "uuid": "q023",
+        "image_path": null,
+        "theme": "systèmes rapides et lents",
+        "question": "Parmi les couples rédox suivants, lequel est classiquement considéré comme un système rapide sur une électrode de platine polie ?",
+        "answers": [
+            "$H_2O / H_2$ (dégagement d'hydrogène)",
+            "$O_2 / H_2O$ (réduction du dioxygène)",
+            "$Fe^{3+} / Fe^{2+}$",
+            "$S_2O_8^{2-} / HSO_4^-$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "Le couple $Fe^{3+} / Fe^{2+}$ est l'exemple type d'un système rapide (transfert mono-électronique sans rupture de liaison chimique). À l'inverse, les couples impliquant des gaz ($H_2$, $O_2$) ou des réarrangements complexes ($S_2O_8^{2-}$) sont souvent lents à cause de surtensions importantes."
+    },
+    {
+        "uuid": "q024",
+        "image_path": null,
+        "theme": "systèmes rapides et lents",
+        "question": "Lors d'une étude expérimentale, comment définit-on rigoureusement le surpotentiel anodique $\\eta_A$ pour une électrode travaillant à un potentiel $E_A$ ?",
+        "answers": [
+            "$\\eta_A = E_{eq} - E_A$",
+            "$\\eta_A = E_A - E_{eq} > 0$",
+            "$\\eta_A = E_C - E_{eq} < 0$",
+            "$\\eta_A = E_A + E_{eq}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Le surpotentiel est l'écart entre le potentiel imposé et le potentiel d'équilibre. Pour une oxydation (anodique), on impose un potentiel plus élevé que $E_{eq}$ pour favoriser le départ d'électrons, donc $\\eta_A = E - E_{eq} > 0$."
+    },
+    {
+        "uuid": "q025",
+        "image_path": null,
+        "theme": "limitation par transfert de matière",
+        "question": "Lorsqu'on observe un palier de courant sur une courbe $i(E)$, cela signifie que l'espèce électroactive est totalement consommée à la surface de l'électrode. Quel phénomène limite alors l'intensité ?",
+        "answers": [
+            "Le transfert de charge",
+            "Le transfert de matière (diffusion)",
+            "La migration uniquement",
+            "La résistance ohmique des fils"
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Lorsque la concentration de l'espèce à l'interface est nulle, l'intensité ne dépend plus de la vitesse de réaction chimique (transfert de charge), mais uniquement de la vitesse à laquelle les nouvelles espèces arrivent de la solution par diffusion (loi de Fick)."
+    },
+    {
+        "uuid": "q026",
+        "image_path": null,
+        "theme": "limitation par transfert de matière",
+        "question": "D'après la première loi de Fick, comment s'exprime la densité de flux molaire de diffusion $\\vec{j}_m$ en fonction de la concentration $c$ et du coefficient de diffusion $D$ ?",
+        "answers": [
+            "$\\vec{j}_m = -D \\cdot \\overrightarrow{grad}(c)$",
+            "$\\vec{j}_m = D \\cdot \\overrightarrow{grad}(c)$",
+            "$\\vec{j}_m = -n \\mathcal{F} D \\cdot \\overrightarrow{grad}(c)$",
+            "$\\vec{j}_m = -c \\cdot \\overrightarrow{grad}(D)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "La loi de Fick stipule que le flux de matière est dirigé vers les zones de plus faible concentration, d'où le signe négatif. La réponse C est incorrecte car elle inclut des constantes faradiques qui transforment le flux de matière en courant électrique."
+    },
+    {
+        "uuid": "q027",
+        "image_path": null,
+        "theme": "limitation par transfert de matière",
+        "question": "Dans le modèle de Nernst, on introduit une épaisseur $\\delta$ pour linéariser le gradient de concentration près de l'électrode. Que représente physiquement ce paramètre $\\delta$ ?",
+        "answers": [
+            "Le coefficient de diffusion de l'ion.",
+            "L'épaisseur de la couche de diffusion (couche de Nernst).",
+            "La distance entre l'électrode de travail et l'électrode de référence.",
+            "La densité surfacique de charge."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La couche de Nernst $\\delta$ est une modélisation mathématique simplifiée représentant la zone mince près de l'électrode où le gradient de concentration est considéré comme constant. En dehors de cette couche, la concentration est égale à celle du 'bulk' (cœur de solution)."
+    },
+    {
+        "uuid": "q028",
+        "image_path": null,
+        "theme": "limitation par transfert de matière",
+        "question": "Lorsque le palier de diffusion est atteint lors de l'oxydation d'un réducteur $Red$, quelle est la valeur de la concentration du réducteur à la surface de l'électrode $[Red]_{x=0}$ ?",
+        "answers": [
+            "$[Red]_{solution}$",
+            "Une valeur strictement positive",
+            "Zéro",
+            "Une valeur dépendant uniquement de l'agitation."
+        ],
+        "difficulty": 4,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "Le courant limite de diffusion est atteint précisément lorsque la cinétique de réaction est tellement rapide que chaque molécule arrivant à la surface est instantanément oxydée. La concentration de réducteur en surface tombe alors à zéro."
+    },
+    {
+        "uuid": "q029",
+        "image_path": null,
+        "theme": "limitation par transfert de matière",
+        "question": "Dans le cas d'une oxydation contrôlée par la diffusion, à quelle grandeur physique le courant limite de diffusion anodique $i_{Da}$ est-il proportionnel ?",
+        "answers": [
+            "La racine carrée de la concentration en oxydant $[Ox]$.",
+            "La concentration en oxydant $[Ox]$.",
+            "La concentration en réducteur $[Red]_{sol}$ présent au sein de la solution.",
+            "La température au carré."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "Le courant limite de diffusion $i_d$ dépend du gradient de concentration. Ce gradient est proportionnel à la concentration de l'espèce électroactive dans le cœur de la solution (ici, le réducteur $[Red]$ pour une oxydation)."
+    },
+    {
+        "uuid": "q030",
+        "image_path": null,
+        "theme": "limitation par transfert de matière",
+        "question": "Pourquoi une vague d'oxydation ou de réduction ne présente-t-elle PAS de palier de diffusion si l'espèce électroactive est une phase solide ?",
+        "answers": [
+            "Si l'espèce réactive est un ion métallique lourd.",
+            "Si la température est trop basse.",
+            "Si l'espèce réactive est un solide, sa concentration est constante (activité égale à 1).",
+            "Si la réaction est très rapide, le palier est masqué."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "La diffusion ne limite le courant que si l'espèce doit être transportée depuis la solution vers l'électrode. Si l'espèce est un solide (ex: dépôt métallique), elle est déjà 'sur place'. Sa concentration à la surface est constante (activité = 1), il n'y a donc pas de gradient de diffusion et pas de limitation par transfert de matière."
+    },
+    {
+        "uuid": "q031",
+        "image_path": null,
+        "theme": "blocage cinétique",
+        "question": "Pour une réaction spontanée sans circuit extérieur, le potentiel pour lequel le courant anodique compense exactement le courant cathodique est appelé[cite: 401]:",
+        "answers": [
+            "Potentiel standard",
+            "Potentiel d'équilibre thermodynamique",
+            "Potentiel mixte $E_m$",
+            "Surpotentiel de jonction"
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q032",
+        "image_path": null,
+        "theme": "blocage cinétique",
+        "question": "Que signifie un « blocage cinétique » pour une réaction thermodynamiquement favorisée[cite: 406]?",
+        "answers": [
+            "La constante d'équilibre est trop faible.",
+            "Le potentiel mixte correspond à des courants anodique et cathodique nuls.",
+            "La diffusion empêche la réaction.",
+            "L'électrolyte précipite."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q033",
+        "image_path": null,
+        "theme": "blocage cinétique",
+        "question": "Pourquoi l'oxydation du plomb par $H^+$ subit-elle un blocage cinétique contrairement à l'oxydation du magnésium[cite: 409]?",
+        "answers": [
+            "Le magnésium a un potentiel standard positif.",
+            "La surtension cathodique du couple $H^+/H_2$ est nettement plus élevée sur le plomb que sur le magnésium.",
+            "Le plomb ne peut thermodynamiquement pas réduire l'acide.",
+            "Le magnésium est un isolant électrique."
+        ],
+        "difficulty": 4,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q034",
+        "image_path": null,
+        "theme": "domaine d'électroactivité",
+        "question": "Laquelle des réactions correspond à l'oxydation du solvant aqueux (l'eau)[cite: 426]?",
+        "answers": [
+            "$2 H^+ + 2 e^- = H_2$",
+            "$H_2O = \\frac{1}{2} O_2 + 2 H^+ + 2 e^-$",
+            "$2 H_2O + 2 e^- = H_2 + 2 OH^-$",
+            "$O_2 + 4 H^+ + 4 e^- = 2 H_2O$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q035",
+        "image_path": null,
+        "theme": "domaine d'électroactivité",
+        "question": "Pourquoi les vagues d'oxydation et de réduction du solvant (l'eau) ne présentent-elles pas de palier de diffusion[cite: 430]?",
+        "answers": [
+            "Parce que la réaction de l'eau est infiniment lente.",
+            "Parce que les produits sont des gaz.",
+            "Parce que l'eau est présente en large excès, elle ne se raréfie jamais aux électrodes.",
+            "Parce que les gaz formés bloquent l'électrode."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q036",
+        "image_path": null,
+        "theme": "domaine d'électroactivité",
+        "question": "L'espace compris entre la vague d'oxydation de l'eau et sa vague de réduction est appelé[cite: 432]:",
+        "answers": [
+            "Domaine de Nernst.",
+            "Domaine d'inertie électrochimique de l'eau (ou fenêtre d'électroactivité).",
+            "Zone de blocage stérique.",
+            "Palier de diffusion du solvant."
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q037",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Que se passe-t-il sur une courbe i-E lorsque plusieurs couples peuvent réagir simultanément à la même électrode et que les espèces sont présentes en quantités comparables[cite: 443]?",
+        "answers": [
+            "Leurs réactions s'annulent.",
+            "Les intensités de chaque réaction s'ajoutent (vagues successives).",
+            "Seule la réaction ayant le plus fort potentiel de Nernst se produit.",
+            "Le potentiel chute brutalement à zéro."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q038",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Dans le cas de l'exercice 1 (courbe d'une solution d'acide chlorhydrique), pourquoi la courbe (1) présente-t-elle un plateau de diffusion[cite: 22]?",
+        "answers": [
+            "C'est la réduction de $H^+$.",
+            "C'est l'oxydation de l'eau.",
+            "C'est l'oxydation d'un soluté (les ions $Cl^-$), présent en quantité limitée.",
+            "L'électrode de platine est dissoute."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q039",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "D'après l'exercice 1, la courbe (2) enregistrée dans l'acide sulfurique ne présente pas de plateau de diffusion car[cite: 24]:",
+        "answers": [
+            "L'acide sulfurique est un acide faible.",
+            "C'est le solvant (l'eau) qui est oxydé.",
+            "Les ions sulfates bloquent l'électrode.",
+            "L'oxydation démarre à un potentiel trop bas."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q040",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Dans l'exercice 2, l'électrode est en argent et plonge dans une solution d'$Ag^+$. Lors de l'oxydation, observe-t-on un palier de diffusion[cite: 50]?",
+        "answers": [
+            "Oui, limité par la diffusion des ions $Ag^+$ produits.",
+            "Oui, car la solution n'est qu'à $10^{-3}$ mol/L.",
+            "Non, car c'est l'électrode elle-même (solide) qui est attaquée.",
+            "Non, car le couple est très lent."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q041",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Dans le cadre de l'étude d'une électrode d'argent plongeant dans une solution aqueuse de nitrate d'argent à pH 4, quelles sont les deux réactions cathodiques (réduction) susceptibles de se produire à bas potentiel ?",
+        "answers": [
+            "Réduction de $Ag^+$ en $Ag_{(s)}$ et réduction de $H_2O$ en $H_2_{(g)}$.",
+            "Réduction de $Ag^+$ en $Ag_{(s)}$ et oxydation de $H_2O$ en $O_2_{(g)}$.",
+            "Réduction de $Ag_{(s)}$ en $Ag^-$ et réduction de $H^+$.",
+            "Réduction du platine de l'électrode et réduction de $Ag^+$."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "explication": "Une réaction cathodique est une réduction (gain d'électrons). L'oxydation de $H_2O$ en $O_2$ est une réaction anodique (perte d'électrons). Le platine est un métal inerte noble utilisé comme collecteur, il ne se réduit pas dans les conditions usuelles. La réduction de $H_2O$ est la limite de stabilité du solvant en milieu réducteur.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q042",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Sur un tracé expérimental d'une courbe $i=f(E)$ en milieu aqueux, la branche anodique (courant positif) présente une augmentation du courant qui ne sature pas (montée exponentielle). Que représente ce phénomène ?",
+        "answers": [
+            "L'oxydation des ions $Cu^{2+}$ en solution.",
+            "La réduction du solvant limitant la zone d'électroactivité.",
+            "L'oxydation du solvant (l'eau) en $O_2_{(g)}$.",
+            "L'oxydation de l'électrode en platine en ions $Pt^{2+}$."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "La zone d'électroactivité de l'eau est limitée par l'oxydation de $H_2O$ en $O_2$ à haut potentiel et par la réduction de $H_2O$ en $H_2$ à bas potentiel. Cette montée en courant est caractéristique de la décomposition du solvant, contrairement à un palier de diffusion qui caractérise un soluté en quantité limitée.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q043",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Dans l'analyse d'une courbe $i=f(E)$, comment justifier que la vague observée à très bas potentiel correspond à la réduction de l'eau plutôt qu'à une dissolution de l'électrode ?",
+        "answers": [
+            "L'électrode en platine est un matériau inattaquable et le solvant (eau) est en large excès, conduisant à une montée en courant sans palier.",
+            "L'électrode en platine est soluble à bas potentiel, ce qui créerait une vague d'oxydation.",
+            "Le potentiel standard du platine est négatif, empêchant toute réduction de l'électrode.",
+            "La vague 3 est une oxydation, elle ne peut donc pas être une réduction."
+        ],
+        "difficulty": 4,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "explication": "Le platine est un métal noble, il n'est pas oxydé ou réduit dans les conditions standards. L'eau est le solvant, elle est présente en très grande concentration, ce qui explique l'absence de palier de diffusion : le courant ne sature pas car la réactant n'est jamais épuisé à l'interface.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q044",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Si l'on considère une réaction contrôlée par la diffusion, comment évolue le courant limite de diffusion $i_{lim}$ si l'on double la concentration volumique $[C]$ de l'espèce électroactive ?",
+        "answers": [
+            "Le courant limite de diffusion est divisé par deux.",
+            "Le courant limite de diffusion double.",
+            "Le courant limite de diffusion reste inchangé.",
+            "Le potentiel de Nernst augmente drastiquement de $1\\text{ V}$."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "D'après la loi de Fick appliquée aux électrodes, le courant limite de diffusion est donné par $i_{lim} = n F S k_d [C]$. Il est donc proportionnel à la concentration $[C]$. Doubler $[C]$ conduit mathématiquement à doubler $i_{lim}$.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q045",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour la réduction cathodique des ions $Ag^+$ sur une électrode, comment varie le palier de diffusion si l'on passe d'une solution à $0,1\\text{ mol/L}$ à une solution à $0,2\\text{ mol/L}$ ?",
+        "answers": [
+            "Le palier de courant est plus grand en valeur absolue (plus intense).",
+            "Le palier est divisé par deux.",
+            "Il n'y a pas de palier pour la réduction d'un ion, seulement pour les molécules neutres.",
+            "La courbe est uniquement décalée de $0,06\\text{ V}$ mais l'intensité limite est la même."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "explication": "Le courant limite de diffusion est directement proportionnel à la concentration des espèces réactives au sein de la solution. Une augmentation de la concentration augmente donc la valeur absolue de l'intensité limite de diffusion.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q046",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Lors du tracé de la courbe $i(E)$ pour une électrode solide d'argent recouverte d'un dépôt de $AgCl_{(s)}$ plongeant dans une solution de chlorures, observe-t-on des paliers de diffusion ?",
+        "answers": [
+            "Oui, en oxydation et en réduction car la couche solide limite la vitesse.",
+            "Uniquement en réduction car $Cl^-$ est en solution.",
+            "Non, car les espèces réactives sont solides et leur activité est égale à 1.",
+            "Oui, le solvant fixe le palier limite par sa tension superficielle."
+        ],
+        "difficulty": 4,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Les paliers de diffusion apparaissent pour des espèces en solution dont le flux vers l'électrode est limité par la diffusion. Pour une phase solide pure, l'activité est fixée à 1. La réaction ne dépend pas d'un flux de diffusion de l'espèce solide, il n'y a donc pas de palier de diffusion associé.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q047",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Calculer le potentiel de Nernst à $25^{\\circ}\\text{C}$ du couple $Fe^{3+}/Fe^{2+}$ pour $[Fe^{3+}] = 0,1\\text{ mol/L}$ et $[Fe^{2+}] = 1\\text{ mol/L}$, sachant $E^{\\circ} = 0,77\\text{ V}$.",
+        "answers": [
+            "$E = 0,77 - 0,06 = 0,71\\text{ V}$",
+            "$E = 0,77 + 0,06 = 0,83\\text{ V}$",
+            "$E = 0,77 - 0,03 = 0,74\\text{ V}$",
+            "$E = 0,77\\text{ V}$ car la somme des concentrations est égale à 1,1."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "explication": "La formule de Nernst est $E = E^{\\circ} + 0,06 \\log([Ox]/[Red])$. Ici, $E = 0,77 + 0,06 \\log(0,1/1) = 0,77 + 0,06 \\times (-1) = 0,71\\text{ V}$. L'erreur classique est d'inverser le rapport ou le signe du logarithme.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q048",
+        "image_path": null,
+        "theme": "surpotentiel",
+        "question": "Dans le cas de la réduction des ions $Cu^{2+}$ sur platine, si la réaction démarre exactement au potentiel de Nernst théorique, que peut-on conclure sur la nature du système ?",
+        "answers": [
+            "C'est un système lent avec un fort surpotentiel.",
+            "C'est un système rapide, il n'y a pas de surpotentiel de cinétique pour ce processus sur Pt.",
+            "La diffusion limite immédiatement la réaction dès le début.",
+            "Le cuivre forme un complexe isolant avec le platine."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "Si une réaction démarre sans décalage par rapport au potentiel thermodynamique ($E_{eq}$), cela signifie que la cinétique de transfert d'électrons est suffisamment rapide pour ne pas imposer de surpotentiel de transfert. Le système est dit 'rapide' ou 'réversible'.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q049",
+        "image_path": null,
+        "theme": "surpotentiel",
+        "question": "L'oxydation de l'eau démarre à $1,7\\text{ V}$ alors que son potentiel de Nernst théorique est de $1,23\\text{ V}$ (à pH 0). Quel est l'ordre de grandeur du surpotentiel anodique $\\eta$ ?",
+        "answers": [
+            "$\\eta \\approx 0\\text{ V}$",
+            "$\\eta \\approx -0,5\\text{ V}$",
+            "$\\eta \\approx 0,5\\text{ V}$",
+            "$\\eta \\approx 1,7\\text{ V}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Le surpotentiel est défini par $\\eta = E_{app} - E_{eq}$. Ici, $\\eta = 1,7 - 1,23 = 0,47\\text{ V}$, soit environ $0,5\\text{ V}$. Un surpotentiel positif est caractéristique d'une réaction d'oxydation forcée.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q050",
+        "image_path": null,
+        "theme": "équilibrage",
+        "question": "Pour équilibrer les atomes d'oxygène dans une demi-équation rédox en milieu aqueux acide, quelle espèce chimique utilise-t-on traditionnellement ?",
+        "answers": [
+            "En ajoutant du dioxygène $O_2$ gazeux.",
+            "En ajoutant des ions hydroxyde $OH^-$.",
+            "En ajoutant des molécules d'eau $H_2O$.",
+            "En ajoutant des ions hydronium $H_3O^+$."
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Dans la méthode d'équilibrage en milieu acide, on équilibre les atomes d'oxygène en ajoutant des molécules d'eau ($H_2O$), puis les atomes d'hydrogène en ajoutant des protons ($H^+$). Les ions $OH^-$ sont utilisés uniquement en milieu basique.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q051",
+        "image_path": null,
+        "theme": "équilibrage",
+        "question": "Dans le cadre de l'équilibrage d'une demi-équation rédox, quelle est la règle fondamentale pour assurer la conservation de la charge électrique ?",
+        "answers": [
+            "Ajouter des protons $H^+$ du côté déficitaire en charges.",
+            "Ajouter des électrons $e^-$ pour équilibrer la somme des nombres d'oxydation de chaque côté.",
+            "Modifier les coefficients stœchiométriques des molécules neutres uniquement.",
+            "Diviser toutes les charges par 2 pour obtenir une équation équilibrée."
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "La conservation de la charge dans une demi-équation rédox est assurée par l'ajout d'électrons $e^-$. Le nombre d'électrons est déterminé en faisant la différence entre la charge totale des produits et celle des réactifs après avoir équilibré les atomes et les éléments de conservation (comme $H$ et $O$ en milieu aqueux).",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q052",
+        "image_path": null,
+        "theme": "cinétique électrochimique",
+        "question": "Soit la relation $n_e = \\nu_e \\xi$ reliant le nombre de moles d'électrons échangés $n_e$ à l'avancement $\\xi$. Quelle convention de signe adopte-t-on pour la stœchiométrie algébrique des électrons $\\nu_e$ ?",
+        "answers": [
+            "Toujours positive par convention.",
+            "Toujours négative car les électrons sont des particules.",
+            "$\\nu_e > 0$ si les électrons sont des produits (libérés lors d'une oxydation), $\\nu_e < 0$ si les électrons sont des réactifs (consommés lors d'une réduction).",
+            "$\\nu_e$ est fixé arbitrairement par le potentiel standard de l'électrode."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Dans l'écriture d'une demi-équation, on utilise la convention $\\nu_e$ telle qu'elle est définie dans l'avancement : si les électrons apparaissent à droite (produits), leur coefficient stœchiométrique est positif. S'ils sont à gauche (réactifs), il est négatif.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q053",
+        "image_path": null,
+        "theme": "montage expérimental",
+        "question": "Dans le cadre d'un montage à trois électrodes utilisé en voltampérométrie, comment s'effectue le branchement du voltmètre (ou de l'étage de mesure) ?",
+        "answers": [
+            "En série entre la source de courant et la contre-électrode.",
+            "Entre l'électrode de travail (ET) et l'électrode de référence (ER).",
+            "Entre la contre-électrode (CE) et l'électrode de référence (ER).",
+            "Aux bornes du potentiostat sans distinction."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "Le but du montage à trois électrodes est de mesurer le potentiel de l'électrode de travail par rapport à une électrode de référence (dont le potentiel est stable) tout en faisant circuler le courant entre l'électrode de travail et une contre-électrode, évitant ainsi la polarisation de la référence.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q054",
+        "image_path": null,
+        "theme": "montage expérimental",
+        "question": "Sur quel principe physique repose le fonctionnement de l'électrode de référence pour garantir la stabilité du potentiel mesuré ?",
+        "answers": [
+            "Elle est parcourue par un courant très intense pour maintenir son équilibre thermodynamique.",
+            "Elle est le siège exclusif de l'oxydation de l'eau pour fixer son potentiel.",
+            "Aucun courant significatif (idéalement nul) ne la traverse, son état d'équilibre thermodynamique n'est donc pas perturbé.",
+            "Elle est constituée d'un métal liquide dont la tension superficielle bloque toute réaction."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Une électrode de référence doit conserver un potentiel constant. Pour cela, elle doit fonctionner dans des conditions quasi-statiques où le courant qui la traverse est nul (impédance d'entrée très élevée du voltmètre), empêchant ainsi toute polarisation selon la loi de Nernst.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q055",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Dans l'étude d'un système rédox, pourquoi la dérivée $\\frac{di}{dE}$ est-elle très faible au voisinage de $E_{eq}$ (potentiel d'équilibre) pour un couple dit 'lent' ?",
+        "answers": [
+            "Parce que le transfert de matière est instantanément saturé.",
+            "Parce que la cinétique de transfert de charge à l'interface est difficile, créant une résistance de transfert de charge élevée.",
+            "Parce que le courant de diffusion est atteint dès $E = E_{eq}$.",
+            "Parce que l'électrode est recouverte de bulles de gaz bloquant le transfert électronique."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "Un couple 'lent' se caractérise par une cinétique de transfert de charge difficile (grande barrière d'activation). Au voisinage de l'équilibre, le courant est limité par cette cinétique lente, ce qui se traduit par une pente $\\frac{di}{dE}$ très faible à l'origine, contrairement à un couple rapide.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q056",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Le courant limite de diffusion $i_{lim}$ (ou $i_{d}$) observé sur une courbe courant-potentiel correspond à quel phénomène physique ?",
+        "answers": [
+            "La précipitation totale des espèces à la surface de l'électrode.",
+            "La saturation de la migration des électrons dans le circuit extérieur.",
+            "L'atteinte de la vitesse maximale à laquelle l'espèce électroactive est acheminée par diffusion vers l'interface.",
+            "La décomposition totale du solvant qui occulte le courant de l'espèce étudiée."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Lorsque le potentiel est tel que la concentration de surface de l'espèce électroactive devient nulle, le flux de diffusion atteint une valeur maximale dictée par les lois de Fick. Ce courant ne peut plus augmenter même en modifiant le potentiel : c'est le courant limite de diffusion.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q057",
+        "image_path": null,
+        "theme": "transport de matière",
+        "question": "En utilisant l'approximation du modèle de la couche de Nernst d'épaisseur $\\delta$, comment évolue le gradient de concentration $\\frac{\\partial c}{\\partial x}$ au voisinage de l'électrode lorsque l'intensité augmente (avant d'atteindre le palier) ?",
+        "answers": [
+            "Il diminue, car l'espèce électroactive s'accumule à la surface.",
+            "Il augmente en valeur absolue, car la concentration à la surface $[C]_{x=0}$ diminue.",
+            "Il reste constant car il ne dépend que du coefficient de diffusion.",
+            "Il s'annule car le profil de concentration devient parfaitement plat."
+        ],
+        "difficulty": 4,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "Le courant $i$ est proportionnel au flux, qui est lui-même proportionnel au gradient de concentration à la surface de l'électrode ($j = -D \\frac{\\partial c}{\\partial x}$). Pour augmenter le courant, il faut accroître la pente du profil de concentration, donc diminuer la concentration de surface vers 0.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q058",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Que représente la valeur du potentiel de corrosion $E_{corr}$ (ou potentiel mixte) lorsqu'un métal (ex: zinc) est placé dans une solution acide sans circuit extérieur ?",
+        "answers": [
+            "Le potentiel standard $E^0$ du couple métal/ion métallique.",
+            "Le potentiel pour lequel la somme des courants d'oxydation du métal et de réduction des protons $H^+$ est nulle.",
+            "La valeur du surpotentiel anodique mesuré par rapport à l'électrode au calomel.",
+            "La valeur de la force électromotrice de Nernst à l'équilibre chimique."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "En système ouvert, il n'y a pas d'apport d'électrons extérieur. Le métal s'oxyde tandis que les protons sont réduits. Le potentiel s'établit à une valeur $E_{corr}$ où les deux courants se compensent exactement : $i_{ox} + i_{red} = 0$.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q059",
+        "image_path": null,
+        "theme": "multi-espèces",
+        "question": "Dans une solution contenant deux espèces électroactives $Sn^{2+}$ et $I^-$, comment se traduit sur la courbe $i=f(E)$ l'oxydation successive des deux espèces ?",
+        "answers": [
+            "Un seul palier massif correspondant à la somme des courants de diffusion.",
+            "L'apparition de deux vagues successives d'oxydation, chacune caractérisée par son propre potentiel de demi-vague.",
+            "L'espèce ayant le potentiel standard le plus haut s'oxyde prioritairement, masquant la seconde.",
+            "L'oxydation du solvant (eau) survient systématiquement avant les deux espèces, empêchant leur observation."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "Si les potentiels standards des deux couples sont suffisamment éloignés, les vagues d'oxydation ne se recouvrent pas. On observe alors une montée du courant par paliers successifs à mesure que le potentiel augmente, chaque palier correspondant à l'oxydation de l'espèce dont le potentiel est le plus bas.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q060",
+        "image_path": null,
+        "theme": "multi-espèces",
+        "question": "Pourquoi la présence d'impuretés électroactives en très faible concentration n'altère-t-elle pas significativement le courant global lors de l'étude d'une espèce majoritaire ?",
+        "answers": [
+            "Car le courant limite de diffusion est proportionnel à la concentration : si $c_{impureté} \\ll c_{maj}$, alors $i_{lim, impureté} \\ll i_{lim, maj}$.",
+            "Car les impuretés possèdent un potentiel standard inatteignable dans la fenêtre d'électroactivité du solvant.",
+            "Car les impuretés ne sont pas capables de transférer des électrons sur des électrodes métalliques.",
+            "Car le voltmètre utilisé possède une précision insuffisante pour détecter ces traces."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "explication": "Le courant limite de diffusion est régi par la loi $i_{lim} = n F A D \\frac{c}{\\delta}$. Pour une impureté, $c$ est très faible, ce qui rend la contribution au courant total négligeable devant celle de l'espèce majoritaire, sauf si les potentiels sont extrêmement proches.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q061",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude de l'électrode à hydrogène, lors de la rédaction de l'équation de Nernst pour le couple $H^+ / H_{2(g)}$, quelle est la grandeur thermodynamique adimensionnée qui remplace l'activité pour l'espèce gazeuse $H_2$ ?",
+        "answers": [
+            "Le volume molaire du gaz.",
+            "La pression partielle normalisée $p_{H_2} / p^\\circ$.",
+            "La concentration molaire du gaz dissous $C_{H_2}$.",
+            "La masse volumique du gaz $\\rho_{H_2}$."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "Pour les gaz, l'activité est définie par le rapport de la pression partielle à la pression standard $p^\\circ = 1$ bar. L'usage de la concentration est incorrect car le potentiel de Nernst dépend de la pression exercée par le gaz à l'interface électrode/solution.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q062",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En considérant une électrode à hydrogène standard où $p_{H_2} = p^\\circ = 1$ bar, quelle est l'expression du potentiel de Nernst $E_N$ à $298$ K en fonction du $pH$ ?",
+        "answers": [
+            "$E_N = -0,06 \\cdot pH$",
+            "$E_N = 0,06 \\cdot pH$",
+            "$E_N = 0,03 \\cdot pH$",
+            "$E_N = -0,03 \\cdot pH$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "explication": "Le couple est $2H^+ + 2e^- \\rightleftharpoons H_2$. La formule est $E = E^\\circ(H^+/H_2) + \\frac{0,06}{2} \\log([H^+]^2 / (p_{H_2}/p^\\circ))$. Avec $E^\\circ = 0$ V et $p_{H_2} = 1$, on obtient $E = 0,06 \\log([H^+]) = -0,06 pH$.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q063",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Sur une courbe intensité-potentiel ($i-E$) tracée avec une électrode de platine inattaquable en milieu aqueux, que représente la branche cathodique située aux potentiels les plus bas (très négatifs) ?",
+        "answers": [
+            "Le mur de réduction du solvant (dégagement de $H_2$).",
+            "La dissolution du platine en ions $Pt^{2+}$.",
+            "L'oxydation électrochimique de l'eau en dioxygène $O_2$.",
+            "Le courant résiduel dû à une erreur de mesure de l'ampèremètre."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "explication": "Lorsque le potentiel devient suffisamment négatif, le solvant (eau) est réduit selon la demi-équation $2H_2O + 2e^- \\rightleftharpoons H_2 + 2OH^-$. C'est ce qu'on appelle le 'mur' cathodique.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q064",
+        "image_path": null,
+        "theme": "surpotentiel",
+        "question": "Un couple redox présente un potentiel de Nernst $E_N = -0,24$ V. Si le surpotentiel cathodique nécessaire à la réaction est de $\\eta = 0,3$ V, quel est le potentiel réel $E$ auquel la réduction commence ?",
+        "answers": [
+            "$E = +0,06$ V",
+            "$E = -0,54$ V",
+            "$E = -0,24$ V",
+            "$E = -0,30$ V"
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "Pour une réduction (cathode), le surpotentiel est négatif par convention : $E = E_N + \\eta$ (avec $\\eta < 0$). Ainsi, $E = -0,24 - 0,3 = -0,54$ V. La réaction nécessite un potentiel plus bas que le potentiel d'équilibre pour démarrer.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q065",
+        "image_path": null,
+        "theme": "réactions d'oxydoréduction",
+        "question": "Pourquoi les électrons n'apparaissent-ils pas dans l'équation-bilan globale d'une réaction d'oxydoréduction (par exemple $Cu^{2+} + Zn \\rightarrow Cu + Zn^{2+}$) ?",
+        "answers": [
+            "Parce qu'il existe des électrons libres en solution aqueuse.",
+            "Parce que les électrons sont des intermédiaires consommés par le bilan total lors de la sommation des demi-équations.",
+            "Parce qu'ils sont rejetés dans le circuit extérieur uniquement.",
+            "Parce qu'ils sont instantanément détruits par le solvant."
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "Le bilan d'oxydoréduction est la somme d'une oxydation et d'une réduction. On multiplie les demi-équations par des coefficients stœchiométriques pour que le nombre d'électrons cédés égale le nombre d'électrons reçus, ce qui les élimine du bilan.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q066",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la valeur numérique approchée du facteur de Nernst $k = \\frac{RT}{\\mathcal{F}} \\ln 10$ à $298$ K ?",
+        "answers": [
+            "$0,025$ V",
+            "$0,059$ V $\\approx 0,06$ V",
+            "$1,23$ V",
+            "$8,31$ V"
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "Cette constante est fondamentale en électrochimie. Elle provient du passage du logarithme népérien au logarithme décimal : $\\frac{R \\cdot 298}{96485} \\cdot \\ln(10) \\approx 0,059$ V.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q067",
+        "image_path": null,
+        "theme": "cinétique électrochimique",
+        "question": "Dans le cadre d'une réaction limitée par la diffusion (palier de diffusion), comment varient la vitesse surfacique $v_s$ et l'intensité $i$ si l'on double la surface active $S$ de l'électrode ?",
+        "answers": [
+            "$v_s$ double et $i$ reste constant.",
+            "$v_s$ reste constante et $i$ double.",
+            "$v_s$ et $i$ doublent tous les deux.",
+            "$v_s$ est divisée par deux et $i$ est divisé par deux."
+        ],
+        "difficulty": 4,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "La vitesse surfacique $v_s$ (en mol.s⁻¹.m⁻²) est une propriété intensive dépendant du flux diffusif local, elle est donc indépendante de $S$. L'intensité $i$ est une grandeur extensive liée à $S$ par $i = n \\mathcal{F} S v_s$, donc si $S$ double, $i$ double.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q068",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quel est l'intérêt de la définition de la densité de courant $j = i / S$ en électrochimie ?",
+        "answers": [
+            "Obtenir une grandeur extensive dépendant de la taille de la cellule d'électrolyse.",
+            "Se ramener à une grandeur intensive caractérisant la cinétique locale à l'interface électrode/solution.",
+            "Éviter de calculer le nombre d'électrons échangés dans l'équation de Nernst.",
+            "S'affranchir de la dépendance à la température de la constante de Faraday."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "L'intensité $i$ dépend de la taille de l'électrode. La densité de courant $j$ est intensive : elle permet de comparer les vitesses de réaction entre des systèmes de tailles différentes, indépendamment de la géométrie choisie.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q069",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Lors de l'oxydation anodique d'une électrode métallique (ex: $Ag_{(s)} \\rightarrow Ag^+ + e^-$), observe-t-on un palier de diffusion sur la courbe $i-E$ ?",
+        "answers": [
+            "Oui, car le transport des ions $Ag^+$ est limité par la diffusion vers le cœur de la solution.",
+            "Oui, car l'apport d'eau à l'interface est limitant.",
+            "Non, car l'espèce réduite est le matériau même de l'électrode, dont l'activité est constante et égale à 1.",
+            "Non, car le potentiel standard est trop faible pour permettre un courant de diffusion."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Un palier de diffusion apparaît quand un réactif est épuisé à la surface. Ici, le réactif est le métal solide. Son activité étant 1, il ne peut être 'épuisé'. Le courant ne peut donc pas être limité par sa diffusion.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q070",
+        "image_path": null,
+        "theme": "blocage cinétique",
+        "question": "Une plaque de plomb plongée dans un acide fort ne produit quasiment pas de dihydrogène, bien que la réaction soit thermodynamiquement favorisée. Comment appelle-t-on ce phénomène ?",
+        "answers": [
+            "Passivation par formation d'une couche d'oxyde.",
+            "Épuisement de la diffusion des protons.",
+            "Blocage cinétique dû à une forte surtension cathodique de dégagement de $H_2$.",
+            "Inertie thermodynamique totale du métal."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Certains métaux comme le plomb ou le mercure possèdent une très forte surtension pour le dégagement de $H_2$. La réaction thermodynamiquement prévue est bloquée pour des raisons cinétiques : le courant reste proche de zéro aux potentiels théoriques de réaction.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q071",
+        "image_path": null,
+        "theme": "domaine d'électroactivité",
+        "question": "Pour étudier l'oxydation d'une espèce en solution aqueuse, à quelle condition sur la courbe $i(E)$ cela est-il possible sans gêne majeure[cite: 432]?",
+        "answers": [
+            "La vague de l'espèce doit se trouver en dehors du domaine d'électroactivité de l'eau.",
+            "La vague de l'espèce doit se trouver dans le domaine d'inertie électrochimique de l'eau.",
+            "Le potentiel de l'espèce doit être rigoureusement égal à 0 V.",
+            "La vague de l'eau doit présenter un palier."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q072",
+        "image_path": null,
+        "theme": "transport de matière",
+        "question": "Pour une solution suffisamment agitée (convection efficace), que devient l'épaisseur $\\delta$ de la couche de diffusion[cite: 361]?",
+        "answers": [
+            "Elle devient infinie.",
+            "Elle diminue, augmentant ainsi le courant de diffusion limite.",
+            "Elle reste constante car la diffusion est indépendante de l'agitation.",
+            "Elle augmente, bloquant le courant."
+        ],
+        "difficulty": 4,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q073",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Dans l'exercice 4, question 3, l'équation de Nernst donne $E = E^\\circ + 0,06 \\log(0,2)$. À quoi correspond le 0,2[cite: 125]?",
+        "answers": [
+            "Au nombre d'électrons.",
+            "À la concentration en ions $Ag^+$ en mol/L.",
+            "Au pH de la solution.",
+            "Au surpotentiel."
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q074",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Pourquoi la vague de réduction de l'eau est-elle déplacée vers des potentiels plus négatifs quand le pH augmente[cite: 57]?",
+        "answers": [
+            "Car le potentiel de Nernst du couple $H^+/H_2$ diminue de $0,06$ V par unité de pH.",
+            "Car la concentration en $OH^-$ augmente la conductivité.",
+            "Car l'eau s'évapore.",
+            "Car le platine est sensible aux bases."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q075",
+        "image_path": null,
+        "theme": "blocage cinétique",
+        "question": "Un potentiel mixte $E_m$ est défini par l'égalité[cite: 401]:",
+        "answers": [
+            "$E_m = E_A + E_C$",
+            "$i_{anodique} = i_{cathodique}$ (ou $|i_{anodique}| = |i_{cathodique}|$ avec signes opposés)",
+            "$i_{anodique} = 0$",
+            "$E_m = \\frac{E^\\circ_1 + E^\\circ_2}{2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q076",
+        "image_path": null,
+        "theme": "transport de matière",
+        "question": "Si la concentration en solution $[Red]_{solution}$ est nulle (pas de réducteur), que vaut le courant anodique de diffusion limite $i_{Da}$ pour ce composé[cite: 377]?",
+        "answers": [
+            "$i_{Da} = 0$ A",
+            "$i_{Da} = \\infty$",
+            "Il dépend uniquement du solvant.",
+            "Il vaut 1 A par définition."
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q077",
+        "image_path": null,
+        "theme": "réactions d'oxydoréduction",
+        "question": "Quelle est la particularité d'une réaction d'oxydoréduction par rapport à une réaction acide-base[cite: 163]?",
+        "answers": [
+            "Elle implique un transfert de protons.",
+            "Elle implique un transfert d'électrons entre réducteur et oxydant.",
+            "Elle ne se produit qu'à haute température.",
+            "Elle ne produit jamais d'eau."
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q078",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le logarithme de l'équation de Nernst pour la réaction $\\alpha Ox + n e^- = \\beta Red$, le numérateur de la fraction contient typiquement[cite: 197]:",
+        "answers": [
+            "L'activité de la forme réduite $a_{Red}^\\beta$",
+            "L'activité du solvant",
+            "L'activité de la forme oxydée $a_{Ox}^\\alpha$ (si le terme est précédé d'un +)",
+            "La constante de Faraday"
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q079",
+        "image_path": null,
+        "theme": "conventions",
+        "question": "Comment relier l'avancement $\\xi$ d'une demi-réaction à la charge électrique totale $Q$ transférée dans le circuit[cite: 261]?",
+        "answers": [
+            "$Q = n_e = \\nu_e \\xi$",
+            "$Q = \\xi \\cdot \\mathcal{F}$",
+            "$Q = \\nu_e \\cdot \\xi \\cdot \\mathcal{F}$ (en valeur absolue)",
+            "$Q = \\frac{\\xi}{\\nu_e}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q080",
+        "image_path": null,
+        "theme": "surpotentiel",
+        "question": "Quel est l'effet de la nature de l'électrode (par exemple, platine pur, argent, mercure) sur les courbes i(E) d'un couple donné[cite: 344]?",
+        "answers": [
+            "Elle modifie le potentiel thermodynamique de Nernst.",
+            "Elle ne change rien, seul le couple importe.",
+            "Elle modifie les aspects cinétiques (rapidité du couple) et donc la valeur des surtensions.",
+            "Elle inverse le sens des réactions anodique et cathodique."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q081",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Dans le cadre de l'étude d'un couple rédox en solution aqueuse, lors du tracé de la courbe intensité-potentiel $i=f(E)$ du couple $Fe^{3+}/Fe^{2+}$ où les deux espèces sont présentes en solution, combien de paliers de diffusion observe-t-on ?",
+        "answers": [
+            "Un seul palier anodique.",
+            "Un seul palier cathodique.",
+            "Deux paliers, car les deux espèces $Fe^{2+}$ et $Fe^{3+}$ sont des solutés pouvant être limités par le transport diffusif.",
+            "Aucun palier, car la cinétique est toujours infiniment lente."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Le palier de diffusion apparaît lorsqu'un réactif est épuisé au voisinage de l'électrode. Comme $Fe^{3+}$ peut être réduit (limitation cathodique) et $Fe^{2+}$ oxydé (limitation anodique), on observe un palier pour chaque espèce lorsque son flux de diffusion ne suffit plus à maintenir l'intensité.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q082",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour étudier la précipitation de $AgCl(s)$ plongeant dans une solution contenant des ions $Cl^-$, comment exprime-t-on la concentration en ions argent $[Ag^+]$ à l'équilibre pour l'utiliser dans la relation de Nernst ?",
+        "answers": [
+            "$[Ag^+] = 0,1 \\text{ mol/L}$",
+            "$[Ag^+] = \\frac{K_s}{[Cl^-]}$",
+            "$[Ag^+] = K_s \\cdot [Cl^-]$",
+            "$[Ag^+] = \\sqrt{K_s}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "Le produit de solubilité est défini par $K_s = [Ag^+][Cl^-]$. À l'équilibre avec le précipité, la concentration en ions argent est imposée par la concentration en ions chlorure : $[Ag^+] = K_s / [Cl^-]$. L'erreur classique est d'oublier de diviser ou de confondre avec le cas où $[Ag^+] = [Cl^-]$ (solubilité pure).",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q083",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Si l'on souhaite observer expérimentalement l'oxydation de $I^-$ en $I_2$ dans l'eau, quelle condition thermodynamique doit-on vérifier par rapport au domaine d'électroactivité du solvant ?",
+        "answers": [
+            "Que le potentiel d'oxydation $I^- \\rightarrow I_2$ est supérieur au mur d'oxydation de l'eau.",
+            "Que le potentiel d'oxydation $I^- \\rightarrow I_2$ se situe dans le domaine d'électroactivité de l'eau (avant le mur d'oxydation du solvant).",
+            "Que l'eau a une concentration en protons infinie.",
+            "Que le potentiel de réduction est égal au potentiel d'oxydation."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "Pour observer une réaction sans l'interférence massive de l'oxydation du solvant (dégagement de $O_2$), le couple doit se situer dans le domaine de stabilité de l'eau. Si le potentiel est supérieur au mur d'oxydation, c'est l'eau qui s'oxydera préférentiellement.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q084",
+        "image_path": null,
+        "theme": "montage expérimental",
+        "question": "Quel est le montage électronique standard permettant de tracer précisément une courbe intensité-potentiel $i=f(E)$ tout en s'affranchissant de la chute ohmique $Ri$ ?",
+        "answers": [
+            "Montage potentiométrique à 2 électrodes.",
+            "Montage voltampérométrique à 3 électrodes (potentiostat).",
+            "Montage en pont de Wheatstone.",
+            "Montage série classique avec ampèremètre et voltmètre."
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "Le montage à 3 électrodes (travail, référence, auxiliaire) permet d'imposer une différence de potentiel précise entre l'électrode de travail et la référence, indépendamment du courant circulant, grâce à l'amplificateur opérationnel (potentiostat).",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q085",
+        "image_path": null,
+        "theme": "cinétique électrochimique",
+        "question": "Dans le bilan de charge électrique à l'interface solution-électrode, comment s'interprète physiquement l'égalité entre le courant mesuré et la vitesse de réaction ?",
+        "answers": [
+            "La charge entrant par le circuit extérieur compense la chaleur dissipée par effet Joule.",
+            "La charge traversant l'interface par le circuit extérieur ($i dt$) compense exactement la charge échangée par la réaction chimique ($-n \\mathcal{F} d\\xi$).",
+            "Le courant est compensé par l'évaporation du solvant à l'interface.",
+            "Le courant est uniquement dû à la charge capacitive de la double couche."
+        ],
+        "difficulty": 4,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "Le courant est le flux de charge traversant l'interface. Pour qu'il y ait conservation de la charge à l'interface, les électrons arrivant du circuit doivent être consommés (ou produits) par la réaction d'oxydoréduction : $i = n \\mathcal{F} \\frac{d\\xi}{dt}$.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q086",
+        "image_path": null,
+        "theme": "limitation par transfert de matière",
+        "question": "L'expression du courant limite est $i_{lim} = \\frac{n \\mathcal{F} S D}{\\delta} C_{sol}$. Quelle action expérimentale permet de diminuer l'épaisseur de la couche de diffusion $\\delta$ pour augmenter ce courant ?",
+        "answers": [
+            "Augmenter la surface $S$ de l'électrode.",
+            "Agiter vigoureusement la solution ou utiliser une électrode tournante pour renouveler la couche de diffusion.",
+            "Chauffer pour augmenter la constante de diffusion $D$.",
+            "Baisser la concentration en réactif."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "L'épaisseur $\\delta$ représente la couche limite de diffusion. En augmentant la convection (agitation), on réduit cette épaisseur $\\delta$, ce qui augmente le gradient de concentration et donc l'intensité limite $i_{lim}$.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q087",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Pour un système dit rapide, comment nomme-t-on le potentiel $E$ pour lequel le courant total est nul ($i=0$) en présence des deux formes Ox et Red ?",
+        "answers": [
+            "Potentiel de demi-vague.",
+            "Potentiel d'oxydation de l'eau.",
+            "Potentiel d'équilibre $E_{eq}$ (donné par la relation de Nernst).",
+            "Potentiel de corrosion."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Pour un système rapide, l'équilibre électrochimique est atteint quasi instantanément à l'interface. Le potentiel où $i=0$ correspond donc à l'équilibre thermodynamique, régi par l'équation de Nernst.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q088",
+        "image_path": null,
+        "theme": "systèmes rapides et lents",
+        "question": "Dans le contexte des courbes intensité-potentiel, comment qualifie-t-on le comportement du couple $H^+ / H_2$ sur une électrode de platine poli ?",
+        "answers": [
+            "Totalement inactif électrochimiquement.",
+            "Système lent, présentant des surtensions importantes.",
+            "Système rapide, caractérisé par une pente très forte au voisinage de $E_{eq}$.",
+            "Système dont le courant est indépendant du potentiel."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Le platine est un excellent catalyseur pour la réaction d'échange d'électrons du couple proton/dihydrogène. La courbe $i=f(E)$ est très raide autour du potentiel d'équilibre, ce qui est caractéristique d'un système rapide.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q089",
+        "image_path": null,
+        "theme": "multi-espèces",
+        "question": "La règle d'additivité des courants dans un système contenant plusieurs couples rédox suppose que :",
+        "answers": [
+            "L'intensité globale mesurée à un potentiel $E$ est la somme algébrique des intensités des réactions individuelles au même potentiel $E$.",
+            "Les courants se compensent pour annuler toute intensité.",
+            "Le potentiel est égal à la somme des potentiels de Nernst.",
+            "On ne peut mesurer que le courant du couple le plus abondant."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "explication": "L'additivité des courants est une conséquence de l'indépendance (en première approximation) des flux de charge liés à chaque couple rédox. À un potentiel donné, le courant total est la somme des courants cathodiques et anodiques partiels.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q090",
+        "image_path": null,
+        "theme": "blocage cinétique",
+        "question": "Pourquoi la corrosion du Fer métallique dans l'eau pure désaérée (pH 7) est-elle extrêmement lente alors que le bilan thermodynamique semble favorable ?",
+        "answers": [
+            "Car le Fer est thermodynamiquement stable face à l'eau.",
+            "Car la surtension cathodique de réduction de l'eau sur le fer est très élevée, décalant le potentiel mixte vers une zone de courant quasi-nul.",
+            "Car l'eau pure n'est pas conductrice.",
+            "Car le Fer forme instantanément un gaz protecteur."
+        ],
+        "difficulty": 4,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "Le blocage est purement cinétique : la réduction de $H_2O$ sur le fer nécessite une très forte surtension. Le potentiel mixte (intersection des deux courbes) se situe dans une zone où le courant est négligeable, bloquant la corrosion malgré la thermodynamique favorable.",
+        "subject": "chimie"
+    },
+    {
+        "uuid": "q091",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Dans le cadre de l'étude d'une électrolyse d'une solution aqueuse de chlorure de sodium, l'oxydation de l'ion chlorure $Cl^-$ en dichlore $Cl_2$ présente un palier de diffusion. Jusqu'à quel potentiel ce palier se maintient-il ?",
+        "answers": [
+            "Jusqu'à épuisement total du solvant dans le bécher.",
+            "Le palier se poursuit indéfiniment sans variation de courant.",
+            "Le palier se poursuit jusqu'à rencontrer le « mur du solvant » (oxydation massive de l'eau).",
+            "Jusqu'à ce que le potentiel atteigne une valeur arbitraire de $E = 5 \\text{ V}$."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Le palier de diffusion correspond au courant limite $i_{lim}$ où la concentration en espèce électroactive est nulle à la surface de l'électrode. Ce palier est interrompu lorsque le potentiel devient suffisamment positif pour provoquer la réaction d'oxydation du solvant (l'eau), phénomène appelé « mur du solvant », qui fait croître brutalement l'intensité."
+    },
+    {
+        "uuid": "q092",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors de l'établissement du diagramme de Pourbaix ou de l'application de la loi de Nernst à une électrode métallique, quelle est l'activité thermodynamique $a$ d'un solide pur (ex: $Fe_{(s)}$) ?",
+        "answers": [
+            "$a = 0$, car le solide ne participe pas à la réaction.",
+            "Elle dépend de la masse du métal plongé dans la solution.",
+            "$a = 1$, par convention pour un corps pur solide dans son état standard.",
+            "Elle est proportionnelle à la surface active $S$ de l'électrode."
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Par définition de l'état standard thermodynamique, l'activité d'un corps pur solide ou liquide (dans les conditions standards) est égale à $1$. Elle ne dépend pas de la quantité de matière présente tant que la phase solide est existante."
+    },
+    {
+        "uuid": "q093",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Dans le cadre de l'étude d'une électrode à disque tournant, si un étudiant double la concentration des ions $Fe^{3+}$ dans sa solution (passant de $0,1 \\text{ mol.L}^{-1}$ à $0,2 \\text{ mol.L}^{-1}$), que devient la valeur du courant limite cathodique $i_{lim}$ ?",
+        "answers": [
+            "Il est divisé par deux.",
+            "Il reste identique car la diffusion ne dépend que du solvant.",
+            "Il est doublé, car le courant limite est proportionnel à la concentration en espèce électroactive.",
+            "Il devient positif, traduisant un changement de polarité."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Le courant limite de diffusion est donné par la relation $i_{lim} = n F A D \\frac{C^0}{\\delta}$, où $\\delta$ est l'épaisseur de la couche de diffusion de Nernst. Comme $i_{lim}$ est proportionnel à la concentration $C^0$, doubler $C^0$ entraîne nécessairement le doublement de $i_{lim}$."
+    },
+    {
+        "uuid": "q094",
+        "image_path": null,
+        "theme": "cinétique électrochimique",
+        "question": "Par analogie entre la cinétique chimique et l'électrochimie, l'intensité $i$ mesurée à la surface d'une électrode est l'équivalent de quelle grandeur en cinétique homogène ?",
+        "answers": [
+            "La température de la réaction ($T$).",
+            "L'enthalpie libre de réaction ($\\Delta_r G$).",
+            "La vitesse de réaction ($v = \\frac{d\\xi}{dt}$), car $i$ est proportionnel au flux d'électrons.",
+            "La constante d'équilibre ($K$)."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Le courant électrique $i$ représente un flux de charge par unité de temps, ce qui est directement relié au nombre de moles d'électrons échangés par seconde. Puisque $i = n F v$ (où $v$ est la vitesse de transformation), l'intensité est l'image directe de la vitesse de la réaction hétérogène."
+    },
+    {
+        "uuid": "q095",
+        "image_path": null,
+        "theme": "réactions d'oxydoréduction",
+        "question": "Dans l'écriture d'une demi-équation rédox $Ox + n e^- = Red$, que représente le coefficient $n$ ?",
+        "answers": [
+            "Le nombre de moles du produit, indépendant des électrons.",
+            "La charge électrique élémentaire du métal.",
+            "Le nombre stœchiométrique d'électrons échangés lors de la réaction.",
+            "L'activité thermodynamique de l'oxydant en solution."
+        ],
+        "difficulty": 1,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 2,
+        "explication": "Dans la nomenclature des demi-équations, $n$ est le nombre d'électrons nécessaires pour réduire une mole d'oxydant en une mole de réducteur. Il est indispensable à l'équilibre des charges et à la relation de Nernst."
+    },
+    {
+        "uuid": "q096",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour le couple gazeux $O_2 / H_2O$ à température ambiante, quelle est la relation de Nernst correcte (en prenant $0,06 \\approx \\frac{RT \\ln(10)}{F}$) ?",
+        "answers": [
+            "$E = E^\\circ(O_2/H_2O) - 0,06 \\cdot pH + \\frac{0,06}{4} \\log(p_{O_2})$",
+            "$E = E^\\circ(O_2/H_2O) - 0,06 \\cdot pH$",
+            "$E = E^\\circ + 0,03 \\log(p_{O_2})$",
+            "$E = 1,23 \\text{ V}$, valeur constante quel que soit le pH."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "explication": "La demi-équation est $O_2 + 4H^+ + 4e^- = 2H_2O$. La loi de Nernst donne $E = E^\\circ + \\frac{0,06}{4} \\log(p_{O_2} \\cdot [H^+]^4)$. En utilisant $-\\log[H^+] = pH$, on obtient le terme $-0,06 \\cdot pH$."
+    },
+    {
+        "uuid": "q097",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Dans le cadre de l'étalonnage des potentiels en électrochimie, que signifie l'abréviation ENH fréquemment utilisée sur les axes des abscisses ?",
+        "answers": [
+            "Énergie Nette de l'Hydrogène, mesurée en Joules.",
+            "Électrode Normale à Hydrogène, servant d'électrode de référence fixée par convention à $0 \\text{ V}$.",
+            "Électrode Négative Haute, utilisée pour les hautes tensions.",
+            "Enregistrement Numérique Harmonique des courants alternatifs."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 1,
+        "explication": "L'ENH est l'électrode de référence primaire. Par convention internationale, le potentiel du couple $H^+/H_2$ est nul à toute température lorsque les activités sont unitaires et la pression est $1 \\text{ bar}$."
+    },
+    {
+        "uuid": "q098",
+        "image_path": null,
+        "theme": "transport de matière",
+        "question": "Lorsqu'on étudie l'électrolyse en régime stationnaire, on modélise le profil de concentration des espèces proches de l'électrode par une droite. Comment appelle-t-on la zone de diffusion associée ?",
+        "answers": [
+            "Couche limite de Nernst, d'épaisseur $\\delta$.",
+            "Couche de Boltzmann, liée à la distribution des ions dans le champ électrique.",
+            "Surface d'équipotentialité, zone de potentiel constant.",
+            "Barrière de Coulomb, zone de répulsion entre ions."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "explication": "Le modèle de Nernst postule que le transport est gouverné par la diffusion dans une fine couche immobile de liquide d'épaisseur $\\delta$ (la couche de Nernst), tandis que la convection maintient une concentration constante au-delà de cette zone."
+    },
+    {
+        "uuid": "q099",
+        "image_path": null,
+        "theme": "conventions",
+        "question": "Dans le cadre d'une électrolyse imposée par un générateur, quel est le rôle du pôle positif du générateur relié à l'anode ?",
+        "answers": [
+            "Il pompe les électrons de l'électrode, imposant un potentiel élevé et forçant l'oxydation.",
+            "Il pousse les électrons dans l'électrode, forçant une réaction de réduction.",
+            "Il ne joue aucun rôle physique, seul le pôle négatif influence la réaction.",
+            "Il neutralise la solution en attirant les anions."
+        ],
+        "difficulty": 3,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "explication": "Le pôle positif du générateur impose un potentiel électrique élevé à l'électrode connectée (l'anode). Cela force les espèces présentes à céder leurs électrons (oxydation) vers l'anode, électrons qui sont ensuite aspirés par le générateur."
+    },
+    {
+        "uuid": "q100",
+        "image_path": null,
+        "theme": "courbes i-E",
+        "question": "Pourquoi, lors de l'étude de la réduction des ions $Ag^+$ en argent métallique, la courbe est-elle tracée dans le quadrant où l'intensité $i < 0$ ?",
+        "answers": [
+            "Par convention, les courants cathodiques (réduction) sont comptés négativement.",
+            "Parce que le potentiel de réduction de $Ag^+$ est toujours négatif.",
+            "Parce que les ions argent sont de charge positive, inversant le sens du courant.",
+            "L'argent précipite, ce qui annule toute possibilité de courant positif."
+        ],
+        "difficulty": 2,
+        "chapter": "Electrochimie",
+        "correct_answer_index": 0,
+        "explication": "En électrochimie, la convention européenne (utilisée en prépa) impose que les courants de réduction (courants cathodiques) soient comptés comme négatifs, tandis que les courants d'oxydation (courants anodiques) sont comptés positivement."
+    }
+]

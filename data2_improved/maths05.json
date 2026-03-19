@@ -1,0 +1,1512 @@
+[
+    {
+        "uuid": "7a1b2c3d-01",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Dans le cadre de l'analyse réelle, soit $f: A \\subset E \\to F$. Quelle est la définition formelle du fait que « $f$ tend vers $l \\in F$ quand $x$ tend vers $a \\in \\overline{A}$ » ?",
+        "answers": [
+            "$\\forall \\epsilon > 0, \\exists \\alpha > 0, \\forall x \\in A, ||x-a|| \\le \\alpha \\Rightarrow ||f(x)-l|| \\le \\epsilon$",
+            "$\\forall \\epsilon > 0, \\exists \\alpha > 0, \\forall x \\in A \\setminus \\{a\\}, ||x-a|| \\le \\alpha \\Rightarrow ||f(x)-l|| \\le \\epsilon$",
+            "$\\exists \\alpha > 0, \\forall \\epsilon > 0, \\forall x \\in A, ||x-a|| \\le \\alpha \\Rightarrow ||f(x)-l|| \\le \\epsilon$",
+            "$\\forall \\epsilon > 0, \\forall \\alpha > 0, \\forall x \\in A, ||x-a|| \\le \\alpha \\Rightarrow ||f(x)-l|| \\le \\epsilon$"
+        ],
+        "difficulty": 1,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 1,
+        "explication": "La définition formelle de la limite repose sur le quantificateur $\\forall \\epsilon, \\exists \\alpha$. Le point crucial est que $x$ doit être proche de $a$, mais n'a pas besoin d'être égal à $a$ (on travaille sur $A \\setminus \\{a\\}$ ou en excluant $a$ si nécessaire), car la limite en $a$ ne dépend pas de la valeur en $a$."
+    },
+    {
+        "uuid": "7a1b2c3d-02",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "D'après la caractérisation séquentielle de la limite (théorème de Heine), $f \\to l$ en $a$ si et seulement si :",
+        "answers": [
+            "Pour toute suite $(u_n)$ de $A \\setminus \\{a\\}$ tendant vers $a$, la suite $(f(u_n))$ tend vers $l$.",
+            "Il existe une suite $(u_n)$ de $A$ tendant vers $a$ telle que $(f(u_n))$ tende vers $l$.",
+            "Pour toute suite $(u_n)$ telle que $(f(u_n))$ converge vers $l$, alors $(u_n)$ tend vers $a$.",
+            "La suite $(f(u_n))$ converge pour toute suite $(u_n)$ de $A$ tendant vers $a$."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "explication": "La caractérisation séquentielle est un outil fondamental. La condition $\\forall (u_n)$ est indispensable : une seule suite ne suffit pas pour définir une limite, cela ne prouverait que la continuité le long de cette trajectoire spécifique."
+    },
+    {
+        "uuid": "7a1b2c3d-03",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Si $f$ admet une limite $l$ en $a \\in \\overline{A}$, que peut-on dire de $l$ par rapport à l'ensemble image $f(A)$ ?",
+        "answers": [
+            "$l \\in f(A)$",
+            "$l \\in \\overline{f(A)}$",
+            "$l$ est un point isolé de $f(A)$",
+            "$l$ ne peut pas appartenir à $\\overline{f(A)}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 1,
+        "explication": "Par définition de l'adhérence d'un ensemble, $l$ est adhérent à $f(A)$ si toute boule centrée en $l$ contient au moins un point de $f(A)$. Comme $f(x)$ s'approche arbitrairement de $l$ lorsque $x$ s'approche de $a$, cette condition est vérifiée."
+    },
+    {
+        "uuid": "7a1b2c3d-04",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Soit $f: A \\to F$ continue en $a \\in A$. Si $(u_n)$ est une suite d'éléments de $A$ qui converge vers $a$, alors :",
+        "answers": [
+            "La suite $(f(u_n))$ converge nécessairement vers $f(a)$.",
+            "La suite $(f(u_n))$ est bornée mais ne converge pas nécessairement.",
+            "La suite $(f(u_n))$ converge vers une limite $l$ différente de $f(a)$.",
+            "La suite $(f(u_n))$ diverge car $f$ est seulement continue."
+        ],
+        "difficulty": 1,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "explication": "C'est la définition même de la continuité séquentielle : une fonction est continue en $a$ si et seulement si pour toute suite $(u_n)$ convergeant vers $a$, $(f(u_n))$ converge vers $f(a)$."
+    },
+    {
+        "uuid": "7a1b2c3d-05",
+        "image_path": null,
+        "theme": "Prolongement par continuité",
+        "question": "Soit $f: A \\to F$ et $a \\in \\overline{A} \\setminus A$. Si $f$ admet une limite $l$ en $a$, le prolongement $\\tilde{f}$ est défini par :",
+        "answers": [
+            "$\\tilde{f}(x) = f(x)$ si $x \\in A$ et $\\tilde{f}(a) = l$",
+            "$\\tilde{f}(x) = l$ pour tout $x \\in A \\cup \\{a\\}$",
+            "$\\tilde{f}(x) = f(x) - l$ pour $x \\in A$",
+            "$\\tilde{f}(a) = 0$ et $\\tilde{f}(x) = f(x)$ ailleurs"
+        ],
+        "difficulty": 1,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "explication": "Le prolongement par continuité consiste à combler le « trou » en $a$ en posant la valeur de la fonction égale à la limite calculée en ce point, assurant ainsi que $\\tilde{f}$ est continue sur $A \\cup \\{a\\}$."
+    },
+    {
+        "uuid": "7a1b2c3d-06",
+        "image_path": null,
+        "theme": "Opérations",
+        "question": "Soit $f, g: A \\to \\mathbb{K}$ deux fonctions continues en $a$. Laquelle de ces opérations ne garantit PAS nécessairement la continuité en $a$ sans condition supplémentaire ?",
+        "answers": [
+            "$f+g$",
+            "$f \\times g$",
+            "$f/g$",
+            "$|f|$"
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 2,
+        "explication": "Le quotient $f/g$ n'est défini et continu en $a$ que si $g(a) \\neq 0$. Si $g(a) = 0$, le quotient peut ne pas être défini en $a$, ou présenter une singularité."
+    },
+    {
+        "uuid": "7a1b2c3d-07",
+        "image_path": null,
+        "theme": "Opérations",
+        "question": "Pour que $1/f$ soit définie et continue en $a$, quelle condition est nécessaire en plus de la continuité de $f$ en $a$ ?",
+        "answers": [
+            "$f(a) \\neq 0$",
+            "$f(x) > 0$ sur un voisinage de $a$",
+            "$f$ doit être strictement monotone",
+            "$|f(a)| \\ge 1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "explication": "La continuité du quotient (ou de l'inverse) exige que le dénominateur soit non nul. Si $f(a) \\neq 0$ et que $f$ est continue, alors $f$ ne s'annule pas sur un voisinage de $a$, assurant la continuité de $1/f$ sur ce voisinage."
+    },
+    {
+        "uuid": "7a1b2c3d-08",
+        "image_path": null,
+        "theme": "Composition",
+        "question": "Soit $f: A \\to B$ et $g: B \\to G$. Si $f$ admet une limite $b$ en $a$ et $g$ est continue en $b$, alors :",
+        "answers": [
+            "$g \\circ f$ admet une limite $g(b)$ en $a$",
+            "$g \\circ f$ admet une limite $b$ en $a$",
+            "$g \\circ f$ est continue en $a$ quelque soit $f$",
+            "$g \\circ f$ admet une limite $l$ en $b$"
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "explication": "Théorème de composition des limites : si $\\lim_{x \\to a} f(x) = b$ et si $g$ est continue en $b$, alors $\\lim_{x \\to a} g(f(x)) = g(b)$. La continuité de $g$ est requise ici."
+    },
+    {
+        "uuid": "7a1b2c3d-09",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Une application linéaire $u \\in \\mathcal{L}(E,F)$ entre deux espaces vectoriels normés est continue sur $E$ si et seulement si :",
+        "answers": [
+            "Elle est continue en $0_E$.",
+            "Elle est injective.",
+            "L'espace $E$ est de dimension finie.",
+            "La boule unité est transformée en une boule unité."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "explication": "Pour une application linéaire, la continuité est une propriété globale. Si elle est continue en un point, elle est continue partout. En particulier, la continuité en $0$ implique que $||u(x)|| \\le k||x||$ pour un certain $k$, ce qui est la définition de la continuité linéaire."
+    },
+    {
+        "uuid": "7a1b2c3d-10",
+        "image_path": null,
+        "theme": "Lipschitz",
+        "question": "Quelle est la définition mathématique rigoureuse d'une application $f: A \\to F$ qui est $k$-lipschitzienne ?",
+        "answers": [
+            "$\\forall(x,y) \\in A^2, ||f(x)-f(y)|| \\le k||x-y||$",
+            "$\\exists k > 0, \\forall(x,y) \\in A^2, ||f(x)-f(y)|| \\le k||x-y||$",
+            "$\\forall(x,y) \\in A^2, ||f(x)-f(y)|| < k||x-y||$",
+            "$\\forall x \\in A, \\exists k > 0, ||f(x)|| \\le k||x||$"
+        ],
+        "difficulty": 1,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "explication": "Une fonction est $k$-lipschitzienne si le rapport de la distance des images à la distance des antécédents est majoré par une constante $k$. La réponse 1 est la définition standard avec $k$ fixé."
+    },
+    {
+        "uuid": "7a1b2c3d-11",
+        "image_path": null,
+        "theme": "Lipschitz",
+        "question": "Toute application lipschitzienne est :",
+        "answers": [
+            "Continue.",
+            "Dérivable.",
+            "Bornée."
+        ],
+        "difficulty": 1,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-12",
+        "image_path": null,
+        "theme": "Lipschitz",
+        "question": "La fonction $x \\mapsto ||x||$ est :",
+        "answers": [
+            "1-lipschitzienne.",
+            "2-lipschitzienne mais pas 1-lipschitzienne.",
+            "Non continue en 0."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-13",
+        "image_path": null,
+        "theme": "Lipschitz",
+        "question": "Soit $y \\in E$. L'application $d_y: x \\mapsto d(x,y)$ est :",
+        "answers": [
+            "1-lipschitzienne.",
+            "Uniformément continue mais pas lipschitzienne.",
+            "Linéaire."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-14",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Soit $f$ une application continue. L'image réciproque d'un ouvert par $f$ est :",
+        "answers": [
+            "Un ouvert.",
+            "Un fermé.",
+            "Un ensemble compact."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-15",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Soit $f$ une application continue. L'image réciproque d'un fermé par $f$ est :",
+        "answers": [
+            "Un fermé.",
+            "Un ouvert.",
+            "On ne peut pas conclure sans hypothèse de compacité."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-16",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Pour démontrer qu'une boule ouverte $B(a,r)$ est un ouvert, on peut utiliser la continuité de quelle fonction ?",
+        "answers": [
+            "$x \\mapsto d(x,a)$",
+            "$x \\mapsto ||x||^2$",
+            "$x \\mapsto x-a$"
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-17",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "L'ensemble $GL_n(\\mathbb{K})$ est un ouvert de $M_n(\\mathbb{K})$ car :",
+        "answers": [
+            "C'est l'image réciproque de $\\mathbb{K}^*$ par l'application déterminant (qui est continue).",
+            "C'est un sous-espace vectoriel de dimension finie.",
+            "Toute matrice inversible est isolée."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-18",
+        "image_path": null,
+        "theme": "Dimension finie",
+        "question": "Dans un espace de dimension finie, une application est continue si et seulement si :",
+        "answers": [
+            "Ses applications composantes dans une base sont continues.",
+            "Elle est bornée sur tout ouvert.",
+            "Elle est lipschitzienne."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-19",
+        "image_path": null,
+        "theme": "Bornes atteintes",
+        "question": "Le théorème des bornes atteintes stipule qu'une fonction continue sur un ensemble $A$ est bornée et atteint ses bornes si $A$ est :",
+        "answers": [
+            "Fermé et borné (en dimension finie).",
+            "Ouvert et borné.",
+            "Uniquement fermé."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-20",
+        "image_path": null,
+        "theme": "Dimension finie",
+        "question": "Si $E$ est de dimension finie, toute application linéaire $f: E \to F$ est :",
+        "answers": [
+            "Nécessairement continue.",
+            "Continue seulement si $F$ est aussi de dimension finie.",
+            "Continue seulement si elle est bijective."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-21",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Soit $F$ un sous-espace vectoriel d'un espace $E$ de dimension finie. $F$ est nécessairement :",
+        "answers": [
+            "Un fermé de $E$.",
+            "Un ouvert de $E$.",
+            "Dense dans $E$."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-22",
+        "image_path": null,
+        "theme": "Dimension infinie",
+        "question": "Dans l'exercice 52, pour $E = \\mathcal{C}([0,1], \\mathbb{R})$ muni de la norme $||.||_1$, l'application $\\varphi(f) = f(1)$ est :",
+        "answers": [
+            "Linéaire mais non continue.",
+            "Linéaire et continue.",
+            "Lipschitzienne."
+        ],
+        "difficulty": 4,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-23",
+        "image_path": null,
+        "theme": "Applications polynomiales",
+        "question": "Toute application polynomiale sur un espace de dimension finie est :",
+        "answers": [
+            "Continue.",
+            "Bornée.",
+            "Injective."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-24",
+        "image_path": null,
+        "theme": "Applications multilinéaires",
+        "question": "Une application $p$-linéaire définie sur un produit d'espaces de dimensions finies est :",
+        "answers": [
+            "Toujours continue.",
+            "Continue si et seulement si elle est symétrique.",
+            "Jamais continue si $p > 2$."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-25",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "L'application $M \\mapsto M^k$ (pour $k \\in \\mathbb{N}^*$) sur $M_n(\\mathbb{K})$ est :",
+        "answers": [
+            "Continue.",
+            "Linéaire.",
+            "Lipschitzienne sur $M_n(\\mathbb{K})$ tout entier."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-26",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "L'application déterminant est continue car :",
+        "answers": [
+            "C'est une application polynomiale des coefficients de la matrice.",
+            "C'est une application linéaire.",
+            "L'image de toute matrice par le déterminant est bornée."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-27",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Soit $A$ une partie dense dans $E$ et $f, g$ deux fonctions continues sur $E$. Si $f$ et $g$ coïncident sur $A$, alors :",
+        "answers": [
+            "$f = g$ sur $E$.",
+            "$f = g$ uniquement sur $A$.",
+            "On ne peut rien conclure sur $E \\setminus A$."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-28",
+        "image_path": null,
+        "theme": "Linéarité",
+        "question": "Soit $f: E \to \\mathbb{R}$ continue vérifiant $f(x+y) = f(x) + f(y)$. Alors $f$ est :",
+        "answers": [
+            "Linéaire.",
+            "Polynomiale de degré 2.",
+            "Constante."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-29",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Sur $E = \\mathcal{C}^\\infty([0,1], \\mathbb{K})$ muni de la norme infinie, l'opérateur de dérivation $D: f \\mapsto f'$ :",
+        "answers": [
+            "N'est pas continu.",
+            "Est 1-lipschitzien.",
+            "Est continu car il est linéaire."
+        ],
+        "difficulty": 4,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-30",
+        "image_path": null,
+        "theme": "Applications linéaires",
+        "question": "Une application linéaire $u$ est continue ssi elle est bornée sur :",
+        "answers": [
+            "La boule unité fermée.",
+            "L'espace $E$ tout entier.",
+            "Tout ouvert contenant l'origine."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-31",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Soit $A \\subset E$ un fermé non vide. $d(x,A) = 0$ si et seulement si :",
+        "answers": [
+            "$x \\in A$",
+            "$x \\in \\text{Int}(A)$",
+            "$x$ est l'origine."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-32",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Une fonction $f$ est continue si et seulement si pour toute partie $A$ de $E$ :",
+        "answers": [
+            "$f(\\overline{A}) \\subset \\overline{f(A)}$",
+            "$\\overline{f(A)} \\subset f(\\overline{A})$",
+            "$f(A)$ est dense dans $f(E)$."
+        ],
+        "difficulty": 4,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-33",
+        "image_path": null,
+        "theme": "Continuité multidimensionnelle",
+        "question": "Si $f(x,y)$ est continue en $(a,b)$, alors les fonctions partielles $f_a: y \\mapsto f(a,y)$ et $f_b: x \\mapsto f(x,b)$ sont :",
+        "answers": [
+            "Continues respectivement en $b$ et $a$.",
+            "Pas nécessairement continues.",
+            "Lipschitziennes."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-34",
+        "image_path": null,
+        "theme": "Continuité multidimensionnelle",
+        "question": "La continuité des fonctions partielles $x \\mapsto f(x,y)$ et $y \\mapsto f(x,y)$ en un point :",
+        "answers": [
+            "N'implique pas la continuité de $f$ en ce point.",
+            "Implique la continuité de $f$ en ce point.",
+            "Implique que $f$ est différentiable."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-35",
+        "image_path": null,
+        "theme": "Point fixe",
+        "question": "Soit $A$ compact et $f: A \to A$ telle que $||f(x)-f(y)|| < ||x-y||$ pour $x \\neq y$. Alors $f$ admet :",
+        "answers": [
+            "Un unique point fixe.",
+            "Au moins deux points fixes.",
+            "Aucun point fixe n'est garanti."
+        ],
+        "difficulty": 4,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-36",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "L'ensemble $\\mathcal{O}_n(\\mathbb{R})$ des matrices orthogonales est :",
+        "answers": [
+            "Un fermé borné de $M_n(\\mathbb{R})$.",
+            "Un ouvert borné de $M_n(\\mathbb{R})$.",
+            "Un sous-espace vectoriel de $M_n(\\mathbb{R})$."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-37",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "L'ensemble des matrices de rang $\\le r$ est :",
+        "answers": [
+            "Un fermé de $M_n(\\mathbb{K})$.",
+            "Un ouvert de $M_n(\\mathbb{K})$.",
+            "Dense dans $M_n(\\mathbb{K})$."
+        ],
+        "difficulty": 4,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-38",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "Dans $M_n(\\mathbb{C})$, l'ensemble des matrices diagonalisables est :",
+        "answers": [
+            "Dense.",
+            "Fermé.",
+            "Ouvert."
+        ],
+        "difficulty": 4,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-39",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "Dans $M_n(\\mathbb{R})$, l'adhérence de l'ensemble des matrices diagonalisables est :",
+        "answers": [
+            "L'ensemble des matrices trigonalisables.",
+            "L'ensemble des matrices symétriques.",
+            "$M_n(\\mathbb{R})$ tout entier."
+        ],
+        "difficulty": 5,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-40",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "L'orbite de similitude $S(A) = \\{P^{-1}AP, P \\in GL_n(\\mathbb{C})\\}$ est un fermé si et seulement si :",
+        "answers": [
+            "$A$ est diagonalisable.",
+            "$A$ est inversible.",
+            "$A$ est nilpotente."
+        ],
+        "difficulty": 5,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-41",
+        "image_path": null,
+        "theme": "Normes",
+        "question": "Pour $u \\in \\mathcal{L}(\\mathbb{R}^n)$ et $||x||_\\infty = \\max |x_i|$, la constante optimale $k$ telle que $||u(x)||_\\infty \\le k||x||_\\infty$ est :",
+        "answers": [
+            "$\\max_i \\sum_j |a_{ij}|$",
+            "$\\max_j \\sum_i |a_{ij}|$",
+            "$\\sqrt{\\sum a_{ij}^2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-42",
+        "image_path": null,
+        "theme": "Densité",
+        "question": "Si $GL_n(\\mathbb{K})$ est dense dans $M_n(\\mathbb{K})$, quelle relation sur le polynôme caractéristique peut-on étendre par continuité ?",
+        "answers": [
+            "$\\chi_{AB} = \\chi_{BA}$",
+            "$\\chi_{A+B} = \\chi_A + \\chi_B$",
+            "$\\chi_{A^k} = (\\chi_A)^k$"
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-43",
+        "image_path": null,
+        "theme": "Bornes atteintes",
+        "question": "Sur $E = \\mathcal{C}([0,1], \\mathbb{R})$ avec la norme infinie, l'application $\\varphi(f) = \\int_0^1 f$ sur $A = \\{f, f(0)=0, ||f||_\\infty \\le 1\\}$ :",
+        "answers": [
+            "N'atteint pas sa borne supérieure.",
+            "Atteint son maximum en $f(t)=1$.",
+            "N'est pas majorée."
+        ],
+        "difficulty": 4,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-44",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Si $f(x) \\le g(x) \\le h(x)$ et $f, h$ tendent vers $l$ en $a$, alors $g \\to l$. C'est le théorème :",
+        "answers": [
+            "Des gendarmes (ou d'encadrement).",
+            "De Bolzano-Weierstrass.",
+            "De Heine."
+        ],
+        "difficulty": 1,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-45",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Si $f: A \\to F$ est continue en $a$, alors il existe un voisinage de $a$ sur lequel $f$ est :",
+        "answers": [
+            "Bornée.",
+            "Strictement positive.",
+            "Injective."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-46",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "L'image directe d'un ouvert par une application continue est :",
+        "answers": [
+            "Pas nécessairement un ouvert.",
+            "Toujours un ouvert.",
+            "Un fermé."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-47",
+        "image_path": null,
+        "theme": "Lipschitz",
+        "question": "Le produit de deux fonctions lipschitziennes sur un intervalle $I$ est lipschitzien si :",
+        "answers": [
+            "Les deux fonctions sont bornées.",
+            "L'une des deux est constante.",
+            "C'est toujours vrai sans condition."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-48",
+        "image_path": null,
+        "theme": "Dimension finie",
+        "question": "Quelle application n'est PAS nécessairement continue sur $M_n(\\mathbb{R})$ ?",
+        "answers": [
+            "$M \\mapsto M^{-1}$",
+            "$M \\mapsto \\text{Tr}(M)$",
+            "$M \\mapsto M^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-49",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Si $f: E \\to F$ est continue et $K \\subset E$ est compact, alors $f(K)$ est :",
+        "answers": [
+            "Compact.",
+            "Ouvert.",
+            "Un sous-espace vectoriel."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-50",
+        "image_path": null,
+        "theme": "Unicité",
+        "question": "La limite d'une application en un point, si elle existe, est :",
+        "answers": [
+            "Unique.",
+            "Dépendante de la norme choisie.",
+            "Unique seulement en dimension finie."
+        ],
+        "difficulty": 1,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-51",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Soit $f: A \\to F$ continue en $a$. Pour $\\epsilon = 1$, il existe $\\alpha > 0$ tel que pour tout $x \\in A \\cap B(a, \\alpha)$ :",
+        "answers": [
+            "$||f(x)|| \\le ||f(a)|| + 1$",
+            "$||f(x)|| < 1$",
+            "$||f(x)|| = 1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-52",
+        "image_path": null,
+        "theme": "Composition",
+        "question": "La composée de deux applications lipschitziennes de rapports $k_1$ et $k_2$ est lipschitzienne de rapport :",
+        "answers": [
+            "$k_1 \\times k_2$",
+            "$k_1 + k_2$",
+            "$\\max(k_1, k_2)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-53",
+        "image_path": null,
+        "theme": "Caractérisation séquentielle",
+        "question": "Pour montrer que $f$ n'admet pas de limite en $a$, il suffit de trouver :",
+        "answers": [
+            "Deux suites $(u_n)$ et $(v_n)$ tendant vers $a$ telles que $(f(u_n))$ et $(f(v_n))$ ont des limites différentes.",
+            "Une suite $(u_n)$ tendant vers $a$ telle que $(f(u_n))$ est bornée.",
+            "Une suite $(u_n)$ ne tendant pas vers $a$ telle que $(f(u_n))$ diverge."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-54",
+        "image_path": null,
+        "theme": "Espaces vectoriels normés",
+        "question": "Deux normes équivalentes sur $E$ définissent :",
+        "answers": [
+            "Les mêmes applications continues.",
+            "Les mêmes applications linéaires.",
+            "Les mêmes applications polynomiales seulement."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-55",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "L'ensemble $\\{x \\in E, ||u(x)|| = 1\\}$ est fermé si :",
+        "answers": [
+            "$u$ est continue.",
+            "$u$ est injective.",
+            "C'est toujours vrai pour toute application $u$."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-56",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Si l'image réciproque de tout ouvert est un ouvert, alors $f$ est :",
+        "answers": [
+            "Continue.",
+            "Ouverte.",
+            "Bornée."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-57",
+        "image_path": null,
+        "theme": "Coercivité",
+        "question": "Si $\\forall a \\in \\mathbb{R}, \\exists R>0, ||(x,y)|| > R \\Rightarrow g(x,y) > a$, on dit que $g$ est :",
+        "answers": [
+            "Coercive (tend vers $+\\infty$ à l'infini).",
+            "Bornée inférieurement.",
+            "Uniformément continue."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-58",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "L'application qui à une matrice associe sa transposée est :",
+        "answers": [
+            "Continue.",
+            "Non linéaire.",
+            "Seulement continue en dimension 2."
+        ],
+        "difficulty": 1,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-59",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "L'ensemble des matrices de déterminant nul est :",
+        "answers": [
+            "Un fermé de $M_n(\\mathbb{K})$.",
+            "Un ouvert de $M_n(\\mathbb{K})$.",
+            "Dense dans $M_n(\\mathbb{K})$."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-60",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Si $f$ est continue sur $E$, alors $|f|$ est :",
+        "answers": [
+            "Continue sur $E$.",
+            "Dérivable sur $E$.",
+            "Lipschitzienne."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-61",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Pour étudier la limite de $f(x,y)$ en $(0,0)$, passer en coordonnées polaires $(r \\cos \\theta, r \\sin \\theta)$ permet de conclure à l'existence d'une limite si :",
+        "answers": [
+            "La limite en $r \\to 0$ est indépendante de $\\theta$.",
+            "La limite existe pour au moins une valeur de $\\theta$.",
+            "La fonction est bornée."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-62",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Le graphe d'une fonction continue $f: \\mathbb{R} \to \\mathbb{R}$ est :",
+        "answers": [
+            "Un fermé de $\\mathbb{R}^2$.",
+            "Un ouvert de $\\mathbb{R}^2$.",
+            "Une partie dense de $\\mathbb{R}^2$."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-63",
+        "image_path": null,
+        "theme": "Applications linéaires",
+        "question": "Soit $u \\in \\mathcal{L}(E,F)$. $u$ est continue si et seulement si :",
+        "answers": [
+            "$\\sup_{x \\neq 0} \\frac{||u(x)||}{||x||} < +\\infty$",
+            "$u$ est surjective.",
+            "$\\text{Ker}(u)$ est réduit à $\\{0\\}$."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-64",
+        "image_path": null,
+        "theme": "Polynômes de Lagrange",
+        "question": "L'application qui à une matrice associe son polynôme caractéristique est :",
+        "answers": [
+            "Continue.",
+            "Linéaire.",
+            "Constante."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-65",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Soit $f$ une fonction continue. Si $x_n \\to a$, alors toute valeur d'adhérence de $(f(x_n))$ est :",
+        "answers": [
+            "$f(a)$",
+            "Une limite quelconque.",
+            "Nulle."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-66",
+        "image_path": null,
+        "theme": "Dimension finie",
+        "question": "En dimension finie, toutes les normes sont équivalentes. Cela implique que :",
+        "answers": [
+            "La continuité d'une fonction ne dépend pas de la norme choisie.",
+            "Toute fonction continue est lipschitzienne.",
+            "Toute application linéaire est un isomorphisme."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-67",
+        "image_path": null,
+        "theme": "Lipschitz",
+        "question": "La fonction racine carrée $x \\mapsto \\sqrt{x}$ est :",
+        "answers": [
+            "Continue sur $[0, +\\infty[$ mais pas lipschitzienne au voisinage de 0.",
+            "Lipschitzienne sur $[0, +\\infty[$.",
+            "Non continue en 0."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-68",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "L'application $(A,B) \\mapsto AB$ est :",
+        "answers": [
+            "Bilinéaire donc continue en dimension finie.",
+            "Linéaire.",
+            "Continue uniquement si $A$ et $B$ commutent."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-69",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Si $f: E \\to \\mathbb{R}$ est continue, alors $\\{x \\in E, f(x) > 0\\}$ est :",
+        "answers": [
+            "Un ouvert.",
+            "Un fermé.",
+            "Un compact."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-70",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Soit $f$ continue sur $A$. Si $B \\subset A$, alors la restriction $f_{|B}$ est :",
+        "answers": [
+            "Continue.",
+            "Lipschitzienne.",
+            "Uniformément continue."
+        ],
+        "difficulty": 1,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-71",
+        "image_path": null,
+        "theme": "Dimension finie",
+        "question": "Dans un evn de dimension finie, une partie est compacte si et seulement si elle est :",
+        "answers": [
+            "Fermée et bornée.",
+            "Ouverte et bornée.",
+            "Simplement bornée."
+        ],
+        "difficulty": 1,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-72",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "L'image par $f$ (continue) d'une partie dense est dense dans :",
+        "answers": [
+            "$f(A)$",
+            "L'espace d'arrivée $F$ tout entier.",
+            "L'intérieur de $f(A)$."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-73",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "L'ensemble des matrices de rang égal à $n$ (matrices inversibles) est :",
+        "answers": [
+            "Un ouvert.",
+            "Un fermé.",
+            "Un sous-espace vectoriel."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-74",
+        "image_path": null,
+        "theme": "Point fixe",
+        "question": "Dans l'exercice 11, la fonction auxiliaire utilisée pour prouver l'existence d'un point fixe est :",
+        "answers": [
+            "$\\phi(x) = ||f(x)-x||$",
+            "$\\phi(x) = f(x) + x$",
+            "$\\phi(x) = ||f(x)||^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-75",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "L'adhérence de $S(A)$ (orbite de similitude) contient toujours :",
+        "answers": [
+            "Au moins une matrice diagonale.",
+            "L'identité.",
+            "La matrice nulle."
+        ],
+        "difficulty": 5,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-76",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Si $f$ est une application continue de $E$ dans $F$, que peut-on dire de $f^{-1}(F \\setminus \\{0\\})$ ?",
+        "answers": [
+            "C'est un ouvert.",
+            "C'est un fermé.",
+            "C'est un compact."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-77",
+        "image_path": null,
+        "theme": "Coercivité",
+        "question": "Une fonction continue et coercive sur $\\mathbb{R}^n$ :",
+        "answers": [
+            "Admet un minimum global.",
+            "Est nécessairement bornée.",
+            "Admet un maximum global."
+        ],
+        "difficulty": 4,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-78",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "L'ensemble $\\{ (x,y) \\in \\mathbb{R}^2, x^2 + y^2 \\le 1 \\}$ est :",
+        "answers": [
+            "Fermé car c'est l'image réciproque de $[0, 1]$ par $(x,y) \\mapsto x^2+y^2$.",
+            "Ouvert car c'est une boule.",
+            "Ni ouvert ni fermé."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-79",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Une application linéaire en dimension infinie :",
+        "answers": [
+            "Peut être discontinue.",
+            "Est toujours continue.",
+            "Est toujours lipschitzienne."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-80",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "L'ensemble des matrices de trace nulle est un fermé car :",
+        "answers": [
+            "C'est le noyau d'une forme linéaire continue.",
+            "Toute matrice de trace nulle est limite de matrices inversibles.",
+            "C'est un ouvert."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-81",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Si $f$ est continue en $a$, alors $||f||$ est :",
+        "answers": [
+            "Continue en $a$.",
+            "Nécessairement nulle en $a$.",
+            "Constante au voisinage de $a$."
+        ],
+        "difficulty": 1,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-82",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Pour tout $A \\subset E$, $d(x, A)$ est une fonction :",
+        "answers": [
+            "Uniformément continue.",
+            "Linéaire.",
+            "Discontinue sur la frontière de $A$."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-83",
+        "image_path": null,
+        "theme": "Dimension finie",
+        "question": "L'application $(f, x) \\mapsto f(x)$ définie sur $\\mathcal{L}(E,F) \\times E$ est :",
+        "answers": [
+            "Continue si $E$ est de dimension finie.",
+            "Linéaire par rapport au couple $(f,x)$.",
+            "Toujours discontinue."
+        ],
+        "difficulty": 4,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-84",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "L'inverse d'une matrice $M \\mapsto M^{-1}$ est continue sur :",
+        "answers": [
+            "$GL_n(\\mathbb{K})$",
+            "$M_n(\\mathbb{K})$ tout entier.",
+            "Uniquement les matrices diagonales."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-85",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Si $f(x,y) = \\frac{xy}{x^2+y^2}$ pour $(x,y) \\neq (0,0)$ et $f(0,0)=0$, alors :",
+        "answers": [
+            "$f$ n'est pas continue en $(0,0)$.",
+            "$f$ est continue en $(0,0)$.",
+            "$f$ est lipschitzienne."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-86",
+        "image_path": null,
+        "theme": "Polynômes",
+        "question": "L'application $P \\mapsto P(M)$ où $P$ est un polynôme fixé est :",
+        "answers": [
+            "Continue.",
+            "Linéaire par rapport à $M$.",
+            "Lipschitzienne sur $M_n(\\mathbb{R})$."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-87",
+        "image_path": null,
+        "theme": "Lipschitz",
+        "question": "Si $f$ est $k$-lipschitzienne, alors pour toute suite $(u_n)$ convergente vers $l$ :",
+        "answers": [
+            "$||f(u_n) - f(l)|| \\le k ||u_n - l||$",
+            "$||f(u_n)|| = k ||u_n||$",
+            "$(f(u_n))$ est une suite divergente."
+        ],
+        "difficulty": 1,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-88",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Une boule fermée est un fermé car c'est l'image réciproque de $[0, r]$ par :",
+        "answers": [
+            "$x \\mapsto d(x, a)$",
+            "$x \\mapsto x-a$",
+            "$x \\mapsto ||x||^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-89",
+        "image_path": null,
+        "theme": "Caractérisation séquentielle",
+        "question": "Pour prouver la continuité de $f$ en $a$, il suffit de vérifier que pour TOUTE suite $(u_n) \\to a$ :",
+        "answers": [
+            "$f(u_n) \\to f(a)$",
+            "$(f(u_n))$ est bornée.",
+            "Il existe une sous-suite de $(f(u_n))$ qui converge vers $f(a)$."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-90",
+        "image_path": null,
+        "theme": "Bornes atteintes",
+        "question": "Une fonction continue sur un compact à valeurs dans $\\mathbb{R}$ est :",
+        "answers": [
+            "Bornée et atteint ses bornes.",
+            "Toujours positive.",
+            "Nécessairement injective."
+        ],
+        "difficulty": 1,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-91",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "L'ensemble des matrices symétriques est :",
+        "answers": [
+            "Un fermé de $M_n(\\mathbb{R})$.",
+            "Un ouvert de $M_n(\\mathbb{R})$.",
+            "Dense dans $M_n(\\mathbb{R})$."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-92",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Si $f: E \\to F$ est continue, alors l'image réciproque d'un ensemble compact est :",
+        "answers": [
+            "Fermée mais pas forcément compacte.",
+            "Toujours compacte.",
+            "Toujours ouverte."
+        ],
+        "difficulty": 4,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-93",
+        "image_path": null,
+        "theme": "Espaces vectoriels normés",
+        "question": "L'application $x \\mapsto ||x||$ est continue sur $E$ :",
+        "answers": [
+            "Quelle que soit la norme choisie.",
+            "Seulement pour la norme euclidienne.",
+            "Seulement en dimension finie."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-94",
+        "image_path": null,
+        "theme": "Limites",
+        "question": "Soit $B \\subset A$. Si $f$ admet une limite $l$ en $a \\in B$, alors la restriction $f_{|B}$ :",
+        "answers": [
+            "Admet la même limite $l$ en $a$.",
+            "N'admet pas forcément de limite.",
+            "Admet une limite différente."
+        ],
+        "difficulty": 1,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-95",
+        "image_path": null,
+        "theme": "Applications linéaires",
+        "question": "Soit $E$ un evn de dimension finie. Une forme linéaire $L: E \\to \\mathbb{K}$ est :",
+        "answers": [
+            "Toujours continue.",
+            "Continue ssi son noyau est fermé.",
+            "Jamais continue."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-96",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "L'ensemble $\\{ M \\in M_n(\\mathbb{R}), \\det(M) \\ge 1 \\}$ est :",
+        "answers": [
+            "Un fermé.",
+            "Un ouvert.",
+            "Un compact."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-97",
+        "image_path": null,
+        "theme": "Topologie",
+        "question": "Si $f(x) = d(x, A)$ avec $A$ fermé, alors $f(x) > 0$ si et seulement si :",
+        "answers": [
+            "$x \\notin A$",
+            "$x$ est à l'extérieur de la boule unité.",
+            "$A$ est vide."
+        ],
+        "difficulty": 2,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-98",
+        "image_path": null,
+        "theme": "Dimension finie",
+        "question": "La continuité d'une application multilinéaire en dimension finie se démontre par :",
+        "answers": [
+            "L'utilisation d'une base et le caractère polynomial des composantes.",
+            "Le théorème de Riesz.",
+            "La densité des fonctions en escalier."
+        ],
+        "difficulty": 4,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-99",
+        "image_path": null,
+        "theme": "Algèbre",
+        "question": "Si $A$ est dense dans $E$ et $f$ est continue, alors $f(A)$ est dense dans $f(E)$. Cela est utile pour :",
+        "answers": [
+            "Prolonger des identités algébriques (ex: $\\chi_{AB} = \\chi_{BA}$).",
+            "Calculer des intégrales impropres.",
+            "Montrer qu'une fonction est surjective."
+        ],
+        "difficulty": 3,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "7a1b2c3d-100",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "La fonction $g(x) = ||x||x$ est :",
+        "answers": [
+            "Continue sur $E$.",
+            "Linéaire.",
+            "Discontinue en 0."
+        ],
+        "difficulty": 1,
+        "chapter": "Etude locale d'une application, continuité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    }
+]

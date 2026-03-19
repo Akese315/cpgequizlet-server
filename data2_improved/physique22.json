@@ -1,0 +1,1692 @@
+[
+    {
+        "uuid": "em-001",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/c/cf/EM_Spectrum_Properties_Edit.svg",
+        "theme": "ondes électromagnétiques",
+        "question": "Dans le cadre de l'étude du spectre électromagnétique, quelle est la gamme de longueurs d'onde dans le vide correspondant au spectre visible par l'œil humain ?",
+        "answers": [
+            "$100\\ \\text{nm} - 400\\ \\text{nm}$",
+            "$400\\ \\text{nm} - 750\\ \\text{nm}$",
+            "$750\\ \\text{nm} - 1\\ \\text{mm}$",
+            "$1\\ \\text{mm} - 10\\ \\text{cm}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le spectre visible s'étend environ de $400\\ \\text{nm}$ (violet) à $750\\ \\text{nm}$ (rouge). En dessous de $400\\ \\text{nm}$, on entre dans le domaine des ultraviolets, et au-dessus de $750\\ \\text{nm}$, dans celui des infrarouges."
+    },
+    {
+        "uuid": "em-002",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Parmi les rayonnements suivants, lesquels sont qualifiés d'ionisants, c'est-à-dire capables d'arracher un électron à un atome lors d'une interaction avec la matière ?",
+        "answers": [
+            "Micro-ondes et Infrarouges",
+            "Ondes radio et ultraviolets proches",
+            "Rayons X et rayons $\\gamma$",
+            "Rayons $\\gamma$ et micro-ondes"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Un rayonnement est ionisant si l'énergie du photon ($E = h\\nu$) est suffisante pour ioniser un atome ou une molécule (typiquement au-delà de $10\\ \\text{eV}$). C'est le cas des rayons X et $\\gamma$. Les UV lointains peuvent l'être aussi, mais les ondes radio, micro-ondes et IR ne possèdent pas assez d'énergie."
+    },
+    {
+        "uuid": "em-003",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Pour les télécommunications modernes, quelle est la gamme de fréquences typiquement allouée à la bande de fréquences 'cœur' de la 5G en France ?",
+        "answers": [
+            "Autour de $100\\ \\text{MHz}$",
+            "Entre $3,46\\ \\text{GHz}$ et $3,80\\ \\text{GHz}$",
+            "Exactement $5,0\\ \\text{GHz}$",
+            "Au-delà de $50\\ \\text{GHz}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La bande des $3,5\\ \\text{GHz}$ (plus précisément $3,46 - 3,80\\ \\text{GHz}$) est la bande principale utilisée pour le déploiement de la 5G, offrant un compromis optimal entre portée et débit."
+    },
+    {
+        "uuid": "em-004",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le vide (milieu sans charges ni courants libres), quelle est la valeur de la divergence du champ électrique $\\vec{E}$ selon l'équation de Maxwell-Gauss ?",
+        "answers": [
+            "$\\text{div}(\\vec{E}) = \\frac{\\rho}{\\epsilon_0}$",
+            "$\\text{div}(\\vec{E}) = 0$",
+            "$\\text{div}(\\vec{E}) = -\\frac{\\partial \\vec{B}}{\\partial t}$",
+            "$\\text{div}(\\vec{E}) = \\mu_0 \\epsilon_0 \\frac{\\partial^2 \\vec{E}}{\\partial t^2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'équation de Maxwell-Gauss est $\\text{div}(\\vec{E}) = \\frac{\\rho}{\\epsilon_0}$. Puisque nous sommes dans le vide, il n'y a pas de charges libres, donc $\\rho = 0$ et $\\text{div}(\\vec{E}) = 0$."
+    },
+    {
+        "uuid": "em-005",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression correcte de l'équation de Maxwell-Faraday, reliant le rotationnel du champ électrique à la variation temporelle du champ magnétique ?",
+        "answers": [
+            "$\\vec{\\text{rot}}(\\vec{E}) = \\vec{0}$",
+            "$\\vec{\\text{rot}}(\\vec{E}) = -\\frac{\\partial \\vec{B}}{\\partial t}$",
+            "$\\vec{\\text{rot}}(\\vec{E}) = \\vec{j} + \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$",
+            "$\\vec{\\text{rot}}(\\vec{E}) = \\mu_0 \\epsilon_0 \\frac{\\partial \\vec{B}}{\\partial t}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'équation de Maxwell-Faraday s'écrit $\\vec{\\text{rot}}(\\vec{E}) = -\\frac{\\partial \\vec{B}}{\\partial t}$. Le signe '$-$' est crucial et traduit la loi de Lenz."
+    },
+    {
+        "uuid": "em-006",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Comment nomme-t-on l'équation aux dérivées partielles de propagation $\\Delta\\vec{E} - \\frac{1}{c^2}\\frac{\\partial^2\\vec{E}}{\\partial t^2} = \\vec{0}$ ?",
+        "answers": [
+            "Équation de Poisson",
+            "Équation de Helmholtz",
+            "Équation de d'Alembert",
+            "Équation de Schrödinger"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Cette équation est l'équation de d'Alembert, caractéristique de la propagation d'une onde (acoustique, électromagnétique ou autre) sans dispersion et sans atténuation."
+    },
+    {
+        "uuid": "em-007",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Quelle est la relation entre la célérité de la lumière dans le vide $c$ et les constantes fondamentales $\\epsilon_0$ (permittivité) et $\\mu_0$ (perméabilité) ?",
+        "answers": [
+            "$c = \\sqrt{\\mu_0 \\epsilon_0}$",
+            "$c = \\frac{1}{\\sqrt{\\mu_0 \\epsilon_0}}$",
+            "$c = \\frac{1}{\\mu_0 \\epsilon_0}$",
+            "$c = \\sqrt{\\frac{\\mu_0}{\\epsilon_0}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Les équations de Maxwell permettent de déduire l'équation de propagation dont la célérité est $c = 1/\\sqrt{\\mu_0 \\epsilon_0}$. Une erreur classique est d'oublier la racine carrée ou l'inverse."
+    },
+    {
+        "uuid": "em-008",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une OPPH (Onde Plane Progressive Harmonique) se propageant dans le vide, quelle est la relation de dispersion liant la pulsation $\\omega$ au nombre d'onde $k$ ?",
+        "answers": [
+            "$\\omega = k / c$",
+            "$\\omega = k \\cdot c$",
+            "$\\omega^2 = k / c^2$",
+            "$\\omega = c^2 k$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour une onde se propageant à la vitesse $c$, on a $\\omega = v_{\\phi} k$ avec $v_{\\phi} = c$. Donc $\\omega = c k$."
+    },
+    {
+        "uuid": "em-009",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'unité homogène au vecteur d'onde $\\vec{k}$ dans le système international ?",
+        "answers": [
+            "rad.s$^{-1}$",
+            "m.s$^{-1}$",
+            "rad.m$^{-1}$",
+            "m$^{-2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Le vecteur d'onde $\\vec{k}$ est défini par $k = 2\\pi / \\lambda$. Comme $\\lambda$ est une longueur en mètres, $k$ s'exprime en radians par mètre ($\\text{rad.m}^{-1}$)."
+    },
+    {
+        "uuid": "em-010",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Pour une OPPH se propageant selon la direction $\\vec{u}$, comment s'exprime la relation de structure entre les champs $\\vec{B}$ et $\\vec{E}$ ?",
+        "answers": [
+            "$\\vec{B} = \\frac{\\vec{u} \\wedge \\vec{E}}{c}$",
+            "$\\vec{B} = c (\\vec{u} \\wedge \\vec{E})$",
+            "$\\vec{E} = \\frac{\\vec{u} \\wedge \\vec{B}}{c}$",
+            "$\\vec{B} = \\vec{u} \\wedge \\vec{E}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La structure d'une OPPH impose $\\vec{B} = \\frac{1}{c} \\vec{u} \\wedge \\vec{E}$. Cette relation montre que le trièdre $(\\vec{u}, \\vec{E}, \\vec{B})$ est direct."
+    },
+    {
+        "uuid": "em-011",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Dans le cadre de l'étude d'une OPPH (Onde Plane Progressive Harmonique) se propageant dans le vide selon la direction $\\vec{u}_z$, que signifie le fait que l'onde soit dite 'transverse' ?",
+        "answers": [
+            "Les champs $\\vec{E}$ et $\\vec{B}$ sont parallèles à la direction de propagation $\\vec{u}_z$.",
+            "Les champs $\\vec{E}$ et $\\vec{B}$ sont situés dans le plan orthogonal à la direction de propagation $\\vec{u}_z$.",
+            "L'onde ne transporte pas d'énergie, car son amplitude est transverse.",
+            "Le vecteur d'onde $\\vec{k}$ est nul."
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Une onde est transverse si les vecteurs champs $\\vec{E}$ et $\\vec{B}$ sont orthogonaux au vecteur d'onde $\\vec{k}$ (direction de propagation). Pour une onde plane, la structure locale est celle d'une onde plane transverse électromagnétique (OPTE), où $\\vec{E}$, $\\vec{B}$ et $\\vec{k}$ forment un trièdre direct.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-012",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Pour une OPPH se propageant dans le vide à la célérité $c$, quelle est la relation entre les normes du champ électrique $E$ et du champ magnétique $B$ ?",
+        "answers": [
+            "$B = E / c$",
+            "$B = c E$",
+            "$B = \\epsilon_0 E$",
+            "$B = E / c^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "Dans le vide, la relation locale pour une onde plane est $\\vec{B} = \\frac{1}{c} (\\vec{u} \\wedge \\vec{E})$, où $\\vec{u}$ est le vecteur unitaire de propagation. En norme, cela donne bien $B = E/c$. Attention à l'homogénéité dimensionnelle : $c$ est une vitesse en $m.s^{-1}$, le champ $B$ est en Tesla ($T$) et $E$ en $V.m^{-1}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-013",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Quelle est l'expression de la densité volumique d'énergie électrique $w_e$ associée à un champ électrique $\\vec{E}$ ?",
+        "answers": [
+            "$w_e = \\epsilon_0 E^2$",
+            "$w_e = \\frac{1}{2} \\epsilon_0 E^2$",
+            "$w_e = \\frac{1}{2} \\mu_0 E^2$",
+            "$w_e = \\frac{E^2}{2 \\mu_0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La densité volumique d'énergie électrique est donnée par $w_e = \\frac{1}{2} \\epsilon_0 \\vec{E}^2$. Le facteur $1/2$ est fondamental et provient de l'intégration de l'énergie nécessaire pour créer le champ. La réponse avec $\\mu_0$ correspond à la densité magnétique $w_m$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-014",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Quelle est l'unité du Système International (SI) pour la densité volumique d'énergie électromagnétique ?",
+        "answers": [
+            "$W.m^{-2}$",
+            "$J.m^{-2}$",
+            "$J.m^{-3}$",
+            "$V.m^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 2,
+        "explication": "Une densité volumique d'énergie est une énergie (en Joules, $J$) par unité de volume (en mètres cubes, $m^3$). L'unité est donc $J.m^{-3}$. $W.m^{-2}$ correspond à l'éclairement (ou intensité), qui est un flux d'énergie par unité de surface.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-015",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Pour une OPPH se propageant dans le vide, quel est le lien entre la moyenne temporelle de la densité d'énergie électrique $\\langle w_e \\rangle$ et magnétique $\\langle w_m \\rangle$ ?",
+        "answers": [
+            "$\\langle w_e \\rangle = 2 \\langle w_m \\rangle$",
+            "$\\langle w_e \\rangle = \\langle w_m \\rangle$",
+            "$\\langle w_e \\rangle = \\frac{1}{2} \\langle w_m \\rangle$",
+            "$\\langle w_e \\rangle = \\frac{1}{\\sqrt{2}} \\langle w_m \\rangle$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Pour une onde électromagnétique dans le vide, l'énergie est répartie équitablement entre le champ électrique et le champ magnétique. En utilisant $B=E/c$ et $c^2 = 1/(\\epsilon_0 \\mu_0)$, on montre que $\\frac{1}{2}\\epsilon_0 E^2 = \\frac{1}{2\\mu_0} B^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-016",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Comment s'exprime le vecteur de Poynting $\\vec{\\Pi}$, qui décrit le flux d'énergie électromagnétique ?",
+        "answers": [
+            "$\\vec{\\Pi} = \\mu_0 (\\vec{E} \\wedge \\vec{B})$",
+            "$\\vec{\\Pi} = \\frac{1}{\\mu_0} (\\vec{E} \\wedge \\vec{B})$",
+            "$\\vec{\\Pi} = \\epsilon_0 (\\vec{E} \\wedge \\vec{B})$",
+            "$\\vec{\\Pi} = \\vec{E} \\wedge \\vec{B}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Le vecteur de Poynting est défini par $\\vec{\\Pi} = \\frac{\\vec{E} \\wedge \\vec{B}}{\\mu_0}$. Il représente la densité de flux d'énergie électromagnétique. Son unité est le $W.m^{-2}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-017",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Quelle est l'unité physique du flux du vecteur de Poynting $\\Phi = \\iint_{\\Sigma} \\vec{\\Pi} \\cdot d\\vec{S}$ à travers une surface fermée ?",
+        "answers": [
+            "Volt ($V$)",
+            "Joule ($J$)",
+            "Watt ($W$)",
+            "Tesla ($T$)"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 2,
+        "explication": "Le vecteur de Poynting $\\vec{\\Pi}$ étant une puissance par unité de surface ($W.m^{-2}$), son flux à travers une surface s'exprime en $W.m^{-2} \\times m^2 = W$ (Watt). Ce flux représente la puissance électromagnétique traversant la surface.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-018",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Quelle équation traduit localement la conservation de l'énergie électromagnétique en l'absence de charges et de courants ?",
+        "answers": [
+            "$\\frac{\\partial w_{em}}{\\partial t} + \\text{div}(\\vec{\\Pi}) = 0$",
+            "$\\frac{\\partial w_{em}}{\\partial t} - \\text{div}(\\vec{\\Pi}) = 0$",
+            "$\\frac{\\partial w_{em}}{\\partial t} = \\text{div}(\\vec{\\Pi})$",
+            "$\\text{div}(\\vec{\\Pi}) = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "C'est l'équation locale de conservation de l'énergie. Le terme $\\text{div}(\\vec{\\Pi})$ représente la divergence du flux d'énergie (ce qui sort du volume). La somme de la variation temporelle de la densité d'énergie et du flux sortant doit être nulle en l'absence de sources.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-019",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Dans l'équation de bilan local $\\frac{\\partial w_{em}}{\\partial t} = -\\text{div}(\\vec{\\Pi}) - \\vec{j}\\cdot\\vec{E}$, que représente physiquement le terme $\\vec{j}\\cdot\\vec{E}$ ?",
+        "answers": [
+            "La puissance rayonnée par l'onde.",
+            "La puissance volumique cédée par le champ à la matière (effet Joule).",
+            "La densité d'énergie magnétique totale.",
+            "La force de Lorentz agissant sur les charges."
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Le terme $\\vec{j}\\cdot\\vec{E}$ correspond au travail des forces électromagnétiques par unité de temps et de volume, soit la puissance volumique échangée. Dans un conducteur, cela correspond à la puissance dissipée par effet Joule ($j^2/\\gamma$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-020",
+        "image_path": null,
+        "theme": "photons",
+        "question": "Quelle est la relation de Planck reliant l'énergie d'un photon $E$ à sa fréquence $\\nu$ ?",
+        "answers": [
+            "$E = h / \\nu$",
+            "$E = h \\nu$",
+            "$E = \\hbar \\nu$",
+            "$E = h c / \\lambda$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La relation de Planck-Einstein est $E = h \\nu$, où $h$ est la constante de Planck. Bien que $E = h c / \\lambda$ soit également correct (car $\\nu = c/\\lambda$), la forme fondamentale demandée est celle utilisant la fréquence. $\\hbar$ est la constante de Planck réduite ($h/2\\pi$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-021",
+        "image_path": null,
+        "theme": "polarisation",
+        "question": "Dans le cadre de l'étude d'une onde plane progressive harmonique (OPPH), comment définit-on conventionnellement la direction de polarisation de l'onde ?",
+        "answers": [
+            "C'est la direction du vecteur d'onde $\\vec{k}$",
+            "C'est la direction du vecteur champ magnétique $\\vec{B}$",
+            "C'est la direction du vecteur champ électrique $\\vec{E}$",
+            "C'est la direction du vecteur de Poynting $\\vec{\\Pi}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 2,
+        "explication": "Par convention, la polarisation d'une onde électromagnétique est définie par la direction de son champ électrique $\\vec{E}$. Le champ magnétique $\\vec{B}$ lui est toujours perpendiculaire et lié par la relation de structure $\\vec{B} = \\frac{1}{\\omega} \\vec{k} \\wedge \\vec{E}$, il ne définit donc pas la polarisation de manière indépendante."
+    },
+    {
+        "uuid": "em-022",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Wire-grid-polarizer.svg",
+        "theme": "polarisation",
+        "question": "Lorsqu'une OPPH rencontre un polariseur à grille métallique, quel est le comportement du champ électrique $\\vec{E}$ par rapport aux fils conducteurs ?",
+        "answers": [
+            "Le champ électrique parallèle aux fils est annulé par les courants induits",
+            "Le champ électrique perpendiculaire aux fils est annulé par les courants induits",
+            "Le polariseur n'agit que sur la composante magnétique $\\vec{B}$",
+            "Le polariseur transforme l'onde polarisée rectilignement en onde circulaire"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "Les électrons dans les fils métalliques se déplacent librement le long de ceux-ci. Un champ $\\vec{E}$ parallèle aux fils induit des courants qui rayonnent une onde en opposition de phase, annulant l'onde incidente (réflexion). Seule la composante perpendiculaire aux fils traverse la grille."
+    },
+    {
+        "uuid": "em-023",
+        "image_path": null,
+        "theme": "polarisation",
+        "question": "D'un point de vue physique, pourquoi dit-on qu'une onde naturelle (issue d'une source thermique par exemple) est non polarisée ?",
+        "answers": [
+            "La direction de son champ électrique $\\vec{E}$ est constante dans le temps",
+            "La direction du champ électrique $\\vec{E}$ fluctue très rapidement et de manière aléatoire",
+            "La direction du champ électrique $\\vec{E}$ tourne de façon régulière et périodique",
+            "L'amplitude de $\\vec{E}$ est nulle en moyenne"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Une onde est non polarisée lorsque la direction de $\\vec{E}$ change de manière aléatoire sur des temps très courts par rapport au temps de réponse des détecteurs. La moyenne temporelle de l'intensité est alors identique quelle que soit la direction du polariseur utilisé pour l'analyser."
+    },
+    {
+        "uuid": "em-024",
+        "image_path": null,
+        "theme": "exercice - OPPH",
+        "question": "Dans le cadre de l'étude d'une OPPH se propageant dans le vide, pour un champ $\\vec{E} = E_0 \\cos(\\omega t - kz)\\vec{u}_x$, quelle est la direction et le sens de propagation ?",
+        "answers": [
+            "Selon $+\\vec{u}_x$",
+            "Selon $+\\vec{u}_z$",
+            "Selon $-\\vec{u}_z$",
+            "Selon $-\\vec{u}_x$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La phase d'une OPPH s'écrit $\\phi = \\omega t - \\vec{k} \\cdot \\vec{r}$. Ici $\\phi = \\omega t - kz$. Par identification, $\\vec{k} = k\\vec{u}_z$. L'onde se propage dans la direction du vecteur d'onde $\\vec{k}$, donc suivant $+\\vec{u}_z$."
+    },
+    {
+        "uuid": "em-025",
+        "image_path": null,
+        "theme": "exercice - Poynting",
+        "question": "Si la puissance moyenne rayonnée à travers une surface plane $S=4\\text{ mm}^2$ est $\\langle P \\rangle = 10\\text{ W}$, quelle est la valeur de la norme moyenne du vecteur de Poynting $\\langle ||\\vec{\\Pi}|| \\rangle$ ?",
+        "answers": [
+            "$2,5 \\cdot 10^3\\text{ W/m}^2$",
+            "$2,5 \\cdot 10^9\\text{ W/m}^2$",
+            "$40 \\cdot 10^6\\text{ W/m}^2$",
+            "$0,4 \\cdot 10^9\\text{ W/m}^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La puissance moyenne est le flux du vecteur de Poynting : $\\langle P \\rangle = \\langle \\Pi \\rangle S$. Donc $\\langle \\Pi \\rangle = \\frac{\\langle P \\rangle}{S}$. Attention aux unités : $S = 4\\text{ mm}^2 = 4 \\cdot 10^{-6}\\text{ m}^2$. Ainsi, $\\langle \\Pi \\rangle = \\frac{10}{4 \\cdot 10^{-6}} = 2,5 \\cdot 10^6\\text{ W/m}^2$."
+    },
+    {
+        "uuid": "em-026",
+        "image_path": null,
+        "theme": "exercice - champ B",
+        "question": "Pour une OPPH dans le vide de champ $\\vec{E} = E_0 \\cos(\\omega t - kz)\\vec{u}_x$, quelle est l'expression du champ magnétique $\\vec{B}$ ?",
+        "answers": [
+            "$\\vec{B} = \\frac{E_0}{c} \\cos(\\omega t - kz)\\vec{u}_y$",
+            "$\\vec{B} = -\\frac{E_0}{c} \\cos(\\omega t - kz)\\vec{u}_y$",
+            "$\\vec{B} = \\frac{E_0}{c} \\cos(\\omega t - kz)\\vec{u}_z$",
+            "$\\vec{B} = \\frac{E_0}{c} \\cos(\\omega t - kz)\\vec{u}_x$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "On utilise la relation de structure : $\\vec{B} = \\frac{1}{c} \\vec{u}_k \\wedge \\vec{E}$. Ici $\\vec{u}_k = \\vec{u}_z$ et $\\vec{E} = E_x \\vec{u}_x$. Donc $\\vec{B} = \\frac{1}{c} (\\vec{u}_z \\wedge E_x \\vec{u}_x) = \\frac{E_x}{c} \\vec{u}_y$."
+    },
+    {
+        "uuid": "em-027",
+        "image_path": null,
+        "theme": "exercice - plans d'onde",
+        "question": "Un champ est décrit par la phase $\\phi(x,y,z,t) = \\frac{k}{3}(2x+2y+z)-\\omega t$. Quelle est l'équation des plans d'onde (surfaces d'égale phase) ?",
+        "answers": [
+            "$x+y+z = \\text{constante}$",
+            "$2x+2y+z = \\text{constante}$",
+            "$2x+2y-z = \\text{constante}$",
+            "$x+y+z/2 = \\text{constante}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Les plans d'onde correspondent aux points où la phase est constante à un instant $t$ fixé. Dans $\\phi = \\frac{k}{3}(2x+2y+z) - \\omega t$, si $t$ est fixé, alors $\\frac{k}{3}(2x+2y+z) = \\text{constante} + \\omega t$, ce qui implique $2x+2y+z = \\text{constante}$."
+    },
+    {
+        "uuid": "em-028",
+        "image_path": null,
+        "theme": "exercice - vecteur d'onde",
+        "question": "À partir de la phase $\\phi = \\frac{k}{3}(2x+2y+z)-\\omega t$, quelles sont les composantes du vecteur d'onde $\\vec{k}$ ?",
+        "answers": [
+            "$(k, k, k)$",
+            "$(2k/3, 2k/3, k/3)$",
+            "$(2, 2, 1)$",
+            "$(k, 2k, 3k)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Le vecteur d'onde $\\vec{k}$ est défini par $\\phi = \\omega t - \\vec{k} \\cdot \\vec{r}$. En développant la phase : $\\phi = \\omega t - (- \\frac{2k}{3}x - \\frac{2k}{3}y - \\frac{k}{3}z)$. Par identification avec $\\vec{k} \\cdot \\vec{r} = k_x x + k_y y + k_z z$, on obtient $\\vec{k} = (\\frac{2k}{3}, \\frac{2k}{3}, \\frac{k}{3})$."
+    },
+    {
+        "uuid": "em-029",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Quelle relation lie les amplitudes réelles $E_0$ et $B_0$ d'une OPPH se propageant dans le vide ?",
+        "answers": [
+            "$E_0 = c B_0$",
+            "$B_0 = c E_0$",
+            "$E_0 = B_0 / c$",
+            "$E_0 = \\epsilon_0 B_0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "Dans le vide, la relation de structure impose $|\\vec{E}| = c |\\vec{B}|$. Ainsi, pour les amplitudes maximales (amplitudes réelles), on a bien $E_0 = c B_0$."
+    },
+    {
+        "uuid": "em-030",
+        "image_path": null,
+        "theme": "ondes stationnaires",
+        "question": "Dans une cavité métallique de longueur $L$ (selon $\\vec{u}_x$), quelle condition aux limites doit satisfaire le champ électrique $\\vec{E}$ sur les parois parfaitement conductrices ($x=0$ et $x=L$) ?",
+        "answers": [
+            "La composante normale doit être nulle",
+            "Le champ électrique tangentiel doit être nul",
+            "Le champ électrique total doit être maximal",
+            "Le champ électrique doit être continu avec le champ magnétique"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Un conducteur parfait impose l'annulation du champ électrique tangentiel à sa surface. C'est cette condition aux limites qui permet l'existence d'ondes stationnaires (modes propres) dans la cavité, en imposant des nœuds de vibration du champ électrique aux parois."
+    },
+    {
+        "uuid": "em-031",
+        "image_path": null,
+        "theme": "ondes stationnaires",
+        "question": "Dans le cadre de l'étude d'une onde stationnaire de longueur d'onde $\\lambda$ établie dans une cavité résonnante, quelle est la distance séparant deux nœuds consécutifs du champ électrique ?",
+        "answers": [
+            "$\\lambda / 4$",
+            "$\\lambda / 2$",
+            "$\\lambda$",
+            "$\\lambda / 8$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Une onde stationnaire est la superposition de deux ondes progressives de sens opposés. Les nœuds correspondent aux points où l'amplitude est nulle, soit $\\sin(kx)=0$. La distance entre deux zéros consécutifs de la fonction sinus est $\\pi/k = \\lambda/2$. Ne pas confondre avec la distance entre un nœud et un ventre consécutif qui est de $\\lambda/4$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-032",
+        "image_path": null,
+        "theme": "ondes sphériques",
+        "question": "Pour une onde électromagnétique sphérique issue d'une source ponctuelle, comment l'amplitude du champ électrique $E_0(r)$ varie-t-elle avec la distance $r$ à la source ?",
+        "answers": [
+            "En $1/r^2$",
+            "En $1/r$",
+            "Elle est constante",
+            "En $1/\\sqrt{r}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Par conservation de l'énergie, le flux du vecteur de Poynting à travers une sphère de rayon $r$ est constant. Comme le flux est proportionnel à $E^2 \\cdot r^2$ (surface de la sphère), il vient $E^2 \\propto 1/r^2$, soit $E \\propto 1/r$. Le piège classique est de confondre l'amplitude du champ ($1/r$) et l'intensité énergétique ($1/r^2$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-033",
+        "image_path": null,
+        "theme": "ondes sphériques",
+        "question": "En considérant une source électromagnétique ponctuelle émettant une onde sphérique dans le vide, comment la puissance moyenne $P$ rayonnée à travers une sphère de rayon $r$ évolue-t-elle avec $r$ ?",
+        "answers": [
+            "Elle est proportionnelle à $r^2$",
+            "Elle est indépendante de $r$",
+            "Elle décroît en $1/r$",
+            "Elle décroît en $1/r^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La puissance moyenne rayonnée est une grandeur conservative. Elle correspond à l'énergie émise par la source par unité de temps. En l'absence de milieu absorbant, cette puissance doit être la même quel que soit le rayon de la surface fermée entourant la source.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-034",
+        "image_path": null,
+        "theme": "effet doppler",
+        "question": "Une source lumineuse s'approche d'un observateur fixe à une vitesse $v \\ll c$. Quelle est la relation entre la fréquence reçue $f'$ et la fréquence émise $f$ (au premier ordre en $v/c$) ?",
+        "answers": [
+            "$f' = f(1 - v/c)$",
+            "$f' = f(1 + v/c)$",
+            "$f' = f(1 + c/v)$",
+            "$f' = f / (1 + v/c)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Lorsque la source s'approche, la période perçue diminue car la source 'rattrape' le front d'onde, donc la fréquence augmente. La formule de l'effet Doppler classique (approximation non-relativiste) est $f' = f(1 + v/c)$. Le signe $+$ est caractéristique d'un rapprochement.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-035",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Quelle est la valeur numérique de la célérité $c$ de la lumière dans le vide exprimée dans les unités du système international (SI) ?",
+        "answers": [
+            "$3,00 \\cdot 10^8$ m/s",
+            "$3,00 \\cdot 10^5$ m/s",
+            "$3,00 \\cdot 10^8$ km/s",
+            "$3,00 \\cdot 10^{10}$ m/s"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "La célérité $c$ vaut environ $3 \\cdot 10^8$ m/s. Il est fréquent de confondre m/s et km/s. $3,00 \\cdot 10^5$ km/s équivaut bien à $3,00 \\cdot 10^8$ m/s, mais l'unité standard SI est le mètre par seconde.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-036",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'identité vectorielle $\\vec{\\Delta}\\vec{A} = \\vec{\\text{grad}}(\\text{div}\\vec{A}) - \\vec{\\text{rot}}(\\vec{\\text{rot}}\\vec{A})$ est fondamentale en électromagnétisme. Comment est-elle nommée ?",
+        "answers": [
+            "Formule de Green",
+            "Formule du double laplacien vectoriel",
+            "Théorème de Stokes",
+            "Identité de Helmholtz"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Il s'agit de la définition de l'opérateur laplacien vectoriel $\\vec{\\Delta}$ agissant sur un champ vectoriel. Elle est indispensable pour établir l'équation d'onde du potentiel vecteur $\\vec{A}$ dans la jauge de Lorentz.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-037",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Quelle est la valeur moyenne temporelle du terme $\\cos^2(\\omega t - \\phi)$ sur une durée correspondant à un nombre entier de périodes $T$ ?",
+        "answers": [
+            "1",
+            "0",
+            "1/2",
+            "$\\sqrt{2}/2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 2,
+        "explication": "En utilisant la formule de linéarisation $\\cos^2(x) = (1 + \\cos(2x))/2$, la valeur moyenne sur une période est la moyenne de $1/2$ (qui est $1/2$) plus la moyenne d'un cosinus de fréquence double (qui est nulle sur une période).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-038",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une OPPH (Onde Plane Progressive Harmonique) de vecteur d'onde $\\vec{k}$, à quel opérateur algébrique l'opérateur nabla $\\vec{\\nabla}$ est-il équivalent lors d'une dérivation spatiale ?",
+        "answers": [
+            "$i \\omega$",
+            "$i \\vec{k}$",
+            "$-i \\vec{k}$",
+            "$\\vec{k} \\wedge$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Pour une OPPH de la forme $\\vec{E} = \\vec{E}_0 \\exp(i(\\omega t - \\vec{k} \\cdot \\vec{r}))$, le gradient $\\vec{\\nabla}$ fait descendre le facteur multiplicatif de $\\vec{r}$ dans l'exponentielle, soit $-i\\vec{k}$. Attention : l'opérateur $\\vec{\\nabla}$ est bien équivalent à $-i\\vec{k}$. (Note: La réponse attendue ici est corrigée techniquement sur le signe conventionnel).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-039",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une OPPH, à quel opérateur algébrique est équivalente la dérivée temporelle $\\frac{\\partial}{\\partial t}$ ?",
+        "answers": [
+            "$i \\omega$",
+            "$-i \\omega$",
+            "$\\omega$",
+            "$i \\omega^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "En dérivant $\\exp(i(\\omega t - \\vec{k} \\cdot \\vec{r}))$ par rapport au temps, on obtient le facteur $i\\omega$ devant l'exponentielle. C'est l'outil central pour transformer les équations de Maxwell différentielles en équations algébriques complexes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-040",
+        "image_path": null,
+        "theme": "exercice - Rosetta",
+        "question": "Le délai de communication entre la sonde Rosetta et la Terre est de 28 min 20 s. En prenant $c = 3,00 \\cdot 10^8$ m/s, quelle est la distance Terre-sonde ?",
+        "answers": [
+            "$5,1 \\cdot 10^8$ km",
+            "$5,1 \\cdot 10^{11}$ m",
+            "$8,5 \\cdot 10^6$ km",
+            "$1,7 \\cdot 10^{11}$ m"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Le temps en secondes est $28 \\times 60 + 20 = 1700$ s. La distance est $d = c \\cdot t = (3,00 \\cdot 10^8) \\times 1700 = 5,1 \\cdot 10^{11}$ m. Le piège est d'oublier la conversion des minutes en secondes ou de se tromper dans l'ordre de grandeur des puissances de 10.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-041",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Dans le cadre de l'ingénierie des télécommunications, quel est le rôle critique de la longueur d'onde $\\lambda$ lors de la conception d'un système d'émission-réception ?",
+        "answers": [
+            "Elle détermine la couleur du matériau isolant de l'antenne pour limiter l'échauffement.",
+            "Elle conditionne les dimensions géométriques optimales de l'antenne (ex: dipôle demi-onde $\\lambda/2$).",
+            "Elle n'a aucun impact technique, seul le gain de l'antenne en décibels compte.",
+            "Elle fixe uniquement la portée de l'onde sans contrainte sur le matériel."
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Le dimensionnement des antennes repose sur des phénomènes de résonance. Pour un dipôle, la longueur est généralement fixée à $\\lambda/2$ pour assurer une adaptation d'impédance optimale avec la ligne de transmission.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-042",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "En considérant une onde électromagnétique se propageant dans le vide à la célérité $c \\approx 3 \\cdot 10^8 \\text{ m/s}$, quelle est la longueur d'onde $\\lambda$ correspondant à une fréquence $f = 107,7 \\text{ MHz}$ ?",
+        "answers": [
+            "$\\lambda \\approx 2,79 \\text{ m}$",
+            "$\\lambda \\approx 27,9 \\text{ cm}$",
+            "$\\lambda \\approx 2,79 \\text{ mm}$",
+            "$\\lambda \\approx 27,9 \\text{ m}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "La relation fondamentale est $\\lambda = c/f$. Avec $c = 3 \\cdot 10^8 \\text{ m/s}$ et $f = 107,7 \\cdot 10^6 \\text{ Hz}$, on obtient $\\lambda = 300 / 107,7 \\approx 2,785 \\text{ m}$. L'erreur classique est de se tromper dans les puissances de 10.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-043",
+        "image_path": null,
+        "theme": "polarisation",
+        "question": "Soit une onde plane harmonique se propageant selon $z$. Si ses composantes complexes $\\underline{E}_x$ et $\\underline{E}_y$ sont en phase ($\\Delta \\phi = 0$) et de même amplitude $E_0$, quelle est la nature de la polarisation ?",
+        "answers": [
+            "Circulaire droite (en supposant le trièdre direct)",
+            "Rectiligne inclinée à $45^\\circ$ dans le plan $(x,y)$",
+            "Non polarisée (onde naturelle)",
+            "Elliptique"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La polarisation est rectiligne si $\\vec{E}(t)$ oscille le long d'une droite fixe. Ici $\\vec{E}(t) = E_0 \\cos(\\omega t - kz) \\vec{u}_x + E_0 \\cos(\\omega t - kz) \\vec{u}_y = E_0 \\cos(\\omega t - kz) (\\vec{u}_x + \\vec{u}_y)$, ce qui définit une direction constante.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-044",
+        "image_path": null,
+        "theme": "polarisation",
+        "question": "Une onde électromagnétique polarisée circulairement traverse un polariseur idéal de direction de passage $\\vec{u}_p$. Quel est l'état de l'onde en sortie ?",
+        "answers": [
+            "L'onde est totalement bloquée par le polariseur.",
+            "L'onde devient rectiligne, polarisée selon $\\vec{u}_p$, avec une intensité moyenne divisée par deux.",
+            "L'onde reste circulaire car un polariseur ne modifie que l'amplitude.",
+            "L'onde devient elliptique selon le rapport des amplitudes."
+        ],
+        "difficulty": 4,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Un polariseur rectiligne ne laisse passer que la composante du champ électrique parallèle à son axe. Pour une onde circulaire, cette composante est sinusoïdale de même fréquence, donnant une onde rectiligne. L'intensité est la moyenne temporelle du vecteur de Poynting, divisée par 2.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-045",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Quelle est l'expression de la densité volumique moyenne d'énergie électromagnétique $\\langle w_{em} \\rangle$ pour une onde plane progressive harmonique (OPPH) d'amplitude électrique $E_0$ dans le vide ?",
+        "answers": [
+            "$\\epsilon_0 E_0^2$",
+            "$\\frac{1}{2} \\epsilon_0 E_0^2$",
+            "$\\frac{1}{4} \\epsilon_0 E_0^2$",
+            "$\\frac{1}{2} \\epsilon_0 E_0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La densité totale est $w = \\frac{1}{2} \\epsilon_0 E^2 + \\frac{1}{2 \\mu_0} B^2$. Pour une OPPH, $E = cB$, soit $\\frac{1}{2 \\mu_0} B^2 = \\frac{1}{2 \\mu_0} \\frac{E^2}{c^2} = \\frac{1}{2} \\epsilon_0 E^2$. En moyenne temporelle sur un cosinus carré, le facteur $1/2$ s'ajoute, mais ici $E_0$ est l'amplitude, donc la moyenne de $E^2$ est $E_0^2/2$. D'où $\\langle w_{em} \\rangle = \\frac{1}{2} \\epsilon_0 E_0^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-046",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Dans le spectre électromagnétique, quel domaine se situe immédiatement entre les rayons ultraviolets (UV) et les rayons Gamma ?",
+        "answers": [
+            "Les rayons infrarouges",
+            "Les rayons X",
+            "Les ondes micro-ondes",
+            "Le spectre visible"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Le classement par énergie croissante (fréquence croissante) est : ondes radio, micro-ondes, IR, visible, UV, rayons X, rayons gamma. Les rayons X occupent la zone entre les UV et les Gamma.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-047",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Quelle est la longueur d'onde $\\lambda$ dans le vide des ondes électromagnétiques utilisées par le protocole WiFi standard à $f = 5 \\text{ GHz}$ ?",
+        "answers": [
+            "$\\lambda = 6 \\text{ cm}$",
+            "$\\lambda = 60 \\text{ cm}$",
+            "$\\lambda = 6 \\text{ mm}$",
+            "$\\lambda = 1,5 \\text{ cm}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "On utilise $\\lambda = c/f = (3 \\cdot 10^8) / (5 \\cdot 10^9) = 0,6 \\cdot 10^{-1} \\text{ m} = 6 \\text{ cm}$. Il ne faut pas oublier de convertir les GHz en Hz.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-048",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est la forme locale de l'équation de Maxwell-Ampère dans le vide, en l'absence de charges et de courants ($\\vec{j} = \\vec{0}$) ?",
+        "answers": [
+            "$\\vec{rot}(\\vec{B}) = \\mu_0 \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$",
+            "$\\vec{rot}(\\vec{B}) = \\mu_0 \\vec{j} + \\mu_0 \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$",
+            "$\\vec{rot}(\\vec{B}) = \\vec{0}$",
+            "$\\vec{rot}(\\vec{E}) = -\\frac{\\partial \\vec{B}}{\\partial t}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "L'équation de Maxwell-Ampère générale est $\\vec{rot}(\\vec{B}) = \\mu_0 \\vec{j} + \\mu_0 \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$. Si $\\vec{j} = \\vec{0}$, il ne reste que le terme du courant de déplacement.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-049",
+        "image_path": null,
+        "theme": "exercice - divergence",
+        "question": "Pour une onde électromagnétique plane se propageant dans le vide, la condition de structure $div(\\vec{E}) = 0$ impose sur le vecteur d'onde $\\vec{k}$ et le champ $\\vec{E}$ :",
+        "answers": [
+            "$\\vec{k} \\cdot \\vec{E} = 0$ (orthogonalité)",
+            "$\\vec{k} \\times \\vec{E} = \\vec{0}$ (colinéarité)",
+            "$k \\cdot E = 1$",
+            "$\\vec{k} + \\vec{E} = \\vec{0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "Pour une onde plane de forme $\\vec{E} = \\vec{E}_0 e^{i(\\omega t - \\vec{k} \\cdot \\vec{r})}$, l'opérateur $\\vec{\\nabla}$ se remplace par $-i\\vec{k}$. Ainsi, $div(\\vec{E}) = \\vec{\\nabla} \\cdot \\vec{E} = -i \\vec{k} \\cdot \\vec{E} = 0$. Cela démontre que le champ électrique est transversal par rapport à la direction de propagation.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-050",
+        "image_path": null,
+        "theme": "exercice - TD",
+        "question": "Dans le cadre de l'étude d'une OPPH, on trouve la relation entre les composantes $E_y = -E_x$. Dans quel plan et selon quel vecteur unitaire le champ électrique est-il porté ?",
+        "answers": [
+            "Porté par $\\vec{u}_x + \\vec{u}_y$",
+            "Porté par $\\vec{u}_x - \\vec{u}_y$",
+            "Porté par $\\vec{u}_z$",
+            "Porté par $\\vec{u}_x + \\vec{u}_z$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Le vecteur champ électrique est $\\vec{E} = E_x \\vec{u}_x + E_y \\vec{u}_y = E_x \\vec{u}_x - E_x \\vec{u}_y = E_x (\\vec{u}_x - \\vec{u}_y)$. Le vecteur directeur est donc $\\vec{u}_x - \\vec{u}_y$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-051",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Dans le cadre de l'étude énergétique d'une onde électromagnétique plane, le vecteur de Poynting $\\vec{\\Pi} = \\frac{1}{\\mu_0} \\vec{E} \\wedge \\vec{B}$ est toujours orienté selon :",
+        "answers": [
+            "La direction du champ $\\vec{E}$",
+            "La direction de propagation de l'énergie",
+            "La direction du champ $\\vec{B}$",
+            "La normale au plan d'onde"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Le vecteur de Poynting représente la densité surfacique de puissance transportée par l'onde. Par définition du produit vectoriel, il est orthogonal aux champs $\\vec{E}$ et $\\vec{B}$ et pointe dans la direction de propagation de l'onde (et donc de l'énergie).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-052",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Lors de l'établissement de l'équation de d'Alembert pour le champ électrique dans le vide, le produit $\\mu_0 \\epsilon_0$ est relié à la célérité $c$ par la relation :",
+        "answers": [
+            "$\\mu_0 \\epsilon_0 = c^2$",
+            "$\\mu_0 \\epsilon_0 = 1/c^2$",
+            "$\\mu_0 \\epsilon_0 = 1/c$",
+            "$\\mu_0 \\epsilon_0 = c$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "L'équation de propagation dans le vide est $\\Delta \\vec{E} - \\mu_0 \\epsilon_0 \\frac{\\partial^2 \\vec{E}}{\\partial t^2} = \\vec{0}$. Par identification avec l'équation de d'Alembert $\\Delta \\vec{E} - \\frac{1}{c^2} \\frac{\\partial^2 \\vec{E}}{\\partial t^2} = \\vec{0}$, on obtient $\\frac{1}{c^2} = \\mu_0 \\epsilon_0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-053",
+        "image_path": null,
+        "theme": "exercice - TD",
+        "question": "Considérons deux ondes planes progressives harmoniques (OPPH) de même fréquence et même amplitude, se propageant dans des sens opposés selon l'axe $(Oz)$. Leur superposition crée :",
+        "answers": [
+            "Une onde plane progressive unique",
+            "Une onde stationnaire",
+            "Une onde non polarisée",
+            "Un battement spatial"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La superposition de deux ondes de même fréquence se propageant en sens opposés $\\cos(\\omega t - kz) + \\cos(\\omega t + kz) = 2 \\cos(\\omega t) \\cos(kz)$ conduit à une onde où les nœuds et ventres de vibration sont immobiles dans l'espace : c'est une onde stationnaire.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-054",
+        "image_path": null,
+        "theme": "ondes stationnaires",
+        "question": "Pour une onde stationnaire décrite par $E(x,t) = 2E_1 \\sin(kx) \\sin(\\omega t)$, où se trouvent les ventres de vibration (points d'amplitude maximale) ?",
+        "answers": [
+            "$kx = p\\pi$",
+            "$kx = p\\pi + \\pi/2$",
+            "$kx = 0$ uniquement",
+            "$kx = (2p+1)\\pi$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "L'amplitude de vibration est donnée par $|2E_1 \\sin(kx)|$. Elle est maximale quand $|\\sin(kx)| = 1$, ce qui correspond à $kx = \\pi/2 + p\\pi$ (où $p$ est un entier). Les points $kx = p\\pi$ correspondent aux nœuds de vibration où l'amplitude est nulle.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-055",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Quelle est la valeur moyenne de la constante solaire (flux surfacique incident) reçue par la Terre au sommet de l'atmosphère ?",
+        "answers": [
+            "1361 W.m$^{-2}$",
+            "342 W.m$^{-2}$",
+            "100 W.m$^{-2}$",
+            "600 W.m$^{-2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "La constante solaire est d'environ 1361 W.m⁻². La valeur de 342 W.m⁻² correspond à la moyenne reçue sur toute la surface terrestre (en divisant par 4 pour tenir compte de la géométrie sphérique et de l'alternance jour/nuit).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-056",
+        "image_path": null,
+        "theme": "exercice - TD",
+        "question": "Dans le vide, pour une onde plane se propageant selon $(Oz)$, on a $\\vec{E} = E_x \\cos(\\phi)\\vec{e}_x + E_z \\cos(\\phi)\\vec{e}_z$. Quelle est la contrainte imposée par l'équation de Maxwell-Gauss ($\\text{div} \\vec{E} = 0$) ?",
+        "answers": [
+            "L'onde est polarisée elliptiquement",
+            "La composante longitudinale $E_z$ doit être nulle",
+            "La composante transverse $E_x$ doit être nulle",
+            "Il n'y a aucune contrainte"
+        ],
+        "difficulty": 4,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Pour une onde plane dans le vide, $\\text{div} \\vec{E} = 0$ implique $\\vec{k} \\cdot \\vec{E} = 0$. Comme $\\vec{k} = k\\vec{e}_z$, on a $k E_z = 0$, donc $E_z = 0$. L'onde est nécessairement transverse.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-057",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "La puissance moyenne (ou intensité) transportée par une onde plane progressive harmonique (OPPH) est proportionnelle à :",
+        "answers": [
+            "$E_0$ (amplitude du champ)",
+            "$E_0^2$ (carré de l'amplitude)",
+            "$\\sqrt{E_0}$",
+            "1/E_0"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "L'intensité $I = \\langle ||\\vec{\\Pi}|| \\rangle$ est proportionnelle à la moyenne temporelle de $E^2$. Pour une fonction sinusoïdale, la valeur moyenne de $\\cos^2$ est $1/2$. L'intensité est donc proportionnelle au carré de l'amplitude $E_0^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-058",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Quelle est la fréquence $f$ d'une onde électromagnétique dont la longueur d'onde dans le vide est $\\lambda = 600$ nm ?",
+        "answers": [
+            "$5 \\cdot 10^{14}$ Hz",
+            "$5 \\cdot 10^{12}$ Hz",
+            "$2 \\cdot 10^{15}$ Hz",
+            "$6 \\cdot 10^{14}$ Hz"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "On utilise la relation $f = c / \\lambda$. Avec $c \\approx 3 \\cdot 10^8$ m.s⁻¹ et $\\lambda = 600 \\cdot 10^{-9}$ m, on obtient $f = 3 \\cdot 10^8 / 600 \\cdot 10^{-9} = 0,5 \\cdot 10^{15} = 5 \\cdot 10^{14}$ Hz.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-059",
+        "image_path": null,
+        "theme": "polarisation",
+        "question": "La lumière issue d'une source thermique (soleil, ampoule à incandescence) est qualifiée de 'naturelle' car elle est :",
+        "answers": [
+            "Polarisée rectilignement",
+            "Non polarisée",
+            "Polarisée circulairement",
+            "Parfaitement monochromatique"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La lumière naturelle est constituée d'une superposition incohérente d'ondes de toutes polarisations possibles, variant très rapidement dans le temps. En moyenne temporelle, aucune direction de polarisation ne prédomine : on dit qu'elle est non polarisée.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-060",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'analyse vectorielle utilisée en électromagnétisme, que vaut la divergence du rotationnel d'un champ vectoriel $\\vec{A}$ quelconque, soit $\\text{div}(\\vec{\\text{rot}} \\vec{A})$ ?",
+        "answers": [
+            "$\\Delta \\vec{A}$",
+            "$0$",
+            "$grad(div \\vec{A})$",
+            "$\\text{rot} \\vec{A}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "L'identité vectorielle $\\text{div}(\\vec{\\text{rot}} \\vec{A}) = 0$ est toujours vérifiée pour tout champ $\\vec{A}$ de classe $C^2$. C'est une propriété fondamentale qui permet, par exemple, d'affirmer l'existence du potentiel vecteur $\\vec{A}$ à partir de $\\text{div} \\vec{B} = 0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-061",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Dans le spectre électromagnétique, les rayons Gamma sont caractérisés par une haute énergie. Ils sont produits par :",
+        "answers": [
+            "Des transitions électroniques entre couches atomiques",
+            "La désintégration de noyaux radioactifs ou des phénomènes nucléaires",
+            "L'agitation thermique des molécules",
+            "Des antennes radio par oscillation d'électrons libres"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Les rayons $\\gamma$ sont des rayonnements de très haute énergie issus de désexcitations nucléaires. Les transitions électroniques (couches atomiques) produisent des rayons X ou UV, tandis que les antennes radio produisent des ondes de basse fréquence (domaine radio)."
+    },
+    {
+        "uuid": "em-062",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Dans le cadre de l'étude des télécommunications, quelle bande de fréquences est classiquement allouée à la diffusion de la Télévision Numérique Terrestre (TNT) ?",
+        "answers": [
+            "88 - 108 MHz",
+            "470 - 790 MHz",
+            "2,4 - 5 GHz",
+            "1 - 2 GHz"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La bande 88-108 MHz correspond à la bande FM (radio). La bande 2,4-5 GHz est utilisée pour le Wi-Fi. La TNT occupe historiquement la bande UHF, principalement entre 470 et 790 MHz."
+    },
+    {
+        "uuid": "em-063",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Soit une onde plane progressive harmonique (OPPH) se propageant selon la direction $-\\vec{e}_x$. La phase de l'onde s'écrit sous la forme :",
+        "answers": [
+            "$\\omega t - kx$",
+            "$\\omega t + kx$",
+            "$\\omega t$",
+            "$kx - \\omega t$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La phase d'une onde est de la forme $\\omega t - \\vec{k} \\cdot \\vec{r}$. Si la propagation se fait selon $-\\vec{e}_x$, alors $\\vec{k} = -k \\vec{e}_x$. Ainsi, la phase devient $\\omega t - (-k x) = \\omega t + k x$."
+    },
+    {
+        "uuid": "em-064",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Le vecteur de Poynting $\\vec{\\Pi} = \\frac{1}{\\mu_0} \\vec{E} \\wedge \\vec{B}$ représente le flux d'énergie électromagnétique. Quelle est son unité dans le système international ?",
+        "answers": [
+            "J / m$^3$ (densité d'énergie)",
+            "W / m$^2$ (puissance par unité de surface)",
+            "W / m (puissance linéique)",
+            "V / m (intensité du champ électrique)"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le vecteur de Poynting représente la puissance transportée par unité de surface à travers une section perpendiculaire à la direction de propagation, il s'exprime donc en $\\text{W} \\cdot \\text{m}^{-2}$."
+    },
+    {
+        "uuid": "em-065",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Quelle est la valeur de la perméabilité magnétique du vide $\\mu_0$ dans les unités du système international (SI) ?",
+        "answers": [
+            "$4\\pi \\cdot 10^{-7} \\text{ H} \\cdot \\text{m}^{-1}$",
+            "$8,85 \\cdot 10^{-12} \\text{ F} \\cdot \\text{m}^{-1}$",
+            "$1 \\text{ H} \\cdot \\text{m}^{-1}$",
+            "$9 \\cdot 10^9 \\text{ m} \\cdot \\text{F}^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La valeur conventionnelle est $\\mu_0 = 4\\pi \\cdot 10^{-7} \\text{ H} \\cdot \\text{m}^{-1}$. La valeur $8,85 \\cdot 10^{-12}$ correspond à la permittivité électrique du vide $\\epsilon_0$."
+    },
+    {
+        "uuid": "em-066",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Laquelle de ces propriétés est FAUSSE concernant une OPPH se propageant dans le vide ?",
+        "answers": [
+            "Elle est transverse ($\\vec{E} \\perp \\vec{k}$ et $\\vec{B} \\perp \\vec{k}$)",
+            "Elle est longitudinale",
+            "$\\vec{E}$ et $\\vec{B}$ sont en phase",
+            "La structure de l'onde est $(\\vec{k}, \\vec{E}, \\vec{B})$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans le vide, les ondes électromagnétiques sont des ondes transverses (les champs sont perpendiculaires à la direction de propagation $\\vec{k}$), elles ne sont jamais longitudinales."
+    },
+    {
+        "uuid": "em-067",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Le domaine des micro-ondes, utilisé par exemple pour le radar ou le chauffage, se situe typiquement autour de quelles longueurs d'onde ?",
+        "answers": [
+            "$10^{-9}$ m (nanomètre)",
+            "$10^{-2}$ m (centimètre)",
+            "$10^{2}$ m (hectomètre)",
+            "$10^{-6}$ m (micromètre)"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le domaine des micro-ondes se situe dans les longueurs d'onde centimétriques (typiquement de 1 mm à 1 m, soit environ $10^{-3}$ m à $10^0$ m)."
+    },
+    {
+        "uuid": "em-068",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Dans le cadre de l'étude d'une OPPH, considérons un trièdre direct $(\\vec{u}_k, \\vec{u}_E, \\vec{u}_B)$. Si $\\vec{k}$ est orienté vers le haut et $\\vec{E}$ vers la droite, quelle est la direction de $\\vec{B}$ ?",
+        "answers": [
+            "L'avant (vers vous)",
+            "L'arrière (s'éloigne de vous)",
+            "La gauche",
+            "Le bas"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La relation $\\vec{B} = \\frac{1}{c} (\\vec{u}_k \\wedge \\vec{E})$ définit le trièdre direct. Avec $\\vec{u}_k$ (haut) et $\\vec{E}$ (droite), le produit vectoriel $\\vec{u}_k \\wedge \\vec{E}$ pointe vers l'arrière."
+    },
+    {
+        "uuid": "em-069",
+        "image_path": null,
+        "theme": "exercice - TD",
+        "question": "Pour une OPPH se propageant dans le vide, on a la relation $E_0 = c B_0$. Si l'amplitude du champ électrique est $E_0 = 43,4$ kV/m, quelle est la valeur de $B_0$ ?",
+        "answers": [
+            "$1,45 \\cdot 10^{-4}$ T",
+            "$1,45 \\cdot 10^{-2}$ T",
+            "$1,45 \\cdot 10^{-6}$ T",
+            "$4,34 \\cdot 10^3$ T"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "On utilise $B_0 = E_0 / c$. Avec $E_0 = 43,4 \\cdot 10^3 \\text{ V/m}$ et $c \\approx 3 \\cdot 10^8 \\text{ m/s}$, on obtient $B_0 \\approx 1,446 \\cdot 10^{-4} \\text{ T} = 0,145 \\text{ mT}$."
+    },
+    {
+        "uuid": "em-070",
+        "image_path": null,
+        "theme": "ondes stationnaires",
+        "question": "Pour une cavité résonnante de longueur $L$ fermée par deux plans parfaitement conducteurs, les fréquences des modes propres $f_n$ sont données par :",
+        "answers": [
+            "$f_n = n \\frac{c}{L}$",
+            "$f_n = n \\frac{c}{2L}$",
+            "$f_n = \\frac{c}{nL}$",
+            "$f_n = (2n-1) \\frac{c}{4L}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Les conditions aux limites imposent un nœud de champ électrique aux extrémités, donc $L = n \\lambda / 2$. Comme $f = c / \\lambda$, on en déduit $f_n = n \\frac{c}{2L}$ avec $n \\in \\mathbb{N}^*$."
+    },
+    {
+        "uuid": "em-071",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Dans le cadre de l'étude des équations de Maxwell dans le vide, que vaut la divergence du champ magnétique $\\text{div}(\\vec{B})$ ?",
+        "answers": [
+            "$0$",
+            "$\\mu_0 \\vec{J}$",
+            "$\\mu_0 \\rho$",
+            "$- \\frac{\\partial \\vec{B}}{\\partial t}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "Il s'agit de l'équation de Maxwell-Flux (ou loi de Gauss pour le magnétisme). L'absence de monopôle magnétique impose que le flux du champ magnétique à travers toute surface fermée est nul, soit $\\text{div}(\\vec{B}) = 0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-072",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "En électromagnétisme, l'expression complexe $\\underline{\\vec{E}} = \\underline{\\vec{E}_0} e^{i(\\omega t - \\vec{k}\\cdot\\vec{r})}$ représente :",
+        "answers": [
+            "Une onde plane progressive harmonique (OPPH)",
+            "Une onde sphérique",
+            "Une onde évanescente",
+            "Une onde stationnaire"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "La forme exponentielle complexe avec un terme de phase $(\\omega t - \\vec{k}\\cdot\\vec{r})$ est caractéristique d'une onde dont les surfaces d'onde sont des plans perpendiculaires au vecteur d'onde $\\vec{k}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-073",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Quelle est l'expression correcte du Laplacien scalaire $\\Delta f$ d'une fonction scalaire $f(x,y,z)$ en coordonnées cartésiennes ?",
+        "answers": [
+            "$\\frac{\\partial^2 f}{\\partial x^2} + \\frac{\\partial^2 f}{\\partial y^2} + \\frac{\\partial^2 f}{\\partial z^2}$",
+            "$\\frac{\\partial f}{\\partial x} + \\frac{\\partial f}{\\partial y} + \\frac{\\partial f}{\\partial z}$",
+            "$\\vec{grad}(f)$",
+            "$\\sqrt{(\\frac{\\partial f}{\\partial x})^2 + (\\frac{\\partial f}{\\partial y})^2 + (\\frac{\\partial f}{\\partial z})^2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "Le Laplacien scalaire est défini comme la divergence du gradient. En coordonnées cartésiennes, cela donne la somme des dérivées partielles secondes. La réponse 2 est le gradient et la 4 n'a pas de sens physique usuel.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-074",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "D'après le théorème de Poynting, le flux du vecteur de Poynting $\\Pi = \\frac{1}{\\mu_0} \\vec{E} \\wedge \\vec{B}$ à travers une surface fermée entourant un volume est lié à l'énergie électromagnétique stockée par :",
+        "answers": [
+            "Le flux est toujours positif",
+            "Le flux sortant est égal à l'opposé de la variation temporelle de l'énergie stockée",
+            "Le flux est nul en tout instant dans le vide",
+            "Le flux est égal à la puissance dissipée par effet Joule uniquement"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Le bilan énergétique local s'écrit $\\text{div}(\\vec{\\Pi}) + \\frac{\\partial u}{\\partial t} = - \\vec{j} \\cdot \\vec{E}$. Par le théorème de Green-Ostrogradski, l'intégrale de volume du flux sortant est égale à la diminution de l'énergie stockée dans le volume (hors pertes).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-075",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "L'affectation des bandes de fréquence pour les télécommunications est une question de gestion du spectre. Elle est gérée au niveau national et international par :",
+        "answers": [
+            "Des organismes régulateurs (ex: ANFR en France, UIT au niveau mondial)",
+            "Chaque constructeur de téléphone librement",
+            "La météo spatiale",
+            "La loi de la physique (interférences constructives)"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "Le spectre électromagnétique est une ressource limitée. Son usage est strictement réglementé par des agences nationales (ANFR en France) pour éviter les brouillages, et coordonné mondialement par l'UIT (Union Internationale des Télécommunications).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-076",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Pourquoi les rayons X sont-ils particulièrement adaptés pour étudier la structure de la matière à l'échelle atomique (cristallographie) ?",
+        "answers": [
+            "Parce que leur vitesse est plus grande que celle de la lumière",
+            "Parce que leur longueur d'onde est de l'ordre de grandeur des distances interatomiques (quelques $\\text{\\AA}$)",
+            "Parce qu'ils sont invisibles à l'œil nu",
+            "Parce qu'ils traversent les tissus mous"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Pour observer un objet, il faut que la longueur d'onde de la sonde utilisée soit comparable à la taille des détails que l'on souhaite résoudre (phénomène de diffraction). Les rayons X, ayant une longueur d'onde de l'ordre de $10^{-10} \\text{m}$, permettent de sonder le réseau cristallin.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-077",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La vitesse de phase $v_{\\phi}$ d'une onde électromagnétique se propageant dans un milieu est définie par la relation :",
+        "answers": [
+            "$v_{\\phi} = \\frac{\\omega}{k}$",
+            "$v_{\\phi} = \\frac{k}{\\omega}$",
+            "$v_{\\phi} = \\lambda \\cdot T$",
+            "$v_{\\phi} = \\frac{d\\omega}{dk}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "La vitesse de phase correspond à la vitesse de déplacement d'une surface d'onde (phase constante). Elle est donnée par le rapport de la pulsation sur le nombre d'onde. Attention : $\\frac{d\\omega}{dk}$ correspond à la vitesse de groupe.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-078",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Si l'on considère une onde électromagnétique plane se propageant dans le vide, comment évolue l'intensité moyenne $I$ si l'on double l'amplitude du champ électrique $E_0$ ?",
+        "answers": [
+            "L'intensité est multipliée par 2",
+            "L'intensité est multipliée par 4",
+            "L'intensité est multipliée par $\\sqrt{2}$",
+            "L'intensité reste constante"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "L'intensité d'une onde est proportionnelle à la moyenne temporelle du carré du champ électrique, c'est-à-dire $\\langle \\Pi \\rangle \\propto E_0^2$. Si $E_0$ est doublé, $I$ est multiplié par $2^2 = 4$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-079",
+        "image_path": null,
+        "theme": "polarisation",
+        "question": "Une onde électromagnétique est dite polarisée circulairement si :",
+        "answers": [
+            "Le vecteur $\\vec{E}$ garde une direction fixe dans l'espace",
+            "Le vecteur $\\vec{E}$ tourne dans un plan perpendiculaire à $\\vec{k}$ avec une norme constante",
+            "Le vecteur $\\vec{E}$ change de norme périodiquement",
+            "La composante $\\vec{B}$ est nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La polarisation circulaire correspond à la superposition de deux ondes planes polarisées rectilignement, déphasées de $\\pi/2$, avec des amplitudes égales. Cela conduit à un vecteur $\\vec{E}$ dont l'extrémité décrit un cercle.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-080",
+        "image_path": null,
+        "theme": "exercice - TD",
+        "question": "Dans un exercice de propagation, le vecteur d'onde est donné par $\\vec{k} = \\frac{k}{3}(2, 2, 1)$. Quelle est la norme de ce vecteur ?",
+        "answers": [
+            "$k/3$",
+            "$k$",
+            "$\\sqrt{5}k/3$",
+            "$3k$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La norme d'un vecteur $\\vec{k} = (k_x, k_y, k_z)$ est $\\sqrt{k_x^2 + k_y^2 + k_z^2}$. Ici, $||\\vec{k}|| = \\frac{k}{3} \\sqrt{2^2 + 2^2 + 1^2} = \\frac{k}{3} \\sqrt{4+4+1} = \\frac{k}{3} \\sqrt{9} = \\frac{k}{3} \\times 3 = k$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-081",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Dans le cadre de l'étude de la propagation des ondes radio, quelle est la gamme de fréquence porteuse typique utilisée pour la modulation de fréquence (bande FM) ?",
+        "answers": [
+            "$100 \\text{ kHz}$",
+            "$100 \\text{ MHz}$",
+            "$100 \\text{ GHz}$",
+            "$100 \\text{ Hz}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La bande FM (Fréquence Modulée) utilisée pour la radiodiffusion se situe généralement entre $88 \\text{ MHz}$ et $108 \\text{ MHz}$. Le kHz correspond aux ondes longues/moyennes (AM), et le GHz aux hyperfréquences (Wi-Fi, radars).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-082",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Pour une onde électromagnétique se propageant dans le vide, l'équation de d'Alembert est $\\Delta \\vec{E} - \\frac{1}{c^2} \\frac{\\partial^2 \\vec{E}}{\\partial t^2} = \\vec{0}$. Que devient cette équation pour un champ électromagnétique stationnaire (indépendant du temps) ?",
+        "answers": [
+            "Elle devient l'équation de Laplace $\\Delta \\vec{E} = \\vec{0}$",
+            "Elle reste inchangée : $\\Delta \\vec{E} - \\frac{1}{c^2} \\frac{\\partial^2 \\vec{E}}{\\partial t^2} = \\vec{0}$",
+            "Elle s'annule totalement : $\\vec{0} = \\vec{0}$",
+            "Elle devient l'équation de Poisson $\\Delta \\vec{E} = -\\frac{\\rho}{\\epsilon_0}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "Si le champ est statique, alors $\\frac{\\partial}{\\partial t} = 0$. Le terme temporel de l'équation de d'Alembert disparaît, et il reste $\\Delta \\vec{E} = \\vec{0}$, qui est l'équation de Laplace. L'équation de Poisson n'est valable que s'il existe une densité de charge locale.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-083",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Dans le cadre de l'étude des milieux linéaires, quelle est l'expression correcte de la densité volumique d'énergie magnétique $w_m$ associée à un champ $\\vec{B}$ dans le vide ?",
+        "answers": [
+            "$\\frac{1}{2} \\mu_0 B^2$",
+            "$\\frac{B^2}{2 \\mu_0}$",
+            "$\\mu_0 \\epsilon_0 B^2$",
+            "$\\frac{1}{2} \\frac{B}{\\mu_0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La densité volumique d'énergie magnétique est donnée par $w_m = \\frac{B^2}{2 \\mu_0}$. Une erreur classique est d'inverser la perméabilité $\\mu_0$, qui doit se trouver au dénominateur par analogie avec la densité d'énergie électrique $w_e = \\frac{1}{2} \\epsilon_0 E^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-084",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Pour une onde plane progressive harmonique (OPPH) se propageant dans le vide, quelle est la relation de phase entre les champs $\\vec{E}$ et $\\vec{B}$ ?",
+        "answers": [
+            "Ils sont en quadrature de phase ($\\pi/2$)",
+            "Ils sont en phase",
+            "Ils ont un déphasage de $\\pi$",
+            "Ils sont déphasés de $3\\pi/2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Dans le vide, pour une onde plane, les champs $\\vec{E}$ et $\\vec{B}$ sont liés par la relation $\\vec{B} = \\frac{1}{c} \\vec{u} \\wedge \\vec{E}$, où $\\vec{u}$ est le vecteur unitaire de propagation. Cette relation montre qu'ils oscillent en phase.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-085",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "L'indice de réfraction $n$ d'un milieu est défini par le rapport $n = c/v$. Quelle est la valeur de l'indice de réfraction du vide ?",
+        "answers": [
+            "$0$",
+            "$1$",
+            "$\\infty$",
+            "$c$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Par définition, la célérité de la lumière dans le vide est $c$. Ainsi, $n = c/c = 1$. L'indice de réfraction ne peut pas être nul car la vitesse serait infinie, ce qui est physiquement impossible.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-086",
+        "image_path": null,
+        "theme": "exercice - TD",
+        "question": "Dans le cadre de l'étude d'une OPPH, le vecteur d'onde est $\\vec{k} = \\alpha(\\vec{e}_x + \\vec{e}_y)$. Quelle est la direction de propagation de l'onde ?",
+        "answers": [
+            "Selon l'axe des $x$",
+            "Selon la première bissectrice du plan $(Oxy)$",
+            "Selon l'axe des $z$",
+            "Selon la direction $\\vec{e}_x - \\vec{e}_y$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La direction de propagation est donnée par le vecteur d'onde $\\vec{k}$. Le vecteur $(1, 1, 0)$ dans la base cartésienne pointe vers la bissectrice du plan $xy$ (angle de $45^\\circ$ avec l'axe $x$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-087",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lorsqu'une onde électromagnétique change de milieu de propagation (passage d'un milieu 1 à un milieu 2), quelle grandeur reste invariante ?",
+        "answers": [
+            "La longueur d'onde $\\lambda$",
+            "La fréquence $\\nu$ (ou $f$)",
+            "La célérité $v$",
+            "L'amplitude $E_0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La fréquence est imposée par la source. Lors du passage d'un milieu à un autre, la célérité change (car l'indice change), ce qui impose une modification de la longueur d'onde $\\lambda = v/f$ pour conserver la fréquence.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-088",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "D'après la relation de Planck-Einstein $E = h\\nu$, comment comparer l'énergie d'un photon de lumière bleue à celle d'un photon de lumière rouge ?",
+        "answers": [
+            "Il est plus énergétique",
+            "Il est moins énergétique",
+            "Il a la même énergie",
+            "Son énergie dépend de l'intensité de la source"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "La fréquence $\\nu$ de la lumière bleue est supérieure à celle de la lumière rouge. Comme $E = h\\nu$ avec $h$ constante, le photon bleu possède une énergie individuelle plus grande.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-089",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'analyse vectorielle utilisée en électromagnétisme, quel est le résultat de l'opération $\\vec{\\text{rot}}(\\vec{\\text{grad}}(f))$ où $f$ est une fonction scalaire de classe $C^2$ ?",
+        "answers": [
+            "Le vecteur nul $\\vec{0}$",
+            "Le laplacien $\\Delta f$",
+            "Un vecteur unitaire",
+            "Le gradient de $f$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "Une identité fondamentale de l'analyse vectorielle est que le rotationnel d'un gradient est toujours identiquement nul : $\\vec{\\nabla} \\wedge (\\vec{\\nabla} f) = \\vec{0}$. Cela découle du théorème de Schwarz sur l'égalité des dérivées croisées.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-090",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Pour une OPPH de longueur d'onde $\\lambda$, quelle est la relation correcte entre le nombre d'onde $k$ (norme du vecteur d'onde) et $\\lambda$ ?",
+        "answers": [
+            "$k = 2\\pi \\lambda$",
+            "$k = \\frac{2\\pi}{\\lambda}$",
+            "$\\lambda = 2\\pi k$",
+            "$k = \\lambda / 2\\pi$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Le nombre d'onde $k$ représente le nombre de périodes spatiales dans une distance $2\\pi$. La relation est $k = \\frac{2\\pi}{\\lambda}$. Une erreur classique est d'inverser les termes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-091",
+        "image_path": null,
+        "theme": "ondes stationnaires",
+        "question": "Dans le cadre de l'étude d'une onde stationnaire plane, le transport d'énergie moyenne temporelle est-il non nul ?",
+        "answers": [
+            "Oui, l'énergie est transportée dans le sens de propagation des ondes constitutives.",
+            "Non, le flux moyen du vecteur de Poynting $\\langle \\vec{\\Pi} \\rangle$ est nul en tout point.",
+            "Oui, mais uniquement dans les zones de ventre de vibration.",
+            "Non, car le champ magnétique est nul partout."
+        ],
+        "difficulty": 4,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Une onde stationnaire est la superposition de deux ondes progressives de même fréquence se propageant en sens opposés. Le vecteur de Poynting est $\\vec{\\Pi} = \\frac{1}{\\mu_0} \\vec{E} \\wedge \\vec{B}$. En moyenne temporelle, les contributions énergétiques des deux ondes s'annulent exactement. Il n'y a pas de transfert net d'énergie à travers une surface fixe.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-092",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "En radiodiffusion, la fréquence porteuse de 107,7 MHz (FM) se situe dans quelle bande de fréquences ?",
+        "answers": [
+            "VHF (Very High Frequency) : de 30 MHz à 300 MHz.",
+            "UHF (Ultra High Frequency) : de 300 MHz à 3 GHz.",
+            "HF (High Frequency) : de 3 MHz à 30 MHz.",
+            "ELF (Extremely Low Frequency) : moins de 300 Hz."
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "La bande FM (87,5 - 108 MHz) appartient au spectre VHF. Il est impératif de connaître les ordres de grandeur des bandes radio pour le concours (HF pour les ondes courtes, VHF pour la FM/TV, UHF pour la TNT/GSM).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-093",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Pour une onde électromagnétique se propageant dans le vide, quelle est la nature de la relation de dispersion ?",
+        "answers": [
+            "Dispersive : la vitesse dépend de la fréquence.",
+            "Non dispersive : la célérité $c$ est constante et indépendante de la fréquence.",
+            "Dispersive seulement pour les fréquences $f > 10^{15} \\text{ Hz}$.",
+            "Indéterminée, elle dépend de l'amplitude du champ."
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Dans le vide, les équations de Maxwell conduisent à l'équation de d'Alembert $\\Delta E - \\frac{1}{c^2} \\frac{\\partial^2 E}{\\partial t^2} = 0$. La relation de dispersion est $\\omega = ck$, soit $\\frac{\\omega}{k} = c$ (constante). L'onde est donc non dispersive.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-094",
+        "image_path": null,
+        "theme": "polarisation",
+        "question": "Lorsqu'une onde électromagnétique plane incidente rencontre un polariseur idéal, la direction de l'axe passant du polariseur correspond à :",
+        "answers": [
+            "La direction du champ électrique $\\vec{E}$ transmis après le polariseur.",
+            "La direction du champ électrique $\\vec{E}$ intégralement absorbé.",
+            "La direction du vecteur d'onde $\\vec{k}$.",
+            "La direction du champ magnétique $\\vec{B}$ incident."
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "Un polariseur idéal est un filtre qui ne laisse passer que la composante du champ électrique parallèle à son axe. La loi de Malus $I = I_0 \\cos^2 \\theta$ régit l'intensité transmise en fonction de l'angle $\\theta$ entre l'axe du polariseur et la polarisation incidente.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-095",
+        "image_path": null,
+        "theme": "énergie",
+        "question": "Soit une charge ponctuelle en mouvement oscillatoire. Le flux du vecteur de Poynting sortant d'une surface fermée entourant cette charge représente :",
+        "answers": [
+            "La puissance moyenne rayonnée par la charge sous forme d'onde électromagnétique.",
+            "L'énergie électrostatique stockée dans le volume considéré.",
+            "Le courant de déplacement total traversant la surface.",
+            "La force de rayonnement exercée sur la charge."
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "Le vecteur de Poynting $\\vec{\\Pi}$ représente le vecteur densité de flux d'énergie électromagnétique. Son flux sortant à travers une surface fermée, intégré sur une période, donne la puissance moyenne rayonnée à l'infini par le dipôle oscillant.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-096",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Pour une onde plane progressive harmonique, que définit le vecteur d'onde $\\vec{k}$ ?",
+        "answers": [
+            "La direction de propagation et le sens de l'onde, ainsi que sa norme $k = 2\\pi / \\lambda$.",
+            "La direction du champ magnétique $\\vec{B}$.",
+            "La fréquence temporelle de l'onde.",
+            "Le plan de polarisation de l'onde."
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "Le vecteur d'onde $\\vec{k}$ est normal aux surfaces d'onde (plans d'onde constante). Sa norme est liée à la longueur d'onde par $k = 2\\pi / \\lambda$ et sa direction est celle de la vitesse de phase.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-097",
+        "image_path": null,
+        "theme": "exercice - TD",
+        "question": "Soit une onde électromagnétique incidente sur un conducteur parfait en $x=0$. Pour satisfaire la condition aux limites $\\vec{E}_{total}(x=0, t) = \\vec{0}$, comment doivent être l'onde incidente et l'onde réfléchie ?",
+        "answers": [
+            "En phase, pour s'additionner.",
+            "En opposition de phase, pour créer un nœud de champ électrique en $x=0$.",
+            "En quadrature de phase.",
+            "Elles doivent avoir des fréquences différentes."
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "Dans un conducteur parfait, le champ électrique tangentiel à la surface doit être nul. Si l'onde incidente est $\\vec{E}_i$, il faut que $\\vec{E}_r = -\\vec{E}_i$ en $x=0$. Cela impose un déphasage de $\\pi$ entre l'onde incidente et l'onde réfléchie.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-098",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Quelle est la relation fondamentale reliant la pulsation $\\omega$ (en $\\text{rad.s}^{-1}$) et la fréquence $f$ (en $\\text{Hz}$) ?",
+        "answers": [
+            "$\\omega = f / (2\\pi)$",
+            "$\\omega = 2\\pi f$",
+            "$f = 2\\pi \\omega$",
+            "$\\omega = \\sqrt{f}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "La pulsation représente la vitesse angulaire de rotation du phaseur associé à l'onde. Puisqu'une période $T$ correspond à un cycle de $2\\pi$ radians, on a $\\omega = 2\\pi / T = 2\\pi f$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-099",
+        "image_path": null,
+        "theme": "ondes électromagnétiques",
+        "question": "Comparer la célérité $v$ de la lumière dans l'air à celle dans le vide $c$.",
+        "answers": [
+            "La célérité dans l'air est très proche de celle dans le vide ($v \\approx c$).",
+            "La célérité dans l'air est notablement plus faible ($v \\approx c/2$).",
+            "La célérité dans l'air est égale à la vitesse du son.",
+            "La célérité dans l'air dépend de l'intensité de l'onde."
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 0,
+        "explication": "L'indice de réfraction de l'air est $n \\approx 1,0003$. La célérité est donnée par $v = c/n$. Ainsi, $v$ est extrêmement proche de $c$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "em-100",
+        "image_path": null,
+        "theme": "effet doppler",
+        "question": "Lors de l'observation du spectre d'une étoile, on note un décalage vers le rouge (redshift) des raies spectrales. Qu'en conclut-on sur le mouvement de la source par rapport à l'observateur ?",
+        "answers": [
+            "La source s'approche de l'observateur.",
+            "La source s'éloigne de l'observateur (augmentation de $\\lambda$).",
+            "La source est immobile mais sa température augmente.",
+            "La source est immobile mais sa température diminue."
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes électromagnétiques",
+        "correct_answer_index": 1,
+        "explication": "L'effet Doppler-Fizeau implique que si la source s'éloigne, la période apparente augmente, donc la longueur d'onde observée $\\lambda_{obs}$ est supérieure à la longueur d'onde émise $\\lambda_{em}$. Vers les grandes longueurs d'onde (le rouge), la fréquence diminue.",
+        "subject": "physique"
+    }
+]

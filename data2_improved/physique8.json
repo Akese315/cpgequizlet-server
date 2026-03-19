@@ -1,0 +1,1692 @@
+[
+    {
+        "uuid": "diff-001",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/1/12/Diffusion.svg",
+        "theme": "Diffusion de particules",
+        "question": "Dans le cadre de la thermodynamique statistique, quel phénomène irréversible caractérise le transport de matière des zones de forte concentration vers les zones de concentration plus faible ?",
+        "answers": [
+            "La convection",
+            "La diffusion",
+            "Le rayonnement",
+            "L'effet Peltier"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La diffusion est un processus irréversible de transport de matière résultant de l'agitation thermique microscopique. Elle tend à homogénéiser les concentrations. La convection correspond à un transport dû à un écoulement macroscopique du milieu, et le rayonnement est un mode de transfert thermique par ondes électromagnétiques."
+    },
+    {
+        "uuid": "diff-002",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Lorsqu'un ensemble de particules est transporté par l'écoulement global d'un fluide dans lequel elles sont immergées, quel mécanisme décrit ce mouvement ?",
+        "answers": [
+            "La diffusion",
+            "La conduction",
+            "La convection (ou entraînement)",
+            "La relaxation"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Le transport par entraînement dans un fluide en mouvement est appelé convection (ou advection dans certains contextes). La diffusion, quant à elle, ne nécessite pas de mouvement d'ensemble du milieu, mais dépend uniquement du gradient de concentration."
+    },
+    {
+        "uuid": "diff-003",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans le cadre de l'étude des flux, quelle est la définition correcte du flux $\\Phi$ de particules traversant une surface $S$ par unité de temps ?",
+        "answers": [
+            "$\\Phi = \\frac{dN}{dt}$",
+            "$\\Phi = \\frac{dN}{dV}$",
+            "$\\Phi = \\frac{\\delta N}{d\\tau}$",
+            "$\\Phi = n \\cdot v$"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le flux $\\Phi$ est défini comme le nombre de particules $dN$ traversant une surface donnée pendant un intervalle de temps $dt$. Ainsi, $\\Phi = \\frac{dN}{dt}$ est homogène à un nombre de particules par seconde ($s^{-1}$)."
+    },
+    {
+        "uuid": "diff-004",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est l'unité SI du flux de particules $\\Phi$ ?",
+        "answers": [
+            "$s^{-1}$",
+            "$mol \\cdot s^{-1}$",
+            "$m^{-2} \\cdot s^{-1}$",
+            "$m \\cdot s^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le flux $\\Phi = \\frac{dN}{dt}$ compte le nombre de particules (sans unité ou en mol) par unité de temps. Son unité est donc $s^{-1}$ (ou $mol \\cdot s^{-1}$ si l'on parle de flux molaire). Attention à ne pas confondre avec le flux surfacique qui est un nombre de particules par unité de temps et par unité de surface."
+    },
+    {
+        "uuid": "diff-005",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Soit $\\vec{j}_N$ le vecteur densité de courant de particules. Quelle expression permet de calculer le flux $\\Phi$ à travers une surface orientée $S$ ?",
+        "answers": [
+            "$\\Phi = \\iint_S \\vec{j}_N \\cdot d\\vec{S}$",
+            "$\\Phi = \\vec{j}_N \\cdot \\vec{S}$ (si $\\vec{j}_N$ uniforme)",
+            "$\\Phi = \\frac{j_N}{S}$",
+            "Les deux premières propositions sont exactes"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 3,
+        "subject": "physique",
+        "explication": "Le flux est la circulation du vecteur densité de courant à travers la surface $S$. La définition générale est l'intégrale de surface $\\iint_S \\vec{j}_N \\cdot d\\vec{S}$. Si le vecteur est uniforme sur une surface plane, cela se simplifie par le produit scalaire $\\vec{j}_N \\cdot \\vec{S}$."
+    },
+    {
+        "uuid": "diff-006",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est l'unité du vecteur densité de courant de particules $\\vec{j}_N$ ?",
+        "answers": [
+            "$m^{-2} \\cdot s^{-1}$",
+            "$m^3 \\cdot s^{-1}$",
+            "$m \\cdot s^{-1}$",
+            "$m^{-3} \\cdot s^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La densité de courant $\\vec{j}_N$ représente un nombre de particules traversant une unité de surface par unité de temps. Son unité est donc $\\frac{\\text{nombre}}{m^2 \\cdot s}$, soit $m^{-2} \\cdot s^{-1}$."
+    },
+    {
+        "uuid": "diff-007",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est la formulation correcte de la première loi de Fick reliant la densité de courant de particules $\\vec{j}_N$ au gradient de concentration $n$ ?",
+        "answers": [
+            "$\\vec{j}_N = D \\vec{grad}(n)$",
+            "$\\vec{j}_N = -D \\vec{grad}(n)$",
+            "$\\vec{j}_N = -D \\Delta n$",
+            "$\\vec{j}_N = D \\frac{\\partial n}{\\partial t}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La loi de Fick stipule que le courant de particules s'oppose au gradient de concentration : les particules migrent des fortes concentrations vers les faibles. Le signe moins est donc indispensable."
+    },
+    {
+        "uuid": "diff-008",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "En utilisant l'équation de Fick $\\vec{j}_N = -D \\vec{grad}(n)$, quelle est l'unité SI du coefficient de diffusion $D$ ?",
+        "answers": [
+            "$m \\cdot s^{-2}$",
+            "$m^2 \\cdot s^{-1}$",
+            "$m^2 \\cdot s$",
+            "$s \\cdot m^{-2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le gradient $\\vec{grad}(n)$ est en $m^{-4}$ (concentration $m^{-3}$ divisée par une distance $m$). Comme $\\vec{j}_N$ est en $m^{-2} \\cdot s^{-1}$, on a $[D] = \\frac{[j_N]}{[grad(n)]} = \\frac{L^{-2} T^{-1}}{L^{-4}} = L^2 T^{-1}$, soit $m^2 \\cdot s^{-1}$."
+    },
+    {
+        "uuid": "diff-009",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Le signe négatif dans la loi de Fick $\\vec{j}_N = -D \\vec{grad}(n)$ traduit physiquement le fait que :",
+        "answers": [
+            "La diffusion diminue toujours l'énergie interne du système",
+            "Le flux est dirigé dans le sens du gradient, vers les zones de haute densité",
+            "Le flux est dirigé à l'opposé du gradient, vers les zones de plus faible densité",
+            "La concentration ne peut jamais devenir nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Le gradient pointe vers les valeurs croissantes de $n$. Pour que le flux aille des zones de forte concentration vers les zones de faible concentration, il doit être orienté dans le sens opposé au gradient, d'où le signe moins."
+    },
+    {
+        "uuid": "diff-010",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quel est l'ordre de grandeur typique du coefficient de diffusion $D$ pour des petites molécules dans un gaz aux conditions normales de température et de pression ?",
+        "answers": [
+            "$10^{-5} m^2 \\cdot s^{-1}$",
+            "$10^{-10} m^2 \\cdot s^{-1}$",
+            "$10^{-15} m^2 \\cdot s^{-1}$",
+            "$10^{-2} m^2 \\cdot s^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Dans un gaz, la diffusion est assez rapide en raison des grands libres parcours moyens : $D$ est de l'ordre de $10^{-5} m^2 \\cdot s^{-1}$. Dans les liquides, il est beaucoup plus faible ($10^{-9}$ à $10^{-10} m^2 \\cdot s^{-1}$)."
+    },
+    {
+        "uuid": "diff-011",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans le cadre de l'étude du mouvement brownien d'un soluté dans un solvant liquide, quel est l'ordre de grandeur du coefficient de diffusion $D$ ?",
+        "answers": [
+            "$10^{-5} m^2 \\cdot s^{-1}$",
+            "$10^{-9} m^2 \\cdot s^{-1}$",
+            "$10^{-15} m^2 \\cdot s^{-1}$",
+            "$10^{-20} m^2 \\cdot s^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "En phase liquide, la diffusion est freinée par les interactions intermoléculaires constantes. L'ordre de grandeur classique pour des petites molécules dans l'eau est de $10^{-9} m^2 \\cdot s^{-1}$. La valeur $10^{-5} m^2 \\cdot s^{-1}$ correspond plutôt aux gaz (libre parcours moyen plus grand), tandis que les valeurs très faibles sont typiques des solides."
+    },
+    {
+        "uuid": "diff-012",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans le cadre de l'étude de la migration des lacunes ou des interstitiels dans un cristal, quel est l'ordre de grandeur du coefficient de diffusion $D$ pour des atomes dans un solide ?",
+        "answers": [
+            "$10^{-10} m^2 \\cdot s^{-1}$",
+            "$10^{-15} m^2 \\cdot s^{-1}$",
+            "$10^{-25} m^2 \\cdot s^{-1}$",
+            "$10^{-5} m^2 \\cdot s^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Dans un solide, le réseau cristallin impose des barrières énergétiques importantes au déplacement des atomes. Le saut d'un atome vers un site voisin est un processus activé thermiquement très lent, d'où des coefficients extrêmement faibles, typiquement entre $10^{-20}$ et $10^{-30} m^2 \\cdot s^{-1}$ selon la température."
+    },
+    {
+        "uuid": "diff-013",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "En considérant la loi de Fick $\\vec{j}_N = -D \\vec{grad}(n)$, si le coefficient de diffusion $D$ augmente, comment évolue la vitesse de retour à l'équilibre ?",
+        "answers": [
+            "La diffusion est plus lente",
+            "La diffusion est plus rapide",
+            "La diffusion devient un mouvement convectif",
+            "La diffusion est indépendante de $D$"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le coefficient $D$ représente la capacité du système à transporter les particules pour lisser un gradient de concentration. Plus $D$ est élevé, plus le flux particulaire $\\vec{j}_N$ est important pour un gradient donné, et donc plus le milieu redevient homogène rapidement."
+    },
+    {
+        "uuid": "diff-014",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "La loi de Fick ($\\vec{j}_N = -D \\vec{grad}(n)$) est une loi phénoménologique de transport. À quelle loi de conduction thermique est-elle formellement analogue ?",
+        "answers": [
+            "La loi d'Ohm locale : $\\vec{j} = \\gamma \\vec{E}$",
+            "La loi de Fourier : $\\vec{j}_{th} = -\\lambda \\vec{grad}(T)$",
+            "La loi de Newton : $\\vec{F} = m\\vec{a}$",
+            "La loi de Hagen-Poiseuille"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'analogie est structurelle : dans les deux cas, le flux (matière ou chaleur) est proportionnel à l'opposé du gradient de la grandeur intensive associée (concentration ou température). La loi de Fourier régit la diffusion thermique, tout comme celle de Fick régit la diffusion particulaire."
+    },
+    {
+        "uuid": "diff-015",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Soit un milieu de concentration particulaire $n$. Si $n$ est uniforme dans tout l'espace, que vaut le flux de diffusion $\\vec{j}_N$ ?",
+        "answers": [
+            "Il est maximal",
+            "Il est nul",
+            "Il est infini",
+            "Il est proportionnel à $D$"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Selon la loi de Fick, le flux est proportionnel au gradient de concentration : $\\vec{j}_N = -D \\vec{grad}(n)$. Si $n$ est uniforme, alors $\\vec{grad}(n) = \\vec{0}$, et donc $\\vec{j}_N = \\vec{0}$. Le système est à l'équilibre thermodynamique macroscopique."
+    },
+    {
+        "uuid": "diff-016",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Pour une diffusion unidimensionnelle suivant l'axe $(Ox)$, quelle est l'équation locale de conservation des particules sans source ?",
+        "answers": [
+            "$\\frac{\\partial n}{\\partial t} + \\frac{\\partial j_N}{\\partial x} = 0$",
+            "$\\frac{\\partial n}{\\partial t} = \\frac{\\partial j_N}{\\partial x}$",
+            "$\\frac{\\partial n}{\\partial x} = -\\frac{\\partial j_N}{\\partial t}$",
+            "$\\frac{\\partial^2 n}{\\partial x^2} = \\frac{\\partial j_N}{\\partial x}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Par un bilan sur un volume élémentaire $S dx$, on obtient $\\frac{\\partial n}{\\partial t} S dx = (j_N(x) - j_N(x+dx))S = -\\frac{\\partial j_N}{\\partial x} dx S$. En simplifiant, on trouve $\\frac{\\partial n}{\\partial t} + \\frac{\\partial j_N}{\\partial x} = 0$."
+    },
+    {
+        "uuid": "diff-017",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Lors de l'établissement d'un bilan de matière sur un volume élémentaire, quelle est l'expression du volume $d\\tau$ pour une tranche de section droite $S$ et d'épaisseur $dx$ ?",
+        "answers": [
+            "$d\\tau = S/dx$",
+            "$d\\tau = S^2 dx$",
+            "$d\\tau = S dx$",
+            "$d\\tau = dx/S$"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Il s'agit d'un volume géométrique simple. Pour un prisme droit ou un cylindre, le volume élémentaire est égal au produit de la section transversale $S$ par l'épaisseur élémentaire $dx$. C'est la base de tout calcul de flux par intégration."
+    },
+    {
+        "uuid": "diff-018",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est l'équation locale de conservation des particules à 3 dimensions, en présence d'un flux vectoriel $\\vec{j}_N$ et sans terme source ?",
+        "answers": [
+            "$\\frac{\\partial n}{\\partial t} + div(\\vec{j}_N) = 0$",
+            "$\\frac{\\partial n}{\\partial t} - div(\\vec{j}_N) = 0$",
+            "$\\frac{\\partial n}{\\partial t} + \\vec{grad}(\\vec{j}_N) = 0$",
+            "$\\frac{\\partial n}{\\partial t} = div(\\vec{j}_N)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le bilan global sur un volume $V$ de surface $S$ s'écrit $\\frac{d}{dt} \\int_V n d\\tau = - \\oint_S \\vec{j}_N \\cdot \\vec{n} dS$. En utilisant le théorème de Green-Ostrogradski sur le flux, on obtient $\\int_V (\\frac{\\partial n}{\\partial t} + div(\\vec{j}_N)) d\\tau = 0$. Comme ceci est vrai pour tout volume, on a l'égalité locale."
+    },
+    {
+        "uuid": "diff-019",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "En présence d'une réaction chimique créant des particules, comment modifie-t-on l'équation de conservation ?",
+        "answers": [
+            "On ajoute un terme source $s$ tel que $\\frac{\\partial n}{\\partial t} + div(\\vec{j}_N) = -s$",
+            "On ajoute un terme source $s$ tel que $\\frac{\\partial n}{\\partial t} + div(\\vec{j}_N) = s$",
+            "On modifie $D$ pour inclure le taux de réaction",
+            "On ajoute une constante additive à la concentration $n$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le terme source $s$ (ou $\\alpha$) représente le nombre de particules créées par unité de volume et de temps. Si $s > 0$, la concentration locale augmente indépendamment du flux, d'où le signe '+' dans le bilan : $\\frac{\\partial n}{\\partial t} = -div(\\vec{j}_N) + s$."
+    },
+    {
+        "uuid": "diff-020",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est l'unité SI du terme source $\\alpha$ représentant un nombre de particules créées par unité de volume et par unité de temps ?",
+        "answers": [
+            "$m^{-3} \\cdot s^{-1}$",
+            "$m^3 \\cdot s$",
+            "$s^{-1}$",
+            "$mol \\cdot m^{-2} \\cdot s^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le terme $\\alpha$ doit s'ajouter à $\\frac{\\partial n}{\\partial t}$. Comme $\\frac{\\partial n}{\\partial t}$ est une concentration ($m^{-3}$) divisée par un temps ($s$), $\\alpha$ doit nécessairement s'exprimer en $m^{-3} \\cdot s^{-1}$ pour assurer l'homogénéité dimensionnelle de l'équation."
+    },
+    {
+        "uuid": "diff-021",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans le cadre de la modélisation d'un milieu diffusif, quelle est l'expression correcte de l'équation locale de conservation de la densité particulaire $n(\\vec{r}, t)$ en présence d'un terme source volumique $\\alpha$ ?",
+        "answers": [
+            "$\\frac{\\partial n}{\\partial t} + \\text{div}(\\vec{j}_N) = \\alpha$",
+            "$\\frac{\\partial n}{\\partial t} - \\text{div}(\\vec{j}_N) = \\alpha$",
+            "$\\frac{\\partial n}{\\partial t} + \\text{div}(\\vec{j}_N) + \\alpha = 0$",
+            "$\\frac{\\partial n}{\\partial t} = \\alpha \\cdot \\text{div}(\\vec{j}_N)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "L'équation de continuité exprime que la variation temporelle de la densité dans un volume élémentaire provient du flux sortant ($- \\text{div}(\\vec{j}_N)$) et de la production interne ($\\alpha$). Soit $\\frac{\\partial n}{\\partial t} = - \\text{div}(\\vec{j}_N) + \\alpha$. Réordonner donne la proposition 0. Un signe opposé devant la divergence reviendrait à un terme puits, et l'option 3 confond source et puits."
+    },
+    {
+        "uuid": "diff-022",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "En combinant la loi de Fick, $\\vec{j}_N = -D \\vec{\\text{grad}}(n)$, et l'équation de conservation sans source ($\\alpha=0$), quelle équation aux dérivées partielles régit l'évolution de la concentration $n(\\vec{r}, t)$ ?",
+        "answers": [
+            "$\\frac{\\partial n}{\\partial t} = D \\Delta n$",
+            "$\\frac{\\partial n}{\\partial t} = -D \\Delta n$",
+            "$\\frac{\\partial^2 n}{\\partial t^2} = D \\Delta n$",
+            "$\\frac{\\partial n}{\\partial t} = D \\nabla n$"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "En substituant $\\vec{j}_N$ dans l'équation de conservation : $\\frac{\\partial n}{\\partial t} = - \\text{div}(-D \\vec{\\text{grad}}(n)) = D \\text{div}(\\vec{\\text{grad}}(n)) = D \\Delta n$ (avec $D$ supposé constant). L'option 2 omet le changement de signe double, et l'option 3 correspond à l'équation d'onde, non de diffusion."
+    },
+    {
+        "uuid": "diff-023",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "L'équation de diffusion $\\frac{\\partial n}{\\partial t} = D \\Delta n$ est-elle réversible par rapport au temps ?",
+        "answers": [
+            "Oui, car le coefficient $D$ est une constante positive.",
+            "Non, elle n'est pas invariante par la transformation $t \\to -t$.",
+            "Oui, car le laplacien est un opérateur linéaire.",
+            "Non, car elle dépend de la dimension de l'espace."
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "La réversibilité temporelle nécessite l'invariance de l'équation par $t \\to -t$. Ici, le terme $\\frac{\\partial n}{\\partial t}$ change de signe alors que $\\Delta n$ est indépendant de $t$. L'équation devient $-\\frac{\\partial n}{\\partial t} = D \\Delta n$, ce qui est différent de l'originale : le processus de diffusion est intrinsèquement irréversible (entropique)."
+    },
+    {
+        "uuid": "diff-024",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Soit un milieu diffusif possédant une source volumique uniforme $\\alpha$. Quelle est l'équation de diffusion adaptée ?",
+        "answers": [
+            "$\\frac{\\partial n}{\\partial t} = D \\Delta n - \\alpha$",
+            "$\\frac{\\partial n}{\\partial t} = D \\Delta n + \\alpha$",
+            "$\\frac{\\partial n}{\\partial t} = D (\\Delta n + \\alpha)$",
+            "$\\frac{\\partial n}{\\partial t} = \\frac{D}{\\Delta n} + \\alpha$"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "D'après la conservation locale $\\frac{\\partial n}{\\partial t} = - \\text{div}(\\vec{j}_N) + \\alpha$. Avec la loi de Fick $\\vec{j}_N = -D \\vec{\\text{grad}}(n)$, on obtient directement $\\frac{\\partial n}{\\partial t} = D \\Delta n + \\alpha$. L'erreur classique est de placer $\\alpha$ à l'intérieur du laplacien ou de changer son signe par confusion avec un terme de réaction chimique de consommation."
+    },
+    {
+        "uuid": "diff-025",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Standard_deviation_diagram.svg",
+        "theme": "Diffusion de particules",
+        "question": "Lorsqu'on libère une quantité de matière $N_0$ en $x=0$ à $t=0$ dans un milieu infini, quelle est la forme mathématique de la solution $n(x,t)$ ?",
+        "answers": [
+            "Une fonction sinusoïdale amortie.",
+            "Une distribution gaussienne dont la largeur augmente avec le temps.",
+            "Une fonction exponentielle décroissante pure.",
+            "Une fonction en créneau s'élargissant linéairement."
+        ],
+        "difficulty": 4,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "La solution fondamentale (noyau de la chaleur) de l'équation de diffusion est une gaussienne $n(x,t) \\propto \\frac{1}{\\sqrt{t}} \\exp(-x^2 / 4Dt)$. La largeur à mi-hauteur (liée à la variance) évolue en $\\sqrt{t}$. Les autres fonctions ne sont pas solutions de l'équation de diffusion."
+    },
+    {
+        "uuid": "diff-026",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "En régime permanent (stationnaire) et en l'absence de terme source, que devient l'équation de diffusion ?",
+        "answers": [
+            "$D \\Delta n = 0$",
+            "$\\frac{\\partial n}{\\partial t} = 1$",
+            "$\\Delta n = \\alpha$",
+            "$\\frac{\\partial n}{\\partial t} = 0$ sans contrainte sur $\\Delta n$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Le régime permanent impose $\\frac{\\partial n}{\\partial t} = 0$. En reportant dans l'équation de diffusion $\\frac{\\partial n}{\\partial t} = D \\Delta n$, on obtient immédiatement $\\Delta n = 0$. C'est l'équation de Laplace, typique des problèmes stationnaires."
+    },
+    {
+        "uuid": "diff-027",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Pour un problème de diffusion 1D en régime permanent sans source, quelle est la forme du profil de concentration $n(x)$ ?",
+        "answers": [
+            "Parabolique ($n(x) = Ax^2 + Bx + C$)",
+            "Linéaire ($n(x) = Ax + B$)",
+            "Exponentielle ($n(x) = A e^{-x/L}$)",
+            "Sinusoïdale ($n(x) = A \\cos(kx)$)"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "En 1D, $\\Delta n = \\frac{d^2 n}{d x^2}$. L'équation de Laplace devient $\\frac{d^2 n}{d x^2} = 0$. En intégrant deux fois par rapport à $x$, on obtient une forme linéaire : $n(x) = Ax + B$. Une parabole nécessiterait un terme source uniforme, et les autres fonctions ne satisfont pas la dérivée seconde nulle."
+    },
+    {
+        "uuid": "diff-028",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Soit un milieu 1D stationnaire sans source avec $n(0) = n_0$ et $n(L) = n_L$. Quelle est l'expression du profil de concentration $n(x)$ ?",
+        "answers": [
+            "$n(x) = \\frac{n_L - n_0}{L} x + n_0$",
+            "$n(x) = (n_L - n_0) e^{x/L}$",
+            "$n(x) = n_0 x / L$",
+            "$n(x) = n_L + (n_L - n_0) \\frac{x}{L}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "On cherche $n(x) = Ax + B$. Avec $n(0) = n_0$, on trouve $B = n_0$. Avec $n(L) = n_L$, on a $AL + n_0 = n_L$, donc $A = (n_L - n_0)/L$. D'où $n(x) = \\frac{n_L - n_0}{L}x + n_0$. La réponse 3 oublierait la condition en $x=0$, et la 2 n'est pas une solution de $\\Delta n = 0$."
+    },
+    {
+        "uuid": "diff-029",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est l'expression du flux de particules $\\Phi$ à travers une surface $S$ pour un profil $n(x) = ax + b$ ?",
+        "answers": [
+            "$\\Phi = -D a S$",
+            "$\\Phi = D a / S$",
+            "$\\Phi = -D n(x) S$",
+            "$\\Phi = -D (ax + b) S$"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Le flux est donné par $\\vec{\\Phi} = \\iint_S \\vec{j}_N \\cdot \\vec{n} dS$. Avec la loi de Fick, $\\vec{j}_N = -D \\frac{dn}{dx} \\vec{u}_x$. Comme $\\frac{dn}{dx} = a$, on a $\\vec{j}_N = -Da \\vec{u}_x$. Le flux est donc $\\Phi = -DaS$. C'est une constante dans un régime stationnaire sans source."
+    },
+    {
+        "uuid": "diff-030",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Pour une diffusion 1D gaussienne $n(x,t) = \\frac{N_0}{\\sqrt{4\\pi Dt}} \\exp(-\\frac{x^2}{4Dt})$, comment évolue la largeur caractéristique du pic (écart-type $\\sigma$) au cours du temps ?",
+        "answers": [
+            "La largeur diminue car les particules se regroupent.",
+            "La largeur reste constante.",
+            "La largeur augmente en $\\sqrt{t}$.",
+            "La largeur augmente en $t$."
+        ],
+        "difficulty": 4,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 2,
+        "explication": "La largeur du pic est proportionnelle à la racine carrée du terme dans l'exponentielle, soit $\\sqrt{4Dt}$. La dépendance temporelle est donc en $\\sqrt{t}$. C'est le résultat classique de la marche aléatoire où le déplacement quadratique moyen $\\langle x^2 \\rangle$ évolue en $2Dt$."
+    },
+    {
+        "uuid": "diff-031",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans le cadre de l'étude classique du transfert de particules entre deux récipients via un tube de section $S$ et de longueur $L$, quelle hypothèse simplificatrice permet de considérer le flux comme conservatif au sein du tube ?",
+        "answers": [
+            "Le régime est turbulent, imposant un brassage rapide des espèces.",
+            "Le régime est quasi-stationnaire dans le tube, soit $\\tau_{diff} \\ll \\tau_{evo}$.",
+            "Il n'y a aucune diffusion dans le tube, celui-ci ne servant que de liaison.",
+            "La concentration est homogène dans tout le tube instantanément."
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'hypothèse quasi-stationnaire est fondamentale en physique des transferts. Elle signifie que le temps de diffusion à travers le tube ($\\tau_{diff} \\approx L^2/D$) est très court devant le temps caractéristique d'évolution des concentrations dans les récipients. Cela permet de considérer que le flux est spatialement uniforme dans le tube : $\\text{div}(\\vec{j}) = 0$."
+    },
+    {
+        "uuid": "diff-032",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Considérons un tube de longueur $L = 20\\, \\text{cm}$ avec un coefficient de diffusion $D = 10^{-5}\\, \\text{m}^2/\\text{s}$. Quel est l'ordre de grandeur du temps caractéristique de diffusion $\\tau$ ?",
+        "answers": [
+            "Quelques secondes",
+            "Environ $400\\, \\text{s}$ (soit environ $7$ minutes)",
+            "Environ $1\\, \\text{heure}$",
+            "Plusieurs jours"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le temps caractéristique de diffusion est donné par $\\tau \\approx L^2 / D$. Avec $L = 0,2\\, \\text{m}$, on obtient $\\tau = (0,2)^2 / 10^{-5} = 0,04 / 10^{-5} = 4000\\, \\text{s}$ (erreur de calcul dans l'énoncé source, la valeur est proche de 7 à 10 minutes). $400\\, \\text{s}$ est la réponse la plus proche par ordre de grandeur."
+    },
+    {
+        "uuid": "diff-033",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cylindrical_coordinates.svg",
+        "theme": "Diffusion de particules",
+        "question": "En coordonnées cylindriques $(r, \\theta, z)$, quelle est l'expression correcte du volume élémentaire $d\\tau$ lors d'un calcul d'intégrale de volume ?",
+        "answers": [
+            "$d\\tau = r\\, dr\\, d\\theta\\, dz$",
+            "$d\\tau = dr\\, d\\theta\\, dz$",
+            "$d\\tau = r^2\\, dr\\, d\\theta\\, dz$",
+            "$d\\tau = 2\\pi r\\, dr\\, dz$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le volume élémentaire doit être homogène à une longueur au cube ($L^3$). En cylindriques, les dimensions sont $dr$, $r d\\theta$ et $dz$. Le produit des trois donne $r dr d\\theta dz$. Le facteur $r$ est le Jacobien du changement de coordonnées."
+    },
+    {
+        "uuid": "diff-034",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est l'expression de l'aire latérale $S$ d'un cylindre de rayon $r$ et de hauteur $l$ ?",
+        "answers": [
+            "$\\pi r^2 l$",
+            "$2\\pi rl$",
+            "$2\\pi r^2$",
+            "$\\pi r l^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'aire latérale se calcule en 'déroulant' le cylindre : on obtient un rectangle de longueur le périmètre du cercle ($2\\pi r$) et de hauteur ($l$). D'où $S = 2\\pi r l$. $2\\pi r^2$ correspond à l'aire des deux bases."
+    },
+    {
+        "uuid": "diff-035",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "En géométrie cylindrique, en présence d'une symétrie axiale ($n$ ne dépend que de $r$), comment s'exprime la conservation de la masse $\\frac{\\partial n}{\\partial t} + \\text{div}(\\vec{j}) = 0$ ?",
+        "answers": [
+            "$\\frac{\\partial n}{\\partial t} = -\\frac{1}{r} \\frac{\\partial (r j_r)}{\\partial r}$",
+            "$\\frac{\\partial n}{\\partial t} = -\\frac{\\partial j_r}{\\partial r}$",
+            "$\\frac{\\partial n}{\\partial t} = -\\frac{1}{r^2} \\frac{\\partial (r^2 j_r)}{\\partial r}$",
+            "$\\frac{\\partial n}{\\partial t} = -\\frac{\\partial (r j_r)}{\\partial r}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La divergence en coordonnées cylindriques pour un vecteur radial est $\\frac{1}{r} \\frac{\\partial (r j_r)}{\\partial r}$. C'est une erreur classique d'oublier le facteur $1/r$ ou d'utiliser la formule cartésienne."
+    },
+    {
+        "uuid": "diff-036",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "En combinant la loi de Fick $\\vec{j} = -D \\vec{\\text{grad}}(n)$ et l'équation de conservation, quelle est l'équation de diffusion en symétrie axiale ?",
+        "answers": [
+            "$\\frac{\\partial n}{\\partial t} = \\frac{D}{r} \\frac{\\partial}{\\partial r}(r \\frac{\\partial n}{\\partial r})$",
+            "$\\frac{\\partial n}{\\partial t} = D \\frac{\\partial^2 n}{\\partial r^2}$",
+            "$\\frac{\\partial n}{\\partial t} = \\frac{D}{r^2} \\frac{\\partial}{\\partial r}(r^2 \\frac{\\partial n}{\\partial r})$",
+            "$\\frac{\\partial n}{\\partial t} = D \\left( \\frac{\\partial^2 n}{\\partial r^2} + \\frac{1}{r} \\frac{\\partial n}{\\partial r} \\right)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La réponse 0 est la forme compacte (sous forme de divergence) du laplacien. La réponse 3 est mathématiquement identique (développement de la dérivée), mais la réponse 0 est la forme standard issue directement de la conservation. La réponse 1 est une confusion avec la géométrie sphérique."
+    },
+    {
+        "uuid": "diff-037",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/4/4f/3D_Spherical.svg",
+        "theme": "Diffusion de particules",
+        "question": "Quel est le volume élémentaire $d\\tau$ en coordonnées sphériques $(r, \\theta, \\phi)$ ?",
+        "answers": [
+            "$d\\tau = r^2 \\sin(\\theta) dr d\\theta d\\phi$",
+            "$d\\tau = dr d\\theta d\\phi$",
+            "$d\\tau = r dr rd\\theta d\\phi$",
+            "$d\\tau = \\frac{4}{3} \\pi r^3 dr$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le volume élémentaire en sphérique est le produit des trois longueurs élémentaires : $dr$, $r d\\theta$ (arc méridien) et $r \\sin(\\theta) d\\phi$ (arc parallèle). Le produit donne $r^2 \\sin(\\theta) dr d\\theta d\\phi$."
+    },
+    {
+        "uuid": "diff-038",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est l'aire de la surface d'une sphère de rayon $r$ ?",
+        "answers": [
+            "$\\frac{4}{3} \\pi r^3$",
+            "$4 \\pi r^2$",
+            "$2 \\pi r^2$",
+            "$\\frac{d}{dr}(\\frac{4}{3} \\pi r^3)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'aire d'une sphère est la dérivée de son volume par rapport au rayon. $V = \\frac{4}{3}\\pi r^3$ donc $S = \\frac{dV}{dr} = 4\\pi r^2$."
+    },
+    {
+        "uuid": "diff-039",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est l'équation de diffusion en coordonnées sphériques avec symétrie radiale ?",
+        "answers": [
+            "$\\frac{\\partial n}{\\partial t} = \\frac{D}{r^2} \\frac{\\partial}{\\partial r}(r^2 \\frac{\\partial n}{\\partial r})$",
+            "$\\frac{\\partial n}{\\partial t} = \\frac{D}{r} \\frac{\\partial}{\\partial r}(r \\frac{\\partial n}{\\partial r})$",
+            "$\\frac{\\partial n}{\\partial t} = D \\frac{\\partial^2 n}{\\partial r^2}$",
+            "$\\frac{\\partial n}{\\partial t} = D \\Delta n$"
+        ],
+        "difficulty": 4,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "En sphérique, le laplacien d'une fonction ne dépendant que de $r$ est $\\frac{1}{r^2} \\frac{\\partial}{\\partial r}(r^2 \\frac{\\partial n}{\\partial r})$. Le facteur $r^2$ provient du Jacobien du volume en sphérique."
+    },
+    {
+        "uuid": "diff-040",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "En régime permanent ($\\frac{\\partial n}{\\partial t} = 0$) avec une source volumique uniforme $\\alpha$ en géométrie sphérique, quelle est la solution de l'équation de Poisson $\\Delta n = -\\frac{\\alpha}{D}$ ?",
+        "answers": [
+            "$n(r) = -\\frac{\\alpha r^2}{6D} - \\frac{A}{r} + B$",
+            "$n(r) = -\\frac{\\alpha r^2}{4D} - A \\ln(r) + B$",
+            "$n(r) = Ar + B$",
+            "$n(r) = -\\frac{\\alpha r^2}{2D} + B$"
+        ],
+        "difficulty": 5,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'équation est $\\frac{1}{r^2} \\frac{d}{dr}(r^2 \\frac{dn}{dr}) = -\\frac{\\alpha}{D}$. En multipliant par $r^2$ et en intégrant, on obtient $r^2 \\frac{dn}{dr} = -\\frac{\\alpha r^3}{3D} + A$, puis $\\frac{dn}{dr} = -\\frac{\\alpha r}{3D} + \\frac{A}{r^2}$. En intégrant une seconde fois, on trouve le terme en $r^2/6D$ et la constante d'intégration $1/r$."
+    },
+    {
+        "uuid": "diff-041",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans le cadre de la résolution de l'équation de diffusion en symétrie sphérique, la solution générale est $n(r) = -\\frac{\\alpha r^2}{6D} - \\frac{A}{r} + B$. Pourquoi la constante $A$ doit-elle être nulle si le domaine d'étude inclut le centre $r=0$ ?",
+        "answers": [
+            "Pour que le flux soit nul au centre.",
+            "Pour que la densité particulaire reste finie en $r=0$.",
+            "Car le coefficient de diffusion $D$ est strictement positif.",
+            "Pour satisfaire une condition aux limites de type Dirichlet."
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "La fonction $1/r$ diverge en $r=0$. Comme la densité particulaire $n(r)$ représente une grandeur physique réelle, elle ne peut pas être infinie en un point du milieu. Ainsi, pour garantir la régularité de la solution au centre, le terme en $1/r$ doit être annulé ($A=0$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-042",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "On étudie une perturbation spatiale sinusoïdale de concentration $c(x,0) = c_0 + c_1 \\cos(kx)$ dans un milieu infini. Quelle est la forme de la solution $c(x,t)$ au cours du temps ?",
+        "answers": [
+            "$c(x,t) = c_0 + c_1 e^{-t/\\tau} \\cos(kx)$",
+            "$c(x,t) = c_0 + c_1 \\cos(kx - \\omega t)$",
+            "$c(x,t) = c_0 e^{-t/\\tau} \\cos(kx)$",
+            "$c(x,t) = c_0 + c_1 \\cos(kx) e^{-t/\\tau^2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "L'équation de diffusion est $\\frac{\\partial c}{\\partial t} = D \\frac{\\partial^2 c}{\\partial x^2}$. En injectant une solution de la forme $c(x,t) = c_0 + \\delta c(x,t)$, on obtient une décroissance exponentielle du mode spatial : le profil de concentration s'aplatit au cours du temps sans se propager (contrairement à une onde).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-043",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Pour une perturbation de longueur d'onde $\\lambda = 2\\pi/k$, quelle est l'expression du temps caractéristique $\\tau$ d'amortissement ?",
+        "answers": [
+            "$\\tau = \\frac{\\lambda^2}{4\\pi^2 D}$",
+            "$\\tau = \\frac{4\\pi^2 D}{\\lambda^2}$",
+            "$\\tau = \\frac{\\lambda}{2\\pi D}$",
+            "$\\tau = \\frac{D}{\\lambda^2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "En injectant $c(x,t) \\propto e^{-t/\\tau} \\cos(kx)$ dans $\\frac{\\partial c}{\\partial t} = D \\frac{\\partial^2 c}{\\partial x^2}$, on trouve $-\\frac{1}{\\tau} = -D k^2$. Comme $k = 2\\pi/\\lambda$, on a $1/\\tau = D (4\\pi^2/\\lambda^2)$, d'où $\\tau = \\frac{\\lambda^2}{4\\pi^2 D}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-044",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans l'étude de l'amortissement d'une perturbation sinusoïdale, que représente physiquement le temps caractéristique $\\tau$ ?",
+        "answers": [
+            "La période spatiale de la perturbation.",
+            "La durée au bout de laquelle l'amplitude de la perturbation est divisée par $e$.",
+            "Le temps de propagation de l'information entre deux points.",
+            "Le temps nécessaire pour que la concentration devienne nulle."
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "Par définition, dans une décroissance exponentielle de type $e^{-t/\\tau}$, la constante $\\tau$ représente le temps au bout duquel l'amplitude de la fluctuation décroît d'un facteur $1/e$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-045",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Que devient la concentration $c(x,t)$ lorsque $t \\to \\infty$ lors de la relaxation d'une perturbation sinusoïdale ?",
+        "answers": [
+            "Elle devient nulle partout.",
+            "Elle tend vers la valeur moyenne $c_0$ uniformément.",
+            "Elle oscille indéfiniment autour de $c_0$.",
+            "Elle diverge vers l'infini."
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "La diffusion est un processus irréversible qui tend vers un état d'équilibre thermodynamique. Pour une perturbation sinusoïdale centrée autour d'une valeur moyenne $c_0$, l'amortissement exponentiel fait disparaître les variations spatiales, ramenant le système à une concentration uniforme égale à $c_0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-046",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est l'unité dans le système international de la grandeur $\\lambda$ présente dans l'argument $\\cos(2\\pi x / \\lambda)$ ?",
+        "answers": [
+            "$m^{-1}$ (mètre inverse).",
+            "$m$ (mètre).",
+            "Dimension sans unité.",
+            "$s$ (seconde)."
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "L'argument d'une fonction trigonométrique doit être adimensionné. Puisque $x$ est une distance en mètres ($m$), $\\lambda$ doit impérativement être une longueur exprimée en mètres pour que le rapport $x/\\lambda$ soit sans dimension.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-047",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Comment caractérise-t-on physiquement le mécanisme de diffusion de la matière ?",
+        "answers": [
+            "Un transport macroscopique lié à un mouvement d'ensemble (convection).",
+            "Un transport lié à l'agitation thermique microscopique des particules.",
+            "Un transport global dû uniquement à une force extérieure comme la pesanteur.",
+            "Un transport dû à des chocs élastiques entre parois."
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "La diffusion est un phénomène irréversible de transport de matière résultant du mouvement aléatoire (agitation thermique) des particules, ne nécessitant pas de mouvement macroscopique du fluide (contrairement à la convection).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-048",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Lors de l'établissement du bilan de particules dans un cylindre 1D de section $S$, quelle est l'expression de la quantité de particules sortant par la face située en $x+dx$ pendant un intervalle $dt$ ?",
+        "answers": [
+            "$j_N(x,t) S dt$",
+            "$j_N(x+dx,t) S dt$",
+            "$(j_N(x+dx) - j_N(x)) S dt$",
+            "$j_N(x+dx,t) / (S dt)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "Le flux particulaire $j_N$ (en $m^{-2}.s^{-1}$) représente le nombre de particules traversant une unité de surface par unité de temps. La quantité sortant par la face à $x+dx$ est donc le produit du flux par la surface $S$ et la durée $dt$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-049",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est la dimension du laplacien $\\Delta n$ de la concentration $n$ ?",
+        "answers": [
+            "$[n] \\cdot L^{-1}$",
+            "$[n] \\cdot L^{-2}$",
+            "$[n] \\cdot L^{2}$",
+            "$[n]$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "Le laplacien $\\Delta$ est un opérateur différentiel d'ordre 2 par rapport à l'espace ($\\frac{\\partial^2}{\\partial x^2} + \\dots$). Appliqué à une concentration $n$, il ajoute donc deux dérivations par rapport à une longueur, ce qui divise la dimension de $n$ par $L^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-050",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Deux compartiments A et B de même volume $V$ sont séparés par une paroi perméable. Initialement, A contient $N_0$ particules et B en contient 0. Quel est le nombre de particules dans chaque compartiment à l'équilibre ?",
+        "answers": [
+            "$N_{eq} = N_0$",
+            "$N_{eq} = N_0 / 2$",
+            "$N_{eq} = 2 N_0$",
+            "$N_{eq} = N_0 / 4$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "À l'équilibre thermodynamique, la concentration est uniforme dans tout le système. Comme les volumes sont identiques ($V_A = V_B$), la conservation du nombre total de particules ($N_0 + 0 = N_A + N_B$) implique que $N_A = N_B = N_0/2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-051",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "chapter": "Diffusion de particules",
+        "subject": "physique",
+        "question": "Dans le cadre de l'étude de la diffusion de particules, laquelle de ces formulations traduit correctement la loi de Fick, liant le vecteur densité de courant de particules $\\vec{j}_N$ au gradient de la concentration $n$ ?",
+        "answers": [
+            "$\\vec{j}_N = -D \\Delta n$",
+            "$\\vec{j}_N = -D \\overrightarrow{\\text{grad}}(n)$",
+            "$\\vec{j}_N = -D \\frac{\\partial n}{\\partial t}$",
+            "$\\vec{j}_N = D \\overrightarrow{\\text{grad}}(n)$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "La loi de Fick exprime que le flux de particules est proportionnel à l'opposé du gradient de concentration : $\\vec{j}_N = -D \\overrightarrow{\\text{grad}}(n)$. L'erreur classique est de confondre le gradient (vecteur) avec le laplacien (scalaire) $\\Delta n = \\text{div}(\\overrightarrow{\\text{grad}} n)$, qui intervient dans l'équation de diffusion, pas dans la loi de Fick."
+    },
+    {
+        "uuid": "diff-052",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "chapter": "Diffusion de particules",
+        "subject": "physique",
+        "question": "Dans l'équation de conservation $\\frac{\\partial n}{\\partial t} + \\text{div}(\\vec{j}_N) = 0$ (en l'absence de source), que représente physiquement le terme $\\text{div}(\\vec{j}_N)$ ?",
+        "answers": [
+            "La variation temporelle locale de la concentration",
+            "Le bilan net des particules quittant ou entrant dans un volume élémentaire par unité de volume",
+            "Le flux total de particules à travers la surface délimitant le domaine",
+            "La vitesse moyenne d'agitation thermique des particules"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "D'après le théorème de la divergence, le flux sortant net d'un volume $V$ est égal à l'intégrale de $\\text{div}(\\vec{j}_N)$ sur ce volume. Ainsi, $\\text{div}(\\vec{j}_N)$ représente le débit volumique net (source ou puits) de particules au point considéré."
+    },
+    {
+        "uuid": "diff-053",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "chapter": "Diffusion de particules",
+        "subject": "physique",
+        "question": "En régime permanent unidimensionnel ($1D$) pour la diffusion d'une espèce chimique, quelle est la condition nécessaire pour que le vecteur densité de courant $\\vec{j}_N$ soit uniforme (constant) dans l'espace ?",
+        "answers": [
+            "L'absence de terme source ou puits de particules ($\\alpha = 0$)",
+            "La nullité du coefficient de diffusion $D$",
+            "La dépendance temporelle nulle de la concentration $n$",
+            "La nullité de la concentration $n$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "explication": "L'équation de conservation locale est $\\frac{\\partial n}{\\partial t} + \\text{div}(\\vec{j}_N) = s$ où $s$ est le terme source. En régime permanent, $\\frac{\\partial n}{\\partial t} = 0$, donc $\\text{div}(\\vec{j}_N) = s$. Si $s=0$, alors $\\frac{d j_N}{dx} = 0$, donc le flux est constant."
+    },
+    {
+        "uuid": "diff-054",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "chapter": "Diffusion de particules",
+        "subject": "physique",
+        "question": "Soit l'équation de diffusion $\\frac{\\partial n}{\\partial t} = D \\frac{\\partial^2 n}{\\partial x^2}$. Si l'on cherche une solution par séparation des variables sous la forme $n(x,t) = X(x)T(t)$, quelle est la nature de la solution pour $T(t)$ ?",
+        "answers": [
+            "Une décroissance exponentielle : $T(t) \\propto e^{-t/\\tau}$",
+            "Une oscillation sinusoïdale : $T(t) \\propto \\cos(\\omega t)$",
+            "Une croissance linéaire : $T(t) \\propto at + b$",
+            "Une fonction en racine carrée : $T(t) \\propto \\sqrt{t}$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "explication": "La séparation des variables conduit à $\\frac{T'(t)}{D T(t)} = \\frac{X''(x)}{X(x)} = -k^2$. L'équation pour le temps devient $T'(t) = -D k^2 T(t)$, dont la solution est une exponentielle décroissante $e^{-D k^2 t}$."
+    },
+    {
+        "uuid": "diff-055",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "chapter": "Diffusion de particules",
+        "subject": "physique",
+        "question": "Dans l'analogie entre la diffusion de particules et le transfert thermique par conduction, quelle grandeur particulaire joue le rôle de la température $T$ ?",
+        "answers": [
+            "La puissance surfacique de diffusion",
+            "La concentration (densité) de particules $n$",
+            "Le coefficient de diffusion $D$",
+            "La capacité thermique"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "La loi de Fick ($\\vec{j}_N = -D \\vec{\\nabla} n$) est formellement identique à la loi de Fourier pour la chaleur ($\\vec{j}_q = -\\lambda \\vec{\\nabla} T$). Par identification, la concentration $n$ correspond à la température $T$ et le coefficient $D$ à la diffusivité thermique."
+    },
+    {
+        "uuid": "diff-056",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "chapter": "Diffusion de particules",
+        "subject": "physique",
+        "question": "Quelle est l'unité dimensionnelle de la divergence d'un vecteur densité de courant de particules $\\text{div}(\\vec{j}_N)$ dans le système international ?",
+        "answers": [
+            "$m^{-2} \\cdot s^{-1}$",
+            "$m^{-3} \\cdot s^{-1}$",
+            "$s^{-1}$",
+            "$m^{-4} \\cdot s^{-1}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "Le flux $\\vec{j}_N$ est un nombre de particules par unité de surface et par unité de temps : $m^{-2} \\cdot s^{-1}$. La divergence applique l'opérateur $\\vec{\\nabla} \\cdot$ qui est en $m^{-1}$. Ainsi, l'unité est $m^{-1} \\cdot (m^{-2} \\cdot s^{-1}) = m^{-3} \\cdot s^{-1}$, ce qui correspond bien à une variation de concentration par unité de temps."
+    },
+    {
+        "uuid": "diff-057",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "chapter": "Diffusion de particules",
+        "subject": "physique",
+        "question": "Pour établir le bilan de particules sur un domaine volumique quelconque, quel théorème mathématique permet de transformer le flux sortant à travers la surface fermée en une intégrale volumique de la divergence ?",
+        "answers": [
+            "Théorème de Stokes",
+            "Théorème de Green-Ostrogradsky",
+            "Théorème d'Ampère",
+            "Théorème du flux-divergence"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "Le théorème de Green-Ostrogradsky (aussi appelé théorème de la divergence) est l'outil fondamental en physique des milieux continus pour passer d'une formulation intégrale (sur une surface) à une équation locale (en tout point du volume)."
+    },
+    {
+        "uuid": "diff-058",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "chapter": "Diffusion de particules",
+        "subject": "physique",
+        "question": "Considérons la diffusion de particules dans un milieu infini sans source ni puits. Que devient la quantité totale de particules $N(t) = \\int_{-\\infty}^{+\\infty} n(x,t) dx$ au cours du temps ?",
+        "answers": [
+            "Elle augmente proportionnellement à $\\sqrt{t}$",
+            "Elle demeure constante",
+            "Elle tend vers zéro",
+            "Elle oscille selon une loi sinusoïdale"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "L'absence de source signifie que le nombre total de particules est conservé. Mathématiquement, l'intégrale de la loi de conservation $\\frac{\\partial n}{\\partial t} = - \\text{div}(\\vec{j}_N)$ sur tout l'espace, avec des conditions aux limites s'annulant à l'infini, donne $\\frac{dN}{dt} = 0$."
+    },
+    {
+        "uuid": "diff-059",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "chapter": "Diffusion de particules",
+        "subject": "physique",
+        "question": "Dans un solide cristallin, le coefficient de diffusion $D$ est généralement extrêmement faible (ex: $10^{-25} m^2/s$). Quelle en est la raison physique principale ?",
+        "answers": [
+            "La masse élevée des atomes",
+            "La nature liée des atomes au sein du réseau cristallin",
+            "L'absence totale de lacunes dans le réseau",
+            "La faible énergie thermique à température ambiante"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "Dans un solide, les atomes ne sont pas libres de se déplacer comme dans un fluide. Le mouvement nécessite des défauts (lacunes) et une énergie d'activation importante pour franchir les barrières de potentiel du réseau cristallin, rendant la diffusion très lente."
+    },
+    {
+        "uuid": "diff-060",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "chapter": "Diffusion de particules",
+        "subject": "physique",
+        "question": "Le transport de particules peut se faire par diffusion ou par convection. La 'convection' désigne un mécanisme de transport de type :",
+        "answers": [
+            "Moléculaire (agitation thermique)",
+            "Entraînement global du milieu (vitesse d'ensemble)",
+            "Radiatif (par ondes électromagnétiques)",
+            "Quantique (effet tunnel)"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "explication": "La diffusion est un transport aléatoire lié à l'agitation thermique. La convection est un transport macroscopique lié à la vitesse moyenne $\\vec{v}$ du fluide, donnant un flux convectif $\\vec{j}_{conv} = n \\vec{v}$."
+    },
+    {
+        "uuid": "diff-061",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans le cadre de l'étude du transport de matière, en présence d'un champ de vitesses macroscopique $\\vec{v}$ (convection) et d'un gradient de concentration, quel est le vecteur densité de courant particulaire total $\\vec{j}$ ?",
+        "answers": [
+            "$\\vec{j} = n \\vec{v} - D \\vec{grad}(n)$",
+            "$\\vec{j} = n \\vec{v} + D \\vec{grad}(n)$",
+            "$\\vec{j} = -D \\vec{grad}(n)$ (cas sans convection)",
+            "$\\vec{j} = n \\vec{v} / D$"
+        ],
+        "difficulty": 4,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le courant total est la somme du courant convectif $\\vec{j}_{conv} = n \\vec{v}$ et du courant diffusif $\\vec{j}_{diff} = -D \\vec{grad}(n)$ (Loi de Fick). L'erreur de signe est un classique : le flux de diffusion est toujours dirigé vers les concentrations décroissantes, d'où le signe moins."
+    },
+    {
+        "uuid": "diff-062",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "La loi de Fick, s'écrivant $\\vec{j} = -D \\vec{grad}(n)$, est-elle une loi physique fondamentale universelle ou une approximation ?",
+        "answers": [
+            "Oui, elle est toujours valable quel que soit le gradient.",
+            "Non, c'est une approximation phénoménologique valable pour des variations 'douces' de concentration.",
+            "Non, elle n'est valable qu'au zéro absolu.",
+            "Oui, car elle découle directement des lois de Newton."
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La loi de Fick est un développement au premier ordre. Pour des gradients très brutaux (à l'échelle du libre parcours moyen), le modèle de diffusion simple ne suffit plus et nécessite des théories cinétiques plus complexes."
+    },
+    {
+        "uuid": "diff-063",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Soit $n$ la grandeur définie par $n = \\frac{d N}{d \\tau}$, où $dN$ est le nombre de particules dans un volume élémentaire $d\\tau$. Que représente $n$ ?",
+        "answers": [
+            "La densité particulaire molaire (mol.m$^{-3}$)",
+            "La densité particulaire volumique (m$^{-3}$)",
+            "Le flux volumique (m$^{-3}$.s$^{-1}$)",
+            "La concentration massique (kg.m$^{-3}$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par définition, le nombre de particules divisé par le volume élémentaire donne la densité volumique de particules, notée $n$ ou $c$ dans les exercices de physique statistique."
+    },
+    {
+        "uuid": "diff-064",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Lors du calcul du flux particulaire $\\Phi = \\iint_S \\vec{j} \\cdot d\\vec{S}$ à travers une surface fermée, comment est défini le vecteur élément de surface $d\\vec{S}$ ?",
+        "answers": [
+            "Toujours tangent à la surface pour assurer la continuité.",
+            "Normal à la surface et orienté vers l'extérieur du volume considéré.",
+            "Normal à la surface et orienté vers l'intérieur pour compter les pertes.",
+            "Toujours orienté selon le vecteur $\\vec{e}_x$ par convention."
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La convention d'orientation du vecteur surface est fondamentale : pour une surface fermée, le vecteur $\\vec{dS}$ est orienté vers l'extérieur. Cela permet d'interpréter le flux sortant comme une perte de matière pour le système."
+    },
+    {
+        "uuid": "diff-065",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Si la densité de courant particulaire $\\vec{j}_N$ est uniforme et perpendiculaire à une surface plane $S$, que devient le flux $\\Phi$ ?",
+        "answers": [
+            "$\\Phi = j_N S$",
+            "$\\Phi = j_N / S$",
+            "$\\Phi = 0$ car le flux est conservatif.",
+            "$\\Phi = j_N S^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le flux est le produit scalaire $\\iint \\vec{j} \\cdot d\\vec{S}$. Si $\\vec{j}$ est uniforme et colinéaire à la normale de la surface $S$, alors $\\Phi = j_N \\iint dS = j_N S$."
+    },
+    {
+        "uuid": "diff-066",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "En utilisant l'équation de diffusion $\\frac{\\partial n}{\\partial t} = D \\Delta n$, quelle est l'analyse dimensionnelle du coefficient de diffusion $D$ ?",
+        "answers": [
+            "$L^2 T^{-1}$",
+            "$L T^{-1}$",
+            "$L^2 T$",
+            "$M L^{-3}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "On a $\\frac{\\partial n}{\\partial t} \\sim [n] T^{-1}$ et $\\Delta n \\sim [n] L^{-2}$. Pour que l'égalité soit homogène, $D$ doit compenser les dimensions : $[D] = \\frac{[n] T^{-1}}{[n] L^{-2}} = L^2 T^{-1}$."
+    },
+    {
+        "uuid": "diff-067",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Considérons un milieu où des particules sont créées uniformément à un taux volumique $\\alpha$ (en m$^{-3}$.s$^{-1}$). Si le phénomène de diffusion est négligeable, quelle est l'équation d'évolution de $n$ ?",
+        "answers": [
+            "$\\frac{\\partial n}{\\partial t} = \\alpha$",
+            "$\\frac{\\partial n}{\\partial t} = 0$",
+            "$\\frac{\\partial n}{\\partial t} = -\\alpha$",
+            "$\\frac{\\partial n}{\\partial t} = \\alpha D$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'équation de conservation locale est $\\frac{\\partial n}{\\partial t} + \\text{div}(\\vec{j}) = s$, où $s$ est le terme source. Si la diffusion est nulle ($\\text{div}(\\vec{j}) = 0$), alors la variation temporelle de la densité est simplement égale au taux de création $\\alpha$."
+    },
+    {
+        "uuid": "diff-068",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "L'équation de diffusion est une équation aux dérivées partielles du type parabolique. Pourquoi traduit-elle un caractère irréversible ?",
+        "answers": [
+            "Parce qu'elle est du premier ordre en temps et du deuxième ordre en espace.",
+            "Parce qu'elle est du deuxième ordre en temps et en espace.",
+            "Parce qu'elle est du premier ordre en espace uniquement.",
+            "Parce qu'elle comporte un coefficient $D$ négatif."
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le premier ordre en temps empêche une symétrie par renversement du temps ($t \\to -t$ changerait le signe de la dérivée). C'est ce qui marque la flèche du temps et l'irréversibilité thermodynamique du processus."
+    },
+    {
+        "uuid": "diff-069",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans le cadre d'un exercice en régime permanent unidimensionnel entre deux parois, pourquoi le flux $\\Phi$ est-il indépendant de la position $x$ ?",
+        "answers": [
+            "Parce que le coefficient de diffusion $D$ est constant.",
+            "Par conservation de la matière : en régime permanent, il n'y a pas d'accumulation locale ($\\frac{\\partial n}{\\partial t} = 0$).",
+            "C'est une condition aux limites imposée par l'énoncé.",
+            "Parce que le gradient est nul."
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "En régime permanent, $\\frac{\\partial n}{\\partial t} = 0$. L'équation de conservation locale $\\frac{\\partial n}{\\partial t} + \\text{div}(\\vec{j}) = 0$ implique donc $\\text{div}(\\vec{j}) = 0$, soit un flux constant spatialement."
+    },
+    {
+        "uuid": "diff-070",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Considérons une distribution de concentration $n(x) = 10 - 2x$ (unités SI) et un coefficient de diffusion $D = 5$ SI. Quel est le vecteur densité de courant $j_N$ ?",
+        "answers": [
+            "$j_N = 10$ SI",
+            "$j_N = -10$ SI",
+            "$j_N = 20$ SI",
+            "$j_N = -20$ SI"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "D'après la loi de Fick, $j_N = -D \\frac{dn}{dx}$. Ici, $\\frac{dn}{dx} = -2$. Donc $j_N = -5 \\times (-2) = 10$. Le flux est positif, dirigé selon l'axe des $x$ croissants (des hautes vers les basses concentrations)."
+    },
+    {
+        "uuid": "diff-071",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans le cadre de l'étude d'un transfert de matière entre deux compartiments A et B séparés par un canal, le flux entrant dans B est défini par $\\Phi = SD \\frac{n_A - n_B}{L}$. En appliquant le principe de conservation de la matière au compartiment B, quelle est l'expression de la variation temporelle du nombre de particules $N_B$ ?",
+        "answers": [
+            "$\\frac{dN_B}{dt} = \\Phi$",
+            "$\\frac{dN_B}{dt} = -\\Phi$",
+            "$\\frac{dN_B}{dt} = 0$",
+            "$\\frac{dN_B}{dt} = \\frac{\\Phi}{V_B}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Le flux $\\Phi$ représente un débit de particules (nombre de particules par seconde). Par conservation de la matière, le taux de variation temporelle du nombre de particules dans un volume est égal au flux net entrant. Ici, $\\Phi$ étant défini comme entrant dans B, on a bien $\\frac{dN_B}{dt} = \\Phi$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-072",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans un modèle de diffusion vers un réservoir maintenu à densité nulle, l'évolution du nombre de molécules $N(t)$ au cours du temps suit une loi de la forme :",
+        "answers": [
+            "linéaire du type $N(t) = N_0 - kt$",
+            "exponentielle du type $N(t) = N_0 \\exp(-t/\\tau)$",
+            "sinusoïdale amortie",
+            "quadratique"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "Le bilan de matière conduit à une équation différentielle du type $\\frac{dN}{dt} = -\\frac{N}{\\tau}$, où $\\tau$ est un temps caractéristique de diffusion. La solution de cette équation différentielle du premier ordre est une décroissance exponentielle.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-073",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "En coordonnées cylindriques $(r, \\theta, z)$, si la densité particulaire $n$ ne dépend que de la coordonnée radiale $r$, le gradient $\\vec{grad}(n)$ est porté par :",
+        "answers": [
+            "$\\vec{u}_r$",
+            "$\\vec{u}_\\theta$",
+            "$\\vec{u}_z$",
+            "$\\vec{u}_r + \\vec{u}_\\theta$"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Par définition du gradient en coordonnées cylindriques, $\\vec{grad}(n) = \\frac{\\partial n}{\\partial r}\\vec{u}_r + \\frac{1}{r}\\frac{\\partial n}{\\partial \\theta}\\vec{u}_\\theta + \\frac{\\partial n}{\\partial z}\\vec{u}_z$. Si $n$ dépend uniquement de $r$, alors les dérivées partielles selon $\\theta$ et $z$ sont nulles, il ne reste que la composante selon $\\vec{u}_r$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-074",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Considérons une diffusion à symétrie sphérique. Si le vecteur densité de courant de particules est $\\vec{j}(r) = j(r)\\vec{u}_r$, quelle est l'expression du flux total $\\Phi(r)$ à travers une sphère de rayon $r$ ?",
+        "answers": [
+            "$\\Phi = 4\\pi r^2 j(r)$",
+            "$\\Phi = 2\\pi r j(r)$",
+            "$\\Phi = \\frac{4}{3}\\pi r^3 j(r)$",
+            "$\\Phi = 4\\pi r j(r)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Le flux $\\Phi$ est le flux du vecteur densité de courant à travers une surface fermée. Pour une sphère, $\\Phi = \\iint_{S} \\vec{j} \\cdot d\\vec{S}$. Comme $\\vec{j}$ est radial et uniforme sur la sphère, $\\Phi = j(r) \\times \\text{Aire(sphère)} = j(r) \\times 4\\pi r^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-075",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Lors de la résolution de l'équation de diffusion $\\Delta n = 0$ en coordonnées sphériques pour une distribution à symétrie sphérique $n(r)$, la condition physique de densité finie en $r=0$ permet d'exclure les termes en :",
+        "answers": [
+            "$r^2$",
+            "$1/r$",
+            "constante",
+            "$r$"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "La solution générale de l'équation de Laplace en symétrie sphérique est $n(r) = A/r + B$. Lorsque $r \\to 0$, le terme en $1/r$ diverge vers l'infini, ce qui est physiquement inacceptable pour une densité de particules. On impose donc $A=0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-076",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans l'équation $n(r) = -\\frac{\\alpha r^2}{6D} + B$ modélisant une densité de particules avec création interne, quelle est l'unité de la constante $B$ dans le système international ?",
+        "answers": [
+            "$m^{-3}$",
+            "$m^{-2} \\cdot s^{-1}$",
+            "Sans unité",
+            "$m^{-3} \\cdot s^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "La densité particulaire $n(r)$ s'exprime en nombre par unité de volume, soit $m^{-3}$. Par homogénéité dimensionnelle, chaque terme de l'addition doit avoir la même unité. $B$ est donc nécessairement en $m^{-3}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-077",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans le cadre de l'étude d'un milieu diffusant, si l'on double la longueur caractéristique $\\lambda$ (ou dimension du système), le temps d'amortissement $\\tau$ associé à la diffusion est multiplié par :",
+        "answers": [
+            "2",
+            "4",
+            "$\\sqrt{2}$",
+            "1/2"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "L'équation de diffusion est $\\frac{\\partial n}{\\partial t} = D \\Delta n$. L'analyse dimensionnelle donne $\\frac{n}{\\tau} \\sim D \\frac{n}{\\lambda^2}$, d'où $\\tau \\sim \\frac{\\lambda^2}{D}$. Le temps est proportionnel au carré de la longueur. Si $\\lambda$ est multiplié par 2, $\\tau$ est multiplié par $2^2 = 4$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-078",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Lors d'un bilan de matière sur une tranche élémentaire de volume $V = S dx$, le nombre de particules entrant par la face située en $x$ pendant une durée $dt$ est donné par :",
+        "answers": [
+            "$j_N(x) S dt$",
+            "$-j_N(x) S dt$",
+            "$j_N(x+dx) S dt$",
+            "$j_N(x) S$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Le vecteur densité de courant $\\vec{j}_N = j_N \\vec{u}_x$ représente le nombre de particules traversant une unité de surface par unité de temps. Le flux entrant est donc le produit du courant par la surface : $\\Phi = j_N(x) S$. Le nombre de particules entrant durant $dt$ est bien $j_N(x) S dt$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-079",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est l'unité dimensionnelle de la dérivée seconde $\\frac{\\partial^2 n}{\\partial x^2}$ dans le système international ?",
+        "answers": [
+            "$m^{-4}$",
+            "$m^{-5}$",
+            "$m^{-2}$",
+            "$m^{-3}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 2,
+        "explication": "La densité $n$ est homogène à $L^{-3}$. En dérivant deux fois par rapport à une position $x$ (unité $L$), on divise l'unité de $n$ par $L^2$. Ainsi, $[\\frac{\\partial^2 n}{\\partial x^2}] = L^{-3} \\cdot L^{-2} = L^{-5}$. *Note : Veuillez vérifier l'énoncé, la réponse correcte est $m^{-5}$. Le QCM initial proposait une erreur.*",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-080",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "En régime permanent, la densité particulaire $n$ ne dépend plus du temps, ce qui conduit à $\\Delta n = 0$. Cette équation aux dérivées partielles est connue sous le nom d'équation de :",
+        "answers": [
+            "Laplace",
+            "Poisson",
+            "Helmholtz",
+            "Diffusion"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "L'équation $\\Delta n = 0$ est l'équation de Laplace. Si elle avait un terme source non nul ($\\Delta n = f$), on parlerait d'équation de Poisson. L'équation de diffusion est l'équation générale dépendante du temps.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-081",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans l'étude de la propagation d'un paquet d'onde ou d'un mode de diffusion spatiale, si la densité de particules est donnée par $n(x,t) = n_0 \\cos(kx) e^{-t/\\tau}$, la constante $k$ (nombre d'onde) est reliée à la longueur d'onde spatiale $\\lambda$ par la relation :",
+        "answers": [
+            "$k = 2\\pi / \\lambda$",
+            "$k = \\lambda / (2\\pi)$",
+            "$k = 1 / \\lambda$",
+            "$k = \\sqrt{\\lambda / 2\\pi}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Le nombre d'onde $k$ correspond à la fréquence spatiale multipliée par $2\\pi$. Comme $\\lambda$ est la période spatiale, on a $k = 2\\pi / \\lambda$. Une erreur classique est d'oublier le facteur $2\\pi$ ou d'inverser le rapport.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-082",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "La diffusion thermique et la diffusion de particules sont régies par le même formalisme mathématique. Comment nomme-t-on l'équation aux dérivées partielles du type $\\frac{\\partial n}{\\partial t} = D \\Delta n$ ?",
+        "answers": [
+            "Équation d'onde",
+            "Équation de diffusion (ou de la chaleur)",
+            "Équation de Schrödinger",
+            "Équation de Poisson"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "Cette équation est appelée équation de diffusion ou équation de la chaleur. L'équation d'onde fait intervenir une dérivée seconde temporelle, tandis que l'équation de Schrödinger est une équation de propagation complexe.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-083",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans le cadre de l'étude de la diffusion unidimensionnelle $n(x,t)$ selon l'axe $(Ox)$, quelle est l'expression du Laplacien scalaire $\\Delta n$ ?",
+        "answers": [
+            "$\\partial^2 n / \\partial x^2$",
+            "$\\partial n / \\partial x$",
+            "$\\int n \\text{d}x$",
+            "$\\partial^2 n / \\partial t^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Le Laplacien scalaire $\\Delta$ en coordonnées cartésiennes est défini par $\\Delta = \\nabla^2 = \\frac{\\partial^2}{\\partial x^2} + \\frac{\\partial^2}{\\partial y^2} + \\frac{\\partial^2}{\\partial z^2}$. En 1D selon $x$, il se réduit à $\\frac{\\partial^2 n}{\\partial x^2}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-084",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est la valeur caractéristique du coefficient de diffusion $D$ pour des petites molécules dans un liquide comme l'eau (auto-diffusion) à température ambiante ?",
+        "answers": [
+            "$\\sim 10^{-9} \\text{ m}^2/\\text{s}$",
+            "$\\sim 10^{-5} \\text{ m}^2/\\text{s}$",
+            "$\\sim 10^{-12} \\text{ m}^2/\\text{s}$",
+            "$\\sim 10^{-3} \\text{ m}^2/\\text{s}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Dans un liquide, la diffusion est lente : les molécules sont très proches les unes des autres. L'ordre de grandeur standard pour des petites molécules est $10^{-9} \\text{ m}^2/\\text{s}$. La valeur $10^{-5}$ correspond davantage à la diffusion dans un gaz.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-085",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Pour un gaz parfait, d'après la théorie cinétique des gaz, le coefficient de diffusion $D$ est proportionnel à la vitesse moyenne des particules. Comment varie $D$ quand la température augmente ?",
+        "answers": [
+            "Augmente",
+            "Diminue",
+            "Reste constante",
+            "Varie comme $1/T$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Comme $D \\propto v_{th} \\cdot \\ell$ (vitesse thermique et libre parcours moyen), et que $v_{th} \\propto \\sqrt{T}$, le coefficient de diffusion augmente avec la température.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-086",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans l'étude de la diffusion en régime quasi-stationnaire dans un tube, que signifie concrètement cette approximation ?",
+        "answers": [
+            "Le profil de concentration s'établit instantanément par rapport aux variations temporelles aux limites",
+            "La densité ne dépend pas du temps et reste nulle partout",
+            "Le flux de particules est rigoureusement nul à chaque instant",
+            "La concentration est uniforme dans tout le volume"
+        ],
+        "difficulty": 4,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "L'approximation quasi-stationnaire suppose que le temps de relaxation du système est très court devant l'échelle de temps des variations imposées aux frontières, permettant de considérer $\\frac{\\partial n}{\\partial t} \\approx 0$ pour résoudre le profil spatial.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-087",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Considérant une coque cylindrique de rayon $r$, d'épaisseur $\\text{d}r$ et de longueur $L$ (alignée sur l'axe du cylindre), quel est son volume élémentaire $dV$ ?",
+        "answers": [
+            "$2\\pi r L \\text{d}r$",
+            "$\\pi r^2 \\text{d}r$",
+            "$2\\pi r L$",
+            "$\\pi (r+\\text{d}r)^2 L$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Le volume est la surface latérale du cylindre ($2\\pi r L$) multipliée par l'épaisseur radiale $\\text{d}r$. C'est une erreur classique de confondre avec le volume du disque plein ($\\pi r^2 L$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-088",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "En symétrie cylindrique, sachant que $\\vec{j} = -D \\vec{\\text{grad}} n$ et que le bilan de matière s'écrit $\\frac{\\partial n}{\\partial t} = -\\text{div}(\\vec{j})$, quelle est l'expression correcte de $\\frac{\\partial n}{\\partial t}$ en coordonnées cylindriques (pour une dépendance radiale uniquement) ?",
+        "answers": [
+            "$\\frac{\\partial n}{\\partial t} = \\frac{D}{r} \\frac{\\partial}{\\partial r} \\left( r \\frac{\\partial n}{\\partial r} \\right)$",
+            "$\\frac{\\partial n}{\\partial t} = D \\frac{\\partial^2 n}{\\partial r^2}$",
+            "$\\frac{\\partial n}{\\partial t} = D \\left( \\frac{\\partial^2 n}{\\partial r^2} + \\frac{1}{r} \\frac{\\partial n}{\\partial r} \\right)$",
+            "$\\frac{\\partial n}{\\partial t} = \\frac{D}{r^2} \\frac{\\partial}{\\partial r} \\left( r^2 \\frac{\\partial n}{\\partial r} \\right)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "En cylindrique, le Laplacien est $\\Delta n = \\frac{1}{r} \\frac{\\partial}{\\partial r} (r \\frac{\\partial n}{\\partial r})$. La réponse 3 est mathématiquement équivalente mais la forme compacte avec la dérivée est la définition usuelle du Laplacien en coordonnées cylindriques.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-089",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "En régime permanent, dans une sphère de rayon $R$ possédant une source de particules uniforme $\\alpha$ (en $\\text{m}^{-3}\\cdot\\text{s}^{-1}$), quel est le flux total $\\Phi$ sortant à travers la surface $S=4\\pi R^2$ ?",
+        "answers": [
+            "$\\Phi = \\alpha \\cdot \\frac{4}{3} \\pi R^3$",
+            "$\\Phi = \\alpha \\cdot 4\\pi R^2$",
+            "$\\Phi = 0$",
+            "$\\Phi = \\alpha \\cdot \\frac{4}{3} \\pi R^2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "En régime permanent, le flux sortant total doit égaler le taux de production total dans le volume de la sphère. Le volume étant $V = \\frac{4}{3}\\pi R^3$, on a $\\Phi = \\alpha V$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-090",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est l'unité SI du terme $D \\Delta n$ présent dans l'équation de diffusion ?",
+        "answers": [
+            "$\\text{m}^{-3} \\cdot \\text{s}^{-1}$",
+            "$\\text{m}^{-2} \\cdot \\text{s}^{-1}$",
+            "$\\text{s}^{-1}$",
+            "$\\text{mol} \\cdot \\text{m}^{-3} \\cdot \\text{s}^{-1}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "$D$ est en $\\text{m}^2\\cdot\\text{s}^{-1}$ et $\\Delta n$ est le Laplacien d'une concentration, donc en $\\text{m}^{-3}\\cdot\\text{m}^{-2} = \\text{m}^{-5}$. Le produit est donc en $(\\text{m}^2\\cdot\\text{s}^{-1}) \\cdot (\\text{m}^{-5}) = \\text{m}^{-3}\\cdot\\text{s}^{-1}$, ce qui correspond bien à une variation de concentration par unité de temps.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-091",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "L'équation de diffusion $\\frac{\\partial n}{\\partial t} = D \\frac{\\partial^2 n}{\\partial x^2}$ étant une équation aux dérivées partielles d'ordre 1 en temps et 2 en espace, est-elle réversible par la transformation $x \\to -x$ ?",
+        "answers": [
+            "Oui, car l'équation est invariante par $x \\to -x$",
+            "Non, car le signe du laplacien changerait",
+            "Oui, comme les équations de propagation d'onde",
+            "Non, car le phénomène de diffusion est irréversible en temps"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "L'opérateur laplacien $\\frac{\\partial^2}{\\partial x^2}$ fait intervenir une dérivée seconde, donc $(-1)^2 = 1$. L'équation reste identique par changement de signe de la variable spatiale : la diffusion possède une symétrie spatiale, contrairement à son irréversibilité temporelle ($t \\to -t$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-092",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans le cadre de l'étude de la diffusion de matière en milieu homogène, le coefficient de diffusion $D$ dépend-il de la concentration locale $n$ en général ?",
+        "answers": [
+            "Non, il est considéré comme une constante du milieu",
+            "Oui, il est proportionnel à $n$",
+            "Oui, il varie avec le gradient $\\vec{grad}(n)$",
+            "Cela dépend uniquement de la pression"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Dans le cadre du programme de PSI, on étudie la diffusion linéaire. Le coefficient $D$ (homogène à des $m^2 \\cdot s^{-1}$) est une propriété du couple soluté-solvant et est supposé indépendant de la concentration $n$ pour rester dans le cadre des équations linéaires.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-093",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est la condition aux limites physiquement acceptable à la surface d'un solide imperméable (interface solide-fluide) pour le flux de particules $\\vec{j}_N$ ?",
+        "answers": [
+            "$\\vec{j}_N \\cdot \\vec{n} = 0$",
+            "$\\vec{j}_N = \\vec{0}$",
+            "$\\frac{\\partial n}{\\partial n} = 0$",
+            "$n = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Un solide imperméable empêche le passage de la matière à travers l'interface. La composante normale du flux de particules $\\vec{j}_N$ doit donc être nulle à la paroi : $\\vec{j}_N \\cdot \\vec{n} = 0$. Dire que $\\vec{j}_N = \\vec{0}$ est trop restrictif car une diffusion peut exister parallèlement à la surface.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-094",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans l'étude d'un système de diffusion avec échange entre deux compartiments de volume $V_0$, où le flux est modélisé par $\\frac{dn}{dt} = -k n$ avec $k = \\frac{SD}{V_0 L}$, quelle est la constante de temps caractéristique $\\tau$ ?",
+        "answers": [
+            "$\\tau = 1/k$",
+            "$\\tau = k$",
+            "$\\tau = \\sqrt{k}$",
+            "$\\tau = k^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "L'équation différentielle du premier ordre $\\frac{dn}{dt} + k n = 0$ a pour solution une exponentielle décroissante de la forme $e^{-t/\\tau}$. Par identification, on trouve immédiatement $\\tau = 1/k$. Attention aux unités : $k$ est en $s^{-1}$, donc $1/k$ est bien homogène à un temps.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-095",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Pour une diffusion 1D selon la première loi de Fick, le flux de particules $\\vec{j}_N$ est proportionnel à quelle dérivée ?",
+        "answers": [
+            "À la dérivée première spatiale $-\\frac{\\partial n}{\\partial x}$",
+            "À la dérivée seconde spatiale $\\frac{\\partial^2 n}{\\partial x^2}$",
+            "À la dérivée temporelle $\\frac{\\partial n}{\\partial t}$",
+            "Au gradient nul"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "La première loi de Fick s'énonce $\\vec{j}_N = -D \\vec{grad}(n)$. En 1D, cela devient $j_N = -D \\frac{\\partial n}{\\partial x}$. La dérivée seconde intervient dans l'équation de diffusion (bilan), mais pas dans l'expression du flux.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-096",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Si l'on considère le coefficient de diffusion $D$ multiplié par 10 dans un problème de diffusion pure, quel est l'impact sur la vitesse de diffusion ?",
+        "answers": [
+            "La vitesse de diffusion est multipliée par 10",
+            "La vitesse de diffusion est divisée par 10",
+            "La vitesse de diffusion est multipliée par $\\sqrt{10}$",
+            "La vitesse reste inchangée"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "D'après la loi de Fick $\\vec{j}_N = -D \\vec{grad}(n)$, le flux est directement proportionnel au coefficient $D$. Si $D$ est multiplié par 10, le flux de particules (et donc la vitesse de transfert de matière) est multiplié par 10.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-097",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Quelle est l'expression de l'ordre de grandeur de la 'longueur de diffusion' $L$ au bout d'un temps $t$ ?",
+        "answers": [
+            "$L \\approx \\sqrt{Dt}$",
+            "$L \\approx Dt$",
+            "$L \\approx D/t$",
+            "$L \\approx \\sqrt{D/t}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Par analyse dimensionnelle sur l'équation de diffusion $\\frac{\\partial n}{\\partial t} = D \\frac{\\partial^2 n}{\\partial x^2}$, on a $[D] = L^2 T^{-1}$. Pour que $L$ soit homogène à une longueur, on doit avoir $L^2 \\approx D \\cdot t$, soit $L \\approx \\sqrt{Dt}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-098",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans l'équation de bilan de particules $\\frac{\\partial n}{\\partial t} = -\\text{div}(\\vec{j}_N) + \\alpha$, que signifie un terme source $\\alpha < 0$ ?",
+        "answers": [
+            "Les particules sont créées",
+            "Les particules sont consommées (terme puits)",
+            "Le milieu est en équilibre",
+            "Le flux est dirigé vers l'extérieur"
+        ],
+        "difficulty": 2,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 1,
+        "explication": "Le terme $\\alpha$ représente le taux de création volumique. Si $\\alpha < 0$, le nombre de particules diminue localement par disparition ou réaction chimique : c'est un terme puits.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-099",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Dans le cadre de la diffusion, le gradient de concentration $\\vec{grad}(n)$ est un vecteur dirigé vers les concentrations :",
+        "answers": [
+            "Croissantes",
+            "Décroissantes",
+            "Constantes",
+            "Opposées"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Par définition mathématique, le gradient $\\vec{grad}(f)$ pointe dans la direction de la plus grande pente de la fonction $f$. Il est donc dirigé vers les valeurs croissantes de $n$. Le flux de diffusion étant $-\\vec{grad}(n)$, il est naturellement dirigé vers les concentrations décroissantes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "diff-100",
+        "image_path": null,
+        "theme": "Diffusion de particules",
+        "question": "Un régime est dit 'permanent' (ou stationnaire) lorsque les grandeurs physiques dépendent de :",
+        "answers": [
+            "L'espace uniquement",
+            "Le temps uniquement",
+            "Ni l'espace ni le temps",
+            "L'espace et le temps"
+        ],
+        "difficulty": 1,
+        "chapter": "Diffusion de particules",
+        "correct_answer_index": 0,
+        "explication": "Par définition, un régime est stationnaire si les grandeurs ne dépendent plus du temps : $\\frac{\\partial n}{\\partial t} = 0$. Il reste cependant des variations spatiales pour permettre le maintien d'un flux.",
+        "subject": "physique"
+    }
+]

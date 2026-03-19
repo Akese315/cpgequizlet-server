@@ -1,0 +1,1662 @@
+[
+    {
+        "uuid": "osc-001",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le cadre de l'étude des systèmes bouclés, comment définit-on un oscillateur électronique auto-entretenu ?",
+        "answers": [
+            "Un montage nécessitant un signal d'entrée périodique externe pour fonctionner.",
+            "Un montage capable de générer un signal périodique stable à partir d'une alimentation continue constante.",
+            "Un circuit passif $\\text{RLC}$ en régime libre dont les oscillations s'amortissent.",
+            "Un amplificateur dont le gain en boucle ouverte est nul."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un oscillateur auto-entretenu convertit l'énergie d'une alimentation continue en énergie alternative. Contrairement au régime libre d'un circuit passif, il compense ses pertes par un apport d'énergie contrôlé par une rétroaction positive."
+    },
+    {
+        "uuid": "osc-002",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/2/23/Wien_bridge_oscillator.svg",
+        "theme": "oscillateurs",
+        "question": "D'après le critère de Barkhausen, de quels blocs principaux est constitué un oscillateur quasi-sinusoïdal linéaire ?",
+        "answers": [
+            "Un amplificateur et un filtre sélectif (filtre passe-bande) bouclés par une contre-réaction.",
+            "Un comparateur à hystérésis et un circuit intégrateur à $\\text{ALI}$.",
+            "Une diode à seuil et un circuit bouchon $\\text{LC}$ parallèle.",
+            "Un inverseur de phase et un pont diviseur de tension purement résistif."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour obtenir un signal sinusoïdal, il faut un système bouclé dont la fonction de transfert en boucle ouverte vérifie $T(j\\omega) = 1$. Cela nécessite un gain $\\underline{A}$ et un filtre sélectif pour imposer la fréquence."
+    },
+    {
+        "uuid": "osc-003",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le schéma classique de l'oscillateur à pont de Wien, quelle est l'expression du gain en tension $A = \\frac{u_s}{u_+}$ de l'amplificateur non-inverseur utilisé ?",
+        "answers": [
+            "$A = \\frac{R_1}{R_2}$",
+            "$A = 1 + \\frac{R_1}{R_2}$",
+            "$A = 1 - \\frac{R_1}{R_2}$",
+            "$A = \\frac{R_2}{R_1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'amplificateur est monté en non-inverseur avec un pont diviseur de tension sur l'entrée inverseuse. La formule du gain est $1 + \\frac{R_{feedback}}{R_{masse}}$. Une erreur classique est d'oublier le '+1' caractéristique du montage non-inverseur."
+    },
+    {
+        "uuid": "osc-004",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la valeur de la pulsation propre $\\omega_0$ du filtre de Wien constitué d'une cellule série $(R, C)$ et d'une cellule parallèle $(R, C)$ ?",
+        "answers": [
+            "$\\omega_0 = RC$",
+            "$\\omega_0 = \\frac{1}{RC}$",
+            "$\\omega_0 = \\frac{1}{\\sqrt{RC}}$",
+            "$\\omega_0 = \\frac{1}{2\\pi RC}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La fonction de transfert du filtre est $\\underline{H}(j\\omega) = \\frac{1}{3 + j(RC\\omega - 1/RC\\omega)}$. La résonance se produit pour $RC\\omega - 1/RC\\omega = 0$, soit $\\omega_0 = 1/(RC)$."
+    },
+    {
+        "uuid": "osc-005",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la valeur maximale $H_0$ de la fonction de transfert (module) du filtre de Wien à la résonance ?",
+        "answers": [
+            "$H_0 = 1$",
+            "$H_0 = 1/2$",
+            "$H_0 = 1/3$",
+            "$H_0 = 1/\\sqrt{2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "À la pulsation $\\omega_0$, la partie imaginaire du dénominateur s'annule. On obtient $\\underline{H}(j\\omega_0) = 1/3$. C'est une valeur fondamentale pour déterminer le gain minimal de l'amplificateur."
+    },
+    {
+        "uuid": "osc-006",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour que les oscillations démarrent spontanément dans un pont de Wien, quelle condition sur le gain $A$ doit être vérifiée au moment de la mise sous tension ?",
+        "answers": [
+            "$A < 3$",
+            "$A > 3$",
+            "$A = 1$",
+            "$A = 1/3$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La condition de Barkhausen impose un gain de boucle $A \\cdot H_0 = 1$. Comme $H_0 = 1/3$, il faut un gain d'amplificateur $A > 3$ pour compenser les pertes initiales et permettre à l'amplitude de croître à partir du bruit thermique."
+    },
+    {
+        "uuid": "osc-007",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'équation différentielle $\\frac{d^{2}u_{s}}{dt^{2}} + \\omega_{0}^2\\frac{(3-A)}{A_{0}}\\frac{du_{s}}{dt} + \\omega_{0}^{2}u_{s}=0$, quelle valeur de $A$ assure théoriquement des oscillations purement sinusoïdales ?",
+        "answers": [
+            "$A > 3$",
+            "$A = 3$",
+            "$A < 3$",
+            "$A = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un oscillateur harmonique pur nécessite un amortissement nul, c'est-à-dire que le terme en $du_s/dt$ doit être nul. Cela impose $3 - A = 0$, soit $A = 3$."
+    },
+    {
+        "uuid": "osc-008",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pourquoi les oscillations ne peuvent-elles pas être parfaitement sinusoïdales en pratique sans un système de contrôle de gain (AGC) ?",
+        "answers": [
+            "Parce que la condition $A=3$ est un point d'équilibre instable : toute fluctuation fait diverger ou s'éteindre l'oscillation.",
+            "Parce que les composants $R$ et $C$ sont trop parfaits pour permettre la linéarité.",
+            "À cause de l'effet Joule dans les résistances qui modifie $\\omega_0$.",
+            "Parce que le signal doit nécessairement être carré pour être stable."
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Si $A > 3$, l'amplitude croît jusqu'à la saturation. Si $A < 3$, elle s'amortit. Sans asservissement du gain pour maintenir exactement $A=3$, le système ne peut pas rester en régime sinusoïdal pur indéfiniment."
+    },
+    {
+        "uuid": "osc-009",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Qu'est-ce qui limite l'amplitude des oscillations dans un oscillateur pratique (non asservi) après la mise sous tension ?",
+        "answers": [
+            "La résistance interne des générateurs.",
+            "La saturation en tension de sortie de l'amplificateur opérationnel ($\\pm V_{sat}$).",
+            "La constante de temps thermique du circuit.",
+            "La fréquence de coupure du filtre de Wien."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La saturation est la non-linéarité naturelle qui limite l'amplitude. Lorsque l'amplitude atteint $V_{sat}$, le gain de boucle chute, ce qui stabilise l'amplitude moyenne, au prix d'une distorsion du signal (écrêtage)."
+    },
+    {
+        "uuid": "osc-010",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/0/05/Op-Amp_Integrator.svg",
+        "theme": "oscillateurs",
+        "question": "Un multivibrateur astable, utilisant un comparateur à hystérésis et une cellule de charge/décharge RC, est un exemple d'oscillateur :",
+        "answers": [
+            "Quasi-sinusoïdal.",
+            "À relaxation.",
+            "Harmonique.",
+            "À quartz."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Les oscillateurs à relaxation produisent des signaux non sinusoïdaux (carrés, triangulaires) en utilisant des commutations brutales liées à des charges et décharges de condensateurs, contrairement aux oscillateurs quasi-sinusoïdaux qui reposent sur des résonances."
+    },
+    {
+        "uuid": "osc-011",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le cadre de l'étude d'un multivibrateur astable à AOP, quels sont les deux blocs fonctionnels indispensables à son fonctionnement ?",
+        "answers": [
+            "Filtre passe-bas et Amplificateur de gain unitaire.",
+            "Comparateur à hystérésis et Intégrateur (cellule RC).",
+            "Redresseur double alternance et Circuit de lissage.",
+            "Amplificateur différentiel et Diviseur de tension."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "Le multivibrateur astable repose sur une boucle de rétroaction : le comparateur à hystérésis (réaction positive) définit les seuils de basculement, tandis que l'intégrateur (réaction négative via le circuit RC) crée la rampe de tension qui fait varier la tension d'entrée jusqu'aux seuils.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-012",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour un comparateur à hystérésis non-inverseur, quelle est l'expression des tensions de basculement seuils $V_{s1}$ et $V_{s2}$ en fonction de la tension de saturation $\\pm V_{sat}$ et du pont diviseur de rapport $\\beta = \\frac{R_1}{R_1+R_2}$ ?",
+        "answers": [
+            "$\\pm V_{sat}$",
+            "$\\pm \\beta V_{sat}$",
+            "$\\pm \\frac{R_2}{R_1} V_{sat}$",
+            "$\\pm (1+\\beta) V_{sat}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "Le basculement se produit lorsque la tension aux bornes de la résistance $R_1$ atteint la tension de sortie, soit $V_+ = \\frac{R_1}{R_1+R_2} V_s$. Comme $V_s$ vaut $\\pm V_{sat}$, les seuils sont bien $\\pm \\beta V_{sat}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-013",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans la structure classique du multivibrateur astable, quelle est la forme du signal de sortie $v_{int}(t)$ aux bornes du condensateur de l'intégrateur ?",
+        "answers": [
+            "Sinusoïdale.",
+            "Triangulaire.",
+            "Carrée.",
+            "En dents de scie."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "La sortie de l'AOP est un signal carré ( $\\pm V_{sat}$ ). L'intégrateur, composé d'une résistance et d'un condensateur, intègre ce signal carré, ce qui donne une succession de segments de droites linéaires, formant un signal triangulaire.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-014",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est l'expression de la période $T$ d'un multivibrateur astable utilisant un comparateur de seuils $\\pm \\beta V_{sat}$ ?",
+        "answers": [
+            "$T = 2RC \\ln(1 + 2\\beta)$",
+            "$T = 2RC \\ln\\left(\\frac{1+\\beta}{1-\\beta}\\right)$",
+            "$T = 4RC \\beta$",
+            "$T = RC \\ln(2)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "La charge du condensateur suit une loi exponentielle $v_c(t) = V_{sat}(1 - 2\\beta e^{-t/RC})$. En isolant le temps mis pour passer d'un seuil $-\\beta V_{sat}$ à $+\\beta V_{sat}$, on trouve $T = 2RC \\ln\\left(\\frac{1+\\beta}{1-\\beta}\\right)$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-015",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour un oscillateur RLC entretenu par un composant actif, quelle est l'expression correcte du facteur de qualité $Q$ ?",
+        "answers": [
+            "$Q = \\frac{1}{R}\\sqrt{\\frac{L}{C}}$",
+            "$Q = R\\sqrt{\\frac{L}{C}}$",
+            "$Q = \\sqrt{\\frac{C}{L}}$",
+            "$Q = \\frac{1}{R^2}\\sqrt{\\frac{L}{C}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "explication": "Pour un circuit RLC série, la pulsation propre est $\\omega_0 = 1/\\sqrt{LC}$ et la bande passante est $\\Delta \\omega = R/L$. Le facteur de qualité est défini par $Q = \\omega_0 / \\Delta \\omega = (1/\\sqrt{LC}) / (R/L) = \\frac{1}{R}\\sqrt{\\frac{L}{C}}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-016",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'étude d'un oscillateur sinusoïdal par critère de Barkhausen, quelle condition sur le gain de boucle $A \\beta$ doit être satisfaite pour obtenir des oscillations entretenues ?",
+        "answers": [
+            "$A\\beta < 1$",
+            "$A\\beta = 1$",
+            "$A\\beta > 1$",
+            "$A\\beta = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "Le critère de Barkhausen stipule que pour un système bouclé, l'oscillation est entretenue si le gain de boucle complexe vaut $1$. Si le gain est supérieur à 1, l'amplitude croît (jusqu'à saturation) ; s'il est inférieur, les oscillations s'amortissent.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-017",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans un oscillateur à pont de Wien, quel signal est le plus proche d'une sinusoïde pure ?",
+        "answers": [
+            "La sortie de l'AOP, car elle est saturée.",
+            "La tension aux bornes du filtre passe-bande (sélectif), car il rejette les harmoniques.",
+            "Le signal d'alimentation, car il est constant.",
+            "Les deux sont parfaitement sinusoïdaux."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "La sortie de l'AOP est souvent légèrement écrêtée ou distordue. Le filtre de Wien agit comme un filtre passe-bande sélectif qui élimine les harmoniques supérieures, rendant le signal filtré bien plus sinusoïdal que la sortie brute.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-018",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/8/82/Hartley_oscillator.svg",
+        "theme": "oscillateurs",
+        "question": "Quelle est la caractéristique structurelle principale d'un oscillateur de type Hartley ?",
+        "answers": [
+            "Un pont de Wien avec deux condensateurs en série.",
+            "Une cellule résonante utilisant deux bobines (ou une bobine à point milieu) et un condensateur.",
+            "Un filtre en T ponté à base de résistances uniquement.",
+            "Un quartz piézoélectrique monté en feedback positif."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "L'oscillateur Hartley se reconnaît à son circuit LC formé d'un condensateur unique et de deux inductances (souvent une bobine avec une prise intermédiaire) permettant la réaction nécessaire à l'oscillation.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-019",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'oscillateur Hartley composé d'un condensateur $C$ et de deux inductances $L_1$ et $L_2$ en série, quelle est la pulsation des oscillations $\\omega_0$ ?",
+        "answers": [
+            "$\\omega_0 = \\frac{1}{\\sqrt{(L_1+L_2)C}}$",
+            "$\\omega_0 = \\frac{1}{\\sqrt{L_1 C}} + \\frac{1}{\\sqrt{L_2 C}}$",
+            "$\\omega_0 = \\sqrt{\\frac{L_1+L_2}{C}}$",
+            "$\\omega_0 = \\frac{1}{2\\pi \\sqrt{LC}}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "explication": "Dans un circuit LC parallèle, la pulsation propre est donnée par $1/\\sqrt{L_{eq}C}$. Pour un montage Hartley, les inductances sont en série, donc $L_{eq} = L_1 + L_2$. D'où $\\omega_0 = 1/\\sqrt{(L_1+L_2)C}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-020",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour réaliser un oscillateur, on utilise parfois un convertisseur d'impédance négative (NIC). Quelle est la valeur de la résistance négative $R'$ vue aux bornes d'un NIC utilisant un AOP idéal et trois résistances $R_1, R_2, R_3$ ?",
+        "answers": [
+            "$R' = -\\frac{R_1 R_3}{R_2}$",
+            "$R' = -\\frac{R_2}{R_1} R_3$",
+            "$R' = R_1 + R_2 - R_3$",
+            "$R' = -R_1 R_2 / R_3$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "Par le calcul du courant d'entrée $i_e$ et de la tension $v_e$ d'un NIC, on démontre que le rapport $v_e/i_e$ fait apparaître une impédance négative. Selon la configuration standard, on obtient $R_{in} = - \\frac{R_2}{R_1} R_3$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-021",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le cadre de l'étude d'un oscillateur à résistance négative modélisé par un circuit RLC avec une résistance totale $R_{tot} = R + R_{neg}$, quelle condition sur les résistances assure l'auto-entretien des oscillations (démarrage du régime instable) ?",
+        "answers": [
+            "$R + R_{neg} > 0$ (stabilité asymptotique)",
+            "$R + R_{neg} < 0$ (instabilité permettant le démarrage)",
+            "$R + R_{neg} = 0$ (régime critique)",
+            "$R = R_{neg}$ (amortissement nul)"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "Pour qu'un oscillateur démarre, il faut que l'équation différentielle du système présente des racines à partie réelle positive (système instable). La résistance totale doit être négative pour compenser les pertes Joule et transformer le système en oscillateur entretenu. Si $R+R_{neg} > 0$, les oscillations sont amorties.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-022",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'étude d'un oscillateur sinus-cosinus (oscillateur en quadrature), quel est le déphasage théorique entre les tensions de sortie $V_1$ et $V_2$ des deux étages intégrateurs ?",
+        "answers": [
+            "$0$ (en phase)",
+            "$\\pi$ (opposition de phase)",
+            "$\\pi/2$ (quadrature)",
+            "$\\pi/4$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 2,
+        "explication": "Le principe repose sur l'intégration successive d'un signal sinusoïdal. Comme $\\int \\cos(\\omega t) dt = \\frac{1}{\\omega} \\sin(\\omega t)$, l'intégration introduit un déphasage de $-\\pi/2$ (ou $+3\\pi/2$). Dans ce montage, les deux étages sont en quadrature, soit un déphasage de $\\pi/2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-023",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Considérant l'oscillateur sinus-cosinus composé de deux étages intégrateurs de constantes de temps respectives $\\tau_1 = R_1 C_1$ et $\\tau_2 = R_2 C_2$, quelle est la condition d'oscillation stationnaire ?",
+        "answers": [
+            "$\\tau_1 \\tau_2 = 1$ (si $\\omega=1$ rad/s)",
+            "$\\tau_1 = \\tau_2$",
+            "$\\tau_1 > \\tau_2$",
+            "$\\tau_1 + \\tau_2 = 0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "La fonction de transfert de la boucle fermée présente des pôles purement imaginaires $\\pm j\\omega_0$ lorsque le produit des gains des intégrateurs est égal à 1 en module et que le déphasage total est un multiple de $2\\pi$. Ici, la condition impose $\\omega_0 = 1/\\sqrt{R_1 C_1 R_2 C_2}$. Si les constantes de temps sont identiques, $\\omega_0 = 1/\\tau$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-024",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le montage d'un pont de Wien, quel est l'intérêt d'insérer une lampe à incandescence dans la boucle de contre-réaction ?",
+        "answers": [
+            "Éclairer le circuit pour la visualisation.",
+            "Réaliser un contrôle automatique de gain non linéaire grâce à la variation de sa résistance avec la température.",
+            "Servir de protection contre les surtensions (fusible).",
+            "Augmenter le facteur de qualité du filtre."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "La lampe possède une résistance dynamique qui dépend de la température (donc de l'amplitude du courant). En augmentant l'amplitude, la lampe chauffe, sa résistance augmente, ce qui réduit le gain de la boucle et empêche la saturation de l'ALI, stabilisant ainsi l'amplitude des oscillations.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-025",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "En cas d'augmentation de l'amplitude des oscillations dans le montage à lampe (pont de Wien), quel phénomène physique stabilise le système ?",
+        "answers": [
+            "L'effet Joule diminue, refroidissant le filament.",
+            "La température du filament augmente, sa résistance $R_1$ augmente, ce qui réduit le gain en boucle ouverte et ramène l'amplitude à l'état stationnaire.",
+            "L'ALI sature instantanément par limitation de courant.",
+            "La capacité du condensateur varie avec la chaleur."
+        ],
+        "difficulty": 4,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "C'est un mécanisme d'autorégulation : le gain du pont diviseur de tension incluant la lampe diminue lorsque la tension augmente. Le système converge vers le point où le gain de boucle est exactement égal à 1.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-026",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour un oscillateur de Wien utilisant un pont de réaction avec deux résistances $R_1$ et $R_2$ pour fixer le gain, quelle est la condition théorique pour obtenir des oscillations sinusoïdales (gain de boucle = 1) ?",
+        "answers": [
+            "$R_1 = R_2$",
+            "$R_1 = 2 R_2$",
+            "$R_1 = R_2 / 2$",
+            "$R_1 = \\sqrt{2} R_2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "Le filtre de Wien a un gain de $1/3$ à la résonance. Pour que le gain de boucle soit égal à 1, l'amplificateur non-inverseur doit avoir un gain de $3$. Or, $G = 1 + R_1/R_2$. Si $R_1 = 2 R_2$, alors $G=3$, ce qui compense exactement l'atténuation du filtre.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-027",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour un multivibrateur astable (à base d'ALI) où $\\alpha = R_1/(R_1+R_2)$ représente le rapport du diviseur de tension, quelle est l'expression correcte de la période $T$ ?",
+        "answers": [
+            "$T = 4RC$",
+            "$T = 2RC \\ln(\\frac{1+\\alpha}{1-\\alpha})$",
+            "$T = RC \\ln(1+\\alpha)$",
+            "$T = 2 \\pi RC$"
+        ],
+        "difficulty": 4,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "L'intégration de l'équation différentielle $\\dot{V_c} = \\pm V_{sat}/RC$ sur une demi-période entre les seuils $\\pm \\alpha V_{sat}$ conduit à cette expression logarithmique. $2RC$ est la constante de temps effective et le terme log dépend du rapport des seuils de basculement.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-028",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans un oscillateur quasi-sinusoïdal (ex: Wien ou Colpitts), quelle est la source physique d'énergie primaire permettant d'entretenir les oscillations ?",
+        "answers": [
+            "Le bruit thermique capté à l'entrée.",
+            "L'alimentation continue (DC) de l'amplificateur opérationnel.",
+            "L'énergie stockée initialement dans les condensateurs.",
+            "Le couplage électromagnétique avec le secteur."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "L'oscillateur est un convertisseur d'énergie : il transforme l'énergie continue fournie par l'alimentation de l'ALI en une énergie alternative sinusoïdale en sortie grâce au mécanisme de rétroaction positive.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-029",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pourquoi qualifie-t-on l'état d'équilibre d'un oscillateur (tension nulle en sortie) d'instable au démarrage ?",
+        "answers": [
+            "Car le montage risque d'entrer en combustion.",
+            "Car un pôle de la fonction de transfert en boucle fermée possède une partie réelle positive, amplifiant toute perturbation.",
+            "Car l'ALI fonctionne en régime saturé en permanence.",
+            "Car le filtre de Wien bloque toutes les fréquences au démarrage."
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "La condition de démarrage nécessite que le système soit instable. Une petite perturbation (bruit thermique) est amplifiée exponentiellement par la boucle de gain $G > 1$, jusqu'à ce que les non-linéarités limitent l'amplitude (régime stationnaire).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-030",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle caractéristique technique de l'ALI est prépondérante pour limiter la fréquence de fonctionnement maximale d'un oscillateur, notamment pour des signaux de grande amplitude ?",
+        "answers": [
+            "Sa tension de déchet (tension minimale aux rails).",
+            "Son Slew-Rate (vitesse de balayage ou taux de variation maximal).",
+            "Sa résistance d'entrée qui doit être infinie.",
+            "Son courant de polarisation d'entrée."
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "Le Slew-Rate limite la pente maximale $\\frac{dV}{dt}$ que l'ALI peut fournir. Si la fréquence devient trop élevée, la sortie ne peut plus suivre la forme sinusoïdale et se déforme en triangle, limitant l'usage de l'ALI en oscillateur haute fréquence.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-031",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quel est le rôle du filtre dans un oscillateur quasi-sinusoïdal ?",
+        "answers": [
+            "Amplifier le signal.",
+            "Sélectionner une unique fréquence (harmonique).",
+            "Éliminer la composante continue."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-032",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour un filtre de Wien, quelle est la valeur du facteur de qualité $Q$ ?",
+        "answers": [
+            "$Q = 1$",
+            "$Q = 1/2$",
+            "$Q = 1/3$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-033",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "En régime sinusoïdal établi, quelle condition doit vérifier le produit des fonctions de transfert de la boucle (critère de Barkhausen) ?",
+        "answers": [
+            "$\\underline{H}_{ampli} \\cdot \\underline{H}_{filtre} = 0$",
+            "$\\underline{H}_{ampli} \\cdot \\underline{H}_{filtre} = 1$",
+            "$\\underline{H}_{ampli} + \\underline{H}_{filtre} = 1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-034",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Si $A=3$ exactement dans un pont de Wien, l'amplitude des oscillations est :",
+        "answers": [
+            "Nulle.",
+            "Constante (théoriquement).",
+            "Divergente."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-035",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Un signal de sortie triangulaire est obtenu en intégrant un signal :",
+        "answers": [
+            "Sinusoïdal.",
+            "Carré.",
+            "Constant nul."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-036",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est l'unité de la pulsation $\\omega$ ?",
+        "answers": [
+            "$Hz$",
+            "$rad \\cdot s^{-1}$",
+            "$s$"
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-037",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 1, si $R=250\\Omega$, $L=740 mH$ et $C=4.7 nF$, le filtre est-il sélectif ?",
+        "answers": [
+            "Non, $Q=0.5$.",
+            "Oui, $Q=50$.",
+            "Moyennement, $Q=1$."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-038",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Comment appelle-t-on le régime où l'amplitude des oscillations croît ?",
+        "answers": [
+            "Régime linéaire transitoire.",
+            "Régime de saturation.",
+            "Régime stationnaire."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-039",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 4, pourquoi l'appellation 'sinus-cosinus' est-elle justifiée ?",
+        "answers": [
+            "Car on utilise des fonctions trigonométriques.",
+            "Car le déphasage de $\\pi/2$ entre les sorties correspond à la relation entre sinus et cosinus.",
+            "Car l'ALI ne peut sortir que du sinus."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-040",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la condition d'oscillation pour l'oscillateur Hartley (Ex 2) ?",
+        "answers": [
+            "$R_1 < R_2$",
+            "$R_1 > R_2$",
+            "$R_1 = R_2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-041",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le cadre de l'étude d'un oscillateur harmonique amorti régi par l'équation différentielle $\\ddot{x} + \\frac{\\omega_0}{Q}\\dot{x} + \\omega_0^2 x = 0$, quelle condition sur le facteur de qualité $Q$ permet d'obtenir un régime pseudo-périodique ?",
+        "answers": [
+            "$Q > 1/2$",
+            "$Q < 1/2$",
+            "$Q = 1/2$",
+            "$Q = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le régime est pseudo-périodique lorsque les racines de l'équation caractéristique sont complexes conjuguées, ce qui correspond à un discriminant $\\Delta < 0$. Avec la forme $\\ddot{x} + \\frac{\\omega_0}{Q}\\dot{x} + \\omega_0^2 x = 0$, on obtient $\\omega_0^2(1/Q^2 - 4) < 0$, soit $Q > 1/2$. Si $Q < 1/2$, le régime est apériodique (racines réelles distinctes)."
+    },
+    {
+        "uuid": "osc-042",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Considérant un Amplificateur Linéaire Intégré (ALI) idéal, quelle relation fondamentale caractérise son fonctionnement en régime linéaire avec rétroaction négative ?",
+        "answers": [
+            "$V^+ = V^-$",
+            "$V_s = \\pm V_{sat}$",
+            "$i^+ = i^- \\neq 0$",
+            "$V^+ - V^- = \\epsilon$ avec $\\epsilon$ non nul"
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "En régime linéaire, la contre-réaction maintient l'entrée différentielle $\\epsilon = V^+ - V^-$ proche de zéro (car le gain en boucle ouverte tend vers l'infini). La relation $V_s = \\pm V_{sat}$ correspond au régime de saturation, et les impédances d'entrée d'un ALI idéal sont infinies, donc $i^+ = i^- = 0$."
+    },
+    {
+        "uuid": "osc-043",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le cadre d'un oscillateur entretenu par une lampe (ou un dispositif à résistance non-linéaire), si l'amplitude des oscillations dépasse la valeur d'équilibre stable, quel mécanisme physique assure la stabilisation ?",
+        "answers": [
+            "La lampe refroidit brusquement.",
+            "La résistance dynamique augmente, rendant le coefficient d'amortissement moyen positif sur une période.",
+            "L'amplitude augmente de façon divergente.",
+            "Le gain de l'amplificateur devient infini."
+        ],
+        "difficulty": 4,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour stabiliser un oscillateur, il faut un mécanisme de saturation. Si l'amplitude augmente, la non-linéarité (souvent thermique ou électronique) augmente les pertes ($R_1$ augmente), ce qui rend le coefficient d'amortissement efficace positif. Cela dissipe l'excès d'énergie et ramène l'amplitude vers son point de fonctionnement stable."
+    },
+    {
+        "uuid": "osc-044",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour un oscillateur quasi-sinusoïdal parfait, comment se présente le spectre en fréquence du signal de sortie ?",
+        "answers": [
+            "Un spectre continu sur toute la bande passante.",
+            "Un unique pic (dirac) situé à la fréquence fondamentale $f_0$.",
+            "Une infinité de pics aux fréquences harmoniques $n f_0$.",
+            "Un spectre bruité sans pic distinct."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un oscillateur purement sinusoïdal n'a qu'une seule composante fréquentielle $f_0$. Si le signal était non-sinusoïdal (ex: carré ou triangle), on observerait des harmoniques multiples de $f_0$. Le terme 'quasi-sinusoïdal' indique que les harmoniques sont négligeables."
+    },
+    {
+        "uuid": "osc-045",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est l'expression correcte de l'impédance complexe d'un condensateur de capacité $C$ en régime sinusoïdal établi de pulsation $\\omega$ ?",
+        "answers": [
+            "$jL\\omega$",
+            "$\\frac{1}{jC\\omega}$",
+            "$R$",
+            "$jC\\omega$"
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par définition, l'impédance est le rapport $U/I$ en notation complexe. Pour un condensateur, $i = C \\frac{du}{dt}$, d'où $I = jC\\omega U$, ce qui donne $Z_C = 1/(jC\\omega) = -j/(C\\omega)$. $jL\\omega$ est l'impédance d'une bobine."
+    },
+    {
+        "uuid": "osc-046",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le cas d'un multivibrateur astable à ALI, à quel instant précis se produit le basculement de la tension de sortie $V_s$ ?",
+        "answers": [
+            "Lorsque la tension différentielle $\\epsilon = V^+ - V^-$ change de signe.",
+            "Lorsque le condensateur atteint une charge nulle.",
+            "À intervalles de temps fixes dictés par une horloge externe.",
+            "Lorsque $V_s = 0$ V."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le basculement se produit dès que le comparateur à hystérésis détecte un franchissement du seuil, c'est-à-dire quand $\\epsilon = V^+ - V^-$ s'annule. Cela force le changement d'état de sortie entre $+V_{sat}$ et $-V_{sat}$."
+    },
+    {
+        "uuid": "osc-047",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour améliorer la pureté spectrale d'un oscillateur à pont de Wien, quelle modification est la plus pertinente ?",
+        "answers": [
+            "Augmenter le gain de l'ALI au-delà de 3.",
+            "Utiliser un filtre passe-bande plus sélectif (augmenter le facteur de qualité $Q$).",
+            "Supprimer le condensateur de filtrage.",
+            "Réduire la fréquence d'oscillation."
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La pureté spectrale est limitée par la sélectivité du filtre. Un facteur de qualité $Q$ plus élevé permet de mieux rejeter les composantes parasites et les harmoniques, forçant l'oscillateur à maintenir une fréquence plus stable et un signal plus sinusoïdal."
+    },
+    {
+        "uuid": "osc-048",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la relation temporelle fondamentale régissant une bobine idéale d'inductance $L$ ?",
+        "answers": [
+            "$i = C \\frac{du}{dt}$",
+            "$u = L \\frac{di}{dt}$",
+            "$u = Ri$",
+            "$u = \\frac{1}{L} \\int i dt$"
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La loi constitutive d'une bobine idéale est $u_L = L \\frac{di}{dt}$. L'erreur classique est de confondre avec la loi du condensateur ($i = C \\frac{du}{dt}$) ou la loi d'Ohm pour une résistance."
+    },
+    {
+        "uuid": "osc-049",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Un oscillateur dit 'quasi-sinusoïdal' génère des harmoniques de rang $n > 1$. Comment se comparent-ils au fondamental ?",
+        "answers": [
+            "Leur amplitude est nulle.",
+            "Leur amplitude est faible mais non nulle par rapport au fondamental.",
+            "Leur amplitude est strictement supérieure au fondamental.",
+            "Ils sont déphasés de $\\pi/2$ systématiquement."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par définition, un oscillateur 'quasi-sinusoïdal' est un système dont la sortie est très proche d'une sinusoïde pure, mais qui comporte de légères distorsions non-linéaires. Ces distorsions se manifestent par des harmoniques dont l'amplitude est faible, mais présente dans le spectre."
+    },
+    {
+        "uuid": "osc-050",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le calcul de la période d'un multivibrateur, si le rapport cyclique $\\alpha$ tend vers 1, que se passe-t-il mathématiquement pour la période $T$ ?",
+        "answers": [
+            "La période s'annule.",
+            "La période tend vers l'infini car le logarithme d'une valeur tendant vers 0 diverge.",
+            "La période devient constante.",
+            "Le système devient instable et explose."
+        ],
+        "difficulty": 4,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La période $T$ dépend généralement d'un terme en $\\ln(\\frac{1}{1-\\alpha})$. Lorsque $\\alpha \\to 1$, le terme $1-\\alpha \\to 0$, donc le logarithme tend vers $+\\infty$. Physiquement, cela correspond à une situation où le système ne parvient plus à basculer car l'un des seuils n'est plus atteint."
+    },
+    {
+        "uuid": "osc-051",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le cadre de l'étude d'un oscillateur sinusoïdal basé sur un filtre sélectif, pour quelle valeur de pulsation $\\omega$ un filtre passe-bande présente-t-il son maximum de gain (résonance) ?",
+        "answers": [
+            "$\\omega = 0$",
+            "$\\omega = \\omega_0$ (pulsation propre du filtre)",
+            "$\\omega = \\infty$",
+            "$\\omega = \\omega_0 / \\sqrt{2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "Un filtre passe-bande laisse passer les fréquences autour de sa fréquence de résonance $\\omega_0$. À cette pulsation, le déphasage est nul et le module du gain est maximal (souvent égal à $1/3$ pour un pont de Wien). Les réponses $\\omega=0$ et $\\omega=\\infty$ correspondent au comportement asymptotique du filtre.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-052",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'étude de l'oscillateur à pont de Wien, quelle condition sur le gain en boucle ouverte $A$ de l'amplificateur permet d'annuler le terme d'amortissement dans l'équation différentielle du second ordre associée ?",
+        "answers": [
+            "$A = 1$",
+            "$A = 2$",
+            "$A = 3$",
+            "$A = 1/3$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 2,
+        "explication": "Le pont de Wien possède un gain de transfert de $1/3$ à la résonance. Pour que l'oscillateur entretienne ses oscillations, le gain global de la boucle doit être égal à $1$. Ainsi, l'amplificateur doit compenser l'atténuation du pont par un gain $A = 3$. Si $A < 3$, les oscillations s'amortissent.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-053",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le modèle linéaire d'un oscillateur, si le gain $A > 3$, comment évolue l'amplitude des oscillations en l'absence de saturation de l'amplificateur ?",
+        "answers": [
+            "De façon linéaire avec le temps $t$.",
+            "De façon exponentielle, car la solution est de la forme $s(t) \\propto e^{(A-3)kt}$.",
+            "De façon logarithmique.",
+            "L'amplitude reste constante."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "Si le gain est strictement supérieur à 3, le terme d'amortissement de l'équation différentielle devient négatif. La solution de l'équation différentielle linéaire est alors une sinusoïde modulée par une enveloppe exponentielle croissante $e^{\\alpha t}$ avec $\\alpha > 0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-054",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pourquoi la présence d'une alimentation continue (source DC) est-elle indispensable au fonctionnement d'un oscillateur électronique ?",
+        "answers": [
+            "Uniquement pour initialiser la charge des condensateurs.",
+            "Pour compenser les pertes énergétiques par effet Joule et permettre l'amplification active du signal.",
+            "Pour synchroniser l'horloge interne du circuit.",
+            "Pour stabiliser la tension de seuil des diodes."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "Un oscillateur transforme une puissance continue (fournie par l'alimentation) en une puissance alternative. Sans cette source, le système est passif et ne peut que dissiper l'énergie initialement stockée, menant à l'arrêt des oscillations.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-055",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Parmi les dipôles passifs suivants, lequel permet le stockage d'énergie sous forme magnétique ?",
+        "answers": [
+            "La résistance ($R$).",
+            "Le condensateur ($C$).",
+            "L'inductance ou bobine ($L$).",
+            "L'amplificateur opérationnel."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 2,
+        "explication": "Le condensateur stocke l'énergie sous forme électrostatique ($E_C = \\frac{1}{2} C u^2$), tandis que la bobine stocke l'énergie sous forme magnétique ($E_L = \\frac{1}{2} L i^2$). La résistance, elle, dissipe l'énergie par effet Joule.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-056",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Que signifie le terme 'astable' dans la classification des montages à amplificateurs opérationnels ou à bascules ?",
+        "answers": [
+            "Le montage possède un unique état stable défini par le gain en boucle ouverte.",
+            "Le montage possède deux états stables (bistable).",
+            "Le montage ne possède aucun état stable et bascule en permanence entre deux tensions de saturation.",
+            "Le montage est instable et diverge vers l'infini."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 2,
+        "explication": "Un système astable est un oscillateur qui n'a pas de position d'équilibre stable. Il bascule périodiquement entre deux états extrêmes (généralement $\\pm V_{sat}$), créant un signal périodique de type carré ou triangulaire.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-057",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le cadre de l'étude d'un oscillateur réel avec saturation, quelle est l'amplitude du signal de sortie $s(t)$ en régime permanent établi ?",
+        "answers": [
+            "La tension de saturation de l'amplificateur $V_{sat}$.",
+            "Le produit du gain $x$ par la tension $V_{sat}$.",
+            "Le rapport $V_{sat} / x$.",
+            "Une valeur nulle."
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "explication": "En régime permanent, la saturation de l'amplificateur limite la croissance exponentielle de l'amplitude. Le système oscille alors en butant sur les tensions de saturation $\\pm V_{sat}$ de l'amplificateur opérationnel, ce qui déforme le signal (écrêtage).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-058",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans un oscillateur à pont de Wien, quelle condition doit être vérifiée par les résistances $R_1$ et $R_2$ du pont diviseur non-inverseur pour assurer l'oscillation ?",
+        "answers": [
+            "$R_1 = 2 R_2$ (gain égal à $1 + R_1/R_2 = 3$).",
+            "$R_1 = R_2$.",
+            "$R_1 < R_2$.",
+            "$R_1 = 3 R_2$."
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "explication": "Pour le montage non-inverseur classique, le gain est $A = 1 + R_1/R_2$. Comme le pont de Wien impose une atténuation d'un facteur 3, il faut que $A = 3$, soit $1 + R_1/R_2 = 3$, ce qui donne $R_1 = 2 R_2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-059",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans un montage oscillateur, si la condition de gain $R$ est supérieure à la condition critique $R'$, que devient la solution de l'équation différentielle associée ?",
+        "answers": [
+            "La solution est instable et l'amplitude diverge jusqu'à saturation.",
+            "La solution est stable et tend vers $0$ car l'amortissement est positif.",
+            "La solution est une sinusoïde parfaite de fréquence $\\omega_0$.",
+            "La solution devient un signal triangulaire."
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "explication": "Si le gain effectif est inférieur au gain critique (cas $R > R'$ selon la convention de l'exercice), le terme d'amortissement de l'équation différentielle reste positif. Physiquement, cela signifie que les pertes sont supérieures au gain, donc le régime libre est stable et tout signal tend vers 0.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-060",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Le filtre de Wien, utilisé dans la boucle de contre-réaction d'un oscillateur, est un filtre sélectif de quel type ?",
+        "answers": [
+            "Passe-bas.",
+            "Passe-haut.",
+            "Passe-bande.",
+            "Coupe-bande."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 2,
+        "explication": "Le filtre de Wien est composé d'une cellule passe-haut ($RC$ série) et d'une cellule passe-bas ($RC$ parallèle). Sa fonction de transfert présente un maximum de gain à une fréquence centrale, ce qui en fait un filtre passe-bande sélectif.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-061",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le cadre de la modélisation thermique d'une thermistance, si la résistance est donnée par $R(T) = R_0(1 + \\alpha(T - T_0))$ avec une constante $\\alpha > 0$, quelle est l'interprétation physique de $\\alpha$ ?",
+        "answers": [
+            "La résistance diminue linéairement quand la température $T$ augmente.",
+            "La résistance augmente linéairement quand la température $T$ augmente.",
+            "La résistance est indépendante de la température $T$.",
+            "Le coefficient $\\alpha$ représente la résistance à température nulle."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le coefficient $\\alpha$ est le coefficient de température. Puisque $\\alpha > 0$, la dérivée $\\frac{dR}{dT} = R_0 \\alpha$ est positive, ce qui signifie que $R$ est une fonction croissante de $T$ (comportement de type conducteur métallique ou CTP)."
+    },
+    {
+        "uuid": "osc-062",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'étude d'un comparateur à hystérésis (trigger de Schmitt), le cycle d'hystérésis dans le plan $(V_e, V_s)$ est parcouru :",
+        "answers": [
+            "Dans le sens anti-horaire, quelle que soit la rétroaction.",
+            "Uniquement dans un sens imposé par les seuils de basculement, soit dans le sens anti-horaire.",
+            "Dans le sens horaire.",
+            "Le cycle n'existe que si le système est en régime permanent stable."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour un trigger de Schmitt inverseur, quand $V_e$ croît, le basculement se fait à $V_{H}$, et quand $V_e$ décroît, il se fait à $V_{B}$. Le cycle est alors parcouru dans le sens anti-horaire. C'est une propriété fondamentale liée à l'instabilité de la rétroaction positive."
+    },
+    {
+        "uuid": "osc-063",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour un oscillateur à pont de Wien, le filtre sélectif possède un facteur de qualité $Q = 1/3$. Comment qualifier la sélectivité de ce filtre ?",
+        "answers": [
+            "Le filtre est extrêmement sélectif car $Q$ est une valeur précise.",
+            "Le filtre est peu sélectif, car une sélectivité forte nécessite $Q \\gg 1$.",
+            "Le filtre est idéal car il ne laisse passer qu'une seule fréquence.",
+            "Le facteur de qualité n'a pas de lien avec la sélectivité."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le facteur de qualité $Q$ mesure la finesse de la résonance. Un filtre est dit sélectif si $Q > 1$ (pic étroit). Avec $Q = 1/3$, la courbe de gain est très « plate », ce qui est caractéristique du filtre passe-bande du pont de Wien qui n'est pas un filtre à haute sélectivité."
+    },
+    {
+        "uuid": "osc-064",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le cadre d'un oscillateur à relaxation modélisé par deux constantes de temps $\\tau_1$ et $\\tau_2$, quelle est l'expression de la pulsation d'oscillation naturelle $\\omega$ ?",
+        "answers": [
+            "$\\omega = \\frac{1}{\\sqrt{\\tau_1 \\tau_2}}$",
+            "$\\omega = \\frac{1}{\\tau_1 + \\tau_2}$",
+            "$\\omega = \\sqrt{\\tau_1 \\tau_2}$",
+            "$\\omega = \\frac{1}{2\\pi \\sqrt{\\tau_1 \\tau_2}}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour un système du second ordre typique (type oscillateur harmonique ou approximation), la pulsation propre est inversement proportionnelle à la moyenne géométrique des constantes de temps. L'erreur classique est d'oublier la racine carrée ou d'inverser le rapport."
+    },
+    {
+        "uuid": "osc-065",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans un oscillateur à relaxation, comment nomme-t-on la phase où le système charge son élément accumulateur (condensateur) vers une valeur limite ?",
+        "answers": [
+            "Phase de relaxation pure.",
+            "Phase de croissance ou de charge.",
+            "Phase de saturation forcée.",
+            "Phase d'équilibre stationnaire."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans un oscillateur à relaxation, on alterne entre une phase de charge (croissance de la tension vers une valeur cible) et une phase de décharge (ou changement de signe). La phase de croissance correspond au remplissage de l'énergie dans le composant réactif."
+    },
+    {
+        "uuid": "osc-066",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Un oscillateur Hartley utilise un circuit LC avec une bobine à point milieu (ou deux bobines en série). Quelle est la fréquence d'oscillation $f_{osc}$ ?",
+        "answers": [
+            "$f_{osc} = \\frac{1}{2\\pi\\sqrt{L_{eq}C}}$",
+            "$f_{osc} = \\frac{1}{\\sqrt{L_{eq}C}}$",
+            "$f_{osc} = \\frac{2\\pi}{\\sqrt{L_{eq}C}}$",
+            "$f_{osc} = \\frac{1}{2\\pi LC}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'oscillateur Hartley fonctionne sur le principe de résonance du circuit LC. La formule classique de Thomson est $f = 1 / (2\\pi\\sqrt{LC})$. Ici, $L_{eq}$ correspond à la somme des inductances du montage. Les autres propositions oublient le facteur $2\\pi$ ou la racine carrée."
+    },
+    {
+        "uuid": "osc-067",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour maintenir les oscillations dans un montage à pont de Wien, quel doit être le gain en tension $G$ de l'amplificateur non-inverseur associé ?",
+        "answers": [
+            "$G = 3$",
+            "$G = 1 + R_2 / R_1$",
+            "$G = R_2 / R_1$",
+            "$G = 1 / 3$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le pont de Wien a un gain de transfert de $1/3$ à la résonance. Pour respecter le critère de Barkhausen (gain de boucle égal à 1), l'amplificateur doit avoir un gain de $3$. Avec un montage non-inverseur, le gain est $1 + R_2/R_1$. En posant $R_2 = 2R_1$, on obtient bien $G=3$."
+    },
+    {
+        "uuid": "osc-068",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans un multivibrateur astable dont la période $T$ est proportionnelle à $RC$, si l'on double les valeurs de $R$ et $C$ ($R \\to 2R$ et $C \\to 2C$), que devient la période $T$ ?",
+        "answers": [
+            "La période est divisée par 4.",
+            "La période est multipliée par 2.",
+            "La période est multipliée par 4.",
+            "La période reste inchangée."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La période d'un multivibrateur est de la forme $T = k \\cdot R \\cdot C$. Si $R$ est multiplié par 2 et $C$ par 2, alors le produit $RC$ est multiplié par $2 \\times 2 = 4$. Donc $T' = k(2R)(2C) = 4T$."
+    },
+    {
+        "uuid": "osc-069",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Lors du fonctionnement d'un Amplificateur Linéaire Intégré (ALI) en régime de saturation, la tension de sortie $V_s$ est contrainte par :",
+        "answers": [
+            "Les tensions d'alimentation $+V_{cc}$ et $-V_{ee}$.",
+            "La tension de mode commun de l'amplificateur.",
+            "Le gain en boucle ouverte de l'ALI.",
+            "La valeur de la résistance de charge."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "En régime linéaire, $V_s = A_d \\epsilon$. Cependant, la sortie est physiquement limitée par les rails d'alimentation. Dès que le calcul théorique dépasse ces bornes, l'ALI sature à une valeur proche de ses tensions d'alimentation ($V_{sat} \\approx V_{cc}$ ou $-V_{ee}$)."
+    },
+    {
+        "uuid": "osc-070",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'étude d'un oscillateur à relaxation, le basculement de $+V_{sat}$ à $-V_{sat}$ se produit lorsque la tension aux bornes du condensateur $V_c(t)$ atteint le seuil bas. Ce seuil est défini par :",
+        "answers": [
+            "$V_c(t_1) = \\beta V_{sat}$ (où $\\beta$ est le facteur du diviseur de tension)",
+            "$V_c(t_1) = 0 \\text{ V}$",
+            "$V_c(t_1) = V_{sat}$",
+            "$V_c(t_1) = V_{ref}$ (tension fixe arbitraire)"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le seuil de basculement est imposé par la rétroaction positive sur l'entrée non-inverseuse de l'ALI. Le diviseur de tension renvoie une fraction $\\beta$ de la tension de sortie $V_s$. Ainsi, le seuil est $V_{seuil} = \beta V_s$. Lorsque $V_s = +V_{sat}$, le seuil est $\\beta V_{sat}$."
+    },
+    {
+        "uuid": "osc-071",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le cadre de l'étude des générateurs de signaux, un signal triangulaire est la primitive d'un signal :",
+        "answers": [
+            "Sinusoïdal.",
+            "Constant par morceaux (créneaux).",
+            "Linéairement croissant.",
+            "De Dirac."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un signal triangulaire est composé de segments linéaires de pente constante. Comme la dérivée d'un segment linéaire est une constante ($f(t) = at+b \\implies f'(t) = a$), la primitive d'un signal constant par morceaux (créneaux) est bien un signal triangulaire."
+    },
+    {
+        "uuid": "osc-072",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour assurer l'auto-oscillation d'un système bouclé, quelle est la condition de phase imposée par le critère de Barkhausen sur la fonction de transfert en boucle ouverte $\\underline{H}_{BO}$ ?",
+        "answers": [
+            "$Arg(\\underline{H}_{BO}) = 0 \\pmod{2\\pi}$",
+            "$Arg(\\underline{H}_{BO}) = \\pi/2$",
+            "$Arg(\\underline{H}_{BO}) = \\pi$",
+            "$Arg(\\underline{H}_{BO}) = -\\pi/2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le critère de Barkhausen impose que le signal réinjecté soit en phase avec le signal d'entrée pour maintenir l'oscillation. La condition est $\\underline{H}_{BO}(j\\omega_0) = 1$, ce qui implique un module de $1$ et un argument nul (ou multiple de $2\\pi$)."
+    },
+    {
+        "uuid": "osc-073",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans un montage intégrateur à ALI idéal, pourquoi l'amplitude de sortie ne peut-elle pas croître indéfiniment ?",
+        "answers": [
+            "À cause de l'impédance du condensateur.",
+            "À cause des tensions d'alimentation de l'ALI (saturation).",
+            "À cause de la résistance d'entrée.",
+            "À cause du courant de polarisation."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un ALI réel est limité par ses tensions d'alimentation $V_{cc}^+$ et $V_{cc}^-$. Dès que la tension de sortie atteint ces limites, l'ALI sature et ne peut plus intégrer : c'est le phénomène de saturation."
+    },
+    {
+        "uuid": "osc-074",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le montage oscillateur sinus-cosinus, on a la fonction de transfert $\\underline{H}_2 = j/(\\omega \\tau)$. Quel est son argument ?",
+        "answers": [
+            "$0$",
+            "$\\pi/2$",
+            "$-\\pi/2$",
+            "$\\pi$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le nombre complexe $j$ peut s'écrire sous forme exponentielle $e^{j\\pi/2}$. Comme $\\omega$ et $\\tau$ sont réels positifs, $\\underline{H}_2 = \\frac{1}{\\omega \\tau} e^{j\\pi/2}$, l'argument est donc $\\pi/2$."
+    },
+    {
+        "uuid": "osc-075",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans un oscillateur à pont de Wien, si l'on utilise une thermistance (CTN) pour $R_2$, quel est son rôle principal ?",
+        "answers": [
+            "Fixer la fréquence d'oscillation.",
+            "Assurer la stabilisation de l'amplitude par régulation thermique.",
+            "Augmenter le gain en boucle ouverte.",
+            "Protéger l'ALI contre les court-circuits."
+        ],
+        "difficulty": 4,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La thermistance permet d'ajuster automatiquement le gain en fonction de l'échauffement dû au signal de sortie. Cela permet de stabiliser l'amplitude en maintenant le gain de boucle exactement à $1$ en régime permanent."
+    },
+    {
+        "uuid": "osc-076",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pourquoi qualifie-t-on de 'multivibrateur' un oscillateur produisant des signaux carrés ou triangulaires ?",
+        "answers": [
+            "Parce qu'il oscille à plusieurs fréquences simultanément.",
+            "Parce que son spectre contient une infinité d'harmoniques.",
+            "Parce qu'il nécessite plusieurs ALI pour fonctionner.",
+            "Parce qu'il vibre mécaniquement."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un signal non sinusoïdal (carré ou triangle) est composé, selon le théorème de Fourier, d'une somme d'une infinité d'harmoniques. C'est cette richesse spectrale qui lui donne son nom."
+    },
+    {
+        "uuid": "osc-077",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le modèle idéal d'un ALI, quelle est l'hypothèse faite sur les courants d'entrée $i^+$ et $i^-$ ?",
+        "answers": [
+            "Ils sont égaux au courant de saturation.",
+            "Ils sont nuls : $i^+ = i^- = 0$.",
+            "Ils sont proportionnels à la tension de sortie.",
+            "Ils sont infinis."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'ALI idéal possède une impédance d'entrée infinie, ce qui implique physiquement qu'aucun courant ne pénètre par les bornes non-inverseuse et inverseuse."
+    },
+    {
+        "uuid": "osc-078",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'étude d'un oscillateur RLC parallèle, la fonction de transfert en boucle ouverte est typiquement de la forme :",
+        "answers": [
+            "$\\frac{1}{1+jRC\\omega}$",
+            "$\\frac{jRC\\omega}{1+jRC\\omega - LC\\omega^2}$",
+            "$\\frac{1}{1+LC(j\\omega)^2}$",
+            "$\\frac{R}{L\\omega}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le dénominateur d'un circuit RLC est associé à l'équation différentielle du second ordre $LC\\ddot{x} + RC\\dot{x} + x = ...$, ce qui, en régime harmonique, correspond au polynôme du second degré en $j\\omega$."
+    },
+    {
+        "uuid": "osc-079",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la nature physique et la dimension du produit $RC$ ?",
+        "answers": [
+            "Fréquence ($T^{-1}$)",
+            "Temps ($T$)",
+            "Admittance ($S$)",
+            "Sans dimension"
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "D'après la loi d'Ohm $U = RI$ et la relation $I = C \\frac{dU}{dt}$, on a $U = RC \\frac{dU}{dt}$, d'où $RC$ est homogène à un temps ($[RC] = T$)."
+    },
+    {
+        "uuid": "osc-080",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour qu'un système linéaire devienne instable et entame un processus d'oscillation, où doivent se situer les pôles de sa fonction de transfert en boucle fermée ?",
+        "answers": [
+            "À partie réelle strictement positive.",
+            "À partie réelle strictement négative.",
+            "Sur l'axe imaginaire pur.",
+            "À l'origine."
+        ],
+        "difficulty": 4,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Des pôles à partie réelle positive correspondent à des modes exponentiels croissants ($e^{\\alpha t}$ avec $\\alpha > 0$), ce qui correspond physiquement à une instabilité permettant d'amorcer les oscillations à partir du bruit thermique."
+    },
+    {
+        "uuid": "osc-081",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "La condition $AH_0 = 1$ s'appelle :",
+        "answers": [
+            "Condition de Descartes.",
+            "Critère de Barkhausen.",
+            "Loi de Lenz."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-082",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans un multivibrateur, si $V_{sat} = 15V$ et $\beta = 0.1$, les seuils sont :",
+        "answers": [
+            "$\\pm 15V$",
+            "$\\pm 1.5V$",
+            "$0V$ et $1.5V$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-083",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 7, que se passe-t-il si l'on prend $G$ très grand devant 3 ?",
+        "answers": [
+            "Le signal est encore plus sinusoïdal.",
+            "Le signal devient très distordu (proche d'un signal carré) car l'ALI sature vite.",
+            "Le circuit s'arrête d'osciller."
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-084",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est l'impédance équivalente de deux inductances $L$ en série ?",
+        "answers": [
+            "$jL\\omega / 2$",
+            "$2jL\\omega$",
+            "$jL\\omega$"
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-085",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 1, si le filtre est très sélectif, le signal $s(t)$ est :",
+        "answers": [
+            "Quasi-sinusoïdal.",
+            "Triangulaire.",
+            "Identique au bruit."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-086",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "La température d'équilibre de la lampe (Ex 5) est atteinte quand :",
+        "answers": [
+            "La puissance Joule compense les pertes thermiques.",
+            "La lampe grille.",
+            "Le gain est infini."
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-087",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Une fonction de transfert $\\underline{H} = \frac{1}{1+jQ(x-1/x)}$ est celle d'un :",
+        "answers": [
+            "Passe-bas.",
+            "Passe-bande.",
+            "Passe-haut."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-088",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Le signal de sortie d'un comparateur à hystérésis est :",
+        "answers": [
+            "Sinusoïdal.",
+            "Carré (alternant entre les saturations).",
+            "Triangulaire."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-089",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans l'Exercice 4, si $\\tau_1 > \\tau_3$ :",
+        "answers": [
+            "Le système ne peut pas osciller de façon stable à une pulsation réelle.",
+            "Le système oscille plus vite.",
+            "Le système devient un filtre passe-bas."
+        ],
+        "difficulty": 4,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-090",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Un quartz est souvent utilisé dans les oscillateurs car :",
+        "answers": [
+            "Il est joli.",
+            "Il possède un facteur de qualité $Q$ extrêmement élevé (stabilité de fréquence).",
+            "Il remplace l'ALI."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "osc-091",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le cadre de l'étude d'un oscillateur à relaxation de type multivibrateur astable, comment évolue le signal $V_3(t)$ aux bornes du condensateur ?",
+        "answers": [
+            "Il évolue selon des portions de droites (linéaires).",
+            "Il évolue selon des portions d'exponentielles.",
+            "Il évolue selon des fonctions sinusoïdales.",
+            "Il évolue selon des fonctions en escalier."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans un multivibrateur, la charge et la décharge du condensateur à travers une résistance suivent la loi de maille $E = Ri(t) + V_c(t)$ avec $i = C dV_c/dt$, ce qui conduit à une solution de la forme $V_c(t) = A + B e^{-t/RC}$. Les portions sont donc des arcs d'exponentielles, contrairement aux oscillateurs à triangle/carré (relaxation avec courant constant) où l'évolution est linéaire."
+    },
+    {
+        "uuid": "osc-092",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour un Amplificateur Linéaire Intégré (ALI) monté en amplificateur inverseur avec une résistance d'entrée $R_1$ et une résistance de contre-réaction $R_2$, quel est le gain complexe en tension $A_v = V_s/V_e$ ?",
+        "answers": [
+            "$1 + R_2/R_1$",
+            "$-R_2/R_1$",
+            "$R_1/R_2$",
+            "$-R_1/R_2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "En régime linéaire, le potentiel de l'entrée inverseuse est nul (masse virtuelle). On a donc $V_e/R_1 = -V_s/R_2$, soit $V_s/V_e = -R_2/R_1$. L'erreur classique est d'oublier le signe '-', caractéristique de l'amplificateur inverseur."
+    },
+    {
+        "uuid": "osc-093",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Un filtre passif seul (résistances, condensateurs, bobines) peut-il constituer un oscillateur auto-entretenu ?",
+        "answers": [
+            "Oui, s'il est suffisamment complexe (type Wien ou pont en T).",
+            "Non, car selon le principe de conservation de l'énergie, tout filtre passif dissipe de l'énergie et ne peut compenser ses propres pertes.",
+            "Seulement s'il est placé dans un environnement à très basse température (supraconductivité).",
+            "Oui, mais uniquement pour des fréquences très élevées."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un filtre passif ne contient aucune source d'énergie active. Il est régi par des pôles à partie réelle négative (stabilité). Pour osciller, il faut une boucle de gain contenant un élément actif (ALI, transistor) pour compenser exactement les pertes du filtre (critère de Barkhausen)."
+    },
+    {
+        "uuid": "osc-094",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans le montage oscillateur à pont de Wien, sous quelle condition le facteur de qualité $Q$ tend-il vers $+\\infty$ pour atteindre l'oscillation pure ?",
+        "answers": [
+            "$R' \\to 2R$ par valeurs supérieures (compensation des pertes).",
+            "$R' \\to 0$.",
+            "$R \\to \\infty$.",
+            "$R' \\to R$."
+        ],
+        "difficulty": 4,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le gain de la branche de réaction sélective est de $1/3$ à la résonance. Pour maintenir l'oscillation sans atténuation, le gain de l'amplificateur non-inverseur $(1+R'/R)$ doit être exactement égal à $3$, d'où $R' = 2R$. Si $R' > 2R$, l'oscillation diverge ; si $R' < 2R$, elle s'amortit."
+    },
+    {
+        "uuid": "osc-095",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est la valeur de la fréquence $f$ (en $Hz$) correspondant à une pulsation $\\omega = 1000 \\text{ rad/s}$ ?",
+        "answers": [
+            "$\\approx 159 \\text{ Hz}$",
+            "$1000 \\text{ Hz}$",
+            "$\\approx 6283 \\text{ Hz}$",
+            "$\\approx 314 \\text{ Hz}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La relation entre pulsation et fréquence est $\\omega = 2\\pi f$. Ainsi, $f = \\omega / (2\\pi) = 1000 / (2 \\cdot 3,14159) \\approx 159,15 \\text{ Hz}$. L'erreur est souvent de confondre $\\omega$ et $f$ ou d'oublier le facteur $2\\pi$."
+    },
+    {
+        "uuid": "osc-096",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est l'unité normalisée permettant d'exprimer le Slew-Rate ($SR$) d'un ALI, caractérisant sa vitesse de balayage maximale ?",
+        "answers": [
+            "$V \\cdot s^{-1}$",
+            "$V \\cdot \\mu s^{-1}$",
+            "Les deux unités sont couramment utilisées et physiquement équivalentes.",
+            "$s \\cdot V^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Le Slew-Rate est une vitesse de variation de tension ($dV/dt$). Il s'exprime naturellement en $V/s$. Cependant, comme les temps de réponse des ALI sont très courts, l'unité pratique $V/\\mu s$ est extrêmement répandue dans les documentations techniques (datasheets)."
+    },
+    {
+        "uuid": "osc-097",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pourquoi l'oscillateur de Wien est-il souvent délaissé au profit d'autres architectures dans les applications industrielles modernes ?",
+        "answers": [
+            "Il nécessite des composants trop complexes à fabriquer.",
+            "Il présente des problèmes de stabilité d'amplitude et de distorsion harmonique non négligeables.",
+            "Il est incapable de générer des fréquences supérieures à $10 \\text{ kHz}$.",
+            "Son coût de fabrication est prohibitif par rapport aux oscillateurs à quartz."
+        ],
+        "difficulty": 1,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Bien qu'il soit un excellent exercice pédagogique, le pont de Wien repose sur une condition d'oscillation (gain=3) très délicate à maintenir. Sans un système de régulation automatique du gain (ex: thermistance), l'amplitude varie avec la température ou sature, dégradant la pureté spectrale."
+    },
+    {
+        "uuid": "osc-098",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Dans un oscillateur à ALI alimenté en $\\pm 15 \\text{ V}$, comment qualifier la conversion énergétique effectuée par l'ALI ?",
+        "answers": [
+            "Conversion $AC$ vers $DC$.",
+            "Conversion $DC$ vers $AC$.",
+            "Conversion thermique vers $DC$.",
+            "Conversion de puissance sans transfert énergétique."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'ALI prélève de l'énergie sur les sources de tension continues ($\\pm 15 \\text{ V DC}$) pour fournir un signal périodique alternatif en sortie ($AC$). C'est le principe fondamental de tout oscillateur : convertir une alimentation continue en une grandeur alternative."
+    },
+    {
+        "uuid": "osc-099",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Pour un multivibrateur astable classique, quelle est la période $T$ des oscillations en fonction de $R$ et $C$ si le seuil de basculement est défini par $\\beta = 1/2$ ?",
+        "answers": [
+            "$T = 4RC \\ln(3)$",
+            "$T = 2RC \\ln(2)$",
+            "$T = RC$",
+            "$T = 4RC$"
+        ],
+        "difficulty": 3,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le basculement se produit quand $V_c(t)$ atteint $\\pm V_{sat} \\cdot \\beta$. La loi d'évolution est $V_c(t) = V_{sat}(1 - 2e^{-t/RC})$. Pour $\\beta=1/2$, on résout $0,5 = 1 - 2e^{-t/RC}$, soit $e^{-t/RC} = 0,25$, ce qui donne $t = RC \\ln(4) = 2RC \\ln(2)$. Comme la période comporte deux demi-périodes, $T = 4RC \\ln(2)$ (souvent simplifié par $T \\approx 2,8 RC$)."
+    },
+    {
+        "uuid": "osc-100",
+        "image_path": null,
+        "theme": "oscillateurs",
+        "question": "Quelle est l'hypothèse physique essentielle permettant d'utiliser les outils de l'électrocinétique (impédances complexes) pour l'étude des oscillateurs ?",
+        "answers": [
+            "L'ALI est en régime de saturation totale.",
+            "Le système est en régime sinusoïdal permanent.",
+            "Le condensateur est initialement déchargé ($V_c(0)=0$).",
+            "Le gain de boucle ouverte est considéré comme nul."
+        ],
+        "difficulty": 2,
+        "chapter": "Oscillateurs",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le formalisme des impédances complexes ($\\underline{Z}$) n'est valide que si les grandeurs varient sinusoïdalement au cours du temps. C'est l'hypothèse du régime sinusoïdal permanent, indispensable pour appliquer le critère de Barkhausen et trouver la fréquence d'oscillation."
+    }
+]

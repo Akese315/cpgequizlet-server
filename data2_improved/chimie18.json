@@ -1,0 +1,1162 @@
+[
+    {
+        "uuid": "eq-001",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude des transformations thermodynamiques, quelle est la définition de l'enthalpie libre $G$ (aussi appelée énergie de Gibbs) pour un système fermé en équilibre ?",
+        "answers": [
+            "$G = H + TS$",
+            "$G = H - TS$",
+            "$G = U + PV$",
+            "$G = U - TS$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'enthalpie libre $G$ est définie comme $G = H - TS$. Elle est particulièrement utile pour étudier les transformations à température et pression constantes, car sa variation $\\Delta G$ indique la spontanéité d'une réaction. La formule $G = H+TS$ est incorrecte, de même que $G=U-TS$ qui ressemble à l'énergie libre de Helmholtz ($A=U-TS$). Enfin, $G=U+PV$ est une partie de la définition de l'enthalpie $H = U+PV$ (à pression et volume donnés), mais ce n'est pas $G$."
+    },
+    {
+        "uuid": "eq-002",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un système fermé subissant une transformation à température ($T$) et pression ($P$) constantes, sans travail autre que des travaux des forces de pression ($W' = 0$), quelle est la condition sur la variation de l'enthalpie libre $dG$ pour qu'une transformation soit spontanée ?",
+        "answers": [
+            "$dG \\ge 0$",
+            "$dG = 0$",
+            "$dG \\le 0$",
+            "$dS \\le 0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "Pour un système fermé, à température et pression constantes, et en l'absence de travail utile ($W' = 0$), la variation de l'enthalpie libre $\\Delta G$ est le critère de spontanéité : $\\Delta G < 0$ pour une transformation spontanée, $\\Delta G = 0$ pour un état d'équilibre, et $\\Delta G > 0$ pour une transformation non spontanée. Par conséquent, la condition d'évolution spontanée s'écrit $dG \\le 0$ (en considérant la différentielle pour une évolution infinitésimale). $dG \\ge 0$ correspond à une transformation non spontanée. $dG = 0$ caractérise l'équilibre. $dS \\le 0$ n'est pas le critère général pour la spontanéité à $T$ et $P$ constants ; c'est plutôt l'entropie de l'univers qui doit augmenter ($\\Delta S_{univers} \\ge 0$), ou plus précisément $\\Delta S_{système} \\ge 0$ quand $\\Delta H_{système} \\le 0$ pour des processus isothermes et isobares."
+    },
+    {
+        "uuid": "eq-003",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte de la thermodynamique des systèmes fermés, quelle identité différentielle correspond à l'enthalpie libre $G$ ?",
+        "answers": [
+            "$dG = VdP + SdT$",
+            "$dG = -PdV + TdS$",
+            "$dG = VdP - SdT$",
+            "$dG = -VdP + SdT$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "L'enthalpie libre $G$ est définie par $G = H - TS$. Sa différentielle totale est $dG = dH - TdS - SdT$. Sachant que $dH = TdS - PdV$ pour un système fermé (première loi de Joule-Thomson), on obtient $dG = (TdS - PdV) - TdS - SdT = -PdV - SdT$. Cependant, il est plus fréquent de considérer $G$ comme une fonction des variables $P$ et $T$. En utilisant la définition $G = U + PV - TS$, sa différentielle totale est $dG = dU + PdV + VdP - TdS - SdT$. En remplaçant $dU = TdS - PdV$ (pour un système fermé), on obtient $dG = (TdS - PdV) + PdV + VdP - TdS - SdT = VdP - SdT$. La réponse $dG = -PdV + TdS$ correspond à la différentielle de l'énergie libre de Helmholtz $A=U-TS$. La relation $dG = VdP + SdT$ est fausse par le signe de $SdT$. La relation $dG = -VdP + SdT$ est fausse par le signe de $VdP$."
+    },
+    {
+        "uuid": "eq-004",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En thermodynamique, à partir de la définition de l'enthalpie libre $G$ ($G(T, P)$), comment peut-on exprimer la dépendance de l'entropie $S$ par rapport à $G$ ?",
+        "answers": [
+            "$S = \\left(\\frac{\\partial G}{\\partial T}\\right)_P$",
+            "$S = -\\left(\\frac{\\partial G}{\\partial T}\\right)_P$",
+            "$S = \\left(\\frac{\\partial G}{\\partial P}\\right)_T$",
+            "$S = -\\left(\\frac{\\partial G}{\\partial P}\\right)_T$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Nous avons vu que $dG = VdP - SdT$. Si l'on considère $G$ comme une fonction de $P$ et $T$, $G(T, P)$, alors les coefficients devant $dP$ et $dT$ sont les dérivées partielles de $G$. En réarrangeant l'expression, on a $-S = \\left(\\frac{\\partial G}{\\partial T}\\right)_P$. Donc, $S = -\\left(\\frac{\\partial G}{\\partial T}\\right)_P$. Les autres options sont incorrectes. La dérivée par rapport à $P$ donne le volume : $\\left(\\frac{\\partial G}{\\partial P}\\right)_T = V$."
+    },
+    {
+        "uuid": "eq-005",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En thermodynamique, à partir de la définition de l'enthalpie libre $G$ ($G(T, P)$), comment peut-on exprimer la dépendance du volume $V$ par rapport à $G$ ?",
+        "answers": [
+            "$V = \\left(\\frac{\\partial G}{\\partial P}\\right)_T$",
+            "$V = -\\left(\\frac{\\partial G}{\\partial P}\\right)_T$",
+            "$V = \\left(\\frac{\\partial G}{\\partial T}\\right)_P$",
+            "$V = -\\left(\\frac{\\partial G}{\\partial T}\\right)_P$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "L'identité différentielle de l'enthalpie libre $G$ est $dG = VdP - SdT$. En considérant $G$ comme une fonction de $P$ et $T$, $G(T, P)$, les coefficients devant $dP$ et $dT$ sont les dérivées partielles de $G$. Le coefficient devant $dP$ est le volume $V$ : $\\left(\\frac{\\partial G}{\\partial P}\\right)_T = V$. Le coefficient devant $dT$ est moins l'entropie : $\\left(\\frac{\\partial G}{\\partial T}\\right)_P = -S$. Les autres options sont incorrectes."
+    },
+    {
+        "uuid": "eq-006",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans l'étude des mélanges et des équilibres, quelle est la définition du potentiel chimique $\\mu$ d'un constituant dans un système fermé ?",
+        "answers": [
+            "$\\mu = \\left(\\frac{\\partial G}{\\partial n}\\right)_{P,T}$",
+            "$\\mu = \\left(\\frac{\\partial H}{\\partial n}\\right)_{P,T}$",
+            "$\\mu = \\left(\\frac{\\partial U}{\\partial n}\\right)_{V,S}$",
+            "$\\mu = \\frac{G}{T}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Le potentiel chimique $\\mu_i$ d'un constituant $i$ dans un système est défini comme la dérivée partielle de l'enthalpie libre $G$ par rapport à la quantité de matière $n_i$ de ce constituant, en maintenant la température $T$ et la pression $P$ constantes, ainsi que les quantités de matière de tous les autres constituants $n_{j \\ne i}$. Soit $\\mu_i = \\left(\\frac{\\partial G}{\\partial n_i}\\right)_{T, P, n_{j \\ne i}}$. Pour un corps pur, on a $\\mu = \\left(\\frac{\\partial G}{\\partial n}\\right)_{P,T}$. L'option $\\mu = \\left(\\frac{\\partial H}{\\partial n}\\right)_{P,T}$ définit une autre grandeur, et $\\mu = \\left(\\frac{\\partial U}{\\partial n}\\right)_{V,S}$ est une définition liée à l'énergie interne mais sous des conditions différentes. L'option $\\mu = \\frac{G}{T}$ est incorrecte."
+    },
+    {
+        "uuid": "eq-007",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Le potentiel chimique $\\mu$ est une grandeur thermodynamique :",
+        "answers": [
+            "Extensive",
+            "Intensive",
+            "Sans dimension",
+            "Qui dépend de la forme du récipient"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Le potentiel chimique $\\mu$ est une grandeur intensive. Une grandeur intensive ne dépend pas de la quantité de matière totale du système, contrairement à une grandeur extensive (comme l'enthalpie $H$ ou le volume $V$). Le potentiel chimique par mole (ou par unité de masse) est le même pour toutes les parties d'un système en équilibre homogène. Les options 'Extensive', 'Sans dimension' et 'Qui dépend de la forme du récipient' sont incorrectes. Le potentiel chimique s'exprime en énergie par mole, donc il a une dimension d'énergie par mole (e.g., J/mol)."
+    },
+    {
+        "uuid": "eq-008",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un corps pur, le potentiel chimique $\\mu$ est égal à :",
+        "answers": [
+            "L'enthalpie molaire $H_m$",
+            "L'entropie molaire $S_m$",
+            "L'enthalpie libre molaire $G_m$",
+            "L'énergie interne molaire $U_m$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "Pour un corps pur, le potentiel chimique $\\mu$ correspond à l'enthalpie libre molaire. En effet, si on considère un corps pur, la définition du potentiel chimique $\\mu = \\left(\\frac{\\partial G}{\\partial n}\\right)_{P,T}$ devient simplement $G_m = \\frac{G}{n}$, car $G$ est proportionnel à $n$ pour un corps pur dans des conditions $(P, T)$ données. Par conséquent, $\\mu = G_m$. Les autres grandeurs (enthalpie molaire, entropie molaire, énergie interne molaire) ne sont pas égales au potentiel chimique."
+    },
+    {
+        "uuid": "eq-009",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est l'unité du potentiel chimique $\\mu$ dans le Système International (SI) ?",
+        "answers": [
+            "$J.K^{-1}$",
+            "$J.mol^{-1}$",
+            "$J.K^{-1}.mol^{-1}$",
+            "$Pa.m^3$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Le potentiel chimique $\\mu$ est défini comme la dérivée de l'enthalpie libre $G$ par rapport à la quantité de matière $n$, à température et pression constantes : $\\mu = \\left(\\frac{\\partial G}{\\partial n}\\right)_{P,T}$. L'enthalpie libre $G$ a les dimensions d'une énergie (unité : Joule, J), et la quantité de matière $n$ a pour unité la mole (mol). Par conséquent, l'unité du potentiel chimique est le Joule par mole ($J.mol^{-1}$). Les unités $J.K^{-1}$ sont celles de l'entropie, $J.K^{-1}.mol^{-1}$ sont celles de l'entropie molaire (ou d'une autre grandeur intensive avec ces dimensions), et $Pa.m^3$ sont celles d'une énergie ou d'un travail, mais ce n'est pas l'unité standard du potentiel chimique."
+    },
+    {
+        "uuid": "eq-010",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude des changements de phase, à pression et température fixées, si un corps pur est présent sous deux phases $\\alpha$ et $\\beta$ en contact, dans quel sens se produit le transfert de matière spontané ?",
+        "answers": [
+            "Vers la phase de potentiel chimique le plus élevé",
+            "Vers la phase de potentiel chimique le plus faible",
+            "Il n'y a jamais de transfert de matière",
+            "Cela dépend de la masse volumique des phases"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Le potentiel chimique $\\mu$ est le moteur des transferts de matière spontanés. À température et pression constantes, la matière tend à se déplacer spontanément des régions de potentiel chimique élevé vers les régions de potentiel chimique faible. C'est analogue au mouvement des charges électriques qui va du potentiel électrique élevé vers le potentiel électrique faible, ou à la diffusion de chaleur qui va de la température élevée vers la température basse. Les phases en présence finiront par atteindre l'équilibre lorsque les potentiels chimiques des constituants seront égaux dans toutes les phases ($\\mu_i^{\\alpha} = \\mu_i^{\\beta}$). Les autres options sont incorrectes. Il peut y avoir transfert de matière, et cela ne dépend pas directement de la masse volumique ni de la forme du récipient."
+    },
+    {
+        "uuid": "eq-011",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude d'un changement d'état d'un corps pur, quelle est la condition d'équilibre chimique entre deux phases, $\\alpha$ et $\\beta$, coexistantes ?",
+        "answers": [
+            "Le potentiel chimique de la phase $\\alpha$ est strictement supérieur à celui de la phase $\\beta$ : $\\mu_\\alpha > \\mu_\\beta$.",
+            "Le potentiel chimique de la phase $\\alpha$ est strictement inférieur à celui de la phase $\\beta$ : $\\mu_\\alpha < \\mu_\\beta$.",
+            "Les potentiels chimiques des deux phases sont égaux : $\\mu_\\alpha = \\mu_\\beta$.",
+            "L'enthalpie libre totale du système est nulle : $G = 0$."
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "La condition d'équilibre thermodynamique entre deux phases d'un corps pur est l'égalité de leur potentiel chimique. Cela découle de la minimisation de l'enthalpie libre du système à température et pression constantes. Si les potentiels chimiques étaient différents, il y aurait un transfert spontané de matière de la phase à potentiel chimique plus élevé vers celle à potentiel chimique plus bas, conduisant à une évolution du système jusqu'à l'équilibre. La condition $G=0$ est liée à l'équilibre d'une réaction chimique globale, pas à la coexistence de phases d'un corps pur."
+    },
+    {
+        "uuid": "eq-012",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/3/33/Phase-diag2.svg",
+        "theme": "thermodynamique",
+        "question": "Sur un diagramme de phase $(P, T)$ pour un corps pur, que représentent les lignes de changement d'état (par exemple, la ligne de vaporisation ou de fusion) ?",
+        "answers": [
+            "Les points pour lesquels seule une seule phase (solide, liquide ou gaz) est stable dans le système.",
+            "Les ensembles de points $(P, T)$ où les potentiels chimiques des deux phases en équilibre sont égaux, indiquant une coexistence stable.",
+            "Les régions où la température du système reste constante, indépendamment des échanges de chaleur.",
+            "Les conditions de pression et de température où le système est intrinsèquement hors d'équilibre thermodynamique."
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Les lignes sur un diagramme de phase $(P, T)$ représentent les conditions (pression et température) où deux phases d'un corps pur peuvent coexister en équilibre. Cet équilibre est caractérisé par l'égalité des potentiels chimiques des deux phases. En dehors de ces lignes, une seule phase est stable. Les points où la température est constante sont liés aux transformations isothermes, et les points hors équilibre ne sont pas représentés sur un diagramme de phase standard qui décrit les états d'équilibre."
+    },
+    {
+        "uuid": "eq-013",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte d'un diagramme de phase $(P, T)$, qu'est-ce que le 'point triple' d'une substance ?",
+        "answers": [
+            "Le point singulier où le changement d'état de liquide à gaz se produit de manière quasi-instantanée, sans distinction claire entre les deux phases.",
+            "Le point unique $(P, T)$ où les trois phases (solide, liquide et gaz) d'un corps pur peuvent coexister en équilibre thermodynamique.",
+            "La condition où la pression du système est strictement nulle, permettant à toutes les substances de passer à l'état gazeux.",
+            "Le point critique au-delà duquel la distinction entre les phases liquide et gazeuse disparaît, mais où seulement deux phases sont considérées."
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Le point triple est une caractéristique fondamentale de chaque substance pure. C'est le seul point sur un diagramme de phase $(P, T)$ où les trois phases (solide, liquide et gaz) peuvent coexister en équilibre. Dans ces conditions spécifiques de pression et de température, les potentiels chimiques du solide, du liquide et du gaz sont égaux. Le point critique est différent et marque la fin de la courbe de vaporisation où les propriétés du liquide et du gaz deviennent indiscernables."
+    },
+    {
+        "uuid": "eq-014",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans l'étude des diagrammes de phase, au-delà du point critique $(P_c, T_c)$, comment nomme-t-on l'état de la matière qui ne peut être classé ni comme liquide ni comme gaz distincts ?",
+        "answers": [
+            "Gaz parfait, qui se comporte selon la loi des gaz parfaits quelle que soit la pression et la température.",
+            "Solide amorphe, une forme de solide sans structure cristalline ordonnée à longue portée.",
+            "Fluide supercritique, un état dense où les propriétés intermédiaires entre celles du liquide et du gaz sont observées.",
+            "Plasma, un état de la matière constitué de particules ionisées et d'électrons libres."
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "Au-delà du point critique $(P_c, T_c)$ sur un diagramme de phase, la distinction entre phase liquide et phase gazeuse disparaît. La substance existe alors sous forme de fluide supercritique. Ce fluide possède des propriétés uniques, comme une densité comparable à celle d'un liquide et une viscosité similaire à celle d'un gaz, lui permettant de diffuser à travers des matériaux solides. Le gaz parfait, le solide amorphe et le plasma sont d'autres états de la matière, mais ils ne correspondent pas à la zone au-delà du point critique d'une substance pure."
+    },
+    {
+        "uuid": "eq-015",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de la thermodynamique chimique, quelle est l'expression générale du potentiel chimique d'un constituant $i$ dans un mélange, dans des conditions standard ?",
+        "answers": [
+            "$\\mu_i = \\mu_i^0 + RT \\ln(a_i)$",
+            "$\\mu_i = \\mu_i^0 - RT \\ln(a_i)$",
+            "$\\mu_i = \\mu_i^0 + P \\ln(a_i)$",
+            "$\\mu_i = \\Delta_r G^0 + RT \\ln(Q)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "L'expression générale du potentiel chimique d'un constituant $i$ dans un mélange, rapporté à un état standard, est $\\mu_i = \\mu_i^0 + RT \\ln(a_i)$, où $\\mu_i^0$ est le potentiel chimique standard du constituant $i$, $R$ est la constante des gaz parfaits, $T$ est la température absolue, et $a_i$ est l'activité du constituant $i$. L'option avec le signe moins devant le logarithme est incorrecte. Les options avec la pression $P$ ou le $\\Delta_r G^0$ ne représentent pas directement le potentiel chimique d'un constituant dans un mélange."
+    },
+    {
+        "uuid": "eq-016",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérons un mélange de gaz parfaits. Comment s'exprime l'activité $a_i$ du constituant $i$ par rapport à un état standard de pression $p^0$ ?",
+        "answers": [
+            "$a_i = 1$ pour tous les constituants.",
+            "$a_i = \\frac{p_i}{p^0}$, où $p_i$ est la pression partielle du constituant $i$ et $p^0 = 1$ bar.",
+            "$a_i = \\frac{[A_i]}{c^0}$, où $[A_i]$ est la concentration molaire du constituant $i$ et $c^0 = 1$ mol/L.",
+            "$a_i = x_i$, où $x_i$ est la fraction molaire du constituant $i$."
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Pour un gaz parfait, l'activité $a_i$ d'un constituant $i$ est définie comme le rapport de sa pression partielle $p_i$ à la pression standard $p^0$. La convention usuelle pour $p^0$ est 1 bar. L'expression $a_i = x_i$ est valable dans le cas d'un mélange de gaz parfaits à très basse pression où le comportement est idéal. Les expressions impliquant la concentration molaire $[A_i]$ ou l'activité $a_i=1$ sont utilisées dans d'autres contextes (solutions, solides purs)."
+    },
+    {
+        "uuid": "eq-017",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la valeur de l'activité d'un solide pur ou d'un liquide pur, lorsqu'ils sont considérés comme constituant d'un mélange ou comme phase pure ?",
+        "answers": [
+            "Elle dépend de la pression ambiante et peut varier significativement.",
+            "Elle est égale à 0, indiquant une absence d'activité thermodynamique.",
+            "Elle est égale à 1, par convention, dans les conditions standard.",
+            "Elle est infinie ($\\infty$), reflétant leur présence massive."
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "Par convention en thermodynamique chimique, l'activité d'un solide pur ou d'un liquide pur est fixée à 1 dans les conditions standard. Cela signifie que ces phases pures sont considérées comme étant dans leur état de référence. Cette convention simplifie grandement les calculs d'équilibre chimique et les expressions du potentiel chimique. La valeur 1 implique que leur contribution à la variation du potentiel chimique du système due à leur présence est nulle par rapport à leur état de référence. La pression a un effet, mais il est généralement négligeable pour les solides et liquides dans la plupart des conditions, d'où la simplification à 1."
+    },
+    {
+        "uuid": "eq-018",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un soluté $i$ en solution diluée, l'activité est souvent exprimée sous la forme $a_i = \\frac{[A_i]}{c^0}$. Quelle est la valeur de référence conventionnelle pour $c^0$ ?",
+        "answers": [
+            "$c^0 = 0,1$ mol.L$^{-1}$",
+            "$c^0 = 1$ mol.L$^{-1}$",
+            "$c^0 = 10$ mol.L$^{-1}$",
+            "La valeur de $c^0$ dépend de la température et de la nature du soluté."
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Pour un soluté en solution diluée, l'activité $a_i$ est rapportée à une concentration standard $c^0$. La convention la plus courante en thermodynamique chimique est $c^0 = 1$ mol.L$^{-1}$. Cela permet de définir un état standard pour les solutés dissous, analogue à l'état standard pour les gaz (pression de 1 bar) ou les solides/liquides purs (activité de 1). Les autres valeurs ne correspondent pas à la convention standard et la valeur de $c^0$ ne dépend pas de la température ni de la nature du soluté, c'est une constante de référence."
+    },
+    {
+        "uuid": "eq-019",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte de la thermodynamique des mélanges, comment s'exprime l'enthalpie libre totale $G$ d'un mélange en fonction des potentiels chimiques $\\mu_i$ et des quantités de matière $n_i$ de ses constituants ?",
+        "answers": [
+            "$G = \\sum_i n_i \\mu_i$",
+            "$G = \\sum_i \\mu_i$",
+            "$G = \\prod_i n_i \\mu_i$",
+            "$G = \\sum_i \\frac{\\mu_i}{n_i}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "L'enthalpie libre totale $G$ d'un mélange est une fonction extensive qui se calcule comme la somme des produits de la quantité de matière ($n_i$) de chaque constituant par son potentiel chimique ($\\mu_i$). Mathématiquement, cela s'écrit $G = \\sum_i n_i \\mu_i$. Les autres expressions ne sont pas correctes. La somme des potentiels chimiques ou le produit ne respectent pas la nature extensive de l'enthalpie libre. La division par $n_i$ correspondrait à des grandeurs molaires partielles dans un contexte différent."
+    },
+    {
+        "uuid": "eq-020",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude des réactions chimiques, comment s'exprime l'entropie de réaction $\\Delta_r S$ ?",
+        "answers": [
+            "$\\Delta_r S = \\sum_i \\nu_i S_{m,i}$",
+            "$\\Delta_r S = \\left(\\frac{\\partial G}{\\partial \\xi}\\right)_{T,P}$",
+            "$\\Delta_r S = \\sum_i S_{m,i}$",
+            "$\\Delta_r S = \\frac{Q}{T}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "L'entropie de réaction $\\Delta_r S$ pour une réaction chimique donnée est définie comme la somme des produits des coefficients stœchiométriques ($\\nu_i$, positifs pour les produits, négatifs pour les réactifs) par l'entropie molaire de chaque constituant $i$ dans son état standard. L'expression est donc $\\Delta_r S = \\sum_i \\nu_i S_{m,i}$. La relation $S = Q/T$ est valable pour un transfert de chaleur $Q$ réversible à température $T$ constante, mais ne représente pas spécifiquement l'entropie d'une réaction. $\\left(\\frac{\\partial G}{\\partial \\xi}\\right)_{T,P}$ est la définition de l'entropie de réaction en fonction de l'avancement ($\\xi$), mais l'option proposée est l'expression de $-\\Delta_r S$. La somme simple des entropies molaires n'est pas correcte car elle ne tient pas compte de la stœchiométrie."
+    },
+    {
+        "uuid": "eq-021",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "De quoi dépend l'entropie standard de réaction $\\Delta_r S^0$ ?",
+        "answers": [
+            "De la pression uniquement",
+            "De la température uniquement",
+            "De la composition du système uniquement",
+            "De la pression et de la température"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-022",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Énoncé du principe de Nernst (Troisième principe) :",
+        "answers": [
+            "L'entropie d'un gaz parfait est nulle à 0 K",
+            "L'entropie d'un solide cristallin parfait est nulle à 0 K",
+            "L'enthalpie libre est nulle à l'équilibre",
+            "L'énergie interne est nulle à 0 K"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-023",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Comment définit-on l'enthalpie libre de réaction $\\Delta_r G$ ?",
+        "answers": [
+            "$\\Delta_r G = \\left(\\frac{\\partial G}{\\partial \\xi}\\right)_{T,P}$",
+            "$\\Delta_r G = G_{final} - G_{initial}$",
+            "$\\Delta_r G = \\sum \\mu_i$",
+            "$\\Delta_r G = \\Delta_r H + T \\Delta_r S$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-024",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Relation entre $\\Delta_r G$, $\\Delta_r H$ et $\\Delta_r S$ :",
+        "answers": [
+            "$\\Delta_r G = \\Delta_r H + T \\Delta_r S$",
+            "$\\Delta_r G = \\Delta_r H - T \\Delta_r S$",
+            "$\\Delta_r G = T \\Delta_r S - \\Delta_r H$",
+            "$\\Delta_r G = \\Delta_r H \\cdot T \\Delta_r S$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-025",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En quoi consiste l'approximation d'Ellingham ?",
+        "answers": [
+            "Supposer que $\\Delta_r G^0$ est nul",
+            "Supposer que $\\Delta_r H^0$ et $\\Delta_r S^0$ sont indépendants de la température",
+            "Supposer que tous les gaz sont parfaits",
+            "Supposer que la pression est toujours de 1 bar"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-026",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Relation liant $\\Delta_r G$ au quotient réactionnel $Q$ :",
+        "answers": [
+            "$\\Delta_r G = \\Delta_r G^0 - RT \\ln Q$",
+            "$\\Delta_r G = \\Delta_r G^0 + RT \\ln Q$",
+            "$\\Delta_r G = RT \\ln(Q/K^0)$",
+            "$\\Delta_r G = Q \\cdot \\Delta_r G^0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-027",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un système évoluant à $T$ et $P$ constantes, la variation d'enthalpie libre est $dG = \\Delta_r G \\, d\\xi$. Si le système évolue dans le sens direct ($d\\xi > 0$), alors :",
+        "answers": [
+            "$\\Delta_r G > 0$",
+            "$\\Delta_r G < 0$",
+            "$\\Delta_r G = 0$",
+            "$\\Delta_r G^0 < 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-028",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "À l'équilibre chimique, quelle est la valeur de l'enthalpie libre de réaction $\\Delta_r G$ ?",
+        "answers": [
+            "$\\Delta_r G = \\Delta_r G^0$",
+            "$\\Delta_r G = 1$",
+            "$\\Delta_r G = 0$",
+            "$\\Delta_r G = RT$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-029",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Expression de la constante d'équilibre $K^0$ en fonction de $\\Delta_r G^0$ :",
+        "answers": [
+            "$K^0 = \\exp\\left(\\frac{\\Delta_r G^0}{RT}\\right)$",
+            "$K^0 = \\exp\\left(-\\frac{\\Delta_r G^0}{RT}\\right)$",
+            "$K^0 = \\frac{-\\Delta_r G^0}{RT}$",
+            "$K^0 = 10^{-\\Delta_r G^0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-030",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "La constante d'équilibre $K^0$ d'une réaction ne dépend que de :",
+        "answers": [
+            "La pression totale",
+            "La présence d'un catalyseur",
+            "La température",
+            "La composition initiale"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-031",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Un système évolue dans le sens indirect si :",
+        "answers": [
+            "$Q < K^0$",
+            "$Q > K^0$",
+            "$Q = K^0$",
+            "$K^0 > 10^4$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-032",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est l'expression de la loi de Van't Hoff ?",
+        "answers": [
+            "$\\frac{d \\ln K^0}{dT} = \\frac{\\Delta_r H^0}{RT^2}$",
+            "$\\frac{d \\ln K^0}{dT} = -\\frac{\\Delta_r H^0}{RT}$",
+            "$\\frac{d K^0}{dT} = \\frac{\\Delta_r H^0}{RT^2}$",
+            "$\\ln K^0 = -\\frac{\\Delta_r G^0}{RT}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-033",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour une réaction endothermique ($\\Delta_r H^0 > 0$), comment évolue $K^0$ si la température augmente ?",
+        "answers": [
+            "$K^0$ diminue",
+            "$K^0$ augmente",
+            "$K^0$ reste constante",
+            "Cela dépend de la pression"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-034",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour une réaction exothermique ($\\Delta_r H^0 < 0$), une diminution de température favorise :",
+        "answers": [
+            "Le sens direct",
+            "Le sens indirect",
+            "La rupture de l'équilibre",
+            "L'augmentation de l'entropie"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-035",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "À partir de quelle valeur de $K^0$ considère-t-on généralement une réaction comme quasi-totale ?",
+        "answers": [
+            "$K^0 > 10^{-4}$",
+            "$K^0 > 1$",
+            "$K^0 > 10^4$",
+            "$K^0 > 10^{10}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-036",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quel est l'effet de l'ajout d'un catalyseur sur un équilibre chimique ?",
+        "answers": [
+            "Il déplace l'équilibre vers la droite",
+            "Il augmente la valeur de $K^0$",
+            "Il augmente la vitesse pour atteindre l'équilibre sans modifier l'état final",
+            "Il déplace l'équilibre vers la gauche"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-037",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérons la synthèse de l'ammoniac : $N_{2(g)} + 3H_{2(g)} = 2NH_{3(g)}$. Quel est l'effet d'une augmentation de pression totale à $T$ constante ?",
+        "answers": [
+            "Déplacement dans le sens direct (formation de $NH_3$)",
+            "Déplacement dans le sens indirect",
+            "Aucun effet car $K^0$ ne dépend que de $T$",
+            "Diminution de la vitesse de réaction"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-038",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans la réaction $CaCO_{3(s)} = CaO_{(s)} + CO_{2(g)}$, que se passe-t-il si l'on augmente le volume du récipient à température constante (en présence de solide) ?",
+        "answers": [
+            "La pression de $CO_2$ augmente",
+            "La pression de $CO_2$ reste égale à $K^0 P^0$ tant qu'il reste du $CaCO_3$",
+            "Tout le $CaO$ se transforme en $CaCO_3$",
+            "La constante $K^0$ change"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-039",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Une réaction chimique est athermique si $\\Delta_r H^0 = 0$. Quel est l'effet d'une variation de température sur $K^0$ ?",
+        "answers": [
+            "$K^0$ augmente avec $T$",
+            "$K^0$ diminue avec $T$",
+            "$K^0$ est indépendante de $T$",
+            "L'équilibre est rompu"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-040",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour la combustion du carbone : $C_{(s)} + O_{2(g)} = CO_{2(g)}$, quel est l'effet d'une augmentation de pression sur l'équilibre ?",
+        "answers": [
+            "Favorise le sens direct",
+            "Favorise le sens indirect",
+            "Aucun effet sur l'équilibre (autant de moles de gaz de chaque côté)",
+            "Le carbone fond"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-041",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "(Exercice TD) Entre le graphite et le diamant à 298 K et 1 bar, quelle est la forme la plus stable sachant que $\\mu^0_{graphite} - \\mu^0_{diamant} = -2870$ J/mol ?",
+        "answers": [
+            "Le diamant",
+            "Le graphite",
+            "Les deux sont aussi stables",
+            "On ne peut pas conclure"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-042",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "(Exercice TD) Pourquoi trouve-t-on du diamant à la surface de la Terre alors que le graphite est la forme stable ?",
+        "answers": [
+            "La thermodynamique dit que le diamant est stable",
+            "La transformation diamant $\\to$ graphite est cinétiquement extrêmement lente",
+            "À cause de la pression atmosphérique élevée",
+            "Le diamant n'existe pas à l'état naturel"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-043",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Comment varie le potentiel chimique avec la pression à température constante pour une phase condensée (supposée incompressible) ?",
+        "answers": [
+            "$\\mu(P) = \\mu^0 + RT \\ln(P/P^0)$",
+            "$\\mu(P) = \\mu^0 + V_m(P - P^0)$",
+            "$\\mu(P) = \\mu^0$",
+            "$\\mu(P) = \\mu^0 - S_m \\Delta T$"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-044",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un gaz parfait, comment varie le potentiel chimique avec la pression à $T$ constante ?",
+        "answers": [
+            "$\\mu = \\mu^0(T) + RT \\ln(P/P^0)$",
+            "$\\mu = \\mu^0(T) + V_m(P - P^0)$",
+            "$\\mu = \\mu^0(T)$",
+            "$\\mu = RT/P$"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-045",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Variation de la pression de vapeur saturante : Si $\\Delta_{vap} H^0 > 0$ (vaporisation endothermique), alors une hausse de température :",
+        "answers": [
+            "Augmente la pression de vapeur saturante",
+            "Diminue la pression de vapeur saturante",
+            "Ne change rien",
+            "Provoque la solidification"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-046",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans l'exercice sur la chaux vive ($CaCO_3$), si l'avancement d'équilibre calculé $\\xi_{eq}$ est supérieur à l'avancement maximal $\\xi_{max}$ possible par les réactifs, on parle de :",
+        "answers": [
+            "Équilibre chimique",
+            "Rupture d'équilibre",
+            "Réaction impossible",
+            "Saturation"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-047",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Influence de l'ajout d'un gaz inerte à VOLUME constant sur un équilibre gazeux :",
+        "answers": [
+            "Déplace l'équilibre dans le sens direct",
+            "Déplace l'équilibre dans le sens indirect",
+            "Aucun effet (les pressions partielles ne changent pas)",
+            "Augmente $K^0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-048",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Influence de l'ajout d'un gaz inerte à PRESSION constante sur un équilibre gazeux où le nombre de moles de gaz augmente ($\\sum \\nu_{i,gaz} > 0$) :",
+        "answers": [
+            "Favorise le sens direct (dilution favorise le côté avec plus de gaz)",
+            "Favorise le sens indirect",
+            "Aucun effet",
+            "La température chute"
+        ],
+        "difficulty": 4,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-049",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la relation entre $\\Delta_r G^0(T)$, $\\Delta_r H^0(T)$ et $\\Delta_r S^0(T)$ ?",
+        "answers": [
+            "$\\Delta_r G^0(T) = \\Delta_r H^0(T) + T\\Delta_r S^0(T)$",
+            "$\\Delta_r G^0(T) = \\Delta_r H^0(T) - T\\Delta_r S^0(T)$",
+            "$\\Delta_r G^0(T) = T\\Delta_r S^0(T) - \\Delta_r H^0(T)$",
+            "$\\Delta_r G^0(T) = -RT \\ln K^0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-050",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "L'entropie de réaction est généralement positive si :",
+        "answers": [
+            "La réaction produit des solides",
+            "La réaction s'accompagne d'une augmentation du nombre de moles de gaz",
+            "La réaction est exothermique",
+            "La température est très basse"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie"
+    },
+    {
+        "uuid": "eq-051",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude d'une transformation chimique d'un système fermé à température $T$ et pression $P$ constantes, quelle relation lie l'entropie créée $S_c$ à la variation d'enthalpie libre $\\Delta G$ ?",
+        "answers": [
+            "$S_c = \\frac{\\Delta G}{T}$",
+            "$S_c = -\\frac{\\Delta G}{T}$",
+            "$S_c = \\Delta S - \\frac{\\Delta H}{T}$",
+            "Les deux réponses B et C sont correctes"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 3,
+        "subject": "chimie",
+        "explication": "Pour un système fermé subissant une transformation isotherme ($T$ constante) et isobare ($P$ constante), la variation d'enthalpie libre $\\Delta G$ est directement liée à l'entropie créée $S_c$. La relation fondamentale est $\\Delta G = -T S_c$. En réarrangeant, on obtient $S_c = -\\frac{\\Delta G}{T}$. De plus, on sait que pour une transformation à pression et température constantes, $\\Delta H = T \\Delta S_{interne}$ où $\\Delta S_{interne}$ est l'entropie échangée avec le milieu, et l'entropie totale $\\Delta S_{totale} = \\Delta S_{interne} + S_c$. On a aussi $\\Delta G = \\Delta H - T \\Delta S$. Si on considère $\\Delta S$ comme l'entropie totale du système, on a $\\Delta G = \\Delta H - T \\Delta S$. En considérant la variation d'entropie totale du système et de son environnement, $\\Delta S_{totale} = \\Delta S_{système} + \\Delta S_{environnement}$. Pour un processus spontané, $\\Delta S_{totale} > 0$ et $S_c = \\Delta S_{totale}$. Dans le cas d'une transformation à $T$ et $P$ constantes, on peut relier $\\Delta G$ à l'entropie du système : $\\Delta G = \\Delta H - T \\Delta S_{système}$. L'entropie échangée avec le milieu est $\\Delta S_{échange} = -\\frac{\\Delta H}{T}$ si on considère le transfert de chaleur de l'environnement au système, d'où $\\Delta S_{totale} = \\Delta S_{système} - \\frac{\\Delta H}{T}$. Par conséquent, $S_c = \\Delta S_{système} - \\frac{\\Delta H}{T}$ (en notant $\\Delta S$ pour $\\Delta S_{système}$). Les réponses B et C sont donc correctes."
+    },
+    {
+        "uuid": "eq-052",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte d'une réaction chimique, qu'implique le fait qu'une constante d'équilibre $K^0$ soit égale à 1 ?",
+        "answers": [
+            "La réaction est totale (les réactifs sont totalement consommés)",
+            "La variation d'enthalpie libre standard de réaction est nulle ($\\Delta_r G^0 = 0$)",
+            "Le système est à l'équilibre indépendamment des concentrations des espèces chimiques",
+            "La réaction est impossible dans les conditions standard"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La relation fondamentale entre la constante d'équilibre $K^0$ et la variation d'enthalpie libre standard de réaction $\\Delta_r G^0$ est $\\Delta_r G^0 = -RT \\ln K^0$. Si $K^0 = 1$, alors $\\ln K^0 = \\ln 1 = 0$. Par conséquent, $\\Delta_r G^0 = -RT \times 0 = 0$.  Une constante d'équilibre $K^0 = 1$ ne signifie pas que la réaction est totale (ce qui impliquerait $K^0 \\to \\infty$). Cela ne signifie pas non plus que le système est à l'équilibre pour n'importe quelles concentrations, car l'équilibre dépend des activités (ou pressions partielles/concentrations relatives).  Enfin, une constante d'équilibre de 1 indique que dans les conditions standard (activités unitaires), la réaction est à l'équilibre, mais pas qu'elle est impossible."
+    },
+    {
+        "uuid": "eq-053",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre des diagrammes d'Ellingham, utilisés pour étudier la stabilité des oxydes métalliques en fonction de la température, comment est généralement représentée la variation de l'enthalpie libre standard de réaction $\\Delta_r G^0(T)$ ?",
+        "answers": [
+            "Sous la forme d'une parabole",
+            "Sous la forme d'une droite de pente $-\\Delta_r S^0$",
+            "Sous la forme d'une droite de pente $\\Delta_r S^0$",
+            "Sous la forme d'une exponentielle"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'approximation d'Ellingham se base sur l'équation de Gibbs-Helmholtz qui relie l'enthalpie libre $\\Delta G$, l'enthalpie $\\Delta H$ et l'entropie $\\Delta S$ : $\\Delta G = \\Delta H - T \\Delta S$. Pour une réaction chimique considérée dans les conditions standard, on écrit $\\Delta_r G^0 = \\Delta_r H^0 - T \\Delta_r S^0$. Cette équation est de la forme $y = ax + b$ où $y = \\Delta_r G^0$, $x = T$, $a = -\\Delta_r S^0$ et $b = \\Delta_r H^0$. Ainsi, $\\Delta_r G^0(T)$ est représentée par une droite de pente $-\\Delta_r S^0$ et d'ordonnée à l'origine $\\Delta_r H^0$.  Dans l'approximation d'Ellingham, on suppose que $\\Delta_r H^0$ et $\\Delta_r S^0$ sont constants par rapport à la température, ce qui justifie la linéarité."
+    },
+    {
+        "uuid": "eq-054",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour la réaction d'équilibre $N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)$, comment s'écrit le quotient de réaction $Q$ en termes de pressions partielles relatives à la pression standard $P^0$ ?",
+        "answers": [
+            "$Q = \\frac{P_{NH_3}^2}{P_{N_2} P_{H_2}^3} \\left(\\frac{P^0}{P^0}\\right)^2$",
+            "$Q = \\frac{P_{NH_3}^2}{P_{N_2} P_{H_2}^3} \\left(\\frac{P^0}{P^0}\right)^{-2}$",
+            "$Q = \\frac{n_{NH_3}^2}{n_{N_2} n_{H_2}^3}$",
+            "$Q = \\frac{P_{NH_3}}{P_{N_2} P_{H_2}} \\frac{P^0}{P^0}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Le quotient de réaction $Q$ pour une réaction chimique $aA + bB \\rightleftharpoons cC + dD$ est défini comme le rapport des activités des produits sur celui des réactifs, chaque activité étant élevée à la puissance de son coefficient stœchiométrique. Pour des réactifs gazeux, l'activité est approximée par le rapport de la pression partielle sur la pression standard $P^0$ : $a_i = P_i / P^0$.  Pour la réaction $N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)$, les produits sont $NH_3$ et les réactifs sont $N_2$ et $H_2$.  Le quotient de réaction s'écrit donc : $Q = \\frac{a_{NH_3}^2}{a_{N_2}^1 a_{H_2}^3} = \\frac{(P_{NH_3}/P^0)^2}{(P_{N_2}/P^0)^1 (P_{H_2}/P^0)^3} = \\frac{P_{NH_3}^2}{P_{N_2} P_{H_2}^3} \\frac{(P^0)^1 (P^0)^3}{(P^0)^2} = \\frac{P_{NH_3}^2}{P_{N_2} P_{H_2}^3} \\frac{(P^0)^4}{(P^0)^2} = \\frac{P_{NH_3}^2}{P_{N_2} P_{H_2}^3} (P^0)^{4-2} = \\frac{P_{NH_3}^2}{P_{N_2} P_{H_2}^3} (P^0)^2$. La réponse A est donc correcte. Les autres réponses contiennent des erreurs d'unités ou d'utilisation des pressions/concentrations."
+    },
+    {
+        "uuid": "eq-055",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude d'un équilibre chimique, que se passe-t-il si l'on retire un produit du milieu réactionnel au fur et à mesure de sa formation ?",
+        "answers": [
+            "Le quotient de réaction $Q$ augmente, ce qui favorise la réaction inverse (sens indirect)",
+            "Le quotient de réaction $Q$ diminue, ce qui favorise la réaction directe (sens direct, optimisation du rendement)",
+            "Cela n'a aucun impact sur la position de l'équilibre",
+            "La constante d'équilibre $K^0$ augmente"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Le principe de Le Chatelier stipule qu'un système en équilibre, soumis à une perturbation, évolue dans le sens qui tend à minimiser cette perturbation. Dans ce cas, la perturbation est le retrait d'un produit. Le quotient de réaction $Q$ est le rapport des activités des produits sur celui des réactifs. En retirant un produit, sa concentration (ou pression partielle) diminue, ce qui entraîne une diminution de la valeur de $Q$. Comme $Q$ devient plus petit que la constante d'équilibre $K^0$, le système évolue pour rétablir l'équilibre. Cette évolution se fait dans le sens direct de la réaction (vers la formation de plus de produits) afin d'augmenter la concentration du produit retiré et de réduire celle des réactifs. Cela conduit à une augmentation du rendement de la réaction. La constante d'équilibre $K^0$ est une constante qui ne dépend que de la température et ne change donc pas avec les concentrations ou pressions partielles des espèces."
+    },
+    {
+        "uuid": "eq-056",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est l'unité correcte pour l'entropie molaire standard ($S_m^0$) dans le Système International (SI) ?",
+        "answers": [
+            "Joules par mole ($J.mol^{-1}$)",
+            "Joules par Kelvin et par mole ($J.K^{-1}.mol^{-1}$)",
+            "Watts par mole ($W.mol^{-1}$)",
+            "Sans unité"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'entropie est une mesure du désordre d'un système. Elle représente la capacité d'un système à absorber de la chaleur pour augmenter son désordre. L'unité fondamentale de l'entropie est le Joule par Kelvin ($J.K^{-1}$), car elle est définie comme $\\Delta S = Q_{éch}/T$. L'entropie molaire standard ($S_m^0$) fait référence à l'entropie par mole d'une substance dans son état standard. Par conséquent, son unité est le Joule par Kelvin et par mole, soit $J.K^{-1}.mol^{-1}$. L'option A ($J.mol^{-1}$) correspondrait plutôt à une grandeur comme l'enthalpie molaire standard. L'option C ($W.mol^{-1}$) mélange des unités de puissance (Watt) avec des unités molaires, ce qui n'est pas pertinent pour l'entropie."
+    },
+    {
+        "uuid": "eq-057",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte de la thermodynamique chimique, comment varie le potentiel chimique standard ($\\mu^0$) d'une substance avec la température ?",
+        "answers": [
+            "La dérivée partielle de $\\mu^0$ par rapport à la température est égale à l'entropie molaire standard ($S_m^0$).",
+            "La dérivée partielle de $\\mu^0$ par rapport à la température est égale à moins l'entropie molaire standard ($-S_m^0$).",
+            "La dérivée partielle de $\\mu^0$ par rapport à la température est égale à l'enthalpie molaire standard ($H_m^0$).",
+            "Le potentiel chimique standard est constant avec la température."
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "subject": "chimie",
+        "correct_answer_index": 1,
+        "explication": "Le potentiel chimique standard $\\mu^0$ d'une substance est une fonction de la température et de la pression (bien que pour le potentiel standard, la pression est fixée à la pression standard $P^0$). La relation reliant le potentiel chimique et la température est donnée par la relation de Gibbs-Duhem, qui s'écrit pour le potentiel chimique standard : $\\left(\\frac{\\partial \\mu^0}{\\partial T}\\right)_P = -S_m^0$. Cette relation découle de la définition du potentiel chimique et de l'expression de l'énergie libre de Gibbs.  L'entropie molaire standard ($S_m^0$) est toujours positive.  Le fait que la dérivée soit négative indique que le potentiel chimique standard d'une substance diminue lorsque la température augmente.  L'option C est incorrecte car elle concerne la relation entre l'enthalpie libre et l'enthalpie ($\\left(\\frac{\\partial (G/T)}{\\partial (1/T)}\\right)_P = H$). L'option A est le signe opposé, et l'option D est fausse car le potentiel chimique standard varie effectivement avec la température."
+    },
+    {
+        "uuid": "eq-058",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un gaz parfait, quelle est l'expression correcte du volume molaire ($V_m$) en fonction de la pression ($P$), de la température ($T$) et de la constante des gaz parfaits ($R$) ?",
+        "answers": [
+            "$V_m = \\frac{P}{RT}$",
+            "$V_m = \\frac{RT}{P}$",
+            "$V_m = RT$",
+            "$V_m = \\frac{1}{P}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "subject": "chimie",
+        "correct_answer_index": 1,
+        "explication": "La loi des gaz parfaits s'écrit $PV = nRT$. Le volume molaire $V_m$ est défini comme le volume occupé par une mole de gaz, c'est-à-dire $V_m = V/n$. En divisant l'équation des gaz parfaits par $n$, on obtient $P(V/n) = RT$, ce qui se réécrit $P V_m = RT$.  Pour trouver l'expression du volume molaire, il suffit de diviser les deux côtés par la pression $P$: $V_m = \\frac{RT}{P}$.  Les autres options représentent des expressions incorrectes qui ne respectent pas la relation fondamentale des gaz parfaits. Par exemple, l'option A inverserait la proportionnalité avec la pression."
+    },
+    {
+        "uuid": "eq-059",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte d'un équilibre chimique, que signifie un quotient de réaction $Q$ qui est très inférieur à la constante d'équilibre $K^0$ ($Q \\ll K^0$) ?",
+        "answers": [
+            "Le système est proche de l'équilibre.",
+            "Le système va évoluer spontanément dans le sens direct (vers la formation des produits) pour atteindre l'équilibre.",
+            "Le système est déjà à l'équilibre.",
+            "La réaction est impossible dans les conditions actuelles."
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "subject": "chimie",
+        "correct_answer_index": 1,
+        "explication": "Le quotient de réaction $Q$ a la même forme que la constante d'équilibre $K^0$, mais ses valeurs correspondent aux activités (ou pressions partielles/concentrations) des espèces à un instant donné, pas nécessairement à l'équilibre.  Si $Q < K^0$, cela signifie que le rapport des activités des produits sur celui des réactifs est inférieur à ce qu'il serait à l'équilibre. Pour atteindre l'équilibre, le système doit augmenter la valeur de $Q$. Cela se produit en augmentant la concentration (ou pression partielle) des produits et en diminuant celle des réactifs, c'est-à-dire en évoluant dans le sens direct de la réaction.  Si $Q = K^0$, le système est à l'équilibre. Si $Q > K^0$, le système évolue dans le sens inverse. Un $Q \\ll K^0$ indique que la réaction est loin de l'équilibre et qu'elle va s'orienter fortement vers la formation des produits."
+    },
+    {
+        "uuid": "eq-060",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "L'expression mathématique $K^0 = \\prod a_{i,eq}^{\\nu_i}$, où $a_{i,eq}$ est l'activité de l'espèce $i$ à l'équilibre et $\\nu_i$ son coefficient stœchiométrique, est connue sous le nom de :",
+        "answers": [
+            "Loi d'Ohm",
+            "Loi d'action de masse (ou loi de Guldberg et Waage)",
+            "Loi de Henry",
+            "Loi de Raoult"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "subject": "chimie",
+        "correct_answer_index": 1,
+        "explication": "L'expression $K^0 = \\prod a_{i,eq}^{\\nu_i}$ définit la constante d'équilibre thermodynamique en termes d'activités des espèces chimiques à l'équilibre. Cette loi est fondamentale pour décrire les équilibres chimiques et est connue sous le nom de loi d'action de masse (ou loi de Guldberg et Waage), qui exprime la relation entre la constante d'équilibre et les concentrations (ou pressions partielles) des réactifs et des produits. La loi d'Ohm concerne les circuits électriques ($U=RI$). La loi de Henry décrit la solubilité des gaz dans les liquides en fonction de leur pression partielle. La loi de Raoult décrit la pression de vapeur d'une solution idéale."
+    },
+    {
+        "uuid": "eq-061",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude des équilibres chimiques, le terme $\\sum \\nu_i \\mu_i^0(T)$ est égal à :",
+        "answers": [
+            "La variation d'enthalpie libre de réaction à une température $T$ ($$\\Delta_r G(T)$)",
+            "La variation d'enthalpie libre standard de réaction à une température $T$ ($$\\Delta_r G^0(T)$)",
+            "Le terme $RT \\ln Q$ où $Q$ est le quotient réactionnel",
+            "Zérot à l'équilibre chimique"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Le potentiel chimique standard d'une espèce $i$ à une température $T$ est noté $\\mu_i^0(T)$. La somme pondérée par les coefficients stœchiométriques $\\nu_i$ de ces potentiels chimiques standards s'identifie à la variation d'enthalpie libre *standard* de la réaction chimique considérée, à la température $T$. Autrement dit, $\\Delta_r G^0(T) = \\sum_i \\nu_i \\mu_i^0(T)$. La réponse 1 est le potentiel chimique libre total ($\\\\Delta_r G$), la réponse 3 est liée à l'expression du potentiel chimique libre total pour un système hors équilibre, et la réponse 4 est fausse car ce terme n'est généralement pas nul même à l'équilibre ; c'est la différence entre le potentiel chimique des réactifs et des produits qui est nulle à l'équilibre."
+    },
+    {
+        "uuid": "eq-062",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de la thermodynamique des solutions, et pour une solution idéale, le potentiel chimique d'une espèce $i$ est donné par l'expression $\\mu_i = \\mu_i^0 + RT \\ln(x_i)$. Que représente la grandeur $x_i$ dans cette formule ?",
+        "answers": [
+            "La pression partielle de l'espèce $i$ ($P_i$)",
+            "La fraction molaire de l'espèce $i$ ($x_i$)",
+            "La concentration molaire de l'espèce $i$ en g/L ($[i]$)",
+            "La masse molaire de l'espèce $i$ ($M_i$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'expression $\\mu_i = \\mu_i^0 + RT \\ln(x_i)$ est la formule du potentiel chimique pour une espèce $i$ dans une solution *idéale*. Dans ce contexte, $x_i$ représente la fraction molaire de l'espèce $i$. La fraction molaire est définie comme le rapport du nombre de moles de l'espèce $i$ sur le nombre total de moles de toutes les espèces dans la solution. Les autres options sont incorrectes : la pression partielle est utilisée dans la loi des gaz parfaits ou pour des mélanges gazeux, la concentration molaire (souvent en mol/L) est une autre mesure de composition mais n'apparaît pas directement dans cette formulation standard pour les solutions idéales, et la masse molaire est une propriété intrinsèque de l'espèce."
+    },
+    {
+        "uuid": "eq-063",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude d'une transformation chimique à température ($T$) et pression ($P$) constantes, une réaction est dite spontanée dans le sens direct si :",
+        "answers": [
+            "La variation d'enthalpie libre de réaction est strictement négative ($$\\Delta_r G < 0$)",
+            "La variation d'enthalpie libre de réaction est strictement positive ($$\\Delta_r G > 0$)",
+            "La variation d'enthalpie libre standard de réaction est strictement négative ($$\\Delta_r G^0 < 0$)",
+            "La variation d'enthalpie libre standard de réaction est strictement positive ($$\\Delta_r G^0 > 0$)"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Le critère de spontanéité d'une transformation chimique à température et pression constantes est donné par le signe de la variation d'enthalpie libre de Gibbs, $\\Delta_r G$. Si $\\Delta_r G < 0$, la transformation est spontanée dans le sens direct (celui considéré). Si $\\Delta_r G > 0$, la transformation n'est pas spontanée dans le sens direct mais est spontanée dans le sens inverse. Si $\\Delta_r G = 0$, le système est à l'équilibre. La variation d'enthalpie libre *standard* ($\\\\Delta_r G^0$) caractérise la spontanéité dans les conditions standard (généralement 1 bar pour les gaz, 1 mol/L pour les solutés, etc.), mais ce n'est pas le critère de spontanéité pour *toutes* les conditions. La réponse 1 est donc le critère général et correct."
+    },
+    {
+        "uuid": "eq-064",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérons la réaction d'équilibre suivante à température et pression constantes : $H_{2(g)} + I_{2(g)} \rightleftharpoons 2HI_{(g)}$. Quelle est l'influence d'une augmentation de la pression totale du système sur la position de cet équilibre ?",
+        "answers": [
+            "Déplacement de l'équilibre vers la droite (formation de $HI$)",
+            "Déplacement de l'équilibre vers la gauche (formation de $H_2$ et $I_2$)",
+            "Aucun déplacement de l'équilibre",
+            "Solidification de $HI$ due à la pression"
+        ],
+        "difficulty": 3,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "Le principe de Le Chatelier stipule qu'une perturbation apportée à un système en équilibre entraîne une évolution qui s'oppose à cette perturbation. Pour une réaction en phase gazeuse, une augmentation de la pression totale peut déplacer l'équilibre si le nombre de moles de gaz change entre les réactifs et les produits. Dans la réaction $H_{2(g)} + I_{2(g)} \rightleftharpoons 2HI_{(g)}$, le nombre total de moles de gaz gazeux est de $1+1=2$ moles du côté des réactifs et de $2$ moles du côté des produits. Comme le nombre de moles de gaz ne change pas, une variation de pression totale n'affectera pas la position de cet équilibre. Les réponses 1 et 2 sont donc incorrectes. La réponse 4 est fantaisiste et ne découle pas directement d'un principe de Le Chatelier pour ce cas."
+    },
+    {
+        "uuid": "eq-065",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte de la thermodynamique chimique, comment calcule-t-on l'enthalpie standard de réaction $\\Delta_r H^0$ pour une réaction chimique donnée, à partir des enthalpies standard de formation des réactifs et des produits ?",
+        "answers": [
+            "$\\Delta_r H^0 = \\sum_i \\nu_i \\Delta_f H_i^0$, où $\\nu_i$ sont les coefficients stœchiométriques (Loi de Hess appliquée aux enthalpies de formation)",
+            "$\\Delta_r H^0 = \\sum_i \\Delta_f H_i^0$, en sommant simplement les enthalpies de formation",
+            "$\\Delta_r H^0 = G - TS$",
+            "$\\Delta_r H^0 = RT^2 \\frac{d \\ln K^0}{dT}$ (Relation de Van't Hoff)"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "L'enthalpie standard de réaction ($\\\\Delta_r H^0$) est calculée comme la somme pondérée des enthalpies standard de formation ($\\\\Delta_f H_i^0$) des produits moins la somme pondérée des enthalpies standard de formation des réactifs. La formule correcte est $\\\\Delta_r H^0 = \\sum_{\\text{produits}} \\nu_p \\Delta_f H_{\\text{produit}}^0 - \\sum_{\\text{réactifs}} \\nu_r \\Delta_f H_{\\text{réactif}}^0$. Ce qui est équivalent à $\\\\Delta_r H^0 = \\sum_i \\nu_i \\Delta_f H_i^0$, où les $\\\\nu_i$ sont positifs pour les produits et négatifs pour les réactifs. La réponse 2 est incorrecte car elle ne prend pas en compte les coefficients stœchiométriques. La réponse 3 définit l'enthalpie libre de Gibbs, pas l'enthalpie de réaction. La réponse 4 est la relation de Van't Hoff qui relie la variation d'enthalpie de réaction à la dépendance de la constante d'équilibre avec la température."
+    },
+    {
+        "uuid": "eq-066",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour la vaporisation de l'eau ($H_2O_{(l)} \rightarrow H_2O_{(g)}$) à 298 K et sous une pression de 1 bar, on donne les potentiels chimiques standards : $\\mu^0_{liq} = -237,2$ kJ/mol et $\\mu^0_{vap} = -228,6$ kJ/mol. Quel est l'état stable de l'eau dans ces conditions ?",
+        "answers": [
+            "La vapeur ($H_2O_{(g)}$)",
+            "Le liquide ($H_2O_{(l)}$)",
+            "Un équilibre entre le liquide et la vapeur",
+            "Le plasma"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Pour déterminer l'état stable d'une substance à une température et pression données, il faut comparer les potentiels chimiques de chaque phase. La phase stable est celle qui correspond au potentiel chimique le plus bas. Ici, on compare $\\\\mu^0_{liq}$ et $\\\\mu^0_{vap}$. On a $\\\\mu^0_{liq} = -237,2$ kJ/mol et $\\\\mu^0_{vap} = -228,6$ kJ/mol. Puisque $-237,2 < -228,6$, le potentiel chimique du liquide est inférieur à celui de la vapeur dans ces conditions standard. L'eau sera donc stable sous forme liquide. La réponse 1 est incorrecte car $\\\\mu^0_{vap} > \\\\mu^0_{liq}$. La réponse 3 est incorrecte car l'équilibre n'est atteint que si les potentiels chimiques des deux phases sont égaux, ce qui implique $\\\\mu^0_{liq} = \\\\mu^0_{vap}$ dans ce cas (si l'on considère les conditions où l'on travaille avec des substances pures). La réponse 4 est hors contexte. Notez que le point d'ébullition de l'eau à 1 bar est de 100°C (373.15 K), donc à 25°C (298 K) et 1 bar, l'eau est bien liquide."
+    },
+    {
+        "uuid": "eq-067",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte des équilibres chimiques, le quotient réactionnel $Q$ (qui exprime le rapport des activités des produits sur les réactifs, pondéré par les coefficients stœchiométriques) est une grandeur :",
+        "answers": [
+            "Sans dimension",
+            "Exprimée en mol/L",
+            "Exprimée en bar",
+            "Exprimée en Joule"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Le quotient réactionnel $Q$ est défini comme le rapport des activités des espèces chimiques présentes dans le milieu réactionnel, élevé à la puissance de leurs coefficients stœchiométriques. L'activité est une grandeur sans dimension qui représente le rapport d'une concentration (ou pression partielle) sur une concentration (ou pression partielle) de référence (généralement 1 mol/L ou 1 bar). Par conséquent, le quotient réactionnel $Q$ est lui-même une grandeur sans dimension. Les autres unités proposées sont incorrectes. Par exemple, pour une réaction en phase gazeuse, on utilise souvent des pressions partielles rapportées à la pression de référence (1 bar), ce qui rend $Q$ sans dimension. Pour les solutions, on utilise des concentrations molaires rapportées à la concentration de référence (1 mol/L)."
+    },
+    {
+        "uuid": "eq-068",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "La pression de vapeur saturante de l'eau pure à 100°C (qui correspond à la pression à laquelle l'eau bout à cette température) est :",
+        "answers": [
+            "0,1 bar",
+            "1 bar",
+            "10 bar",
+            "1013 Pa"
+        ],
+        "difficulty": 1,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La pression de vapeur saturante d'un liquide à une température donnée est la pression à laquelle les phases liquide et vapeur sont en équilibre. L'eau pure bout à 100°C (373,15 K) lorsque la pression externe est égale à sa pression de vapeur saturante. Par définition, la température normale d'ébullition de l'eau est de 100°C sous une pression atmosphérique normale, qui est fixée à 1 atm. 1 atm est approximativement égale à 1,01325 bar, ou plus précisément 101325 Pa. Cependant, dans le contexte de la chimie et de la thermodynamique, on utilise souvent 1 bar comme référence. La pression de 1 bar correspond à environ 0,987 atm. L'eau bout à 100°C sous 1 bar. La réponse 1 (0,1 bar) serait la pression de vapeur saturante à une température beaucoup plus basse. La réponse 3 (10 bar) correspondrait à une température d'ébullition supérieure à 100°C. La réponse 4 (1013 Pa) est beaucoup trop faible (1013 Pa = 0,01013 bar), elle correspondrait à une pression de vapeur saturante très basse et donc à une température bien inférieure à 100°C."
+    },
+    {
+        "uuid": "eq-069",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la forme de la relation de Gibbs-Helmholtz qui est particulièrement utile lorsqu'on étudie la dépendance de la constante d'équilibre $K^0$ avec la température (relation de Van't Hoff) ?",
+        "answers": [
+            "$\\frac{d(G/T)}{dT} = -\\frac{H}{T^2}$",
+            "$\\frac{d(G/T)}{dT} = \\frac{H}{T^2}$",
+            "$\\frac{dG}{dT} = -S$",
+            "$\\frac{dH}{dT} = C_p$"
+        ],
+        "difficulty": 4,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "La relation de Gibbs-Helmholtz relie la dérivée de $G/T$ par rapport à $T$ à l'enthalpie $H$. Sa forme est $\\frac{d(G/T)}{dT} = -\\frac{H}{T^2}$. Cette relation est fondamentale car si l'on applique cette relation à l'enthalpie libre de réaction ($\\\\Delta_r G$), on obtient $\\\\frac{d(\\\\Delta_r G/T)}{dT} = -\\\\frac{\\\\Delta_r H}{T^2}$. Or, la relation entre $\\\\Delta_r G$, la constante d'équilibre $K^0$ et la température $T$ est $\\\\Delta_r G = -RT \\ln K^0$. En substituant et en dérivant par rapport à $T$, on retrouve la relation de Van't Hoff : $\\\\frac{d \\ln K^0}{dT} = \\\\frac{\\\\Delta_r H^0}{RT^2}$. Les réponses 2, 3 et 4 sont d'autres relations thermodynamiques : la réponse 2 est fausse, la réponse 3 est la définition de l'entropie à partir de l'enthalpie libre (sans pression constante), et la réponse 4 est la définition de la capacité thermique à pression constante."
+    },
+    {
+        "uuid": "eq-070",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérons la réaction de décomposition du carbonate de calcium : $CaCO_{3(s)} \rightleftharpoons CaO_{(s)} + CO_{2(g)}$. Quel est le signe attendu pour l'entropie standard de réaction ($\\\\Delta_r S^0$) dans des conditions standard ?",
+        "answers": [
+            "Négatif",
+            "Positif, car un gaz est créé",
+            "Nul",
+            "Dépend de la température"
+        ],
+        "difficulty": 2,
+        "chapter": "Équilibres chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'entropie est une mesure du désordre d'un système. Le passage d'un état ordonné à un état désordonné s'accompagne d'une augmentation de l'entropie. Dans cette réaction, on passe de deux solides ($CaCO_{3(s)}$ et $CaO_{(s)}$) à deux solides plus un gaz ($CO_{2(g)}$). La création de molécules gazeuses, qui sont beaucoup plus mobiles et désordonnées que les solides, entraîne une augmentation significative de l'entropie du système. Par conséquent, l'entropie standard de réaction ($\\\\Delta_r S^0$) est attendue comme étant positive. Les solides ont généralement des entropies molaires faibles, tandis que les gaz ont des entropies molaires beaucoup plus élevées. Le signe de $\\\\Delta_r S^0$ peut dépendre de la température, mais l'effet dominant ici est la création du gaz, qui rend $\\\\Delta_r S^0$ positif sur une large gamme de températures. La réponse 3 est fausse car il y a création d'une espèce gazeuse. La réponse 1 est donc incorrecte."
+    }
+]

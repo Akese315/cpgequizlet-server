@@ -1,0 +1,1692 @@
+[
+    {
+        "uuid": "th-001",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Dans le cadre de l'étude des systèmes thermodynamiques, comment définit-on un système ouvert ?",
+        "answers": [
+            "Un système n'échangeant que de l'énergie thermique avec l'extérieur.",
+            "Un système pouvant échanger à la fois de la matière et de l'énergie (travail et transfert thermique) avec le milieu extérieur.",
+            "Un système n'échangeant ni matière ni énergie avec l'extérieur.",
+            "Un système n'échangeant que du travail mécanique."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Un système ouvert est perméable à la matière (il peut être traversé par un flux de fluide) et à l'énergie. Le système fermé, lui, n'échange pas de matière, et le système isolé n'échange ni matière ni énergie."
+    },
+    {
+        "uuid": "th-002",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Quelle est la définition thermodynamique précise d'un système isolé ?",
+        "answers": [
+            "Il n'échange que de la chaleur à travers des parois adiabatiques.",
+            "Il n'échange que du travail via des parois mobiles.",
+            "Il n'échange ni matière, ni énergie (travail ou chaleur) avec le milieu extérieur.",
+            "Il est à température constante."
+        ],
+        "correct_answer_index": 2,
+        "explication": "Par définition, un système est dit isolé s'il n'interagit d'aucune manière avec l'extérieur. Il n'y a donc aucun transfert de masse ni aucun transfert d'énergie sous forme de travail ou de chaleur."
+    },
+    {
+        "uuid": "th-003",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Dans le cadre de l'étude des machines thermiques en écoulement permanent (ou stationnaire), quelle relation lie le débit massique d'entrée $\\dot{m}_e$ et celui de sortie $\\dot{m}_s$ ?",
+        "answers": [
+            "$\\dot{m}_e > \\dot{m}_s$ car il y a des pertes dans la machine.",
+            "$\\dot{m}_e = \\dot{m}_s$ car il y a conservation de la masse au cours du temps.",
+            "$\\dot{m}_e < \\dot{m}_s$ en raison de la variation de pression.",
+            "$\\dot{m}_e = \\dot{m}_s / \\rho$ où $\\rho$ est la masse volumique."
+        ],
+        "correct_answer_index": 1,
+        "explication": "En régime stationnaire (ou permanent), les grandeurs d'état en un point fixe ne varient pas au cours du temps. Pour un système traversé par un fluide sans accumulation, le principe de conservation de la masse implique que le débit massique entrant est strictement égal au débit massique sortant."
+    },
+    {
+        "uuid": "th-004",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Quelle est l'expression correcte du premier principe de la thermodynamique appliqué à un système ouvert en écoulement stationnaire (forme massique) ?",
+        "answers": [
+            "$\\Delta h + \\Delta e_c + \\Delta e_p = w_u + q$",
+            "$\\Delta u + \\Delta e_c + \\Delta e_p = w_u + q$",
+            "$\\Delta h = q$",
+            "$\\Delta h + \\Delta e_c + \\Delta e_p = q - w_u$"
+        ],
+        "correct_answer_index": 0,
+        "explication": "Pour un système ouvert en écoulement stationnaire, on utilise l'enthalpie $h$ et non l'énergie interne $u$ pour prendre en compte le travail de transvasement. La forme massique s'écrit : $h_s - h_e + \\frac{1}{2}(v_s^2 - v_e^2) + g(z_s - z_e) = w_u + q$, soit $\\Delta h + \\Delta e_c + \\Delta e_p = w_u + q$."
+    },
+    {
+        "uuid": "th-005",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Dans l'expression du premier principe pour un système ouvert, que représente précisément le terme $w_u$ ?",
+        "answers": [
+            "Le travail des forces de pression exercées par les parois rigides.",
+            "Le travail utile (ou technique) échangé avec des parties mobiles (comme une turbine ou un compresseur) en dehors des forces de pression.",
+            "Le travail total échangé, incluant le travail de transvasement.",
+            "La puissance dissipée par frottement visqueux."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le travail utile $w_u$ (souvent noté $w_{tech}$) est l'énergie mécanique échangeable via un axe en rotation, par opposition au travail de transvasement qui est déjà inclus dans la définition de l'enthalpie $h = u + pv$."
+    },
+    {
+        "uuid": "th-006",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/d/df/Log_p-h_diagram_R134a.png",
+        "theme": "thermodynamique",
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Dans le diagramme de Mollier (diagramme de type $P-h$ utilisé pour les fluides frigorigènes), que représente l'axe des abscisses ?",
+        "answers": [
+            "La pression $P$ (souvent en échelle logarithmique).",
+            "L'entropie massique $s$.",
+            "L'enthalpie massique $h$.",
+            "La température $T$."
+        ],
+        "correct_answer_index": 2,
+        "explication": "Le diagramme de Mollier est par définition un diagramme enthalpie-pression. L'abscisse correspond à l'enthalpie massique $h$ (en J/kg) et l'ordonnée à la pression $P$ (souvent en log)."
+    },
+    {
+        "uuid": "th-007",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/3/33/Phase-diag2.svg",
+        "theme": "thermodynamique",
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Sur un diagramme de phase $(P, T)$, comment appelle-t-on le point terminal de la courbe d'ébullition ?",
+        "answers": [
+            "Le point triple, où les trois phases coexistent.",
+            "Le point critique, au-delà duquel il n'y a plus de distinction entre liquide et gaz.",
+            "Le point d'ébullition standard à $1,013 \\times 10^5 \\text{ Pa}$.",
+            "Le point de rosée."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le point critique est caractérisé par une pression critique $P_c$ et une température critique $T_c$. Au-delà de ces valeurs, le fluide est dit supercritique et les phases liquide et gazeuse ne sont plus discernables."
+    },
+    {
+        "uuid": "th-008",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Par définition, qu'est-ce qu'un fluide supercritique ?",
+        "answers": [
+            "Un fluide refroidi en dessous de sa température de solidification.",
+            "Un fluide soumis à une pression $P > P_c$ et une température $T > T_c$.",
+            "Un gaz dont la pression est extrêmement élevée mais la température très basse.",
+            "Un mélange hétérogène de gouttelettes de liquide dans de la vapeur."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Un état est qualifié de supercritique lorsque la température et la pression dépassent les coordonnées du point critique. Dans cet état, il n'existe plus de changement de phase (ébullition) car il n'y a plus de séparation liquide-vapeur."
+    },
+    {
+        "uuid": "th-009",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Dans la zone d'équilibre liquide-vapeur (sous la cloche) d'un diagramme $(P, T)$, quelle est la forme des isothermes ?",
+        "answers": [
+            "Des segments verticaux (isothermes de détente).",
+            "Des segments horizontaux (paliers de pression).",
+            "Des courbes hyperboliques suivant la loi des gaz parfaits.",
+            "Des droites de pente positive."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Lors d'un changement de phase de corps pur, la pression ne dépend que de la température ($P = P_{sat}(T)$). Ainsi, pour une température fixée, la pression est constante : on observe donc des paliers horizontaux sur le diagramme $(P, v)$ ou $(P, h)$."
+    },
+    {
+        "uuid": "th-010",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "subject": "physique",
+        "difficulty": 3,
+        "question": "Considérant un gaz parfait dont l'enthalpie massique s'exprime par $h = c_p T$, quelle est la forme des isothermes sur un diagramme $(P, h)$ ?",
+        "answers": [
+            "Des droites verticales (car $h$ ne dépend que de $T$).",
+            "Des droites horizontales (car la pression est constante).",
+            "Des courbes exponentielles.",
+            "Des droites de pente $\\gamma$."
+        ],
+        "correct_answer_index": 0,
+        "explication": "Pour un gaz parfait, l'enthalpie $h$ ne dépend que de la température $T$ ($h = c_p T + \text{cste}$). Par conséquent, si l'on trace des isothermes (température constante), alors $h$ est constant. Sur un graphique où $h$ est en abscisse, ces isothermes sont donc des droites verticales."
+    },
+    {
+        "uuid": "th-011",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude d'un système diphasé, quelle est la définition rigoureuse du titre massique en vapeur $x_v$ (ou titre en vapeur) ?",
+        "answers": [
+            "$x_v = \\frac{m_l}{m_g + m_l}$",
+            "$x_v = \\frac{m_g}{m_g + m_l}$",
+            "$x_v = \\frac{m_g}{m_l}$",
+            "$x_v = \\frac{m_l}{m_g}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le titre massique en vapeur $x_v$ représente la fraction de la masse totale du système qui se trouve à l'état gazeux. Par définition, $x_v = \\frac{m_g}{m_{total}} = \\frac{m_g}{m_g + m_l}$. L'erreur classique est d'inverser avec le titre liquide ou de confondre avec un rapport de masses simple.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-012",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un cycle frigorifique, quelle transformation subit le fluide lors de son passage à travers un détendeur idéal, modélisé comme un système ouvert stationnaire, calorifugé et sans partie mobile ?",
+        "answers": [
+            "Isentropique ($s = cste$)",
+            "Isenthalpique ($h = cste$)",
+            "Isotherme ($T = cste$)",
+            "Isobare ($P = cste$)"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le premier principe pour un système ouvert en régime permanent s'écrit $\\Delta h = q + w_u + \\Delta ec + \\Delta ep$. Ici, le système est calorifugé ($q=0$), sans travail utile ($w_u=0$) et les variations d'énergie cinétique et potentielle sont négligeables. Il en résulte $\\Delta h = 0$, donc la transformation est isenthalpique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-013",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans l'étude d'une pompe à chaleur, quelle hypothèse modélise le fonctionnement d'un compresseur idéal ?",
+        "answers": [
+            "Transformation isenthalpique",
+            "Transformation isentropique",
+            "Transformation isochore",
+            "Transformation isobare"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Un compresseur idéal est modélisé par une transformation adiabatique (calorifugé) et réversible (sans frottement interne). Pour un système ouvert, une transformation adiabatique réversible correspond à une transformation isentropique ($s = cste$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-014",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le bilan énergétique d'un échangeur thermique (type évaporateur ou condenseur), quelle hypothèse est systématiquement retenue concernant le travail utile $w_u$ ?",
+        "answers": [
+            "$w_u > 0$ (travail fourni au milieu extérieur)",
+            "$w_u = 0$ (absence de pièce mobile travaillante)",
+            "$w_u < 0$ (travail reçu du milieu extérieur)",
+            "$w_u = \\Delta h$ (équivalence travail-chaleur)"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Un échangeur thermique est une enceinte fixe où circule un fluide sans mécanisme mobile (type piston ou turbine). Par conséquent, il n'y a aucun échange de travail avec l'extérieur : $w_u = 0$. Le bilan se réduit alors à $P_{th} = D_m \\Delta h$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-015",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Comment calcule-t-on la puissance thermique $\\mathcal{P}_{th}$ échangée par un fluide en régime permanent, connaissant le débit massique $\\dot{m}$ ?",
+        "answers": [
+            "$\\mathcal{P}_{th} = \\frac{\\dot{m}}{\\Delta h}$",
+            "$\\mathcal{P}_{th} = \\dot{m} \\cdot \\Delta h$",
+            "$\\mathcal{P}_{th} = \\dot{m} \\cdot \\Delta u$",
+            "$\\mathcal{P}_{th} = \\dot{m} \\cdot \\Delta s$"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Pour un système ouvert en régime permanent sans travail utile, le premier principe s'écrit $\\mathcal{P}_{th} = \\dot{m}(h_{sortie} - h_{entrée}) = \\dot{m} \\Delta h$. $\\Delta u$ est utilisé pour les systèmes fermés, et le rapport avec $\\Delta h$ est une erreur dimensionnelle grave.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-016",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "D'après les tables thermodynamiques du R22, quelle est approximativement l'enthalpie de vaporisation (chaleur latente) $L_v$ sous une pression de 20 bar ?",
+        "answers": [
+            "265 kJ/kg",
+            "154 kJ/kg",
+            "419 kJ/kg",
+            "80 kJ/kg"
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "La valeur de l'enthalpie de vaporisation diminue lorsque la pression augmente (et se rapproche du point critique). Pour le R22 à 20 bar, la lecture des tables donne environ 154 kJ/kg. Il est crucial de savoir lire les colonnes $h_v$ et $h_l$ pour calculer $L_v = h_v - h_l$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-017",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la pression de vapeur saturante $P_{sat}$ du R22 à la température de 20 °C ?",
+        "answers": [
+            "5 bar",
+            "9 bar",
+            "20 bar",
+            "1 bar"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "La pression de vapeur saturante est une fonction croissante de la température. À 20 °C, pour le R22, la valeur lue dans les tables de saturation est proche de 9 bar. Une réponse comme 20 bar est physiquement incohérente car elle correspondrait à une température bien plus élevée.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-018",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors d'une vaporisation isotherme et isobare d'un corps pur, comment évolue l'entropie massique $s$ du fluide ?",
+        "answers": [
+            "Elle diminue, le gaz étant moins entropique que le liquide.",
+            "Elle augmente, le passage vers l'état gazeux étant accompagné d'un accroissement de désordre.",
+            "Elle reste constante, car la transformation est isotherme.",
+            "Elle augmente proportionnellement à la pression."
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "L'entropie est une mesure du désordre. Au cours d'une vaporisation, le système passe d'un état liquide (plus ordonné) à un état gazeux (plus désordonné). La variation d'entropie est donc positive : $\\Delta s = s_g - s_l > 0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-019",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Un fluide subit une détente isenthalpique. Initialement à l'état de liquide saturant, comment qualifie-t-on l'état final après passage dans le détendeur ?",
+        "answers": [
+            "Un liquide sous-refroidi",
+            "Un mélange liquide/vapeur",
+            "Une vapeur surchauffée",
+            "Un fluide supercritique"
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Lors d'une détente isenthalpique d'un liquide saturant vers une basse pression, l'enthalpie finale $h_2$ est égale à $h_{l, haute pression}$. Comme cette valeur est comprise entre $h_{l, basse pression}$ et $h_{v, basse pression}$, le fluide se retrouve dans la zone diphasique : il y a formation de vapeur (vaporisation partielle).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-020",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le diagramme ($h,s$) ou ($P,h$), quelle règle géométrique permet de déterminer graphiquement le titre en vapeur $x_v$ d'un mélange diphasique ?",
+        "answers": [
+            "La règle du parallélogramme",
+            "La règle des moments (ou règle du levier)",
+            "La loi de Dalton",
+            "La règle de Gibbs"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "La règle des moments permet de trouver la proportion de chaque phase en connaissant la position du point représentatif sur l'isobare. Si $M$ est le point, $x_v = \\frac{M - L}{V - L}$ où $L$ et $V$ sont les points sur les courbes de saturation. C'est l'analogue de la règle du levier utilisée en métallurgie.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-021",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude d'un cycle à vapeur, on se situe dans la zone de mélange liquide-vapeur avec une enthalpie massique $h_2 = 255$ kJ/kg. Sachant que les enthalpies massiques du liquide saturé et de la vapeur saturée sont respectivement $h_L = 185$ kJ/kg et $h_V = 395$ kJ/kg, quelle est la valeur du titre en vapeur $x_v$ ?",
+        "answers": [
+            "0.33",
+            "0.40",
+            "0.65",
+            "0.75"
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le titre en vapeur $x_v$ est défini par la relation $h = (1-x_v)h_L + x_v h_V$, ce qui donne $x_v = \\frac{h - h_L}{h_V - h_L}$. Ici, $x_v = \\frac{255 - 185}{395 - 185} = \\frac{70}{210} = \\frac{1}{3} \\approx 0.33$. Attention à l'inversion de l'indice ou à l'erreur de calcul : l'option 0.40 est un leurre classique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-022",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors d'une détente de Joule-Thomson (isenthalpique) pour un gaz réel, si la température diminue, cela signifie que :",
+        "answers": [
+            "Le gaz se comporte comme un gaz parfait.",
+            "L'air n'obéit pas à la première loi de Joule.",
+            "Le gaz est dans son domaine de refroidissement (coefficient de Joule-Thomson positif).",
+            "La détente est adiabatique réversible."
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "La première loi de Joule stipule que l'énergie interne d'un gaz parfait ne dépend que de la température ($u=f(T)$). Pour un gaz réel, $u$ dépend aussi du volume ou de la pression. Une détente isenthalpique avec variation de température prouve que les forces d'interaction moléculaires sont prépondérantes, ce qui contredit la première loi de Joule.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-023",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre d'un détendeur de plongée, pourquoi le modèle du gaz parfait ($PV=nRT$) n'est-il pas rigoureusement applicable pour la première détente (passage de 200 bar à 10 bar) ?",
+        "answers": [
+            "Parce que la pression est trop faible pour justifier une modélisation moléculaire.",
+            "Car les interactions intermoléculaires ne sont plus négligeables à haute pression, rendant les isothermes non verticales dans un diagramme de Clapeyron.",
+            "Car le gaz se liquéfie systématiquement lors de toute détente.",
+            "Parce que le débit massique est trop élevé pour un régime stationnaire."
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "À très haute pression (200 bar), le volume propre des molécules et les forces de Van der Waals ne sont plus négligeables. Le modèle du gaz parfait suppose des particules ponctuelles sans interaction, ce qui devient faux à haute densité. Les isothermes ne sont plus des hyperboles équilatères.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-024",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est l'unité SI de l'entropie massique $s$ ?",
+        "answers": [
+            "J/kg",
+            "J.K/kg",
+            "J.K⁻¹.kg⁻¹",
+            "J/K"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 2,
+        "explication": "L'entropie $S$ s'exprime en J.K⁻¹. L'entropie massique $s$ est définie par $s = S/m$, son unité est donc le quotient de l'unité d'entropie par celle de la masse, soit J.K⁻¹.kg⁻¹.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-025",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans une machine frigorifique à compression de vapeur, quel est le rôle physique de l'évaporateur ?",
+        "answers": [
+            "Céder de la chaleur à la source chaude par changement d'état.",
+            "Recevoir du travail mécanique pour augmenter la pression du fluide.",
+            "Capter de la chaleur à la source froide pour permettre la vaporisation du fluide.",
+            "Réduire la température du fluide par détente isenthalpique."
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 2,
+        "explication": "L'évaporateur permet le transfert thermique depuis la source froide vers le fluide frigorigène. En absorbant cette chaleur latente, le fluide passe de l'état liquide à l'état vapeur à basse pression.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-026",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/1/15/Refrigeration_Cycle.png",
+        "theme": "thermodynamique",
+        "question": "Dans un diagramme $(P, h)$ (ou diagramme des frigoristes), dans quel sens est parcouru le cycle thermodynamique d'une machine frigorifique ?",
+        "answers": [
+            "Sens horaire (cycle moteur, production de travail)",
+            "Sens anti-horaire (cycle récepteur, consommation de travail)",
+            "Le sens est indifférent",
+            "Le cycle ne peut pas être représenté dans ce diagramme"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Une machine frigorifique est un récepteur thermique : elle consomme du travail pour transférer de la chaleur du froid vers le chaud. Le cycle est donc parcouru dans le sens trigonométrique (anti-horaire) sur un diagramme $(P, v)$ ou $(T, s)$, mais dans le diagramme des frigoristes $(P, h)$, le cycle frigorifique est parcouru dans le sens horaire.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-027",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est l'expression correcte de l'efficacité (ou coefficient de performance) $\\eta$ d'une machine frigorifique ?",
+        "answers": [
+            "$\\eta = \\frac{|w|}{q_f}$",
+            "$\\eta = \\frac{q_f}{|w|}$",
+            "$\\eta = \\frac{|q_c|}{|w|}$",
+            "$\\eta = \\frac{q_f}{q_c}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "L'efficacité d'une machine frigorifique est le rapport de ce que l'on veut obtenir (chaleur extraite à la source froide $q_f$) sur ce que l'on paie (le travail reçu $|w|$). Donc $\\eta = \\frac{q_f}{|w|}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-028",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Soit un cycle frigorifique simple avec les points $A$ (entrée compresseur), $B$ (sortie compresseur) et $D$ (entrée évaporateur). Avec $h_A = 1450$ kJ/kg, $h_B = 1680$ kJ/kg et $h_D = 310$ kJ/kg, calculez l'efficacité $\\eta$ sachant que $h_C = h_D$ lors de la détente.",
+        "answers": [
+            "3.52",
+            "4.96",
+            "6.23",
+            "1.25"
+        ],
+        "difficulty": 4,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le travail massique du compresseur est $w = h_B - h_A = 1680 - 1450 = 230$ kJ/kg. La chaleur extraite est $q_f = h_A - h_D = 1450 - 310 = 1140$ kJ/kg. L'efficacité $\\eta = \\frac{1140}{230} \\approx 4.96$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-029",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est l'expression de l'efficacité de Carnot $e_{rev}$ pour une machine frigorifique fonctionnant entre deux sources de températures $T_f$ et $T_c$ ?",
+        "answers": [
+            "$e_{rev} = \\frac{T_c}{T_c - T_f}$",
+            "$e_{rev} = \\frac{T_f}{T_c - T_f}$",
+            "$e_{rev} = \\frac{T_c - T_f}{T_f}$",
+            "$e_{rev} = \\frac{T_f}{T_c}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Pour une machine réversible, le premier principe et le second principe (Clausius) imposent $\\frac{q_f}{T_f} + \\frac{q_c}{T_c} = 0$. Avec $w + q_f + q_c = 0$, on obtient $e_{rev} = \\frac{T_f}{T_c - T_f}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-030",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Si une compression est adiabatique mais irréversible (frottements), comment se positionne le point final $B$ par rapport au point isentropique idéal $B_{rev}$ dans un diagramme $(T, s)$ ?",
+        "answers": [
+            "$h_B < h_{B,rev}$",
+            "$h_B = h_{B,rev}$",
+            "$h_B > h_{B,rev}$",
+            "Le point $B$ ne peut pas être défini"
+        ],
+        "difficulty": 4,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 2,
+        "explication": "Pour une compression adiabatique, le travail reçu est $\\Delta h = w$. Comme la transformation est irréversible, il y a création d'entropie, donc $s_B > s_{rev}$. Par le second principe, l'irréversibilité entraîne une augmentation de l'enthalpie finale par rapport au cas idéal : $h_B > h_{rev}$ (échauffement supplémentaire).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-031",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude thermodynamique d'une inhalation, on calcule la masse d'air inhalée par la relation des gaz parfaits $m = \\frac{M P_4 V}{R T_4}$. Avec les données $V=0.5 \\times 10^{-3} \\text{ m}^3$, $P_4=10^5 \\text{ Pa}$, $T_4=291 \\text{ K}$, $R=8.314 \\text{ J.mol}^{-1}\\text{.K}^{-1}$ et $M=29 \\times 10^{-3} \\text{ kg.mol}^{-1}$, quelle est la masse d'air approximative ?",
+        "answers": [
+            "0.6 mg",
+            "0.6 g",
+            "6.0 g",
+            "60 mg"
+        ],
+        "difficulty": 4,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le calcul donne $m \\approx \\frac{29 \\times 10^{-3} \\times 10^5 \\times 0.5 \\times 10^{-3}}{8.314 \\times 291} \\approx 5.99 \\times 10^{-4} \\text{ kg}$, soit environ $0.6 \\text{ g}$. L'erreur classique est l'oubli de conversion des unités du système international (litres en $\\text{m}^3$, bars en $\\text{Pa}$ et $\\text{g/mol}$ en $\\text{kg/mol}$)."
+    },
+    {
+        "uuid": "th-032",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans un cycle frigorifique ou une pompe à chaleur, quel composant permet d'élever la pression du fluide frigorigène, entraînant corrélativement une augmentation de sa température ?",
+        "answers": [
+            "Le condenseur",
+            "Le compresseur",
+            "Le détendeur",
+            "L'évaporateur"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le compresseur reçoit un travail mécanique pour augmenter la pression du fluide. Pour un gaz, une compression adiabatique entraîne une élévation de température, ce qui est crucial pour permettre le transfert thermique vers le milieu chaud dans le condenseur."
+    },
+    {
+        "uuid": "th-033",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le fonctionnement d'une pompe à chaleur (PAC) air-eau, d'où provient l'énergie thermique absorbée par le fluide frigorigène lors de la première étape du cycle ?",
+        "answers": [
+            "Du circuit d'eau de chauffage.",
+            "De l'air extérieur.",
+            "Du travail du compresseur.",
+            "De la résistance électrique du système."
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Une PAC air-eau utilise l'évaporateur pour prélever de l'énergie thermique à la source froide, ici l'air extérieur, pour la transformer et la rejeter dans la source chaude (le circuit d'eau)."
+    },
+    {
+        "uuid": "th-034",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un fluide pur lors d'un changement d'état liquide-vapeur (sous la courbe de saturation), quelle est la relation contraignante entre la température $T$ et la pression $P$ ?",
+        "answers": [
+            "Elles sont indépendantes",
+            "Elles sont liées par une relation de saturation $P_{sat} = f(T)$",
+            "Elles sont proportionnelles selon $PV=nRT$",
+            "La pression augmente indéfiniment avec la température"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Lors d'un changement d'état, le système possède un seul degré de liberté (selon la règle des phases de Gibbs). La pression de saturation ne dépend que de la température. L'équation des gaz parfaits ne s'applique pas ici car le fluide n'est pas une phase unique."
+    },
+    {
+        "uuid": "th-035",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans un diagramme $(P, h)$ (pression-enthalpie) d'un fluide frigorigène, que représente la zone située à gauche de la courbe de saturation (courbe d'ébullition) ?",
+        "answers": [
+            "Le domaine de la vapeur surchauffée",
+            "Le domaine du liquide sous-refroidi",
+            "La zone de mélange liquide-vapeur",
+            "Le domaine critique"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans le diagramme $(P, h)$, la zone à gauche de la cloche est celle du liquide. À l'intérieur de la cloche, on trouve le mélange, et à droite, la vapeur."
+    },
+    {
+        "uuid": "th-036",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans l'étude théorique d'un cycle frigorifique, quelle est l'hypothèse simplificatrice classique appliquée au détendeur ?",
+        "answers": [
+            "Une transformation isentropique ($\\Delta s = 0$)",
+            "Une transformation isenthalpique ($\\Delta h = 0$)",
+            "Une transformation isobare ($\\Delta P = 0$)",
+            "Une transformation isotherme ($\\Delta T = 0$)"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le détendeur est une vanne de laminage. C'est une transformation adiabatique sans travail utile, ce qui conduit, selon le premier principe pour un système ouvert, à la conservation de l'enthalpie ($h_{entrée} = h_{sortie}$)."
+    },
+    {
+        "uuid": "th-037",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre d'une compression adiabatique réversible d'un gaz parfait (modèle de transformation polytropique avec $k=1.5$), si le taux de compression est $r = V_1/V_2 = 6$ et $P_1 = 3 \\text{ bar}$, quelle est la pression finale $P_2$ ?",
+        "answers": [
+            "3 bar (compression impossible)",
+            "9 bar",
+            "18 bar",
+            "44 bar"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 3,
+        "subject": "physique",
+        "explication": "Pour une transformation isentropique, $P_1 V_1^k = P_2 V_2^k$, donc $P_2 = P_1 \\times r^k$. Avec $r=6$ et $k=1.5$, $P_2 = 3 \\times 6^{1.5} \\approx 3 \\times 14.7 \\approx 44 \\text{ bar}$. Les erreurs fréquentes sont l'oubli de l'exposant $k$ ou une confusion avec l'isotherme ($P_2 = P_1 \\times r$)."
+    },
+    {
+        "uuid": "th-038",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un compresseur adiabatique, l'enthalpie massique à l'entrée est $h_1 = 400 \\text{ kJ/kg}$ et à la sortie $h_2 = 450 \\text{ kJ/kg}$. Quel est le travail massique $w$ reçu par le fluide ?",
+        "answers": [
+            "-50 kJ/kg",
+            "50 kJ/kg",
+            "850 kJ/kg",
+            "500 kJ/kg"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "D'après le premier principe pour un système ouvert en régime permanent sans variation d'énergie cinétique ni thermique : $w = \\Delta h = h_2 - h_1$. Ici $w = 450 - 400 = 50 \\text{ kJ/kg}$. Le signe positif indique un travail reçu par le système."
+    },
+    {
+        "uuid": "th-039",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "D'après le second principe de la thermodynamique, que peut-on dire de l'entropie créée $S_{créée}$ au cours d'un cycle de machine frigorifique réelle ?",
+        "answers": [
+            "Elle est nulle car le cycle est un cycle",
+            "Elle est négative car le système rejette de la chaleur",
+            "Elle est strictement positive à cause des irréversibilités",
+            "Elle dépend de la température de la source chaude"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Le second principe stipule que pour tout processus réel, l'entropie créée est strictement positive ($S_{créée} > 0$). La variation d'entropie du système sur un cycle est nulle, mais le bilan d'entropie inclut le terme de création lié aux frottements et transferts thermiques irréversibles."
+    },
+    {
+        "uuid": "th-040",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la valeur de l'enthalpie de vaporisation (chaleur latente) d'un fluide pur au point critique ?",
+        "answers": [
+            "Elle est maximale",
+            "Elle est nulle",
+            "Elle est infinie",
+            "Elle est égale à l'enthalpie de la phase liquide"
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Au point critique, les phases liquide et vapeur deviennent indiscernables. Il n'y a plus de changement d'état au sens thermodynamique : l'enthalpie de vaporisation devient donc nulle."
+    },
+    {
+        "uuid": "th-041",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude d'un système ouvert en régime permanent, le bilan d'entropie s'écrit $\\Delta s = s_e + s_c$. Que représente le terme $s_e$ ?",
+        "answers": [
+            "La création d'entropie massique due aux irréversibilités internes.",
+            "Le flux d'entropie massique échangé avec le milieu extérieur, défini par $\\sum \\frac{q_i}{T_i}$.",
+            "L'entropie massique de sortie du fluide.",
+            "La variation d'entropie du fluide entre l'entrée et la sortie."
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le terme $s_e$ représente le flux d'entropie échangé avec les sources thermiques. Le second principe pour un système ouvert s'écrit $\\dot{S} = \\dot{S}_e + \\dot{S}_c$. En régime stationnaire, $\\dot{S}=0$, et $s_e$ correspond à la somme des transferts entropiques thermiques $\\sum \\frac{\\dot{Q}_i}{T_i}$. Attention à ne pas confondre avec $s_c$ qui est toujours positif ou nul (entropie créée)."
+    },
+    {
+        "uuid": "th-042",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le diagramme de Mollier (diagramme $(P, h)$) utilisé pour les fluides frigorigènes, comment qualifie-t-on les courbes le long desquelles le titre en vapeur $x_v$ est constant ?",
+        "answers": [
+            "Isothermes",
+            "Isotitres",
+            "Isenthalpes",
+            "Isoentropiques"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Les courbes de titre constant, ou courbes $x_v = \\text{cste}$, permettent de déterminer la proportion de vapeur dans le mélange diphasique. Elles partent du point critique et descendent dans la zone de saturation liquide-vapeur."
+    },
+    {
+        "uuid": "th-043",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un corps pur à l'état liquide incompressible, comment varie l'enthalpie massique $h$ lors d'une évolution isobare ?",
+        "answers": [
+            "Elle augmente fortement avec la pression.",
+            "Elle diminue proportionnellement à la pression.",
+            "Elle est quasi-indépendante de la pression (approximativement $\\left(\\frac{\\partial h}{\\partial P}\\right)_T \\approx 0$).",
+            "Elle dépend uniquement du volume massique $v$."
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 2,
+        "explication": "Pour un liquide incompressible, le volume massique $v$ est constant. L'identité thermodynamique $dh = Tds + vdP$ montre qu'à température constante, $(\\partial h / \\partial P)_T = v - T(\\partial v / \\partial T)_P \\approx v$. Pour un liquide, $v$ est très faible, donc l'influence de la pression sur $h$ est négligeable par rapport aux variations de température."
+    },
+    {
+        "uuid": "th-044",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Le diagramme $(P, h)$ est un outil fondamental en génie frigorifique. Quel est son autre nom usuel ?",
+        "answers": [
+            "Diagramme de Clapeyron",
+            "Diagramme des frigoristes (ou diagramme de Mollier)",
+            "Diagramme de Watt",
+            "Diagramme entropique"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le diagramme $(P, h)$ est couramment appelé diagramme des frigoristes ou diagramme de Mollier (ne pas confondre avec le diagramme $(h, s)$ de la vapeur d'eau). Le diagramme de Clapeyron est le diagramme $(P, v)$."
+    },
+    {
+        "uuid": "th-045",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre d'un cycle thermodynamique, quel composant est modélisé, en première approximation, par une transformation isentropique ?",
+        "answers": [
+            "Un échangeur de chaleur (radiateur)",
+            "Une turbine ou un compresseur adiabatique réversible",
+            "Une vanne de laminage",
+            "Un évaporateur"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Une transformation isentropique signifie adiabatique ($Q=0$) et réversible. Une turbine ou un compresseur idéal, sans transfert thermique avec l'extérieur et sans frottements visqueux internes, suit une telle transformation."
+    },
+    {
+        "uuid": "th-046",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cycle d'une pompe à chaleur (PAC) recevant de l'énergie thermique d'une source froide, quel est le signe du transfert thermique $q_c$ cédé à la source chaude (la maison) ?",
+        "answers": [
+            "Positif (le système reçoit de l'énergie)",
+            "Nul (transformation adiabatique)",
+            "Négatif (le système cède de l'énergie au milieu extérieur)",
+            "Indéterminé sans connaître le travail"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 2,
+        "explication": "Par convention thermodynamique, le transfert thermique $q$ est compté positivement lorsqu'il est reçu par le système. Comme la PAC cède de la chaleur à la maison (source chaude), ce transfert sort du système, il est donc négatif."
+    },
+    {
+        "uuid": "th-047",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour une machine motrice ou réceptrice en régime d'écoulement, comment définit-on la puissance utile $P_u$ massique (ou travail technique utile) ?",
+        "answers": [
+            "$P_u = D_m \\cdot w_u$",
+            "$P_u = D_m \\cdot q$",
+            "$P_u = D_m \\cdot h$",
+            "$P_u = \\frac{w_u}{D_m}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "La puissance est le produit du débit massique $D_m$ (en $\\text{kg/s}$) par le travail massique échangé $w_u$ (en $\\text{J/kg}$). Le travail utile $w_u$ correspond au travail échangé par le système avec l'extérieur, hors travail des forces de pression aux frontières d'entrée/sortie."
+    },
+    {
+        "uuid": "th-048",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pourquoi l'efficacité réelle d'une machine thermodynamique est-elle systématiquement inférieure à celle du cycle de Carnot fonctionnant entre les mêmes sources ?",
+        "answers": [
+            "À cause de la conservation de l'énergie qui limite le rendement.",
+            "À cause de la création d'entropie $s_c > 0$ liée aux irréversibilités (frottements, détentes brutales).",
+            "Parce que le fluide de travail n'est pas un gaz parfait.",
+            "Parce que les sources de chaleur ne sont pas à température constante."
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le cycle de Carnot est le cycle théorique réversible par excellence. Toute machine réelle comporte des irréversibilités (frictions, transferts thermiques avec gradient de température fini) qui créent de l'entropie ($s_c > 0$), dégradant ainsi le rendement ou l'efficacité."
+    },
+    {
+        "uuid": "th-049",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Comment nomme-t-on le type de détente subie par un fluide au travers d'une vanne ou d'un capillaire, caractérisée par une transformation adiabatique sans travail utile ?",
+        "answers": [
+            "Détente de Joule-Gay Lussac",
+            "Détente de Joule-Thomson (laminage)",
+            "Détente adiabatique réversible",
+            "Détente isochore"
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le passage à travers une vanne est une transformation de laminage. En régime permanent, le premier principe pour les systèmes ouverts avec $q=0$ et $w_u=0$ impose $\\Delta h = 0$. C'est une détente isenthalpique, typique de l'effet Joule-Thomson."
+    },
+    {
+        "uuid": "th-050",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pourquoi, lors du calcul du rendement maximal (Carnot) d'une machine, utilise-t-on uniquement les températures des sources et non les enthalpies du fluide ?",
+        "answers": [
+            "Car l'efficacité de Carnot est une limite universelle imposée par le second principe, indépendante de la nature du fluide.",
+            "Car les enthalpies ne sont pas définies pour les machines de Carnot.",
+            "Car le diagramme $(P, h)$ n'est pas applicable aux cycles théoriques.",
+            "C'est un choix arbitraire pour simplifier les calculs."
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "Le rendement de Carnot $\\eta_C = 1 - T_f/T_c$ découle directement de l'inégalité de Clausius appliquée à tout cycle fonctionnant entre deux thermostats. C'est une borne théorique thermodynamique qui ne dépend que des températures extrêmes, indépendamment du fluide caloporteur utilisé."
+    },
+    {
+        "uuid": "th-051",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude d'un cycle frigorifique, comment caractériser le transfert d'énergie sous forme de travail $W$ reçu par le fluide au niveau du compresseur ?",
+        "answers": [
+            "Moteur ($W > 0$)",
+            "Résistant ($W < 0$ selon la convention habituelle de réception)",
+            "Nul ($W = 0$)",
+            "Moteur ($W < 0$ selon la convention de réception)"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Par convention thermodynamique, le travail reçu par le système est noté $W$. Pour un compresseur, le système reçoit de l'énergie mécanique du milieu extérieur pour augmenter la pression du fluide : le travail est donc résistant pour le milieu extérieur, ce qui correspond à $W < 0$ si l'on compte algébriquement le travail reçu par le système. Attention à ne pas confondre avec la puissance utile récupérée d'une turbine.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-052",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors de l'utilisation des diagrammes enthalpiques ($h, P$) ou ($h, s$) en PSI, quelle est l'unité standard de l'enthalpie massique de vaporisation $\\Delta_{vap}h$ ?",
+        "answers": [
+            "$\\text{kJ} \\cdot \\text{kg}^{-1}$",
+            "$\\text{J} \\cdot \\text{K}^{-1}$",
+            "$\\text{W} \\cdot \\text{kg}^{-1}$",
+            "$\\text{kJ} \\cdot \\text{mol}^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "En thermodynamique appliquée aux cycles, on travaille presque exclusivement avec des grandeurs massiques (par unité de masse). L'enthalpie massique s'exprime en $\\text{J} \\cdot \\text{kg}^{-1}$ ou $\\text{kJ} \\cdot \\text{kg}^{-1}$. L'unité $\\text{J} \\cdot \\text{K}^{-1}$ correspond à une capacité thermique ou une entropie, et $\\text{W} \\cdot \\text{kg}^{-1}$ à une puissance massique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-053",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Sur un diagramme des phases (type diagramme de Andrews), que représente la courbe de saturation située à gauche de la cloche (zone de basse enthalpie) ?",
+        "answers": [
+            "La courbe de liquide saturant",
+            "La courbe de vapeur saturante sèche",
+            "La courbe de sublimation",
+            "Le point critique"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "La cloche de saturation délimite le domaine diphasé. À gauche, la courbe correspond à l'état liquide où le fluide est prêt à s'évaporer (liquide saturant, titre en vapeur $x=0$). À droite, il s'agit de la courbe de vapeur saturante sèche ($x=1$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-054",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'application du premier principe en écoulement stationnaire (système ouvert), à quelle condition la variation d'énergie cinétique $\\Delta e_c = \\frac{1}{2}(v_2^2 - v_1^2)$ est-elle négligeable ?",
+        "answers": [
+            "Lorsque les vitesses d'entrée et de sortie sont sensiblement égales ($v_1 \\approx v_2$)",
+            "Lorsque le fluide est incompressible",
+            "Lorsque le débit massique est faible",
+            "Lorsque la pression est constante"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "L'approximation $\\Delta e_c \\approx 0$ n'est pas liée à la nature du fluide (liquide ou gaz) mais à la géométrie de l'appareil (ex: chambre de combustion ou échangeur) où la section de passage est choisie pour que la vitesse du fluide reste du même ordre de grandeur, rendant $\\Delta e_c$ négligeable devant la variation d'enthalpie $\\Delta h$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-055",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cycle frigorifique standard étudié en cours, quelle est la nature physique de la détente isenthalpique effectuée par le détendeur ?",
+        "answers": [
+            "Une détente réversible avec conservation de l'entropie",
+            "Une détente irréversible provoquant une chute de température marquée",
+            "Une détente isochore sans échange de travail",
+            "Une détente isotherme"
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le détendeur (souvent un simple capillaire ou une vanne) est un organe dissipatif. Le processus est supposé adiabatique ($q=0$) et sans travail utile ($w_u=0$), donc isenthalpique ($\\Delta h = 0$). Pour un fluide frigorigène, cette détente provoque une forte chute de pression et de température, essentielle pour la production de froid à l'évaporateur.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-056",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pourquoi le travail réel reçu par un compresseur est-il toujours supérieur au travail d'un compresseur isentropique idéal pour une même variation de pression ?",
+        "answers": [
+            "À cause de la loi de Laplace qui n'est pas respectée",
+            "En raison de l'existence d'irréversibilités mécaniques et thermiques",
+            "Car le fluide absorbe de la chaleur lors de la compression",
+            "À cause de la détente de Joule-Thomson"
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le cycle isentropique représente la performance limite (optimale). Un compresseur réel présente des frottements visqueux et des irréversibilités internes qui augmentent la production d'entropie ($s_2 > s_1$), ce qui nécessite un travail supplémentaire ($w_{réel} > w_{isentr}$) pour atteindre la même pression de sortie.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-057",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un système ouvert en régime stationnaire, l'expression $\\Delta h + \\Delta e_c + g \\Delta z = q + w_{u}$ est connue sous le nom de :",
+        "answers": [
+            "Premier principe de la thermodynamique pour un écoulement",
+            "Loi de Bernoulli sans frottement",
+            "Relation de Gibbs-Duhem",
+            "Équation d'état des gaz parfaits"
+        ],
+        "difficulty": 4,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "Cette équation est la forme différentielle ou intégrée du premier principe pour un système ouvert traversé par un fluide. Si l'on néglige $\\Delta h$ et les échanges thermiques, et que le fluide est incompressible, on retrouve l'équation de Bernoulli, mais l'expression générale est bien le premier principe en écoulement.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-058",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quel composant d'un cycle frigorifique peut être modélisé par une transformation isenthalpique, vérifiant ainsi $\\Delta h = 0$ sous les hypothèses adiabatique et sans travail ?",
+        "answers": [
+            "Le compresseur",
+            "Le détendeur (détente de Joule-Kelvin)",
+            "L'évaporateur",
+            "Le condenseur"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Dans un détendeur, le fluide subit une chute de pression brutale à travers un orifice. Comme il n'y a pas d'échange de chaleur ni de travail récupéré, le bilan enthalpique conduit à $\\Delta h = 0$. C'est une détente irréversible typique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-059",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la relation thermodynamique correcte entre l'entropie de vaporisation $\\Delta_{vap}s$ et l'enthalpie de vaporisation $\\Delta_{vap}h$ à la température de changement d'état $T_{sat}$ ?",
+        "answers": [
+            "$\\Delta_{vap}s = \\frac{\\Delta_{vap}h}{T_{sat}}$",
+            "$\\Delta_{vap}s = \\Delta_{vap}h \\cdot T_{sat}$",
+            "$\\Delta_{vap}s = h_V - h_L$",
+            "$\\Delta_{vap}s = \\Delta_{vap}h^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "Le changement d'état est un processus réversible s'il se produit à l'équilibre. Comme $P$ et $T$ sont constants, $\\Delta h = q_{rev}$. Or, par définition de l'entropie, $\\Delta s = \\int \\frac{\\delta q_{rev}}{T} = \\frac{q_{rev}}{T}$. On en déduit $\\Delta_{vap}s = \\frac{\\Delta_{vap}h}{T_{sat}}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-060",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le diagramme de Clapeyron ($P, v$), dans quelle zone le fluide se comporte-t-il approximativement comme un gaz parfait ?",
+        "answers": [
+            "Près du point critique",
+            "À haute température et basse pression (zone éloignée de la saturation)",
+            "À l'intérieur de la courbe de saturation",
+            "À très haute pression"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le modèle du gaz parfait suppose que les interactions intermoléculaires sont négligeables et que le volume propre des molécules est nul. Cela est valide lorsque le gaz est peu dense, donc à basse pression et haute température, loin de la zone de liquéfaction (la cloche de saturation).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-061",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude des systèmes ouverts en écoulement stationnaire, comment appelle-t-on le volume fictif fixe, délimité par une surface de contrôle, à travers lequel la matière peut transiter ?",
+        "answers": [
+            "Volume de contrôle",
+            "Surface de contrôle",
+            "Système fermé",
+            "Volume thermodynamique fermé"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "Le 'volume de contrôle' est le domaine spatial fixe utilisé pour le premier principe des systèmes ouverts. La 'surface de contrôle' désigne sa frontière, tandis qu'un 'système fermé' n'échange pas de matière avec l'extérieur, ce qui contredit l'hypothèse de travail ici.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-062",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors de l'étude d'un compresseur fonctionnant en régime permanent, on établit que la variation d'enthalpie massique $\\Delta h = h_{sortie} - h_{entree}$ est égale au travail utile massique $w_u$. Cette simplification suppose que la transformation est :",
+        "answers": [
+            "Isotherme",
+            "Adiabatique",
+            "Isenthalpique",
+            "Isobare"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "D'après le premier principe pour les systèmes ouverts, $\\Delta h = w_u + q$. Si la transformation est supposée adiabatique ($q=0$), alors $\\Delta h = w_u$. Les compresseurs industriels sont souvent modélisés comme adiabatiques car les échanges thermiques sont négligeables devant le travail mécanique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-063",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour une machine frigorifique réelle, le coefficient de performance (ou efficacité) $\\xi = Q_f / W_{consommé}$ peut-il être supérieur à 1 ?",
+        "answers": [
+            "Vrai",
+            "Faux",
+            "Uniquement si elle est réversible",
+            "Seulement si $\\Delta S = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "L'efficacité d'une machine frigorifique n'est pas limitée par 1 (contrairement au rendement d'un moteur). Il est courant d'avoir des $\\xi$ de l'ordre de 3 ou 4, car on ne transforme pas l'intégralité de la chaleur en travail, mais on déplace de l'énergie thermique au prix d'une consommation de travail.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-064",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cycle frigorifique standard (diagramme de Mollier), quel segment correspond au transfert thermique au niveau de l'évaporateur, où le fluide passe d'un état liquide/vapeur à vapeur saturante ?",
+        "answers": [
+            "AB",
+            "BC",
+            "DA",
+            "CD"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 2,
+        "explication": "Dans un cycle frigorifique classique : le compresseur est AB, le condenseur BC, le détendeur CD et l'évaporateur DA. L'évaporateur permet l'évaporation du fluide à basse pression, absorbant ainsi l'énergie thermique du milieu extérieur.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-065",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cycle frigorifique standard, quel segment correspond au condenseur, où le fluide cède de l'énergie thermique au milieu extérieur ?",
+        "answers": [
+            "AB",
+            "BC",
+            "CD",
+            "DA"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le condenseur (BC) est la phase où le fluide haute pression libère de la chaleur en se liquéfiant. AB est la compression, CD la détente isenthalpique, et DA l'évaporation.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-066",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérant une vanne de laminage (détendeur) dans un circuit frigorifique, quelle est la valeur du travail utile massique $w_u$ échangé ?",
+        "answers": [
+            "Positif (le fluide fournit du travail)",
+            "Négatif (le milieu reçoit du travail)",
+            "Nul",
+            "Il dépend de la pression d'entrée"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 2,
+        "explication": "Une vanne de laminage est un organe passif : il n'y a pas de pièce mobile fournissant ou recevant du travail. Le laminage est par ailleurs une détente isenthalpique ($h_{entrée} = h_{sortie}$), ce qui confirme l'absence de travail utile.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-067",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Le fluide frigorigène 'R134a' ($CH_2FCF_3$), souvent utilisé dans les systèmes de climatisation, appartient à quelle famille de composés ?",
+        "answers": [
+            "CFC (Chlorofluorocarbones)",
+            "HFC (Hydrofluorocarbones)",
+            "Gaz rare",
+            "Hydrocarbures purs"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le R134a est un HFC. Contrairement aux CFC, il ne contient pas d'atomes de chlore, ce qui le rend moins nocif pour la couche d'ozone, bien qu'il présente un fort pouvoir de réchauffement global.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-068",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En notant $h_4$ l'enthalpie à l'entrée de l'évaporateur et $h_1$ l'enthalpie à sa sortie, quel est le transfert thermique massique $q_e$ reçu par le fluide ?",
+        "answers": [
+            "$q_e = h_1 - h_4$",
+            "$q_e = h_2 - h_3$",
+            "$q_e = h_4 - h_1$",
+            "$q_e = h_1 + h_4$"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "Pour un système ouvert en régime stationnaire sans travail, le premier principe s'écrit $\\Delta h = q$. Ici, le fluide reçoit de l'énergie à l'évaporateur, donc $q_e = h_{sortie} - h_{entrée} = h_1 - h_4$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-069",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pourquoi une pompe à chaleur (PAC) est-elle considérée comme efficace énergétiquement pour le chauffage ?",
+        "answers": [
+            "Elle crée de l'énergie à partir de rien grâce au cycle de Carnot.",
+            "Elle transfère plus de chaleur qu'elle ne consomme de travail ($e = Q_{chaud} / W > 1$).",
+            "Elle fonctionne sans compresseur, limitant les pertes.",
+            "Le travail consommé est toujours converti en chaleur avec un rendement de 100%."
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Une PAC ne crée pas d'énergie. Elle pompe de l'énergie thermique d'un milieu froid vers un milieu chaud en consommant du travail. Le gain réside dans le fait que $Q_{chaud} = W + Q_{froid}$, donc $Q_{chaud} > W$, permettant une efficacité supérieure à l'unité.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-070",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "La puissance mécanique consommée par un compresseur est $P = D_m (h_{sortie} - h_{entree})$. Avec $h_1=405 \\text{ kJ/kg}$, $h_2=450 \\text{ kJ/kg}$ et un débit massique $D_m=0.1 \\text{ kg/s}$, quelle est la puissance consommée ?",
+        "answers": [
+            "4.5 kW",
+            "45 kW",
+            "450 W",
+            "85.5 kW"
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "$P = 0.1 \\text{ kg/s} \\times (450 - 405) \\text{ kJ/kg} = 0.1 \\times 45 \\text{ kJ/s} = 4.5 \\text{ kW}$. Attention à bien homogénéiser les unités : $1 \\text{ kJ/s} = 1 \\text{ kW}$. L'erreur classique est une mauvaise conversion de puissance ou d'unité d'enthalpie.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-071",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude thermodynamique des cycles frigorifiques via un diagramme $(P, h)$, comment se comparent les isentropes aux isothermes dans la zone gaz ?",
+        "answers": [
+            "Les isentropes sont plus raides que les isothermes dans la zone gaz.",
+            "Les isentropes sont moins raides que les isothermes.",
+            "Les isentropes sont parallèles aux isenthalpes.",
+            "Les isentropes sont toujours horizontales."
+        ],
+        "difficulty": 4,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Dans le diagramme de Mollier $(P, h)$, la pente d'une isentrope est donnée par $(\\partial P / \\partial h)_s$. Or, $dh = Tds + vdP$, donc à $s$ constant, $dh = vdP$, soit $(\\partial P / \\partial h)_s = 1/v$. La pente d'une isotherme est liée à $(\\partial P / \\partial h)_T$. Le calcul montre que les isentropes ont une pente plus élevée (plus verticale) que les isothermes car le fluide est moins compressible à température donnée."
+    },
+    {
+        "uuid": "th-072",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la définition thermodynamique fondamentale de l'enthalpie massique $h$ pour un système fermé ou en écoulement ?",
+        "answers": [
+            "$h = u + Pv$",
+            "$h = u - Ts$",
+            "$h = q + w$",
+            "$h = u + Ts$"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Par définition, l'enthalpie est la fonction d'état $H = U + PV$. En unités massiques, cela devient $h = u + Pv$ où $v$ est le volume massique. L'expression $u - Ts$ correspond à l'énergie libre de Helmholtz $f$."
+    },
+    {
+        "uuid": "th-073",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors d'un transfert thermique dans un échangeur en régime permanent, le transfert thermique massique est $Q = m(h_3 - h_2)$. Avec $m = 0.6$ g, $h_3 = 525$ kJ/kg et $h_2 = 490$ kJ/kg, calculez $Q$ en Joules :",
+        "answers": [
+            "21 J",
+            "210 J",
+            "2.1 J",
+            "2100 J"
+        ],
+        "difficulty": 4,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Attention aux unités : $m = 0.6 \\text{ g} = 0.6 \\times 10^{-3} \\text{ kg}$. La variation d'enthalpie est $\\Delta h = 525 - 490 = 35 \\text{ kJ/kg} = 35000 \\text{ J/kg}$. Le transfert thermique est $Q = m \\times \\Delta h = 0.6 \\times 10^{-3} \\times 35000 = 21 \\text{ J}$."
+    },
+    {
+        "uuid": "th-074",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la condition nécessaire pour appliquer le premier principe sous la forme $\\Delta h = q$ dans l'étude d'un échangeur thermique ?",
+        "answers": [
+            "Écoulement stationnaire et aucun travail utile ($w_u = 0$).",
+            "Le fluide doit être un gaz parfait.",
+            "La transformation doit être réversible.",
+            "Le fluide doit être un liquide incompressible."
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le premier principe en système ouvert pour un écoulement stationnaire s'écrit $\\Delta(h + c^2/2 + gz) = q + w_u$. En négligeant les variations d'énergie cinétique et potentielle et en supposant l'absence de travail utile (pas de turbine/compresseur), on obtient bien $\\Delta h = q$."
+    },
+    {
+        "uuid": "th-075",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans l'étude d'un cycle à compression de vapeur, pourquoi la compression réelle entre deux points A et B est-elle considérée comme irréversible dans un diagramme $(P, h)$ ?",
+        "answers": [
+            "Le point B n'est pas sur l'isentrope passant par A.",
+            "La pression augmente durant la transformation.",
+            "Le fluide utilisé est un fluide réel (ammoniac).",
+            "La température augmente lors de la compression."
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Une compression réversible et adiabatique est isentropique ($s = \\text{cste}$). Dans un diagramme $(P, h)$, si la compression réelle est irréversible, il y a création d'entropie, ce qui déplace le point de sortie B vers la droite de l'isentrope théorique."
+    },
+    {
+        "uuid": "th-076",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour refroidir l'intérieur d'une enceinte (système frigorifique), où le cycle rejette-t-il la chaleur absorbée ?",
+        "answers": [
+            "Vers la source froide.",
+            "Vers l'extérieur (source chaude).",
+            "Vers le compresseur.",
+            "Vers l'évaporateur."
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un réfrigérateur ou climatiseur prélève de la chaleur à la source froide (l'intérieur) pour la rejeter vers la source chaude (l'extérieur) grâce à un apport de travail électrique au compresseur."
+    },
+    {
+        "uuid": "th-077",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle propriété thermodynamique est conservée lors d'une détente de Joule-Thomson (détente dans un détendeur adiabatique sans travail) ?",
+        "answers": [
+            "La température ($T = \\text{cste}$).",
+            "L'enthalpie ($h = \\text{cste}$).",
+            "La pression ($P = \\text{cste}$).",
+            "L'entropie ($s = \\text{cste}$)."
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La détente de Joule-Thomson est une transformation isenthalpique. Puisqu'il n'y a pas d'échange de chaleur ($q=0$) ni de travail ($w=0$) et que les variations d'énergie cinétique sont négligées, le premier principe impose $\\Delta h = 0$."
+    },
+    {
+        "uuid": "th-078",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Que nous enseigne le second principe de la thermodynamique sur l'entropie $S$ d'un système isolé subissant une transformation réelle ?",
+        "answers": [
+            "Elle reste constante.",
+            "Elle diminue.",
+            "Elle augmente.",
+            "Elle est nulle."
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Le second principe stipule que pour toute transformation réelle (irréversible) d'un système isolé, la variation d'entropie est strictement positive : $\\Delta S = S_{\\text{créée}} > 0$. Elle n'est constante que pour une transformation réversible."
+    },
+    {
+        "uuid": "th-079",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans un diagramme $(P, h)$, comment se situent les courbes de titre en vapeur saturante $x=0$ (liquide saturé) et $x=1$ (vapeur sèche) ?",
+        "answers": [
+            "Elles forment la courbe de saturation (en cloche).",
+            "Elles sont des droites horizontales.",
+            "Elles sont des droites verticales.",
+            "Elles sont confondues avec les isothermes."
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La zone diphasique dans le diagramme $(P, h)$ est délimitée par la courbe de saturation. La branche de gauche correspond à $x=0$ (liquide saturé) et la branche de droite à $x=1$ (vapeur sèche). Ces courbes se rejoignent au point critique."
+    },
+    {
+        "uuid": "th-080",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En thermodynamique des systèmes ouverts, qu'est-ce qu'une 'surface de contrôle' ?",
+        "answers": [
+            "Une paroi physique réelle en métal.",
+            "Une surface fictive délimitant le volume de contrôle.",
+            "Une surface géométrique toujours sphérique.",
+            "La surface extérieure du fluide uniquement."
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Une surface de contrôle est une frontière (imaginaire ou réelle) qui définit le volume de contrôle dans lequel on effectue un bilan de masse et d'énergie. Elle permet de définir les échanges avec l'extérieur."
+    },
+    {
+        "uuid": "th-081",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude d'une machine thermique réelle décrite dans l'exercice 3, quelle est la valeur de l'entropie créée $S_{créée}$ sur la totalité du cycle ?",
+        "answers": [
+            "$0,90 \\text{ J/K}$",
+            "$9,0 \\text{ J/K}$",
+            "$0 \\text{ J/K}$",
+            "$-0,90 \\text{ J/K}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "Le second principe stipule que pour un cycle, $\\Delta S_{cycle} = 0 = \\sum \\frac{Q_i}{T_i} + S_{créée}$. Si le processus est irréversible (cas réel), $S_{créée} > 0$. Une valeur négative est physiquement impossible (violation du second principe), et $0 \\text{ J/K}$ correspondrait au cas idéal (cycle de Carnot).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-082",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour une pompe à chaleur (PAC) fonctionnant en régime permanent, que signifie physiquement un Coefficient de Performance (COP) de 4 ?",
+        "answers": [
+            "Elle consomme 4 fois plus d'énergie électrique qu'elle ne fournit de chaleur.",
+            "Elle fournit 4 fois plus de chaleur à la source chaude qu'elle ne consomme de travail électrique.",
+            "Son rendement thermodynamique théorique est de 4 %.",
+            "La quantité de chaleur extraite de la source froide est 4 fois supérieure au travail reçu."
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Par définition, pour une PAC, le COP est le rapport entre l'énergie utile (chaleur cédée à la source chaude $Q_c$) et l'énergie payante (travail électrique $W$). $COP = Q_c / |W|$. Un COP de 4 signifie que pour $1 \\text{ kWh}$ électrique, on transfère $4 \\text{ kWh}$ de chaleur.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-083",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le bilan énergétique de l'exercice 4, la température de la source chaude $T_c$, utilisée pour calculer l'efficacité maximale théorique, est de :",
+        "answers": [
+            "$25 \\text{ °C}$",
+            "$35 \\text{ °C}$",
+            "$45 \\text{ °C}$",
+            "$298 \\text{ K}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "Il est crucial de vérifier les données de l'énoncé. Ici, $25 \\text{ °C}$ est la valeur standard pour les calculs de cycles frigorifiques domestiques. Attention : lors des calculs d'entropie, il est impératif de convertir cette température en Kelvin : $T(K) = T(°C) + 273,15$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-084",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quel fluide frigorigène est privilégié dans l'exercice 4 pour ses propriétés thermodynamiques et son faible impact environnemental ?",
+        "answers": [
+            "Le R22 (dichlorodifluorométhane)",
+            "L'ammoniac (R717)",
+            "L'air",
+            "Le R134a"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le R717 (ammoniac) est un fluide naturel avec un GWP (Global Warming Potential) de 0 et des performances thermodynamiques excellentes, souvent utilisé dans les installations industrielles malgré sa toxicité.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-085",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un corps condensé (liquide ou solide) incompressible, quelle est l'expression de la variation d'enthalpie massique $\\Delta h$ ?",
+        "answers": [
+            "$c \\Delta T + v \\Delta P$",
+            "$c \\Delta T$",
+            "$v \\Delta P$",
+            "$c \\Delta T + P \\Delta v$"
+        ],
+        "difficulty": 4,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "Par définition $dh = c_p dT + [v - T(\\frac{\\partial v}{\\partial T})_P] dP$. Pour un corps incompressible, $\\frac{\\partial v}{\\partial T} = 0$, donc $dh = c_p dT + v dP$. Si on néglige souvent le terme $v \\Delta P$ devant $c \\Delta T$ dans les calculs simples, l'expression complète reste $c \\Delta T + v \\Delta P$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-086",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Sur un diagramme des frigoristes (diagramme de Mollier ou $P-h$), où se situe le point critique par rapport à la courbe de saturation (la cloche) ?",
+        "answers": [
+            "À la base de la cloche (pressions les plus faibles).",
+            "Au sommet de la cloche.",
+            "À l'intérieur de la zone diphasique.",
+            "Sur l'isotherme de sublimation."
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le point critique représente l'état au-delà duquel il n'y a plus de distinction entre liquide et gaz. Sur le diagramme $(P, h)$, il correspond au sommet de la courbe de saturation, là où les branches liquide saturé et vapeur saturée se rejoignent.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-087",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans l'exercice 2, la température au point (3) est de $0 \\text{ °C}$. Sachant que le fluide est en état de vapeur surchauffée de $10 \\text{ °C}$ par rapport à sa température de saturation, quelle est la température de saturation $T_{sat}$ ?",
+        "answers": [
+            "$+10 \\text{ °C}$",
+            "$-10 \\text{ °C}$",
+            "$0 \\text{ °C}$",
+            "$+5 \\text{ °C}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "La vapeur surchauffée est définie par $T = T_{sat} + \\text{surchauffe}$. Ici, $0 = T_{sat} + 10$. En isolant $T_{sat}$, on obtient $T_{sat} = 0 - 10 = -10 \\text{ °C}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-088",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors du passage d'un fluide au travers d'un détendeur (transformation isenthalpique), quelle propriété thermodynamique reste constante ?",
+        "answers": [
+            "L'entropie $s$.",
+            "L'enthalpie massique $h$.",
+            "La température $T$.",
+            "La pression $P$."
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le préfixe 'iso-' signifie 'constant'. 'Enthalpique' fait référence à l'enthalpie $h$. Une transformation isenthalpique est une détente (généralement adiabatique et sans travail échangé) où l'énergie totale du fluide se conserve sous forme d'enthalpie.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-089",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un gaz parfait, que stipule la première loi de Joule concernant les fonctions d'état ?",
+        "answers": [
+            "L'énergie interne $u$ et l'enthalpie $h$ ne dépendent que de la température $T$.",
+            "La pression $P$ ne dépend que de la température $T$ (indépendamment du volume).",
+            "L'entropie $s$ est toujours nulle lors d'une transformation réversible.",
+            "L'enthalpie $h$ dépend de la pression $P$ et de la température $T$."
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "La première loi de Joule est fondamentale pour les gaz parfaits : $u(T)$ et $h(T) = u(T) + RT$. Cela signifie que pour toute transformation, $\\Delta u = c_v \\Delta T$ et $\\Delta h = c_p \\Delta T$, quelle que soit l'évolution de la pression ou du volume.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-090",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est l'unité SI du débit massique $D_m$ dans une section de conduite ?",
+        "answers": [
+            "$\\text{kg/s}$",
+            "$\\text{m}^3\\text{/s}$",
+            "$\\text{kg/m}^3$",
+            "$\\text{kg/m}^2\\text{/s}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "Le débit massique mesure une masse traversant une section par unité de temps : $D_m = \\frac{dm}{dt}$. Son unité est donc le rapport de l'unité de masse par l'unité de temps, soit $\\text{kg/s}$. Le débit volumique serait en $\\text{m}^3\\text{/s}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-091",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre d'une étude d'écoulement stationnaire en conduite, un fluide subit une chute de pression passant de $P_{in}=10$ bar à $P_{out}=1$ bar. Quelle est la transformation thermodynamique associée ?",
+        "answers": [
+            "Une compression adiabatique",
+            "Une détente",
+            "Une combustion isobare",
+            "Une liquéfaction totale"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Par définition, une détente correspond à une diminution de la pression d'un fluide. Une compression, à l'inverse, augmente la pression. L'échauffement est une variation de température et ne décrit pas l'évolution de la pression.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-092",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans l'étude thermodynamique d'une machine thermique, pourquoi l'efficacité réversible (ou théorique) est-elle systématiquement supérieure à l'efficacité réelle observée ?",
+        "answers": [
+            "Parce qu'elle néglige les irréversibilités (frottements, gradients de température, dissipation visqueuse).",
+            "Parce que les calculs sont simplifiés par l'hypothèse du gaz parfait.",
+            "Car le fluide de travail change de nature chimique lors du cycle.",
+            "Car on néglige la variation d'énergie cinétique dans le bilan."
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "Le second principe de la thermodynamique stipule que tout processus réel génère de l'entropie ($S_{créée} > 0$), ce qui dégrade l'efficacité du système. Le cas réversible est une borne idéale théorique qui ignore ces pertes dissipatives internes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-093",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans un diagramme enthalpique (diagramme de Mollier), quelle est l'allure des lignes isobares (lignes de pression constante) ?",
+        "answers": [
+            "Verticales",
+            "Horizontales",
+            "Elliptiques",
+            "Paraboliques"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Le diagramme enthalpique représente l'enthalpie massique $h$ en abscisse et la pression $P$ en ordonnée (souvent en échelle logarithmique). Par définition, une ligne isobare correspond à une valeur de $P$ constante, donc une droite parallèle à l'axe des abscisses (horizontale).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-094",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre du premier principe pour un système ouvert, comment s'exprime l'énergie cinétique massique $e_c$ d'un fluide de vitesse $v$ ?",
+        "answers": [
+            "$\\frac{1}{2} v^2$",
+            "$\\frac{1}{2} m v^2$",
+            "$g z$",
+            "$v^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "L'énergie cinétique est $E_c = \\frac{1}{2} m v^2$. L'énergie cinétique massique est obtenue en divisant par la masse $m$, soit $e_c = E_c / m = \\frac{1}{2} v^2$. L'expression $g z$ correspond à l'énergie potentielle massique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-095",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérant les propriétés de la vapeur d'eau, si un état est caractérisé par ($P=3$ bar, $T=50$ °C), quelle est la nature probable du fluide (sachant que $P_{sat}(50°C) \\approx 0,12$ bar) ?",
+        "answers": [
+            "Vapeur sèche",
+            "Liquide sous-refroidi (liquide)",
+            "Mélange diphasique",
+            "Gaz parfait"
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "À une température donnée, si la pression du fluide est supérieure à la pression de saturation ($P > P_{sat}(T)$), le fluide se trouve dans l'état liquide (sous-refroidi). Ici, $3 \\text{ bar} > 0,12 \\text{ bar}$, le fluide est donc liquide.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-096",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un système thermodynamique subissant une transformation cyclique, quelle est la variation de la fonction d'état enthalpie $H$ ?",
+        "answers": [
+            "$\\Delta H > 0$",
+            "$\\Delta H = 0$",
+            "$\\Delta H < 0$",
+            "Dépend du fluide"
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "L'enthalpie $H$ est une fonction d'état. Pour tout système effectuant un cycle (retour à l'état initial), la variation de n'importe quelle fonction d'état est nulle par définition : $\\oint dH = 0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-097",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors d'une détente isenthalpique (type détente de Joule-Thomson) d'un gaz parfait, que peut-on dire de sa température ?",
+        "answers": [
+            "Elle diminue.",
+            "Elle reste constante.",
+            "Elle augmente.",
+            "Elle dépend de la pression initiale."
+        ],
+        "difficulty": 3,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "Pour un gaz parfait, l'enthalpie $H$ ne dépend que de la température ($H = n C_p T$). Si la transformation est isenthalpique ($\\Delta H = 0$), alors nécessairement $\\Delta T = 0$. La température reste donc constante.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-098",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cycle d'une machine frigorifique, comment s'effectue le transfert thermique au niveau de l'évaporateur (source froide) ?",
+        "answers": [
+            "Le fluide reçoit de l'énergie thermique de la source froide.",
+            "Le fluide cède de l'énergie thermique à la source froide.",
+            "Le transfert thermique est nul (adiabatique).",
+            "Le transfert est compensé par un travail mécanique."
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "Le but d'une machine frigorifique est de pomper de la chaleur d'une enceinte froide pour la rejeter vers l'extérieur. À l'évaporateur, le fluide frigorigène s'évapore en prélevant la chaleur du milieu extérieur (source froide) : le fluide reçoit donc de l'énergie thermique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-099",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans les conditions standards d'un exercice de thermodynamique industrielle, quelle température est généralement prise pour référence de l'eau environnante (ambiance) ?",
+        "answers": [
+            "0 °C",
+            "20 °C",
+            "37 °C",
+            "100 °C"
+        ],
+        "difficulty": 1,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 1,
+        "explication": "En physique et ingénierie, la température ambiante standard utilisée pour les bilans thermiques est conventionnellement fixée à $20 \\text{ °C}$ (soit $293,15 \\text{ K}$), sauf indication contraire dans l'énoncé.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "th-100",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la nuance entre la puissance thermique $P_{th}$ et le flux thermique $\\Phi$ dans le cadre des bilans d'énergie ?",
+        "answers": [
+            "Ce sont des grandeurs équivalentes, toutes deux exprimées en Watts ($W$).",
+            "$P_{th}$ est en Joules ($J$) et $\\Phi$ en Watts ($W$).",
+            "$\\Phi$ correspond au produit du débit massique par l'enthalpie.",
+            "$P_{th}$ représente une puissance massique."
+        ],
+        "difficulty": 2,
+        "chapter": "Principes de la thermodynamique et bilans d'énergie",
+        "correct_answer_index": 0,
+        "explication": "Le flux thermique $\\Phi$ (ou $\\dot{Q}$) et la puissance thermique $P_{th}$ désignent tous deux le transfert d'énergie thermique par unité de temps. L'unité SI commune est le Watt ($W = J/s$).",
+        "subject": "physique"
+    }
+]

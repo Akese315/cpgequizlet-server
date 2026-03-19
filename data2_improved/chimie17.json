@@ -1,0 +1,1870 @@
+[
+    {
+        "uuid": "thermo-001",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de la description des systèmes physico-chimiques, quelle est la définition exacte d'un corps pur ?",
+        "answers": [
+            "Un corps composé d'un seul type d'atome.",
+            "Un système ne contenant qu'une seule espèce chimique.",
+            "Un mélange homogène de plusieurs constituants.",
+            "Une substance qui possède une température de fusion et d'ébullition fixe sous pression constante."
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Un corps pur est défini comme un système qui ne contient qu'une seule espèce chimique, qu'il s'agisse d'atomes (ex: $He$, $Fe$) ou de molécules (ex: $H_2O$, $CO_2$). Il a une composition chimique définie et constante. L'option 1 décrit un corps simple (ex: $O_2$, $Fe$), qui est un type de corps pur mais pas la définition générale d'un corps pur. L'option 3 est la définition d'un mélange. L'option 4 est une *caractéristique* des corps purs, pas leur définition fondamentale."
+    },
+    {
+        "uuid": "thermo-002",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Afin de bien distinguer les différents types de substances, parmi les exemples suivants, lequel désigne un corps simple ?",
+        "answers": [
+            "L'eau $H_2O$",
+            "Le sel de table $NaCl$",
+            "Le diazote $N_2$",
+            "Le dioxyde de carbone $CO_2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "Un corps simple est une substance pure composée d'un seul type d'élément chimique, c'est-à-dire d'un seul type d'atome. Le diazote $N_2$ est composé uniquement d'atomes d'azote. L'eau $H_2O$, le sel de table $NaCl$ et le dioxyde de carbone $CO_2$ sont des corps composés, car ils sont formés de plusieurs types d'atomes différents liés chimiquement."
+    },
+    {
+        "uuid": "thermo-003",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors de la description d'un système thermodynamique, une variable est dite intensive si :",
+        "answers": [
+            "Elle est proportionnelle à la quantité de matière du système.",
+            "Elle est indépendante de la quantité de matière du système.",
+            "Elle double si l'on double la taille du système.",
+            "Elle dépend uniquement de l'état physique du système."
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Une variable intensive est une grandeur dont la valeur ne dépend pas de la taille ou de la quantité de matière du système. Si vous divisez un système en deux parties, les variables intensives (comme la température $T$, la pression $P$, la masse volumique $\\rho$) restent les mêmes pour chaque partie. Les options 1 et 3 décrivent des variables extensives, qui sont additives et proportionnelles à la taille du système (comme le volume $V$, l'énergie $U$, la quantité de matière $n$). L'option 4 est incorrecte car les variables intensives dépendent aussi des conditions externes (température, pression)."
+    },
+    {
+        "uuid": "thermo-004",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Parmi les grandeurs thermodynamiques suivantes, laquelle est une variable extensive ?",
+        "answers": [
+            "La température $T$",
+            "La pression $P$",
+            "Le volume $V$",
+            "La masse volumique $\\rho$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "Une variable extensive est une grandeur qui dépend de la quantité de matière du système. Si l'on augmente la quantité de matière, la valeur de la variable extensive augmente proportionnellement. Le volume $V$ est une variable extensive : si vous doublez la quantité de gaz, son volume (à $T,P$ constants) double. La température $T$, la pression $P$ et la masse volumique $\\rho$ (qui est la masse divisée par le volume, deux grandeurs extensives, donnant une grandeur intensive) sont des variables intensives."
+    },
+    {
+        "uuid": "thermo-005",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En thermodynamique chimique, quelle est la valeur conventionnelle de la pression standard $P^0$ utilisée dans la définition de l'état standard ?",
+        "answers": [
+            "$1,0 \\text{ bar} = 1,0 \\cdot 10^5 \\text{ Pa}$",
+            "$1,0 \\text{ atm} = 1,01325 \\cdot 10^5 \\text{ Pa}$",
+            "$101325 \\text{ Pa}$",
+            "$1,0 \\text{ kPa} = 1,0 \\cdot 10^3 \\text{ Pa}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Selon la convention de l'IUPAC (Union Internationale de Chimie Pure et Appliquée), la pression standard $P^0$ est fixée à $1,0 \\text{ bar}$, ce qui équivaut à $1,0 \\cdot 10^5 \\text{ Pa}$. L'ancienne convention utilisait $1,0 \\text{ atm}$ (atmosphère standard), qui correspond à $1,01325 \\cdot 10^5 \\text{ Pa}$. L'option 3 ($101325 \\text{ Pa}$) est la valeur exacte de $1 \\text{ atm}$, souvent confondue avec la pression standard actuelle. L'option 4 est une erreur d'ordre de grandeur."
+    },
+    {
+        "uuid": "thermo-006",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour définir l'état standard d'une espèce en phase gazeuse, et pour simplifier les calculs en chimie physique, comment considère-t-on les gaz ?",
+        "answers": [
+            "Comme des gaz réels de Van der Waals.",
+            "Comme des gaz parfaits.",
+            "Comme des fluides incompressibles.",
+            "Comme des gaz idéaux en phase d'équilibre liquide-vapeur."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Dans la définition de l'état standard pour un gaz, on considère qu'il se comporte comme un gaz parfait. Cela simplifie considérablement les calculs et est une approximation raisonnable pour la plupart des gaz à la pression standard de $1 \\text{ bar}$. Les gaz réels (option 1) suivent des modèles plus complexes comme l'équation de Van der Waals, mais ils ne sont pas utilisés pour la définition de l'état standard. Les fluides incompressibles (option 3) sont un modèle pour les liquides et les solides. L'option 4 ajoute un contexte d'équilibre qui n'est pas la propriété générale de l'état standard d'un gaz pur."
+    },
+    {
+        "uuid": "thermo-007",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En thermodynamique chimique, que signifie l'indice '0' en exposant d'une grandeur thermodynamique molaire (par exemple, l'enthalpie molaire $H_m^0$ ou l'enthalpie libre molaire $G_m^0$) ?",
+        "answers": [
+            "La grandeur est calculée à la température de $0 \\text{ K}$.",
+            "La grandeur est relative à l'état standard.",
+            "La grandeur est nulle par définition.",
+            "La grandeur est une valeur de référence arbitraire choisie pour le système."
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'exposant '0' (ou parfois un '°') indique que la grandeur thermodynamique est considérée dans l'état standard. L'état standard d'une espèce est défini comme l'état de corps pur sous la pression standard $P^0 = 1 \\text{ bar}$ et dans son état physique le plus stable à la température $T$ spécifiée (qui n'est pas nécessairement $0 \\text{ K}$). L'option 1 est une confusion courante avec le zéro absolu. L'option 3 est fausse; seules certaines grandeurs de formation de corps simples sont nulles par convention. L'option 4 est trop vague et ne capture pas la rigueur de la définition de l'état standard."
+    },
+    {
+        "uuid": "thermo-008",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérant un mélange de gaz parfaits de volume $V$ et à température $T$, comment définit-on la pression partielle $p_i$ du constituant $i$ ?",
+        "answers": [
+            "$p_i = \\frac{n_{tot}RT}{V}$",
+            "$p_i = \\frac{n_i RT}{V}$",
+            "$p_i = \\frac{V}{n_i RT}$",
+            "$p_i = n_i \\cdot P_{tot}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La pression partielle $p_i$ d'un gaz $i$ dans un mélange de gaz parfaits est définie comme la pression qu'exercerait ce gaz s'il était seul à occuper le volume $V$ total du mélange, à la même température $T$. Conformément à la loi des gaz parfaits, $PV = nRT$, donc $p_i = \\frac{n_i RT}{V}$. L'option 1 est la pression totale du mélange. L'option 3 est dimensionnellement incorrecte. L'option 4 mélange la quantité de matière avec la pression totale de manière incorrecte (il s'agirait de la fraction molaire $x_i$ et non $n_i$ pour obtenir $p_i = x_i P_{tot}$, qui est la loi de Dalton)."
+    },
+    {
+        "uuid": "thermo-009",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un mélange de gaz parfaits à une température $T$ et occupant un volume $V$, quel est l'énoncé correct de la loi de Dalton concernant la pression partielle $p_i$ d'un constituant $i$ et la pression totale $P_{tot}$ ?",
+        "answers": [
+            "$p_i = x_i \\cdot P_{tot}$",
+            "$P_{tot} = \\prod_{i} p_i$",
+            "$x_i = P_{tot} / p_i$",
+            "$p_i = P_{tot} / n_i$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "La loi de Dalton pour les gaz parfaits peut être énoncée de deux manières principales: la pression totale $P_{tot}$ d'un mélange de gaz parfaits est égale à la somme des pressions partielles de chaque gaz ($P_{tot} = \\sum_{i} p_i$), et la pression partielle $p_i$ d'un constituant est égale à sa fraction molaire $x_i$ multipliée par la pression totale du mélange ($p_i = x_i \\cdot P_{tot}$). L'option 1 est la formulation correcte liant pression partielle, fraction molaire et pression totale. L'option 2 utilise un produit au lieu d'une somme. Les options 3 et 4 sont des erreurs de manipulation algébrique ou de formule."
+    },
+    {
+        "uuid": "thermo-010",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En thermodynamique des réactions chimiques, pour une réaction se déroulant à température $T$ et pression $P$ constantes, l'enthalpie de réaction $\\Delta_r H$ est définie par :",
+        "answers": [
+            "$\\Delta_r H = \\left( \\frac{\\partial H}{\\partial \\xi} \\right)_{T,P}$",
+            "$\\Delta_r H = \\left( \\frac{\\partial H}{\\partial \\xi} \\right)_{V,T}$",
+            "$\\Delta_r H = \\frac{H}{\\xi}$",
+            "$\\Delta_r H = \\left( \\frac{\\partial U}{\\partial \\xi} \\right)_{T,V}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "L'enthalpie de réaction $\\Delta_r H$ représente la variation d'enthalpie du système lorsque l'avancement de la réaction $\\xi$ progresse d'une mole, à température $T$ et pression $P$ constantes. Elle est donc formellement définie par la dérivée partielle de l'enthalpie $H$ par rapport à l'avancement $\\xi$, sous ces conditions: $\\Delta_r H = \\left( \\frac{\\partial H}{\\partial \\xi} \\right)_{T,P}$. L'option 2 est incorrecte car les conditions de constante $V, T$ sont celles pour l'énergie interne de réaction ($\\Delta_r U$). L'option 3 est dimensionnellement incorrecte ($\\Delta_r H$ est en $\\text{J} \\cdot \\text{mol}^{-1}$, $H$ en $\\text{J}$, $\\xi$ en $\\text{mol}$). L'option 4 est la définition de l'énergie interne de réaction $\\Delta_r U$, et non de l'enthalpie de réaction."
+    },
+    {
+        "uuid": "thermo-011",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de la description des systèmes physico-chimiques, lorsque l'on caractérise l'énergie associée à une réaction, quelle est l'unité SI de l'enthalpie standard de réaction $\\Delta_r H^0$ ?",
+        "answers": [
+            "$\\text{J}$",
+            "$\\text{J.mol}^{-1}$",
+            "$\\text{W.mol}^{-1}$",
+            "$\\text{J.mol}^{-1}\\text{.K}^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'enthalpie standard de réaction $\\Delta_r H^0$ représente l'énergie thermique échangée par mole d'avancement de la réaction. Son unité est donc une énergie par quantité de matière, soit le Joule par mole ($\\text{J.mol}^{-1}$). \n\n*   $\\text{J}$ serait l'unité d'une énergie totale ou d'un travail, pas d'une grandeur molaire de réaction.\n*   $\\text{W.mol}^{-1}$ est incorrect car le Watt (W) est une unité de puissance ($\\text{J.s}^{-1}$), et non d'énergie.\n*   $\\text{J.mol}^{-1}\\text{.K}^{-1}$ est l'unité d'une capacité thermique molaire (comme $C_p$), mesurant la quantité d'énergie nécessaire pour élever la température d'une mole de substance d'un Kelvin."
+    },
+    {
+        "uuid": "thermo-012",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors de l'étude de l'équilibre des réactions chimiques et de l'établissement des diagrammes d'Ellingham, en quoi consiste l'approximation principale qui simplifie l'expression de l'enthalpie libre standard de réaction $\\Delta_r G^0(T)$ ?",
+        "answers": [
+            "Négliger les variations de pression.",
+            "Supposer que l'enthalpie standard de réaction est indépendante de la température.",
+            "Considérer que tous les réactifs sont des gaz parfaits.",
+            "Négliger les variations des capacités thermiques des espèces."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'approximation d'Ellingham consiste à considérer que l'enthalpie standard de réaction $\\Delta_r H^0$ et l'entropie standard de réaction $\\Delta_r S^0$ sont indépendantes de la température dans le domaine d'étude. Cette simplification découle de la négligence des variations des capacités thermiques des espèces avec la température (loi de Kirchhoff simplifiée). Ainsi, l'expression de l'enthalpie libre standard de réaction $\\Delta_r G^0(T) = \\Delta_r H^0 - T\\Delta_r S^0$ devient une fonction linéaire de la température, ce qui facilite la construction des diagrammes d'Ellingham.\n\n*   Négliger les variations de pression n'est pas l'approximation centrale d'Ellingham, qui s'applique à des conditions standard (pression de référence).\n*   Considérer que tous les réactifs sont des gaz parfaits est une hypothèse pour le calcul des activités ou fugacités, mais pas l'approximation d'Ellingham sur la dépendance en température.\n*   Négliger les variations des capacités thermiques des espèces est la raison pour laquelle $\\Delta_r H^0$ et $\\Delta_r S^0$ sont considérées comme constantes en température."
+    },
+    {
+        "uuid": "thermo-013",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérons un système subissant une transformation quasi-statique, monobare (à pression constante $P_{ext} = P = \\text{constante}$) et isotherme (à température constante $T = \\text{constante}$). Dans ces conditions, le transfert thermique $Q$ reçu par le système est égal à :",
+        "answers": [
+            "$\\Delta U$",
+            "$\\Delta H$",
+            "$\\Delta S$",
+            "$T\\Delta S$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Pour une transformation monobare (à pression constante), le travail des forces de pression est $W = -P_{ext}\\Delta V = -P\\Delta V$. \nLe premier principe de la thermodynamique stipule que $\\Delta U = Q + W$. En substituant $W$, nous obtenons $\\Delta U = Q - P\\Delta V$, ou $Q = \\Delta U + P\\Delta V$.\nPar définition, l'enthalpie est $H = U + PV$. Pour une transformation à pression constante $P$, la variation d'enthalpie est $\\Delta H = \\Delta(U+PV) = \\Delta U + P\\Delta V + V\\Delta P$. Puisque $\\Delta P = 0$, on a $\\Delta H = \\Delta U + P\\Delta V$. \nEn comparant les expressions de $Q$ et $\\Delta H$, on trouve donc que $Q = \\Delta H$ pour une transformation monobare.\n\n*   $\\Delta U$ est égal à $Q$ uniquement pour une transformation isochore (à volume constant) si aucun autre travail n'est mis en jeu.\n*   $\\Delta S$ est une variation d'entropie, ce n'est pas une énergie, donc les unités ne correspondent pas.\n*   $T\\Delta S$ est le transfert thermique $Q_{réversible}$ pour une transformation isotherme réversible. Bien que la transformation soit isotherme, la question demande $Q$, qui est égal à $\\Delta H$ sous les conditions monobares, même si la transformation n'est pas explicitement réversible."
+    },
+    {
+        "uuid": "thermo-014",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte des réactions chimiques et de leurs bilans énergétiques, si l'enthalpie standard de réaction $\\Delta_r H^0$ est strictement inférieure à zéro, la réaction est dite :",
+        "answers": [
+            "Endothermique",
+            "Athermique",
+            "Exothermique",
+            "Spontanée"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "Une réaction est dite exothermique si elle libère de l'énergie sous forme de chaleur vers le milieu extérieur. Cela se traduit par une variation négative de l'enthalpie standard de réaction : $\\Delta_r H^0 < 0$.\n\n*   Une réaction endothermique absorbe de la chaleur du milieu extérieur, ce qui correspond à $\\Delta_r H^0 > 0$.\n*   Une réaction athermique est une réaction pour laquelle $\\Delta_r H^0 = 0$, c'est-à-dire qu'elle n'échange pas de chaleur nette.\n*   Le caractère spontané d'une réaction est déterminé par l'enthalpie libre de réaction $\\Delta_r G^0$, et non directement par $\\Delta_r H^0$. Une réaction est spontanée si $\\Delta_r G^0 < 0$."
+    },
+    {
+        "uuid": "thermo-015",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Par convention en thermochimie, quelle est la valeur de l'enthalpie standard de formation $\\Delta_f H^0$ d'un corps simple (élémentaire) pris dans son état standard de référence (par exemple $\\text{O}_2(\text{g})$, $\\text{C(graphite)}$, $\\text{Fe(s)}$) ?",
+        "answers": [
+            "Elle dépend de la température et de la pression.",
+            "Elle est nulle par convention.",
+            "Elle est toujours négative.",
+            "Elle est toujours positive."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "En thermochimie, l'enthalpie standard de formation $\\Delta_f H^0$ d'un corps simple dans son état standard de référence (la forme la plus stable à la température considérée et à la pression standard $P^0 = 1$ bar) est nulle par convention. Cette convention sert de référence pour le calcul des enthalpies de formation de tous les autres composés.\n\n*   Bien que l'enthalpie de formation de *composés* dépende de la température, la *convention* pour les corps simples dans leur état de référence est qu'elle est nulle à toute température.\n*   Les enthalpies de formation peuvent être positives ou négatives pour des *composés* ou pour des corps simples qui ne sont pas dans leur état standard de référence (ex: $\\Delta_f H^0(\\text{C(diamant)})$ n'est pas nulle)."
+    },
+    {
+        "uuid": "thermo-016",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En appliquant la loi de Hess, qui permet de calculer l'enthalpie standard de réaction $\\Delta_r H^0$ à partir des enthalpies standard de formation des espèces chimiques à une température donnée, quelle est la formule correcte pour une réaction de type $\\sum_{i} \\nu_i A_i = 0$ où les $\\nu_i$ sont les coefficients stoechiométriques algébriques (positifs pour les produits, négatifs pour les réactifs) ?",
+        "answers": [
+            "$\\sum_{i} \\nu_i \\Delta_f H_i^0$",
+            "$\\sum_{i} |\\nu_i| \\Delta_f H_i^0$",
+            "$\\sum_{\\text{réactifs}} \\nu_{k} \\Delta_f H_{k}^0 - \\sum_{\\text{produits}} \\nu_{j} \\Delta_f H_{j}^0$",
+            "$\\sum_{i} (\\Delta_f H_i^0)^{\\nu_i}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "La loi de Hess stipule que l'enthalpie d'une réaction est la somme des enthalpies des réactions intermédiaires. Pour le calcul de l'enthalpie standard de réaction $\\Delta_r H^0$ à partir des enthalpies standard de formation $\\Delta_f H_i^0$ des espèces, la formule correcte est la somme des enthalpies de formation des produits moins la somme des enthalpies de formation des réactifs, chacun multiplié par son coefficient stoechiométrique. \nSi $\\nu_i$ sont les coefficients stoechiométriques algébriques (positifs pour les produits et négatifs pour les réactifs), alors la formule s'écrit de manière compacte : $\\Delta_r H^0 = \\sum_{i} \\nu_i \\Delta_f H_i^0$.\n\n*   $\\sum_{i} |\\nu_i| \\Delta_f H_i^0$ est incorrect car les coefficients des réactifs devraient être négatifs.\n*   $\\sum_{\\text{réactifs}} \\nu_{k} \\Delta_f H_{k}^0 - \\sum_{\\text{produits}} \\nu_{j} \\Delta_f H_{j}^0$ a le signe inversé par rapport à la convention produits - réactifs.\n*   $\\sum_{i} (\\Delta_f H_i^0)^{\\nu_i}$ est une opération mathématique incorrecte pour le calcul d'une enthalpie de réaction."
+    },
+    {
+        "uuid": "thermo-017",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte des réactions de combustion, on définit une grandeur appelée 'température de flamme'. Qu'appelle-t-on 'température de flamme' (ou température adiabatique de flamme) ?",
+        "answers": [
+            "La température à laquelle les réactifs s'enflamment.",
+            "La température finale d'une réaction adiabatique et monobare.",
+            "La température maximale supportée par le réacteur.",
+            "La température à laquelle la réaction atteint son rendement maximal."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La température de flamme adiabatique et monobare est la température théorique maximale qu'une flamme peut atteindre. Elle est calculée en supposant que la réaction de combustion est complète, se déroule sans échange de chaleur avec l'extérieur (adiabatique) et à pression constante (monobare), et que tout le combustible est consommé pour chauffer les produits de la combustion. C'est une limite supérieure pour la température réelle d'une flamme.\n\n*   La température à laquelle les réactifs s'enflamment est la température d'auto-inflammation ou d'ignition, qui est un concept cinétique.\n*   La température maximale supportée par le réacteur est une contrainte matérielle, non une propriété intrinsèque de la flamme.\n*   Le rendement maximal d'une réaction est lié à l'équilibre chimique et à la cinétique, et non directement à la définition de la température de flamme."
+    },
+    {
+        "uuid": "thermo-018",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour déterminer la température de flamme adiabatique et monobare d'une réaction de combustion, quelle est l'équation de bilan enthalpique correcte, où $T_I$ est la température initiale des réactifs et $T_F$ est la température finale (température de flamme) ?",
+        "answers": [
+            "$\\Delta H = \\xi \\Delta_r H^0(T_I) + \\int_{T_I}^{T_F} C_{p,syst} dT = 0$",
+            "$\\Delta H = \\xi \\Delta_r H^0(T_I) + Q = 0$",
+            "$\\Delta H = W + Q$",
+            "$\\Delta U = \\xi \\Delta_r U^0(T_I) + \\int_{T_I}^{T_F} C_{v,syst} dT = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Pour une transformation adiabatique et monobare, le premier principe de la thermodynamique indique que la variation d'enthalpie du système est nulle : $\\Delta H = 0$. Cette variation d'enthalpie peut être décomposée en deux termes : l'enthalpie de réaction à la température initiale ($T_I$) et l'enthalpie nécessaire pour chauffer les produits (et éventuellement les réactifs en excès et les inertes) de la température initiale $T_I$ à la température finale $T_F$. \nAinsi, l'équation de bilan enthalpique est : $\\Delta H = \\xi \\Delta_r H^0(T_I) + \\int_{T_I}^{T_F} C_{p,syst} dT = 0$, où $\\xi$ est l'avancement de la réaction (généralement pris comme 1 mole de réaction), $\\Delta_r H^0(T_I)$ est l'enthalpie standard de réaction à $T_I$, et $C_{p,syst}$ est la capacité thermique isobare du système à l'état final.\n\n*   L'option $\\Delta H = \\xi \\Delta_r H^0(T_I) + Q = 0$ est incorrecte car pour une transformation adiabatique, $Q=0$. L'énergie libérée par la réaction sert à augmenter la température des produits, ce qui est représenté par l'intégrale du terme de capacité thermique.\n*   L'option $\\Delta H = W + Q$ est une formulation du premier principe, mais elle ne décrit pas le bilan enthalpique spécifique pour le calcul de la température de flamme. Pour un processus monobare, $\\Delta H = Q_P$, et pour adiabatique $Q_P=0$.\n*   L'option $\\Delta U = \\xi \\Delta_r U^0(T_I) + \\int_{T_I}^{T_F} C_{v,syst} dT = 0$ serait utilisée pour une combustion à volume constant (calorimètre à bombe), où le processus est adiabatique et isochore, impliquant $\\Delta U = 0$."
+    },
+    {
+        "uuid": "thermo-019",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors du calcul de la température de flamme adiabatique et monobare, après la réaction, la capacité thermique du système à l'état final, $C_{p,F}$ (qui est souvent notée $C_p$ du système ou des produits) et qui est intégrée de $T_I$ à $T_F$, doit tenir compte :",
+        "answers": [
+            "Uniquement des produits de la réaction.",
+            "Uniquement des réactifs en excès.",
+            "De toutes les espèces présentes à l'état final (produits, excès, inertes).",
+            "Uniquement des gaz présents à l'état final."
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "Le terme $\\int_{T_I}^{T_F} C_{p,syst} dT$ dans l'équation de la température de flamme représente l'énergie nécessaire pour élever la température de toutes les substances présentes à l'état final, de la température initiale $T_I$ à la température de flamme $T_F$. Par conséquent, $C_{p,syst}$ doit inclure les capacités thermiques de : \n1.  Les produits formés par la réaction.\n2.  Les réactifs qui n'ont pas été entièrement consommés (en excès).\n3.  Les espèces inertes qui n'ont pas participé à la réaction (comme le diazote dans l'air).\n\n*   Prendre uniquement les produits ou uniquement les réactifs en excès négligerait une partie des espèces à chauffer, conduisant à une surestimation de la température de flamme.\n*   Prendre uniquement les gaz présents à l'état final est incorrect si des produits ou réactifs solides/liquides sont également présents et doivent être chauffés."
+    },
+    {
+        "uuid": "thermo-020",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte d'une réaction de combustion, comme celle d'un hydrocarbure dans l'air, la présence de diazote ($\\text{N}_2$), qui est une espèce inerte et majoritaire dans l'air, a un impact significatif. Pourquoi la présence de diazote $\\text{N}_2$ diminue-t-elle la température de flamme ?",
+        "answers": [
+            "Parce que le diazote empêche la réaction de se produire.",
+            "Parce qu'il doit être chauffé, absorbant une partie de l'énergie libérée.",
+            "Parce qu'il réagit de manière endothermique avec le dioxygène.",
+            "Parce qu'il dilue les réactifs, ralentissant la cinétique de réaction."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Le diazote ($\\text{N}_2$) est une espèce inerte dans la plupart des réactions de combustion (à des températures modérées, il ne réagit pas significativement). Cependant, étant présent en grande quantité dans l'air, il se trouve également à l'état final de la combustion et doit être chauffé de la température initiale à la température de flamme. Cette montée en température du $\\text{N}_2$ consomme une partie de l'énergie thermique libérée par la réaction de combustion, ce qui réduit l'énergie disponible pour chauffer les autres produits et diminue ainsi la température finale (température de flamme) du système.\n\n*   Le diazote n'empêche pas la réaction de se produire, il ne participe pas au mécanisme réactionnel principal.\n*   Le diazote ne réagit pas de manière endothermique avec le dioxygène dans les conditions standard de combustion; la formation de NOx n'est significative qu'à très haute température et n'est pas la cause principale de la diminution de la température de flamme.\n*   La dilution des réactifs peut effectivement ralentir la cinétique de réaction, mais ce n'est pas la raison thermodynamique principale de la diminution de la *température finale* de la flamme, qui est un phénomène lié au bilan énergétique."
+    },
+    {
+        "uuid": "thermo-021",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude des réactions chimiques, particulièrement des combustions complètes d'hydrocarbures, quel est le signe de l'enthalpie standard de réaction $\\Delta_r H^0$ pour la combustion d'un alcane (par exemple, le méthane ou l'éthane) ?",
+        "answers": [
+            "Positif (réaction endothermique)",
+            "Négatif (réaction exothermique)",
+            "Nul (réaction athermique)",
+            "Variable selon l'alcane considéré"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La combustion d'un alcane est une réaction fortement exothermique, c'est-à-dire qu'elle libère de l'énergie sous forme de chaleur. Par convention, une réaction qui libère de la chaleur a une variation d'enthalpie standard de réaction $\\Delta_r H^0$ négative. C'est pourquoi on dit qu'elle est exothermique. Une valeur positive indiquerait une réaction endothermique (qui absorbe de la chaleur), ce qui n'est pas le cas pour une combustion spontanée. Une valeur nulle signifierait une réaction athermique (sans échange de chaleur), ce qui est faux. La valeur exacte de $\\Delta_r H^0$ dépend de l'alcane, mais son signe reste négatif pour toutes les combustions d'hydrocarbures."
+    },
+    {
+        "uuid": "td-001",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre d'un exercice sur la combustion d'un carburant et en considérant une valeur typique pour l'essence liquide, quelle est sa masse volumique approximative ?",
+        "answers": [
+            "$750 \\text{ kg.m}^{-3}$",
+            "$1000 \\text{ kg.m}^{-3}$",
+            "$0,75 \\text{ kg.m}^{-3}$",
+            "$850 \\text{ kg.m}^{-3}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "La masse volumique de l'essence est typiquement inférieure à celle de l'eau. Elle se situe généralement entre $\\text{700}$ et $\\text{780 kg.m}^{-3}$. La valeur de $\\text{750 kg.m}^{-3}$ est une bonne approximation pour les calculs. $\\text{1000 kg.m}^{-3}$ est la masse volumique de l'eau. $\\text{0,75 kg.m}^{-3}$ serait une erreur d'unité ou d'ordre de grandeur (correspondrait à un gaz léger). $\\text{850 kg.m}^{-3}$ est trop élevé pour l'essence et se rapproche plutôt de la masse volumique du gazole."
+    },
+    {
+        "uuid": "td-002",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors de la combustion complète de l'hexane liquide ($\\text{C}_6\text{H}_{14}$), quel est le coefficient stœchiométrique de l'oxygène ($\\text{O}_2$) dans l'équation de réaction équilibrée ?",
+        "answers": [
+            "9",
+            "$19/2$",
+            "13",
+            "12"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Pour équilibrer la combustion complète de l'hexane, on suit les étapes suivantes :\n1.  On équilibre les atomes de carbone (C) : $\\text{C}_6\text{H}_{14} + \\text{O}_2 \\rightarrow 6\\text{CO}_2 + \\text{H}_2\text{O}$\n2.  On équilibre les atomes d'hydrogène (H) : $\\text{C}_6\text{H}_{14} + \\text{O}_2 \\rightarrow 6\\text{CO}_2 + 7\\text{H}_2\text{O}$ (car $14\\text{ H}$ du côté des réactifs donnent $7\\text{ H}_2\\text{O}$ du côté des produits).\n3.  On équilibre les atomes d'oxygène (O) : Du côté des produits, nous avons $6 \\times 2 = 12$ atomes d'O dans le $\\text{CO}_2$ et $7 \\times 1 = 7$ atomes d'O dans l'$\\text{H}_2\text{O}$. Soit un total de $12 + 7 = 19$ atomes d'oxygène. Puisque l'oxygène est sous forme de $\\text{O}_2$, le coefficient stœchiométrique devant $\\text{O}_2$ doit être $19/2$. \nL'équation équilibrée est donc : $\\text{C}_6\text{H}_{14} + \\frac{19}{2}\text{O}_2 \\rightarrow 6\\text{CO}_2 + 7\\text{H}_2\text{O}$.\nLes autres options sont des erreurs courantes : $9$ (erreur de calcul des oxygènes), $13$ (une autre erreur de comptage), $12$ (ne considère que l'oxygène du $\\text{CO}_2$)."
+    },
+    {
+        "uuid": "td-003",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre d'un calcul théorique de température de flamme adiabatique pour la combustion stœchiométrique d'un mélange air-essence, quelle est la valeur typique de la température de flamme $T_{ch}$ (ou température de combustion) ?",
+        "answers": [
+            "$1500 \\text{ K}$",
+            "$2970 \\text{ K}$",
+            "$3170 \\text{ K}$",
+            "$2000 \\text{ K}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La température de flamme adiabatique est la température maximale que les produits de combustion atteindraient si la réaction était complète, instantanée et sans aucune perte de chaleur vers l'extérieur. Pour la combustion d'hydrocarbures dans l'air, cette température se situe généralement entre $\\text{2000 K}$ et $\\text{3000 K}$. La valeur de $\\text{2970 K}$ est une valeur calculée typique pour un mélange air-essence stœchiométrique. Des valeurs plus basses comme $\\text{1500 K}$ ou $\\text{2000 K}$ pourraient correspondre à des combustions avec des excès d'air importants, des pertes thermiques significatives ou des équilibres de dissociation. Des valeurs supérieures à $\\text{3000 K}$ sont généralement atteintes en combustion dans l'oxygène pur ou avec des carburants très spécifiques, et souvent les effets de dissociation des produits deviennent prépondérants."
+    },
+    {
+        "uuid": "td-004",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte d'un moteur à combustion interne (cycle de Beau de Rochas ou Diesel), quel est l'ordre de grandeur du rendement énergétique *réel* (thermodynamique et mécanique) ?",
+        "answers": [
+            "0,1",
+            "0,3",
+            "0,9",
+            "0,7"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Le rendement réel d'un moteur à combustion interne est le rapport entre l'énergie mécanique utile fournie et l'énergie chimique consommée du carburant. En pratique, il est limité par des contraintes thermodynamiques (cycle de Carnot, cycle de Beau de Rochas idéal) et des pertes mécaniques (frottements, pompage, etc.). Pour un moteur à essence moderne, le rendement réel se situe généralement entre $\\text{25\\%}$ et $\\text{35\\%}$ (soit $\\text{0,25}$ à $\\text{0,35}$). Pour un moteur Diesel, il peut atteindre $\\text{40\\%}$. Un rendement de $\\text{0,1}$ est trop faible, indiquant un moteur très inefficace ou des conditions de fonctionnement particulières. $\\text{0,9}$ ou $\\text{0,7}$ sont des valeurs irréalistes pour un moteur thermique réel, car elles dépassent largement les limites théoriques (ex: rendement de Carnot ou du cycle idéal) en raison des irréversibilités intrinsèques."
+    },
+    {
+        "uuid": "td-005",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En considérant une consommation moyenne de $\\text{8 L/100 km}$ pour une voiture à essence (approximée par de l'hexane $\\text{C}_6\text{H}_{14}$) et une combustion complète, quelle masse de $\\text{CO}_2$ est rejetée pour un trajet de $\\text{100 km}$ ? (On prendra la masse volumique de l'essence $\\rho_{essence} = 750 \\text{ kg.m}^{-3}$, $\\text{M}(\\text{C}) = 12 \\text{ g.mol}^{-1}$, $\\text{M}(\\text{H}) = 1 \\text{ g.mol}^{-1}$, $\\text{M}(\\text{O}) = 16 \\text{ g.mol}^{-1}$)",
+        "answers": [
+            "$8 \\text{ kg}$",
+            "$18 \\text{ kg}$",
+            "$180 \\text{ kg}$",
+            "$18 \\text{ g}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "1.  **Masse d'essence consommée :** Pour $\\text{100 km}$, la voiture consomme $\\text{8 L}$ d'essence. La masse volumique de l'essence est $\\text{750 kg.m}^{-3}$, soit $\\text{0,75 kg.L}^{-1}$. Donc la masse d'essence est $m_{essence} = 8 \\text{ L} \\times 0,75 \\text{ kg.L}^{-1} = 6 \\text{ kg}$.\n2.  **Nombre de moles d'hexane :** La masse molaire de l'hexane ($\\text{C}_6\text{H}_{14}$) est $M_{hexane} = 6 \\times 12 + 14 \\times 1 = 86 \\text{ g.mol}^{-1}$. Le nombre de moles d'hexane est $n_{hexane} = \\frac{6000 \\text{ g}}{86 \\text{ g.mol}^{-1}} \\approx 69,77 \\text{ mol}$.\n3.  **Nombre de moles de $\\text{CO}_2$ :** L'équation de combustion équilibrée est $\\text{C}_6\text{H}_{14} + \\frac{19}{2}\text{O}_2 \\rightarrow 6\\text{CO}_2 + 7\\text{H}_2\text{O}$. Selon la stœchiométrie, $\\text{1 mole}$ d'hexane produit $\\text{6 moles}$ de $\\text{CO}_2$. Donc $n_{CO_2} = 6 \\times n_{hexane} = 6 \\times 69,77 \\text{ mol} \\approx 418,62 \\text{ mol}$.\n4.  **Masse de $\\text{CO}_2$ :** La masse molaire de $\\text{CO}_2$ est $M_{CO_2} = 12 + 2 \\times 16 = 44 \\text{ g.mol}^{-1}$. La masse de $\\text{CO}_2$ rejetée est $m_{CO_2} = n_{CO_2} \\times M_{CO_2} = 418,62 \\text{ mol} \\times 44 \\text{ g.mol}^{-1} \\approx 18419 \\text{ g} \\approx 18,4 \\text{ kg}$. La valeur la plus proche est $\\text{18 kg}$.\nLes autres options sont incorrectes : $\\text{8 kg}$ est une sous-estimation importante. $\\text{180 kg}$ est une erreur d'ordre de grandeur. $\\text{18 g}$ est une erreur d'unité et d'ordre de grandeur."
+    },
+    {
+        "uuid": "td-006",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour la combustion du zinc solide ($Zn_{(s)}$) en oxyde de zinc solide ($ZnO_{(s)}$), dont l'équation est $\\text{Zn}_{(s)} + \\frac{1}{2}\text{O}_{2(g)} \\rightarrow \\text{ZnO}_{(s)}$, l'enthalpie standard de réaction $\\Delta_r H^0$ est égale à :",
+        "answers": [
+            "$\\Delta_f H^0(ZnO_{(s)})$",
+            "$2 \\cdot \\Delta_f H^0(ZnO_{(s)})$",
+            "$-\\Delta_f H^0(ZnO_{(s)})$",
+            "$0 \\text{ kJ.mol}^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "L'enthalpie standard de réaction ($\\Delta_r H^0$) peut être calculée à partir des enthalpies standard de formation ($\\Delta_f H^0$) des produits et des réactifs selon la loi de Hess : $\\Delta_r H^0 = \\sum \\nu_p \\Delta_f H^0_p - \\sum \\nu_r \\Delta_f H^0_r$, où $\\nu$ sont les coefficients stœchiométriques et les indices $p$ et $r$ désignent respectivement les produits et les réactifs.\nPar définition, l'enthalpie standard de formation d'un corps pur simple (comme $\\text{Zn}_{(s)}$ ou $\\text{O}_{2(g)}$) dans son état standard est nulle. \nDonc pour la réaction $\\text{Zn}_{(s)} + \\frac{1}{2}\text{O}_{2(g)} \\rightarrow \\text{ZnO}_{(s)}$ :\n$\\Delta_r H^0 = 1 \\cdot \\Delta_f H^0(ZnO_{(s)}) - (1 \\cdot \\Delta_f H^0(Zn_{(s)}) + \\frac{1}{2} \\cdot \\Delta_f H^0(O_{2(g)}))$\n$\\Delta_r H^0 = \\Delta_f H^0(ZnO_{(s)}) - (0 + 0) = \\Delta_f H^0(ZnO_{(s)})$.\nLes autres options sont incorrectes : $2 \\cdot \\Delta_f H^0(ZnO_{(s)})$ serait vrai si l'équation était $\\text{2Zn} + \\text{O}_2 \\rightarrow \\text{2ZnO}$. $- \\Delta_f H^0(ZnO_{(s)})$ serait l'enthalpie de décomposition de $\\text{ZnO}$. $0 \\text{ kJ.mol}^{-1}$ est l'enthalpie de formation des corps simples."
+    },
+    {
+        "uuid": "td-007",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Selon la convention de la thermodynamique chimique, quelle est la valeur de l'enthalpie standard de formation $\\Delta_f H^0$ du zinc solide ($Zn_{(s)}$) à la température de référence de $\\text{298 K}$ (ou $\\text{300 K}$ comme approximation courante) ?",
+        "answers": [
+            "$-348,1 \\text{ kJ.mol}^{-1}$",
+            "$0 \\text{ kJ.mol}^{-1}$",
+            "$25,4 \\text{ J.mol}^{-1}.K^{-1}$",
+            "$348,1 \\text{ kJ.mol}^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Par définition, l'enthalpie standard de formation ($\\Delta_f H^0$) d'un corps pur simple, pris dans son état physique le plus stable à la température standard de $\\text{298 K}$ (ou $\\text{300 K}$ dans les exercices), est nulle. Le zinc solide est un corps pur simple. Par conséquent, son enthalpie standard de formation est $\\text{0 kJ.mol}^{-1}$.\n$-348,1 \\text{ kJ.mol}^{-1}$ est en fait la valeur de l'enthalpie standard de formation de l'oxyde de zinc ($\\text{ZnO}$), pas du zinc lui-même. $25,4 \\text{ J.mol}^{-1}.K^{-1}$ est une unité de capacité thermique molaire, pas d'enthalpie de formation. $348,1 \\text{ kJ.mol}^{-1}$ serait une valeur positive, ce qui est généralement pour des composés instables par rapport à leurs éléments, mais la valeur pour un élément pur est conventionnellement nulle."
+    },
+    {
+        "uuid": "td-008",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'exercice 2, si la combustion du zinc est réalisée à l'air libre (avec le diazote comme gaz inerte) et sans apport thermique extérieur, quelle est la température maximale (température de flamme adiabatique) que le système peut atteindre ?",
+        "answers": [
+            "$3000 \\text{ K}$",
+            "$3800 \\text{ K}$",
+            "$1200 \\text{ K}$",
+            "$5000 \\text{ K}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La température maximale atteinte lors d'une combustion sans échange de chaleur avec l'extérieur est la température de flamme adiabatique. Pour la combustion du zinc dans l'air, il faut prendre en compte l'échauffement de tous les produits de réaction, y compris le diazote ($\\text{N}_2$) présent dans l'air qui ne participe pas à la réaction mais absorbe une partie de l'énergie libérée. La combustion de métaux comme le zinc ou le magnésium est très exothermique et peut atteindre des températures très élevées. Les calculs détaillés (qui nécessitent les capacités thermiques molaires des produits et l'enthalpie de réaction) aboutissent à des températures de l'ordre de $\\text{3800 K}$ pour cette réaction spécifique. Des valeurs comme $\\text{1200 K}$ sont trop basses pour une combustion aussi intense. $\\text{3000 K}$ est une valeur plus raisonnable mais légèrement inférieure à la réalité pour cette réaction. $\\text{5000 K}$ est excessivement élevé et serait plutôt le cas pour une combustion dans de l'oxygène pur ou avec des effets de dissociation très marqués, qui limitent l'augmentation de température."
+    },
+    {
+        "uuid": "td-009",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En chimie organique, quelle est la formule brute correcte de l'acétylène (éthyne), un hydrocarbure insaturé de la famille des alcynes ?",
+        "answers": [
+            "$\\text{CH}_4$",
+            "$\\text{C}_2\text{H}_2$",
+            "$\\text{C}_2\text{H}_6$",
+            "$\\text{C}_2\text{H}_4$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'acétylène est le nom trivial de l'éthyne, le plus simple des alcynes. Les alcynes sont des hydrocarbures acycliques possédant au moins une triple liaison carbone-carbone. Leur formule brute générale est $\\text{C}_n\text{H}_{2n-2}$. Pour l'éthyne, $n=2$, donc sa formule est $\\text{C}_2\text{H}_{2 \\times 2 - 2} = \\text{C}_2\text{H}_2$. Les autres options sont :\n*   $\\text{CH}_4$ est le méthane (un alcane, $\\text{C}_n\text{H}_{2n+2}$).\n*   $\\text{C}_2\text{H}_6$ est l'éthane (un alcane, $\\text{C}_n\text{H}_{2n+2}$).\n*   $\\text{C}_2\text{H}_4$ est l'éthène (un alcène, $\\text{C}_n\text{H}_{2n}$). Ce sont des confusions courantes entre les différentes familles d'hydrocarbures."
+    },
+    {
+        "uuid": "td-010",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude des enthalpies de formation standard, pourquoi l'enthalpie standard de formation du diazote gazeux, $N_{2(g)}$, est-elle nulle par définition ?",
+        "answers": [
+            "Parce que c'est un gaz parfait et son énergie interne ne dépend pas de la pression.",
+            "Parce que le diazote est un corps simple stable dans son état standard de référence à $298 \\text{ K}$ et $1 \\text{ bar}$.",
+            "Parce que c'est une molécule diatomique, sa formation ne nécessite pas d'énergie.",
+            "C'est une convention arbitraire sans justification physico-chimique."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'enthalpie standard de formation, $\\Delta_f H^0$, d'un corps pur est par définition l'enthalpie de la réaction de formation de ce corps à partir des corps simples pris dans leur état standard de référence. Par convention, l'enthalpie standard de formation de tout corps simple pris dans son état standard de référence (le plus stable à $298 \\text{ K}$ et $1 \\text{ bar}$) est nulle. Le diazote gazeux, $N_{2(g)}$, est le corps simple le plus stable de l'élément azote dans ces conditions. Les autres propositions sont incorrectes. Être un gaz parfait n'est pas la raison de la nullité de l'enthalpie de formation. Une molécule diatomique peut avoir une enthalpie de formation non nulle si elle n'est pas dans son état standard (ex: $O_{3(g)}$). Enfin, ce n'est pas une convention arbitraire sans justification mais une définition fondamentale pour les calculs thermochimiques."
+    },
+    {
+        "uuid": "td-011",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude d'une combustion haute température (par exemple de l'acétylène), quelle est la valeur *théorique maximale* de la température de flamme adiabatique que l'on pourrait atteindre avec du dioxygène PUR ?",
+        "answers": [
+            "$3170^{\\circ}C$",
+            "$11700^{\\circ}C$",
+            "$2500^{\\circ}C$",
+            "$7500^{\\circ}C$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La température de flamme théorique maximale est calculée en supposant une combustion adiabatique et complète, sans aucune perte de chaleur ni dissociation des produits de réaction. L'utilisation de dioxygène pur ($O_2$) plutôt que d'air élimine l'azote ($N_2$) qui agit comme un diluant et absorbe une part significative de l'énergie thermique, réduisant ainsi la température. Dans des conditions idéales et sans tenir compte de la dissociation des gaz à très haute température (qui limite les températures réelles), les calculs peuvent prédire des températures extrêmement élevées pour certaines réactions. La valeur de $3170^{\\circ}C$ est plus typique d'une flamme avec l'air, non avec l'oxygène pur."
+    },
+    {
+        "uuid": "td-012",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Poursuivant l'étude des températures de flamme, si la température de flamme théorique avec le dioxygène pur peut être très élevée, la température de flamme *réelle* avec l'AIR est d'environ $3170^{\\circ}C$ pour une combustion haute température. Pourquoi cette température est-elle significativement plus basse qu'avec du dioxygène pur ?",
+        "answers": [
+            "L'air contient du $CO_2$ qui éteint la flamme ou réduit sa température.",
+            "L'air contient du $N_2$ (environ $80 \\%$) qui ne réagit pas mais doit être chauffé, absorbant une grande partie de l'énergie de la réaction.",
+            "Le dioxygène de l'air est moins réactif que le dioxygène pur.",
+            "La pression partielle de $O_2$ est plus faible dans l'air, ce qui ralentit la réaction et diminue la température."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La température de flamme réelle est plus basse que la température théorique avec dioxygène pur, principalement à cause de la présence d'azote ($N_2$) dans l'air. L'air est composé d'environ $78 \\%$ d'azote, $21 \\%$ de dioxygène et $1 \\%$ d'autres gaz (argon, $CO_2$). L'azote ne participe généralement pas à la combustion (il est inerte dans ces conditions) mais il est chauffé par l'énergie libérée par la réaction. Il agit donc comme un \"puits de chaleur\" (un ballast thermique), absorbant une grande partie de l'énergie et réduisant ainsi la température maximale atteinte par les produits de combustion. Les autres gaz comme le $CO_2$ sont présents en très faible quantité et n'ont pas un rôle prépondérant à ce niveau. La réactivité du dioxygène n'est pas diminuée par sa présence dans l'air, seulement sa concentration."
+    },
+    {
+        "uuid": "td-013",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude de la production de ciment, la formation du silicate de calcium, $Ca_3SiO_5$, un des principaux composants du clinker, est modélisée par quelle réaction à partir de ses précurseurs industriels, le calcaire ($CaCO_3$) et la silice ($SiO_2$) ?",
+        "answers": [
+            "$3CaCO_{3(s)} + SiO_{2(s)} \\rightarrow Ca_3SiO_{5(s)} + 3CO_{2(g)}$",
+            "$CaCO_{3(s)} + SiO_{2(s)} \\rightarrow Ca_3SiO_{5(s)} + CO_{2(g)}$",
+            "$3Ca_{(s)} + Si_{(s)} + 5O_{2(g)} \\rightarrow Ca_3SiO_{5(s)}$",
+            "$CaCO_{3(s)} + 3SiO_{2(s)} \\rightarrow Ca_3SiO_{5(s)} + 3CO_{2(g)}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "La production de ciment implique la réaction de calcaire ($CaCO_{3(s)}$) et de silice ($SiO_{2(s)}$) à haute température. La réaction correcte doit être stoechiométriquement équilibrée. La formule du silicate de calcium est $Ca_3SiO_5$. Pour l'équilibrer, il faut $3$ moles de $CaCO_3$ pour apporter $3$ atomes de calcium et $1$ mole de $SiO_2$ pour apporter $1$ atome de silicium et une partie de l'oxygène. En réagissant, $3$ moles de $CaCO_3$ libèrent $3$ moles de $CO_2$ gazeux. L'option \"$3CaCO_{3(s)} + SiO_{2(s)} \\rightarrow Ca_3SiO_{5(s)} + 3CO_{2(g)}$\" est la seule réaction équilibrée qui représente la formation de $Ca_3SiO_5$ à partir de ces précurseurs. Les autres propositions sont soit mal équilibrées, soit représentent une formation à partir de corps simples (non pertinents pour le processus industriel), soit ont des stoechiométries incorrectes."
+    },
+    {
+        "uuid": "td-014",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de la production de ciment, pour la réaction de formation $(R_1)$ du silicate de calcium ($3CaCO_{3(s)} + SiO_{2(s)} \\rightarrow Ca_3SiO_{5(s)} + 3CO_{2(g)}$), l'enthalpie standard de réaction est donnée comme $\\Delta_r H_1^0 = 473 \\text{ kJ.mol}^{-1}$. Comment caractérise-t-on cette réaction ?",
+        "answers": [
+            "Exothermique, car elle libère de la chaleur dans le milieu extérieur.",
+            "Endothermique, car elle nécessite un apport de chaleur pour se produire.",
+            "Athermique, car son enthalpie est non nulle.",
+            "Exergonique, car elle est spontanée."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Une réaction est qualifiée d'endothermique lorsque son enthalpie standard de réaction, $\\Delta_r H^0$, est positive ($ \\Delta_r H^0 > 0$). Cela signifie que la réaction absorbe de la chaleur du milieu extérieur pour se produire. Inversement, une réaction est exothermique si $\\Delta_r H^0$ est négatif (elle libère de la chaleur). Une réaction athermique aurait une enthalpie de réaction nulle ou très proche de zéro. La valeur positive de $473 \\text{ kJ.mol}^{-1}$ indique clairement que la réaction $(R_1)$ de formation du ciment est endothermique, ce qui est cohérent avec le fait que les fours de cimenterie doivent être chauffés à très haute température pour que cette réaction ait lieu."
+    },
+    {
+        "uuid": "td-015",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Toujours dans le cadre de la production de ciment, en utilisant la réaction $(R_1)$ comme modèle principal ($3CaCO_{3(s)} + SiO_{2(s)} \\rightarrow Ca_3SiO_{5(s)} + 3CO_{2(g)}$) et en considérant que le silicate de calcium, $Ca_3SiO_5$, représente l'essentiel du ciment produit, quelle masse de calcaire ($CaCO_3$) est nécessaire pour produire $1 \\text{ tonne}$ de ciment ? (Données : $M(CaCO_3) \\approx 100,1 \\text{ g.mol}^{-1}$, $M(Ca_3SiO_5) \\approx 228,3 \\text{ g.mol}^{-1}$)",
+        "answers": [
+            "$1,0 \\text{ tonne}$",
+            "$1,3 \\text{ tonne}$",
+            "$0,6 \\text{ tonne}$",
+            "$2,0 \\text{ tonnes}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Pour cette question, il faut utiliser la stoechiométrie de la réaction $(R_1)$: $3CaCO_{3(s)} + SiO_{2(s)} \\rightarrow Ca_3SiO_{5(s)} + 3CO_{2(g)}$.\nCette réaction indique que $3$ moles de $CaCO_3$ sont nécessaires pour former $1$ mole de $Ca_3SiO_5$.\nLes masses molaires données sont : $M(CaCO_3) \\approx 100,1 \\text{ g.mol}^{-1}$ et $M(Ca_3SiO_5) \\approx 228,3 \\text{ g.mol}^{-1}$.\nPour produire $1$ mole de $Ca_3SiO_5$ ($228,3 \\text{ g}$), il faut $3$ moles de $CaCO_3$, soit une masse de $3 \\times 100,1 \\text{ g} = 300,3 \\text{ g}$.\nLe rapport de masse de calcaire au ciment est donc $300,3 / 228,3 \\approx 1,315$.\nPour produire $1 \\text{ tonne}$ ($1000 \\text{ kg}$) de ciment, il faudra donc $1000 \\text{ kg} \\times 1,315 \\approx 1315 \\text{ kg}$, soit environ $1,3 \\text{ tonne}$ de calcaire."
+    },
+    {
+        "uuid": "td-016",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte de l'impact environnemental de la production de ciment, identifiez les deux principales sources d'émissions de dioxyde de carbone ($CO_2$) lors de ce processus industriel.",
+        "answers": [
+            "La respiration des ouvriers et le transport des matières premières.",
+            "La décarbonatation du calcaire et la combustion des combustibles (ex: gaz naturel, charbon) pour chauffer le four.",
+            "L'évaporation de l'eau présente dans les matières premières et la réaction de formation du silicate elle-même.",
+            "La réaction de l'argile avec la silice et les fuites des équipements de production."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Les deux principales sources d'émissions de $CO_2$ dans la production de ciment sont :\n1.  **La décarbonatation du calcaire ($CaCO_3$):** Le calcaire, principal ingrédient du ciment, se décompose thermiquement dans le four selon la réaction $CaCO_{3(s)} \\rightarrow CaO_{(s)} + CO_{2(g)}$. Cette réaction libère une quantité significative de $CO_2$. C'est une émission \"processus\" car elle est intrinsèque à la transformation chimique.\n2.  **La combustion des combustibles fossiles:** Pour chauffer les fours à très haute température (environ $1450^{\\circ}C$), des combustibles tels que le charbon, le gaz naturel ou le pétrole sont brûlés. La combustion de ces hydrocarbures produit du $CO_2$ (ex: $CH_4 + 2O_2 \\rightarrow CO_2 + 2H_2O$). C'est une émission \"énergétique\".\nLes autres propositions mentionnent des sources marginales (respiration, transport, fuites) ou incorrectes (évaporation de l'eau, réaction de l'argile) concernant les *principales* émissions de $CO_2$ du processus."
+    },
+    {
+        "uuid": "td-017",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude énergétique de la combustion, la réaction de combustion complète de l'éthanol liquide ($C_2H_5OH_{(l)}$) en dioxyde de carbone gazeux ($CO_{2(g)}$) et eau gazeuse ($H_2O_{(g)}$) libère-t-elle ou absorbe-t-elle de la chaleur ? Quel est le signe de l'enthalpie standard de réaction, $\\Delta_r H^0$ ?",
+        "answers": [
+            "Le signe est \"$+\"$, car il faut apporter de la chaleur pour démarrer la réaction.",
+            "Le signe est \"$-\"$, car la réaction est fortement exothermique et libère de l'énergie thermique.",
+            "Le signe est \"$0$\", car l'énergie est conservée.",
+            "Le signe dépend des conditions de température et de pression."
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La combustion de l'éthanol est une réaction chimique qui libère une grande quantité d'énergie sous forme de chaleur et de lumière. C'est une réaction caractéristique de la famille des réactions exothermiques. Par convention, une réaction exothermique est une réaction pour laquelle l'enthalpie de réaction ($\\Delta_r H$) est négative ($\\Delta_r H < 0$). Cela signifie que le système (les réactifs) perd de l'énergie au profit du milieu extérieur, ce qui se manifeste par un dégagement de chaleur. L'énergie nécessaire pour démarrer la combustion (énergie d'activation) ne doit pas être confondue avec l'enthalpie de réaction, qui représente la différence d'énergie entre les produits et les réactifs dans leur état standard."
+    },
+    {
+        "uuid": "td-018",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'application énergétique de la combustion, si l'on souhaite chauffer une pièce en continu avec une puissance de $3 \\text{ kW}$ en brûlant du bioéthanol liquide, quel volume de bioéthanol ($C_2H_5OH_{(l)}$) est consommé par heure ? On prendra l'enthalpie standard de combustion de l'éthanol liquide à $-1367 \\text{ kJ.mol}^{-1}$ et sa masse volumique à $0,789 \\text{ g.mL}^{-1}$.",
+        "answers": [
+            "$5,0 \\text{ L}$",
+            "$0,5 \\text{ L}$",
+            "$50 \\text{ mL}$",
+            "$1,5 \\text{ L}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Pour résoudre ce problème, il faut relier la puissance thermique nécessaire à l'énergie libérée par la combustion de l'éthanol.\n1.  **Calcul de l'énergie nécessaire par heure :**\n    La puissance $P = 3 \\text{ kW} = 3000 \\text{ J.s}^{-1}$.\n    L'énergie $E$ consommée en une heure ($3600 \\text{ s}$) est $E = P \\times t = 3000 \\text{ J.s}^{-1} \\times 3600 \\text{ s} = 10,8 \\times 10^6 \\text{ J} = 10800 \\text{ kJ}$.\n2.  **Calcul de la quantité de matière d'éthanol :**\n    L'enthalpie de combustion standard de l'éthanol est $\\Delta_c H^0 = -1367 \\text{ kJ.mol}^{-1}$. Cela signifie que $1367 \\text{ kJ}$ sont libérés par mole d'éthanol brûlée.\n    La quantité de matière $n$ d'éthanol nécessaire est $n = E / |\\Delta_c H^0| = 10800 \\text{ kJ} / 1367 \\text{ kJ.mol}^{-1} \\approx 7,90 \\text{ mol}$.\n3.  **Calcul de la masse d'éthanol :**\n    La masse molaire de l'éthanol ($C_2H_5OH$) est $M = 2 \\times 12,01 + 6 \\times 1,01 + 16,00 \\approx 46,07 \\text{ g.mol}^{-1}$.\n    La masse $m$ d'éthanol est $m = n \\times M = 7,90 \\text{ mol} \\times 46,07 \\text{ g.mol}^{-1} \\approx 363,9 \\text{ g}$.\n4.  **Calcul du volume d'éthanol :**\n    La masse volumique de l'éthanol est $\\rho = 0,789 \\text{ g.mL}^{-1}$.\n    Le volume $V$ d'éthanol est $V = m / \\rho = 363,9 \\text{ g} / 0,789 \\text{ g.mL}^{-1} \\approx 461,2 \\text{ mL}$.\n    Cela représente environ $0,46 \\text{ L}$, qui est le plus proche de $0,5 \\text{ L}$ parmi les options proposées."
+    },
+    {
+        "uuid": "td-019",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude de la combustion de l'éthanol avec l'air, lors du calcul de la masse totale d'air nécessaire pour la combustion complète d'une quantité donnée d'éthanol (par exemple, $1,5 \\text{ L}$), quel constituant de l'air représente la majeure partie de la masse des gaz impliqués dans le bilan ?",
+        "answers": [
+            "Le dioxygène ($O_2$), car c'est le comburant essentiel de la réaction.",
+            "Le diazote ($N_2$), car il est présent en grande quantité dans l'air et ne réagit pas, mais sa masse est comptabilisée.",
+            "L'argon ($Ar$), en raison de sa masse molaire élevée.",
+            "Le dioxyde de carbone ($CO_2$), car il est produit en grande quantité par la combustion."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'air est composé d'environ $78 \\%$ de diazote ($N_2$), $21 \\%$ de dioxygène ($O_2$) et $1 \\%$ d'autres gaz (principalement de l'argon) en volume. Lors de la combustion, le dioxygène ($O_2$) est le comburant qui réagit avec le carburant (l'éthanol). Cependant, le diazote ($N_2$) ne participe généralement pas à la réaction de combustion mais il est introduit en grande quantité avec le dioxygène. Pour chaque mole de $O_2$ nécessaire, environ $78/21 \\approx 3,7$ moles de $N_2$ sont également introduites. C'est donc le diazote qui représente la majeure partie de la masse totale de l'air nécessaire à la combustion, agissant comme un diluant thermique et mécanique. Les autres gaz sont présents en quantités bien moindres. Le $CO_2$ est un produit de combustion, pas un composant de l'air utilisé pour la combustion."
+    },
+    {
+        "uuid": "td-020",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans l'étude des propriétés d'une substance homogène, quelle est la relation fondamentale qui lie sa masse $m$, sa masse volumique $\\rho$ et son volume $V$ ?",
+        "answers": [
+            "$m = \\rho \\cdot V$",
+            "$V = \\rho \\cdot m$",
+            "$\\rho = m \\cdot V$",
+            "$m = V / \\rho$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "La masse volumique $\\rho$ est définie comme le rapport de la masse $m$ d'une substance à son volume $V$. Ainsi, la formule de base est $\\rho = m / V$. En réarrangeant cette formule pour exprimer la masse, on obtient $m = \\rho \\cdot V$. Les autres propositions sont dimensionnellement incorrectes ou des réarrangements faux. Par exemple, $V = \\rho \\cdot m$ donnerait des unités de volume égale à $\\text{(kg/m}^3) \\cdot \\text{kg}$, ce qui est faux. De même pour $\\rho = m \\cdot V$ (kg/m$^3$ égale kg $\\cdot$ m$^3$), et $m = V / \\rho$ (kg égale m$^3$ / (kg/m$^3$) = m$^6$/kg)."
+    },
+    {
+        "uuid": "thermo-022",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérons un mélange de gaz ou de liquides. Que représente et comment se définit la fraction molaire $x_i$ d'un constituant $i$ au sein de ce mélange ?",
+        "answers": [
+            "$x_i = n_i \\cdot n_{tot}$",
+            "$x_i = n_i / n_{tot}$",
+            "$x_i = V_i / V_{tot}$",
+            "$x_i = m_i / m_{tot}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La fraction molaire $x_i$ d'un constituant $i$ dans un mélange est définie comme le rapport de la quantité de matière (nombre de moles) $n_i$ de ce constituant à la quantité de matière totale (nombre total de moles) $n_{tot}$ du mélange. C'est une grandeur sans dimension. La formule est $x_i = n_i / n_{tot}$. La proposition $x_i = V_i / V_{tot}$ correspond à la fraction volumique (qui n'est égale à la fraction molaire que pour des mélanges de gaz parfaits, ou de liquides idéaux sous certaines conditions), et $x_i = m_i / m_{tot}$ à la fraction massique. $x_i = n_i \\cdot n_{tot}$ est dimensionnellement incorrect."
+    },
+    {
+        "uuid": "thermo-023",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour tout mélange, qu'il soit idéal ou réel, la somme des fractions molaires $\\sum x_i$ de tous les constituants est une propriété fondamentale et doit être égale à :",
+        "answers": [
+            "0",
+            "1",
+            "100",
+            "$n_{tot}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La fraction molaire $x_i$ est définie comme $n_i / n_{tot}$. Par conséquent, la somme de toutes les fractions molaires de tous les constituants d'un mélange doit être égale à l'unité. $\\sum x_i = \\sum (n_i / n_{tot}) = (1 / n_{tot}) \\sum n_i = (1 / n_{tot}) \\cdot n_{tot} = 1$. C'est une propriété de normalisation essentielle pour les fractions. Une somme de 0 impliquerait l'absence de tout constituant. 100 serait correct si les fractions étaient exprimées en pourcentages, mais la valeur fondamentale est 1. $n_{tot}$ est une quantité de matière, pas une fraction sans dimension."
+    },
+    {
+        "uuid": "thermo-024",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le Système International d'Unités (SI), quelle est l'unité de la concentration molaire $C$, définie par le rapport de la quantité de matière $n$ d'un soluté au volume $V$ de la solution ?",
+        "answers": [
+            "$\\text{mol.L}^{-1}$",
+            "$\\text{mol.m}^{-3}$",
+            "$\\text{g.mol}^{-1}$",
+            "$\\text{mol.dm}^{-3}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La concentration molaire $C$ est définie comme la quantité de matière $n$ par unité de volume $V$. Dans le Système International (SI), l'unité de la quantité de matière est la mole ($\\text{mol}$) et l'unité de volume est le mètre cube ($\\text{m}^3$). Par conséquent, l'unité SI de la concentration molaire est la mole par mètre cube, soit $\\text{mol.m}^{-3}$. L'unité $\\text{mol.L}^{-1}$ (ou $\\text{mol.dm}^{-3}$) est très couramment utilisée en chimie, mais le litre n'est pas une unité SI de volume (c'est une unité dérivée). $\\text{g.mol}^{-1}$ est l'unité de la masse molaire."
+    },
+    {
+        "uuid": "thermo-025",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte de la caractérisation des liquides, comment est définie la densité $d$ d'un liquide à une température donnée, par rapport à une substance de référence ?",
+        "answers": [
+            "$d = \\rho / \\rho_{air}$",
+            "$d = \\rho / \\rho_{eau}$",
+            "$d = m / V$",
+            "$d = \\rho \\cdot \\rho_{eau}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La densité $d$ d'une substance est une grandeur sans dimension définie comme le rapport de sa masse volumique $\\rho$ à celle d'une substance de référence. Pour les liquides et les solides, la substance de référence est l'eau, généralement à $4^{\\circ}C$ (où $\\rho_{eau} \\approx 1000 \\text{ kg.m}^{-3}$ ou $1 \\text{ g.cm}^{-3}$). La formule est donc $d = \\rho / \\rho_{eau}$. L'option $d = \\rho / \\rho_{air}$ est la définition de la densité pour un gaz. L'option $d = m / V$ est la définition de la masse volumique elle-même, pas de la densité. Enfin, $d = \\rho \\cdot \\rho_{eau}$ est dimensionnellement incorrecte."
+    },
+    {
+        "uuid": "thermo-026",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "La constante des gaz parfaits $R$ est une constante fondamentale en physique-chimie. Quelles sont ses valeurs approximatives couramment utilisées, avec leurs unités associées ?",
+        "answers": [
+            "$8,314 \\text{ J.mol}^{-1}.K^{-1}$",
+            "$0,082 \\text{ L.atm.mol}^{-1}.K^{-1}$",
+            "Les deux réponses sont correctes."
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "La constante des gaz parfaits $R$ a une valeur unique mais peut être exprimée avec différentes unités selon les unités choisies pour la pression et le volume dans l'équation $PV=nRT$. La valeur $R \\approx 8,314 \\text{ J.mol}^{-1}.K^{-1}$ est la valeur SI, où la pression est en Pascals (Pa) et le volume en mètres cubes (m$^3$). La valeur $R \\approx 0,082 \\text{ L.atm.mol}^{-1}.K^{-1}$ est très utilisée lorsque le volume est exprimé en litres (L) et la pression en atmosphères (atm). Les deux valeurs sont correctes et doivent être connues, car leur utilisation dépend du contexte de l'exercice et des unités des autres grandeurs."
+    },
+    {
+        "uuid": "thermo-027",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour que l'équation d'état des gaz parfaits $PV=nRT$ soit rigoureusement applicable avec la constante $R$ usuelle, dans quelle unité de température la grandeur $T$ doit-elle impérativement être exprimée ?",
+        "answers": [
+            "Degrés Celsius ($^{\\circ}C$)",
+            "Kelvin ($K$)",
+            "Fahrenheit ($^{\\circ}F$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Dans l'équation d'état des gaz parfaits $PV=nRT$, la température $T$ doit toujours être exprimée en Kelvin ($K$). C'est une température absolue, ce qui signifie que $0 \\text{ K}$ représente le zéro absolu (la plus basse température physiquement possible). L'utilisation de degrés Celsius ($^{\\circ}C$) ou Fahrenheit ($^{\\circ}F$) conduirait à des résultats erronés, car ces échelles de température sont relatives et ne partent pas du zéro absolu. Par exemple, si $T$ était en Celsius, à $0^{\\circ}C$, le terme $nRT$ serait nul, ce qui n'est pas cohérent avec un gaz ayant une pression et un volume non nuls."
+    },
+    {
+        "uuid": "thermo-028",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est la relation mathématique exacte permettant de convertir une température $\\theta$ exprimée en degrés Celsius ($^{\\circ}C$) en une température $T$ exprimée en Kelvin ($K$) ?",
+        "answers": [
+            "$T(K) = \\theta(^{\\circ}C) + 273,15$",
+            "$T(K) = \\theta(^{\\circ}C) - 273,15$",
+            "$T(K) = 273,15 \\cdot \\theta(^{\\circ}C)$",
+            "$T(K) = 1 / (\\theta(^{\\circ}C) + 273,15)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "La relation entre l'échelle de température Celsius et l'échelle Kelvin est un simple décalage. Le zéro de l'échelle Kelvin ($0 \\text{ K}$) correspond à $-273,15^{\\circ}C$. Par conséquent, pour convertir une température en Celsius vers le Kelvin, il faut ajouter $273,15$. La formule correcte est $T(K) = \\theta(^{\\circ}C) + 273,15$. Une erreur de signe ou une multiplication (comme les autres propositions) conduirait à des résultats physiquement incorrects ou dimensionnellement faux."
+    },
+    {
+        "uuid": "thermo-029",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Selon la loi de Dalton, pour un mélange idéal de gaz parfaits dans un même volume $V$ à une température $T$, la pression totale $P_{tot}$ exercée par le mélange est :",
+        "answers": [
+            "Le produit des pressions partielles.",
+            "La somme des pressions partielles.",
+            "Égale à la pression partielle du gaz majoritaire.",
+            "La différence entre la pression la plus élevée et la plus faible."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La loi de Dalton (ou loi des pressions partielles) stipule que pour un mélange de gaz parfaits (ou idéal), la pression totale $P_{tot}$ exercée par le mélange est égale à la somme des pressions partielles $P_i$ que chaque gaz exercerait s'il occupait seul le même volume à la même température. $P_{tot} = \\sum P_i$. Chaque pression partielle $P_i$ est donnée par $P_i = x_i P_{tot}$, où $x_i$ est la fraction molaire du gaz $i$. Le produit des pressions partielles n'a pas de sens physique direct en thermodynamique des gaz, et la pression totale ne dépend évidemment pas seulement du gaz majoritaire."
+    },
+    {
+        "uuid": "thermo-030",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "L'enthalpie molaire standard de formation d'un constituant, notée $\\Delta_f H^0_m(T)$, est une grandeur thermodynamique cruciale. Quelle est sa principale dépendance ?",
+        "answers": [
+            "Dépend de la pression.",
+            "Ne dépend que de la température.",
+            "Est une constante universelle.",
+            "Dépend du volume du système."
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'adjectif 'standard' dans l'enthalpie molaire standard $\\Delta_f H^0_m(T)$ signifie que la grandeur est définie sous des conditions de pression standard ($P^0 = 1 \\text{ bar}$). Par conséquent, par définition, elle ne dépend pas de la pression. L'enthalpie étant une fonction d'état, l'enthalpie molaire standard d'un constituant ne dépend que de la température $T$. Elle n'est pas une constante universelle car sa valeur est spécifique à chaque substance et à chaque température. Elle ne dépend pas directement du volume du système, car c'est une grandeur molaire (intensive)."
+    },
+    {
+        "uuid": "thermo-031",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En chimie, lorsqu'on représente une réaction chimique par une équation-bilan de la forme $\\sum_{i} \\nu_i A_i = 0$ où $A_i$ sont les espèces chimiques impliquées, le coefficient stœchiométrique $\\nu_i$ associé à l'espèce $A_i$ est défini, par convention de l'IUPAC, comme :",
+        "answers": [
+            "Toujours un entier positif.",
+            "Positif pour les réactifs et négatif pour les produits.",
+            "Négatif pour les réactifs et positif pour les produits.",
+            "Nul pour les espèces ne participant pas à la réaction."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "La convention de l'IUPAC (Union Internationale de Chimie Pure et Appliquée) stipule que les coefficients stœchiométriques algébriques $\\nu_i$ sont négatifs pour les réactifs (consommés) et positifs pour les produits (formés). Par exemple, pour la réaction $2 H_2 + O_2 \\rightarrow 2 H_2O$, l'équation-bilan s'écrit $2 H_2O - 2 H_2 - O_2 = 0$, donc $\\nu_{H_2O} = +2$, $\\nu_{H_2} = -2$, et $\\nu_{O_2} = -1$. Les options incorrectes mélangent les signes ou confondent les coefficients stœchiométriques algébriques avec les nombres stœchiométriques (toujours positifs) qui apparaissent dans la notation classique à flèche de la réaction."
+    },
+    {
+        "uuid": "thermo-032",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude d'une réaction chimique se déroulant à température constante $T$ et pression constante $P$, si l'on considère l'enthalpie standard de réaction $\\Delta_r H^0$ à cette température, la variation d'enthalpie $\\Delta H$ du système pour un avancement $\\xi$ de la réaction est donnée par :",
+        "answers": [
+            "$\\Delta H = \\xi \\cdot \\Delta_r H^0$",
+            "$\\Delta H = \\Delta_r H^0 / \\xi$",
+            "$\\Delta H = \\xi^2 \\cdot \\Delta_r H^0$",
+            "$\\Delta H = \\Delta_r H^0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "L'enthalpie standard de réaction $\\Delta_r H^0$ est définie comme la variation d'enthalpie lorsque la réaction a avancé d'une mole dans des conditions standards. Par conséquent, pour un avancement $\\xi$ (exprimé en moles) d'une réaction à température et pression constantes, la variation d'enthalpie totale $\\Delta H$ est proportionnelle à cet avancement : $\\Delta H = \\xi \\cdot \\Delta_r H^0$. L'option $\\Delta H = \\Delta_r H^0 / \\xi$ est dimensionnellement incorrecte ($\\text{J.mol}^{-1} / \\text{mol}$ ne donne pas des joules). L'option $\\Delta H = \\xi^2 \\cdot \\Delta_r H^0$ est également dimensionnellement incorrecte ($\\text{mol}^2 \\cdot \\text{J.mol}^{-1}$ ne donne pas des joules). L'option $\\Delta H = \\Delta_r H^0$ est incorrecte car elle ignore la dépendance à l'avancement de la réaction."
+    },
+    {
+        "uuid": "thermo-033",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En thermochimie, la notion de réaction de formation est fondamentale pour définir les enthalpies standards de formation. Une réaction de formation est définie comme :",
+        "answers": [
+            "Une réaction qui forme n'importe quel produit à partir de n'importe quel réactif.",
+            "Une réaction formant $1 \\text{ mol}$ d'un constituant (composé chimique) à partir des corps simples stables pris dans leur état standard.",
+            "La décomposition d'un corps pur en ses éléments constituants.",
+            "Une réaction qui produit $1 \\text{ mol}$ de n'importe quelle substance à partir de ses atomes isolés."
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Une réaction de formation est une réaction hypothétique ou réelle qui conduit à la formation d'UNE SEULE MOLE d'un composé chimique donné à partir de SES ÉLÉMENTS CONSTITUANTS PRIS DANS LEUR ÉTAT STANDARD STABLE (par exemple, le dioxygène $O_2(g)$, le carbone graphite $C(s)$, le dihydrogène $H_2(g)$). L'enthalpie standard de formation, $\\Delta_f H^0$, est l'enthalpie de cette réaction. Les autres options sont incorrectes car elles ne respectent pas toutes ces conditions (quantité de produit, nature des réactifs, état standard)."
+    },
+    {
+        "uuid": "thermo-034",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Par convention, en thermochimie, l'enthalpie standard de formation $\\Delta_f H^0$ des corps simples pris dans leur état standard est une valeur de référence. L'enthalpie standard de formation du dioxygène $O_{2(g)}$ à $298 \\text{ K}$ est donc :",
+        "answers": [
+            "Négative car le dioxygène est un gaz très stable.",
+            "Nulle par définition.",
+            "Positive car c'est un processus endothermique.",
+            "Égale à l'énergie de liaison $O=O$."
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Par convention internationale en thermochimie, l'enthalpie standard de formation de tout corps simple (élément pur) pris dans son état physique le plus stable à la température de référence (généralement $298.15 \\text{ K}$ ou $25 \\text{ °C}$) et sous la pression standard ($1 \\text{ bar}$ ou $10^5 \\text{ Pa}$) est fixée à zéro. Le dioxygène $O_{2(g)}$ est le corps simple oxygène dans son état standard stable à $298 \\text{ K}$, son enthalpie standard de formation est donc nulle par définition. La stabilité d'une molécule n'implique pas une enthalpie de formation négative, et l'énergie de liaison est une grandeur différente liée à la rupture des liaisons, non à la formation du corps simple à partir de lui-même."
+    },
+    {
+        "uuid": "thermo-035",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "La loi de Hess est un principe fondamental en thermochimie, permettant de calculer les enthalpies de réaction même pour des processus qui ne peuvent pas être mesurés directement. Cette loi est une conséquence directe du fait que :",
+        "answers": [
+            "L'enthalpie est une fonction d'état.",
+            "Le premier principe de la thermodynamique (conservation de l'énergie) est toujours vérifié.",
+            "Toutes les réponses sont correctes.",
+            "Le deuxième principe de la thermodynamique impose une direction aux transformations."
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "La loi de Hess stipule que la variation d'enthalpie d'une réaction est indépendante du chemin parcouru entre les réactifs et les produits, tant que les états initial et final sont les mêmes. Cette propriété est la définition même d'une fonction d'état, et l'enthalpie est une fonction d'état. De plus, l'enthalpie est elle-même dérivée du premier principe de la thermodynamique (conservation de l'énergie) sous des conditions de pression constante. Par conséquent, la loi de Hess est une conséquence directe de ces deux faits fondamentaux. Le deuxième principe de la thermodynamique concerne la spontanéité et le sens des transformations, il n'est pas directement lié à la loi de Hess."
+    },
+    {
+        "uuid": "thermo-036",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans l'étude des transformations thermodynamiques, il est crucial de distinguer les conditions de pression. Une transformation est dite monobare si :",
+        "answers": [
+            "La pression intérieure du système reste constante tout au long de la transformation ($P_{int} = \\text{constante}$).",
+            "La pression extérieure exercée sur le système reste constante ($P_{ext} = \\text{constante}$).",
+            "La pression est nulle (transformation sous vide).",
+            "La pression intérieure est toujours égale à la pression extérieure ($P_{int} = P_{ext}$)."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Une transformation est dite monobare si la pression extérieure $P_{ext}$ à laquelle le système est soumis reste constante. Cela ne signifie pas que la pression intérieure $P_{int}$ du système est constante ou égale à la pression extérieure. Si $P_{int}$ est constante, la transformation est dite isobare. Si $P_{int} = P_{ext}$ tout au long de la transformation, cela signifie que la transformation est réversible (quasistatique), ce qui est une condition plus forte que monobare ou isobare."
+    },
+    {
+        "uuid": "thermo-037",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérons une réaction chimique se déroulant à température constante (isotherme) et à pression constante (monobare ou isobare). Si cette réaction est exothermique, c'est-à-dire que son enthalpie standard de réaction est négative ($\\Delta_r H^0 < 0$), alors concernant le transfert thermique $Q$ avec le milieu extérieur :",
+        "answers": [
+            "Le système reçoit de la chaleur du milieu extérieur, donc $Q > 0$.",
+            "Le système libère de la chaleur vers le milieu extérieur, donc $Q < 0$.",
+            "Le système ne subit aucun transfert thermique avec le milieu extérieur, $Q = 0$.",
+            "La chaleur $Q$ est positive, mais l'enthalpie $\\Delta H$ est négative."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Une réaction exothermique est une réaction qui dégage de la chaleur. Par convention en thermodynamique, si le système libère de la chaleur vers le milieu extérieur, le transfert thermique $Q$ est négatif ($Q < 0$). Pour une transformation se déroulant à pression constante, la chaleur échangée $Q_P$ est égale à la variation d'enthalpie du système : $Q_P = \\Delta H$. Donc, si la réaction est exothermique ($\\Delta H < 0$), alors le système libère de la chaleur ($Q_P < 0$). L'option 1 décrit une réaction endothermique. L'option 3 décrit une transformation adiabatique. L'option 4 est contradictoire avec la définition de l'exothermicité à pression constante."
+    },
+    {
+        "uuid": "thermo-038",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors de l'étude d'une combustion, il est parfois fait l'hypothèse d'une transformation adiabatique pour simplifier l'analyse, notamment pour estimer la température de flamme. Quelle est la condition principale qui justifie cette hypothèse ?",
+        "answers": [
+            "La transformation est très lente, permettant un équilibre thermique constant.",
+            "La transformation est très rapide, si bien que les transferts thermiques avec l'extérieur sont négligeables pendant sa durée.",
+            "Le réacteur est plongé dans un thermostat.",
+            "Les parois du réacteur sont parfaitement conductrices."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Une transformation adiabatique est une transformation sans échange de chaleur avec le milieu extérieur ($Q=0$). Cela est souvent une bonne approximation pour les processus très rapides, comme les combustions, car la durée de la réaction est tellement courte que les transferts thermiques par conduction, convection ou rayonnement n'ont pas le temps de s'établir de manière significative. Une transformation lente favoriserait au contraire les transferts thermiques. Un réacteur dans un thermostat ou avec des parois conductrices faciliterait les échanges thermiques, contredisant l'hypothèse adiabatique."
+    },
+    {
+        "uuid": "thermo-039",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre d'une combustion adiabatique d'un mélange stœchiométrique, si l'on ajoute un gaz inerte (non réactif) aux réactifs avant la réaction, comment cela affecte-t-il la température finale de flamme ?",
+        "answers": [
+            "La température de flamme augmente car le gaz inerte participe à la réaction.",
+            "La température de flamme diminue car le gaz inerte absorbe une partie de l'énergie libérée par la réaction.",
+            "La température de flamme reste inchangée car le gaz inerte ne participe pas à la réaction.",
+            "L'énergie libérée par la réaction n'est pas suffisante pour chauffer le gaz inerte, donc la réaction ne démarre pas."
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Lors d'une combustion adiabatique, toute l'énergie libérée par la réaction (sous forme de chaleur) sert à élever la température des produits de la combustion. Si l'on ajoute un gaz inerte, ce gaz ne participe pas à la réaction chimique mais il est présent dans les produits. Il a donc une capacité thermique. L'énergie libérée par la combustion doit alors être distribuée sur un plus grand nombre de moles (ou une plus grande masse) de gaz, ce qui signifie que l'augmentation de température sera plus faible. Par conséquent, la température finale de flamme diminue. L'option 1 est fausse car le gaz est inerte. L'option 3 est fausse car même inerte, le gaz a une capacité thermique. L'option 4 est absurde, la combustion se produit quand même."
+    },
+    {
+        "uuid": "thermo-040",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En thermodynamique, la capacité thermique est une propriété importante des substances. Quelle est l'unité SI de la capacité thermique molaire à pression constante standard, notée $C_{p,m}^0$ ?",
+        "answers": [
+            "$\\text{J.K}^{-1}$",
+            "$\\text{J.mol}^{-1}.K^{-1}$",
+            "$\\text{W.K}^{-1}$",
+            "$\\text{J.mol}^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La capacité thermique molaire $C_{p,m}^0$ représente l'énergie (en Joules, $\\text{J}$) nécessaire pour élever la température d'une mole ($\\text{mol}$) de substance de un Kelvin ($\\text{K}$) à pression constante standard. Son unité est donc $\\text{J.mol}^{-1}.K^{-1}$.\n- $\\text{J.K}^{-1}$ est l'unité de la capacité thermique (non molaire).\n- $\\text{W.K}^{-1}$ (Watts par Kelvin) est l'unité de la conductance thermique (puissance transférée par différence de température).\n- $\\text{J.mol}^{-1}$ est l'unité d'une enthalpie molaire ou d'une énergie molaire, mais pas d'une capacité thermique molaire car il manque la dépendance à la température."
+    },
+    {
+        "uuid": "td-021",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude des machines thermiques réversibles, quelle est l'expression du rendement de Carnot $\\eta_c$ pour un moteur thermique fonctionnant entre une source chaude de température $T_{ch}$ et une source froide de température $T_{fr}$ ? Les températures sont exprimées en kelvins.",
+        "answers": [
+            "$\\eta_c = 1 - \\frac{T_{fr}}{T_{ch}}$",
+            "$\\eta_c = 1 - \\frac{T_{ch}}{T_{fr}}$",
+            "$\\eta_c = \\frac{W_{utile}}{Q_{fournie}}$",
+            "$\\eta_c = \\frac{T_{ch} - T_{fr}}{T_{fr}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Le rendement de Carnot est le rendement maximal qu'une machine thermique peut avoir, fonctionnant entre deux sources de chaleur à des températures absolues $T_{ch}$ et $T_{fr}$. Sa formule est $\\eta_c = 1 - \\frac{T_{fr}}{T_{ch}}$.\n\n- La réponse correcte $\\eta_c = 1 - \\frac{T_{fr}}{T_{ch}}$ assure un rendement positif et inférieur à 1, comme attendu pour une machine réelle. $T_{fr}$ et $T_{ch}$ doivent être exprimées en Kelvin.\n- La proposition $\\eta_c = 1 - \\frac{T_{ch}}{T_{fr}}$ est une erreur d'inversion des températures, qui donnerait un rendement négatif ou supérieur à 1 si $T_{ch} > T_{fr}$.\n- La proposition $\\eta_c = \\frac{W_{utile}}{Q_{fournie}}$ est la définition générale du rendement d'un moteur thermique (énergie utile produite sur énergie fournie), mais ce n'est pas l'expression spécifique de Carnot en fonction des températures.\n- La proposition $\\eta_c = \\frac{T_{ch} - T_{fr}}{T_{fr}}$ est une autre erreur de formule ou d'inversion des températures au dénominateur."
+    },
+    {
+        "uuid": "td-022",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte d'un moteur fournissant une puissance constante, si la puissance mécanique d'un moteur est de $25 \\text{ kW}$, quelle est l'énergie $W$ qu'il fournit pendant une durée de $1 \\text{ heure}$ ?",
+        "answers": [
+            "$25 \\text{ kJ}$",
+            "$25 \\cdot 10^3 \\cdot 3600 \\text{ J}$",
+            "$25 \\cdot 10^3 / 3600 \\text{ J}$",
+            "$25 \\text{ kWh}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'énergie $W$ fournie par un moteur est le produit de sa puissance $P$ par la durée $\\Delta t$ pendant laquelle il fonctionne : $W = P \\cdot \\Delta t$.\n\nPour obtenir l'énergie en joules ($J$), il est essentiel d'utiliser les unités du Système International (SI) pour la puissance (Watts, $W$) et la durée (secondes, $s$).\n\n- La puissance est donnée en $25 \\text{ kW}$, ce qui équivaut à $25 \\cdot 10^3 \\text{ W}$.\n- La durée est $1 \\text{ heure}$, ce qui équivaut à $1 \\cdot 3600 \\text{ s}$.\n- Donc, l'énergie $W = (25 \\cdot 10^3 \\text{ W}) \\cdot (3600 \\text{ s}) = 25 \\cdot 10^3 \\cdot 3600 \\text{ J}$.\n\n- La proposition $25 \\text{ kJ}$ ne prend pas en compte la durée, elle correspond juste à la puissance en kJ/s. \n- La proposition $25 \\cdot 10^3 / 3600 \\text{ J}$ est une erreur de division au lieu de multiplication.\n- La proposition $25 \\text{ kWh}$ est une valeur correcte mais dans une unité différente (kilowatt-heure), alors que la question implicitement demande l'unité SI (Joules)."
+    },
+    {
+        "uuid": "td-023",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude d'un carburant, la quantité de matière $n$ d'un alcane (de masse molaire $M$) contenue dans un volume $V$ d'essence (de masse volumique $\\rho$) se calcule par :",
+        "answers": [
+            "$n = \\rho \\cdot V / M$",
+            "$n = V / (M \\cdot \\rho)$",
+            "$n = M \\cdot V / \\rho$",
+            "$n = \\rho \\cdot M / V$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Pour calculer la quantité de matière $n$, il faut d'abord déterminer la masse $m$ de l'essence, puis utiliser la masse molaire $M$.\n\n1.  **Calcul de la masse $m$ :** La masse volumique $\\rho$ est définie par $\\rho = \\frac{m}{V}$. Donc, $m = \\rho \\cdot V$.\n2.  **Calcul de la quantité de matière $n$ :** La quantité de matière $n$ est définie par $n = \\frac{m}{M}$.\n\nEn combinant ces deux relations, on obtient : $n = \\frac{\\rho \\cdot V}{M}$.\n\n- La proposition $n = V / (M \\cdot \\rho)$ est une erreur de manipulation des relations.\n- La proposition $n = M \\cdot V / \\rho$ est également une erreur de manipulation.\n- La proposition $n = \\rho \\cdot M / V$ mélange les termes et n'est pas cohérente dimensionnellement."
+    },
+    {
+        "uuid": "td-024",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude d'une réaction de combustion se produisant de manière adiabatique à pression constante (calorimètre), on ajoute $x$ moles de $N_2$ (inerte) aux produits pour modérer la température. L'équation de bilan enthalpique, pour déterminer la température finale adiabatique, devient :",
+        "answers": [
+            "$\\Delta H = \\xi \\Delta_r H^0 + (C_{p,produits \\ autres} + x \\cdot C_{p,N2}) \\Delta T = 0$",
+            "$\\Delta H = \\xi \\Delta_r H^0 + C_{p,produits \\ autres} \\Delta T = 0$",
+            "$\\Delta H = x \\cdot \\Delta_r H^0 + C_{p,N2} \\Delta T = 0$",
+            "$\\Delta H = \\xi \\Delta_r H^0 - (C_{p,produits \\ autres} + x \\cdot C_{p,N2}) \\Delta T = 0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Pour un système adiabatique à pression constante, la variation d'enthalpie totale du système est nulle ($\\Delta H = 0$). Cette variation d'enthalpie se décompose en deux contributions :\n\n1.  **L'enthalpie de réaction à température de référence $T_0$ :** Elle est donnée par $\\xi \\Delta_r H^0(T_0)$, où $\\xi$ est l'avancement de la réaction et $\\Delta_r H^0(T_0)$ est l'enthalpie standard de réaction à $T_0$.\n2.  **L'enthalpie nécessaire pour chauffer les produits (et l'azote inerte) de la température $T_0$ à la température finale $T_f$ :** Cette variation d'enthalpie est donnée par $\\sum_i n_i C_{p,i} \\Delta T = (\\sum_i n_i C_{p,i}) (T_f - T_0)$, où $n_i$ est la quantité de matière du constituant $i$ et $C_{p,i}$ sa capacité thermique molaire à pression constante. Ici, il s'agit de la somme des capacités thermiques des produits formés (noté $C_{p,produits \\ autres}$) *et* de l'azote ajouté ($x \\cdot C_{p,N2}$). On assume ici que $C_{p,produits \\ autres}$ représente la somme des capacités thermiques des autres produits formés.\n\nL'équation de bilan est donc : $\\xi \\Delta_r H^0 + (C_{p,produits \\ autres} + x \\cdot C_{p,N2}) \\Delta T = 0$.\n\n- La proposition $$\\Delta H = \\xi \\Delta_r H^0 + C_{p,produits \\ autres} \\Delta T = 0$$ oublie de prendre en compte la capacité thermique de l'azote ajouté.\n- La proposition $$\\Delta H = x \\cdot \\Delta_r H^0 + C_{p,N2} \\Delta T = 0$$ est incorrecte car elle mélange l'avancement avec la quantité de $N_2$ et ne considère que le $N_2$ pour la variation de température.\n- La proposition $$\\Delta H = \\xi \\Delta_r H^0 - (C_{p,produits \\ autres} + x \\cdot C_{p,N2}) \\Delta T = 0$$ contient une erreur de signe, suggérant que le chauffage des produits diminuerait l'enthalpie totale."
+    },
+    {
+        "uuid": "td-025",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de la séparation des gaz, si l'on souhaite extraire $1 \\text{ mole}$ de dioxygène pur ($O_2$) à partir d'un échantillon d'air modélisé par $20\\%$ de $O_2$ et $80\\%$ de $N_2$ en proportions molaires, combien de moles de diazote ($N_2$) sont initialement associées à cette mole de dioxygène dans l'air ?",
+        "answers": [
+            "$1 \\text{ mole}$",
+            "$4 \\text{ moles}$",
+            "$0,25 \\text{ mole}$",
+            "$5 \\text{ moles}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'air est modélisé avec $20\\%$ de $O_2$ et $80\\%$ de $N_2$ en proportions molaires. Cela signifie que pour $100$ moles d'air, il y a $20$ moles de $O_2$ et $80$ moles de $N_2$.\n\nOn cherche la quantité de $N_2$ pour $1 \\text{ mole}$ de $O_2$. On peut établir un rapport :\n\n$\\frac{\\text{moles } N_2}{\\text{moles } O_2} = \\frac{80\\%}{20\\%} = 4$\n\nDonc, pour $1 \\text{ mole}$ de $O_2$, il y a $4 \\text{ moles}$ de $N_2$.\n\n- La proposition $1 \\text{ mole}$ est incorrecte car elle suppose une proportion $1:1$.\n- La proposition $0,25 \\text{ mole}$ est l'inverse du rapport correct ($1/4$).\n- La proposition $5 \\text{ moles}$ pourrait résulter d'une confusion en sommant les moles ($1 \\text{ mole } O_2 + 4 \\text{ moles } N_2 = 5 \\text{ moles d'air}$)."
+    },
+    {
+        "uuid": "td-026",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérons la réaction de formation du silicate de calcium, souvent utilisée dans la production de ciment : $3CaCO_3(s) + SiO_2(s) \\rightarrow Ca_3SiO_5(s) + 3CO_2(g)$. Combien de moles de gaz sont produites par mole de silicate de calcium ($Ca_3SiO_5$) formé ?",
+        "answers": [
+            "$1 \\text{ mole}$",
+            "$3 \\text{ moles}$",
+            "$0 \\text{ mole}$",
+            "$4 \\text{ moles}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Pour répondre à cette question, il faut analyser les coefficients stœchiométriques de l'équation chimique équilibrée et identifier les espèces gazeuses.\n\nL'équation est : $3CaCO_3(s) + SiO_2(s) \\rightarrow Ca_3SiO_5(s) + 3CO_2(g)$.\n\n- Les réactifs $CaCO_3$ et $SiO_2$ sont des solides (s).\n- Le produit $Ca_3SiO_5$ est un solide (s).\n- Le produit $CO_2$ est un gaz (g).\n\nLe coefficient stœchiométrique devant $Ca_3SiO_5$ est $1$ (implicite). Le coefficient stœchiométrique devant $CO_2$ est $3$. Cela signifie que pour chaque mole de $Ca_3SiO_5$ formée, $3$ moles de $CO_2$ (qui est un gaz) sont produites.\n\n- La proposition $1 \\text{ mole}$ ignore le coefficient stœchiométrique du $CO_2$.\n- La proposition $0 \\text{ mole}$ ignore la production de $CO_2$.\n- La proposition $4 \\text{ moles}$ pourrait résulter d'une erreur de sommation ou d'une mauvaise interprétation des coefficients stœchiométriques."
+    },
+    {
+        "uuid": "td-027",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte d'une réaction endothermique réalisée dans un four, si l'enthalpie standard de réaction est $\\Delta_r H^0 > 0$, et que la réaction progresse d'un avancement $\\xi$, quelle est la chaleur $Q$ que le four doit fournir au système pour que la réaction se produise à température constante (isotherme) et pression constante (isobare) ?",
+        "answers": [
+            "Égale à $\\xi \\Delta_r H^0$",
+            "Égale à $-\\xi \\Delta_r H^0$",
+            "Nulle",
+            "Dépend de la variation d'entropie"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Pour une transformation qui a lieu à pression constante, la chaleur échangée $Q_P$ est égale à la variation d'enthalpie $\\Delta H$ du système. Ici, la réaction est endothermique, ce qui signifie que $\\Delta_r H^0 > 0$. Par définition, une réaction endothermique absorbe de la chaleur du milieu extérieur pour se produire.\n\nSi la réaction progresse d'un avancement $\\xi$, la variation d'enthalpie du système est $\\Delta H = \\xi \\Delta_r H^0$. Puisque $Q_P = \\Delta H$, la chaleur que le four doit fournir au système est $Q = \\xi \\Delta_r H^0$.\n\n- La proposition égale à $-\\xi \\Delta_r H^0$ serait correcte si la question demandait la chaleur reçue par le four (le milieu extérieur), ou si la réaction était exothermique.\n- La proposition Nulle est fausse car cela impliquerait une réaction adiabatique, or ici un four est utilisé pour fournir de la chaleur.\n- La proposition Dépend de la variation d'entropie est une distraction. L'entropie est liée à la spontanéité de la réaction ($\\Delta G = \\Delta H - T\\Delta S$), mais la chaleur échangée à P et T constantes est directement liée à $\\Delta H$."
+    },
+    {
+        "uuid": "td-028",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérons la combustion complète de l'éthanol ($C_2H_5OH$) qui, après équilibrage de la réaction, consomme $3 \\text{ moles}$ de dioxygène ($O_2$) par mole d'éthanol. Si cette combustion est réalisée avec de l'air (considéré comme $20\\% \\ O_2$ et $80\\% \\ N_2$ en proportions molaires), combien de moles de diazote ($N_2$) sont introduites dans le réacteur pour chaque mole d'éthanol consommée ?",
+        "answers": [
+            "$3 \\text{ moles}$",
+            "$12 \\text{ moles}$",
+            "$4 \\text{ moles}$",
+            "$15 \\text{ moles}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'air est un mélange gazeux dont la composition molaire est approximativement $20\\%$ de $O_2$ et $80\\%$ de $N_2$. Cela signifie que pour chaque mole de $O_2$ présente dans l'air, il y a $4$ moles de $N_2$ (puisque $80/20 = 4$).\n\nLa combustion d'une mole d'éthanol nécessite $3 \\text{ moles}$ de $O_2$. Étant donné que ces $3 \\text{ moles}$ de $O_2$ proviennent de l'air, elles seront accompagnées par une quantité de $N_2$ proportionnelle au ratio dans l'air.\n\nQuantité de $N_2 = (\\text{moles de } O_2 \\text{ consommées}) \\times (\\text{ratio } N_2/O_2 \\text{ dans l'air})$\nQuantité de $N_2 = 3 \\text{ moles } O_2 \\times 4 = 12 \\text{ moles } N_2$.\n\n- La proposition $3 \\text{ moles}$ confond la quantité de $O_2$ avec celle de $N_2$.\n- La proposition $4 \\text{ moles}$ correspond au ratio $N_2/O_2$, mais pas à la quantité totale de $N_2$ pour 3 moles de $O_2$.\n- La proposition $15 \\text{ moles}$ pourrait résulter d'une confusion en multipliant par $5$ (ratio total air/O2) au lieu du ratio $N_2/O_2$ (par exemple $3 \\times (100/20) = 3 \\times 5 = 15$)."
+    },
+    {
+        "uuid": "thermo-041",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de la construction des diagrammes d'Ellingham, qui représentent la variation de l'enthalpie libre standard de réaction $\\Delta_r G^0$ en fonction de la température $T$, une des approximations principales est de négliger la dépendance de l'enthalpie standard de réaction $\\Delta_r H^0$ vis-à-vis de la température. Cette approximation est justifiée par le fait que :",
+        "answers": [
+            "Le terme $\\Delta_r C_p^0 = \\sum \\nu_i C_{p,i}$ (différence des capacités thermiques molaires entre produits et réactifs) est proche de zéro.",
+            "La pression compense les variations.",
+            "C'est une loi fondamentale exacte.",
+            "Les variations d'entropie sont prépondérantes et masquent les variations d'enthalpie."
+        ],
+        "difficulty": 4,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "La dépendance de l'enthalpie standard de réaction $\\Delta_r H^0$ vis-à-vis de la température est donnée par la loi de Kirchhoff :\n$\\frac{d(\\Delta_r H^0)}{dT} = \\Delta_r C_p^0 = \\sum_i \\nu_i C_{p,i}$\noù $\\nu_i$ sont les coefficients stœchiométriques (positifs pour les produits, négatifs pour les réactifs) et $C_{p,i}$ sont les capacités thermiques molaires à pression constante.\n\nDans l'approximation d'Ellingham, on considère que $\\Delta_r H^0$ est indépendant de la température. Cela est justifié si $\\Delta_r C_p^0$ est négligeable, c'est-à-dire si la somme des capacités thermiques molaires des produits est très proche de celle des réactifs. Dans ce cas, $d(\\Delta_r H^0)/dT \\approx 0$, et donc $\\Delta_r H^0$ peut être considérée comme une constante sur la plage de température considérée.\n\n- La proposition concernant la pression est sans rapport avec la dépendance en température de l'enthalpie de réaction.\n- La proposition qu'il s'agit d'une loi fondamentale exacte est fausse ; c'est une approximation.\n- La proposition sur les variations d'entropie est incorrecte. Bien que les diagrammes d'Ellingham montrent l'importance du terme entropique $-T\\Delta_r S^0$ dans $\\Delta_r G^0$, cela n'explique pas pourquoi $\\Delta_r H^0$ est supposé constant avec la température."
+    },
+    {
+        "uuid": "thermo-042",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors d'une combustion, la température de flamme adiabatique (c'est-à-dire sans échange de chaleur avec l'extérieur) est un indicateur clé de l'efficacité et de l'intensité de la réaction. Cette température de flamme est maximale lorsque le mélange des réactifs (carburant et comburant) est :",
+        "answers": [
+            "En excès de carburant.",
+            "En excès de comburant.",
+            "Stoechiométrique.",
+            "Très dilué en espèces inertes."
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "La température de flamme adiabatique est la température maximale que les produits de combustion peuvent atteindre en l'absence de pertes thermiques. Elle est déterminée par le bilan enthalpique :\n$\\Delta H_{réaction} + \\Delta H_{chauffage \\ produits} = 0$.\n\nLe $\\Delta H_{réaction}$ est la chaleur libérée par la combustion (exothermique, donc négative). Cette chaleur est ensuite utilisée pour chauffer les produits de la réaction.\n\nLa température de flamme est maximale lorsque :\n1.  **La quantité d'énergie libérée est maximale :** Ceci se produit lorsque tous les réactifs limitants sont consommés et que la réaction est complète. Cela est réalisé pour un mélange stœchiométrique, où le rapport entre carburant et comburant est exactement celui requis par l'équation de la réaction.\n2.  **La capacité thermique des produits est minimale :** Un excès de carburant ou de comburant, ou la présence d'espèces inertes (comme le diazote de l'air en grande quantité), agit comme un 'diluant' thermique. Ces espèces doivent également être chauffées par la chaleur de la réaction, ce qui augmente la capacité thermique totale du système et réduit la température finale atteinte.\n\n- Si le mélange est en excès de carburant ou en excès de comburant, une partie des réactifs n'est pas consommée, et/ou l'excès de réactif agit comme un diluant, absorbant une partie de la chaleur libérée et abaissant la température finale.\n- Un mélange très dilué en espèces inertes (comme l'azote de l'air) aura une capacité thermique globale élevée, réduisant également la température de flamme.\n\nC'est donc un mélange stœchiométrique qui permet la consommation complète de tous les réactifs en libérant la quantité maximale de chaleur pour une quantité minimale de produits (sans excès inutile), conduisant à la température de flamme la plus élevée."
+    },
+    {
+        "uuid": "thermo-043",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Sachant que l'enthalpie molaire standard de vaporisation de l'eau est une grandeur positive, la condensation de la vapeur d'eau est une transformation :",
+        "answers": [
+            "Endothermique",
+            "Exothermique",
+            "Athermique",
+            "Isotherme"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'enthalpie molaire de vaporisation (ou évaporation) de l'eau, $\\Delta_{vap} H$, est positive par définition. Cela signifie que pour vaporiser l'eau, il faut lui apporter de l'énergie thermique (la transformation est endothermique). La condensation est la transformation inverse de la vaporisation. Par conséquent, si la vaporisation est endothermique, la condensation doit être exothermique, c'est-à-dire qu'elle libère de l'énergie thermique vers le milieu extérieur. \n\nLes pièges : \n*   'Endothermique' est la réponse pour la vaporisation. \n*   'Athermique' signifierait qu'il n'y a aucun échange de chaleur, ce qui est faux pour un changement de phase. \n*   'Isotherme' décrit une transformation à température constante, ce qui est souvent le cas lors d'un changement de phase pur, mais ne caractérise pas l'échange de chaleur."
+    },
+    {
+        "uuid": "thermo-044",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le système international d'unités (SI), l'unité de la masse volumique $\\rho$ est :",
+        "answers": [
+            "$\\text{g.cm}^{-3}$",
+            "$\\text{kg.m}^{-3}$",
+            "$\\text{kg.L}^{-1}$",
+            "$\\text{g.L}^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Le Système International d'Unités (SI) est basé sur sept unités fondamentales. Pour la masse volumique $\\rho = m/V$ : \n*   L'unité de masse fondamentale en SI est le kilogramme ($\\text{kg}$). \n*   L'unité de longueur fondamentale en SI est le mètre ($\\text{m}$), donc l'unité de volume fondamentale est le mètre cube ($\\text{m}^3$). \n\nPar conséquent, l'unité SI de la masse volumique est le kilogramme par mètre cube ($\\text{kg.m}^{-3}$). \n\nLes pièges : \n*   $\\text{g.cm}^{-3}$ est une unité courante (système CGS), mais pas l'unité SI. \n*   $\\text{kg.L}^{-1}$ est une unité très souvent utilisée, notamment pour l'eau ($1 \\text{ kg.L}^{-1}$), mais le litre ($\\text{L}$) n'est pas une unité de volume SI. Un litre est défini comme $1 \\text{ dm}^3$, et $1 \\text{ kg.L}^{-1} = 1 \\text{ kg.(dm}^3)^{-1} = 1000 \\text{ kg.m}^{-3}$. \n*   $\\text{g.L}^{-1}$ mélange le gramme et le litre, qui ne sont pas les unités fondamentales SI pour la masse et le volume."
+    },
+    {
+        "uuid": "thermo-045",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérant un gaz parfait dans les conditions normales de température et de pression (CNTP), c'est-à-dire à $0^{\\circ}C$ ($273,15 \\text{ K}$) et sous une pression de $1$ bar ($10^5 \\text{ Pa}$), son volume molaire vaut approximativement :",
+        "answers": [
+            "Environ $22,4 \\text{ L.mol}^{-1}$",
+            "Environ $22,7 \\text{ L.mol}^{-1}$",
+            "Environ $1,0 \\text{ L.mol}^{-1}$",
+            "Environ $24,5 \\text{ L.mol}^{-1}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Le volume molaire d'un gaz parfait peut être calculé à partir de l'équation des gaz parfaits : $PV = nRT$. \nLe volume molaire $V_m$ correspond au volume occupé par une mole de gaz, donc $V_m = V/n = RT/P$. \n\nDans les conditions données : \n*   Température $T = 0^{\\circ}C = 273,15 \\text{ K}$ \n*   Pression $P = 1 \\text{ bar} = 10^5 \\text{ Pa}$ \n*   Constante des gaz parfaits $R \\approx 8,314 \\text{ J.mol}^{-1}\\text{.K}^{-1}$ \n\nCalcul : $V_m = (8,314 \\text{ J.mol}^{-1}\\text{.K}^{-1} \\times 273,15 \\text{ K}) / (10^5 \\text{ Pa}) \\approx 0,02271 \\text{ m}^3\\text{.mol}^{-1}$. \n\nPour convertir en litres (sachant que $1 \\text{ m}^3 = 1000 \\text{ L}$) : \n$V_m \\approx 0,02271 \\times 1000 \\text{ L.mol}^{-1} \\approx 22,71 \\text{ L.mol}^{-1}$. \n\nLes pièges : \n*   'Environ $22,4 \\text{ L.mol}^{-1}$' est le volume molaire d'un gaz parfait à $0^{\\circ}C$ mais sous une pression de $1$ atmosphère ($\\approx 101325 \\text{ Pa}$), et non $1$ bar. C'est une valeur historique très connue et donc une source de confusion fréquente. \n*   'Environ $1,0 \\text{ L.mol}^{-1}$' est une valeur beaucoup trop faible pour un gaz. \n*   'Environ $24,5 \\text{ L.mol}^{-1}$' est le volume molaire d'un gaz parfait à $25^{\\circ}C$ et $1$ bar, une autre condition de référence courante."
+    },
+    {
+        "uuid": "thermo-046",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "La pression atmosphérique normale, souvent utilisée comme référence en thermodynamique et en chimie, est d'environ :",
+        "answers": [
+            "$10^3 \\text{ Pa}$",
+            "$10^5 \\text{ Pa}$",
+            "$10^8 \\text{ Pa}$",
+            "$10^6 \\text{ Pa}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La pression atmosphérique normale est généralement définie comme $1$ atmosphère ($\\text{atm}$). \nHistoriquement, $1 \\text{ atm}$ correspond à $101325 \\text{ Pa}$. \nCependant, en chimie et thermodynamique, il est devenu courant d'utiliser la pression standard de $1$ bar, qui est définie comme exactement $10^5 \\text{ Pa}$. \nDans les deux cas, la valeur est très proche de $10^5 \\text{ Pa}$. \n\nLes pièges : \n*   $10^3 \\text{ Pa}$ est une pression beaucoup trop faible (environ 100 fois moins que la pression atmosphérique). \n*   $10^8 \\text{ Pa}$ est une pression beaucoup trop élevée (environ 1000 fois la pression atmosphérique). \n*   $10^6 \\text{ Pa}$ correspond à $10$ bars, ce qui est également une pression bien supérieure à la pression atmosphérique normale."
+    },
+    {
+        "uuid": "thermo-047",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le contexte d'une réaction chimique, un mélange de réactifs est qualifié de stoechiométrique si :",
+        "answers": [
+            "Tous les réactifs sont épuisés simultanément à la fin de la réaction totale.",
+            "Il y a autant de moles de chaque réactif.",
+            "Le volume des réactifs est égal au volume des produits.",
+            "Le produit de la réaction est majoritaire."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Un mélange de réactifs est dit stoechiométrique si les quantités initiales de ces réactifs sont dans les mêmes proportions que leurs coefficients stoechiométriques dans l'équation équilibrée de la réaction. Cela signifie que si la réaction est complète (totale), tous les réactifs seront consommés en même temps, sans qu'aucun ne soit en excès ou limitant. \n\nConsidérons une réaction générique : $\\nu_A A + \\nu_B B \\to \\text{produits}$. Un mélange est stoechiométrique si $n_{A,0} / \\nu_A = n_{B,0} / \\nu_B$, où $n_{X,0}$ est la quantité initiale du réactif $X$ et $\\nu_X$ est son coefficient stoechiométrique. \n\nLes pièges : \n*   'Il y a autant de moles de chaque réactif' est une erreur courante. Cette affirmation n'est vraie que si tous les coefficients stoechiométriques sont égaux à $1$. Par exemple, pour la réaction $2 H_2 + O_2 \\to 2 H_2O$, un mélange stoechiométrique nécessite $2$ moles de $H_2$ pour $1$ mole de $O_2$, et non la même quantité de moles. \n*   'Le volume des réactifs est égal au volume des produits' n'a pas de relation directe avec la stoechiométrie des réactifs et est rarement vrai. \n*   'Le produit de la réaction est majoritaire' est une notion qui n'est pas liée à la définition de la stoechiométrie des réactifs."
+    },
+    {
+        "uuid": "thermo-048",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors de la modélisation d'une réaction chimique par une équation de type $\\sum_i \\nu_i A_i = 0$, l'avancement $\\xi$ d'une réaction s'exprime en :",
+        "answers": [
+            "Sans unité",
+            "mol",
+            "mol.s$^{-1}$",
+            "mol.L$^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'avancement $\\xi$ (lettre grecque xi) est une grandeur qui permet de quantifier la progression d'une réaction chimique. Pour une réaction représentée par l'équation $\\sum_i \\nu_i A_i = 0$ (où $\\nu_i$ sont les coefficients stoechiométriques algébrisés, positifs pour les produits, négatifs pour les réactifs), la variation de la quantité de matière d'une espèce $A_i$ est donnée par $dn_i = \\nu_i d\\xi$. L'unité de $dn_i$ est la mole ($\\text{mol}$), et $\\nu_i$ est sans unité. Par conséquent, l'unité de $d\\xi$ (et donc de $\\xi$) doit être la mole ($\\text{mol}$). \n\nLes pièges : \n*   'Sans unité' est incorrect. Seules les grandeurs adimensionnelles n'ont pas d'unité. \n*   'mol.s$^{-1}$' est l'unité de la vitesse de réaction ($\\frac{d\\xi}{dt}$), et non de l'avancement lui-même. C'est une confusion fréquente. \n*   'mol.L$^{-1}$' est l'unité de la concentration molaire (ou molarité), qui est la quantité de matière par volume."
+    },
+    {
+        "uuid": "thermo-049",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "La relation fondamentale de la calorimétrie $\\Delta H = Q_P$, où $\\Delta H$ est la variation d'enthalpie du système et $Q_P$ est la chaleur échangée à pression constante, est valable pour une transformation effectuée dans les conditions spécifiques suivantes :",
+        "answers": [
+            "Isochore",
+            "Monobare, sans autre travail que celui des forces de pression.",
+            "Adiabatique",
+            "Isotherme"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Démontrons la relation : \nL'enthalpie est définie comme $H = U + PV$. Sa variation différentielle est $dH = dU + PdV + VdP$. \nSelon le premier principe de la thermodynamique, pour une transformation élémentaire, $dU = \\delta Q + \\delta W$. \nLe travail des forces de pression est $\\delta W = -PdV$. Si d'autres formes de travail existent (travail électrique, etc.), on les note $\\delta W'$. Donc $\\delta W = -PdV + \\delta W'$. \n\nEn substituant $dU$ dans l'expression de $dH$ : \n$dH = (\\delta Q - PdV + \\delta W') + PdV + VdP$ \n$dH = \\delta Q + \\delta W' + VdP$ \n\nSi la transformation est : \n1.  **Monobare (à pression constante)** : $dP = 0$. \n2.  **Sans autre travail que celui des forces de pression** : $\\delta W' = 0$. \n\nAlors l'équation se simplifie en $dH = \\delta Q$. Pour une transformation finie, on intègre : $\\Delta H = Q$. \nC'est la chaleur échangée à pression constante, $Q_P$. \n\nLes pièges : \n*   'Isochore' : Si le volume est constant ($dV=0$), alors $\\delta W = 0$ (en l'absence d'autre travail) et $dU = \\delta Q$. On a donc $\\Delta U = Q_V$. L'enthalpie n'est pas directement reliée à $Q$ de cette manière pour une transformation isochore. \n*   'Adiabatique' : Une transformation adiabatique signifie $Q=0$. Dans ce cas, $dH = \\delta W' + VdP$. Si la pression est constante et il n'y a pas d'autre travail, alors $dH = 0$, donc $\\Delta H = 0$. Ainsi, $Q=0$ et $\\Delta H=0$, ce qui satisfait $\\Delta H=Q$ mais de manière triviale et sous des conditions plus restrictives. La condition générale est $Q_P=\\Delta H$ pour un processus isobar avec $W'=0$. \n*   'Isotherme' : Une transformation isotherme ($dT=0$) ne garantit pas la relation $\\Delta H = Q$ à elle seule, sauf si elle est également monobare et sans autre travail."
+    },
+    {
+        "uuid": "thermo-050",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérons une réaction chimique endothermique (dont l'enthalpie standard de réaction est positive, $\\Delta_r H^0 > 0$) qui est réalisée de façon adiabatique dans un système fermé. Cette réaction entraîne :",
+        "answers": [
+            "Une augmentation de la température du milieu.",
+            "Une diminution de la température du milieu.",
+            "Aucun changement de température.",
+            "Une augmentation de l'enthalpie du système."
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Une réaction endothermique est une réaction qui consomme de l'énergie thermique du milieu environnant si elle se produit à pression constante. Son enthalpie de réaction, $\\Delta_r H^0$, est positive. \n\nSi cette réaction est réalisée de façon adiabatique, cela signifie qu'il n'y a aucun échange de chaleur entre le système réactionnel et l'extérieur ($Q=0$). \n\nPuisque la réaction est endothermique, elle a besoin d'absorber de la chaleur pour se produire. Comme aucune chaleur ne peut provenir de l'extérieur (condition adiabatique), cette énergie doit être puisée dans l'énergie interne du système lui-même. Cela se manifeste par une baisse de l'énergie cinétique moyenne des particules du système, ce qui correspond à une diminution de la température du milieu réactionnel. \n\nEn d'autres termes, pour que la réaction se fasse, le système doit se 'refroidir' pour fournir l'énergie nécessaire à la réaction. \n\nLes pièges : \n*   'Une augmentation de la température du milieu' serait le cas pour une réaction exothermique réalisée adiabatiquement. \n*   'Aucun changement de température' se produirait si la réaction était athermique (pas d'échange de chaleur intrinsèque) ou si le système était thermostaté (non adiabatique) ou si la capacité thermique du milieu était infinie. \n*   'Une augmentation de l'enthalpie du système' est une confusion. $\\Delta_r H^0 > 0$ indique que la *réaction* est endothermique. Pour un système adiabatique et isobar (sans autre travail), $\\Delta H = Q_P = 0$. La variation de l'enthalpie du *système* n'est pas directement l'enthalpie de réaction. La réaction consomme de l'énergie (venant du système) pour augmenter sa propre enthalpie au fur et à mesure de l'avancement, ce qui refroidit le milieu."
+    },
+    {
+        "uuid": "td-029",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude d'un moteur thermique de Carnot idéal, la température de la source chaude $T_{ch}$ est utilisée dans le calcul du rendement idéal $\\eta = 1 - T_{fr}/T_{ch}$ car :",
+        "answers": [
+            "Elle représente la température à laquelle le système échange de la chaleur avec la source chaude.",
+            "C'est une convention arbitraire du cycle de Carnot.",
+            "C'est la température de l'huile du moteur.",
+            "Elle correspond à la température maximale atteinte par le fluide de travail."
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Le cycle de Carnot est un cycle thermodynamique idéal qui opère entre deux sources de chaleur, une source chaude à température $T_{ch}$ et une source froide à température $T_{fr}$. Le rendement maximal d'un moteur thermique est donné par la formule de Carnot : $\\eta = 1 - T_{fr}/T_{ch}$. \n\nLa température $T_{ch}$ utilisée dans cette formule est la température de la *source externe* qui fournit la chaleur au système. C'est la température à laquelle l'échange de chaleur $Q_{ch}$ (apportée au système) se produit. Dans un moteur réel, cette source chaude est souvent créée par une combustion. Le rendement de Carnot est un rendement *maximal* car il suppose que tous les transferts de chaleur sont réversibles et se font à des températures constantes et uniformes. \n\nLes pièges : \n*   'C'est une convention arbitraire du cycle de Carnot' est faux. Cette température a une signification physique fondamentale dans le rendement. \n*   'C'est la température de l'huile du moteur' est trop spécifique à un type de moteur et n'est pas la raison fondamentale de son utilisation dans la formule de Carnot, qui s'applique à tout moteur idéal. \n*   'Elle correspond à la température maximale atteinte par le fluide de travail' est souvent vraie pour le fluide de travail, mais la raison fondamentale de son inclusion dans la formule de Carnot est qu'elle est la température de la source d'énergie, pas seulement une température interne au moteur."
+    },
+    {
+        "uuid": "td-030",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans l'étude des équilibres d'oxydoréduction à haute température, comme ceux intervenant dans les fours métallurgiques, l'approximation d'Ellingham permet principalement de :",
+        "answers": [
+            "Calculer $\\Delta_r G^0(T)$ en supposant que $\\Delta_r H^0$ et $\\Delta_r S^0$ sont constants avec la température.",
+            "Ignorer le dioxyde de carbone produit lors de la réaction.",
+            "Supposer que le four est parfaitement isolé et fonctionne en régime adiabatique.",
+            "Estimer la constante d'équilibre en considérant uniquement les produits gazeux."
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "L'approximation d'Ellingham est une simplification cruciale utilisée dans la construction des diagrammes d'Ellingham, qui représentent la variation d'énergie de Gibbs standard $\\Delta_r G^0$ en fonction de la température $T$ pour des réactions d'oxydation (souvent pour la formation d'oxydes métalliques). \n\nL'expression générale de l'énergie de Gibbs est $\\Delta_r G^0(T) = \\Delta_r H^0(T) - T \\Delta_r S^0(T)$. \nL'approximation d'Ellingham consiste à supposer que les variations d'enthalpie standard de réaction ($\\Delta_r H^0$) et d'entropie standard de réaction ($\\Delta_r S^0$) sont *pratiquement constantes sur une large gamme de températures*. Ces valeurs sont donc généralement calculées à une température de référence (souvent $298 \\text{ K}$) et utilisées telles quelles pour toutes les températures étudiées. \n\nAvec cette approximation, la relation devient linéaire : $\\Delta_r G^0(T) \\approx \\Delta_r H^0(298 \\text{ K}) - T \\Delta_r S^0(298 \\text{ K})$. \nCeci simplifie énormément les calculs et permet de tracer des diagrammes $\\Delta_r G^0(T)$ sous forme de droites (ou de segments de droites lorsque des changements de phase interviennent). \n\nLes pièges : \n*   'Ignorer le dioxyde de carbone produit lors de la réaction' n'est pas une caractéristique de l'approximation d'Ellingham. Le $\\text{CO}_2$ est un produit clé dans de nombreuses réactions considérées par les diagrammes d'Ellingham. \n*   'Supposer que le four est parfaitement isolé et fonctionne en régime adiabatique' décrit des conditions de fonctionnement du four, mais pas l'approximation sous-jacente au calcul des grandeurs thermodynamiques. \n*   'Estimer la constante d'équilibre en considérant uniquement les produits gazeux' est une simplification utilisée dans certains calculs de constantes d'équilibre ($K_p$), mais n'est pas l'essence de l'approximation d'Ellingham, qui porte sur la dépendance en température de $\\Delta_r H^0$ et $\\Delta_r S^0$."
+    },
+    {
+        "uuid": "thermo-051",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude des propriétés thermodynamiques des gaz parfaits, l'affirmation selon laquelle l'enthalpie molaire $H_m$ d'un gaz parfait ne dépend que de la température $T$ est connue sous le nom de :",
+        "answers": [
+            "La première loi de Joule.",
+            "La seconde loi de Joule.",
+            "La loi de Dalton.",
+            "La loi de Hess."
+        ],
+        "difficulty": 4,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La première loi de Joule stipule que l'énergie interne $U$ d'un gaz parfait ne dépend que de la température $T$. La seconde loi de Joule, quant à elle, étend ce concept à l'enthalpie $H$. Pour un gaz parfait, $PV = nRT$, donc l'enthalpie molaire est $H_m = U_m + PV_m = U_m + RT$. Puisque $U_m$ ne dépend que de $T$ (première loi de Joule) et $R$ est une constante, il s'ensuit que $H_m$ ne dépend également que de $T$. La loi de Dalton concerne les pressions partielles dans un mélange de gaz, et la loi de Hess permet de calculer les enthalpies de réaction à partir des enthalpies de formation."
+    },
+    {
+        "uuid": "thermo-052",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors de l'étude des propriétés thermodynamiques des phases condensées, comme les solides et les liquides, qui sont caractérisées par une faible compressibilité et une faible dilatation thermique, il est courant d'assimiler :",
+        "answers": [
+            "$C_p$ et $C_v$",
+            "$P$ et $T$",
+            "$H$ et $Q$",
+            "$U$ et $H$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Pour les phases condensées (solides et liquides), le volume $V$ varie très peu avec la température et la pression. L'enthalpie est définie comme $H = U + PV$. La variation d'enthalpie est $dH = dU + P dV + V dP$. Les capacités thermiques sont définies par $C_p = \\left(\\frac{\\partial H}{\\partial T}\\right)_P$ et $C_v = \\left(\\frac{\\partial U}{\\partial T}\\right)_V$. Puisque pour un solide ou un liquide, le terme $PV$ varie très peu (le travail de dilatation est négligeable), la différence entre $H$ et $U$ est minime, et par conséquent, $C_p \\approx C_v$. L'assimilation de $P$ et $T$ n'a pas de sens physique direct. $H$ est une fonction d'état, tandis que $Q$ est une grandeur d'échange thermique."
+    },
+    {
+        "uuid": "thermo-053",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Afin d'effectuer des calculs stœchiométriques ou énergétiques impliquant l'air comme réactif ou milieu, quelle est la valeur approchée de la masse molaire moyenne de l'air, exprimée en $\\text{g.mol}^{-1}$ ?",
+        "answers": [
+            "$20 \\text{ g.mol}^{-1}$",
+            "$29 \\text{ g.mol}^{-1}$",
+            "$32 \\text{ g.mol}^{-1}$",
+            "$28 \\text{ g.mol}^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'air est principalement composé de diazote ($N_2$, environ $78 \\%$) et de dioxygène ($O_2$, environ $21 \\%$). Les masses molaires atomiques sont $M(N) \\approx 14 \\text{ g.mol}^{-1}$ et $M(O) \\approx 16 \\text{ g.mol}^{-1}$. Donc $M(N_2) \\approx 28 \\text{ g.mol}^{-1}$ et $M(O_2) \\approx 32 \\text{ g.mol}^{-1}$. La masse molaire moyenne de l'air se calcule comme une moyenne pondérée par les fractions molaires : $M_{air} \\approx 0.78 \\times M(N_2) + 0.21 \\times M(O_2) \\approx 0.78 \\times 28 + 0.21 \\times 32 \\approx 21.84 + 6.72 \\approx 28.56 \\text{ g.mol}^{-1}$. La valeur la plus proche et communément admise est $29 \\text{ g.mol}^{-1}$. Les autres valeurs correspondent à $N_2$ (28) ou $O_2$ (32), ou sont trop faibles pour l'air."
+    },
+    {
+        "uuid": "thermo-054",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans la composition molaire de l'air sec standard, quel est le rapport approximatif des fractions molaires entre le diazote ($N_2$) et le dioxygène ($O_2$) ?",
+        "answers": [
+            "1",
+            "2",
+            "4",
+            "3"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "L'air sec est composé approximativement de $78 \\%$ de diazote ($N_2$) et de $21 \\%$ de dioxygène ($O_2$). Le rapport molaire $N_2/O_2$ est donc d'environ $78/21 \\approx 3.71$. La valeur la plus proche parmi les propositions est $4$. Un rapport de $1$ signifierait une composition équimolaire, ce qui est faux. Un rapport de $2$ ou $3$ est également trop faible par rapport à la composition réelle de l'air."
+    },
+    {
+        "uuid": "thermo-055",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de la thermochimie, l'enthalpie standard de réaction ($\\Delta_r H^0$) est définie comme la différence entre :",
+        "answers": [
+            "La somme des enthalpies standards de formation des produits et la somme des enthalpies standards de formation des réactifs, pondérées par leurs coefficients stœchiométriques.",
+            "Les capacités thermiques des produits et des réactifs.",
+            "Les énergies internes des produits et des réactifs.",
+            "Les énergies de liaison des réactifs et celles des produits."
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "L'enthalpie standard de réaction est calculée selon la loi de Hess. Elle correspond à la somme des enthalpies standards de formation des produits (multipliées par leurs coefficients stœchiométriques) moins la somme des enthalpies standards de formation des réactifs (également multipliées par leurs coefficients stœchiométriques). C'est la définition fondamentale pour déterminer la chaleur de réaction à pression constante. Les capacités thermiques, les énergies internes ou les énergies de liaison sont des grandeurs différentes ou des approches différentes pour estimer les variations d'énergie lors d'une réaction."
+    },
+    {
+        "uuid": "thermo-056",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans l'étude des réactions de combustion, la température de flamme adiabatique correspond à la température maximale atteinte par les produits. Est-il correct d'affirmer que cette température de flamme dépend de la température initiale ($T_I$) des réactifs ?",
+        "answers": [
+            "Vrai",
+            "Faux",
+            "Seulement si la réaction est endothermique.",
+            "Uniquement pour les réactions en phase gazeuse."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "La température de flamme adiabatique est calculée en supposant une réaction se déroulant sans échange de chaleur avec l'extérieur. Selon le premier principe de la thermodynamique, l'enthalpie totale du système reste constante si la réaction est isobare et adiabatique. L'énergie libérée par la réaction sert à chauffer les produits. Une augmentation de la température initiale ($T_I$) des réactifs signifie que les réactifs ont déjà une énergie interne (et donc une enthalpie) plus élevée avant la réaction. Cette énergie initiale plus importante se traduira par une énergie finale des produits plus élevée, et donc par une température de flamme ($T_f$) plus élevée. La relation est $H_{produits}(T_f) = H_{reactifs}(T_I) + \\Delta_r H(T_I)$. La nature de la réaction (exothermique/endothermique) ou la phase des réactifs n'invalide pas cette dépendance fondamentale."
+    },
+    {
+        "uuid": "thermo-057",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Les enthalpies standards de formation des corps purs sont tabulées à une pression standard de $P^0 = 1 \\text{ bar}$. Si, par hypothèse théorique, on décidait d'augmenter cette pression standard ($P^0$), comment les enthalpies standards de formation des gaz réagiraient-elles ?",
+        "answers": [
+            "Changeraient.",
+            "Resteraient les mêmes par définition.",
+            "Seraient toutes nulles.",
+            "Diminueraient pour les gaz et augmenteraient pour les liquides."
+        ],
+        "difficulty": 4,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "L'enthalpie standard de formation d'une substance est définie comme le changement d'enthalpie lorsque une mole de la substance est formée à partir de ses éléments constitutifs dans leurs états standard respectifs. L'état standard inclut une pression spécifiée (généralement $1 \\text{ bar}$ ou $1 \\text{ atm}$) et une température spécifiée (généralement $298.15 \\text{ K}$). Si la pression standard $P^0$ change, l'état de référence des éléments (en particulier pour les gaz) et de la substance elle-même change. Par conséquent, les valeurs numériques des enthalpies standards de formation changeraient également, car elles dépendent de ce point de référence. Dire qu'elles resteraient les mêmes par définition est un piège, car la définition elle-même est liée à une pression spécifique. Elles ne sont nulles que pour les corps purs simples dans leur état standard, et non pour tous les gaz."
+    },
+    {
+        "uuid": "thermo-058",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérons une réaction chimique qui se déroule de manière isotherme ($T=\\text{constante}$) et monobare ($P=\\text{constante}$). Pour une réaction exothermique, la chaleur libérée par le système est donnée par la relation :",
+        "answers": [
+            "Vrai, $Q_{lib} = -\\Delta H$",
+            "Faux, $Q_{lib} = \\Delta U$",
+            "Seulement pour les gaz.",
+            "Seulement si le système est isolé."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Selon le premier principe de la thermodynamique, pour une transformation à pression constante, la variation d'enthalpie est égale à la chaleur échangée avec l'extérieur : $\\Delta H = Q_P$. Si la réaction est exothermique, cela signifie que le système libère de la chaleur, donc $Q_P < 0$. La chaleur *libérée* par le système est la valeur absolue de $Q_P$, soit $-Q_P$. Par conséquent, la chaleur libérée est $Q_{lib} = -\\Delta H$. Cette relation est valable pour toutes les phases (gaz, liquide, solide) et n'implique pas un système isolé (car il y a échange de chaleur)."
+    },
+    {
+        "uuid": "thermo-059",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En thermochimie, une réaction est qualifiée d'athermique si, par définition :",
+        "answers": [
+            "$\\Delta_r H^0 = 0$",
+            "$\\Delta_r S^0 = 0$",
+            "$T = 0 \\text{ K}$",
+            "$\\Delta_r G^0 = 0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Une réaction athermique est une réaction qui ne libère ni n'absorbe de chaleur lorsqu'elle se déroule à pression constante. Puisque la variation d'enthalpie ($\\Delta_r H$) représente la chaleur échangée à pression constante, une réaction athermique est caractérisée par $\\Delta_r H^0 = 0$ (pour les conditions standards). Une réaction pour laquelle $\\Delta_r S^0 = 0$ est isentropique, $\\Delta_r G^0 = 0$ signifie que le système est à l'équilibre chimique dans les conditions standards, et $T = 0 \\text{ K}$ représente le zéro absolu, concepts différents de celui d'athermicité."
+    },
+    {
+        "uuid": "thermo-060",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "L'enthalpie ($H$) est une fonction d'état fondamentale en thermodynamique, particulièrement utile pour l'étude des transformations isobares. Sa définition pour un système est donnée par :",
+        "answers": [
+            "$H = U + PV$",
+            "$H = U - PV$",
+            "$H = U + TS$",
+            "$H = U - TS$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "L'enthalpie $H$ est définie comme $H = U + PV$, où $U$ est l'énergie interne du système, $P$ est sa pression et $V$ est son volume. C'est une fonction d'état qui est particulièrement pratique pour l'étude des processus se déroulant à pression constante, car la chaleur échangée dans ces conditions est égale à la variation d'enthalpie. Les autres propositions correspondent à des fonctions d'état différentes : $U - PV$ est incorrecte par son signe, tandis que $U + TS$ et $U - TS$ (plus précisément $G = H - TS$ ou $A = U - TS$) sont liées à l'énergie libre de Gibbs ou à l'énergie libre de Helmholtz, des fonctions d'état différentes utilisées pour d'autres types de transformations."
+    },
+    {
+        "uuid": "td-031",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre d'un bilan de matière pour une réaction de combustion, on s'intéresse à la composition des réactifs. Quelle est la masse molaire de l'alcane hexène ($C_6H_{14}$) ?",
+        "answers": [
+            "$86,17 \\text{ g.mol}^{-1}$",
+            "$100,20 \\text{ g.mol}^{-1}$",
+            "$72,06 \\text{ g.mol}^{-1}$",
+            "$84,16 \\text{ g.mol}^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Pour calculer la masse molaire d'un composé, on somme les masses molaires atomiques de tous les atomes qui le constituent, en tenant compte de leur stœchiométrie. Les masses molaires atomiques sont environ $M(C) \\approx 12,01 \\text{ g.mol}^{-1}$ et $M(H) \\approx 1,008 \\text{ g.mol}^{-1}$.\nPour $C_6H_{14}$, la masse molaire est $M = 6 \\times M(C) + 14 \\times M(H) = 6 \\times 12,01 + 14 \\times 1,008 = 72,06 + 14,112 = 86,172 \\text{ g.mol}^{-1}$.\nLes autres propositions correspondent à des erreurs de calcul (par exemple, $72,06 \\text{ g.mol}^{-1}$ serait la masse molaire du carbone seul dans la molécule, et $100,20 \\text{ g.mol}^{-1}$ pourrait correspondre à un alcane avec un carbone de plus ($C_7H_{16}$)). $84,16 \\text{ g.mol}^{-1}$ correspond au cycle $C_6H_{12}$."
+    },
+    {
+        "uuid": "td-032",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors d'un trajet en voiture de $100 \\text{ km}$ durant $1 \\text{ h}$, un véhicule consomme $8,7 \\text{ L}$ d'essence. On considèrera le pouvoir calorifique volumique de l'essence comme $PC_v = 33,75 \\text{ MJ.L}^{-1}$. Quel est le transfert thermique $Q_{ch}$ total libéré par la combustion de cette essence ?",
+        "answers": [
+            "$2,93 \\times 10^8 \\text{ J}$",
+            "$2,00 \\times 10^9 \\text{ J}$",
+            "$2,93 \\times 10^5 \\text{ J}$",
+            "$25 \\text{ MJ}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Le transfert thermique total libéré par la combustion est le produit du volume de carburant consommé par son pouvoir calorifique volumique.\n$Q_{ch} = V_{consommé} \\times PC_v$\n$Q_{ch} = 8,7 \\text{ L} \\times 33,75 \\text{ MJ.L}^{-1} = 293,625 \\text{ MJ}$.\nPour convertir en Joules, on utilise $1 \\text{ MJ} = 10^6 \\text{ J}$.\n$Q_{ch} = 293,625 \\times 10^6 \\text{ J} \\approx 2,93 \\times 10^8 \\text{ J}$.\nLes autres propositions sont des erreurs d'ordre de grandeur ($2,00 \\times 10^9 \\text{ J}$ est 10 fois trop grand, $2,93 \\times 10^5 \\text{ J}$ est 1000 fois trop petit) ou des valeurs incohérentes ($25 \\text{ MJ}$ ne correspond pas au calcul)."
+    },
+    {
+        "uuid": "td-033",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Lors de la combustion complète du zinc métallique $(Zn_{(s)})$ en présence de dioxygène $(O_{2(g)})$, quel est le produit principal et stable formé ?",
+        "answers": [
+            "$Zn_2O$",
+            "$ZnO$",
+            "$ZnO_2$",
+            "$Zn_2O_3$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Le zinc est un métal qui a tendance à former l'ion $Zn^{2+}$. L'oxygène, sous forme d'ion oxyde, est $O^{2-}$. Pour assurer la neutralité électrique du composé ionique, il faut un ion $Zn^{2+}$ pour un ion $O^{2-}$, ce qui donne la formule $ZnO$ (oxyde de zinc). La réaction équilibrée est $Zn_{(s)} + \\frac{1}{2} O_{2(g)} \\to ZnO_{(s)}$. Les autres formules ($Zn_2O$, $ZnO_2$, $Zn_2O_3$) ne correspondent pas à l'état d'oxydation stable et commun du zinc et de l'oxygène."
+    },
+    {
+        "uuid": "td-034",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre du calcul de la température de flamme adiabatique $T_F$ pour la combustion stoechiométrique d'une mole de zinc métallique $(Zn_{(s)})$ avec de l'air, pourquoi le terme $2 C_p^0(N_2)$ apparaît-il dans l'expression de la capacité thermique des produits, en supposant que $N_2$ est un gaz parfait ?",
+        "answers": [
+            "Parce qu'il y a $2$ moles de $N_2$ qui accompagnent $0,5$ mole de $O_2$ requise pour la combustion d'une mole de $Zn$, et $N_2$ ne participe pas à la réaction.",
+            "Parce que $N_2$ est un produit de réaction secondaire de la combustion du zinc.",
+            "Ce terme représente la capacité thermique molaire du dioxyde de zinc, un produit de réaction secondaire gazeux.",
+            "C'est une constante d'ajustement empirique sans signification physique directe."
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "La combustion du zinc est $Zn_{(s)} + \\frac{1}{2} O_{2(g)} \\to ZnO_{(s)}$.\nL'air est composé d'environ $21 \\%$ de $O_2$ et $78 \\%$ de $N_2$ en volume (ou en moles pour les gaz). Le rapport molaire $N_2/O_2$ est donc d'environ $78/21 \\approx 3,71$, souvent simplifié à $4$. Cela signifie que pour $1$ mole de $O_2$, il y a $4$ moles de $N_2$.\nPour la combustion d'une mole de zinc, il faut $0,5$ mole de $O_2$. Par conséquent, cette $0,5$ mole de $O_2$ est accompagnée de $0,5 \\times 4 = 2$ moles de $N_2$.\nLe diazote ($N_2$) est un gaz inerte dans cette réaction de combustion ; il ne participe pas chimiquement. Cependant, il est chauffé par la réaction et absorbe une partie de l'énergie libérée, ce qui affecte la température de flamme. Sa capacité thermique ($C_p^0(N_2)$) doit donc être prise en compte pour les $2$ moles présentes dans les produits (qui sont en fait les inactifs du mélange initial).\nLes autres propositions sont fausses car $N_2$ n'est pas un produit de réaction du zinc et le terme a une signification physique claire."
+    },
+    {
+        "uuid": "td-035",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de la stœchiométrie des réactions de combustion, on s'intéresse à la combustion complète de l'acétylène ($C_2H_2$) en présence de dioxygène. Si la réaction produit du dioxyde de carbone et de l'eau selon l'équation non équilibrée : $C_2H_2(g) + x O_2(g) \\to 2 CO_2(g) + H_2O(g)$, quel est le coefficient stoechiométrique $x$ pour $O_2$ ?",
+        "answers": [
+            "$2$",
+            "$\\frac{5}{2}$",
+            "$3$",
+            "$\\frac{7}{2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Pour équilibrer l'équation de combustion $C_2H_2(g) + x O_2(g) \\to a CO_2(g) + b H_2O(g)$, nous suivons les étapes :\n1.  **Équilibrer le Carbone (C):** Il y a $2$ atomes de carbone dans $C_2H_2$. Donc, $a=2$ pour $CO_2$.\n    L'équation devient : $C_2H_2(g) + x O_2(g) \\to 2 CO_2(g) + b H_2O(g)$.\n2.  **Équilibrer l'Hydrogène (H):** Il y a $2$ atomes d'hydrogène dans $C_2H_2$. Donc, $b=1$ pour $H_2O$.\n    L'équation devient : $C_2H_2(g) + x O_2(g) \\to 2 CO_2(g) + 1 H_2O(g)$.\n3.  **Équilibrer l'Oxygène (O):**\n    Côté produits, il y a $2 \\times 2 = 4$ atomes d'O dans $2 CO_2$ et $1 \\times 1 = 1$ atome d'O dans $1 H_2O$. Au total, $4+1=5$ atomes d'O.\n    Côté réactifs, il y a $x \\times 2 = 2x$ atomes d'O dans $x O_2$.\n    Pour l'équilibre, $2x = 5$, ce qui donne $x = \\frac{5}{2}$.\nL'équation équilibrée est $C_2H_2(g) + \\frac{5}{2} O_2(g) \\to 2 CO_2(g) + H_2O(g)$.\nLes autres valeurs sont des erreurs courantes d'équilibrage des atomes."
+    },
+    {
+        "uuid": "td-036",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude de la décomposition du calcaire, on souhaite déterminer sa masse molaire. Quelle est la masse molaire du carbonate de calcium ($CaCO_3$) ?",
+        "answers": [
+            "$50,05 \\text{ g.mol}^{-1}$",
+            "$100,09 \\text{ g.mol}^{-1}$",
+            "$100,09 \\text{ kg.mol}^{-1}$",
+            "$72,06 \\text{ g.mol}^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Pour calculer la masse molaire du carbonate de calcium ($CaCO_3$), on additionne les masses molaires atomiques de chaque élément, multipliées par leur nombre d'atomes dans la formule chimique. Les masses molaires atomiques sont :\n$M(Ca) \\approx 40,08 \\text{ g.mol}^{-1}$\n$M(C) \\approx 12,01 \\text{ g.mol}^{-1}$\n$M(O) \\approx 16,00 \\text{ g.mol}^{-1}$\nDonc, $M(CaCO_3) = M(Ca) + M(C) + 3 \\times M(O) = 40,08 + 12,01 + 3 \\times 16,00 = 40,08 + 12,01 + 48,00 = 100,09 \\text{ g.mol}^{-1}$.\n$100,09 \\text{ kg.mol}^{-1}$ est incorrect à cause de l'unité (erreur de facteur $10^3$). $50,05 \\text{ g.mol}^{-1}$ et $72,06 \\text{ g.mol}^{-1}$ sont des erreurs de calcul grossières ou des confusions avec d'autres molécules."
+    },
+    {
+        "uuid": "td-037",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "La fabrication du ciment (clinker) implique la décomposition du calcaire ($CaCO_3$) à haute température, une réaction fortement endothermique. Dans les fours industriels réels, quelle est la source principale d'énergie nécessaire pour cette transformation ?",
+        "answers": [
+            "De la combustion de combustibles fossiles (charbon, gaz naturel comme le méthane, fioul) ou de déchets.",
+            "De l'énergie solaire captée par des panneaux photovoltaïques à haute efficacité.",
+            "Elle est produite spontanément par l'exothermicité d'une réaction secondaire non spécifiée.",
+            "Par une réaction nucléaire de fusion contrôlée au cœur du four."
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Une réaction endothermique est une réaction qui absorbe de l'énergie thermique de son environnement pour se produire. Pour les processus industriels à grande échelle et à haute température, comme la fabrication du ciment qui nécessite des températures de l'ordre de $1450 \\text{ °C}$, l'énergie est massivement apportée par la combustion de combustibles. Historiquement, le charbon est une source majeure, mais le gaz naturel (méthane) et le fioul sont également utilisés. L'utilisation de déchets comme combustibles secondaires est également une pratique croissante pour des raisons économiques et environnementales.\nLes autres options sont incorrectes : l'énergie solaire photovoltaïque ne produit pas la chaleur nécessaire à ces températures, une réaction endothermique ne peut pas produire de l'énergie spontanément, et les réactions de fusion nucléaire ne sont pas utilisées dans l'industrie cimentière."
+    },
+    {
+        "uuid": "td-038",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour la combustion complète d'un volume de $1,5 \\text{ L}$ d'éthanol ($C_2H_5OH_{(l)}$), dans des conditions stœchiométriques et en utilisant de l'air ambiant. On donne la masse molaire de l'éthanol $M_{C_2H_5OH} = 46,07 \\text{ g.mol}^{-1}$, sa masse volumique $\\rho_{C_2H_5OH} = 0,789 \\text{ kg.L}^{-1}$. On considérera l'air comme un mélange de $23,2\\%$ en masse de dioxygène ($O_2$) et $76,8\\%$ en masse de diazote ($N_2$). Quelle est la masse d'air théoriquement nécessaire ?",
+        "answers": [
+            "$1,1 \\text{ kg}$",
+            "$11,1 \\text{ kg}$",
+            "$111 \\text{ kg}$",
+            "$15,0 \\text{ kg}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "1.  **Équilibrer la réaction de combustion de l'éthanol :**\n    $C_2H_5OH_{(l)} + x O_{2(g)} \\to 2 CO_{2(g)} + 3 H_2O_{(g)}$\n    Équilibrage de l'oxygène : $1 \\text{ (de } C_2H_5OH) + 2x = 2 \\times 2 \\text{ (de } CO_2) + 3 \\times 1 \\text{ (de } H_2O)$\n    $1 + 2x = 4 + 3 \\implies 1 + 2x = 7 \\implies 2x = 6 \\implies x = 3$.\n    L'équation équilibrée est : $C_2H_5OH_{(l)} + 3 O_{2(g)} \\to 2 CO_{2(g)} + 3 H_2O_{(g)}$.\n    Pour $1$ mole d'éthanol, $3$ moles de $O_2$ sont nécessaires.\n\n2.  **Calculer le nombre de moles d'éthanol :**\n    Masse d'éthanol : $m_{C_2H_5OH} = V \\times \\rho = 1,5 \\text{ L} \\times 0,789 \\text{ kg.L}^{-1} = 1,1835 \\text{ kg} = 1183,5 \\text{ g}$.\n    Nombre de moles d'éthanol : $n_{C_2H_5OH} = \\frac{m_{C_2H_5OH}}{M_{C_2H_5OH}} = \\frac{1183,5 \\text{ g}}{46,07 \\text{ g.mol}^{-1}} \\approx 25,69 \\text{ mol}$.\n\n3.  **Calculer la masse de $O_2$ nécessaire :**\n    Nombre de moles de $O_2$ : $n_{O_2} = 3 \\times n_{C_2H_5OH} = 3 \\times 25,69 \\text{ mol} = 77,07 \\text{ mol}$.\n    Masse molaire de $O_2$ : $M_{O_2} = 2 \\times M(O) = 2 \\times 16,00 = 32,00 \\text{ g.mol}^{-1}$.\n    Masse de $O_2$ : $m_{O_2} = n_{O_2} \\times M_{O_2} = 77,07 \\text{ mol} \\times 32,00 \\text{ g.mol}^{-1} = 2466,24 \\text{ g} \\approx 2,466 \\text{ kg}$.\n\n4.  **Calculer la masse d'air nécessaire :**\n    L'air contient $23,2\\%$ en masse de $O_2$. Donc, la masse d'air $m_{air}$ est telle que $m_{O_2} = 0,232 \\times m_{air}$.\n    $m_{air} = \\frac{m_{O_2}}{0,232} = \\frac{2,466 \\text{ kg}}{0,232} \\approx 10,63 \\text{ kg}$.\n    La valeur la plus proche est $11,1 \\text{ kg}$. La légère différence peut venir des arrondis ou des valeurs précises des masses molaires.\n    Les autres valeurs sont des erreurs d'ordre de grandeur."
+    },
+    {
+        "uuid": "td-039",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'évaluation d'un système de chauffage domestique alimenté par un brûleur à bioéthanol, on estime une consommation moyenne de $0,5 \\text{ L.h}^{-1}$. Cette consommation horaire est considérée comme 'raisonnable' pour un usage domestique car :",
+        "answers": [
+            "Il permet une autonomie correcte pour une utilisation domestique standard.",
+            "Le bioéthanol est intrinsèquement très peu coûteux, ce qui rend cette consommation économiquement négligeable.",
+            "La combustion du bioéthanol ne rejette absolument aucun gaz à effet de serre ni polluant.",
+            "Il est facilement stockable en grandes quantités sans risque, permettant de très longues périodes sans ravitaillement."
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Le terme 'raisonnable' dans ce contexte fait généralement référence à la praticité et à l'autonomie du système pour l'utilisateur. Une consommation de $0,5 \\text{ L.h}^{-1}$ signifie qu'un réservoir de quelques litres (par exemple, $5 \\text{ L}$) peut assurer une autonomie de plusieurs heures ($10 \\text{ h}$ dans cet exemple) à une journée, ce qui est suffisant pour un usage domestique occasionnel ou d'appoint sans nécessiter un ravitaillement constant. Pour un usage continu, un réservoir plus grand serait nécessaire, mais l'autonomie reste gérable.\nLes autres propositions sont fausses :\n-   Le coût du bioéthanol, bien que parfois compétitif, n'est pas toujours 'très peu coûteux' et varie avec les marchés. Ce n'est pas l'argument principal de la 'raisonnabilité' ici.\n-   La combustion du bioéthanol, bien que potentiellement plus 'verte' que celle des fossiles, produit du dioxyde de carbone ($CO_2$) et de l'eau ($H_2O$), qui sont des gaz à effet de serre. Une combustion incomplète peut aussi produire d'autres polluants.\n-   Le bioéthanol est un liquide inflammable et doit être stocké avec les précautions d'usage, et son stockage en très grandes quantités sans risque est soumis à des réglementations strictes."
+    },
+    {
+        "uuid": "thermo-061",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Considérons un système fermé subissant une transformation adiabatique. Est-il vrai qu'une variation de l'enthalpie ($\\Delta H \\neq 0$) au cours de cette transformation implique obligatoirement une variation de la température du système ?",
+        "answers": [
+            "Vrai",
+            "Faux",
+            "Seulement si le système est un gaz parfait et la transformation réversible.",
+            "Seulement si le système est monophasique et sans réaction chimique."
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "Pour un système fermé, la variation d'enthalpie $\\Delta H$ est liée à la chaleur $Q$ et au travail $W_P$ (travail des forces de pression, i.e. $-P_{ext}dV$) par le premier principe $Q = \\Delta U - W$, et $H = U + PV$. Si la transformation est adiabatique, alors $Q=0$. La variation d'enthalpie est donnée par $dH = TdS + VdP$ (pour un système sans travail non-PV et sans réaction chimique).\nPour un système monophasique et sans réaction chimique, la relation fondamentale est $dH = n C_p dT + V(1-\\alpha T) dP$ (où $\\alpha$ est le coefficient de dilatation isobare, négligeable pour un gaz parfait). Pour de nombreux systèmes (en particulier les phases condensées ou les gaz parfaits), on utilise l'approximation $dH = n C_p dT$. Dans ce cas, si $\\Delta H \\neq 0$ et $C_p$ est une constante positive, alors $\\Delta T$ doit être non nul.\nUn cas plus complexe serait un changement de phase. Un changement de phase isotherme (par exemple, ébullition de l'eau à $100 \\text{ °C}$ et $1 \\text{ atm}$) implique une absorption de chaleur latente, ce qui est incompatible avec une transformation adiabatique ($Q=0$). Si un changement de phase se produit de manière adiabatique (par exemple, par détente), il est nécessairement non isotherme, car l'énergie nécessaire au changement de phase est puisée (ou libérée) par le système lui-même, ce qui modifie sa température.\nPar conséquent, si l'enthalpie varie pour un système fermé subissant une transformation adiabatique, cela signifie que son état énergétique a changé sans échange de chaleur. Cette variation se manifeste obligatoirement par un changement de température, quelle que soit la nature du système (gaz, liquide, solide, ou mélange de phases), tant qu'il n'y a pas de réaction chimique ou de travail autre que PV. Même pour le cas 'Seulement si le système est monophasique et sans réaction chimique', l'affirmation reste vraie et c'est un cas général dans les études de CPGE. Il est plus juste de dire que l'affirmation est vraie, car même un changement de phase adiabatique implique une variation de température (ex: évaporation flash à basse température)."
+    },
+    {
+        "uuid": "thermo-062",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Dans le cadre de l'étude d'une combustion dans un calorimètre, lors du calcul de la température de flamme (ou température adiabatique de combustion), on suppose généralement que la réaction de combustion est :",
+        "answers": [
+            "Partielle, pour tenir compte des réactifs en excès.",
+            "Totale, car on cherche la température maximale atteinte.",
+            "Renversable, afin d'établir un équilibre thermique.",
+            "Limitée par la cinétique des réactifs."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Pour calculer la température de flamme (ou température adiabatique de combustion), l'hypothèse principale est que la réaction de combustion est totale. Cela signifie que le réactif limitant est entièrement consommé. Cette hypothèse permet de calculer la quantité d'énergie libérée maximale, et donc la température maximale que les produits de combustion peuvent atteindre dans des conditions idéales (adiabatiques, sans travail). Une réaction partielle (fausse réponse) signifierait que tout le combustible n'est pas brûlé, ce qui est contraire à l'objectif de calcul de la température maximale. Une réaction renversable (fausse réponse) impliquerait un équilibre, ce qui est rarement le cas pour une combustion rapide et exothermique visant à maximiser la température. L'hypothèse de la cinétique (fausse réponse) est généralement omise car la température de flamme est un calcul thermodynamique d'état final."
+    },
+    {
+        "uuid": "thermo-063",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "L'enthalpie molaire standard de formation du graphite solide ($\\text{C}_{\\text{graphite}}$) à $298 \\text{ K}$ et $1 \\text{ bar}$ est nulle car :",
+        "answers": [
+            "Le graphite est la forme allotropique la plus stable de l'élément carbone dans ces conditions de référence.",
+            "Le carbone sous forme graphite ne subit pas de combustion spontanée.",
+            "Le graphite est un corps composé et donc son enthalpie de formation ne peut être définie.",
+            "Le carbone est un corps simple et les enthalpies de formation des corps simples sont toujours nulles."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "L'enthalpie molaire standard de formation ($\\Delta_f H^0$) d'un corps pur simple, dans son état standard de référence, est nulle par définition. L'état standard de référence pour un élément est sa forme la plus stable à la température considérée ($298 \\text{ K}$ généralement) et sous $1 \\text{ bar}$. Pour l'élément carbone, sa forme la plus stable dans ces conditions est le graphite. Le diamant, par exemple, a une enthalpie de formation non nulle car il n'est pas la forme la plus stable du carbone dans ces conditions. Les affirmations sur la combustion ou sur le fait que le carbone est un corps composé (fausses réponses) sont incorrectes. L'option 'corps simple et les enthalpies de formation des corps simples sont toujours nulles' (fausse réponse) est proche mais incomplète : c'est spécifiquement la forme la plus stable qui est la référence zéro."
+    },
+    {
+        "uuid": "thermo-064",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour un mélange de gaz idéaux, la pression partielle d'un constituant peut-elle être supérieure à la pression totale du mélange ?",
+        "answers": [
+            "Oui, si le gaz en question a une densité très élevée.",
+            "Non, jamais, par définition de la pression partielle.",
+            "Oui, dans un mélange fortement comprimé à haute température.",
+            "Seulement si le gaz n'est pas idéal."
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Selon la loi de Dalton, la pression totale ($P_{\\text{tot}}$) d'un mélange de gaz idéaux est égale à la somme des pressions partielles ($P_i$) de chacun des constituants : $P_{\\text{tot}} = \\sum_i P_i$. De plus, la pression partielle d'un constituant $i$ est définie comme $P_i = x_i P_{\\text{tot}}$, où $x_i$ est la fraction molaire du constituant $i$. Puisque la fraction molaire $x_i$ est toujours comprise entre $0$ et $1$ (exclusivement $1$ si c'est un corps pur), la pression partielle $P_i$ sera toujours inférieure ou égale à la pression totale $P_{\\text{tot}}$. Elle ne peut donc jamais lui être supérieure. Les affirmations concernant la densité, la compression ou la nature non idéale du gaz (fausses réponses) n'invalident pas ce principe fondamental de la pression partielle."
+    },
+    {
+        "uuid": "thermo-065",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour une réaction chimique en phase condensée (liquide ou solide), la différence entre l'enthalpie standard de réaction $\\Delta_r H^0$ et l'énergie interne standard de réaction $\\Delta_r U^0$ est généralement :",
+        "answers": [
+            "Très grande et non négligeable.",
+            "Négligeable, car les variations de volume sont faibles.",
+            "Toujours nulle, par définition de la phase condensée.",
+            "Significative seulement si la pression est très élevée."
+        ],
+        "difficulty": 4,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "La relation fondamentale entre l'enthalpie et l'énergie interne est $\\Delta H = \\Delta U + \\Delta(PV)$. Pour des transformations à pression constante, on a $\\Delta H = \\Delta U + P\\Delta V$. En phase condensée (liquide ou solide), les variations de volume ($\\Delta V$) au cours d'une réaction chimique sont généralement très faibles, voire quasi nulles. Par conséquent, le terme $P\\Delta V$ est négligeable devant $\\Delta U$. Ainsi, la différence entre $\\Delta_r H^0$ et $\\Delta_r U^0$ est généralement négligeable. Pour les réactions en phase gazeuse, où les variations de volume peuvent être importantes (liées aux variations du nombre de moles de gaz), cette différence n'est pas négligeable et s'écrit $\\Delta H = \\Delta U + \\Delta n_{\\text{gaz}} RT$ (en supposant un comportement de gaz parfait). L'option 'toujours nulle' (fausse réponse) est trop catégorique ; elle est 'négligeable', ce qui n'est pas strictement 'nulle'. Les autres options (très grande, significative à haute pression) sont incorrectes car elles contredisent le fait que les volumes des phases condensées sont peu sensibles à la pression et à la réaction."
+    },
+    {
+        "uuid": "thermo-066",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Selon le modèle des gaz parfaits et le théorème d'équipartition de l'énergie, la capacité thermique molaire à pression constante $C_{p,m}$ pour un gaz diatomique parfait (comprenant les contributions de translation et de rotation, mais sans vibration, à température ambiante) vaut :",
+        "answers": [
+            "$C_{p,m} = \\frac{3}{2} R$",
+            "$C_{p,m} = \\frac{5}{2} R$",
+            "$C_{p,m} = \\frac{7}{2} R$",
+            "$C_{p,m} = 4R$"
+        ],
+        "difficulty": 4,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "Pour un gaz parfait, la relation de Mayer indique que $C_{p,m} - C_{V,m} = R$. Il faut donc déterminer $C_{V,m}$. Pour un gaz diatomique, à température ambiante, on considère généralement 3 degrés de liberté de translation et 2 degrés de liberté de rotation. Selon le théorème d'équipartition, chaque degré de liberté contribue pour $\\frac{1}{2} RT$ à l'énergie interne molaire et donc $\\frac{1}{2} R$ à la capacité thermique molaire à volume constant. Ainsi, pour un gaz diatomique sans vibration : $C_{V,m} = (3 + 2) \\times \\frac{1}{2} R = \\frac{5}{2} R$. Par conséquent, $C_{p,m} = C_{V,m} + R = \\frac{5}{2} R + R = \\frac{7}{2} R$. Les vibrations ne sont généralement pas excitées à température ambiante, mais le seraient à plus haute température, ajoutant alors $R$ (deux degrés de liberté pour l'énergie cinétique et potentielle de vibration) à $C_{V,m}$, ce qui donnerait $C_{V,m} = \\frac{7}{2} R$ et $C_{p,m} = \\frac{9}{2} R$."
+    },
+    {
+        "uuid": "thermo-067",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "L'enthalpie standard de réaction $\\Delta_r H^0$ pour une équation de réaction donnée dépend-elle de l'avancement de la réaction $\\xi$ ?",
+        "answers": [
+            "Oui, elle augmente avec l'avancement $\\xi$ car plus de produits sont formés.",
+            "Non, c'est une grandeur intensive associée à l'équation de réaction, indépendante de l'état d'avancement.",
+            "Seulement pour les réactions réversibles, où l'équilibre dépend de $\\xi$.",
+            "Oui, elle diminue si la réaction est exothermique."
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'enthalpie standard de réaction $\\Delta_r H^0$ est une grandeur intensive, c'est-à-dire qu'elle ne dépend pas de la quantité de matière ou de l'avancement de la réaction. Elle est définie pour une équation de réaction spécifique (avec des coefficients stœchiométriques donnés) et correspond à la variation d'enthalpie lorsque la réaction progresse d'une mole selon cette équation, avec tous les réactifs et produits dans leur état standard. L'enthalpie *totale* du système, $H(\\xi)$, dépend de l'avancement, mais pas l'enthalpie *standard de réaction* elle-même. Les propositions suggérant une dépendance avec l'avancement $\\xi$ (fausses réponses) confondent l'enthalpie standard de réaction (qui est une propriété intrinsèque de la réaction) avec l'enthalpie du système à un instant donné. La notion de réversible ou exothermique n'affecte pas la définition de $\\Delta_r H^0$ comme une grandeur intensive."
+    },
+    {
+        "uuid": "thermo-068",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Pour une réaction chimique du type $3A + B \\rightarrow 2C$, si la quantité initiale de réactif $A$ est $n_{A,0}$, alors la quantité finale de $A$ après un avancement $\\xi$ (exprimé en moles) est :",
+        "answers": [
+            "$n_{A,0} - \\xi$",
+            "$n_{A,0} - 3\\xi$",
+            "$3(n_{A,0} - \\xi)$",
+            "$n_{A,0} + 3\\xi$"
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "Dans un tableau d'avancement, la quantité de matière d'un réactif à un instant donné est calculée en soustrayant de sa quantité initiale le produit de son coefficient stœchiométrique (en valeur absolue) par l'avancement de la réaction $\\xi$. Pour le réactif $A$ avec un coefficient stœchiométrique de $3$, et une quantité initiale $n_{A,0}$, sa quantité à l'avancement $\\xi$ sera $n_A(\\xi) = n_{A,0} - 3\\xi$. Le coefficient stœchiométrique $3$ indique que $3$ moles de $A$ sont consommées pour chaque mole de réaction (avancement unitaire). L'option $n_{A,0} - \\xi$ (fausse réponse) serait correcte si le coefficient stœchiométrique était $1$. L'option $3(n_{A,0} - \\xi)$ (fausse réponse) est une confusion entre la multiplication de la quantité initiale par le coefficient et l'application de l'avancement. L'option $n_{A,0} + 3\\xi$ (fausse réponse) suggère une formation de $A$, ce qui est incorrect pour un réactif."
+    },
+    {
+        "uuid": "thermo-069",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "Quelle est l'unité de la constante des gaz parfaits $R$ dans le système international (SI) ?",
+        "answers": [
+            "$\\text{Pa.m}^3.\\text{mol}^{-1}.\\text{K}^{-1}$",
+            "$\\text{J.mol}^{-1}.\\text{K}^{-1}$",
+            "Les deux expressions précédentes sont équivalentes et correctes dans le système SI.",
+            "$\\text{cal.mol}^{-1}.\\text{K}^{-1}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 2,
+        "subject": "chimie",
+        "explication": "La constante des gaz parfaits $R$ est définie par l'équation des gaz parfaits $PV=nRT$. Si on isole $R$, on obtient $R = PV/(nT)$. En unités SI, la pression $P$ est en pascals ($\\text{Pa}$), le volume $V$ en mètres cubes ($\\text{m}^3$), la quantité de matière $n$ en moles ($\\text{mol}$), et la température $T$ en kelvins ($\\text{K}$). Donc, une unité possible est $\\text{Pa.m}^3.\\text{mol}^{-1}.\\text{K}^{-1}$. D'autre part, on sait que $1 \\text{ Pa} = 1 \\text{ N.m}^{-2}$ et que le joule ($J$) est l'unité de travail ou d'énergie, $1 \\text{ J} = 1 \\text{ N.m}$. Par conséquent, $1 \\text{ Pa.m}^3 = (\\text{N.m}^{-2}) \\cdot \\text{m}^3 = \\text{N.m} = 1 \\text{ J}$. Ainsi, l'unité $\\text{Pa.m}^3.\\text{mol}^{-1}.\\text{K}^{-1}$ est équivalente à $\\text{J.mol}^{-1}.\\text{K}^{-1}$. Les deux expressions sont donc valides et correctes dans le système international. Les calories (cal) (fausse réponse) ne sont pas une unité SI."
+    },
+    {
+        "uuid": "thermo-070",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En considérant l'air sec comme un mélange de gaz parfaits, sa composition molaire (ou volumique) est d'environ :",
+        "answers": [
+            "80% de $\\text{O}_2$ et 20% de $\\text{N}_2$.",
+            "20% de $\\text{O}_2$ et 80% de $\\text{N}_2$.",
+            "50% de $\\text{O}_2$ et 50% de $\\text{N}_2$.",
+            "75% de $\\text{CO}_2$ et 25% de $\\text{O}_2$."
+        ],
+        "difficulty": 1,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 1,
+        "subject": "chimie",
+        "explication": "L'air sec est principalement composé de diazote ($\\text{N}_2$) et de dioxygène ($\\text{O}_2$). Les proportions approximatives sont d'environ $78-79\\%$ de $\\text{N}_2$ et $20-21\\%$ de $\\text{O}_2$ en fraction molaire (ou volumique). Les autres gaz comme l'argon, le dioxyde de carbone, etc., représentent moins de $1\\%$. La proposition '20% de $\\text{O}_2$ et 80% de $\\text{N}_2$' est donc la plus proche de la réalité. Les autres propositions sont incorrectes. La proposition '80% de $\\text{O}_2$ et 20% de $\\text{N}_2$' (fausse réponse) inverse les proportions principales. L'air ne contient pas principalement de $\\text{CO}_2$ (fausse réponse)."
+    },
+    {
+        "uuid": "thermo-071",
+        "image_path": null,
+        "theme": "thermodynamique",
+        "question": "En thermodynamique de la combustion, la 'température de flamme' est également désignée par le terme plus précis de :",
+        "answers": [
+            "Température adiabatique de combustion.",
+            "Point d'éclair du combustible.",
+            "Température critique des produits de combustion.",
+            "Température d'auto-ignition."
+        ],
+        "difficulty": 2,
+        "chapter": "Description des systèmes physico-chimiques",
+        "correct_answer_index": 0,
+        "subject": "chimie",
+        "explication": "La température de flamme est le terme courant pour la température maximale atteinte par les produits de combustion lorsque la réaction est supposée se dérouler de manière adiabatique (sans échange de chaleur avec l'extérieur), à pression ou volume constant, et de façon totale. Le terme scientifique plus précis est 'température adiabatique de combustion'. Le point d'éclair (fausse réponse) est la température la plus basse à laquelle un liquide émet suffisamment de vapeurs pour former un mélange inflammable avec l'air près de sa surface. La température critique (fausse réponse) est la température au-delà de laquelle un gaz ne peut plus être liquéfié par augmentation de pression seule. La température d'auto-ignition (fausse réponse) est la température minimale à laquelle une substance s'enflamme spontanément dans des conditions normales sans flamme ni étincelle externe. Ces trois dernières notions sont des concepts distincts de la thermodynamique de la combustion."
+    }
+]

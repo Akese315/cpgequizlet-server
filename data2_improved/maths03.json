@@ -1,0 +1,1642 @@
+[
+    {
+        "uuid": "alg-001",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Soit $E_1, ..., E_p$ des $\\mathbb{K}$-espaces vectoriels de dimensions finies. Quelle est la dimension de l'espace produit $E = \\prod_{k=1}^{p} E_k$ ?",
+        "answers": [
+            "$\\max(dim(E_k))$",
+            "$\\sum_{k=1}^{p} dim(E_k)$",
+            "$\\prod_{k=1}^{p} dim(E_k)$",
+            "$p \\times dim(E_k)$ (si tous les $E_k$ ont même dimension)"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Pour une somme directe ou un produit cartésien de plusieurs espaces vectoriels, la dimension de l'espace total est la somme des dimensions de chaque sous-espace. C'est une conséquence directe de la concaténation des bases de chaque $E_k$."
+    },
+    {
+        "uuid": "alg-002",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Soit $(a_1, ..., a_n)$ une famille de vecteurs de $E$. Par définition, à quoi est égal le sous-espace vectoriel engendré $Vect(a_1, ..., a_n)$ ?",
+        "answers": [
+            "$\\bigcap_{i=1}^{n} Vect(a_i)$",
+            "$\\bigcup_{i=1}^{n} Vect(a_i)$",
+            "$\\sum_{i=1}^{n} Vect(a_i)$",
+            "$Vect(a_1) \\times ... \\times Vect(a_n)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "Le sous-espace engendré est par définition la somme des droites vectorielles engendrées par chaque vecteur de la famille. L'union n'est pas un sous-espace vectoriel en général (sauf si l'un est inclus dans l'autre)."
+    },
+    {
+        "uuid": "alg-003",
+        "image_path": null,
+        "theme": "projecteurs",
+        "question": "Dans le cadre de l'étude d'un endomorphisme $p$ de $E$, si $p$ est la projection sur $F$ parallèlement à $G$, quelle relation fondamentale caractérise $p$ ?",
+        "answers": [
+            "$p^2 = Id_E$",
+            "$p^2 = p$",
+            "$p^2 = 0$",
+            "$p^2 = -p$"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Un projecteur est par définition un endomorphisme idempotent. Une fois projeté, projeter à nouveau le résultat ne change rien, d'où $p(p(x)) = p(x)$."
+    },
+    {
+        "uuid": "alg-004",
+        "image_path": null,
+        "theme": "projecteurs",
+        "question": "Soit $p$ un projecteur. Quelle caractérisation des éléments de l'image $Im(p)$ est correcte ?",
+        "answers": [
+            "$Im(p) = \\{x \\in E, p(x) = x\\}$",
+            "$Im(p) = \\{x \\in E, p(x) = 0\\}$",
+            "$Im(p) = ker(p)$",
+            "$Im(p) = \\{x \\in E, p(x) = -x\\}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Un vecteur est dans l'image d'un projecteur s'il est invariant par ce dernier. Si $p(x) = 0$, le vecteur est dans le noyau (ker), non dans l'image (sauf si $x=0$)."
+    },
+    {
+        "uuid": "alg-005",
+        "image_path": null,
+        "theme": "symétries",
+        "question": "Quelle est la relation entre une symétrie vectorielle $s$ par rapport à $F$ parallèlement à $G$ et son projecteur associé $p$ sur $F$ parallèlement à $G$ ?",
+        "answers": [
+            "$s = p - Id_E$",
+            "$s = 2p - Id_E$",
+            "$s = p/2$",
+            "$s = Id_E - 2p$"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Une symétrie 'renvoie' les éléments de $G$ sur leur opposé et laisse invariants ceux de $F$. On utilise $s = p - (Id_E - p) = 2p - Id_E$."
+    },
+    {
+        "uuid": "alg-006",
+        "image_path": null,
+        "theme": "symétries",
+        "question": "Un endomorphisme $s$ est une symétrie (ou involutivité) si et seulement si :",
+        "answers": [
+            "$s^2 = 0$",
+            "$s^2 = s$",
+            "$s^2 = Id_E$",
+            "$s^2 = -Id_E$"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "Une symétrie est une involution : appliquer deux fois la symétrie revient à revenir au point de départ, ce qui se traduit par $s \\circ s = Id_E$."
+    },
+    {
+        "uuid": "alg-007",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Une famille de sous-espaces $(E_i)_{1 \\le i \\le p}$ est en somme directe si et seulement si la décomposition du vecteur nul est :",
+        "answers": [
+            "Nulle part possible",
+            "Unique (tous les $x_i = 0$)",
+            "Possible pour au moins un $x_i \\neq 0$",
+            "Toujours impossible"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La somme est directe si toute écriture $0 = \\sum x_i$ implique nécessairement que chaque $x_i$ est nul. C'est la généralisation de la notion de famille libre."
+    },
+    {
+        "uuid": "alg-008",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Soit $a_1, ..., a_n$ des vecteurs non nuls. La somme $\\sum_{i=1}^n Vect(a_i)$ est directe si et seulement si :",
+        "answers": [
+            "La famille $(a_1, ..., a_n)$ est liée",
+            "La famille $(a_1, ..., a_n)$ est libre",
+            "Les vecteurs sont deux à deux orthogonaux",
+            "La famille est génératrice"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La somme directe des droites engendrées par des vecteurs est équivalente à la liberté de ces vecteurs. Si la famille est liée, alors un vecteur peut s'écrire comme combinaison des autres, ce qui empêche l'unicité de la décomposition du vecteur nul."
+    },
+    {
+        "uuid": "alg-009",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Soit $E$ un $\\mathbb{K}$-espace vectoriel de dimension finie. On a $E = \\bigoplus_{i=1}^p E_i$ si et seulement si :",
+        "answers": [
+            "$\\sum dim(E_i) < dim(E)$",
+            "$\\sum dim(E_i) = dim(E)$ et la somme est directe",
+            "$\\prod dim(E_i) = dim(E)$",
+            "La somme est directe"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Pour qu'une somme directe de sous-espaces soit égale à l'espace total en dimension finie, il faut deux conditions : que la somme soit directe ET que la dimension totale soit atteinte (théorème de la base adaptée)."
+    },
+    {
+        "uuid": "alg-010",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Soit $M = \\begin{pmatrix} A_{11} & A_{12} \\\\ A_{21} & A_{22} \\end{pmatrix}$ une matrice par blocs. Quelle est l'expression de sa transposée $M^T$ ?",
+        "answers": [
+            "$\\begin{pmatrix} A_{11}^T & A_{12}^T \\\\ A_{21}^T & A_{22}^T \\end{pmatrix}$",
+            "$\\begin{pmatrix} A_{11}^T & A_{21}^T \\\\ A_{12}^T & A_{22}^T \\end{pmatrix}$",
+            "$\\begin{pmatrix} A_{22}^T & A_{21}^T \\\\ A_{12}^T & A_{11}^T \\end{pmatrix}$",
+            "$\\begin{pmatrix} A_{11}^T & A_{22}^T \\\\ A_{12}^T & A_{21}^T \\end{pmatrix}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La transposition d'une matrice par blocs consiste à transposer chaque bloc individuellement ET à transposer la matrice des blocs elle-même (inverser les positions des blocs hors-diagonaux)."
+    },
+    {
+        "uuid": "alg-011",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Dans le cadre de l'étude des opérateurs linéaires représentés par des matrices de grande taille, le produit de deux matrices par blocs $A = \\begin{pmatrix} A_{11} & A_{12} \\\\ A_{21} & A_{22} \\end{pmatrix}$ et $B = \\begin{pmatrix} B_{11} & B_{12} \\\\ B_{21} & B_{22} \\end{pmatrix}$ s'effectue :",
+        "answers": [
+            "En multipliant les blocs terme à terme : $A_{ij} B_{ij}$",
+            "Comme un produit usuel, sous réserve que les dimensions des blocs soient compatibles pour le produit et l'addition",
+            "Uniquement si les matrices sont diagonales par blocs",
+            "Par addition des blocs de même indice : $A_{ij} + B_{ij}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Le produit par blocs respecte la structure du produit matriciel usuel. La condition de compatibilité est que le nombre de colonnes de chaque bloc de la ligne $i$ de $A$ doit correspondre au nombre de lignes du bloc de la colonne $j$ de $B$. L'erreur classique est de croire qu'on multiplie terme à terme comme pour les matrices diagonales simples."
+    },
+    {
+        "uuid": "alg-012",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Soit $M$ une matrice carrée par blocs de la forme $M = \\begin{pmatrix} A & C \\\\ 0 & B \\end{pmatrix}$ où $A$ et $B$ sont des matrices carrées. $M$ est inversible si et seulement si :",
+        "answers": [
+            "$A$ et $C$ sont inversibles",
+            "$A$ et $B$ sont inversibles",
+            "$det(A) + det(B) \\neq 0$",
+            "$C$ est la matrice nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Le déterminant de cette matrice triangulaire par blocs est $\\det(M) = \\det(A) \\times \\det(B)$. Pour que $M$ soit inversible, il faut que $\\det(M) \\neq 0$, ce qui équivaut à $\\det(A) \\neq 0$ et $\\det(B) \\neq 0$. La nature de $C$ n'influence pas l'inversibilité."
+    },
+    {
+        "uuid": "alg-013",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Quel est le déterminant d'une matrice triangulaire par blocs $M = \\begin{pmatrix} A & C \\\\ 0 & B \\end{pmatrix}$ où $A \\in \\mathcal{M}_p(K)$ et $B \\in \\mathcal{M}_q(K)$ ?",
+        "answers": [
+            "$det(A) + det(B)$",
+            "$det(A) \\times det(B)$",
+            "$det(A) \\times det(B) - det(C)$",
+            "$det(A) / det(B)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Il s'agit d'une propriété fondamentale : le déterminant d'une matrice triangulaire par blocs (le bloc triangulaire est à gauche ou à droite, ici avec un bloc nul en bas à gauche) est le produit des déterminants des blocs diagonaux. $det(C)$ n'intervient pas."
+    },
+    {
+        "uuid": "alg-014",
+        "image_path": null,
+        "theme": "sous-espaces stables",
+        "question": "Soit $u \\in \\mathcal{L}(E)$. Par définition, un sous-espace vectoriel $F$ de $E$ est dit stable par l'endomorphisme $u$ si :",
+        "answers": [
+            "$F \\subset u(F)$",
+            "$u(F) \\subset F$",
+            "$u(F) = F$",
+            "$u(x) = x$ pour tout $x \\in F$"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "La stabilité signifie que l'image de tout vecteur de $F$ par $u$ appartient encore à $F$. C'est l'inclusion $u(F) \\subset F$. L'égalité $u(F) = F$ est une condition beaucoup plus forte (invariance), et $F \\subset u(F)$ impliquerait que $u$ est surjectif sur $F$."
+    },
+    {
+        "uuid": "alg-015",
+        "image_path": null,
+        "theme": "sous-espaces stables",
+        "question": "Soient $u, v \\in \\mathcal{L}(E)$ deux endomorphismes qui commutent, i.e., $u \\circ v = v \\circ u$. Quelle propriété sur les sous-espaces est vraie ?",
+        "answers": [
+            "$ker(v)$ est stable par $u$",
+            "$ker(v) = ker(u)$",
+            "$v$ est une homothétie",
+            "$Im(v)$ n'est pas stable par $u$"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "Si $x \\in ker(v)$, alors $v(u(x)) = u(v(x)) = u(0) = 0$. Donc $u(x) \\in ker(v)$, ce qui prouve que $ker(v)$ est stable par $u$. C'est un résultat classique utilisé pour prouver la trigonalisation simultanée."
+    },
+    {
+        "uuid": "alg-016",
+        "image_path": null,
+        "theme": "sous-espaces stables",
+        "question": "Soit $F$ un sous-espace de dimension $r$ et $\\mathcal{B} = (e_1, ..., e_n)$ une base de $E$ adaptée à la somme directe $E = F \\oplus G$. La matrice de $u$ dans $\\mathcal{B}$ est de la forme suivante si et seulement si $F$ est stable par $u$ :",
+        "answers": [
+            "$\\begin{pmatrix} A & 0 \\\\ B & D \\end{pmatrix}$",
+            "$\\begin{pmatrix} A & C \\\\ 0 & D \\end{pmatrix}$",
+            "$\\begin{pmatrix} A & 0 \\\\ 0 & D \\end{pmatrix}$",
+            "$\\begin{pmatrix} 0 & A \\\\ B & 0 \\end{pmatrix}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "Si $F = Vect(e_1, ..., e_r)$ est stable, alors pour tout $j \\in [|1, r|]$, $u(e_j) \\in F$, ce qui signifie que les coordonnées de $u(e_j)$ sur $(e_{r+1}, ..., e_n)$ sont nulles. Dans la matrice, cela correspond au bloc en bas à gauche qui doit être nul."
+    },
+    {
+        "uuid": "alg-017",
+        "image_path": null,
+        "theme": "trace",
+        "question": "Soit $A \\in \\mathcal{M}_n(K)$. Par définition, la trace de la matrice $A$ est donnée par :",
+        "answers": [
+            "Le produit des éléments de la diagonale, soit $\\prod_{i=1}^n a_{ii}$",
+            "La somme des éléments de la première ligne, soit $\\sum_{j=1}^n a_{1j}$",
+            "La somme des éléments diagonaux, soit $\\sum_{i=1}^n a_{ii}$",
+            "Le déterminant de la matrice $A$"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 2,
+        "explication": "La trace est l'application linéaire définie par la somme des éléments diagonaux. Le produit des éléments diagonaux est lié au déterminant seulement pour les matrices triangulaires."
+    },
+    {
+        "uuid": "alg-018",
+        "image_path": null,
+        "theme": "trace",
+        "question": "Pour toutes matrices $A \\in \\mathcal{M}_{n,p}(K)$ et $B \\in \\mathcal{M}_{p,n}(K)$, quelle relation fondamentale vérifie l'opérateur trace ?",
+        "answers": [
+            "$Tr(AB) = Tr(A) \\times Tr(B)$",
+            "$Tr(AB) = Tr(BA)$",
+            "$Tr(AB) = Tr(A) + Tr(B)$",
+            "$Tr(AB) = \\det(A) + \\det(B)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "La trace est invariante par permutation circulaire dans un produit de matrices : $Tr(AB) = Tr(BA)$. Attention, en général $Tr(AB) \\neq Tr(A)Tr(B)$."
+    },
+    {
+        "uuid": "alg-019",
+        "image_path": null,
+        "theme": "trace",
+        "question": "Deux matrices semblables $A$ et $B$ (il existe $P$ inversible telle que $B = P^{-1}AP$) possèdent nécessairement :",
+        "answers": [
+            "Le même déterminant uniquement",
+            "La même trace uniquement",
+            "La même trace et le même déterminant",
+            "La même somme d'éléments hors diagonale"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 2,
+        "explication": "La similitude est une relation d'équivalence qui préserve les invariants de l'endomorphisme, notamment le rang, la trace, le déterminant et le polynôme caractéristique."
+    },
+    {
+        "uuid": "alg-020",
+        "image_path": null,
+        "theme": "trace",
+        "question": "Soit $p$ un projecteur d'un espace vectoriel $E$ de dimension finie $n$. La trace de $p$ est égale à :",
+        "answers": [
+            "Sa dimension $n$",
+            "Son rang $rg(p)$",
+            "0 ou 1",
+            "La dimension de son noyau $ker(p)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Un projecteur est diagonalisable et ses valeurs propres sont 0 (de multiplicité $n-rg(p)$) et 1 (de multiplicité $rg(p)$). La trace est la somme des valeurs propres comptées avec multiplicité : $0 \\times (n-rg(p)) + 1 \\times rg(p) = rg(p)$."
+    },
+    {
+        "uuid": "alg-021",
+        "image_path": null,
+        "theme": "polynômes",
+        "question": "Soit $P, Q \\in K[X]$. On a la relation :",
+        "answers": [
+            "$P(u) \\circ Q(u) = (P+Q)(u)$ [cite: 343]",
+            "$P(u) \\circ Q(u) = (PQ)(u)$ [cite: 343]",
+            "$P(u) \\circ Q(u) = Q(u) \\circ P(u)$ uniquement si $u$ est inversible [cite: 343]"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-022",
+        "image_path": null,
+        "theme": "polynômes",
+        "question": "Un polynôme $P$ est dit annulateur de $u$ si :",
+        "answers": [
+            "$P(u) = Id_E$ [cite: 346, 348]",
+            "$P(u) = 0$ [cite: 346, 348]",
+            "$P$ divise le polynôme caractéristique [cite: 346, 348]"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-023",
+        "image_path": null,
+        "theme": "polynômes",
+        "question": "Quel est un polynôme annulateur évident pour une symétrie $s$ ?",
+        "answers": [
+            "$X^2 - X$ [cite: 349]",
+            "$X^2 + 1$ [cite: 349]",
+            "$X^2 - 1$ [cite: 349]"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-024",
+        "image_path": null,
+        "theme": "polynômes",
+        "question": "En dimension finie $n$, il existe toujours un polynôme annulateur non nul de degré au plus :",
+        "answers": [
+            "$n$ [cite: 356, 358]",
+            "$n^2$ [cite: 356, 358]",
+            "$n!$ [cite: 356, 358]"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-025",
+        "image_path": null,
+        "theme": "interpolation",
+        "question": "Soit $(x_1, ..., x_n)$ des scalaires distincts. Le polynôme de Lagrange $L_i$ vérifie :",
+        "answers": [
+            "$L_i(x_j) = 1$ pour tout $j$ [cite: 374]",
+            "$L_i(x_j) = \\delta_i^j$ [cite: 374]",
+            "$L_i(x_i) = 0$ [cite: 374]"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-026",
+        "image_path": null,
+        "theme": "interpolation",
+        "question": "Quel est le degré des polynômes de Lagrange associés à $n$ points ?",
+        "answers": [
+            "$n$ [cite: 374]",
+            "$n-1$ [cite: 374]",
+            "$1$ [cite: 374]"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-027",
+        "image_path": null,
+        "theme": "interpolation",
+        "question": "Que vaut la somme $\\sum_{j=1}^{n} L_j(X)$ des polynômes de Lagrange ?",
+        "answers": [
+            "$0$ [cite: 389]",
+            "$1$ [cite: 389]",
+            "$X$ [cite: 389]"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-028",
+        "image_path": null,
+        "theme": "déterminants",
+        "question": "Le déterminant de Vandermonde $V(x_0, ..., x_n)$ est nul si et seulement si :",
+        "answers": [
+            "Tous les $x_i$ sont nuls [cite: 395, 408]",
+            "Au moins deux scalaires $x_i$ sont égaux [cite: 395, 408]",
+            "La somme des $x_i$ est nulle [cite: 395, 408]"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-029",
+        "image_path": null,
+        "theme": "déterminants",
+        "question": "Quelle est la valeur du déterminant de Vandermonde $V(x_0, ..., x_n)$ ?",
+        "answers": [
+            "$\\sum_{j<i} (x_i - x_j)$ [cite: 395]",
+            "$\\prod_{j<i} (x_i - x_j)$ [cite: 395]",
+            "$\\prod_{j<i} (x_i + x_j)$ [cite: 395]"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-030",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Si $E$ est la somme directe de plans vectoriels, alors $dim(E)$ est obligatoirement :",
+        "answers": [
+            "Impaire [cite: 5]",
+            "Paire [cite: 5]",
+            "Un multiple de 3 [cite: 5]"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-031",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Soit $M = \\begin{pmatrix} 0 & A \\\\ I_n & 0 \\end{pmatrix}$ une matrice par blocs de taille $2n \\times 2n$ où $A \\in \\mathcal{M}_n(\\mathbb{K})$ et $I_n$ est la matrice identité. Quel est le rang de $M$ ?",
+        "answers": [
+            "$rg(A)$",
+            "$n + rg(A)$",
+            "$2n$",
+            "$n$"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "On utilise les opérations élémentaires sur les blocs. En échangeant les deux lignes de blocs, on obtient une matrice de même rang $\\begin{pmatrix} I_n & 0 \\\\ 0 & A \\end{pmatrix}$. Le rang d'une matrice diagonale par blocs est la somme des rangs des blocs, soit $rg(I_n) + rg(A) = n + rg(A)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-032",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Soit $A \\in \\mathcal{M}_n(\\mathbb{K})$ une matrice de rang $1$. Quelle relation fondamentale vérifie-t-elle concernant sa trace ?",
+        "answers": [
+            "$A^2 = A$",
+            "$A^2 = Tr(A)A$",
+            "$A^2 = Tr(A)I_n$",
+            "$A^2 = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Une matrice de rang $1$ s'écrit sous la forme $A = u v^T$ avec $u, v \\in \\mathbb{K}^n \\setminus \\{0\\}$. Alors $A^2 = (u v^T)(u v^T) = u (v^T u) v^T$. Comme $v^T u$ est un scalaire égal à $Tr(A)$, on obtient $A^2 = Tr(A) u v^T = Tr(A)A$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-033",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Soient $A, B \\in \\mathcal{M}_n(\\mathbb{K})$ telles que $AB - BA = A$. Que peut-on conclure sur la matrice $A$ ?",
+        "answers": [
+            "$A$ est inversible",
+            "$A$ n'est pas inversible (elle est nilpotente)",
+            "$A = 0$",
+            "$A$ est une matrice de projection"
+        ],
+        "difficulty": 4,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Par récurrence, on montre que $AB^k - B^k A = k B^{k-1}A$. Si $A$ était inversible, on aurait $B^k = A B^k A^{-1} + k B^{k-1}$. En prenant la trace, on obtient une contradiction pour $k$ assez grand. Plus simplement, $A$ est nilpotente car $\\chi_A(X+1) = \\chi_A(X)$, ce qui implique que ses valeurs propres sont nulles.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-034",
+        "image_path": null,
+        "theme": "symétries",
+        "question": "L'application de transposition $\\phi: \\mathcal{M}_n(\\mathbb{K}) \\to \\mathcal{M}_n(\\mathbb{K})$ définie par $\\phi(A) = A^T$ est :",
+        "answers": [
+            "Une projection",
+            "Une symétrie",
+            "Une homothétie",
+            "Une application nilpotente"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Une application $\\phi$ est une symétrie si $\\phi \\circ \\phi = Id$. Or, ici, $\\phi(\\phi(A)) = (A^T)^T = A$. Comme $\\phi^2 = Id$, il s'agit d'une symétrie (plus précisément, la symétrie par rapport aux matrices symétriques parallèlement aux matrices antisymétriques).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-035",
+        "image_path": null,
+        "theme": "polynômes",
+        "question": "Soit $u \\in \\mathcal{L}(E)$ un endomorphisme dont $P = X^2 + X + 1$ est un polynôme annulateur. Pour un vecteur $x \\neq 0$, que peut-on dire de la famille $\\mathcal{F} = (x, u(x))$ ?",
+        "answers": [
+            "La famille est liée (droite vectorielle)",
+            "La famille est libre (plan vectoriel)",
+            "$u(x) = x$",
+            "Le sous-espace engendré est de dimension 0"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Si $(x, u(x))$ était liée, il existerait $\\lambda$ tel que $u(x) = \\lambda x$. Alors $P(u)(x) = (u^2 + u + Id)(x) = (\\lambda^2 + \\lambda + 1)x = 0$. Comme $x \\neq 0$, $\\lambda$ serait racine de $X^2 + X + 1$. Or ce polynôme n'a pas de racine réelle, et sur $\\mathbb{C}$, les racines ne sont pas réelles. Donc la famille est libre.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-036",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "En dimension finie, la condition $ker(u) = ker(u^2)$ est équivalente à :",
+        "answers": [
+            "$Im(u) \\cap ker(u) = \\{0\\}$",
+            "$Im(u) \\oplus ker(u) = E$",
+            "Les deux premières réponses sont vraies",
+            "$u$ est un automorphisme"
+        ],
+        "difficulty": 4,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 2,
+        "explication": "L'inclusion $ker(u) \\subset ker(u^2)$ est toujours vraie. $ker(u) = ker(u^2)$ signifie que si $u(u(x)) = 0$, alors $u(x) = 0$. Cela revient à dire que $Im(u) \\cap ker(u) = \\{0\\}$. Par le théorème du rang, cela implique $dim(Im(u)) + dim(ker(u)) = n$, donc la somme est directe et égale à $E$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-037",
+        "image_path": null,
+        "theme": "trace",
+        "question": "Est-il possible d'avoir $AB - BA = I_n$ pour des matrices $A, B \\in \\mathcal{M}_n(\\mathbb{K})$ avec $n \\ge 1$ ?",
+        "answers": [
+            "Oui, toujours",
+            "Non, car la trace du membre de gauche est nulle",
+            "Uniquement si $K = \\mathbb{C}$",
+            "Oui, si $A$ et $B$ sont inversibles"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "La trace est une forme linéaire telle que $Tr(AB) = Tr(BA)$. Ainsi, $Tr(AB - BA) = Tr(AB) - Tr(BA) = 0$. Or, $Tr(I_n) = n$. Pour $n \\ge 1$, on a $n \\neq 0$, donc l'égalité est impossible.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-038",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Si deux matrices $A$ et $B$ sont semblables, alors pour tout entier $k \\ge 1$, les matrices $A^k$ et $B^k$ sont :",
+        "answers": [
+            "Égales",
+            "Semblables",
+            "Inverses l'une de l'autre",
+            "Diagonalisables uniquement"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Si $B = P A P^{-1}$, alors $B^2 = (P A P^{-1})(P A P^{-1}) = P A (P^{-1} P) A P^{-1} = P A^2 P^{-1}$. Par récurrence immédiate, on a $B^k = P A^k P^{-1}$, donc les matrices sont semblables.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-039",
+        "image_path": null,
+        "theme": "polynômes",
+        "question": "Un endomorphisme $u \\in \\mathcal{L}(E)$ est dit nilpotent s'il vérifie :",
+        "answers": [
+            "$u$ est injectif et $u^2 = 0$",
+            "Il existe un entier $k \\in \\mathbb{N}^*$ tel que $u^k = 0_{\\mathcal{L}(E)}$",
+            "$u$ est une symétrie",
+            "Ses valeurs propres sont toutes égales à 1"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "La définition d'un endomorphisme nilpotent est l'existence d'une puissance $k$ telle que $u^k$ soit l'application nulle. Un endomorphisme nilpotent n'est jamais injectif (sauf si $E = \\{0\\}$) car son noyau est non réduit au vecteur nul.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-040",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Soit $A \\in \\mathcal{M}_n(\\mathbb{K})$ une matrice triangulaire supérieure stricte (tous les coefficients diagonaux sont nuls). Quelle propriété de nilpotence vérifie-t-elle ?",
+        "answers": [
+            "$A^2 = 0$",
+            "$A^n = 0$",
+            "$A$ est inversible",
+            "$A = I_n$"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Une matrice triangulaire supérieure stricte est nilpotente d'indice au plus $n$. Cela signifie que $A^n = 0$. Le cas $A^2=0$ n'est vrai que pour $n=2$ ou des cas particuliers. L'exposant $n$ est la borne universelle pour toute matrice de taille $n$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-041",
+        "image_path": null,
+        "theme": "déterminants",
+        "question": "Dans le cadre de l'étude des polynômes caractéristiques, pour deux matrices $A \\in M_{n,p}(K)$ et $B \\in M_{p,n}(K)$, l'identité $\\lambda^n \\det(\\lambda I_p - AB) = \\lambda^p \\det(\\lambda I_n - BA)$ est vraie :",
+        "answers": [
+            "Uniquement si $n=p$",
+            "Pour tout $\\lambda \\in K$",
+            "Uniquement si $A$ et $B$ commutent",
+            "Jamais, sauf si $A$ et $B$ sont inversibles"
+        ],
+        "difficulty": 4,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "C'est un résultat classique sur les polynômes caractéristiques des produits de matrices. Pour $\\lambda \\neq 0$, on utilise l'identité $\\det(I_n - BA) = \\det(I_p - AB)$. En développant avec le polynôme caractéristique, on obtient cette égalité vraie pour tout $\\lambda$ par continuité (ou densité des inversibles).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-042",
+        "image_path": null,
+        "theme": "sous-espaces stables",
+        "question": "Considérons l'espace vectoriel des polynômes $K[X]$ et l'opérateur de dérivation $D : P \\mapsto P'$. Quels sont les sous-espaces de dimension finie de $K[X]$ stables par $D$ ?",
+        "answers": [
+            "Les espaces $K_d[X] = \\text{vect}(1, X, \\dots, X^d)$ pour $d \\in \\mathbb{N}$",
+            "Seulement $\\{0\\}$",
+            "Tous les sous-espaces de dimension finie de $K[X]$",
+            "Uniquement les espaces de dimension 1"
+        ],
+        "difficulty": 4,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "Tout sous-espace stable par dérivation est nécessairement inclus dans un $K_d[X]$. En effet, si $E$ est un sous-espace stable par dérivation, l'existence d'un polynôme de degré maximal $d$ dans $E$ implique par dérivation successive que $E$ contient tous les monômes de degré inférieur, donc $E = K_d[X]$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-043",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Soit $T \\in M_n(\\mathbb{R})$ une matrice triangulaire réelle. Si $T$ commute avec sa transposée $T^T$ (i.e. $T$ est normale), alors $T$ est nécessairement :",
+        "answers": [
+            "Nulle",
+            "Diagonale",
+            "Symétrique",
+            "Inversible"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Une matrice normale triangulaire est toujours diagonale. On peut le montrer par récurrence sur $n$ en comparant les coefficients diagonaux et extra-diagonaux du produit $TT^T$ et $T^TT$, ou en utilisant le fait qu'une matrice normale est diagonalisable dans $\\mathbb{C}$, ce qui impose ici la nullité des termes hors diagonale.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-044",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Soit $E$ un $K$-espace vectoriel et $u \\in \\mathcal{L}(E)$. Si pour tout vecteur $x \\in E$, la famille $(x, u(x))$ est liée, alors $u$ est :",
+        "answers": [
+            "Un projecteur",
+            "Une homothétie (i.e. $u = \\lambda Id$)",
+            "L'application nulle",
+            "Un endomorphisme nilpotent"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Pour chaque $x$, il existe $\\lambda_x$ tel que $u(x) = \\lambda_x x$. Si $\\dim(E) \\geq 2$, on montre par un argument de base (en considérant $x+y$) que $\\lambda_x$ est indépendant de $x$, donc $u = \\lambda Id$. Le piège est de croire que $\\lambda$ peut varier selon $x$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-045",
+        "image_path": null,
+        "theme": "trace",
+        "question": "Soit $s$ un endomorphisme de $E$ (de dimension $n$) tel que $s^2 = Id$. Quelle est la parité de $\\text{tr}(s)$ ?",
+        "answers": [
+            "La même parité que $n$",
+            "Une parité opposée à $n$",
+            "Toujours une valeur paire",
+            "Toujours une valeur impaire"
+        ],
+        "difficulty": 4,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "Les valeurs propres d'une symétrie sont $1$ et $-1$. Soit $k$ la multiplicité de $1$ et $m$ la multiplicité de $-1$. On a $n = k+m$ et $\\text{tr}(s) = k-m$. Ainsi, $\\text{tr}(s) = k - (n-k) = 2k - n$. On en déduit que $\\text{tr}(s) \\equiv -n \\equiv n \\pmod 2$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-046",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Soit $M = \\begin{pmatrix} A & 0 \\\\ 0 & B \\end{pmatrix}$ une matrice bloc diagonale avec $A \\in M_p(K)$ et $B \\in M_q(K)$. Le rang de $M$ est :",
+        "answers": [
+            "\\max(\\text{rg}(A), \\text{rg}(B))",
+            "\\text{rg}(A) + \\text{rg}(B)",
+            "\\text{rg}(A) \\times \\text{rg}(B)",
+            "\\min(\\text{rg}(A), \\text{rg}(B))"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Le rang d'une matrice bloc diagonale est la somme des rangs des blocs. Cela découle du fait que l'image de l'endomorphisme associé est la somme directe des images des endomorphismes associés à $A$ et $B$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-047",
+        "image_path": null,
+        "theme": "polynômes",
+        "question": "Soit $u \\in \\mathcal{L}(E)$ et $P$ un polynôme annulateur de $u$ (i.e. $P(u) = 0$). Pour tout polynôme $Q \\in K[X]$, quel polynôme $PQ$ est annulateur de $u$ ?",
+        "answers": [
+            "Vrai, $(PQ)(u) = P(u) \\circ Q(u) = 0 \\circ Q(u) = 0$",
+            "Faux, en général $P(u)Q(u) \\neq (PQ)(u)$",
+            "Vrai seulement si $Q(u)$ est inversible",
+            "Faux, car le degré de $PQ$ augmente"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "Par définition de l'algèbre des endomorphismes, pour tout polynôme $P = \\sum a_k X^k$, on a $P(u) = \\sum a_k u^k$. Si $P(u) = 0$, alors $Q(u)P(u) = Q(u) \\circ 0 = 0$. Comme les polynômes en $u$ commutent, $(PQ)(u) = P(u)Q(u) = 0$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-048",
+        "image_path": null,
+        "theme": "polynômes",
+        "question": "Soit $u$ tel que $u^3 - 2u^2 + 4u - 5Id = 0$. Peut-on affirmer que $u$ est bijectif et exprimer son inverse ?",
+        "answers": [
+            "Non, car le terme constant est non nul",
+            "Oui, et $u^{-1} = \\frac{1}{5}(u^2 - 2u + 4Id)$",
+            "On ne peut pas conclure sans connaître $\\dim(E)$",
+            "Oui, et $u^{-1} = \\frac{1}{5}(5Id - u^3 + 2u^2 - 4u)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "L'équation s'écrit $u(u^2 - 2u + 4Id) = 5Id$, soit $u \\circ [\\frac{1}{5}(u^2 - 2u + 4Id)] = Id$. Puisque $u$ possède un inverse à droite qui est un polynôme en $u$ (donc qui commute avec $u$), $u$ est bijectif et son inverse est bien $\\frac{1}{5}(u^2 - 2u + 4Id)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-049",
+        "image_path": null,
+        "theme": "interpolation",
+        "question": "La famille des polynômes de Lagrange $(L_i)_{0 \\leq i \\leq n}$ associés à $n+1$ points distincts $(x_i)$ forme :",
+        "answers": [
+            "Une famille liée",
+            "Une base de $K_n[X]$",
+            "Une famille orthogonale pour tout produit scalaire",
+            "Une base de $K_{n-1}[X]$"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Il y a $n+1$ polynômes de degré au plus $n$. Comme $L_i(x_j) = \\delta_{ij}$, la famille est libre. Par le théorème de la base libre, c'est une base de l'espace des polynômes de degré au plus $n$, soit $K_n[X]$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-050",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Quelle est la dimension du commutant $\\mathcal{C}(p) = \\{f \\in \\mathcal{L}(E) : f \\circ p = p \\circ f\\}$ d'un projecteur $p$ de rang $r$ dans un espace de dimension $n$ ?",
+        "answers": [
+            "$n^2$",
+            "$r^2 + (n-r)^2$",
+            "$2rn$",
+            "$n^2 - 2r(n-r)$"
+        ],
+        "difficulty": 5,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Dans une base adaptée à la décomposition $E = \\text{Im}(p) \\oplus \\ker(p)$, la matrice de $p$ est $\\text{diag}(I_r, 0)$. Une matrice $M$ commute avec cette matrice si et seulement si elle est de la forme $\\text{diag}(A, B)$ avec $A \\in M_r(K)$ et $B \\in M_{n-r}(K)$. La dimension est donc $r^2 + (n-r)^2$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-051",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Soit $M = \\begin{pmatrix} \\lambda & B \\\\ 0 & A \\end{pmatrix}$ une matrice bloc-triangulaire supérieure, où $\\lambda$ est un scalaire et $A \\in \\mathcal{M}_n(K)$. Quelle condition est nécessaire et suffisante pour que $M$ soit inversible ?",
+        "answers": [
+            "$\\lambda \\neq 0$ et $A$ est inversible",
+            "$\\lambda \\neq 0$ ou $A$ est inversible",
+            "$\\det(A) = \\lambda$",
+            "$\\det(A) \\neq 0$ uniquement"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "Le déterminant d'une matrice triangulaire par blocs est le produit des déterminants des blocs diagonaux : $\\det(M) = \\det(\\lambda) \\times \\det(A) = \\lambda \\det(A)$. Pour que $M$ soit inversible, il faut que $\\det(M) \\neq 0$, donc $\\lambda \\neq 0$ et $\\det(A) \\neq 0$ (i.e., $A$ inversible).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-052",
+        "image_path": null,
+        "theme": "sous-espaces stables",
+        "question": "Soit $u \\in \\mathcal{L}(E)$ un endomorphisme et $x \\in E$. On définit le sous-espace cyclique engendré par $x$ (noté $K_x$) comme :",
+        "answers": [
+            "Le plus grand sous-espace vectoriel stable par $u$ contenant $x$",
+            "Le plus petit sous-espace vectoriel stable par $u$ contenant $x$",
+            "Le sous-espace engendré par la famille $(u^k(x))_{k \\in \\mathbb{N}}$",
+            "Un sous-espace de dimension $n$ où $n = \\dim(E)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Par définition, le sous-espace cyclique engendré par $x$ est l'intersection de tous les sous-espaces stables par $u$ contenant $x$. C'est donc le plus petit sous-espace stable contenant $x$. Il est égal à $\\text{Vect}(x, u(x), u^2(x), \\dots)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-053",
+        "image_path": null,
+        "theme": "trace",
+        "question": "Soit $A \\in \\mathcal{M}_n(\\mathbb{R})$ une matrice antisymétrique, c'est-à-dire vérifiant $A^T = -A$. Quelle est sa trace ?",
+        "answers": [
+            "1",
+            "0",
+            "$-n$",
+            "n"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Si $A$ est antisymétrique, alors pour tout $i$, $a_{ii} = -a_{ii}$, ce qui implique $a_{ii} = 0$. La trace est la somme des éléments diagonaux, donc $\\text{Tr}(A) = \\sum a_{ii} = 0$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-054",
+        "image_path": null,
+        "theme": "polynômes",
+        "question": "Soit $u \\in \\mathcal{L}(E)$ un endomorphisme nilpotent. Quelle est la nature de ses polynômes annulateurs ?",
+        "answers": [
+            "Seulement le polynôme $X^n$ avec $n = \\dim(E)$",
+            "Tout polynôme de la forme $P(X) = X^k Q(X)$ avec $k$ assez grand",
+            "Seulement les polynômes de degré 1",
+            "Il n'en possède aucun"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Si $u$ est nilpotent, il existe un entier $p$ tel que $u^p = 0$. Ainsi, $X^p$ est un polynôme annulateur. Tout multiple de $X^p$ par un polynôme $Q(X)$ est également un polynôme annulateur ($P(u) = u^p \\circ Q(u) = 0 \\circ Q(u) = 0$).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-055",
+        "image_path": null,
+        "theme": "interpolation",
+        "question": "Dans le cadre de l'interpolation de Lagrange, quel est le polynôme $P$ de degré au plus $n-1$ passant par les points $(x_0, y_0), \\dots, (x_{n-1}, y_{n-1})$ ?",
+        "answers": [
+            "$P(X) = \\sum_{j=0}^{n-1} y_j L_j(X)$",
+            "$P(X) = \\prod_{i=0}^{n-1} (X - x_i)$",
+            "$P(X) = \\sum_{j=0}^{n-1} L_j(y_j)$",
+            "$P(X) = \\sum_{j=0}^{n-1} x_j L_j(X)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "Les polynômes de Lagrange $L_j$ sont définis par $L_j(x_i) = \\delta_{ij}$. La combinaison linéaire $P(X) = \\sum y_j L_j(X)$ garantit que $P(x_i) = \\sum y_j \\delta_{ij} = y_i$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-056",
+        "image_path": null,
+        "theme": "déterminants",
+        "question": "Considérons le déterminant de Vandermonde $V(x_0, \\dots, x_{n-1}, X)$. Si l'on développe ce déterminant selon la dernière colonne, que peut-on dire du polynôme obtenu en $X$ ?",
+        "answers": [
+            "C'est un polynôme de degré $n$",
+            "C'est une constante",
+            "C'est un polynôme de degré $n+1$",
+            "C'est un polynôme de degré $n-1$"
+        ],
+        "difficulty": 4,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "Le déterminant de Vandermonde $V(x_0, \\dots, x_{n-1}, X)$ est une matrice de taille $(n+1) \\times (n+1)$. En développant par rapport à la dernière colonne, chaque cofacteur est associé à une puissance de $X$ allant jusqu'à $X^n$. C'est donc un polynôme de degré $n$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-057",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "La matrice compagnon $C(P)$ d'un polynôme unitaire $P$ de degré $n$ est associée à quel type d'endomorphisme ?",
+        "answers": [
+            "Un endomorphisme diagonalisable",
+            "Un endomorphisme cyclique dont $P$ est le polynôme caractéristique",
+            "Une projection",
+            "Un endomorphisme nilpotent"
+        ],
+        "difficulty": 4,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "La matrice compagnon est construite pour représenter l'endomorphisme induit par la multiplication par $X$ dans l'espace quotient $K[X]/(P(X))$. C'est l'exemple type d'un endomorphisme cyclique où le polynôme caractéristique coïncide avec le polynôme minimal (égal à $P$).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-058",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Soit $E = F \\oplus G$. Tout vecteur $z \\in E$ s'écrit de manière unique $z = x + y$ avec $x \\in F$ et $y \\in G$. Quel est le projecteur $p$ sur $F$ parallèlement à $G$ ?",
+        "answers": [
+            "$p(z) = y$",
+            "$p(z) = x$",
+            "$p(z) = x - y$",
+            "$p(z) = x + y$"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Par définition, un projecteur sur $F$ parallèlement à $G$ envoie tout vecteur de $F$ sur lui-même et tout vecteur de $G$ sur $0$. Comme $z = x + y$, $p(z) = p(x) + p(y) = x + 0 = x$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-059",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Une matrice diagonale par blocs $M = \\text{diag}(A_1, A_2, \\dots, A_k)$ est inversible si et seulement si :",
+        "answers": [
+            "La somme des blocs est inversible",
+            "Chaque bloc diagonal $A_i$ est inversible",
+            "Le premier et le dernier blocs sont inversibles",
+            "Au moins un des blocs est inversible"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "On a $\\det(M) = \\prod_{i=1}^k \\det(A_i)$. Un produit est non nul si et seulement si chacun des facteurs est non nul, donc chaque $\\det(A_i) \\neq 0$, ce qui signifie que chaque bloc est inversible.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-060",
+        "image_path": null,
+        "theme": "trace",
+        "question": "Soient $A, B \\in \\mathcal{M}_n(K)$. Si elles vérifient la relation de commutation $[A, B] = AB - BA = A$, que vaut $\\text{Tr}(A^k)$ pour tout $k \\geq 1$ ?",
+        "answers": [
+            "$k$",
+            "$0$",
+            "$\\text{Tr}(A)$",
+            "$n$"
+        ],
+        "difficulty": 5,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "En utilisant la propriété de cyclicité de la trace, on a $\\text{Tr}(AB) = \\text{Tr}(BA)$, donc $\\text{Tr}([A, B]) = 0$. Ici, $[A, B] = A$, donc $\\text{Tr}(A) = 0$. Par récurrence ou en utilisant les propriétés des puissances, on montre que toutes les traces $\\text{Tr}(A^k)$ sont nulles dans le cas où $K$ est de caractéristique nulle.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-061",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Dans le cadre de l'étude des structures algébriques, soit $E_1, E_2, \\dots, E_p$ une famille de $p$ espaces vectoriels. Le produit cartésien $E = E_1 \\times E_2 \\times \\dots \\times E_p$ est de dimension finie si et seulement si :",
+        "answers": [
+            "Au moins un espace $E_i$ est de dimension finie",
+            "Tous les espaces $E_i$ sont de dimension finie",
+            "La somme des dimensions $\\sum_{i=1}^p \\dim(E_i)$ est finie",
+            "La dimension de l'espace produit est toujours infinie par construction"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "La dimension du produit cartésien est donnée par la formule $\\dim(E_1 \\times \\dots \\times E_p) = \\sum_{i=1}^p \\dim(E_i)$. Si l'un des espaces est de dimension infinie, la somme devient infinie. Il est donc impératif que tous les espaces soient de dimension finie pour que le résultat le soit.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-062",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Soit $(E_i)_{i \\in I}$ une famille de sous-espaces vectoriels de $E$. La somme des sous-espaces, notée $\\sum_{i \\in I} E_i$, est définie comme le plus petit sous-espace vectoriel contenant :",
+        "answers": [
+            "L'intersection des $E_i$",
+            "La réunion des $E_i$",
+            "Seulement les espaces $E_1$ et $E_p$ pour une famille finie",
+            "L'enveloppe affine des $E_i$"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "La somme $\\sum E_i$ est l'ensemble des sommes finies d'éléments pris dans les $E_i$. Comme la réunion d'espaces vectoriels n'est pas en général un sous-espace vectoriel, la somme est précisément le plus petit sous-espace contenant leur réunion $\\bigcup E_i$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-063",
+        "image_path": null,
+        "theme": "projecteurs",
+        "question": "Soit $p$ un endomorphisme projecteur d'un espace vectoriel $E$ (tel que $p^2=p$). Quelle est la relation structurelle entre $E$, $Im(p)$ et $ker(p)$ ?",
+        "answers": [
+            "$E = Im(p) \\oplus ker(p)$",
+            "$E = Im(p) + ker(p)$ sans être nécessairement en somme directe",
+            "$E = Im(p) \\cap ker(p)$",
+            "$E$ ne peut être décomposé que si $E$ est de dimension finie"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "C'est un résultat fondamental : tout projecteur induit une somme directe. Pour tout $x \\in E$, on peut écrire $x = p(x) + (x - p(x))$. Comme $p(x) \\in Im(p)$ et $(x - p(x)) \\in ker(p)$, et que l'intersection est réduite au vecteur nul, la décomposition est unique.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-064",
+        "image_path": null,
+        "theme": "symétries",
+        "question": "Soit $s$ un endomorphisme de $E$. Si $s$ est une symétrie par rapport à un sous-espace $F$ parallèlement à $G$ ($E = F \\oplus G$), alors $s$ est une involution. Cela signifie que :",
+        "answers": [
+            "$s = s^{-1}$, ou de manière équivalente $s^2 = Id_E$",
+            "$s = -s$, ce qui implique $s$ est l'application nulle",
+            "$s = I + Id$, ce qui est impossible pour une symétrie",
+            "$s$ est une application surjective mais non injective"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "Une symétrie agit comme l'identité sur $F$ et comme l'opposée sur $G$. Ainsi, pour tout $x=f+g$, $s(f+g) = f-g$. Appliquer $s$ deux fois donne $s(f-g) = f+g = Id(x)$. D'où $s^2=Id$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-065",
+        "image_path": null,
+        "theme": "symétries",
+        "question": "Considérons une symétrie $s$ définie sur un espace vectoriel $E$. La symétrie s'opère par rapport à un sous-espace $F$ parallèlement à $G$. Identifiez $F$ parmi les propositions suivantes :",
+        "answers": [
+            "$ker(s + Id_E)$",
+            "$ker(s - Id_E)$",
+            "$Im(s + Id_E)$",
+            "$Im(s)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Par définition, pour tout $x \\in F$ (l'axe de symétrie), $s(x) = x$, donc $s(x) - x = 0$, ce qui signifie $x \\in ker(s - Id_E)$. À l'inverse, pour tout $x \\in G$, $s(x) = -x$, donc $x \\in ker(s + Id_E)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-066",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "L'associativité de la somme directe permet d'écrire $E = E_1 \\oplus E_2 \\oplus E_3$ comme $E = (E_1 \\oplus E_2) \\oplus E_3$. Cette propriété est-elle vraie ?",
+        "answers": [
+            "Vrai, la structure de somme directe est associative et commutative",
+            "Faux, l'ordre des espaces modifie la somme",
+            "Vrai uniquement pour des espaces de même dimension",
+            "Faux, la somme directe n'est définie que pour deux espaces à la fois"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "La somme directe est une opération associative et commutative au sens des sous-espaces vectoriels. On peut regrouper les espaces par paquets sans modifier l'espace total, ce qui est très pratique pour les calculs par blocs.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-067",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Soit $E = \\bigoplus_{i=1}^n E_i$ une décomposition en somme directe. Comment construire une base adaptée à cette décomposition ?",
+        "answers": [
+            "En prenant la différence des bases de chaque $E_i$",
+            "En effectuant la concaténation des bases de chaque $E_i$",
+            "En cherchant l'intersection des bases des $E_i$",
+            "En choisissant des vecteurs quelconques dans $E$"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Si $\\mathcal{B}_i$ est une base de $E_i$, alors la réunion ordonnée des bases $\\mathcal{B} = \\mathcal{B}_1 \\cup \\mathcal{B}_2 \\cup \\dots \\cup \\mathcal{B}_n$ forme une base de $E$. C'est la propriété caractéristique des sommes directes.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-068",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Dans le cadre de l'algèbre matricielle par blocs, pour qu'une multiplication de matrices par blocs $A = (A_{ij})$ et $B = (B_{jk})$ soit cohérente, quelle condition doivent vérifier les dimensions ?",
+        "answers": [
+            "Tous les blocs doivent être carrés",
+            "Le nombre de colonnes des blocs de $A$ doit correspondre au nombre de lignes des blocs de $B$ pour chaque indice $j$",
+            "La séparation doit être identique pour les lignes et les colonnes",
+            "Les matrices $A$ et $B$ doivent avoir les mêmes dimensions totales"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Le calcul par blocs suit les mêmes règles que le calcul matriciel classique. Pour chaque bloc résultant $C_{ik} = \\sum_j A_{ij}B_{jk}$, il faut que le produit matriciel $A_{ij}B_{jk}$ soit possible, donc que le nombre de colonnes de $A_{ij}$ soit égal au nombre de lignes de $B_{jk}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-069",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Soit $M$ une matrice carrée partitionnée en blocs diagonaux $M = \\text{diag}(A_1, A_2, \\dots, A_k)$ où chaque $A_i$ est une matrice carrée. Quelle est la valeur de $Tr(M)$ ?",
+        "answers": [
+            "$\\sum_{i=1}^k Tr(A_i)$",
+            "$\\prod_{i=1}^k Tr(A_i)$",
+            "$Tr(A_1) + Tr(A_k)$ uniquement",
+            "La trace est indéfinie pour une matrice par blocs"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "La trace d'une matrice étant la somme des éléments diagonaux, si la matrice est diagonale par blocs, les éléments diagonaux de la matrice totale sont simplement la réunion des éléments diagonaux de chaque bloc $A_i$. La trace est donc la somme des traces.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-070",
+        "image_path": null,
+        "theme": "sous-espaces stables",
+        "question": "Soit $u \\in \\mathcal{L}(E)$ et $\\mathcal{B} = (e_1, \\dots, e_n)$ une base de $E$. Si chaque droite vectorielle $Vect(e_i)$ est stable par $u$, quelle est la forme de la matrice de $u$ dans la base $\\mathcal{B}$ ?",
+        "answers": [
+            "Une matrice triangulaire supérieure",
+            "Une matrice diagonale",
+            "Une matrice scalaire",
+            "Une matrice antisymétrique"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Si $Vect(e_i)$ est stable par $u$, alors $u(e_i) = \\lambda_i e_i$. La matrice de $u$ dans la base $\\mathcal{B}$ possède donc des colonnes où seul le terme diagonal $(i,i)$ est non nul, valant $\\lambda_i$. La matrice est donc diagonale.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-071",
+        "image_path": null,
+        "theme": "trace",
+        "question": "Pour l'espace vectoriel des matrices carrées $\\mathcal{M}_n(\\mathbb{K})$, l'application $\\text{Tr} : A \\mapsto \\sum_{i=1}^n a_{i,i}$ est-elle une forme linéaire ?",
+        "answers": [
+            "Vrai, c'est une application linéaire à valeurs dans le corps de base $\\mathbb{K}$.",
+            "Faux, la trace n'est pas linéaire car $\\text{Tr}(AB) \\neq \\text{Tr}(A)\\text{Tr}(B)$.",
+            "Vrai, mais seulement pour les matrices diagonales.",
+            "Faux, car $\\text{Tr}(\\lambda A) = \\lambda^n \\text{Tr}(A)$."
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "La trace est définie par la somme des coefficients diagonaux. Par linéarité de la somme, $\\text{Tr}(A+B) = \\text{Tr}(A) + \\text{Tr}(B)$ et $\\text{Tr}(\\lambda A) = \\lambda \\text{Tr}(A)$. La confusion avec le produit est un piège classique : la trace est un morphisme d'espaces vectoriels, pas d'algèbres."
+    },
+    {
+        "uuid": "alg-072",
+        "image_path": null,
+        "theme": "trace",
+        "question": "Considérons un endomorphisme $u$ d'un espace vectoriel $E$ de dimension finie $n$. La valeur de la trace de la matrice représentant $u$ dépend-elle de la base choisie ?",
+        "answers": [
+            "Oui, la trace dépend de la représentation matricielle.",
+            "Non, la trace est un invariant propre à l'endomorphisme, car $\\text{Tr}(P^{-1}AP) = \\text{Tr}(A)$.",
+            "Oui, elle dépend de la base sauf si la matrice est orthogonale.",
+            "Non, mais uniquement pour les endomorphismes symétriques."
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Si $A$ et $B$ sont deux matrices représentant $u$ dans deux bases différentes, elles sont semblables ($B = P^{-1}AP$). Or, la trace est invariante par similitude : $\\text{Tr}(P^{-1}AP) = \\text{Tr}(PP^{-1}A) = \\text{Tr}(IA) = \\text{Tr}(A)$."
+    },
+    {
+        "uuid": "alg-073",
+        "image_path": null,
+        "theme": "polynômes",
+        "question": "Soit $u \\in \\mathcal{L}(E)$ un endomorphisme. Si $P(u) = 0$ et $P(0) \\neq 0$, où $P$ est un polynôme de $\\mathbb{K}[X]$, que peut-on en déduire sur $u$ ?",
+        "answers": [
+            "L'endomorphisme $u$ est nilpotent.",
+            "L'endomorphisme $u$ est inversible.",
+            "L'endomorphisme $u$ est nul.",
+            "L'endomorphisme $u$ possède au moins une valeur propre nulle."
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Si $P(u) = 0$, on peut écrire $P(X) = a_0 + a_1 X + \\dots + a_d X^d$ avec $a_0 = P(0) \\neq 0$. Alors $a_0 I = -u(a_1 I + \\dots + a_d u^{d-1}) = -u \\circ Q(u)$. Comme $a_0 \\neq 0$, on peut isoler $I = u \\circ (-\\frac{1}{a_0} Q(u))$, prouvant que $u$ est inversible."
+    },
+    {
+        "uuid": "alg-074",
+        "image_path": null,
+        "theme": "polynômes",
+        "question": "En dimension infinie, est-ce que tout endomorphisme $u$ admet nécessairement un polynôme annulateur non nul ?",
+        "answers": [
+            "Oui, par le théorème de Cayley-Hamilton généralisé.",
+            "Non, l'opérateur de dérivation sur $\\mathbb{R}[X]$ n'admet aucun polynôme annulateur non nul.",
+            "Oui, à condition que l'espace soit un espace de Hilbert.",
+            "Non, uniquement si l'endomorphisme n'est pas injectif."
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "En dimension finie $n$, tout endomorphisme annule son polynôme caractéristique (degré $n$). En dimension infinie, ce n'est plus vrai. L'opérateur de dérivation $D : P \\mapsto P'$ n'a pas de polynôme annulateur : si $P(D) = 0$, en l'appliquant à un monôme de degré assez élevé, on obtient une contradiction."
+    },
+    {
+        "uuid": "alg-075",
+        "image_path": null,
+        "theme": "interpolation",
+        "question": "Quelle est la définition rigoureuse du symbole de Kronecker $\\delta_i^j$ utilisé dans le calcul matriciel ?",
+        "answers": [
+            "Il vaut 1 si $i \\neq j$ et 0 si $i = j$.",
+            "Il vaut 1 si $i = j$ et 0 si $i \\neq j$.",
+            "Il vaut 0 si $i + j = 0$ et 1 sinon.",
+            "Il vaut $j/i$ si $i$ divise $j$."
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Le symbole de Kronecker est une notation standard pour les éléments de la matrice identité : $\\delta_{i,j} = 1$ si les indices sont égaux, et $0$ sinon. C'est l'outil de base pour manipuler les bases duales."
+    },
+    {
+        "uuid": "alg-076",
+        "image_path": null,
+        "theme": "interpolation",
+        "question": "Dans le cadre de l'interpolation de Lagrange pour un ensemble de $n+1$ points distincts $(x_i, y_i)$, quel est le degré du polynôme d'interpolation unique ?",
+        "answers": [
+            "Le degré est exactement $n+1$.",
+            "Le degré est au plus $n$.",
+            "Le degré est $n-1$.",
+            "Le degré est 1, quel que soit le nombre de points."
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Pour $n+1$ points, il existe un unique polynôme d'interpolation de degré au plus $n$. Les polynômes de base de Lagrange $L_i$ sont eux-mêmes de degré $n$."
+    },
+    {
+        "uuid": "alg-077",
+        "image_path": null,
+        "theme": "déterminants",
+        "question": "La matrice de Vandermonde associée aux points $(x_0, \\dots, x_n)$ est la matrice de passage entre deux bases de $\\mathbb{R}_n[X]$. Lesquelles ?",
+        "answers": [
+            "De la base canonique $(1, X, \\dots, X^n)$ vers la base des polynômes de Lagrange.",
+            "De la base canonique $(1, X, \\dots, X^n)$ vers la base de Newton.",
+            "De la base des polynômes de Lagrange vers la base duale.",
+            "De la base canonique $(1, X, \\dots, X^n)$ vers la base formée par les polynômes $P_i(X) = \\prod_{j \\neq i} (X - x_j)$."
+        ],
+        "difficulty": 4,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "La matrice de Vandermonde $V$ exprime les valeurs des monômes $X^j$ aux points $x_i$. Elle permet de faire le lien entre la base canonique et les conditions d'interpolation de Lagrange. Son déterminant est $\\prod_{i<j} (x_j - x_i)$, prouvant son inversibilité si les points sont distincts."
+    },
+    {
+        "uuid": "alg-078",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Soit $u \\in \\mathcal{L}(E)$. Quels sous-espaces sont toujours stables par $u$ ?",
+        "answers": [
+            "Le noyau $\\text{Ker}(u)$ et l'image $\\text{Im}(u)$.",
+            "Uniquement l'espace nul $\\{0\\}$ et $E$.",
+            "L'ensemble des vecteurs propres de $u$.",
+            "Les sous-espaces de dimension 1 uniquement."
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "Si $x \\in \\text{Ker}(u)$, alors $u(x)=0 \\in \\text{Ker}(u)$ (stable). Si $y \\in \\text{Im}(u)$, alors $y=u(x)$, donc $u(y) = u(u(x)) \\in \\text{Im}(u)$ (stable). C'est une propriété fondamentale en théorie des endomorphismes."
+    },
+    {
+        "uuid": "alg-079",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Si $A$ et $B$ sont deux matrices semblables dans $\\mathcal{M}_n(\\mathbb{K})$, laquelle des affirmations suivantes est vraie ?",
+        "answers": [
+            "Elles ont même déterminant, même trace et même polynôme caractéristique.",
+            "Elles ont même déterminant mais pas nécessairement la même trace.",
+            "Elles ont les mêmes vecteurs propres.",
+            "Elles sont nécessairement inversibles."
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "La similitude est une relation d'équivalence qui préserve les invariants scalaires : le déterminant (produit des valeurs propres), la trace (somme des valeurs propres) et le polynôme caractéristique. Attention : les vecteurs propres ne sont pas les mêmes, ils sont liés par la matrice de passage $P$."
+    },
+    {
+        "uuid": "alg-080",
+        "image_path": null,
+        "theme": "polynômes",
+        "question": "Soit $P$ un polynôme annulateur de $u$. Comment utilise-t-on le reste $R$ de la division euclidienne de $X^n$ par $P$ ?",
+        "answers": [
+            "Pour calculer $u^{-1} = R(u)$.",
+            "Pour calculer $u^n = R(u)$.",
+            "Pour calculer le rang de $u$ via $rg(R(u))$.",
+            "Pour calculer la valeur propre dominante de $u$."
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Par définition, $X^n = P(X)Q(X) + R(X)$. En évaluant en $u$, comme $P(u)=0$, on obtient $u^n = P(u)Q(u) + R(u) = 0 + R(u) = R(u)$. Cela permet de calculer des puissances d'endomorphismes très simplement sans diagonaliser."
+    },
+    {
+        "uuid": "alg-081",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Dans le cadre de l'étude des endomorphismes d'un $\\mathbb{K}$-espace vectoriel $E$ de dimension finie, un projecteur $p$ (vérifiant $p^2=p$) est l'identité $Id_E$ si et seulement si :",
+        "answers": [
+            "$ker(p) = \\{0_E\\}$",
+            "$Im(p) = \\{0_E\\}$",
+            "$p^2 = 0$",
+            "$p$ est nilpotent"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "Un projecteur $p$ vérifie $E = ker(p) \\oplus Im(p)$. Si $ker(p) = \\{0\\}$, alors par la formule du rang, $dim(Im(p)) = dim(E)$, donc $Im(p) = E$. Ainsi, tout vecteur $x \\in E$ s'écrit $x = 0 + y$ avec $y \\in Im(p)$, et comme $p(y)=y$ pour tout $y \\in Im(p)$, on a $p(x)=x$. L'identité est le seul projecteur injectif.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-082",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Considérons une matrice par blocs $M = \\begin{pmatrix} A & B \\\\ C & D \\end{pmatrix}$ où $A$ et $D$ sont carrées. Le produit par blocs $M \\times \\begin{pmatrix} I & 0 \\\\ -D^{-1}C & I \\end{pmatrix}$ permet, lorsque $D$ est inversible, d'établir que le déterminant vaut :",
+        "answers": [
+            "$det(D)det(A - BD^{-1}C)$",
+            "$det(AD-BC)$",
+            "$det(A)det(D)$",
+            "$det(A+D)$"
+        ],
+        "difficulty": 5,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "Le produit donne $\\begin{pmatrix} A-BD^{-1}C & B \\\\ 0 & D \\end{pmatrix}$. Par la propriété du déterminant d'une matrice triangulaire par blocs, on obtient $det(M) \\times det(I) = det(A-BD^{-1}C) \\times det(D)$. Le piège est de croire que le déterminant est $det(AD-BC)$, ce qui n'est vrai que si les blocs commutent.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-083",
+        "image_path": null,
+        "theme": "sous-espaces stables",
+        "question": "Soit $u \\in \\mathcal{L}(E)$ et $F$ un sous-espace vectoriel de $E$ stable par $u$. L'endomorphisme induit, noté $u_F$, est défini par :",
+        "answers": [
+            "$u_F : E \\to E$",
+            "$u_F : F \\to F$",
+            "$u_F : F \\to E$",
+            "$u_F : E \\to F$"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Par définition de la stabilité, pour tout $x \\in F$, $u(x)$ appartient encore à $F$. On peut donc restreindre l'application $u$ à l'ensemble de départ $F$ et à l'ensemble d'arrivée $F$. C'est l'application $u_F(x) = u(x)$ pour tout $x \\in F$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-084",
+        "image_path": null,
+        "theme": "polynômes",
+        "question": "Une matrice $A \\in \\mathcal{M}_n(\\mathbb{K})$ est dite nilpotente d'indice $k$ si $k$ est le plus petit entier tel que $A^k = 0$. On a alors $A^{k-1} \\neq 0$. Cette définition implique que :",
+        "answers": [
+            "$A^n = 0$",
+            "$A^{n-1} = 0$",
+            "$A^n = I_n$",
+            "$A$ est diagonalisable"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "D'après le théorème de Cayley-Hamilton, le polynôme caractéristique d'une matrice nilpotente est $(-X)^n$. Ainsi, $A^n = 0$. L'indice de nilpotence $k$ vérifie toujours $1 \\leq k \\leq n$. Si $k=n$, on dit que la matrice est de nilpotence maximale.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-085",
+        "image_path": null,
+        "theme": "interpolation",
+        "question": "Les polynômes de base de Lagrange $L_i$ associés à une famille de points distincts $(x_0, x_1, \\dots, x_n)$ dépendent :",
+        "answers": [
+            "Uniquement des valeurs $(y_0, \\dots, y_n)$",
+            "Uniquement des points d'interpolation $(x_0, \\dots, x_n)$",
+            "Du degré $n$ et de la variable $X$ seulement",
+            "De la fonction à interpoler"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Par définition, $L_i(X) = \\prod_{j \\neq i} \\frac{X - x_j}{x_i - x_j}$. Ces polynômes ne dépendent que de la répartition des points d'abscisse $x_i$. Les valeurs $y_i$ sont utilisées lors de la combinaison linéaire finale pour construire le polynôme d'interpolation $P(X) = \\sum y_i L_i(X)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-086",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Soit $f \\in \\mathcal{L}(E)$ un endomorphisme vérifiant $f^2+f+Id_E = 0$. Alors $f$ est :",
+        "answers": [
+            "Nul",
+            "Inversible",
+            "Un projecteur",
+            "Non inversible"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "L'équation peut s'écrire $f \\circ (-f - Id_E) = Id_E$, soit $f \\circ (-(f + Id_E)) = Id_E$. Comme $f$ possède un inverse à gauche et à droite (ici $f^{-1} = -f - Id_E$), $f$ est inversible.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-087",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Deux matrices $A, B \\in \\mathcal{M}_n(\\mathbb{K})$ ayant la même trace et le même déterminant sont-elles nécessairement semblables ?",
+        "answers": [
+            "Oui, toujours",
+            "Non, ce n'est pas suffisant",
+            "Oui si elles sont diagonalisables",
+            "Oui si elles sont triangulaires"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "La trace et le déterminant sont des invariants de similitude, mais ils ne forment pas un système complet d'invariants. Par exemple, $\\begin{pmatrix} 0 & 1 \\\\ 0 & 0 \\end{pmatrix}$ et $\\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}$ ont même trace et déterminant mais ne sont pas semblables.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-088",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Le rang d'un produit de deux matrices $A \\in \\mathcal{M}_{n,p}(\\mathbb{K})$ et $B \\in \\mathcal{M}_{p,m}(\\mathbb{K})$ vérifie toujours l'inégalité :",
+        "answers": [
+            "$rg(AB) > rg(A)$",
+            "$rg(AB) \\leq \\min(rg(A), rg(B))$",
+            "$rg(AB) = rg(A) + rg(B)$",
+            "$rg(AB) = rg(A) \\times rg(B)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "L'image de $AB$ est incluse dans l'image de $A$, donc $rg(AB) \\leq rg(A)$. De même, comme $AB$ peut s'écrire comme une combinaison linéaire des colonnes de $A$ par les colonnes de $B$, on montre que $rg(AB) \\leq rg(B)$. D'où l'inégalité de Sylvester généralisée.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-089",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Une matrice diagonale par blocs $M = diag(A_1, A_2, \\dots, A_k)$ est une matrice diagonale au sens usuel si :",
+        "answers": [
+            "Chaque bloc $A_i$ est de taille $1 \\times 1$",
+            "Chaque bloc $A_i$ est une matrice inversible",
+            "La somme des tailles des blocs est égale à $n$",
+            "Tous les blocs sont des matrices nulles"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "explication": "Une matrice est diagonale si tous ses éléments hors-diagonale sont nuls. Dans une matrice diagonale par blocs, les éléments hors-blocs sont nuls. Pour que les éléments dans les blocs soient aussi nuls hors de la diagonale, il faut que les blocs soient des scalaires (matrices $1 \\times 1$).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-090",
+        "image_path": null,
+        "theme": "polynômes",
+        "question": "Soit $u$ un endomorphisme de $E$. L'ensemble des polynômes $P \\in \\mathbb{K}[X]$ tels que $P(u) = 0$ est :",
+        "answers": [
+            "Un sous-espace vectoriel de $\\mathbb{K}[X]$ seulement",
+            "Un idéal de $\\mathbb{K}[X]$",
+            "Un groupe pour l'addition",
+            "Un ensemble fini"
+        ],
+        "difficulty": 4,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "explication": "Si $P(u)=0$ et $Q(u)=0$, alors $(P+Q)(u)=0$. De plus, si $P(u)=0$, alors pour tout $A \\in \\mathbb{K}[X]$, $(A \\cdot P)(u) = A(u) \\circ P(u) = 0$. L'ensemble des polynômes annulateurs est donc un idéal de $\\mathbb{K}[X]$, et comme $\\mathbb{K}[X]$ est un anneau principal, cet idéal est engendré par le polynôme minimal $\\pi_u$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-091",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Si $I = I_1 \\cup I_2$ (disjointe), la somme $\\sum_{i \\in I} E_i$ est directe si les sommes sur $I_1$ et $I_2$ le sont et si leurs totaux sont en somme directe.",
+        "answers": [
+            "Vrai [cite: 189, 191]",
+            "Faux [cite: 189, 191]",
+            "Vrai seulement si $dim(E) < \\infty$ [cite: 189, 191]"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-092",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "La trace d'une matrice $P^{-1}AP$ est égale à $Tr(A)$.",
+        "answers": [
+            "Vrai [cite: 317]",
+            "Faux [cite: 317]",
+            "Vrai seulement si $P$ est orthogonale [cite: 317]"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-093",
+        "image_path": null,
+        "theme": "interpolation",
+        "question": "Le polynôme d'interpolation de Lagrange est unique pour un ensemble de points donnés.",
+        "answers": [
+            "Vrai [cite: 383, 384]",
+            "Faux [cite: 383, 384]",
+            "Vrai seulement pour $n=2$ [cite: 383, 384]"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-094",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Le déterminant d'une matrice diagonale par blocs est le produit des déterminants des blocs.",
+        "answers": [
+            "Vrai [cite: 253]",
+            "Faux [cite: 253]",
+            "Vrai seulement si les blocs sont de même taille [cite: 253]"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-095",
+        "image_path": null,
+        "theme": "espaces vectoriels",
+        "question": "Un supplémentaire de $ker(u)$ stable par $u$ est égal à :",
+        "answers": [
+            "$Im(u)$ [cite: 37]",
+            "$ker(u)$ [cite: 37]",
+            "$E$ [cite: 37]"
+        ],
+        "difficulty": 4,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-096",
+        "image_path": null,
+        "theme": "matrices",
+        "question": "Dans l'exercice 18, si $A^2 - 5A + 6I = 0$, alors $A$ est inversible et $A^{-1}$ est :",
+        "answers": [
+            "$\\frac{1}{6}(5I - A)$ [cite: 56, 57]",
+            "$\\frac{1}{5}(6I - A)$ [cite: 56, 57]",
+            "$5A - 6I$ [cite: 56, 57]"
+        ],
+        "difficulty": 3,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-097",
+        "image_path": null,
+        "theme": "sous-espaces stables",
+        "question": "Si $E = F \\oplus G$ et que $u$ stabilise $F$ et $G$, sa matrice dans une base adaptée est :",
+        "answers": [
+            "Triangulaire [cite: 299, 301]",
+            "Diagonale par blocs [cite: 299, 301]",
+            "Symétrique [cite: 299, 301]"
+        ],
+        "difficulty": 2,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-098",
+        "image_path": null,
+        "theme": "trace",
+        "question": "Si $u$ est une homothétie de rapport $\\lambda$ en dimension $n$, sa trace est :",
+        "answers": [
+            "$\\lambda$ [cite: 308, 324]",
+            "$n\\lambda$ [cite: 308, 324]",
+            "$\\lambda^n$ [cite: 308, 324]"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-099",
+        "image_path": null,
+        "theme": "déterminants",
+        "question": "La matrice de Vandermonde est inversible si et seulement si les scalaires sont distincts.",
+        "answers": [
+            "Vrai [cite: 408]",
+            "Faux [cite: 408]",
+            "Uniquement pour $n$ pair [cite: 408]"
+        ],
+        "difficulty": 1,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "alg-100",
+        "image_path": null,
+        "theme": "polynômes",
+        "question": "L'opérateur $u: P \\mapsto XP$ ne possède aucun polynôme annulateur non nul.",
+        "answers": [
+            "Vrai [cite: 364]",
+            "Faux [cite: 364]",
+            "Vrai seulement pour $K = \\mathbb{R}$ [cite: 364]"
+        ],
+        "difficulty": 4,
+        "chapter": "Complèment d'algèbre linéaire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    }
+]

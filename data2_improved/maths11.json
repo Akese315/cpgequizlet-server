@@ -1,0 +1,1669 @@
+[
+    {
+        "uuid": "q1",
+        "image_path": null,
+        "theme": "Espérance",
+        "question": "Dans le cadre de l'étude d'une variable aléatoire discrète $X$ à valeurs dans un sous-ensemble dénombrable $\\mathbb{K} \\subset \\mathbb{R}$, quelle est la condition nécessaire et suffisante pour que $X$ admette une espérance finie ?",
+        "answers": [
+            "La famille $(x P(X=x))_{x \\in X(\\Omega)}$ doit être absolument sommable.",
+            "La suite $P(X=x)$ doit tendre vers 0 quand $x \\to \\infty$.",
+            "L'ensemble $X(\\Omega)$ doit être un ensemble fini.",
+            "La série $\\sum P(X=x)$ doit diverger."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Par définition, l'espérance $\\mathbb{E}(X)$ existe si et seulement si la famille $(x P(X=x))_{x \\in X(\\Omega)}$ est absolument sommable, ce qui revient à demander que $\\sum |x| P(X=x) < +\\infty$. La condition $P(X=x) \\to 0$ est nécessaire mais insuffisante (ex: loi de Pareto). $X(\\Omega)$ n'a pas besoin d'être fini, une variable infinie peut admettre une espérance.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q2",
+        "image_path": null,
+        "theme": "Espérance",
+        "question": "Soit $X$ une variable aléatoire à valeurs dans $\\mathbb{N}$. Quelle formule, obtenue par sommation par paquets (ou interversion de somme), permet de calculer $\\mathbb{E}(X)$ à partir des probabilités de dépassement $P(X > n)$ ?",
+        "answers": [
+            "$\\mathbb{E}(X) = \\sum_{n=1}^{\\infty} P(X > n)$",
+            "$\\mathbb{E}(X) = \\sum_{n=0}^{\\infty} P(X > n)$",
+            "$\\mathbb{E}(X) = \\sum_{n=0}^{\\infty} n P(X > n)$",
+            "$\\mathbb{E}(X) = \\sum_{n=1}^{\\infty} P(X \\ge n)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "Pour $X$ à valeurs dans $\\mathbb{N}$, on a $\\mathbb{E}(X) = \\sum_{k=0}^{+\\infty} k P(X=k)$. En écrivant $k = \\sum_{n=0}^{k-1} 1$, on intervertit les sommes pour obtenir $\\sum_{n=0}^{+\\infty} P(X > n)$. Le piège est souvent de commencer l'indice à 1 au lieu de 0 ou d'oublier la définition de $P(X>n)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q3",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "question": "Soit $X$ une variable aléatoire suivant une loi uniforme discrète sur l'ensemble $[|1, n|]$. Quelle est la valeur de son espérance $\\mathbb{E}(X)$ ?",
+        "answers": [
+            "$n/2$",
+            "$(n+1)/2$",
+            "$(n-1)/2$",
+            "$n(n+1)/2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "Par définition, $\\mathbb{E}(X) = \\frac{1}{n} \\sum_{k=1}^n k$. En utilisant la formule de la somme des $n$ premiers entiers, on obtient $\\frac{1}{n} \\times \\frac{n(n+1)}{2} = \\frac{n+1}{2}$. La confusion avec $n/2$ est une erreur classique de calcul pour les petites valeurs de $n$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q4",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "question": "Si $X$ suit une loi de Poisson de paramètre $\\lambda > 0$, notée $X \\sim \\mathcal{P}(\\lambda)$, quelle est la valeur de son espérance $\\mathbb{E}(X)$ ?",
+        "answers": [
+            "$\\lambda^2$",
+            "$1/\\lambda$",
+            "$\\lambda$",
+            "$\\sqrt{\\lambda}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 2,
+        "explication": "Pour une loi de Poisson, $\\mathbb{E}(X) = \\sum_{k=0}^{\\infty} k e^{-\\lambda} \\frac{\\lambda^k}{k!} = \\lambda e^{-\\lambda} \\sum_{k=1}^{\\infty} \\frac{\\lambda^{k-1}}{(k-1)!} = \\lambda e^{-\\lambda} e^{\\lambda} = \\lambda$. C'est un résultat de cours fondamental à retenir pour les problèmes de file d'attente.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q5",
+        "image_path": null,
+        "theme": "Propriétés de l'espérance",
+        "question": "Dans le cadre du théorème de transfert, pour une variable aléatoire discrète $X$ et une fonction $f : \\mathbb{R} \\to \\mathbb{R}$, comment calcule-t-on l'espérance de la variable composée $f(X)$ ?",
+        "answers": [
+            "$\\sum_{x \\in X(\\Omega)} f(x) P(X=x)$",
+            "$\\sum_{y \\in f(X(\\Omega))} y P(X=y)$",
+            "$f(\\mathbb{E}(X))$",
+            "$\\sum_{x \\in X(\\Omega)} f(x) P(f(X)=f(x))$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Le théorème de transfert permet de calculer $\\mathbb{E}(f(X))$ sans avoir à déterminer la loi de $f(X)$. La formule est bien $\\sum_{x \\in X(\\Omega)} f(x) P(X=x)$. L'erreur classique est de croire à la linéarité $\\mathbb{E}(f(X)) = f(\\mathbb{E}(X))$, ce qui est généralement faux (sauf si $f$ est affine).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q6",
+        "image_path": null,
+        "theme": "Propriétés de l'espérance",
+        "question": "Soient $X$ et $Y$ deux variables aléatoires d'espérance finie. Sous quelle condition l'égalité $\\mathbb{E}(X+Y) = \\mathbb{E}(X) + \\mathbb{E}(Y)$ est-elle vérifiée ?",
+        "answers": [
+            "X et Y sont indépendantes.",
+            "X et Y sont décorrélées.",
+            "Cette égalité est toujours vraie par linéarité de l'espérance.",
+            "X et Y doivent suivre la même loi."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 2,
+        "explication": "La linéarité de l'espérance est une propriété fondamentale qui ne nécessite aucune hypothèse d'indépendance ou de décorrélation. C'est l'un des outils les plus puissants en probabilités pour simplifier le calcul de moyennes sur des sommes de variables dépendantes.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q7",
+        "image_path": null,
+        "theme": "Propriétés de l'espérance",
+        "question": "Soient $X$ et $Y$ deux variables aléatoires admettant des espérances finies. Si $X$ et $Y$ sont indépendantes, que peut-on dire de $\\mathbb{E}(XY)$ ?",
+        "answers": [
+            "$\\mathbb{E}(XY) = \\mathbb{E}(X) + \\mathbb{E}(Y)$",
+            "$\\mathbb{E}(XY) = \\mathbb{E}(X)\\mathbb{E}(Y)$",
+            "$\\mathbb{E}(XY) \\le \\mathbb{E}(X)\\mathbb{E}(Y)$",
+            "$\\mathbb{E}(XY)$ n'est pas nécessairement défini."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "Si $X$ et $Y$ sont indépendantes, alors $\\mathbb{E}(XY) = \\mathbb{E}(X)\\mathbb{E}(Y)$. Attention, la réciproque est fausse (des variables peuvent être décorrélées sans être indépendantes). L'erreur fréquente est de confondre la somme et le produit.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q8",
+        "image_path": null,
+        "theme": "Inegalités",
+        "question": "L'inégalité de Cauchy-Schwarz pour les variables aléatoires $X$ et $Y$ admettant des moments d'ordre 2 s'énonce :",
+        "answers": [
+            "$\\mathbb{E}(XY)^2 \\le \\mathbb{E}(X^2) \\mathbb{E}(Y^2)$",
+            "$\\mathbb{E}(XY) \\le \\mathbb{E}(X) \\mathbb{E}(Y)$",
+            "$\\mathbb{V}(X+Y) \\le \\mathbb{V}(X) + \\mathbb{V}(Y)$",
+            "$\\mathbb{E}(X^2) \\ge \\mathbb{E}(X)^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "L'inégalité de Cauchy-Schwarz stipule que le carré de l'espérance du produit est inférieur ou égal au produit des espérances des carrés. C'est une extension directe de l'inégalité de Cauchy-Schwarz sur le produit scalaire des espaces de Hilbert $L^2$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q9",
+        "image_path": null,
+        "theme": "Variance",
+        "question": "Quelle est la formule de Koenig-Huygens, utilisée pour simplifier le calcul de la variance d'une variable aléatoire $X$ ?",
+        "answers": [
+            "$\\mathbb{V}(X) = \\mathbb{E}(X^2) - (\\mathbb{E}(X))^2$",
+            "$\\mathbb{V}(X) = \\mathbb{E}(X^2) + (\\mathbb{E}(X))^2$",
+            "$\\mathbb{V}(X) = \\mathbb{E}((X - \\mathbb{E}(X))^2) - \\mathbb{E}(X)^2$",
+            "$\\mathbb{V}(X) = \\mathbb{E}(X^2) - \\mathbb{E}(X)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "La formule de Koenig-Huygens $\\mathbb{V}(X) = \\mathbb{E}(X^2) - \\mathbb{E}(X)^2$ est indispensable en pratique car elle évite d'avoir à développer le carré à l'intérieur de l'espérance lors du calcul direct à partir de la définition $\\mathbb{E}((X-\\mathbb{E}(X))^2)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q10",
+        "image_path": null,
+        "theme": "Variance",
+        "question": "Soit $X$ une variable aléatoire et $a, b$ deux réels. Quelle est la valeur de $\\mathbb{V}(aX + b)$ ?",
+        "answers": [
+            "$a \\mathbb{V}(X) + b$",
+            "$a^2 \\mathbb{V}(X)$",
+            "$a^2 \\mathbb{V}(X) + b$",
+            "$|a| \\mathbb{V}(X)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "La variance est une forme quadratique par rapport aux coefficients multiplicatifs : $\\mathbb{V}(aX+b) = \\mathbb{E}((aX+b - \\mathbb{E}(aX+b))^2) = \\mathbb{E}((aX - a\\mathbb{E}(X))^2) = a^2 \\mathbb{V}(X)$. Le terme $b$ disparaît car la variance mesure la dispersion, insensible à une translation.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q11",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "question": "Dans le cadre de l'étude d'une expérience de Bernoulli, pour une variable aléatoire $X \\sim \\mathcal{B}(p)$, quelle est sa variance $\\mathbb{V}(X)$ ?",
+        "answers": [
+            "$p^2$",
+            "$p(1-p)$",
+            "$np(1-p)$",
+            "$p/(1-p)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "La variance se calcule par $\\mathbb{V}(X) = \\mathbb{E}(X^2) - (\\mathbb{E}(X))^2$. Pour une Bernoulli, $X^2 = X$, donc $\\mathbb{E}(X^2) = p$. On a $\\mathbb{V}(X) = p - p^2 = p(1-p)$. L'erreur $np(1-p)$ correspond à une loi binomiale $\\mathcal{B}(n, p)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q12",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "question": "Considérons une variable aléatoire $X$ suivant une loi géométrique $X \\sim \\mathcal{G}(p)$ sur $\\mathbb{N}^*$ (nombre d'essais jusqu'au premier succès). Quelle est sa variance ?",
+        "answers": [
+            "$(1-p)/p$",
+            "$(1-p)/p^2$",
+            "$1/p^2$",
+            "$(1-p)^2/p^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "Pour $X \\sim \\mathcal{G}(p)$, on a $\\mathbb{E}(X) = 1/p$ et $\\mathbb{E}(X(X-1)) = 2q/p^2$ avec $q=1-p$. La variance est donnée par $\\mathbb{V}(X) = \\mathbb{E}(X(X-1)) + \\mathbb{E}(X) - \\mathbb{E}(X)^2 = 2q/p^2 + 1/p - 1/p^2 = (2-2p+p-1)/p^2 = (1-p)/p^2$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q13",
+        "image_path": null,
+        "theme": "Covariance",
+        "question": "Soient $X$ et $Y$ deux variables aléatoires admettant des moments d'ordre 2. Laquelle des expressions suivantes définit correctement la covariance $Cov(X, Y)$ ?",
+        "answers": [
+            "$\\mathbb{E}(XY) - \\mathbb{E}(X)\\mathbb{E}(Y)$",
+            "$\\mathbb{E}((X - \\mathbb{E}(X))(Y - \\mathbb{E}(Y)))$",
+            "Les deux réponses précédentes sont correctes.",
+            "$\\mathbb{E}(|X - \\mathbb{E}(X)| \\cdot |Y - \\mathbb{E}(Y)|)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 2,
+        "explication": "La définition théorique est la deuxième, et la formule de König-Huygens pour la covariance, obtenue en développant le produit, est $\\mathbb{E}(XY) - \\mathbb{E}(X)\\mathbb{E}(Y)$. Les deux sont donc équivalentes.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q14",
+        "image_path": null,
+        "theme": "Covariance",
+        "question": "Si $X$ et $Y$ sont deux variables aléatoires indépendantes, que peut-on dire de leur covariance $Cov(X, Y)$ ?",
+        "answers": [
+            "Elle est nécessairement nulle.",
+            "Elle est nécessairement positive.",
+            "Elle est égale au produit de leurs écarts-types.",
+            "Elle est égale au produit de leurs variances."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Si $X$ et $Y$ sont indépendantes, alors $\\mathbb{E}(XY) = \\mathbb{E}(X)\\mathbb{E}(Y)$. En réinjectant dans la formule $Cov(X, Y) = \\mathbb{E}(XY) - \\mathbb{E}(X)\\mathbb{E}(Y)$, on obtient immédiatement 0. L'indépendance entraîne la non-corrélation.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q15",
+        "image_path": null,
+        "theme": "Covariance",
+        "question": "Concernant la relation entre indépendance et covariance, la réciproque 'Si $Cov(X, Y) = 0$, alors $X$ et $Y$ sont indépendantes' est :",
+        "answers": [
+            "Vraie pour toutes les variables discrètes.",
+            "Fausse en général.",
+            "Vraie uniquement si les variables suivent une loi normale.",
+            "Vraie si les variables sont positives."
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "La non-corrélation ($Cov=0$) n'implique pas l'indépendance. Contre-exemple classique : $X$ suivant une loi symétrique autour de 0 et $Y=X^2$. $Cov(X, X^2) = \\mathbb{E}(X^3) - \\mathbb{E}(X)\\mathbb{E}(X^2) = 0 - 0 = 0$, pourtant $X$ et $X^2$ sont totalement dépendantes.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q16",
+        "image_path": null,
+        "theme": "Variance",
+        "question": "Pour une somme de variables aléatoires $X_1, \\dots, X_n$ quelconques, quelle est l'expression générale de la variance $\\mathbb{V}(\\sum_{i=1}^n X_i)$ ?",
+        "answers": [
+            "$\\sum_{i=1}^n \\mathbb{V}(X_i)$",
+            "$\\sum_{i=1}^n \\mathbb{V}(X_i) + 2\\sum_{1 \\le i < j \\le n} Cov(X_i, X_j)$",
+            "$(\\sum_{i=1}^n \\sigma(X_i))^2$",
+            "$\\sum_{i=1}^n \\mathbb{V}(X_i) + \\sum_{i \\ne j} Cov(X_i, X_j)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "Par linéarité de l'espérance, $\\mathbb{V}(\\sum X_i) = \\mathbb{E}((\\sum X_i)^2) - (\\mathbb{E}(\\sum X_i))^2$. Le développement du carré produit des termes au carré (variances) et des doubles produits (covariances). La réponse 1 n'est vraie que si les variables sont deux à deux non corrélées.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q17",
+        "image_path": null,
+        "theme": "Inegalités",
+        "question": "Quelles sont les conditions d'application pour utiliser l'inégalité de Markov sur une variable aléatoire $X$ ?",
+        "answers": [
+            "$X$ doit être bornée.",
+            "$X$ doit être une variable à valeurs positives et d'espérance finie.",
+            "$X$ doit posséder une variance finie.",
+            "$X$ doit suivre une loi continue uniquement."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "L'inégalité de Markov s'énonce : pour $X \\ge 0$ et $a > 0$, $P(X \\ge a) \\le \\mathbb{E}(X)/a$. La positivité est une condition stricte et nécessaire pour majorer la probabilité par l'espérance.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q18",
+        "image_path": null,
+        "theme": "Inegalités",
+        "question": "L'inégalité de Bienaymé-Tchebychev permet de majorer la probabilité d'écart à la moyenne. Elle s'écrit, pour $\\epsilon > 0$ :",
+        "answers": [
+            "$P(|X - \\mathbb{E}(X)| \\ge \\epsilon) \\le \\mathbb{V}(X)/\\epsilon^2$",
+            "$P(|X - \\mathbb{E}(X)| \\ge \\epsilon) \\le \\mathbb{E}(X)/\\epsilon^2$",
+            "$P(X \\ge \\epsilon) \\le \\mathbb{V}(X)/\\epsilon$",
+            "$P(|X - \\mathbb{E}(X)| \\ge \\epsilon) \\le \\sigma(X)/\\epsilon$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "C'est une application directe de l'inégalité de Markov à la variable $(X-\\mathbb{E}(X))^2$. On obtient $P((X-\\mathbb{E}(X))^2 \\ge \\epsilon^2) \\le \\mathbb{E}((X-\\mathbb{E}(X))^2) / \\epsilon^2$, soit $P(|X-\\mathbb{E}(X)| \\ge \\epsilon) \\le \\mathbb{V}(X)/\\epsilon^2$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q19",
+        "image_path": null,
+        "theme": "Loi faible des grands nombres",
+        "question": "Que stipule la loi faible des grands nombres pour une suite $(X_n)_{n \\in \\mathbb{N}^*}$ de variables aléatoires i.i.d. d'espérance $\\mu$ et de variance finie $\\sigma^2$ ?",
+        "answers": [
+            "La moyenne empirique $\\overline{X}_n$ converge en probabilité vers $\\mu$.",
+            "La somme $S_n = \\sum X_i$ converge vers $\\mu$.",
+            "La variance de la moyenne $\\mathbb{V}(\\overline{X}_n)$ tend vers $\\sigma^2$.",
+            "La suite $X_n$ converge presque sûrement vers $\\mu$."
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "La loi faible des grands nombres montre que $\\forall \\epsilon > 0, \\lim_{n \\to \\infty} P(|\\overline{X}_n - \\mu| \\ge \\epsilon) = 0$. Cela signifie que la moyenne empirique devient arbitrairement proche de l'espérance théorique quand $n$ est grand.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q20",
+        "image_path": null,
+        "theme": "Fonctions génératrices",
+        "question": "Pour une variable aléatoire $X$ à valeurs dans $\\mathbb{N}$, quelle est la définition rigoureuse de sa fonction génératrice $G_X(t)$ ?",
+        "answers": [
+            "$\\mathbb{E}(X^t)$",
+            "$\\mathbb{E}(t^X)$",
+            "$\\mathbb{E}(e^{tX})$",
+            "$\\sum_{k=0}^{+\\infty} P(X=k) e^{kt}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "La fonction génératrice est définie par $G_X(t) = \\sum_{k=0}^{+\\infty} P(X=k) t^k = \\mathbb{E}(t^X)$. La proposition avec l'exponentielle correspond à la fonction caractéristique (ou génératrice des moments), qui est différente.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q21",
+        "image_path": null,
+        "theme": "Fonctions génératrices",
+        "question": "Dans le cadre de l'étude d'une variable aléatoire discrète $X$ à valeurs dans $\\mathbb{N}$, le rayon de convergence $R$ de la série entière définissant la fonction génératrice $G_X(t) = \\sum_{k=0}^{+\\infty} P(X=k)t^k$ vérifie toujours :",
+        "answers": [
+            "$R \\ge 1$",
+            "$R = 1$",
+            "$R < 1$",
+            "$R = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Puisque $0 \\le P(X=k) \\le 1$, le terme général de la série est majoré par $1$ pour tout $t \\in [-1, 1]$. La série converge donc au moins sur l'intervalle $[-1, 1]$, ce qui impose $R \\ge 1$. Attention : $R$ peut être strictement supérieur à 1 (par exemple pour une loi finie, $R=+\\infty$).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q22",
+        "image_path": null,
+        "theme": "Fonctions génératrices",
+        "question": "Soit $X$ une variable aléatoire à valeurs dans $\\mathbb{N}$ de fonction génératrice $G_X(t)$. Si $G_X$ est dérivable en $1$, alors l'espérance $\\mathbb{E}(X)$ vaut :",
+        "answers": [
+            "$G_X(1)$",
+            "$G_X'(1)$",
+            "$G_X'(0)$",
+            "$G_X''(1)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "Par dérivation terme à terme de la série $G_X(t) = \\sum P(X=k)t^k$, on obtient $G_X'(t) = \\sum_{k=1}^{+\\infty} k P(X=k)t^{k-1}$. En évaluant en $t=1$, on retrouve par définition $\\sum k P(X=k) = \\mathbb{E}(X)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q23",
+        "image_path": null,
+        "theme": "Fonctions génératrices",
+        "question": "Pour une variable aléatoire $X$ à valeurs dans $\\mathbb{N}$ admettant des moments d'ordre 2, que représente la dérivée seconde $G_X''(1)$ ?",
+        "answers": [
+            "$\\mathbb{V}(X)$",
+            "$\\mathbb{E}(X(X-1))$",
+            "$\\mathbb{E}(X^2)$",
+            "$\\mathbb{E}(X)^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "En dérivant deux fois $G_X(t)$, on obtient $G_X''(t) = \\sum_{k=2}^{+\\infty} k(k-1)P(X=k)t^{k-2}$. En $t=1$, la somme devient $\\sum k(k-1)P(X=k)$, ce qui est bien l'espérance de la variable factorielle $X(X-1)$. La variance est liée par $\\mathbb{V}(X) = G_X''(1) + G_X'(1) - (G_X'(1))^2$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q24",
+        "image_path": null,
+        "theme": "Fonctions génératrices",
+        "question": "Quelle est la forme explicite de la fonction génératrice d'une loi de Poisson de paramètre $\\lambda > 0$, notée $\\mathcal{P}(\\lambda)$ ?",
+        "answers": [
+            "$e^{\\lambda(t-1)}$",
+            "$(pt+q)^n$",
+            "$pt/(1-qt)$",
+            "$e^{\\lambda t}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Pour une loi de Poisson, $P(X=k) = \\frac{e^{-\\lambda} \\lambda^k}{k!}$. La fonction génératrice est $G_X(t) = \\sum_{k=0}^{+\\infty} e^{-\\lambda} \\frac{(\\lambda t)^k}{k!} = e^{-\\lambda} \\sum \\frac{(\\lambda t)^k}{k!} = e^{-\\lambda} e^{\\lambda t} = e^{\\lambda(t-1)}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q25",
+        "image_path": null,
+        "theme": "Somme de variables indépendantes",
+        "question": "Si $X$ et $Y$ sont deux variables aléatoires indépendantes à valeurs dans $\\mathbb{N}$, quelle relation lie leurs fonctions génératrices à celle de leur somme $X+Y$ ?",
+        "answers": [
+            "$G_{X+Y}(t) = G_X(t) + G_Y(t)$",
+            "$G_{X+Y}(t) = G_X(t) \\times G_Y(t)$",
+            "$G_{X+Y}(t) = G_X(G_Y(t))$",
+            "$G_{X+Y}(t) = G_X(t) G_Y(t) + 1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "Par définition, $G_{X+Y}(t) = \\mathbb{E}(t^{X+Y}) = \\mathbb{E}(t^X t^Y)$. Par indépendance de $X$ et $Y$, on a $\\mathbb{E}(t^X t^Y) = \\mathbb{E}(t^X) \\mathbb{E}(t^Y) = G_X(t) G_Y(t)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q26",
+        "image_path": null,
+        "theme": "Propriétés de l'espérance",
+        "question": "Soit $X$ une variable aléatoire réelle. Si le moment d'ordre 2 $\\mathbb{E}(X^2)$ existe (est fini), peut-on en déduire que $\\mathbb{E}(X)$ existe ?",
+        "answers": [
+            "Vrai.",
+            "Faux.",
+            "Vrai seulement si $X$ est une variable positive.",
+            "Cela dépend de la loi de $X$."
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "D'après l'inégalité de Cauchy-Schwarz, $\\mathbb{E}(|X|) = \\mathbb{E}(|X| \\cdot 1) \\le \\sqrt{\\mathbb{E}(X^2)} \\sqrt{\\mathbb{E}(1^2)} = \\sqrt{\\mathbb{E}(X^2)}$. Si $\\mathbb{E}(X^2) < +\\infty$, alors $\\mathbb{E}(|X|) < +\\infty$, donc $\\mathbb{E}(X)$ existe absolument.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q27",
+        "image_path": null,
+        "theme": "Variance",
+        "question": "Si la variance d'une variable aléatoire $X$ est nulle, c'est-à-dire $\\mathbb{V}(X) = 0$, que peut-on affirmer sur la nature de $X$ ?",
+        "answers": [
+            "$X = 0$ presque sûrement.",
+            "$X$ est presque sûrement constante.",
+            "$\\mathbb{E}(X) = 0$.",
+            "La variable $X$ est nécessairement nulle."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "La variance est définie par $\\mathbb{E}((X - \\mathbb{E}(X))^2)$. Si cette espérance d'une variable positive est nulle, alors la variable aléatoire $(X - \\mathbb{E}(X))^2$ est nulle presque sûrement, donc $X = \\mathbb{E}(X)$ presque sûrement.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q28",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "question": "Soit $X$ une variable aléatoire suivant une loi uniforme discrète sur l'ensemble $\\{1, 2, \\dots, n\\}$. Quelle est la variance de $X$ ?",
+        "answers": [
+            "$(n^2 - 1)/12$",
+            "$(n^2 + 1)/12$",
+            "$n^2/12$",
+            "$(n-1)^2/12$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Pour une loi uniforme sur $\\{1, \\dots, n\\}$, on a $\\mathbb{E}(X) = \\frac{n+1}{2}$ et $\\mathbb{E}(X^2) = \\frac{(n+1)(2n+1)}{6}$. En appliquant $\\mathbb{V}(X) = \\mathbb{E}(X^2) - (\\mathbb{E}(X))^2$, on simplifie pour obtenir $\\frac{(n+1)(2n+1)}{6} - \\frac{(n+1)^2}{4} = \\frac{n^2-1}{12}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q29",
+        "image_path": null,
+        "theme": "Exercice conceptuel",
+        "question": "Dans le problème classique des rencontres (permutation aléatoire de $n$ éléments), quel est le nombre moyen de points fixes (rencontres) ?",
+        "answers": [
+            "$n$",
+            "$1/n$",
+            "$1$",
+            "$1/e$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 2,
+        "explication": "Si $X_i$ est la variable indicatrice de l'événement \"le $i$-ème élément est à sa place\", alors $P(X_i=1) = 1/n$. Par linéarité, $\\mathbb{E}(X) = \\sum_{i=1}^n \\mathbb{E}(X_i) = \\sum_{i=1}^n \\frac{1}{n} = 1$. Ce résultat est indépendant de $n$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q30",
+        "image_path": null,
+        "theme": "Exercice conceptuel",
+        "question": "Dans le problème des rencontres avec $n$ objets, quelle est la variance du nombre de rencontres ?",
+        "answers": [
+            "$1$",
+            "$n$",
+            "$n-1$",
+            "$1/n$"
+        ],
+        "difficulty": 4,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Le nombre de rencontres suit approximativement une loi de Poisson de paramètre $1$ pour $n$ grand. Comme pour une loi $\\mathcal{P}(1)$, l'espérance est 1 et la variance est 1. En réalité, le calcul exact montre que $\\mathbb{V}(X) = 1$ pour tout $n \\ge 2$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q31",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "question": "Dans le cadre de l'étude d'un processus de Bernoulli, soit $X \\sim \\mathcal{B}(n, p)$ le nombre de succès en $n$ répétitions indépendantes. Quelle est la variance $\\mathbb{V}(X)$ ?",
+        "answers": [
+            "$np$",
+            "$np(1-p)$",
+            "$p(1-p)$",
+            "$n^2p(1-p)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "La variance d'une loi binomiale s'obtient par la somme des variances des $n$ variables de Bernoulli indépendantes de paramètre $p$. Comme $\\mathbb{V}(\\mathcal{B}(1, p)) = p(1-p)$, on a $\\mathbb{V}(X) = n \\times p(1-p)$. $np$ est l'espérance, et $p(1-p)$ est la variance d'une seule loi de Bernoulli.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q32",
+        "image_path": null,
+        "theme": "Covariance",
+        "question": "Pour une variable aléatoire $X$ de carré intégrable, que vaut la covariance d'une variable avec elle-même, soit $Cov(X, X)$ ?",
+        "answers": [
+            "$\\mathbb{E}(X)^2$",
+            "$\\mathbb{V}(X)$",
+            "$0$",
+            "$\\sqrt{\\mathbb{V}(X)}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "Par définition, $Cov(X, Y) = \\mathbb{E}((X-\\mathbb{E}(X))(Y-\\mathbb{E}(Y)))$. En remplaçant $Y$ par $X$, on obtient $\\mathbb{E}((X-\\mathbb{E}(X))^2)$, ce qui est exactement la définition de la variance $\\mathbb{V}(X)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q33",
+        "image_path": null,
+        "theme": "Espérance",
+        "question": "Soit $X$ une variable aléatoire complexe d'espérance finie. En utilisant la linéarité de l'espérance et la définition du conjugué, que vaut $\\mathbb{E}(\\overline{X})$ ?",
+        "answers": [
+            "$\\overline{\\mathbb{E}(X)}$",
+            "$\\mathbb{E}(X)$",
+            "$|\\mathbb{E}(X)|$",
+            "$-\\mathbb{E}(X)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "L'espérance d'une variable complexe $X = U + iV$ est $\\mathbb{E}(U) + i\\mathbb{E}(V)$. Son conjugué est $\\overline{X} = U - iV$, d'espérance $\\mathbb{E}(U) - i\\mathbb{E}(V)$. On observe que $\\mathbb{E}(\\overline{X}) = \\overline{\\mathbb{E}(X)}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q34",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "question": "Une loi géométrique $\\mathcal{G}(p)$ modélise une situation d'attente. Que représente précisément cette variable aléatoire ?",
+        "answers": [
+            "Le nombre de succès en $n$ épreuves fixées.",
+            "Le rang du premier succès dans une suite d'épreuves de Bernoulli indépendantes.",
+            "Le nombre d'échecs avant le premier succès.",
+            "La probabilité d'obtenir un succès au rang $k$."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "Par définition au programme, la loi géométrique $X \\sim \\mathcal{G}(p)$ représente le rang (l'indice) du premier succès. Elle prend ses valeurs dans $\\mathbb{N}^*$. La proposition sur le nombre d'échecs correspond à la loi géométrique 'décalée' (sur $\\mathbb{N}$), ce qui est une confusion classique.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q35",
+        "image_path": null,
+        "theme": "Espérance",
+        "question": "Soit $X$ une variable aléatoire réelle positive ($X \\ge 0$ presque sûrement). Si $\\mathbb{E}(X) = 0$, que peut-on dire de $X$ ?",
+        "answers": [
+            "$X = 0$ presque sûrement.",
+            "$X$ est une constante nulle.",
+            "$X$ est bornée.",
+            "$X$ est une variable dégénérée."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Pour une variable aléatoire positive, le théorème de transfert ou l'intégrale de Lebesgue montre que si son espérance est nulle, alors la mesure de l'ensemble où $X > 0$ est nulle. On dit que $X$ est nulle 'presque sûrement'.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q36",
+        "image_path": null,
+        "theme": "Variance",
+        "question": "L'écart-type $\\sigma(X)$ est une grandeur homogène à la variable aléatoire. Comment est-il défini à partir de la variance $\\mathbb{V}(X)$ ?",
+        "answers": [
+            "$\\mathbb{V}(X)^2$",
+            "$\\sqrt{\\mathbb{V}(X)}$",
+            "$\\mathbb{E}(|X - \\mathbb{E}(X)|)$",
+            "$\\frac{1}{\\mathbb{V}(X)}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "La variance ayant pour dimension le carré de la grandeur d'origine, l'écart-type est défini comme la racine carrée positive de la variance pour retrouver la même unité que $X$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q37",
+        "image_path": null,
+        "theme": "Variables centrées",
+        "question": "Une variable aléatoire $X$ est dite 'centrée réduite' si elle vérifie deux conditions fondamentales sur ses moments. Lesquelles ?",
+        "answers": [
+            "$\\mathbb{E}(X) = 0$ et $\\sigma(X) = 1$",
+            "$\\mathbb{E}(X) = 0$ et $\\mathbb{V}(X) = 0$",
+            "$\\mathbb{E}(X) = 1$ et $\\mathbb{V}(X) = 1$",
+            "$\\mathbb{E}(X) = 0$ et $\\mathbb{E}(X^2) = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Une variable est centrée si $\\mathbb{E}(X)=0$ (moyenne nulle) et réduite si son écart-type (ou sa variance) est égal à 1. C'est la base de la normalisation d'une variable quelconque : $Z = (X - \\mathbb{E}(X))/\\sigma(X)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q38",
+        "image_path": null,
+        "theme": "Covariance",
+        "question": "Soit $Y = aX + b$ une transformation affine avec $a \\neq 0$. Que vaut le coefficient de corrélation linéaire $\\rho(X, Y)$ si $a > 0$ ?",
+        "answers": [
+            "$a$",
+            "$1$",
+            "$-1$",
+            "$|a|/a$"
+        ],
+        "difficulty": 4,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "Le coefficient de corrélation est invariant par transformation affine de la forme $aX+b$. Si $a > 0$, la corrélation est parfaite et positive, donc $\\rho = 1$. Si $a < 0$, $\\rho = -1$. Cela mesure la dépendance linéaire exacte.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q39",
+        "image_path": null,
+        "theme": "Fonctions génératrices",
+        "question": "Pour une variable de Bernoulli $X \\sim \\mathcal{B}(p)$ (où $q = 1-p$), quelle est sa fonction génératrice $G_X(t) = \\mathbb{E}(t^X)$ ?",
+        "answers": [
+            "$pt + q$",
+            "$qt + p$",
+            "$(pt+q)^n$",
+            "$pt$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "La fonction génératrice est $G_X(t) = \\sum P(X=k) t^k$. Pour $X \\sim \\mathcal{B}(p)$, $P(X=0)=q$ et $P(X=1)=p$. Donc $G_X(t) = q \\cdot t^0 + p \\cdot t^1 = q + pt$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q40",
+        "image_path": null,
+        "theme": "Inégalités",
+        "question": "L'inégalité de Cauchy-Schwarz pour deux variables $X$ et $Y$ de carré intégrable est $|\\mathbb{E}(XY)| \\le \\sqrt{\\mathbb{E}(X^2)}\\sqrt{\\mathbb{E}(Y^2)}$. Quand y a-t-il égalité ?",
+        "answers": [
+            "$X$ et $Y$ sont indépendantes.",
+            "$X$ et $Y$ sont liées presque sûrement par $Y = aX$ ou $X = aY$.",
+            "$X$ et $Y$ sont positives.",
+            "$\\mathbb{E}(X) = \\mathbb{E}(Y)$."
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "Le cas d'égalité dans Cauchy-Schwarz correspond au cas où les deux vecteurs (ou variables aléatoires) sont colinéaires dans l'espace préhilbertien des variables de carré intégrable, soit $Y = aX$ presque sûrement.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q41",
+        "image_path": null,
+        "theme": "Espérance",
+        "question": "Si $X$ est une variable aléatoire bornée, alors son espérance est finie.",
+        "answers": [
+            "Vrai.",
+            "Faux.",
+            "Vrai seulement si X est à valeurs entières."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q42",
+        "image_path": null,
+        "theme": "Usual Laws",
+        "question": "Quelle est l'espérance de la loi géométrique $\\mathcal{G}(p)$ sur $\\mathbb{N}^*$ ?",
+        "answers": [
+            "$p$",
+            "$1/p$",
+            "$(1-p)/p$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q43",
+        "image_path": null,
+        "theme": "Variance",
+        "question": "Que vaut $Cov(X, Y)$ si $X$ est une variable constante ?",
+        "answers": [
+            "0",
+            "$\\mathbb{E}(Y)$",
+            "$\\mathbb{V}(Y)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q44",
+        "image_path": null,
+        "theme": "Fonctions génératrices",
+        "question": "Si $G_X(t) = G_Y(t)$ pour tout $t \\in [-1, 1]$, que peut-on conclure ?",
+        "answers": [
+            "$X$ et $Y$ ont la même espérance.",
+            "$X$ et $Y$ ont la même loi.",
+            "$X$ et $Y$ sont indépendantes."
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q45",
+        "image_path": null,
+        "theme": "Somme Aléatoire",
+        "question": "Soit $S_N = \\sum_{i=1}^N X_i$ où $N$ est une variable aléatoire et les $X_i$ sont i.i.d. La formule de Wald donne $\\mathbb{E}(S_N) =$ :",
+        "answers": [
+            "$\\mathbb{E}(N) \\mathbb{E}(X_1)$",
+            "$\\mathbb{E}(N) + \\mathbb{E}(X_1)$",
+            "$\\mathbb{E}(N) \\mathbb{V}(X_1)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q46",
+        "image_path": null,
+        "theme": "Coupon Collector",
+        "question": "Dans le problème du collectionneur de vignettes (Ex 1 TD), l'espérance du temps nécessaire pour obtenir $n$ vignettes est :",
+        "answers": [
+            "$n \\sum_{k=1}^n 1/k$",
+            "$n^2$",
+            "$n \\ln(n)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q47",
+        "image_path": null,
+        "theme": "Inégalités",
+        "question": "D'après l'exercice 3 du TD, pour une v.a. positive $X$, on a toujours $\\mathbb{E}(X)\\mathbb{E}(1/X) \\ge$ :",
+        "answers": [
+            "0",
+            "1",
+            "$\\mathbb{E}(X)^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q48",
+        "image_path": null,
+        "theme": "Covariance",
+        "question": "Si $X_1, ..., X_n$ sont mutuellement indépendantes, quelle est la variance de leur somme ?",
+        "answers": [
+            "La somme des variances.",
+            "Le carré de la somme des écart-types.",
+            "La somme des espérances au carré."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q49",
+        "image_path": null,
+        "theme": "Fonctions génératrices",
+        "question": "Si $X \\sim \\mathcal{B}(n, p)$, alors $G_X(t) =$ :",
+        "answers": [
+            "$(pt + q)^n$",
+            "$p^n t + q^n$",
+            "$n(pt+q)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q50",
+        "image_path": null,
+        "theme": "Poisson",
+        "question": "Pour une loi de Poisson de paramètre $\\lambda$, la variance est :",
+        "answers": [
+            "$\\lambda^2$",
+            "$\\lambda$",
+            "$\\sqrt{\\lambda}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q51",
+        "image_path": null,
+        "theme": "Espérance",
+        "question": "Si $X$ est une variable aléatoire complexe, $|\\mathbb{E}(X)| \\le \\mathbb{E}(|X|)$ est :",
+        "answers": [
+            "L'inégalité triangulaire pour l'espérance.",
+            "L'inégalité de Markov.",
+            "Toujours faux pour les complexes."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q52",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "question": "L'espérance d'une loi de Bernoulli $\\mathcal{B}(p)$ est :",
+        "answers": [
+            "$p$",
+            "$1-p$",
+            "$p(1-p)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q53",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "question": "Quelle loi possède une espérance égale à $1/p$ ?",
+        "answers": [
+            "La loi Binomiale.",
+            "La loi de Poisson.",
+            "La loi Géométrique."
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q54",
+        "image_path": null,
+        "theme": "Covariance",
+        "question": "La covariance est une forme :",
+        "answers": [
+            "Linéaire.",
+            "Bilinéaire symétrique positive.",
+            "Quadratique."
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q55",
+        "image_path": null,
+        "theme": "Variance",
+        "question": "Si $X$ est constante presque sûrement, sa variance est :",
+        "answers": [
+            "Maximale.",
+            "Nulle.",
+            "Egale à sa valeur."
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q56",
+        "image_path": null,
+        "theme": "Probabilités",
+        "question": "Dans l'exercice 7 (formule du crible), l'indicatrice de l'union des événements $A_i$ s'exprime par :",
+        "answers": [
+            "$1 - \\prod (1 - 1_{A_i})$",
+            "$\\sum 1_{A_i}$",
+            "$\\prod 1_{A_i}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q57",
+        "image_path": null,
+        "theme": "Séries",
+        "question": "Si $\\mathbb{P}(X=n) = \\frac{1}{n(n+1)}$ pour $n \\ge 1$, alors l'espérance de $X$ est :",
+        "answers": [
+            "1",
+            "$+\\infty$",
+            "0"
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q58",
+        "image_path": null,
+        "theme": "Matrice de Covariance",
+        "question": "La matrice de covariance $M$ d'un vecteur aléatoire est toujours :",
+        "answers": [
+            "Symétrique définie positive.",
+            "Symétrique positive.",
+            "Diagonale."
+        ],
+        "difficulty": 4,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q59",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Deux variables de Bernoulli sont indépendantes si et seulement si elles sont non corrélées.",
+        "answers": [
+            "Vrai.",
+            "Faux.",
+            "Seulement si $p=1/2$."
+        ],
+        "difficulty": 4,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q60",
+        "image_path": null,
+        "theme": "Loi faible des grands nombres",
+        "question": "Dans la LFGN, la probabilité que l'écart dépasse $\\epsilon$ tend vers :",
+        "answers": [
+            "1",
+            "0",
+            "$1/2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "q61",
+        "image_path": null,
+        "theme": "Fonctions génératrices",
+        "question": "Dans le cadre de l'étude d'une variable aléatoire discrète $X$ à support fini $\\{0, 1, ..., n\\}$, quelle est la nature de sa fonction génératrice $G_X(t) = \\mathbb{E}(t^X)$ ?",
+        "answers": [
+            "Un polynôme de degré au plus $n$.",
+            "Une fraction rationnelle.",
+            "Une série entière de rayon de convergence infini.",
+            "Une fonction polynomiale de degré strictement supérieur à $n$."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Par définition, $G_X(t) = \\sum_{k=0}^n P(X=k) t^k$. Comme le support est fini, c'est une somme finie de puissances de $t$, donc un polynôme de degré maximal $n$. La confusion avec une série entière est possible, mais la série entière n'est qu'un cas limite pour un support infini.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q62",
+        "image_path": null,
+        "theme": "Fonctions génératrices",
+        "question": "Pour une variable aléatoire $X$ à valeurs dans $\\mathbb{N}$, que vaut la valeur de la fonction génératrice $G_X(1)$ ?",
+        "answers": [
+            "0",
+            "1",
+            "$\\mathbb{E}(X)$",
+            "$\\mathbb{V}(X)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "Par définition, $G_X(1) = \\sum_{k=0}^{+\\infty} P(X=k) \\times 1^k = \\sum_{k=0}^{+\\infty} P(X=k)$. Or, par les axiomes de Kolmogorov, la somme des probabilités de tous les événements élémentaires est égale à 1.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q63",
+        "image_path": null,
+        "theme": "Covariance",
+        "question": "Soient $X$ et $Y$ deux variables aléatoires admettant un moment d'ordre 2. Que vaut la covariance $Cov(X+Y, X-Y)$ ?",
+        "answers": [
+            "$\\mathbb{V}(X) - \\mathbb{V}(Y)$",
+            "$\\mathbb{V}(X) + \\mathbb{V}(Y)$",
+            "0",
+            "$\\mathbb{V}(X) - \\mathbb{V}(Y) + 2Cov(X,Y)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "En utilisant la bilinéarité de la covariance : $Cov(X+Y, X-Y) = Cov(X,X) - Cov(X,Y) + Cov(Y,X) - Cov(Y,Y)$. Comme $Cov(X,X) = \\mathbb{V}(X)$, $Cov(Y,Y) = \\mathbb{V}(Y)$ et $Cov(X,Y) = Cov(Y,X)$, les termes croisés s'annulent, laissant $\\mathbb{V}(X) - \\mathbb{V}(Y)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q64",
+        "image_path": null,
+        "theme": "Bernoulli",
+        "question": "Soit $X \\sim \\mathcal{B}(p)$ une variable de Bernoulli. Quelle est la valeur maximale de sa variance $\\mathbb{V}(X)$ lorsque $p \\in [0, 1]$ ?",
+        "answers": [
+            "1",
+            "1/4",
+            "1/2",
+            "$\\sqrt{2}/2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "La variance d'une loi de Bernoulli est donnée par $p(1-p)$. Cette fonction est une parabole tournée vers le bas atteignant son maximum en $p = 1/2$. La valeur maximale est donc $(1/2) \\times (1 - 1/2) = 1/4$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q65",
+        "image_path": null,
+        "theme": "Espérance",
+        "question": "Soient $X$ et $Y$ deux variables aléatoires réelles sur le même espace probabilisé telles que presque sûrement $X \\le Y$. Laquelle de ces propriétés est nécessairement vraie ?",
+        "answers": [
+            "$\\mathbb{E}(X) \\le \\mathbb{E}(Y)$",
+            "$\\mathbb{V}(X) \\le \\mathbb{V}(Y)$",
+            "$G_X(t) \\le G_Y(t)$",
+            "$\\mathbb{E}(X^2) \\le \\mathbb{E}(Y^2)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "L'espérance est une forme linéaire positive : si $X \\le Y$ (au sens de la relation d'ordre presque sûre), alors par croissance de l'intégrale, on a $\\mathbb{E}(X) \\le \\mathbb{E}(Y)$. Attention : cela n'est pas vrai pour la variance ou les moments d'ordre supérieur (ex: $X=-2, Y=-1$).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q66",
+        "image_path": null,
+        "theme": "Séries",
+        "question": "Soit $X$ une variable aléatoire à valeurs dans $\\mathbb{Z}$. La condition nécessaire et suffisante pour que l'espérance $\\mathbb{E}(X)$ existe (soit finie) est :",
+        "answers": [
+            "$\\sum_{n \\in \\mathbb{Z}} n P(X=n)$ converge.",
+            "$\\sum_{n \\in \\mathbb{Z}} |n| P(X=n)$ converge.",
+            "$P(X=n)$ est bornée.",
+            "La série $\\sum n P(X=n)$ est convergente au sens de Riemann."
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "Pour qu'une espérance existe, la série doit être absolument convergente. La convergence simple (en sommant les termes dans un ordre particulier) ne suffit pas car elle dépendrait de l'ordre de sommation. La condition est donc $\\sum |n| P(X=n) < +\\infty$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q67",
+        "image_path": null,
+        "theme": "Propriétés",
+        "question": "Soit $a, b \\in \\mathbb{R}$. La variance vérifie-t-elle la relation $\\mathbb{V}(aX + b) = a \\mathbb{V}(X) + b$ ?",
+        "answers": [
+            "Oui, par linéarité.",
+            "Non, car $\\mathbb{V}(aX+b) = a^2\\mathbb{V}(X)$.",
+            "Non, car $\\mathbb{V}(aX+b) = a\\mathbb{V}(X) + b^2$.",
+            "Oui, seulement si $X$ est centrée."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "La variance n'est pas linéaire mais quadratique. Par définition, $\\mathbb{V}(aX+b) = \\mathbb{E}((aX+b)^2) - (\\mathbb{E}(aX+b))^2 = a^2\\mathbb{E}(X^2) + 2ab\\mathbb{E}(X) + b^2 - (a\\mathbb{E}(X) + b)^2$. Les termes en $b$ s'annulent et l'on obtient $a^2\\mathbb{V}(X)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q68",
+        "image_path": null,
+        "theme": "Covariance",
+        "question": "Soient $X$ et $Y$ deux variables aléatoires. Si $Cov(X,Y) > 0$, cela signifie que :",
+        "answers": [
+            "X et Y ont tendance à croître simultanément.",
+            "X et Y sont positivement proportionnelles.",
+            "X et Y sont nécessairement indépendantes.",
+            "La corrélation est égale à 1."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Une covariance positive indique une corrélation positive : quand $X$ est supérieur à sa moyenne, $Y$ a tendance à être supérieur à sa moyenne. Cela ne signifie pas une dépendance linéaire parfaite (proportionnalité), ce qui nécessiterait que la valeur absolue de la corrélation soit 1.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q69",
+        "image_path": null,
+        "theme": "Espérance",
+        "question": "Soit $A$ un événement d'un espace probabilisé $(\\Omega, \\mathcal{A}, P)$. Soit $\\mathbb{1}_A$ la variable indicatrice de $A$. Que vaut son espérance $\\mathbb{E}(\\mathbb{1}_A)$ ?",
+        "answers": [
+            "$P(A)$",
+            "$1/P(A)$",
+            "$1$",
+            "$P(A^c)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "L'indicatrice $\\mathbb{1}_A$ vaut 1 si $\\omega \\in A$ et 0 sinon. L'espérance est $\\mathbb{E}(\\mathbb{1}_A) = 1 \\times P(A) + 0 \\times P(A^c) = P(A)$. C'est une propriété fondamentale liant espérance et probabilité.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q70",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "question": "Soient $X_1, ..., X_n$ des variables aléatoires indépendantes et identiquement distribuées (i.i.d.) suivant une loi de Bernoulli $\\mathcal{B}(p)$. Quelle est la loi de la somme $S_n = \\sum_{i=1}^n X_i$ ?",
+        "answers": [
+            "De Poisson $\\mathcal{P}(np)$.",
+            "Binomiale $\\mathcal{B}(n, p)$.",
+            "Géométrique $\\mathcal{G}(p)$.",
+            "Bernoulli $\\mathcal{B}(np)$."
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "La somme de $n$ variables de Bernoulli indépendantes de même paramètre $p$ compte le nombre de succès dans $n$ épreuves répétées, ce qui définit par construction la loi binomiale $\\mathcal{B}(n, p)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q71",
+        "image_path": null,
+        "theme": "Inégalités",
+        "question": "Dans le cadre de l'étude de la concentration de variables aléatoires, pourquoi l'inégalité de Bienaymé-Tchebychev est-elle un outil puissant ?",
+        "answers": [
+            "Elle permet de calculer la valeur exacte de la probabilité $\\mathbb{P}(|X - \\mathbb{E}(X)| \\ge \\varepsilon)$.",
+            "Elle fournit une majoration robuste de la probabilité d'un écart à la moyenne sans connaître la loi de probabilité, simplement via la variance.",
+            "Elle permet de définir la variance d'une variable aléatoire.",
+            "Elle est équivalente à la loi forte des grands nombres pour les petites valeurs de $n$."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "L'inégalité de Bienaymé-Tchebychev s'énonce $\\mathbb{P}(|X - \\mathbb{E}(X)| \\ge \\varepsilon) \\le \\frac{\\mathbb{V}(X)}{\\varepsilon^2}$. Sa force réside dans son universalité : elle ne nécessite aucune hypothèse sur la loi (normale, binomiale, etc.), mais elle ne donne qu'une majoration, rarement une valeur exacte. La variance n'est pas calculée par l'inégalité, elle est une donnée nécessaire pour l'appliquer.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q72",
+        "image_path": null,
+        "theme": "Fonctions génératrices",
+        "question": "Pour une variable aléatoire $X$ suivant une loi géométrique $\\mathcal{G}(p)$ avec $q=1-p$, quel est le rayon de convergence de sa fonction génératrice $G_X(t) = \\sum_{k=1}^{+\\infty} p q^{k-1} t^k$ ?",
+        "answers": [
+            "$R = 1$",
+            "$R = 1/q$",
+            "$R = p$",
+            "$R = +\\infty$"
+        ],
+        "difficulty": 4,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "La série entière est $\\sum p q^{k-1} t^k = pt \\sum (qt)^{k-1}$. Cette série converge si et seulement si $|qt| < 1$, soit $|t| < 1/q$. Comme $q < 1$, le rayon de convergence $1/q$ est strictement supérieur à 1. Les autres propositions confondent le paramètre de la loi avec les conditions de convergence de la série géométrique.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q73",
+        "image_path": null,
+        "theme": "Indépendance",
+        "question": "Soient $X$ et $Y$ deux variables aléatoires indépendantes sur un espace probabilisé. Que peut-on dire des variables $f(X)$ et $g(Y)$ où $f$ et $g$ sont des fonctions mesurables quelconques ?",
+        "answers": [
+            "Elles sont nécessairement indépendantes.",
+            "Elles ne sont indépendantes que si $f$ et $g$ sont des fonctions linéaires.",
+            "Elles ne sont indépendantes que si $X$ et $Y$ suivent la même loi.",
+            "On ne peut rien conclure sans connaître les expressions de $f$ et $g$."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "C'est une propriété fondamentale de l'indépendance (Lemme des coalitions) : si $X$ et $Y$ sont indépendantes, alors toute transformation mesurable de $X$ est indépendante de toute transformation mesurable de $Y$. La linéarité n'est pas une condition requise.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q74",
+        "image_path": null,
+        "theme": "Sommes",
+        "question": "Dans le cadre de l'étude des lois composées, si $N \\sim \\mathcal{G}(p)$ et que pour tout $n \\in \\mathbb{N}^*$, la loi conditionnelle $X|N=n$ suit une loi binomiale $\\mathcal{B}(n, p)$, quelle est la nature de la loi de $X$ ?",
+        "answers": [
+            "Une loi de Poisson $\\mathcal{P}(\\lambda)$.",
+            "Une loi géométrique $\\mathcal{G}(p^2)$.",
+            "Il n'y a pas de nom usuel, mais elle ne correspond pas au produit simple d'une Bernoulli et d'une Géométrique.",
+            "Une loi binomiale de paramètres $(N, p)$."
+        ],
+        "difficulty": 5,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 2,
+        "explication": "Il ne faut pas confondre le mélange de lois avec un simple produit de variables. La loi de $X$ se calcule par la formule des probabilités totales : $\\mathbb{P}(X=k) = \\sum_{n=k}^{+\\infty} \\mathbb{P}(X=k|N=n)\\mathbb{P}(N=n)$. Le résultat est une loi spécifique qui ne possède pas de nom classique comme 'Bernoulli' ou 'Poisson' dans les programmes habituels de PSI.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q75",
+        "image_path": null,
+        "theme": "LFGN",
+        "question": "Quelle condition minimale sur la variance est requise pour appliquer la Loi Faible des Grands Nombres (LFGN) à une suite de variables aléatoires $(X_i)$ indépendantes et identiquement distribuées ?",
+        "answers": [
+            "La variance doit être nulle pour assurer la convergence.",
+            "La variance doit être finie.",
+            "Les variables n'ont pas besoin de variance, seule l'espérance doit exister.",
+            "La variance doit être supérieure à 1."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "La démonstration classique de la LFGN repose sur l'inégalité de Bienaymé-Tchebychev appliquée à la moyenne empirique $\\overline{X_n}$. Or, cette inégalité nécessite que la variance de $X_i$ soit finie pour être majorée. Si la variance est infinie, la LFGN peut encore être vraie, mais elle ne se démontre pas avec cet outil.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q76",
+        "image_path": null,
+        "theme": "Fonctions génératrices",
+        "question": "Si $X$ est une variable aléatoire à valeurs dans $\\mathbb{N}$ et que sa fonction génératrice $G_X(t)$ est un polynôme de degré $n$, alors :",
+        "answers": [
+            "La variable aléatoire $X$ est bornée et $\\mathbb{P}(X > n) = 0$.",
+            "L'espérance de $X$ est nécessairement égale à $n$.",
+            "$X$ suit obligatoirement une loi uniforme sur $\\{0, ..., n\\}$.",
+            "$X$ est constante et vaut $n$ presque sûrement."
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Par définition $G_X(t) = \\sum_{k=0}^{+\\infty} \\mathbb{P}(X=k) t^k$. Si $G_X$ est un polynôme de degré $n$, cela signifie que les coefficients $\\mathbb{P}(X=k)$ sont nuls pour tout $k > n$. Ainsi, $X$ ne peut pas prendre de valeurs strictement supérieures à $n$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q77",
+        "image_path": null,
+        "theme": "Calcul",
+        "question": "En utilisant la définition de la variance $\\mathbb{V}(X) = \\mathbb{E}((X - \\mathbb{E}(X))^2)$, quelle identité est obtenue après développement ?",
+        "answers": [
+            "$\\mathbb{V}(X) + \\mathbb{E}(X)^2 = \\mathbb{E}(X^2)$",
+            "$\\mathbb{V}(X) + \\mathbb{E}(X)^2 = \\mathbb{V}(X^2)$",
+            "$\\mathbb{V}(X) + \\mathbb{E}(X)^2 = 0$",
+            "$\\mathbb{V}(X) + \\mathbb{E}(X)^2 = \\mathbb{E}(X)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Par développement : $\\mathbb{V}(X) = \\mathbb{E}(X^2 - 2X\\mathbb{E}(X) + \\mathbb{E}(X)^2) = \\mathbb{E}(X^2) - 2\\mathbb{E}(X)\\mathbb{E}(X) + \\mathbb{E}(X)^2 = \\mathbb{E}(X^2) - \\mathbb{E}(X)^2$. En réarrangeant, on obtient bien $\\mathbb{E}(X^2) = \\mathbb{V}(X) + \\mathbb{E}(X)^2$ (formule de Koenig-Huygens).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q78",
+        "image_path": null,
+        "theme": "Covariance",
+        "question": "Si $X$ et $Y$ sont deux variables aléatoires de variance finie, que peut-on affirmer concernant leur somme $X+Y$ ?",
+        "answers": [
+            "La variance $\\mathbb{V}(X+Y)$ est finie.",
+            "La variance $\\mathbb{V}(X+Y)$ est infinie si elles ne sont pas indépendantes.",
+            "La variance $\\mathbb{V}(X+Y)$ est nécessairement égale à $\\mathbb{V}(X) + \\mathbb{V}(Y)$.",
+            "On ne peut pas conclure sur la finitude de la variance sans savoir si elles sont corrélées."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "L'espace des variables aléatoires admettant une variance finie est un espace vectoriel. Si $X$ et $Y$ ont une variance finie, alors $\\mathbb{V}(X+Y) = \\mathbb{V}(X) + \\mathbb{V}(Y) + 2Cov(X,Y)$. Comme la covariance est finie (inégalité de Cauchy-Schwarz), la variance de la somme est nécessairement finie.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q79",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "question": "Quelle est la valeur correcte de la variance pour une variable aléatoire $X$ suivant une loi binomiale $\\mathcal{B}(n, p)$ ?",
+        "answers": [
+            "$\\mathbb{V}(X) = np(1-p)$",
+            "$\\mathbb{V}(X) = \\sqrt{np(1-p)}$",
+            "$\\mathbb{V}(X) = np$",
+            "$\\mathbb{V}(X) = np^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Pour une loi de Bernoulli $\\mathcal{B}(p)$, la variance est $p(1-p)$. Par additivité de la variance pour des variables indépendantes (ici les $n$ essais de Bernoulli), la variance de la loi binomiale est la somme des variances, soit $n \\times p(1-p)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q80",
+        "image_path": null,
+        "theme": "Inégalités",
+        "question": "L'inégalité $\\mathbb{P}(X \\ge a) \\le e^{-ta} \\mathbb{E}(e^{tX})$ pour tout $t > 0$ est une méthode classique d'optimisation de bornes. À quelle famille d'inégalités appartient-elle ?",
+        "answers": [
+            "Il s'agit d'une application de l'inégalité de Markov à la variable $e^{tX}$.",
+            "Il s'agit d'une conséquence directe de l'inégalité de Bienaymé-Tchebychev.",
+            "Il s'agit d'une version discrète de la formule de Taylor.",
+            "Il s'agit de l'inégalité de Cauchy-Schwarz."
+        ],
+        "difficulty": 4,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "C'est l'inégalité de Chernoff : on applique l'inégalité de Markov $\\mathbb{P}(Y \\ge k) \\le \\mathbb{E}(Y)/k$ à la variable aléatoire positive $Y = e^{tX}$ (pour $t>0$). Cela donne $\\mathbb{P}(e^{tX} \\ge e^{ta}) \\le \\mathbb{E}(e^{tX})/e^{ta}$, ce qui est équivalent à $\\mathbb{P}(X \\ge a) \\le e^{-ta}\\mathbb{E}(e^{tX})$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q81",
+        "image_path": null,
+        "theme": "Espérance",
+        "question": "Dans le cadre de l'étude des processus aléatoires discrets, la série harmonique $H_n = \\sum_{k=1}^n \\frac{1}{k}$ intervient naturellement dans le calcul de l'espérance de quelle variable aléatoire ?",
+        "answers": [
+            "Le nombre de succès dans une loi de Poisson de paramètre $\\lambda$.",
+            "Le nombre d'essais nécessaires pour obtenir tous les $n$ coupons distincts dans le problème du collectionneur.",
+            "Le nombre de retours à l'origine d'une marche aléatoire symétrique sur $\\mathbb{Z}$.",
+            "Le nombre d'échecs avant le premier succès dans une loi géométrique."
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "Le problème du collectionneur (Coupon Collector) modélise le temps d'attente $T$ pour obtenir $n$ objets. On écrit $T = X_1 + \\dots + X_n$ où $X_i$ suit une loi géométrique de paramètre $p_i = \\frac{n-i+1}{n}$. Par linéarité, $\\mathbb{E}(T) = \\sum \\frac{n}{n-i+1} = n \\sum_{k=1}^n \\frac{1}{k} = n H_n$."
+    },
+    {
+        "uuid": "q82",
+        "image_path": null,
+        "theme": "Fonctions génératrices",
+        "question": "Soient $X$ et $Y$ deux variables aléatoires discrètes à valeurs dans $\\mathbb{N}$, indépendantes. Si $G_X(t)$ et $G_Y(t)$ sont leurs fonctions génératrices respectives, quelle est l'expression de la fonction génératrice de la variable $Z = X - Y$ (pour $t$ tel que le produit converge) ?",
+        "answers": [
+            "$G_X(t) G_Y(1/t)$",
+            "$G_X(t) / G_Y(t)$",
+            "$G_X(t) G_Y(-t)$",
+            "$G_X(t) + G_Y(t)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Par définition, $G_Z(t) = \\mathbb{E}(t^{X-Y}) = \\mathbb{E}(t^X t^{-Y})$. Par indépendance, $\\mathbb{E}(t^X t^{-Y}) = \\mathbb{E}(t^X) \\mathbb{E}(t^{-Y}) = G_X(t) \\mathbb{E}((1/t)^Y) = G_X(t) G_Y(1/t)$. Attention, cette fonction n'est définie que pour les $t$ tels que le rayon de convergence permet la substitution $1/t$."
+    },
+    {
+        "uuid": "q83",
+        "image_path": null,
+        "theme": "Covariance",
+        "question": "Dans le cadre de l'étude statistique de deux séries de mesures liées par une contrainte de somme constante (ex: longueur totale fixée), quel est le signe de la covariance entre les longueurs des deux premières séries ?",
+        "answers": [
+            "Négative.",
+            "Nulle.",
+            "Positive.",
+            "Le signe dépend uniquement de la moyenne."
+        ],
+        "difficulty": 4,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Si $X_1 + X_2 = C$ (constante), alors $X_2 = C - X_1$. La covariance est alors $\\text{Cov}(X_1, C - X_1) = \\text{Cov}(X_1, C) - \\text{Cov}(X_1, X_1) = 0 - \\mathbb{V}(X_1)$. Comme la variance est positive, la covariance est nécessairement négative."
+    },
+    {
+        "uuid": "q84",
+        "image_path": null,
+        "theme": "Espérance",
+        "question": "Soit $X$ une variable aléatoire positive admettant une espérance finie. Que peut-on dire du comportement de $P(X \\ge x)$ lorsque $x \\to +\\infty$ ?",
+        "answers": [
+            "$P(X \\ge x) = o(1/x)$",
+            "$P(X \\ge x) = O(1/x^2)$",
+            "$P(X \\ge x) = o(1)$",
+            "Il n'y a pas de limite précise sans autre hypothèse."
+        ],
+        "difficulty": 4,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Par l'inégalité de Markov, $P(X \\ge x) \\le \\frac{\\mathbb{E}(X)}{x}$. Cependant, le résultat plus précis est que $\\lim_{x \\to +\\infty} x P(X \\ge x) = 0$, ce qui se démontre par la convergence dominée ou en écrivant $\\mathbb{E}(X) = \\int_0^\\infty P(X \\ge t) dt < +\\infty$. L'intégrale convergeant, le reste doit tendre vers 0."
+    },
+    {
+        "uuid": "q85",
+        "image_path": null,
+        "theme": "Variance",
+        "question": "L'ensemble des variables aléatoires réelles de carré intégrable (d'espérance du carré finie) sur un même espace probabilisé forme :",
+        "answers": [
+            "Un espace vectoriel.",
+            "Un groupe commutatif pour la multiplication.",
+            "Un corps.",
+            "Un espace de dimension finie."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "L'ensemble noté $\\mathcal{L}^2$ est stable par addition et par multiplication par un scalaire (linéarité). Si $X, Y \\in \\mathcal{L}^2$, alors $(X+Y)^2 \\le 2(X^2+Y^2)$, donc $X+Y$ est aussi de carré intégrable. Il s'agit d'un espace vectoriel, et même d'un espace pré-hilbertien après passage au quotient."
+    },
+    {
+        "uuid": "q86",
+        "image_path": null,
+        "theme": "Sommes",
+        "question": "Soient $X \\sim \\mathcal{P}(\\lambda_1)$ et $Y \\sim \\mathcal{P}(\\lambda_2)$ deux variables aléatoires indépendantes. Quelle est la loi de la somme $Z = X + Y$ ?",
+        "answers": [
+            "$\\mathcal{P}(\\lambda_1 + \\lambda_2)$",
+            "$\\mathcal{P}(\\lambda_1 \\lambda_2)$",
+            "Une loi binomiale $\\mathcal{B}(n, p)$",
+            "$\\mathcal{P}(\\lambda_1) + \\mathcal{P}(\\lambda_2)$ n'est pas une loi classique."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Pour des lois de Poisson indépendantes, la fonction génératrice de la somme est le produit des fonctions génératrices : $G_{X+Y}(t) = e^{\\lambda_1(t-1)} e^{\\lambda_2(t-1)} = e^{(\\lambda_1+\\lambda_2)(t-1)}$. On reconnaît la fonction génératrice d'une loi de Poisson de paramètre $\\lambda_1+\\lambda_2$."
+    },
+    {
+        "uuid": "q87",
+        "image_path": null,
+        "theme": "Sommes",
+        "question": "Soient $X \\sim \\mathcal{B}(n, p)$ et $Y \\sim \\mathcal{B}(m, p)$ deux variables aléatoires indépendantes de même paramètre $p$. Quelle est la loi de la somme $Z = X + Y$ ?",
+        "answers": [
+            "$\\mathcal{B}(n+m, p)$",
+            "$\\mathcal{B}(n, 2p)$",
+            "$\\mathcal{B}(nm, p)$",
+            "$\\mathcal{B}(n+m, 2p)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Une loi $\\mathcal{B}(n, p)$ représente la somme de $n$ variables de Bernoulli indépendantes de paramètre $p$. La somme de $X$ et $Y$ revient à sommer $n+m$ variables de Bernoulli indépendantes de même paramètre $p$, ce qui définit une loi $\\mathcal{B}(n+m, p)$."
+    },
+    {
+        "uuid": "q88",
+        "image_path": null,
+        "theme": "Calcul",
+        "question": "Soit $X$ une variable aléatoire suivant une loi de Poisson de paramètre $\\lambda$. Quelle est la valeur du moment factoriel d'ordre 2, $\\mathbb{E}(X(X-1))$ ?",
+        "answers": [
+            "$\\lambda$",
+            "$\\lambda^2$",
+            "$\\lambda^2 - \\lambda$",
+            "$\\lambda^2 + \\lambda$"
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "Par définition $\\mathbb{E}(X(X-1)) = \\sum_{k=0}^\\infty k(k-1) \\frac{\\lambda^k e^{-\\lambda}}{k!}$. Les termes pour $k=0$ et $k=1$ sont nuls. En simplifiant par $k(k-1)$, on obtient $\\sum_{k=2}^\\infty \\frac{\\lambda^k e^{-\\lambda}}{(k-2)!} = \\lambda^2 e^{-\\lambda} \\sum_{j=0}^\\infty \\frac{\\lambda^j}{j!} = \\lambda^2 e^{-\\lambda} e^\\lambda = \\lambda^2$."
+    },
+    {
+        "uuid": "q89",
+        "image_path": null,
+        "theme": "Inégalités",
+        "question": "Dans le cadre de l'étude de la concentration d'une variable aléatoire, comment appelle-t-on l'inégalité $P(|X - \\mathbb{E}(X)| \\ge \\epsilon) \\le \\frac{\\mathbb{V}(X)}{\\epsilon^2}$ ?",
+        "answers": [
+            "L'inégalité de Bienaymé-Tchebychev.",
+            "L'inégalité de Markov.",
+            "L'inégalité de Cauchy-Schwarz.",
+            "Le théorème central limite."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "C'est l'inégalité de Bienaymé-Tchebychev. Elle se déduit de l'inégalité de Markov appliquée à la variable $(X-\\mathbb{E}(X))^2$. La forme donnée dans la question originale était légèrement erronée sur les bornes (l'inégalité classique est sur l'événement contraire $\\ge \\epsilon$)."
+    },
+    {
+        "uuid": "q90",
+        "image_path": null,
+        "theme": "Méthode",
+        "question": "Pour calculer l'espérance d'une somme de variables aléatoires $S_n = \\sum_{i=1}^n X_i$ sans connaître la loi de $S_n$, quelle propriété fondamentale utilise-t-on ?",
+        "answers": [
+            "La linéarité de l'espérance.",
+            "Le théorème de transfert.",
+            "La formule de Koenig-Huygens.",
+            "La définition de l'espérance conditionnelle."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "La linéarité de l'espérance ($\\mathbb{E}(\\sum a_i X_i) = \\sum a_i \\mathbb{E}(X_i)$) est une propriété puissante car elle ne nécessite aucune hypothèse d'indépendance entre les variables $X_i$ pour calculer l'espérance de la somme."
+    },
+    {
+        "uuid": "q91",
+        "image_path": null,
+        "theme": "Coupon Collector",
+        "question": "Dans le cadre du problème du collectionneur de vignettes (Coupon Collector), pour obtenir la $k$-ième vignette inédite, le temps d'attente $Z_k = T_k - T_{k-1}$ suit quelle loi, sachant qu'il y a $n$ vignettes au total ?",
+        "answers": [
+            "Loi géométrique de paramètre $p = (n-k+1)/n$.",
+            "Loi uniforme discrète sur $[|1, n|]$.",
+            "Loi binomiale $\\mathcal{B}(n, 1/n)$.",
+            "Loi de Poisson de paramètre $\\lambda = 1$."
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Lorsqu'on possède déjà $(k-1)$ vignettes, la probabilité d'en obtenir une nouvelle est $p = (n-(k-1))/n = (n-k+1)/n$. La variable $Z_k$ correspondant au nombre d'essais pour obtenir ce succès suit donc une loi géométrique.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q92",
+        "image_path": null,
+        "theme": "Somme Aléatoire",
+        "question": "Soit $S_N = \\sum_{i=1}^{N} X_i$ où $N$ est une variable aléatoire à valeurs dans $\\mathbb{N}$ indépendante des $X_i$. Si les $X_i$ sont centrées ($\\mathbb{E}(X_i) = 0$), que peut-on affirmer sur l'espérance de $S_N$ ?",
+        "answers": [
+            "$\\mathbb{E}(S_N) = 0$.",
+            "$\\mathbb{E}(S_N) = \\mathbb{E}(N)$.",
+            "$\\mathbb{E}(S_N) = \\mathbb{V}(N)$.",
+            "$\\mathbb{E}(S_N) = \\mathbb{E}(X_i) \\times \\mathbb{E}(N)$."
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Par la formule de Wald, $\\mathbb{E}(S_N) = \\mathbb{E}(N) \\cdot \\mathbb{E}(X_i)$. Si $\\mathbb{E}(X_i) = 0$, alors le produit est nul, quel que soit $\\mathbb{E}(N)$, tant que cette espérance existe.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q93",
+        "image_path": null,
+        "theme": "Lois usuelles",
+        "question": "Soit $X$ une variable aléatoire suivant une loi uniforme sur $[|0, n-1|]$. Quelle est sa fonction génératrice $G_X(t) = \\mathbb{E}(t^X)$ ?",
+        "answers": [
+            "$\\frac{1}{n} \\frac{1-t^n}{1-t}$.",
+            "$\\frac{1-t^n}{1-t}$.",
+            "$\\frac{t^n}{n}$.",
+            "$t^{n-1} \\times n$."
+        ],
+        "difficulty": 4,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "$G_X(t) = \\sum_{k=0}^{n-1} P(X=k) t^k = \\frac{1}{n} \\sum_{k=0}^{n-1} t^k$. Il s'agit d'une somme géométrique de raison $t$ et de premier terme 1, qui vaut $\\frac{1-t^n}{1-t}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q94",
+        "image_path": null,
+        "theme": "Covariance",
+        "question": "Soit $X$ une variable aléatoire réelle de variance finie. Si $Y = -X$, que vaut la covariance $Cov(X, Y)$ ?",
+        "answers": [
+            "$\\mathbb{V}(X)$.",
+            "$-\\mathbb{V}(X)$.",
+            "$0$.",
+            "$-2\\mathbb{V}(X)$."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 1,
+        "explication": "$Cov(X, -X) = \\mathbb{E}(X \\cdot (-X)) - \\mathbb{E}(X)\\mathbb{E}(-X) = -\\mathbb{E}(X^2) + (\\mathbb{E}(X))^2 = -(\\mathbb{E}(X^2) - (\\mathbb{E}(X))^2) = -\\mathbb{V}(X)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q95",
+        "image_path": null,
+        "theme": "Variance",
+        "question": "Soit $c$ une constante réelle. Quelle est la valeur de la variance de la variable aléatoire constante $X = c$ ?",
+        "answers": [
+            "$0$.",
+            "$c^2$.",
+            "$c$.",
+            "Indéterminée."
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Par définition, $\\mathbb{V}(X) = \\mathbb{E}((X-\\mathbb{E}(X))^2)$. Si $X=c$, alors $\\mathbb{E}(X)=c$, donc $\\mathbb{V}(X) = \\mathbb{E}((c-c)^2) = 0$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q96",
+        "image_path": null,
+        "theme": "Fonctions génératrices",
+        "question": "Pour une variable aléatoire discrète $X$ à valeurs dans $\\mathbb{N}$, que représente la valeur $G_X(0)$ ?",
+        "answers": [
+            "$P(X=0)$.",
+            "$\\mathbb{E}(X)$.",
+            "$1$.",
+            "$0$."
+        ],
+        "difficulty": 2,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "$G_X(t) = \\sum_{n=0}^{+\\infty} P(X=n) t^n$. En remplaçant $t$ par 0, seul le terme pour $n=0$ survit : $P(X=0) \\cdot 0^0 = P(X=0) \\cdot 1 = P(X=0)$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q97",
+        "image_path": null,
+        "theme": "Calcul",
+        "question": "Soit $X$ une variable aléatoire dont la fonction génératrice est $G_X(t) = e^{2(t-1)}$. Quelle est la variance de $X$ ?",
+        "answers": [
+            "$2$.",
+            "$4$.",
+            "$1$.",
+            "$0$."
+        ],
+        "difficulty": 3,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "On reconnaît la fonction génératrice d'une loi de Poisson de paramètre $\\lambda = 2$. Pour une telle loi, la variance est égale au paramètre, soit $\\mathbb{V}(X) = \\lambda = 2$. On peut aussi utiliser $\\mathbb{V}(X) = G_X''(1) + G_X'(1) - (G_X'(1))^2$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q98",
+        "image_path": null,
+        "theme": "Espérance",
+        "question": "Soient $X_1, X_2, ..., X_n$ des variables aléatoires admettant chacune une espérance finie. L'espérance de la somme est-elle toujours finie ?",
+        "answers": [
+            "Oui, par linéarité de l'espérance.",
+            "Non, cela dépend de l'indépendance.",
+            "Seulement si $n$ est pair.",
+            "Seulement si les variables sont positives."
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "La linéarité de l'espérance $\\mathbb{E}(\\sum X_i) = \\sum \\mathbb{E}(X_i)$ est une propriété fondamentale qui ne nécessite aucune hypothèse d'indépendance et reste vraie pour toute somme finie.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q99",
+        "image_path": null,
+        "theme": "Marche aléatoire",
+        "question": "Dans le cas d'une marche aléatoire symétrique sur $\\mathbb{Z}$ partant de 0, soit $S_n$ la position après $n$ pas. Que peut-on dire de la probabilité $P(S_n = 0)$ quand $n$ tend vers l'infini ?",
+        "answers": [
+            "Elle tend vers 0.",
+            "Elle est constante.",
+            "Elle tend vers 1.",
+            "Elle diverge."
+        ],
+        "difficulty": 4,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "Par la formule de Stirling, $P(S_{2k}=0) = \\binom{2k}{k} 2^{-2k} \\sim \\frac{4^k}{\\sqrt{\\pi k}} 2^{-2k} = \\frac{1}{\\sqrt{\\pi k}}$, qui tend vers 0 quand $k \\to +\\infty$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q100",
+        "image_path": null,
+        "theme": "Inégalités",
+        "question": "Quelle inégalité de concentration permet de majorer la probabilité d'écart à la moyenne en utilisant la variance ?",
+        "answers": [
+            "Bienaymé-Tchebychev.",
+            "Inégalité de Markov.",
+            "Inégalité de Jensen.",
+            "Inégalité triangulaire."
+        ],
+        "difficulty": 1,
+        "chapter": "Espérance d'une variable aléatoire",
+        "correct_answer_index": 0,
+        "explication": "L'inégalité de Bienaymé-Tchebychev stipule que $P(|X - \\mathbb{E}(X)| \\ge \\varepsilon) \\le \\frac{\\mathbb{V}(X)}{\\varepsilon^2}$. Elle est la seule parmi ces choix à faire intervenir explicitement la variance.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "q101",
+        "theme": "Espérance",
+        "chapter": "Espérance d'une variable aléatoire",
+        "subject": "maths",
+        "image_path": null,
+        "difficulty": 3,
+        "question": "Dans le cadre de l'étude d'une variable aléatoire discrète $X$ à valeurs dans $\\mathbb{N}$, laquelle des affirmations suivantes est correcte concernant le calcul de son espérance $\\mathbb{E}(X)$ lorsqu'elle existe ?",
+        "answers": [
+            "La formule $\\mathbb{E}(X) = \\sum_{k=1}^{\\infty} P(X \\ge k)$ est toujours valide.",
+            "La formule $\\mathbb{E}(X) = \\sum_{k=0}^{\\infty} P(X > k)$ est fausse car l'indice de sommation doit commencer à 1.",
+            "La formule $\\mathbb{E}(X) = \\sum_{k=0}^{\\infty} k P(X = k)$ est la seule définition valable, les autres sont des approximations.",
+            "La formule $\\mathbb{E}(X) = \\sum_{k=1}^{\\infty} k P(X = k)$ n'est valide que si $X$ est bornée."
+        ],
+        "correct_answer_index": 0,
+        "explication": "La formule $\\mathbb{E}(X) = \\sum_{k=1}^{\\infty} P(X \\ge k)$ est un résultat classique pour les variables à valeurs entières positives. Elle se démontre en écrivant $X = \\sum_{k=1}^{\\infty} \\mathbb{I}_{X \\ge k}$ et en utilisant la linéarité de l'espérance (théorème de convergence monotone pour les séries à termes positifs). Les pièges classiques sont d'oublier la borne inférieure de la somme ou de penser qu'elle nécessite une borne supérieure pour $X$ : elle fonctionne parfaitement pour des variables d'espérance finie, même non bornées (comme la loi géométrique par exemple)."
+    }
+]

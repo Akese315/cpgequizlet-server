@@ -1,0 +1,928 @@
+[
+    {
+        "uuid": "q1",
+        "image_path": null,
+        "theme": "magnétostatique",
+        "question": "Dans le cadre de l'étude d'un petit aimant permanent de laboratoire, quel est l'ordre de grandeur usuel du moment magnétique $\\vec{\\mathcal{M}}$ ?",
+        "answers": [
+            "$10^0$ à $10^1$ $\\text{A.m}^2$",
+            "$10^{-2}$ à $10^{-1}$ $\\text{A.m}^2$",
+            "$10^3$ à $10^4$ $\\text{A.m}^2$",
+            "$10^{-5}$ à $10^{-4}$ $\\text{A.m}^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "explication": "Un aimant de taille centimétrique possède généralement une aimantation de saturation de l'ordre du Tesla, ce qui conduit à un moment magnétique de l'ordre de quelques $\\text{A.m}^2$. Les valeurs plus faibles correspondent à des micro-aimants, et les valeurs en $10^3$ correspondraient à des électro-aimants industriels massifs.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "q2",
+        "image_path": null,
+        "theme": "magnétostatique",
+        "question": "Quelle est l'expression correcte de l'énergie potentielle d'interaction $\\mathcal{E}_p$ entre un aimant assimilé à un dipôle de moment magnétique $\\vec{\\mathcal{M}}$ et un champ magnétique extérieur $\\vec{B}_{ext}$ ?",
+        "answers": [
+            "$\\mathcal{E}_p = -\\vec{\\mathcal{M}}\\cdot\\vec{B}_{ext}$",
+            "$\\mathcal{E}_p = \\vec{\\mathcal{M}}\\cdot\\vec{B}_{ext}$",
+            "$\\mathcal{E}_p = \\vec{\\mathcal{M}}\\wedge\\vec{B}_{ext}$",
+            "$\\mathcal{E}_p = -\\vec{\\mathcal{M}}\\wedge\\vec{B}_{ext}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "explication": "L'énergie potentielle est minimale lorsque le dipôle est aligné avec le champ (position d'équilibre stable). Comme $\\vec{\\mathcal{M}}\\cdot\\vec{B}_{ext} = M B \\cos(\\theta)$, c'est pour $\\theta=0$ que le produit scalaire est maximal. Il faut donc un signe négatif pour que l'énergie soit minimale à l'alignement : $\\mathcal{E}_p = -\\vec{\\mathcal{M}}\\cdot\\vec{B}_{ext}$."
+    },
+    {
+        "uuid": "q3",
+        "image_path": null,
+        "theme": "magnétostatique",
+        "question": "Comment s'écrit le couple magnétique $\\vec{\\Gamma}$ exercé par un champ $\\vec{B}_{ext}$ sur un dipôle de moment magnétique $\\vec{\\mathcal{M}}$ ?",
+        "answers": [
+            "$\\vec{\\Gamma} = \\vec{\\mathcal{M}}\\wedge\\vec{B}_{ext}$",
+            "$\\vec{\\Gamma} = -\\vec{\\mathcal{M}}\\wedge\\vec{B}_{ext}$",
+            "$\\vec{\\Gamma} = \\vec{\\mathcal{M}}\\cdot\\vec{B}_{ext}$",
+            "$\\vec{\\Gamma} = \\vec{\\nabla}(\\vec{\\mathcal{M}}\\cdot\\vec{B}_{ext})$"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "explication": "Le couple magnétique tend à faire tourner le dipôle pour l'aligner avec le champ. L'expression $\\vec{\\mathcal{M}}\\wedge\\vec{B}_{ext}$ est la définition classique du moment des forces de Lorentz sur une boucle de courant. Si $\\vec{\\mathcal{M}}$ est colinéaire à $\\vec{B}_{ext}$, alors $\\vec{\\Gamma} = \\vec{0}$, ce qui correspond à l'équilibre."
+    },
+    {
+        "uuid": "q4",
+        "image_path": null,
+        "theme": "magnétostatique",
+        "question": "Sous l'effet du couple magnétique, vers quelle configuration le vecteur moment magnétique $\\vec{\\mathcal{M}}$ tend-il à évoluer dans un champ uniforme $\\vec{B}_{ext}$ ?",
+        "answers": [
+            "À s'aligner parallèlement et dans le même sens que $\\vec{B}_{ext}$",
+            "À s'aligner perpendiculairement à $\\vec{B}_{ext}$",
+            "À s'aligner parallèlement mais de sens opposé à $\\vec{B}_{ext}$",
+            "À rester dans sa position initiale quelle que soit l'orientation"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "explication": "Le système cherche à minimiser son énergie potentielle $\\mathcal{E}_p = -\\vec{\\mathcal{M}}\\cdot\\vec{B}_{ext}$. Le minimum est atteint pour $\\cos(\\theta) = 1$, soit $\\theta = 0$. Le dipôle s'aligne donc dans le sens du champ."
+    },
+    {
+        "uuid": "q5",
+        "image_path": null,
+        "theme": "magnétostatique",
+        "question": "Dans un champ magnétique non uniforme $\\vec{B}_{ext}$, quelle force de translation $\\vec{F}$ s'exerce sur un dipôle magnétique $\\vec{\\mathcal{M}}$ ?",
+        "answers": [
+            "$\\vec{F} = \\vec{\\nabla}(\\vec{\\mathcal{M}}\\cdot\\vec{B}_{ext})$",
+            "$\\vec{F} = -\\vec{\\nabla}(\\vec{\\mathcal{M}}\\cdot\\vec{B}_{ext})$",
+            "$\\vec{F} = \\vec{\\mathcal{M}}\\wedge\\vec{B}_{ext}$",
+            "$\\vec{F} = \\vec{0}$ car le champ est uniforme"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "explication": "Pour un dipôle magnétique, la force est donnée par $\\vec{F} = \\vec{\\nabla}(\\vec{\\mathcal{M}}\\cdot\\vec{B}_{ext})$. Cela explique pourquoi un aimant est attiré vers les zones où le champ est le plus intense (gradient positif) afin de minimiser son énergie potentielle."
+    },
+    {
+        "uuid": "q6",
+        "image_path": null,
+        "theme": "mécanique quantique",
+        "question": "Quelle est l'expression du magnéton de Bohr $\\mu_B$, qui définit l'unité naturelle du moment magnétique lié au spin de l'électron ?",
+        "answers": [
+            "$\\mu_B = \\frac{e\\hbar}{2m_e}$",
+            "$\\mu_B = \\frac{e\\hbar}{m_e}$",
+            "$\\mu_B = \\frac{e m_e}{2\\hbar}$",
+            "$\\mu_B = \\frac{h}{e m_e}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "explication": "Le magnéton de Bohr est une constante physique fondamentale : $\\mu_B = \\frac{e\\hbar}{2m_e} \\approx 9,27 \\times 10^{-24} \\text{ A.m}^2$. C'est le moment magnétique orbital d'un électron dans l'état fondamental de l'atome d'hydrogène selon le modèle semi-classique."
+    },
+    {
+        "uuid": "q7",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Comment est défini le vecteur aimantation $\\vec{M}$ en un point d'un matériau ?",
+        "answers": [
+            "La densité volumique de moments magnétiques : $\\vec{M} = \\frac{d\\vec{\\mathcal{M}}}{d\\tau}$",
+            "Le moment magnétique par unité de masse",
+            "Le flux magnétique traversant une surface élémentaire",
+            "La variation du champ magnétique par unité de volume"
+        ],
+        "difficulty": 1,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "explication": "L'aimantation $\\vec{M}$ est une grandeur macroscopique qui correspond à la moyenne spatiale des moments magnétiques microscopiques présents dans un volume élémentaire $d\\tau$ autour du point considéré."
+    },
+    {
+        "uuid": "q8",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est la relation reliant la densité volumique de courant lié $\\vec{j}_{lie}$ au vecteur aimantation $\\vec{M}$ ?",
+        "answers": [
+            "$\\vec{j}_{lie} = \\vec{\\text{rot}}(\\vec{M})$",
+            "$\\vec{j}_{lie} = \\vec{\\text{grad}}(M)$",
+            "$\\vec{j}_{lie} = \\text{div}(\\vec{M})$",
+            "$\\vec{j}_{lie} = \\mu_0\\vec{M}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "explication": "La présence d'une aimantation non uniforme dans un milieu crée des courants microscopiques équivalents. Ces courants liés s'expriment par le rotationnel du vecteur aimantation : $\\vec{j}_{lie} = \\vec{\\text{rot}}(\\vec{M})$."
+    },
+    {
+        "uuid": "q9",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est la relation de définition du vecteur excitation magnétique $\\vec{H}$ ?",
+        "answers": [
+            "$\\vec{H} = \\frac{\\vec{B}}{\\mu_0} - \\vec{M}$",
+            "$\\vec{H} = \\frac{\\vec{B}}{\\mu_0} + \\vec{M}$",
+            "$\\vec{H} = \\mu_0(\\vec{B} - \\vec{M})$",
+            "$\\vec{H} = \\vec{B} - \\mu_0\\vec{M}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "explication": "Le vecteur $\\vec{H}$ est introduit pour isoler les sources \"libres\" (courants imposés par l'utilisateur) des effets de la matière. La définition standard est $\\vec{B} = \\mu_0(\\vec{H} + \\vec{M})$, d'où $\\vec{H} = \\frac{\\vec{B}}{\\mu_0} - \\vec{M}$."
+    },
+    {
+        "uuid": "q10",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Selon le théorème d'Ampère généralisé (ou équation de Maxwell-Ampère) dans un milieu magnétique, quelles sont les sources du champ $\\vec{H}$ ?",
+        "answers": [
+            "Uniquement les courants électriques libres",
+            "Les courants électriques libres et les courants liés",
+            "Uniquement l'aimantation du milieu",
+            "Les charges électriques en mouvement dans le vide"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "explication": "En introduisant $\\vec{H}$, l'équation locale de Maxwell-Ampère devient $\\vec{\\text{rot}}(\\vec{H}) = \\vec{j}_{lib}$. Ainsi, le rotationnel de $\\vec{H}$ ne dépend plus que des courants libres. Les courants liés sont implicitement pris en compte par le vecteur aimantation $\\vec{M}$."
+    },
+    {
+        "uuid": "q11",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude des milieux magnétiques, quelle est l'expression correcte du théorème d'Ampère pour le vecteur excitation magnétique $\\vec{H}$ le long d'un contour fermé $\\Gamma$ ?",
+        "answers": [
+            "$\\oint_{\\Gamma} \\vec{H} \\cdot d\\vec{l} = I_{enlacés, libres}$",
+            "$\\oint_{\\Gamma} \\vec{H} \\cdot d\\vec{l} = I_{enlacés, totaux}$",
+            "$\\oint_{\\Gamma} \\vec{H} \\cdot d\\vec{l} = I_{enlacés, liés}$",
+            "$\\oint_{\\Gamma} \\vec{H} \\cdot d\\vec{l} = \\mu_0 I_{enlacés, libres}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le théorème d'Ampère pour l'excitation magnétique $\\vec{H}$ stipule que la circulation de $\\vec{H}$ sur un contour fermé est égale aux courants libres enlacés. Les courants liés sont déjà pris en compte par la définition de l'aimantation $\\vec{M}$ dans $\\vec{H} = \\frac{\\vec{B}}{\\mu_0} - \\vec{M}$. La réponse avec $\\mu_0$ est une confusion fréquente avec le théorème d'Ampère appliqué au champ $\\vec{B}$ dans le vide."
+    },
+    {
+        "uuid": "q12",
+        "image_path": null,
+        "theme": "milieux ferromagnétiques",
+        "question": "Lors du tracé du cycle d'hystérésis d'un matériau ferromagnétique, comment nomme-t-on la valeur de l'induction magnétique $B$ conservée lorsque l'excitation magnétique $\\vec{H}$ devient nulle ?",
+        "answers": [
+            "Le champ rémanent $B_r$",
+            "Le champ coercitif $H_c$",
+            "L'aimantation de saturation $M_{sat}$",
+            "La perméabilité magnétique relative $\\mu_r$"
+        ],
+        "difficulty": 1,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le champ rémanent $B_r$ (ou induction rémanente) correspond au point d'intersection de la courbe avec l'axe des ordonnées ($H=0$). Il caractérise la capacité du matériau à rester aimanté en l'absence de champ extérieur."
+    },
+    {
+        "uuid": "q13",
+        "image_path": null,
+        "theme": "milieux ferromagnétiques",
+        "question": "Quelle grandeur physique correspond à la valeur de l'excitation magnétique opposée $H_c$ nécessaire pour annuler l'induction $B$ au sein d'un matériau ferromagnétique ?",
+        "answers": [
+            "Le champ coercitif",
+            "L'aimantation rémanente",
+            "Le champ rémanent",
+            "Le champ de saturation"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le champ coercitif $H_c$ est l'intensité du champ magnétique inverse qu'il faut appliquer pour 'démagnétiser' le matériau, c'est-à-dire ramener l'induction $B$ à zéro. Plus cette valeur est grande, plus le matériau est considéré comme 'dur'."
+    },
+    {
+        "uuid": "q14",
+        "image_path": null,
+        "theme": "milieux ferromagnétiques",
+        "question": "Qu'est-ce qui caractérise physiquement et structurellement un matériau ferromagnétique dit « dur » ?",
+        "answers": [
+            "Un cycle d'hystérésis très large, idéal pour réaliser des aimants permanents",
+            "Un cycle d'hystérésis très étroit, idéal pour minimiser les pertes fer par hystérésis",
+            "Une perméabilité relative très faible, proche de celle du vide",
+            "Une incapacité totale à conserver une aimantation après suppression du champ excitateur"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Un matériau dur possède un champ coercitif élevé et un cycle d'hystérésis large, ce qui le rend difficile à aimanter mais également difficile à désaimanter, propriété essentielle pour les aimants permanents."
+    },
+    {
+        "uuid": "q15",
+        "image_path": null,
+        "theme": "milieux ferromagnétiques",
+        "question": "Dans la conception d'un transformateur, quel type de matériau est privilégié pour le circuit magnétique et pourquoi ?",
+        "answers": [
+            "Un matériau doux, pour minimiser l'aire du cycle d'hystérésis et limiter les pertes énergétiques",
+            "Un matériau dur, pour maintenir une aimantation constante sans courant d'excitation",
+            "Un matériau non-magnétique, pour éviter la saturation du noyau magnétique",
+            "Un matériau à forte résistivité, uniquement pour limiter les courants de Foucault"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le transformateur fonctionne en régime alternatif. L'énergie perdue par cycle d'hystérésis étant proportionnelle à l'aire du cycle, on utilise des matériaux doux (cycle étroit) pour maximiser le rendement."
+    },
+    {
+        "uuid": "q16",
+        "image_path": null,
+        "theme": "milieux ferromagnétiques",
+        "question": "Dans le domaine de linéarité d'un matériau ferromagnétique (avant la saturation), quelle relation relie l'induction magnétique $\\vec{B}$ à l'excitation magnétique $\\vec{H}$ ?",
+        "answers": [
+            "$\\vec{B} = \\mu \\vec{H}$",
+            "$\\vec{B} = \\mu_0 \\vec{H}$",
+            "$\\vec{B} = \\vec{H} / \\mu$",
+            "$\\vec{B} = \\mu_r \\mu_0 / \\vec{H}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Dans un milieu linéaire et isotrope, la relation constitutive est $\\vec{B} = \\mu \\vec{H}$ où $\\mu = \\mu_0 \\mu_r$. $\\vec{B} = \\mu_0 \\vec{H}$ n'est vrai que dans le vide ($\\mu_r = 1$)."
+    },
+    {
+        "uuid": "q17",
+        "image_path": null,
+        "theme": "circuits magnétiques",
+        "question": "Quelle est l'expression de l'inductance propre $L$ d'une bobine de $N$ spires enroulée sur un tore de section $S$, de longueur moyenne $l$ et de perméabilité $\\mu$ ?",
+        "answers": [
+            "$L = \\frac{\\mu N^2 S}{l}$",
+            "$L = \\frac{\\mu N S}{l}$",
+            "$L = \\frac{\\mu N^2 l}{S}$",
+            "$L = \\frac{\\mu S}{N^2 l}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "En utilisant la loi d'Hopkinson, on a $\\phi = L i$. Pour un circuit magnétique, $\\phi = N B S$ et $H l = N i$. Avec $B = \\mu H$, on trouve $\\phi = N (\\mu \\frac{N i}{l}) S$, d'où $L = \\frac{\\mu N^2 S}{l}$."
+    },
+    {
+        "uuid": "q18",
+        "image_path": null,
+        "theme": "circuits magnétiques",
+        "question": "Quelle est l'expression de la densité volumique d'énergie magnétique $w_m$ stockée dans un matériau magnétique linéaire de perméabilité $\\mu = \\mu_0 \\mu_r$ ?",
+        "answers": [
+            "$w_m = \\frac{B^2}{2\\mu_0\\mu_r}$",
+            "$w_m = \\frac{B^2}{2\\mu_0}$",
+            "$w_m = \\frac{\\mu_0 \\mu_r B^2}{2}$",
+            "$w_m = \\frac{B^2}{\\mu_r}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La densité d'énergie est donnée par $w_m = \\frac{1}{2} \\vec{B} \\cdot \\vec{H}$. Comme $\\vec{H} = \\frac{\\vec{B}}{\\mu}$, on obtient $w_m = \\frac{B^2}{2\\mu} = \\frac{B^2}{2\\mu_0 \\mu_r}$."
+    },
+    {
+        "uuid": "q19",
+        "image_path": null,
+        "theme": "circuits magnétiques",
+        "question": "Dans un circuit magnétique (fer de longueur $l_f$, entrefer $e$), quelle condition traduit la continuité du flux magnétique, en supposant l'absence de fuites ?",
+        "answers": [
+            "$B_f = B_e$",
+            "$H_f = H_e$",
+            "$B_f \\cdot l_f = B_e \\cdot e$",
+            "$H_f \\cdot l_f = H_e \\cdot e$"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le flux magnétique $\\Phi = \\iint \\vec{B} \\cdot d\\vec{S}$ se conserve à travers toute section du circuit magnétique. Si la section $S$ est constante, alors $B = \\Phi / S$ est constant, d'où $B_f = B_e$."
+    },
+    {
+        "uuid": "q20",
+        "image_path": null,
+        "theme": "circuits magnétiques",
+        "question": "Pour un circuit magnétique avec un entrefer $e$ très petit, si l'on suppose la perméabilité du fer infinie ($\\mu_r \\to \\infty$), quelle est l'expression du champ $B_e$ dans l'entrefer ?",
+        "answers": [
+            "$B_e = \\frac{\\mu_0 N i}{e}$",
+            "$B_e = \\frac{\\mu_0 N i}{l}$",
+            "$B_e = \\frac{\\mu_0 \\mu_r N i}{e}$",
+            "$B_e = 0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "D'après le théorème d'Ampère, $H_f l_f + H_e e = N i$. Si $\\mu_r \\to \\infty$, alors $H_f = B / (\\mu_0 \\mu_r) \\to 0$. Il reste $H_e e = N i$. Avec $H_e = B_e / \\mu_0$, on obtient $B_e = \\frac{\\mu_0 N i}{e}$."
+    },
+    {
+        "uuid": "q21",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'étude des pertes magnétiques d'un transformateur, quelle grandeur physique représente l'aire $\\mathcal{A} = \\oint H \\cdot dB$ du cycle d'hystérésis ?",
+        "answers": [
+            "L'énergie volumique dissipée par cycle",
+            "La puissance massique dissipée",
+            "L'énergie totale stockée dans l'inductance",
+            "La tension efficace aux bornes de la bobine"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le cycle d'hystérésis représente le travail des forces de pression magnétique. L'intégrale $\\oint H \\cdot dB$ correspond à l'énergie par unité de volume dissipée sous forme de chaleur lors d'un cycle complet d'aimantation. La puissance dissipée est le produit de cette énergie volumique par la fréquence et le volume du noyau."
+    },
+    {
+        "uuid": "q22",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un transformateur, comment appelle-t-on les pertes dissipées par effet Joule dues aux courants induits dans la masse métallique du noyau, et quelle solution technique permet de les limiter ?",
+        "answers": [
+            "Pertes par courants de Foucault ; on les limite en feuilletant le noyau avec des tôles isolées",
+            "Pertes par hystérésis ; on les limite en feuilletant le noyau avec des tôles isolées",
+            "Pertes cuivre ; on les limite en utilisant du fil de plus gros diamètre",
+            "Pertes par courants de Foucault ; on les limite en utilisant un matériau dur"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Les courants de Foucault sont des courants induits créés par la variation du flux magnétique dans le matériau conducteur du noyau. Le feuilletage (découpage en tôles minces isolées électriquement entre elles) augmente la résistance du chemin des courants et limite ainsi leur intensité, réduisant les pertes par effet Joule."
+    },
+    {
+        "uuid": "q23",
+        "image_path": null,
+        "theme": "transformateurs",
+        "question": "Dans le modèle d'un transformateur réel, que qualifie-t-on communément de \"pertes cuivre\" ?",
+        "answers": [
+            "Les pertes par effet Joule dans les fils des enroulements",
+            "Les pertes par courants de Foucault dans le noyau",
+            "Les pertes liées au cycle d'hystérésis du cuivre",
+            "Les fuites de flux magnétique entre primaire et secondaire"
+        ],
+        "difficulty": 1,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Les enroulements sont constitués de fils conducteurs (généralement en cuivre) possédant une résistance ohmique $R$. Les 'pertes cuivre' correspondent à la dissipation thermique $P = R I^2$ dans ces conducteurs, proportionnelle au carré de l'intensité."
+    },
+    {
+        "uuid": "q24",
+        "image_path": null,
+        "theme": "transformateurs",
+        "question": "Quelle est la définition normalisée du rapport de transformation $m$ d'un transformateur idéal en fonction des nombres de spires $N_1$ (primaire) et $N_2$ (secondaire) ?",
+        "answers": [
+            "$m = \\frac{N_2}{N_1}$",
+            "$m = \\frac{N_1}{N_2}$",
+            "$m = N_1 \\cdot N_2$",
+            "$m = \\frac{1}{N_1 N_2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Par définition, le rapport de transformation $m$ est le rapport entre la tension secondaire et la tension primaire en régime établi, ce qui équivaut au rapport du nombre de spires du secondaire sur celui du primaire : $m = U_2 / U_1 = N_2 / N_1$."
+    },
+    {
+        "uuid": "q25",
+        "image_path": null,
+        "theme": "transformateurs",
+        "question": "Considérons un transformateur idéal en convention récepteur au primaire et générateur au secondaire. Quelle relation relie les courants $i_1$ et $i_2$ au rapport de transformation $m$ ?",
+        "answers": [
+            "$i_1 = m \\cdot i_2$",
+            "$i_2 = m \\cdot i_1$",
+            "$i_1 = i_2 / m^2$",
+            "$i_1 = -m \\cdot i_2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour un transformateur idéal, la puissance est conservée ($u_1 i_1 = u_2 i_2$). Avec $u_2 = m u_1$, on en déduit par substitution que $u_1 i_1 = (m u_1) i_2$, soit $i_1 = m i_2$. L'erreur classique est d'inverser le rapport $m$ ou de confondre avec le rapport d'impédance."
+    },
+    {
+        "uuid": "q26",
+        "image_path": null,
+        "theme": "transformateurs",
+        "question": "Que traduit la relation de bilan énergétique $u_1 i_1 + u_2 i_2 = 0$ (pour des conventions respectives récepteur/générateur) pour un transformateur idéal ?",
+        "answers": [
+            "La conservation intégrale de la puissance transférée du primaire vers le secondaire",
+            "La présence de pertes par effet Joule dans les enroulements",
+            "Une fuite de flux magnétique dans l'air",
+            "Le déphasage entre la tension et le courant au secondaire"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La relation $u_1 i_1 = -u_2 i_2$ exprime que la puissance instantanée reçue au primaire est intégralement restituée au secondaire, ce qui définit un transformateur idéal sans aucune perte (Joule, hystérésis ou courants de Foucault)."
+    },
+    {
+        "uuid": "q27",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Un dipôle d'impédance complexe $\\underline{Z}$ est branché au secondaire d'un transformateur idéal de rapport $m$. Quelle est l'expression de l'impédance équivalente $\\underline{Z}_{eq}$ vue du côté primaire ?",
+        "answers": [
+            "$\\underline{Z}_{eq} = \\frac{\\underline{Z}}{m^2}$",
+            "$\\underline{Z}_{eq} = m^2 \\cdot \\underline{Z}$",
+            "$\\underline{Z}_{eq} = \\frac{\\underline{Z}}{m}$",
+            "$\\underline{Z}_{eq} = m \\cdot \\underline{Z}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "On a $\\underline{U}_1 = \\underline{U}_2 / m$ et $\\underline{I}_1 = m \\underline{I}_2$. L'impédance vue du primaire est $\\underline{Z}_{eq} = \\underline{U}_1 / \\underline{I}_1 = (\\underline{U}_2 / m) / (m \\underline{I}_2) = \\frac{1}{m^2} \\frac{\\underline{U}_2}{\\underline{I}_2} = \\frac{\\underline{Z}}{m^2}$."
+    },
+    {
+        "uuid": "q28",
+        "image_path": null,
+        "theme": "transformateurs",
+        "question": "En régime sinusoïdal, quelle est l'expression de la valeur efficace de la tension au secondaire $U_{2,eff}$ en fonction de la fréquence $f$, du nombre de spires $n_2$, de la section $S$ et du champ magnétique maximal $B_{max}$ ?",
+        "answers": [
+            "$U_{2,eff} = \\sqrt{2} \\pi f n_2 S B_{max}$",
+            "$U_{2,eff} = n_2 S \\omega B_{max}$",
+            "$U_{2,eff} = \\frac{n_2 S f B_{max}}{2\\pi}$",
+            "$U_{2,eff} = n_2 S \\sqrt{2} \\omega B_{max}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "D'après la loi de Faraday, $u_2(t) = -n_2 \\frac{d\\Phi}{dt}$. Avec $\\Phi(t) = S B_{max} \\sin(\\omega t)$, alors $|u_2(t)| = n_2 S B_{max} \\omega \\cos(\\omega t)$. La valeur efficace est $U_{2,eff} = \\frac{n_2 S B_{max} \\omega}{\\sqrt{2}} = \\frac{n_2 S B_{max} 2\\pi f}{\\sqrt{2}} = \\sqrt{2} \\pi f n_2 S B_{max}$."
+    },
+    {
+        "uuid": "q29",
+        "image_path": null,
+        "theme": "transformateurs",
+        "question": "Un transformateur monophasé possède un rapport de transformation $m = 0,22$. Si la tension au primaire est $U_{1,eff} = 1000$ V, quelle est la tension efficace $U_{2,eff}$ au secondaire ?",
+        "answers": [
+            "220 V",
+            "2200 V",
+            "4545 V",
+            "22 V"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La relation est $U_{2,eff} = m \\cdot U_{1,eff}$. Ainsi, $0,22 \\times 1000 = 220$ V. Un transformateur avec $m < 1$ est un abaisseur de tension."
+    },
+    {
+        "uuid": "q30",
+        "image_path": null,
+        "theme": "transformateurs",
+        "question": "Si la tension efficace au primaire $U_{1,eff}$ est maintenue constante, que devient le nombre minimal de spires $n_1$ nécessaire si l'on augmente la fréquence d'utilisation (de 50 Hz à 60 Hz), en conservant $B_{max}$ constant ?",
+        "answers": [
+            "Le nombre de spires diminue",
+            "Le nombre de spires augmente",
+            "Le nombre de spires reste identique",
+            "Il faut changer le matériau magnétique"
+        ],
+        "difficulty": 4,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "D'après la formule $U_{1,eff} = \\sqrt{2} \\pi f n_1 S B_{max}$, on observe que $n_1 = \\frac{U_{1,eff}}{\\sqrt{2} \\pi f S B_{max}}$. Si $f$ augmente, le dénominateur augmente, donc le nombre de spires nécessaire $n_1$ pour ne pas saturer le noyau magnétique diminue."
+    },
+    {
+        "uuid": "q31",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le cadre de l'étude d'un transformateur réel, quelle méthode analytique permet d'interpréter la chute de tension observée expérimentalement en charge au secondaire ?",
+        "answers": [
+            "Modéliser l'imperfection par une résistance équivalente et une inductance de fuite ramenées au primaire ou au secondaire",
+            "Considérer que le rapport de transformation $m$ devient une fonction complexe de la fréquence de la charge",
+            "Ajouter une inductance pure en parallèle au primaire pour représenter les fuites magnétiques",
+            "Modifier la valeur de la perméabilité relative $\\mu_r$ du matériau du noyau en fonction du courant"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La chute de tension en charge est due aux impédances des enroulements (résistances cuivre et inductances de fuite). On les modélise par un schéma équivalent (ex: Kapp) où ces éléments sont ramenés à un côté du transformateur. Les autres propositions sont incorrectes : le rapport $m$ est fixé par le nombre de spires, et les fuites ne se modélisent pas par une inductance parallèle (qui représente le courant magnétisant)."
+    },
+    {
+        "uuid": "q32",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Lors du tracé expérimental d'un cycle d'hystérésis sur oscilloscope, quel montage permet d'obtenir sur l'axe Y une tension proportionnelle au champ magnétique $B$ ?",
+        "answers": [
+            "Un circuit intégrateur passif RC placé aux bornes d'une bobine exploratrice (secondaire)",
+            "La mesure directe de la tension aux bornes du primaire avec une sonde différentielle",
+            "L'utilisation d'une bobine de Rogowski pour dériver le courant magnétisant",
+            "Le placement d'une résistance shunt en série avec l'aimant pour mesurer $I$"
+        ],
+        "difficulty": 4,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Selon la loi de Faraday, $e = -N \\frac{d\\Phi}{dt} = -N S \\frac{dB}{dt}$. Pour obtenir $B$, il faut intégrer la tension induite : $B(t) = -\\frac{1}{NS} \\int e(t) dt$. Un circuit RC utilisé en intégrateur (condition $RC \\omega \\gg 1$) permet d'obtenir une tension de sortie proportionnelle à l'intégrale de l'entrée."
+    },
+    {
+        "uuid": "q33",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le même montage de tracé du cycle d'hystérésis, quelle méthode permet de rendre la tension sur l'axe X proportionnelle à l'excitation magnétique $H$ ?",
+        "answers": [
+            "Mesurer la tension aux bornes d'une résistance $r$ parcourue par le courant primaire $i_1$",
+            "Intégrer le signal de tension du secondaire pour éliminer la composante inductive",
+            "Mesurer directement la tension d'alimentation du générateur basse fréquence",
+            "Utiliser une sonde à effet Hall mesurant $B$ directement dans l'entrefer"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le théorème d'Ampère simplifié pour un circuit magnétique sans fuite donne $H \\ell = N i_1$, soit $H = \\frac{N}{\\ell} i_1$. Comme $i_1 = \\frac{u_r}{r}$, la tension aux bornes d'une résistance série $r$ est directement proportionnelle au courant $i_1$, et donc à $H$."
+    },
+    {
+        "uuid": "q34",
+        "image_path": null,
+        "theme": "circuits magnétiques",
+        "question": "D'après le critère d'Evershed, pour un entrefer donné ($e$ et $H_e$ fixés), quelle grandeur physique liée au point de fonctionnement $(B_a, H_a)$ de l'aimant doit être maximisée pour minimiser son volume ?",
+        "answers": [
+            "Le produit en valeur absolue $|B_a \\cdot H_a|$ (énergie magnétique volumique)",
+            "Uniquement la valeur du champ rémanent $B_r$ du matériau",
+            "Uniquement la valeur du champ coercitif $H_c$ du matériau",
+            "La densité d'énergie linéique $B_a + \\mu_0 H_a$"
+        ],
+        "difficulty": 5,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le critère d'Evershed démontre que le volume de l'aimant nécessaire pour fournir une énergie donnée dans l'entrefer est inversement proportionnel au produit $B_a H_a$. Maximiser ce produit (le 'produit énergétique') permet de minimiser le volume $V$ de l'aimant."
+    },
+    {
+        "uuid": "q35",
+        "image_path": null,
+        "theme": "circuits magnétiques",
+        "question": "Pour évaluer les pertes fer par hystérésis à partir de l'aire d'un cycle tracé sur papier millimétré, quelle est la procédure correcte pour exploiter la surface $A$ d'un carreau ?",
+        "answers": [
+            "Multiplier l'aire totale $A_{cycle}$ par le produit des échelles $\\Delta B / \\text{div}$ et $\\Delta H / \\text{div}$",
+            "Diviser l'aire par la fréquence $f$ du signal alternatif pour isoler l'énergie",
+            "Multiplier la surface par la section du tore sans tenir compte des axes",
+            "Considérer que l'aire représente directement la puissance en Watts sans conversion"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'énergie perdue par unité de volume est donnée par l'intégrale $\\oint H dB$. L'aire sur l'écran correspond à des $V \\cdot s$. Pour retrouver la valeur physique, il faut multiplier l'aire mesurée par le facteur d'échelle de chaque axe. L'unité finale obtenue est le Joule par mètre cube ($J/m^3$)."
+    },
+    {
+        "uuid": "q36",
+        "image_path": null,
+        "theme": "circuits magnétiques",
+        "question": "Dans le cadre d'un électroaimant, quelle action permet d'augmenter l'intensité du champ magnétique $B$ dans l'entrefer pour un circuit donné ?",
+        "answers": [
+            "Augmenter le produit $N \\cdot i$ (la force magnétomotrice)",
+            "Diminuer le nombre de spires $N$ du bobinage",
+            "Augmenter l'épaisseur $e$ de l'entrefer, ce qui diminue la réluctance",
+            "Diminuer la perméabilité $\\mu_r$ du matériau ferromagnétique"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le théorème d'Ampère appliqué au circuit magnétique impose $\\mathcal{F} = N i = R_{total} \\Phi$. Augmenter $Ni$ augmente directement le flux $\\Phi$ et donc $B$ dans l'entrefer. Augmenter l'entrefer $e$ augmente la réluctance, ce qui diminue $B$ à courant constant."
+    },
+    {
+        "uuid": "q37",
+        "image_path": null,
+        "theme": "milieux ferromagnétiques",
+        "question": "Comment justifie-t-on physiquement l'approximation selon laquelle l'excitation magnétique $\\vec{H}$ est quasi-nulle dans un matériau ferromagnétique doux (haute perméabilité) ?",
+        "answers": [
+            "Par la relation $H = \\frac{B}{\\mu_0 \\mu_r}$ avec $\\mu_r \\to \\infty$, impliquant $H \\to 0$ pour un $B$ fini",
+            "Par le théorème de Gauss appliqué aux surfaces fermées du fer",
+            "Par l'annulation du champ électrique dans le métal conducteur",
+            "Par le fait que le fer doux est un supraconducteur magnétique"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Dans un ferromagnétique doux, la perméabilité relative $\\mu_r$ est très élevée (plusieurs milliers). Dans la relation constitutive $B = \\mu_0 \\mu_r H$, pour un champ $B$ qui reste en dessous de la saturation, $H = B / (\\mu_0 \\mu_r)$ devient négligeable."
+    },
+    {
+        "uuid": "q38",
+        "image_path": null,
+        "theme": "circuits magnétiques",
+        "question": "Dans le théorème d'Ampère appliqué à un circuit comprenant un aimant permanent et un entrefer, à quoi correspond graphiquement le point de fonctionnement ?",
+        "answers": [
+            "À l'intersection entre la courbe de désaimantation de l'aimant et la droite de charge imposée par l'entrefer",
+            "Au point du cycle d'hystérésis où $B=0$ et $H=0$",
+            "À la valeur de saturation maximale du matériau ferromagnétique",
+            "Au point où la perméabilité $\\mu_r$ est maximale"
+        ],
+        "difficulty": 4,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le circuit impose une contrainte de type $H_a = -\\frac{e}{\\ell_a} \\frac{B_a}{\\mu_0}$, appelée droite de charge. Le point de fonctionnement réel est imposé par la compatibilité entre les propriétés intrinsèques de l'aimant (courbe $B(H)$) et la géométrie du circuit (droite de charge)."
+    },
+    {
+        "uuid": "q39",
+        "image_path": null,
+        "theme": "transformateurs",
+        "question": "Si l'on augmente la fréquence d'alimentation d'un transformateur (de 50 Hz à 60 Hz) tout en maintenant la tension efficace $U_{1,eff}$ constante, comment évolue le champ magnétique maximal $B_{max}$ ?",
+        "answers": [
+            "Il diminue, car selon la loi de Faraday $U \\approx 4,44 N f S B_{max}$, $B_{max}$ est inversement proportionnel à $f$",
+            "Il augmente, car la réactance augmente avec la fréquence",
+            "Il reste constant car $B_{max}$ dépend uniquement de la tension $U$",
+            "Il s'annule car le circuit devient capacitif"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La tension efficace primaire est reliée au flux par $U_{1} \\approx 4,44 N f B_{max} S$. Si $U_1$ et $f$ sont les paramètres, alors $B_{max} \\propto \\frac{U_1}{f}$. Une augmentation de $f$ à tension constante entraîne nécessairement une diminution de l'amplitude du champ magnétique dans le noyau."
+    },
+    {
+        "uuid": "q40",
+        "image_path": null,
+        "theme": "transformateurs",
+        "question": "Quelle est l'expression correcte de la puissance active $P_2$ fournie par un transformateur à une charge de facteur de puissance $\\cos(\\varphi)$ ?",
+        "answers": [
+            "$\\mathcal{P}_2 = U_{2,eff} I_{2,eff} \\cos(\\varphi)$",
+            "$\\mathcal{P}_2 = U_{2,eff} I_{2,eff} \\sin(\\varphi)$",
+            "$\\mathcal{P}_2 = U_{1,eff} I_{2,eff} \\cos(\\varphi)$",
+            "$\\mathcal{P}_2 = m \\cdot U_{1,eff} I_{1,eff}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La puissance active se définit par le produit des valeurs efficaces du courant et de la tension de la charge, multiplié par le facteur de puissance de cette même charge : $P = U I \\cos(\\varphi)$. La réponse B correspond à la puissance réactive, et les autres sont des confusions entre les grandeurs primaire et secondaire."
+    },
+    {
+        "uuid": "q41",
+        "image_path": null,
+        "theme": "transformateurs",
+        "question": "Dans le cadre de l'étude d'un transformateur parfait, si le rapport de transformation est défini par $m = \\frac{N_2}{N_1} = 0,12$ et qu'un essai en charge impose un courant au secondaire $I_2 = 20$ A, quelle est la valeur du courant au primaire $I_1$ ?",
+        "answers": [
+            "$I_1 = 2,4$ A",
+            "$I_1 = 166,7$ A",
+            "$I_1 = 20$ A",
+            "$I_1 = 0,12$ A"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour un transformateur parfait, la conservation de la puissance apparente impose $U_1 I_1 = U_2 I_2$. Avec $m = \\frac{U_2}{U_1} = \\frac{N_2}{N_1}$, on en déduit $I_1 = \\frac{I_2}{m} = m \\cdot I_2$ est faux. En réalité, $m = \\frac{U_2}{U_1} = \\frac{I_1}{I_2}$, donc $I_1 = m \\cdot I_2 = 0,12 \\times 20 = 2,4$ A. L'erreur classique est d'inverser le rapport $m$."
+    },
+    {
+        "uuid": "q42",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Lors de l'étude réelle d'un transformateur, on modélise les pertes au secondaire par une résistance ramenée $R'_b$. Quelle est l'équation de maille correcte reliant la tension à vide $\\underline{U_{20}}$ (tension idéale) et la tension en charge $\\underline{U_2}$ ?",
+        "answers": [
+            "$\\underline{U_2} = \\underline{U_{20}} - R'_b \\cdot \\underline{I_2}$",
+            "$\\underline{U_2} = \\underline{U_{20}} + R'_b \\cdot \\underline{I_2}$",
+            "$\\underline{U_2} = m \\cdot \\underline{U_1} - R'_b / \\underline{I_2}$",
+            "$\\underline{U_2} = R'_b \\cdot \\underline{I_1}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le modèle de Thévenin au secondaire place la résistance $R'_b$ en série avec la source idéale de tension $\\underline{U_{20}}$. Par convention de récepteur pour la charge, la loi d'Ohm généralisée s'écrit $\\underline{U_2} = \\underline{U_{20}} - R'_b \\underline{I_2}$. Une erreur de signe ici conduit à une tension supérieure à la tension à vide, ce qui est physiquement impossible pour un récepteur passif."
+    },
+    {
+        "uuid": "q43",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En considérant un transformateur modélisé par une résistance ramenée au secondaire $R'_b$ parcourue par un courant $I_{2,eff}$, quelle est l'expression de la puissance active dissipée par effet Joule dans cette résistance ?",
+        "answers": [
+            "$P = R'_b \\cdot I_{2,eff}^2$",
+            "$P = R'_b \\cdot I_{1,eff}^2$",
+            "$P = R'_b \\cdot U_{2,eff}^2$",
+            "$P = \\frac{U_{2,eff}^2}{R'_b}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La puissance dissipée par effet Joule est donnée par $P = R \\cdot I_{eff}^2$. Comme la résistance $R'_b$ est située dans le circuit secondaire, c'est le courant $I_{2,eff}$ qui la traverse. Les autres propositions confondent les variables ou appliquent la loi d'Ohm pour une puissance absorbée par une charge purement résistive de tension $U$."
+    },
+    {
+        "uuid": "q44",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Une charge inductive $Z$ au secondaire possède un facteur de puissance $\\cos(\\varphi)$ avec $\\varphi > 0$. Quelle est l'expression correcte de son impédance complexe $\\underline{Z}$ en notation exponentielle ?",
+        "answers": [
+            "$\\underline{Z} = Z e^{j\\varphi}$",
+            "$\\underline{Z} = Z \\cos(\\varphi) + jZ \\sin(\\varphi)$",
+            "$\\underline{Z} = Z e^{-j\\varphi}$",
+            "$\\underline{Z} = Z (\\cos(\\varphi) - j\\sin(\\varphi))$"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour une charge inductive, la tension est en avance sur le courant, donc $\\underline{Z} = Z e^{j\\varphi}$ avec $\\varphi > 0$. La forme algébrique est $Z \\cos(\\varphi) + j Z \\sin(\\varphi)$. Attention : la forme $e^{-j\\varphi}$ correspond à une charge capacitive."
+    },
+    {
+        "uuid": "q45",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Un moteur d'impédance $\\underline{Z}$ est branché au secondaire d'un transformateur de rapport $m$. Si l'on souhaite étudier le circuit du côté du primaire, quelle est l'impédance équivalente $\\underline{Z_p}$ à considérer en série avec la résistance de ligne $R$ ?",
+        "answers": [
+            "$\\underline{Z_p} = \\frac{\\underline{Z}}{m^2}$",
+            "$\\underline{Z_p} = m^2 \\underline{Z}$",
+            "$\\underline{Z_p} = m \\underline{Z}$",
+            "$\\underline{Z_p} = \\frac{\\underline{Z}}{m}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour ramener une impédance du secondaire vers le primaire, on utilise la relation $\\underline{Z_p} = \\frac{\\underline{U_1}}{\\underline{I_1}} = \\frac{\\underline{U_2}/m}{\\underline{I_2} \\cdot m} = \\frac{\\underline{Z}}{m^2}$. C'est une erreur classique de ne pas élever le rapport $m$ au carré."
+    },
+    {
+        "uuid": "q46",
+        "image_path": null,
+        "theme": "transformateurs",
+        "question": "En régime sinusoïdal, comment s'écrit le théorème d'Ampère pour un transformateur à noyau magnétique de longueur moyenne $l$ et de perméabilité relative $\\mu_r$ ?",
+        "answers": [
+            "$\\frac{\\underline{B} \\cdot l}{\\mu_0 \\mu_r} = N_1 \\underline{I_1} + N_2 \\underline{I_2}$",
+            "$\\underline{B} \\cdot l = \\mu_0 (N_1 \\underline{I_1} + N_2 \\underline{I_2})$",
+            "$N_1 \\underline{I_1} + N_2 \\underline{I_2} = 0$",
+            "$\\frac{\\underline{H} \\cdot l}{\\mu_r} = N_1 \\underline{I_1}$"
+        ],
+        "difficulty": 5,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le théorème d'Ampère s'écrit $\\oint \\vec{H} \\cdot d\\vec{l} = N_1 I_1 + N_2 I_2$. Avec $\\vec{B} = \\mu_0 \\mu_r \\vec{H}$, on obtient $\\frac{B l}{\\mu_0 \\mu_r} = \\sum N_i I_i$. L'absence de $\\mu_r$ dans le dénominateur ou l'oubli du signe selon le sens des bobinages sont les erreurs principales."
+    },
+    {
+        "uuid": "q47",
+        "image_path": null,
+        "theme": "circuits magnétiques",
+        "question": "Quelle est la justification physique de l'utilisation d'une géométrie torique pour un noyau magnétique dans les dispositifs d'étude ?",
+        "answers": [
+            "Elle permet de confiner le flux magnétique dans le noyau et d'assurer une bonne uniformité du champ $\\vec{B}$ dans la section",
+            "Elle permet d'annuler strictement le courant magnétisant",
+            "Elle permet d'éviter l'échauffement par effet Joule",
+            "Elle est plus facile à fabriquer industriellement"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le tore est une géométrie idéale car il n'y a pas de fuites magnétiques (le flux est confiné à l'intérieur) et la symétrie permet d'utiliser le théorème d'Ampère avec une grande simplicité pour obtenir un champ quasi uniforme sur une section droite."
+    },
+    {
+        "uuid": "q48",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Lors du tracé du cycle d'hystérésis, on mesure une tension $v_2$ aux bornes d'une bobine secondaire. Pourquoi doit-on intégrer ce signal pour obtenir $B(t)$ ?",
+        "answers": [
+            "Parce que $v_2(t) = -N_2 \\frac{d\\Phi}{dt}$ et $\\Phi = S \\cdot B(t)$, donc $B(t)$ est proportionnel à l'intégrale de $v_2(t)$",
+            "Pour supprimer le bruit thermique du capteur",
+            "Pour convertir une tension alternative en tension continue",
+            "Parce que la loi de Biot et Savart nécessite une intégration"
+        ],
+        "difficulty": 4,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La loi de Faraday lie la tension induite à la dérivée du flux magnétique. Pour obtenir le flux $\\Phi$ (et donc $B$), il est nécessaire d'effectuer une intégration temporelle du signal $v_2(t)$."
+    },
+    {
+        "uuid": "q49",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour qu'un circuit RC (filtre passe-bas) fonctionne comme un intégrateur idéal de tension $v_e$ vers $v_s$ à une fréquence $f$, quelle condition doit remplir la fréquence de coupure $f_c$ ?",
+        "answers": [
+            "$f_c \\ll f$",
+            "$f_c \\gg f$",
+            "$f_c = f$",
+            "$f_c = \\frac{f}{2\\pi}$"
+        ],
+        "difficulty": 5,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La fonction de transfert d'un RC est $\\underline{H} = \\frac{1}{1 + j f/f_c}$. Si $f \\gg f_c$, alors $\\underline{H} \\approx \\frac{1}{j f/f_c} = -j \\frac{f_c}{f}$, ce qui correspond à une opération d'intégration. Donc, il faut impérativement que $f_c$ soit très faible devant la fréquence du signal étudié."
+    },
+    {
+        "uuid": "q50",
+        "image_path": null,
+        "theme": "magnétostatique",
+        "question": "Quel est l'ordre de grandeur réaliste de l'induction magnétique terrestre au niveau du sol ?",
+        "answers": [
+            "$10^{-5}$ T",
+            "$10^{-2}$ T",
+            "$1$ T",
+            "$10^{-9}$ T"
+        ],
+        "difficulty": 1,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le champ magnétique terrestre est très faible, de l'ordre de $30$ à $60 \\mu$T, soit environ $0,5$ Gauss ou $5 \\times 10^{-5}$ T. Il est bien plus faible qu'un aimant de réfrigérateur (quelques mT) ou qu'un électroaimant de laboratoire (1 T)."
+    },
+    {
+        "uuid": "q51",
+        "image_path": null,
+        "theme": "milieux ferromagnétiques",
+        "question": "Parmi les éléments chimiques cités, quels sont les trois métaux purs qui présentent un caractère ferromagnétique à température ambiante ($T \\approx 293 \\text{ K}$) ?",
+        "answers": [
+            "Le fer ($Fe$), le cobalt ($Co$) et le nickel ($Ni$)",
+            "Le cuivre ($Cu$), l'aluminium ($Al$) et le fer ($Fe$)",
+            "L'or ($Au$), l'argent ($Ag$) et le platine ($Pt$)",
+            "Le fer ($Fe$), le plomb ($Pb$) et le zinc ($Zn$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le fer, le cobalt et le nickel sont les seuls éléments ferromagnétiques purs à température ambiante. Les autres propositions contiennent des matériaux diamagnétiques (Cu, Au, Ag, Zn, Pb) ou paramagnétiques (Al) qui ne présentent pas d'aimantation spontanée en l'absence de champ extérieur."
+    },
+    {
+        "uuid": "q52",
+        "image_path": null,
+        "theme": "transformateurs",
+        "question": "Dans le cadre de l'étude d'un transformateur de rapport de transformation $m = 1$ (transformateur d'isolement), quelle est l'utilité principale de ce composant ?",
+        "answers": [
+            "L'isolement galvanique : séparer physiquement et électriquement les masses de deux circuits",
+            "L'élévation de la tension par induction mutuelle pour le transport longue distance",
+            "Le redressement du signal alternatif pour obtenir une tension continue",
+            "La limitation du courant de court-circuit via une augmentation de la réactance"
+        ],
+        "difficulty": 2,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Un transformateur $1:1$ ne modifie pas la valeur efficace de la tension. Son intérêt majeur est l'isolement galvanique, qui supprime la continuité électrique entre le primaire et le secondaire, protégeant ainsi les utilisateurs contre les risques d'électrisation par contact indirect avec la terre."
+    },
+    {
+        "uuid": "q53",
+        "image_path": null,
+        "theme": "milieux ferromagnétiques",
+        "question": "Lors de l'étude des pertes dans un matériau ferromagnétique, si $W_{cycle}$ est l'énergie volumique dissipée par un cycle d'hystérésis, quelle est la puissance volumique moyenne $P_v$ dissipée à une fréquence $f$ ?",
+        "answers": [
+            "$P_v = f \\cdot W_{cycle}$",
+            "$P_v = \\frac{W_{cycle}}{f}$",
+            "$P_v = W_{cycle} \\cdot V_{total}$",
+            "$P_v = \\int_0^T \\vec{j} \\cdot \\vec{E} dt$"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La puissance est définie comme une énergie par unité de temps. Si $W_{cycle}$ est l'énergie dissipée par unité de volume pour un cycle complet, le nombre de cycles par seconde est la fréquence $f$. Ainsi, la puissance volumique est le produit $f \\cdot W_{cycle}$ (exprimée en $W/m^3$)."
+    },
+    {
+        "uuid": "q54",
+        "image_path": null,
+        "theme": "magnétostatique",
+        "question": "Dans le modèle classique de Bohr, un électron de charge $-e$ décrit une orbite circulaire de rayon $r$ à la vitesse $v$ avec une période $T$. Quel est le courant équivalent $i$ associé à ce mouvement ?",
+        "answers": [
+            "$i = -\\frac{e}{T}$",
+            "$i = e \\cdot T$",
+            "$i = -\\frac{e}{2\\pi r}$",
+            "$i = -e \\cdot v$"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Par définition, l'intensité est le débit de charge : $i = dq/dt$. En un point donné de l'orbite, la charge $-e$ passe une fois par période $T$, soit $i = -e/T$. Les autres propositions sont soit dimensionnellement fausses, soit ignorent la périodicité du mouvement."
+    },
+    {
+        "uuid": "q55",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "En régime quasi-stationnaire (ARQS), quelle forme prend l'équation de Maxwell-Ampère macroscopique faisant intervenir le vecteur excitation magnétique $\\vec{H}$ ?",
+        "answers": [
+            "$\\vec{rot}(\\vec{H}) = \\vec{j}_{libres}$",
+            "$\\vec{rot}(\\vec{H}) = \\vec{0}$",
+            "$div(\\vec{H}) = 0$",
+            "$\\vec{rot}(\\vec{H}) = \\vec{j}_{libres} + \\vec{j}_{lies}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Milieux ferromagnétiques et transformateur",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Dans l'ARQS, le terme de courant de déplacement $\\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$ est négligeable devant la densité de courant de conduction. Par construction, le vecteur $\\vec{H}$ est défini pour que son rotationnel soit égal aux seules sources de courants libres : $\\vec{rot}(\\vec{H}) = \\vec{j}_{libres}$."
+    }
+]

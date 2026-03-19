@@ -1,0 +1,1682 @@
+[
+    {
+        "uuid": "disp-001",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude de la propagation d'ondes dans un milieu continu, quelle est la définition rigoureuse d'un milieu dispersif ?",
+        "answers": [
+            "La vitesse de groupe $v_g$ dépend de la fréquence $f$.",
+            "La vitesse de phase $v_{\\varphi}$ dépend de la pulsation $\\omega$ (ou du nombre d'onde $k$).",
+            "L'onde subit une atténuation exponentielle au cours de sa propagation.",
+            "Le milieu est caractérisé par un indice de réfraction indépendant de $\\omega$."
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Un milieu est dit dispersif si la relation de dispersion $\\omega(k)$ n'est pas linéaire, ce qui implique que la vitesse de phase $v_{\\varphi} = \\omega/k$ dépend de $k$ (ou de $\\omega$). L'atténuation est liée à l'absorption, mais ne définit pas la dispersion en soi.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-002",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Considérons une onde plane progressive de la forme $\\vec{E} = E_0 \\cos(\\omega t - k z)\\vec{u}_x$. Quelle est la relation correcte définissant la vitesse de phase $v_{\\varphi}$ dans ce milieu ?",
+        "answers": [
+            "$v_{\\varphi} = \\frac{dk}{d\\omega}$",
+            "$v_{\\varphi} = \\omega \\cdot k$",
+            "$v_{\\varphi} = \\frac{\\omega}{\\text{Re}(k)}$",
+            "$v_{\\varphi} = \\sqrt{\\frac{\\omega}{k}}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 2,
+        "explication": "La vitesse de phase représente la vitesse de déplacement des fronts d'onde (points à phase constante). Pour une onde complexe, elle est définie par le rapport entre la pulsation $\\omega$ et la partie réelle du vecteur d'onde $k$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-003",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'étude de la propagation d'un paquet d'ondes, quelle relation définit la vitesse de groupe $v_g$ ?",
+        "answers": [
+            "$v_g = \\frac{d\\omega}{dk}$",
+            "$v_g = \\frac{\\omega}{k}$",
+            "$v_g = \\frac{d^2\\omega}{dk^2}$",
+            "$v_g = \\frac{1}{\\sqrt{\\epsilon_0 \\mu_0}}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "La vitesse de groupe correspond à la vitesse à laquelle l'enveloppe du paquet d'ondes se propage. Elle est mathématiquement définie comme la dérivée de la relation de dispersion $\\omega$ par rapport à $k$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-004",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans un milieu non absorbant, quelle interprétation physique donne-t-on à la vitesse de groupe $v_g$ ?",
+        "answers": [
+            "La vitesse de propagation des surfaces d'onde (ou surfaces équiphases).",
+            "La vitesse de propagation de l'enveloppe du signal et donc de l'énergie et de l'information.",
+            "La vitesse de vibration des molécules du milieu autour de leur position d'équilibre.",
+            "La vitesse à laquelle la phase de l'onde tourne dans le plan complexe."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "La vitesse de phase décrit les fronts d'onde. La vitesse de groupe, en l'absence d'absorption, coïncide avec la vitesse de propagation de l'énergie (vecteur de Poynting moyen) et transporte l'information du signal.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-005",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Skin_depth.svg",
+        "theme": "électromagnétisme",
+        "question": "Lorsqu'une onde plane électromagnétique pénètre dans un conducteur ohmique de conductivité $\\gamma$, comment varie l'amplitude du champ électrique $E$ ?",
+        "answers": [
+            "Elle décroît linéairement avec la distance $z$ selon $E(z) = E_0(1 - z/\\delta)$.",
+            "Elle reste constante si le métal est considéré comme un conducteur parfait ($\\gamma \\to \\infty$).",
+            "Elle décroît exponentiellement selon $e^{-z/\\delta}$ où $\\delta$ est l'épaisseur de peau.",
+            "Elle subit une oscillation harmonique sans atténuation d'amplitude."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 2,
+        "explication": "Dans un métal, le vecteur d'onde $k$ est complexe : $k = k' - i k''$. La partie imaginaire $k'' = 1/\\delta$ conduit à une atténuation exponentielle de l'amplitude du champ au sein du matériau.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-006",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression correcte de l'épaisseur de peau $\\delta$ dans un métal de conductivité $\\gamma$, pour une onde de pulsation $\\omega$ ?",
+        "answers": [
+            "$\\delta = \\sqrt{\\frac{2}{\\omega \\mu_0 \\gamma}}$",
+            "$\\delta = \\sqrt{\\frac{\\omega \\mu_0 \\gamma}{2}}$",
+            "$\\delta = \\frac{1}{\\mu_0 \\gamma c}$",
+            "$\\delta = \\frac{1}{\\sqrt{\\omega \\mu_0 \\gamma}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "L'épaisseur de peau est obtenue en résolvant l'équation de diffusion dans le conducteur. Elle caractérise la profondeur à laquelle l'onde est atténuée d'un facteur $1/e$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-007",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour le cuivre ($\\gamma \\approx 6 \\times 10^7 \\text{ S/m}$) à la fréquence du secteur $f = 50 \\text{ Hz}$, quel est l'ordre de grandeur de l'épaisseur de peau $\\delta$ ?",
+        "answers": [
+            "$\\approx 9 \\text{ mm}$",
+            "$\\approx 65 \\mu\\text{m}$",
+            "$\\approx 1 \\text{ m}$",
+            "$\\approx 2 \\text{ cm}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "En utilisant $\\delta = \\sqrt{2/(\\omega \\mu_0 \\gamma)}$ avec $\\omega = 2\\pi f$, on obtient environ 9 mm. C'est une valeur importante qui justifie que, pour le courant alternatif basse fréquence, le courant circule dans toute la section du fil (pas d'effet de peau marqué).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-008",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pourquoi, dans l'étude des ondes dans un métal, peut-on considérer la densité de charge volumique $\\rho$ comme nulle ?",
+        "answers": [
+            "Parce que le métal est globalement électriquement neutre et isolant.",
+            "Parce que le temps de relaxation $\\tau = \\epsilon_0 / \\gamma$ est extrêmement court ($10^{-18} \\text{ s}$), assurant un retour immédiat à l'équilibre.",
+            "Parce que les électrons sont immobiles en régime alternatif.",
+            "Parce que la loi d'Ohm locale $\\vec{j} = \\gamma \\vec{E}$ interdit toute charge en volume."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Tout excès de charge dans un conducteur est neutralisé en un temps de relaxation $\\tau$ très court devant la période de l'onde, rendant $\\rho = 0$ à l'échelle macroscopique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-009",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans l'approximation des métaux (régime des basses fréquences), quel terme néglige-t-on dans l'équation de Maxwell-Ampère devant le courant de conduction ?",
+        "answers": [
+            "Le courant de convection.",
+            "Le courant de déplacement $\\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$.",
+            "Le terme de source $\\mu_0 \\vec{j}$.",
+            "La dérivée temporelle du champ magnétique."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "La comparaison des ordres de grandeur entre courant de conduction $\\gamma E$ et courant de déplacement $\\epsilon_0 \\omega E$ montre que pour les métaux, $\\gamma \\gg \\epsilon_0 \\omega$, permettant de négliger le courant de déplacement.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-010",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est la structure de l'équation de propagation du champ électrique $\\vec{E}$ dans un métal ?",
+        "answers": [
+            "Une équation de d'Alembert : $\\Delta \\vec{E} - \\frac{1}{c^2} \\frac{\\partial^2 \\vec{E}}{\\partial t^2} = 0$.",
+            "Une équation de diffusion (ou équation de la chaleur) : $\\Delta \\vec{E} - \\mu_0 \\gamma \\frac{\\partial \\vec{E}}{\\partial t} = 0$.",
+            "Une équation de Schrödinger : $i \\hbar \\frac{\\partial \\vec{E}}{\\partial t} = \\hat{H}\\vec{E}$.",
+            "Une équation de Poisson : $\\Delta \\vec{E} = -\\frac{\\rho}{\\epsilon_0}$."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "En négligeant le courant de déplacement, l'équation de Maxwell-Ampère devient $\\vec{\\text{rot}} \\vec{B} = \\mu_0 \\gamma \\vec{E}$. En prenant le rotationnel et en utilisant Maxwell-Faraday, on obtient une équation de diffusion, expliquant pourquoi les ondes ne se propagent pas mais s'atténuent rapidement.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-011",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude de la propagation d'une onde électromagnétique dans un plasma non magnétisé (modèle de Drude), comment définit-on la pulsation plasma $\\omega_P$ ?",
+        "answers": [
+            "$\\omega_P = \\sqrt{\\frac{n_0 e^2}{m \\epsilon_0}}$",
+            "$\\omega_P = \\frac{n_0 e^2}{m c}$",
+            "$\\omega_P = \\sqrt{\\frac{m \\epsilon_0}{n_0 e^2}}$",
+            "$\\omega_P = \\frac{n_0 e^2}{m \\epsilon_0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "La pulsation plasma est obtenue en cherchant la fréquence propre d'oscillation des électrons libres dans le champ électrique qu'ils créent eux-mêmes lors d'un déplacement collectif. L'analyse dimensionnelle et la résolution de l'équation du mouvement $m \\ddot{x} = -eE$ couplée au théorème de Gauss donnent $\\omega_P = \\sqrt{n_0 e^2 / (m \\epsilon_0)}$. Les autres propositions sont dimensionnellement fausses ou correspondent à des erreurs de calcul de racine carrée.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-012",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans l'étude d'une onde électromagnétique plane incidente sur un plasma, que se passe-t-il lorsque la pulsation de l'onde vérifie $\\omega < \\omega_P$ ?",
+        "answers": [
+            "L'onde est totalement transmise sans perte.",
+            "L'onde est évanescente (réflexion totale, pas de transmission d'énergie moyenne).",
+            "L'onde est absorbée par effet Joule.",
+            "L'onde se propage sans atténuation mais avec une vitesse de phase infinie."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Lorsque $\\omega < \\omega_P$, le vecteur d'onde $k$ devient imaginaire pur ($k^2 = (\\omega^2 - \\omega_P^2)/c^2 < 0$). L'onde ne peut plus se propager : elle devient évanescente. L'énergie incidente est alors totalement réfléchie par le plasma, qui se comporte comme un miroir.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-013",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour une onde électromagnétique se propageant dans un plasma ($ \\omega > \\omega_P $), la relation $v_{\\varphi} \\cdot v_g = c^2$ est-elle vérifiée ?",
+        "answers": [
+            "Oui.",
+            "Non, cela n'arrive que dans le vide.",
+            "Non, $v_{\\varphi} \\cdot v_g = c^2 / n^2$.",
+            "Seulement à très basse fréquence."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "La relation de dispersion est $\\omega^2 = \\omega_P^2 + c^2 k^2$. On en déduit $v_{\\varphi} = \\omega/k$ et $v_g = d\\omega/dk = c^2 k / \\omega$. En multipliant les deux, on obtient $v_{\\varphi} \\cdot v_g = (\\omega/k) \\cdot (c^2 k / \\omega) = c^2$. Cette propriété est caractéristique des milieux dispersifs obéissant à cette relation de dispersion.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-014",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression de l'indice de réfraction $n$ d'un plasma pour $\\omega > \\omega_P$ ?",
+        "answers": [
+            "$n = \\sqrt{1 + \\frac{\\omega_P^2}{\\omega^2}}$",
+            "$n = \\sqrt{1 - \\frac{\\omega_P^2}{\\omega^2}}$",
+            "$n = 1 - \\frac{\\omega_P}{\\omega}$",
+            "$n = \\sqrt{\\frac{\\omega^2}{\\omega_P^2} - 1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Par définition $n = ck/\\omega$. À partir de la relation de dispersion $\\omega^2 = \\omega_P^2 + c^2 k^2$, on extrait $k = \\frac{1}{c} \\sqrt{\\omega^2 - \\omega_P^2}$. D'où $n = \\frac{c}{\\omega} \\cdot \\frac{1}{c} \\sqrt{\\omega^2 - \\omega_P^2} = \\sqrt{1 - \\frac{\\omega_P^2}{\\omega^2}}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-015",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pourquoi le plasma est-il dit 'transparent' pour $\\omega > \\omega_P$ en régime stationnaire ?",
+        "answers": [
+            "Car $\\vec{j}$ et $\\vec{E}$ sont en phase.",
+            "Car la conductivité complexe est imaginaire pure, donc $\\langle \\vec{j} \\cdot \\vec{E} \\rangle = 0$.",
+            "Car il n'y a pas d'électrons libres.",
+            "Car le plasma se comporte comme un conducteur parfait."
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "La transparence implique qu'il n'y a pas de dissipation moyenne d'énergie. La puissance volumique moyenne dissipée est $\\mathcal{P} = \\frac{1}{2} \\text{Re}(\\vec{j} \\cdot \\vec{E}^*)$. Dans un plasma sans collisions, $\\vec{j} = \\sigma \\vec{E}$ avec $\\sigma$ imaginaire pur. Ainsi, $\\vec{j}$ et $\\vec{E}$ sont en quadrature de phase, ce qui conduit à une dissipation moyenne nulle.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-016",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/1/14/Heat_diffusion.svg",
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'étude d'un milieu solide homogène, quelle est l'équation de la diffusion thermique unidimensionnelle sans source de chaleur interne ?",
+        "answers": [
+            "$\\frac{\\partial T}{\\partial t} = D_{th} \\frac{\\partial^2 T}{\\partial x^2}$",
+            "$\\frac{\\partial^2 T}{\\partial t^2} = D_{th} \\frac{\\partial^2 T}{\\partial x^2}$",
+            "$\\frac{\\partial T}{\\partial t} + v \\frac{\\partial T}{\\partial x} = 0$",
+            "$\\frac{\\partial T}{\\partial t} = D_{th} \\frac{\\partial T}{\\partial x}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "L'équation de la chaleur est une équation aux dérivées partielles du second ordre en espace et du premier ordre en temps. La proposition 2 correspond à une équation d'onde (D'Alembert), et la proposition 3 correspond à une équation de convection.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-017",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Comment définit-on la diffusivité thermique $D_{th}$ à partir de la conductivité thermique $\\lambda$, de la masse volumique $\\rho$ et de la capacité thermique massique $c$ ?",
+        "answers": [
+            "$D_{th} = \\lambda \\cdot \\rho \\cdot c$",
+            "$D_{th} = \\frac{\\lambda}{\\rho c}$",
+            "$D_{th} = \\frac{\\rho c}{\\lambda}$",
+            "$D_{th} = \\frac{\\lambda \\rho}{c}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "La diffusivité thermique est définie par le rapport entre la capacité du milieu à conduire la chaleur ($\\lambda$) et sa capacité à emmagasiner l'énergie thermique ($\\rho c$). Son unité est le $m^2 \\cdot s^{-1}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-018",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une onde thermique de pulsation $\\omega$ se propageant dans un milieu semi-infini, quelle est l'expression de la longueur de pénétration $\\delta$ (ou épaisseur de peau thermique) ?",
+        "answers": [
+            "$\\delta = \\sqrt{\\frac{2 D_{th}}{\\omega}}$",
+            "$\\delta = \\sqrt{\\frac{D_{th}}{\\omega}}$",
+            "$\\delta = \\frac{2 D_{th}}{\\omega}$",
+            "$\\delta = \\sqrt{2 D_{th} \\omega}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "En cherchant une solution de type onde plane amortie $T(x,t) = T_0 e^{-x/\\delta} \\cos(\\omega t - x/\\delta + \\phi)$, on montre par injection dans l'équation de la chaleur que le coefficient d'atténuation est inversement proportionnel à $\\delta = \\sqrt{2 D_{th} / \\omega}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-019",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quel est le déphasage $\\Delta \\phi$ entre l'oscillation de température en surface ($x=0$) et celle en profondeur $x$ pour une onde thermique ?",
+        "answers": [
+            "$\\Delta \\phi = \\omega t$",
+            "$\\Delta \\phi = -x/\\delta$",
+            "$\\Delta \\phi = \\pi/2$",
+            "$\\Delta \\phi = -x \\delta$"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "La solution de l'équation de la chaleur est de la forme $e^{-x/\\delta} e^{j(\\omega t - x/\\delta)}$. Le terme de phase est $(\\omega t - x/\\delta)$. Le retard de phase par rapport à la surface est donc proportionnel à la distance $x$ divisée par la longueur de pénétration $\\delta$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-020",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Si la température de surface d'un mur oscille avec une période de 24h, l'amplitude thermique à une profondeur $x = 3\\delta$ est approximativement :",
+        "answers": [
+            "Réduite d'un facteur $e^{-3} \\approx 0,05$.",
+            "Identique à celle de la surface.",
+            "Nulle car l'onde est totalement absorbée.",
+            "Réduite d'un facteur $3$."
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "L'amplitude de l'onde thermique varie selon un facteur exponentiel décroissant en $e^{-x/\\delta}$. À une distance $x = 3\\delta$, l'amplitude est donc multipliée par $e^{-3} \\approx 0,0497$. Il s'agit d'une atténuation très rapide, caractéristique de la diffusion thermique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-021",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 1: Quelle est l'orientation optimale d'un cadre pour capter une onde plane de champ $\\vec{B}$ ?",
+        "answers": [
+            "Le plan du cadre doit être parallèle à $\\vec{B}$.",
+            "Le plan du cadre doit être perpendiculaire à $\\vec{B}$.",
+            "Le plan du cadre doit être incliné à $45^\\circ$."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-022",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 1: La f.e.m. efficace $U_{eff}$ aux bornes d'un cadre de $N$ spires de section $S$ est proportionnelle à :",
+        "answers": [
+            "La fréquence $f$.",
+            "Le carré de la fréquence $f^2$.",
+            "L'inverse de la fréquence $1/f$."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-023",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/0/05/Coaxial_cable_cutaway.svg",
+        "theme": "électromagnétisme",
+        "question": "Ex 2: Dans un câble coaxial vide, quelle est la dépendance spatiale radiale du champ électrique $\\vec{E} = f(r) \\cos(\\omega t - kz) \\vec{u}_r$ ?",
+        "answers": [
+            "$f(r) \\propto r$",
+            "$f(r) \\propto 1/r$",
+            "$f(r) \\propto 1/r^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-024",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 2: Pour l'onde dans le câble coaxial (mode TEM), la relation de dispersion est :",
+        "answers": [
+            "$\\omega = k c$",
+            "$\\omega^2 = k^2 c^2 + \\omega_c^2$",
+            "$\\omega = k^2 D$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-025",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 3: Entre deux plans conducteurs $z=0$ et $z=a$, quelle est la condition de propagation sur $\\omega$ ?",
+        "answers": [
+            "$\\omega > \\frac{\\pi c}{a}$",
+            "$\\omega < \\frac{\\pi c}{a}$",
+            "Toutes les fréquences passent."
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-026",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 3: Dans ce guide d'onde, comment se compare la vitesse de phase $v_{\\varphi}$ à $c$ ?",
+        "answers": [
+            "$v_{\\varphi} < c$",
+            "$v_{\\varphi} = c$",
+            "$v_{\\varphi} > c$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-027",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 5: Quelle est la valeur moyenne temporelle du vecteur de Poynting $\\langle \\vec{\\Pi} \\rangle$ à la surface d'un métal ($z=0$) ?",
+        "answers": [
+            "$\\frac{E_0^2}{4} \\sqrt{\\frac{2 \\gamma}{\\mu_0 \\omega}} \\vec{u}_z$",
+            "$\\frac{E_0^2}{2 \\mu_0 c} \\vec{u}_z$",
+            "$\\vec{0}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-028",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 5: Le déphasage entre le champ électrique et le champ magnétique dans un conducteur ohmique est de :",
+        "answers": [
+            "$0$ (en phase)",
+            "$\\pi/4$",
+            "$\\pi/2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-029",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 6: Pourquoi une plaque de métal bloque-t-elle les ondes de téléphone (2 GHz) ?",
+        "answers": [
+            "Car l'épaisseur de peau ($\\sim 2 \\mu m$) est très inférieure à l'épaisseur de la plaque.",
+            "Car le métal réfléchit l'onde par diffraction.",
+            "Car le téléphone est en court-circuit."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-030",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Ex 7: Dans une plaque de cuisson à induction, la puissance dissipée est proportionnelle à :",
+        "answers": [
+            "La fréquence $f$.",
+            "Le carré de la fréquence $f^2$ (via $\\omega^2 \\delta$).",
+            "L'inverse de la fréquence $1/f$."
+        ],
+        "difficulty": 4,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-031",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude d'une corde vibrante soumise à des frottements fluides modélisés par une force de rappel visqueux, quelle est la relation entre la vitesse de phase $v_{\\varphi}$ et la vitesse de groupe $v_g$ ?",
+        "answers": [
+            "$v_g < v_{\\varphi}$ (milieu dispersif normal)",
+            "$v_g > v_{\\varphi}$ (milieu dispersif anormal)",
+            "$v_g = v_{\\varphi}$ (milieu non dispersif)",
+            "$v_g$ et $v_{\\varphi}$ n'ont aucune relation définie"
+        ],
+        "difficulty": 4,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "La présence de frottements induit un terme dissipatif dans l'équation d'onde, rendant le milieu dispersif. Pour une corde avec frottements, la relation de dispersion $\\omega(k)$ est telle que la courbure est orientée vers le bas, impliquant $v_g = d\\omega/dk < \\omega/k = v_{\\varphi}$. C'est le cas classique de la dispersion normale.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-032",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Un paquet d'ondes possède une extension temporelle $\\Delta t$. Selon le principe d'incertitude de Fourier, quelle est l'estimation de son extension spectrale $\\Delta f$ ?",
+        "answers": [
+            "$\\Delta f \\approx 1/\\Delta t$",
+            "$\\Delta f \\approx \\Delta t$",
+            "$\\Delta f \\approx \\sqrt{\\Delta t}$",
+            "$\\Delta f \\approx 2\\pi / \\Delta t$"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "D'après les propriétés de la transformée de Fourier, l'étalement temporel et fréquentiel sont liés par une relation d'inversion : une impulsion brève dans le temps nécessite une large bande de fréquences pour être reconstruite. L'ordre de grandeur est bien $\\Delta f \\cdot \\Delta t \\approx 1$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-033",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'approximation du modèle du conducteur parfait dans un métal est définie par quelle limite sur la conductivité électrique $\\gamma$ ?",
+        "answers": [
+            "$\\gamma \\to 0$ (isolant)",
+            "$\\gamma \\to \\infty$ (conducteur parfait)",
+            "$\\delta \\to \\infty$ (épaisseur de peau infinie)",
+            "$\\gamma \\approx \\varepsilon_0 \\omega$"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Un conducteur parfait est défini par une conductivité infinie, ce qui implique que le champ électrique à l'intérieur du métal doit être nul pour maintenir un courant fini ($\\vec{j} = \\gamma \\vec{E}$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-034",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un métal parfait soumis à une onde électromagnétique, quelle est la valeur du champ électromagnétique intérieur ?",
+        "answers": [
+            "Le champ est uniforme et constant.",
+            "Le champ est identiquement nul.",
+            "Le champ est oscillant sans atténuation.",
+            "Le champ est purement magnétique."
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Dans un conducteur parfait, les électrons se déplacent instantanément pour annuler tout champ électrique interne. Par les équations de Maxwell, si $\\vec{E}=0$, alors $\\partial \\vec{B}/\\partial t = -\\vec{\\text{rot}} \\vec{E} = 0$. Le champ est donc exclu du conducteur (effet Meissner partiel ou blindage électrostatique).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-035",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Lorsqu'un courant alternatif parcourt un conducteur réel, l'effet de peau se traduit par une répartition du courant telle que :",
+        "answers": [
+            "Il se concentre au centre du conducteur pour minimiser l'énergie.",
+            "Il circule préférentiellement dans une épaisseur $\\delta$ près de la surface.",
+            "Il est uniformément réparti sur toute la section.",
+            "Il ne circule qu'à la surface exacte (épaisseur nulle)."
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "L'effet de peau est dû aux courants induits par le champ magnétique variable, qui s'opposent à la pénétration du champ dans le conducteur. La densité de courant décroît exponentiellement avec la profondeur selon une échelle caractéristique $\\delta$ (épaisseur de peau).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-036",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le modèle de Drude pour la conduction, pour un électron de vitesse $\\vec{v}$ dans un conducteur, quelle force est négligée devant la force électrique $\\vec{F}_e = q\\vec{E}$ ?",
+        "answers": [
+            "La force gravitationnelle $m\\vec{g}$.",
+            "La force de Lorentz magnétique $\\vec{F}_m = q\\vec{v} \\wedge \\vec{B}$.",
+            "La force de viscosité effective.",
+            "La force de pression de radiation."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Le rapport entre la force magnétique et la force électrique est de l'ordre de $v/c$. Pour des vitesses non relativistes, $v \\ll c$, donc la force magnétique est négligeable devant la force électrique, sauf dans des conditions de champs magnétiques extrêmement intenses.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-037",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un plasma, si la fréquence de l'onde incidente vérifie $\\omega \\gg \\omega_P$, comment se comporte le milieu vis-à-vis de l'onde ?",
+        "answers": [
+            "Le milieu est opaque (réflexion totale).",
+            "Le milieu se comporte comme le vide avec un indice $n \\approx 1$.",
+            "Le milieu absorbe totalement l'onde.",
+            "Le milieu devient un supraconducteur."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "La relation de dispersion dans un plasma est $\\omega^2 = \\omega_P^2 + k^2c^2$. Si $\\omega \\gg \\omega_P$, alors $\\omega \\approx kc$, ce qui correspond à la propagation dans le vide. L'indice $n = ck/\\omega$ tend vers 1.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-038",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'ionosphère réfléchit les ondes radio dont la fréquence est inférieure à une fréquence critique. Cette fréquence correspond à :",
+        "answers": [
+            "La fréquence plasma $f_P$.",
+            "La fréquence de Larmor.",
+            "La fréquence de collision des électrons.",
+            "La fréquence de coupure du guide d'onde terrestre."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Lorsque $f < f_P$, le nombre d'onde $k$ devient imaginaire pur. L'onde ne se propage pas dans le milieu et est intégralement réfléchie. C'est ce mécanisme qui permet la propagation longue distance des ondes radio en les faisant 'rebondir' sur l'ionosphère.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-039",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour permettre la communication avec un satellite en traversant l'ionosphère, quelle condition doit respecter la fréquence $f$ de l'onde ?",
+        "answers": [
+            "$f < f_P$",
+            "$f > f_P$",
+            "$f = f_P$",
+            "$f = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Pour que le signal traverse l'ionosphère sans être réfléchi, il faut que le milieu soit transparent pour l'onde, ce qui nécessite $\\omega > \\omega_P$, soit $f > f_P$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-040",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cas évanescent où $\\omega < \\omega_P$, quelle est la valeur du vecteur de Poynting moyen $\\langle \\vec{\\Pi} \\rangle$ transporté par l'onde dans le plasma ?",
+        "answers": [
+            "$\\vec{0}$",
+            "Un vecteur constant et non nul.",
+            "Un vecteur décroissant linéairement avec la distance.",
+            "Un vecteur pointant vers la source."
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Pour $\\omega < \\omega_P$, l'onde est évanescente : le nombre d'onde $k$ est imaginaire pur ($k = i\\kappa$). Le champ électrique et le champ magnétique sont déphasés de $\\pi/2$, ce qui conduit à une puissance moyenne transmise nulle. L'énergie ne se propage pas dans le milieu.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-041",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'étude de la propagation d'une onde thermique sinusoïdale dans un sol semi-infini, la température moyenne $T_0$ du sol est-elle affectée par l'onde thermique en profondeur ?",
+        "answers": [
+            "Oui, elle augmente avec la profondeur.",
+            "Non, elle reste constante.",
+            "Elle diminue exponentiellement.",
+            "Elle devient nulle en profondeur."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "L'équation de la chaleur $\\frac{\\partial T}{\\partial t} = D \\Delta T$ est linéaire. La solution est la somme d'une composante stationnaire (moyenne temporelle $T_0$) et d'une composante fluctuante (l'onde thermique). L'onde thermique s'amortit exponentiellement avec la profondeur, mais n'altère pas la valeur moyenne $T_0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-042",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une variation thermique saisonnière du sol (période $P = 365$ jours), l'épaisseur de peau thermique $\\delta$ (profondeur à laquelle l'amplitude est divisée par $e$) est environ :",
+        "answers": [
+            "11 cm",
+            "2,1 m",
+            "10 m",
+            "50 cm"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "L'épaisseur de peau est donnée par $\\delta = \\sqrt{\\frac{2D}{\\omega}}$ avec $\\omega = \\frac{2\\pi}{P}$. Pour le sol, avec $D \\approx 5 \\cdot 10^{-7} \\, m^2 \\cdot s^{-1}$, un calcul numérique donne $\\delta \\approx 2,1 \\, m$. Une erreur classique est d'oublier la racine carrée ou la conversion de la période en secondes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-043",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Soit un milieu absorbant où le nombre d'onde complexe s'écrit $\\underline{k} = k_1 + i k_2$. Pour une onde se propageant selon la direction $x > 0$ et s'atténuant, quelle condition sur $k_2$ est nécessaire ?",
+        "answers": [
+            "$k_2 > 0$ pour éviter la divergence.",
+            "$k_2 < 0$ pour assurer une atténuation.",
+            "$k_1 = 0$ pour une onde stationnaire.",
+            "$k_2 = 0$ en tout point."
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "L'onde s'écrit $\\exp(i(\\omega t - \\underline{k}x)) = \\exp(i(\\omega t - k_1 x) + k_2 x)$. Pour que l'onde soit atténuée en $x > 0$, le terme exponentiel doit être décroissant, soit $\\exp(k_2 x)$ avec $k_2 < 0$. Attention à ne pas confondre avec la convention de signe de l'onde.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-044",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "D'après les principes de la relativité restreinte, quelle célérité ne peut être dépassée par une information physique (ou un signal) dans le vide ?",
+        "answers": [
+            "La vitesse de phase $v_{\\varphi}$.",
+            "La vitesse de groupe $v_g$.",
+            "La vitesse de phase et la vitesse de groupe.",
+            "Aucune des deux, seule la vitesse de phase est limitée."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "La vitesse de groupe $v_g$ représente la vitesse de propagation de l'enveloppe du paquet d'ondes, et donc de l'énergie. C'est elle qui est limitée par $c$. La vitesse de phase $v_{\\varphi}$ peut, quant à elle, être supérieure à $c$ sans violer la causalité.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-045",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un plasma, lors de la propagation d'une onde électromagnétique, quelle vitesse caractérise le transport de l'énergie ?",
+        "answers": [
+            "La vitesse de phase $v_{\\varphi}$.",
+            "La vitesse de groupe $v_g$.",
+            "La célérité $c$ dans le vide.",
+            "La vitesse de dérive des électrons."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Dans un milieu dispersif comme un plasma, l'énergie d'une onde se déplace à la vitesse de groupe $v_g = \\frac{d\\omega}{dk}$. La vitesse de phase $v_{\\varphi} = \\frac{\\omega}{k}$ est toujours supérieure à $c$ dans un plasma, ce qui confirme qu'elle ne transporte pas l'information.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-046",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'unité SI de la conductivité électrique $\\gamma$ ?",
+        "answers": [
+            "$\\Omega \\cdot m$",
+            "$\\Omega^{-1} \\cdot m^{-1}$ (ou $S \\cdot m^{-1}$)",
+            "$V \\cdot m^{-1}$",
+            "$A \\cdot m^{-2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "La loi d'Ohm locale est $\\vec{j} = \\gamma \\vec{E}$. Comme $\\vec{j}$ est en $A \\cdot m^{-2}$ et $\\vec{E}$ en $V \\cdot m^{-1}$, on a $\\gamma = \\frac{j}{E}$ en $A \\cdot V^{-1} \\cdot m^{-1} = \\Omega^{-1} \\cdot m^{-1} = S \\cdot m^{-1}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-047",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'ARQS (Approximation des Régimes Quasi-Stationnaires) appliquée à un conducteur ohmique, comment se simplifie l'équation de Maxwell-Ampère ?",
+        "answers": [
+            "$\\vec{rot} \\vec{B} = \\mu_0 \\vec{j}$",
+            "$\\vec{rot} \\vec{B} = \\mu_0 \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$",
+            "$\\vec{rot} \\vec{B} = \\vec{0}$",
+            "$\\vec{div} \\vec{B} = \\mu_0 \\vec{j}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Dans l'ARQS conducteur, le courant de conduction $\\vec{j} = \\gamma \\vec{E}$ prédomine largement sur le courant de déplacement $\\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$. Le terme en $\\frac{\\partial E}{\\partial t}$ est donc négligé.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-048",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le modèle d'un métal conducteur, le vecteur d'onde complexe est $\\underline{k} = \\frac{1-i}{\\delta}$. Que traduit la partie réelle de $\\underline{k}$ ?",
+        "answers": [
+            "Une propagation sans atténuation.",
+            "Un déphasage de l'onde entre deux points distants.",
+            "Une onde purement stationnaire sans propagation.",
+            "L'absence d'onde dans le métal."
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Avec $\\underline{k} = k_1 + i k_2$, le terme spatial est $\\exp(-i \\underline{k}x) = \\exp(-i k_1 x) \\exp(k_2 x)$. La partie réelle $k_1$ est responsable de la propagation (variation de phase) et la partie imaginaire $k_2$ est responsable de l'atténuation (effet de peau).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-049",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression de la puissance volumique dissipée par effet Joule dans un milieu conducteur soumis à un champ électrique $\\vec{E}$ ?",
+        "answers": [
+            "$\\vec{j} \\cdot \\vec{E}$",
+            "$\\frac{1}{2} \\epsilon_0 E^2$",
+            "$\\vec{E} \\wedge \\vec{B} / \\mu_0$",
+            "$\\frac{1}{2} \\gamma E^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "La puissance thermique volumique dissipée est donnée par la densité de courant multipliée scalairement par le champ électrique : $p_J = \\vec{j} \\cdot \\vec{E}$. En utilisant la loi d'Ohm $\\vec{j} = \\gamma \\vec{E}$, on obtient $p_J = \\gamma E^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-050",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Considérons la relation de dispersion $\\omega^2 - i \\frac{\\lambda}{\\mu} \\omega = \\frac{T}{\\mu} k^2$ pour une corde avec frottements visqueux de coefficient $\\lambda$. Que devient cette relation si les frottements sont nuls ($\\lambda = 0$) ?",
+        "answers": [
+            "$\\omega = k \\sqrt{T/\\mu}$",
+            "$\\omega = k^2 D$",
+            "$\\omega = 0$",
+            "$\\omega^2 = -\\frac{T}{\\mu} k^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "En posant $\\lambda = 0$, la relation devient $\\omega^2 = \\frac{T}{\\mu} k^2$, soit $\\omega^2 = c^2 k^2$. En prenant la racine, on obtient bien $\\omega = c k$ (onde de d'Alembert sans dispersion).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-051",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de la modélisation d'un plasma par l'approximation de Drude, pourquoi peut-on supposer que les ions sont immobiles par rapport aux électrons lors du passage d'une onde électromagnétique haute fréquence ?",
+        "answers": [
+            "Ils sont fixés dans un réseau cristallin quasi-rigide.",
+            "Leur masse $M$ est très supérieure à celle des électrons $m$ ($M \\gg m$), induisant une inertie trop grande.",
+            "Ils ne portent aucune charge électrique dans ce modèle.",
+            "La fréquence de l'onde est trop élevée pour coupler avec les ions."
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Le principe fondamental de la dynamique appliqué à une charge $q$ dans un champ électrique $\\vec{E}$ donne $m\\vec{a} = q\\vec{E}$. L'accélération subie est proportionnelle à $1/m$. Comme $M_{ion} \\approx 1836 \\times m_e$, le mouvement des ions est négligeable devant celui des électrons pour des fréquences $\\omega$ élevées.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-052",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans l'étude de la propagation d'une onde dans un plasma, on qualifie le modèle de 'dilué' si l'on peut faire l'hypothèse suivante :",
+        "answers": [
+            "On néglige les collisions entre les particules (milieu non dissipatif).",
+            "Le gaz est à très haute pression (nombre de chocs important).",
+            "La température est nulle (gaz dégénéré).",
+            "La densité électronique $n_e$ tend vers zéro."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Un plasma est dit dilué lorsqu'on peut négliger les termes de choc dans l'équation du mouvement des électrons, soit $\\tau \\to \\infty$ (où $\\tau$ est le temps moyen entre collisions). Cela permet d'étudier la propagation sans absorption d'énergie par effet Joule.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-053",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Considérons la superposition de deux ondes planes de même amplitude et de pulsations proches $\\omega_1$ et $\\omega_2$. Le phénomène de battement produit une enveloppe dont la pulsation est :",
+        "answers": [
+            "$\\omega_{env} = \\frac{\\omega_1 + \\omega_2}{2}$",
+            "$\\omega_{env} = \\frac{|\\omega_2 - \\omega_1|}{2}$",
+            "$\\omega_{env} = \\sqrt{\\omega_1 \\omega_2}$",
+            "$\\omega_{env} = |\\omega_2 - \\omega_1|$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "En utilisant la formule de Simpson $\\cos(p) + \\cos(q) = 2 \\cos(\\frac{p-q}{2}) \\cos(\\frac{p+q}{2})$, l'onde résultante s'écrit comme un produit d'un terme oscillant à la pulsation moyenne et d'une enveloppe oscillant à la pulsation de battement $\\Omega = \\frac{|\\omega_2 - \\omega_1|}{2}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-054",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une onde thermique se propageant dans un milieu semi-infini, l'équation de la diffusion conduit à l'équation caractéristique $r^2 = \\frac{i \\omega}{D_{th}}$. Quelles sont les racines physiques acceptables ?",
+        "answers": [
+            "$r = \\pm \\frac{1+i}{\\delta}$",
+            "$r = \\pm \\frac{1}{\\delta}$",
+            "$r = i \\omega$",
+            "$r = \\pm \\sqrt{i} \\frac{\\omega}{D_{th}}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Avec $\\delta = \\sqrt{\\frac{2D_{th}}{\\omega}}$, on a $\\frac{i \\omega}{D_{th}} = \\frac{2i}{\\delta^2} = (\\frac{1+i}{\\delta})^2$. Les racines sont donc $r = \\pm \\frac{1+i}{\\delta}$. La solution physique impose de ne garder que la racine ayant une partie réelle positive pour assurer l'amortissement spatial.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "disp-055",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le vide, la relation de dispersion d'une onde électromagnétique s'écrit $\\omega = ck$. Peut-on qualifier ce milieu de dispersif ?",
+        "answers": [
+            "Oui, car $\\omega$ dépend de $k$.",
+            "Non, car la vitesse de phase $v_{\\varphi} = \\omega/k = c$ est indépendante de $\\omega$.",
+            "Oui, car la vitesse de groupe dépend de la fréquence.",
+            "Non, car le milieu est linéaire."
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Un milieu est non dispersif si la vitesse de phase est constante, indépendante de la fréquence $\\omega$. Ici, $v_{\\varphi} = c$, qui est une constante universelle. La dépendance linéaire entre $\\omega$ et $k$ caractérise l'absence de dispersion.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-056",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour une onde plane progressive harmonique (OPPH) dans le vide, le vecteur de Poynting moyen $\\langle \\vec{\\Pi} \\rangle$ est égal à :",
+        "answers": [
+            "$\\frac{E_0^2}{2 \\mu_0 c} \\vec{u}_k$",
+            "$\\frac{E_0^2}{\\mu_0 c} \\vec{u}_k$",
+            "$\\frac{1}{2} \\epsilon_0 E_0^2 \\vec{u}_k$",
+            "$\\frac{E_0^2}{\\mu_0 c^2} \\vec{u}_k$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Le vecteur de Poynting est $\\vec{\\Pi} = \\frac{1}{\\mu_0} \\vec{E} \\wedge \\vec{B}$. Pour une OPPH, $\\langle \\vec{\\Pi} \\rangle = \\frac{1}{2 \\mu_0} \\text{Re}(\\vec{E} \\wedge \\vec{B}^*)$. Comme $B_0 = E_0/c$, on obtient $\\frac{E_0^2}{2 \\mu_0 c}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-057",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un câble coaxial ou tout milieu diélectrique, la densité volumique moyenne d'énergie électromagnétique $\\langle u \\rangle$ est donnée par :",
+        "answers": [
+            "$\\frac{1}{2} \\epsilon_0 E^2$",
+            "$\\frac{1}{2} \\epsilon \\langle E^2 \\rangle + \\frac{1}{2 \\mu} \\langle B^2 \\rangle$",
+            "$\\epsilon_0 E_0^2$",
+            "$\\frac{1}{4} \\epsilon_0 E_0^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "L'énergie électromagnétique est la somme de l'énergie électrique et de l'énergie magnétique : $u = \\frac{1}{2}\\epsilon E^2 + \\frac{1}{2\\mu} B^2$. En moyenne temporelle, on somme les valeurs moyennes de chaque terme.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-058",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un guide d'onde à plaques, la relation de dispersion est $\\omega^2 = \\omega_c^2 + c^2 k^2$. Quelle est l'expression de la vitesse de groupe $v_g = \\frac{d\\omega}{dk}$ ?",
+        "answers": [
+            "$v_g = c \\sqrt{1 - (\\frac{\\omega_c}{\\omega})^2}$",
+            "$v_g = \\frac{c}{\\sqrt{1 - (\\frac{\\omega_c}{\\omega})^2}}$",
+            "$v_g = c$",
+            "$v_g = c \\frac{\\omega_c}{\\omega}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "En dérivant $\\omega^2 = \\omega_c^2 + c^2 k^2$ par rapport à $k$, on obtient $2\\omega \\frac{d\\omega}{dk} = 2c^2 k$, soit $v_g = c^2 \\frac{k}{\\omega}$. Comme $k = \\frac{1}{c} \\sqrt{\\omega^2 - \\omega_c^2}$, on en déduit $v_g = c \\sqrt{1 - (\\frac{\\omega_c}{\\omega})^2}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-059",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Soit $v_{\\varphi}$ la vitesse de phase et $v_g$ la vitesse de groupe dans un guide d'onde. Quel est le produit $v_{\\varphi} v_g$ ?",
+        "answers": [
+            "$c$",
+            "$c^2$",
+            "Il dépend de la fréquence $\\omega$.",
+            "$c/2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "On a $v_{\\varphi} = \\frac{\\omega}{k}$ et $v_g = \\frac{c^2 k}{\\omega}$ (voir question précédente). En multipliant les deux, les termes $\\omega$ et $k$ s'annulent, laissant $v_{\\varphi} v_g = c^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-060",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans l'étude de la propagation d'une onde dans un plasma, on néglige la force magnétique $\\vec{F}_m = q(\\vec{v} \\wedge \\vec{B})$ devant la force électrique $\\vec{F}_e = q\\vec{E}$. Quelle est la condition de validité ?",
+        "answers": [
+            "$v \\ll c$",
+            "$v \\ll v_{\\varphi}$",
+            "$v \\gg c$",
+            "$\\omega \\ll \\omega_p$"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "La force magnétique est de l'ordre de $qvB$. Comme $B \\approx E/c$ dans une onde électromagnétique, le rapport des forces est $\\frac{F_m}{F_e} \\approx \\frac{vB}{E} \\approx \\frac{v}{c}$. Pour que la force magnétique soit négligeable, il faut donc $v \\ll c$ (régime non relativiste).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-061",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude de la propagation d'une onde électromagnétique dans un plasma peu dense (modèle de Drude sans collision), quelle est la nature de la conductivité complexe $\\underline{\\gamma}$ ?",
+        "answers": [
+            "Elle est réelle, car il n'y a pas de pertes par effet Joule.",
+            "Elle est imaginaire pure, de la forme $\\underline{\\gamma} = \\frac{n e^2}{j m \\omega}$.",
+            "Elle est nulle, car le plasma est un milieu isolant.",
+            "Elle est complexe avec une partie réelle et une partie imaginaire."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Dans un plasma sans collisions, le mouvement des électrons est régi par $m \\frac{d\\vec{v}}{dt} = -e\\vec{E}$. En notation complexe, on obtient $\\vec{v} = \\frac{e}{j m \\omega} \\vec{E}$. La densité de courant est $\\vec{j} = -n e \\vec{v} = \\underline{\\gamma} \\vec{E}$, d'où $\\underline{\\gamma} = \\frac{n e^2}{j m \\omega} = -j \\frac{n e^2}{m \\omega}$. Elle est donc bien imaginaire pure.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-062",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude de l'effet de peau, pour une plaque métallique conductrice d'épaisseur $h \\gg \\delta$ (où $\\delta$ est l'épaisseur pelliculaire), que devient la puissance électromagnétique transmise ?",
+        "answers": [
+            "Elle est égale à la puissance incidente car le métal est conducteur.",
+            "Elle est quasi nulle car l'onde est exponentiellement atténuée dans le conducteur.",
+            "Elle est amplifiée par les réflexions multiples.",
+            "Elle est inchangée car l'épaisseur n'a pas d'influence sur le flux d'énergie."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Dans un conducteur, le champ électrique décroît selon $E(z) = E_0 e^{-z/\\delta} e^{j(\\omega t - z/\\delta)}$. Si $h \\gg \\delta$, alors $e^{-h/\\delta} \\approx 0$. La densité de puissance (vecteur de Poynting) étant proportionnelle au carré du champ, elle devient négligeable à la sortie de la plaque.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-063",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre d'un dispositif de chauffage par induction, pourquoi utilise-t-on des fréquences élevées (ex: $20 \\text{ kHz}$) plutôt que le $50 \\text{ Hz}$ du secteur ?",
+        "answers": [
+            "Pour améliorer la sécurité électrique de l'utilisateur.",
+            "Pour augmenter la puissance dissipée par effet Joule grâce à la réduction de l'épaisseur pelliculaire $\\delta$.",
+            "Le 50 Hz ne crée pas de courants de Foucault par principe.",
+            "Pour éviter que la fréquence ne soit en résonance avec le réseau électrique."
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "La puissance dissipée est $P = \\int_V \\frac{j^2}{\\gamma} dV$. En augmentant la fréquence, on diminue $\\delta = \\sqrt{\\frac{2}{\\mu \\sigma \\omega}}$. Le courant est confiné dans une épaisseur plus faible près de la surface, ce qui augmente la résistance équivalente vue par le générateur et maximise la dissipation thermique volumique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-064",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression correcte de la loi de Faraday, traduisant le phénomène d'induction électromagnétique dans un circuit fixe ?",
+        "answers": [
+            "$e = -\\frac{d\\Phi}{dt}$",
+            "$e = L \\frac{di}{dt}$",
+            "$\\Phi = B S$",
+            "$\\vec{rot} \\vec{E} = \\mu_0 \\vec{j}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "La loi de Faraday, sous sa forme globale, indique que la force électromotrice induite dans un circuit est égale à l'opposé de la dérivée temporelle du flux magnétique à travers ce circuit ($e = -\\frac{d\\Phi}{dt}$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-065",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour une onde électromagnétique plane progressive harmonique se propageant dans le vide (ou dans un câble coaxial idéal), quelle relation lie les amplitudes $E_0$ et $B_0$ ?",
+        "answers": [
+            "$E_0 = c B_0$",
+            "$B_0 = c E_0$",
+            "$E_0 = B_0 / \\mu_0$",
+            "$E_0 = B_0 / c$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Dans le vide, la structure de l'onde plane impose $\\vec{B} = \\frac{1}{c} \\vec{u} \\land \\vec{E}$. En norme, cela donne $B_0 = E_0/c$, soit $E_0 = c B_0$. L'erreur classique est d'oublier la célérité $c$ ou d'inverser le rapport.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-066",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lorsqu'une onde se propage dans un milieu absorbant (conducteur ou diélectrique dissipatif), pourquoi le vecteur d'onde $\\underline{k}$ est-il complexe ?",
+        "answers": [
+            "Parce que l'onde change de direction lors de la propagation.",
+            "Parce que la partie imaginaire de $\\underline{k}$ traduit l'atténuation de l'amplitude lors de la propagation spatiale.",
+            "Parce que la fréquence de l'onde est elle-même complexe.",
+            "Parce que le milieu est nécessairement non homogène."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "En posant $\\underline{k} = k' - j k''$, le facteur spatial s'écrit $e^{-j\\underline{k}z} = e^{-j k' z} e^{-k'' z}$. Le terme $e^{-k'' z}$ représente la décroissance exponentielle de l'amplitude au cours de la propagation.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-067",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un plasma, la relation de dispersion est $\\omega^2 = \\omega_P^2 + k^2 c^2$. Que vaut le vecteur d'onde $k$ si la fréquence de l'onde est égale à la pulsation plasma $\\omega = \\omega_P$ ?",
+        "answers": [
+            "$k = 0$",
+            "$k = \\infty$",
+            "$k = \\omega_P / c$",
+            "$k = c / \\omega_P$"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Si $\\omega = \\omega_P$, alors $\\omega^2 = \\omega_P^2 + k^2 c^2$ devient $\\omega_P^2 = \\omega_P^2 + k^2 c^2$, ce qui implique $k^2 c^2 = 0$, donc $k = 0$. À cette fréquence (fréquence de coupure), l'onde ne se propage plus, elle est évanescente.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-068",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'indice de réfraction $n$ d'un plasma est donné par $n = \\sqrt{1 - \\frac{\\omega_P^2}{\\omega^2}}$. Est-il possible d'avoir un indice $n < 1$ ?",
+        "answers": [
+            "Vrai, car pour $\\omega > \\omega_P$, le terme sous la racine est inférieur à 1.",
+            "Faux, l'indice est toujours supérieur à 1 dans un milieu physique.",
+            "Impossible, car cela violerait la causalité.",
+            "Vrai uniquement si le plasma est très dense."
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Puisque $n = \\sqrt{1 - (\\omega_P/\\omega)^2}$, et que $\\omega_P^2/\\omega^2 > 0$ pour $\\omega > \\omega_P$, on a bien $n < 1$. Cela signifie que la vitesse de phase $v_{\\phi} = c/n$ est supérieure à $c$, ce qui ne contredit pas la relativité car l'information se propage à la vitesse de groupe $v_g = c \\cdot n < c$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-069",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Si $n < 1$ pour une onde se propageant dans un plasma, que peut-on dire de la vitesse de phase $v_{\\phi}$ ?",
+        "answers": [
+            "La vitesse de phase est supérieure à $c$.",
+            "La vitesse de phase est inférieure à $c$.",
+            "La vitesse de phase est égale à $c$.",
+            "La vitesse de phase n'est pas définie."
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Par définition, l'indice de réfraction est $n = c/v_{\\phi}$. Si $n < 1$, alors $v_{\\phi} = c/n > c$. C'est un phénomène courant dans les milieux dispersifs et cela ne viole aucune loi physique (la vitesse de groupe, elle, reste inférieure à $c$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-070",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un conducteur, l'onde est dite 'pseudo-progressive' car :",
+        "answers": [
+            "Elle est stationnaire et ne transporte aucune énergie.",
+            "Son amplitude décroît exponentiellement selon la direction de propagation.",
+            "Sa vitesse de phase est imaginaire.",
+            "Sa fréquence change au cours de la propagation."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Le terme 'pseudo-progressive' souligne que, bien que l'onde possède une structure de phase se déplaçant (comme une onde progressive), son amplitude est modulée spatialement par un terme en $e^{-z/\\delta}$. Elle finit par s'éteindre, contrairement à une onde progressive pure.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-071",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'étude de la propagation de la chaleur dans le sol, on définit la diffusivité thermique $D_{th} = \\frac{\\lambda}{\\rho c_p}$. Quelle est la valeur caractéristique de la diffusivité thermique du sol ?",
+        "answers": [
+            "De l'ordre de $10^{-6} \\, m^2/s$.",
+            "De l'ordre de $10^{-1} \\, m^2/s$.",
+            "De l'ordre de $10^{-9} \\, m^2/s$.",
+            "C'est la même valeur que pour les métaux (environ $10^{-4} \\, m^2/s$)."
+        ],
+        "difficulty": 4,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "La diffusivité thermique caractérise la rapidité avec laquelle un milieu transmet une variation de température. Pour les matériaux isolants ou le sol, elle est effectivement proche de $10^{-6} \\, m^2/s$. Les métaux ont une diffusivité beaucoup plus élevée, de l'ordre de $10^{-4}$ à $10^{-5} \\, m^2/s$ car leur conductivité thermique $\\lambda$ est très grande.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-072",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude de la propagation guidée entre deux plans conducteurs parfaits situés en $z=0$ et $z=a$, le champ électrique s'écrit $E_y(z) = E_0 \\sin(k_z z)$. Quelle condition aux limites cette expression permet-elle de satisfaire ?",
+        "answers": [
+            "La nullité de la composante tangentielle du champ électrique sur les parois conductrices.",
+            "La propagation radiale de l'onde dans le guide.",
+            "La polarisation circulaire de l'onde dans le guide.",
+            "La continuité du vecteur induction magnétique $\\vec{B}$."
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Pour un conducteur parfait, la composante tangentielle du champ électrique doit être nulle. Ici, $\\vec{E} = E_y \\vec{u}_y$. En $z=0$ et $z=a$, on doit avoir $E_y = 0$. La fonction $\\sin(\\pi z / a)$ vérifie bien $\\sin(0)=0$ et $\\sin(\\pi)=0$, garantissant ainsi le confinement du champ.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-073",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Soit un métal de conductivité $\\gamma$. Le temps de relaxation des charges est noté $\\tau = \\epsilon_0 / \\gamma$. Pourquoi justifie-t-on l'utilisation de l'ARQS (Approximation des Régimes Quasi-Stationnaires) pour un métal à une fréquence $f = 2 \\, GHz$ ?",
+        "answers": [
+            "Car la fréquence est très faible devant la fréquence de collision $1/\\tau$.",
+            "C'est une erreur, l'ARQS est justement inapplicable pour un conducteur métallique à cette fréquence.",
+            "Car la conductivité est indépendante de la fréquence.",
+            "Car le métal est un milieu non dispersif."
+        ],
+        "difficulty": 4,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "L'ARQS magnétique est valable si la période de l'onde $T = 1/f$ est grande devant le temps de relaxation $\\tau$ (soit $f \\ll 1/\\tau$). Pour les métaux, $\\tau$ est extrêmement faible (environ $10^{-19} \\, s$), ce qui rend la condition $f \\ll 10^{19} \\, Hz$ très largement vérifiée, même à $2 \\, GHz$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-074",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lorsqu'un paquet d'ondes se propage dans un milieu dispersif, quelle est l'évolution de sa structure spatio-temporelle ?",
+        "answers": [
+            "Il garde sa forme initiale indéfiniment.",
+            "Il s'étale au cours du temps car les différentes composantes spectrales se déplacent à des vitesses différentes.",
+            "Il se contracte par effet de focalisation dispersive.",
+            "Sa vitesse de groupe augmente linéairement avec la distance."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "La dispersion signifie que la vitesse de phase $v_{\\phi} = \\omega/k$ dépend de la pulsation $\\omega$. Ainsi, les différentes fréquences constituant le paquet d'ondes ne voyagent pas à la même vitesse, ce qui provoque un étalement temporel du signal (élargissement du paquet).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-075",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de la propagation d'une onde plane électromagnétique dans un métal, quelle est la relation de phase entre $\\vec{E}$ et $\\vec{B}$ ?",
+        "answers": [
+            "Le champ magnétique $\\vec{B}$ est en retard de phase de $\\pi/4$ par rapport à $\\vec{E}$.",
+            "Le champ magnétique $\\vec{B}$ est en avance de phase de $\\pi/4$ par rapport à $\\vec{E}$.",
+            "Ils sont parfaitement en phase.",
+            "Ils sont en opposition de phase ($\\pi$)."
+        ],
+        "difficulty": 4,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Dans un conducteur, le nombre d'onde est complexe : $\\underline{k} = k(1+i)$. En utilisant $\\underline{B} = \\frac{\\underline{k}}{\\omega} \\vec{u}_k \\wedge \\underline{E}$, le facteur $(1+i)$ peut s'écrire sous forme polaire $\\sqrt{2} e^{i\\pi/4}$. Ainsi, $\\vec{B}$ présente un retard de phase de $\\pi/4$ par rapport à $\\vec{E}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-076",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour calculer l'énergie moyenne stockée par unité de longueur dans un guide d'onde, sur quelle grandeur physique effectue-t-on l'intégration de la densité d'énergie électromagnétique $u = \\frac{1}{2}(\\epsilon_0 E^2 + \\frac{B^2}{\\mu_0})$ ?",
+        "answers": [
+            "On intègre sur la section droite du guide ($x, y$).",
+            "On intègre sur toute la longueur du guide ($z$).",
+            "On intègre sur le temps $t$ sur une période $T$.",
+            "On intègre sur le contour de la section du guide."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "L'énergie par unité de longueur est définie comme l'intégrale de la densité d'énergie volumique sur une tranche élémentaire d'épaisseur $dz=1$. Cela revient donc à intégrer la densité sur la surface de la section droite du guide.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-077",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un câble coaxial de rayons $R_1$ (cœur) et $R_2$ (gaine), la structure du champ électrique est de type cylindrique. À quel terme la puissance transportée est-elle proportionnelle ?",
+        "answers": [
+            "$\\ln(R_2/R_1)$",
+            "$R_2 - R_1$",
+            "$1/R_1^2$",
+            "$(R_2/R_1)^2$"
+        ],
+        "difficulty": 5,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Le champ électrique dans le câble varie comme $1/r$. Le vecteur de Poynting $\\Pi \\propto E^2 \\propto 1/r^2$. Le flux de puissance est l'intégrale du vecteur de Poynting sur la section : $\\int_{R_1}^{R_2} \\frac{1}{r^2} r dr d\\theta = 2\\pi \\int_{R_1}^{R_2} \\frac{dr}{r} = 2\\pi \\ln(R_2/R_1)$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-078",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La vitesse de groupe $v_g = \\frac{d\\omega}{dk}$ peut-elle être supérieure à la vitesse de phase $v_{\\phi} = \\frac{\\omega}{k}$ ?",
+        "answers": [
+            "Oui, dans les zones de dispersion anormale.",
+            "Non, la vitesse de groupe est toujours inférieure à la vitesse de phase.",
+            "Non, la vitesse de groupe est toujours égale à $c$.",
+            "Oui, mais seulement dans le vide."
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Dans un milieu dispersif, la relation $\\omega(k)$ n'est pas forcément linéaire. Si la courbe $\\omega(k)$ est concave (courbure vers le bas), $v_g < v_{\\phi}$. Si elle est convexe (dispersion anormale), on peut avoir $v_g > v_{\\phi}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-079",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'effet Joule dans un métal soumis à un champ électromagnétique, la puissance moyenne dissipée dans un volume de rayon $a$ et d'épaisseur $\\delta$ (profondeur de peau) est proportionnelle à quelle puissance de $a$ ?",
+        "answers": [
+            "$a^2$",
+            "$a^4$",
+            "$a^1$",
+            "$a^{-1}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "La puissance dissipée est le produit de la densité volumique de puissance par le volume. Le volume est proportionnel à la surface $\\pi a^2$ multipliée par l'épaisseur $\\delta$. Cependant, le champ électrique induit dépend lui-même des dimensions du système (loi de Faraday), menant à une dépendance en $a^4$ pour la puissance dissipée dans les cas classiques de courants induits par induction.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-080",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un plasma, la conductivité complexe est donnée par $\\underline{\\gamma} = \\frac{\\epsilon_0 \\omega_p^2}{i\\omega}$. Que devient la conductivité $\\underline{\\gamma}$ lorsque la fréquence $\\omega$ tend vers l'infini ?",
+        "answers": [
+            "Elle tend vers zéro.",
+            "Elle tend vers l'infini.",
+            "Elle tend vers une valeur constante réelle non nulle.",
+            "Elle devient purement réelle et négative."
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "D'après la formule $\\underline{\\gamma} = \\frac{\\epsilon_0 \\omega_p^2}{i\\omega}$, on voit immédiatement que si $\\omega \\to \\infty$, le dénominateur croît indéfiniment, donc $\\underline{\\gamma} \\to 0$. Physiquement, cela signifie qu'à très haute fréquence, les électrons sont trop inertes pour répondre au champ électrique, le plasma se comporte alors comme le vide.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-081",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de la modélisation d'un plasma par le modèle de Drude (électrons libres, ions fixes), quelle est l'expression de la densité de courant $\\vec{j}$ ?",
+        "answers": [
+            "$\\vec{j} = n q \\vec{v}$",
+            "$\\vec{j} = \\gamma \\vec{E}$",
+            "Les deux sont valables selon le régime.",
+            "$\\vec{j} = \\sigma \\vec{v}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La densité de courant est par définition microscopique $\\vec{j} = n q \\vec{v}$. Dans le cadre de la loi d'Ohm locale (régime stationnaire ou quasi-stationnaire), elle s'écrit $\\vec{j} = \\gamma \\vec{E}$. Dans un plasma, on utilise le modèle microscopique pour établir l'équation du mouvement et retrouver une relation de type $\\vec{j} = \\sigma(\\omega) \\vec{E}$."
+    },
+    {
+        "uuid": "td-082",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans l'étude de la propagation d'une onde thermique (ou onde de diffusion) de pulsation $\\omega$ dans un conducteur, quelle est l'expression de la vitesse de phase $v_{\\varphi}$ ?",
+        "answers": [
+            "$v_{\\varphi} = \\sqrt{2D\\omega}$",
+            "$v_{\\varphi} = c$",
+            "$v_{\\varphi} = \\omega/k$",
+            "$v_{\\varphi} = Dk$"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour une onde thermique, la relation de dispersion est $k = (1+i)\\sqrt{\\omega/2D}$. La partie réelle du vecteur d'onde est $Re(k) = \\sqrt{\\omega/2D}$. Comme $v_{\\varphi} = \\omega / Re(k)$, on obtient $v_{\\varphi} = \\sqrt{2D\\omega}$. L'erreur classique est de confondre avec une onde propagative classique où $v_{\\varphi} = \\omega/k$ est une constante."
+    },
+    {
+        "uuid": "td-083",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'optique ondulatoire, une onde est dite monochromatique si son champ possède la propriété suivante :",
+        "answers": [
+            "Elle est composée d'une seule fréquence pure $\\nu$ (ou pulsation $\\omega$).",
+            "Elle présente une amplitude constante dans tout l'espace.",
+            "Sa longueur d'onde est nulle.",
+            "Elle se propage nécessairement dans le vide."
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Une onde monochromatique est une onde dont la dépendance temporelle est sinusoïdale pure, ce qui correspond à une unique fréquence. L'idée qu'elle soit 'blanche' est le contraire (spectre continu). La propagation dans le vide n'est pas une condition, c'est une propriété de la forme temporelle du signal."
+    },
+    {
+        "uuid": "td-084",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Lors de la propagation d'une onde électromagnétique entre deux plaques conductrices parfaites (guide d'ondes), quelle est la relation de dispersion liant le nombre d'onde $k$ à la pulsation $\\omega$ ?",
+        "answers": [
+            "$k = \\frac{1}{c} \\sqrt{\\omega^2 - \\omega_c^2}$",
+            "$k = \\omega/c$",
+            "$k = \\sqrt{\\omega^2 + \\omega_c^2}/c$",
+            "$k = \\omega_c / c$"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La relation de dispersion dans un guide d'onde est $\\omega^2 = c^2 k^2 + \\omega_c^2$, où $\\omega_c$ est la pulsation de coupure. En isolant $k$, on obtient bien $k = \\frac{1}{c} \\sqrt{\\omega^2 - \\omega_c^2}$. Si $\\omega < \\omega_c$, $k$ devient imaginaire pur, ce qui correspond à une onde évanescente."
+    },
+    {
+        "uuid": "td-085",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour un plasma soumis à une onde électromagnétique de pulsation $\\omega < \\omega_P$ (pulsation plasma), le champ électrique pénètre dans le milieu sur une profondeur de pénétration $\\delta$ définie par :",
+        "answers": [
+            "$\\delta = \\frac{c}{\\sqrt{\\omega_P^2 - \\omega^2}}$",
+            "$\\delta = \\frac{c}{\\omega}$",
+            "$\\delta = \\frac{\\omega_P}{\\omega}$",
+            "$\\delta = \\infty$"
+        ],
+        "difficulty": 4,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Quand $\\omega < \\omega_P$, le vecteur d'onde $k = \\frac{1}{c}\\sqrt{\\omega^2 - \\omega_P^2} = i \\frac{1}{c}\\sqrt{\\omega_P^2 - \\omega^2}$ est imaginaire pur. Le champ varie en $e^{-z/\\delta}$ avec $\\delta = 1/|Im(k)| = c / \\sqrt{\\omega_P^2 - \\omega^2}$. Cette longueur est appelée épaisseur de peau du plasma."
+    },
+    {
+        "uuid": "td-086",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'étude des milieux dispersifs, comment définit-on la vitesse de groupe $v_g$ par rapport à la courbe de dispersion $\\omega = f(k)$ ?",
+        "answers": [
+            "$v_g = \\frac{d\\omega}{dk}$",
+            "$v_g = \\frac{\\omega}{k}$",
+            "$v_g = \\frac{dk}{d\\omega}$",
+            "$v_g = k \\cdot \\omega$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La vitesse de groupe représente la vitesse de propagation de l'enveloppe du paquet d'ondes, soit $v_g = \\frac{d\\omega}{dk}$. La pente de la droite reliant l'origine à un point $(k, \\omega)$ est la vitesse de phase $v_{\\varphi} = \\omega/k$. L'erreur est de confondre la dérivée avec le rapport."
+    },
+    {
+        "uuid": "td-087",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'unité SI de la permittivité diélectrique du vide $\\epsilon_0$ ?",
+        "answers": [
+            "$F \\cdot m^{-1}$",
+            "$H \\cdot m^{-1}$",
+            "$\\Omega \\cdot m$",
+            "$C \\cdot V^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "D'après la loi de Coulomb ou la capacité d'un condensateur plan ($C = \\epsilon_0 S/d$), l'unité est le Farad par mètre ($F \\cdot m^{-1}$). $H \\cdot m^{-1}$ correspond à la perméabilité magnétique $\\mu_0$."
+    },
+    {
+        "uuid": "td-088",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Considérant l'aimantation d'un matériau ferromagnétique doux (type acier), la perméabilité relative $\\mu_r$ est typiquement de l'ordre de :",
+        "answers": [
+            "1",
+            "10^2 à 10^4",
+            "10^{-5}",
+            "10^6 à 10^9"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour le vide ou l'air, $\\mu_r \\approx 1$. Pour les matériaux ferromagnétiques comme l'acier ou le fer doux, $\\mu_r$ est très supérieur à 1, se situant classiquement dans la gamme $10^2$ à $10^4$. $10^6$ est physiquement irréaliste pour de l'acier courant."
+    },
+    {
+        "uuid": "td-089",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans un milieu conducteur (absorbant), l'onde électromagnétique s'atténue. Comment varie l'intensité moyenne $I$ de l'onde en fonction de la profondeur $z$ ?",
+        "answers": [
+            "$I(z) = I_0 e^{-2z/\\delta}$",
+            "$I(z) = I_0 e^{-z/\\delta}$",
+            "$I(z) = I_0 e^{-z^2/\\delta^2}$",
+            "$I(z) = I_0 / z^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le champ électrique s'atténue en $e^{-z/\\delta}$. L'intensité étant proportionnelle au carré du champ (moyenne temporelle du vecteur de Poynting), elle varie en $(e^{-z/\\delta})^2 = e^{-2z/\\delta}$. C'est un piège classique sur le carré de l'amplitude."
+    },
+    {
+        "uuid": "td-090",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le modèle de Drude utilisé pour décrire la propagation d'une onde dans un plasma sans collisions, quelle est la nature du mouvement des électrons ?",
+        "answers": [
+            "Mouvement libre accéléré par le champ électrique sans force de rappel locale.",
+            "Oscillation harmonique liée par une force de rappel élastique (type ressort).",
+            "Mouvement purement thermique brownien.",
+            "Mouvement purement cyclotronique uniquement."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Dans le modèle de Drude standard, les électrons sont considérés comme libres : ils ne subissent aucune force de rappel autre que celle induite par le champ électrique incident. Le terme de 'force de rappel' est caractéristique des modèles de Lorentz pour les isolants polarisables."
+    },
+    {
+        "uuid": "td-091",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude d'une onde plane progressive harmonique (OPPH) se propageant dans le vide selon le vecteur d'onde $\\vec{k}$, quelle relation lie le champ électrique $\\vec{E}$ et le champ magnétique $\\vec{B}$ ?",
+        "answers": [
+            "$\\vec{B}$ est parallèle à $\\vec{E}$ (polarisation longitudinale).",
+            "$\\vec{B} = \\frac{\\vec{u}_k \\wedge \\vec{E}}{c}$",
+            "$\\vec{B}$ est porté par $\\vec{u}_k$ (direction de propagation).",
+            "$\\vec{B} = c (\\vec{E} \\wedge \\vec{u}_k)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Pour une OPPH dans le vide, la structure est transverse : $\\vec{E}$, $\\vec{B}$ et $\\vec{u}_k$ forment un trièdre direct. La relation issue de l'équation de Maxwell-Faraday est $\\vec{B} = \\frac{1}{\\omega} \\vec{k} \\wedge \\vec{E} = \\frac{\\vec{u}_k \\wedge \\vec{E}}{c}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-092",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Lorsqu'une onde électromagnétique se propage dans un milieu conducteur ohmique de conductivité $\\gamma$, pourquoi le champ magnétique devient-il prédominant face au champ électrique en termes d'amplitude ?",
+        "answers": [
+            "Vrai, car $B \\approx \\frac{|k|}{\\omega} E$ et dans un conducteur $|k| \\gg \\omega/c$.",
+            "Faux, le rapport est toujours $c$.",
+            "Vrai, car la permittivité $\\varepsilon$ devient infinie.",
+            "Faux, car le courant de conduction annule le champ magnétique."
+        ],
+        "difficulty": 4,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Dans un conducteur, le vecteur d'onde $k$ est complexe. La relation de Maxwell-Faraday donne $B = \\frac{|k|}{\\omega} E$. Comme $|k| \\approx \\sqrt{\\frac{\\mu_0 \\gamma \\omega}{2}}(1-j)$, on a bien $|k| \\gg \\omega/c$, ce qui conduit à un champ magnétique beaucoup plus 'intense' que dans le vide à champ électrique égal.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-093",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'étude de la diffusion thermique dans un milieu solide homogène, quelle loi phénoménologique relie le vecteur densité de flux thermique $\\vec{j}_Q$ au gradient de température $\\vec{\\text{grad}} T$ ?",
+        "answers": [
+            "La loi de Fourier : $\\vec{j}_Q = -\\lambda \\vec{\\text{grad}} T$.",
+            "La loi d'Ohm thermique : $\\vec{j}_Q = \\sigma \\vec{\\text{grad}} T$.",
+            "La loi de Newton : $\\vec{j}_Q = h(T_{ext} - T)$.",
+            "La loi de Stefan-Boltzmann."
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "La loi de Fourier postule que la chaleur diffuse des zones chaudes vers les zones froides, d'où le signe négatif devant la conductivité thermique $\\lambda$. La loi de Newton concerne les échanges convectifs à une interface.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-094",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Comment caractériser physiquement une onde évanescente obtenue, par exemple, lors d'une réflexion totale interne ou dans un métal ?",
+        "answers": [
+            "C'est une onde stationnaire spatialement amortie.",
+            "C'est une onde purement progressive.",
+            "C'est une onde dont le vecteur d'onde est réel.",
+            "C'est une onde se propageant à la vitesse $c$."
+        ],
+        "difficulty": 3,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "Une onde évanescente correspond à un vecteur d'onde complexe. L'amplitude décroît exponentiellement selon la direction de propagation (amortissement spatial) sans transport d'énergie moyenne, ce qui la distingue des ondes propagatives.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-095",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude des pertes par effet Joule dans un conducteur, laquelle de ces expressions pour la puissance volumique moyenne $\\langle p \\rangle$ est correcte ?",
+        "answers": [
+            "$\\langle p \\rangle = \\frac{j^2}{2\\gamma}$",
+            "$\\langle p \\rangle = \\frac{1}{2} \\gamma E^2$",
+            "Les deux expressions sont équivalentes via la loi d'Ohm locale $\\vec{j} = \\gamma \\vec{E}$.",
+            "Aucune des deux n'est correcte."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 2,
+        "explication": "Par la loi d'Ohm locale $\\vec{j} = \\gamma \\vec{E}$, on a $j^2 = \\gamma^2 E^2$. Ainsi, $\\frac{j^2}{2\\gamma} = \\frac{\\gamma^2 E^2}{2\\gamma} = \\frac{1}{2} \\gamma E^2$. Les deux formes sont strictement identiques.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-096",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Lors de la propagation d'un paquet d'ondes dans un milieu dispersif (comme un guide d'onde ou un plasma), quelle vitesse définit la célérité de l'information (ou de l'enveloppe du signal) ?",
+        "answers": [
+            "La vitesse de phase $v_{\\phi} = \\omega/k$.",
+            "La vitesse de groupe $v_g = d\\omega/dk$.",
+            "La vitesse de la lumière $c$.",
+            "La vitesse de phase moyenne."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "Dans un milieu dispersif, la relation de dispersion $\\omega(k)$ n'est pas linéaire. La vitesse de phase correspond à la célérité des fronts d'onde, tandis que l'enveloppe du signal (le paquet d'ondes) se propage à la vitesse de groupe $v_g = d\\omega/dk$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-097",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est la nature du filtrage opéré par un plasma électronique de pulsation plasma $\\omega_p$ vis-à-vis d'une onde électromagnétique incidente ?",
+        "answers": [
+            "Passe-bas (les basses fréquences passent).",
+            "Passe-haut (seules les fréquences $\\omega > \\omega_p$ passent).",
+            "Passe-bande.",
+            "Coupe-bande."
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "La relation de dispersion dans un plasma est $k^2 c^2 = \\omega^2 - \\omega_p^2$. Si $\\omega < \\omega_p$, $k$ est imaginaire pur : l'onde est évanescente (réflexion). Si $\\omega > \\omega_p$, $k$ est réel : l'onde se propage. C'est donc un filtre passe-haut.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-098",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un métal bon conducteur soumis à une onde électromagnétique, comment se répartit l'énergie électromagnétique ?",
+        "answers": [
+            "Elle est principalement stockée sous forme électrique.",
+            "Elle est principalement stockée sous forme magnétique.",
+            "Elle est en équipartition entre champ électrique et magnétique.",
+            "Elle est intégralement dissipée par effet Joule instantanément."
+        ],
+        "difficulty": 5,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "La densité d'énergie magnétique est $\\frac{B^2}{2\\mu_0}$ et électrique $\\frac{\\varepsilon_0 E^2}{2}$. Dans un conducteur, le champ magnétique est dominant ($B \\gg E/c$). Comme $c^2 = 1/(\\varepsilon_0 \\mu_0)$, on montre que $\\frac{B^2}{2\\mu_0} \\gg \\frac{\\varepsilon_0 E^2}{2}$, l'énergie est donc majoritairement magnétique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-099",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour une onde électromagnétique de fréquence $f = 1 \\text{ MHz}$ se propageant dans le cuivre (conductivité $\\gamma \\approx 5,8 \\times 10^7 \\text{ S/m}$), quelle est l'ordre de grandeur de l'épaisseur de peau $\\delta$ ?",
+        "answers": [
+            "$\\delta \\approx 65 \\mu m$",
+            "$\\delta \\approx 9 \\text{ mm}$",
+            "$\\delta \\approx 1 \\text{ cm}$",
+            "$\\delta \\approx 1 \\text{ nm}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 0,
+        "explication": "L'épaisseur de peau est donnée par $\\delta = \\sqrt{\\frac{2}{\\mu_0 \\gamma \\omega}}$. Avec $\\omega = 2\\pi f = 6,28 \\times 10^6 \\text{ rad/s}$, on obtient $\\delta \\approx \\sqrt{\\frac{2}{4\\pi \\times 10^{-7} \\times 5,8 \\times 10^7 \\times 6,28 \\times 10^6}} \\approx 65 \\times 10^{-6} \\text{ m}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "td-100",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Que décrit l'équation de d'Alembert $\\Delta f - \\frac{1}{c^2} \\frac{\\partial^2 f}{\\partial t^2} = 0$ ?",
+        "answers": [
+            "Des ondes soumises à une atténuation.",
+            "Des ondes non dispersives et non absorbantes.",
+            "Des ondes stationnaires uniquement.",
+            "Des ondes dans un milieu dispersif."
+        ],
+        "difficulty": 1,
+        "chapter": "Onde thermique, dispersion et absorption",
+        "correct_answer_index": 1,
+        "explication": "L'équation de d'Alembert standard admet pour solutions des ondes planes se déplaçant à la vitesse constante $c$ sans déformation ni perte. La dispersion ou l'atténuation apparaissent avec des termes de dérivées d'ordre supérieur ou d'ordre un (ex: équation de diffusion ou de Klein-Gordon).",
+        "subject": "physique"
+    }
+]

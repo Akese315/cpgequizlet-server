@@ -1,0 +1,1682 @@
+[
+    {
+        "uuid": "ali-001",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/4/4c/DIP8_Package.jpg",
+        "theme": "circuits électriques",
+        "question": "Dans le cadre d'un montage pratique sur platine d'essai, sous quel type de boîtier se présente classiquement un Amplificateur Linéaire Intégré (ALI) usuel comme le $\\mu A 741$ ?",
+        "answers": [
+            "Un boîtier DIP à 4 pattes, standard industriel",
+            "Un boîtier DIP à 8 pattes (Dual In-line Package)",
+            "Un boîtier TO-3 à 3 broches de puissance",
+            "Un boîtier CMS miniature sans aucune patte apparente"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le boîtier DIP-8 est le standard historique pour les ALI simples. Il comporte deux rangées de 4 broches permettant l'alimentation symétrique, les deux entrées et la sortie."
+    },
+    {
+        "uuid": "ali-002",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la définition fondamentale de la fonction de transfert d'un Amplificateur Linéaire Intégré dans son mode de fonctionnement différentiel ?",
+        "answers": [
+            "Amplifier la somme des potentiels appliqués aux entrées",
+            "Amplifier la différence de potentiel $\\epsilon = V^+ - V^-$ entre ses deux entrées",
+            "Maintenir un courant de sortie constant quel que soit le récepteur",
+            "Inverser le signe de la tension d'alimentation"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'ALI est un amplificateur différentiel : il cherche à multiplier par un gain très grand (le gain en boucle ouverte $\\mu_0$) la différence entre ses deux entrées. La relation est $V_s = \\mu_0 (V^+ - V^-)$."
+    },
+    {
+        "uuid": "ali-003",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour fonctionner en régime linéaire, un ALI nécessite une alimentation continue. Quelle est la valeur symétrique classique utilisée en travaux pratiques pour éviter la saturation précoce ?",
+        "answers": [
+            "$\\pm 5\\text{ V}$ (faible pour l'électronique de puissance)",
+            "$\\pm 15\\text{ V}$ (standard de laboratoire)",
+            "$\\pm 230\\text{ V}$ (tension du secteur domestique)",
+            "$\\pm 1\\text{ V}$ (insuffisant pour les tensions de seuil des transistors internes)"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'alimentation $\\pm 15\\text{ V}$ est le standard en électronique analogique pour permettre une plage dynamique de sortie suffisante (généralement $\\pm 13\\text{ V}$ compte tenu des chutes de tension internes)."
+    },
+    {
+        "uuid": "ali-004",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "D'après le brochage normalisé du boîtier DIP-8, quelle est la patte correspondant à la sortie $S$ ?",
+        "answers": [
+            "Patte 2",
+            "Patte 4",
+            "Patte 6",
+            "Patte 7"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Par convention normalisée, la sortie se situe sur la patte 6. La patte 2 est l'entrée inverseuse et la patte 3 l'entrée non inverseuse. La patte 4 est l'alimentation négative ($V_{SS}$) et la 7 l'alimentation positive ($V_{CC}$)."
+    },
+    {
+        "uuid": "ali-005",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Comment nomme-t-on la borne d'entrée située sur la patte 2 de l'ALI ?",
+        "answers": [
+            "Entrée non inverseuse notée $E^+$",
+            "Entrée inverseuse notée $E^-$",
+            "Entrée de compensation de dérive",
+            "Entrée de référence de masse"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'entrée inverseuse (marquée par un signe $-$ sur les schémas) est systématiquement associée à la patte 2 sur les boîtiers standards type 741."
+    },
+    {
+        "uuid": "ali-006",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la définition mathématique rigoureuse de la tension différentielle d'entrée $\\epsilon$ pour un ALI ?",
+        "answers": [
+            "$\\epsilon = V^- - V^+$",
+            "$\\epsilon = V^+ - V^-$",
+            "$\\epsilon = V_s - V^+$",
+            "$\\epsilon = V^+ + V^-$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La convention utilisée en physique est $\\epsilon = V^+ - V^-$. Si $V^+ > V^-$, alors $V_s$ est positif (en régime linéaire), confirmant le caractère non-inverseur de l'entrée $+$."
+    },
+    {
+        "uuid": "ali-007",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le cadre de l'étude des caractéristiques d'un ALI réel, quel est l'ordre de grandeur réaliste de son impédance d'entrée $Z_e$ ?",
+        "answers": [
+            "$50\\text{ }\\Omega$ (impédance de ligne typique)",
+            "$10^3\\text{ }\\Omega$ (ordre des résistances de protection)",
+            "$10^6\\text{ }\\Omega$ (typique pour les ALI à transistors bipolaires)",
+            "$10^{-3}\\text{ }\\Omega$ (modèle de court-circuit)"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Un ALI est conçu pour prélever le moins de courant possible sur la source. Son impédance d'entrée est donc très élevée, typiquement entre $10^6\\text{ }\\Omega$ (bipolaire) et $10^{12}\\text{ }\\Omega$ (FET/CMOS)."
+    },
+    {
+        "uuid": "ali-008",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En régime linéaire, quelle est la relation reliant la tension de sortie $V_s$ à la tension différentielle $\\epsilon$ en boucle ouverte ?",
+        "answers": [
+            "$V_s = \\mu_0 \\cdot \\epsilon$ avec $\\mu_0 \\to \\infty$",
+            "$V_s = V_{sat} \\cdot \\epsilon$",
+            "$V_s = 0$ car l'ALI est un court-circuit",
+            "$V_s = \\epsilon / R_{charge}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "En régime linéaire, l'ALI agit comme un amplificateur de tension de gain $\\mu_0$ (très grand, de l'ordre de $10^5$). En pratique, dès que $\\epsilon$ s'écarte de 0, la sortie sature rapidement."
+    },
+    {
+        "uuid": "ali-009",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le modèle de l'ALI idéal, quelle hypothèse concernant les courants d'entrée $i_+$ et $i_-$ est-elle retenue ?",
+        "answers": [
+            "$i_+ = i_- = \\infty$ (modèle de source de courant parfait)",
+            "$i_+ = i_- = 0$ (modèle d'impédance d'entrée infinie)",
+            "$i_+ = i_- = V_s / R_{in}$",
+            "$i_+ = -i_-$ (loi des nœuds conservatrice)"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'impédance d'entrée infinie de l'ALI idéal implique qu'aucun courant ne pénètre par les bornes d'entrée : $i_+ = 0$ et $i_- = 0$."
+    },
+    {
+        "uuid": "ali-010",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Lors de l'utilisation d'un ALI avec une rétroaction négative (contre-réaction), quelle simplification majeure utilise-t-on pour la tension différentielle $\\epsilon$ ?",
+        "answers": [
+            "$\\epsilon = V_{sat}$, l'ALI est en butée",
+            "$\\epsilon = 0$, donc $V^+ = V^-$, c'est le régime linéaire",
+            "$\\epsilon = V_s$, car l'ALI recopie la tension",
+            "$\\epsilon = V_s / 2$, hypothèse de diviseur de tension"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La contre-réaction maintient l'ALI dans sa zone linéaire. Comme le gain $\\mu_0$ est très grand et que $V_s$ reste fini, il est nécessaire que $\\epsilon = V_s / \\mu_0 \\approx 0$."
+    },
+    {
+        "uuid": "ali-011",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le cadre de la modélisation d'un Amplificateur Linéaire Intégré (ALI) réel, quelle est la valeur typique du gain différentiel statique en boucle ouverte, noté $\\mu_0$ ?",
+        "answers": [
+            "$10^2$ (valeur trop faible pour un ALI)",
+            "$10^5$ (valeur typique du gain en continu)",
+            "$10^8$ (valeur irréaliste pour un ALI standard)",
+            "$10^{12}$ (ordre de grandeur d'une impédance d'entrée)"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Un ALI est conçu pour être un amplificateur à très fort gain. En boucle ouverte, le gain différentiel $\\mu_0$ est très élevé, typiquement de l'ordre de $10^5$ à $10^6$ en régime continu. Une valeur de $10^2$ serait bien trop faible, tandis que $10^{12}$ est une erreur de confusion avec l'impédance d'entrée $Z_e$ qui est effectivement très grande.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-012",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En étudiant la réponse fréquentielle d'un ALI réel en boucle ouverte, quel comportement dynamique observe-t-on généralement ?",
+        "answers": [
+            "Un filtre passe-haut d'ordre 1",
+            "Un filtre passe-bas d'ordre 1",
+            "Un filtre passe-bande d'ordre 2",
+            "Un système intégrateur pur"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "L'ALI réel possède une fréquence de coupure interne très basse. En boucle ouverte, sa fonction de transfert se modélise par un filtre passe-bas du premier ordre : $A(j\\omega) = \\frac{\\mu_0}{1 + j\\frac{f}{f_c}}$. Il ne s'agit pas d'un intégrateur pur (qui n'a pas de fréquence de coupure finie) ni d'un passe-haut.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-013",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la valeur typique de la fréquence de coupure $f_c$ d'un ALI en boucle ouverte (pour un modèle type $\\mu A 741$) ?",
+        "answers": [
+            "$20$ Hz",
+            "$20$ kHz",
+            "$2$ MHz",
+            "$10$ MHz"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "explication": "La fréquence de coupure en boucle ouverte d'un ALI est volontairement très faible pour assurer la stabilité du composant lors de l'ajout d'une rétroaction. Elle se situe typiquement autour de $10$ Hz à $100$ Hz. $20$ kHz est la limite haute de l'audition humaine, et $2$ MHz correspond plutôt au produit Gain-Bande (GBW).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-014",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le cadre de l'étude des limitations non linéaires, qu'appelle-t-on le 'Slew Rate' ($SR$) d'un ALI ?",
+        "answers": [
+            "Le courant maximal de court-circuit en sortie",
+            "La vitesse maximale de variation de la tension de sortie : $SR = \\max \\left| \\frac{dv_s}{dt} \\right|$",
+            "La plage de tension de saturation de l'ALI en fonction de l'alimentation",
+            "La fréquence maximale pour laquelle le gain est divisé par $\\sqrt{2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Le Slew Rate (ou vitesse de balayage) caractérise l'incapacité de l'ALI à suivre des variations trop rapides du signal d'entrée. Il limite la pente maximale du signal de sortie. Si la dérivée demandée dépasse le $SR$, le signal de sortie est distordu (déformation en triangle).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-015",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la valeur usuelle du Slew Rate pour un ALI standard comme le $\\mu A 741$ ?",
+        "answers": [
+            "$0,1$ $V\\cdot \\mu s^{-1}$",
+            "$0,5$ $V\\cdot \\mu s^{-1}$",
+            "$16$ $V\\cdot \\mu s^{-1}$",
+            "$100$ $V\\cdot \\mu s^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "La valeur caractéristique du $\\mu A 741$ est d'environ $0,5$ $V/\\mu s$. Les valeurs élevées comme $16$ $V/\\mu s$ concernent des amplificateurs rapides (type TL081). L'option en $m \\cdot s^{-1}$ est une confusion dimensionnelle absurde avec la célérité de la lumière.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-016",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En quoi consiste, d'un point de vue structurel, la mise en place d'une rétroaction négative ?",
+        "answers": [
+            "Relier la sortie à l'entrée non inverseuse ($E^+$)",
+            "Relier la sortie à l'entrée inverseuse ($E^-$) par un réseau passif",
+            "Relier la sortie à la masse via une résistance",
+            "Appliquer un signal d'entrée sur les deux bornes $E^+$ et $E^-$ simultanément"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "La rétroaction négative (ou contre-réaction) nécessite un retour d'une fraction du signal de sortie vers l'entrée inverseuse ($E^-$). Cela crée un mécanisme de soustraction qui stabilise le système et permet de fonctionner en régime linéaire.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-017",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel est l'effet physique dominant de la rétroaction négative sur le fonctionnement d'un montage à ALI ?",
+        "answers": [
+            "Effet stabilisant, permettant d'imposer un gain précis indépendant de $\\mu_0$",
+            "Effet déstabilisant, forçant le passage en régime de saturation",
+            "Augmentation du gain différentiel global à l'infini",
+            "Annulation systématique de la bande passante du montage"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "explication": "La rétroaction négative permet d'asservir la sortie à l'entrée. Elle réduit considérablement le gain, mais le rend dépendant uniquement des composants passifs (résistances, condensateurs) et non de la valeur imprécise de $\\mu_0$, ce qui stabilise le gain du montage.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-018",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour un montage non-inverseur classique avec une résistance $R_1$ entre $E^-$ et la masse, et une résistance $R_2$ entre $S$ et $E^-$, quel est le gain $G = V_s/e$ ?",
+        "answers": [
+            "$G = -R_2 / R_1$",
+            "$G = 1 + R_2 / R_1$",
+            "$G = 1 - R_2 / R_1$",
+            "$G = R_1 / (R_1 + R_2)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "En utilisant le diviseur de tension sur l'entrée inverseuse et le régime linéaire ($V_+ = V_-$), on obtient $V_+ = e = V_- = V_s \\frac{R_1}{R_1+R_2}$. D'où $V_s/e = \\frac{R_1+R_2}{R_1} = 1 + \\frac{R_2}{R_1}$. L'expression $-R_2/R_1$ correspond au montage inverseur.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-019",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Lorsqu'on utilise un ALI dans un montage à rétroaction négative (système du 1er ordre), quelle grandeur reste constante quel que soit le gain choisi ?",
+        "answers": [
+            "Le gain statique",
+            "La fréquence de coupure",
+            "Le produit gain-bande passante (GBP)",
+            "La tension de saturation"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 2,
+        "explication": "Pour un ALI, le produit Gain $\\times$ Bande Passante ($GBP$ ou $GBW$) est une constante caractéristique du composant. Si l'on augmente le gain via le réseau de rétroaction, la bande passante diminue proportionnellement pour conserver ce produit constant.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-020",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le montage inverseur standard ($R_1$ en entrée, $R_2$ en rétroaction), quelle est la relation entre la tension de sortie $V_s$ et la tension d'entrée $e$ ?",
+        "answers": [
+            "$V_s = -\\frac{R_2}{R_1} e$",
+            "$V_s = \\frac{R_2}{R_1} e$",
+            "$V_s = -\\frac{R_1}{R_2} e$",
+            "$V_s = -(1 + \\frac{R_2}{R_1}) e$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "explication": "En régime linéaire, le courant dans l'entrée inverseuse est nul. La loi des nœuds en $E^-$ donne $\\frac{e - 0}{R_1} + \\frac{V_s - 0}{R_2} = 0$, d'où $V_s = -\\frac{R_2}{R_1} e$. L'inversion de signe est due au fait que le signal d'entrée est appliqué via $R_1$ à l'entrée inverseuse.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-021",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le cadre de l'étude des caractéristiques d'un Amplificateur Linéaire Intégré (ALI) idéal, quelle est la valeur de l'impédance d'entrée $Z_e$ du montage suiveur (en configuration non-inverseuse) ?",
+        "answers": [
+            "$0$ $\\Omega$ (court-circuit)",
+            "$R$ (valeur de la résistance de contre-réaction)",
+            "$\\infty$ (infinie)",
+            "$50$ $\\Omega$ (adaptation classique)"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 2,
+        "explication": "Dans un ALI idéal, le courant entrant dans les bornes $+$ et $-$ est nul. Comme $I_e = 0$ pour une tension $V_e$ appliquée, on a $Z_e = V_e / I_e = \\infty$. Une impédance infinie est idéale pour ne pas charger le générateur en amont.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-022",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour quel usage fondamental privilégie-t-on l'insertion d'un montage suiveur entre deux étages d'un circuit électronique ?",
+        "answers": [
+            "Inverser le signe de la tension pour traiter des signaux bipolaires",
+            "Isoler une source de tension d'une charge pour éviter l'écroulement de la tension (adaptation d'impédance)",
+            "Intégrer le signal d'entrée pour filtrer les hautes fréquences",
+            "Amplifier le courant en diminuant la tension de sortie"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Le suiveur présente une impédance d'entrée infinie et une impédance de sortie nulle. Cela permet de transmettre la tension sans que la charge ne modifie le potentiel de la source, garantissant une transmission parfaite sans effet de charge.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-023",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En régime sinusoïdal permanent, quelle est la fonction de transfert complexe $\\underline{H} = \\frac{\\underline{V_s}}{\\underline{e}}$ d'un montage intégrateur idéal utilisant un ALI ?",
+        "answers": [
+            "$\\underline{H} = -jRC\\omega$",
+            "$\\underline{H} = -\\frac{1}{jRC\\omega}$",
+            "$\\underline{H} = \\frac{1}{jRC\\omega}$",
+            "$\\underline{H} = -\\frac{1}{1+jRC\\omega}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Pour un montage intégrateur, on a $\\underline{V_s} = -\\frac{Z_C}{R} \\underline{e}$ avec $Z_C = \\frac{1}{jC\\omega}$. D'où $\\underline{H} = -\\frac{1}{jRC\\omega} = \\frac{j}{RC\\omega}$. Le signe moins provient de l'utilisation de l'entrée inverseuse.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-024",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pourquoi le montage intégrateur idéal est-il considéré comme instable en pratique lorsqu'il est utilisé en boucle ouverte sur un signal contenant une composante continue (offset) ?",
+        "answers": [
+            "Il dissipe une puissance thermique trop élevée dans le condensateur",
+            "La composante continue est intégrée linéairement dans le temps, entraînant une saturation progressive de la tension de sortie à $\\pm V_{sat}$",
+            "La réactance du condensateur devient nulle, créant un court-circuit entre la sortie et l'entrée",
+            "Il provoque un phénomène d'oscillation haute fréquence incontrôlée"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "L'intégrateur idéal se comporte comme un amplificateur de gain infini en continu. La moindre tension de décalage (offset) en entrée est intégrée : $V_s(t) = -\\frac{1}{RC}\\int e(t) dt$, ce qui fait croître (ou décroître) la tension jusqu'aux rails d'alimentation.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-025",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle modification structurelle permet de transformer un intégrateur idéal en montage pseudo-intégrateur afin de limiter son gain en basse fréquence ?",
+        "answers": [
+            "L'insertion d'une résistance en série avec le condensateur",
+            "L'ajout d'une résistance en parallèle du condensateur de contre-réaction",
+            "L'ajout d'une inductance en série avec la source d'entrée",
+            "La suppression de la résistance d'entrée $R$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "En plaçant une résistance $R_p$ en parallèle du condensateur, le montage devient un filtre passe-bas du premier ordre en basse fréquence, évitant la saturation. Le gain en continu devient fini et vaut $-R_p/R$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-026",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel est le régime de fonctionnement d'un ALI utilisé en comparateur simple (sans rétroaction) ?",
+        "answers": [
+            "Régime linéaire (amplification proportionnelle)",
+            "Régime de saturation (la sortie vaut $\\pm V_{sat}$)",
+            "Régime bloqué (sortie nulle)",
+            "Régime transitoire uniquement"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Sans rétroaction négative, le gain différentiel de l'ALI ($A_{d} \\approx 10^5$) amplifie la moindre différence $\\epsilon = V_+ - V_-$ au-delà de la zone linéaire, projetant instantanément la sortie vers les tensions d'alimentation $V_{sat}^+$ ou $V_{sat}^-$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-027",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un comparateur simple comparant $e$ à une tension de référence $E_0$ appliquée sur l'entrée inverseuse ($V_- = E_0$), que vaut $V_s$ lorsque $e > E_0$ ?",
+        "answers": [
+            "$V_s = +V_{sat}$",
+            "$V_s = -V_{sat}$",
+            "$V_s = 0$ V",
+            "$V_s = e - E_0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "explication": "La sortie est donnée par $V_s = A_d(V_+ - V_-)$. Si $e > E_0$, alors $V_+ - V_- > 0$, donc la sortie bascule vers la valeur positive de saturation $V_{sat}^+$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-028",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "La 'génération d'harmoniques' est une caractéristique des systèmes non-linéaires. Que signifie ce phénomène pour un comparateur ?",
+        "answers": [
+            "Le signal de sortie contient uniquement la fréquence fondamentale de l'entrée",
+            "La sortie présente un spectre enrichi en multiples de la fréquence d'entrée (car le signal est écrêté)",
+            "L'amplitude de la sortie est proportionnelle à la fréquence du signal d'entrée",
+            "Le comparateur filtre les harmoniques du signal d'entrée pour ne laisser que la fondamentale"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "La non-linéarité (écrêtage du signal) déforme le signal d'entrée sinusoïdal en un signal quasi-rectangulaire. Selon le développement en série de Fourier, un signal carré contient une somme d'harmoniques impaires de la fréquence fondamentale.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-029",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Schmitt_trigger_transfer_curve.svg",
+        "theme": "circuits électriques",
+        "question": "Un montage possédant une rétroaction positive (ex: Trigger de Schmitt) fonctionne en quel régime, mis à part les phases de basculement ?",
+        "answers": [
+            "Régime linéaire proportionnel",
+            "Régime saturé (soit $+V_{sat}$, soit $-V_{sat}$)",
+            "Régime d'oscillation sinusoïdale forcée",
+            "Régime de suiveur de tension"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "La rétroaction positive maintient l'ALI en saturation. Comme $V_+ > V_-$ ou $V_+ < V_-$, la sortie est poussée contre les rails d'alimentation. Elle ne quitte ce régime que lors du basculement rapide entre les deux états de saturation.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-030",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un comparateur à hystérésis, de quoi dépend l'état de la sortie à un instant $t$ donné ?",
+        "answers": [
+            "Uniquement de la valeur instantanée de l'entrée $e(t)$ par rapport au seuil",
+            "De la valeur de l'entrée $e(t)$ et du signe de sa variation (mémoire de l'état précédent)",
+            "Uniquement de la valeur moyenne du signal sur une période",
+            "De la fréquence du signal d'entrée"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "L'hystérésis confère au montage une mémoire : le seuil de basculement n'est pas le même selon que le signal $e$ augmente (passage au seuil haut) ou diminue (passage au seuil bas). L'état de sortie dépend donc de l'historique du signal.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-031",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans l'étude fréquentielle d'un filtre actif à base d'ALI, quelle est l'unité internationale de la pulsation de coupure $\\omega_c$ ?",
+        "answers": [
+            "Le Hertz (Hz)",
+            "Le radian par seconde ($rad\\cdot s^{-1}$)",
+            "Le Volt (V)",
+            "Le radian ($rad$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La pulsation $\\omega$ est définie par $\\omega = 2\\pi f$. Puisque la fréquence $f$ s'exprime en Hertz ($s^{-1}$), la pulsation est une grandeur angulaire par unité de temps, soit $rad\\cdot s^{-1}$. Le Hertz est l'unité de la fréquence $f$ et non de la pulsation."
+    },
+    {
+        "uuid": "ali-032",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Lors de l'analyse d'un montage à ALI en régime linéaire, quelle méthode permet de déterminer rapidement la fonction de transfert en sommant les courants arrivant à un nœud en fonction des potentiels ?",
+        "answers": [
+            "La loi de Pouillet",
+            "La Loi des Nœuds en Termes de Potentiels (LNTP) ou théorème de Millman",
+            "La loi d'Ohm généralisée",
+            "La loi des mailles de Kirchhoff"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La LNTP (souvent appelée théorème de Millman) est l'outil fondamental pour exprimer le potentiel d'un nœud en fonction des sources de tension et des impédances adjacentes, très utile pour appliquer l'hypothèse du régime linéaire ($V_+ = V_-$)."
+    },
+    {
+        "uuid": "ali-033",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le cadre de l'étude d'un montage dérivateur idéal à ALI, quelle est la relation temporelle reliant la tension de sortie $s(t)$ à la tension d'entrée $e(t)$ ?",
+        "answers": [
+            "$s(t) = -RC \\frac{de(t)}{dt}$",
+            "$s(t) = RC \\frac{de(t)}{dt}$",
+            "$s(t) = \\frac{1}{RC} \\int e(t) dt$",
+            "$s(t) = -\\frac{1}{RC} \\int e(t) dt$"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour un montage dérivateur inverseur, le courant dans le condensateur d'entrée est $i = C \\frac{de}{dt}$. Par la loi des nœuds sur l'entrée inverseuse (potentiel nul), ce courant traverse la résistance de contre-réaction $R$, imposant $s(t) = -Ri = -RC \\frac{de}{dt}$."
+    },
+    {
+        "uuid": "ali-034",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour un montage sommateur non-inverseur à ALI utilisant deux entrées $e_1$ et $e_2$ et trois résistances identiques de valeur $R$ (deux en entrée, une en contre-réaction et une à la masse), quelle est l'expression de $V_s$ ?",
+        "answers": [
+            "$V_s = e_1 + e_2$",
+            "$V_s = -(e_1 + e_2)$",
+            "$V_s = \\frac{e_1 + e_2}{2}$",
+            "$V_s = \\frac{e_1 + e_2}{4}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Par le théorème de Millman sur l'entrée non-inverseuse, $V_+ = (e_1 + e_2)/2$. En régime linéaire, $V_- = V_+$. Avec un montage non-inverseur de gain $A_v = 1 + R_2/R_1 = 2$, on obtient $V_s = (1+1) V_+ = e_1 + e_2$. Cependant, pour une structure simple avec pont diviseur en entrée et gain de l'ALI fixé, le résultat est souvent la moyenne. Vérifiez le schéma : si le gain est unitaire, c'est bien la moyenne."
+    },
+    {
+        "uuid": "ali-035",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans l'étude d'un montage pseudo-intégrateur de fonction de transfert $H(j\\omega) = \\frac{-R'/R}{1 + jRC\\omega}$, quel est le comportement du montage à haute fréquence ($f \\gg f_c$) ?",
+        "answers": [
+            "Il se comporte comme un amplificateur inverseur de gain $-R'/R$",
+            "Il se comporte comme un intégrateur idéal",
+            "Il se comporte comme un filtre passe-haut",
+            "La sortie s'annule car le condensateur devient un court-circuit"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "À haute fréquence, le terme $jRC\\omega$ devient prédominant devant 1 dans le dénominateur. La fonction de transfert se simplifie en $H(j\\omega) \\approx \\frac{-R'/R}{jRC\\omega} = \\frac{-1}{jRC\\omega} \\cdot \\frac{R'}{R}$. C'est la signature d'une intégration, où la constante d'intégration est ajustée par le rapport des résistances."
+    },
+    {
+        "uuid": "ali-036",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel est le rôle technique de la résistance $R'$ montée en parallèle avec le condensateur de rétroaction dans un montage pseudo-intégrateur ?",
+        "answers": [
+            "Augmenter la bande passante du montage",
+            "Limiter le gain statique et empêcher la saturation en basse fréquence",
+            "Protéger l'ALI contre les courants de fuite du condensateur",
+            "Convertir le signal de courant en tension"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un intégrateur pur a un gain infini en continu ($f=0$), ce qui entraîne la saturation de l'ALI en présence de la moindre composante continue en entrée. La résistance $R'$ permet de fixer un gain fini à basse fréquence : $G_0 = -R'/R$."
+    },
+    {
+        "uuid": "ali-037",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Un montage déphaseur (ou filtre passe-tout) actif est caractérisé par une fonction de transfert dont le module est :",
+        "answers": [
+            "Dépendant de la fréquence $\\omega$",
+            "Constant et égal à 1 (indépendant de la fréquence)",
+            "Strictement croissant avec la fréquence",
+            "Nul à la fréquence de coupure"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par définition, un filtre 'passe-tout' transmet toutes les fréquences avec la même amplitude. Seule la phase varie en fonction de la fréquence. Mathématiquement, le module de $H(j\\omega)$ est égal à 1 quel que soit $\\omega$."
+    },
+    {
+        "uuid": "ali-038",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Si l'on applique un échelon de tension à un montage utilisant une rétroaction positive (ex: comparateur à hystérésis), quel est le comportement de la sortie ?",
+        "answers": [
+            "La sortie s'établit à une valeur proportionnelle à l'entrée",
+            "La sortie bascule instantanément vers l'une des deux tensions de saturation ($+V_{sat}$ ou $-V_{sat}$)",
+            "La sortie oscille indéfiniment autour de 0",
+            "La sortie suit l'entrée avec un retard pur"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La rétroaction positive rend l'ALI instable en régime linéaire. Il ne peut donc pas maintenir une relation de proportionnalité $V_s = G e$. Il bascule nécessairement en saturation positive ou négative selon le signe de la tension différentielle à ses bornes."
+    },
+    {
+        "uuid": "ali-039",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour un filtre actif dont le gain est noté $k$, quelle est la condition sur $k$ pour que le système soit instable et présente une rétroaction positive dominante ?",
+        "answers": [
+            "$k > 1$",
+            "$k < 1$",
+            "$k = 1$",
+            "$k = 0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Dans les filtres actifs (type Sallen-Key par exemple), la stabilité est régie par le gain de la boucle de rétroaction. Si le gain $k$ dépasse une valeur critique (souvent 1 ou 3 selon la topologie), les pôles de la fonction de transfert se déplacent dans le demi-plan droit du complexe, provoquant une instabilité."
+    },
+    {
+        "uuid": "ali-040",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un montage Trigger de Schmitt (comparateur à hystérésis), comment nomme-t-on l'intervalle de tension $\\Delta V = V_{haut} - V_{bas}$ à l'intérieur duquel la sortie maintient son état précédent ?",
+        "answers": [
+            "La zone linéaire",
+            "La largeur de la plage d'hystérésis",
+            "La zone morte",
+            "La bande de garde"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'hystérésis est la propriété d'un système qui garde en mémoire son état précédent. La largeur de cette plage, définie par les seuils de basculement $V_{haut}$ et $V_{bas}$, empêche les basculements intempestifs dus au bruit sur le signal d'entrée."
+    },
+    {
+        "uuid": "ali-041",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le cadre de l'étude des montages à base d'Amplificateur Linéaire Intégré (ALI) en régime linéaire, que définit un 'convertisseur de résistance négative' (NIC) pour le dipôle d'entrée ?",
+        "answers": [
+            "$u = -R \\cdot i$",
+            "$u = R \\cdot i^2$",
+            "$u = R / i$",
+            "$u = -R \\cdot i + V_{sat}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Un NIC (Negative Impedance Converter) impose une relation courant-tension de type $u = -R \\cdot i$. Le signe négatif indique que le dipôle restitue de la puissance au lieu d'en dissiper, ce qui est rendu possible par l'alimentation externe de l'ALI. Les autres propositions sont physiquement incohérentes avec le modèle linéaire."
+    },
+    {
+        "uuid": "ali-042",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Lors de l'étude expérimentale d'un NIC, que se passe-t-il si l'intensité du courant imposé dépasse une valeur de basculement critique $I_{basc}$ ?",
+        "answers": [
+            "La résistance devient positive par effet thermique",
+            "L'ALI sature et la loi $u = -R \\cdot i$ n'est plus valable",
+            "Le montage devient un générateur de tension idéale",
+            "L'impédance d'entrée devient infinie"
+        ],
+        "difficulty": 4,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un ALI ne peut fonctionner en régime linéaire que si la tension de sortie reste dans l'intervalle $[-V_{sat}, +V_{sat}]$. Dès que le courant demande une tension $u$ supérieure à cette excursion, l'ALI sature : la relation linéaire est rompue et la tension de sortie se bloque à $\\pm V_{sat}$."
+    },
+    {
+        "uuid": "ali-043",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Considérons un filtre actif réalisé avec un ALI, une capacité $C$ en série sur l'entrée et une résistance $R'$ en contre-réaction. Quel est le type de filtre obtenu ?",
+        "answers": [
+            "Passe-bas",
+            "Passe-haut",
+            "Passe-bande",
+            "Passe-tout"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "En régime sinusoïdal permanent, l'impédance de la capacité est $\\underline{Z}_C = 1/(jC\\omega)$. Le gain est proportionnel à $\\underline{Z}_{R'}/\\underline{Z}_C = jRC\\omega$. À très basse fréquence, le gain tend vers 0 (comportement de blocage du condensateur), ce qui caractérise un filtre passe-haut."
+    },
+    {
+        "uuid": "ali-044",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour le filtre passe-haut actif de gain complexe $\\underline{H} = -j \\frac{f}{f_c} / (1 + j \\frac{f}{f_c})$, que vaut le gain en haute fréquence ($f \\gg f_c$) ?",
+        "answers": [
+            "$0$ dB",
+            "$-R'/R$",
+            "$-R/R'$",
+            "$1$ (gain unité)"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour $f \\gg f_c$, le rapport $\\underline{H}$ tend vers le rapport des résistances $-R'/R$ dans le montage inverseur classique. Il s'agit du gain asymptotique du filtre. L'erreur classique est d'inverser le rapport des résistances ou de confondre avec un gain en tension pur."
+    },
+    {
+        "uuid": "ali-045",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Si la sortie théorique d'un montage amplificateur est une sinusoïde d'amplitude $30$ V alors que l'ALI est alimenté sous $V_{sat} = 15$ V, quel signal observe-t-on réellement à l'oscilloscope ?",
+        "answers": [
+            "Un signal sinusoïdal de $30$ V non déformé",
+            "Un signal sinusoïdal de $15$ V",
+            "Un signal sinusoïdal écrêté à $\\pm 15$ V",
+            "Un signal triangulaire"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La tension de sortie ne peut pas excéder les rails d'alimentation. La partie de la sinusoïde dépassant $\\pm 15$ V est tronquée (écrêtage), transformant les sommets de la sinusoïde en plateaux horizontaux."
+    },
+    {
+        "uuid": "ali-046",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un modèle réel d'Amplificateur Linéaire Intégré, quel est l'ordre de grandeur typique de l'impédance de sortie $Z_s$ ?",
+        "answers": [
+            "$50$ à $200$ $\\Omega$",
+            "$1$ $M\\Omega$",
+            "$0$ $\\Omega$ strictement",
+            "$10$ $k\\Omega$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Bien que l'ALI idéal possède une impédance de sortie nulle, l'ALI réel (type $\\mu A 741$ ou TL081) présente une impédance de sortie non nulle, typiquement de quelques dizaines à centaines d'ohms, due à l'étage de sortie interne."
+    },
+    {
+        "uuid": "ali-047",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Sur le boîtier standard de type DIP-8 (8 broches) d'un ALI (type TL081), quelle est la fonction de la broche n°1 ?",
+        "answers": [
+            "Offset null (ajustement de l'offset)",
+            "Entrée inverseuse",
+            "Entrée non-inverseuse",
+            "Sortie"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le brochage standard d'un ALI simple permet de corriger la tension de décalage (offset) via les broches 1 et 5 (ou parfois 1 et 8 selon les modèles). Ces broches sont souvent inutilisées dans les montages pédagogiques de base."
+    },
+    {
+        "uuid": "ali-048",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pourquoi qualifie-t-on l'ALI, dans le contexte des systèmes linéaires, de 'quadripôle' ?",
+        "answers": [
+            "Parce qu'il possède 4 pattes en entrée",
+            "Parce qu'il possède deux bornes d'accès en entrée et deux bornes d'accès en sortie (référence commune incluse)",
+            "Parce qu'il est constitué de 4 transistors internes",
+            "Parce qu'il multiplie la tension par un facteur 4"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un quadripôle est un système défini par deux ports. Pour l'ALI, on considère un port d'entrée (entre les bornes $+$ et $-$) et un port de sortie (entre la borne de sortie et la masse), respectant ainsi la définition classique d'un quadripôle électrique."
+    },
+    {
+        "uuid": "ali-049",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la valeur typique du courant maximal que peut fournir la sortie d'un ALI standard avant d'entrer en saturation de courant ?",
+        "answers": [
+            "$40$ mA",
+            "$10$ A",
+            "$1$ $\\mu$A",
+            "$500$ mA"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Un ALI est un composant de traitement de signal. Son étage de sortie est conçu pour des courants faibles, typiquement de $20$ à $50$ mA. Au-delà, l'ALI risque la destruction thermique ou limite simplement le courant, entraînant une chute de tension de sortie."
+    },
+    {
+        "uuid": "ali-050",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans l'étude de la réponse fréquentielle d'un ALI, la fonction de transfert est souvent modélisée par $\\underline{H} = \\frac{A_0}{1+j f/f_c}$. Que représente $f_c$ ?",
+        "answers": [
+            "La fréquence centrale du filtre",
+            "La fréquence de coupure à $-3$ dB",
+            "La fréquence de résonance",
+            "La fréquence de transition du gain unité"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La forme canonique $1/(1+j(f/f_c))$ correspond à un filtre passe-bas du premier ordre. Par définition, $f_c$ est la fréquence pour laquelle le gain chute de $3$ dB par rapport au gain maximal $A_0$ (soit une division par $\\sqrt{2}$ du gain complexe)."
+    },
+    {
+        "uuid": "ali-051",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un montage non-inverseur, l'entrée $e$ est branchée sur :",
+        "answers": [
+            "L'entrée inverseuse",
+            "L'entrée non-inverseuse",
+            "La sortie"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-052",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour l'ALI idéal, quelle est l'impédance de sortie $Z_s$ ?",
+        "answers": [
+            "Infinie",
+            "$0$ $\\Omega$",
+            "$50$ $\\Omega$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-053",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En régime saturé, quelle est la valeur de $\\epsilon$ ?",
+        "answers": [
+            "Nulle",
+            "Non nulle et du même signe que $V_s$",
+            "Non nulle et de signe opposé à $V_s$"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-054",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la condition sur les coefficients du dénominateur d'une fonction de transfert pour assurer la stabilité ?",
+        "answers": [
+            "Ils doivent être tous négatifs",
+            "Ils doivent être tous de même signe (positifs par convention)",
+            "Leur somme doit être nulle"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-055",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le montage sommateur inverseur, que vaut la sortie $s$ pour deux entrées $e_1, e_2$ et résistances identiques $R$ ?",
+        "answers": [
+            "$s = e_1 + e_2$",
+            "$s = -(e_1 + e_2)$",
+            "$s = R(e_1 + e_2)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-056",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la définition du gain statique $\\mu_0$ ?",
+        "answers": [
+            "Le gain à fréquence infinie",
+            "Le gain à fréquence nulle",
+            "Le gain à la fréquence de coupure"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-057",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Que se passe-t-il si on permute les entrées $+$ et $-$ dans un montage suiveur ?",
+        "answers": [
+            "Le montage devient instable et sature",
+            "Le gain devient négatif",
+            "Rien ne change"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-058",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la dimension du produit Gain $\\times$ Bande Passante ?",
+        "answers": [
+            "Dimension d'une tension",
+            "Dimension d'une fréquence",
+            "Sans dimension"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-059",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pourquoi l'alimentation de l'ALI n'est-elle généralement pas représentée sur les schémas électriques ?",
+        "answers": [
+            "Car elle est inutile",
+            "Pour alléger le schéma",
+            "Car l'ALI crée sa propre énergie"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-060",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans la caractéristique statique $V_s = f(\\epsilon)$, quelle est la pente de la zone linéaire ?",
+        "answers": [
+            "$1$",
+            "$\\mu_0$",
+            "$\\infty$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-061",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le cadre de l'étude de la stabilité des systèmes bouclés, une rétroaction positive est-elle compatible avec le fonctionnement en régime linéaire d'un ALI ?",
+        "answers": [
+            "Oui, elle permet de gagner en précision.",
+            "Non, car elle impose un pôle à partie réelle positive, conduisant inévitablement à la saturation (instabilité).",
+            "Oui, si la fréquence de coupure est très élevée.",
+            "Non, car cela détruirait physiquement le composant."
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le régime linéaire nécessite une rétroaction négative pour stabiliser le gain. Une rétroaction positive déplace les pôles de la fonction de transfert dans le demi-plan complexe droit, rendant le système instable : la tension de sortie s'écarte de l'équilibre pour atteindre les bornes d'alimentation $\\pm V_{sat}$."
+    },
+    {
+        "uuid": "ali-062",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Considérant un ALI idéal en régime de saturation, que vaut la tension de sortie $V_s$ si $V^+ = 3\\text{V}$ et $V^- = 2\\text{V}$ ?",
+        "answers": [
+            "$1\\text{V}$",
+            "$+V_{sat}$",
+            "$-V_{sat}$",
+            "$0\\text{V}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans un ALI, la tension de sortie suit la loi $V_s = A_{d}(V^+ - V^-)$ avec $A_{d} \\to \\infty$. Si $V^+ > V^-$, alors $V^+ - V^- > 0$, la sortie tend vers $+\\infty$ mais est limitée par la tension d'alimentation positive $+V_{sat}$. Le résultat est donc $+V_{sat}$."
+    },
+    {
+        "uuid": "ali-063",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le montage amplificateur inverseur, quelle propriété permet d'affirmer que le point $E^-$ est à un potentiel nul si $E^+$ est relié à la masse ?",
+        "answers": [
+            "La masse mécanique",
+            "La masse virtuelle",
+            "Le court-circuit virtuel",
+            "L'impédance nulle de la source"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "En régime linéaire, l'ALI impose $\\epsilon = V^+ - V^- = 0$. Si $V^+ = 0\\text{V}$ (masse), alors $V^- = 0\\text{V}$. Comme ce point n'est pas physiquement relié à la terre mais maintient un potentiel nul, on parle de 'masse virtuelle'."
+    },
+    {
+        "uuid": "ali-064",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est la définition physique précise du 'régime linéaire' d'un ALI ?",
+        "answers": [
+            "Le fonctionnement sans saturation où $V_s = A_{d}(V^+ - V^-)$ est proportionnel.",
+            "Le fait que l'ALI soit constitué uniquement de composants passifs linéaires.",
+            "Une zone où le gain est constant quelle que soit la fréquence.",
+            "Le mode où le courant d'entrée est nul."
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le terme 'linéaire' désigne la zone où la caractéristique $V_s = f(V^+ - V^-)$ est une droite de forte pente $A_{d}$. Dès que $V_s$ atteint $\\pm V_{sat}$, on quitte le régime linéaire pour le régime de saturation (non-linéaire)."
+    },
+    {
+        "uuid": "ali-065",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Soit un montage suiveur réel alimenté en $\\pm 15\\text{V}$. Si la tension d'entrée $V_e$ varie de $0\\text{V}$ à $20\\text{V}$, quel est le comportement de la sortie $V_s$ ?",
+        "answers": [
+            "$V_s$ suit fidèlement $V_e$ jusqu'à $20\\text{V}$.",
+            "$V_s$ suit $V_e$ jusqu'à environ $14\\text{V}-15\\text{V}$, puis sature à $+V_{sat}$.",
+            "$V_s$ reste bloqué à $0\\text{V}$ car $V_e > V_{cc}$.",
+            "$V_s$ augmente de manière exponentielle."
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La sortie d'un ALI réel est bornée par ses tensions d'alimentation $V_{cc}$ (ou $+V_{sat}$ légèrement inférieur à $V_{cc}$). Même si l'entrée dépasse cette valeur, la sortie ne peut pas excéder la tension de saturation."
+    },
+    {
+        "uuid": "ali-066",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour quelle application historique les premiers amplificateurs opérationnels ont-ils été conçus ?",
+        "answers": [
+            "Les récepteurs radio haute fidélité.",
+            "Les calculateurs analogiques pour réaliser des opérations mathématiques (somme, intégration).",
+            "La régulation de vitesse des moteurs à courant continu.",
+            "La conversion numérique-analogique."
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le nom 'opérationnel' vient du fait qu'ils étaient utilisés pour effectuer des 'opérations' mathématiques (sommation, soustraction, intégration, dérivation) dans les premiers calculateurs électroniques analogiques avant l'ère du numérique."
+    },
+    {
+        "uuid": "ali-067",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Sur un ALI classique type $\\mu A741$ (boîtier DIL 8 broches), quel est le numéro de la broche correspondant à l'alimentation $-V_{cc}$ ?",
+        "answers": [
+            "4",
+            "7",
+            "8",
+            "2"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour un boîtier DIL8, la broche 7 correspond à $+V_{cc}$ et la broche 4 à $-V_{cc}$. C'est une convention standard importante à connaître pour le câblage en TP."
+    },
+    {
+        "uuid": "ali-068",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Un montage utilisant un ALI avec rétroaction sur les entrées $V^+$ et $V^-$ (par exemple un comparateur à hystérésis) impose quelle démarche d'étude ?",
+        "answers": [
+            "On suppose toujours le régime linéaire avec $V^+ = V^-$.",
+            "On étudie l'état de saturation ($+V_{sat}$ ou $-V_{sat}$) et le basculement en fonction de $\\epsilon = V^+ - V^-$.",
+            "On considère que le courant d'entrée est infini.",
+            "On utilise uniquement la loi des mailles sans se soucier du régime."
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dès qu'il y a une rétroaction positive (vers $V^+$), le régime linéaire est instable. Le montage est alors soit à $+V_{sat}$, soit à $-V_{sat}$. L'étude consiste à déterminer le seuil de basculement où $V^+ = V^-$, changeant ainsi l'état de saturation."
+    },
+    {
+        "uuid": "ali-069",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le cadre d'un montage intégrateur à ALI (condensateur dans la boucle de contre-réaction), quelle est la relation reliant $V_s$ à $V_e$ ?",
+        "answers": [
+            "$V_s(t) = -\\frac{1}{RC} \\frac{dV_e}{dt}$",
+            "$V_s(t) = -\\frac{1}{RC} \\int V_e(t) dt$",
+            "$V_s(t) = -RC \\int V_e(t) dt$",
+            "$V_s(t) = -RC \\frac{dV_e}{dt}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La relation fondamentale de l'intégrateur est basée sur la loi du courant dans le condensateur $i_c = C \\frac{dV_c}{dt}$. En régime linéaire, $V_s = -\\frac{1}{RC} \\int V_e dt$."
+    },
+    {
+        "uuid": "ali-070",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pourquoi la mise en cascade de deux filtres passifs ne permet-elle généralement pas de multiplier simplement leurs fonctions de transfert ?",
+        "answers": [
+            "A cause de l'atténuation naturelle des câbles.",
+            "A cause de l'effet de charge : le second étage modifie l'impédance de sortie du premier.",
+            "Parce que les phases ne s'additionnent pas.",
+            "Parce que le gain total est la somme des gains en dB."
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'effet de charge signifie que le courant prélevé par l'entrée du second filtre modifie la tension de sortie du premier. Pour isoler les étages, on utilise classiquement un suiveur (ALI) entre les deux filtres."
+    },
+    {
+        "uuid": "ali-071",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le cadre de l'étude de l'interconnexion de filtres passifs, comment corriger l'effet de charge (phénomène de modification de la fonction de transfert du premier étage) lors de la mise en cascade de deux filtres ?",
+        "answers": [
+            "En augmentant la tension d'entrée du signal",
+            "En intercalant un montage suiveur (ALI en mode suiveur) entre les deux filtres",
+            "En supprimant toutes les résistances du circuit pour éviter les dissipations",
+            "En augmentant la fréquence de coupure du second filtre"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "L'effet de charge survient car le second filtre impose une impédance d'entrée non infinie au premier. En intercalant un suiveur (impédance d'entrée infinie et impédance de sortie nulle), on isole les deux étages, ce qui permet à la fonction de transfert globale d'être le produit des fonctions de transfert individuelles.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-072",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le modèle idéal d'un ALI, l'expression du gain complexe $\\underline{A}_v$ d'un montage non-inverseur (de gain $1 + R_2/R_1$) dépend-elle du gain différentiel statique $\\mu_0$ ?",
+        "answers": [
+            "Oui, linéairement selon la formule $\\mu_0 / (1 + \\mu_0 \\beta)$",
+            "Non, dans le modèle idéal, le gain ne dépend que des résistances extérieures",
+            "Oui, mais seulement à haute fréquence quand l'ALI ne suit plus",
+            "Oui, car $\\mu_0$ est toujours inclus dans le calcul du gain en boucle fermée"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Dans le cadre du modèle de l'ALI idéal, on suppose $\\mu_0 \\to \\infty$. Le gain en boucle fermée est alors déterminé uniquement par les composants passifs du réseau de rétroaction. L'influence de $\\mu_0$ est négligée car la contre-réaction est supposée parfaite.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-073",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour un montage dérivateur idéal à ALI, quel est le dipôle présent dans la branche de rétroaction (entre la sortie $V_s$ et l'entrée inverseuse) ?",
+        "answers": [
+            "Une résistance $R$",
+            "Un condensateur $C$",
+            "Une bobine $L$",
+            "Un interrupteur"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "explication": "Dans un dérivateur, le condensateur est à l'entrée et la résistance est dans la boucle de rétroaction. La relation entrée-sortie est $v_s = -RC \\frac{dv_e}{dt}$. Si le condensateur était dans la rétroaction, nous aurions un montage intégrateur.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-074",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour un montage dérivateur classique à ALI, quel composant est placé en série sur la branche d'entrée (entre la source de tension $e$ et l'entrée inverseuse) ?",
+        "answers": [
+            "Une résistance $R$",
+            "Un condensateur $C$",
+            "Un fil direct sans composant",
+            "Une bobine $L$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Le montage dérivateur repose sur la relation courant-tension du condensateur $i = C \\frac{dv}{dt}$. En plaçant $C$ à l'entrée, le courant traversant le condensateur est proportionnel à la dérivée de la tension d'entrée. Ce courant traverse ensuite la résistance de rétroaction, transformant le courant en tension de sortie.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-075",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pourquoi, dans une application réelle, le montage dérivateur est-il extrêmement sensible aux parasites haute fréquence ?",
+        "answers": [
+            "Car son gain complexe est en $G(\\omega) = jR C \\omega$, donc le gain augmente linéairement avec $\\omega$",
+            "Car il sature instantanément en basse fréquence",
+            "Car le condensateur brûle à cause de l'effet Joule",
+            "Car l'ALI ne peut pas supporter les courants élevés à haute fréquence"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "explication": "La fonction de transfert est $H(j\\omega) = -jRC\\omega$. Comme le gain est proportionnel à $\\omega$, le dérivateur amplifie d'autant plus les signaux de haute fréquence (bruit). C'est pourquoi on ajoute souvent une petite résistance en série avec le condensateur pour limiter ce gain à haute fréquence.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-076",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Un montage comparateur à hystérésis possède une caractéristique statique $v_s = f(v_e)$ qui présente une forme particulière, signe d'une mémoire du système. Quel est son nom ?",
+        "answers": [
+            "Une droite affine",
+            "Un cycle d'hystérésis",
+            "Un cercle centré à l'origine",
+            "Une fonction en escalier"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Le comparateur à hystérésis (ou trigger de Schmitt) possède deux seuils de basculement distincts ($V_{h}$ et $V_{b}$), ce qui crée un cycle. La valeur de la sortie dépend non seulement de la valeur actuelle de l'entrée, mais aussi de son historique (montant ou descendant).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-077",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un montage amplificateur inverseur classique utilisant un ALI, si les résistances $R_1$ (entrée) et $R_2$ (rétroaction) sont égales, que vaut la tension de sortie $v_s$ ?",
+        "answers": [
+            "$v_s = e$",
+            "$v_s = -e$",
+            "$v_s = 0\\text{ V}$",
+            "$v_s = 2e$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Le gain d'un montage inverseur est $A_v = -R_2/R_1$. Si $R_1 = R_2$, alors $A_v = -1$. On obtient donc un montage suiveur inverseur où $v_s = -e$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-078",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En régime sinusoïdal forcé, quelle est l'unité de l'impédance complexe $\\underline{Z}$ d'un dipôle linéaire ?",
+        "answers": [
+            "Le Volt (V)",
+            "L'Ohm ($\\Omega$)",
+            "Le Farad (F)",
+            "Le Siemens (S)"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "L'impédance est définie par le rapport entre la tension complexe et le courant complexe : $\\underline{Z} = \\frac{\\underline{U}}{\\underline{I}}$. Elle s'exprime donc en Ohms ($\\Omega$), comme une résistance.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-079",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour un ALI réel, comment évolue la bande passante d'un montage non-inverseur si l'on augmente son gain statique ?",
+        "answers": [
+            "Elle augmente aussi, proportionnellement au gain",
+            "Elle diminue, car le produit gain-bande (GBW) est une constante du composant",
+            "Elle reste identique car la bande passante ne dépend que de l'ALI",
+            "Elle devient nulle au-delà d'un gain de 10"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Les ALI réels ont un produit Gain-Bande (GBW = Gain $\\times$ Bande Passante) constant. Si vous augmentez le gain en boucle fermée par le choix des résistances, la fréquence de coupure haute diminue mécaniquement pour respecter cette limite technologique du composant.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-080",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Si un ALI est alimenté par des tensions symétriques de $\\pm 15\\text{ V}$, quelle est la valeur typique de la tension de saturation $V_{sat}$ en sortie ?",
+        "answers": [
+            "Exactement $15\\text{ V}$",
+            "Environ $13$ à $14,5\\text{ V}$",
+            "$0\\text{ V}$",
+            "$30\\text{ V}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Un ALI réel ne peut pas atteindre exactement sa tension d'alimentation en sortie à cause des chutes de tension internes dans les transistors de sortie. On observe généralement une saturation à environ $1$ ou $2$ volts en dessous des tensions d'alimentation.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-081",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le cadre de l'étude des fonctions de transfert, un montage 'déphaseur' (ou correcteur de phase) à base d'ALI est utilisé pour :",
+        "answers": [
+            "Modifier l'amplitude du signal sans en altérer la phase",
+            "Modifier la phase du signal sans modifier son amplitude",
+            "Atténuer les hautes fréquences (filtrage passe-bas)",
+            "Multiplier la fréquence du signal d'entrée par un facteur constant"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Un déphaseur pur, souvent appelé filtre passe-tout, possède un gain complexe $H(j\\omega)$ dont le module est constant ($|H(j\\omega)| = 1$ ou $k$) et dont l'argument varie avec la pulsation $\\omega$. C'est une fonction essentielle pour la correction de systèmes asservis.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-082",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "En régime linéaire, quel courant circule à l'entrée inverseuse et non-inverseuse d'un ALI idéal, et quelle est sa justification ?",
+        "answers": [
+            "$i_+ = i_- = 0$ car l'impédance d'entrée est infinie",
+            "$i = V_s / Z_s$ par application de la loi d'Ohm",
+            "$i = \\epsilon / Z_e$ où $\\epsilon$ est l'écart de tension",
+            "$i$ est indéterminé car il dépend du courant de sortie"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "explication": "Le modèle de l'ALI idéal impose une impédance d'entrée infinie. Par conséquent, aucun courant ne peut pénétrer dans les bornes d'entrée ($i_+ = 0$ et $i_- = 0$). Les autres propositions sont des erreurs sur le modèle réel ou une confusion avec les courants de sortie.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-083",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Considérant un montage amplificateur non-inverseur de gain $A_v = 1 + R_2/R_1$, quel est le signe du gain et sa valeur minimale ?",
+        "answers": [
+            "Toujours positif et supérieur ou égal à 1",
+            "Toujours négatif car lié à la rétroaction inverse",
+            "Dépend du signe de la tension d'entrée $e$",
+            "Toujours compris entre 0 et 1"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "explication": "La fonction de transfert d'un non-inverseur est $s/e = 1 + R_2/R_1$. Comme les résistances sont positives, le gain est toujours $\\ge 1$. Confondre avec l'inverseur (gain $-R_2/R_1$) est une erreur classique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-084",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans la topologie classique du montage inverseur, comment est connectée l'entrée non-inverseuse ?",
+        "answers": [
+            "Reliée à la sortie $s$ pour la boucle de contre-réaction",
+            "Reliée à la masse pour fixer le potentiel de référence",
+            "Reliée à l'entrée $e$ via une résistance",
+            "Reliée à une tension de polarisation $V_{cc}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Dans le montage inverseur, l'entrée non-inverseuse est portée au potentiel $0V$ (masse). Cela impose, par le régime linéaire, que l'entrée inverseuse soit aussi à $0V$ (masse virtuelle).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-085",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Le montage NIC (Convertisseur d'Impédance Négative) permet de créer une résistance négative $-R$. Physiquement, comment se comporte ce dipôle ?",
+        "answers": [
+            "Il dissipe l'énergie reçue sous forme de chaleur",
+            "Il agit comme une source d'énergie active (générateur)",
+            "Il se comporte comme un court-circuit parfait",
+            "Il augmente la consommation totale du circuit"
+        ],
+        "difficulty": 4,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Une résistance négative signifie que le courant circule en sens inverse de ce qu'il ferait dans une résistance passive. Le dipôle fournit de la puissance au reste du circuit, il se comporte donc comme un générateur actif.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-086",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans un amplificateur réel, quel phénomène limite la tension de sortie lorsque le signal d'entrée est trop élevé, malgré un gain important ?",
+        "answers": [
+            "La destruction thermique des composants du boîtier",
+            "La saturation de la tension de sortie par les tensions d'alimentation $V_{cc}$",
+            "L'augmentation exponentielle de l'impédance de sortie",
+            "Le basculement irréversible vers le mode hystérésis"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "La tension de sortie d'un ALI ne peut physiquement pas dépasser les tensions d'alimentation ($V_{sat} \\approx V_{cc}$). Si $A_v \\cdot e > V_{sat}$, la sortie est écrêtée à $V_{sat}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-087",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Un montage comparateur à ALI sans rétroaction est tel que $s = V_{sat}^+$ si $e > 0$ et $s = V_{sat}^-$ si $e < 0$. Quel est ce type de comparateur ?",
+        "answers": [
+            "Non-inverseur",
+            "Inverseur",
+            "À hystérésis (trigger de Schmitt)",
+            "Suiveur de tension"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 0,
+        "explication": "Le signe de la sortie suit le signe de l'entrée : si $e > 0$, alors $s > 0$. C'est la définition d'un comparateur non-inverseur. L'inverseur aurait une sortie opposée.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-088",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quelle est l'expression complexe correcte de l'impédance d'un condensateur de capacité $C$ en régime sinusoïdal de pulsation $\\omega$ ?",
+        "answers": [
+            "$Z_C = j C \\omega$",
+            "$Z_C = 1 / (j C \\omega)$",
+            "$Z_C = -j / (C \\omega)$",
+            "$Z_C = C / (j \\omega)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Par définition, $i = C \\frac{du}{dt}$. En régime sinusoïdal, $\\frac{d}{dt} \\leftrightarrow j\\omega$. Ainsi, $I = j C \\omega U$, d'où $Z_C = U/I = 1/(j C \\omega) = -j/(C \\omega)$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-089",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le tracé d'un diagramme de Bode asymptotique, que porte-t-on traditionnellement en abscisse ?",
+        "answers": [
+            "Le gain en décibels (dB)",
+            "La pulsation $\\omega$ ou la fréquence $f$ en échelle logarithmique",
+            "La phase $\\phi$ en degrés",
+            "Le temps $t$ en secondes"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "L'intérêt du diagramme de Bode est de visualiser la réponse fréquentielle sur plusieurs décades. L'échelle logarithmique est indispensable pour rendre les fonctions de transfert (produits de pôles/zéros) linéaires sous forme de pentes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-090",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le montage suiveur idéal, si l'on applique une tension d'entrée $e(t) = 5 \\sin(\\omega t)$, quelle est la tension de sortie $s(t)$ ?",
+        "answers": [
+            "$s(t) = 10 \\sin(\\omega t)$",
+            "$s(t) = 5 \\sin(\\omega t)$",
+            "$s(t) = -5 \\sin(\\omega t)$",
+            "$s(t) = 5 \\sin(\\omega t + \\pi)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Le montage suiveur possède une fonction de transfert $H = 1$. Il reproduit donc exactement le signal d'entrée en sortie, avec une impédance de sortie nulle, ce qui permet l'adaptation d'impédance.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-091",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans l'étude des filtres actifs, quelle est l'expression canonique de la fonction de transfert complexe $\\underline{H}(j\\omega)$ d'un filtre passe-bas du 1er ordre, où $\\omega_c$ est la pulsation de coupure et $H_0$ le gain statique ?",
+        "answers": [
+            "$\\underline{H} = H_0 (1 + j\\frac{\\omega}{\\omega_c})$",
+            "$\\underline{H} = \\frac{H_0}{1 + j\\frac{\\omega}{\\omega_c}}$",
+            "$\\underline{H} = H_0 \\cdot j\\frac{\\omega}{\\omega_c}$",
+            "$\\underline{H} = \\frac{H_0}{1 - j\\frac{\\omega}{\\omega_c}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "La forme canonique d'un filtre passe-bas du 1er ordre est $\\underline{H} = \\frac{H_0}{1 + j\\frac{\\omega}{\\omega_c}}$. La première réponse correspond à un filtre passe-haut, la troisième à un passe-bande (dérivateur), et la dernière présente une erreur de signe dans l'impédance complexe.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-092",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Lorsqu'un signal sinusoïdal subit un écrêtage (saturation) par un montage à ALI, le signal de sortie est déformé. Contient-il toujours sa fréquence fondamentale ?",
+        "answers": [
+            "Non, la fréquence fondamentale disparaît totalement",
+            "Oui, mais le spectre est enrichi en harmoniques de fréquences multiples impaires",
+            "Oui, uniquement si l'écrêtage est asymétrique",
+            "Non, le signal devient purement continu"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Un signal écrêté reste périodique. Selon l'analyse de Fourier, il conserve sa fréquence fondamentale, mais la non-linéarité (écrêtage) introduit des harmoniques (multiples de la fréquence fondamentale).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-093",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour caractériser le gain en tension d'un système, on utilise le gain en décibels. Quelle est la définition correcte pour un gain en tension $|H|$ ?",
+        "answers": [
+            "$G_{dB} = 10 \\log_{10}(|H|)$",
+            "$G_{dB} = 20 \\log_{10}(|H|)$",
+            "$G_{dB} = \\ln(|H|)$",
+            "$G_{dB} = 20 \\log_{10}(|H|^2)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Le gain en tension est défini par $20 \\log(|H|)$ car il s'agit d'une grandeur de type amplitude (tension). Le facteur 10 est réservé aux grandeurs de puissance ($10 \\log(P/P_0)$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-094",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le cadre d'une étude fréquentielle d'un amplificateur, si le module de la fonction de transfert vaut $|H| = 10$, quelle est la valeur correspondante du gain en dB ?",
+        "answers": [
+            "$10$ dB",
+            "$20$ dB",
+            "$40$ dB",
+            "$100$ dB"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Le gain en dB est calculé par $20 \\log_{10}(10)$. Or, $\\log_{10}(10) = 1$. Donc, $G_{dB} = 20 \\times 1 = 20$ dB.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-095",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans le montage Trigger de Schmidt inverseur (comparateur à hystérésis), si la sortie est à $+V_{sat}$, à quelle condition le basculement vers $-V_{sat}$ se produit-il ?",
+        "answers": [
+            "$e$ devient très négatif",
+            "$e$ dépasse le seuil haut $V_{H}$",
+            "$e$ devient inférieur au seuil bas $V_{B}$",
+            "$e$ est nul"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Le Trigger de Schmidt possède deux seuils. Si la sortie est à $+V_{sat}$, le basculement vers $-V_{sat}$ survient lorsque la tension d'entrée $e$ franchit le seuil haut $V_{H}$ vers le haut (ou selon le montage, le seuil de basculement correspondant).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-096",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Quel est l'intérêt principal de l'hystérésis dans un montage comparateur ?",
+        "answers": [
+            "Améliorer la précision du gain",
+            "Supprimer les basculements intempestifs causés par le bruit superposé au signal d'entrée",
+            "Réduire la consommation de courant du montage",
+            "Augmenter la fréquence de coupure du filtre"
+        ],
+        "difficulty": 2,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "L'hystérésis crée une zone d'insensibilité : tant que le bruit reste à l'intérieur de la largeur de la boucle d'hystérésis, la sortie ne bascule pas, empêchant des commutations erratiques.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-097",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Pour réaliser un montage intégrateur ou dérivateur à l'aide d'un ALI, quel élément de circuit doit être utilisé dans la boucle de contre-réaction ou à l'entrée ?",
+        "answers": [
+            "Uniquement une résistance",
+            "Un dipôle impédant dépendant de la fréquence : condensateur ou bobine",
+            "Une diode de redressement",
+            "Un transistor à effet de champ"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "L'intégration et la dérivation reposent sur les relations $\\underline{I} = jC\\omega\\underline{V}$ ou $\\underline{V} = jL\\omega\\underline{I}$. Seuls des composants réactifs (condensateur ou bobine) permettent de lier la tension à la dérivée (ou l'intégrale) du courant.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-098",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "La tension de mode commun est définie par $v_{mc} = (v_+ + v_-)/2$. Quel est le comportement d'un ALI idéal vis-à-vis de cette tension ?",
+        "answers": [
+            "Il amplifie le mode commun par le gain différentiel $A_d$",
+            "Il rejette totalement le mode commun, son amplification est nulle",
+            "Il sature immédiatement pour toute valeur de $v_{mc}$",
+            "Il agit comme un filtre passe-bas sur $v_{mc}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Un ALI idéal a un taux de réjection du mode commun infini. Cela signifie que la sortie ne dépend que de la différence des entrées ($v_+ - v_-$) et est insensible à la valeur moyenne des entrées (mode commun).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-099",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Un montage est régi par l'équation différentielle $\\frac{ds}{dt} - ks = e$ avec $k > 0$. Quelle est la stabilité de ce système ?",
+        "answers": [
+            "Stable, car il converge vers 0",
+            "Instable, car le pôle est positif ($s(t)$ diverge en $e^{kt}$)",
+            "Linéaire et permanent, donc stable par définition",
+            "Stable uniquement si $e$ est sinusoïdal"
+        ],
+        "difficulty": 3,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Pour une équation de la forme $\\dot{s} - ks = e$, le pôle est $p = +k$. Comme $k>0$, le pôle est positif. La solution homogène est en $e^{kt}$, ce qui correspond à une divergence exponentielle au cours du temps : le système est donc instable.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ali-100",
+        "image_path": null,
+        "theme": "circuits électriques",
+        "question": "Dans des conditions réelles d'utilisation, qu'arrive-t-il à un ALI si la température ambiante augmente de façon excessive au-delà des limites constructeur ?",
+        "answers": [
+            "Le gain statique augmente jusqu'à devenir infini",
+            "Les caractéristiques (courants de polarisation, tensions de décalage) dérivent et une surchauffe peut détruire le composant",
+            "Il devient intrinsèquement plus performant grâce à l'agitation thermique",
+            "Le produit gain-bande augmente"
+        ],
+        "difficulty": 1,
+        "chapter": "Amplificateur Linéaire Intégré",
+        "correct_answer_index": 1,
+        "explication": "Les ALI sont sensibles à la température. Une chaleur excessive dégrade les propriétés semi-conductrices internes, provoquant des dérives thermiques importantes ou la destruction par emballement thermique des jonctions.",
+        "subject": "physique"
+    }
+]

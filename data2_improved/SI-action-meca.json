@@ -1,0 +1,1673 @@
+[
+    {
+        "uuid": "am-001",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de la modélisation des milieux continus ou des solides, quelle grandeur physique permet de définir une action mécanique de manière locale en un point $\\text{M}$ ?",
+        "answers": [
+            "Un torseur",
+            "Un champ de vecteurs force (ou densité de force)",
+            "Une accélération locale",
+            "Une densité d'énergie"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Le torseur est une modélisation globale (résultante et moment sur un solide). Au niveau local, l'action mécanique s'exprime par une densité de force (linéique, surfacique ou volumique), c'est-à-dire un champ de vecteurs force réparti sur l'élément de longueur, surface ou volume."
+    },
+    {
+        "uuid": "am-002",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans l'étude d'une poutre soumise à une charge répartie, quelle est l'unité du SI d'une force linéique $\\vec{p}$ ?",
+        "answers": [
+            "$\\text{N}$",
+            "$\\text{N} \\cdot \\text{m}$",
+            "$\\text{N} \\cdot \\text{m}^{-1}$",
+            "$\\text{Pa}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 2,
+        "explication": "Une force linéique est définie par un rapport $\\text{d}\\vec{F} / \\text{d}l$. Comme $\\text{d}\\vec{F}$ est en Newtons ($\\text{N}$) et $\\text{d}l$ en mètres ($\\text{m}$), l'unité est bien $\\text{N} \\cdot \\text{m}^{-1}$."
+    },
+    {
+        "uuid": "am-003",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Lorsqu'on étudie une action de pression $p$ s'exerçant sur une surface élémentaire $\\text{d}S$ de normale sortante $\\vec{n}$, quelle est l'expression correcte de la force élémentaire $\\text{d}\\vec{F}$ ?",
+        "answers": [
+            "$\\text{d}\\vec{F} = p \\, \\text{d}l$",
+            "$\\text{d}\\vec{F} = -p \\, \\text{d}S \\, \\vec{n}$",
+            "$\\text{d}\\vec{F} = p \\, \\text{d}V$",
+            "$\\text{d}\\vec{F} = p \\cdot \\vec{n} / \\text{d}S$"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "La pression est une action mécanique normale à la surface. Par convention, si $\\vec{n}$ est la normale sortante au volume, l'effort exercé par le fluide sur la paroi est dirigé vers l'intérieur, d'où le signe négatif : $\\text{d}\\vec{F} = -p \\, \\text{d}S \\, \\vec{n}$."
+    },
+    {
+        "uuid": "am-004",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour une action de pesanteur modélisée comme une force volumique $\\vec{q}$ (densité linéique de force), quelle est l'unité SI ?",
+        "answers": [
+            "$\\text{N} \\cdot \\text{m}^{-1}$",
+            "$\\text{N} \\cdot \\text{m}^{-2}$",
+            "$\\text{N} \\cdot \\text{m}^{-3}$",
+            "$\\text{kg} \\cdot \\text{m}^{-3}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 2,
+        "explication": "Une force volumique est définie par $\\vec{q} = \\text{d}\\vec{F} / \\text{d}V$. Le rapport entre une force ($\\text{N}$) et un volume ($\\text{m}^3$) donne des $\\text{N} \\cdot \\text{m}^{-3}$."
+    },
+    {
+        "uuid": "am-005",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour modéliser l'effet global d'un champ de forces s'exerçant sur un solide indéformable, on utilise quel outil mathématique ?",
+        "answers": [
+            "Un vecteur force unique",
+            "Un torseur d'actions mécaniques",
+            "Une matrice d'inertie",
+            "Un champ de vitesses"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "Le torseur permet de synthétiser en un point $\\text{A}$ l'ensemble des forces et des moments exercés sur un solide, ce qui est indispensable pour appliquer le PFD ou le PFS."
+    },
+    {
+        "uuid": "am-006",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Quels sont les deux champs vectoriels qui constituent les éléments de réduction d'un torseur d'action mécanique ?",
+        "answers": [
+            "Le champ des vitesses et celui des accélérations",
+            "La résultante $\\vec{R}$ et le moment $\\vec{M}(\\text{A})$",
+            "La masse $m$ et le tenseur d'inertie $\\mathbb{I}$",
+            "La force $\\vec{F}$ et la pression $p$"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "Un torseur est défini par sa résultante $\\vec{R}$ (indépendante du point) et son moment $\\vec{M}(\\text{A})$ (qui dépend du point de réduction A)."
+    },
+    {
+        "uuid": "am-007",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Quelle est la relation de transport de Varignon permettant de calculer le moment $\\vec{M}(\\text{B})$ d'un torseur connaissant son moment $\\vec{M}(\\text{A})$ et sa résultante $\\vec{R}$ ?",
+        "answers": [
+            "$\\vec{M}(\\text{B}) = \\vec{M}(\\text{A}) + \\vec{BA} \\wedge \\vec{R}$",
+            "$\\vec{M}(\\text{B}) = \\vec{M}(\\text{A}) + \\vec{AB} \\wedge \\vec{R}$",
+            "$\\vec{M}(\\text{B}) = \\vec{M}(\\text{A}) \\cdot \\vec{AB}$",
+            "$\\vec{M}(\\text{B}) = \\vec{R} \\wedge \\vec{AB} + \\vec{M}(\\text{A})$"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "La relation est $\\vec{M}(\\text{B}) = \\vec{M}(\\text{A}) + \\vec{BA} \\wedge \\vec{R}$. Attention, l'erreur classique est d'inverser les vecteurs $\\vec{AB}$ et $\\vec{BA}$ : le vecteur position doit être celui allant du nouveau point vers l'ancien point."
+    },
+    {
+        "uuid": "am-008",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Comment qualifie-t-on un torseur dont la résultante $\\vec{R}$ est nulle ?",
+        "answers": [
+            "Un torseur glisseur",
+            "Un torseur couple",
+            "Un torseur nul",
+            "Un torseur statique"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "Si $\\vec{R} = \\vec{0}$, le moment est le même en tout point de l'espace. On appelle cet ensemble un 'couple'. Il est représenté par un torseur de la forme $\\{ \\vec{0}, \\vec{M} \\}$."
+    },
+    {
+        "uuid": "am-009",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Quelle propriété caractérise le moment d'un torseur couple ?",
+        "answers": [
+            "Il est nul en tout point de l'espace",
+            "Il est invariant, c'est-à-dire identique quel que soit le point de réduction",
+            "Il est proportionnel à la distance au point d'application",
+            "Il est nécessairement perpendiculaire à la résultante"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "Puisque $\\vec{M}(\\text{B}) = \\vec{M}(\\text{A}) + \\vec{BA} \\wedge \\vec{R}$ et que $\\vec{R} = \\vec{0}$, alors $\\vec{M}(\\text{B}) = \\vec{M}(\\text{A})$. Le moment est donc indépendant du point de réduction."
+    },
+    {
+        "uuid": "am-010",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Un torseur est dit 'glisseur' si :",
+        "answers": [
+            "Son moment est nul en au moins un point de l'espace",
+            "Sa résultante est nulle",
+            "Son invariant scalaire est constant",
+            "Son moment est colinéaire à sa résultante"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 0,
+        "explication": "Un torseur glisseur possède un 'axe central' sur lequel le moment est nul. C'est la modélisation typique d'une force unique appliquée en un point (l'action mécanique est alors réduite à un simple vecteur force)."
+    },
+    {
+        "uuid": "am-011",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de l'étude de la répartition de charges sur une poutre, pour une répartition de pression uniforme $p$ (en $\\text{N/m}$) sur une longueur $L$, où se situe le centre de poussée (point d'application de la résultante) ?",
+        "answers": [
+            "A l'extrémité libre $x=L$",
+            "Au centre géométrique $x=L/2$",
+            "Au premier tiers $x=L/3$",
+            "Au centre de gravité du triangle $x=2L/3$"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "Pour une distribution uniforme, la résultante est le centre de masse du rectangle de pression. Le centre de poussée correspond au barycentre de la distribution, soit $x_G = \\frac{\\int_0^L x \\cdot p \\, dx}{\\int_0^L p \\, dx} = \\frac{L}{2}$.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-012",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Soit une répartition de pression linéaire triangulaire s'annulant en $x=0$ et valant $p_{max}$ en $x=L$. Quelle est la position $x_G$ du point d'application de la résultante par rapport à l'origine ?",
+        "answers": [
+            "$L/2$ (milieu)",
+            "$L/3$ (côté origine)",
+            "$2L/3$ (côté $p_{max}$)",
+            "$3L/4$ (proche extrémité)"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 2,
+        "explication": "Le centre de poussée d'un triangle de base $L$ est situé à $2/3$ de la base à partir du sommet. Ici, comme la pression est nulle en $0$ et maximale en $L$, le centre est à $2L/3$ de l'origine.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-013",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour une répartition de pression de type quadratique $p(x) = k \\cdot x^2$ sur $[0, L]$, quelle est la position $x_G$ de la résultante ?",
+        "answers": [
+            "$L/2$ (distribution symétrique)",
+            "$2L/3$ (distribution linéaire)",
+            "$3L/4$ (distribution quadratique)",
+            "$4L/5$ (distribution cubique)"
+        ],
+        "difficulty": 4,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 2,
+        "explication": "Par le calcul du moment résultant : $x_G = \\frac{\\int_0^L x \\cdot kx^2 \\, dx}{\\int_0^L kx^2 \\, dx} = \\frac{[kx^4/4]_0^L}{[kx^3/3]_0^L} = \\frac{L^4/4}{L^3/3} = \\frac{3}{4}L$.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-014",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Quelle est la norme de la résultante $\\vec{R}$ pour une pression uniforme $p$ appliquée sur une surface $S$ ?",
+        "answers": [
+            "$\\vec{R} = \\frac{p}{S} \\vec{n}$",
+            "$\\vec{R} = p \\cdot S \\vec{n}$",
+            "$\\vec{R} = \\int p^2 dS \\vec{n}$",
+            "$\\vec{R} = p \\cdot L \\vec{n}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "La résultante d'une pression uniforme est le produit de la valeur de la pression par l'aire de la surface sur laquelle elle s'exerce ($R = pS$). L'erreur $p/S$ est une erreur dimensionnelle (Pression/Surface).",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-015",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "L'action de la pesanteur sur un solide de masse $m$ est modélisée au centre de gravité $G$ par un torseur dont la résultante est :",
+        "answers": [
+            "$\\vec{R} = m\\vec{g}$",
+            "$\\vec{R} = -m\\vec{g}$",
+            "$\\vec{R} = \\vec{0}$",
+            "$\\vec{R} = \\rho V \\vec{g}$ (avec signe inversé)"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 0,
+        "explication": "Par définition, le poids est l'action exercée par la Terre sur la masse, soit $\\vec{P} = m\\vec{g}$. Le vecteur $\\vec{g}$ étant orienté vers le bas, la résultante est bien $m\\vec{g}$.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-016",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le modèle de Coulomb, lors d'un contact solide-solide, que représente la composante tangentielle $\\vec{T}$ ?",
+        "answers": [
+            "La composante normale $\\vec{N}$ à la surface",
+            "La force de frottement tangentielle",
+            "Le moment résultant au point de contact",
+            "La force de cohésion interne"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "Dans le torseur d'action de contact, on décompose la résultante en $\\vec{R} = \\vec{N} + \\vec{T}$. $\\vec{N}$ est la composante normale (pression) et $\\vec{T}$ est la composante tangentielle, responsable des frottements.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-017",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Quelle est la condition d'équilibre (adhérence) selon la loi de Coulomb pour un contact avec coefficient de frottement $f$ ?",
+        "answers": [
+            "$\\Vert \\vec{T} \\Vert > f \\Vert \\vec{N} \\Vert$",
+            "$\\Vert \\vec{T} \\Vert = f \\Vert \\vec{N} \\Vert$",
+            "$\\Vert \\vec{T} \\Vert \\le f \\Vert \\vec{N} \\Vert$",
+            "$\\Vert \\vec{N} \\Vert \\le f \\Vert \\vec{T} \\Vert$"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 2,
+        "explication": "L'adhérence est maintenue tant que la force tangentielle ne dépasse pas la limite de frottement donnée par $f \\Vert \\vec{N} \\Vert$. Si $\\Vert \\vec{T} \\Vert > f \\Vert \\vec{N} \\Vert$, il y a glissement.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-018",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Lors d'un glissement relatif d'une pièce 1 sur une pièce 2, quelle est la direction et le sens de la force tangentielle $\\vec{T}$ exercée par 2 sur 1 ?",
+        "answers": [
+            "Dans le sens de la vitesse de glissement $\\vec{V}_{1/2}$",
+            "Dans le sens opposé à la vitesse de glissement $\\vec{V}_{1/2}$",
+            "Perpendiculaire à la vitesse de glissement",
+            "Nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "Le frottement est une force dissipative qui s'oppose toujours au mouvement relatif des surfaces en contact. Par conséquent, $\\vec{T}$ est colinéaire et de sens opposé à la vitesse de glissement $\\vec{V}_{1/2}$.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-019",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Quelle relation lie le coefficient de frottement $f$ et le demi-angle $\\varphi$ du cône de frottement ?",
+        "answers": [
+            "$f = \\sin(\\varphi)$",
+            "$f = \\cos(\\varphi)$",
+            "$f = \\tan(\\varphi)$",
+            "$f = \\cot(\\varphi)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 2,
+        "explication": "Dans le plan $(\\vec{N}, \\vec{T})$, le cône de frottement est défini par la limite de rupture d'adhérence. On a $\\tan(\\varphi) = \\frac{\\Vert \\vec{T}_{max} \\Vert}{\\Vert \\vec{N} \\Vert} = f$.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-020",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Si un point de contact est en situation de glissement, où se situe la résultante de l'action de contact $\\vec{R}$ par rapport au cône de frottement ?",
+        "answers": [
+            "Strictement à l'intérieur du cône",
+            "Sur la surface latérale du cône",
+            "A l'extérieur du cône",
+            "Sur l'axe normal du cône (cône dégénéré)"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "En situation de glissement, la force de frottement atteint sa valeur limite $\\Vert \\vec{T} \\Vert = f \\Vert \\vec{N} \\Vert$. Le vecteur résultant $\\vec{R} = \\vec{N} + \\vec{T}$ se trouve donc sur la frontière du cône de frottement.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-021",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de l'étude des interactions entre deux solides $(S_i)$ et $(S_j)$, le principe des actions réciproques (loi de Newton) stipule que le torseur d'action mécanique $\\{\\mathcal{T}_{i \\rightarrow j}\\}$ est lié au torseur $\\{\\mathcal{T}_{j \\rightarrow i}\\}$ par la relation :",
+        "answers": [
+            "$\\{\\mathcal{T}_{i \\rightarrow j}\\} = \\{\\mathcal{T}_{j \\rightarrow i}\\}$",
+            "$\\{\\mathcal{T}_{i \\rightarrow j}\\} = -\\{\\mathcal{T}_{j \\rightarrow i}\\}$",
+            "$\\{\\mathcal{T}_{i \\rightarrow j}\\} = \\{\\vec{0}\\}$",
+            "$\\{\\mathcal{T}_{i \\rightarrow j}\\} = \\{\\mathcal{T}_{j \\rightarrow i}\\}^T$"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Le principe des actions réciproques énonce que l'action du solide $i$ sur $j$ est l'opposée de l'action du solide $j$ sur $i$. En notation de torseur, cela se traduit par $\\{\\mathcal{T}_{i \\rightarrow j}\\} + \\{\\mathcal{T}_{j \\rightarrow i}\\} = \\{\\vec{0}\\}$. Le signe moins indique que les vecteurs résultante et moment sont inversés."
+    },
+    {
+        "uuid": "am-022",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Lors de la modélisation d'un ressort de raideur $k$ et de longueur à vide $L_0$, l'action mécanique exercée par le ressort sur un solide, avec $L$ la longueur actuelle et $\\vec{u}$ le vecteur unitaire orienté vers l'extérieur du ressort, s'écrit :",
+        "answers": [
+            "$\\vec{F} = k(L - L_0)\\vec{u}$",
+            "$\\vec{F} = -k(L - L_0)\\vec{u}$",
+            "$\\vec{F} = \\frac{1}{2}k(L - L_0)^2\\vec{u}$",
+            "$\\vec{F} = -k \\vec{u}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "La force de rappel est proportionnelle à l'élongation $(L-L_0)$ et s'oppose au mouvement de déformation. Le signe moins est crucial : si $L > L_0$ (traction), la force est dirigée vers l'intérieur (vers le ressort), soit dans le sens opposé à $\\vec{u}$."
+    },
+    {
+        "uuid": "am-023",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de l'étude d'un système de transmission, comment modélise-t-on de manière classique le torseur d'un moteur transmettant une puissance $P$ à un axe tournant autour de l'axe $(\\Omega, \\vec{x})$ ?",
+        "answers": [
+            "Un glisseur purement axial",
+            "Un couple de moment $\\vec{C} = C\\vec{x}$",
+            "Une force centrifuge appliquée en $\\Omega$",
+            "Un torseur nul"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Un moteur idéal en rotation pure n'exerce pas de force résultante (ou celle-ci est équilibrée par les paliers), mais exerce un moment pur, appelé couple moteur, dirigé selon l'axe de rotation. Le torseur se réduit alors à $\\{\\mathcal{T}_{m \\rightarrow axe}\\} = \\{ \\vec{0} ; C\\vec{x} \\}_{\\Omega}$."
+    },
+    {
+        "uuid": "am-024",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Un solide $(S)$ est en équilibre statique dans un référentiel galiléen $\\mathcal{R}$ si et seulement si :",
+        "answers": [
+            "Sa vitesse est constante dans $\\mathcal{R}$",
+            "La somme des torseurs des actions extérieures appliquées à $(S)$ est égale au torseur nul",
+            "L'énergie cinétique est maximale",
+            "La résultante des forces est nulle, sans condition sur les moments"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "L'équilibre statique impose que le solide soit immobile par rapport au référentiel galiléen ($\\vec{V} = \\vec{0}$ et $\\vec{\\Omega} = \\vec{0}$). Cela implique que le torseur dynamique est nul, ce qui donne par le PFS : $\\sum \\{\\mathcal{T}_{ext \\rightarrow S}\\} = \\{\\vec{0}\\}$. Les autres réponses sont incomplètes ou fausses."
+    },
+    {
+        "uuid": "am-025",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Le Principe Fondamental de la Statique (PFS) se décompose en deux équations vectorielles fondamentales pour tout solide en équilibre :",
+        "answers": [
+            "Le Théorème de la Résultante Statique (TRS) et le Théorème de la Dynamique (TRD)",
+            "Le Théorème de la Résultante Statique (TRS) et le Théorème du Moment Statique (TMS)",
+            "Le Théorème de l'énergie et le Théorème du Moment Statique (TMS)",
+            "Le Théorème de Pascal et le Théorème de la Résultante Statique (TRS)"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Le PFS est la projection du torseur nul en deux équations : la somme des résultantes des forces extérieures est nulle (TRS) et la somme des moments de ces forces en un point donné est nulle (TMS)."
+    },
+    {
+        "uuid": "am-026",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Considérons un solide soumis à deux actions mécaniques modélisables par des glisseurs en deux points distincts $A$ et $B$. Pour que ce solide soit à l'équilibre, il est nécessaire que :",
+        "answers": [
+            "Les forces soient perpendiculaires",
+            "Les forces aient la même direction (la droite $(AB)$), soient opposées et de même norme",
+            "Leurs moments en $A$ soient égaux",
+            "La somme des normes des forces soit nulle"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "C'est le théorème des deux forces. Si un solide en équilibre n'est soumis qu'à deux actions, ces dernières doivent nécessairement avoir un support commun (la droite passant par les deux points d'application), être de sens opposé et de même intensité pour annuler la résultante et le moment."
+    },
+    {
+        "uuid": "am-027",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Si un solide est soumis à trois forces (glisseurs) non parallèles, quelle condition géométrique doivent-elles vérifier pour assurer l'équilibre statique ?",
+        "answers": [
+            "Les supports des trois forces doivent être coplanaires et concourants en un même point",
+            "Les forces doivent être perpendiculaires deux à deux",
+            "Les forces doivent être toutes de même norme",
+            "Les supports des forces doivent former un triangle rectangle"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique",
+        "correct_answer_index": 0,
+        "subject": "si",
+        "explication": "C'est le théorème des trois forces. Pour que la somme des moments soit nulle, le support de la troisième force doit passer par le point d'intersection des deux premières. De plus, la fermeture du dynamique (triangle des forces) implique qu'elles soient coplanaires."
+    },
+    {
+        "uuid": "am-028",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans une démarche méthodologique de résolution de problème de statique, que signifie l'acronyme IAME ?",
+        "answers": [
+            "Identification des Appuis Mécaniques Extérieurs",
+            "Inventaire des Actions Mécaniques Extérieures",
+            "Intégration des Actions de Masse Élémentaires",
+            "Indice d'Action Mécanique Équivalente"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "L'IAME est l'étape primordiale consistant à lister précisément toutes les forces et couples extérieurs agissant sur le système isolé avant d'écrire les équations du PFS."
+    },
+    {
+        "uuid": "am-029",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Quel outil graphique, souvent utilisé en début de modélisation, permet de visualiser les liaisons entre les différents solides d'un mécanisme ?",
+        "answers": [
+            "Le graphe de liaison",
+            "Le graphe de structure (ou d'analyse des liaisons)",
+            "Le schéma cinématique",
+            "Le diagramme FAST"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Le graphe de structure (aussi appelé graphe des liaisons ou graphe des contacts) permet de représenter les solides par des sommets et les liaisons par des arcs, facilitant ainsi l'identification des chaînes de solides."
+    },
+    {
+        "uuid": "am-030",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cas d'un problème de statique plan dans le plan $(O, \\vec{x}, \\vec{y})$, quelles sont les composantes du torseur d'action mécanique qui sont généralement non nulles ?",
+        "answers": [
+            "Les six composantes : $X, Y, Z, L, M, N$",
+            "Les trois composantes : $X, Y$ (résultante dans le plan) et $N$ (moment selon l'axe perpendiculaire $\\vec{z}$)",
+            "Les trois composantes : $Z, L, M$ (résultante selon $\\vec{z}$ et moments selon $\\vec{x}, \\vec{y}$)",
+            "Les deux composantes : $X, L$"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Dans un plan $(O, x, y)$, les forces sont coplanaires (donc $Z=0$) et les moments sont portés par l'axe normal au plan (donc $L=0$ et $M=0$). Il ne reste que la résultante dans le plan et le moment selon $\\vec{z}$."
+    },
+    {
+        "uuid": "am-031",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de l'étude des mécanismes de guidage, le phénomène d'arc-boutement se produit lorsque :",
+        "answers": [
+            "Le coefficient de frottement est nul",
+            "L'équilibre subsiste quelle que soit l'intensité de l'effort moteur (blocage)",
+            "Le système entre en résonance et se met à vibrer",
+            "La contrainte dans la pièce dépasse sa limite élastique et la pièce casse"
+        ],
+        "difficulty": 4,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "L'arc-boutement est une situation où le frottement empêche tout mouvement, quel que soit l'effort moteur appliqué. C'est un phénomène caractéristique des guidages en translation lorsque la géométrie du contact et le coefficient de frottement $f$ atteignent un seuil critique, rendant le système irréversible par nature.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-032",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Lors du roulement sans glissement d'un cylindre de rayon $R$ sur un plan, le moment de résistance au roulement $\\vec{M}_{roul}$ (ou couple de roulement) est limité par la relation :",
+        "answers": [
+            "$||M_{roul}|| \\le f ||N||$",
+            "$||M_{roul}|| \\le \\eta ||N||$",
+            "$||M_{roul}|| \\le \\delta ||T||$",
+            "$||M_{roul}|| = 0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "Le moment de résistance au roulement est dû à la déformation des surfaces de contact. Il est modélisé par $||M_{roul}|| \\le \\eta ||N||$, où $\\eta$ est le coefficient de résistance au roulement (exprimé en mètres [m]). La proposition $f||N||$ correspond à la loi de Coulomb pour le glissement, et $\\delta$ est réservé au pivotement.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-033",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre d'un contact surfacique (type pivot), quelle est l'unité du coefficient de résistance au pivotement $\\delta$ ?",
+        "answers": [
+            "Sans dimension",
+            "Newton [N]",
+            "Mètre [m]",
+            "Radian [rad]"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 2,
+        "explication": "Le moment de résistance au pivotement $M_p$ est tel que $M_p \\approx \\delta \\cdot F_n$. Pour que la relation soit homogène, le moment étant en $[N\\cdot m]$ et la force normale $F_n$ en $[N]$, le coefficient $\\delta$ doit nécessairement avoir la dimension d'une longueur, donc en $[m]$.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-034",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour un réducteur de rapport de transmission $r = \\frac{\\omega_s}{\\omega_e}$, quelle est la relation entre le couple de sortie $C_s$ et le couple d'entrée $C_e$ avec un rendement $\\eta$ ?",
+        "answers": [
+            "$|C_s| = r \\cdot \\eta |C_e|$",
+            "$|C_s| = \\frac{\\eta}{r} |C_e|$",
+            "$|C_s| = \\frac{r}{\\eta} |C_e|$",
+            "$|C_s| = (1-r) \\eta |C_e|$"
+        ],
+        "difficulty": 3,
+        "chapter": "Loi entrée-sortie",
+        "correct_answer_index": 1,
+        "explication": "La puissance est conservée selon $P_s = \\eta P_e$, soit $C_s \\omega_s = \\eta C_e \\omega_e$. En remplaçant $\\omega_s$ par $r \\cdot \\omega_e$, on obtient $C_s (r \\omega_e) = \\eta C_e \\omega_e$, d'où $C_s = \\frac{\\eta}{r} C_e$. Attention à l'inversion classique avec $r$ dans les calculs de réduction.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-035",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans un système vis-écrou de pas $p$, quelle est la relation entre l'effort axial de sortie $F_s$ et le couple d'entrée $C_e$ (rendement $\\eta$) ?",
+        "answers": [
+            "$|F_s| = \\frac{2\\pi}{p} \\eta |C_e|$",
+            "$|F_s| = \\frac{p}{2\\pi} \\eta |C_e|$",
+            "$|F_s| = p \\cdot \\eta |C_e|$",
+            "$|F_s| = \\frac{1}{p} \\eta |C_e|$"
+        ],
+        "difficulty": 4,
+        "chapter": "Loi entrée-sortie",
+        "correct_answer_index": 0,
+        "explication": "Le travail fourni par le couple sur un tour est $W = C_e \\cdot 2\\pi$. Ce travail est égal au travail de la force axiale $F_s$ sur la distance du pas $p$, corrigé par le rendement : $C_e \\cdot 2\\pi \\cdot \\eta = F_s \\cdot p$. D'où $F_s = \\frac{2\\pi \\eta C_e}{p}$.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-036",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour un système pignon-crémaillère de rayon primitif $R$, la force de sortie $F_s$ est liée au couple d'entrée $C_e$ par :",
+        "answers": [
+            "$|F_s| = R \\cdot \\eta |C_e|$",
+            "$|F_s| = \\frac{1}{R} \\eta |C_e|$",
+            "$|F_s| = 2\\pi R \\cdot \\eta |C_e|$",
+            "$|F_s| = R^2 |C_e|$"
+        ],
+        "difficulty": 3,
+        "chapter": "Loi entrée-sortie",
+        "correct_answer_index": 1,
+        "explication": "Pour une roue dentée, la relation fondamentale est $C_e = F_s \\cdot R$. En introduisant le rendement $\\eta$ pour tenir compte des pertes par frottement, on obtient $C_e \\cdot \\eta = F_s \\cdot R$, soit $F_s = \\frac{\\eta C_e}{R}$.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-037",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de l'étude des liaisons mécaniques, l'inconnue de liaison associée à un degré de liberté en translation selon l'axe $\\vec{x}$ dans une liaison parfaite est :",
+        "answers": [
+            "La résultante selon $\\vec{x}$",
+            "Le moment selon $\\vec{x}$",
+            "Nulle (aucun effort ne peut être transmis selon cette direction)",
+            "La vitesse de translation selon $\\vec{x}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 2,
+        "explication": "Par définition d'une liaison parfaite (sans frottement), si un mouvement est possible (degré de liberté non supprimé), la puissance développée par les efforts de liaison est nulle. Si une translation est libre, aucun effort (force) ne peut s'opposer à ce mouvement, donc l'inconnue de liaison correspondante est nulle.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-038",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le torseur des actions mécaniques transmissibles, à un degré de liberté en rotation supprimé par la liaison correspond :",
+        "answers": [
+            "Une composante de la résultante de force",
+            "Une composante du moment de l'action mécanique",
+            "Une accélération angulaire nulle",
+            "Un glissement important au niveau du contact"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "Les liaisons mécaniques bloquent des mouvements. Le blocage d'une rotation impose l'apparition d'un couple (moment) de réaction pour maintenir la position relative. À l'inverse, le blocage d'une translation impose l'apparition d'une force (résultante).",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-039",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "En statique des fluides, la poussée d'Archimède exercée sur un corps immergé s'applique au :",
+        "answers": [
+            "Centre de gravité du solide",
+            "Centre de carène (centre de gravité du volume de fluide déplacé)",
+            "Point le plus bas du solide",
+            "Centre de poussée hydrostatique à la surface libre"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "La poussée d'Archimède est la résultante des forces de pression exercées par le fluide sur le solide. Elle s'applique au centre de carène, qui correspond au centre de gravité du volume de fluide déplacé par l'objet. Ce point ne coïncide avec le centre de gravité de l'objet que si celui-ci est homogène.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-040",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour un solide se déplaçant dans un fluide à grande vitesse (régime turbulent), la force de traînée fluide est généralement proportionnelle à :",
+        "answers": [
+            "La position du solide $x$",
+            "Le carré de la vitesse relative $v^2$",
+            "La racine carrée de la masse du solide $\\sqrt{m}$",
+            "L'accélération instantanée $a$"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "La force de traînée $F_t$ s'exprime par la formule $F_t = \\frac{1}{2} \\rho S C_x v^2$. À haute vitesse, le régime est turbulent et la force est bien proportionnelle au carré de la vitesse. Aux très faibles vitesses (régime de Stokes), elle serait proportionnelle à la vitesse $v$.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-041",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de l'étude des mécanismes de transmission, pour un contact acier/acier à sec, quel est l'ordre de grandeur réaliste du coefficient de frottement de Coulomb $f$ ?",
+        "answers": [
+            "$0,01$ (valeur typique d'un roulement)",
+            "$0,15$ à $0,20$",
+            "$0,8$ (proche d'un pneu sur bitume)",
+            "$2,5$ (valeur physiquement incohérente pour ce matériau)"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "Le coefficient $f$ est une grandeur sans unité. Pour l'acier sur acier à sec, les tables usuelles donnent des valeurs entre $0,15$ et $0,20$. $0,01$ correspond à un contact lubrifié ou un roulement, $0,8$ est beaucoup trop élevé pour du métal/métal (plus proche du caoutchouc), et $2,5$ dépasse largement les limites physiques usuelles du frottement solide.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-042",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Soit un torseur $\\{T\\}$ modélisant une action mécanique ponctuelle. Si ce torseur est un glisseur (résultante non nulle), quelle est la propriété de son moment central $\\vec{M}_C$ ?",
+        "answers": [
+            "Il est de norme maximale",
+            "Il est nul en tout point de l'axe central",
+            "Il est constant quel que soit le point de réduction",
+            "Il est infini au point d'application"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "Par définition, un glisseur est un torseur dont le moment est nul en tout point situé sur son axe central (ou droite d'action de la résultante). Si le moment était constant ou maximal, on ne serait pas dans le cas d'un glisseur pur.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-043",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Lors de l'analyse d'un torseur général $\\{T\\} = \\{\\vec{R}, \\vec{M}_A\\}$, si le moment est colinéaire à la résultante en tout point $\\vec{M}_P = k\\vec{R}$, comment nomme-t-on ce torseur ?",
+        "answers": [
+            "Torseur glisseur (avec $k=0$)",
+            "Torseur quelconque (sans propriété particulière)",
+            "Torseur cinématique",
+            "Torseur à pas (ou visseur)"
+        ],
+        "difficulty": 4,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 3,
+        "explication": "Un torseur dont le moment est colinéaire à la résultante est appelé 'torseur à pas' ou 'visseur'. Le scalaire $p = \\frac{\\vec{M} \\cdot \\vec{R}}{\\|\\vec{R}\\|^2}$ est le pas du torseur. Si $p=0$, c'est un glisseur.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-044",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de la réduction d'un torseur, comment appelle-t-on l'ensemble des points $P$ où le moment $\\vec{M}_P$ est colinéaire à la résultante $\\vec{R}$ ?",
+        "answers": [
+            "L'axe neutre",
+            "L'axe central du torseur",
+            "La ligne de pression",
+            "Le support de la force"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "L'axe central est le lieu géométrique des points où le moment est minimal en norme et colinéaire à la résultante. Pour un glisseur, ce moment est nul sur cette droite.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-045",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans l'étude d'une bielle isolée soumise à deux liaisons pivots parfaites d'axes parallèles à ses extrémités, on peut affirmer que :",
+        "answers": [
+            "Le torseur résultant est un couple",
+            "L'action en chaque pivot est portée par l'axe joignant les deux centres des pivots",
+            "La bielle est en mouvement uniforme",
+            "Le moment est nul partout sur la bielle"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique",
+        "correct_answer_index": 1,
+        "explication": "C'est le principe des barres isolées en statique (sous l'hypothèse de poids négligeable) : si un solide est soumis à deux actions mécaniques en deux points $A$ et $B$, alors pour l'équilibre, les forces sont opposées et portées par la droite $(AB)$.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-046",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Soit une pression linéique affine $p(x) = \\frac{p_{max} - p_{min}}{L}x + p_{min}$ agissant sur une poutre de longueur $L$. Quelle est la résultante $R$ de cette charge répartie ?",
+        "answers": [
+            "$R = \\frac{p_{max} + p_{min}}{2} L$",
+            "$R = (p_{max} - p_{min}) L$",
+            "$R = p_{max} L / 2$",
+            "$R = \\sqrt{p_{max} p_{min}} L$"
+        ],
+        "difficulty": 4,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 0,
+        "explication": "La résultante d'une charge répartie correspond à l'aire sous la courbe de la fonction de charge. Pour une fonction affine, l'aire est celle d'un trapèze : $\\text{base} \\times \\frac{\\text{hauteur1} + \\text{hauteur2}}{2} = L \\times \\frac{p_{min} + p_{max}}{2}$.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-047",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Quelle est l'unité homogène au moment d'une force dans le Système International ?",
+        "answers": [
+            "$N/m$ (Néwton par mètre)",
+            "$N \\cdot m$ (Néwton-mètre)",
+            "$J/s$ (Watt)",
+            "$Pa$ (Pascal)"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "Un moment est le produit vectoriel d'une distance par une force ($\\|\\vec{OM} \\wedge \\vec{F}\\|$). Son unité est donc le produit de l'unité de longueur (mètre) par l'unité de force (Néwton), soit $N \\cdot m$.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-048",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de l'étude statique, que signifie l'hypothèse de 'Liaison parfaite' ?",
+        "answers": [
+            "Qu'il n'y a pas de dissipation d'énergie par frottement (puissance des efforts de liaison nulle)",
+            "Que le solide est indéformable",
+            "Que le poids propre du solide est négligé",
+            "Que le jeu de fonctionnement est nul"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique",
+        "correct_answer_index": 0,
+        "explication": "Une liaison parfaite est une liaison sans frottement. La puissance des efforts de liaison dans le mouvement relatif est donc nulle : $\\mathcal{P}_{liaison} = 0$.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-049",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans un repère orthonormé $\\mathcal{R} = (A, \\vec{x}, \\vec{y}, \\vec{z})$, quelles sont les notations standard des composantes du vecteur moment $\\vec{M}(A)$ ?",
+        "answers": [
+            "$(X, Y, Z)$ (composantes de la résultante)",
+            "$(L, M, N)$",
+            "$(p, q, r)$ (vitesses de rotation)",
+            "$(u, v, w)$ (vitesses de translation)"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "Par convention dans les torseurs, la résultante $\\vec{R}$ est notée $(X, Y, Z)$ et le moment $\\vec{M}$ est noté $(L, M, N)$.",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-050",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour une force $\\vec{F} = F \\cdot \\vec{u}$ appliquée en un point $A$, quelle expression donne la norme du moment au point $B$ ?",
+        "answers": [
+            "$\\|\\vec{AB} \\cdot \\vec{u}\\|$",
+            "$\\|\\vec{AB} \\wedge \\vec{u}\\| \\cdot F$",
+            "$\\|\\vec{AB}\\|$",
+            "$AB \\cdot \\cos(\\theta)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "Le moment en $B$ est $\\vec{M}_B = \\vec{BA} \\wedge \\vec{F}$. Sa norme est $\\|\\vec{BA} \\wedge (F \\cdot \\vec{u})\\| = F \\cdot \\|\\vec{BA} \\wedge \\vec{u}\\|$. La quantité $\\|\\vec{BA} \\wedge \\vec{u}\\|$ représente la distance minimale entre le point $B$ et la droite d'action (le bras de levier).",
+        "subject": "si"
+    },
+    {
+        "uuid": "am-051",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de la modélisation des actions mécaniques, un torseur nul, noté $\\{\\tau\\} = \\vec{0}$, possède quelles propriétés ?",
+        "answers": [
+            "Une résultante $\\vec{R} = \\vec{0}$ et un moment $\\vec{M}_A = \\vec{0}$ en tout point $A$",
+            "Une résultante $\\vec{R} = \\vec{0}$ seulement, le moment pouvant être quelconque",
+            "Un moment $\\vec{M}_A = \\vec{0}$ seulement, la résultante pouvant être quelconque",
+            "Des composantes scalaires toutes égales à $1$, correspondant à un torseur unitaire"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 0,
+        "explication": "Par définition, un torseur est nul si et seulement si ses deux éléments de réduction sont nuls. Puisque le champ des moments d'un torseur est équiprojectif, si le moment est nul en un point, il l'est en tout point si la résultante est nulle. Confondre avec un torseur couple ($\\vec{R}=\\vec{0}, \\vec{M} \\neq \\vec{0}$) est une erreur classique."
+    },
+    {
+        "uuid": "am-052",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "En mécanique du solide, la statique est l'étude des systèmes dont le mouvement dans le référentiel galiléen d'étude est :",
+        "answers": [
+            "Un mouvement de translation uniforme (vitesse constante)",
+            "Un mouvement nul (équilibre statique au sens strict)",
+            "Un mouvement uniformément accéléré",
+            "Un mouvement de rotation circulaire uniforme"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique",
+        "correct_answer_index": 1,
+        "explication": "La statique étudie des systèmes au repos dans le référentiel lié au bâti. Si la vitesse n'est pas nulle, on bascule dans la dynamique ou le principe de d'Alembert. Bien que les équations de la statique $\\sum \\vec{F} = \\vec{0}$ soient applicables en régime de translation rectiligne uniforme, le terme 'statique' définit proprement l'absence de mouvement."
+    },
+    {
+        "uuid": "am-053",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour résoudre un problème de statique complexe (chaîne fermée), quel est le conseil méthodologique prioritaire pour minimiser le nombre d'inconnues ?",
+        "answers": [
+            "Isoler en priorité le bâti, car il est lié au référentiel galiléen",
+            "Isoler en priorité les solides soumis à deux forces (bielles, tirants, vérins), car la direction de leur action est connue",
+            "Isoler le moteur pour déterminer le couple d'entrée immédiatement",
+            "Isoler l'ensemble du mécanisme pour obtenir les réactions aux appuis"
+        ],
+        "difficulty": 3,
+        "chapter": "Statique",
+        "correct_answer_index": 1,
+        "explication": "Isoler un solide soumis à deux forces permet de conclure que la force est portée par la droite joignant les deux points de contact. Cela réduit drastiquement le nombre d'inconnues vectorielles (une seule direction connue), facilitant grandement la résolution du système par substitution ou par le PFS."
+    },
+    {
+        "uuid": "am-054",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de la modélisation d'un amortisseur fluide, la force de frottement visqueux $\\vec{F}$ est linéairement proportionnelle à :",
+        "answers": [
+            "La vitesse relative $\\vec{v}$ entre les deux surfaces",
+            "La pression $p$ au sein du fluide",
+            "La température $T$ du fluide",
+            "L'inverse de la vitesse $1/v$ (loi de Stokes inverse)"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 0,
+        "explication": "La modélisation classique du frottement fluide (modèle linéaire de Stokes) impose $\\vec{F} = -k \\cdot \\vec{v}$. Une erreur fréquente est de confondre avec le frottement solide (Loi de Coulomb) qui est indépendant de la vitesse."
+    },
+    {
+        "uuid": "am-055",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour un ressort de torsion linéaire, le moment $M$ exercé par le ressort est proportionnel à :",
+        "answers": [
+            "L'élongation linéaire $x$ (loi de Hooke pour un ressort de traction)",
+            "L'angle de torsion $\\theta$ par rapport à la position de repos",
+            "La vitesse de rotation $\\omega$ (comportement d'amortisseur)",
+            "La masse $m$ du ressort selon la loi fondamentale de la dynamique"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "La caractéristique d'un ressort de torsion est $M = -C \\cdot \\theta$, où $C$ est la raideur angulaire. L'élongation $x$ concerne uniquement les ressorts de traction/compression."
+    },
+    {
+        "uuid": "am-056",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans un modèle de contact entre deux solides rigides, l'action de contact normale $\\vec{N}$ est physiquement :",
+        "answers": [
+            "Toujours attractive, à l'image des forces gravitationnelles",
+            "Répulsive (pression), car les solides sont supposés indéformables et ne peuvent s'interpénétrer",
+            "Toujours nulle en l'absence de frottement",
+            "Tangentielle uniquement, la normale ne transmettant aucun effort"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "explication": "Le contact unilatéral est modélisé par une force normale qui ne peut être que répulsive pour empêcher l'interpénétration. Si le contact est rompu, la force devient nulle, mais elle ne peut jamais être attractive (ce qui nécessiterait une liaison encastrement ou collage)."
+    },
+    {
+        "uuid": "am-057",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour une étude de freinage automobile, quel est l'ordre de grandeur réaliste du coefficient de frottement statique $f$ du caoutchouc sur du goudron sec ?",
+        "answers": [
+            "0,1 (proche de la glace ou acier lubrifié)",
+            "0,3 (frottement acier sur acier)",
+            "0,8 (valeur typique du contact pneu-chaussée)",
+            "1,5 (valeur dépassant les limites physiques usuelles des matériaux)"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 2,
+        "explication": "Le coefficient de frottement $f$ pour un pneu sur chaussée sèche est compris entre $0,7$ et $0,9$. $0,1$ est beaucoup trop faible (glissade immédiate) et $1,5$ est irréaliste pour des matériaux classiques en conditions normales."
+    },
+    {
+        "uuid": "am-058",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "En cinématique et statique des mécanismes, le phénomène de coincement se manifeste par :",
+        "answers": [
+            "L'impossibilité de mouvement par auto-blocage, même en agissant sur les efforts d'entrée",
+            "Une rupture brutale du contact entre les surfaces à cause d'un effort trop important",
+            "Une lubrification excessive entraînant une chute du coefficient de frottement",
+            "Une vitesse de rotation infinie dans une liaison pivot non graissée"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 0,
+        "explication": "Le coincement survient lorsque, par effet de géométrie et de frottement, les forces de réaction deviennent telles qu'elles ne permettent plus le mouvement, quel que soit l'effort moteur appliqué (ex: un tiroir qui se bloque quand on tire d'un seul côté)."
+    },
+    {
+        "uuid": "am-059",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour un solide en équilibre dans le référentiel terrestre, combien d'équations scalaires indépendantes le Théorème de la Résultante Statique (TRS) fournit-il dans l'espace ?",
+        "answers": [
+            "1 équation, correspondant à la norme de la force",
+            "3 équations scalaires (projections sur les axes $\\vec{x}, \\vec{y}, \\vec{z}$)",
+            "6 équations, en incluant les moments",
+            "0 équation, car ce théorème ne s'applique qu'au plan"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique",
+        "correct_answer_index": 1,
+        "explication": "Le vecteur résultante $\\vec{R} = \\vec{0}$ possède trois composantes cartésiennes. L'annulation d'un vecteur impose l'annulation de chacune de ses composantes, soit trois équations scalaires."
+    },
+    {
+        "uuid": "am-060",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de l'application du Principe Fondamental de la Statique (PFS), combien d'équations scalaires indépendantes le Théorème du Moment Statique (TMS) fournit-il dans l'espace ?",
+        "answers": [
+            "1 équation scalaire, car on projette sur l'axe de rotation",
+            "3 équations scalaires (les trois composantes du vecteur moment)",
+            "6 équations, incluant les projections de la résultante",
+            "2 équations, pour les problèmes dans le plan uniquement"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique",
+        "correct_answer_index": 1,
+        "explication": "Le moment résultant étant un vecteur $\\vec{M}_A = \\vec{0}$, son annulation équivaut à l'annulation de ses trois composantes dans la base choisie. Attention : ne pas confondre avec le cas plan où le TMS ne donne qu'une seule équation scalaire (selon l'axe perpendiculaire au plan)."
+    },
+    {
+        "uuid": "am-061",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de l'étude d'un mécanisme spatial, le Principe Fondamental de la Statique (PFS) complet fournit combien d'équations scalaires indépendantes ?",
+        "answers": [
+            "3 (somme des forces)",
+            "6 (somme des forces et somme des moments)",
+            "12 (pour un système de 2 solides)",
+            "1 (équation vectorielle unique)"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Le PFS pour un solide en équilibre se traduit par deux équations vectorielles : $\\sum \\vec{F}_{ext} = \\vec{0}$ (3 équations scalaires) et $\\sum \\vec{M}_{A, ext} = \\vec{0}$ (3 équations scalaires), soit un total de 6 équations indépendantes dans l'espace."
+    },
+    {
+        "uuid": "am-062",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour un mécanisme modélisé par un problème plan (dans le plan $(x, y)$), combien d'équations indépendantes le PFS permet-il d'écrire ?",
+        "answers": [
+            "2 (deux projections de forces)",
+            "3 (deux projections de forces et un moment selon z)",
+            "6 (système spatial complet)",
+            "1 (équation de moment uniquement)"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "En plan, les forces sont contenues dans le plan (2 équations : $\\sum F_x = 0$, $\\sum F_y = 0$) et les moments sont tous portés par l'axe normal au plan (1 équation : $\\sum M_z = 0$), soit 3 équations au total."
+    },
+    {
+        "uuid": "am-063",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Parmi les actions mécaniques suivantes, laquelle est une action 'à distance' s'exerçant sur tout le volume d'un solide ?",
+        "answers": [
+            "Le contact ponctuel entre deux solides",
+            "La gravitation (poids)",
+            "Le frottement de Coulomb",
+            "La pression d'huile dans une chambre"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Une action à distance ne nécessite pas de contact physique entre les corps. Le poids, dû à la gravité, est une action volumique. Les autres propositions sont des actions de contact (surfaciques ou linéiques)."
+    },
+    {
+        "uuid": "am-064",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Le torseur des actions mécaniques transmissibles dans une liaison Pivot parfaite d'axe $(A, \\vec{z})$ possède combien d'inconnues de liaison ?",
+        "answers": [
+            "1 inconnue (le couple moteur)",
+            "2 inconnues (les composantes radiales)",
+            "5 inconnues (3 forces et 2 moments)",
+            "6 inconnues (liaison encastrement)"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 2,
+        "subject": "si",
+        "explication": "Une liaison pivot autorise une rotation autour de l'axe $\\vec{z}$. Elle bloque donc 5 degrés de liberté (3 translations et 2 rotations). Le torseur est de la forme $\\{T\\}_A = \\{ X \\vec{x} + Y \\vec{y} + Z \\vec{z} ; L \\vec{x} + M \\vec{y} + 0 \\vec{z} \\}_A$, soit 5 inconnues."
+    },
+    {
+        "uuid": "am-065",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Considérant une liaison Pivot parfaite d'axe $(A, \\vec{z})$, quelle composante du torseur des actions de liaison est nécessairement nulle ?",
+        "answers": [
+            "La composante de la résultante selon $\\vec{z}$ ($Z$)",
+            "La composante du moment selon $\\vec{x}$ ($L$)",
+            "La composante du moment selon $\\vec{z}$ ($N$)",
+            "La composante de la résultante selon $\\vec{x}$ ($X$)"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 2,
+        "subject": "si",
+        "explication": "La liaison pivot parfaite autorise la rotation autour de l'axe $\\vec{z}$, donc aucun couple résistant ne peut être transmis selon cet axe. Par conséquent, le moment $N = \\vec{M}_A \\cdot \\vec{z} = 0$."
+    },
+    {
+        "uuid": "am-066",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre d'un système hydraulique, quelle est la relation entre la force $F$ exercée par un vérin de section $S$ et la pression $p$ du fluide ?",
+        "answers": [
+            "$F = p / S$",
+            "$F = p \\cdot S$",
+            "$F = p \\cdot V$ (où V est le volume)",
+            "$F = S / p$"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Par définition de la pression ($P = F/S$), la force exercée par un fluide sur une paroi plane est donnée par le produit de la pression par la surface : $F = p \\cdot S$."
+    },
+    {
+        "uuid": "am-067",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Soit un torseur $\\{T\\} = \\{ \\vec{R}, \\vec{M}_A \\}$. L'invariant scalaire de ce torseur est défini par :",
+        "answers": [
+            "$\\vec{R} \\cdot \\vec{M}_A$",
+            "$\\vec{R} \\wedge \\vec{M}_A$",
+            "$\\vec{R} + \\vec{M}_A$",
+            "$|\\vec{R}| \\cdot |\\vec{M}_A|$"
+        ],
+        "difficulty": 4,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 0,
+        "subject": "si",
+        "explication": "L'invariant scalaire est le produit scalaire $\\vec{R} \\cdot \\vec{M}_A$. Il est indépendant du point de réduction $A$ car $\\vec{M}_B = \\vec{M}_A + \\vec{BA} \\wedge \\vec{R}$, et le terme $(\\vec{BA} \\wedge \\vec{R}) \\cdot \\vec{R}$ est toujours nul."
+    },
+    {
+        "uuid": "am-068",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Si l'invariant scalaire d'un torseur non nul est égal à zéro, quelle est la nature géométrique de ce torseur ?",
+        "answers": [
+            "Un couple (torseur à résultante nulle)",
+            "Un glisseur (torseur à moment nul en un point)",
+            "Un torseur nul",
+            "Un torseur quelconque"
+        ],
+        "difficulty": 4,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Si $\\vec{R} \\cdot \\vec{M}_A = 0$, il existe un point $M$ tel que le moment en ce point est nul. Le torseur est alors équivalent à une force unique, on appelle cela un glisseur."
+    },
+    {
+        "uuid": "am-069",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de l'étude d'une bielle isolée soumise à deux actions mécaniques en $A$ et $B$, si le système est en équilibre, la résultante $\\vec{R}_A$ est :",
+        "answers": [
+            "Perpendiculaire à la droite $(AB)$",
+            "Colinéaire à la droite $(AB)$",
+            "Nulle (principe d'inertie)",
+            "Indépendante de la position de $B$"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Un solide soumis à deux forces en équilibre est tel que ces deux forces ont même droite d'action (la droite $(AB)$), mêmes intensités et sens opposés. On dit que la bielle est en traction/compression pure."
+    },
+    {
+        "uuid": "am-070",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Lors d'un contact avec frottement, le sens de la force de frottement $\\vec{T}_{1 \\rightarrow 2}$ est dicté par quelle règle ?",
+        "answers": [
+            "Le sens du vecteur vitesse du point de contact de 2 par rapport à 1",
+            "Opposé au vecteur vitesse de glissement de 2 par rapport à 1",
+            "Toujours vers le bas pour compenser la pesanteur",
+            "Le sens de la normale au contact"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "La force de frottement tangentielle $\\vec{T}$ s'oppose toujours à la tendance au glissement, donc elle est de direction opposée au vecteur vitesse de glissement $\\vec{V}_{g}(2/1)$."
+    },
+    {
+        "uuid": "am-071",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de l'application du Principe Fondamental de la Statique (PFS), que signifie concrètement l'action consistant à 'isoler' un solide ?",
+        "answers": [
+            "Le protéger des vibrations et des perturbations extérieures",
+            "Définir un système matériel et recenser toutes les actions mécaniques extérieures s'exerçant sur lui",
+            "Calculer son énergie interne pour déterminer son état thermique",
+            "Le séparer physiquement du bâti pour l'étudier hors contexte"
+        ],
+        "difficulty": 1,
+        "chapter": "Statique",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Isoler un système est l'étape liminaire indispensable en mécanique. Cela consiste à délimiter précisément le solide (ou l'ensemble de solides) étudié par rapport au milieu extérieur et à identifier les actions mécaniques (contact ou à distance) traversant la frontière du système."
+    },
+    {
+        "uuid": "am-072",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le modèle local du contact entre deux surfaces solides, l'action élémentaire de contact $d\\vec{F}$ est décomposée en une composante normale $d\\vec{N}$ et une composante tangentielle $d\\vec{T}$. Laquelle est, par définition géométrique, normale au plan tangent au contact ?",
+        "answers": [
+            "$d\\vec{N}$",
+            "$d\\vec{T}$",
+            "La résultante $d\\vec{F}$ elle-même",
+            "Aucune des composantes n'est normale"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 0,
+        "subject": "si",
+        "explication": "Par définition dans le modèle local, $d\\vec{N}$ est la composante colinéaire à la normale $\\vec{n}$ au plan de contact. $d\\vec{T}$ est située dans le plan tangent (plan de glissement), elle représente les efforts de frottement."
+    },
+    {
+        "uuid": "am-073",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Lors de l'étude du frottement sec entre deux solides (loi de Coulomb), de quels paramètres dépend principalement le coefficient de frottement $\\mu$ (ou $f$) ?",
+        "answers": [
+            "De la surface apparente de contact",
+            "De la nature des matériaux en contact et de la rugosité de leurs surfaces",
+            "De la vitesse relative de glissement entre les deux solides",
+            "De la masse du solide et de l'accélération de la pesanteur"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Le coefficient de frottement est une caractéristique tribologique qui dépend du couple de matériaux et de l'état de surface. Contrairement aux idées reçues, il ne dépend pas de la surface apparente de contact (loi d'Amontons-Coulomb)."
+    },
+    {
+        "uuid": "am-074",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Soit une force $\\vec{F}$ appliquée en un point A. Quel est le moment $\\vec{M}_P(\\vec{F})$ en un point P appartenant à la droite d'action de cette force ?",
+        "answers": [
+            "Le produit scalaire $\\vec{F} \\cdot \\vec{AP}$",
+            "Le vecteur nul $\\vec{0}$",
+            "Le moment en A, soit $\\vec{M}_A(\\vec{F})$",
+            "Un vecteur colinéaire à $\\vec{AP}$ de norme infinie"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Le moment d'une force en un point P est défini par $\\vec{M}_P(\\vec{F}) = \\vec{PA} \\wedge \\vec{F}$. Si P est sur la droite d'action, alors le vecteur $\\vec{PA}$ est colinéaire à $\\vec{F}$. Le produit vectoriel de deux vecteurs colinéaires est nul."
+    },
+    {
+        "uuid": "am-075",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans la modélisation des actions mécaniques par un torseur $\\{T\\} = \\begin{Bmatrix} \\vec{R} \\\\ \\vec{M}_A \\end{Bmatrix}$, la résultante $\\vec{R}$ est un vecteur de quelle nature ?",
+        "answers": [
+            "Un vecteur lié au point A",
+            "Un vecteur glissant sur l'axe central",
+            "Un vecteur libre (indépendant du point de réduction)",
+            "Un vecteur nul par hypothèse de rigidité"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 2,
+        "subject": "si",
+        "explication": "La résultante $\\vec{R}$ d'un torseur est un invariant, c'est-à-dire qu'elle est indépendante du point de réduction. Elle possède donc les propriétés d'un vecteur libre."
+    },
+    {
+        "uuid": "am-076",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour une répartition de pression unidimensionnelle triangulaire de longueur $L$ et de valeur maximale $p_{max}$ en une extrémité, quelle est la résultante $R$ de cette action ?",
+        "answers": [
+            "$p_{max} L$",
+            "$\\frac{p_{max} L}{2}$",
+            "$\\frac{p_{max} L}{3}$",
+            "$2 p_{max} L$"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "La résultante d'une répartition de pression est égale à l'aire sous la courbe de répartition. Pour un triangle de base $L$ et de hauteur $p_{max}$, l'aire est $\\frac{1}{2} \\times \\text{base} \\times \\text{hauteur} = \\frac{p_{max} L}{2}$."
+    },
+    {
+        "uuid": "am-077",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cas d'une liaison Glissière parfaite d'axe $(A, \\vec{x})$, quelle composante du torseur d'action transmissible est nécessairement nulle ?",
+        "answers": [
+            "La composante de force selon l'axe de glissement $X$",
+            "La composante de force selon l'axe $Y$",
+            "Le moment selon l'axe $M$",
+            "Le moment selon l'axe $N$"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 0,
+        "subject": "si",
+        "explication": "Une liaison parfaite ne transmet pas d'effort dans les directions de liberté. La glissière autorise la translation selon $\\vec{x}$, donc la composante de force $X$ dans le torseur d'action est nulle."
+    },
+    {
+        "uuid": "am-078",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Comment qualifie-t-on la nature d'une action électromagnétique (telle que celle exercée par un moteur électrique) sur un solide ?",
+        "answers": [
+            "Action de contact localisée",
+            "Action à distance répartie dans le volume",
+            "Action locale surfacique",
+            "Action négligeable dans les systèmes de puissance"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Les forces électromagnétiques (comme les forces de Laplace) s'exercent à distance au sein du volume ou du circuit électrique. Elles ne nécessitent pas un contact mécanique direct entre deux surfaces solides pour transmettre de l'énergie."
+    },
+    {
+        "uuid": "am-079",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Quelle est l'unité SI du coefficient de frottement $f$ utilisé dans la loi de Coulomb $\\|\\vec{T}\\| \\leq f \\cdot \\|\\vec{N}\\|$ ?",
+        "answers": [
+            "Newton [N]",
+            "Sans unité",
+            "Pascal [Pa]",
+            "Coefficient adimensionnel en [N/m]"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Dans l'inégalité $\\|\\vec{T}\\| \\leq f \\cdot \\|\\vec{N}\\|$, le terme $\\|\\vec{T}\\|$ et $\\|\\vec{N}\\|$ sont des forces exprimées en Newtons. Pour que l'équation soit homogène, $f$ doit nécessairement être un scalaire sans unité."
+    },
+    {
+        "uuid": "am-080",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Le centre de gravité G est le point d'application privilégié du torseur de pesanteur. Quelle est sa propriété fondamentale par rapport à ce torseur ?",
+        "answers": [
+            "C'est le point où la vitesse du solide est nulle",
+            "C'est le point par rapport auquel le moment résultant du poids est nul",
+            "C'est le point où la pression atmosphérique est maximale",
+            "C'est le point où le solide est en équilibre statique"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Par définition, le centre de gravité G est le point tel que le moment de la force de pesanteur, calculé en ce point, est le vecteur nul. C'est pourquoi on réduit le torseur poids en ce point : $\\{T_{pesanteur}\\} = \\begin{Bmatrix} M\\vec{g} \\\\ \\vec{0} \\end{Bmatrix}_G$."
+    },
+    {
+        "uuid": "am-081",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Lors de la modélisation d'un mécanisme par un torseur d'action mécanique $\\mathcal{T}_{1 \\to 2}(A) = \\begin{pmatrix} \\vec{R} \\\\ \\vec{M}_A \\end{pmatrix}$, que représente la colonne de gauche (le vecteur haut) ?",
+        "answers": [
+            "Le moment résultant en A",
+            "La résultante des forces",
+            "Le vecteur position du point d'application",
+            "Le vecteur vitesse de glissement"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Par convention, le torseur d'action mécanique est noté sous la forme d'une colonne composée du vecteur résultante $\\vec{R}$ en haut (à gauche dans l'écriture horizontale) et du moment résultant $\\vec{M}_A$ en bas. L'erreur classique est d'inverser moment et résultante."
+    },
+    {
+        "uuid": "am-082",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans l'expression du torseur d'action mécanique $\\mathcal{T}_{1 \\to 2}(A) = \\begin{pmatrix} \\vec{R} \\\\ \\vec{M}_A \\end{pmatrix}$, que représente le vecteur $\\vec{M}_A$ situé sur la ligne du bas (ou colonne de droite) ?",
+        "answers": [
+            "La résultante des forces",
+            "Le moment résultant au point A",
+            "Le vecteur vitesse instantanée",
+            "L'unité de mesure du torseur"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Le moment résultant $\\vec{M}_A$ exprime l'effet de rotation de l'action mécanique au point $A$. Il dépend du point de réduction choisi, contrairement à la résultante $\\vec{R}$ qui est un invariant du torseur."
+    },
+    {
+        "uuid": "am-083",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour un système réducteur (type train d'engrenages) transmettant un mouvement de rotation de l'entrée (e) vers la sortie (s), comment est défini le rapport de transmission $r$ ?",
+        "answers": [
+            "$r = |\\omega_e / \\omega_s|$",
+            "$r = |\\omega_s / \\omega_e|$",
+            "$r = |C_s / C_e|$",
+            "$r = |P_s / P_e|$"
+        ],
+        "difficulty": 2,
+        "chapter": "Loi entrée-sortie",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Par définition, le rapport de transmission $r$ est le rapport de la vitesse de sortie sur la vitesse d'entrée : $r = \\frac{\\omega_s}{\\omega_e}$. Si $r < 1$, il s'agit d'un réducteur de vitesse."
+    },
+    {
+        "uuid": "am-084",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Considérons un mécanisme réel transmettant une puissance $P_{e}$ à l'entrée et $P_{s}$ à la sortie. Si le rendement $\\eta < 1$, alors :",
+        "answers": [
+            "$P_s > P_e$",
+            "$P_s = \\eta \\cdot P_e$ avec des pertes d'énergie dissipées",
+            "La vitesse de sortie est obligatoirement nulle",
+            "Le mécanisme est un multiplicateur de puissance"
+        ],
+        "difficulty": 1,
+        "chapter": "Loi entrée-sortie",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Le rendement $\\eta = P_s / P_e$ mesure l'efficacité énergétique. Un rendement inférieur à 1 traduit physiquement la dissipation d'une partie de l'énergie mécanique en chaleur, principalement due aux frottements."
+    },
+    {
+        "uuid": "am-085",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour une roue en contact avec le sol, le modèle de Coulomb stipule que le torseur d'action de contact se situe :",
+        "answers": [
+            "À l'intérieur ou sur la limite du cône de frottement",
+            "Toujours à l'extérieur du cône pour garantir l'adhérence",
+            "Uniquement sur l'axe vertical",
+            "Indépendamment de la normale au contact"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 0,
+        "subject": "si",
+        "explication": "La loi de Coulomb indique que pour qu'il y ait non-glissement (adhérence), la force de contact doit rester dans le cône défini par le coefficient d'adhérence $f$ : $\\|\\vec{T}\\| \\leq f \\cdot \\|\\vec{N}\\|$. Si elle sort du cône, il y a glissement."
+    },
+    {
+        "uuid": "am-086",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cas d'une force unique modélisée par un torseur glisseur, la 'droite d'action' est définie comme :",
+        "answers": [
+            "L'axe central où le moment est nul",
+            "Le vecteur résultante de la force",
+            "La trajectoire du point d'application",
+            "La perpendiculaire au plan de contact"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 0,
+        "subject": "si",
+        "explication": "Pour un glisseur (torseur dont le moment est nul en au moins un point), l'ensemble des points où le moment est nul forme une droite appelée axe central ou droite d'action de la force."
+    },
+    {
+        "uuid": "am-087",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "L'unité du moment d'une force est le Newton-mètre ($N \\cdot m$). Quelle autre grandeur physique homogène possède la même dimension (force $\\times$ longueur) ?",
+        "answers": [
+            "La puissance ($W$)",
+            "Le travail ou l'énergie ($J$)",
+            "La pression ($Pa$)",
+            "La raideur d'un ressort ($N/m$)"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Le travail d'une force $W = \\vec{F} \\cdot \\vec{d\\ell}$ a la dimension d'une force multipliée par une distance, soit $[M L^2 T^{-2}]$. Attention : bien que le moment et le travail partagent la même unité dimensionnelle, ils représentent des phénomènes physiques différents (rotation vs transfert d'énergie)."
+    },
+    {
+        "uuid": "am-088",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "En mécanique du solide, le calcul du moment d'une force $\\vec{F}$ appliquée en $M$ par rapport au point $A$ s'écrit $\\vec{M}_A = \\vec{AM} \\wedge \\vec{F}$. Quel opérateur désigne le symbole $\\wedge$ ?",
+        "answers": [
+            "Le produit scalaire",
+            "Le produit vectoriel",
+            "La puissance développée",
+            "L'intersection des ensembles"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "Le symbole $\\wedge$ (wedge) est l'opérateur standard pour le produit vectoriel, qui permet de calculer un moment (vecteur perpendiculaire au plan formé par le bras de levier et la force). Le produit scalaire est noté $\\cdot$."
+    },
+    {
+        "uuid": "am-089",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans l'étude statique d'un solide soumis à plusieurs forces, quelle condition est toujours vérifiée en tout point $A$ à l'équilibre ?",
+        "answers": [
+            "La somme des moments des forces est nulle en A",
+            "La résultante des forces est proportionnelle à la vitesse",
+            "Le moment est toujours égal au produit vectoriel de la position par la résultante",
+            "La somme des moments ne dépend pas du point de réduction"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique",
+        "correct_answer_index": 0,
+        "subject": "si",
+        "explication": "Le principe fondamental de la statique impose que pour un solide en équilibre, la somme des torseurs des actions mécaniques extérieures est nulle. Cela implique $\\sum \\vec{R}_{ext} = \\vec{0}$ et $\\sum \\vec{M}_{A, ext} = \\vec{0}$."
+    },
+    {
+        "uuid": "am-090",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cadre de la modélisation cinématique des liaisons, quel mouvement relatif est permis par une liaison pivot d'axe $(A, \\vec{z})$ ?",
+        "answers": [
+            "Une translation selon $\\vec{z}$",
+            "Une rotation autour de l'axe $\\vec{z}$",
+            "Une rotation et une translation",
+            "Aucun degré de liberté"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si",
+        "explication": "La liaison pivot est une liaison élémentaire qui autorise uniquement un degré de liberté en rotation autour de son axe. Elle bloque les 3 translations et les 2 autres rotations."
+    },
+    {
+        "uuid": "am-091",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Le torseur cinématique et le torseur des actions mécaniques sont dits :",
+        "answers": [
+            "Inverses",
+            "Duaux",
+            "Identiques",
+            "Indépendants"
+        ],
+        "difficulty": 4,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si"
+    },
+    {
+        "uuid": "am-092",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "La puissance dissipée par frottement dans un contact est toujours :",
+        "answers": [
+            "Positive",
+            "Négative (consommée)",
+            "Nulle",
+            "Egale à la puissance motrice"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si"
+    },
+    {
+        "uuid": "am-093",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Le coefficient de frottement lubrifié acier/acier est de l'ordre de :",
+        "answers": [
+            "0,01",
+            "0,10",
+            "0,50",
+            "0,90"
+        ],
+        "difficulty": 3,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si"
+    },
+    {
+        "uuid": "am-094",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Pour résoudre un système statique, on doit avoir :",
+        "answers": [
+            "Plus d'inconnues que d'équations",
+            "Le même nombre d'équations indépendantes que d'inconnues (système isostatique)",
+            "Uniquement des équations de moments",
+            "Une masse nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique",
+        "correct_answer_index": 1,
+        "subject": "si"
+    },
+    {
+        "uuid": "am-095",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Une action mécanique peut-elle être modélisée par un torseur dont la résultante ET le moment sont nuls au même point ?",
+        "answers": [
+            "Oui, si l'action est nulle",
+            "Non, c'est impossible",
+            "Seulement pour les couples",
+            "Seulement pour la gravité"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 0,
+        "subject": "si"
+    },
+    {
+        "uuid": "am-096",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Le torseur de l'action de pesanteur est un :",
+        "answers": [
+            "Torseur couple",
+            "Torseur glisseur",
+            "Torseur nul",
+            "Torseur quelconque"
+        ],
+        "difficulty": 2,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si"
+    },
+    {
+        "uuid": "am-097",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans le cas d'une vis-écrou, si le pas augmente, pour un même couple d'entrée, la force axiale :",
+        "answers": [
+            "Augmente",
+            "Diminue",
+            "Reste la même",
+            "S'annule"
+        ],
+        "difficulty": 4,
+        "chapter": "Loi entrée-sortie",
+        "correct_answer_index": 1,
+        "subject": "si"
+    },
+    {
+        "uuid": "am-098",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "L'unité Pascal [Pa] correspond à :",
+        "answers": [
+            "N/m",
+            "N/m^2",
+            "N.m",
+            "kg.m/s^2"
+        ],
+        "difficulty": 1,
+        "chapter": "Actions mécaniques",
+        "correct_answer_index": 1,
+        "subject": "si"
+    },
+    {
+        "uuid": "am-099",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "Dans un problème de statique, négliger le poids d'un solide est une hypothèse courante si :",
+        "answers": [
+            "Les forces de liaison sont très supérieures au poids",
+            "Le solide est en aluminium",
+            "Le solide est petit",
+            "Le solide ne bouge pas"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique",
+        "correct_answer_index": 0,
+        "subject": "si"
+    },
+    {
+        "uuid": "am-100",
+        "image_path": null,
+        "theme": "actions mécaniques",
+        "question": "La condition de non-glissement au sens strict (adhérence) est :",
+        "answers": [
+            "$\\vec{V}_{i/j} = \\vec{0}$",
+            "$\\vec{V}_{i/j} \\neq \\vec{0}$",
+            "$f = 0$",
+            "$\\vec{R} = \\vec{0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Statique",
+        "correct_answer_index": 0,
+        "subject": "si"
+    }
+]

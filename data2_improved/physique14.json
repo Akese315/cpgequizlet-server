@@ -1,0 +1,1682 @@
+[
+    {
+        "uuid": "e001",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le cadre de l'étude des particules chargées, quelle est la valeur conventionnelle de la charge élémentaire $e$ en unités du système international ?",
+        "answers": [
+            "$1,6.10^{-19} C$",
+            "$9,1.10^{-31} C$",
+            "$6,6.10^{-11} C$",
+            "$1,6.10^{-19} J$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La charge élémentaire $e$ est une constante physique fondamentale. $9,1.10^{-31} kg$ correspond à la masse de l'électron, $6,67.10^{-11} m^3.kg^{-1}.s^{-2}$ est la constante de gravitation universelle $G$, et le Joule est l'unité d'énergie, non de charge."
+    },
+    {
+        "uuid": "e002",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le cadre de la modélisation continue des distributions de charge, quelle est l'unité S.I. de la densité volumique de charge $\\rho$ ?",
+        "answers": [
+            "$C.m^{-1}$",
+            "$C.m^{-2}$",
+            "$C.m^{-3}$",
+            "$A.m^{-3}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Par définition, $\\rho = \\frac{dQ}{dV}$. La charge étant en Coulombs ($C$) et le volume en mètres cubes ($m^3$), l'unité est bien le $C.m^{-3}$. $C.m^{-1}$ concerne la densité linéique et $C.m^{-2}$ la densité surfacique."
+    },
+    {
+        "uuid": "e003",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "La charge électrique est une grandeur scalaire qui vérifie deux propriétés fondamentales. Lesquelles ?",
+        "answers": [
+            "Non conservative et additive",
+            "Additive et conservative",
+            "Vectorielle et conservative",
+            "Non additive et non conservative"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La charge électrique est une grandeur scalaire additive (la charge totale d'un système est la somme algébrique des charges le composant) et elle est conservative (la charge totale d'un système isolé reste constante au cours du temps)."
+    },
+    {
+        "uuid": "e004",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pour un domaine spatial $\\mathcal{V}$ de frontière $\\mathcal{S}$, quelle est l'expression correcte permettant de calculer la charge totale $Q$ à partir de la densité volumique $\\rho$ ?",
+        "answers": [
+            "$Q = \\iint_\\mathcal{S} \\rho d\\tau$",
+            "$Q = \\iiint_\\mathcal{V} \\rho d\\tau$",
+            "$Q = \\oint_\\mathcal{S} \\rho dS$",
+            "$Q = \\iiint_\\mathcal{V} \\rho dS$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La charge totale s'obtient par sommation (intégrale triple) de la densité volumique sur tout le volume occupé par la charge. $d\\tau$ est l'élément de volume. L'intégrale de surface (flux) n'est pas adaptée ici pour définir la charge totale."
+    },
+    {
+        "uuid": "e005",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Considérons un milieu conducteur comportant des porteurs de charge $q$ avec une densité particulaire $n$ (nombre de porteurs par unité de volume). Quelle est l'expression de la densité volumique de charge $\\rho$ ?",
+        "answers": [
+            "$\\rho = n / q$",
+            "$\\rho = n^2 q$",
+            "$\\rho = n.q$",
+            "$\\rho = q / n$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La densité volumique de charge est le produit du nombre de particules par unité de volume ($n$) par la charge de chaque particule ($q$). L'analyse dimensionnelle confirme $[n] = L^{-3}$ et $[q] = C$, donc $[\\rho] = C.L^{-3}$."
+    },
+    {
+        "uuid": "e006",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle est l'unité S.I. de la densité surfacique de charge $\\sigma$ utilisée pour modéliser des surfaces chargées ?",
+        "answers": [
+            "$C.m^{-2}$",
+            "$C.m^2$",
+            "$V.m^{-2}$",
+            "$C.m^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La densité surfacique $\\sigma$ est définie par $dQ = \\sigma dS$. Comme $Q$ est en $C$ et $S$ en $m^2$, l'unité est nécessairement le $C.m^{-2}$. Les autres propositions correspondent à des erreurs de puissance ou de grandeur."
+    },
+    {
+        "uuid": "e007",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pour un fil chargé linéiquement avec une densité $\\lambda$, quelle est l'expression correcte de la charge élémentaire $dQ$ associée à un élément de longueur $dl$ ?",
+        "answers": [
+            "$dQ = \\lambda / dl$",
+            "$dQ = \\lambda dl$",
+            "$dQ = \\lambda^2 dl$",
+            "$dQ = dl / \\lambda$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par définition, $\\lambda = \\frac{dQ}{dl}$, donc $dQ = \\lambda dl$. Cette relation permet d'intégrer sur la longueur du fil pour obtenir la charge totale."
+    },
+    {
+        "uuid": "e008",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le cadre de l'interaction électrostatique entre deux charges ponctuelles $q_1$ et $q_2$, comment évolue la force de Coulomb si $q_1 \\cdot q_2 > 0$ ?",
+        "answers": [
+            "La force est attractive",
+            "La force est répulsive",
+            "La force est nulle",
+            "La force est colinéaire au champ magnétique"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Si le produit des deux charges est positif, elles sont de même signe. Par convention, deux charges de même signe se repoussent. Si le produit était négatif, la force serait attractive."
+    },
+    {
+        "uuid": "e009",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans l'expression de la loi de Coulomb $\\vec{F} = \\frac{1}{4\\pi\\epsilon_0} \\frac{q_1 q_2}{r^2} \\vec{u}$, quelle est la valeur approchée de la constante $\\frac{1}{4\\pi\\epsilon_0}$ ?",
+        "answers": [
+            "$9.10^9 SI$",
+            "$8,85.10^{-12} SI$",
+            "$6,67.10^{-11} SI$",
+            "$1,44.10^9 SI$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La constante $k = \\frac{1}{4\\pi\\epsilon_0}$ vaut environ $8,99.10^9 N.m^2.C^{-2}$. $8,85.10^{-12}$ est la valeur de la permittivité du vide $\\epsilon_0$ elle-même. Ne pas confondre les deux."
+    },
+    {
+        "uuid": "e010",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle est l'unité S.I. dérivée du champ électrique $\\vec{E}$ ?",
+        "answers": [
+            "$V.m$",
+            "$V.m^{-1}$",
+            "$C.V^{-1}$",
+            "$N.C^{-2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Comme $\\vec{F} = q\\vec{E}$, le champ électrique s'exprime en $N.C^{-1}$. Cependant, le lien avec le potentiel $V$ ($\\vec{E} = -\\vec{grad} V$) impose l'unité $V.m^{-1}$. Ces deux unités sont strictement équivalentes."
+    },
+    {
+        "uuid": "e011",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le cadre de l'étude des symétries d'une distribution de charges, que stipule le principe de Curie ?",
+        "answers": [
+            "Les symétries des causes se retrouvent dans les conséquences",
+            "Le champ électrique est toujours orthogonal aux symétries",
+            "Le flux du champ électrique à travers une surface fermée est proportionnel à la charge interne",
+            "Le champ électrique possède toujours les symétries de la source"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le principe de Curie énonce que les éléments de symétrie des causes (ici la distribution de charges) doivent se retrouver dans les effets (le champ $\\vec{E}$). Attention : la réciproque est fausse, le champ peut être plus symétrique que la source."
+    },
+    {
+        "uuid": "e012",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Soit une distribution de charges admettant un plan de symétrie $\\Pi_S$. Si le point $M$ appartient à $\\Pi_S$, quelle est la direction du champ électrostatique $\\vec{E}(M)$ ?",
+        "answers": [
+            "Le vecteur $\\vec{E}(M)$ est orthogonal à $\\Pi_S$",
+            "Le vecteur $\\vec{E}(M)$ est inclus dans $\\Pi_S$",
+            "Le vecteur $\\vec{E}(M)$ est nul",
+            "Le vecteur $\\vec{E}(M)$ est parallèle à l'axe de symétrie"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par symétrie, si $\\Pi_S$ est un plan de symétrie de la distribution, le champ $\\vec{E}$ doit être invariant par réflexion par rapport à ce plan. Comme $\\vec{E}$ est un vecteur axial (ou polaire, il change de signe si on inverse l'espace), pour qu'il soit inchangé par réflexion, il doit nécessairement appartenir au plan."
+    },
+    {
+        "uuid": "e013",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Soit une distribution de charges admettant un plan d'antisymétrie $\\Pi_A$. Si le point $M$ appartient à $\\Pi_A$, quelle est la direction du champ électrostatique $\\vec{E}(M)$ ?",
+        "answers": [
+            "Le vecteur $\\vec{E}(M)$ est inclus dans $\\Pi_A$",
+            "Le vecteur $\\vec{E}(M)$ est orthogonal à $\\Pi_A$",
+            "Le vecteur $\\vec{E}(M)$ est tangent aux lignes de champ",
+            "Le vecteur $\\vec{E}(M)$ est nul en tout point de $\\Pi_A$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans le cas d'un plan d'antisymétrie $\\Pi_A$, la réflexion par rapport au plan inverse le signe de la source. Le champ $\\vec{E}$, pour respecter cette antisymétrie, doit donc changer de signe par réflexion, ce qui impose qu'il soit orthogonal au plan."
+    },
+    {
+        "uuid": "e014",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Une distribution de charges admet une invariance par translation selon l'axe $\\vec{u}_z$. Quelle propriété en déduit-on pour le champ $\\vec{E}$ ?",
+        "answers": [
+            "Le champ $\\vec{E}$ est dirigé selon $\\vec{u}_z$",
+            "Le champ $\\vec{E}$ est indépendant de la coordonnée $z$",
+            "Le champ $\\vec{E}$ est nul sur l'axe $z$",
+            "Le champ $\\vec{E}$ ne dépend que de $z$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'invariance par translation signifie que si l'on effectue une translation quelconque $z \\to z + a$, la distribution est identique. Par conséquent, les propriétés physiques, dont le champ $\\vec{E}$, ne peuvent pas dépendre de la coordonnée $z$."
+    },
+    {
+        "uuid": "e015",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pour une distribution de charges à symétrie cylindrique infinie (ex: fil infini chargé), de quelles variables la norme du champ $E$ dépend-elle ?",
+        "answers": [
+            "$r$ uniquement",
+            "$r$ et $z$",
+            "$r, \\theta$ et $z$",
+            "$\\theta$ uniquement"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'invariance par rotation autour de l'axe et par translation selon l'axe élimine la dépendance en $\\theta$ et en $z$. Ainsi, dans le système de coordonnées cylindriques, le champ ne dépend que de la distance radiale $r$."
+    },
+    {
+        "uuid": "e016",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle est l'expression locale de l'équation de Maxwell-Gauss dans le vide ?",
+        "answers": [
+            "$\\text{div}(\\vec{E}) = \\rho \\epsilon_0$",
+            "$\\text{div}(\\vec{E}) = \\frac{\\rho}{\\epsilon_0}$",
+            "$\\vec{\\text{rot}}(\\vec{E}) = \\vec{0}$",
+            "$\\text{div}(\\vec{E}) = -\\frac{\\partial \\rho}{\\partial t}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'équation de Maxwell-Gauss relie la divergence du champ électrique à la densité volumique de charge $\\rho$. L'erreur classique est d'oublier la division par $\\epsilon_0$ ou d'inverser le rapport."
+    },
+    {
+        "uuid": "e017",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "En régime stationnaire, quelle est la valeur du rotationnel du champ électrique $\\vec{\\text{rot}}(\\vec{E})$ ?",
+        "answers": [
+            "$\\vec{0}$",
+            "$\\frac{\\rho}{\\epsilon_0}$",
+            "$-\\frac{\\partial \\vec{B}}{\\partial t}$",
+            "$\\vec{j}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Selon l'équation de Maxwell-Faraday, $\\vec{\\text{rot}}(\\vec{E}) = -\\frac{\\partial \\vec{B}}{\\partial t}$. En régime stationnaire (indépendant du temps), cette dérivée temporelle est nulle, ce qui implique que le champ est conservatif."
+    },
+    {
+        "uuid": "e018",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle est la relation fondamentale entre le champ électrique $\\vec{E}$ et le potentiel électrostatique scalaire $V$ ?",
+        "answers": [
+            "$\\vec{E} = \\vec{\\text{grad}} V$",
+            "$\\vec{E} = -\\vec{\\text{grad}} V$",
+            "$V = -\\vec{E} \\cdot d\\vec{l}$",
+            "$\\vec{E} = \\Delta V$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le champ est défini comme l'opposé du gradient du potentiel. Le signe « moins » est crucial car il indique que le champ électrique est dirigé des potentiels élevés vers les potentiels faibles."
+    },
+    {
+        "uuid": "e019",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans quel sens est dirigé le champ électrique $\\vec{E}$ par rapport au potentiel $V$ ?",
+        "answers": [
+            "Vers les potentiels croissants",
+            "Vers les potentiels décroissants",
+            "Parallèlement aux lignes équipotentielles",
+            "Indifféremment selon la charge"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Puisque $\\vec{E} = -\\vec{\\text{grad}} V$, le vecteur champ électrique pointe dans la direction où le potentiel diminue le plus rapidement."
+    },
+    {
+        "uuid": "e020",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "La circulation du champ électrique $\\int_A^B \\vec{E} \\cdot d\\vec{l}$ entre deux points $A$ et $B$ est égale à :",
+        "answers": [
+            "$V_B - V_A$",
+            "$V_A - V_B$",
+            "$V_B + V_A$",
+            "$-(V_A + V_B)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Comme $\\vec{E} = -\\vec{\\text{grad}} V$, alors $\\vec{E} \\cdot d\\vec{l} = -dV$. En intégrant entre $A$ et $B$, on obtient $\\int_A^B \\vec{E} \\cdot d\\vec{l} = -[V]_A^B = -(V_B - V_A) = V_A - V_B$."
+    },
+    {
+        "uuid": "e021",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le cadre de l'étude des lignes de champ, comment appelle-t-on une courbe dont le vecteur tangent en tout point est colinéaire au vecteur champ électrique $\\vec{E}$ ?",
+        "answers": [
+            "Une ligne de niveau",
+            "Une équipotentielle",
+            "Une ligne de champ",
+            "Une trajectoire de particule"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Par définition, une ligne de champ est une courbe orientée dont la tangente en tout point possède la direction et le sens du vecteur champ électrique local. Attention, la trajectoire d'une particule chargée ne coïncide avec une ligne de champ que si le mouvement est rectiligne ou la vitesse initiale nulle."
+    },
+    {
+        "uuid": "e022",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le cadre de l'étude du gradient de potentiel, quel est l'angle entre une ligne de champ électrique $\\vec{E}$ et une surface équipotentielle $V = cste$ ?",
+        "answers": [
+            "$0°$ (parallèles)",
+            "$45°$",
+            "$90°$ (orthogonaux)",
+            "$180°$ (antiparallèles)"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Comme $\\vec{E} = -\\vec{grad} V$, le vecteur champ électrique est toujours porté par la normale aux surfaces équipotentielles. Ainsi, le champ électrique \"pointe\" vers les potentiels décroissants perpendiculairement aux surfaces équipotentielles."
+    },
+    {
+        "uuid": "e023",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Considérons deux surfaces équipotentielles séparées d'une distance $dr$ et d'une différence de potentiel $dV$. Plus ces surfaces sont resserrées :",
+        "answers": [
+            "Plus le champ électrique $\\vec{E}$ est intense",
+            "Moins le champ électrique $\\vec{E}$ est intense",
+            "Plus le potentiel $V$ est élevé",
+            "Le champ reste constant"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La norme du champ électrique est donnée par $E = |dV / dn|$, où $dn$ est la distance élémentaire entre deux équipotentielles. Si les surfaces sont resserrées, $dn$ diminue pour un $dV$ donné, donc $E$ augmente. C'est l'analogue de la pente d'une colline en topographie."
+    },
+    {
+        "uuid": "e024",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pour une charge ponctuelle $q$ placée dans un potentiel électrique $V$, quelle est l'expression correcte de son énergie potentielle électrique $\\mathcal{E}_P$ ?",
+        "answers": [
+            "$\\mathcal{E}_P = q / V$",
+            "$\\mathcal{E}_P = q^2 V$",
+            "$\\mathcal{E}_P = qV$",
+            "$\\mathcal{E}_P = V / q$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "L'énergie potentielle est définie par le travail fourni par le champ pour amener la charge depuis une référence de potentiel nul. On a $\\Delta \\mathcal{E}_P = q \\Delta V$. Le piège classique est de confondre la définition du potentiel ($V = \\mathcal{E}_P/q$) avec l'énergie elle-même."
+    },
+    {
+        "uuid": "e025",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle est la forme locale du théorème de Gauss, connue sous le nom d'équation de Poisson, liant le potentiel $V$ à la densité de charge volumique $\\rho$ ?",
+        "answers": [
+            "$\\Delta V + \\rho / \\epsilon_0 = 0$",
+            "$\\Delta V = 0$",
+            "$div(\\vec{grad} V) = \\rho / \\epsilon_0$",
+            "$\\Delta V = -\\rho / \\epsilon_0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "En utilisant $\\vec{E} = -\\vec{grad} V$ et $div(\\vec{E}) = \\rho / \\epsilon_0$, on obtient $div(-\\vec{grad} V) = \\rho / \\epsilon_0$, ce qui donne $-\\Delta V = \\rho / \\epsilon_0$, soit $\\Delta V + \\rho / \\epsilon_0 = 0$. Ne pas oublier le signe moins dû à la relation entre champ et potentiel."
+    },
+    {
+        "uuid": "e026",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le cadre de l'étude des milieux conducteurs ou du vide, l'équation de Laplace $\\Delta V = 0$ s'applique quand :",
+        "answers": [
+            "La densité de charge $\\rho$ est constante non nulle",
+            "La densité de charge $\\rho$ est nulle",
+            "Le potentiel $V$ est constant dans tout l'espace",
+            "Le champ électrique est uniforme"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'équation de Laplace $\\Delta V = 0$ est un cas particulier de l'équation de Poisson ($\\Delta V = -\\rho / \\epsilon_0$) qui s'applique dans les zones de l'espace où il n'y a pas de distribution de charges ($\\rho = 0$)."
+    },
+    {
+        "uuid": "e027",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle est l'expression du flux du champ électrique $\\Phi_E$ à travers une surface fermée $S$ (théorème de Gauss) ?",
+        "answers": [
+            "$\\Phi = Q_{int} / \\epsilon_0$",
+            "$\\Phi = \\epsilon_0 Q_{int}$",
+            "$\\Phi = Q_{totale} / \\epsilon_0$",
+            "$\\Phi = \\oint \\vec{E} \\cdot \\vec{n} dl$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le théorème de Gauss stipule que le flux à travers une surface fermée ne dépend que des charges contenues à l'intérieur de cette surface ($Q_{int}$). Les charges extérieures à la surface ne contribuent pas au flux net total."
+    },
+    {
+        "uuid": "e028",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pour une charge ponctuelle $Q$ située à l'origine, quelle est la norme du champ électrique $\\vec{E}$ à une distance $r$ du centre ?",
+        "answers": [
+            "$Q / (4\\pi\\epsilon_0 r)$",
+            "$Q / (4\\pi\\epsilon_0 r^2)$",
+            "$Q / (\\epsilon_0 r^2)$",
+            "$Q / (2\\epsilon_0 r^2)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "C'est la loi de Coulomb. Le champ électrique d'une charge ponctuelle suit une décroissance en $1/r^2$. Le terme $4\\pi r^2$ correspond à la surface d'une sphère de rayon $r$, ce qui découle directement de l'application du théorème de Gauss."
+    },
+    {
+        "uuid": "e029",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "À l'intérieur d'une sphère conductrice de rayon $R$ chargée en surface, que vaut le champ électrique $\\vec{E}$ ?",
+        "answers": [
+            "Constant non nul",
+            "Nul",
+            "Proportionnel à $r$",
+            "Inversement proportionnel à $r^2$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour une distribution de charge uniquement en surface, il n'y a aucune charge à l'intérieur de la sphère ($Q_{int} = 0$ pour tout $r < R$). Par le théorème de Gauss, le flux est nul, donc le champ électrique est nul partout à l'intérieur."
+    },
+    {
+        "uuid": "e030",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "À l'extérieur d'une sphère chargée en surface ($r > R$), comment varie le potentiel électrique $V(r)$ ?",
+        "answers": [
+            "En $1/r^2$",
+            "En $1/r$",
+            "En $ln(r)$",
+            "Il est constant"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "À l'extérieur, la sphère se comporte comme une charge ponctuelle située en son centre. Le potentiel d'une charge ponctuelle est $V(r) = Q / (4\\pi\\epsilon_0 r)$, il varie donc en $1/r$. Le piège est de confondre la dépendance du champ ($1/r^2$) avec celle du potentiel ($1/r$)."
+    },
+    {
+        "uuid": "e031",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le cadre de l'étude d'un cylindre infini de rayon $R$ chargé uniformément en volume avec une densité $\\rho$, quelle est la dépendance radiale du champ électrostatique $\\vec{E}(r)$ à l'intérieur du cylindre ($r < R$) ?",
+        "answers": [
+            "Proportionnel à $r$",
+            "Inversement proportionnel à $r$",
+            "Constant",
+            "Proportionnel à $r^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "explication": "En utilisant le théorème de Gauss sur une surface de Gauss cylindrique de rayon $r < R$, on obtient $\\Phi = E(r) \\cdot 2\\pi r L = \\frac{Q_{int}}{\\epsilon_0} = \\frac{\\rho \\pi r^2 L}{\\epsilon_0}$. D'où $E(r) = \\frac{\\rho r}{2\\epsilon_0}$. Le champ augmente donc linéairement avec $r$. L'erreur classique est de confondre avec le cas extérieur ou avec un fil chargé linéiquement.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e032",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "À l'extérieur d'un cylindre infini de rayon $R$ chargé uniformément en volume ($r > R$), comment varie la norme du champ électrostatique $E(r)$ ?",
+        "answers": [
+            "$1/r$",
+            "$1/r^2$",
+            "constante",
+            "$r$"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "explication": "Pour $r > R$, la charge intérieure est constante et égale à $\\rho \\pi R^2 L$. En appliquant le théorème de Gauss : $E(r) \\cdot 2\\pi r L = \\frac{\\rho \\pi R^2 L}{\\epsilon_0}$. Ainsi, $E(r) = \\frac{\\rho R^2}{2\\epsilon_0 r}$. Le champ varie donc en $1/r$, comme pour un fil infini, car le cylindre est invariant par translation et rotation.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e033",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Soit un plan infini chargé uniformément avec une densité surfacique $\\sigma$. Comment évolue le champ électrostatique $\\vec{E}$ au voisinage de ce plan ?",
+        "answers": [
+            "Il est uniforme",
+            "Il est décroissant en $1/z$",
+            "Il est décroissant en $1/z^2$",
+            "Il est nul"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "explication": "Par les symétries (plan de symétrie) et invariances (translations), le champ est perpendiculaire au plan et ne dépend pas de la distance $z$ au plan. Il vaut $\\frac{\\sigma}{2\\epsilon_0} \\vec{n}$. Il est donc uniforme dans chaque demi-espace.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e034",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Lors du passage d'une surface chargée de densité $\\sigma$, quelle est la valeur de la discontinuité de la composante normale du champ électrostatique, notée $E_{2,n} - E_{1,n}$ ?",
+        "answers": [
+            "$\\sigma / (2\\epsilon_0)$",
+            "$\\sigma / \\epsilon_0$",
+            "$0$",
+            "$\\sigma / (4\\pi\\epsilon_0)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "D'après les relations de passage de Maxwell-Gauss, la composante normale du champ électrique présente une discontinuité égale à $\\sigma/\\epsilon_0$ à la traversée d'une surface chargée. L'erreur de $1/2$ est fréquente car elle correspond au champ créé par le plan lui-même (et non à la variation totale du champ).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e035",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le cadre de l'analogie entre l'électrostatique et la gravitation, quelle grandeur joue le rôle de la charge électrique $q$ ?",
+        "answers": [
+            "La masse $m$",
+            "La constante gravitationnelle $G$",
+            "Le volume $V$",
+            "Le potentiel gravitationnel $\\phi$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "explication": "La force de Coulomb $\\vec{F} = \\frac{q_1 q_2}{4\\pi\\epsilon_0 r^2} \\vec{u}$ est formellement analogue à la force de gravitation newtonienne $\\vec{F} = -G \\frac{m_1 m_2}{r^2} \\vec{u}$. La masse $m$ est la source du champ gravitationnel tout comme la charge $q$ est la source du champ électrique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e036",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Un condensateur plan est un système constitué de deux armatures conductrices en influence totale. Quelle est la particularité des charges portées par ces armatures ?",
+        "answers": [
+            "Identiques ($+Q$ et $+Q$)",
+            "Opposées ($+Q$ et $-Q$)",
+            "Différentes ($+Q_1$ et $-Q_2$)",
+            "Nul d'un côté et $+Q$ de l'autre"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "Par définition de l'influence totale, les charges portées par les faces en regard d'un condensateur sont exactement opposées ($+Q$ et $-Q$). C'est cette structure qui confine le champ électrique entre les armatures.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e037",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "En négligeant les effets de bord, quelle est l'expression du champ électrique $\\vec{E}$ entre les deux armatures d'un condensateur plan chargé avec une densité de charge surfacique $\\sigma$ ?",
+        "answers": [
+            "$\\sigma / \\epsilon_0$",
+            "$\\sigma / (2\\epsilon_0)$",
+            "$0$",
+            "$\\sigma / (4\\epsilon_0)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "explication": "Chaque armature crée un champ de $\\sigma/(2\\epsilon_0)$. Comme les charges sont opposées, les champs s'ajoutent entre les armatures : $E = \\frac{\\sigma}{2\\epsilon_0} + \\frac{\\sigma}{2\\epsilon_0} = \\frac{\\sigma}{\\epsilon_0}$. À l'extérieur, ils s'annulent.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e038",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle est la relation définissant la capacité $C$ d'un condensateur où $Q$ est la charge portée par l'armature positive et $U$ la tension entre les armatures ?",
+        "answers": [
+            "$C = U / Q$",
+            "$C = Q / U$",
+            "$C = Q \\cdot U$",
+            "$C = 1 / (Q \\cdot U)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "La capacité $C$ mesure l'aptitude d'un conducteur à stocker des charges pour une tension donnée. La relation fondamentale est $Q = C \\cdot U$, d'où $C = Q/U$. L'unité est le Farad ($F$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e039",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pour un condensateur plan de surface $S$ et d'épaisseur $e$ rempli d'un isolant de permittivité $\\epsilon_0$, quelle est l'expression de sa capacité $C$ ?",
+        "answers": [
+            "$C = \\epsilon_0 e / S$",
+            "$C = \\epsilon_0 S / e$",
+            "$C = S / (\\epsilon_0 e)$",
+            "$C = \\epsilon_0 e S$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "On a $Q = \\sigma S$ et $U = E \\cdot e = (\\sigma / \\epsilon_0) \\cdot e$. En injectant dans $C = Q/U$, on obtient $C = (\\sigma S) / (\\sigma e / \\epsilon_0) = \\epsilon_0 S / e$. La capacité est proportionnelle à la surface et inversement proportionnelle à la distance.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e040",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Comment définit-on la permittivité absolue $\\epsilon$ d'un milieu diélectrique à partir de la permittivité du vide $\\epsilon_0$ et de la permittivité relative $\\epsilon_r$ ?",
+        "answers": [
+            "$\\epsilon = \\epsilon_0 + \\epsilon_r$",
+            "$\\epsilon = \\epsilon_0 / \\epsilon_r$",
+            "$\\epsilon = \\epsilon_0 \\cdot \\epsilon_r$",
+            "$\\epsilon = \\epsilon_r / \\epsilon_0$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 2,
+        "explication": "La permittivité relative $\\epsilon_r$ (ou constante diélectrique) est un nombre sans dimension tel que $\\epsilon = \\epsilon_0 \\epsilon_r$. Elle traduit la capacité du milieu à se polariser en présence d'un champ électrique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e041",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le cadre de l'étude d'un dipôle électrique, quelle est l'expression de l'énergie électrostatique $W_e$ stockée dans un condensateur de capacité $C$ soumis à une tension $U$ ?",
+        "answers": [
+            "$\\frac{1}{2} C U^2$",
+            "$C U^2$",
+            "$\\frac{1}{2} C^2 U$",
+            "$\\frac{1}{2} \\frac{U^2}{C}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'énergie stockée provient de l'intégration de la puissance reçue : $P = u(t) i(t) = u(t) C \\frac{du}{dt}$. En intégrant entre $0$ et $U$, on obtient $\\int_{0}^{U} C u du = \\frac{1}{2} C U^2$. Les autres expressions sont des erreurs dimensionnelles ou des confusions avec la formule de la charge $q=CU$."
+    },
+    {
+        "uuid": "e042",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle est l'expression correcte de la densité volumique d'énergie électrique $w_e$ dans le vide, en fonction du champ électrique $\\vec{E}$ ?",
+        "answers": [
+            "$\\epsilon_0 E^2$",
+            "$\\frac{1}{2} \\epsilon_0 E$",
+            "$\\frac{1}{2} \\epsilon_0 E^2$",
+            "$\\frac{1}{2} \\frac{E^2}{\\epsilon_0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La densité volumique d'énergie est donnée par $w_e = \\frac{1}{2} \\epsilon_0 \\vec{E}^2$. Le facteur $1/2$ est analogue à l'énergie cinétique ($1/2 mv^2$). L'absence du carré ou le mauvais facteur multiplicatif sur $\\epsilon_0$ mènent à des erreurs dimensionnelles."
+    },
+    {
+        "uuid": "e043",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pour un noyau atomique de charge totale $Ze$ et de rayon $a$, quel est le comportement du champ électrique à l'extérieur ($r > a$) ?",
+        "answers": [
+            "D'un dipôle électrique pur",
+            "D'une charge ponctuelle $Ze$ située au centre",
+            "D'un fil infini uniformément chargé",
+            "Le champ est nul pour $r > a$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "D'après le théorème de Gauss et les propriétés de symétrie sphérique, une distribution à symétrie sphérique se comporte à l'extérieur comme une charge ponctuelle concentrée en son centre. Le dipôle correspond à deux charges proches de signes opposés, ce qui n'est pas le cas ici."
+    },
+    {
+        "uuid": "e044",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Soit une sphère chargée avec une densité volumique $\\rho(r) = -\\alpha r$. En utilisant le théorème de Gauss pour $r < R_1$, comment varie la norme du champ électrique $E(r)$ ?",
+        "answers": [
+            "Il varie linéairement en $r$",
+            "Il varie proportionnellement à $r^2$",
+            "Il varie en $1/r^2$",
+            "Il est constant"
+        ],
+        "difficulty": 4,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le théorème de Gauss donne $\\Phi = E(r) \\cdot 4\\pi r^2 = \\frac{1}{\\epsilon_0} \\int_{0}^{r} \\rho(r') 4\\pi r'^2 dr'$. Si $\\rho = -\\alpha r$, alors $E(r) \\cdot 4\\pi r^2 \\propto \\int_{0}^{r} -\\alpha r'^3 dr' \\propto -\\alpha \\frac{r^4}{4}$. D'où $E(r) \\propto r^2$."
+    },
+    {
+        "uuid": "e045",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle est l'expression de la capacité $C$ d'un condensateur sphérique constitué de deux armatures de rayons $R_1$ et $R_2$ ($R_2 > R_1$) ?",
+        "answers": [
+            "$C = 4\\pi\\epsilon_0 \\frac{R_1 R_2}{R_2 - R_1}$",
+            "$C = 4\\pi\\epsilon_0 (R_2 - R_1)$",
+            "$C = \\epsilon_0 \\frac{S}{e}$",
+            "$C = 4\\pi\\epsilon_0 \\frac{R_2 - R_1}{R_1 R_2}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "En calculant le champ entre les armatures par Gauss et en intégrant pour obtenir la différence de potentiel $U = V(R_1) - V(R_2)$, on obtient $U = \\frac{q}{4\\pi\\epsilon_0} (\\frac{1}{R_1} - \\frac{1}{R_2})$. La relation $C = q/U$ donne le résultat indiqué."
+    },
+    {
+        "uuid": "e046",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pour un condensateur cylindrique de rayons $R_1$ et $R_2$ et de longueur $L$, la capacité linéique $\\Gamma = C/L$ dépend de quel facteur géométrique ?",
+        "answers": [
+            "$1 / \\ln(R_2 / R_1)$",
+            "$\\ln(R_2 / R_1)$",
+            "$(R_2 - R_1)$",
+            "$R_1 R_2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le potentiel d'un fil infini varie en $\\ln(r)$. Pour un cylindre, $U = \\frac{\\lambda}{2\\pi\\epsilon_0} \\ln(R_2 / R_1)$. Comme $C = Q/U = \\lambda L / U$, on obtient $\\Gamma = \\frac{2\\pi\\epsilon_0}{\\ln(R_2/R_1)}$. La dépendance est donc inversement logarithmique."
+    },
+    {
+        "uuid": "e047",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le modèle de Yukawa pour un noyau atomique, la densité de charge est telle que pour $r \\gg a$ (très loin du noyau), quelle est la charge interne équivalente $q_{int}$ ?",
+        "answers": [
+            "$q_0$ (charge totale du noyau)",
+            "$0$ (neutralité globale)",
+            "$\\infty$",
+            "Elle dépend linéairement de $r$"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le modèle de Yukawa est utilisé pour décrire des distributions de charge écrantées. À grande distance, la charge totale du système (noyau + nuage électronique) est nulle, donc le champ tend vers zéro ainsi que la charge interne effective vue par Gauss."
+    },
+    {
+        "uuid": "e048",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "En modélisant le système Terre-ionosphère comme un condensateur sphérique, quel est l'ordre de grandeur de sa capacité ?",
+        "answers": [
+            "$76 \\mu F$",
+            "$1 F$",
+            "$1 pF$",
+            "$1 mF$"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "En utilisant la formule $C \\approx 4\\pi\\epsilon_0 R^2 / d$ avec $R \\approx 6400 km$ et $d \\approx 60-100 km$, on trouve par le calcul numérique une valeur de l'ordre de $10^{-4}$ à $10^{-5} F$, soit environ $76 \\mu F$."
+    },
+    {
+        "uuid": "e049",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quel théorème mathématique fondamental permet de passer de la forme locale (divergence) à la forme intégrale de l'équation de Maxwell-Gauss ?",
+        "answers": [
+            "Théorème de Stokes",
+            "Théorème de Green-Ostrogradski",
+            "Théorème de la moyenne",
+            "Théorème de Gauss-Bonnet"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le théorème de Green-Ostrogradski relie le flux d'un champ vectoriel à travers une surface fermée à l'intégrale de sa divergence sur le volume délimité : $\\int \\text{div} \\vec{A} d\\tau = \\oint \\vec{A} \\cdot d\\vec{S}$. Le théorème de Stokes concerne le rotationnel."
+    },
+    {
+        "uuid": "e050",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle est l'expression de la force de Lorentz exercée sur une charge ponctuelle $q$ placée dans un champ électrique $\\vec{E}$ (en l'absence de champ magnétique) ?",
+        "answers": [
+            "$\\vec{F} = q \\vec{E}$",
+            "$\\vec{F} = \\frac{\\vec{E}}{q}$",
+            "$\\vec{F} = q^2 \\vec{E}$",
+            "$\\vec{F} = \\frac{q}{\\vec{E}}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Par définition, le champ électrique $\\vec{E}$ est la force par unité de charge : $\\vec{E} = \\vec{F}/q$. Donc $\\vec{F} = q\\vec{E}$. Les autres propositions ne sont pas homogènes ou contredisent la linéarité de la force par rapport à la charge."
+    },
+    {
+        "uuid": "e051",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le cadre de l'électrostatique classique, le théorème de superposition stipule que le champ électrostatique total $\\vec{E}_{tot}$ en un point $M$ créé par une distribution de charges est la somme vectorielle des champs élémentaires. Ce principe s'applique :",
+        "answers": [
+            "Uniquement aux charges ponctuelles isolées",
+            "À tout ensemble de charges (discrètes ou continues)",
+            "Uniquement dans le vide en symétrie sphérique",
+            "Aux distributions de charges dépendantes du temps"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "Le théorème de superposition découle de la linéarité des équations de Maxwell (notamment de l'équation de Maxwell-Gauss $\\text{div}(\\vec{E}) = \\rho/\\epsilon_0$). Il est valable pour toute distribution de charges (ponctuelles, linéiques, surfaciques ou volumiques) dès lors que le milieu est linéaire, ce qui est le cas dans le vide. La réponse dépendante du temps est incorrecte car l'électrostatique suppose des charges fixes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e052",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Considérons une distribution de charges présentant une symétrie sphérique. En utilisant les propriétés de symétrie et d'invariance, quelle est la direction du champ électrostatique $\\vec{E}$ en tout point $M(r, \\theta, \\phi)$ ?",
+        "answers": [
+            "$\\vec{e}_\\theta$",
+            "$\\vec{e}_\\phi$",
+            "$\\vec{e}_r$",
+            "$\\vec{e}_x$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 2,
+        "explication": "Par symétrie sphérique, la distribution est invariante par toute rotation autour du centre. Le champ doit donc être invariant par rotation, ce qui impose qu'il soit radial. Il ne peut donc dépendre que de la base locale radiale $\\vec{e}_r$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e053",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Lors de l'application du théorème de Gauss pour calculer le champ créé par un fil infini uniformément chargé, quelle surface de Gauss permet d'exploiter au mieux les symétries ?",
+        "answers": [
+            "Une sphère centrée sur le fil",
+            "Un cylindre d'axe confondu avec le fil",
+            "Un cube orienté parallèlement au fil",
+            "Un parallélépipède rectangle"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "Le fil infini possède une symétrie cylindrique. Le champ $\\vec{E}$ est radial et son module est constant sur une surface cylindrique coaxiale au fil. Le flux à travers les bases est nul, ce qui simplifie le calcul de l'intégrale de flux à la seule surface latérale.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e054",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Soit un champ scalaire $V(r, \\theta, \\phi)$ en coordonnées sphériques. Le gradient $\\vec{\\text{grad}}(V)$ ne dépend que de la coordonnée radiale $r$ et est dirigé selon $\\vec{e}_r$ si et seulement si :",
+        "answers": [
+            "Le scalaire $V$ est uniforme (constant)",
+            "Le scalaire $V$ ne dépend que de $r$",
+            "Le scalaire $V$ est nul à l'infini",
+            "Le scalaire $V$ dépend de $r$ et $\\theta$"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "Par définition, $\\vec{\\text{grad}}(V) = \\frac{\\partial V}{\\partial r} \\vec{e}_r + \\frac{1}{r} \\frac{\\partial V}{\\partial \\theta} \\vec{e}_\\theta + \\frac{1}{r \\sin \\theta} \\frac{\\partial V}{\\partial \\phi} \\vec{e}_\\phi$. Si $V$ ne dépend que de $r$, alors les dérivées par rapport à $\\theta$ et $\\phi$ sont nulles, et le gradient se réduit au terme en $\\partial V / \\partial r$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e055",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le calcul du potentiel électrostatique $V$, la convention usuelle fixant $V = 0$ à l'infini est spécifiquement adaptée pour :",
+        "answers": [
+            "Une distribution de charge infinie",
+            "Une distribution de charge localisée (finie)",
+            "Un conducteur parfait maintenu au potentiel zéro",
+            "Un plan infini chargé"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "La référence à l'infini n'est possible que si le potentiel converge vers une valeur finie (généralement 0) quand $r \\to \\infty$. Pour les distributions infinies (plan, fil), le potentiel diverge à l'infini, rendant cette convention inapplicable : on choisit alors un point à distance finie comme référence.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e056",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "À l'intérieur d'un matériau conducteur à l'équilibre électrostatique, quelle est la valeur du champ électrique $\\vec{E}$ ?",
+        "answers": [
+            "Nul",
+            "Maximum au centre du conducteur",
+            "Uniforme mais non nul",
+            "Dépendant de la densité de charge volumique interne"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "explication": "À l'équilibre, les charges libres sont immobiles. Si $\\vec{E}$ était non nul, il exercerait une force $\\vec{F} = q\\vec{E}$ sur les porteurs de charge, provoquant un déplacement. L'équilibre impose donc $\\vec{E} = \\vec{0}$ à l'intérieur du conducteur.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e057",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Lors de l'application du théorème de Gauss à un fil infini, pourquoi le flux à travers les deux bases (disques) du cylindre de Gauss est-il nul ?",
+        "answers": [
+            "Car le champ $\\vec{E}$ est parallèle aux bases",
+            "Car le champ $\\vec{E}$ est perpendiculaire au vecteur surface $\\vec{dS}$ des bases",
+            "Car le champ $\\vec{E}$ est nul à l'intérieur",
+            "Car le fil n'est pas chargé"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "Le champ $\\vec{E}$ créé par un fil infini est radial (perpendiculaire à l'axe du fil). Les vecteurs surfaces $\\vec{dS}$ des bases sont orientés selon l'axe du fil. Le produit scalaire $\\vec{E} \\cdot \\vec{dS}$ est donc nul car $\\vec{E} \\perp \\vec{dS}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e058",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle est l'expression mathématique correcte de l'aire de la surface latérale d'un cylindre de rayon $r$ et de hauteur $h$ ?",
+        "answers": [
+            "$\\pi r^2 h$",
+            "$2\\pi r h$",
+            "$4\\pi r^2$",
+            "$\\frac{1}{3} \\pi r^2 h$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "La surface latérale d'un cylindre s'obtient en multipliant le périmètre de la base ($2\\pi r$) par la hauteur ($h$), ce qui donne $2\\pi r h$. L'option $\\pi r^2 h$ correspond au volume, et $4\\pi r^2$ correspond à l'aire d'une sphère.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e059",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pour un plan infini uniformément chargé selon $\\sigma$, le champ $\\vec{E}(z)$ est un vecteur dirigé selon $\\vec{e}_z$. Comment varie son signe selon la position $z$ ?",
+        "answers": [
+            "C'est une fonction paire : $\\vec{E}(z) = \\vec{E}(-z)$",
+            "C'est une fonction impaire : $\\vec{E}(z) = -\\vec{E}(-z)$",
+            "Le champ est constant et identique de part et d'autre du plan",
+            "Le champ est nul partout"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "Le plan présente une symétrie par rapport au plan $z=0$. Le champ doit changer de sens quand on passe d'un côté à l'autre du plan (il pointe vers l'extérieur du plan). Mathématiquement, pour un plan chargé positivement, $\\vec{E} = \\frac{\\sigma}{2\\epsilon_0} \\text{sgn}(z) \\vec{e}_z$, ce qui définit une fonction impaire.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e060",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "La capacité $C$ d'un condensateur est définie par la relation $Q = C \\Delta V$. Quelle est l'unité SI de cette grandeur ?",
+        "answers": [
+            "Volt ($V$)",
+            "Farad ($F$)",
+            "Coulomb ($C$)",
+            "Ampère-seconde ($A\\cdot s$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "D'après la relation $C = Q / \\Delta V$, l'unité est le Coulomb par Volt ($C/V$). Cette unité est nommée Farad ($F$) en hommage à Michael Faraday. Le Coulomb est l'unité de charge, le Volt celle du potentiel.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e061",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le cadre de l'étude des condensateurs, que signifie l'hypothèse d'influence totale entre deux armatures ?",
+        "answers": [
+            "Elles portent exactement la même charge $Q$.",
+            "La totalité des lignes de champ issues de l'armature chargée positivement aboutit sur l'armature chargée négativement.",
+            "Le potentiel électrique est identique sur les deux armatures.",
+            "Le champ électrostatique est nul partout entre les armatures."
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'influence totale est une condition idéale simplificatrice. Elle implique que le flux du champ électrostatique est entièrement canalisé entre les deux armatures, sans 'fuite' de lignes de champ vers l'extérieur (bordures négligées). Elle impose que $+Q$ et $-Q$ soient les charges en regard."
+    },
+    {
+        "uuid": "e062",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pour un condensateur plan d'armatures de surface $S$ séparées par une distance $e$ et un milieu de permittivité $\\epsilon$, comment varie sa capacité $C$ si l'on double la distance $e$ ?",
+        "answers": [
+            "La capacité est multipliée par 2.",
+            "La capacité est divisée par 2.",
+            "La capacité reste inchangée.",
+            "La capacité est multipliée par 4."
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La capacité d'un condensateur plan est donnée par $C = \\frac{\\epsilon S}{e}$. La capacité est donc inversement proportionnelle à la distance $e$. Si $e' = 2e$, alors $C' = \\frac{\\epsilon S}{2e} = \\frac{C}{2}$."
+    },
+    {
+        "uuid": "e063",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pour tout milieu diélectrique linéaire, homogène et isotrope, quelle propriété vérifie la permittivité relative $\\epsilon_r$ ?",
+        "answers": [
+            "$\\epsilon_r < 1$",
+            "$\\epsilon_r \\ge 1$",
+            "$\\epsilon_r < 0$",
+            "$\\epsilon_r$ est toujours égale à 1."
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La permittivité relative est définie par $\\epsilon = \\epsilon_0 \\epsilon_r$. Comme la polarisation d'un milieu sous l'effet d'un champ extérieur s'oppose à celui-ci (atténuation), $\\epsilon_r$ est toujours supérieure ou égale à 1 (le vide étant le cas limite avec $\\epsilon_r = 1$)."
+    },
+    {
+        "uuid": "e064",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Un électron (de charge $-e$) est accéléré au repos à travers une différence de potentiel $U$. Quelle est son énergie cinétique finale $K$ ?",
+        "answers": [
+            "$K = eU$",
+            "$K = \\frac{1}{2} eU$",
+            "$K = e/U$",
+            "$K = e^2 U$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "D'après le théorème de l'énergie cinétique, la variation d'énergie cinétique est égale au travail de la force électrique : $\\Delta K = W = q\\Delta V$. Avec $q = -e$ et $\\Delta V = -U$ (accélération), on obtient $K = eU$."
+    },
+    {
+        "uuid": "e065",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le modèle de Newton, le champ gravitationnel $\\vec{g}$ créé par une masse ponctuelle $M$ située à l'origine est dirigé :",
+        "answers": [
+            "Vers l'extérieur (radialement fuyant).",
+            "Vers l'intérieur (radialement vers la masse).",
+            "Selon la composante orthoradiale $\\vec{e}_\\theta$.",
+            "De manière tangentielle à la trajectoire."
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le champ gravitationnel est toujours attractif. Il est défini par $\\vec{g} = -\\frac{GM}{r^2} \\vec{e}_r$. Le signe '-' indique que le vecteur pointe vers le centre de la masse source."
+    },
+    {
+        "uuid": "e066",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle est l'unité SI cohérente pour la permittivité du vide $\\epsilon_0$ ?",
+        "answers": [
+            "$F.m^{-1}$ (Farad par mètre)",
+            "$C.V^{-1}$ (Coulomb par Volt)",
+            "$N.m^2.C^{-2}$ (Newton mètre carré par Coulomb carré)",
+            "$A.s.m^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "À partir de la loi de Coulomb $F = \\frac{q_1 q_2}{4\\pi\\epsilon_0 r^2}$, on en déduit que $\\epsilon_0$ est en $C^2.N^{-1}.m^{-2}$. Comme $1 F = 1 C.V^{-1}$ et $1 V = 1 J.C^{-1} = 1 N.m.C^{-1}$, on vérifie que le Farad par mètre ($F.m^{-1}$) est équivalent à $C^2.J^{-1}.m^{-1} = C^2.N^{-1}.m^{-2}$."
+    },
+    {
+        "uuid": "e067",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Considérons une plaque plane épaisse infinie d'épaisseur $a$ chargée en volume avec une densité uniforme $\\rho_0$. Quel est le champ électrostatique $\\vec{E}$ à l'extérieur (pour $z > a/2$) ?",
+        "answers": [
+            "$\\vec{E} = \\frac{\\rho_0 a}{2\\epsilon_0} \\vec{u}_z$",
+            "$\\vec{E} = \\frac{\\rho_0 z}{\\epsilon_0} \\vec{u}_z$",
+            "$\\vec{E} = \\vec{0}$",
+            "$\\vec{E} = \\frac{\\rho_0 a}{\\epsilon_0} \\vec{u}_z$"
+        ],
+        "difficulty": 4,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "En utilisant le théorème de Gauss sur un cylindre de section $S$ traversant la plaque, la charge intérieure est $Q_{int} = \\rho_0 S a$. Le flux total à travers les deux bases est $2 E S$. D'où $2 E S = \\frac{\\rho_0 S a}{\\epsilon_0}$, soit $E = \\frac{\\rho_0 a}{2\\epsilon_0}$."
+    },
+    {
+        "uuid": "e068",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Si l'on fait tendre l'épaisseur $a \\to 0$ tout en gardant la charge totale constante, quelle est la relation entre la densité volumique $\\rho_0$ et la densité surfacique $\\sigma_0$ équivalente ?",
+        "answers": [
+            "$\\sigma_0 = \\rho_0 / a$",
+            "$\\sigma_0 = \\rho_0 a$",
+            "$\\sigma_0 = \\rho_0 a^2$",
+            "$\\sigma_0 = \\sqrt{\\rho_0 a}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour une distribution volumique uniforme, la charge sur une aire $S$ est $q = \\rho_0 \\times V = \\rho_0 (S \\times a)$. Pour une distribution surfacique, $q = \\sigma_0 S$. Par identification, $\\sigma_0 = \\rho_0 a$."
+    },
+    {
+        "uuid": "e069",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le modèle du noyau atomique constitué de $Z$ protons et $A-Z$ neutrons, quelle est la charge totale du noyau ?",
+        "answers": [
+            "$e$ (charge élémentaire)",
+            "$Ze$",
+            "$(A-Z)e$",
+            "$Ae$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le proton porte une charge $+e$ et le neutron est neutre. La charge totale du noyau est donc égale à la somme des charges des protons, soit $Z \\times e$."
+    },
+    {
+        "uuid": "e070",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans un modèle où le noyau est une sphère chargée uniformément de rayon $R$ et de densité $\\rho_0$, quel est le champ électrique à l'intérieur de la sphère ($r < R$) ?",
+        "answers": [
+            "Il est nul.",
+            "Il est proportionnel à la distance $r$.",
+            "Il décroît en $1/r^2$.",
+            "Il est uniforme."
+        ],
+        "difficulty": 4,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par le théorème de Gauss pour une sphère de rayon $r < R$ : $E(r) \times 4\\pi r^2 = \\frac{\\rho_0}{\\epsilon_0} \\times \\frac{4}{3}\\pi r^3$. On en déduit $E(r) = \\frac{\\rho_0 r}{3\\epsilon_0}$. Le champ est donc proportionnel à $r$ à l'intérieur de la distribution."
+    },
+    {
+        "uuid": "e071",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le cadre de l'étude d'une distribution surfacique de charges portée par une sphère de rayon $R_2$ avec une densité surfacique $\\sigma$, quelle est la discontinuité du champ électrostatique $\\vec{E}$ à la traversée de cette surface ?",
+        "answers": [
+            "$\\sigma / \\epsilon_0$",
+            "$\\sigma / (2\\epsilon_0)$",
+            "$\\sigma^2 / \\epsilon_0$",
+            "$0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "explication": "D'après les conditions aux limites de l'électrostatique, la composante normale du champ électrostatique subit une discontinuité égale à $\\sigma / \\epsilon_0$ à la traversée d'une surface chargée. La réponse $\\sigma / (2\\epsilon_0)$ est une erreur fréquente confondant avec le champ créé par un plan infini seul.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e072",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pour un condensateur sphérique constitué de deux armatures de rayons $R_1$ et $R_2$, que devient la capacité du système lorsque l'épaisseur de l'isolant $e = R_2 - R_1$ devient très faible devant $R_1$ ($e \\ll R_1$) ?",
+        "answers": [
+            "La formule du condensateur plan $C = \\epsilon_0 S / e$",
+            "La formule d'une sphère isolée $C = 4\\pi \\epsilon_0 R_1$",
+            "La formule d'un cylindre infini",
+            "Une valeur nulle"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "explication": "Lorsque $R_2 \\to R_1$, la courbure locale devient négligeable. En posant $S = 4\\pi R_1^2$ et $e = R_2 - R_1$, on retrouve par développement limité la capacité d'un condensateur plan. Les autres propositions sont des limites physiques incohérentes avec le passage à la géométrie plane.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e073",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pourquoi le champ électrostatique est-il nul à l'extérieur d'un condensateur plan idéal (constitué de deux plans infinis chargés uniformément avec $+\\sigma$ et $-\\sigma$) ?",
+        "answers": [
+            "Par application du principe de superposition",
+            "Par application directe du théorème de Gauss seul",
+            "Par le principe de Curie",
+            "Par conservation de l'énergie"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "explication": "Le champ créé par chaque plan infini est $\\vec{E} = \\frac{\\sigma}{2\\epsilon_0} \\vec{n}$. À l'extérieur, les deux champs sont opposés et se compensent exactement (principe de superposition), alors qu'à l'intérieur ils s'additionnent. Le théorème de Gauss est utile pour trouver le champ d'un plan, mais c'est la superposition qui explique l'annulation externe.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e074",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Par définition, qu'est-ce qu'une surface équipotentielle dans un champ électrostatique ?",
+        "answers": [
+            "Une surface où le champ électrique $\\vec{E}$ est constant",
+            "Une surface sur laquelle le potentiel électrique $V$ est uniforme",
+            "Une surface où la densité de charge volumique $\\rho$ est nulle",
+            "Une surface où le flux du champ est nul"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "Une surface équipotentielle est le lieu des points où le potentiel $V(M)$ est constant. Il en découle que le champ électrique est toujours perpendiculaire à ces surfaces.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e075",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pourquoi le théorème de Gauss est-il l'outil privilégié pour le calcul du champ électrostatique dans certains problèmes ?",
+        "answers": [
+            "Il permet de calculer le champ sans intégrer la loi de Coulomb",
+            "Il exploite les hautes symétries de la distribution de charge",
+            "Il fonctionne uniquement pour les charges ponctuelles",
+            "Il est valable même en régime variable"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "Le théorème de Gauss $\\iint \\vec{E} \\cdot d\\vec{S} = Q_{int}/\\epsilon_0$ n'est pratique que si les symétries permettent de sortir le champ de l'intégrale. Les \"hautes symétries\" (sphérique, cylindrique, plane) sont la condition sine qua non de son utilisation.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e076",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "En utilisant l'équation de Maxwell-Gauss $\\text{div} \\vec{E} = \\rho / \\epsilon_0$, que vaut la divergence du champ électrique dans une zone où il n'y a pas de charge ($\\rho = 0$) ?",
+        "answers": [
+            "Elle est positive",
+            "Elle est nulle",
+            "Elle est proportionnelle au potentiel",
+            "Elle est infinie"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "Si $\\rho = 0$, alors $\\text{div} \\vec{E} = 0$. On dit que le champ est à flux conservatif (ou solénoïdal) dans les zones vides de charges.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e077",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle est l'unité du potentiel électrique $V$ dans le système international ?",
+        "answers": [
+            "$V$ (Volt)",
+            "$V.m^{-1}$",
+            "$J.C^{-1}$",
+            "Les deux premières réponses sont correctes"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "explication": "Le Volt ($V$) est l'unité de potentiel. Attention à ne pas confondre avec le champ électrique dont l'unité est le $V.m^{-1}$ ou $N.C^{-1}$. Le potentiel est une énergie par unité de charge ($J.C^{-1}$), ce qui est bien équivalent au Volt.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e078",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle est la géométrie des lignes de champ créées par une charge ponctuelle positive $q > 0$ placée dans le vide ?",
+        "answers": [
+            "Des cercles concentriques centrés sur la charge",
+            "Des droites radiales dirigées vers l'extérieur",
+            "Des droites radiales dirigées vers l'intérieur",
+            "Des spirales"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "Le champ d'une charge positive est dirigé radialement depuis la charge vers l'infini ($\\vec{E} \\propto \\frac{q}{r^2} \\vec{u}_r$). Les lignes de champ suivent la direction du vecteur champ, elles sont donc sortantes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e079",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Comment nomme-t-on l'équation aux dérivées partielles $\\Delta V = 0$ régissant le potentiel électrique dans une zone sans charge ?",
+        "answers": [
+            "Équation de Poisson",
+            "Équation de Laplace",
+            "Équation de Gauss",
+            "Équation de Coulomb"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "explication": "L'équation de Poisson est $\\Delta V = -\\rho/\\epsilon_0$. Lorsque la densité de charge $\\rho$ est nulle, on obtient l'équation de Laplace : $\\Delta V = 0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e080",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Le flux du champ électrique $\\Phi_E = \\iint_S \\vec{E} \\cdot d\\vec{S}$ à travers une surface fermée $S$ est une grandeur :",
+        "answers": [
+            "Algébrique (peut être positif, négatif ou nul)",
+            "Toujours positive",
+            "Toujours nulle",
+            "Indépendante de la charge intérieure"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "explication": "Selon le théorème de Gauss, $\\Phi_E = Q_{int} / \\epsilon_0$. Comme la charge $Q_{int}$ peut être positive, négative ou nulle, le flux est une grandeur algébrique qui dépend uniquement de la charge totale contenue dans le volume.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "e081",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "À l'intérieur d'un cylindre plein uniformément chargé ($r < R$), le champ $E$ : [cite: 388]",
+        "answers": [
+            "Est nul au centre",
+            "Est maximum au centre",
+            "Décroît linéairement avec $r$"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e082",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pour une distribution sphérique, le champ $\\vec{E}$ ne peut pas dépendre de : [cite: 271]",
+        "answers": [
+            "$\\theta$ et $\\phi$",
+            "$r$",
+            "La charge $Q$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e083",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Un plan de symétrie pour les charges est un plan où $\\vec{E}$ est : [cite: 101]",
+        "answers": [
+            "Inchangé pour ses composantes tangentielles",
+            "Inversé pour ses composantes tangentielles",
+            "Nul pour toutes ses composantes"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e084",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "L'unité de la capacité linéique $\\Gamma$ est : [cite: 681]",
+        "answers": [
+            "$F.m^{-1}$",
+            "$F.m$",
+            "$F.m^{-2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e085",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le potentiel de Yukawa, la constante $a$ représente : [cite: 704]",
+        "answers": [
+            "Le rayon du noyau",
+            "Une longueur caractéristique (rayon typique du nuage)",
+            "La charge totale"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e086",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Le champ électrique d'un dipôle (deux charges opposées) a des lignes de champ : [cite: 201]",
+        "answers": [
+            "Allant de $+q$ vers $-q$",
+            "Allant de $-q$ vers $+q$",
+            "Circulaires autour des charges"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e087",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "La variation du potentiel $dV$ lors d'un déplacement $d\\vec{l}$ est : [cite: 180]",
+        "answers": [
+            "$\\vec{E} . d\\vec{l}$",
+            "$-\\vec{E} . d\\vec{l}$",
+            "$\\vec{E} \\times d\\vec{l}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e088",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pour un système de deux charges ponctuelles, la force est inversement proportionnelle à : [cite: 57]",
+        "answers": [
+            "$r$",
+            "$r^2$",
+            "$r^3$"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e089",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Un point $M$ où le champ est nul est nécessairement : [cite: 184]",
+        "answers": [
+            "Un extremum de potentiel",
+            "Un point à potentiel nul",
+            "Un point sans charge"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e090",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "La constante de permittivité du vide $\\epsilon_0$ vaut environ : [cite: 162]",
+        "answers": [
+            "$8,85.10^{-12} F.m^{-1}$",
+            "$9.10^9 F.m^{-1}$",
+            "$1,6.10^{-19} F.m^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "e091",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le cadre de l'étude d'un condensateur cylindrique infini de rayons $R_1$ et $R_2$, par application du théorème de Gauss, le champ électrostatique $\\vec{E}$ dans l'espace entre les armatures est proportionnel à :",
+        "answers": [
+            "$r$",
+            "$1/r$",
+            "$1/r^2$",
+            "une constante"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "D'après le théorème de Gauss appliqué sur une surface cylindrique de rayon $r$, le flux du champ est $\\Phi = E(r) \\cdot 2\\pi r L = Q_{int} / \\epsilon_0$. Comme $Q_{int}$ est constant pour une portion de longueur $L$, on en déduit que $E(r) \\propto 1/r$. Le terme $1/r^2$ correspond à une symétrie sphérique."
+    },
+    {
+        "uuid": "e092",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Considérant un conducteur métallique en équilibre électrostatique, quelle propriété du potentiel électrique $V$ est nécessairement vérifiée à l'intérieur et à la surface du conducteur ?",
+        "answers": [
+            "Il est nul",
+            "Il est uniforme (constant)",
+            "Il est proportionnel à la distance au centre",
+            "Il est maximal au centre"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "À l'équilibre, le champ électrique à l'intérieur d'un conducteur est nul ($\\vec{E} = \\vec{0}$). Puisque $\\vec{E} = -\\vec{\\text{grad}}(V)$, si le champ est nul, le gradient du potentiel l'est aussi, ce qui impose que $V$ soit constant dans tout le volume du conducteur."
+    },
+    {
+        "uuid": "e093",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le modèle simplifié de la cavité Terre-ionosphère, quel est l'ordre de grandeur de la puissance moyenne dissipée par les éclairs à l'échelle globale ?",
+        "answers": [
+            "$3 \\cdot 10^{11} \\text{ W}$",
+            "$10^6 \\text{ W}$",
+            "$30 \\text{ kW}$",
+            "$10^9 \\text{ W}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Ce chiffre correspond au bilan énergétique mondial. Les éclairs participent au maintien du champ électrique atmosphérique (environ $100 \\text{ V/m}$ au sol) en compensant le courant de fuite de la Terre qui agit comme une sphère chargée."
+    },
+    {
+        "uuid": "e094",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Soit une sphère isolante de rayon $R$ uniformément chargée en volume. Pour un point extérieur ($r > R$), le champ électrique est :",
+        "answers": [
+            "Le même que celui d'une charge ponctuelle placée au centre",
+            "Nul",
+            "Uniforme",
+            "En $1/r^3$"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "D'après le théorème de Gauss, pour toute symétrie sphérique, la charge totale $Q$ se comporte comme une charge ponctuelle située en son centre pour tout point extérieur à la distribution. On retrouve ainsi la loi de Coulomb : $\\vec{E} = \\frac{Q}{4\\pi\\epsilon_0 r^2} \\vec{u}_r$."
+    },
+    {
+        "uuid": "e095",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Considérant deux plans infinis parallèles portant des densités surfaciques de charge $+\\sigma$ et $-\\sigma$, quel est le champ électrostatique résultant ?",
+        "answers": [
+            "Nul partout",
+            "Nul à l'extérieur, uniforme à l'intérieur",
+            "Uniforme partout",
+            "Nul à l'intérieur, uniforme à l'extérieur"
+        ],
+        "difficulty": 2,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Chaque plan crée un champ uniforme de norme $\\sigma / (2\\epsilon_0)$. À l'extérieur, les deux champs s'opposent et se compensent ($\\vec{E} = \\vec{0}$). À l'intérieur, ils s'ajoutent pour donner $\\vec{E} = \\sigma / \\epsilon_0$, dirigé du plan positif vers le plan négatif."
+    },
+    {
+        "uuid": "e096",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle est l'expression correcte de l'énergie potentielle électrostatique $E_p$ d'un système formé de deux charges ponctuelles $q_1$ et $q_2$ séparées par une distance $r$ ?",
+        "answers": [
+            "$\\frac{1}{4\\pi\\epsilon_0} \\frac{q_1 q_2}{r}$",
+            "$\\frac{1}{4\\pi\\epsilon_0} \\frac{q_1 q_2}{r^2}$",
+            "$\\frac{q_1 q_2}{r}$",
+            "$\\frac{q_1 q_2}{4\\pi\\epsilon_0 r^3}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'énergie potentielle est définie par le travail des forces électrostatiques. L'expression est $E_p = q_2 V_1$ où $V_1$ est le potentiel créé par la charge 1. Attention à ne pas confondre avec la force de Coulomb qui est en $1/r^2$."
+    },
+    {
+        "uuid": "e097",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Pour une distribution de charges présentant une invariance par rotation autour de l'axe $Oz$ (invariance cylindrique), que peut-on dire de la composante $\\vec{e}_\\theta$ du champ électrique en coordonnées cylindriques ?",
+        "answers": [
+            "Elle est nulle",
+            "Elle est indépendante de $\\theta$",
+            "Elle est maximale",
+            "Elle est proportionnelle à $1/r$"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'invariance par rotation autour de l'axe $Oz$ impose que le champ ne dépende pas de $\\theta$. Par ailleurs, la symétrie de réflexion par rapport à tout plan passant par $Oz$ (plan méridien) impose que la composante orthoradiale soit nulle, car c'est une composante anti-symétrique."
+    },
+    {
+        "uuid": "e098",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le cadre de l'analyse vectorielle appliquée à l'électrostatique, quelle est la valeur du rotationnel du gradient d'un champ scalaire $V$ (i.e. $\\vec{\\text{rot}}(\\vec{\\text{grad}} V)$) ?",
+        "answers": [
+            "$\\vec{0}$",
+            "$\\rho / \\epsilon_0$",
+            "Le laplacien $\\Delta V$",
+            "$\\vec{E}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "C'est une identité mathématique fondamentale : le rotationnel d'un champ gradient est toujours nul. Cela traduit le caractère conservatif du champ électrostatique, garantissant l'existence d'une fonction potentiel scalaire."
+    },
+    {
+        "uuid": "e099",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Dans le théorème de Gauss $\\iint_S \\vec{E} \\cdot \\vec{n} dS = \\frac{Q_{int}}{\\epsilon_0}$, que représente précisément la grandeur $Q_{int}$ ?",
+        "answers": [
+            "La somme des charges positives uniquement",
+            "La somme algébrique de toutes les charges contenues à l'intérieur de la surface fermée $S$",
+            "La somme des charges à l'extérieur de la surface",
+            "La charge totale de tout l'univers"
+        ],
+        "difficulty": 1,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La charge intérieure $Q_{int}$ est la charge totale (somme algébrique, donc en tenant compte du signe) de toutes les particules chargées présentes à l'intérieur du volume délimité par la surface de Gauss choisie."
+    },
+    {
+        "uuid": "e100",
+        "image_path": null,
+        "theme": "électrostatique",
+        "question": "Quelle condition mathématique est toujours vérifiée pour le potentiel électrique $V$ lors du passage d'une interface, même en présence d'une densité surfacique de charge $\\sigma$ ?",
+        "answers": [
+            "Le potentiel est toujours continu",
+            "Le champ électrique est continu",
+            "La charge surfacique est nulle",
+            "Le gradient du potentiel est discontinu"
+        ],
+        "difficulty": 3,
+        "chapter": "Le champ électrostatique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le potentiel $V$ est une fonction continue de l'espace. En revanche, le champ électrique (qui est lié à la dérivée du potentiel) présente une discontinuité au passage d'une surface chargée, proportionnelle à $\\sigma / \\epsilon_0$."
+    }
+]

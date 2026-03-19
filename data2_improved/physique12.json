@@ -1,0 +1,1696 @@
+[
+    {
+        "uuid": "visc-001",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude de la dynamique des fluides visqueux, quelle est l'unité de la viscosité dynamique $\\eta$ dans le Système International ?",
+        "answers": [
+            "$kg \\cdot m \\cdot s^{-1}$",
+            "$Pa \\cdot s$",
+            "$N \\cdot m^{-2}$",
+            "$kg \\cdot m^{-1} \\cdot s^{-2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La viscosité dynamique $\\eta$ est définie par la relation $\\tau = \\eta \\frac{\\partial v}{\\partial y}$. Comme la contrainte $\\tau$ est une pression ($Pa = N/m^2$) et que le gradient de vitesse est en $s^{-1}$, l'unité est le $Pa \\cdot s$. L'unité $kg \\cdot m^{-1} \\cdot s^{-1}$ est également correcte mais moins standard en ingénierie."
+    },
+    {
+        "uuid": "visc-002",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Comment appelle-t-on l'unité $Pa \\cdot s$ (ou $kg \\cdot m^{-1} \\cdot s^{-1}$), couramment utilisée pour quantifier la viscosité dynamique d'un fluide ?",
+        "answers": [
+            "Le Pascal-Seconde",
+            "Le Poiseuille (Pl)",
+            "Le Stokes (St)",
+            "Le Reynolds (Re)"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le Poiseuille (symbole $Pl$) est l'unité SI de la viscosité dynamique. Attention à ne pas confondre avec le Poise ($P$), ancienne unité cgs, où $1 \\, Pl = 10 \\, P$."
+    },
+    {
+        "uuid": "visc-003",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Soient $\\eta$ la viscosité dynamique et $\\rho$ la masse volumique du fluide. Quelle est la définition correcte de la viscosité cinématique $\\nu$ ?",
+        "answers": [
+            "$\\nu = \\eta \\cdot \\rho$",
+            "$\\nu = \\frac{\\rho}{\\eta}$",
+            "$\\nu = \\frac{\\eta}{\\rho}$",
+            "$\\nu = \\eta^{-1} \\cdot \\rho^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La viscosité cinématique est définie par le rapport $\\nu = \\eta / \\rho$. Elle mesure la capacité de diffusion de la quantité de mouvement par unité de masse, d'où son unité en $m^2 \\cdot s^{-1}$."
+    },
+    {
+        "uuid": "visc-004",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'unité de la viscosité cinématique $\\nu$ dans le Système International ?",
+        "answers": [
+            "$m^2 \\cdot s^{-1}$",
+            "$m \\cdot s^{-2}$",
+            "$Pa \\cdot s$",
+            "$kg \\cdot m^{-1} \\cdot s^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La viscosité cinématique s'exprime en $m^2 \\cdot s^{-1}$ (ou Stokes dans le système cgs : $1 \\, St = 10^{-4} \\, m^2 \\cdot s^{-1}$). Elle traduit la diffusion de la vitesse dans le fluide."
+    },
+    {
+        "uuid": "visc-005",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "D'après la loi de comportement de Newton pour un fluide incompressible newtonien, la contrainte tangentielle visqueuse $\\tau$ est proportionnelle à :",
+        "answers": [
+            "La vitesse locale $v$",
+            "La pression statique $P$",
+            "Le gradient de vitesse $\\frac{\\partial v_x}{\\partial y}$",
+            "La dérivée temporelle de la vitesse $\\frac{\\partial v}{\\partial t}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Pour un fluide newtonien, la force de frottement interne est proportionnelle à la variation de vitesse dans la direction perpendiculaire à l'écoulement : $\\tau = \\eta \\frac{\\partial v_x}{\\partial y}$. C'est la définition même de la linéarité du comportement visqueux."
+    },
+    {
+        "uuid": "visc-006",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un fluide newtonien au repos dans un référentiel galiléen, que peut-on affirmer concernant les contraintes tangentielles ?",
+        "answers": [
+            "Elles sont égales à la pression thermodynamique",
+            "Elles sont proportionnelles à la viscosité",
+            "Elles sont identiquement nulles",
+            "Elles s'opposent à la force de pesanteur"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Par définition, un fluide au repos a un champ de vitesse uniforme ($v=0$). Le gradient de vitesse étant nul, la contrainte tangentielle $\\tau = \\eta \\cdot \frac{\\partial v}{\\partial y}$ est nécessairement nulle."
+    },
+    {
+        "uuid": "visc-007",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un fluide réel (visqueux) au contact d'une paroi solide immobile, quelle condition aux limites doit être vérifiée (condition d'adhérence) ?",
+        "answers": [
+            "La vitesse du fluide est maximale",
+            "La vitesse du fluide est nulle",
+            "La contrainte tangentielle est nulle",
+            "La vitesse du fluide est égale à la vitesse du son"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La condition d'adhérence postule que la vitesse du fluide au contact direct d'une paroi fixe est nulle : $\\vec{v}_{fluide} = \\vec{v}_{paroi} = \\vec{0}$. C'est cette condition qui induit les gradients de vitesse et donc la dissipation visqueuse."
+    },
+    {
+        "uuid": "visc-008",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Laminar_flow_in_a_pipe.svg",
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'écoulement de Poiseuille laminaire dans une conduite cylindrique de rayon $R$, quelle est la forme du profil de vitesse $v(r)$ ?",
+        "answers": [
+            "Profil linéaire en $r$",
+            "Profil de type couche limite",
+            "Profil parabolique en $1 - (r/R)^2$",
+            "Profil constant (écoulement de plug)"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "En résolvant l'équation de Navier-Stokes en coordonnées cylindriques avec la condition d'adhérence en $r=R$, on obtient $v(r) = v_{max}(1 - \\frac{r^2}{R^2})$. C'est une parabole."
+    },
+    {
+        "uuid": "visc-009",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'expression de la force volumique de viscosité $\\vec{f}_v$ pour un écoulement plan de cisaillement simple $\\vec{v} = v(y,t)\\vec{u}_x$ ?",
+        "answers": [
+            "$\\vec{f}_v = \\eta \\frac{\\partial v}{\\partial y} \\vec{u}_x$",
+            "$\\vec{f}_v = \\eta \\frac{\\partial^2 v}{\\partial y^2} \\vec{u}_x$",
+            "$\\vec{f}_v = -\\eta \\frac{\\partial v}{\\partial y} \\vec{u}_y$",
+            "$\\vec{f}_v = \\frac{\\eta}{\\rho} \\frac{\\partial v}{\\partial y} \\vec{u}_x$"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La force volumique provient de la divergence du tenseur des contraintes visqueuses. Pour cet écoulement, $\\vec{f}_v = \\eta \\nabla^2 \\vec{v} = \\eta \\frac{\\partial^2 v}{\\partial y^2} \\vec{u}_x$."
+    },
+    {
+        "uuid": "visc-010",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'équation de Navier-Stokes, l'opérateur $\\Delta$ appliqué au vecteur vitesse $\\vec{v}$ représente :",
+        "answers": [
+            "Le gradient de la divergence du champ",
+            "Le laplacien vectoriel $\\Delta \\vec{v}$",
+            "La dérivée particulaire $\\frac{D\\vec{v}}{Dt}$",
+            "Le rotationnel du champ de vitesse"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans le terme de diffusion visqueuse $\\eta \\Delta \\vec{v}$, l'opérateur $\\Delta$ est le laplacien vectoriel. En coordonnées cartésiennes, il s'agit du vecteur dont les composantes sont les laplaciens scalaires des composantes de la vitesse."
+    },
+    {
+        "uuid": "visc-011",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude de l'écoulement d'un fluide réel visqueux et incompressible, l'équation de Navier-Stokes s'écrit $\\rho \\frac{D\\vec{v}}{Dt} = \\rho\\vec{g} - \\vec{grad}(P) + \\vec{f}_{v,visq}$. Quelle est l'expression correcte de la force volumique de viscosité $\\vec{f}_{v,visq}$ ?",
+        "answers": [
+            "$\\eta \\vec{v}$",
+            "$\\eta \\Delta \\vec{v}$",
+            "$\\eta \\vec{grad}(\\text{div} \\vec{v})$",
+            "$\\nu \\Delta \\vec{v}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "Pour un fluide newtonien incompressible, le terme de force volumique de viscosité dérive du tenseur des contraintes visqueuses et se simplifie en $\\eta \\Delta \\vec{v}$ (où $\\eta$ est la viscosité dynamique). L'option avec $\\nu$ (viscosité cinématique) est fausse car $\\nu = \\eta/\\rho$, elle apparaîtrait uniquement si on divisait toute l'équation par $\\rho$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-012",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Considérons un écoulement de fluide visqueux où l'on néglige l'accélération (régime stationnaire) et les forces de pression. L'équation de Navier-Stokes se réduit alors à une équation de la forme $\\Delta \\vec{v} = \\vec{0}$. Quel type de phénomène physique cela décrit-il ?",
+        "answers": [
+            "Propagation d'onde",
+            "Diffusion de quantité de mouvement",
+            "Oscillations de Schrödinger",
+            "Potentiel de Poisson"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "L'opérateur laplacien $\\Delta$ dans l'équation de Navier-Stokes caractérise les phénomènes de diffusion de la quantité de mouvement (frottements visqueux) au sein du fluide. Contrairement à une équation d'onde (en $\\partial^2 / \\partial t^2$), l'équation de Stokes est de type diffusif.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-013",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement dans une conduite de section $S$, la vitesse débitante (ou vitesse moyenne) $U$ est définie par $U = \\frac{1}{S} \\iint_S \\vec{v} \\cdot d\\vec{S}$. Que représente physiquement cette valeur ?",
+        "answers": [
+            "La vitesse maximale atteinte au centre de la conduite",
+            "La vitesse au contact immédiat des parois (condition de non-glissement)",
+            "La moyenne surfacique de la vitesse sur la section droite",
+            "La vitesse quadratique moyenne des particules fluides"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "explication": "La définition mathématique $U = D_v / S$ correspond par construction à la moyenne de la composante de la vitesse normale à la section. Il ne faut pas confondre cette valeur avec la vitesse maximale (au centre, souvent double de $U$ en régime laminaire) ou la vitesse locale.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-014",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'expression correcte du nombre de Reynolds $Re$ pour un fluide de masse volumique $\\rho$, de viscosité dynamique $\\eta$, s'écoulant à une vitesse moyenne $U$ dans une conduite de diamètre $D$ ?",
+        "answers": [
+            "$Re = \\frac{\\rho U D}{\\eta}$",
+            "$Re = \\frac{\\eta U D}{\\rho}$",
+            "$Re = \\frac{\\rho \\eta}{U D}$",
+            "$Re = \\frac{U D}{\\eta}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 0,
+        "explication": "Le nombre de Reynolds est un nombre sans dimension défini par $Re = \\frac{\\rho U D}{\\eta}$. L'erreur classique est d'oublier la masse volumique $\\rho$ ou d'inverser la viscosité dynamique $\\eta$. Une analyse dimensionnelle rapide permet de vérifier que $[Re] = [M L^{-3}][L T^{-1}][L] / [M L^{-1} T^{-1}] = 1$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-015",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "D'un point de vue analytique, le nombre de Reynolds $Re$ permet de comparer l'importance relative de certains termes de l'équation de Navier-Stokes. Que compare-t-il ?",
+        "answers": [
+            "Les forces de pression et les forces visqueuses",
+            "Le temps caractéristique de convection et le temps de diffusion visqueuse",
+            "Les forces d'inertie (convection) et les forces visqueuses (diffusion)",
+            "L'énergie cinétique totale et l'énergie potentielle de pesanteur"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "explication": "Le nombre de Reynolds mesure le rapport entre le terme d'inertie (convection, ordre de grandeur $\\rho U^2/L$) et le terme visqueux (diffusion, ordre de grandeur $\\eta U/L^2$). Lorsque $Re$ est grand, les forces d'inertie dominent, favorisant le désordre (turbulence).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-016",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement stationnaire dans une conduite cylindrique lisse, quelle est la valeur critique usuelle du nombre de Reynolds $Re_c$ marquant la transition entre le régime laminaire et le début de la transition vers le régime turbulent ?",
+        "answers": [
+            "$Re_c \\approx 1$",
+            "$Re_c \\approx 2000$",
+            "$Re_c \\approx 10^5$",
+            "$Re_c \\approx 10^6$"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "Pour une conduite cylindrique, la transition vers le régime turbulent s'opère typiquement autour de $Re \\approx 2000$ à $2300$. En dessous, les forces visqueuses sont assez fortes pour amortir toute perturbation (écoulement laminaire).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-017",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelles sont les caractéristiques fondamentales d'un écoulement laminaire ?",
+        "answers": [
+            "Les lignes de courant s'entremêlent de manière aléatoire",
+            "Les couches de fluide glissent les unes sur les autres sans mélange transverse macroscopique",
+            "La vitesse est uniforme sur toute la section droite",
+            "Le nombre de Reynolds est supérieur à $4000$"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "L'écoulement laminaire est caractérisé par un mouvement ordonné : les particules suivent des lignes de courant parallèles. Il n'y a pas de mélange transverse de quantité de mouvement ou de particules, contrairement au régime turbulent.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-018",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans un écoulement turbulent, comment peut-on décrire le comportement des trajectoires des particules fluides ?",
+        "answers": [
+            "Elles restent strictement parallèles aux parois",
+            "Elles sont caractérisées par des fluctuations spatio-temporelles chaotiques",
+            "Elles suivent des trajectoires strictement stationnaires",
+            "Elles décrivent des paraboles parfaites"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "La turbulence se définit par l'apparition de tourbillons et de fluctuations rapides de la vitesse. Le mouvement devient intrinsèquement imprévisible (chaotique) et non-stationnaire à l'échelle locale des particules.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-019",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Selon la loi de Hagen-Poiseuille régissant l'écoulement laminaire d'un fluide visqueux dans une conduite cylindrique de rayon $R$, comment le débit volumique $D_v$ dépend-il du rayon ?",
+        "answers": [
+            "Proportionnel à $R$",
+            "Proportionnel à $R^2$",
+            "Proportionnel à $R^3$",
+            "Proportionnel à $R^4$"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 3,
+        "explication": "La loi de Poiseuille donne $D_v = \\frac{\\pi R^4 \\Delta P}{8 \\eta L}$. La dépendance en $R^4$ est fondamentale : une légère augmentation du rayon du conduit entraîne une augmentation massive du débit à pression constante.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-020",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En analogie avec la loi d'Ohm $U = RI$, on définit la résistance hydraulique $R_H$ par la relation $\\Delta P = R_H D_v$. Quelle est l'expression de $R_H$ pour une conduite cylindrique de longueur $L$ et de rayon $R$ ?",
+        "answers": [
+            "$R_H = \\frac{8 \\eta L}{\\pi R^4}$",
+            "$R_H = \\frac{8 \\eta L}{\\pi R^2}$",
+            "$R_H = \\frac{\\pi R^4}{8 \\eta L}$",
+            "$R_H = \\frac{\\eta L}{R^4}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 0,
+        "explication": "D'après la loi de Hagen-Poiseuille $\\Delta P = \\frac{8 \\eta L}{\\pi R^4} D_v$. Par identification avec $\\Delta P = R_H D_v$, on trouve $R_H = \\frac{8 \\eta L}{\\pi R^4}$. L'erreur classique est d'inverser la dépendance au rayon ou d'oublier le facteur numérique 8.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-021",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'analogie entre un circuit hydraulique et un circuit électrique, si la différence de pression $\\Delta P$ est assimilée à la tension électrique $U$, à quelle grandeur physique correspond le débit volumique $D_v$ ?",
+        "answers": [
+            "À la résistance hydraulique $R_h$",
+            "À l'intensité du courant électrique $I$",
+            "À la charge électrique $q$",
+            "À la puissance dissipée $P$"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "Par analogie, la loi d'Ohm hydraulique (loi de Poiseuille) s'écrit $\\Delta P = R_h D_v$. Comme $U = R I$, le débit $D_v$ (quantité de fluide par unité de temps) joue le rôle de l'intensité $I$ (quantité de charge par unité de temps)."
+    },
+    {
+        "uuid": "visc-022",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Considérons un écoulement laminaire dans une conduite cylindrique (régime de Poiseuille). Si l'on divise par 2 le rayon $R$ de l'artère tout en conservant la même longueur $L$ et la même viscosité $\\eta$, par quel facteur est multipliée la résistance hydraulique $R_h$ ?",
+        "answers": [
+            "2",
+            "4",
+            "8",
+            "16"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 3,
+        "explication": "La résistance hydraulique est donnée par $R_h = \\frac{8 \\eta L}{\\pi R^4}$. La résistance est inversement proportionnelle à la puissance quatrième du rayon. Ainsi, diviser le rayon par 2 multiplie la résistance par $2^4 = 16$."
+    },
+    {
+        "uuid": "visc-023",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la définition correcte du coefficient de perte de charge linéaire $\\lambda$ dans la formule de Darcy-Weisbach $\\Delta P = \\lambda \\frac{L}{D} \\frac{1}{2} \\rho U^2$ ?",
+        "answers": [
+            "$\\lambda = \\frac{\\Delta P}{\\mu U^2}$",
+            "$\\lambda = \\frac{\\Delta P}{\\frac{1}{2} \\rho U^2} \\frac{D}{L}$",
+            "$\\lambda = \\frac{64}{Re}$ (valable pour tout régime)",
+            "$\\lambda = \\frac{U D}{\\nu}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "La formule de Darcy-Weisbach est $\\Delta P = \\lambda \\frac{L}{D} \\frac{\\rho U^2}{2}$. En isolant $\\lambda$, on obtient $\\lambda = \\frac{\\Delta P}{\\frac{1}{2} \\rho U^2} \\frac{D}{L}$. Les autres choix sont des erreurs de dimensions ou concernent uniquement le régime laminaire."
+    },
+    {
+        "uuid": "visc-024",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/8/80/Moody_diagram.png",
+        "theme": "mécanique des fluides",
+        "question": "Dans le diagramme de Moody représentant le coefficient $\\lambda$ en fonction du nombre de Reynolds $Re$, que caractérise la zone où les courbes deviennent horizontales (indépendantes de $Re$) ?",
+        "answers": [
+            "Le régime laminaire",
+            "La zone transitoire",
+            "La turbulence complète (rugosité dominante)",
+            "L'écoulement parfait"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "explication": "À fort Reynolds, la rugosité relative $\\epsilon/D$ domine les effets visqueux. Le coefficient $\\lambda$ ne dépend plus de $Re$ mais uniquement de la géométrie de la paroi : c'est le régime de turbulence rugueuse."
+    },
+    {
+        "uuid": "visc-025",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En régime laminaire ($Re < 2000$), comment varie théoriquement le coefficient de perte de charge $\\lambda$ avec le nombre de Reynolds $Re$ ?",
+        "answers": [
+            "$\\lambda = \\frac{64}{Re}$",
+            "$\\lambda = \\frac{0,316}{Re^{1/4}}$",
+            "$\\lambda$ est constant",
+            "$\\lambda = 64 \\cdot Re$"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 0,
+        "explication": "Par identification entre la loi de Poiseuille $\\Delta P = \\frac{128 \\eta L Q}{\\pi D^4}$ et la loi de Darcy-Weisbach, on démontre que pour un conduit circulaire lisse en écoulement laminaire, $\\lambda = 64/Re$."
+    },
+    {
+        "uuid": "visc-026",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de la théorie de Prandtl, qu'est-ce que la couche limite ?",
+        "answers": [
+            "La zone centrale d'un écoulement où la vitesse est maximale",
+            "Une zone de faible épaisseur près des parois où les effets visqueux sont prépondérants",
+            "La surface libre d'un liquide au repos",
+            "La séparation entre l'air et l'eau dans un écoulement diphasique"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "La couche limite est la région mince adjacente à une paroi solide où les gradients de vitesse sont élevés et où la viscosité ne peut être négligée, contrairement à l'écoulement extérieur considéré comme parfait."
+    },
+    {
+        "uuid": "visc-027",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement laminaire le long d'une plaque plane, comment l'épaisseur de la couche limite $\\delta$ évolue-t-elle avec la distance $x$ à l'origine, et implicitement avec le nombre de Reynolds $Re_x$ ?",
+        "answers": [
+            "$\\delta \\propto Re_x$",
+            "$\\delta \\propto \\sqrt{Re_x}$",
+            "$\\delta \\propto \\frac{x}{\\sqrt{Re_x}}$",
+            "$\\delta \\propto \\frac{1}{Re_x}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "explication": "L'épaisseur de la couche limite laminaire sur une plaque plane est donnée par $\\delta(x) \\approx 5 \\frac{x}{\\sqrt{Re_x}}$. Elle croît donc comme la racine carrée de la distance $x$."
+    },
+    {
+        "uuid": "visc-028",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Stokes_sphere.svg/512px-Stokes_sphere.svg.png",
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'expression de la force de traînée de Stokes s'exerçant sur une sphère de rayon $r$ se déplaçant à faible vitesse $v$ dans un fluide de viscosité $\\eta$ ($Re \\ll 1$) ?",
+        "answers": [
+            "$\\vec{f} = -\\frac{1}{2} C_x \\rho S v^2 \\vec{u}$",
+            "$\\vec{f} = -6 \\pi \\eta r \\vec{v}$",
+            "$\\vec{f} = -\\eta \\nabla^2 \\vec{v}$",
+            "$\\vec{f} = m \\vec{g}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "La loi de Stokes stipule que pour un écoulement à très bas Reynolds (fluage), la force de résistance est linéaire par rapport à la vitesse : $\\vec{F} = -6 \\pi \\eta r \\vec{v}$."
+    },
+    {
+        "uuid": "visc-029",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement turbulent autour d'un obstacle macroscopique, la force de traînée $F_x$ est proportionnelle à :",
+        "answers": [
+            "La vitesse $v$",
+            "Le carré de la vitesse $v^2$",
+            "L'inverse de la vitesse $1/v$",
+            "La viscosité dynamique $\\eta$"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "En régime turbulent, la force de traînée est dominée par les forces d'inertie. La formule classique $F_x = \\frac{1}{2} C_x \\rho S v^2$ montre une dépendance en $v^2$."
+    },
+    {
+        "uuid": "visc-030",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Lors du vol d'un avion, la force de portance $\\vec{F}_z$ exercée par l'air sur les ailes est par définition :",
+        "answers": [
+            "Parallèle à la vitesse relative de l'écoulement incident",
+            "Orthogonale à la vitesse relative de l'écoulement incident",
+            "Orientée toujours vers le haut, indépendamment du profil",
+            "Indépendante de la masse volumique de l'air"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "Par définition, la portance est la composante de la force aérodynamique perpendiculaire à la direction de la vitesse de l'écoulement incident (ou du mouvement), tandis que la traînée est la composante parallèle."
+    },
+    {
+        "uuid": "visc-031",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Viscosité",
+        "subject": "physique",
+        "difficulty": 3,
+        "question": "Dans le cadre de l'étude de l'aérodynamique d'une aile d'avion en écoulement stationnaire, comment expliquer la portance via la relation de Bernoulli le long d'une ligne de courant ?",
+        "answers": [
+            "La pression statique est plus forte sur l'extrados, créant une force dirigée vers le haut.",
+            "La courbure du profil impose une vitesse $v$ plus grande sur l'extrados, ce qui entraîne une pression $P$ plus faible selon $P + \\frac{1}{2}\\rho v^2 = cste$.",
+            "La poussée d'Archimède compense le poids de l'appareil par différence de masse volumique avec l'air.",
+            "La viscosité de l'air génère une force de frottement tangentielle dirigée vers le haut."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le théorème de Bernoulli appliqué à un fluide parfait incompressible stipule que $P + \\frac{1}{2}\\rho v^2 + \\rho g z = cste$. Sur l'extrados, le profil courbe impose une accélération de l'écoulement ($v$ augmente). Pour maintenir la constante, la pression $P$ doit nécessairement diminuer, créant ainsi une dépression qui aspire l'aile vers le haut."
+    },
+    {
+        "uuid": "visc-032",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Viscosité",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "En aérodynamique, qu'appelle-t-on le phénomène de 'décrochage' pour une aile d'avion lors d'un vol à incidence élevée ?",
+        "answers": [
+            "La perte de puissance moteur due à une insuffisance d'apport en comburant.",
+            "La diminution brutale du coefficient de portance $C_z$ lorsque l'angle d'incidence dépasse une valeur critique, provoquant un décollement de la couche limite.",
+            "Le moment critique de l'atterrissage où la vitesse devient inférieure à la vitesse de sustentation.",
+            "Le passage irréversible du régime d'écoulement turbulent vers un régime laminaire au bord de fuite."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le décrochage survient quand l'angle d'incidence est trop important : la couche limite n'arrive plus à suivre la courbure du profil et décolle. Cela provoque une traînée énorme et une chute drastique de la portance, car le fluide ne suit plus les lignes de courant imposées par la forme de l'aile."
+    },
+    {
+        "uuid": "visc-033",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Viscosité",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Pour une bille de masse $m$ tombant dans un fluide visqueux, quelle est la condition physique caractérisant l'atteinte de la vitesse limite $\\vec{v}_{lim}$ ?",
+        "answers": [
+            "La force de frottement visqueux s'annule par compensation des pressions.",
+            "Le bilan des forces (Poids, poussée d'Archimède, force de Stokes) est nul : $\\vec{P} + \\vec{\\Pi} + \\vec{f} = \\vec{0}$.",
+            "Le fluide change de régime et devient turbulent, rendant la traînée constante.",
+            "La bille atteint le fond du récipient, annulant son énergie cinétique."
+        ],
+        "correct_answer_index": 1,
+        "explication": "La vitesse limite est atteinte lorsque l'accélération devient nulle. D'après le PFD, cela signifie que la somme des forces s'annule. La force de frottement visqueux $\\vec{f}$ (opposée au mouvement) augmente avec la vitesse jusqu'à ce que $m\\vec{g} - \\rho_{fluide} V \\vec{g} + \\vec{f} = 0$."
+    },
+    {
+        "uuid": "visc-034",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Viscosité",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Dans le cadre d'un écoulement dans une conduite, si le nombre de Reynolds calculé est $Re = 102 \\cdot 10^3$, quel est le régime d'écoulement ?",
+        "answers": [
+            "Laminaire car $Re < 2000$.",
+            "Turbulent car $Re > 4000$ (ou $2000$ selon la géométrie).",
+            "Parfait car les forces visqueuses sont négligeables.",
+            "Au repos car le nombre de Reynolds est positif."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le nombre de Reynolds $Re = \\frac{\\rho v D}{\\eta}$ permet de comparer les forces d'inertie aux forces visqueuses. Avec $Re = 102 \\cdot 10^3 = 102 000$, nous sommes largement au-dessus du seuil critique de transition (généralement autour de $2000-2400$ pour une conduite), l'écoulement est donc pleinement turbulent."
+    },
+    {
+        "uuid": "visc-035",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Viscosité",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Dans l'étude hydraulique d'un réseau artériel, pourquoi les résistances hydrauliques $R_h$ de sections successives s'ajoutent-elles ?",
+        "answers": [
+            "Car elles sont montées en parallèle, imposant la même différence de pression.",
+            "Car elles sont montées en série, le débit volumique $Q_v$ est conservé et les pertes de charge s'additionnent.",
+            "Car le fluide est parfait et ne subit aucune perte.",
+            "Car la section est constante sur toute la longueur de l'artère."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Par analogie avec l'électricité, pour une conduite en série, le débit $Q_v$ est identique dans chaque section. La différence de pression totale $\\Delta P_{tot} = \\Delta P_1 + \\Delta P_2 = R_{h1}Q_v + R_{h2}Q_v = (R_{h1}+R_{h2})Q_v$. Donc $R_{h,eq} = R_{h1} + R_{h2}$."
+    },
+    {
+        "uuid": "visc-036",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Viscosité",
+        "subject": "physique",
+        "difficulty": 3,
+        "question": "En considérant l'écoulement de Poiseuille dans une tubulure de perfusion, comment varie le débit volumique $Q_v$ si la hauteur $h$ entre la poche et le patient est doublée ?",
+        "answers": [
+            "Le débit double car $Q_v \\propto \\Delta P = \\rho g h$.",
+            "Le débit est divisé par 2 car la viscosité augmente avec la hauteur.",
+            "Le débit reste inchangé car il dépend uniquement du diamètre du cathéter.",
+            "Le débit est multiplié par 16 car il dépend de la puissance 4 du rayon."
+        ],
+        "correct_answer_index": 0,
+        "explication": "La loi de Poiseuille donne $Q_v = \\frac{\\Delta P \\pi r^4}{8 \\eta L}$. La différence de pression motrice est la pression hydrostatique $\\Delta P = \\rho g h$. Puisque $Q_v$ est proportionnel à $\\Delta P$, doubler $h$ double $\\Delta P$, et donc double $Q_v$."
+    },
+    {
+        "uuid": "visc-037",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Viscosité",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Quel est l'ordre de grandeur de la viscosité dynamique $\\eta$ de l'eau à $20^{\\circ}C$ ?",
+        "answers": [
+            "$1,8 \\cdot 10^{-5} \\, Pa \\cdot s$ (valeur proche de l'air).",
+            "$1,0 \\cdot 10^{-3} \\, Pa \\cdot s$.",
+            "$0,1 \\, Pa \\cdot s$.",
+            "$1,0 \\, Pa \\cdot s$ (valeur proche de l'huile moteur)."
+        ],
+        "correct_answer_index": 1,
+        "explication": "La viscosité dynamique de l'eau à température ambiante ($20^{\\circ}C$) est une valeur de référence à connaître en CPGE : elle est d'environ $10^{-3} \\, Pa \\cdot s$ (ou $1 \\, cP$). L'unité $Pl$ (Poiseuille) est équivalente au $Pa \\cdot s$."
+    },
+    {
+        "uuid": "visc-038",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Viscosité",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Parmi les fluides suivants, lequel présente la viscosité dynamique la plus élevée ?",
+        "answers": [
+            "Air ($~10^{-5} \\, Pa \\cdot s$)",
+            "Eau ($~10^{-3} \\, Pa \\cdot s$)",
+            "Huile de table ($~10^{-1} \\, Pa \\cdot s$)",
+            "Glycérine ($~1 \\, Pa \\cdot s$)"
+        ],
+        "correct_answer_index": 3,
+        "explication": "La glycérine est un liquide très visqueux (environ 1000 fois plus que l'eau). À titre de comparaison : air < eau < huile < glycérine."
+    },
+    {
+        "uuid": "visc-039",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Viscosité",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Le nombre de Reynolds $Re$ caractérisant l'écoulement d'un glacier (très lent) est de l'ordre de :",
+        "answers": [
+            "$10^{-11}$ (forces visqueuses dominantes).",
+            "$1$ (équilibre entre inertie et viscosité).",
+            "$10^{3}$ (début de transition vers turbulent).",
+            "$10^{6}$ (turbulent pur)."
+        ],
+        "correct_answer_index": 0,
+        "explication": "Comme le glacier est un écoulement extrêmement lent ($v$ très faible) et que la glace a une viscosité colossale, les forces visqueuses dominent totalement les forces d'inertie. Le nombre de Reynolds est donc extrêmement faible, tendant vers zéro."
+    },
+    {
+        "uuid": "visc-040",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "chapter": "Viscosité",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Dans un écoulement de cisaillement plan (modèle de Couette) entre deux plaques distantes de $e$, si la vitesse $v$ du plan supérieur est doublée, comment évolue la contrainte de cisaillement $\\tau$ ?",
+        "answers": [
+            "Elle est divisée par 2.",
+            "Elle reste inchangée car la viscosité du fluide est constante.",
+            "Elle est doublée car $\\tau = \\eta \\frac{dv}{dy} \\approx \\eta \\frac{v}{e}$.",
+            "Elle est quadruplée car la contrainte dépend du carré de la vitesse."
+        ],
+        "correct_answer_index": 2,
+        "explication": "La loi de Newton pour les fluides visqueux définit la contrainte de cisaillement comme $\\tau = \\eta \\dot{\\gamma}$ où $\\dot{\\gamma} = \\frac{dv}{dy}$. Pour un écoulement de Couette, $\\frac{dv}{dy} \\approx \\frac{v}{e}$. Si on double $v$, le gradient de vitesse double, et donc $\\tau$ double."
+    },
+    {
+        "uuid": "visc-041",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude dynamique d'un élément de volume $\\delta \\tau$ de fluide soumis à une force volumique $\\vec{f}_v$, la densité massique de force $\\vec{f}_m$ (force par unité de masse) s'exprime en :",
+        "answers": [
+            "$N \\cdot kg$",
+            "$N \\cdot kg^{-1}$",
+            "$N \\cdot m^{-3}$",
+            "$N \\cdot m^{-2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "Par définition, $\\vec{f}_m = \\frac{d\\vec{F}}{dm}$. Comme la force s'exprime en Newton ($N$) et la masse en kilogrammes ($kg$), l'unité est le $N \\cdot kg^{-1}$, ce qui est homogène à une accélération ($m \\cdot s^{-2}$). Attention à ne pas confondre avec la force volumique $\\vec{f}_v$ (force par unité de volume) qui s'exprime en $N \\cdot m^{-3}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-042",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le tenseur des contraintes d'un fluide au repos (fluide statique), la composante de la contrainte normale exercée sur une facette plane est directement liée à :",
+        "answers": [
+            "La viscosité dynamique $\\eta$",
+            "La pression thermodynamique $P$",
+            "La vitesse d'écoulement locale $\\vec{v}$",
+            "La température absolue $T$"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "Au repos, le tenseur des contraintes d'un fluide se réduit à $\\bar{\\bar{\\sigma}} = -P \\bar{\\bar{I}}$. La contrainte normale exercée sur une surface est donc égale à la pression $P$. La viscosité n'intervient que lorsqu'il y a un mouvement relatif entre les couches de fluide (gradient de vitesse).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-043",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'établissement du profil de vitesse de Poiseuille pour un écoulement dans une conduite cylindrique rigide, quelle hypothèse simplificatrice est indispensable ?",
+        "answers": [
+            "Le fluide est compressible",
+            "Le fluide est incompressible",
+            "Le fluide est parfait",
+            "Le fluide est turbulent"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "L'écoulement de Poiseuille suppose un fluide newtonien, stationnaire et surtout incompressible ($\nabla \\cdot \\vec{v} = 0$), ce qui permet de relier le débit à la perte de charge de manière linéaire. Un fluide parfait ne présenterait pas de profil parabolique car il n'y a pas de frottement visqueux aux parois.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-044",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Considérons le profil de vitesse $v(r) = v_{max}(1 - \\frac{r^2}{R^2})$ dans une conduite cylindrique de rayon $R$. Où se situe la vitesse maximale $v_{max}$ ?",
+        "answers": [
+            "À la paroi ($r=R$)",
+            "À l'axe de symétrie ($r=0$)",
+            "À la distance $r=R/2$",
+            "Elle est constante sur tout le rayon"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "D'après la formule, si $r=0$, $v(0) = v_{max}(1-0) = v_{max}$. C'est la valeur maximale. À la paroi ($r=R$), $v(R) = v_{max}(1-1) = 0$, conformément à la condition de non-glissement à la paroi pour un fluide visqueux.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-045",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement de Poiseuille dans une conduite cylindrique, quelle est la relation entre la vitesse moyenne débitante $U$ et la vitesse maximale $v_{max}$ située à l'axe ?",
+        "answers": [
+            "$U = v_{max}$",
+            "$U = \\frac{1}{2} v_{max}$",
+            "$U = \\frac{2}{3} v_{max}$",
+            "$U = 2 v_{max}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "Le débit volumique est $Q = \\iint_S v(r) dS = \\int_0^R v_{max}(1-\\frac{r^2}{R^2}) 2\\pi r dr$. Le calcul de cette intégrale donne $Q = v_{max} \\frac{\\pi R^2}{2}$. Comme $Q = U \\cdot S = U \\cdot \\pi R^2$, on en déduit $U = \\frac{1}{2} v_{max}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-046",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La force de traînée quadratique s'exprime par $\\vec{F}_t = -\\frac{1}{2} \\rho C_x S v^2 \\vec{u}_v$. Pour une sphère de rayon $R$ (ou $r$), que vaut la surface de référence $S$ ?",
+        "answers": [
+            "$4 \\pi r^2$ (Surface totale)",
+            "$\\frac{4}{3} \\pi r^3$ (Volume)",
+            "$\\pi r^2$ (Section frontale)",
+            "$2 \\pi r$ (Circonférence)"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "explication": "La surface $S$ dans la formule de la traînée est la surface projetée de l'objet dans un plan perpendiculaire à la vitesse de l'écoulement. Pour une sphère, cette section est un disque de surface $\\pi r^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-047",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le coefficient de traînée $C_x$ intervenant dans la force $\\vec{F}_t = -\\frac{1}{2} \\rho C_x S v^2 \\vec{u}_v$ est une grandeur :",
+        "answers": [
+            "Homogène à une pression ($Pa$)",
+            "Homogène à une masse ($kg$)",
+            "Sans dimension",
+            "Homogène à une vitesse ($m \\cdot s^{-1}$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "explication": "Le $C_x$ est un coefficient adimensionnel qui caractérise la forme de l'objet et son interaction avec le fluide. En analyse dimensionnelle, le produit $\\rho S v^2$ a la dimension d'une force ($[M L^{-3}] [L^2] [L^2 T^{-2}] = [M L T^{-2}] = [N]$), donc $C_x$ doit être sans dimension.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-048",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un écoulement à grand nombre de Reynolds ($Re \\gg 1$), dans quelle zone le fluide peut-il être modélisé comme un fluide parfait (non visqueux) ?",
+        "answers": [
+            "Dans tout le domaine d'écoulement",
+            "Uniquement à l'intérieur de la couche limite",
+            "Partout sauf dans la couche limite près des parois",
+            "Au sein du sillage turbulent uniquement"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "explication": "À grand nombre de Reynolds, les effets visqueux sont confinés dans une fine région proche des parois appelée 'couche limite'. En dehors de cette région, les forces d'inertie dominent et le fluide se comporte comme un fluide parfait (équation d'Euler).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-049",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la cause physique fondamentale de la 'traînée de pression' (ou traînée de forme) sur un corps profilé ou non ?",
+        "answers": [
+            "La viscosité pure au contact paroi",
+            "Le décollement de la couche limite créant un déséquilibre de pression entre l'avant et l'arrière",
+            "La poussée d'Archimède liée à la gravité",
+            "La différence de température entre les deux faces"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "La traînée de pression est due au décollement de la couche limite à l'arrière de l'objet. Ce décollement empêche la pression de remonter à sa valeur de stagnation, créant une zone de dépression à l'arrière, ce qui exerce une force opposée au mouvement.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-050",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cas d'un parachutiste en chute libre, comment la vitesse limite $v_{lim}$ évolue-t-elle avec l'altitude lors de la descente ?",
+        "answers": [
+            "Elle diminue car la pression atmosphérique augmente",
+            "Elle augmente car la masse volumique de l'air augmente",
+            "Elle reste constante quel que soit l'altitude",
+            "Elle diminue car la gravité diminue"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "À l'équilibre, $mg = \\frac{1}{2} \\rho C_x S v_{lim}^2$, donc $v_{lim} = \\sqrt{\\frac{2mg}{\\rho C_x S}}$. En descendant, l'altitude diminue et la masse volumique de l'air $\\rho$ augmente. Comme $\\rho$ est au dénominateur, la vitesse limite $v_{lim}$ diminue au fur et à mesure que le parachutiste se rapproche du sol.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-051",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'analogie entre résistance hydraulique et électrique est possible si :",
+        "answers": [
+            "Le débit est turbulent",
+            "La relation entre $\\Delta P$ et $D_v$ est linéaire",
+            "Le fluide est de l'eau uniquement",
+            "La vitesse est nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-052",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour une conduite de rugosité donnée, si $Re$ augmente en régime turbulent, le coefficient $\\lambda$ :",
+        "answers": [
+            "Augmente linéairement",
+            "Diminue puis tend vers une constante",
+            "Devient nul",
+            "Oscille"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-053",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la dimension du laplacien d'un champ de vitesse ?",
+        "answers": [
+            "$L \\cdot T^{-1}$",
+            "$L^{-1} \\cdot T^{-1}$",
+            "$L \\cdot T^{-2}$",
+            "$L^{-3} \\cdot T^{-1}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-054",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'expérience de la bille tombant dans le glycérol, quel terme est négligeable si la bille est très dense par rapport au fluide ?",
+        "answers": [
+            "Le poids",
+            "La poussée d'Archimède",
+            "La force de Stokes",
+            "Aucun"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-055",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Si l'on veut retrouver un débit initial après une sténose par un pontage (Exercice 9), les débits de l'artère sténosée et du pontage :",
+        "answers": [
+            "S'annulent",
+            "S'ajoutent ($Q_{tot} = Q_{st} + Q_{pont}$)",
+            "Sont égaux",
+            "Sont inversement proportionnels"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-056",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Le temps caractéristique de diffusion de la quantité de mouvement sur une distance $D$ est de l'ordre de :",
+        "answers": [
+            "$\\tau \\approx \\frac{D}{U}$",
+            "$\\tau \\approx \\frac{D^2}{\\nu}$",
+            "$\\tau \\approx \\sqrt{\\frac{D}{g}}$",
+            "$\\tau \\approx \\frac{\\nu}{D^2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-057",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'unité de débit volumique dans le SI est :",
+        "answers": [
+            "$L/s$",
+            "$m^3 \\cdot s^{-1}$",
+            "$kg \\cdot s^{-1}$",
+            "$m^2 \\cdot s^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-058",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans un écoulement de Poiseuille, la force de frottement exercée par le fluide sur la paroi du tuyau est dirigée :",
+        "answers": [
+            "Dans le sens de l'écoulement",
+            "Dans le sens opposé à l'écoulement",
+            "Radialement vers le centre",
+            "Radialement vers l'extérieur"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-059",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un fluide dont la viscosité diminue lorsque la contrainte augmente est dit :",
+        "answers": [
+            "Newtonien",
+            "Rhéofluidifiant",
+            "Rhéoépaississant",
+            "Parfait"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-060",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La viscosité dynamique de l'air est environ $1,8 \\cdot 10^{-5} Pl$. Celle de l'eau est $10^{-3} Pl$. Le rapport est d'environ :",
+        "answers": [
+            "2",
+            "10",
+            "50",
+            "1000"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "visc-061",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude d'un écoulement stationnaire ou non, le terme $(\\vec{v} \\cdot \\vec{grad})\\vec{v}$ présent dans l'équation de Navier-Stokes représente physiquement :",
+        "answers": [
+            "L'accélération locale, liée à l'évolution temporelle du champ",
+            "L'accélération convective, liée au transport de la particule fluide à travers le champ de vitesse",
+            "La diffusion visqueuse, représentée par le terme en laplacien",
+            "La force de pression, qui s'exprime via le gradient de pression $\\vec{grad}(P)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "La dérivée matérielle (ou particulaire) se décompose en une partie locale $\\frac{\\partial \\vec{v}}{\\partial t}$ et une partie convective $(\\vec{v} \\cdot \\vec{grad})\\vec{v}$. Cette dernière traduit le fait qu'une particule peut subir une accélération simplement en se déplaçant dans une zone où le champ de vitesse varie spatialement, même si l'écoulement est stationnaire."
+    },
+    {
+        "uuid": "visc-062",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour une particule de fluide suivie dans son mouvement, la dérivée particulaire de la vitesse, notée $\\frac{D\\vec{v}}{Dt}$ ou $\\frac{d\\vec{v}}{dt}$, est définie par l'opérateur :",
+        "answers": [
+            "$\\frac{\\partial \\vec{v}}{\\partial t}$ (accélération locale uniquement)",
+            "$(\\vec{v} \\cdot \\vec{grad})\\vec{v}$ (accélération convective uniquement)",
+            "$\\frac{\\partial \\vec{v}}{\\partial t} + (\\vec{v} \\cdot \\vec{grad})\\vec{v}$",
+            "$\\vec{grad}(\\frac{1}{2}v^2)$ (forme de Bernoulli)"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "explication": "La dérivée particulaire représente la variation d'une grandeur pour une particule fluide précise. Elle combine la variation temporelle au point considéré ($\\frac{\\partial \\vec{v}}{\\partial t}$) et la variation spatiale due au mouvement de la particule à travers le champ de vitesse ($(\\vec{v} \\cdot \\vec{grad})\\vec{v}$)."
+    },
+    {
+        "uuid": "visc-063",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Lors d'une expérience de chute d'une bille de rayon $r = 5\\text{ mm}$ dans du miel (viscosité dynamique $\\eta \\approx 10\\text{ Pa.s}$), le nombre de Reynolds $Re$ est estimé à :",
+        "answers": [
+            "$10^{-2}$ (régime de Stokes dominant)",
+            "$10^2$ (régime de transition)",
+            "$10^5$ (régime turbulent)",
+            "$10^{10}$ (régime balistique)"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 0,
+        "explication": "Avec une viscosité très élevée ($10\\text{ Pa.s}$), les forces visqueuses prédominent largement sur les forces d'inertie. Le nombre de Reynolds, défini par $Re = \\frac{\\rho v L}{\\eta}$, est très inférieur à 1, ce qui caractérise un écoulement rampant (ou régime de Stokes)."
+    },
+    {
+        "uuid": "visc-064",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le calcul du nombre de Reynolds $Re = \\frac{\\rho v L_{c}}{\\eta}$ pour un écoulement à travers un conduit cylindrique de diamètre $D$ et de longueur $L$, quelle est la longueur caractéristique $L_{c}$ à retenir ?",
+        "answers": [
+            "Le rayon $R = D/2$, car il définit la distance à la paroi",
+            "Le diamètre $D$, qui représente l'échelle transverse typique de l'écoulement",
+            "La longueur $L$ du tube, car elle définit l'échelle longitudinale",
+            "La circonférence $\\pi D$, liée au périmètre mouillé"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "Par convention dans la littérature de mécanique des fluides, pour un écoulement en conduite, la longueur caractéristique $L_{c}$ est prise égale au diamètre hydraulique, soit le diamètre $D$ de la conduite."
+    },
+    {
+        "uuid": "visc-065",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans un écoulement de Poiseuille laminaire entre deux plans ou dans un tube, le profil de vitesse est parabolique. Que dire du gradient de vitesse à la paroi ($r=R$) ?",
+        "answers": [
+            "Il est nul, conformément à la condition de non-glissement",
+            "Il est maximal, mais de signe positif",
+            "Il est égal à la vitesse moyenne divisée par le rayon",
+            "Il est maximal en valeur absolue et négatif (pour un écoulement dirigé selon $z$)"
+        ],
+        "difficulty": 4,
+        "chapter": "Viscosité",
+        "correct_answer_index": 3,
+        "explication": "La vitesse est nulle à la paroi ($r=R$) et maximale au centre ($r=0$). La dérivée de la vitesse $\\frac{dv}{dr}$ est donc maximale à la paroi. Comme la fonction $v(r)$ est décroissante depuis le centre vers la paroi, le gradient $\\frac{dv}{dr}$ y est négatif."
+    },
+    {
+        "uuid": "visc-066",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'approximation de l'équilibre hydrostatique, $\\vec{grad}(P) = \\rho \\vec{g}$, dans un circuit de tuyauterie n'est valable que si :",
+        "answers": [
+            "Le fluide est parfait, car la viscosité induirait des gradients de pression",
+            "Les effets dynamiques (vitesse) sont négligeables devant les effets gravitationnels ($Re \\ll 1$ ou $v \\approx 0$)",
+            "Le tuyau est parfaitement vertical, sans coudes",
+            "La pression est uniforme dans tout le réseau"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "L'équilibre hydrostatique suppose que le fluide est au repos ou animé d'un mouvement si lent que les termes d'accélération et de frottement visqueux dans l'équation de Navier-Stokes sont négligeables devant les forces de pression et de pesanteur."
+    },
+    {
+        "uuid": "visc-067",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un solide glisse sur un plan incliné lubrifié par un film d'huile mince. En régime de lubrification, la force de frottement visqueux est proportionnelle à :",
+        "answers": [
+            "La vitesse $v$ du solide (loi de Newton pour la viscosité)",
+            "Le carré de la vitesse $v^2$ (traînée turbulente)",
+            "La racine carrée de la vitesse $\\sqrt{v}$",
+            "La viscosité cinématique uniquement"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 0,
+        "explication": "Dans le cadre de la lubrification, le gradient de vitesse dans le film d'huile est approximé par $v/e$ (où $e$ est l'épaisseur). La contrainte de cisaillement est $\\tau = \\eta \\frac{v}{e}$, d'où une force de frottement proportionnelle à la vitesse $v$."
+    },
+    {
+        "uuid": "visc-068",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Reprenons le cas du solide glissant sur un film lubrifiant. Si l'épaisseur $e$ du film d'huile est doublée, la vitesse limite du solide (pour une force motrice donnée) :",
+        "answers": [
+            "Est divisée par 2, car la résistance visqueuse augmente",
+            "Est doublée, car la force de frottement est inversement proportionnelle à $e$",
+            "Est quadruplée, par dépendance en $e^2$",
+            "Reste inchangée, la vitesse ne dépendant que de la viscosité"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "La force de frottement visqueux est $F = \\eta S \\frac{v}{e}$. À l'équilibre (vitesse limite), $F$ équilibre la composante du poids. On a donc $v = \\frac{F \\cdot e}{\\eta S}$. Si $e$ double, $v$ double également."
+    },
+    {
+        "uuid": "visc-069",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour calculer le débit volumique $Q = \\iint_{\\Sigma} \\vec{v} \\cdot \\vec{dS}$ à travers une section droite circulaire, le vecteur surface élémentaire $\\vec{dS}$ est choisi comme :",
+        "answers": [
+            "Le vecteur radial $\\vec{u}_r$ (perpendiculaire à la section)",
+            "Le vecteur orthoradial $\\vec{u}_\\theta$",
+            "Le vecteur axial $\\vec{u}_z$ (normal à la section droite)",
+            "Le vecteur normal sortant à la paroi du tube"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "explication": "Le débit est le flux du vecteur vitesse à travers une surface. Le vecteur surface $\\vec{dS}$ est, par définition, normal à la surface élémentaire et orienté vers l'extérieur. Pour une section de conduite, il est donc porté par le vecteur unitaire de l'axe de la conduite."
+    },
+    {
+        "uuid": "visc-070",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'expression correcte de la composante $x$ du laplacien vectoriel $\\Delta \\vec{f}$ en coordonnées cartésiennes ?",
+        "answers": [
+            "$\\frac{\\partial^2 f_x}{\\partial x^2}$ (composante selon $x$ seule)",
+            "$\\frac{\\partial^2 f_x}{\\partial x^2} + \\frac{\\partial^2 f_x}{\\partial y^2} + \\frac{\\partial^2 f_x}{\\partial z^2}$",
+            "$\\frac{\\partial^2 f_x}{\\partial x^2} + \\frac{\\partial^2 f_y}{\\partial y^2} + \\frac{\\partial^2 f_z}{\\partial z^2}$ (expression de la divergence)",
+            "Nulle par définition, car $\\vec{f}$ est un champ vectoriel"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "Le laplacien d'un champ vectoriel $\\vec{f}$ est défini par $\\Delta \\vec{f} = \\vec{grad}(\\text{div} \\vec{f}) - \\vec{rot}(\\vec{rot} \\vec{f})$. En coordonnées cartésiennes, cela revient à appliquer l'opérateur laplacien scalaire à chaque composante : $(\\Delta \\vec{f})_x = \\Delta f_x = \\frac{\\partial^2 f_x}{\\partial x^2} + \\frac{\\partial^2 f_x}{\\partial y^2} + \\frac{\\partial^2 f_x}{\\partial z^2}$."
+    },
+    {
+        "uuid": "visc-071",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude d'un écoulement permanent, incompressible et visqueux dans une conduite horizontale de section constante, pourquoi la pression diminue-t-elle le long de l'écoulement ?",
+        "answers": [
+            "À cause de la variation de l'énergie potentielle de pesanteur",
+            "À cause de l'augmentation locale de la vitesse du fluide",
+            "À cause des frottements visqueux qui dissipent de l'énergie mécanique en chaleur",
+            "À cause de la compressibilité du fluide qui induit une perte de charge"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Pour un fluide visqueux, le théorème de Bernoulli est modifié par un terme de perte de charge : $\\Delta (P + \\frac{1}{2}\\rho v^2 + \\rho g z) = -\\Delta P_{charge}$. Dans une conduite horizontale de section constante, la vitesse $v$ et l'altitude $z$ sont constantes. La variation de pression est donc directement liée à la dissipation d'énergie par frottements visqueux (perte de charge), d'où la chute de pression."
+    },
+    {
+        "uuid": "visc-072",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'écoulement de Poiseuille dans une conduite cylindrique de rayon $R$, comment évolue le débit volumique $D_v$ si la longueur $L$ du tuyau triple, à différence de pression $\\Delta P$ imposée constante ?",
+        "answers": [
+            "Le débit est multiplié par 3",
+            "Le débit est divisé par 3",
+            "Le débit est divisé par 9",
+            "Le débit reste inchangé"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La loi de Poiseuille s'exprime par $D_v = \\frac{\\pi R^4 \\Delta P}{8 \\eta L}$. Le débit est donc inversement proportionnel à la longueur $L$. Si $L$ est multipliée par 3, le débit est divisé par 3."
+    },
+    {
+        "uuid": "visc-073",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'étude des écoulements à petit nombre de Reynolds, que signifie la condition $Re \\ll 1$ ?",
+        "answers": [
+            "L'écoulement est turbulent et fortement agité",
+            "Les forces visqueuses dominent largement les forces d'inertie",
+            "La convection thermique est négligeable devant la diffusion",
+            "Le fluide peut être modélisé comme un fluide parfait"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le nombre de Reynolds est défini par $Re = \\frac{\\rho v L}{\\eta} = \\frac{\\text{forces d'inertie}}{\\text{forces visqueuses}}$. Si $Re \\ll 1$, les forces d'inertie (non-linéaires) sont négligeables devant les forces de viscosité. C'est le régime de Stokes, où les équations de Navier-Stokes deviennent linéaires."
+    },
+    {
+        "uuid": "visc-074",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'aérodynamisme d'un corps, quelle est la valeur typique du coefficient de traînée $C_x$ d'une sphère lorsque le nombre de Reynolds est élevé ($Re > 10^3$) ?",
+        "answers": [
+            "0,001",
+            "0,4",
+            "24",
+            "1,5"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour une sphère en régime turbulent (haut $Re$), le sillage est décollé et la force de traînée est dominée par la différence de pression entre l'avant et l'arrière. Le $C_x$ se stabilise autour de 0,4 à 0,5. La valeur 24 correspond à $24/Re$ en régime de Stokes."
+    },
+    {
+        "uuid": "visc-075",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'expression théorique du coefficient de traînée $C_x$ d'une sphère en régime de Stokes ($Re < 1$) ?",
+        "answers": [
+            "$C_x = 0,44$",
+            "$C_x = \\frac{24}{Re}$",
+            "$C_x = \\frac{64}{Re}$",
+            "$C_x = 1,2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La force de traînée de Stokes est $F = 6\\pi \\eta R v$. Par définition $F = \\frac{1}{2} \\rho v^2 S C_x$ avec $S = \\pi R^2$. En égalant les deux expressions, on trouve $C_x = \\frac{24 \\eta}{2\\rho v R} = \\frac{24}{Re}$."
+    },
+    {
+        "uuid": "visc-076",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Lors de l'utilisation du diagramme de Moody pour déterminer le coefficient de perte de charge $f$, que représente le paramètre $\\epsilon/D$ ?",
+        "answers": [
+            "Le nombre de Reynolds",
+            "La rugosité relative de la conduite",
+            "Le facteur de frottement de Fanning",
+            "Le rapport des pressions aux extrémités"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans le diagramme de Moody, $\\epsilon$ représente la hauteur moyenne des aspérités de la paroi (rugosité absolue) et $D$ le diamètre de la conduite. Le rapport $\\epsilon/D$ est la rugosité relative, paramètre déterminant pour le coefficient de perte de charge en régime turbulent."
+    },
+    {
+        "uuid": "visc-077",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre d'un écoulement de Couette plan entre deux plaques infinies distantes de $h$, la plaque supérieure se déplaçant à la vitesse $V_0$, quel est le profil de vitesse stationnaire ?",
+        "answers": [
+            "Parabolique (profil de Poiseuille)",
+            "Linéaire (profil de Couette)",
+            "Sinusoïdal",
+            "Uniforme et égal à $V_0$ partout"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'équation de Stokes simplifiée pour l'écoulement de Couette donne $\\frac{d^2 v_x}{dy^2} = 0$. Avec les conditions aux limites $v(0)=0$ et $v(h)=V_0$, on obtient une dépendance linéaire en $y$ : $v(y) = V_0 \\frac{y}{h}$."
+    },
+    {
+        "uuid": "visc-078",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Un fluide circulant dans une conduite présente un nombre de Reynolds $Re = 3 \\cdot 10^4$. Quelle est la nature de cet écoulement ?",
+        "answers": [
+            "Laminaire car $Re < 2000$",
+            "Turbulent car $Re > 4000$",
+            "Stationnaire et irrotationnel",
+            "Transitoire instable entre deux régimes"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "En conduite cylindrique, le régime est laminaire pour $Re < 2000$ et pleinement turbulent pour $Re > 4000$. Avec $Re = 3 \\cdot 10^4$, nous sommes largement dans le régime turbulent."
+    },
+    {
+        "uuid": "visc-079",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est la puissance dissipée $P$ nécessaire pour maintenir une vitesse constante $\\vec{v}$ à un corps soumis à une force de traînée $\\vec{f}$ ?",
+        "answers": [
+            "$P = f/v$",
+            "$P = \\vec{f} \\cdot \\vec{v}$",
+            "$P = \\frac{1}{2} m v^2$",
+            "$P = \\vec{f} \\times \\vec{v}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La puissance mécanique d'une force est définie par le produit scalaire $P = \\vec{F} \\cdot \\vec{v}$. Pour maintenir une vitesse constante, la force motrice doit exactement compenser la force de traînée opposée, d'où $P = f v$ (puisque $\\vec{f}$ et $\\vec{v}$ sont colinéaires et de sens opposés, la puissance motrice est positive)."
+    },
+    {
+        "uuid": "visc-080",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En régime turbulent, la force de traînée est proportionnelle au carré de la vitesse ($F \\propto v^2$). De combien la puissance nécessaire doit-elle être multipliée si la vitesse du véhicule double ?",
+        "answers": [
+            "2",
+            "8",
+            "4",
+            "16"
+        ],
+        "difficulty": 4,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La puissance est $P = F \\cdot v$. Comme $F \\propto v^2$, alors $P \\propto v^2 \\cdot v = v^3$. Si la vitesse est multipliée par 2, la puissance est multipliée par $2^3 = 8$."
+    },
+    {
+        "uuid": "visc-081",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude d'un écoulement de Poiseuille stationnaire et laminaire dans une conduite cylindrique de rayon $R$ et de longueur $L$, sous une chute de pression $\\Delta P$, quelle est l'expression de la contrainte de cisaillement $\\tau_w$ exercée par le fluide sur la paroi ?",
+        "answers": [
+            "$\\tau_w = \\frac{R \\Delta P}{2L}$",
+            "$\\tau_w = \\frac{\\Delta P}{L}$",
+            "$\\tau_w = 0$",
+            "$\\tau_w = \\frac{\\eta v}{R}$"
+        ],
+        "difficulty": 5,
+        "chapter": "Viscosité",
+        "correct_answer_index": 0,
+        "explication": "Par un bilan de forces sur un cylindre de fluide de rayon $r$ et longueur $L$, on obtient $\\pi r^2 \\Delta P = 2 \\pi r L \\tau(r)$. Pour la paroi ($r=R$), la contrainte est $\\tau_w = \\frac{R \\Delta P}{2L}$. Les autres réponses sont soit des mauvaises dimensions, soit correspondent à des erreurs sur la géométrie du problème."
+    },
+    {
+        "uuid": "visc-082",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "L'équation de Navier-Stokes, qui décrit le mouvement des fluides visqueux, constitue une traduction locale de quel principe fondamental ?",
+        "answers": [
+            "La conservation de la masse (équation de continuité)",
+            "La deuxième loi de Newton (PFD) appliquée à une particule de fluide",
+            "Le premier principe de la thermodynamique (bilan d'énergie)",
+            "La loi de Biot et Savart (analogie électromagnétique)"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "L'équation de Navier-Stokes est l'application du Principe Fondamental de la Dynamique (PFD) sous forme locale : $\\rho \\frac{D\\vec{v}}{Dt} = \\vec{f}_{vol} - \\vec{grad}(P) + \\eta \\Delta \\vec{v}$. La conservation de la masse est décrite par l'équation de continuité : $div(\\vec{v}) = 0$ pour un fluide incompressible."
+    },
+    {
+        "uuid": "visc-083",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Lorsqu'on modélise un écoulement comme étant celui d'un fluide incompressible, quelle condition mathématique sur le champ de vitesse $\\vec{v}$ doit être impérativement vérifiée ?",
+        "answers": [
+            "$\\vec{grad}(P) = \\vec{0}$",
+            "$div(\\vec{v}) = 0$",
+            "$\\vec{rot}(\\vec{v}) = \\vec{0}$",
+            "$\\frac{\\partial \\vec{v}}{\\partial t} = \\vec{0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "La condition d'incompressibilité découle de la conservation de la masse $\\frac{\\partial \\rho}{\\partial t} + div(\\rho \\vec{v}) = 0$. Si $\\rho$ est constant, alors $div(\\vec{v}) = 0$. Le rotationnel nul caractérise un écoulement irrotationnel, et non l'incompressibilité."
+    },
+    {
+        "uuid": "visc-084",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "En utilisant le théorème de Bernoulli pour l'écoulement de l'air autour d'une aile d'avion, si la vitesse de l'air est plus élevée sur l'extrados (partie supérieure) que sur l'intrados, que peut-on en déduire concernant la pression ?",
+        "answers": [
+            "Il existe une surpression sur l'extrados.",
+            "Il existe une dépression sur l'extrados.",
+            "La pression est constante autour de l'aile.",
+            "La force résultante est nulle."
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "D'après Bernoulli, $P + \\frac{1}{2}\\rho v^2 + \\rho g z = Cte$. Si la vitesse $v$ augmente, la pression statique $P$ doit diminuer pour conserver la constante. Cette dépression sur l'extrados est ce qui crée la force de portance."
+    },
+    {
+        "uuid": "visc-085",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Considérant un oiseau en plein vol, quel est l'ordre de grandeur réaliste du nombre de Reynolds $Re = \\frac{\\rho v L}{\\eta}$ ?",
+        "answers": [
+            "$10^{-5}$",
+            "$10^2$",
+            "$10^6$",
+            "$10^{12}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "explication": "Le nombre de Reynolds pour un oiseau (vitesse de l'ordre de $10 \\text{ m/s}$, dimension caractéristique de l'ordre du mètre) dans l'air est élevé, typiquement autour de $10^5$ à $10^6$. Les valeurs très faibles correspondent à des micro-organismes (bactéries), et les valeurs très élevées à des écoulements turbulents extrêmes."
+    },
+    {
+        "uuid": "visc-086",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans quel contexte physique est-il pertinent de modéliser la traînée par une force de frottement fluide de type $\\vec{F} = -k\\vec{v}$ (proportionnelle à la vitesse) ?",
+        "answers": [
+            "Pour un avion de ligne à haute vitesse",
+            "Pour un véhicule automobile sur autoroute",
+            "Pour une bactérie dans un milieu visqueux (Régime de Stokes)",
+            "Pour un parachutiste en chute libre"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "explication": "La force de traînée linéaire (loi de Stokes) est valable à très bas nombre de Reynolds ($Re \\ll 1$). Pour des objets macroscopiques comme un avion ou une voiture, la traînée est quadratique ($F \\propto v^2$) à cause de l'inertie du fluide dominant la viscosité."
+    },
+    {
+        "uuid": "visc-087",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans l'étude d'un fluide parfait (viscosité $\\eta = 0$), l'équation de Navier-Stokes se simplifie pour donner l'équation de :",
+        "answers": [
+            "Poisson",
+            "Euler",
+            "Laplace",
+            "Diffusion"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "Lorsque la viscosité est négligée, le terme de diffusion visqueuse $\\eta \\Delta \\vec{v}$ disparaît, menant aux équations d'Euler : $\\rho (\\frac{\\partial \\vec{v}}{\\partial t} + (\\vec{v} \\cdot \\vec{grad}) \\vec{v}) = - \\vec{grad}(P) + \\vec{f}_{vol}$."
+    },
+    {
+        "uuid": "visc-088",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Pour un fluide incompressible ($div \\vec{v} = 0$), quelle est l'identité vectorielle correcte liant le laplacien vectoriel et le rotationnel ?",
+        "answers": [
+            "$\\Delta \\vec{v} = - \\vec{rot}(\\vec{rot} \\vec{v})$",
+            "$\\Delta \\vec{v} = \\vec{rot}(\\vec{rot} \\vec{v})$",
+            "$\\Delta \\vec{v} = \\vec{grad}(div \\vec{v})$",
+            "$\\Delta \\vec{v} = \\vec{0}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Viscosité",
+        "correct_answer_index": 0,
+        "explication": "On utilise l'identité $\\Delta \\vec{v} = \\vec{grad}(div \\vec{v}) - \\vec{rot}(\\vec{rot} \\vec{v})$. Comme $div(\\vec{v}) = 0$ pour un fluide incompressible, le premier terme est nul, d'où $\\Delta \\vec{v} = - \\vec{rot}(\\vec{rot} \\vec{v})$."
+    },
+    {
+        "uuid": "visc-089",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans un écoulement de Poiseuille laminaire entre deux plans ou dans un tube, quel est le rapport entre la vitesse maximale $v_{max}$ (au centre) et la vitesse moyenne $U$ ?",
+        "answers": [
+            "$1,5$",
+            "$1,0$",
+            "$2,0$",
+            "$4,0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "explication": "Le profil de vitesse dans un tube est parabolique : $v(r) = v_{max} (1 - \\frac{r^2}{R^2})$. En calculant le débit volumique, on trouve que la vitesse moyenne $U$ est égale à la moitié de la vitesse maximale ($U = v_{max} / 2$), donc $v_{max} = 2U$."
+    },
+    {
+        "uuid": "visc-090",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Lorsqu'on augmente la vitesse d'écoulement autour d'une sphère, on observe à $Re \\approx 3 \\cdot 10^5$ une \"crise de traînée\". Que devient le coefficient de traînée $C_x$ ?",
+        "answers": [
+            "Il augmente brutalement à cause de la turbulence.",
+            "Il diminue brusquement suite à la transition de la couche limite.",
+            "Il reste constant.",
+            "Il tend vers zéro."
+        ],
+        "difficulty": 4,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "explication": "La crise de traînée correspond au passage de la couche limite laminaire à turbulente. La couche limite turbulente adhère mieux à la sphère, réduisant la taille du sillage et donc la traînée. $C_x$ chute alors très rapidement."
+    },
+    {
+        "uuid": "visc-091",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude de l'hémodynamique, quelle loi permet de modéliser la chute de pression $\\Delta P$ le long d'un réseau de capillaires sanguins en régime laminaire et stationnaire ?",
+        "answers": [
+            "Loi de Jurin (liée à la capillarité)",
+            "Loi de Hagen-Poiseuille",
+            "Loi de Pascal (hydrostatique)",
+            "Loi de Henry (solubilité des gaz)"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La loi de Hagen-Poiseuille relie le débit volumique $Q$ à la perte de charge $\\Delta P$ pour un écoulement laminaire dans une conduite cylindrique. Elle s'écrit $\\Delta P = R_H Q$ avec $R_H = 8 \\eta L / (\\pi r^4)$. Les autres lois traitent soit de la tension superficielle (Jurin), de l'hydrostatique (Pascal), ou de la thermodynamique (Henry)."
+    },
+    {
+        "uuid": "visc-092",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Lors de la modélisation de la viscosité par le modèle de Newton, le principe des actions réciproques appliqué à deux couches de fluide adjacentes d'une surface $\\delta S$ implique que :",
+        "answers": [
+            "Les forces de contact sont attractives par capillarité",
+            "$\\vec{dF}_{sup \\to inf} = - \\vec{dF}_{inf \\to sup}$",
+            "Les vitesses des couches doivent être identiques",
+            "La pression exercée entre les couches est nulle"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le principe des actions réciproques (3ème loi de Newton) est universel en mécanique. Pour deux couches de fluide en interaction visqueuse, la force exercée par la couche supérieure sur la couche inférieure est l'opposée de celle exercée par la couche inférieure sur la supérieure."
+    },
+    {
+        "uuid": "visc-093",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La viscosité cinématique $\\nu$ est définie comme la diffusivité de la quantité de mouvement. Si $\\nu_{air} \\approx 1,5 \\cdot 10^{-5} m^2/s$ et $\\nu_{eau} \\approx 10^{-6} m^2/s$, quel fluide diffuse le plus rapidement sa vitesse ?",
+        "answers": [
+            "L'eau",
+            "L'air",
+            "Autant l'une que l'autre",
+            "Cela dépend de la pression"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La viscosité cinématique $\\nu = \\eta / \\rho$ représente la capacité du fluide à diffuser son mouvement (sa quantité de mouvement). Plus $\\nu$ est élevé, plus le fluide diffuse rapidement sa vitesse par effet visqueux. Comme $1,5 \\cdot 10^{-5} > 10^{-6}$, l'air diffuse plus vite sa vitesse que l'eau."
+    },
+    {
+        "uuid": "visc-094",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Quelle est l'hypothèse fondamentale nécessaire pour établir le profil de vitesse parabolique de Poiseuille dans une conduite cylindrique ?",
+        "answers": [
+            "Le nombre de Reynolds $Re$ est supérieur à 2000",
+            "Écoulement stationnaire, parallèle à l'axe et incompressible",
+            "Le fluide est parfait ($\\eta = 0$)",
+            "La vitesse est uniforme sur toute la section de la conduite"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le profil parabolique est obtenu en intégrant l'équation de Navier-Stokes simplifiée sous les hypothèses d'un écoulement permanent (stationnaire), unidirectionnel (parallèle) et en négligeant les effets d'inertie. Un fluide parfait n'a pas de viscosité, donc pas de profil de Poiseuille."
+    },
+    {
+        "uuid": "visc-095",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Considérons une artère de longueur $3L$ et de rayon $r$. Sa résistance hydraulique est $R_H$. Une sténose réduit le rayon de moitié ($r' = r/2$) sur une longueur $L$. Quelle est la nouvelle résistance totale ?",
+        "answers": [
+            "$3R_H$ (la longueur domine)",
+            "$18R_H$",
+            "$16,33 R_H$ (approx. $16 R_H + 1/3 R_H$)",
+            "$4R_H$"
+        ],
+        "difficulty": 4,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La résistance hydraulique est proportionnelle à $1/r^4$. Pour la partie saine de longueur $2L$, la résistance est $R_{sain} = 2/3 R_H$. Pour la sténose de longueur $L$, $R_{steno} = (L/3L) \\times (R_H / (1/2)^4) = 1/3 \\times 16 R_H = 16/3 R_H$. La somme donne $(2/3 + 16/3) R_H = 18/3 R_H = 6 R_H$. *Note : Si $R_H$ correspond à la résistance pour $L$, alors la valeur est $18R_H$. Le calcul doit être rigoureux sur la définition initiale de $R_H$*."
+    },
+    {
+        "uuid": "visc-096",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'utilisation du diagramme de Moody pour un écoulement en conduite, pour un tuyau qualifié de 'lisse' ($\\epsilon \\to 0$), le coefficient de perte de charge linéaire $\\lambda$ ne dépend que de :",
+        "answers": [
+            "La rugosité relative $\\epsilon / D$",
+            "Le nombre de Reynolds $Re$",
+            "La longueur totale $L$ de la conduite",
+            "La température ambiante du fluide"
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le coefficient $\\lambda$ est fonction de $Re$ et de la rugosité relative. Si le tuyau est parfaitement lisse, la dépendance à la rugosité disparaît, et $\\lambda$ devient une fonction exclusive de $Re$ (ex: $\\lambda = 64/Re$ en laminaire ou formules de Blasius en turbulent)."
+    },
+    {
+        "uuid": "visc-097",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "La force de traînée quadratique s'exprime par $F = \\frac{1}{2} C_x \\rho S v^2$. Si, lors d'une étude aérodynamique, la vitesse $v$ du fluide est triplée, par quel facteur la force est-elle multipliée ?",
+        "answers": [
+            "3 (relation linéaire)",
+            "6 (erreur classique)",
+            "9 (proportionnalité au carré)",
+            "27 (erreur de puissance)"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Puisque $F \\propto v^2$, si $v$ est multiplié par 3, alors $F$ est multiplié par $3^2 = 9$. Il est crucial de ne pas confondre le régime de Stokes ($F \\propto v$) et le régime quadratique ($F \\propto v^2$)."
+    },
+    {
+        "uuid": "visc-098",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Comment évolue la viscosité dynamique $\\eta$ d'un gaz pur lorsque la température augmente ?",
+        "answers": [
+            "Elle augmente (agitation thermique accrue)",
+            "Elle diminue (distanciation des molécules)",
+            "Elle reste constante (propriété intrinsèque)",
+            "Elle devient nulle (changement de phase)"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Dans un gaz, la viscosité provient des échanges de quantité de mouvement entre molécules par collisions. Une augmentation de température accroît la vitesse d'agitation thermique, donc la fréquence des collisions, ce qui augmente la viscosité dynamique."
+    },
+    {
+        "uuid": "visc-099",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Comment évolue la viscosité dynamique $\\eta$ d'un liquide (comme le miel ou l'eau) lorsque la température augmente ?",
+        "answers": [
+            "Elle augmente",
+            "Elle diminue",
+            "Elle est indépendante de la température",
+            "Elle devient égale à celle d'un gaz"
+        ],
+        "difficulty": 1,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Contrairement aux gaz, la viscosité des liquides est dominée par les forces d'attraction intermoléculaires. L'augmentation de température favorise l'agitation thermique qui brise ces liaisons, facilitant l'écoulement : la viscosité diminue donc."
+    },
+    {
+        "uuid": "visc-100",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Lors de l'écoulement autour d'un obstacle de forme quelconque, où apparaissent généralement le décollement de la couche limite et la zone de recirculation ?",
+        "answers": [
+            "À l'avant de l'obstacle, au point de stagnation",
+            "À l'arrière de l'obstacle après le point de séparation",
+            "Dans la couche limite laminaire proche de la paroi",
+            "Uniquement dans les fluides parfaits modélisés par Bernoulli"
+        ],
+        "difficulty": 3,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le décollement survient lorsque le fluide ne peut plus suivre la courbure de l'obstacle en raison d'un gradient de pression adverse. Cela crée une zone de recirculation turbulente à l'arrière, source de traînée de forme."
+    },
+    {
+        "uuid": "visc-101",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Dans le cadre de l'étude de la traînée d'un objet en écoulement stationnaire à haut nombre de Reynolds, comment se compare le coefficient de traînée $C_x$ d'un corps profilé optimisé (forme de goutte) par rapport à celui d'une sphère de même maître-couple ?",
+        "answers": [
+            "Il est beaucoup plus grand car la surface de contact est plus importante.",
+            "Il est beaucoup plus petit car la forme profilée permet de retarder le décollement de la couche limite et de réduire la zone de dépression à l'arrière.",
+            "Il est identique car le $C_x$ ne dépend que de la surface projetée et non de la forme de l'objet.",
+            "Il est nul car l'écoulement est parfaitement laminaire autour d'un profil aérodynamique."
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La traînée d'un corps est composée de la traînée de frottement et de la traînée de pression. Pour une sphère, le décollement de la couche limite est précoce, créant une vaste zone de sillage à basse pression à l'arrière, ce qui induit une traînée de pression importante. Un corps profilé réduit ce décollement, minimisant ainsi la différence de pression entre l'avant et l'arrière, ce qui conduit à un $C_x$ nettement inférieur."
+    },
+    {
+        "uuid": "visc-102",
+        "image_path": null,
+        "theme": "mécanique des fluides",
+        "question": "Considérons un écoulement laminaire permanent et incompressible d'un fluide visqueux de viscosité dynamique $\\eta$ dans une conduite cylindrique de rayon $R$ et de longueur $L$. Quelle est la relation entre la chute de pression $\\Delta P$ et le débit volumique $D_v$ (Loi de Poiseuille) ?",
+        "answers": [
+            "$\\Delta P$ est proportionnelle à $D_v$ : $\\Delta P = \\frac{8 \\eta L}{\\pi R^4} D_v$",
+            "$\\Delta P$ est proportionnelle au carré du débit $D_v^2$ (régime turbulent).",
+            "$\\Delta P$ est indépendante du débit car le fluide est incompressible.",
+            "$\\Delta P$ est inversement proportionnelle à $D_v$ selon la loi de conservation de la masse."
+        ],
+        "difficulty": 2,
+        "chapter": "Viscosité",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La loi de Poiseuille s'applique uniquement à un écoulement laminaire (nombre de Reynolds faible). Elle établit une analogie directe avec la loi d'Ohm ($U=RI$), où $\\Delta P$ joue le rôle de la tension et $D_v$ celui de l'intensité. La résistance hydraulique $R_h = \\frac{8 \\eta L}{\\pi R^4}$ montre que la perte de charge est linéairement proportionnelle au débit. L'erreur fréquente est de confondre avec les pertes de charge singulières ou turbulentes qui varient en $D_v^2$."
+    }
+]

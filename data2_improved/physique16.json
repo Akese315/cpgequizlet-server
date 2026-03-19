@@ -1,0 +1,1811 @@
+[
+    {
+        "uuid": "7a8b9c1d-e2f3-4a5b-6c7d-8e9f0a1b2c3d",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/c/c4/MaxwellEquations.svg",
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude des champs macroscopiques, quelle équation de Maxwell traduit directement l'inexistence de charges magnétiques isolées (absence de monopôle magnétique) ?",
+        "answers": [
+            "$div(\\vec{B}) = 0$",
+            "$\\vec{rot}(\\vec{E}) = -\\frac{\\partial \\vec{B}}{\\partial t}$",
+            "$div(\\vec{E}) = \\frac{\\rho}{\\epsilon_0}$",
+            "$\\vec{rot}(\\vec{B}) = \\mu_0 \\vec{j} + \\mu_0 \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'équation de Maxwell-Thomson, $div(\\vec{B}) = 0$, indique que le champ magnétique est à flux conservatif, ce qui signifie qu'il n'existe pas de source ponctuelle de champ magnétique (monopôle). Les autres options décrivent respectivement la loi de Faraday, le théorème de Gauss et l'équation de Maxwell-Ampère."
+    },
+    {
+        "uuid": "1f2e3d4c-5b6a-7a8b-9c0d-1e2f3a4b5c6d",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "En régime variable, quelle est l'expression locale de la loi de Faraday (Maxwell-Faraday) traduisant l'aspect non conservatif du champ électrique induit ?",
+        "answers": [
+            "$\\vec{rot}(\\vec{E}) = \\vec{0}$",
+            "$\\vec{rot}(\\vec{E}) = -\\frac{\\partial \\vec{B}}{\\partial t}$",
+            "$\\vec{rot}(\\vec{B}) = \\mu_0 \\vec{j}$",
+            "$div(\\vec{E}) = \\frac{\\rho}{\\epsilon_0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La loi de Maxwell-Faraday relie la variation temporelle du champ magnétique au rotationnel du champ électrique. Le signe '-' est fondamental et traduit la loi de Lenz (l'effet s'oppose à la cause). $\\vec{rot}(\\vec{E}) = \\vec{0}$ n'est vrai qu'en régime électrostatique."
+    },
+    {
+        "uuid": "a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression du vecteur densité de courant de déplacement $\\vec{j}_D$ introduit par Maxwell dans l'équation d'Ampère pour assurer la conservation de la charge ?",
+        "answers": [
+            "$\\vec{j}_D = \\mu_0 \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$",
+            "$\\vec{j}_D = \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$",
+            "$\\vec{j}_D = \\frac{\\partial \\vec{E}}{\\partial t}$",
+            "$\\vec{j}_D = \\frac{1}{\\mu_0} \\frac{\\partial \\vec{B}}{\\partial t}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le courant de déplacement est défini par $\\vec{j}_D = \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$. Il permet de vérifier l'équation de continuité $div(\\vec{j} + \\vec{j}_D) = 0$. Attention à ne pas confondre avec le terme complet de l'équation de Maxwell-Ampère qui inclut le facteur $\\mu_0$ devant toute la somme."
+    },
+    {
+        "uuid": "2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'électromagnétisme, l'approximation des régimes quasi-stationnaires (ARQS) est considérée comme valable lorsque :",
+        "answers": [
+            "La taille caractéristique $l$ du système est très supérieure à la longueur d'onde $\\lambda = cT$",
+            "Le temps de propagation $\\tau = l/c$ est négligeable devant la période $T$ des signaux ($l \\ll cT$)",
+            "La célérité de la lumière $c$ est considérée comme infinie dans les équations",
+            "Le milieu est obligatoirement un conducteur parfait"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'ARQS repose sur le fait que le signal a le temps de parcourir le système instantanément à l'échelle de la période. Si $l \\ll \\lambda$ (soit $l/c \\ll T$), on peut négliger les retards de propagation, ce qui permet d'utiliser les lois de l'électrocinétique classique."
+    },
+    {
+        "uuid": "3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/5/50/E_B_fields_from_moving_magnet_and_coil.svg",
+        "theme": "électromagnétisme",
+        "question": "Soit un circuit filiforme $C$ parcouru par un champ électrique $\\vec{E}$. Quelle est la définition correcte de la force électromotrice (f.e.m.) d'induction $e$ ?",
+        "answers": [
+            "$e = \\iint_S \\vec{E} \\cdot d\\vec{S}$",
+            "$e = \\oint_C \\vec{E} \\cdot d\\vec{l}$",
+            "$e = \\int_C \\vec{E} \\cdot d\\vec{l}$ (ouvert)",
+            "$e = -\\frac{d\\Phi}{dt}$ avec $\\Phi = \\iint_S \\vec{B} \\cdot d\\vec{S}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par définition, la force électromotrice est la circulation du champ électrique le long d'un contour fermé $C$. Bien que $e = -d\\Phi/dt$ soit le résultat final (loi de Faraday-Lenz), la définition scalaire de la f.e.m. est bien la circulation de $\\vec{E}$."
+    },
+    {
+        "uuid": "4d5e6f7g-8h9i-0j1k-2l3m-4n5o6p7q8r9",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans l'ARQS magnétique, quelle équation de Maxwell est simplifiée en négligeant le courant de déplacement ?",
+        "answers": [
+            "Maxwell-Faraday",
+            "Maxwell-Ampère",
+            "Maxwell-Gauss",
+            "Maxwell-Thomson"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans l'ARQS magnétique, le terme $\\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$ est négligé devant la densité de courant $\\vec{j}$ dans l'équation de Maxwell-Ampère. Cela revient à considérer que le courant de conduction domine les effets capacitifs."
+    },
+    {
+        "uuid": "5e6f7g8h-9i0j-1k2l-3m4n-5o6p7q8r9s0",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'inductance propre $L$ d'une bobine est une grandeur caractérisant sa capacité à s'opposer aux variations du flux. Elle dépend :",
+        "answers": [
+            "De l'intensité $i$ qui la traverse",
+            "Uniquement de sa géométrie et de la perméabilité magnétique du noyau",
+            "De la fréquence du signal alternatif imposé",
+            "De la tension aux bornes de la bobine"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'inductance $L$ est une caractéristique géométrique et matérielle (nombre de spires, section, longueur, perméabilité $\\mu$). Elle ne dépend ni du courant ni de la tension, à condition de rester dans un régime où le matériau magnétique ne sature pas."
+    },
+    {
+        "uuid": "6f7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'unité de l'inductance $L$ dans le Système International, exprimée à partir des unités de base ?",
+        "answers": [
+            "Le Weber ($Wb = V \\cdot s$)",
+            "Le Henry ($H = Wb \\cdot A^{-1}$)",
+            "Le Tesla ($T = N \\cdot A^{-1} \\cdot m^{-1}$)",
+            "Le Farad ($F = C \\cdot V^{-1}$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'unité d'inductance est le Henry ($H$). Comme $\\Phi = Li$, on a $L = \\Phi / i$, donc 1 Henry = 1 Weber par Ampère."
+    },
+    {
+        "uuid": "7g8h9i0j-1k2l-3m4n-5o6p-7q8r9s0t1u2",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'énergie magnétique $\\mathcal{E}_m$ stockée dans une bobine d'inductance $L$ parcourue par un courant $i$ est donnée par la relation :",
+        "answers": [
+            "$\\mathcal{E}_m = Li^2$",
+            "$\\mathcal{E}_m = \\frac{1}{2} Li^2$",
+            "$\\mathcal{E}_m = L i$",
+            "$\\mathcal{E}_m = \\frac{1}{2} L^2 i$"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'énergie stockée dans une inductance est analogue à l'énergie cinétique en mécanique ($1/2 mv^2$). Elle se calcule par intégration de la puissance $p = ui = (L di/dt) i$ au cours du temps, ce qui donne $\\int Li di = 1/2 Li^2$."
+    },
+    {
+        "uuid": "8h9i0j1k-2l3m-4n5o-6p7q-8r9s0t1u2v3",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression de la densité volumique d'énergie magnétique $w_m$ dans le vide, en fonction de l'induction $\\vec{B}$ ?",
+        "answers": [
+            "$w_m = \\frac{B^2}{2\\mu_0}$",
+            "$w_m = \\frac{1}{2} \\epsilon_0 B^2$",
+            "$w_m = \\mu_0 B^2$",
+            "$w_m = \\frac{B^2}{\\mu_0}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La densité volumique d'énergie magnétique est $w_m = \\frac{B^2}{2\\mu_0}$. Elle est à comparer avec la densité d'énergie électrique $w_e = \\frac{1}{2} \\epsilon_0 E^2$. Les facteurs de proportionnalité ($1/2\\mu_0$ et $\\epsilon_0/2$) sont essentiels et souvent sources d'erreurs."
+    },
+    {
+        "uuid": "9i0j1k2l-3m4n-5o6p-7q8r-9s0t1u2v3w4",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude du couplage magnétique entre deux circuits, l'inductance mutuelle $M$ vérifie toujours l'inégalité suivante, où $L_1$ et $L_2$ sont les inductances propres :",
+        "answers": [
+            "$M = L_1 + L_2$",
+            "$M^2 \\le L_1 L_2$",
+            "$M \\ge \\sqrt{L_1 L_2}$",
+            "$M = \\frac{1}{2} (L_1 + L_2)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "L'énergie magnétique stockée dans un système de deux bobines est $E_m = \\frac{1}{2} L_1 i_1^2 + \\frac{1}{2} L_2 i_2^2 + M i_1 i_2$. Pour que cette énergie soit définie positive, le discriminant du trinôme doit être négatif ou nul, ce qui impose $M^2 \\le L_1 L_2$. Cette inégalité définit le coefficient de couplage $k = \\frac{M}{\\sqrt{L_1 L_2}}$ avec $|k| \\le 1$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "0j1k2l3m-4n5o-6p7q-8r9s-0t1u2v3w4x5",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Les courants de Foucault sont des courants induits qui apparaissent dans les matériaux conducteurs selon quelles conditions ?",
+        "answers": [
+            "Uniquement dans les isolants soumis à un champ électrique variable",
+            "Dans les conducteurs massifs soumis à un champ magnétique variable",
+            "Uniquement dans les bobines supraconductrices",
+            "Dans les conducteurs soumis à un champ magnétique stationnaire"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Les courants de Foucault naissent de la variation du flux magnétique traversant une portion de matériau conducteur (loi de Faraday). Ils se manifestent par des courants circulant en boucle dans les pièces massives, là où la résistance électrique est suffisamment faible pour permettre leur développement.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "1k2l3m4n-5o6p-7q8r-9s0t-1u2v3w4x5y6",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Eddy_currents_induction_heating.svg",
+        "theme": "électromagnétisme",
+        "question": "Quelle est la principale conséquence macroscopique, souvent considérée comme une perte d'énergie, liée à l'apparition des courants de Foucault dans un métal ?",
+        "answers": [
+            "Une augmentation du champ magnétique total",
+            "Un dégagement de chaleur par effet Joule",
+            "Une création de charges statiques en surface",
+            "Une modification de la perméabilité magnétique du matériau"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Le courant induit circulant dans une résistance non nulle du matériau conducteur dissipe de la puissance par effet Joule : $P = \\iiint \\gamma \\vec{E}^2 d\\tau$. C'est ce qui provoque l'échauffement des noyaux de transformateurs, nécessitant des stratégies de réduction (feuilletage).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "2l3m4n5o-6p7q-8r9s-0t1u-2v3w4x5y6z7",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour limiter les pertes par courants de Foucault dans le noyau magnétique d'un transformateur, quelle technique ingénieuse est employée ?",
+        "answers": [
+            "Augmenter la section des conducteurs",
+            "Feuilleter le noyau magnétique avec des tôles isolées entre elles",
+            "Augmenter la fréquence du courant alternatif",
+            "Utiliser un matériau ferromagnétique à forte conductivité électrique"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Le feuilletage consiste à diviser le noyau en fines plaques isolées. Cela restreint la géométrie des boucles de courant, augmentant la résistance vue par les courants induits et diminuant ainsi l'intensité des courants de Foucault et la dissipation thermique associée.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "3m4n5o6p-7q8r-9s0t-1u2v-3w4x5y6z7a8",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'équation locale de conservation de la charge $\\text{div}(\\vec{j}) + \\frac{\\partial \\rho}{\\partial t} = 0$ rend nécessaire l'introduction de quel terme dans l'équation de Maxwell-Ampère ?",
+        "answers": [
+            "Le terme de force de Lorentz",
+            "Le terme de courant de déplacement $\\varepsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$",
+            "Le terme de diffusion thermique",
+            "Le terme de potentiel vecteur $\\vec{A}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "En prenant la divergence de $\\vec{\\text{rot}}(\\vec{B}) = \\mu_0 \\vec{j}$, on obtient $0 = \\mu_0 \\text{div}(\\vec{j})$. Pour être cohérent avec la conservation de la charge ($\\text{div}(\\vec{j}) = -\\frac{\\partial \\rho}{\\partial t}$), il faut ajouter $\\mu_0 \\varepsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$, qui est le courant de déplacement.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "4n5o6p7q-8r9s-0t1u-2v3w-4x5y6z7a8b9",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le modèle du solénoïde infini, parcouru par un courant $i$ et comportant $n$ spires par unité de longueur, quelle est l'expression correcte du champ magnétique $\\vec{B}$ à l'intérieur ?",
+        "answers": [
+            "$B = \\mu_0 n i$",
+            "$B = \\frac{\\mu_0 i}{n}$",
+            "$B = \\mu_0 n^2 i$",
+            "$B = \\frac{1}{2} \\mu_0 n i$"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "explication": "L'application du théorème d'Ampère sur un contour rectangulaire traversant la paroi du solénoïde montre que le champ est uniforme à l'intérieur et nul à l'extérieur. L'expression est $B = \\mu_0 n i$, où $n$ est le nombre de spires par mètre.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "5o6p7q8r-9s0t-1u2v-3w4x-5y6z7a8b9c0",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour un appareil de dimension caractéristique $L = 10 \\text{ cm}$ travaillant à une fréquence $f = 100 \\text{ kHz}$, l'ARQS est-elle valide ? On rappelle la condition $\\lambda \\gg L$.",
+        "answers": [
+            "Non, car la fréquence est trop élevée pour l'ARQS",
+            "Oui, car le temps de propagation $T_p \\ll T$ (période)",
+            "Oui, car la Switch est un isolant électrique",
+            "Non, car $10 \\text{ cm}$ est trop grand devant la longueur d'onde"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "L'ARQS est valide si $\\lambda \\gg L$, ce qui équivaut à $T \\gg T_p = L/c$. Ici, $T = 10^{-5} \\text{ s}$ et $T_p = 0.1 / (3 \\cdot 10^8) \\approx 3 \\cdot 10^{-10} \\text{ s}$. Comme $3 \\cdot 10^{-10} \\ll 10^{-5}$, l'approximation est largement valide.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "6p7q8r9s-0t1u-2v3w-4x5y-6z7a8b9c0d1",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression de l'inductance propre $L$ d'un solénoïde de longueur $l$, section $S$ et $N$ spires ?",
+        "answers": [
+            "$L = \\mu_0 \\frac{N}{l} S$",
+            "$L = \\mu_0 \\frac{N^2 S}{l}$",
+            "$L = \\mu_0 \\frac{N^2 l}{S}$",
+            "$L = \\mu_0 N^2 l S$"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Le flux propre à travers les $N$ spires est $\\Phi = N \\cdot B \\cdot S = N (\\mu_0 \\frac{N}{l} i) S = \\mu_0 \\frac{N^2 S}{l} i$. Par définition, $L = \\Phi / i$, donc $L = \\mu_0 \\frac{N^2 S}{l}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "7q8r9s0t-1u2v-3w4x-5y6z-7a8b9c0d1e2",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cas idéal de deux bobines en couplage parfait (coefficient de couplage $k=1$), quelle relation lie l'inductance mutuelle $M$ aux inductances propres $L_1$ et $L_2$ ?",
+        "answers": [
+            "$M = L_1 L_2$",
+            "$M = \\sqrt{L_1 L_2}$",
+            "$M = 0$",
+            "$M = \\frac{1}{2} \\sqrt{L_1 L_2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Le coefficient de couplage est défini par $k = \\frac{M}{\\sqrt{L_1 L_2}}$. Pour un couplage parfait, tout le flux créé par la première bobine traverse la seconde, ce qui conduit à $k=1$, soit $M = \\sqrt{L_1 L_2}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "8r9s0t1u-2v3w-4x5y-6z7a-8b9c0d1e2f3",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Le vecteur de Poynting $\\vec{\\Pi} = \\frac{1}{\\mu_0} \\vec{E} \\wedge \\vec{B}$ représente physiquement :",
+        "answers": [
+            "La densité de charge électrique volumique",
+            "La densité surfacique de puissance électromagnétique (flux d'énergie)",
+            "La force électromagnétique par unité de volume",
+            "Le moment dipolaire magnétique"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Le vecteur de Poynting $\\vec{\\Pi}$ exprime la densité de courant d'énergie électromagnétique. Son flux à travers une surface fermée donne la puissance électromagnétique sortante de la surface.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "9s0t1u2v-3w4x-5y6z-7a8b-9c0d1e2f3g4",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude énergétique d'un condensateur plan en charge, d'où provient l'énergie électromagnétique qui pénètre dans le volume entre les armatures ?",
+        "answers": [
+            "Des fils d'alimentation, via le vecteur de Poynting $\\vec{\\Pi} = \\frac{1}{\\mu_0} \\vec{E} \\wedge \\vec{B}$ arrivant par l'espace latéral",
+            "De la création spontanée de photons dans le vide entre les armatures",
+            "Du mouvement direct des charges électriques qui traversent le centre du vide",
+            "De l'énergie thermique dissipée par effet Joule dans le vide"
+        ],
+        "difficulty": 4,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "explication": "Le théorème de Poynting stipule que l'énergie électromagnétique entre dans un volume par ses frontières via le vecteur de Poynting $\\vec{\\Pi}$. Pour un condensateur, le champ électrique $\\vec{E}$ est normal aux armatures et le champ magnétique $\\vec{B}$ (créé par le courant de déplacement) est tangentiel. Le produit vectoriel $\\vec{E} \\wedge \\vec{B}$ est donc dirigé vers l'intérieur du condensateur.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "0t1u2v3w-4x5y-6z7a-8b9c-0d1e2f3g4h5",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Soit une plaque conductrice infinie d'épaisseur $a$ située entre $z = -a/2$ et $z = a/2$, parcourue par une densité de courant surfacique uniforme $\\vec{j}_s$ ou volumique équivalente $\\vec{j} = j \\vec{u}_x$. En utilisant le théorème d'Ampère, quelle est la valeur du champ $\\vec{B}$ pour $z > a/2$ ?",
+        "answers": [
+            "$B = -\\frac{\\mu_0 j a}{2}$",
+            "$B = \\frac{\\mu_0 j a}{2}$",
+            "$B = 0$",
+            "$B = \\mu_0 j z$"
+        ],
+        "difficulty": 4,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Par symétrie, le champ est antisymétrique par rapport au plan médian. En appliquant le théorème d'Ampère sur un contour rectangulaire traversant la plaque, on obtient $2B = \\mu_0 j a$ (en considérant $j$ comme densité surfacique totale ou l'intégrale de la densité volumique). La direction est donnée par la règle de la main droite : pour un courant en $\\vec{u}_x$, le champ est dirigé selon $\\vec{u}_y$ pour $z>0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "1u2v3w4x-5y6z-7a8b-9c0d-1e2f3g4h5i6",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Lors de la relaxation d'une charge au sein d'un milieu conducteur ohmique de conductivité $\\gamma$ et de permittivité $\\epsilon_0$, la densité de charge $\\rho$ suit une évolution temporelle en $e^{-t/\\tau}$. Quelle est l'expression du temps de relaxation $\\tau$ ?",
+        "answers": [
+            "$\\tau = \\gamma \\epsilon_0$",
+            "$\\tau = \\frac{\\epsilon_0}{\\gamma}$",
+            "$\\tau = \\frac{1}{\\gamma \\mu_0}$",
+            "$\\tau = \\sqrt{\\mu_0 \\epsilon_0} \\gamma$"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "En combinant l'équation de conservation de la charge $\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\vec{j}) = 0$, la loi d'Ohm $\\vec{j} = \\gamma \\vec{E}$ et l'équation de Maxwell-Gauss $\\text{div}(\\vec{E}) = \\frac{\\rho}{\\epsilon_0}$, on obtient $\\frac{\\partial \\rho}{\\partial t} + \\frac{\\gamma}{\\epsilon_0} \\rho = 0$. La constante de temps est donc $\\tau = \\frac{\\epsilon_0}{\\gamma}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "2v3w4x5y-6z7a-8b9c-0d1e-2f3g4h5i6j7",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Toroidal_inductor_and_transformer.png",
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude d'un transformateur parfait (sans fuite de flux et sans résistance), quel est le rapport entre la tension au secondaire $u_2(t)$ et la tension au primaire $u_1(t)$ en fonction du nombre de spires $N_1$ et $N_2$ ?",
+        "answers": [
+            "$\\frac{u_2}{u_1} = \\frac{N_1}{N_2}$",
+            "$\\frac{u_2}{u_1} = \\frac{N_2}{N_1}$",
+            "$\\frac{u_2}{u_1} = (\\frac{N_2}{N_1})^2$",
+            "$\\frac{u_2}{u_1} = \\sqrt{\\frac{N_2}{N_1}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Pour un transformateur parfait, les tensions sont liées par la loi de Faraday : $u = -N \\frac{d\\Phi}{dt}$. Comme le flux $\\Phi$ est le même à travers chaque spire du primaire et du secondaire, on a $u_1 = -N_1 \\dot{\\Phi}$ et $u_2 = -N_2 \\dot{\\Phi}$. Ainsi, $\\frac{u_2}{u_1} = \\frac{N_2}{N_1}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "3w4x5y6z-7a8b-9c0d-1e2f-3g4h5i6j7k8",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'inductance propre $L$ d'un solénoïde ou d'un tore comportant $N$ spires est proportionnelle à quelle puissance de $N$ ?",
+        "answers": [
+            "$N^{1/2}$",
+            "$N^1$",
+            "$N^2$",
+            "$N^3$"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 2,
+        "explication": "L'inductance est définie par $\\Phi = L i$. Or, le champ magnétique $B$ est proportionnel à $N i$ et le flux total est la somme des flux à travers chaque spire ($\\Phi_{tot} = N \\Phi_{spire}$), soit $\\Phi_{tot} \\propto N (Ni) = N^2 i$. Donc $L \\propto N^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "4x5y6z7a-8b9c-0d1e-2f3g-4h5i6j7k8l9",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans l'approximation des régimes quasi-stationnaires (ARQS), laquelle des simplifications suivantes est effectuée sur les équations de Maxwell ?",
+        "answers": [
+            "On néglige le courant de conduction $\\vec{j}$ devant le courant de déplacement",
+            "On néglige le courant de déplacement $\\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$ devant le courant de conduction $\\vec{j}$",
+            "On néglige le terme $\\frac{\\partial \\vec{B}}{\\partial t}$ dans l'équation de Faraday",
+            "On suppose que le milieu est obligatoirement un isolant parfait"
+        ],
+        "difficulty": 4,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "L'ARQS (magnétique) consiste à négliger le terme de courant de déplacement dans l'équation d'Ampère-Maxwell devant la densité de courant de conduction. Cette approximation est valide tant que la taille du système est très petite devant la longueur d'onde du signal ($l \\ll \\lambda$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "5y6z7a8b-9c0d-1e2f-3g4h-5i6j7k8l9m0",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour un conducteur cylindrique de rayon $R$ et conductivité $\\gamma$ soumis à un champ magnétique uniforme longitudinal $B(t) = B_0 \\cos(\\omega t)$, quelle est la puissance moyenne dissipée par unité de volume ?",
+        "answers": [
+            "$\\frac{1}{2} \\gamma B_0^2 \\omega^2 R^2$",
+            "$\\frac{1}{8} \\gamma B_0^2 \\omega^2 R^2$",
+            "$\\frac{1}{4} \\gamma B_0^2 \\omega R^2$",
+            "$\\frac{1}{16} \\gamma B_0^2 \\omega^2 R^4$"
+        ],
+        "difficulty": 5,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "En utilisant la loi de Faraday, on détermine le champ électrique induit $E_{\\theta}(r, t) = -\\frac{r}{2} \\frac{dB}{dt} = \\frac{r \\omega B_0}{2} \\sin(\\omega t)$. La puissance dissipée est $\\mathcal{P} = \\gamma E^2$. En moyennant sur une période, le carré du sinus donne $1/2$, et en intégrant sur le volume, on aboutit au résultat $\\frac{1}{8} \\gamma B_0^2 \\omega^2 R^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "6z7a8b9c-0d1e-2f3g-4h5i-6j7k8l9m0n1",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Si $u_1(t) = U_0$ (tension constante) est appliquée au primaire d'un transformateur, que vaut la tension $u_2(t)$ au secondaire ouvert en régime établi ?",
+        "answers": [
+            "$u_2 = U_0$",
+            "$u_2 = 0$",
+            "$u_2 = U_0 \\frac{N_2}{N_1}$",
+            "$u_2 = U_0 \\frac{M}{L_1}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Le transformateur est basé sur l'induction ($u = -N \\frac{d\\Phi}{dt}$). Si la tension au primaire est constante, alors $\\frac{d\\Phi}{dt} = 0$, donc le flux est constant (ou nul). Il n'y a pas de variation de flux à travers le secondaire, donc la tension induite $u_2$ est nulle.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "7a8b9c0d-1e2f-3g4h-5i6j-7k8l9m0n1o2",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "La condition de validité de l'ARQS est $l \\ll \\lambda = c/f$. Pour un signal de fréquence $f=50$ Hz, quelle est la valeur de la longueur d'onde $\\lambda$ ?",
+        "answers": [
+            "600 km",
+            "6000 km",
+            "60 km",
+            "6000 m"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Avec $c \\approx 3 \\cdot 10^8$ m/s et $f = 50$ Hz, on calcule $\\lambda = \\frac{3 \\cdot 10^8}{50} = 6 \\cdot 10^6$ mètres, soit 6000 km. C'est pour cette raison que l'ARQS est très bien vérifiée pour les installations électriques domestiques et industrielles basse fréquence.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "8b9c0d1e-2f3g-4h5i-6j7k-8l9m0n1o2p3",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans l'ARQS magnétique, quelle forme prend l'équation de conservation de la charge ?",
+        "answers": [
+            "$\\text{div}(\\vec{j}) = 0$",
+            "$\\text{div}(\\vec{j}) = -\\frac{\\partial \\rho}{\\partial t}$",
+            "$\\vec{j} = \\gamma \\vec{E}$",
+            "$\\text{div}(\\vec{j}) = \\rho \\frac{\\partial \\rho}{\\partial t}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "explication": "Dans l'ARQS magnétique, on néglige le courant de déplacement dans l'équation de Maxwell-Ampère. En prenant la divergence de $\\vec{\\text{rot}}(\\vec{B}) = \\mu_0 \\vec{j}$, on obtient $\\text{div}(\\vec{j}) = 0$, car la divergence d'un rotationnel est toujours nulle. Cela signifie que le courant est localement conservatif.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "9c0d1e2f-3g4h-5i6j-7k8l-9m0n1o2p3q4",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude de l'induction électromagnétique, quelle est l'équation locale de Maxwell-Faraday exprimant l'existence d'un champ électrique induit $\\vec{E}_{ind}$ ?",
+        "answers": [
+            "$\\vec{rot}(\\vec{E}_{ind}) = \\vec{0}$",
+            "$\\vec{rot}(\\vec{E}_{ind}) = -\\frac{\\partial \\vec{B}}{\\partial t}$",
+            "$div(\\vec{E}_{ind}) = 0$",
+            "$\\vec{rot}(\\vec{E}_{ind}) = \\mu_0 \\vec{j} + \\varepsilon_0 \\mu_0 \\frac{\\partial \\vec{E}}{\\partial t}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "L'équation de Maxwell-Faraday $\\vec{rot}(\\vec{E}) = -\\frac{\\partial \\vec{B}}{\\partial t}$ montre qu'un champ magnétique variable dans le temps induit un champ électrique tourbillonnaire. Si $\\vec{rot}(\\vec{E}) = \\vec{0}$, le champ serait conservatif (électrostatique), ce qui est faux en régime variable. La dernière proposition correspond à l'équation de Maxwell-Ampère.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "0d1e2f3g-4h5i-6j7k-8l9m-0n1o2p3q4r5",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "La loi de Lenz, interprétation physique du signe dans la loi de Faraday, stipule que :",
+        "answers": [
+            "Les courants induits ont un sens tel qu'ils amplifient la variation de flux.",
+            "Les effets de l'induction s'opposent par leurs effets à la cause qui leur a donné naissance.",
+            "La force électromotrice induite est toujours égale à la dérivée du flux magnétique.",
+            "Le flux propre s'ajoute toujours au flux extérieur pour maintenir le flux total constant."
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "La loi de Lenz est une conséquence du principe de conservation de l'énergie. Si le courant induit amplifiait la cause (variation de flux), on aboutirait à une instabilité (augmentation infinie de l'énergie), ce qui est physiquement impossible. Le signe '-' dans la loi de Faraday $e = -d\\Phi/dt$ traduit cette opposition.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "1e2f3g4h-5i6j-7k8l-9m0n-1o2p3q4r5s6",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Soit un circuit filiforme parcouru par un courant $i(t)$. Le flux propre $\\Phi_{prop}$ de ce circuit est défini par :",
+        "answers": [
+            "Le flux du champ magnétique $\\vec{B}_{ext}$ créé par un aimant extérieur.",
+            "Le flux du champ magnétique $\\vec{B}_{auto}$ créé par le courant $i(t)$ à travers la surface délimitée par le circuit.",
+            "Le flux du champ magnétique total à travers une surface infinie.",
+            "Le produit de l'inductance mutuelle $M$ par le courant $i(t)$."
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Par définition, le flux propre est celui créé par le courant circulant dans le circuit lui-même. On a la relation $\\Phi_{prop} = L \\cdot i$, où $L$ est l'inductance propre. Le flux créé par un circuit voisin est, quant à lui, un flux mutuel.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "2f3g4h5i-6j7k-8l9m-0n1o-2p3q4r5s6t7",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Le potentiel vecteur $\\vec{A}$ est une grandeur auxiliaire introduite en électromagnétisme. Quelle est la relation fondamentale le reliant au champ magnétique $\\vec{B}$ ?",
+        "answers": [
+            "$\\vec{B} = \\vec{grad}(V)$",
+            "$\\vec{B} = \\vec{rot}(\\vec{A})$",
+            "$\\vec{B} = \\frac{\\partial \\vec{A}}{\\partial t}$",
+            "$\\vec{B} = div(\\vec{A}) \\cdot \\vec{u}_r$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "L'équation de Maxwell-Thomson ($div \\vec{B} = 0$) garantit, d'après le théorème de Helmholtz-Hodge, l'existence d'un potentiel vecteur $\\vec{A}$ tel que $\\vec{B} = \\vec{rot}(\\vec{A})$. C'est une relation incontournable pour les calculs de champs magnétiques complexes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "3g4h5i6j-7k8l-9m0n-1o2p-3q4r5s6t7u8",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "En régime variable (ARQS), le champ électrique total $\\vec{E}$ s'exprime en faisant intervenir le potentiel scalaire $V$ et le potentiel vecteur $\\vec{A}$ par la relation :",
+        "answers": [
+            "$\\vec{E} = -\\vec{grad}(V)$",
+            "$\\vec{E} = -\\vec{grad}(V) - \\frac{\\partial \\vec{A}}{\\partial t}$",
+            "$\\vec{E} = -\\frac{\\partial \\vec{A}}{\\partial t}$",
+            "$\\vec{E} = -\\vec{grad}(V) + \\vec{rot}(\\vec{A})$"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "En régime variable, le champ électrique n'est plus purement conservatif. La substitution de $\\vec{B} = \\vec{rot}(\\vec{A})$ dans la loi de Faraday donne $\\vec{rot}(\\vec{E} + \\partial \\vec{A} / \\partial t) = 0$. On en déduit qu'il existe un champ scalaire $V$ tel que $\\vec{E} + \\partial \\vec{A} / \\partial t = -\\vec{grad}(V)$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "4h5i6j7k-8l9m-0n1o-2p3q-4r5s6t7u8v9",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle loi fondamentale, exprimée par l'équation de continuité $\\frac{\\partial \\rho}{\\partial t} + div(\\vec{j}) = 0$, traduit la conservation locale d'une grandeur ?",
+        "answers": [
+            "La conservation de l'énergie électromagnétique",
+            "La conservation de la charge électrique",
+            "La conservation du flux magnétique",
+            "La conservation de la quantité de mouvement"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "L'équation de continuité est une traduction mathématique du fait que la variation temporelle de la charge dans un volume est égale au flux sortant du courant à travers la surface fermée de ce volume. Il n'y a ni création ni destruction nette de charge.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "5i6j7k8l-9m0n-1o2p-3q4r-5s6t7u8v9w0",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un conducteur ohmique de conductivité $\\gamma$, la puissance volumique dissipée par effet Joule $p_J$ s'exprime en fonction du champ $\\vec{E}$ par :",
+        "answers": [
+            "$p_J = \\gamma E$",
+            "$p_J = \\gamma E^2$",
+            "$p_J = \\frac{E^2}{\\gamma}$",
+            "$p_J = \\vec{j} \\cdot \\vec{B}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "La puissance dissipée par effet Joule par unité de volume est donnée par le produit scalaire $\\vec{j} \\cdot \\vec{E}$. Comme $\\vec{j} = \\gamma \\vec{E}$ dans un conducteur ohmique, on obtient $p_J = (\\gamma \\vec{E}) \\cdot \\vec{E} = \\gamma E^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "6j7k8l9m-0n1o-2p3q-4r5s-6t7u8v9w0x1",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quel est le rôle principal d'un transformateur parfait en régime sinusoïdal ?",
+        "answers": [
+            "Modifier la fréquence du signal électrique.",
+            "Adapter l'amplitude d'une tension alternative tout en conservant la fréquence.",
+            "Convertir une tension continue en tension alternative.",
+            "Redresser le courant pour obtenir une tension continue."
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Le transformateur repose sur l'induction mutuelle entre deux bobines couplées magnétiquement. La fréquence est imposée par la source et reste inchangée, tandis que le rapport de transformation permet d'augmenter ou abaisser la tension efficace au prix d'une variation inverse du courant.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "7k8l9m0n-1o2p-3q4r-5s6t-7u8v9w0x1y2",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'inductance mutuelle $M$ entre deux circuits dépend uniquement de :",
+        "answers": [
+            "La valeur des courants circulant dans les circuits.",
+            "La géométrie des circuits et leur position relative.",
+            "La tension appliquée aux bornes des circuits.",
+            "La résistance électrique des conducteurs."
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "L'inductance mutuelle $M$ est un coefficient purement géométrique. Elle traduit la fraction du flux créé par le circuit 1 qui traverse le circuit 2. Elle est définie par $M = \\frac{\\Phi_{1 \\to 2}}{i_1}$. Sa valeur dépend de la forme, de la taille et de la disposition spatiale des circuits, pas de l'état électrique (courant/tension).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "8l9m0n1o-2p3q-4r5s-6t7u-8v9w0x1y2z3",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Lors d'un chauffage par induction haute fréquence (effet de peau), où la densité de courant est-elle la plus élevée dans une pièce métallique ?",
+        "answers": [
+            "Au centre du métal, car le champ y est concentré.",
+            "À la surface extérieure du conducteur.",
+            "La densité est parfaitement uniforme dans tout le volume.",
+            "La densité est nulle à la surface et maximale au centre."
+        ],
+        "difficulty": 4,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "À haute fréquence, le courant est confiné à une fine couche superficielle du conducteur appelée épaisseur de peau $\\delta$. C'est ce qu'on appelle l'effet de peau. La densité de courant décroît exponentiellement avec la profondeur, donc la dissipation thermique par effet Joule est maximale en périphérie.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "9m0n1o2p-3q4r-5s6t-7u8v-9w0x1y2z3a4",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude des champs vectoriels en électromagnétisme, le théorème de Stokes permet de relier :",
+        "answers": [
+            "Le flux d'un champ vectoriel à travers une surface fermée à sa divergence",
+            "La circulation d'un champ vectoriel le long d'un contour fermé au flux de son rotationnel à travers une surface s'appuyant sur ce contour",
+            "Le rotationnel d'un champ vectoriel à son gradient",
+            "Le flux d'un champ vectoriel à sa circulation en tout point"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Le théorème de Stokes s'énonce $\\oint_{\\mathcal{C}} \\vec{A} \\cdot d\\vec{l} = \\iint_{\\mathcal{S}} (\\vec{\\nabla} \\times \\vec{A}) \\cdot d\\vec{S}$. La première proposition décrit le théorème d'Ostrogradski (flux à travers une surface fermée), tandis que la seconde est bien la définition de Stokes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "0n1o2p3q-4r5s-6t7u-8v9w-0x1y2z3a4b5",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans les unités du Système International (SI), la perméabilité magnétique du vide $\\mu_0$ vaut exactement :",
+        "answers": [
+            "$4\\pi \\cdot 10^{-7} \\text{ H}\\cdot\\text{m}^{-1}$",
+            "$8.85 \\cdot 10^{-12} \\text{ F}\\cdot\\text{m}^{-1}$",
+            "$1.26 \\cdot 10^{-6} \\text{ T}\\cdot\\text{m}\\cdot\\text{A}^{-1}$",
+            "$10^{-7} \\text{ H}\\cdot\\text{m}^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "explication": "La valeur de $\\mu_0$ est par définition $4\\pi \\cdot 10^{-7} \\text{ H}\\cdot\\text{m}^{-1}$ (ou $\\text{T}\\cdot\\text{m}\\cdot\\text{A}^{-1}$). La deuxième proposition correspond à la permittivité du vide $\\epsilon_0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "1o2p3q4r-5s6t-7u8v-9w0x-1y2z3a4b5c6",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Considérons une bobine de longueur $l$ et de section $S$ constante. Si l'on double le nombre de spires $N$ sans changer la géométrie ni la perméabilité du milieu, son inductance propre $L$ devient :",
+        "answers": [
+            "Doublée ($2L$)",
+            "Quadruplée ($4L$)",
+            "Divisée par deux ($L/2$)",
+            "Inchangée"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "L'inductance d'un solénoïde est donnée par $L = \\mu_0 N^2 S / l$. Comme $L$ est proportionnel à $N^2$, multiplier $N$ par 2 entraîne une multiplication de $L$ par $2^2 = 4$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "2p3q4r5s-6t7u-8v9w-0x1y-2z3a4b5c6d7",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans l'étude d'un solénoïde long parcouru par un courant variable $i(t)$, le champ électrique induit $\\vec{E}$ à l'intérieur est dirigé selon :",
+        "answers": [
+            "$\\vec{u}_r$ (radial)",
+            "$\\vec{u}_\\theta$ (orthoradial)",
+            "$\\vec{u}_z$ (axial)",
+            "Il est nul"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Par symétrie et en utilisant la loi de Faraday sous forme locale $\\vec{\\nabla} \\times \\vec{E} = -\\partial \\vec{B} / \\partial t$, le champ électrique induit circule autour de l'axe du solénoïde, donc selon le vecteur unitaire $\\vec{u}_\\theta$ en coordonnées cylindriques.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "3q4r5s6t-7u8v-9w0x-1y2z-3a4b5c6d7e8",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "D'un point de vue énergétique, l'inductance propre $L$ d'un circuit passif est toujours :",
+        "answers": [
+            "Positive ou nulle",
+            "Strictement négative",
+            "Nulle pour tout circuit réel",
+            "Un scalaire pouvant changer de signe selon l'orientation"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "explication": "L'énergie magnétique emmagasinée est $\\mathcal{E}_m = \\frac{1}{2} L i^2$. Comme cette énergie est une grandeur physique positive, $L$ doit nécessairement être positive ou nulle.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "4r5s6t7u-8v9w-0x1y-2z3a-4b5c6d7e8f9",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est la dimension du produit $\\mu_0 \\epsilon_0$ ?",
+        "answers": [
+            "$[T][L]^{-1}$",
+            "$[L]^{-2} [T]^2$ (inverse du carré d'une vitesse)",
+            "$[M][L][T]^{-2}$",
+            "$[T][L]^{-2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "On sait que la célérité de la lumière dans le vide est $c = 1/\\sqrt{\\epsilon_0 \\mu_0}$. Ainsi, $\\mu_0 \\epsilon_0 = 1/c^2$. La dimension est donc $[L]^{-2}[T]^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "5s6t7u8v-9w0x-1y2z-3a4b-5c6d7e8f9g0",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un tore de section fine, le champ magnétique $\\vec{B}$ à l'intérieur est-il uniforme ou dépend-il de la position $r$ ?",
+        "answers": [
+            "Il dépend de $r$ en $1/r$",
+            "Il dépend de $r$ en $1/r^2$",
+            "Il est considéré comme uniforme dans la section",
+            "Il est nul à l'intérieur"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "explication": "En appliquant le théorème d'Ampère sur un cercle de rayon $r$ à l'intérieur du tore, $B \\cdot 2\\pi r = \\mu_0 N I$, d'où $B = \\mu_0 N I / (2\\pi r)$. Le champ décroît donc en $1/r$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "6t7u8v9w-0x1y-2z3a-4b5c-6d7e8f9g0h1",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Le couplage entre deux bobines d'inductances propres $L_1$ et $L_2$ est dit 'lâche' si le coefficient de couplage $k = M/\\sqrt{L_1 L_2}$ vérifie :",
+        "answers": [
+            "$k \\approx 1$",
+            "$k \\ll 1$ (et donc $M \\ll \\sqrt{L_1 L_2}$)",
+            "$k = 0$",
+            "$k > 1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Le coefficient $k$ mesure la qualité du couplage. Si $k$ est proche de 1, le couplage est dit 'parfait'. S'il est très faible, les flux s'interpénètrent peu, le couplage est dit 'lâche'.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "7u8v9w0x-1y2z-3a4b-5c6d-7e8f9g0h1i2",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'énergie magnétique d'un système de deux circuits couplés est $\\mathcal{E}_m = \\frac{1}{2}L_1 i_1^2 + \\frac{1}{2}L_2 i_2^2 + Mi_1 i_2$. Pour que cette forme quadratique soit définie positive, il faut que :",
+        "answers": [
+            "$M^2 > L_1 L_2$",
+            "$M^2 \\le L_1 L_2$",
+            "$M = 0$",
+            "$M < 0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Pour qu'une forme quadratique $ax^2 + by^2 + 2cxy$ soit positive, son discriminant doit être négatif ou nul ($c^2 - ab \\le 0$). Ici, $M^2 - L_1 L_2 \\le 0$, donc $M^2 \\le L_1 L_2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "8v9w0x1y-2z3a-4b5c-6d7e-8f9g0h1i2j3",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression de l'inductance mutuelle $M$ d'un tore de section rectangulaire (hauteur $h$, rayons $a$ et $b$) bobiné avec $N_1$ et $N_2$ spires ?",
+        "answers": [
+            "$M = \\frac{\\mu_0 N_1 N_2 h}{2\\pi} \\ln(\\frac{b}{a})$",
+            "$M = \\frac{\\mu_0 (N_1+N_2) h}{2\\pi} \\ln(\\frac{b}{a})$",
+            "$M = \\frac{\\mu_0 N_1 N_2}{2\\pi h} \\ln(\\frac{b}{a})$",
+            "$M = L_1 L_2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "explication": "On calcule le flux propre d'un circuit 1 à travers le circuit 2. Par intégration du champ $B$ dans la section du tore, on obtient $\\Phi_{1\\to 2} = \\frac{\\mu_0 N_1 N_2 h}{2\\pi} \\ln(b/a) I_1$, d'où $M = \\Phi_{1\\to 2}/I_1$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "9w0x1y2z-3a4b-5c6d-7e8f-9g0h1i2j3k4",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 4,
+        "question": "Dans le cadre de l'étude énergétique d'un circuit contenant un condensateur idéal, la puissance électromagnétique entrant dans le condensateur à travers sa surface fermée, calculée via le flux du vecteur de Poynting $\\Pi = \\vec{E} \\wedge \\vec{H}$, est égale à :",
+        "answers": [
+            "$u i$",
+            "$\\frac{d}{dt} \\left( \\frac{1}{2} C u^2 \\right)$",
+            "$R i^2$",
+            "$\\frac{1}{2} C u^2$"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le flux du vecteur de Poynting à travers une surface fermée représente la puissance reçue par le volume. Pour un condensateur, le théorème de Poynting se réduit à la variation de l'énergie électrostatique stockée : $P = \\frac{dE_{elec}}{dt} = \\frac{d}{dt} (\\frac{1}{2} C u^2)$. $u i$ est la puissance électrique globale, mais le vecteur de Poynting décrit spécifiquement le transfert d'énergie par le champ."
+    },
+    {
+        "uuid": "0x1y2z3a-4b5c-6d7e-8f9g-0h1i2j3k4l5",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Dans l'équation de Maxwell-Ampère, le terme de courant de déplacement est défini par $\\vec{j}_d = \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$. Quelle est sa dimension ?",
+        "answers": [
+            "Une intensité (Ampère)",
+            "Une densité de courant volumique ($A \\cdot m^{-2}$)",
+            "Un champ électrique ($V \\cdot m^{-1}$)",
+            "Une densité de charge ($C \\cdot m^{-3}$)"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le courant de déplacement a la même dimension qu'un courant électrique volumique car il s'ajoute au vecteur densité de courant $\\vec{j}$ dans l'équation de Maxwell-Ampère. Son unité dans le SI est donc bien $A \\cdot m^{-2}$."
+    },
+    {
+        "uuid": "1y2z3a4b-5c6d-7e8f-9g0h-1i2j3k4l5m6",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 3,
+        "question": "Une spire est dite en 'convention générateur' pour le phénomène d'induction électromagnétique si :",
+        "answers": [
+            "Le courant circule dans le sens horaire",
+            "La f.e.m. est définie par $e = -\\frac{d\\Phi}{dt}$ avec $\\Phi$ orienté par la règle du tire-bouchon par rapport à $i$",
+            "La tension est toujours opposée au courant",
+            "Le flux $\\Phi$ est toujours positif"
+        ],
+        "correct_answer_index": 1,
+        "explication": "La convention générateur impose que la f.e.m. $e$ et le courant $i$ soient de même sens. Pour que $e = -\\frac{d\\Phi}{dt}$ soit cohérent avec cette convention, il faut que le vecteur surface $\\vec{S}$ (utilisé pour calculer $\\Phi$) soit orienté selon la règle du tire-bouchon en suivant le sens choisi pour le courant $i$."
+    },
+    {
+        "uuid": "2z3a4b5c-6d7e-8f9g-0h1i-2j3k4l5m6n7",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "L'approximation des régimes quasi-stationnaires (ARQS) revient à considérer que la célérité de la lumière est :",
+        "answers": [
+            "Nulle",
+            "Infinie devant les autres vitesses de propagation du problème",
+            "Égale à $300 000 \\text{ km/s}$ exactement",
+            "Négligeable devant les vitesses des électrons"
+        ],
+        "correct_answer_index": 1,
+        "explication": "L'ARQS suppose que le temps de propagation des ondes électromagnétiques ($t = d/c$) est négligeable devant les variations temporelles caractéristiques du signal ($T$). Mathématiquement, cela revient à considérer $c \\to \\infty$, éliminant les phénomènes de retard et de propagation."
+    },
+    {
+        "uuid": "3a4b5c6d-7e8f-9g0h-1i2j-3k4l5m6n7o8",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 3,
+        "question": "Dans le vide, l'équation de Maxwell-Faraday $\\vec{\\text{rot}} \\vec{E} = -\\frac{\\partial \\vec{B}}{\\partial t}$ impose que si $\\vec{B}$ est uniforme mais dépend du temps $t$, alors $\\vec{E}$ :",
+        "answers": [
+            "Est nécessairement nul",
+            "Possède un rotationnel non nul",
+            "Est uniforme dans l'espace",
+            "Est purement radial"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Si $\\vec{B}(t)$ est uniforme dans l'espace, alors $\\frac{\\partial \\vec{B}}{\\partial t}$ est un vecteur constant dans l'espace. Le rotationnel de $\\vec{E}$ est donc non nul. Comme le rotationnel est non nul, $\\vec{E}$ ne peut pas être un champ uniforme (le rotationnel d'un champ uniforme est nul)."
+    },
+    {
+        "uuid": "4b5c6d7e-8f9g-0h1i-2j3k-4l5m6n7o8p9",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Quelle est l'expression correcte de la f.e.m. induite $e$ aux bornes d'une bobine d'inductance propre $L$, en convention récepteur ?",
+        "answers": [
+            "$e = L \\frac{di}{dt}$",
+            "$e = -L \\frac{di}{dt}$",
+            "$e = -\\frac{d}{dt}(Li)$",
+            "$e = \\frac{1}{L} \\int i dt$"
+        ],
+        "correct_answer_index": 2,
+        "explication": "La f.e.m. est définie par $e = -\\frac{d\\Phi}{dt}$. Avec $\\Phi = Li$, on obtient $e = -\\frac{d(Li)}{dt}$. Si $L$ est constante, cela devient $e = -L \\frac{di}{dt}$. En convention récepteur, la tension aux bornes est $u = L \\frac{di}{dt}$, donc $u = -e$."
+    },
+    {
+        "uuid": "5c6d7e8f-9g0h-1i2j-3k4l-5m6n7o8p9q0",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 3,
+        "question": "Dans un transformateur parfait constitué de deux bobines couplées ($L_1, L_2, M$), si le secondaire est ouvert ($i_2 = 0$), la tension induite $u_2$ aux bornes du secondaire vaut :",
+        "answers": [
+            "$M \\frac{di_1}{dt}$",
+            "$L_2 \\frac{di_2}{dt}$",
+            "$0$",
+            "$-M \\frac{di_1}{dt}$"
+        ],
+        "correct_answer_index": 0,
+        "explication": "La loi de Faraday appliquée au secondaire donne $u_2 = -e_2$. Comme $\\Phi_2 = M i_1 + L_2 i_2$ et que $i_2 = 0$, on a $\\Phi_2 = M i_1$. Ainsi, $u_2 = -(-\\frac{d(M i_1)}{dt}) = M \\frac{di_1}{dt}$ (en supposant les sens conventionnels usuels)."
+    },
+    {
+        "uuid": "6d7e8f9g-0h1i-2j3k-4l5m-6n7o8p9q0r1",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 4,
+        "question": "L'effet de peau, qui entraîne une concentration du courant à la périphérie des conducteurs en régime sinusoïdal, est une conséquence directe de :",
+        "answers": [
+            "La loi de Gauss",
+            "La création de courants de Foucault s'opposant à la pénétration du champ $B$",
+            "La conservation de la charge électrique",
+            "L'effet Hall"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le champ magnétique variable induit des courants de Foucault au sein du conducteur. Ces courants induits créent un champ magnétique propre qui s'oppose à la variation du flux extérieur (Loi de Lenz), repoussant ainsi le champ et le courant vers la surface : c'est l'effet de peau."
+    },
+    {
+        "uuid": "7e8f9g0h-1i2j-3k4l-5m6n-7o8p9q0r1s2",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Pour chauffer une casserole sur une plaque à induction, le fond de la casserole doit être :",
+        "answers": [
+            "En verre (isolant)",
+            "En matériau conducteur (métal ferromagnétique)",
+            "En plastique épais",
+            "En céramique"
+        ],
+        "correct_answer_index": 1,
+        "explication": "La plaque à induction crée un champ magnétique variable. Pour chauffer, il faut induire des courants (courants de Foucault) dans le fond du récipient. Cela nécessite un matériau conducteur. Si le matériau n'est pas conducteur, aucun courant n'est généré et la casserole ne chauffe pas."
+    },
+    {
+        "uuid": "8f9g0h1i-2j3k-4l5m-6n7o-8p9q0r1s2t3",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 4,
+        "question": "Le terme correctif de Maxwell $\\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$ est négligeable devant la densité de courant $\\vec{j}$ dans l'ARQS magnétique car :",
+        "answers": [
+            "La densité de charge volumique est nulle",
+            "Le temps de propagation $L/c$ est négligeable devant la période $T$ du signal",
+            "Le champ électrique est toujours statique",
+            "La conductivité est nulle"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Dans l'équation $\\text{rot} \\vec{B} = \\mu_0 \\vec{j} + \\mu_0 \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$, le rapport entre le terme de déplacement et le terme de conduction est de l'ordre de $1/(T \\cdot c^2)$ ou plus simplement lié au fait que $L \\ll \\lambda$ (longueur d'onde). L'hypothèse ARQS implique $T \\gg L/c$."
+    },
+    {
+        "uuid": "9g0h1i2j-3k4l-5m6n-7o8p-9q0r1s2t3u4",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude de couplage magnétique entre deux circuits $(1)$ et $(2)$, l'inductance mutuelle $M$ est maximale lorsque :",
+        "answers": [
+            "Les deux circuits sont très éloignés l'un de l'autre",
+            "La totalité des lignes de champ magnétique créées par le circuit $(1)$ traverse la surface s'appuyant sur le circuit $(2)$",
+            "L'intensité du courant $i_1$ parcourant le circuit $(1)$ est maximale",
+            "Les circuits sont orientés de manière à ce que les vecteurs normales soient orthogonaux"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "L'inductance mutuelle $M$ mesure le couplage entre deux circuits. Elle est maximale quand le coefficient de couplage $k=1$ (couplage parfait), ce qui signifie que tout le flux créé par l'un est intercepté par l'autre. Le courant $i_1$ n'influence pas $M$, qui ne dépend que de la géométrie et de la perméabilité magnétique du milieu.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "0h1i2j3k-4l5m-6n7o-8p9q-0r1s2t3u4v5",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans l'exercice 5 portant sur la décharge d'un condensateur, si le milieu entre les armatures est un isolant parfait de conductivité $\\gamma = 0$, quelle est la valeur de la constante de temps $\\tau$ ?",
+        "answers": [
+            "$\\tau = 0$",
+            "$\\tau \\to +\\infty$ (la sphère conserve indéfiniment sa charge)",
+            "$\\tau = R C$ où $R$ est la résistance des fils",
+            "$\\tau = \\varepsilon_0 / \\gamma$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "La constante de temps de relaxation d'un milieu est donnée par $\\tau = \\varepsilon / \\gamma$. Si $\\gamma = 0$ (isolant parfait), alors $\\tau$ tend vers l'infini. Physiquement, aucun courant de fuite ne peut circuler pour évacuer les charges, le condensateur reste donc chargé indéfiniment.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "1i2j3k4l-5m6n-7o8p-9q0r-1s2t3u4v5w6",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Parmi les équations de Maxwell, laquelle lie le rotationnel du champ magnétique $\\vec{B}$ aux sources (courant et variation du champ électrique) ?",
+        "answers": [
+            "L'équation de Maxwell-Faraday : $\\vec{\\text{rot}} \\vec{E} = -\\frac{\\partial \\vec{B}}{\\partial t}$",
+            "L'équation de Maxwell-Ampère : $\\vec{\\text{rot}} \\vec{B} = \\mu_0 (\\vec{j} + \\varepsilon_0 \\frac{\\partial \\vec{E}}{\\partial t})$",
+            "L'équation de Maxwell-Thomson : $\\text{div} \\vec{B} = 0$",
+            "L'équation de Maxwell-Gauss : $\\text{div} \\vec{E} = \\frac{\\rho}{\\varepsilon_0}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "L'équation de Maxwell-Ampère exprime que le champ magnétique est créé localement par des densités de courant $\\vec{j}$ et par le courant de déplacement $\\varepsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "2j3k4l5m-6n7o-8p9q-0r1s-2t3u4v5w6x7",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'unité du flux magnétique $\\Phi = \\iint_S \\vec{B} \\cdot d\\vec{S}$ dans le système international ?",
+        "answers": [
+            "Le Tesla ($T$)",
+            "Le Weber ($Wb$)",
+            "Le Henry ($H$)",
+            "Le Volt par mètre ($V/m$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "L'unité du flux magnétique est le Weber ($Wb$). Un Weber est égal à $1 \\, T \\cdot m^2$. Le Tesla est l'unité d'induction magnétique $B$, et le Henry est l'unité d'inductance.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "3k4l5m6n-7o8p-9q0r-1s2t-3u4v5w6x7y8",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Considérant le champ magnétique généré par une plaque conductrice infinie parcourue par un courant surfacique $\\vec{j}_s$, pourquoi le champ $\\vec{B}$ est-il nul dans le plan médian de la plaque ?",
+        "answers": [
+            "Parce que le courant surfacique ne circule qu'en surface et non au centre",
+            "Par raison de symétrie : le champ $\\vec{B}$ est antisymétrique par rapport au plan $z=0$, donc sa valeur est nulle en ce point",
+            "Parce que le cuivre possède une susceptibilité magnétique négative",
+            "Parce que la divergence du champ magnétique impose $\\vec{B} = \\vec{0}$ en tout point intérieur"
+        ],
+        "difficulty": 4,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Le champ magnétique $\\vec{B}$ possède une antisymétrie par rapport au plan médian. Si une fonction est antisymétrique ($f(-z) = -f(z)$) et continue, alors elle s'annule nécessairement en $z=0$ (si elle est définie en ce point).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "4l5m6n7o-8p9q-0r1s-2t3u-4v5w6x7y8z9",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'ARQS, on utilise le théorème d'Ampère $\\oint_{\\Gamma} \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{enlacé}$ car :",
+        "answers": [
+            "On néglige le courant de déplacement devant le courant de conduction",
+            "Le régime est obligatoirement stationnaire",
+            "Le champ électrique est toujours perpendiculaire au champ magnétique",
+            "La densité de charge $\\rho$ est nulle partout"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "explication": "L'ARQS (Approximation des Régimes Quasi-Stationnaires) consiste à négliger le terme de Maxwell-Ampère $\\varepsilon_0 \\mu_0 \\frac{\\partial \\vec{E}}{\\partial t}$ devant le terme $\\mu_0 \\vec{j}$. Cela n'impose pas que le régime soit purement continu, mais que les variations soient suffisamment lentes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "5m6n7o8p-9q0r-1s2t-3u4v-5w6x7y8z9a0",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le modèle d'un condensateur plan de rayon $a$ et de temps de décharge $\\tau$, quel est l'ordre de grandeur du rapport de l'énergie électrique $W_e$ sur l'énergie magnétique $W_m$ ?",
+        "answers": [
+            "Proportionnel à $c^2 \\tau^2 / a^2$",
+            "Proportionnel à $a^2 / (c^2 \\tau^2)$",
+            "Constant et égal à $1$",
+            "Proportionnel à $\\tau / a$"
+        ],
+        "difficulty": 5,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "explication": "L'énergie électrique est stockée dans le champ électrique. Lors de la variation du champ, un courant de déplacement crée un champ magnétique (énergie magnétique). L'analyse dimensionnelle et l'utilisation de l'équation de Maxwell-Ampère montrent que le ratio fait intervenir le carré de la vitesse de la lumière $c^2$ et le rapport entre la taille du système et la distance caractéristique de propagation $c\\tau$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "6n7o8p9q-0r1s-2t3u-4v5w-6x7y8z9a0b1",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "La loi de Maxwell-Thomson stipule que $\\text{div} \\vec{B} = 0$. Quelle est la conséquence physique directe de cette équation ?",
+        "answers": [
+            "Le champ magnétique est nécessairement uniforme dans l'espace",
+            "Le flux de $\\vec{B}$ à travers toute surface fermée est nul, signifiant l'absence de charges magnétiques",
+            "Le champ magnétique est conservatif",
+            "Il n'existe pas de champ magnétique variable dans le temps"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "D'après le théorème de Green-Ostrogradski, le flux d'un champ à travers une surface fermée est égal à l'intégrale de sa divergence sur le volume intérieur. Si $\\text{div} \\vec{B} = 0$, le flux est nul : il n'y a pas de sources ponctuelles (monopôles) pour le champ magnétique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "7o8p9q0r-1s2t-3u4v-5w6x-7y8z9a0b1c2",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'inductance mutuelle est définie par $\\Phi_{2 \\to 1} = M i_2$ et $\\Phi_{1 \\to 2} = M i_1$. Quel est le signe de $M$ ?",
+        "answers": [
+            "Il peut être positif ou négatif selon l'orientation choisie des normales aux surfaces",
+            "Il est toujours strictement positif par convention",
+            "Il dépend uniquement de la perméabilité $\\mu_0$ du vide",
+            "Il est égal à la racine carrée du produit des inductances propres"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "explication": "L'inductance mutuelle $M$ est une grandeur algébrique. Son signe dépend des orientations arbitraires choisies pour les surfaces s'appuyant sur les circuits. Le coefficient de couplage $k$ est le rapport normé, souvent utilisé pour éviter cette ambiguïté.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "8p9q0r1s-2t3u-4v5w-6x7y-8z9a0b1c2d3",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Le coefficient de couplage $k$ est défini par $k = |M| / \\sqrt{L_1 L_2}$. Quelle est sa valeur maximale ?",
+        "answers": [
+            "$0$",
+            "$1$",
+            "$1/\\sqrt{2}$",
+            "$\\infty$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Par l'inégalité de Cauchy-Schwarz appliquée à l'énergie magnétique, on démontre que $M^2 \\le L_1 L_2$. Ainsi, $0 \\le k \\le 1$. La valeur $1$ correspond au couplage parfait (aucun flux de fuite).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "9q0r1s2t-3u4v-5w6x-7y8z-9a0b1c2d3e4",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Dans le cadre de l'approximation des régimes quasi-stationnaires (ARQS), pour un conducteur ohmique de conductivité $\\gamma$ soumis à un champ électrique induit $\\vec{E}_{ind}$, quelle est l'expression locale de la densité volumique de courant de Foucault $\\vec{j}$ ?",
+        "answers": [
+            "$\\vec{j} = \\gamma \\vec{E}_{ind}$",
+            "$\\vec{j} = \\vec{0}$ car le métal est un milieu parfait",
+            "$\\vec{j} = \\gamma \\vec{E}_{ind} + \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$",
+            "$\\vec{j} = \\frac{1}{\\gamma} \\vec{E}_{ind}$"
+        ],
+        "correct_answer_index": 0,
+        "explication": "Dans le cadre de l'ARQS, le courant de conduction prédomine largement devant le courant de déplacement. La loi d'Ohm locale s'écrit $\\vec{j} = \\gamma \\vec{E}$. Les courants de Foucault sont les courants de conduction induits par la variation temporelle du champ magnétique (qui crée $\\vec{E}_{ind}$). La réponse 3 propose l'ajout du courant de déplacement, négligeable ici."
+    },
+    {
+        "uuid": "0r1s2t3u-4v5w-6x7y-8z9a-0b1c2d3e4f5",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Quelle est la puissance volumique moyenne dissipée par effet Joule dans un conducteur de conductivité $\\gamma$ parcouru par un courant $\\vec{j}$ ?",
+        "answers": [
+            "$\\vec{j} \\cdot \\vec{E} = \\frac{\\vec{j}^2}{\\gamma}$",
+            "$\\vec{j} \\times \\vec{B}$",
+            "$\\vec{\\Pi} \\cdot \\vec{n}$",
+            "$\\frac{1}{2} \\epsilon_0 E^2$"
+        ],
+        "correct_answer_index": 0,
+        "explication": "La puissance dissipée par effet Joule par unité de volume est donnée par le terme source du bilan énergétique local : $p_J = \\vec{j} \\cdot \\vec{E}$. En utilisant la loi d'Ohm locale $\\vec{j} = \\gamma \\vec{E}$, on obtient bien $\\frac{\\vec{j}^2}{\\gamma}$. Les autres termes correspondent à la force de Laplace, au vecteur de Poynting ou à la densité d'énergie électrique."
+    },
+    {
+        "uuid": "1s2t3u4v-5w6x-7y8z-9a0b-1c2d3e4f5g6",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Considérons un transformateur parfait constitué de deux bobines de $N_1$ et $N_2$ spires. Pour obtenir un transformateur élévateur de tension, quelle condition doit respecter le rapport de transformation ?",
+        "answers": [
+            "$N_2 < N_1$",
+            "$N_2 > N_1$",
+            "$N_2 = N_1$",
+            "Le nombre de spires n'influence pas la tension"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Pour un transformateur idéal, le rapport des tensions est égal au rapport des nombres de spires : $U_2/U_1 = N_2/N_1$. Si $U_2 > U_1$ (élévateur), alors il faut nécessairement que $N_2 > N_1$. Un transformateur abaisseur aurait $N_2 < N_1$."
+    },
+    {
+        "uuid": "2t3u4v5w-6x7y-8z9a-0b1c-2d3e4f5g6h7",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 4,
+        "question": "Quelle est l'analyse dimensionnelle du flux magnétique $\\Phi = \\iint \\vec{B} \\cdot d\\vec{S}$ ?",
+        "answers": [
+            "$[M][L]^2[T]^{-2}[I]^{-1}$",
+            "$[M][L][T]^{-2}[I]^{-1}$",
+            "$[I][T]$",
+            "$[M][L]^2[T]^{-3}[I]^{-2}$"
+        ],
+        "correct_answer_index": 0,
+        "explication": "Le flux magnétique s'exprime en Weber ($Wb$). Comme $e = -d\\Phi/dt$, $\\Phi$ a la dimension d'une tension $\\times$ temps : $[Volt][Secondes]$. La puissance étant $P = UI = [M][L]^2[T]^{-3}$, alors $[U] = [M][L]^2[T]^{-3}[I]^{-1}$. Donc $[\\Phi] = [U][T] = [M][L]^2[T]^{-2}[I]^{-1}$, soit l'équivalent d'une Énergie par Intensité."
+    },
+    {
+        "uuid": "3u4v5w6x-7y8z-9a0b-1c2d-3e4f5g6h7i8",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 5,
+        "question": "Dans le cadre de l'étude d'un conducteur cylindrique, en allant au-delà de l'ordre 1, comment se comporte le champ magnétique induit $B_{ind}$ généré par la variation temporelle du champ électrique ?",
+        "answers": [
+            "Il dépend de la géométrie et de la dérivée temporelle du champ électrique $\\partial \\vec{E} / \\partial t$",
+            "Il est uniforme",
+            "Il est toujours nul",
+            "Il est proportionnel à $1/r^2$"
+        ],
+        "correct_answer_index": 0,
+        "explication": "Dans le cadre de Maxwell-Ampère, $\\vec{\\text{rot}} \\vec{B} = \\mu_0 (\\vec{j} + \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t})$. Le champ magnétique induit par $\\vec{E}$ est lié au courant de déplacement. Son expression dépend de la résolution locale de l'équation de Maxwell-Ampère, et il est proportionnel à la vitesse de variation $\\frac{\\partial \\vec{E}}{\\partial t}$."
+    },
+    {
+        "uuid": "4v5w6x7y-8z9a-0b1c-2d3e-4f5g6h7i8j9",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 3,
+        "question": "Pour un conducteur ohmique, la résistance électrique $R$ est proportionnelle à $1/\\gamma$. Quelle est la dépendance de la résistance vis-à-vis des dimensions géométriques ?",
+        "answers": [
+            "Elle est proportionnelle à la longueur et inversement proportionnelle à la section ($R = \\rho \\frac{L}{S}$)",
+            "Elle est indépendante de la géométrie",
+            "Elle est inversement proportionnelle au carré du rayon ($1/R^2$)",
+            "Elle est proportionnelle au volume"
+        ],
+        "correct_answer_index": 0,
+        "explication": "La résistance d'un conducteur est donnée par la relation classique $R = \\frac{1}{\\gamma} \\frac{l}{S}$, où $l$ est la longueur du conducteur et $S$ sa section. La conductivité $\\gamma$ est le seul paramètre matériel, la géométrie intervient via le rapport longueur/section."
+    },
+    {
+        "uuid": "5w6x7y8z-9a0b-1c2d-3e4f-5g6h7i8j9k0",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "En utilisant le théorème d'Ampère, quelle est la valeur du champ magnétique $\\vec{B}$ à l'intérieur d'un tore de rayon $r$ comportant $N$ spires parcourues par un courant $I$ ?",
+        "answers": [
+            "$B = \\frac{\\mu_0 N I}{2\\pi r}$",
+            "$B = \\mu_0 N I$",
+            "$B = 0$",
+            "$B = \\frac{\\mu_0 N I}{r^2}$"
+        ],
+        "correct_answer_index": 0,
+        "explication": "Par symétrie, $\\vec{B} = B(r) \\vec{u}_{\\theta}$. En choisissant un contour circulaire de rayon $r$ à l'intérieur du tore, le théorème d'Ampère donne $\\oint \\vec{B} \\cdot d\\vec{l} = B \\cdot 2\\pi r = \\mu_0 N I_{enlacé} = \\mu_0 N I$. D'où $B = \\frac{\\mu_0 N I}{2\\pi r}$."
+    },
+    {
+        "uuid": "6x7y8z9a-0b1c-2d3e-4f5g-6h7i8j9k0l1",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Dans un transformateur, si le primaire a $N_1 = 100$ spires et le secondaire $N_2 = 2000$ spires, quel est le rapport de transformation $m = U_2 / U_1$ ?",
+        "answers": [
+            "20",
+            "0.05",
+            "400",
+            "10"
+        ],
+        "correct_answer_index": 0,
+        "explication": "Le rapport de transformation $m$ pour un transformateur est défini par $m = N_2 / N_1$. Ici $m = 2000 / 100 = 20$. Il s'agit d'un transformateur élévateur de tension."
+    },
+    {
+        "uuid": "7y8z9a0b-1c2d-3e4f-5g6h-7i8j9k0l1m2",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 4,
+        "question": "Un solénoïde est parcouru par un courant $i(t) = I_0 \\cos(\\omega t)$. En utilisant la loi de Faraday, à quel instant le champ électrique induit dans le solénoïde est-il maximal ?",
+        "answers": [
+            "Quand $i(t)$ est maximal",
+            "Quand $i(t)$ s'annule",
+            "Quand $i(t) = I_0 / \\sqrt{2}$",
+            "Il est constant"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le champ électrique induit est proportionnel à $\\partial B / \\partial t$, donc à $\\partial i / \\partial t$. Si $i(t) = I_0 \\cos(\\omega t)$, alors $\\partial i / \\partial t = -I_0 \\omega \\sin(\\omega t)$. La dérivée est maximale en valeur absolue quand le sinus est égal à $\\pm 1$, c'est-à-dire quand le courant $i(t)$ s'annule."
+    },
+    {
+        "uuid": "8z9a0b1c-2d3e-4f5g-6h7i-8j9k0l1m2n3",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "L'inductance $L$ d'une bobine est proportionnelle à la perméabilité du milieu $\\mu$. Quel est l'effet de l'insertion d'un noyau en fer doux ($\\mu_r \\gg 1$) dans un solénoïde ?",
+        "answers": [
+            "$L$ diminue fortement",
+            "$L$ augmente fortement",
+            "$L$ reste identique",
+            "$L$ devient nulle"
+        ],
+        "correct_answer_index": 1,
+        "explication": "L'inductance est proportionnelle à la perméabilité magnétique du noyau ($L = \\mu \\frac{N^2 S}{l}$). Comme pour un matériau ferromagnétique $\\mu = \\mu_0 \\mu_r$ avec $\\mu_r \\gg 1$, le flux magnétique pour un même courant est multiplié par $\\mu_r$, donc l'inductance augmente dans les mêmes proportions."
+    },
+    {
+        "uuid": "9a0b1c2d-3e4f-5g6h-7i8j-9k0l1m2n3o4",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude d'un transformateur idéal, si le couplage magnétique entre deux bobines est parfait ($k=1$), comment s'exprime l'inductance mutuelle $M$ en fonction des inductances propres $L_1$ et $L_2$ ?",
+        "answers": [
+            "$\\frac{L_1 + L_2}{2}$",
+            "$\\sqrt{L_1 L_2}$",
+            "$L_1 + L_2$",
+            "$\\frac{L_1 L_2}{L_1 + L_2}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour un couplage parfait, le coefficient de couplage $k = \\frac{M}{\\sqrt{L_1 L_2}} = 1$. Il en découle directement $M = \\sqrt{L_1 L_2}$. Les autres propositions sont des erreurs de confusion avec des associations de composants ou des moyennes sans fondement physique dans ce contexte."
+    },
+    {
+        "uuid": "0b1c2d3e-4f5g-6h7i-8j9k-0l1m2n3o4p5",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "En utilisant l'expression locale de l'énergie magnétique $w_m = \\frac{B^2}{2\\mu_0}$, quelle est l'unité de la densité volumique d'énergie magnétique dans le système international ?",
+        "answers": [
+            "$J/m^3$",
+            "$W/m^2$",
+            "$T/m$",
+            "$H/m$"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La densité volumique d'énergie, par définition, est une énergie par unité de volume. Dans le système international, l'unité est le Joule ($J$) par mètre cube ($m^3$). L'unité $W/m^2$ est homogène à un vecteur de Poynting (flux d'énergie)."
+    },
+    {
+        "uuid": "1c2d3e4f-5g6h-7i8j-9k0l-1m2n3o4p5q6",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'ARQS magnétique, lors de la charge d'un condensateur plan, quelle est la structure du champ magnétique $\\vec{B}$ créé par le courant de déplacement entre les armatures ?",
+        "answers": [
+            "Il est orthoradial et s'annule sur l'axe ($r=0$)",
+            "Il est uniforme dans tout l'entrefer",
+            "Il est colinéaire au champ électrique $\\vec{E}$",
+            "Il est maximal au centre ($r=0$)"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Par symétrie et invariance, le champ magnétique créé par le courant de déplacement dans un condensateur cylindrique est orthoradial. D'après le théorème d'Ampère, $B(r) \\propto r$ à l'intérieur, donc il est nul sur l'axe ($r=0$)."
+    },
+    {
+        "uuid": "2d3e4f5g-6h7i-8j9k-0l1m-2n3o4p5q6r7",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "En régime transitoire, la f.e.m. d'auto-induction $e = -L \\frac{di}{dt}$ s'oppose à la variation du courant. Quelle propriété physique fondamentale cela confère-t-il à la bobine ?",
+        "answers": [
+            "Une inertie électrique",
+            "Une capacité de stockage de charges",
+            "Une dissipation thermique instantanée",
+            "Une résistance électrique infinie"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'analogie avec la mécanique est directe : la bobine empêche la variation brutale du courant tout comme la masse empêche la variation brutale de la vitesse. On parle d'inertie électrique. Le stockage de charge est la propriété du condensateur."
+    },
+    {
+        "uuid": "3e4f5g6h-7i8j-9k0l-1m2n-3o4p5q6r7s8",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans un écoulement fluide chargé, le gaz reste électriquement neutre localement lors d'un transfert de charge car :",
+        "answers": [
+            "Les charges sont mobiles et se compensent instantanément sans accumulation locale",
+            "Le gaz est un isolant parfait empêchant toute redistribution",
+            "La divergence du champ électrique est imposée par Maxwell-Gauss",
+            "Le courant de convection est nul"
+        ],
+        "difficulty": 4,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La neutralité locale signifie que la densité de charge volumique $\\rho$ reste nulle. Dans un gaz conducteur ou un plasma, tout excès de charge est rapidement évacué ou compensé, empêchant une accumulation locale permanente (temps de relaxation très court)."
+    },
+    {
+        "uuid": "4f5g6h7i-8j9k-0l1m-2n3o-4p5q6r7s8t9",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Quelle est l'expression correcte de la f.e.m. d'induction mutuelle $e_{1\\to 2}$ induite dans un circuit (2) par une variation de courant dans un circuit (1) ?",
+        "answers": [
+            "$e_{1\\to 2} = -M \\frac{di_1}{dt}$",
+            "$e_{1\\to 2} = -L_2 \\frac{di_2}{dt}$",
+            "$e_{1\\to 2} = M i_1$",
+            "$e_{1\\to 2} = -M \\frac{di_2}{dt}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La loi de Faraday stipule que $e = -\\frac{d\\Phi}{dt}$. Le flux dans le circuit 2 dû au courant dans 1 est $\\Phi_{1\\to 2} = M i_1$. En dérivant, on obtient $e_{1\\to 2} = -M \\frac{di_1}{dt}$."
+    },
+    {
+        "uuid": "5g6h7i8j-9k0l-1m2n-3o4p-5q6r7s8t9u0",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'approximation des régimes quasi-stationnaires (ARQS) magnétique consiste à négliger le courant de déplacement $\\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$ devant le courant de conduction $\\vec{j}$. Cette approximation est valide si :",
+        "answers": [
+            "La conductivité $\\gamma$ est suffisamment grande ou la fréquence $f$ est faible",
+            "La fréquence est très élevée (GHz)",
+            "Le milieu est rigoureusement isolant",
+            "Le champ magnétique est statique uniquement"
+        ],
+        "difficulty": 4,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La condition de l'ARQS est liée au temps caractéristique $\\tau = \\epsilon / \\gamma$. Si $\\tau \\ll T$ (période), le courant de conduction domine. Cela se traduit par une conductivité importante ou des fréquences de travail suffisamment basses (typiquement jusqu'au MHz/dizaines de MHz)."
+    },
+    {
+        "uuid": "6h7i8j9k-0l1m-2n3o-4p5q-6r7s8t9u0v1",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'énergie magnétique totale d'un système de bobines est donnée par l'intégrale de la densité volumique d'énergie $w_m = \\frac{B^2}{2\\mu_0}$. Sur quel domaine faut-il intégrer cette densité pour obtenir l'énergie totale ?",
+        "answers": [
+            "Sur tout l'espace où le champ magnétique est non nul",
+            "Uniquement sur le volume du conducteur des bobines",
+            "Sur le volume intérieur de la bobine seulement",
+            "Sur la surface fermée entourant la bobine"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'énergie magnétique est stockée dans le champ lui-même. Par conséquent, il faut intégrer la densité volumique sur tout l'espace où le champ magnétique $\\vec{B}$ est non nul, incluant l'intérieur et l'extérieur des bobines."
+    },
+    {
+        "uuid": "7i8j9k0l-1m2n-3o4p-5q6r-7s8t9u0v1w2",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour un solénoïde de longueur infinie parcouru par un courant $I$, où est localisée l'énergie magnétique ?",
+        "answers": [
+            "À l'intérieur du solénoïde, là où le champ est uniforme",
+            "À l'extérieur du solénoïde uniquement",
+            "Dans les spires du solénoïde uniquement",
+            "Répartie uniformément dans tout l'univers"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour un solénoïde idéal infini, le champ magnétique est nul à l'extérieur et uniforme à l'intérieur. Comme l'énergie est localisée là où $\\vec{B} \\neq \\vec{0}$, elle est exclusivement située à l'intérieur du solénoïde."
+    },
+    {
+        "uuid": "8j9k0l1m-2n3o-4p5q-6r7s-8t9u0v1w2x3",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le modèle d'un transformateur réel, que désigne le 'flux de fuite' ?",
+        "answers": [
+            "La partie du flux magnétique qui ne traverse pas toutes les spires du secondaire",
+            "La partie du flux magnétique qui s'échappe du noyau par les bords",
+            "La partie du flux magnétique dissipée en chaleur par effet Joule",
+            "Le flux magnétique perdu lors du changement de fréquence"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Dans un transformateur, tout le flux créé par le primaire ne concatène pas forcément le secondaire. La part de flux qui est 'perdue' et ne traverse pas le secondaire est appelée flux de fuite. Elle est responsable de l'inductance de fuite modélisée en série avec les bobines."
+    },
+    {
+        "uuid": "9k0l1m2n-3o4p-5q6r-7s8t-9u0v1w2x3y4",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude de l'induction électromagnétique, la relation fondamentale $e = -\\frac{d\\Phi}{dt}$ est appelée la loi de Faraday-Lenz. Quel physicien est à l'origine du signe 'moins' indiquant le sens du courant induit ?",
+        "answers": [
+            "André-Marie Ampère",
+            "Michael Faraday",
+            "Heinrich Lenz",
+            "Carl Friedrich Gauss"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 2,
+        "explication": "La loi de Faraday énonce l'existence d'une f.e.m induite proportionnelle à la variation du flux. C'est la loi de Lenz (1834) qui précise le sens du courant induit : il s'oppose, par ses effets, à la cause qui lui a donné naissance (signe négatif). Les autres physiciens sont liés à d'autres équations de Maxwell."
+    },
+    {
+        "uuid": "0l1m2n3o-4p5q-6r7s-8t9u-0v1w2x3y4z5",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans l'étude des transformateurs réels, on définit le coefficient de couplage $k$ entre deux inductances $L_1$ et $L_2$. L'inductance mutuelle $M$ vérifie la relation $M = k\\sqrt{L_1 L_2}$. Sachant qu'un transformateur réel présente des fuites de flux, comment $M$ se compare-t-elle à $\\sqrt{L_1 L_2}$ ?",
+        "answers": [
+            "$M = \\sqrt{L_1 L_2}$",
+            "$M < \\sqrt{L_1 L_2}$",
+            "$M > \\sqrt{L_1 L_2}$",
+            "$M = \\frac{1}{2}\\sqrt{L_1 L_2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Le coefficient de couplage $k$ est défini par $0 \\le k \\le 1$. Le cas $k=1$ correspond au couplage parfait (sans fuites de flux), idéalisation irréalisable en pratique. Dans tout transformateur réel, il existe des fuites de flux, donc $k < 1$, d'où $M < \\sqrt{L_1 L_2}$."
+    },
+    {
+        "uuid": "1m2n3o4p-5q6r-7s8t-9u0v-1w2x3y4z5a6",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'ARQS, on considère un condensateur plan en régime variable. Le champ magnétique $\\vec{B}$ entre les armatures est nul si :",
+        "answers": [
+            "Le condensateur est chargé à saturation",
+            "La tension $u(t)$ est constante au cours du temps",
+            "Le milieu entre les armatures est un vide parfait",
+            "La surface des armatures est infinie"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Selon l'équation de Maxwell-Ampère, $\\vec{\\text{rot}} \\vec{B} = \\mu_0 (\\vec{j} + \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t})$. Entre les armatures, $\\vec{j}=0$. Si $u(t)$ est constante, alors $\\vec{E}$ est constant, $\\frac{\\partial \\vec{E}}{\\partial t} = \\vec{0}$, donc $\\vec{\\text{rot}} \\vec{B} = 0$. Le champ magnétique induit est proportionnel à la dérivée du courant de déplacement."
+    },
+    {
+        "uuid": "2n3o4p5q-6r7s-8t9u-0v1w-2x3y4z5a6b7",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Le feuilletage des noyaux de transformateurs vise à réduire les pertes par courants de Foucault. Si l'on divise l'épaisseur d'une tôle par $N$, comment évoluent les pertes Joule dissipées dans le noyau ?",
+        "answers": [
+            "Elles sont divisées par $N$",
+            "Elles sont divisées par $N^2$",
+            "Elles sont multipliées par $N^2$",
+            "Elles restent inchangées"
+        ],
+        "difficulty": 5,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "La puissance dissipée par courants de Foucault est proportionnelle au carré de l'épaisseur de la tôle (loi en $e^2$). En divisant l'épaisseur par $N$, on divise la surface des boucles de courants, ce qui réduit la puissance dissipée d'un facteur $N^2$."
+    },
+    {
+        "uuid": "3o4p5q6r-7s8t-9u0v-1w2x-3y4z5a6b7c8",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Parmi les équations de Maxwell locales, laquelle permet d'affirmer que le champ électrique diverge en présence de charges électriques ?",
+        "answers": [
+            "$\\vec{\\text{rot}} \\vec{E} = -\\frac{\\partial \\vec{B}}{\\partial t}$",
+            "$\\text{div} \\vec{E} = \\frac{\\rho}{\\epsilon_0}$",
+            "$\\text{div} \\vec{B} = 0$",
+            "$\\vec{\\text{rot}} \\vec{B} = \\mu_0 \\vec{j} + \\dots$"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "L'équation de Maxwell-Gauss, $\\text{div} \\vec{E} = \\frac{\\rho}{\\epsilon_0}$, traduit le fait que les charges sont des sources du champ électrique. La première proposition est Maxwell-Faraday, la troisième est l'absence de charges magnétiques."
+    },
+    {
+        "uuid": "4p5q6r7s-8t9u-0v1w-2x3y-4z5a6b7c8d9",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "La circulation du champ électrique $\\vec{E}$ le long d'un contour fermé $\\mathcal{C}$ est donnée par le théorème de Faraday. Quelle est sa valeur ?",
+        "answers": [
+            "$\\oint_{\\mathcal{C}} \\vec{E} \\cdot d\\vec{l} = 0$",
+            "$\\oint_{\\mathcal{C}} \\vec{E} \\cdot d\\vec{l} = -\\frac{d}{dt} \\iint_{S} \\vec{B} \\cdot d\\vec{S}$",
+            "$\\oint_{\\mathcal{C}} \\vec{E} \\cdot d\\vec{l} = \\frac{Q_{int}}{\\epsilon_0}$",
+            "$\\oint_{\\mathcal{C}} \\vec{E} \\cdot d\\vec{l} = \\iint_{S} \\vec{j} \\cdot d\\vec{S}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "C'est la forme intégrale de l'équation de Maxwell-Faraday. La circulation du champ électrique sur un contour fermé est égale à l'opposé de la dérivée temporelle du flux magnétique à travers une surface s'appuyant sur ce contour."
+    },
+    {
+        "uuid": "5q6r7s8t-9u0v-1w2x-3y4z-5a6b7c8d9e0",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Maxwell a introduit le terme de 'courant de déplacement' $\\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$ dans l'équation d'Ampère. Quelle nécessité physique justifie cet ajout ?",
+        "answers": [
+            "Assurer la loi d'Ohm locale",
+            "Assurer la conservation de la charge électrique (équation de continuité)",
+            "Expliquer la réfraction de la lumière",
+            "Permettre l'existence des ondes sonores"
+        ],
+        "difficulty": 3,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "En régime variable, la divergence de $\\vec{\\text{rot}} \\vec{B}$ doit être nulle. Sans le courant de déplacement, la divergence de $\\mu_0 \\vec{j}$ ne serait pas nulle en général, violant la conservation de la charge ($\text{div} \\vec{j} + \\frac{\\partial \\rho}{\\partial t} = 0$). L'ajout de Maxwell rétablit cette cohérence."
+    },
+    {
+        "uuid": "6r7s8t9u-0v1w-2x3y-4z5a-6b7c8d9e0f1",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans l'Approximation des Régimes Quasi-Stationnaires (ARQS), quelle hypothèse simplificatrice fondamentale fait-on sur la propagation des champs ?",
+        "answers": [
+            "Les champs se propagent à la vitesse $c$",
+            "Les champs sont considérés comme s'établissant instantanément dans tout l'espace",
+            "La vitesse de propagation est négligeable devant $c$",
+            "Il n'y a pas de propagation"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "L'ARQS suppose que la dimension caractéristique $L$ du circuit est très petite devant la longueur d'onde caractéristique $\\lambda$ des phénomènes (soit $L \\ll \\lambda = cT$). À cette échelle, le temps de propagation $L/c$ est négligeable devant la période $T$, ce qui revient à considérer que le signal est instantané."
+    },
+    {
+        "uuid": "7s8t9u0v-1w2x-3y4z-5a6b-7c8d9e0f1g2",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Le coefficient d'inductance mutuelle $M$ entre deux circuits dépend exclusivement de certains paramètres. Lesquels ?",
+        "answers": [
+            "De la géométrie des circuits et de leur position relative",
+            "De l'intensité des courants qui les parcourent",
+            "De la fréquence du régime sinusoïdal imposé",
+            "De la nature du conducteur utilisé"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "explication": "L'inductance mutuelle est une caractéristique géométrique de couplage entre deux circuits. Elle ne dépend ni des courants (car le milieu est linéaire), ni de la fréquence (en régime de basse fréquence)."
+    },
+    {
+        "uuid": "8t9u0v1w-2x3y-4z5a-6b7c-8d9e0f1g2h3",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Le chauffage par induction repose sur le phénomène d'induction électromagnétique. Quel mécanisme physique convertit l'énergie magnétique en énergie thermique dans la pièce métallique ?",
+        "answers": [
+            "Les chocs entre molécules dus à la force de Laplace",
+            "L'effet Joule lié aux courants de Foucault induits dans le matériau",
+            "L'émission de photons infrarouges par le champ magnétique",
+            "La polarisation diélectrique du métal"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Un champ magnétique variable crée des courants induits (courants de Foucault) dans toute pièce conductrice placée dans le champ. La résistance électrique du métal provoque alors une dissipation thermique par effet Joule : $P = \\iiint \\gamma E^2 d\\tau$."
+    },
+    {
+        "uuid": "9u0v1w2x-3y4z-5a6b-7c8d-9e0f1g2h3i4",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'étude d'un solénoïde comportant $N=1000$ spires, le flux magnétique propre total (flux embrassé) est mesuré à $\\Phi_T = 10 \\text{ mWb}$ pour un courant $i = 1 \\text{ A}$. Quelle est la valeur de son inductance propre $L$ ?",
+        "answers": [
+            "$10 \\text{ mH}$",
+            "$10 \\text{ H}$",
+            "$100 \\text{ mH}$",
+            "$1 \\text{ mH}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "explication": "Par définition, l'inductance $L$ est liée au flux propre total $\\Phi_T$ par la relation $\\Phi_T = L \\cdot i$. Ici, $L = \\Phi_T / i = 10 \\cdot 10^{-3} \\text{ Wb} / 1 \\text{ A} = 10 \\text{ mH}$. L'erreur classique est d'oublier de convertir les mH ou de confondre le flux propre avec le flux à travers une seule spire.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "0v1w2x3y-4z5a-6b7c-8d9e-0f1g2h3i4j5",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "En application de la loi de Lenz, le champ magnétique induit $\\vec{B}_{ind}$ s'oppose à la cause qui lui a donné naissance. Si le flux magnétique $\\Phi$ à travers le circuit augmente au cours du temps, le champ induit est :",
+        "answers": [
+            "Dans le même sens que le champ initial $\\vec{B}$",
+            "Dans le sens opposé au champ initial $\\vec{B}$",
+            "Perpendiculaire au champ initial $\\vec{B}$",
+            "Nul car le système est en régime stationnaire"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "La loi de Lenz stipule que les effets de l'induction tendent à s'opposer à la cause qui les engendre. Si le flux augmente ($Δ\\Phi > 0$), le courant induit crée un champ $\\vec{B}_{ind}$ tendant à diminuer ce flux, donc s'opposant au sens du champ initial $\\vec{B}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "1w2x3y4z-5a6b-7c8d-9e0f-1g2h3i4j5k6",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'inductance $L$ d'un circuit électrique est une grandeur physique caractéristique qui traduit la capacité du circuit à :",
+        "answers": [
+            "Stocker de l'énergie électrique sous forme de champ électrostatique",
+            "Stocker de l'énergie magnétique sous forme de champ magnétique",
+            "Dissiper de l'énergie par effet Joule",
+            "Maintenir une différence de potentiel constante"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "Un composant inductif stocke de l'énergie sous forme magnétique, donnée par $\\mathcal{E}_m = \\frac{1}{2} L i^2$. Le stockage électrique concerne le condensateur (énergie électrostatique), et la dissipation concerne la résistance.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "2x3y4z5a-6b7c-8d9e-0f1g-2h3i4j5k6l7",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Dans le cadre de l'Approximation des Régimes Quasi-Stationnaires (ARQS) magnétique, quelle est la forme locale de la loi de Faraday donnant le rotationnel du champ électrique $\\vec{E}$ ?",
+        "answers": [
+            "$\\vec{\\nabla} \\wedge \\vec{E} = \\vec{0}$",
+            "$\\vec{\\nabla} \\wedge \\vec{E} = -\\frac{\\partial \\vec{B}}{\\partial t}$",
+            "$\\vec{\\nabla} \\wedge \\vec{E} = \\mu_0 \\vec{j}$",
+            "$\\vec{\\nabla} \\wedge \\vec{E} = \\epsilon_0 \\frac{\\partial \\vec{E}}{\\partial t}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 1,
+        "explication": "L'ARQS magnétique conserve la loi de Maxwell-Faraday sous sa forme générale : le champ électrique induit est dû à la variation temporelle du champ magnétique. Le rotationnel est bien égal à $-\\partial \\vec{B} / \\partial t$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "3y4z5a6b-7c8d-9e0f-1g2h-3i4j5k6l7m8",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Un modèle de transformateur 'parfait' est un modèle idéalisé qui ne présente pas de pertes. Il est caractérisé par :",
+        "answers": [
+            "Aucune résistance ohmique (bobinages parfaits) et aucune fuite de flux magnétique",
+            "Une tension au secondaire toujours égale à la tension d'entrée",
+            "Uniquement des courants de Foucault négligeables dans le circuit magnétique",
+            "Une impédance de sortie infinie"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "explication": "Le transformateur parfait suppose trois conditions : résistance des bobines nulle, couplage magnétique parfait (coefficient de couplage $k=1$, pas de fuites) et absence de pertes fer (courants de Foucault et hystérésis).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "4z5a6b7c-8d9e-0f1g-2h3i-4j5k6l7m8n9",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "L'énergie magnétique $\\mathcal{E}_m$ stockée dans un tore de volume $V$, où règne un champ magnétique uniforme $\\vec{B}$, est donnée par la densité volumique d'énergie magnétique. Quelle est la formule correcte ?",
+        "answers": [
+            "$\\mathcal{E}_m = V \\cdot \\frac{B^2}{2\\mu_0}$",
+            "$\\mathcal{E}_m = V \\cdot \\frac{B}{2\\mu_0}$",
+            "$\\mathcal{E}_m = \\frac{B^2}{2\\mu_0 V}$",
+            "$\\mathcal{E}_m = \\frac{1}{2} \\mu_0 B^2 V$"
+        ],
+        "difficulty": 2,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "explication": "La densité volumique d'énergie magnétique est $w_m = \\frac{B^2}{2\\mu_0}$. Pour un volume $V$ où $B$ est uniforme, l'énergie totale est simplement le produit $w_m \\times V$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "5a6b7c8d-9e0f-1g2h-3i4j-5k6l7m8n9o0",
+        "image_path": null,
+        "theme": "électromagnétisme",
+        "question": "Pour un transformateur parfait, le rapport de transformation est défini par $m = N_2 / N_1$. Si $m = 20$, quelle tension de sortie $U_2$ obtient-on avec une tension d'entrée $U_1 = 12 \\text{ V}$ ?",
+        "answers": [
+            "$240 \\text{ V}$",
+            "$0.6 \\text{ V}$",
+            "$12 \\text{ V}$",
+            "$2400 \\text{ V}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Électromagnétisme dans l'ARQS",
+        "correct_answer_index": 0,
+        "explication": "Dans un transformateur parfait, le rapport des tensions est égal au rapport du nombre de spires : $U_2 / U_1 = N_2 / N_1 = m$. Ainsi, $U_2 = m \\cdot U_1 = 20 \\times 12 = 240 \\text{ V}$.",
+        "subject": "physique"
+    }
+]

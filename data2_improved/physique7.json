@@ -1,0 +1,1692 @@
+[
+    {
+        "uuid": "ct-001",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Thermal_conduction.svg",
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'étude des mécanismes microscopiques de transfert d'énergie, quel mode de transfert thermique s'effectue par agitation thermique sans mouvement macroscopique de matière au sein d'un solide ou d'un fluide immobile ?",
+        "answers": [
+            "La convection (nécessite un déplacement de matière)",
+            "Le rayonnement (propagation d'ondes électromagnétiques)",
+            "La conduction (transfert par collision entre particules)",
+            "L'advection (transfert par transport de masse)"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La conduction est le mode de transfert thermique qui se propage de proche en proche par interactions entre constituants élémentaires (phonons, électrons), sans déplacement macroscopique de matière. La convection implique un écoulement fluide, et le rayonnement n'a pas besoin de milieu matériel."
+    },
+    {
+        "uuid": "ct-002",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "D'après la loi de Fourier $\\vec{j}_{th} = -\\lambda \\vec{grad}(T)$, quelle est l'unité de la conductivité thermique $\\lambda$ dans le système international ?",
+        "answers": [
+            "$W.m^{-2}.K^{-1}$",
+            "$W.m^{-1}.K^{-1}$",
+            "$J.K^{-1}.m^{-1}$",
+            "$W.K^{-1}.m^{-2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "En utilisant l'analyse dimensionnelle sur $\\lambda = -\\frac{\\vec{j}_{th}}{\\vec{grad}(T)}$, on a $\\frac{[W.m^{-2}]}{[K.m^{-1}]} = W.m^{-1}.K^{-1}$. Les autres réponses confondent le flux surfacique ou l'unité d'énergie."
+    },
+    {
+        "uuid": "ct-003",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "D'après la loi de Fourier, dans quel sens s'effectue le vecteur densité de courant thermique $\\vec{j}_{th}$ ?",
+        "answers": [
+            "Vers les températures croissantes",
+            "Vers les températures décroissantes",
+            "Perpendiculairement aux isothermes",
+            "Parallèlement au gradient de température"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le signe moins dans $\\vec{j}_{th} = -\\lambda \\vec{grad}(T)$ indique que le transfert thermique s'effectue toujours des zones chaudes vers les zones froides, c'est-à-dire dans la direction opposée au gradient de température."
+    },
+    {
+        "uuid": "ct-004",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'expression locale correcte de la loi de Fourier en physique des milieux continus ?",
+        "answers": [
+            "$\\vec{j}_{th} = \\lambda \\vec{grad}(T)$",
+            "$\\vec{j}_{th} = -\\lambda \\vec{grad}(T)$",
+            "$\\vec{j}_{th} = -\\lambda \\vec{div}(T)$",
+            "$\\Phi = -\\lambda \\vec{grad}(T)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La loi de Fourier est une loi phénoménologique. Le signe négatif est crucial : il assure que le flux thermique est dirigé vers les basses températures. $\\Phi$ est un flux (scalaire), et $\\vec{div}$ n'est pas applicable à un scalaire pour obtenir un vecteur."
+    },
+    {
+        "uuid": "ct-005",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'unité SI de la densité de courant thermique $\\vec{j}_{th}$, qui représente la puissance thermique traversant une unité de surface ?",
+        "answers": [
+            "$W.m^{-1}$",
+            "$J.m^{-2}$",
+            "$W.m^{-2}$",
+            "$W.m^{2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Par définition, $\\vec{j}_{th}$ est un flux par unité de surface. Le flux thermique $\\Phi$ s'exprime en Watts ($W$), donc la densité surfacique est en $W$ divisé par des $m^2$, soit $W.m^{-2}$."
+    },
+    {
+        "uuid": "ct-006",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Soit une surface $S$ orientée par le vecteur normal $\\vec{n}$. Comment exprime-t-on rigoureusement le flux thermique $\\Phi$ traversant cette surface ?",
+        "answers": [
+            "$\\Phi = \\iint_S \\vec{j}_{th} \\cdot \\vec{n} \\, dS$",
+            "$\\Phi = \\frac{dQ}{dt}$",
+            "$\\Phi = \\iint_S \\vec{j}_{th} \\cdot d\\vec{S}$",
+            "Les propositions 1 et 3 sont rigoureusement identiques"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 3,
+        "subject": "physique",
+        "explication": "Le flux est le produit scalaire du champ vectoriel par le vecteur surface élémentaire $d\\vec{S} = \\vec{n} dS$. Ainsi, $\\iint_S \\vec{j}_{th} \\cdot \\vec{n} \\, dS$ et $\\iint_S \\vec{j}_{th} \\cdot d\\vec{S}$ désignent la même grandeur physique."
+    },
+    {
+        "uuid": "ct-007",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la valeur typique de la conductivité thermique $\\lambda$ pour un isolant thermique comme l'air immobile ?",
+        "answers": [
+            "$\\sim 10^2 W.m^{-1}.K^{-1}$ (ordre de grandeur d'un métal)",
+            "$\\sim 1 W.m^{-1}.K^{-1}$",
+            "$\\sim 0,025 W.m^{-1}.K^{-1}$",
+            "$\\sim 10^{-4} W.m^{-1}.K^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "L'air immobile est un excellent isolant avec $\\lambda \\approx 0,025 W.m^{-1}.K^{-1}$. Les métaux ont des conductivités bien plus élevées (souvent $> 50 W.m^{-1}.K^{-1}$), tandis que $1 W.m^{-1}.K^{-1}$ correspondrait à des matériaux comme le verre ou certains polymères."
+    },
+    {
+        "uuid": "ct-008",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "En régime stationnaire dans un solide homogène, sans terme source, que peut-on affirmer concernant le flux thermique $\\Phi$ ?",
+        "answers": [
+            "Il est nul car le système est à l'équilibre",
+            "Il est conservatif : le flux entrant est égal au flux sortant",
+            "Il dépend explicitement du temps",
+            "Il est proportionnel à $\\frac{\\partial T}{\\partial t}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le régime stationnaire implique $\\frac{\\partial T}{\\partial t} = 0$. Sans terme source, la divergence du flux thermique est nulle (bilan local), ce qui signifie que le flux est conservatif à travers toute section fermée."
+    },
+    {
+        "uuid": "ct-009",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'équation de la diffusion thermique (équation de la chaleur) pour un milieu homogène et isotrope sans terme source ?",
+        "answers": [
+            "$\\Delta T = 0$ (équation de Laplace)",
+            "$\\frac{\\partial T}{\\partial t} = D_{th} \\Delta T$",
+            "$\\frac{\\partial T}{\\partial t} = D_{th} \\frac{\\partial^2 T}{\\partial x^2}$",
+            "$\\frac{\\partial T}{\\partial t} = \\lambda \\Delta T$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'équation de la diffusion thermique est $\\frac{\\partial T}{\\partial t} = D_{th} \\Delta T$. L'équation $\\Delta T = 0$ ne vaut qu'en régime permanent (stationnaire). La confusion avec $\\lambda$ au lieu de $D_{th}$ est une erreur classique de constante de diffusion."
+    },
+    {
+        "uuid": "ct-010",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'expression du coefficient de diffusivité thermique $D_{th}$ en fonction de la masse volumique $\\rho$, de la capacité thermique massique $c$ et de la conductivité thermique $\\lambda$ ?",
+        "answers": [
+            "$D_{th} = \\frac{\\rho c}{\\lambda}$",
+            "$D_{th} = \\frac{\\lambda}{\\rho c}$",
+            "$D_{th} = \\lambda \\rho c$",
+            "$D_{th} = \\frac{\\lambda}{\\sqrt{\\rho c}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La diffusivité thermique est définie par $D_{th} = \\frac{\\lambda}{\\rho c}$. Elle caractérise la vitesse à laquelle la température s'homogénéise au sein d'un matériau. Une conductivité élevée augmente la vitesse de diffusion, tandis qu'une capacité thermique massique importante la freine (inertie thermique)."
+    },
+    {
+        "uuid": "ct-011",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'étude de l'équation de la chaleur, quelle est l'unité de la diffusivité thermique $D_{th}$ dans le système international ?",
+        "answers": [
+            "$m.s^{-1}$",
+            "$m^2.s^{-1}$",
+            "$W.K^{-1}$",
+            "$J.m^{-1}.K^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'équation de la chaleur $\\frac{\\partial T}{\\partial t} = D_{th} \\Delta T$ impose une homogénéité dimensionnelle. Comme le laplacien $\\Delta T$ est en $K.m^{-2}$ et la dérivée temporelle en $K.s^{-1}$, $D_{th}$ doit nécessairement avoir pour dimension $m^2.s^{-1}$. $m.s^{-1}$ est l'unité d'une vitesse, et $W.K^{-1}$ celle d'une capacité thermique."
+    },
+    {
+        "uuid": "ct-012",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour un solide initialement à température uniforme subissant une variation thermique brusque, quel est l'ordre de grandeur de la distance de diffusion thermique $l$ au bout d'un temps $\\tau$ ?",
+        "answers": [
+            "$l \\sim D_{th} \\tau$",
+            "$l \\sim \\sqrt{D_{th} \\tau}$",
+            "$l \\sim \\frac{D_{th}}{\\tau}$",
+            "$l \\sim \\sqrt{\\frac{\\tau}{D_{th}}}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "D'après l'analyse dimensionnelle de l'équation $\\frac{\\partial T}{\\partial t} = D_{th} \\frac{\\partial^2 T}{\\partial x^2}$, on obtient $\\frac{\\Delta T}{\\tau} \\sim D_{th} \\frac{\\Delta T}{l^2}$, d'où $l^2 \\sim D_{th} \\tau$. La racine carrée est indispensable pour retrouver une longueur. C'est un résultat fondamental du phénomène de diffusion."
+    },
+    {
+        "uuid": "ct-013",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'étude des transferts de surface, comment s'exprime le flux thermique convectif $\\Phi$ reçu par un solide de la part d'un fluide selon la loi de Newton ?",
+        "answers": [
+            "$\\Phi = h S (T_{flu} - T_{sol})$",
+            "$\\Phi = \\lambda S (T_{flu} - T_{sol})$",
+            "$\\Phi = R_{th} (T_{flu} - T_{sol})$",
+            "$\\Phi = h S (T_{sol} - T_{flu})$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La loi de refroidissement de Newton postule que le flux est proportionnel à l'écart de température : $\\Phi = h S (T_{flu} - T_{sol})$. Par convention, le flux est compté positivement lorsqu'il est reçu par le solide. La réponse proposée en dernier est une erreur de signe classique induisant un flux sortant."
+    },
+    {
+        "uuid": "ct-014",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Que traduit physiquement l'hypothèse d'un 'contact thermique parfait' à l'interface entre deux milieux ?",
+        "answers": [
+            "Le flux thermique à travers l'interface est nul",
+            "La température est continue à l'interface ($T_{1} = T_{2}$)",
+            "La résistance thermique de contact est infinie",
+            "Il n'y a pas de transfert par conduction à l'interface"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un contact parfait signifie qu'il n'y a aucune résistance thermique de contact. Le saut de température à l'interface est donc nul, ce qui impose la continuité du champ de température : $T_1(interface) = T_2(interface)$."
+    },
+    {
+        "uuid": "ct-015",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la définition rigoureuse de la résistance thermique $R_{th}$ d'un système en régime stationnaire ?",
+        "answers": [
+            "$R_{th} = \\frac{\\Phi}{\\Delta T}$",
+            "$R_{th} = \\frac{\\Delta T}{\\Phi}$",
+            "$R_{th} = \\frac{1}{\\lambda S}$",
+            "$R_{th} = \\lambda S \\Delta T$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par analogie avec la loi d'Ohm $U = RI$, la loi de Fourier en régime permanent s'écrit $\\Delta T = R_{th} \\Phi$. Ainsi, $R_{th} = \\frac{\\Delta T}{\\Phi}$, avec $\\Delta T$ l'écart de température entre les deux bornes du système."
+    },
+    {
+        "uuid": "ct-016",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'expression de la résistance thermique $R_{th}$ d'une paroi plane de conductivité $\\lambda$, d'épaisseur $e$ et de surface $S$ ?",
+        "answers": [
+            "$R_{th} = \\frac{e \\lambda}{S}$",
+            "$R_{th} = \\frac{e}{\\lambda S}$",
+            "$R_{th} = \\frac{\\lambda S}{e}$",
+            "$R_{th} = \\frac{S}{e \\lambda}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour une paroi plane, le flux est $\\Phi = \\lambda S \\frac{\\Delta T}{e}$. En utilisant $R_{th} = \\frac{\\Delta T}{\\Phi}$, on retrouve $R_{th} = \\frac{e}{\\lambda S}$. Plus le matériau est isolant (petit $\\lambda$) ou épais ($e$ grand), plus la résistance est élevée."
+    },
+    {
+        "uuid": "ct-017",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Comment s'associent deux résistances thermiques $R_1$ et $R_2$ placées en série (flux identique à travers les deux) ?",
+        "answers": [
+            "$R_{eq} = R_1 + R_2$",
+            "$\\frac{1}{R_{eq}} = \\frac{1}{R_1} + \\frac{1}{R_2}$",
+            "$R_{eq} = \\sqrt{R_1 R_2}$",
+            "$R_{eq} = R_1 R_2 / (R_1 + R_2)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Dans une association en série, les chutes de température s'additionnent : $\\Delta T_{tot} = \\Delta T_1 + \\Delta T_2$. Comme $\\Phi$ est constant, $R_{eq} \\Phi = R_1 \\Phi + R_2 \\Phi$, soit $R_{eq} = R_1 + R_2$."
+    },
+    {
+        "uuid": "ct-018",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans quel cas physique rencontre-t-on l'association en parallèle de résistances thermiques ?",
+        "answers": [
+            "Pour des matériaux superposés les uns sur les autres (empilement)",
+            "Pour des matériaux juxtaposés (côte à côte, partageant les mêmes températures aux bornes)",
+            "Uniquement pour les fluides en écoulement laminaire",
+            "Lorsque le flux traverse successivement plusieurs parois"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'association en parallèle correspond au cas où deux milieux sont soumis à la même différence de température $\\Delta T$ (ex: un mur composite avec des matériaux différents côte à côte). On additionne alors les flux : $\\Phi_{tot} = \\Phi_1 + \\Phi_2$, ce qui conduit à $\\frac{1}{R_{eq}} = \\frac{1}{R_1} + \\frac{1}{R_2}$."
+    },
+    {
+        "uuid": "ct-019",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'analogie entre le transfert thermique et l'électricité, quelle grandeur thermique est l'analogue de l'intensité électrique $I$ ?",
+        "answers": [
+            "La température $T$",
+            "Le flux thermique $\\Phi$",
+            "La conductivité thermique $\\lambda$",
+            "La résistance thermique $R_{th}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans l'analogie, le flux thermique $\\Phi$ (en Watts, énergie par unité de temps) représente un débit d'énergie, tout comme l'intensité $I$ (en Ampères, charge par unité de temps) représente un débit de charge."
+    },
+    {
+        "uuid": "ct-020",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'analogie entre le transfert thermique et l'électricité, quelle grandeur thermique est l'analogue du potentiel électrique $V$ ?",
+        "answers": [
+            "La chaleur $Q$",
+            "Le flux thermique $\\Phi$",
+            "La température $T$",
+            "L'entropie $S$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La différence de potentiel électrique $\\Delta V$ est à l'origine du courant $I$. De même, la différence de température $\\Delta T$ est à l'origine du flux thermique $\\Phi$. La température joue donc le rôle de potentiel thermodynamique."
+    },
+    {
+        "uuid": "ct-021",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'étude d'un système thermique modélisé par une capacité thermique $C$ et une résistance thermique $R_{th}$ reliée à un thermostat, quelle est l'expression de la constante de temps $\\tau$ caractérisant l'évolution vers l'équilibre ?",
+        "answers": [
+            "$\\tau = \\frac{R_{th}}{C}$",
+            "$\\tau = R_{th} C$",
+            "$\\tau = \\frac{C}{R_{th}}$",
+            "$\\tau = \\frac{1}{R_{th} C}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "L'équation différentielle régissant l'évolution de la température $T$ du système est $C \\frac{dT}{dt} + \\frac{T - T_{ext}}{R_{th}} = 0$. En isolant le terme de dérivée, on obtient $\\tau \\frac{dT}{dt} + T = T_{ext}$, où $\\tau = R_{th} C$. L'analyse dimensionnelle confirme ce résultat : $[R_{th}] = K.W^{-1}$ et $[C] = J.K^{-1}$, donc $[R_{th} C] = J.W^{-1} = J.(J.s^{-1})^{-1} = s$ (homogène à un temps).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-022",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "D'après la loi de Fourier et l'analogie électrique, quelle est l'unité SI d'une résistance thermique $R_{th}$ ?",
+        "answers": [
+            "$W.K^{-1}$",
+            "$K.W^{-1}$",
+            "$J.K^{-1}$",
+            "$K.m^{-1}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "La relation fondamentale est $\\Phi = \\frac{\\Delta T}{R_{th}}$, où $\\Phi$ est le flux thermique en Watts ($W$) et $\\Delta T$ est la différence de température en Kelvin ($K$). Ainsi, $R_{th} = \\frac{\\Delta T}{\\Phi}$, ce qui donne une unité en $K.W^{-1}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-023",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Un radiateur électrique fonctionnant sous une tension $U = 220 \\text{ V}$ avec une intensité $I = 1 \\text{ A}$ consomme de l'énergie électrique pour délivrer $Q = 790 \\text{ kJ}$ en une heure. Quel est son rendement énergétique ?",
+        "answers": [
+            "100%",
+            "99,7%",
+            "90,5%",
+            "85,2%"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "L'énergie électrique consommée est $E = U I \\Delta t$. Avec $\\Delta t = 3600 \\text{ s}$, $E = 220 \\times 1 \\times 3600 = 792 \\times 10^3 \\text{ J} = 792 \\text{ kJ}$. Le rendement est $\\eta = \\frac{Q}{E} = \\frac{790}{792} \\approx 0,997$, soit $99,7\\%$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-024",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Considérant la loi de Fourier $\\vec{j}_{th} = -\\lambda \\overrightarrow{grad}(T)$, dans quel sens pointe le vecteur densité de courant thermique $\\vec{j}_{th}$ dans la basse atmosphère où la température décroît avec l'altitude ?",
+        "answers": [
+            "Vers le haut (sens des $z$ croissants)",
+            "Vers le bas (sens des $z$ décroissants)",
+            "Il est nul car l'air est un isolant",
+            "Horizontalement"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "explication": "Le gradient de température $\\overrightarrow{grad}(T)$ est dirigé vers les hautes températures, donc vers le bas. Comme $\\vec{j}_{th} = -\\lambda \\overrightarrow{grad}(T)$ et que $\\lambda > 0$, le vecteur densité de flux thermique est dirigé dans le sens opposé au gradient, soit vers le haut (des zones chaudes vers les zones froides).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-025",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Soit un champ de température défini par $T(x,y,z) = \\alpha (x^2 + y^2 + z^2)$ où $x, y, z$ sont des coordonnées spatiales en mètres. Quelle est l'unité de la constante $\\alpha$ ?",
+        "answers": [
+            "$K.m$",
+            "$K.m^{-1}$",
+            "$K.m^{-2}$",
+            "Sans unité"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 2,
+        "explication": "Pour que l'expression soit homogène, le terme $\\alpha (x^2 + y^2 + z^2)$ doit avoir la dimension d'une température ($K$). Comme $x^2, y^2, z^2$ ont pour dimension des $m^2$, $\\alpha$ doit nécessairement s'exprimer en $K.m^{-2}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-026",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la relation correcte entre l'énergie thermique volumique $u_V$ (en $J.m^{-3}$) et l'énergie thermique massique $u_m$ (en $J.kg^{-1}$), où $\\rho$ représente la masse volumique ?",
+        "answers": [
+            "$u_V = \\rho u_m$",
+            "$u_m = \\rho u_V$",
+            "$u_V = u_m / \\rho$",
+            "$u_V = \\frac{u_m}{\\rho^2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "explication": "Par définition, l'énergie contenue dans un volume élémentaire $dV$ est $dU = u_V dV$ ou $dU = u_m dm$. Puisque $dm = \\rho dV$, on en déduit $u_V dV = u_m \\rho dV$, soit $u_V = \\rho u_m$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-027",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le modèle thermique d'un double vitrage (Vitre 1 - Lame d'air - Vitre 2), comment s'associent les résistances thermiques de chaque couche pour le calcul de la résistance totale ?",
+        "answers": [
+            "En parallèle, car le flux se divise",
+            "En série, car le flux thermique traverse chaque couche successivement",
+            "Il n'y a pas d'association possible",
+            "En série pour le verre, mais pas pour l'air"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "Dans un système unidimensionnel où le flux thermique traverse les parois successivement, les résistances thermiques s'ajoutent comme des conducteurs électriques en série : $R_{tot} = R_{v1} + R_{air} + R_{v2}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-028",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pourquoi le double vitrage est-il significativement plus isolant qu'un simple vitrage de même épaisseur totale ?",
+        "answers": [
+            "Le verre possède une très faible conductivité thermique",
+            "L'air emprisonné possède une conductivité thermique très faible devant celle du verre",
+            "La couche d'air empêche totalement le rayonnement thermique",
+            "L'air crée un effet de convection interne intense"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "Le verre est un conducteur thermique relativement médiocre mais bien meilleur que l'air immobile. La conductivité thermique de l'air est d'environ $0,025 \\text{ W.m}^{-1}.K^{-1}$ contre environ $1 \\text{ W.m}^{-1}.K^{-1}$ pour le verre. L'insertion d'une couche d'air permet d'introduire une forte résistance thermique supplémentaire.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-029",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans un double vitrage en régime stationnaire, où le gradient de température $\\frac{dT}{dx}$ est-il le plus important ?",
+        "answers": [
+            "Dans les vitres en verre",
+            "Dans la lame d'air",
+            "Il est le même dans toutes les couches",
+            "Aux interfaces verre-air"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "Le flux $\\Phi = \\lambda S \\frac{dT}{dx}$ étant constant à travers toutes les couches en régime stationnaire, le gradient de température est $\\frac{dT}{dx} = \\frac{\\Phi}{\\lambda S}$. Comme la conductivité thermique $\\lambda$ de l'air est beaucoup plus faible que celle du verre, le gradient de température doit être beaucoup plus élevé dans la lame d'air pour assurer le même flux.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-030",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle condition fondamentale doit être vérifiée pour utiliser l'hypothèse quasi-statique lors du chauffage d'un corps solide ?",
+        "answers": [
+            "$\\tau_{evolution} \\gg \\tau_{diffusion}$",
+            "$\\tau_{evolution} \\ll \\tau_{diffusion}$",
+            "$\\tau_{evolution} = \\tau_{diffusion}$",
+            "La diffusion thermique doit être instantanée"
+        ],
+        "difficulty": 4,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "explication": "L'approximation quasi-statique suppose que le temps caractéristique de l'évolution imposée au système ($\\tau_{evolution}$) est très grand devant le temps de diffusion thermique interne ($\\tau_{diffusion} \\approx L^2/D$). Cela garantit que le profil de température à l'intérieur du corps s'adapte instantanément aux conditions aux limites, restant ainsi très proche du profil stationnaire.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-031",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'étude d'un transfert thermique entre un solide de capacité thermique $C_{solide}$ et une barre de liaison de capacité $C_{barre}$, quelle condition sur les capacités thermiques permet de considérer le régime quasi-statique dans la barre ?",
+        "answers": [
+            "$C_{solide} \\ll C_{barre}$",
+            "$C_{solide} \\gg C_{barre}$",
+            "$C_{solide} = C_{barre}$",
+            "La capacité thermique ne joue aucun rôle dans le régime stationnaire"
+        ],
+        "difficulty": 4,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "Le régime quasi-statique nécessite que le temps caractéristique de diffusion thermique dans la barre soit très court devant l'évolution des conditions aux limites. Si $C_{barre}$ est négligeable devant $C_{solide}$, la barre s'ajuste instantanément au profil de température imposé par les conditions aux limites. Une erreur classique est d'inverser les capacités : si la barre avait une forte capacité, elle stockerait de l'énergie et ne pourrait pas être considérée en régime stationnaire immédiat.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-032",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour modéliser le transfert thermique à travers une paroi composite formée d'un mur de béton et d'une fenêtre de surface différente, quel montage de résistances thermiques doit-on utiliser pour calculer le flux total ?",
+        "answers": [
+            "Montage série : $R_{tot} = R_{mur} + R_{fenetre}$",
+            "Montage parallèle : $1/R_{tot} = 1/R_{mur} + 1/R_{fenetre}$",
+            "Montage hybride dépendant de l'épaisseur",
+            "Somme des flux : $\\Phi_{tot} = \\Phi_{mur} + \\Phi_{fenetre}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "Lorsque le flux thermique se divise entre deux matériaux situés côte à côte, les deux éléments sont soumis à la même différence de température $\\Delta T$ entre l'intérieur et l'extérieur. Il s'agit donc d'une association en parallèle. Le flux total est la somme des flux, ce qui conduit à additionner les conductances thermiques $G_{th} = 1/R_{th}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-033",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de la rénovation thermique d'une habitation, quel est le levier le plus efficace pour réduire le flux thermique déperditif global ?",
+        "answers": [
+            "Augmenter l'épaisseur d'un isolant sur une paroi déjà performante",
+            "Isoler en priorité la paroi possédant la résistance thermique la plus faible",
+            "Peindre les murs en blanc pour limiter le rayonnement",
+            "Installer un chauffage plus puissant"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "Le flux thermique total est $\\Phi = \\sum \\Delta T / R_{th,i}$. L'ajout d'une résistance en série est d'autant plus efficace que la résistance initiale est faible (c'est le maillon le plus faible qui domine la déperdition). Remplacer une paroi très peu isolante par une paroi isolée réduit drastiquement $R_{th}$ global.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-034",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'expression correcte de la résistance thermique $R_{th}$ d'une paroi cylindrique de longueur $H$, de conductivité thermique $\\lambda$, entre les rayons $R_1$ et $R_2$ ?",
+        "answers": [
+            "$R_{th} = \\frac{R_2 - R_1}{\\lambda 2\\pi R_1 H}$",
+            "$R_{th} = \\frac{\\ln(R_2/R_1)}{2\\pi \\lambda H}$",
+            "$R_{th} = \\frac{1}{2\\pi \\lambda H (R_2-R_1)}$",
+            "$R_{th} = \\frac{R_2^2 - R_1^2}{2\\pi \\lambda H}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "En régime stationnaire dans un cylindre, le flux radial $\\Phi = -\\lambda (2\\pi r H) \\frac{dT}{dr}$ est constant. En intégrant entre $R_1$ et $R_2$, on obtient $\\Delta T = \\frac{\\Phi}{2\\pi \\lambda H} \\ln(R_2/R_1)$. Par définition, $\\Phi = \\Delta T / R_{th}$, d'où $R_{th} = \\ln(R_2/R_1) / (2\\pi \\lambda H)$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-035",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cas d'une paroi cylindrique très mince, soit $e = R_2 - R_1 \\ll R_1$, vers quelle limite tend l'expression de la résistance thermique $R_{th}$ ?",
+        "answers": [
+            "Elle tend vers $e / (\\lambda S)$ où $S$ est la surface latérale moyenne",
+            "Elle devient nulle",
+            "Elle reste logarithmique sans simplification",
+            "Elle tend vers une résistance infinie"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "explication": "En utilisant un développement limité de $\\ln(1+x) \\approx x - x^2/2$, avec $R_2 = R_1 + e$, on a $\\ln(R_2/R_1) = \\ln(1 + e/R_1) \\approx e/R_1$. Ainsi, $R_{th} \\approx e / (2\\pi R_1 H \\lambda) = e / (\\lambda S_{lat})$. Pour des épaisseurs faibles, la courbure devient négligeable et la géométrie se comporte comme une paroi plane.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-036",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Considérons un fil électrique cylindrique de rayon $a$ et conductivité électrique $\\gamma$, parcouru par un courant $I$. Quel est le terme source de puissance volumique $\\mathcal{P}_V$ apparaissant dans l'équation de la chaleur ?",
+        "answers": [
+            "$\\mathcal{P}_V = \\frac{I^2}{\\gamma \\pi^2 a^4}$",
+            "$\\mathcal{P}_V = \\frac{I^2}{\\gamma S^2}$ avec $S = \\pi a^2$",
+            "$\\mathcal{P}_V = \\gamma I^2$",
+            "Il n'y a pas de terme source, seulement des conditions aux limites"
+        ],
+        "difficulty": 4,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "La puissance dissipée par effet Joule par unité de volume est $\\mathcal{P}_V = \\vec{j} \\cdot \\vec{E}$. Avec $\\vec{j} = I/S$ et $\\vec{j} = \\gamma \\vec{E}$, on obtient $\\mathcal{P}_V = j^2 / \\gamma = (I/S)^2 / \\gamma = I^2 / (\\gamma S^2)$. C'est le terme source classique pour un conducteur ohmique en conduction thermique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-037",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Un fil conducteur de longueur $L$ est maintenu à ses extrémités à la température $T_0$. Il est le siège d'un chauffage par effet Joule uniforme. Où la température est-elle maximale ?",
+        "answers": [
+            "Aux extrémités $x=0$ et $x=L$",
+            "Au centre du fil $x = L/2$ par symétrie",
+            "À $x = L/4$ et $x = 3L/4$",
+            "La température est uniforme car le chauffage est uniforme"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "L'équation de la chaleur en régime stationnaire avec terme source est $\\lambda \\frac{d^2T}{dx^2} + \\mathcal{P}_V = 0$. La solution est une parabole concave ($T'' < 0$). Les conditions aux limites imposent un maximum là où la dérivée est nulle, c'est-à-dire au centre par symétrie du problème.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-038",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quel est le profil de température $T(x)$ dans un fil homogène avec un terme source volumique $\\mathcal{P}_V$ constant en régime stationnaire ?",
+        "answers": [
+            "Linéaire : $T(x) = Ax + B$",
+            "Parabolique : $T(x) = Ax^2 + Bx + C$",
+            "Exponentiel : $T(x) = A e^{-x/\\delta} + B$",
+            "Constant : $T(x) = T_0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "L'équation $\\lambda \\frac{d^2T}{dx^2} = -\\mathcal{P}_V$ s'intègre deux fois. $\\frac{dT}{dx} = -\\frac{\\mathcal{P}_V}{\\lambda} x + C_1$, puis $T(x) = -\\frac{\\mathcal{P}_V}{2\\lambda} x^2 + C_1 x + C_2$. C'est l'équation d'une parabole.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-039",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'étude d'une ailette de refroidissement de périmètre $p$ et d'aire $S$, avec un coefficient de convection $h$ sur sa surface, que représente la longueur caractéristique $\\delta = \\sqrt{\\frac{\\lambda S}{hp}}$ ?",
+        "answers": [
+            "La longueur d'atténuation du profil de température le long de l'ailette",
+            "La vitesse de diffusion thermique dans l'ailette",
+            "La résistance thermique de l'ailette",
+            "L'épaisseur optimale de l'ailette"
+        ],
+        "difficulty": 4,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "explication": "L'équation de la chaleur avec convection latérale est $\\frac{d^2T}{dx^2} - \\frac{hp}{\\lambda S} (T - T_{ext}) = 0$. En posant $\\theta = T - T_{ext}$, on obtient $\\theta'' - \\frac{1}{\\delta^2} \\theta = 0$. La solution est en $e^{-x/\\delta}$, où $\\delta$ est la longueur caractéristique sur laquelle la température s'écarte de la température ambiante.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-040",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Si l'on ajoute un isolant de résistance thermique $R_3$ par-dessus une paroi de résistance $R_2$ (déjà en place), comment calcule-t-on la résistance totale $R_{tot}$ de l'ensemble ?",
+        "answers": [
+            "$\\frac{R_2 R_3}{R_2 + R_3}$ (association parallèle)",
+            "$R_2 + R_3$ (association série)",
+            "$R_2 / R_3$",
+            "$R_2 + R_3 + R_2 R_3$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "Ajouter un matériau par-dessus un autre impose au flux thermique de traverser successivement les deux couches. La différence de température totale est la somme des chutes de température : $\\Delta T = \\Delta T_2 + \\Delta T_3 = \\Phi R_2 + \\Phi R_3 = \\Phi (R_2 + R_3)$. Les résistances s'ajoutent donc simplement.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-041",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'étude d'un système thermodynamique fermé au repos macroscopique, quelle est l'expression différentielle correcte du premier principe de la thermodynamique ?",
+        "answers": [
+            "$\\Delta U = W + Q$",
+            "$dU = \\delta W + \\delta Q$",
+            "$dU = dW + dQ$",
+            "$dU = \\delta W - \\delta Q$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "La variation d'énergie interne $dU$ est une différentielle totale exacte (fonction d'état), tandis que le travail $W$ et le transfert thermique $Q$ sont des grandeurs de transfert dont les variations sont des différentielles inexactes, notées $\\delta W$ et $\\delta Q$. La première proposition est une forme intégrale, pas infinitésimale. La troisième confond différentielles exactes et inexactes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-042",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "En thermodynamique, le second principe postule l'existence d'une fonction d'état entropie $S$. Cette grandeur est-elle conservée lors d'une transformation ?",
+        "answers": [
+            "Oui, elle est toujours conservée",
+            "Non, elle peut être créée si la transformation est irréversible",
+            "Oui, uniquement pour les systèmes isolés",
+            "Non, elle est toujours détruite au cours du temps"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "Selon le second principe, $dS = \\delta S_{éch} + \\delta S_{crée}$ avec $\\delta S_{crée} \\geq 0$. L'entropie n'est conservée que pour une transformation réversible ($\\delta S_{crée} = 0$). Elle est créée dès qu'il y a irréversibilité (frottements, transfert thermique de proche en proche).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-043",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Lors d'un transfert thermique $Q$ entre un système et un thermostat à température $T_{ext}$ maintenue constante, quelle est l'expression de l'entropie échangée $S_e$ par le système ?",
+        "answers": [
+            "$S_e = Q \\cdot T_{ext}$",
+            "$S_e = \\frac{Q}{T_{ext}}$",
+            "$S_e = \\Delta S_{univ}$",
+            "$S_e = -\\frac{Q}{T_{ext}}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "Par définition de l'entropie reçue lors d'un transfert thermique, la variation d'entropie du thermostat est $\\Delta S_{thermostat} = -Q/T_{ext}$. Le système reçoit donc $S_e = Q/T_{ext}$. Les autres propositions présentent soit une mauvaise unité (Joules au lieu de J/K), soit une confusion avec l'entropie totale.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-044",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "L'approximation de l'Equilibre Thermodynamique Local (ETL) est fondamentale en transfert thermique. Que signifie-t-elle ?",
+        "answers": [
+            "La température est uniforme dans tout le milieu",
+            "On peut définir des grandeurs d'état intensives locales à l'échelle mésoscopique",
+            "Le système est parfaitement isolé de l'extérieur",
+            "Le milieu est obligatoirement à l'équilibre chimique"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "L'ETL suppose que dans un petit volume élémentaire (mésoscopique), le milieu est à l'équilibre, permettant de définir des variables d'état (température, pression) qui varient lentement dans l'espace. Cela ne signifie pas que la température est uniforme (ce serait un équilibre global).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-045",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de la résolution de l'équation de la chaleur, quelle est l'expression de l'opérateur Laplacien $\\Delta T$ en coordonnées cartésiennes à une dimension $x$ ?",
+        "answers": [
+            "$\\frac{\\partial T}{\\partial x}$",
+            "$\\frac{\\partial^2 T}{\\partial x^2}$",
+            "$\\int T dx$",
+            "$\\frac{\\partial^2 T}{\\partial x^2} + \\frac{\\partial^2 T}{\\partial y^2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "Le Laplacien scalaire est défini par $\\Delta T = \\text{div}(\\vec{grad} T)$. En 1D cartésien, cela correspond à la dérivée seconde spatiale de la température par rapport à $x$. La première proposition représente le gradient, et la troisième une intégrale.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-046",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Considérons une paroi plane d'épaisseur $e$ soumise à deux températures imposées $T_1$ et $T_2$. En régime stationnaire, sans terme source interne, quel est le profil de température $T(x)$ ?",
+        "answers": [
+            "Exponentiel",
+            "Linéaire",
+            "Sinusoïdal",
+            "Quadratique"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "En régime stationnaire sans source, l'équation de la chaleur se réduit à $\\Delta T = 0$, soit $d^2T/dx^2 = 0$. L'intégration de cette équation différentielle donne une solution de la forme $T(x) = Ax + B$, ce qui correspond à une fonction linéaire.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-047",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'unité SI du coefficient de transfert conducto-convectif $h$ intervenant dans la loi de Newton : $\\phi = h(T_{ext} - T_s)$ ?",
+        "answers": [
+            "$W.m^{-1}.K^{-1}$",
+            "$W.m^{-2}.K^{-1}$",
+            "$W.K^{-1}$",
+            "$J.m^{-2}.K^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "La loi de Newton s'écrit $\\frac{P}{S} = h(T_{ext} - T_s)$, où $P$ est une puissance (Watts) et $S$ une surface ($m^2$). Ainsi, $h$ s'exprime en $W / (m^2 \\cdot K)$, soit $W.m^{-2}.K^{-1}$. $W.m^{-1}.K^{-1}$ est l'unité de la conductivité thermique $\\lambda$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-048",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'étude des gaz parfaits, quelle loi postule que l'énergie interne $U$ ne dépend que de la température $T$ ($U=U(T)$) ?",
+        "answers": [
+            "Loi de Fourier",
+            "Première loi de Joule",
+            "Loi de Newton",
+            "Loi de Stefan-Boltzmann"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "La première loi de Joule stipule que pour un gaz parfait, l'énergie interne est une fonction exclusive de la température. La loi de Fourier concerne la conduction thermique, et la loi de Newton la convection.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-049",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'expression locale de la conservation de l'énergie pour un milieu solide au repos, de masse volumique $\\rho$ et capacité thermique massique $c$ ?",
+        "answers": [
+            "$\\rho c \\frac{\\partial T}{\\partial t} + \\text{div}(\\vec{j}_{th}) = 0$",
+            "$\\frac{\\partial T}{\\partial t} + \\vec{grad}(T) = 0$",
+            "$\\Delta T = 0$",
+            "$\\rho c \\frac{\\partial T}{\\partial t} = \\lambda \\Delta T$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "explication": "L'équation générale est $\\rho c \\frac{\\partial T}{\\partial t} = -\\text{div}(\\vec{j}_{th})$. En déplaçant le terme de divergence, on obtient $\\rho c \\frac{\\partial T}{\\partial t} + \\text{div}(\\vec{j}_{th}) = 0$. La dernière proposition est l'équation de diffusion simplifiée, mais la première est la forme fondamentale de conservation.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-050",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une phase condensée (solide ou liquide), quelles hypothèses adopte-t-on couramment concernant les capacités thermiques ?",
+        "answers": [
+            "$c_V \\gg c_p$",
+            "$c_V \\simeq c_p \\simeq c$",
+            "$c_p = 0$",
+            "$c_V = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "Les phases condensées sont peu compressibles, ce qui implique que le travail des forces de pression est négligeable. Par conséquent, la différence entre capacité thermique à pression constante ($c_p$) et à volume constant ($c_V$) est négligeable, d'où $c_V \\simeq c_p \\simeq c$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-051",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'étude de la diffusion thermique, quelle est la conséquence d'une inversion du temps ($t \\to -t$) dans l'équation de la chaleur $\\frac{\\partial T}{\\partial t} = D_{th} \\Delta T$ ?",
+        "answers": [
+            "L'équation reste identique, traduisant la réversibilité du phénomène",
+            "L'équation est modifiée (changement de signe), traduisant le caractère irréversible de la diffusion",
+            "La diffusion devient instantanée, le terme de diffusion devenant dominant",
+            "L'équation ne change que si le milieu est homogène"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "L'équation de la chaleur est du premier ordre en temps. Si on remplace $t$ par $-t$, le membre de gauche change de signe, alors que le laplacien spatial ne change pas. Cette rupture de symétrie par renversement du temps est la signature mathématique de l'irréversibilité thermodynamique du processus de diffusion.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-052",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de la modélisation d'une paroi plane de conductivité thermique $\\lambda$ et de surface $S$, si l'on double l'épaisseur $e$ du mur, sa résistance thermique $R_{th}$ devient :",
+        "answers": [
+            "Divisée par 2",
+            "Doublée",
+            "Inchangée",
+            "Multipliée par 4"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "La résistance thermique d'une paroi plane est définie par $R_{th} = \\frac{e}{\\lambda S}$. La résistance est donc directement proportionnelle à l'épaisseur $e$. Si $e$ est doublé, $R_{th}$ est doublée.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-053",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une paroi plane de conductivité $\\lambda$ et d'épaisseur $e$, si l'on double la surface d'échange $S$, comment varie la résistance thermique $R_{th}$ ?",
+        "answers": [
+            "Elle est doublée",
+            "Elle est divisée par 2",
+            "Elle reste inchangée",
+            "Elle est multipliée par $\\sqrt{2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "La résistance thermique est définie par $R_{th} = \\frac{e}{\\lambda S}$. Elle est inversement proportionnelle à la surface $S$. Doubler $S$ revient donc à diviser la résistance par 2.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-054",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Par analogie entre les phénomènes de transport, quel est l'analogue thermique de la conductivité électrique $\\gamma$ (dans la loi d'Ohm locale $\\vec{j} = \\gamma \\vec{E}$) ?",
+        "answers": [
+            "La capacité thermique massique $c$",
+            "La conductivité thermique $\\lambda$ (dans la loi de Fourier $\\vec{j}_{th} = -\\lambda \\overrightarrow{\\text{grad}} T$)",
+            "La diffusivité thermique $D_{th}$",
+            "La résistance thermique $R_{th}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "L'analogie repose sur la structure des lois phénoménologiques : la loi d'Ohm $\\vec{j} = \\gamma \\vec{E}$ et la loi de Fourier $\\vec{j}_{th} = -\\lambda \\overrightarrow{\\text{grad}} T$. Le vecteur densité de courant $\\vec{j}$ correspond à $\\vec{j}_{th}$, le champ électrique $\\vec{E}$ à $-\\overrightarrow{\\text{grad}} T$, et la conductivité électrique $\\gamma$ à la conductivité thermique $\\lambda$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-055",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la condition fondamentale de validité permettant d'utiliser la notion de résistance thermique $R_{th}$ pour un système ?",
+        "answers": [
+            "Le système doit être en régime transitoire rapide",
+            "Le système doit être en régime stationnaire (ou ARQS thermique), i.e. $\\frac{\\partial T}{\\partial t} = 0$",
+            "Le système doit être isolé thermiquement",
+            "La température doit être uniforme dans tout le milieu"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "La résistance thermique est définie par $\\Phi = \\frac{\\Delta T}{R_{th}}$. Cette relation n'est valide que si le flux thermique $\\Phi$ est constant à travers les différentes sections du système, ce qui n'est vrai que si $\\frac{\\partial T}{\\partial t} = 0$ (régime permanent) et en l'absence de sources internes de chaleur.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-056",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une paroi parfaitement calorifugée, quelle est la valeur de la densité de courant thermique $\\vec{j}_{th}$ à travers cette paroi ?",
+        "answers": [
+            "Elle est maximale pour compenser l'isolation",
+            "Elle est nulle, car il n'y a pas de transfert thermique possible",
+            "Elle dépend linéairement de la température extérieure",
+            "Elle est imposée par la loi de Stefan-Boltzmann"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "Une paroi calorifugée est par définition une paroi qui empêche tout transfert thermique. Par conséquent, le vecteur densité de courant thermique $\\vec{j}_{th}$ est nul en tout point de la paroi.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-057",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'expression correcte de la puissance thermique volumique $\\mathcal{P}_V$ créée par effet Joule dans un matériau conducteur de conductivité électrique $\\gamma$ parcouru par un champ électrique $\\vec{E}$ ?",
+        "answers": [
+            "$\\mathcal{P}_V = \\gamma E^2 = \\frac{j^2}{\\gamma}$",
+            "$\\mathcal{P}_V = R I^2$",
+            "$\\mathcal{P}_V = \\lambda \\Delta T$",
+            "$\\mathcal{P}_V = \\gamma E$"
+        ],
+        "difficulty": 4,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "explication": "La puissance dissipée par effet Joule est donnée par $\\vec{j} \\cdot \\vec{E}$. Avec la loi d'Ohm $\\vec{j} = \\gamma \\vec{E}$, on obtient $\\mathcal{P}_V = \\gamma E^2$. Comme $j = \\gamma E$, on peut aussi écrire $\\mathcal{P}_V = \\frac{j^2}{\\gamma}$. L'expression $RI^2$ est une puissance globale et non volumique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-058",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Un panneau solaire possède un rendement de $16\\%$. Quelle doit être sa surface $S$ pour fournir une puissance utile de $220\\,W$ sous un flux solaire incident de $1361\\,W.m^{-2}$ ?",
+        "answers": [
+            "$0,1\\,m^2$",
+            "$1,0\\,m^2$",
+            "$10,0\\,m^2$",
+            "$0,5\\,m^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "La puissance utile est $P_u = \\eta \\times P_{inc} = \\eta \\times S \\times \\text{Flux}$. Donc $S = \\frac{P_u}{\\eta \\times \\text{Flux}} = \\frac{220}{0,16 \\times 1361} \\approx \\frac{220}{217,76} \\approx 1,01\\,m^2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-059",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cas d'une conduction thermique à travers un cylindre creux de rayons $R_1$ et $R_2$ et de longueur $L$, comment varie la résistance thermique $R_{th}$ avec la longueur $L$ ?",
+        "answers": [
+            "Elle est proportionnelle à $L$",
+            "Elle est inversement proportionnelle à $L$",
+            "Elle est indépendante de $L$",
+            "Elle est proportionnelle à $L^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "La résistance thermique d'un cylindre creux est $R_{th} = \\frac{\\ln(R_2/R_1)}{2\\pi \\lambda L}$. Elle est donc inversement proportionnelle à la longueur $L$ du cylindre : plus le cylindre est long, plus la surface d'échange latérale est grande, donc plus la résistance diminue.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-060",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Une barre cylindrique est placée entre deux thermostats. Quelle est l'équation de la chaleur régissant l'évolution de la température $T(x,t)$ au sein de cette barre ?",
+        "answers": [
+            "$\\frac{\\partial T}{\\partial t} = D_{th} \\frac{\\partial^2 T}{\\partial x^2}$",
+            "$\\frac{\\partial T}{\\partial t} = D_{th} \\frac{1}{r} \\frac{\\partial}{\\partial r}(r \\frac{\\partial T}{\\partial r})$",
+            "$\\Delta T = 0$ (équation de Laplace)",
+            "$\\frac{\\partial^2 T}{\\partial t^2} = c^2 \\frac{\\partial^2 T}{\\partial x^2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "explication": "La barre étant cylindrique et le transfert se faisant entre deux thermostats aux extrémités, le gradient de température est unidirectionnel selon l'axe $x$ de la barre. L'équation de diffusion est donc unidimensionnelle : $\\frac{\\partial T}{\\partial t} = D_{th} \\frac{\\partial^2 T}{\\partial x^2}$. La réponse avec $\\frac{1}{r}$ correspond à une symétrie cylindrique radiale.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-061",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'étude d'un transfert thermique unidimensionnel dans une barre de longueur $L$, quel est le temps caractéristique $\\tau_{diff}$ de diffusion thermique ?",
+        "answers": [
+            "$\\tau_{diff} \\sim L / D_{th}$",
+            "$\\tau_{diff} \\sim L^2 / D_{th}$",
+            "$\\tau_{diff} \\sim \\sqrt{L / D_{th}}$",
+            "$\\tau_{diff} \\sim D_{th} / L^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'équation de la chaleur s'écrit $\\frac{\\partial T}{\\partial t} = D_{th} \\frac{\\partial^2 T}{\\partial x^2}$. Par analyse dimensionnelle, $[T]/[t] = [D_{th}] [T]/L^2$, d'où $[t] = L^2 / [D_{th}]$. Le temps caractéristique est donc proportionnel au carré de la distance de diffusion."
+    },
+    {
+        "uuid": "ct-062",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'analogie électrique, pour un mur constitué de plusieurs parois en parallèle (même différence de température imposée), comment s'exprime la conductance thermique totale $G_{tot} = 1/R_{tot}$ ?",
+        "answers": [
+            "La somme des conductances : $G_{tot} = \\sum G_i$",
+            "La somme des résistances : $G_{tot} = 1 / \\sum R_i$",
+            "La moyenne des conductances : $G_{tot} = \\frac{1}{n} \\sum G_i$",
+            "Le produit des conductances : $G_{tot} = \\prod G_i$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour des éléments en parallèle, le flux total est la somme des flux : $\\Phi_{tot} = \\sum \\Phi_i = \\sum G_i \\Delta T$. Comme $\\Phi_{tot} = G_{tot} \\Delta T$, on en déduit que $G_{tot} = \\sum G_i$. L'erreur classique est de confondre avec le montage en série où ce sont les résistances qui s'ajoutent."
+    },
+    {
+        "uuid": "ct-063",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "La laine de verre est un excellent isolant thermique. Quelle propriété physique justifie ce comportement ?",
+        "answers": [
+            "Sa conductivité thermique est très élevée",
+            "Sa conductivité thermique est très faible ($\\lambda \\sim 0,04 W.m^{-1}.K^{-1}$)",
+            "Sa conductivité thermique est nulle, empêchant tout transfert",
+            "Sa capacité thermique est infinie"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un bon isolant doit limiter le flux de chaleur par conduction. Selon la loi de Fourier, $\\Phi = -\\lambda S \\frac{dT}{dx}$, le flux est proportionnel à la conductivité thermique $\\lambda$. Une valeur faible de $\\lambda$ garantit une résistance thermique élevée."
+    },
+    {
+        "uuid": "ct-064",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'étude d'un transfert thermique stationnaire dans un cylindre creux, comment justifie-t-on que $r \\frac{dT}{dr} = C^{te}$ ?",
+        "answers": [
+            "Par l'équation de la chaleur en régime stationnaire en coordonnées cartésiennes",
+            "Par la conservation du flux thermique $\\Phi$ à travers toute surface cylindrique de rayon $r$",
+            "Par l'hypothèse d'une température uniforme dans le cylindre",
+            "Par la linéarité de l'équation de Laplace"
+        ],
+        "difficulty": 4,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "En régime stationnaire sans source interne, le flux $\\Phi = -\\lambda S(r) \\frac{dT}{dr}$ est conservatif. Comme $S(r) = 2\\pi r L$, on a $\\Phi = -\\lambda (2\\pi r L) \\frac{dT}{dr} = C^{te}$, d'où $r \\frac{dT}{dr}$ est constant."
+    },
+    {
+        "uuid": "ct-065",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quel est le profil de température $T(r)$ à l'équilibre stationnaire entre deux cylindres coaxiaux de rayons $r_1$ et $r_2$ ?",
+        "answers": [
+            "$T(r) = A r + B$",
+            "$T(r) = A \\ln(r) + B$",
+            "$T(r) = A / r + B$",
+            "$T(r) = A r^2 + B$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'équation $\\frac{dT}{dr} = \\frac{C}{r}$ s'intègre directement en $T(r) = C \\ln(r) + D$. Ce profil logarithmique est typique des géométries cylindriques, contrairement au profil linéaire en cartésien."
+    },
+    {
+        "uuid": "ct-066",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour un fil conducteur parcouru par un courant $I$, quel est le bilan d'énergie sur une portion élémentaire $dx$ en régime stationnaire ?",
+        "answers": [
+            "$\\Phi(x) - \\Phi(x+dx) + \\frac{d^2 I^2}{\\gamma S} = 0$",
+            "$\\Phi(x) - \\Phi(x+dx) = 0$",
+            "$\\Phi(x) - \\Phi(x+dx) + \\frac{I^2 dx}{\\gamma S} = 0$",
+            "$\\Phi(x) + \\Phi(x+dx) = 0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Le bilan d'énergie stationnaire s'écrit : (Flux entrant) - (Flux sortant) + (Source interne) = 0. La puissance dissipée par effet Joule dans le volume $S dx$ est $dP = R_{elem} I^2 = \\frac{dx}{\\gamma S} I^2$. D'où $\\Phi(x) - \\Phi(x+dx) + \\frac{I^2 dx}{\\gamma S} = 0$."
+    },
+    {
+        "uuid": "ct-067",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'expression correcte de la résistance électrique $R$ d'un tronçon de fil de longueur $dx$, de section $S$ et de conductivité électrique $\\gamma$ ?",
+        "answers": [
+            "$R = \\frac{\\gamma dx}{S}$",
+            "$R = \\frac{dx}{\\gamma S}$",
+            "$R = \\frac{S dx}{\\gamma}$",
+            "$R = \\frac{1}{\\gamma S dx}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La résistance d'un conducteur est donnée par la formule $R = \\rho \\frac{L}{S}$. Comme la résistivité $\\rho = 1/\\gamma$, on obtient $R = \\frac{dx}{\\gamma S}$."
+    },
+    {
+        "uuid": "ct-068",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le modèle de l'ailette de refroidissement, quelle est l'équation différentielle vérifiée par $T(x)$ ?",
+        "answers": [
+            "$\\frac{d^2 T}{dx^2} - k^2 (T - T_e) = 0$",
+            "$\\frac{dT}{dt} + T/\\tau = T_e/\\tau$",
+            "$\\frac{d^2 T}{dx^2} = 0$",
+            "$\\frac{d^2 T}{dx^2} + k^2 T = 0$"
+        ],
+        "difficulty": 4,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le bilan thermique inclut la conduction dans l'ailette et les échanges convectifs avec l'extérieur ($h P dx (T-T_e)$). Cela conduit à $\\frac{d^2 T}{dx^2} = \\frac{h P}{\\lambda S} (T - T_e)$, soit $\\frac{d^2 T}{dx^2} - k^2 (T - T_e) = 0$ avec $k^2 = \\frac{h P}{\\lambda S}$."
+    },
+    {
+        "uuid": "ct-069",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une ailette très longue ($L \\to \\infty$), à quoi tend la température à son extrémité ?",
+        "answers": [
+            "$T_0$ (température de la base)",
+            "$T_e$ (température du fluide ambiant)",
+            "$\\frac{T_0 + T_e}{2}$",
+            "0 K"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La solution de l'équation différentielle est de la forme $T(x) = T_e + (T_0 - T_e)e^{-kx}$. Lorsque $x \\to \\infty$, le terme exponentiel s'annule, donc $T(x) \\to T_e$. C'est une propriété fondamentale des ailettes suffisamment longues."
+    },
+    {
+        "uuid": "ct-070",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre d'un système de chauffage domestique, comment réduire la puissance de chauffage $\\mathcal{P} = \\frac{\\Delta T}{R_{tot}}$ de 50% ?",
+        "answers": [
+            "Doubler la résistance thermique totale $R_{tot}$",
+            "Diviser par deux la résistance thermique totale $R_{tot}$",
+            "Doubler la température extérieure",
+            "Diviser par 4 la résistance thermique totale $R_{tot}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La puissance thermique est inversement proportionnelle à la résistance thermique. Pour diviser $\\mathcal{P}$ par 2, il faut multiplier $R_{tot}$ par 2 (ajout d'isolant). L'erreur est de diviser la résistance, ce qui augmenterait le flux de chaleur."
+    },
+    {
+        "uuid": "ct-071",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'étude des bilans énergétiques, quelle est l'unité SI de la puissance thermique $\\mathcal{P}$ ?",
+        "answers": [
+            "Joule ($J$)",
+            "Watt ($W$)",
+            "Watt par mètre carré ($W.m^{-2}$)",
+            "Joule par Kelvin ($J.K^{-1}$)"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "La puissance thermique est définie comme un transfert d'énergie par unité de temps : $\\mathcal{P} = \\frac{dQ}{dt}$. Puisque l'énergie s'exprime en Joules ($J$) et le temps en secondes ($s$), l'unité est le Joule par seconde ($J.s^{-1}$), appelé Watt ($W$). Le $J$ est une unité d'énergie, le $W.m^{-2}$ est l'unité d'une densité de flux thermique."
+    },
+    {
+        "uuid": "ct-072",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans un milieu conducteur homogène de conductivité $\\lambda$, en régime stationnaire et en l'absence de source de chaleur, comment évolue le flux thermique $\\Phi$ à travers une surface fermée entourant une source ?",
+        "answers": [
+            "Il est indépendant du rayon $r$ de la surface choisie",
+            "Il est proportionnel à la surface $4\\pi r^2$",
+            "Il décroît comme $1/r^2$",
+            "Il est nul quel que soit le rayon"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "explication": "En régime stationnaire sans source interne, le principe de conservation de l'énergie impose que le flux thermique traversant toute surface fermée entourant la source est constant. Si le flux dépendait du rayon, cela signifierait qu'il y a accumulation ou création de chaleur dans le volume considéré, ce qui contredit le régime stationnaire."
+    },
+    {
+        "uuid": "ct-073",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une sphère de conductivité $\\lambda$, parcourue par un flux thermique radial permanent $\\Phi$ issu d'une source centrale, quelle est la dépendance radiale de la densité de courant thermique $\\vec{j}_{th}$ ?",
+        "answers": [
+            "Indépendante de $r$",
+            "Proportionnelle à $1/r^2$",
+            "Proportionnelle à $1/r$",
+            "Proportionnelle à $r^2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "La densité de courant thermique est liée au flux par $\\Phi = \\iint \\vec{j}_{th} \\cdot d\\vec{S}$. Pour une sphère, $\\Phi = j_{th}(r) \\cdot 4\\pi r^2$. Comme $\\Phi$ est constant en régime stationnaire, on en déduit $j_{th} = \\frac{\\Phi}{4\\pi r^2}$, soit une dépendance en $1/r^2$."
+    },
+    {
+        "uuid": "ct-074",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quel mode de transfert thermique est le seul à pouvoir se propager dans le vide, sans nécessiter de support matériel ?",
+        "answers": [
+            "Conduction",
+            "Convection",
+            "Rayonnement",
+            "Advection"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 2,
+        "explication": "La conduction et la convection nécessitent un milieu matériel (agitation moléculaire ou déplacement de fluide). Le rayonnement thermique correspond à l'émission d'ondes électromagnétiques par tout corps à une température $T > 0 K$, phénomène qui ne nécessite aucun support matériel."
+    },
+    {
+        "uuid": "ct-075",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la valeur approximative de la conductivité thermique $\\lambda$ de l'acier ?",
+        "answers": [
+            "$0,02 W.m^{-1}.K^{-1}$",
+            "$16 W.m^{-1}.K^{-1}$",
+            "$400 W.m^{-1}.K^{-1}$",
+            "$2000 W.m^{-1}.K^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "Les métaux sont de bons conducteurs thermiques. L'acier a une conductivité modérée (environ $15-50 W.m^{-1}.K^{-1}$), bien inférieure à celle du cuivre ($~400$) et bien supérieure à celle des isolants comme l'air ($~0,02$). La valeur $16$ est typique d'un acier inoxydable."
+    },
+    {
+        "uuid": "ct-076",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la valeur approximative de la conductivité thermique $\\lambda$ du cuivre ?",
+        "answers": [
+            "$1 W.m^{-1}.K^{-1}$",
+            "$15 W.m^{-1}.K^{-1}$",
+            "$400 W.m^{-1}.K^{-1}$",
+            "$1000 W.m^{-1}.K^{-1}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 2,
+        "explication": "Le cuivre est un excellent conducteur thermique et électrique. Sa conductivité thermique est élevée, de l'ordre de $380$ à $400 W.m^{-1}.K^{-1}$ à température ambiante, ce qui le distingue nettement des autres métaux courants."
+    },
+    {
+        "uuid": "ct-077",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'équation de la chaleur $\\frac{\\partial T}{\\partial t} = D_{th} \\Delta T$, que traduit une valeur élevée de la diffusivité thermique $D_{th}$ ?",
+        "answers": [
+            "Une propagation lente des variations de température",
+            "Une propagation rapide des variations de température",
+            "Une inertie thermique très importante",
+            "L'absence de transfert thermique"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "La diffusivité thermique $D_{th} = \\frac{\\lambda}{\\rho c}$ caractérise la rapidité avec laquelle un milieu s'adapte thermiquement à son environnement. Plus $D_{th}$ est grand, plus le temps de réponse du système aux variations de température est court (propagation rapide)."
+    },
+    {
+        "uuid": "ct-078",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "En régime permanent (stationnaire) sans source de chaleur interne, l'équation de la chaleur se simplifie pour devenir :",
+        "answers": [
+            "L'équation de Poisson $\\Delta T = f(M)$",
+            "L'équation de Laplace $\\Delta T = 0$",
+            "L'équation d'onde $\\Delta T - \\frac{1}{v^2} \\frac{\\partial^2 T}{\\partial t^2} = 0$",
+            "L'équation de diffusion $\\frac{\\partial T}{\\partial t} = D_{th} \\Delta T$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "En régime stationnaire, $\\frac{\\partial T}{\\partial t} = 0$. L'équation de diffusion devient donc $\\Delta T + \\frac{P}{\\lambda} = 0$. Sans source interne ($P=0$), on obtient $\\Delta T = 0$, qui est l'équation de Laplace."
+    },
+    {
+        "uuid": "ct-079",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "La capacité thermique $C$ d'un système est une grandeur caractérisant son inertie thermique. Quelle est sa définition correcte ?",
+        "answers": [
+            "$C = \\frac{\\delta Q}{dT}$",
+            "$C = m \\cdot c$ (avec $c$ la capacité thermique massique)",
+            "Les deux définitions sont équivalentes",
+            "Aucune des deux n'est correcte"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 2,
+        "explication": "La capacité thermique $C$ représente l'énergie nécessaire pour élever la température du système de $1K$. Elle est définie par la dérivée du transfert thermique par rapport à la température ($C = \\frac{dQ}{dT}$) et est liée aux propriétés extensives du corps par $C = mc$."
+    },
+    {
+        "uuid": "ct-080",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour une paroi plane de surface $S=1 m^2$, d'épaisseur $e=1 cm$ et de conductivité $\\lambda=1 W.m^{-1}.K^{-1}$, quelle est la valeur de la résistance thermique $R_{th}$ ?",
+        "answers": [
+            "$0,01 K.W^{-1}$",
+            "$1 K.W^{-1}$",
+            "$100 K.W^{-1}$",
+            "$0,1 K.W^{-1}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "explication": "La résistance thermique d'une paroi plane est donnée par $R_{th} = \\frac{e}{\\lambda S}$. En convertissant $e$ en mètres ($e=0,01 m$), on obtient $R_{th} = \\frac{0,01}{1 \\cdot 1} = 0,01 K.W^{-1}$."
+    },
+    {
+        "uuid": "ct-081",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'étude thermodynamique d'un système fermé, comment s'exprime le second principe de la thermodynamique sous forme locale ou pour une transformation infinitésimale ?",
+        "answers": [
+            "$dS = \\delta S_e + \\delta S_c$ avec $\\delta S_c \\ge 0$",
+            "$dS = \\delta Q / T_{ext}$",
+            "$dS = 0$ en conduction pure",
+            "$\\Delta S = Q/T$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "explication": "Le second principe stipule que la variation d'entropie $dS$ est la somme de l'entropie échangée avec l'extérieur $\\delta S_e$ et de l'entropie créée à l'intérieur du système $\\delta S_c$. La création d'entropie est toujours positive ou nulle pour une transformation réelle. Les autres propositions oublient soit le terme de création (système réversible), soit confondent entropie et chaleur.",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-082",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Lorsqu'on effectue l'intégration d'une différentielle totale exacte $df$ entre deux états d'équilibre, que représente le résultat ?",
+        "answers": [
+            "Une quantité path-dependent (dépendante du chemin suivi)",
+            "Une variation globale de fonction d'état $\\Delta f = f_B - f_A$",
+            "Une dérivée temporelle de la grandeur $f$",
+            "Une puissance instantanée"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "explication": "Si $df$ est une différentielle totale exacte (ce qui est le cas pour les fonctions d'état comme $U$, $S$, $T$, $V$), alors son intégrale ne dépend que des bornes, soit $\\int_{A}^{B} df = f(B) - f(A) = \\Delta f$. Les quantités comme le travail $\\delta W$ ou la chaleur $\\delta Q$ ne sont pas des différentielles exactes et dépendent du chemin.",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-083",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Selon la loi de Fourier, quelle est la direction du vecteur densité de flux thermique $\\vec{j}_{th}$ ?",
+        "answers": [
+            "Il est colinéaire et de même sens que $\\vec{grad}(T)$",
+            "Il est opposé au gradient de température : $\\vec{j}_{th} = -\\lambda \\vec{grad}(T)$",
+            "Il est perpendiculaire au gradient de température",
+            "Il est toujours dirigé vers les zones les plus chaudes"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "explication": "La loi de Fourier stipule que la chaleur diffuse des zones chaudes vers les zones froides. Le gradient de température $\\vec{grad}(T)$ étant dirigé vers les hautes températures, le vecteur densité de flux $\\vec{j}_{th}$ doit pointer dans la direction opposée, d'où le signe négatif.",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-084",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quel est le statut physique de la loi de Fourier en thermodynamique des milieux continus ?",
+        "answers": [
+            "C'est une loi fondamentale issue de la mécanique quantique",
+            "C'est une loi phénoménologique dérivée de l'observation expérimentale",
+            "C'est un théorème démontré à partir des lois de Newton",
+            "C'est une identité mathématique valable pour tout milieu"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "explication": "La loi de Fourier est une loi phénoménologique : elle a été établie pour modéliser le comportement macroscopique de la conduction thermique observé expérimentalement. Elle n'est pas une loi fondamentale (contrairement aux lois de conservation) et peut être mise en défaut à très petite échelle ou dans des milieux complexes.",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-085",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour un système fluide ou solide homogène de masse volumique $\\rho$ et de capacité thermique massique $c$, quelle est la variation d'énergie interne $dU$ contenue dans un volume élémentaire $d\\tau$ ?",
+        "answers": [
+            "$dU = \\rho c dT d\\tau$",
+            "$dU = c dT$",
+            "$dU = \\vec{j}_{th} \\cdot d\\vec{S} dt$",
+            "$dU = u \\cdot \\rho d\\tau$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "explication": "La variation d'énergie interne pour une variation de température $dT$ est $dU = m c dT$. Comme $m = \\rho d\\tau$, on obtient $dU = \\rho c dT d\\tau$. C'est la base du bilan thermique local.",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-086",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "En établissant le bilan énergétique sur un volume élémentaire $dx$ d'une barre conductrice à 1D, quelle est l'équation locale de conservation de l'énergie (sans terme source) ?",
+        "answers": [
+            "$\\rho c \\frac{\\partial T}{\\partial t} = - \\frac{\\partial j_{th}}{\\partial x}$",
+            "$\\rho c \\frac{\\partial T}{\\partial t} = + \\frac{\\partial j_{th}}{\\partial x}$",
+            "$\\frac{\\partial T}{\\partial t} = \\Delta T$",
+            "$\\rho c \\frac{\\partial T}{\\partial t} = \\lambda \\frac{\\partial T}{\\partial x}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "explication": "Le bilan s'écrit $\\frac{\\partial u}{\\partial t} = - div(\\vec{j}_{th})$. En 1D, cela devient $\\rho c \\frac{\\partial T}{\\partial t} = - \\frac{\\partial j_{th}}{\\partial x}$. Le signe moins exprime qu'une divergence positive du flux (flux sortant) entraîne une diminution de l'énergie interne.",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-087",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans l'équation générale de la chaleur, que représente le terme source volumique $\\mathcal{P}_V$ (exprimé en $W\\cdot m^{-3}$) ?",
+        "answers": [
+            "Le flux thermique sortant par les parois",
+            "La puissance thermique produite ou consommée localement par unité de volume",
+            "La capacité thermique massique du matériau",
+            "La variation temporelle du gradient de température"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "explication": "Le terme $\\mathcal{P}_V$ correspond à une création ou une annihilation d'énergie thermique au sein même du volume, par exemple via l'effet Joule ou une réaction chimique exothermique. Il s'ajoute au bilan d'énergie.",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-088",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Soit une surface $S$ à travers laquelle passe un vecteur densité de flux thermique $j$ uniforme et perpendiculaire à la surface. Quelle est la relation correcte avec le flux thermique $\\Phi$ ?",
+        "answers": [
+            "$\\Phi = j / S$",
+            "$\\Phi = j \\cdot S$",
+            "$j = \\Phi \\cdot S$",
+            "$\\Phi = j / \\sqrt{S}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction themique",
+        "explication": "Le flux thermique $\\Phi$ est le débit d'énergie. Par définition, $\\Phi = \\iint_{S} \\vec{j} \\cdot d\\vec{S}$. Si $\\vec{j}$ est uniforme et normal à la surface $S$, alors $\\Phi = j \\times S$. L'unité est cohérente : $[W] = [W/m^2] \\times [m^2]$.",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-089",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "En combinant la loi de Fourier et le bilan d'énergie, quelle est l'équation de la chaleur avec un terme source volumique $\\mathcal{P}_V$ ?",
+        "answers": [
+            "$\\frac{\\partial T}{\\partial t} = D_{th} \\Delta T$",
+            "$\\frac{\\partial T}{\\partial t} = D_{th} \\Delta T + \\frac{\\mathcal{P}_V}{\\rho c}$",
+            "$\\frac{\\partial T}{\\partial t} = D_{th} \\Delta T + \\mathcal{P}_V \\rho c$",
+            "$\\frac{\\partial T}{\\partial t} = \\Delta T + \\frac{\\mathcal{P}_V}{\\lambda}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "explication": "En substituant $\\vec{j}_{th} = -\\lambda \\vec{grad}(T)$ dans le bilan $\\rho c \\frac{\\partial T}{\\partial t} = -div(\\vec{j}_{th}) + \\mathcal{P}_V$, on obtient $\\rho c \\frac{\\partial T}{\\partial t} = \\lambda \\Delta T + \\mathcal{P}_V$. En divisant par $\\rho c$ et en utilisant la diffusivité $D_{th} = \\frac{\\lambda}{\\rho c}$, on arrive à l'expression correcte.",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-090",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Considérons une interface entre deux milieux conducteurs. En l'absence de source surfacique de chaleur, quelle propriété vérifie le flux thermique ?",
+        "answers": [
+            "Le flux thermique s'annule à l'interface",
+            "La composante normale du vecteur densité de flux thermique est continue",
+            "La température est nécessairement discontinue",
+            "Le gradient de température est identique des deux côtés"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "explication": "Par conservation de l'énergie, en l'absence de stockage ou de source d'énergie à l'interface, tout flux entrant doit ressortir. Par conséquent, la composante normale du vecteur densité de flux $\\vec{j}_{th} \\cdot \\vec{n}$ doit être identique de part et d'autre de l'interface.",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-091",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cadre de l'analogie entre la conduction thermique et l'électrocinétique, pour une paroi, la loi d'Ohm thermique s'écrit $\\Delta T = R_{th} \\Phi$. Que représente physiquement le terme $\\Delta T$ ?",
+        "answers": [
+            "La variation temporelle de la température de la paroi",
+            "La différence de température entre les deux faces de la paroi",
+            "Le gradient spatial de température $\\overrightarrow{\\text{grad}}(T)$",
+            "La température moyenne à l'interface"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "Par analogie, $\\Delta T = T_1 - T_2$ est la force électromotrice thermique (différence de potentiel). Le gradient est lié au flux par la loi de Fourier $\\Phi = -\\lambda S \\text{grad}(T)$, mais $\\Delta T$ est bien l'écart global aux bornes de la résistance thermique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-092",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la relation fondamentale, analogue à la loi d'Ohm $U=RI$, permettant de relier le flux thermique $\\Phi$ (en $W$) et la différence de température $\\Delta T$ (en $K$) ?",
+        "answers": [
+            "$\\Delta T = R_{th} \\Phi$",
+            "$\\Phi = R_{th} \\Delta T$",
+            "$Q = m c \\Delta T$",
+            "$\\Phi = R_{th} / \\Delta T$"
+        ],
+        "difficulty": 1,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "explication": "L'analogie avec l'électricité est $U \\leftrightarrow \\Delta T$, $I \\leftrightarrow \\Phi$ et $R \\leftrightarrow R_{th}$. Ainsi, comme $U=RI$, on a $\\Delta T = R_{th} \\Phi$. La proposition $\\Phi = R_{th} \\Delta T$ est une erreur dimensionnelle courante.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-093",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Considérons un système thermique composé de $n$ résistances thermiques identiques de valeur $R$ montées en parallèle. Quelle est l'expression de la résistance équivalente $R_{eq}$ ?",
+        "answers": [
+            "$R_{eq} = n R$",
+            "$R_{eq} = R / n$",
+            "$R_{eq} = R^n$",
+            "$R_{eq} = 1 / (nR)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "En parallèle, les conductances thermiques $G_{th} = 1/R_{th}$ s'ajoutent : $G_{eq} = \\sum G_i = n \\times (1/R)$. Donc $R_{eq} = 1/G_{eq} = R/n$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-094",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est la valeur de la conductivité thermique $\\lambda$ pour l'eau liquide dans les conditions normales de température et de pression ?",
+        "answers": [
+            "$0,026 W.m^{-1}.K^{-1}$",
+            "$0,6 W.m^{-1}.K^{-1}$",
+            "$16 W.m^{-1}.K^{-1}$",
+            "$1,5 W.m^{-1}.K^{-1}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "L'ordre de grandeur de $\\lambda$ pour l'eau liquide est d'environ $0,6 W.m^{-1}.K^{-1}$. $0,026$ correspond à l'air, et $16$ est un ordre de grandeur typique pour l'acier inoxydable.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-095",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans un système composé de deux parois planes en série, quelle grandeur physique est conservée lors du passage de la paroi 1 à la paroi 2 en régime permanent ?",
+        "answers": [
+            "L'écart de température $\\Delta T$",
+            "Le flux thermique $\\Phi$",
+            "Le gradient de température",
+            "La densité de flux massique"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "En régime stationnaire sans source interne, le principe de conservation de l'énergie impose que tout flux traversant la première paroi traverse intégralement la seconde : le flux $\\Phi$ est le même.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-096",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Pour un double vitrage composé d'une vitre ($R_1 = 7,25 \\times 10^{-3} K/W$), d'une lame d'air ($R_{air} = 1,11 K/W$) et d'une seconde vitre identique à la première, quelle est la résistance thermique totale $R_{tot}$ ?",
+        "answers": [
+            "$1,1245 K/W$",
+            "$0,0145 K/W$",
+            "$11,1 K/W$",
+            "$2,22 K/W$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "explication": "Les résistances en série s'ajoutent : $R_{tot} = R_{vitre1} + R_{air} + R_{vitre2} = 7,25 \\times 10^{-3} + 1,11 + 7,25 \\times 10^{-3} = 1,11 + 0,0145 = 1,1245 K/W$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-097",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Soit deux résistances thermiques $R_1$ et $R_2$ en série entre les températures $T_i$ et $T_e$. Quelle est l'expression de la température à l'interface $T_1$ ?",
+        "answers": [
+            "$T_1 = T_i - \\frac{R_1}{R_1+R_2} (T_i - T_e)$",
+            "$T_1 = T_i - \\frac{R_1+R_2}{R_1} (T_i - T_e)$",
+            "$T_1 = (T_i + T_e) / 2$",
+            "$T_1 = T_e + \\frac{R_1}{R_1+R_2} (T_i - T_e)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "explication": "Par analogie avec le pont diviseur de tension, la chute de température aux bornes de $R_1$ est $\\Delta T_1 = T_i - T_1 = R_1 \\Phi$. Comme $\\Phi = (T_i - T_e) / (R_1 + R_2)$, on obtient $T_i - T_1 = \\frac{R_1}{R_1+R_2} (T_i - T_e)$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-098",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Dans le cas d'un cylindre de rayons $R_1=10cm$ et $R_2=11cm$, pour le calcul de la résistance thermique, quelle est la valeur approchée du terme $\\ln(R_2/R_1)$ ?",
+        "answers": [
+            "$0,1$",
+            "$1$",
+            "$\\ln(1,1) \\approx 0,095$",
+            "$0,11$"
+        ],
+        "difficulty": 3,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 2,
+        "explication": "On a $\\ln(R_2/R_1) = \\ln(11/10) = \\ln(1,1)$. En utilisant le développement limité $\\ln(1+x) \\approx x$ pour $x=0,1$, on obtient $0,1$, mais la valeur exacte $\\ln(1,1)$ est préférable pour le calcul formel.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-099",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "Quelle est l'analyse dimensionnelle de la diffusivité thermique $D_{th} = \\frac{\\lambda}{\\rho c_p}$ ?",
+        "answers": [
+            "$L^2 T^{-1}$",
+            "$L T^{-1}$",
+            "$M L^2 T^{-3}$",
+            "$L^2 T^{-2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 0,
+        "explication": "L'équation de la chaleur $\\frac{\\partial T}{\\partial t} = D_{th} \\Delta T$ impose que $D_{th}$ soit homogène à $[T][t]^{-1} \\times [L]^{-2} = [L]^2 [t]^{-1}$, soit $L^2 T^{-1}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "ct-100",
+        "image_path": null,
+        "theme": "transferts thermiques",
+        "question": "En régime stationnaire sans source interne, pour une paroi plane de conductivité $\\lambda$ et de surface $S$, si l'on divise l'épaisseur $e$ par 2, comment évolue le flux thermique $\\Phi$ ?",
+        "answers": [
+            "Le flux est divisé par 2",
+            "Le flux est doublé",
+            "Le flux est inchangé",
+            "Le flux est multiplié par 4"
+        ],
+        "difficulty": 2,
+        "chapter": "Conduction themique",
+        "correct_answer_index": 1,
+        "explication": "La résistance thermique d'une paroi plane est $R_{th} = e / (\\lambda S)$. Si $e' = e/2$, alors $R'_{th} = R_{th}/2$. Comme $\\Phi = \\Delta T / R_{th}$, diviser la résistance par 2 revient à doubler le flux thermique.",
+        "subject": "physique"
+    }
+]

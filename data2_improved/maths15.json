@@ -1,0 +1,1672 @@
+[
+    {
+        "uuid": "pre-001",
+        "image_path": null,
+        "theme": "Définitions",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans le cadre de l'étude des structures algébriques, quelle est la définition précise d'une forme bilinéaire $\\varphi$ sur un espace vectoriel $E$ ?",
+        "answers": [
+            "Une application linéaire de $E$ vers $E$ représentable par une matrice",
+            "Une application $\\varphi: E \\times E \\to \\mathbb{R}$ linéaire par rapport à chacun de ses deux arguments",
+            "Une application symétrique de $E$ vers $\\mathbb{R}$ respectant $\\varphi(x,y) = \\varphi(y,x)$",
+            "Une application $\\varphi: E^2 \\to \\mathbb{R}$ dont le carré est une forme linéaire sur $E$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La bilinéarité exige la linéarité par rapport à la première variable (à deuxième fixée) ET par rapport à la deuxième variable (à première fixée). Une application linéaire de $E$ dans $E$ est un endomorphisme, pas une forme bilinéaire. La symétrie est une propriété supplémentaire optionnelle, pas une définition."
+    },
+    {
+        "uuid": "pre-002",
+        "image_path": null,
+        "theme": "Définitions",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $\\varphi$ une forme bilinéaire sur un espace vectoriel $E$. Par définition, à quelle condition $S$ est-elle dite symétrique ?",
+        "answers": [
+            "$S(x, y) = -S(y, x)$ pour tout $(x, y) \\in E^2$ (antisymétrie)",
+            "$S(x, x) \\ge 0$ pour tout $x \\in E$ (positivité)",
+            "$S(x, y) = S(y, x)$ pour tout $(x, y) \\in E^2$",
+            "$S(x, y) = 0$ implique $x=0_E$ ou $y=0_E$ (non-dégénérescence)"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "La symétrie signifie que l'ordre des arguments n'a pas d'importance. L'antisymétrie ($S(x,y) = -S(y,x)$) caractérise les formes alternées (souvent liées au produit vectoriel ou au déterminant), tandis que la positivité définit une propriété de signe propre aux produits scalaires."
+    },
+    {
+        "uuid": "pre-003",
+        "image_path": null,
+        "theme": "Inner Product",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Un produit scalaire réel est une forme bilinéaire symétrique possédant deux propriétés supplémentaires. Lesquelles ?",
+        "answers": [
+            "Bilinéaire, symétrique, positive, définie",
+            "Linéaire, symétrique, positive, définie",
+            "Bilinéaire, antisymétrique, positive, définie",
+            "Bilinéaire, symétrique, croissante, définie"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Un produit scalaire est une forme bilinéaire symétrique qui est en plus définie positive. 'Définie' signifie que le vecteur nul est le seul dont le produit scalaire avec lui-même est nul. 'Positive' signifie que le produit scalaire avec soi-même est toujours $\\ge 0$."
+    },
+    {
+        "uuid": "pre-004",
+        "image_path": null,
+        "theme": "Inner Product",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans la définition d'un produit scalaire, que signifie mathématiquement le terme 'définie' ?",
+        "answers": [
+            "$\\forall x \\in E, \\varphi(x, x) > 0$ (définie positive stricte)",
+            "$\\forall x \\in E, \\varphi(x, x) = 0 \\implies x = 0_E$",
+            "$\\forall x \\in E, \\varphi(x, x) \\ge 0$ (positivité simple)",
+            "L'application est définie sur tout le produit cartésien $E \\times E$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La condition 'définie' assure que la forme ne s'annule pas sur un vecteur non nul. Attention : $\\varphi(x,x) > 0$ pour $x \\neq 0$ est la combinaison de 'positive' et 'définie'. Si on demande uniquement 'définie', la réponse correcte est l'implication vers le vecteur nul."
+    },
+    {
+        "uuid": "pre-005",
+        "image_path": null,
+        "theme": "Examples",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Sur l'espace vectoriel $\\mathbb{R}^n$, l'expression $\\sum_{i=1}^n x_i y_i$ définit :",
+        "answers": [
+            "Le produit scalaire canonique",
+            "La norme infinie associée à la base",
+            "Une forme linéaire agissant sur les composantes",
+            "Une forme bilinéaire antisymétrique"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Cette expression est le produit scalaire usuel de $\\mathbb{R}^n$. Elle est bilinéaire, symétrique et définie positive. Elle ne peut être une forme linéaire car elle dépend de deux vecteurs, et elle n'est pas antisymétrique."
+    },
+    {
+        "uuid": "pre-006",
+        "image_path": null,
+        "theme": "Matrices",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $A \\in \\mathcal{M}_n(\\mathbb{R})$. L'application $\\varphi(X, Y) = {}^tXAY$ est une forme bilinéaire. À quelle condition nécessaire et suffisante sur $A$ cette forme est-elle symétrique ?",
+        "answers": [
+            "$A$ est inversible (non dégénérée)",
+            "$A$ est symétrique ($A = {}^tA$)",
+            "$A$ est diagonale (cas particulier de symétrie)",
+            "$A$ est la matrice identité (produit scalaire canonique)"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Par définition de la transposition, ${}^tXAY = {}^t({}^tXAY) = {}^tY {}^tA X$. Pour avoir $\\varphi(X, Y) = \\varphi(Y, X) = {}^tYAX$, il faut que ${}^tY {}^tA X = {}^tY A X$ pour tous $X, Y$, ce qui impose ${}^tA = A$."
+    },
+    {
+        "uuid": "pre-007",
+        "image_path": null,
+        "theme": "Matrices",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Sur l'espace $\\mathcal{M}_{n,p}(\\mathbb{R})$, comment définit-on le produit scalaire canonique (produit de Frobenius) ?",
+        "answers": [
+            "$\\varphi(A, B) = Tr(AB)$ (défini uniquement si $n=p$)",
+            "$\\varphi(A, B) = Tr({}^tAB)$",
+            "$\\varphi(A, B) = det({}^tAB)$",
+            "$\\varphi(A, B) = \\sum_{i,j} a_{ij} b_{ij}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le produit scalaire canonique sur les matrices est $\\langle A, B \\rangle = Tr({}^tAB) = \\sum_{i,j} a_{ij} b_{ij}$. La réponse 1 est fausse car $Tr(AB)$ n'est pas un produit scalaire (non défini positif). La réponse 4 est mathématiquement identique, mais en khôlle ou écrit, on retient la trace du produit matriciel."
+    },
+    {
+        "uuid": "pre-008",
+        "image_path": null,
+        "theme": "Definitions",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Comment appelle-t-on, par convention, un espace vectoriel réel muni d'un produit scalaire ?",
+        "answers": [
+            "Un espace euclidien",
+            "Un espace préhilbertien réel",
+            "Un espace de Banach",
+            "Un espace de Hilbert"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Un espace préhilbertien est un espace muni d'un produit scalaire. On parle d'espace euclidien seulement si l'espace est de dimension finie. Un espace de Hilbert est un espace préhilbertien complet (pour la norme associée)."
+    },
+    {
+        "uuid": "pre-009",
+        "image_path": null,
+        "theme": "Definitions",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Par définition, un espace vectoriel euclidien est :",
+        "answers": [
+            "Un espace préhilbertien de dimension infinie",
+            "Un espace préhilbertien réel de dimension finie",
+            "Un espace muni d'une norme quelconque",
+            "Un espace muni d'une base dont les vecteurs sont deux à deux orthogonaux"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La dimension finie est la caractéristique qui distingue l'espace euclidien de l'espace préhilbertien général. Les propriétés de compacité et d'équivalence des normes en découlent."
+    },
+    {
+        "uuid": "pre-010",
+        "image_path": null,
+        "theme": "Norm",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans le cadre d'un espace préhilbertien, comment la norme euclidienne $\\|x\\|$ est-elle définie à partir du produit scalaire $(\\cdot|\\cdot)$ ?",
+        "answers": [
+            "$\\|x\\| = (x|x)$",
+            "$\\|x\\| = \\sqrt{(x|x)}$",
+            "$\\|x\\| = \\sqrt{|(x|y)|}$",
+            "$\\|x\\| = (x|x)^2$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La norme est la racine carrée du produit scalaire d'un vecteur avec lui-même. C'est la généralisation du théorème de Pythagore : $\\|x\\|^2 = \\langle x, x \\rangle$. Sans la racine, la propriété d'homogénéité de la norme ($\\|\\lambda x\\| = |\\lambda| \\cdot \\|x\\|$) ne serait pas vérifiée."
+    },
+    {
+        "uuid": "pre-011",
+        "image_path": null,
+        "theme": "Cauchy-Schwarz",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans le cadre de l'étude d'un espace préhilbertien $(E, (.|.))$, quelle est l'expression correcte de l'inégalité de Cauchy-Schwarz pour tout $(x, y) \\in E^2$ ?",
+        "answers": [
+            "$(x|y) \\le \\|x\\| \\|y\\|$",
+            "$|(x|y)| \\le \\|x\\| \\|y\\|$",
+            "$\\|x+y\\| \\le \\|x\\| + \\|y\\|$",
+            "$(x|y)^2 \\ge \\|x\\|^2 \\|y\\|^2$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "L'inégalité de Cauchy-Schwarz porte sur la valeur absolue du produit scalaire car $(x|y)$ peut être négatif dans un espace réel. La proposition 1 est fausse car elle ignore les valeurs négatives. La proposition 3 est l'inégalité triangulaire (conséquence de Cauchy-Schwarz) et la 4 est le sens opposé du carré de l'inégalité."
+    },
+    {
+        "uuid": "pre-012",
+        "image_path": null,
+        "theme": "Cauchy-Schwarz",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans un espace préhilbertien réel, quel est le cas d'égalité dans l'inégalité de Cauchy-Schwarz $|(x|y)| = \\|x\\| \\|y\\|$ ?",
+        "answers": [
+            "Si $x$ et $y$ sont orthogonaux",
+            "Si la famille $(x, y)$ est liée",
+            "Si $x$ et $y$ sont de norme 1",
+            "Toujours vrai si la dimension est finie"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "L'égalité dans Cauchy-Schwarz est vérifiée si et seulement si les vecteurs $x$ et $y$ sont linéairement dépendants (colinéaires). Si l'un des vecteurs est nul, ils sont colinéaires et l'égalité vaut $0=0$."
+    },
+    {
+        "uuid": "pre-013",
+        "image_path": null,
+        "theme": "Triangle Inequality",
+        "chapter": "Espaces préhilbertiens",
+        "question": "L'inégalité triangulaire $\\|x+y\\| \\le \\|x\\| + \\|y\\|$ présente un cas d'égalité si et seulement si :",
+        "answers": [
+            "$x$ et $y$ sont orthogonaux",
+            "$x$ et $y$ sont positivement liés (i.e. $\\exists \\lambda \\ge 0, x = \\lambda y$ ou $y = \\lambda x$)",
+            "$x$ et $y$ sont de même norme",
+            "$x=0$ ou $y=0$ uniquement"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le cas d'égalité de l'inégalité triangulaire correspond au cas où $x$ et $y$ sont dans la même direction (vecteurs positivement liés). Si $x = -y$ (avec $x \\neq 0$), on a $\\|x+y\\| = 0$ mais $\\|x\\|+\\|y\\| > 0$, donc la condition $\\lambda \\ge 0$ est cruciale."
+    },
+    {
+        "uuid": "pre-014",
+        "image_path": null,
+        "theme": "Polarization",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Parmi les égalités suivantes, laquelle représente la formule de polarisation permettant de retrouver le produit scalaire à partir de la norme ?",
+        "answers": [
+            "$(x|y) = \\frac{1}{2}(\\|x+y\\|^2 - \\|x\\|^2 - \\|y\\|^2)$",
+            "$(x|y) = \\frac{1}{4}(\\|x+y\\|^2 - \\|x-y\\|^2)$",
+            "$(x|y) = \\|x+y\\|^2 + \\|x-y\\|^2$",
+            "$(x|y) = \\|x\\| \\|y\\| \\cos(x,y)$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La formule de polarisation fondamentale est $(x|y) = \\frac{1}{4}(\\|x+y\\|^2 - \\|x-y\\|^2)$. La première proposition est une erreur classique de coefficient. La dernière proposition n'est valable que dans les espaces euclidiens de dimension 2 ou 3 avec la notion géométrique d'angle."
+    },
+    {
+        "uuid": "pre-015",
+        "image_path": null,
+        "theme": "Parallelogram",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Comment s'énonce l'égalité du parallélogramme dans un espace préhilbertien ?",
+        "answers": [
+            "$\\|x+y\\|^2 + \\|x-y\\|^2 = 2(\\|x\\|^2 + \\|y\\|^2)$",
+            "$\\|x+y\\|^2 - \\|x-y\\|^2 = 4(x|y)$",
+            "$\\|x+y\\|^2 = \\|x\\|^2 + \\|y\\|^2$",
+            "$\\|x+y\\| + \\|x-y\\| = 2(\\|x\\| + \\|y\\|)$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "L'égalité du parallélogramme exprime que la somme des carrés des longueurs des diagonales est égale à la somme des carrés des longueurs des quatre côtés. La proposition 2 est une variante de la polarisation, et la 3 n'est vraie que si $x$ et $y$ sont orthogonaux."
+    },
+    {
+        "uuid": "pre-016",
+        "image_path": null,
+        "theme": "Orthogonality",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans un espace préhilbertien, deux vecteurs $x$ et $y$ sont dits orthogonaux si et seulement si :",
+        "answers": [
+            "Leur distance est nulle",
+            "Leur produit scalaire $(x|y)$ est nul",
+            "Leur produit scalaire $(x|y)$ est égal à 1",
+            "Leurs normes sont égales"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Par définition, l'orthogonalité dans un espace préhilbertien est caractérisée par l'annulation du produit scalaire $(x|y) = 0$. Les autres propositions sont des confusions avec l'égalité des vecteurs ou la normalisation."
+    },
+    {
+        "uuid": "pre-017",
+        "image_path": null,
+        "theme": "Orthogonality",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Le théorème de Pythagore s'énonce pour des vecteurs $x$ et $y$ comme :",
+        "answers": [
+            "$\\|x+y\\| = \\|x\\| + \\|y\\|$",
+            "$\\|x+y\\|^2 = \\|x\\|^2 + \\|y\\|^2 \\iff (x|y) = 0$",
+            "$\\|x+y\\|^2 = \\|x\\|^2 + \\|y\\|^2 + 2(x|y)$",
+            "$(x|y) = \\|x\\|^2$ "
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le théorème de Pythagore est l'équivalence entre l'orthogonalité et l'identité $\\|x+y\\|^2 = \\|x\\|^2 + \\|y\\|^2$. La proposition 3 est l'identité du carré de la norme générale, vraie pour tout couple de vecteurs, mais n'est pas le théorème de Pythagore spécifique."
+    },
+    {
+        "uuid": "pre-018",
+        "image_path": null,
+        "theme": "Families",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Une famille $(e_1, \\dots, e_k)$ est dite orthonormale (ou orthonormée) si :",
+        "answers": [
+            "Les vecteurs sont tous non nuls et orthogonaux deux à deux",
+            "Les vecteurs sont orthogonaux deux à deux et sont tous de norme 1",
+            "Les vecteurs forment une base de l'espace",
+            "Les vecteurs sont linéairement indépendants et de norme quelconque"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Une famille orthonormale doit remplir deux conditions : l'orthogonalité ($(e_i|e_j) = 0$ pour $i \\neq j$) et la normalisation ($\\|e_i\\| = 1$ pour tout $i$). La proposition 1 ne garantit pas la norme 1."
+    },
+    {
+        "uuid": "pre-019",
+        "image_path": null,
+        "theme": "Families",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Quelle propriété fondamentale possèdent toutes les familles orthogonales de vecteurs non nuls ?",
+        "answers": [
+            "Elles sont toujours liées",
+            "Elles sont toujours libres",
+            "Elles sont toujours génératrices",
+            "Elles forment toujours une base"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Toute famille orthogonale de vecteurs non nuls est libre. En effet, si $\\sum \\lambda_i e_i = 0$, le produit scalaire par $e_j$ donne $\\lambda_j \\|e_j\\|^2 = 0$, donc $\\lambda_j = 0$ puisque $\\|e_j\\| \\neq 0$. Elles ne sont pas nécessairement génératrices."
+    },
+    {
+        "uuid": "pre-020",
+        "image_path": null,
+        "theme": "Gram-Schmidt",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans le cadre de l'orthonormalisation d'une base, l'algorithme de Gram-Schmidt permet de construire à partir d'une famille libre $(e_1, \\dots, e_n)$ :",
+        "answers": [
+            "Une famille liée de même cardinal",
+            "Une famille orthonormale $(f_1, \\dots, f_n)$ telle que $\\forall p \\in [|1, n|], Vect(e_1, \\dots, e_p) = Vect(f_1, \\dots, f_p)$",
+            "Une base canonique de l'espace",
+            "Une famille dont les vecteurs sont des vecteurs propres de l'endomorphisme identité"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "L'algorithme de Gram-Schmidt est un procédé constructif qui préserve les espaces vectoriels engendrés aux rangs successifs (stabilité des sous-espaces emboîtés), tout en orthogonalisant les vecteurs de base."
+    },
+    {
+        "uuid": "pre-021",
+        "image_path": null,
+        "theme": "Orthonormal Bases",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans le cadre de l'étude d'un espace euclidien $E$ muni d'un produit scalaire $(.|.)$, si $\\mathcal{B} = (e_1, \\dots, e_n)$ est une base orthonormale, quelles sont les composantes du vecteur $x = \\sum_{i=1}^n x_i e_i$ ?",
+        "answers": [
+            "$x_i = (x | e_i)$",
+            "$x_i = \\|x\\| \\cos(e_i)$",
+            "$x_i = (e_i | e_i)$",
+            "$x_i = \\frac{(x|e_i)}{\\|x\\|}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par définition d'une base orthonormale, le produit scalaire par le vecteur de base $e_i$ isole la coordonnée correspondante : $(x|e_i) = (\\sum x_j e_j | e_i) = \\sum x_j (e_j | e_i) = \\sum x_j \\delta_{ij} = x_i$. Les autres propositions sont soit des erreurs dimensionnelles, soit des confusions avec des coordonnées polaires."
+    },
+    {
+        "uuid": "pre-022",
+        "image_path": null,
+        "theme": "Orthonormal Bases",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soient deux vecteurs $x = \\sum x_i e_i$ et $y = \\sum y_i e_i$ dans une base orthonormale $\\mathcal{B}$ d'un espace euclidien. Comment s'exprime le produit scalaire $(x|y)$ en fonction des coordonnées ?",
+        "answers": [
+            "$\\sum_{i=1}^n x_i y_i^2$",
+            "$\\sum_{i=1}^n x_i y_i$",
+            "$\\sqrt{\\sum x_i^2 \\sum y_i^2}$",
+            "$\\|x\\| \\|y\\|$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Par bilinéarité du produit scalaire, $(x|y) = (\\sum x_i e_i | \\sum y_j e_j) = \\sum_i \\sum_j x_i y_j (e_i|e_j)$. Comme la base est orthonormale, $(e_i|e_j) = \\delta_{ij}$, ce qui simplifie l'expression à $\\sum x_i y_i$."
+    },
+    {
+        "uuid": "pre-023",
+        "image_path": null,
+        "theme": "Riesz Theorem",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $E$ un espace euclidien. Le théorème de représentation de Riesz établit un isomorphisme canonique entre $E$ et son dual $E^*$. Que nous dit-il sur toute forme linéaire $f \\in E^*$ ?",
+        "answers": [
+            "Elle est nécessairement nulle.",
+            "Il existe un unique vecteur $a \\in E$ tel que $\\forall x \\in E, f(x) = (a|x)$.",
+            "Elle définit une norme sur $E$.",
+            "Elle est égale à son adjoint, qui est une forme bilinéaire."
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le théorème de Riesz est fondamental : il assure que toute forme linéaire sur un espace préhilbertien complet (ici euclidien) peut être représentée comme un produit scalaire avec un vecteur unique $a$ du même espace. C'est l'outil clé pour définir le gradient ou l'adjoint d'un endomorphisme."
+    },
+    {
+        "uuid": "pre-024",
+        "image_path": null,
+        "theme": "Orthogonal Complement",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $F$ un sous-espace vectoriel de dimension finie d'un espace préhilbertien $E$. Quelle relation fondamentale lie $F$ et son orthogonal $F^\\perp$ ?",
+        "answers": [
+            "$E = F \\oplus F^\\perp$",
+            "$E = F + F^\\perp$ mais la somme n'est pas directe.",
+            "$F^\\perp = \\{0_E\\}$ car $F$ est de dimension finie.",
+            "$F = F^\\perp$ uniquement si $F$ est un hyperplan."
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Pour tout sous-espace $F$ de dimension finie dans un espace préhilbertien (même de dimension infinie), on a la somme directe orthogonale $E = F \\oplus F^\\perp$. C'est le théorème de projection sur un sev de dimension finie."
+    },
+    {
+        "uuid": "pre-025",
+        "image_path": null,
+        "theme": "Dimension",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $E$ un espace euclidien de dimension $n$ et $F$ un sev de $E$. Quelle relation existe entre les dimensions de $F$ et de son orthogonal $F^\\perp$ ?",
+        "answers": [
+            "$dim(F) = dim(F^\\perp)$",
+            "$dim(F) + dim(F^\\perp) = dim(E)$",
+            "$dim(F) \\times dim(F^\\perp) = dim(E)$",
+            "$dim(F^\\perp) = dim(E) - 1$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Puisque $E = F \\oplus F^\\perp$, la formule des dimensions pour une somme directe nous donne immédiatement $dim(E) = dim(F) + dim(F^\\perp)$."
+    },
+    {
+        "uuid": "pre-026",
+        "image_path": null,
+        "theme": "Orthogonal Complement",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans un espace euclidien $E$, si $F$ est un sous-espace vectoriel, que peut-on dire de l'orthogonal de l'orthogonal $(F^\\perp)^\\perp$ ?",
+        "answers": [
+            "Il est égal à $F^\\perp$.",
+            "Il est égal à $F$.",
+            "Il est égal à $E$ par densité.",
+            "Il est réduit à $\\{0_E\\}$."
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Dans un espace euclidien (dimension finie), l'opération d'orthogonalité est une involution sur l'ensemble des sev : $(F^\\perp)^\\perp = F$. C'est une propriété classique qui découle du théorème de la base adaptée."
+    },
+    {
+        "uuid": "pre-027",
+        "image_path": null,
+        "theme": "Projections",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $F$ un sev de dimension finie possédant une base orthonormale $(e_1, \\dots, e_p)$. Quelle est la formule du projeté orthogonal $p_F(x)$ d'un vecteur $x \\in E$ sur $F$ ?",
+        "answers": [
+            "$p_F(x) = \\sum_{i=1}^p (x|e_i)e_i$",
+            "$p_F(x) = \\sum_{i=1}^p \\|x\\|e_i$",
+            "$p_F(x) = x - (x|e_1)e_1$",
+            "$p_F(x) = \\frac{(x|e_1)}{\\|e_1\\|}e_1$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La formule de projection orthogonale consiste à sommer les projections sur chaque vecteur de la base orthonormale : le vecteur $p_F(x)$ est l'unique élément de $F$ tel que $(x - p_F(x)) \\perp F$."
+    },
+    {
+        "uuid": "pre-028",
+        "image_path": null,
+        "theme": "Projections",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Un endomorphisme $p$ de $E$ est un projecteur orthogonal si et seulement si $p^2 = p$ et :",
+        "answers": [
+            "$p$ est un endomorphisme symétrique.",
+            "$ker(p) = (Im(p))^\\perp$",
+            "$Im(p) = E$",
+            "$Tr(p) = dim(E)$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Un projecteur est dit orthogonal lorsque le noyau est orthogonal à l'image. Cela équivaut également à dire que l'endomorphisme est autoadjoint (symétrique), ce qui implique que pour tout $x, y$, $(p(x)|y) = (x|p(y))$."
+    },
+    {
+        "uuid": "pre-029",
+        "image_path": null,
+        "theme": "Distance",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $F$ un sev de dimension finie d'un espace préhilbertien. La distance d'un point $x$ à $F$, définie comme $d(x, F) = \\inf_{y \\in F} \\|x - y\\|$, est atteinte en $y = p_F(x)$. Que vaut cette distance ?",
+        "answers": [
+            "$d(x, F) = \\|x\\|$",
+            "$d(x, F) = \\|p_F(x)\\|$",
+            "$d(x, F) = \\|x - p_F(x)\\|$",
+            "$d(x, F) = (x | p_F(x))$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "La distance d'un point à un ensemble est la norme du vecteur reliant le point au plus proche élément de l'ensemble. Pour un sev $F$, le plus proche élément est le projeté orthogonal $p_F(x)$, d'où $d(x, F) = \\|x - p_F(x)\\|$."
+    },
+    {
+        "uuid": "pre-030",
+        "image_path": null,
+        "theme": "Distance",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $u$ un vecteur unitaire ($\\|u\\|=1$). On considère la droite vectorielle $D = \\text{Vect}(u)$. Quelle est l'expression de la distance d'un point $x$ à cette droite ?",
+        "answers": [
+            "$\\|x - (x|u)u\\|$",
+            "$|(x|u)|$",
+            "$\\|x\\| - |(x|u)|$",
+            "$\\|x + (x|u)u\\|$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Le projeté orthogonal de $x$ sur la droite engendrée par $u$ (unitaire) est simplement $p_D(x) = (x|u)u$. La distance est donc $\\|x - p_D(x)\\| = \\|x - (x|u)u\\|$."
+    },
+    {
+        "uuid": "pre-031",
+        "image_path": null,
+        "theme": "Hyperplans",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Si $H$ est un hyperplan d'un espace euclidien $E$ d'équation $(a|x) = 0$, alors $H^\\perp$ est :",
+        "answers": [
+            "L'ensemble vide",
+            "Une droite vectorielle $Vect(a)$",
+            "Un autre hyperplan",
+            "L'espace $E$ entier"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-032",
+        "image_path": null,
+        "theme": "Gram-Schmidt",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans Gram-Schmidt, comment calcule-t-on le premier vecteur unitaire $f_1$ à partir de $e_1$ ?",
+        "answers": [
+            "$f_1 = e_1$",
+            "$f_1 = \\frac{e_1}{\\|e_1\\|}$",
+            "$f_1 = e_1 - (e_1|e_2)e_2$",
+            "$f_1 = 0$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-033",
+        "image_path": null,
+        "theme": "Orthogonality",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Que peut-on dire de l'orthogonal de l'espace tout entier $E^\\perp$ ?",
+        "answers": [
+            "$E^\\perp = E$",
+            "$E^\\perp = \\{0_E\\}$",
+            "$E^\\perp$ n'existe pas",
+            "$E^\\perp$ est un hyperplan"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-034",
+        "image_path": null,
+        "theme": "Examples",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Sur $\\mathcal{C}^0([a, b], \\mathbb{R})$, l'application $(f, g) \\mapsto \\int_a^b f(t)g(t)dt$ est un produit scalaire car :",
+        "answers": [
+            "L'intégrale est toujours positive",
+            "Elle est bilinéaire, symétrique, positive et l'intégrale d'une fonction continue positive nulle est la fonction nulle",
+            "Toutes les fonctions sont dérivables",
+            "L'intervalle $[a, b]$ est borné"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-035",
+        "image_path": null,
+        "theme": "TD Exercises",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $E = \\mathcal{C}([0, 1], \\mathbb{R})$. L'application $(f, g) \\mapsto \\int_0^1 x f(x) g(x) dx$ est-elle un produit scalaire ?",
+        "answers": [
+            "Non, car le poids $x$ s'annule en 0",
+            "Oui, car $x > 0$ sur $]0, 1]$, assurant le caractère défini",
+            "Non, elle n'est pas symétrique",
+            "Oui, mais seulement pour les polynômes"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-036",
+        "image_path": null,
+        "theme": "TD Exercises",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $f \\in \\mathcal{C}([0, 1], \\mathbb{R})$. Si $\\int_0^1 f(t) g(t) dt = 0$ pour toute fonction $g$ telle que $g(0)=0$, alors :",
+        "answers": [
+            "$f = 0$",
+            "$f(0) = 0$",
+            "$f$ est constante",
+            "$f$ est impaire"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-037",
+        "image_path": null,
+        "theme": "Cauchy-Schwarz Application",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Quelle inégalité obtient-on en appliquant Cauchy-Schwarz aux vecteurs $(x_1, \\dots, x_n)$ et $(1, \\dots, 1)$ ?",
+        "answers": [
+            "$(\\sum x_i)^2 \\le n \\sum x_i^2$",
+            "$\\sum x_i \\le \\sqrt{n}$",
+            "$\\sum x_i^2 \\le n^2$",
+            "$(\\sum x_i)^2 \\le \\sum x_i^2$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-038",
+        "image_path": null,
+        "theme": "Projections",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Si $p$ est une projection orthogonale, alors $Id - p$ est :",
+        "answers": [
+            "Une symétrie",
+            "La projection orthogonale sur $(Im(p))^\\perp$",
+            "L'application nulle",
+            "La projection sur $Im(p)$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-039",
+        "image_path": null,
+        "theme": "Inner Product",
+        "chapter": "Espaces préhilbertiens",
+        "question": "L'expression $x_1 y_1 + 2x_1 y_2 + 2x_2 y_1 + 3x_2 y_2$ définit-elle un produit scalaire sur $\\mathbb{R}^2$ ?",
+        "answers": [
+            "Oui, car les coefficients sont positifs",
+            "Non, car elle n'est pas définie positive (déterminant de la matrice associé négatif)",
+            "Oui, par symétrie",
+            "Non, elle n'est pas bilinéaire"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-040",
+        "image_path": null,
+        "theme": "Matrices",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Quelle est la norme associée au produit scalaire canonique sur $\\mathcal{M}_n(\\mathbb{R})$ ?",
+        "answers": [
+            "La norme de Frobenius $\\sqrt{Tr({}^tAA)}$",
+            "Le déterminant de $A$",
+            "La valeur propre maximale",
+            "La somme des coefficients"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-041",
+        "image_path": null,
+        "theme": "Definitions",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans le cadre de l'étude d'un espace préhilbertien réel $E$, soit $\\varphi$ une forme bilinéaire symétrique. L'équivalence $\\varphi(x,x)=0 \\iff x=0$ est vraie si et seulement si :",
+        "answers": [
+            "$\\varphi$ est une forme positive",
+            "$\\varphi$ est une forme définie positive",
+            "$\\varphi$ est une forme non dégénérée",
+            "$\\varphi$ est une forme définie"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "La propriété $\\varphi(x,x)=0 \\implies x=0$ caractérise le caractère 'défini' d'une forme quadratique. Pour que $\\varphi$ soit un produit scalaire, elle doit être symétrique, bilinéaire, positive (pour que la norme existe) et définie. Si elle n'est que positive, on a seulement $\\varphi(x,x)=0 \\implies x \\in Ker(\\varphi)$. Le caractère 'défini' impose $Ker(\\varphi) = \\{0\\}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-042",
+        "image_path": null,
+        "theme": "Examples",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $E = \\mathbb{R}_n[X]$. L'application $\\varphi(P,Q) = \\sum_{k=0}^n P(a_k)Q(a_k)$ est un produit scalaire si et seulement si :",
+        "answers": [
+            "Les points $a_k$ sont tous strictement positifs",
+            "Les points $a_k$ sont deux à deux distincts",
+            "Le degré des polynômes $n$ est égal à 1",
+            "Les points $a_k$ forment une suite géométrique"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "Pour être un produit scalaire, $\\varphi$ doit être définie. Si $\\varphi(P,P) = \\sum_{k=0}^n P(a_k)^2 = 0$, alors chaque $P(a_k)$ doit être nul. Si les $n+1$ points sont distincts, le polynôme $P$ de degré au plus $n$ possédant $n+1$ racines est nécessairement le polynôme nul. Si les points ne sont pas distincts, on peut construire un polynôme non nul s'annulant sur ces points.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-043",
+        "image_path": null,
+        "theme": "Orthonormal Bases",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soient $(a_i)_{0\\le i \\le n}$ des réels distincts. Les polynômes de Lagrange $L_i$ associés à ces points forment une base de $\\mathbb{R}_n[X]$. Quelle est leur particularité vis-à-vis du produit scalaire $\\varphi(P,Q) = \\sum_{k=0}^n P(a_k)Q(a_k)$ ?",
+        "answers": [
+            "Ils forment une base orthogonale mais non normée",
+            "Ils forment une base orthonormée (BON)",
+            "Ils forment une famille libre mais non génératrice",
+            "Ils forment une base dans laquelle la matrice de Gram est diagonale avec des termes valant 0"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "explication": "Par définition, $L_i(a_j) = \\delta_{ij}$. Ainsi, $\\varphi(L_i, L_j) = \\sum_{k=0}^n L_i(a_k)L_j(a_k) = \\delta_{ij} \\times \\delta_{ij} = \\delta_{ij}$. Les vecteurs sont donc deux à deux orthogonaux et de norme 1 : c'est une BON. Les pièges classiques sont de confondre avec la base canonique $(1, X, ..., X^n)$ qui n'est pas orthogonale pour ce produit scalaire.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-044",
+        "image_path": null,
+        "theme": "Properties",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans un espace euclidien, si deux vecteurs $x$ et $y$ sont orthogonaux ($x \\perp y$), quelle relation lie leur norme à celle de leur différence ?",
+        "answers": [
+            "$\\|x-y\\|^2 = \\|x\\|^2 - 2(x|y) + \\|y\\|^2$",
+            "$\\|x-y\\|^2 = \\|x\\|^2 + \\|y\\|^2$",
+            "$\\|x-y\\|^2 = \\|x\\|^2 - \\|y\\|^2$",
+            "$\\|x-y\\|^2 = \\|x\\| + \\|y\\|$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "C'est une conséquence directe du théorème de Pythagore. Comme $\\|x-y\\|^2 = (x-y|x-y) = \\|x\\|^2 - 2(x|y) + \\|y\\|^2$, et que par hypothèse $(x|y)=0$, il reste $\\|x\\|^2 + \\|y\\|^2$. Attention à ne pas confondre avec l'identité du parallélogramme qui est plus générale.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-045",
+        "image_path": null,
+        "theme": "Orthogonality",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $A$ une partie quelconque d'un espace préhilbertien $E$. Par définition, l'orthogonal de $A$, noté $A^\\perp$, est toujours :",
+        "answers": [
+            "Un sous-espace vectoriel de $E$",
+            "Une partie finie de $E$",
+            "Un sous-espace de dimension finie",
+            "L'espace $E$ tout entier"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "explication": "Par linéarité du produit scalaire, si $u_1, u_2 \\in A^\\perp$ et $\\lambda, \\mu \\in \\mathbb{R}$, alors pour tout $a \\in A$, $(\\lambda u_1 + \\mu u_2 | a) = \\lambda(u_1|a) + \\mu(u_2|a) = 0 + 0 = 0$. Donc $\\lambda u_1 + \\mu u_2 \\in A^\\perp$. $A^\\perp$ est donc toujours un sous-espace vectoriel, même si $A$ n'en est pas un.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-046",
+        "image_path": null,
+        "theme": "Orthogonality",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soient $A$ et $B$ deux parties de $E$ telles que $A \\subset B$. Quelle inclusion est vérifiée pour leurs orthogonaux ?",
+        "answers": [
+            "$A^\\perp \\subset B^\\perp$",
+            "$B^\\perp \\subset A^\\perp$",
+            "$A^\\perp = B^\\perp$",
+            "$B^\\perp \\subsetneq A^\\perp$ (inclusion stricte)"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "Si $x \\in B^\\perp$, alors $x$ est orthogonal à tous les vecteurs de $B$. Comme $A \\subset B$, $x$ est en particulier orthogonal à tous les vecteurs de $A$, donc $x \\in A^\\perp$. On a donc bien $B^\\perp \\subset A^\\perp$. L'opération orthogonal est une application décroissante pour l'inclusion.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-047",
+        "image_path": null,
+        "theme": "Orthogonality",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Pour toute partie $A$ de $E$, quel lien existe-t-il entre $A^\\perp$ et $Vect(A)^\\perp$ ?",
+        "answers": [
+            "$A^\\perp = (Vect(A))^\\perp$",
+            "$A^\\perp = Vect(A)^\\perp + \\{0\\}$",
+            "$A^\\perp$ n'est pas lié à $Vect(A)$",
+            "$A^\\perp = Vect(A^\\perp)$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "explication": "Un vecteur est orthogonal à une partie $A$ s'il est orthogonal à toutes les combinaisons linéaires d'éléments de $A$ par linéarité du produit scalaire. Ainsi, l'orthogonal d'une partie est identique à l'orthogonal de l'espace engendré par cette partie.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-048",
+        "image_path": null,
+        "theme": "Gram-Schmidt",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans le procédé de Gram-Schmidt appliqué à une famille libre $(e_1, \\dots, e_n)$, on pose $f_1 = e_1/\\|e_1\\|$ puis $f_i = \\frac{u_i}{\\|u_i\\|}$ avec $u_i = e_i - \\sum_{k=1}^{i-1} (e_i | f_k)f_k$. Que représente le vecteur $u_i$ ?",
+        "answers": [
+            "La composante orthogonale de $e_i$ sur $Vect(f_1, \\dots, f_{i-1})$",
+            "Le projeté orthogonal de $e_i$ sur $Vect(f_1, \\dots, f_{i-1})$",
+            "Le vecteur nul",
+            "Le vecteur $e_i$ normalisé"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "explication": "La formule $u_i = e_i - p_{F_{i-1}}(e_i)$ où $p$ est la projection orthogonale sur le sous-espace $F_{i-1} = Vect(e_1, ..., e_{i-1})$ est le principe de Gram-Schmidt. $u_i$ est précisément le vecteur de $e_i$ qui n'est 'pas' dans le sous-espace précédent, donc il est orthogonal à tout cet espace.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-049",
+        "image_path": null,
+        "theme": "Projections",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $u$ un vecteur non nul. La projection orthogonale $p(x)$ d'un vecteur $x$ sur la droite $D = Vect(u)$ est donnée par :",
+        "answers": [
+            "$p(x) = (x|u)u$",
+            "$p(x) = \\frac{(x|u)}{\\|u\\|^2}u$",
+            "$p(x) = \\frac{(x|u)}{\\|u\\|}u$",
+            "$p(x) = \\frac{(x|u)}{u}u$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "Le projeté est de la forme $\\lambda u$. On veut $(x - \\lambda u) \\perp u$, soit $(x|u) - \\lambda (u|u) = 0$, donc $\\lambda = (x|u)/\\|u\\|^2$. La réponse 1 est fausse car elle suppose $u$ unitaire. La réponse 3 est une erreur classique de normalisation (oubli du carré).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-050",
+        "image_path": null,
+        "theme": "Orthogonality",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans $\\mathbb{R}^3$ muni du produit scalaire canonique, quel est l'orthogonal du sous-espace vectoriel $F = Vect((1,1,1))$ ?",
+        "answers": [
+            "Le plan d'équation $x+y+z=0$",
+            "La droite $Vect((1,-1,0))$",
+            "Le point $(0,0,0)$",
+            "Le plan $x+y+z=1$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "explication": "Un vecteur $v=(x,y,z)$ est dans $F^\\perp$ si $(v|(1,1,1)) = 0$, soit $x+y+z=0$. C'est l'équation cartésienne d'un plan passant par l'origine. La réponse 2 est un vecteur de ce plan, mais pas l'orthogonal tout entier. La réponse 4 est fausse car l'orthogonal est toujours un sous-espace vectoriel (donc contient le vecteur nul).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-051",
+        "image_path": null,
+        "theme": "Norm",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans le cadre de l'étude des propriétés des normes sur un espace vectoriel $E$, comment s'énonce correctement l'inégalité triangulaire inversée ?",
+        "answers": [
+            "$\\|x-y\\| \\le \\|x\\| - \\|y\\|$",
+            "$|\\|x\\| - \\|y\\|| \\le \\|x-y\\|$",
+            "$\\|x+y\\| \\ge \\|x\\| + \\|y\\|$",
+            "$\\|x\\| \\le \\|x-y\\| - \\|y\\|$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "L'inégalité triangulaire classique est $\\|x+y\\| \\le \\|x\\| + \\|y\\|$. En posant $u = x-y$ et $v = y$, on obtient par substitution $\\|x\\| \\le \\|x-y\\| + \\|y\\|$, soit $\\|x\\| - \\|y\\| \\le \\|x-y\\|$. Par symétrie, on obtient $\\|y\\| - \\|x\\| \\le \\|x-y\\|$, d'où la valeur absolue."
+    },
+    {
+        "uuid": "pre-052",
+        "image_path": null,
+        "theme": "Distance",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $E$ un espace euclidien et $F$ un sous-espace vectoriel de $E$. La distance d'un vecteur $x \\in E$ à $F$ est atteinte en un unique point $y \\in F$ si :",
+        "answers": [
+            "$F$ est de dimension finie",
+            "$F$ est un hyperplan",
+            "La propriété est vraie pour tout sous-espace $F$ d'un espace euclidien",
+            "$x$ appartient à $F^\\perp$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "Dans tout espace euclidien (donc de dimension finie), tout sous-espace vectoriel $F$ est fermé et admet un supplémentaire orthogonal. Le théorème du projeté orthogonal assure alors l'existence et l'unicité du projeté $p_F(x)$, qui réalise la distance minimale."
+    },
+    {
+        "uuid": "pre-053",
+        "image_path": null,
+        "theme": "TD Exercises",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Pour calculer la distance d'un point $x = (2, 3, -1)$ à un sous-espace vectoriel $F = Vect\\{(1,1,0), (1,0,-1)\\}$ dans $\\mathbb{R}^3$, quelle est la méthode la plus directe ?",
+        "answers": [
+            "Orthonormaliser la base de $F$ via Gram-Schmidt pour trouver le projeté",
+            "Calculer le produit scalaire des deux vecteurs générateurs",
+            "Diviser par la norme du vecteur $x$",
+            "Calculer le déterminant des vecteurs de la base"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Le calcul de la distance nécessite de trouver le projeté orthogonal $p_F(x)$. Si la base donnée n'est pas orthonormée, il faut impérativement appliquer le procédé de Gram-Schmidt pour construire une base orthonormée $(u_1, u_2)$, permettant alors de calculer $p_F(x) = (x|u_1)u_1 + (x|u_2)u_2$."
+    },
+    {
+        "uuid": "pre-054",
+        "image_path": null,
+        "theme": "Minimization",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Considérons l'espace des fonctions continues sur $[0,1]$ muni du produit scalaire usuel. L'expression $inf_{(a,b) \\in \\mathbb{R}^2} \\int_0^1 (t^2 - a - bt)^2 dt$ représente :",
+        "answers": [
+            "Le carré de la distance de la fonction $t \\mapsto t^2$ au sous-espace $\\mathbb{R}_1[t]$",
+            "La projection de $t^2$ sur l'axe des ordonnées",
+            "Une intégrale généralisée divergente",
+            "L'aire sous la courbe de la fonction $t^2$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par définition, $\\|f - P\\|^2 = \\int_0^1 (f(t) - P(t))^2 dt$. Le minimum de cette valeur lorsque $P$ parcourt $\\mathbb{R}_1[t]$ (les polynômes de degré $\\le 1$) est exactement le carré de la distance de la fonction $t^2$ à ce sous-espace."
+    },
+    {
+        "uuid": "pre-055",
+        "image_path": null,
+        "theme": "Properties",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Si $(e_1, \\dots, e_n)$ est une base orthonormale (BON) d'un espace euclidien $E$, quelle est la norme au carré d'un vecteur $x = \\sum_{i=1}^n x_i e_i$ ?",
+        "answers": [
+            "$(\\sum_{i=1}^n x_i)^2$",
+            "$\\sum_{i=1}^n x_i^2$",
+            "$\\sum_{i=1}^n |x_i|$",
+            "$max_{i} |x_i|^2$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Dans une base orthonormale, les vecteurs sont orthogonaux deux à deux et de norme 1. Le produit scalaire $(x|x) = (\\sum x_i e_i | \\sum x_j e_j)$ se réduit par linéarité et orthogonalité à $\\sum x_i^2 (e_i|e_i) = \\sum x_i^2$."
+    },
+    {
+        "uuid": "pre-056",
+        "image_path": null,
+        "theme": "Families",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans l'espace des fonctions $2\\pi$-périodiques continues muni du produit scalaire $\\frac{1}{\\pi} \\int_0^{2\\pi} f(t)g(t) dt$, les fonctions $\\sin(kt)$ et $\\cos(mt)$ pour $k, m \\in \\mathbb{N}^*$ sont :",
+        "answers": [
+            "Orthogonales pour tout couple $(k, m)$",
+            "Colinéaires",
+            "De norme nulle",
+            "Toujours de norme 1"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par les formules de linéarisation trigonométrique, l'intégrale $\\int_0^{2\\pi} \\sin(kt)\\cos(mt) dt$ est toujours nulle. Cela constitue la base de la décomposition en série de Fourier, où les fonctions sinus et cosinus forment une famille orthogonale."
+    },
+    {
+        "uuid": "pre-057",
+        "image_path": null,
+        "theme": "Projections",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $p$ un projecteur d'un espace euclidien $E$. Quelle condition sur $p$ garantit qu'il s'agit d'un projecteur orthogonal ?",
+        "answers": [
+            "$\\|p(x)\\| = \\|x\\|$ pour tout $x \\in E$",
+            "$\\|p(x)\\| \\le \\|x\\|$ pour tout $x \\in E$",
+            "$\\forall x \\in E, (p(x) | x - p(x)) = 0$",
+            "$\\|p(x)\\| = 1$ pour tout $x$ de norme 1"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "Un projecteur $p$ est orthogonal si et seulement si $\\ker(p) = Im(p)^\\perp$. Cela équivaut à dire que pour tout $x$, le vecteur $x-p(x)$ (qui est dans le noyau) est orthogonal à $p(x)$ (qui est dans l'image), soit $(p(x) | x - p(x)) = 0$."
+    },
+    {
+        "uuid": "pre-058",
+        "image_path": null,
+        "theme": "Supplementary",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Deux sous-espaces vectoriels $F$ et $G$ d'un espace euclidien $E$ sont dits orthogonaux si :",
+        "answers": [
+            "$F \\cap G = \\{0\\}$",
+            "$\\forall x \\in F, \\forall y \\in G, (x|y) = 0$",
+            "$dim(F) + dim(G) = dim(E)$",
+            "$F = G^\\perp$ et $G = F^\\perp$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La définition fondamentale de l'orthogonalité entre deux sous-espaces est que tout vecteur de l'un est orthogonal à tout vecteur de l'autre. Ne pas confondre avec les supplémentaires orthogonaux où, en plus, la somme doit être directe et égale à $E$."
+    },
+    {
+        "uuid": "pre-059",
+        "image_path": null,
+        "theme": "Hyperplans",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans un espace euclidien $E$, si $H$ est un hyperplan défini par une forme linéaire non nulle $f$, le vecteur normal à $H$ est :",
+        "answers": [
+            "N'importe quel vecteur appartenant à $H$",
+            "Un vecteur non nul appartenant à $H^\\perp$",
+            "Le vecteur nul de l'espace",
+            "Le projeté orthogonal de l'origine sur $H$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Par définition, l'orthogonal d'un hyperplan est une droite vectorielle. Tout vecteur non nul de cette droite est appelé vecteur normal à l'hyperplan $H$, car il est orthogonal à tout vecteur de $H$."
+    },
+    {
+        "uuid": "pre-060",
+        "image_path": null,
+        "theme": "Orthonormal Bases",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Tout espace euclidien (espace vectoriel réel de dimension finie muni d'un produit scalaire) possède-t-il une base orthonormale ?",
+        "answers": [
+            "Non, cela dépend de la dimension de l'espace",
+            "Oui, cela résulte du procédé d'orthonormalisation de Gram-Schmidt appliqué à n'importe quelle base",
+            "Seulement si le produit scalaire est le produit scalaire canonique",
+            "Non, c'est une propriété qui ne concerne que les espaces de dimension 2 ou 3"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le théorème de Gram-Schmidt garantit que pour toute base $(v_1, \\dots, v_n)$ d'un espace euclidien, il existe une base orthonormale $(e_1, \\dots, e_n)$ telle que pour tout $k$, $Vect(e_1, \\dots, e_k) = Vect(v_1, \\dots, v_k)$. C'est un résultat central en algèbre linéaire."
+    },
+    {
+        "uuid": "pre-061",
+        "image_path": null,
+        "theme": "Matrices",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans l'étude des structures euclidiennes sur $\\mathcal{M}_n(\\mathbb{R})$, la forme bilinéaire définie par $\\langle A, B \\rangle = \\text{Tr}({}^tAB)$ est appelée :",
+        "answers": [
+            "Produit scalaire de Hilbert-Schmidt",
+            "Produit scalaire de Cantor",
+            "Produit de Schur",
+            "Déterminant de Gram"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Le produit scalaire canonique sur $\\mathcal{M}_n(\\mathbb{R})$ est défini par $\\text{Tr}({}^tAB)$. On l'appelle produit scalaire de Hilbert-Schmidt. Le 'produit de Schur' désigne le produit terme à terme de deux matrices, qui n'est pas un produit scalaire."
+    },
+    {
+        "uuid": "pre-062",
+        "image_path": null,
+        "theme": "Projections",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $E$ un espace préhilbertien et $F$ un sous-espace vectoriel de dimension finie. Pour tout vecteur $x \\in E$, le vecteur résiduel $x - p_F(x)$ appartient nécessairement à :",
+        "answers": [
+            "$F$",
+            "$F^\\perp$",
+            "$E \\setminus F$",
+            "$\\{0_E\\}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Par définition du projeté orthogonal $p_F(x)$, le vecteur $p_F(x)$ est l'unique élément de $F$ tel que $(x - p_F(x)) \\perp F$. Ainsi, $x - p_F(x)$ appartient par construction à l'orthogonal de $F$, noté $F^\\perp$."
+    },
+    {
+        "uuid": "pre-063",
+        "image_path": null,
+        "theme": "Distance",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans un espace euclidien $E$, soit $H$ un hyperplan d'équation $(u|x)=0$ avec $\\|u\\|=1$. La distance d'un vecteur $x$ à l'hyperplan $H$ est donnée par :",
+        "answers": [
+            "$\\|x\\|$",
+            "$|(u|x)|$",
+            "$\\|x - u\\|$",
+            "$(u|x)^2$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La distance est la norme de la projection orthogonale de $x$ sur la droite normale à $H$ engendrée par $u$. Comme $\\|u\\|=1$, cette distance est simplement $|(x|u)|$."
+    },
+    {
+        "uuid": "pre-064",
+        "image_path": null,
+        "theme": "TD Exercises",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Considérons l'espace des polynômes muni d'un produit scalaire. Pourquoi la famille des polynômes de Lagrange associés à des points distincts $(a_0, ..., a_n)$ est-elle souvent étudiée ?",
+        "answers": [
+            "Car $L_i(a_j) = \\delta_{ij}$ (symbole de Kronecker)",
+            "Car ils sont de degrés différents",
+            "Car ils s'annulent tous en 0",
+            "Car la somme des racines est nulle"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La propriété fondamentale des polynômes de Lagrange est l'interpolation : $L_i(a_j) = \\delta_{ij}$. Cela permet d'exprimer tout polynôme $P$ de degré $\\le n$ sous la forme $P = \\sum P(a_i)L_i$. Attention, cette famille n'est pas orthogonale pour le produit scalaire classique $L^2$."
+    },
+    {
+        "uuid": "pre-065",
+        "image_path": null,
+        "theme": "Properties",
+        "chapter": "Espaces préhilbertiens",
+        "question": "L'égalité $\\|x+y\\|^2 = \\|x\\|^2 + \\|y\\|^2 + 2(x|y)$ est une identité vraie :",
+        "answers": [
+            "Seulement si $x \\perp y$",
+            "Toujours (identité du parallélogramme développée)",
+            "Seulement en dimension finie",
+            "Seulement pour les vecteurs unitaires"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "C'est le développement standard de la norme au carré dans tout espace préhilbertien : $\\|x+y\\|^2 = (x+y|x+y) = (x|x) + (x|y) + (y|x) + (y|y) = \\|x\\|^2 + \\|y\\|^2 + 2(x|y)$ par symétrie du produit scalaire."
+    },
+    {
+        "uuid": "pre-066",
+        "image_path": null,
+        "theme": "Orthonormal Bases",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Si on possède une famille libre dans un espace euclidien, comment obtenir une famille orthonormale engendrant le même sous-espace ?",
+        "answers": [
+            "Inversion de matrice",
+            "Procédé de Gram-Schmidt",
+            "Translation",
+            "On ne peut pas"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le procédé de Gram-Schmidt est l'algorithme constructif permettant d'orthonormaliser une base (ou famille libre) en construisant itérativement des vecteurs orthogonaux puis en les normalisant."
+    },
+    {
+        "uuid": "pre-067",
+        "image_path": null,
+        "theme": "Riesz Theorem",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $f$ une forme linéaire sur $\\mathcal{M}_n(\\mathbb{R})$ définie par $f(M) = \\text{Tr}(AM)$. Quel est le vecteur $B \\in \\mathcal{M}_n(\\mathbb{R})$ tel que $f(M) = \\langle B, M \\rangle$ ?",
+        "answers": [
+            "$A$",
+            "${}^tA$",
+            "$A^{-1}$",
+            "$I_n$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On cherche $B$ tel que $\\text{Tr}(AM) = \\text{Tr}({}^tBM)$. Par identification, on obtient ${}^tB = A$, donc $B = {}^tA$. C'est une application directe du théorème de représentation de Riesz."
+    },
+    {
+        "uuid": "pre-068",
+        "image_path": null,
+        "theme": "Supplementary",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans un espace euclidien (dimension finie), un sous-espace vectoriel $F$ admet-il toujours un supplémentaire orthogonal ?",
+        "answers": [
+            "Oui, toujours",
+            "Non, cela n'est vrai qu'en dimension finie",
+            "Seulement si $F$ est fermé",
+            "Seulement si $E$ est un espace de Hilbert"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "En dimension finie, pour tout sev $F$, on a $E = F \\oplus F^\\perp$. En dimension infinie, cela n'est vrai que si $F$ est un sous-espace fermé (dans un espace de Hilbert)."
+    },
+    {
+        "uuid": "pre-069",
+        "image_path": null,
+        "theme": "Orthogonality",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $E$ un espace préhilbertien. Quel est l'orthogonal du sous-espace nul $\\{0_E\\}$ ?",
+        "answers": [
+            "$\\{0_E\\}$",
+            "$E$",
+            "L'ensemble vide",
+            "L'espace des vecteurs unitaires"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Par définition, $x \\in \\{0_E\\}^\\perp$ si et seulement si pour tout $y \\in \\{0_E\\}$, $(x|y) = 0$. Comme $(x|0) = 0$ est toujours vrai pour tout $x \\in E$, l'orthogonal du vecteur nul est l'espace entier $E$."
+    },
+    {
+        "uuid": "pre-070",
+        "image_path": null,
+        "theme": "Gram-Schmidt",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Si la famille $(e_1, \\dots, e_n)$ est déjà une famille orthonormale, quel est le résultat de l'application du procédé de Gram-Schmidt sur cette famille ?",
+        "answers": [
+            "La famille reste inchangée",
+            "Une famille différente par rotation",
+            "Le vecteur nul",
+            "La base canonique"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Le procédé de Gram-Schmidt est idempotent : si les vecteurs sont déjà orthogonaux et normés, le calcul itératif ne modifie aucun vecteur (les projections seront nulles et les normes égales à 1)."
+    },
+    {
+        "uuid": "pre-071",
+        "image_path": null,
+        "theme": "Projections",
+        "chapter": "Espaces préhilbertiens",
+        "question": "L'application $p_F + p_{F^\\perp}$ est égale à :",
+        "answers": [
+            "$0$",
+            "$Id_E$",
+            "$2 p_F$",
+            "$p_E$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-072",
+        "image_path": null,
+        "theme": "Cauchy-Schwarz Application",
+        "chapter": "Espaces préhilbertiens",
+        "question": "En appliquant Cauchy-Schwarz à $\\int f \\cdot 1$, on montre que $(\\int_a^b f(t)dt)^2 \\le$ :",
+        "answers": [
+            "$(b-a) \\int_a^b f^2(t)dt$",
+            "$\\int_a^b f^2(t)dt$",
+            "$(b-a)^2$",
+            "$\\sqrt{\\int f^2}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-073",
+        "image_path": null,
+        "theme": "Polarization",
+        "chapter": "Espaces préhilbertiens",
+        "question": "La formule $4(x|y) = \\|x+y\\|^2 - \\|x-y\\|^2$ est utile pour :",
+        "answers": [
+            "Définir le produit scalaire à partir d'une norme euclidienne",
+            "Calculer des volumes",
+            "Démontrer que l'espace est de dimension finie",
+            "Calculer des déterminants"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-074",
+        "image_path": null,
+        "theme": "Properties",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans un espace préhilbertien, l'orthogonal d'un hyperplan $H$ est de dimension :",
+        "answers": [
+            "0",
+            "1 (si $E$ est euclidien)",
+            "$n-1$",
+            "Infinie"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-075",
+        "image_path": null,
+        "theme": "TD Exercises",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $F \\perp G$. Alors $(F+G)^\\perp$ est égal à :",
+        "answers": [
+            "$F^\\perp + G^\\perp$",
+            "$F^\\perp \\cap G^\\perp$",
+            "$E$",
+            "$\\{0_E\\}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-076",
+        "image_path": null,
+        "theme": "Families",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Une famille orthogonale de 5 vecteurs dans un espace de dimension 4 est nécessairement :",
+        "answers": [
+            "Libre",
+            "Liée (car elle contient forcément le vecteur nul)",
+            "Une base",
+            "Orthonormale"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-077",
+        "image_path": null,
+        "theme": "Definitions",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Que signifie 'positive' pour une forme bilinéaire $\\varphi$ ?",
+        "answers": [
+            "$\\varphi(x, y) \\ge 0$ pour tous $x, y$",
+            "$\\varphi(x, x) \\ge 0$ pour tout $x$",
+            "Les coefficients de sa matrice sont positifs",
+            "Elle est croissante"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-078",
+        "image_path": null,
+        "theme": "Projections",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Si $x \\in F$, que vaut $p_F(x)$ ?",
+        "answers": [
+            "$0$",
+            "$x$",
+            "$-x$",
+            "$\\|x\\|$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-079",
+        "image_path": null,
+        "theme": "Projections",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Si $x \\in F^\\perp$, que vaut $p_F(x)$ ?",
+        "answers": [
+            "$0$",
+            "$x$",
+            "$p_{F^\\perp}(x)$",
+            "Il n'est pas défini"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-080",
+        "image_path": null,
+        "theme": "Norm",
+        "chapter": "Espaces préhilbertiens",
+        "question": "L'homogénéité de la norme s'écrit :",
+        "answers": [
+            "$\\|\\lambda x\\| = \\lambda \\|x\\|$",
+            "$\\|\\lambda x\\| = |\\lambda| \\|x\\|$",
+            "$\\|\\lambda x\\| = \\lambda^2 \\|x\\|$",
+            "$\\|\\lambda x\\| = \\|x\\|$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-081",
+        "image_path": null,
+        "theme": "Pythagore",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans le cadre de l'étude des normes euclidiennes, pour une famille orthogonale $(x_i)_{1\\le i \\le n}$ d'un espace préhilbertien réel, quelle est l'expression de $\\|\\sum_{i=1}^n x_i\\|^2$ ?",
+        "answers": [
+            "$(\\sum_{i=1}^n \\|x_i\\|)^2$",
+            "$\\sum_{i=1}^n \\|x_i\\|^2$",
+            "$\\sum_{i=1}^n x_i^2$",
+            "$n \\sum_{i=1}^n \\|x_i\\|^2$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le théorème de Pythagore généralisé stipule que pour des vecteurs orthogonaux, le carré de la norme de la somme est égal à la somme des carrés des normes. Les autres propositions sont incorrectes : la première confond somme des normes et norme de la somme, et la troisième n'a pas de sens dans un espace vectoriel général (pas de produit de vecteurs par eux-mêmes en dehors du produit scalaire)."
+    },
+    {
+        "uuid": "pre-082",
+        "image_path": null,
+        "theme": "Orthogonality",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $(E, (.|.))$ un espace préhilbertien. Le vecteur nul $\\vec{0}$ est orthogonal à quel(s) élément(s) de $E$ ?",
+        "answers": [
+            "Lui-même uniquement",
+            "Tous les vecteurs de $E$",
+            "Aucun vecteur",
+            "Uniquement les vecteurs de norme 1"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Par définition, $x$ est orthogonal à $y$ si $(x|y) = 0$. Comme $(0|y) = 0$ pour tout $y \\in E$ par linéarité du produit scalaire, le vecteur nul est orthogonal à tous les vecteurs de l'espace."
+    },
+    {
+        "uuid": "pre-083",
+        "image_path": null,
+        "theme": "Gram-Schmidt",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Lors de l'application du procédé de Gram-Schmidt sur une famille de vecteurs $(v_1, \\dots, v_n)$, que se produit-il si la famille de départ est liée ?",
+        "answers": [
+            "On obtient quand même une BON après normalisation",
+            "L'un des vecteurs calculés avant normalisation sera nul",
+            "L'algorithme boucle à l'infini",
+            "Le résultat est une base canonique"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le procédé de Gram-Schmidt construit une famille orthogonale à partir d'une famille libre. Si la famille est liée, il existe un vecteur $v_k$ qui est combinaison linéaire des précédents. Le terme de projection orthogonale soustrait de $v_k$ sera égal à $v_k$, rendant le nouveau vecteur nul."
+    },
+    {
+        "uuid": "pre-084",
+        "image_path": null,
+        "theme": "Examples",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Pourquoi la forme bilinéaire $\\phi(A, B) = Tr(AB)$ n'est-elle PAS un produit scalaire sur $\\mathcal{M}_n(\\mathbb{R})$ ?",
+        "answers": [
+            "Elle n'est pas symétrique (en général $Tr(AB) = Tr(BA)$ mais pas avec la transposition)",
+            "Elle n'est pas définie positive (certains $Tr(A^2)$ sont négatifs)",
+            "Elle n'est pas bilinéaire",
+            "Elle est toujours nulle"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Pour être un produit scalaire, la forme doit être définie positive. Pour $A^2$, la trace peut être négative (par exemple avec une matrice anti-symétrique réelle). Le produit scalaire canonique sur $\\mathcal{M}_n(\\mathbb{R})$ est $\\langle A, B \\rangle = Tr({}^tAB)$."
+    },
+    {
+        "uuid": "pre-085",
+        "image_path": null,
+        "theme": "TD Exercises",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Pour projeter orthogonalement le polynôme $P = X^3$ sur l'espace $F = \\mathbb{R}_2[X]$ muni du produit scalaire $\\langle P, Q \\rangle = \\int_0^1 P(t)Q(t) dt$, quelle base de $F$ facilite grandement les calculs ?",
+        "answers": [
+            "La base canonique $(1, X, X^2)$",
+            "Une base orthonormée obtenue par Gram-Schmidt (polynômes de Legendre/orthogonaux)",
+            "N'importe quelle base",
+            "La base $(X, X^2, X^3)$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La projection orthogonale sur $F$ se calcule comme $\\sum_{i=1}^n \\langle P, e_i \\rangle e_i$ si $(e_i)$ est une base orthonormée. Utiliser la base canonique nécessiterait d'inverser la matrice de Gram, ce qui est beaucoup plus lourd et sujet aux erreurs de calcul."
+    },
+    {
+        "uuid": "pre-086",
+        "image_path": null,
+        "theme": "Orthonormal Bases",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans un espace euclidien, si l'on considère la matrice de passage $P$ entre deux bases orthonormales (BON), quelle propriété particulière possède $P$ ?",
+        "answers": [
+            "C'est une matrice symétrique",
+            "C'est une matrice orthogonale",
+            "C'est une matrice diagonale",
+            "C'est une matrice triangulaire"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La matrice de passage entre deux bases orthonormales est telle que ses colonnes forment une famille orthonormale, ce qui caractérise exactement les matrices orthogonales (vérifiant $^tPP = I_n$)."
+    },
+    {
+        "uuid": "pre-087",
+        "image_path": null,
+        "theme": "Properties",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Si $dim(E)=n$, une famille orthonormale de $n$ vecteurs dans $E$ est :",
+        "answers": [
+            "Nécessairement une base de $E$",
+            "Toujours liée",
+            "Incomplète",
+            "La base canonique"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Toute famille orthonormale est libre. Une famille libre de $n$ vecteurs dans un espace de dimension $n$ est une base. Il n'est pas nécessaire de vérifier si elle engendre l'espace, la dimension suffit."
+    },
+    {
+        "uuid": "pre-088",
+        "image_path": null,
+        "theme": "Polarization",
+        "chapter": "Espaces préhilbertiens",
+        "question": "En utilisant l'identité de polarisation, comment s'exprime le produit scalaire $\\langle x, y \\rangle$ à partir de la norme ?",
+        "answers": [
+            "$\\frac{1}{2}(\\|x+y\\|^2 - \\|x\\|^2 - \\|y\\|^2)$",
+            "$\\frac{1}{2}(\\|x+y\\|^2 + \\|x-y\\|^2)$",
+            "$\\frac{1}{4}(\\|x+y\\|^2 - \\|x-y\\|^2)$",
+            "$\\frac{1}{4}(\\|x+y\\|^2 + \\|x-y\\|^2)$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "L'identité de polarisation classique est $\\langle x, y \\rangle = \\frac{1}{4}(\\|x+y\\|^2 - \\|x-y\\|^2)$. Cette formule permet de définir le produit scalaire à partir de la norme uniquement."
+    },
+    {
+        "uuid": "pre-089",
+        "image_path": null,
+        "theme": "Distance",
+        "chapter": "Espaces préhilbertiens",
+        "question": "La distance d'un vecteur $x$ à une partie non vide $A$ d'un espace préhilbertien est définie par :",
+        "answers": [
+            "$d(x, A) = \\inf_{y \\in A} \\langle x, y \\rangle$",
+            "$d(x, A) = \\inf_{y \\in A} \\|x-y\\|$",
+            "$d(x, A) = \\sup_{y \\in A} \\|x-y\\|$",
+            "$d(x, A) = \\|x\\| - \\inf_{y \\in A} \\|y\\|$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La distance est la borne inférieure des distances entre $x$ et tous les éléments $y$ de l'ensemble $A$. La norme de la différence $\\|x-y\\|$ représente géométriquement la distance euclidienne entre deux points."
+    },
+    {
+        "uuid": "pre-090",
+        "image_path": null,
+        "theme": "TD Exercises",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans le cadre de l'étude des endomorphismes d'un espace euclidien, une matrice $A$ vérifiant $A^2 = A$ (idempotence) et ${}^tA = A$ (symétrie) représente :",
+        "answers": [
+            "Une projection orthogonale",
+            "Une symétrie orthogonale",
+            "Une rotation",
+            "Une homothétie"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La condition $A^2=A$ caractérise un projecteur. La condition ${}^tA=A$ (symétrie de la matrice) assure que le noyau et l'image sont orthogonaux, ce qui définit une projection orthogonale sur l'image parallèlement au noyau."
+    },
+    {
+        "uuid": "pre-091",
+        "image_path": null,
+        "theme": "Definitions",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Un vecteur $x$ est dit normé ou unitaire si :",
+        "answers": [
+            "$x=1$",
+            "$\\|x\\|=1$",
+            "$(x|x)=0$",
+            "Sa première coordonnée est 1"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-092",
+        "image_path": null,
+        "theme": "Hyperplans",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Tout vecteur non nul orthogonal à un hyperplan est appelé :",
+        "answers": [
+            "Vecteur directeur",
+            "Vecteur normal",
+            "Vecteur tangent",
+            "Vecteur propre"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-093",
+        "image_path": null,
+        "theme": "Projections",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Si $F=Vect(u)$ avec $u \\ne 0$, alors $p_F(x) = \\frac{(x|u)}{\\|u\\|^2}u$. Si on remplace $u$ par $2u$, le projeté :",
+        "answers": [
+            "Est multiplié par 2",
+            "Est divisé par 2",
+            "Reste inchangé",
+            "Est multiplié par 4"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-094",
+        "image_path": null,
+        "theme": "Orthonormal Bases",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Pour calculer $\\|x\\|$ dans une base qui n'est pas orthonormale :",
+        "answers": [
+            "On fait quand même $\\sqrt{\\sum x_i^2}$",
+            "On doit utiliser la matrice de Gram de la base",
+            "On ne peut pas",
+            "On divise par le déterminant"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-095",
+        "image_path": null,
+        "theme": "TD Exercises",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Soit $I_n = \\int_0^1 x^n \\ln(x) dx$. Ce résultat est utile pour calculer :",
+        "answers": [
+            "Une distance dans un espace de fonctions avec poids logarithmique",
+            "Le volume d'une sphère",
+            "La convergence d'une série",
+            "Une probabilité"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-096",
+        "image_path": null,
+        "theme": "Definitions",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Une forme bilinéaire $\\varphi$ telle que $\\varphi(x,x)=0 \\implies x=0$ sans être forcément positive est dite :",
+        "answers": [
+            "Définie",
+            "Positive",
+            "Non dégénérée",
+            "Stable"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-097",
+        "image_path": null,
+        "theme": "Matrices",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Si $A$ est la matrice d'un produit scalaire, alors $A$ est :",
+        "answers": [
+            "Symétrique définie positive",
+            "Orthogonale",
+            "Triangulaire",
+            "Nulle"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-098",
+        "image_path": null,
+        "theme": "Distance",
+        "chapter": "Espaces préhilbertiens",
+        "question": "La distance entre deux vecteurs $d(x, y)$ est égale à :",
+        "answers": [
+            "$\\|x+y\\|$",
+            "$\\|x-y\\|$",
+            "$\\|x\\| - \\|y\\|$",
+            "$(x|y)$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-099",
+        "image_path": null,
+        "theme": "Definitions",
+        "chapter": "Espaces préhilbertiens",
+        "question": "Dans le cours, quelle notation n'est PAS utilisée pour le produit scalaire ?",
+        "answers": [
+            "$(x|y)$",
+            "$\\langle x, y \\rangle$",
+            "$x \\cdot y$",
+            "$x \\times y$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 3,
+        "subject": "maths"
+    },
+    {
+        "uuid": "pre-100",
+        "image_path": null,
+        "theme": "Synthesis",
+        "chapter": "Espaces préhilbertiens",
+        "question": "L'orthogonal de l'orthogonal $(F^\\perp)^\\perp$ contient toujours :",
+        "answers": [
+            "$F$",
+            "$E$",
+            "$\\{0_E\\}$ uniquement",
+            "Rien"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths"
+    }
+]

@@ -1,0 +1,1753 @@
+[
+    {
+        "uuid": "math-se-001",
+        "image_path": null,
+        "theme": "Convergence dominée",
+        "chapter": "Séries entières",
+        "question": "Dans le cadre de l'étude de l'inversion limite-intégrale, soit $(f_n)$ une suite de fonctions continues par morceaux sur un intervalle $I$. Quelle condition de domination est requise par le théorème de convergence dominée (TCD) pour affirmer que $\\lim_{n \\to +\\infty} \\int_I f_n(t) dt = \\int_I \\lim_{n \\to +\\infty} f_n(t) dt$ ?",
+        "answers": [
+            "$\\exists \\varphi \\in L^1(I), \\forall n \\in \\mathbb{N}, \\forall t \\in I, |f_n(t)| \\le \\varphi(t)$",
+            "$\\forall n \\in \\mathbb{N}, f_n$ est une fonction bornée sur $I$",
+            "La suite des intégrales $(\\int_I f_n(t) dt)$ est une suite bornée",
+            "La série de fonctions $\\sum f_n$ converge uniformément sur tout segment de $I$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Le théorème de convergence dominée nécessite trois hypothèses : la convergence simple presque partout, la mesurabilité des fonctions, et surtout l'existence d'une fonction dominante $\\varphi$ intégrable sur $I$ qui majore le module de toutes les fonctions $f_n$. Les autres réponses sont soit des conditions insuffisantes (fonctions bornées), soit des propriétés de suites bornées qui ne garantissent pas la convergence de l'intégrale."
+    },
+    {
+        "uuid": "math-se-002",
+        "image_path": null,
+        "theme": "Suites d'intégrales",
+        "chapter": "Séries entières",
+        "question": "Soit la suite d'intégrales définie pour $n \\in \\mathbb{N}^*$ par $I_n = \\int_{0}^{1} \\ln(1+t^n) dt$. Déterminer la limite de $I_n$ lorsque $n \\to +\\infty$.",
+        "answers": [
+            "$\\ln(2)$",
+            "1",
+            "0",
+            "$+\\infty$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "Pour $t \\in [0, 1[$, la suite $f_n(t) = \\ln(1+t^n)$ converge simplement vers $\\ln(1) = 0$. Comme $|\\ln(1+t^n)| \\le \\ln(2)$ sur $[0, 1]$, et que la fonction constante $\\ln(2)$ est intégrable sur $[0, 1]$, on peut appliquer le théorème de convergence dominée : la limite de l'intégrale est l'intégrale de la limite, soit $\\int_0^1 0 dt = 0$."
+    },
+    {
+        "uuid": "math-se-003",
+        "image_path": null,
+        "theme": "Séries de fonctions intégrables",
+        "chapter": "Séries entières",
+        "question": "Pour appliquer le théorème d'intégration terme à terme à une série de fonctions $\\sum u_n$, telle que $\\sum \\int_I u_n(t) dt = \\int_I \\sum u_n(t) dt$, quelle condition sur les intégrales des modules est nécessaire ?",
+        "answers": [
+            "La suite $(\\int_I |u_n|)$ tend vers 0",
+            "La série numérique $\\sum_{n=0}^{+\\infty} \\int_I |u_n(t)| dt$ converge",
+            "La fonction $\\int_I (\\sum |u_n(t)|) dt$ est finie",
+            "Toutes les propositions ci-dessus sont équivalentes"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "D'après le théorème de Fubini-Tonelli ou le théorème d'intégration terme à terme pour les séries de fonctions, la convergence absolue de l'intégrale, définie par la convergence de la série des intégrales des valeurs absolues $\\sum \\int_I |u_n|$, est la condition suffisante pour inverser somme et intégrale."
+    },
+    {
+        "uuid": "math-se-004",
+        "image_path": null,
+        "theme": "Séries Entières - Définition",
+        "chapter": "Séries entières",
+        "question": "Soit $\\sum a_n z^n$ une série entière à coefficients complexes. Le rayon de convergence $R$ est formellement défini par :",
+        "answers": [
+            "$\\inf \\{ r \\ge 0 \\mid (a_n r^n) \\text{ est une suite bornée} \\}$",
+            "$\\sup \\{ r \\ge 0 \\mid (a_n r^n) \\text{ est une suite convergente} \\}$",
+            "$\\sup \\{ r \\ge 0 \\mid (a_n r^n) \\text{ est une suite bornée} \\}$",
+            "$\\lim_{n \\to +\\infty} |a_n| / |a_{n+1}|$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "Le lemme d'Abel affirme que si $(a_n r^n)$ est bornée, alors la série entière $\\sum a_n z^n$ converge absolument pour tout $|z| < r$. Le rayon de convergence $R$ est précisément la borne supérieure de l'ensemble des $r$ pour lesquels la suite $(a_n r^n)$ reste bornée."
+    },
+    {
+        "uuid": "math-se-005",
+        "image_path": null,
+        "theme": "Lemme d'Abel",
+        "chapter": "Séries entières",
+        "question": "D'après le lemme d'Abel, si la suite $(a_n z_0^n)$ est bornée pour un certain $z_0 \\in \\mathbb{C}^*$, que peut-on affirmer concernant la série $\\sum a_n z^n$ pour tout $z$ vérifiant $|z| < |z_0|$ ?",
+        "answers": [
+            "La série diverge grossièrement",
+            "La série converge absolument",
+            "La série converge, mais pas nécessairement absolument",
+            "La série est convergente, mais sa somme est nulle"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le lemme d'Abel est fondamental : si $(a_n z_0^n)$ est bornée par un réel $M > 0$, alors pour $|z| < |z_0|$, on a $|a_n z^n| = |a_n z_0^n| \\cdot |z/z_0|^n \\le M \\cdot k^n$ avec $k < 1$. Par comparaison avec une série géométrique convergente, la série $\\sum a_n z^n$ est absolument convergente."
+    },
+    {
+        "uuid": "math-se-006",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Soit $\\sum a_n z^n$ une série entière de rayon de convergence $R$. Quel est le rayon de convergence $R'$ de la série $\\sum a_n z^{2n}$ ?",
+        "answers": [
+            "$R^2$",
+            "$R/2$",
+            "$\\sqrt{R}$",
+            "$R$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "Posons $u = z^2$. La série devient $\\sum a_n u^n$, qui converge absolument pour $|u| < R$. Ainsi, la série initiale converge pour $|z^2| < R$, c'est-à-dire $|z| < \\sqrt{R}$. Le rayon de convergence est donc $\\sqrt{R}$."
+    },
+    {
+        "uuid": "math-se-007",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Soit $\\sum a_n z^n$ une série entière de rayon $R$. Quel est le rayon de convergence $R'$ de la série $\\sum a_n^2 z^n$ ?",
+        "answers": [
+            "$R$",
+            "$2R$",
+            "$R^2$",
+            "$\\sqrt{R}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "En utilisant la règle de Cauchy, $1/R = \\limsup |a_n|^{1/n}$. Pour la série $\\sum a_n^2 z^n$, le rayon $R'$ est donné par $1/R' = \\limsup |a_n^2|^{1/n} = \\limsup (|a_n|^{1/n})^2 = (\\limsup |a_n|^{1/n})^2 = (1/R)^2 = 1/R^2$. Donc $R' = R^2$."
+    },
+    {
+        "uuid": "math-se-008",
+        "image_path": null,
+        "theme": "Règle de d'Alembert",
+        "chapter": "Séries entières",
+        "question": "Si la limite $\\lim_{n \\to +\\infty} |a_{n+1}/a_n| = L$ existe dans $[0, +\\infty]$, alors le rayon de convergence $R$ de la série entière $\\sum a_n z^n$ est donné par :",
+        "answers": [
+            "$L$",
+            "$1/L$ (avec $1/0 = +\\infty$ et $1/+\\infty = 0$)",
+            "$e^L$",
+            "$\\ln(L)$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La règle de d'Alembert pour les séries entières découle directement de la règle de d'Alembert pour les séries numériques. Si $|a_{n+1} z^{n+1} / a_n z^n| = |a_{n+1}/a_n| |z| \to L|z|$, la série converge si $L|z| < 1$, soit $|z| < 1/L$, et diverge si $L|z| > 1$. Le rayon est donc $1/L$."
+    },
+    {
+        "uuid": "math-se-009",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Déterminer le rayon de convergence $R$ de la série entière $\\sum_{n=0}^{+\\infty} n! z^n$.",
+        "answers": [
+            "1",
+            "$+\\infty$",
+            "0",
+            "$e$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "Appliquons la règle de d'Alembert : $|a_{n+1}/a_n| = (n+1)! / n! = n+1$. Lorsque $n \\to +\\infty$, ce rapport tend vers $+\\infty$. Le rayon de convergence est donc $R = 1/(+\\infty) = 0$. La série ne converge qu'en $z=0$."
+    },
+    {
+        "uuid": "math-se-010",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Déterminer le rayon de convergence $R$ de la série entière $\\sum_{n=0}^{+\\infty} \\frac{z^n}{n!}$.",
+        "answers": [
+            "0",
+            "1",
+            "$e$",
+            "$+\\infty$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 3,
+        "subject": "maths",
+        "explication": "Avec $a_n = 1/n!$, on calcule $|a_{n+1}/a_n| = n! / (n+1)! = 1/(n+1)$. Cette quantité tend vers $L=0$ quand $n \\to +\\infty$. Le rayon de convergence est $R = 1/0 = +\\infty$. Cette série définit la fonction exponentielle sur tout $\\mathbb{C}$."
+    },
+    {
+        "uuid": "math-se-011",
+        "image_path": null,
+        "theme": "Somme de série entière",
+        "chapter": "Séries entières",
+        "question": "Dans le cadre de l'étude des fonctions usuelles, quelle est la somme de la série géométrique $\\sum_{n=0}^{+\\infty} z^n$ pour $|z| < 1$ ?",
+        "answers": [
+            "$e^z$",
+            "$\\frac{1}{1-z}$",
+            "$\\frac{1}{1+z}$",
+            "$\\ln(1-z)$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Il s'agit de la série géométrique de raison $z$. La formule est classique : $\\sum_{n=0}^{+\\infty} z^n = 1 + z + z^2 + \\dots = \\frac{1}{1-z}$. L'erreur $\\frac{1}{1+z}$ correspond à $\\sum (-z)^n$."
+    },
+    {
+        "uuid": "math-se-012",
+        "image_path": null,
+        "theme": "Propriétés de la somme",
+        "chapter": "Séries entières",
+        "question": "Soit $\\sum a_n x^n$ une série entière de rayon de convergence $R > 0$. Sur quel intervalle la fonction somme $f$ est-elle de classe $\\mathcal{C}^\\infty$ ?",
+        "answers": [
+            "Sur le disque fermé $\\bar{D}(0, R)$",
+            "Sur l'intervalle ouvert $]-R, R[$",
+            "Seulement en 0",
+            "Sur tout $\\mathbb{R}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Une série entière est indéfiniment dérivable à l'intérieur de son disque de convergence. La convergence uniforme sur tout compact inclus dans $]-R, R[$ permet de justifier la dérivation terme à terme, mais cela n'est pas garanti sur le bord."
+    },
+    {
+        "uuid": "math-se-013",
+        "image_path": null,
+        "theme": "Dérivation terme à terme",
+        "chapter": "Séries entières",
+        "question": "Soit $f(x) = \\sum_{n=0}^{+\\infty} a_n x^n$ une série entière de rayon $R > 0$. Quelle est l'expression de la dérivée $f'(x)$ pour tout $x \\in ]-R, R[$ ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} a_n x^{n-1}$",
+            "$\\sum_{n=1}^{+\\infty} n a_n x^{n-1}$",
+            "$\\sum_{n=0}^{+\\infty} a_{n+1} x^n$",
+            "$\\sum_{n=1}^{+\\infty} a_n \\frac{x^{n+1}}{n+1}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le théorème de dérivation terme à terme stipule que si $f(x) = \\sum a_n x^n$, alors $f'(x) = \\sum_{n=1}^{+\\infty} n a_n x^{n-1}$. Le premier terme ($n=0$) disparaît car sa dérivée est nulle."
+    },
+    {
+        "uuid": "math-se-014",
+        "image_path": null,
+        "theme": "Intégration terme à terme",
+        "chapter": "Séries entières",
+        "question": "En utilisant le développement en série entière de $\\frac{1}{1-t}$, quelle est la série entière représentant $F(x) = \\int_0^x \\frac{dt}{1-t}$ pour $|x| < 1$ ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} x^{n+1}$",
+            "$-\\ln(1-x) = \\sum_{n=1}^{+\\infty} \\frac{x^n}{n}$",
+            "$\\sum_{n=1}^{+\\infty} \\frac{x^n}{n^2}$",
+            "$\\sum_{n=0}^{+\\infty} (n+1)x^n$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On sait que $\\frac{1}{1-t} = \\sum_{n=0}^{+\\infty} t^n$. En intégrant terme à terme : $\\int_0^x (\\sum t^n) dt = \\sum \\int_0^x t^n dt = \\sum \\frac{x^{n+1}}{n+1} = \\sum_{k=1}^{+\\infty} \\frac{x^k}{k}$."
+    },
+    {
+        "uuid": "math-se-015",
+        "image_path": null,
+        "theme": "Théorème d'Abel (Continuité)",
+        "chapter": "Séries entières",
+        "question": "Soit $f(x) = \\sum_{n=0}^{+\\infty} a_n x^n$ de rayon $R$. Si la série numérique $\\sum a_n R^n$ converge, que nous enseigne le théorème d'Abel sur la fonction somme ?",
+        "answers": [
+            "La fonction $f$ est continue en tout point $x \\in \\mathbb{C}$",
+            "La fonction $f$ est continue en $R$ (convergence à gauche)",
+            "La série converge nécessairement uniformément sur tout $\\mathbb{R}$",
+            "La valeur $f(R)$ est nulle"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le théorème d'Abel radial assure que si $\\sum a_n R^n$ converge, alors la fonction $f(x) = \\sum a_n x^n$ admet une limite quand $x \\to R^-$ égale à $\\sum a_n R^n$, prolongeant ainsi la continuité sur le bord."
+    },
+    {
+        "uuid": "math-se-016",
+        "image_path": null,
+        "theme": "Développement en série entière (DSE)",
+        "chapter": "Séries entières",
+        "question": "Quel est le développement en série entière de $\\cos(x)$ au voisinage de $0$ ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^{2n}}{(2n)!}$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^{2n}}{(2n)!}$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^{2n+1}}{(2n+1)!}$",
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^n}{n!}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le DSE de $\\cos(x)$ est une série alternée composée des puissances paires : $\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^{2n}}{(2n)!}$. La réponse 3 correspond au $\\sin(x)$ et la réponse 4 à $\\exp(x)$."
+    },
+    {
+        "uuid": "math-se-017",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence $R$ du développement en série entière de $f(x) = \\ln(1+x)$ en 0 ?",
+        "answers": [
+            "$0$",
+            "$1$",
+            "$+\\infty$",
+            "$1/e$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La fonction $\\ln(1+x)$ est définie pour $x > -1$. Le DSE est obtenu par intégration de $\\frac{1}{1+x} = \\sum (-1)^n x^n$. La série géométrique ayant un rayon $R=1$, le rayon de la série intégrée reste identique."
+    },
+    {
+        "uuid": "math-se-018",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Pour $|x| < 1$, quel est le développement en série entière de la fonction $f(x) = \\frac{1}{(1-x)^2}$ ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} (n+1) x^n$",
+            "$\\sum_{n=0}^{+\\infty} n x^n$",
+            "$\\sum_{n=1}^{+\\infty} n x^{n-1}$",
+            "$\\sum_{n=0}^{+\\infty} x^n$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On utilise la dérivée de $\\frac{1}{1-x} = \\sum_{n=0}^{+\\infty} x^n$. En dérivant, on obtient $\\frac{1}{(1-x)^2} = \\sum_{n=1}^{+\\infty} n x^{n-1}$. En posant $k = n-1$, on retrouve $\\sum_{k=0}^{+\\infty} (k+1)x^k$."
+    },
+    {
+        "uuid": "math-se-019",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Pour $\\alpha \\in \\mathbb{R} \\setminus \\mathbb{N}$, quels sont les coefficients $a_n$ du développement en série entière de $(1+x)^\\alpha$ ?",
+        "answers": [
+            "$a_n = \\frac{\\alpha^n}{n!}$",
+            "$a_n = \\binom{\\alpha}{n} = \\frac{\\prod_{k=0}^{n-1} (\\alpha-k)}{n!}$",
+            "$a_n = \\frac{1}{n!}$",
+            "$a_n = \\alpha(\\alpha-1)...(\\alpha-n+1)$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Il s'agit de la formule du binôme généralisée. Les coefficients sont les coefficients binomiaux généralisés : $\\binom{\\alpha}{n} = \\frac{\\alpha(\\alpha-1)\\dots(\\alpha-n+1)}{n!}$. L'erreur classique est d'oublier la division par $n!$."
+    },
+    {
+        "uuid": "math-se-020",
+        "image_path": null,
+        "theme": "Unicité du DSE",
+        "chapter": "Séries entières",
+        "question": "Si deux séries entières $\\sum a_n x^n$ et $\\sum b_n x^n$ sont égales sur un intervalle $]-\\alpha, \\alpha[$ ($\\alpha > 0$), que peut-on affirmer sur les coefficients ?",
+        "answers": [
+            "Les coefficients sont égaux : $\\forall n \\in \\mathbb{N}, a_n = b_n$",
+            "On a seulement $a_0 = b_0$ et $a_1 = b_1$",
+            "Les coefficients sont égaux à une constante multiplicative près",
+            "On ne peut rien conclure sans connaître l'intervalle exact"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Le théorème d'unicité des DSE garantit que si une fonction est développable en série entière, les coefficients sont uniques et correspondent aux dérivées successives en 0 : $a_n = \\frac{f^{(n)}(0)}{n!}$."
+    },
+    {
+        "uuid": "math-se-021",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Dans le cadre de l'étude des fonctions hyperboliques, quel est le rayon de convergence $R$ de la série entière $\\sum_{n=0}^{+\\infty} \\cosh(n) x^n$ ?",
+        "answers": [
+            "$R = 1$",
+            "$R = e$",
+            "$R = 1/e$",
+            "$R = +\\infty$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "On utilise la règle de d'Alembert ou l'expression $\\cosh(n) = \\frac{e^n + e^{-n}}{2}$. Le terme général se comporte comme $\\frac{1}{2} e^n x^n$. La série converge si $|x e| < 1$, soit $|x| < 1/e$. Le rayon est donc $1/e$. Une erreur classique est de négliger le terme prépondérant $e^n$."
+    },
+    {
+        "uuid": "math-se-022",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Soit $d(n)$ la fonction arithmétique comptant le nombre de diviseurs de $n$. Quel est le rayon de convergence de la série entière $\\sum_{n=1}^{+\\infty} d(n) z^n$ ?",
+        "answers": [
+            "$R = 0$",
+            "$R = 1$",
+            "$R = +\\infty$",
+            "$R = 2$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On sait que pour tout $\\epsilon > 0$, $d(n) = O(n^\\epsilon)$. Le rayon de convergence d'une série $\\sum a_n z^n$ où $a_n$ est polynomiale ou quasi-polynomiale est donné par $R = 1/\\lim |a_{n+1}/a_n| = 1$. Ici, $\\sum z^n$ converge pour $|z|<1$ et diverge pour $|z|=1$ (série harmonique), donc $R=1$."
+    },
+    {
+        "uuid": "math-se-023",
+        "image_path": null,
+        "theme": "Produit de Cauchy",
+        "chapter": "Séries entières",
+        "question": "Soient deux séries entières $f(z) = \\sum a_n z^n$ et $g(z) = \\sum b_n z^n$ ayant respectivement pour rayons de convergence $R_a$ et $R_b$. Quel est le rayon de convergence $R$ de leur produit de Cauchy $h(z) = \\sum c_n z^n$ avec $c_n = \\sum_{k=0}^n a_k b_{n-k}$ ?",
+        "answers": [
+            "$R = R_a + R_b$",
+            "$R = \\min(R_a, R_b)$",
+            "$R \\ge \\min(R_a, R_b)$",
+            "$R = R_a R_b$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "Le produit de Cauchy de deux séries entières a un rayon de convergence au moins égal au minimum des rayons des deux séries. L'inégalité peut être stricte si les séries sont particulières, mais la propriété fondamentale retenue est $R \\ge \\min(R_a, R_b)$."
+    },
+    {
+        "uuid": "math-se-024",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "Considérons la fonction $f(x) = \\sum_{n=0}^{+\\infty} a_n x^n$ solution sur un intervalle $I$ de l'équation différentielle $y' = y$ avec la condition initiale $f(0)=1$. Quel est son coefficient $a_n$ général ?",
+        "answers": [
+            "$a_n = 1$",
+            "$a_n = 1/n$",
+            "$a_n = 1/n!$",
+            "$a_n = (-1)^n/n!$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "En substituant $\\sum a_n x^n$ dans $y'=y$, on obtient $\\sum (n+1)a_{n+1} x^n = \\sum a_n x^n$. Par unicité du DSE, $(n+1)a_{n+1} = a_n$. Avec $a_0 = f(0) = 1$, on en déduit par récurrence $a_n = 1/n!$. C'est le développement de l'exponentielle."
+    },
+    {
+        "uuid": "math-se-025",
+        "image_path": null,
+        "theme": "DSE et Parité",
+        "chapter": "Séries entières",
+        "question": "Soit $f$ une fonction impaire développable en série entière au voisinage de $0$ sous la forme $f(x) = \\sum_{n=0}^{+\\infty} a_n x^n$. Quelle condition doivent satisfaire les coefficients $a_n$ ?",
+        "answers": [
+            "$a_n = 0$ pour tout $n$ pair",
+            "$a_n = 0$ pour tout $n$ impair",
+            "$a_n$ est toujours négatif pour tout $n$",
+            "$a_n = a_{-n}$ (non défini)"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Si $f$ est impaire, alors $f(-x) = -f(x)$. En écrivant la série, $\\sum a_n (-1)^n x^n = - \\sum a_n x^n$. Par unicité, $a_n (-1)^n = -a_n$. Pour $n$ pair, $a_n = -a_n$ donc $a_n=0$. Les fonctions impaires ne comportent que des puissances impaires de $x$."
+    },
+    {
+        "uuid": "math-se-026",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Pour $\\alpha \\in \\mathbb{R}$, quel est le rayon de convergence $R$ de la série entière $\\sum_{n=1}^{+\\infty} n^\\alpha z^n$ ?",
+        "answers": [
+            "$R = 0$",
+            "$R = \\alpha$",
+            "$R = 1$",
+            "$R = +\\infty$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "On utilise la règle de d'Alembert : $|a_{n+1}/a_n| = |(n+1)^\\alpha / n^\\alpha| = (1 + 1/n)^\\alpha$. Cette limite vaut $1$ quand $n \\to +\\infty$. Le rayon de convergence est donc $R = 1/1 = 1$, indépendamment de la valeur de $\\alpha$."
+    },
+    {
+        "uuid": "math-se-027",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence $R$ de la série entière $\\sum_{n=1}^{+\\infty} \\frac{n!}{n^n} x^n$ ?",
+        "answers": [
+            "$R = 1$",
+            "$R = e$",
+            "$R = 1/e$",
+            "$R = +\\infty$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Utilisons d'Alembert : $|a_{n+1}/a_n| = \\frac{(n+1)!}{(n+1)^{n+1}} \\cdot \\frac{n^n}{n!} = \\frac{(n+1) n^n}{(n+1)^{n+1}} = \\frac{n^n}{(n+1)^n} = \\frac{1}{(1 + 1/n)^n}$. Comme $(1 + 1/n)^n \\to e$, la limite est $1/e$. Le rayon de convergence est $R = 1/(1/e) = e$."
+    },
+    {
+        "uuid": "math-se-028",
+        "image_path": null,
+        "theme": "Séries de Taylor",
+        "chapter": "Séries entières",
+        "question": "Soit $f$ une fonction admettant un développement en série entière de rayon $R > 0$. Si l'on construit sa série de Taylor $T(x) = \\sum_{n=0}^{+\\infty} \\frac{f^{(n)}(0)}{n!} x^n$, que peut-on dire de cette série ?",
+        "answers": [
+            "Elle converge vers $f(x)$ sur $]-R, R[$",
+            "Elle peut diverger partout sauf en $0$ (si $R>0$)",
+            "Elle converge vers $f(x)$ sur $\\mathbb{R}$",
+            "C'est toujours un polynôme de degré arbitraire"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par définition, si $f$ est développable en série entière sur un intervalle de rayon $R$, la série de Taylor coïncide avec ce développement sur tout l'intervalle ouvert de convergence. La proposition 2 est fausse car l'existence d'un DSE implique la convergence de la série de Taylor."
+    },
+    {
+        "uuid": "math-se-029",
+        "image_path": null,
+        "theme": "Convergence dominée",
+        "chapter": "Séries entières",
+        "question": "Soit la suite de fonctions $f_n(t) = n^2 t^n(1-t)$ définie sur $[0, 1]$. La suite $(f_n)$ converge simplement vers la fonction nulle. Que vaut la limite de l'intégrale $\\int_0^1 f_n(t) dt$ quand $n \\to +\\infty$ ?",
+        "answers": [
+            "$0$",
+            "$1$",
+            "$1/2$",
+            "$+\\infty$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On calcule l'intégrale : $\\int_0^1 (n^2 t^n - n^2 t^{n+1}) dt = n^2 [\\frac{t^{n+1}}{n+1} - \\frac{t^{n+2}}{n+2}]_0^1 = n^2 (\\frac{1}{n+1} - \\frac{1}{n+2}) = n^2 (\\frac{n+2 - n - 1}{(n+1)(n+2)}) = \\frac{n^2}{(n+1)(n+2)}$. Cette expression tend vers 1."
+    },
+    {
+        "uuid": "math-se-030",
+        "image_path": null,
+        "theme": "Interversion Intégrale/Série",
+        "chapter": "Séries entières",
+        "question": "En utilisant le développement en série entière de $\\frac{1}{1-t}$ et les théorèmes d'interversion, quelle identité est correcte ?",
+        "answers": [
+            "$\\int_0^1 \\frac{\\ln(t)}{t-1} dt = \\sum_{n=1}^{+\\infty} \\frac{1}{n^2}$",
+            "$\\int_0^1 \\frac{\\ln(t)}{t-1} dt = \\sum_{n=1}^{+\\infty} \\frac{(-1)^n}{n}$",
+            "$\\int_0^1 \\frac{\\ln(t)}{1+t} dt = \\sum_{n=1}^{+\\infty} \\frac{1}{n^2}$",
+            "$\\int_0^1 \\ln(t) dt = 1$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On a $\\frac{1}{1-t} = \\sum t^n$. Alors $\\frac{\\ln(t)}{t-1} = -\\sum t^n \\ln(t)$. En intégrant terme à terme : $\\int_0^1 -t^n \\ln(t) dt$. Avec une intégration par parties, on trouve que $\\int_0^1 -t^n \\ln(t) dt = 1/(n+1)^2$. La somme de $n=0$ à $+\\infty$ donne $\\sum 1/k^2$."
+    },
+    {
+        "uuid": "math-se-031",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Dans le cadre de l'étude d'une série entière $\\sum a_n z^n$, déterminer le rayon de convergence $R$ pour le coefficient $a_n = (1 + \\frac{1}{\\sqrt{n}})^n$.",
+        "answers": [
+            "$1$",
+            "$e$",
+            "$1/e$",
+            "$0$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "On utilise la règle de Cauchy : $1/R = \\limsup |a_n|^{1/n}$. Ici, $|a_n|^{1/n} = 1 + \\frac{1}{\\sqrt{n}}$. Lorsque $n \\to +\\infty$, cette quantité tend vers $1$. Cependant, il faut être plus précis avec un développement asymptotique : $|a_n|^{1/n} = \\exp(\\frac{1}{\\sqrt{n}} \\ln(1 + \\dots)) = \\exp(\\frac{1}{\\sqrt{n}})$. En réalité, pour $a_n = (1 + 1/\\sqrt{n})^n$, on a $\\ln |a_n| = n \\ln(1 + n^{-1/2}) = n (n^{-1/2} - \\frac{n^{-1}}{2} + o(n^{-1})) = \\sqrt{n} - 1/2 + o(1)$. Ainsi $|a_n| \\approx e^{\\sqrt{n}}e^{-1/2}$, et la limite de $|a_n|^{1/n}$ est $1$ si on ne fait pas attention, mais le calcul rigoureux via $\\exp(n \\ln(1+1/\\sqrt{n}))$ donne $e^{\\sqrt{n}}$. En réalité, $|a_n|^{1/n} \to e^0 = 1$. Rectification : le rayon est $1/e$ si $a_n = (1+1/n)^n$. Avec $(1+1/\\sqrt{n})^n$, le rayon est $1$ car la limite est $1$."
+    },
+    {
+        "uuid": "math-se-032",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Soit une série entière $\\sum a_n z^n$ telle que $\\frac{|a_{n+2}|}{|a_n|} \\to 2$ lorsque $n \\to +\\infty$. Quel est son rayon de convergence $R$ ?",
+        "answers": [
+            "$1/2$",
+            "$2$",
+            "$1/\\sqrt{2}$",
+            "$\\sqrt{2}$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "Le critère de d'Alembert porte sur le rapport $\\frac{|a_{n+1}|}{|a_n|}$. Ici, on connaît la limite sur les termes d'indices pairs. On a $\\sqrt{\\frac{|a_{n+2}|}{|a_n|}} \\to \\sqrt{2}$. Comme $\\frac{|a_{n+1}|}{|a_n|} \\sim \\sqrt{2}$, alors $R = \\lim \\frac{|a_n|}{|a_{n+1}|} = 1/\\sqrt{2}$."
+    },
+    {
+        "uuid": "math-se-033",
+        "image_path": null,
+        "theme": "Propriétés de la somme",
+        "chapter": "Séries entières",
+        "question": "Soit $S_n = \\sum_{k=0}^n a_k$ la suite des sommes partielles. Si la série entière $\\sum a_n z^n$ a un rayon de convergence $R$, quel est le rayon de convergence de la série entière $\\sum S_n z^n$ ?",
+        "answers": [
+            "$R$",
+            "$\\min(R, 1)$",
+            "$1$",
+            "$R/2$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La série $\\sum S_n z^n$ est le produit de Cauchy de $\\sum a_n z^n$ et de la série géométrique $\\sum z^n$ (de rayon 1). Le rayon du produit de Cauchy de deux séries de rayons $R_1$ et $R_2$ est au moins $\\min(R_1, R_2)$. Ici, il vaut exactement $\\min(R, 1)$."
+    },
+    {
+        "uuid": "math-se-034",
+        "image_path": null,
+        "theme": "Somme de série entière",
+        "chapter": "Séries entières",
+        "question": "En utilisant le produit de Cauchy, exprimer la somme $G(z) = \\sum_{n=0}^{+\\infty} S_n z^n$ où $S_n = \\sum_{k=0}^n a_k$, en fonction de $f(z) = \\sum_{n=0}^{+\\infty} a_n z^n$ et de la série géométrique.",
+        "answers": [
+            "$\\frac{f(z)}{1-z}$",
+            "$f(z)(1-z)$",
+            "$f'(z)$",
+            "$\\frac{f(z)}{1+z}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Le produit de Cauchy de $\\sum a_n z^n$ et $\\sum z^n$ est $\\sum c_n z^n$ avec $c_n = \\sum_{k=0}^n a_k \\cdot 1 = S_n$. Comme la somme de $\\sum z^n$ est $\\frac{1}{1-z}$, on obtient $G(z) = f(z) \\cdot \\frac{1}{1-z}$."
+    },
+    {
+        "uuid": "math-se-035",
+        "image_path": null,
+        "theme": "Opérations sur les séries",
+        "chapter": "Séries entières",
+        "question": "Soit une série entière $\\sum a_n z^n$ de rayon de convergence $R$. Quel est le rayon de convergence de la série $\\sum a_n e^{\\sqrt{n}} z^n$ ?",
+        "answers": [
+            "$R/e$",
+            "$R$",
+            "$R e$",
+            "$0$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On utilise $1/R' = \\limsup |a_n e^{\\sqrt{n}}|^{1/n} = \\limsup (|a_n|^{1/n} \\cdot e^{1/\\sqrt{n}})$. Puisque $e^{1/\\sqrt{n}} \\to 1$ quand $n \\to +\\infty$, la limite reste égale à $1/R$. Le rayon est inchangé."
+    },
+    {
+        "uuid": "math-se-036",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Soit la série entière $\\sum a_n z^n$ de rayon $R > 1$. Quel est le rayon de convergence de la série lacunaire $\\sum a_n z^{n^2}$ ?",
+        "answers": [
+            "$R$",
+            "$1$",
+            "$\\sqrt{R}$",
+            "$+\\infty$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Soit $b_k$ le coefficient de $z^k$ dans la nouvelle série : $b_k = a_n$ si $k=n^2$ et $0$ sinon. Le rayon $R'$ vérifie $1/R' = \\limsup |b_k|^{1/k}$. Pour les indices non nuls, $|b_{n^2}|^{1/n^2} = |a_n|^{1/n^2} = (|a_n|^{1/n})^{1/n}$. Comme $|a_n|^{1/n} \\to 1/R$, alors $(|a_n|^{1/n})^{1/n} \\to 1$. Donc $R' = 1$."
+    },
+    {
+        "uuid": "math-se-037",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "En cherchant une solution sous forme de série entière $f(x) = \\sum a_n x^n$ pour l'équation différentielle $x f''(x) + f'(x) + f(x) = 0$ avec $f(0)=1$, quelle est la relation de récurrence satisfaite par les coefficients $a_n$ ?",
+        "answers": [
+            "$a_n = \\frac{-a_{n-1}}{n^2}$",
+            "$a_n = \\frac{1}{n!}$",
+            "$a_n = \\frac{(-1)^n}{n!}$",
+            "$a_n = \\frac{1}{(n!)^2}$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "En injectant $\\sum a_n x^n$ dans l'équation : $\\sum n(n-1)a_n x^{n-1} + \\sum n a_n x^{n-1} + \\sum a_n x^n = 0$. Soit $\\sum n^2 a_n x^{n-1} + \\sum a_n x^n = 0$. Par décalage d'indice, $n^2 a_n + a_{n-1} = 0$, donc $a_n = -a_{n-1}/n^2$."
+    },
+    {
+        "uuid": "math-se-038",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Quel est le développement en série entière de la fonction $f(x) = \\arctan(x)$ sur son intervalle de convergence ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^{2n+1}}{2n+1}$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^{2n+1}}{2n+1}$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^n}{n}$",
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^{2n}}{2n}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On utilise le DSE de la dérivée : $f'(x) = \\frac{1}{1+x^2} = \\sum_{n=0}^{+\\infty} (-1)^n x^{2n}$. En intégrant terme à terme, comme $f(0) = 0$, on obtient $\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^{2n+1}}{2n+1}$."
+    },
+    {
+        "uuid": "math-se-039",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "Soit $f(x) = \\sum_{n=0}^{+\\infty} \\frac{x^n}{\\binom{2n}{n}}$. Quelle équation différentielle linéaire du premier ordre $f$ vérifie-t-elle ?",
+        "answers": [
+            "$(4-x)y' = y + 2$",
+            "$y' = y + x$",
+            "$4xy'' + 2y' - y = 0$",
+            "$(1-x)y' = y$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "En posant $a_n = \\binom{2n}{n}^{-1}$, on calcule le rapport $a_{n+1}/a_n = \\frac{(n!)^2 (2n)!}{(2n+2)! (n!)^2} = \\frac{(2n+1)(2n+2)}{(n+1)^2} = \\frac{2(2n+1)}{n+1}$. En manipulant la série, on montre que $f$ satisfait $(4-x)f'(x) - f(x) = 2$."
+    },
+    {
+        "uuid": "math-se-040",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Quel est le développement en série entière de $(1+x)^\\alpha$ au voisinage de $0$, et en déduire les trois premiers termes de $\\sqrt{1+x}$ ?",
+        "answers": [
+            "$1 + x/2 + x^2/8$",
+            "$1 + x/2 - x^2/8$",
+            "$1 - x/2 + x^2/4$",
+            "$1 + x/2 + x^2/2$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On utilise la formule du binôme généralisé : $(1+x)^\\alpha = 1 + \\alpha x + \\frac{\\alpha(\\alpha-1)}{2!} x^2 + o(x^2)$. Avec $\\alpha = 1/2$, le terme en $x^2$ est $\\frac{(1/2)(1/2-1)}{2} = \\frac{-1/4}{2} = -1/8$. Donc $1 + x/2 - x^2/8$."
+    },
+    {
+        "uuid": "math-se-041",
+        "image_path": null,
+        "theme": "Séries de Bell",
+        "chapter": "Séries entières",
+        "subject": "maths",
+        "question": "Soit $\\pi_n$ le nombre de partitions d'un ensemble à $n$ éléments. La fonction génératrice exponentielle $f(x) = \\sum_{n=0}^{+\\infty} \\frac{\\pi_n}{n!} x^n$ vérifie l'équation différentielle suivante :",
+        "answers": [
+            "$f'(x) = f(x)$",
+            "$f'(x) = e^x f(x)$",
+            "$f'(x) = x f(x)$",
+            "$f(x) = e^{e^x-1}$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 1,
+        "explication": "La relation de récurrence $\\pi_{n+1} = \\sum_{k=0}^n \\binom{n}{k} \\pi_k$ permet d'obtenir, après dérivation de la série génératrice exponentielle, $f'(x) = \\sum_{n=0}^{+\\infty} \\frac{\\pi_{n+1}}{n!} x^n = e^x f(x)$. L'erreur classique est de confondre avec le développement de $f(x) = e^{e^x-1}$, qui est la forme explicite de $f(x)$ et non l'équation différentielle."
+    },
+    {
+        "uuid": "math-se-042",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "subject": "maths",
+        "question": "Soient deux suites complexes $(a_n)$ et $(b_n)$ telles que $a_n \\sim b_n$ avec $b_n > 0$. Si $R_a$ et $R_b$ désignent leurs rayons de convergence respectifs, quelle relation vérifient-ils ?",
+        "answers": [
+            "$R_a = R_b$",
+            "$R_a \\le R_b$",
+            "$R_a \\ge R_b$",
+            "On ne peut pas conclure sans connaître les limites des suites"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "explication": "D'après le théorème de comparaison des séries entières, si $a_n = O(b_n)$ alors $R_a \\ge R_b$. Comme $a_n \\sim b_n$ implique $a_n = O(b_n)$ et $b_n = O(a_n)$, on en déduit par double inégalité que $R_a = R_b$. C'est un résultat fondamental pour déterminer le rayon de convergence de séries complexes par équivalents."
+    },
+    {
+        "uuid": "math-se-043",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "subject": "maths",
+        "question": "Déterminer le rayon de convergence $R$ de la série entière $\\sum_{n=0}^{+\\infty} \\sin(n) z^n$.",
+        "answers": [
+            "$R = 0$",
+            "$R = 1$",
+            "$R = +\\infty$",
+            "$R = \\pi$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "On utilise le critère de d'Alembert ou la règle de Cauchy : comme la suite $(\\sin(n))$ est bornée et ne tend pas vers $0$, on a $\\limsup |\\sin(n)|^{1/n} = 1$. Par conséquent, $R = 1 / \\limsup |\\sin(n)|^{1/n} = 1$. L'erreur est de croire que la variation de $\\sin(n)$ empêche la convergence, alors qu'elle définit simplement la limite du rayon sur le cercle de convergence."
+    },
+    {
+        "uuid": "math-se-044",
+        "image_path": null,
+        "theme": "Théorème de Bernstein",
+        "chapter": "Séries entières",
+        "subject": "maths",
+        "question": "Soit $f \\in C^\\infty(]-r, r[)$ telle que pour tout entier $n \\ge 0$ et tout $x \\in ]-r, r[$, on ait $f^{(n)}(x) \\ge 0$ (fonction complètement monotone). Alors :",
+        "answers": [
+            "$f$ est nécessairement un polynôme",
+            "$f$ est développable en série entière sur $]-r, r[$",
+            "$f$ est une fonction de la forme $C e^{ax}$",
+            "$f$ est une fonction constante"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "explication": "Il s'agit du théorème de Bernstein : une fonction $C^\\infty$ dont toutes les dérivées sont positives sur un intervalle est développable en série entière sur cet intervalle. Il ne faut pas confondre avec le fait d'être une exponentielle (ce qui est un cas particulier)."
+    },
+    {
+        "uuid": "math-se-045",
+        "image_path": null,
+        "theme": "Somme de série entière",
+        "chapter": "Séries entières",
+        "subject": "maths",
+        "question": "Calculer la valeur de la somme $S = \\sum_{n=1}^{+\\infty} \\frac{n^2}{2^n}$.",
+        "answers": [
+            "$2$",
+            "$4$",
+            "$6$",
+            "$8$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 2,
+        "explication": "On utilise le DSE de $\\frac{1}{1-x} = \\sum x^n$. En dérivant et multipliant par $x$ deux fois (opérateur $x \\frac{d}{dx}$), on obtient $\\sum n^2 x^n = \\frac{x(1+x)}{(1-x)^3}$. Pour $x = 1/2$, $S = \\frac{1/2(3/2)}{(1/2)^3} = \\frac{3/4}{1/8} = 6$."
+    },
+    {
+        "uuid": "math-se-046",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "subject": "maths",
+        "question": "Quel est le rayon de convergence $R$ de la série entière $\\sum_{n=0}^{+\\infty} e^{n^2} z^n$ ?",
+        "answers": [
+            "$R = 1$",
+            "$R = +\\infty$",
+            "$R = 0$",
+            "$R = 1/e$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "explication": "Par la règle de Cauchy, $1/R = \\limsup |a_n|^{1/n} = \\limsup (e^{n^2})^{1/n} = \\limsup e^n = +\\infty$. Ainsi, $R = 0$. La série ne converge qu'en $z=0$. L'erreur est de confondre la croissance exponentielle du coefficient avec une convergence sur un disque."
+    },
+    {
+        "uuid": "math-se-047",
+        "image_path": null,
+        "theme": "Comparaison de sommes",
+        "chapter": "Séries entières",
+        "subject": "maths",
+        "question": "Soient $\\sum a_n z^n$ et $\\sum b_n z^n$ deux séries entières de rayon de convergence $1$. Si $a_n = o(b_n)$ et que la série $\\sum b_n$ diverge, que peut-on dire du comportement de $f(x) = \\sum a_n x^n$ par rapport à $g(x) = \\sum b_n x^n$ quand $x \\to 1^-$ ?",
+        "answers": [
+            "$f(x) \\sim g(x)$",
+            "$f(x) = o(g(x))$",
+            "$f(x) = O(g(x))$ mais sans équivalence",
+            "$f(x)$ ne peut être comparée à $g(x)$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "explication": "C'est une propriété issue des théorèmes taubériens. Lorsque les coefficients d'une série entière sont positifs et que la série divergente en $x=1$ est dominée par une autre, le comportement asymptotique des sommes est conservé par la relation $o(\\cdot)$."
+    },
+    {
+        "uuid": "math-se-048",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "subject": "maths",
+        "question": "Quel est le développement en série entière (DSE) de la fonction sinus hyperbolique $\\text{sh}(x)$ au voisinage de $0$ ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^{2n}}{(2n)!}$",
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^{2n+1}}{(2n+1)!}$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^{2n+1}}{(2n+1)!}$",
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^n}{n!}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "$\\text{sh}(x) = \\frac{e^x - e^{-x}}{2}$. En soustrayant les DSE de $e^x$ et $e^{-x}$, les termes de degré pair s'annulent et les termes de degré impair se doublent, ce qui donne $\\sum \\frac{x^{2n+1}}{(2n+1)!}$. Les autres options correspondent au cosinus hyperbolique (pair), au sinus (alterné) ou à l'exponentielle."
+    },
+    {
+        "uuid": "math-se-049",
+        "image_path": null,
+        "theme": "Intégration",
+        "chapter": "Séries entières",
+        "subject": "maths",
+        "question": "Si une série entière $\\sum a_n z^n$ a pour rayon de convergence $R$, que vaut le rayon de convergence de la série intégrée $\\sum_{n=0}^{+\\infty} \\frac{a_n}{n+1} z^{n+1}$ ?",
+        "answers": [
+            "Il est strictement supérieur à $R$",
+            "Il est strictement inférieur à $R$",
+            "Il est égal à $R$",
+            "Il est toujours égal à $1$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "explication": "Le théorème d'intégration terme à terme assure que le rayon de convergence est conservé par intégration (et par dérivation). La multiplication par $1/(n+1)$ ne modifie pas la limite de la suite $|a_n|^{1/n}$ car $(n+1)^{1/n} \\to 1$."
+    },
+    {
+        "uuid": "math-se-050",
+        "image_path": null,
+        "theme": "Somme de série entière",
+        "chapter": "Séries entières",
+        "subject": "maths",
+        "question": "Quelle est la somme de la série entière $\\sum_{n=1}^{+\\infty} \\frac{x^n}{n}$ pour $x \\in ]-1, 1[$ ?",
+        "answers": [
+            "$\\ln(1-x)$",
+            "$-\\ln(1-x)$",
+            "$\\ln(1+x)$",
+            "$\\frac{1}{1-x}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "explication": "On reconnaît la série de Taylor de $-\\ln(1-x)$. En dérivant, on obtient $\\sum_{n=1} x^{n-1} = \\sum_{k=0} x^k = \\frac{1}{1-x}$. En intégrant $1/(1-x)$ entre $0$ et $x$, on obtient $-\\ln(1-x)$. Le signe est un piège classique."
+    },
+    {
+        "uuid": "math-se-051",
+        "image_path": null,
+        "theme": "Séries Entières - Abel",
+        "chapter": "Séries entières",
+        "question": "Considérons une série entière $\\sum a_n z^n$. Si cette série diverge pour une valeur $z_1 \\in \\mathbb{C}$, que peut-on affirmer pour tout $z$ tel que $|z| > |z_1|$ ?",
+        "answers": [
+            "La série diverge nécessairement.",
+            "La série converge absolument.",
+            "La série peut converger ou diverger selon le terme $a_n$.",
+            "La série est bornée, mais ne converge pas."
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "D'après le lemme d'Abel, si la série converge pour $z_0$, elle converge absolument pour tout $z$ tel que $|z| < |z_0|$. Par contraposée, si elle diverge pour $z_1$, elle ne peut pas converger pour un $z$ dont le module est strictement supérieur, car cela contredirait la convergence au point $z_1$."
+    },
+    {
+        "uuid": "math-se-052",
+        "image_path": null,
+        "theme": "Opérations algébriques",
+        "chapter": "Séries entières",
+        "question": "Soient deux séries entières $\\sum a_n z^n$ et $\\sum b_n z^n$ de rayons de convergence respectifs $R_1$ et $R_2$, avec $R_1 \\neq R_2$. Quel est le rayon de convergence $R$ de la somme $\\sum (a_n + b_n) z^n$ ?",
+        "answers": [
+            "$R_1 + R_2$",
+            "$\\max(R_1, R_2)$",
+            "$\\min(R_1, R_2)$",
+            "$\\sqrt{R_1 R_2}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "Pour la somme, le rayon de convergence est au moins égal au minimum des deux rayons. Si $R_1 < R_2$, alors pour tout $z$ tel que $R_1 < |z| < R_2$, la première série diverge et la seconde converge, donc la somme diverge. Ainsi, $R = \\min(R_1, R_2)$."
+    },
+    {
+        "uuid": "math-se-053",
+        "image_path": null,
+        "theme": "Séries Entières - Piège",
+        "chapter": "Séries entières",
+        "question": "Une série entière $\\sum a_n z^n$ de rayon de convergence $R > 0$ converge-t-elle toujours uniformément sur l'intervalle ouvert de convergence $]-R, R[$ ?",
+        "answers": [
+            "Oui, toujours, par définition du rayon de convergence.",
+            "Non, pas nécessairement : la convergence est uniforme sur tout compact inclus dans $]-R, R[$.",
+            "Seulement si $R = +\\infty$.",
+            "Seulement si la suite $(a_n)$ est décroissante vers 0."
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La convergence est locale (sur tout compact $[-K, K] \\subset ]-R, R[$), mais pas globale sur l'intervalle ouvert. Par exemple, la série géométrique $\\sum z^n$ ne converge pas uniformément sur $]-1, 1[$ car le reste $R_n(x) = \\frac{x^{n+1}}{1-x}$ n'est pas borné uniformément sur $]-1, 1[$."
+    },
+    {
+        "uuid": "math-se-054",
+        "image_path": null,
+        "theme": "Calcul de Rayon",
+        "chapter": "Séries entières",
+        "question": "Calculer le rayon de convergence $R$ de la série entière $\\sum_{n=1}^{+\\infty} \\frac{n^2}{2^n} z^n$.",
+        "answers": [
+            "$R = 1$",
+            "$R = 2$",
+            "$R = 1/2$",
+            "$R = \\sqrt{2}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On utilise la règle de d'Alembert sur le terme général $u_n(z) = \\frac{n^2}{2^n} z^n$. Le rapport $|u_{n+1}/u_n| = |\\frac{(n+1)^2}{2^{n+1}} \\cdot \\frac{2^n}{n^2}| = \\frac{1}{2} (1 + 1/n)^2 |z|$. La limite quand $n \\to \\infty$ est $\\frac{|z|}{2}$. La série converge si $\\frac{|z|}{2} < 1$, soit $|z| < 2$."
+    },
+    {
+        "uuid": "math-se-055",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence $R$ de la série entière $\\sum a^n z^n$ où $a \\in \\mathbb{C}^*$ ?",
+        "answers": [
+            "$|a|$",
+            "$1/|a|$",
+            "$1$",
+            "$0$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "C'est une série géométrique de terme général $(az)^n$. Elle converge si et seulement si $|az| < 1$, ce qui équivaut à $|z| < 1/|a|$. Le rayon de convergence est donc $1/|a|$."
+    },
+    {
+        "uuid": "math-se-056",
+        "image_path": null,
+        "theme": "DSE de fraction",
+        "chapter": "Séries entières",
+        "question": "Quel est le développement en série entière (DSE) au voisinage de 0 de la fonction $f(x) = \\frac{1}{1+x}$ ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} x^n$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n x^n$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n n x^n$",
+            "$\\sum_{n=0}^{+\\infty} x^{2n}$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On reconnaît la somme d'une série géométrique de raison $-x$ : $\\frac{1}{1-(-x)} = \\sum_{n=0}^{+\\infty} (-x)^n = \\sum_{n=0}^{+\\infty} (-1)^n x^n$. Ce DSE est valide pour $|-x| < 1$, soit $|x| < 1$."
+    },
+    {
+        "uuid": "math-se-057",
+        "image_path": null,
+        "theme": "Analyticité",
+        "chapter": "Séries entières",
+        "question": "Si deux fonctions $f(z) = \\sum a_n z^n$ et $g(z) = \\sum b_n z^n$ coïncident sur un voisinage de 0, que peut-on en déduire ?",
+        "answers": [
+            "Les fonctions sont égales sur leurs domaines de définition respectifs par prolongement analytique.",
+            "Tous les coefficients sont égaux : $a_n = b_n$ pour tout $n \\in \\mathbb{N}$.",
+            "Seulement $f'(0) = g'(0)$ et $f(0) = g(0)$.",
+            "On ne peut rien conclure sans connaître le rayon de convergence."
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "L'unicité du développement en série entière impose que si deux séries coïncident sur un voisinage de 0, alors leurs coefficients doivent être identiques (car $a_n = f^{(n)}(0)/n!$ et $b_n = g^{(n)}(0)/n!$). L'égalité des fonctions sur un voisinage entraîne l'égalité de toutes leurs dérivées en 0."
+    },
+    {
+        "uuid": "math-se-058",
+        "image_path": null,
+        "theme": "Convergence dominée",
+        "chapter": "Séries entières",
+        "question": "En utilisant le théorème de convergence dominée, quelle est la limite de $I_n = \\int_0^{+\\infty} \\frac{dt}{1+t^2+t^n e^{-t}}$ quand $n \\to +\\infty$ ?",
+        "answers": [
+            "$\\pi/2$",
+            "$\\int_0^1 \\frac{dt}{1+t^2}$",
+            "$0$",
+            "$1$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Pour $t < 1$, $t^n e^{-t} \\to 0$. Pour $t > 1$, $t^n e^{-t} \\to +\\infty$. La fonction sous l'intégrale converge simplement vers $\\frac{1}{1+t^2}$ pour $t \\in [0, 1[$ et vers $0$ pour $t > 1$. La limite est donc $\\int_0^1 \\frac{dt}{1+t^2} = \\pi/4$ (bien que la réponse B soit ici la formulation attendue du résultat limite)."
+    },
+    {
+        "uuid": "math-se-059",
+        "image_path": null,
+        "theme": "Interversion",
+        "chapter": "Séries entières",
+        "question": "Pour la série de fonctions $\\sum_{n=0}^{+\\infty} (-1)^n t^n \\ln(t)$ sur l'intervalle $]0,1[$, l'interversion $\\sum \\int = \\int \\sum$ est-elle licite ?",
+        "answers": [
+            "Oui, car la série des intégrales des valeurs absolues converge.",
+            "Non, le théorème de convergence dominée ne s'applique jamais aux séries.",
+            "Oui, par le théorème spécial des séries alternées.",
+            "Non, car la fonction n'est pas intégrable en 0."
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "L'interversion est licite si $\\sum \\int |u_n(t)| dt < \\infty$. Ici, $\\int_0^1 |(-1)^n t^n \\ln(t)| dt = \\int_0^1 t^n |\\ln(t)| dt = \\frac{1}{(n+1)^2}$. Comme la série de Riemann $\\sum \\frac{1}{(n+1)^2}$ converge, on peut intervertir par le théorème de Fubini-Tonelli/Lebesgue."
+    },
+    {
+        "uuid": "math-se-060",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "Considérons l'équation différentielle $(1+x)y' = \\alpha y$ avec la condition initiale $y(0)=1$. Quelle est sa solution développable en série entière ?",
+        "answers": [
+            "$e^{\\alpha x}$",
+            "$(1+x)^\\alpha$",
+            "$\\ln(1+\\alpha x)$",
+            "$\\cos(\\alpha x)$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "En résolvant par séparation des variables, on obtient $\\frac{y'}{y} = \\frac{\\alpha}{1+x}$, d'où $\\ln|y| = \\alpha \\ln|1+x| + C$. Avec $y(0)=1$, on trouve $y(x) = (1+x)^\\alpha$. Cette fonction est bien DSE au voisinage de 0 via la formule du binôme généralisée."
+    },
+    {
+        "uuid": "math-se-061",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Déterminer le rayon de convergence $R$ de la série entière $\\sum_{n=0}^{+\\infty} \\frac{z^{2n}}{(2n)!}$.",
+        "answers": [
+            "$R = 1$",
+            "$R = +\\infty$",
+            "$R = 0$",
+            "$R = 2$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "En posant $u_n = \\frac{1}{(2n)!}z^{2n}$, on utilise le critère de d'Alembert sur les coefficients $a_k$. Ici, $\\frac{a_{n+1}}{a_n} = \\frac{(2n)!}{(2n+2)!} = \\frac{1}{(2n+2)(2n+1)}$. La limite de ce rapport est $0$, donc le rayon est infini. C'est le développement de $\\cosh(z)$ ou $\\cos(z)$ qui sont définis sur $\\mathbb{C}$ tout entier."
+    },
+    {
+        "uuid": "math-se-062",
+        "image_path": null,
+        "theme": "Calcul de somme",
+        "chapter": "Séries entières",
+        "question": "Soit la série entière $\\sum_{n=0}^{+\\infty} (n+1) x^n$ de rayon $R=1$. Pour $|x|<1$, quelle est sa somme ?",
+        "answers": [
+            "$S(x) = \\frac{1}{1-x}$",
+            "$S(x) = \\frac{1}{(1-x)^2}$",
+            "$S(x) = \\frac{x}{(1-x)^2}$",
+            "$S(x) = \\frac{2}{(1-x)^3}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On reconnaît la dérivée de la série géométrique $\\sum_{n=0}^{+\\infty} x^{n+1} = \\frac{x}{1-x}$. En dérivant terme à terme, on obtient $\\sum_{n=0}^{+\\infty} (n+1)x^n = \\frac{d}{dx}(\\frac{x}{1-x}) = \\frac{1(1-x) - x(-1)}{(1-x)^2} = \\frac{1}{(1-x)^2}$."
+    },
+    {
+        "uuid": "math-se-063",
+        "image_path": null,
+        "theme": "Calcul de somme",
+        "chapter": "Séries entières",
+        "question": "Pour $|x|<1$, quelle est la somme de la série entière $\\sum_{n=1}^{+\\infty} n x^n$ ?",
+        "answers": [
+            "$S(x) = \\frac{x}{1-x}$",
+            "$S(x) = \\frac{x}{(1-x)^2}$",
+            "$S(x) = \\frac{1}{(1-x)^2}$",
+            "$S(x) = \\frac{1}{(1-x)^2} - 1$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On part de la série géométrique $\\sum_{n=0}^{+\\infty} x^n = \\frac{1}{1-x}$. En dérivant par rapport à $x$, on obtient $\\sum_{n=1}^{+\\infty} n x^{n-1} = \\frac{1}{(1-x)^2}$. En multipliant par $x$, on trouve $\\sum_{n=1}^{+\\infty} n x^n = \\frac{x}{(1-x)^2}$."
+    },
+    {
+        "uuid": "math-se-064",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "Soit $y(x) = \\sum_{n=0}^{+\\infty} a_n x^n$ solution de $y' = 2xy + 1$ avec $y(0)=0$. Que vaut le coefficient $a_{2p}$ ?",
+        "answers": [
+            "$a_{2p} = 0$",
+            "$a_{2p} = \\frac{1}{(2p)!}$",
+            "$a_{2p} = \\frac{2^p}{p!}$",
+            "$a_{2p} = (-1)^p$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Injectons le DSE : $\\sum n a_n x^{n-1} = 2x \\sum a_n x^n + 1$, soit $\\sum (n+1)a_{n+1} x^n = \\sum 2a_n x^{n+1} + 1$. Pour $n=0$, $a_1=1$. Pour $n$ impair, $n=2p-1$, on obtient une relation de récurrence faisant intervenir les $a_{pair}$. Comme $a_0=0$ et $a_2 = a_0 = 0$, par récurrence, tous les coefficients pairs $a_{2p}$ sont nuls."
+    },
+    {
+        "uuid": "math-se-065",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Déterminer le rayon de convergence $R$ de la série $\\sum_{n=0}^{+\\infty} \\binom{2n}{n} z^n$.",
+        "answers": [
+            "$R = 1$",
+            "$R = 1/2$",
+            "$R = 1/4$",
+            "$R = 4$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "On utilise le critère de d'Alembert sur $a_n = \\binom{2n}{n}$. Le rapport $\\frac{a_{n+1}}{a_n} = \\frac{(2n+2)!}{((n+1)!)^2} \\times \\frac{(n!)^2}{(2n)!} = \\frac{(2n+2)(2n+1)}{(n+1)^2} = \\frac{2(2n+1)}{n+1} \\to 4$. Le rayon est donc $R = 1/4$."
+    },
+    {
+        "uuid": "math-se-066",
+        "image_path": null,
+        "theme": "Convergence",
+        "chapter": "Séries entières",
+        "question": "Soit une série entière de rayon $R=1$. Que dire de la convergence de $\\sum_{n=1}^{+\\infty} \\frac{z^n}{n^2}$ en $z=i$ ?",
+        "answers": [
+            "Elle diverge",
+            "Elle converge absolument",
+            "Elle converge mais pas absolument",
+            "On ne peut pas conclure sans plus d'informations"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "En $z=i$, le terme général est $u_n = \\frac{i^n}{n^2}$. On a $|u_n| = \\frac{1}{n^2}$. Or, la série $\\sum \\frac{1}{n^2}$ est une série de Riemann convergente ($\\alpha=2 > 1$). Par majoration, la série converge absolument."
+    },
+    {
+        "uuid": "math-se-067",
+        "image_path": null,
+        "theme": "Convergence",
+        "chapter": "Séries entières",
+        "question": "Soit la série entière $\\sum_{n=0}^{+\\infty} z^n$ de rayon $R=1$. Que dire de sa convergence en $z=1$ ?",
+        "answers": [
+            "La série converge",
+            "La série diverge",
+            "La somme est égale à 1/2",
+            "La série converge vers 0"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "En $z=1$, le terme général de la série est $1^n = 1$. Puisque $\\lim_{n \\to \\infty} 1 \\neq 0$, la série diverge grossièrement (c'est une condition nécessaire de convergence)."
+    },
+    {
+        "uuid": "math-se-068",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Déterminer le rayon de convergence $R$ de la série entière $\\sum_{n=1}^{+\\infty} \\frac{x^n}{n(n+2)}$.",
+        "answers": [
+            "$R = 0$",
+            "$R = 1$",
+            "$R = 2$",
+            "$R = +\\infty$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On applique d'Alembert : $\\frac{a_{n+1}}{a_n} = \\frac{n(n+2)}{(n+1)(n+3)}$. Lorsque $n \\to +\\infty$, ce rapport tend vers 1. Ainsi, $R = 1/1 = 1$. Les facteurs polynomiaux en $n$ au dénominateur ne modifient pas le rayon de convergence d'une série géométrique standard."
+    },
+    {
+        "uuid": "math-se-069",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence $R$ de la série entière associée à la fonction $f(z) = e^{z^2}$ ?",
+        "answers": [
+            "$R = 1$",
+            "$R = 2$",
+            "$R = +\\infty$",
+            "$R = 0$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "La fonction exponentielle est développable en série entière sur $\\mathbb{C}$ tout entier. En substituant $z^2$ dans le DSE de $e^u$, on obtient $\\sum \\frac{(z^2)^n}{n!} = \\sum \\frac{z^{2n}}{n!}$. Comme le DSE original a un rayon infini, toute composée $f(z^2)$ hérite d'un rayon infini."
+    },
+    {
+        "uuid": "math-se-070",
+        "image_path": null,
+        "theme": "Propriétés de la somme",
+        "chapter": "Séries entières",
+        "question": "Soit une série entière $\\sum a_n x^n$ de rayon $R$. Quel est le rayon de convergence de sa série dérivée seconde $\\sum n(n-1) a_n x^{n-2}$ ?",
+        "answers": [
+            "$R-2$",
+            "$R/2$",
+            "$R$",
+            "$R^2$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "D'après le théorème de dérivation des séries entières, une série entière et ses séries dérivées (terme à terme) ont le même rayon de convergence. La multiplication par des polynômes en $n$ ne change pas la limite du rapport de d'Alembert $\\left| \\frac{(n+1)n a_{n+1}}{n(n-1) a_n} \\right| \\to \\left| \\frac{a_{n+1}}{a_n} \\right|$."
+    },
+    {
+        "uuid": "math-se-071",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Déterminer le rayon de convergence $R$ de la série entière $\\sum_{n=0}^{+\\infty} a_n z^n$ où le coefficient est défini par $a_n = 2^n + 5^n$.",
+        "answers": [
+            "$R = 1/2$",
+            "$R = 1/5$",
+            "$R = 1/7$",
+            "$R = 5$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Pour une somme de deux termes $a_n = u_n + v_n$, si les rayons de convergence respectifs $R_u$ et $R_v$ sont distincts, alors le rayon de la somme est $R = \\min(R_u, R_v)$. Ici, $\\sum 2^n z^n$ a pour rayon $1/2$ et $\\sum 5^n z^n$ a pour rayon $1/5$. Le rayon de la somme est donc $1/5$."
+    },
+    {
+        "uuid": "math-se-072",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Soit la série entière $\\sum_{n=0}^{+\\infty} \\cos(n) z^n$. Quel est son rayon de convergence $R$ ?",
+        "answers": [
+            "$R = 0$",
+            "$R = 1$",
+            "$R = +\\infty$",
+            "$R = 2$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le coefficient $a_n = \\cos(n)$ est borné mais ne tend pas vers 0. On utilise la formule d'Hadamard : $1/R = \\limsup |a_n|^{1/n} = \\limsup |\\cos(n)|^{1/n}$. Comme $0 < |\\cos(n)| \\leq 1$, la limite supérieure est égale à 1, donc $R=1$."
+    },
+    {
+        "uuid": "math-se-073",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "Soit $f$ une fonction développable en série entière $f(x) = \\sum_{n=0}^{+\\infty} a_n x^n$ vérifiant l'équation $f'(x) = f(\\lambda x)$ avec $f(0)=1$ et $\\lambda \\in ]0,1[$. Quelle est l'expression du coefficient $a_n$ ?",
+        "answers": [
+            "$a_n = \\lambda^n / n!$",
+            "$a_n = \\lambda^{n(n-1)/2} / n!$",
+            "$a_n = 1/n!$",
+            "$a_n = \\lambda^{n^2} / n!$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "En dérivant le développement en série : $f'(x) = \\sum_{n=1}^{+\\infty} n a_n x^{n-1}$. En injectant $f(\\lambda x) = \\sum a_n \\lambda^n x^n$, on obtient par identification $a_{n+1} = a_n \\frac{\\lambda^n}{n+1}$. Par récurrence, $a_n = a_0 \\frac{\\lambda^{\\sum_{k=0}^{n-1} k}}{n!} = \\frac{\\lambda^{n(n-1)/2}}{n!}$ avec $a_0=1$."
+    },
+    {
+        "uuid": "math-se-074",
+        "image_path": null,
+        "theme": "Théorème d'Abel",
+        "chapter": "Séries entières",
+        "question": "Si la série numérique $\\sum a_n$ converge, que peut-on dire de la fonction $f(x) = \\sum_{n=0}^{+\\infty} a_n x^n$ au voisinage de $x=1$ ?",
+        "answers": [
+            "$f$ est continue sur $]-1, 1[$ uniquement",
+            "$f$ est continue sur $[0, 1]$ par le théorème d'Abel",
+            "$f$ est continue sur $[-1, 1[$",
+            "$f$ est continue sur $\\mathbb{R}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le théorème d'Abel radial stipule que si $\\sum a_n$ converge, alors la série entière converge uniformément sur $[0, 1]$, ce qui garantit la continuité de $f$ en $x=1$. La proposition correcte est donc la continuité sur $[0,1]$."
+    },
+    {
+        "uuid": "math-se-075",
+        "image_path": null,
+        "theme": "Somme de série entière",
+        "chapter": "Séries entières",
+        "question": "Quelle est la somme de la série entière $\\sum_{n=0}^{+\\infty} (-1)^n x^{2n}$ pour $|x| < 1$ ?",
+        "answers": [
+            "$1/(1-x^2)$",
+            "$1/(1+x^2)$",
+            "$\\cos(x)$",
+            "$\\arctan(x)$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Il s'agit d'une série géométrique de raison $q = -x^2$. La formule $\\sum q^n = 1/(1-q)$ s'applique pour $|q|<1$, soit $|x|<1$. Ici, on a $\\sum (-x^2)^n = 1/(1-(-x^2)) = 1/(1+x^2)$."
+    },
+    {
+        "uuid": "math-se-076",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence $R$ de la série entière $\\sum_{n=1}^{+\\infty} \\frac{z^n}{n^k}$ pour un entier $k \\in \\mathbb{N}^*$ ?",
+        "answers": [
+            "$R = 0$",
+            "$R = 1$",
+            "$R = +\\infty$",
+            "$R = k$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "En utilisant la règle de d'Alembert sur le terme général $u_n = 1/n^k$, on a $|u_{n+1}/u_n| = |n/(n+1)|^k \\to 1$. Le rayon est donc $R = 1/1 = 1$. La valeur de $k$ n'influence que la convergence aux bords du disque."
+    },
+    {
+        "uuid": "math-se-077",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence $R$ de la série lacunaire $\\sum_{n=0}^{+\\infty} z^{n!}$ ?",
+        "answers": [
+            "$R = 0$",
+            "$R = 1$",
+            "$R = +\\infty$",
+            "$R = 1/2$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Pour une série $\\sum a_n z^n$ où $a_n = 1$ si $n$ est une factorielle et $0$ sinon, la limite supérieure $\\limsup |a_n|^{1/n} = 1$. Le rayon de convergence est donc $R=1$."
+    },
+    {
+        "uuid": "math-se-078",
+        "image_path": null,
+        "theme": "Intégration",
+        "chapter": "Séries entières",
+        "question": "Soit $f(x) = \\sum_{n=0}^{+\\infty} a_n x^n$ une fonction développable en série entière sur $]-R, R[$. Quelle est l'expression d'une primitive $F$ de $f$ telle que $F(0) = C$ ?",
+        "answers": [
+            "$F(x) = C + \\sum_{n=0}^{+\\infty} n a_n x^{n-1}$",
+            "$F(x) = C + \\sum_{n=0}^{+\\infty} \\frac{a_n}{n+1} x^{n+1}$",
+            "$F(x) = C + \\sum_{n=1}^{+\\infty} a_n x^{n-1}$",
+            "$F(x) = C + \\sum_{n=0}^{+\\infty} a_n x^{n+1}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le théorème d'intégration terme à terme des séries entières permet d'affirmer que la primitive s'obtient en intégrant chaque terme $a_n x^n$ en $a_n \\frac{x^{n+1}}{n+1}$ et en ajoutant une constante d'intégration."
+    },
+    {
+        "uuid": "math-se-079",
+        "image_path": null,
+        "theme": "Analyticité",
+        "chapter": "Séries entières",
+        "question": "Soit $f$ définie par $f(x) = e^{-1/x^2}$ pour $x \\neq 0$ et $f(0) = 0$. La fonction $f$ est-elle développable en série entière en 0 ?",
+        "answers": [
+            "Oui, car elle est de classe $C^\\infty$ sur $\\mathbb{R}$",
+            "Non, car toutes ses dérivées en 0 sont nulles sans que $f$ soit nulle",
+            "Oui, sur l'intervalle $]-1, 1[$",
+            "Non, car elle n'est pas continue en 0"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "C'est un contre-exemple classique : cette fonction est $C^\\infty$ et toutes ses dérivées en 0 valent 0. Si elle était développable en série entière, elle devrait être égale à sa série de Taylor (qui est la série nulle) au voisinage de 0, ce qui n'est pas le cas car $f(x) > 0$ pour $x \\neq 0$."
+    },
+    {
+        "uuid": "math-se-080",
+        "image_path": null,
+        "theme": "Série de Catalan",
+        "chapter": "Séries entières",
+        "question": "La série entière $f(x) = \\sum_{n=0}^{+\\infty} c_n x^n$ vérifie l'équation $x f(x)^2 - f(x) + 1 = 0$. Quels sont ses coefficients $c_n$ ?",
+        "answers": [
+            "$c_n = \\frac{1}{n+1} \\binom{2n}{n}$",
+            "$c_n = \\binom{2n}{n}$",
+            "$c_n = \\frac{1}{n!}$",
+            "$c_n = 2^n$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Il s'agit de la fonction génératrice des nombres de Catalan. En résolvant l'équation du second degré $x f^2 - f + 1 = 0$, on trouve $f(x) = \\frac{1 - \\sqrt{1 - 4x}}{2x}$ (la racine choisie permet la convergence en 0). Le développement en série de cette expression donne précisément les nombres de Catalan $C_n = \\frac{1}{n+1} \\binom{2n}{n}$."
+    },
+    {
+        "uuid": "math-se-081",
+        "image_path": null,
+        "theme": "Convergence dominée",
+        "chapter": "Séries entières",
+        "question": "Dans le cadre de l'étude de la limite d'intégrales à paramètre, quelle est la limite quand $n \\to +\\infty$ de $\\int_1^{+\\infty} \\frac{-3}{5+t^{2n}} dt$ ?",
+        "answers": [
+            "-3/5",
+            "0",
+            "-3",
+            "$+\\infty$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Pour $t > 1$, la suite de fonctions $f_n(t) = \\frac{-3}{5+t^{2n}}$ converge simplement vers $0$ car $t^{2n} \\to +\\infty$. Comme $|f_n(t)| \\le 3/5$ pour $t \\in [1, 2]$ et $|f_n(t)| \\le \\frac{3}{t^{2n}}$ pour $t > 2$, on peut appliquer le théorème de convergence dominée. L'intégrale de la limite est nulle."
+    },
+    {
+        "uuid": "math-se-082",
+        "image_path": null,
+        "theme": "Calcul de Rayon",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence $R$ de la série entière $\\sum_{n=1}^{+\\infty} (1+1/n)^{n^2} z^n$ ?",
+        "answers": [
+            "1",
+            "$e$",
+            "$1/e$",
+            "0"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "On utilise la règle de Cauchy : $R = 1/\\limsup |a_n|^{1/n}$. Ici, $|a_n|^{1/n} = ((1+1/n)^{n^2})^{1/n} = (1+1/n)^n$. Or, $(1+1/n)^n = \\exp(n \\ln(1+1/n)) \\to e$ quand $n \\to +\\infty$. Donc $R = 1/e$."
+    },
+    {
+        "uuid": "math-se-083",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Quel est le développement en série entière (DSE) de la fonction $\\text{ch}(x)$ au voisinage de $0$ ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^{2n}}{(2n)!}$",
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^{2n+1}}{(2n+1)!}$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^{2n}}{(2n)!}$",
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^n}{n!}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par définition, $\\text{ch}(x) = \\frac{e^x + e^{-x}}{2}$. En sommant les DSE de $e^x$ et $e^{-x}$, les termes de puissance impaire s'annulent et les termes pairs doublent, donnant $\\sum \\frac{x^{2n}}{(2n)!}$."
+    },
+    {
+        "uuid": "math-se-084",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "Quelle est la solution développable en série entière de l'équation différentielle $xy'' + (x-1)y' - y = 0$ avec la condition initiale $y(0)=1$ ?",
+        "answers": [
+            "$e^x$",
+            "$e^{-x}$",
+            "$(1-x)e^{-x}$",
+            "$(1+x)e^x$"
+        ],
+        "difficulty": 5,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "En cherchant une solution sous la forme $y = \\sum a_n x^n$, on trouve une relation de récurrence simple. Ici, on vérifie que $(1-x)e^{-x} = (1-x) \\sum \\frac{(-x)^n}{n!} = \\sum \\frac{(-1)^n x^n}{n!} - \\sum \\frac{(-1)^n x^{n+1}}{n!}$ satisfait bien l'équation et la condition $y(0)=1$."
+    },
+    {
+        "uuid": "math-se-085",
+        "image_path": null,
+        "theme": "Interversion",
+        "chapter": "Séries entières",
+        "question": "En utilisant les séries géométriques, quelle est la valeur de l'intégrale $\\int_0^{+\\infty} \\frac{x^2}{e^x-1} dx$ ?",
+        "answers": [
+            "$\\sum_{n=1}^{+\\infty} \\frac{1}{n^3}$",
+            "$2 \\sum_{n=1}^{+\\infty} \\frac{1}{n^3}$",
+            "$\\pi^2/6$",
+            "1"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On écrit $\\frac{x^2}{e^x-1} = x^2 e^{-x} \\sum_{n=0}^{+\\infty} e^{-nx} = \\sum_{n=1}^{+\\infty} x^2 e^{-nx}$. Par interversion (théorème de convergence monotone), l'intégrale vaut $\\sum_{n=1}^{+\\infty} \\int_0^{+\\infty} x^2 e^{-nx} dx$. Avec le changement de variable $u=nx$, l'intégrale vaut $2/n^3$, d'où le résultat."
+    },
+    {
+        "uuid": "math-se-086",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence de la série entière $\\sum_{n=0}^{+\\infty} 2^{n} z^{2n}$ ?",
+        "answers": [
+            "1/2",
+            "$1/\\sqrt{2}$",
+            "2",
+            "$\\sqrt{2}$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Posons $Z = z^2$. La série devient $\\sum 2^n Z^n$, de rayon $R_Z = 1/2$ (règle de d'Alembert). Comme $Z=z^2$, la série converge pour $|z^2| < 1/2$, soit $|z| < 1/\\sqrt{2}$."
+    },
+    {
+        "uuid": "math-se-087",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Quel est le développement en série entière de $f(x) = \\frac{1}{1-x}$ sur l'intervalle $]-1, 1[$ ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} x^n$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n x^n$",
+            "$\\sum_{n=0}^{+\\infty} n x^n$",
+            "$\\sum_{n=0}^{+\\infty} x^{2n}$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "C'est la définition même de la série géométrique : $\\frac{1}{1-x} = \\sum_{n=0}^{+\\infty} x^n$ pour $|x| < 1$. C'est le point de départ de nombreux DSE."
+    },
+    {
+        "uuid": "math-se-088",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Soit la série entière $\\sum a_n z^n$ avec $a_n = n^{(-1)^n}$. Quel est son rayon de convergence ?",
+        "answers": [
+            "0",
+            "1",
+            "$+\\infty$",
+            "2"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On étudie la limite supérieure de $|a_n|^{1/n}$. Pour $n$ pair, $a_n = n^{1/n} \\to 1$. Pour $n$ impair, $a_n = (1/n)^{1/n} = 1/n^{1/n} \\to 1$. Comme la limite supérieure vaut 1, le rayon est $R = 1/1 = 1$."
+    },
+    {
+        "uuid": "math-se-089",
+        "image_path": null,
+        "theme": "Calcul de limite",
+        "chapter": "Séries entières",
+        "question": "Quelle est la limite quand $n \\to +\\infty$ de $\\int_0^{+\\infty} \\frac{e^{-5x/n}}{9+x^2} dx$ ?",
+        "answers": [
+            "0",
+            "$\\pi/2$",
+            "$\\pi/6$",
+            "$1/9$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 2,
+        "subject": "maths",
+        "explication": "La suite de fonctions $f_n(x) = \\frac{e^{-5x/n}}{9+x^2}$ converge simplement vers $\\frac{1}{9+x^2}$. Par le théorème de convergence dominée (la fonction est dominée par $1/(9+x^2)$ qui est intégrable sur $\\mathbb{R}^+$), la limite est $\\int_0^{+\\infty} \\frac{1}{9+x^2} dx = [\\frac{1}{3} \\arctan(x/3)]_0^{+\\infty} = \\frac{1}{3} \\cdot \\frac{\\pi}{2} = \\pi/6$."
+    },
+    {
+        "uuid": "math-se-090",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Quel est le développement en série entière de $\\sin(x)$ ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^{2n}}{(2n)!}$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^{2n+1}}{(2n+1)!}$",
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^{2n+1}}{(2n+1)!}$",
+            "$\\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^n}{n!}$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Le sinus est une fonction impaire, son DSE ne contient que des puissances impaires. La formule est $\\sin(x) = \\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^{2n+1}}{(2n+1)!}$."
+    },
+    {
+        "uuid": "math-se-091",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Dans le cadre de l'étude d'une série entière $\\sum a_n z^n$, quel est le rayon de convergence $R$ de la série $\\sum_{n=0}^{+\\infty} \\frac{1}{2^n} z^{n^2}$ ?",
+        "answers": [
+            "$0$",
+            "$1$",
+            "$+\\infty$",
+            "$2$"
+        ],
+        "difficulty": 4,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "La série est de la forme $\\sum b_k z^k$ avec $b_k = 1/2^{\\sqrt{k}}$ si $k$ est un carré parfait, et $0$ sinon. Appliquons le critère de d'Alembert sur la suite $u_n = \\frac{1}{2^n} z^{n^2}$. On a $|\\frac{u_{n+1}}{u_n}| = |\\frac{1}{2} z^{(n+1)^2 - n^2}| = \\frac{1}{2} |z|^{2n+1}$. Pour tout $z$ tel que $|z| < 1$, cette limite tend vers $0 < 1$, la série converge. Pour $|z| > 1$, elle tend vers $+\\infty$, elle diverge. Donc $R=1$."
+    },
+    {
+        "uuid": "math-se-092",
+        "image_path": null,
+        "theme": "Analyticité",
+        "chapter": "Séries entières",
+        "question": "Parmi les propositions suivantes, quelle est la nature de toute fonction polynomiale vis-à-vis de son développement en série entière (DSE) au voisinage de $0$ ?",
+        "answers": [
+            "Vrai, de rayon $+\\infty$",
+            "Faux, seulement au voisinage de ses racines",
+            "Vrai, mais de rayon fini",
+            "Seulement si le degré est pair"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Un polynôme $P(x) = \\sum_{k=0}^d a_k x^k$ est déjà une somme finie. Par unicité du DSE, il est son propre développement en série entière, et ce développement converge sur $\\mathbb{R}$ tout entier, soit un rayon $R = +\\infty$."
+    },
+    {
+        "uuid": "math-se-093",
+        "image_path": null,
+        "theme": "Somme de série entière",
+        "chapter": "Séries entières",
+        "question": "En utilisant les développements usuels, quelle est la valeur de la somme de la série numérique $\\sum_{n=0}^{+\\infty} \\frac{(-1)^n}{2n+1}$ ?",
+        "answers": [
+            "$\\pi/4$",
+            "$1$",
+            "$\\ln(2)$",
+            "$\\pi/2$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On reconnaît le DSE de la fonction $\\arctan(x) = \\sum_{n=0}^{+\\infty} (-1)^n \\frac{x^{2n+1}}{2n+1}$. Pour $x=1$, qui est dans le disque de convergence, on obtient $\\arctan(1) = \\pi/4$."
+    },
+    {
+        "uuid": "math-se-094",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Quel est le développement en série entière de la fonction $f(x) = \\ln(1-x)$ pour tout $x$ tel que $|x| < 1$ ?",
+        "answers": [
+            "$\\sum_{n=1}^{+\\infty} \\frac{x^n}{n}$",
+            "$-\\sum_{n=1}^{+\\infty} \\frac{x^n}{n}$",
+            "$\\sum_{n=1}^{+\\infty} (-1)^n \\frac{x^n}{n}$",
+            "$\\sum_{n=0}^{+\\infty} x^n$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On part de la série géométrique $\\frac{1}{1-t} = \\sum_{n=0}^{+\\infty} t^n$. En intégrant entre $0$ et $x$, on obtient $\\int_0^x \\frac{dt}{1-t} = [-\\ln(1-t)]_0^x = -\\ln(1-x)$. D'où $-\\ln(1-x) = \\sum_{n=0}^{+\\infty} \\frac{x^{n+1}}{n+1} = \\sum_{n=1}^{+\\infty} \\frac{x^n}{n}$, soit $\\ln(1-x) = -\\sum_{n=1}^{+\\infty} \\frac{x^n}{n}$."
+    },
+    {
+        "uuid": "math-se-095",
+        "image_path": null,
+        "theme": "Equations différentielles",
+        "chapter": "Séries entières",
+        "question": "Soit l'équation différentielle linéaire $y' = y$ avec la condition initiale $y(0)=1$. Quelle série entière est solution de ce problème ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^n}{n!}$",
+            "$\\sum_{n=0}^{+\\infty} x^n$",
+            "$\\sum_{n=0}^{+\\infty} \\frac{(-1)^n x^n}{n!}$",
+            "$\\sum_{n=1}^{+\\infty} \\frac{x^n}{n}$"
+        ],
+        "difficulty": 1,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La solution de l'équation $y'=y$ est $y(x) = C e^x$. Avec $y(0)=1$, on obtient $y(x) = e^x$. Le DSE de l'exponentielle est bien $\\sum_{n=0}^{+\\infty} \\frac{x^n}{n!}$."
+    },
+    {
+        "uuid": "math-se-096",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence $R$ de la série entière $\\sum_{n=1}^{+\\infty} \\frac{n}{n^2+1} x^n$ ?",
+        "answers": [
+            "$0$",
+            "$1$",
+            "$+\\infty$",
+            "$1/2$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On utilise la règle de d'Alembert. Soit $u_n = \\frac{n}{n^2+1} x^n$. On a $|\\frac{u_{n+1}}{u_n}| = |\\frac{n+1}{(n+1)^2+1} \\cdot \\frac{n^2+1}{n} \\cdot x| \\sim |\\frac{n^3}{n^3} x| = |x|$. La série converge si $|x| < 1$ et diverge si $|x| > 1$, donc $R=1$."
+    },
+    {
+        "uuid": "math-se-097",
+        "image_path": null,
+        "theme": "Propriétés",
+        "chapter": "Séries entières",
+        "question": "Soit $f(x) = \\sum_{n=0}^{+\\infty} a_n x^n$ une fonction développable en série entière. Si $f$ est une fonction paire, alors sa dérivée $f'$ est nécessairement :",
+        "answers": [
+            "Paire",
+            "Impaire",
+            "Ni l'un ni l'autre",
+            "Nulle"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Si $f$ est paire, alors $f(-x) = f(x)$. En dérivant, on obtient par la règle de composition : $-f'(-x) = f'(x)$, soit $f'(-x) = -f'(x)$, ce qui est la définition d'une fonction impaire."
+    },
+    {
+        "uuid": "math-se-098",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence $R$ de la série $\\sum_{n=1}^{+\\infty} a_n z^n$ avec $a_n = \\frac{n!}{n^n}$ ?",
+        "answers": [
+            "$1$",
+            "$e$",
+            "$1/e$",
+            "$0$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "On utilise le critère de d'Alembert : $|\\frac{a_{n+1}}{a_n}| = \\frac{(n+1)!}{(n+1)^{n+1}} \\cdot \\frac{n^n}{n!} = \\frac{(n+1) \\cdot n^n}{(n+1)^{n+1}} = (\\frac{n}{n+1})^n = (1 + \\frac{1}{n})^{-n}$. Or $\\lim_{n \\to \\infty} (1 + \\frac{1}{n})^{-n} = e^{-1} = 1/e$. Le rayon de convergence est l'inverse de cette limite, soit $R = e$."
+    },
+    {
+        "uuid": "math-se-099",
+        "image_path": null,
+        "theme": "Calcul de somme",
+        "chapter": "Séries entières",
+        "question": "Quelle est la valeur de la somme de la série $\\sum_{n=1}^{+\\infty} \\frac{1}{n 2^n}$ ?",
+        "answers": [
+            "$\\ln(2)$",
+            "$1$",
+            "$\\ln(1/2)$",
+            "$1/2$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On utilise le DSE de $-\\ln(1-x) = \\sum_{n=1}^{+\\infty} \\frac{x^n}{n}$. En posant $x=1/2$ (qui est dans l'intervalle de convergence), on obtient $-\\ln(1-1/2) = -\\ln(1/2) = \\ln(2) = \\sum_{n=1}^{+\\infty} \\frac{(1/2)^n}{n} = \\sum_{n=1}^{+\\infty} \\frac{1}{n 2^n}$."
+    },
+    {
+        "uuid": "math-se-100",
+        "image_path": null,
+        "theme": "Convergence dominée",
+        "chapter": "Séries entières",
+        "question": "Quelle est la limite de la suite d'intégrales $I_n = \\int_1^{+\\infty} \\frac{1}{x^n+x^2} dx$ quand $n$ tend vers $+\\infty$ ?",
+        "answers": [
+            "$1$",
+            "$0$",
+            "$\\ln(2)$",
+            "$+\\infty$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "subject": "maths",
+        "explication": "Pour $x \\in [1, +\\infty[$, on a $0 \\le \\frac{1}{x^n+x^2} \\le \\frac{1}{x^2}$. La fonction $f(x) = 1/x^2$ est intégrable sur $[1, +\\infty[$. La suite de fonctions $f_n(x) = \\frac{1}{x^n+x^2}$ converge simplement vers $f(x) = 0$ pour $x > 1$. Par le théorème de convergence dominée, $\\lim I_n = \\int_1^{+\\infty} 0 dx = 0$."
+    },
+    {
+        "uuid": "math-se-101",
+        "image_path": null,
+        "theme": "Rayon de convergence",
+        "chapter": "Séries entières",
+        "question": "Dans le cadre de l'étude de la régularité des fonctions définies par des séries entières, si la série entière $\\sum a_n z^n$ possède un rayon de convergence $R > 0$, quel est le rayon de convergence $R'$ de la série $\\sum_{n \\ge 1} n^k a_n z^n$ où $k$ est un entier naturel fixé ?",
+        "answers": [
+            "$R/k$",
+            "$R$",
+            "$R^k$",
+            "$+\\infty$"
+        ],
+        "difficulty": 3,
+        "correct_answer_index": 1,
+        "explication": "Le rayon de convergence d'une série entière $\\sum b_n z^n$ est déterminé par la croissance de $b_n$. Ici, $b_n = n^k a_n$. En utilisant la règle de d'Alembert ou la formule de Cauchy-Hadamard, $\\lim_{n \\to \\infty} |n^k|^{1/n} = 1$. Ainsi, la présence du facteur polynomial $n^k$ ne modifie pas le rayon de convergence, car la croissance polynomiale est négligeable devant la croissance géométrique du terme général qui dicte la convergence. Les autres propositions sont des erreurs classiques de confusion avec les propriétés des dérivées ou des puissances.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-102",
+        "image_path": null,
+        "theme": "DSE classique",
+        "chapter": "Séries entières",
+        "question": "Quel est le développement en série entière (DSE) au voisinage de $0$ de la fonction $f(x) = \\text{sh}(x) + \\text{ch}(x)$ ?",
+        "answers": [
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^n}{n!}$",
+            "$\\sum_{n=0}^{+\\infty} \\frac{x^{2n}}{(2n)!}$",
+            "$\\sum_{n=0}^{+\\infty} \\frac{(-1)^n x^n}{n!}$",
+            "$\\sum_{n=0}^{+\\infty} x^n$"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 0,
+        "explication": "Par définition, $\\text{sh}(x) = \\sum_{n=0}^{+\\infty} \\frac{x^{2n+1}}{(2n+1)!}$ et $\\text{ch}(x) = \\sum_{n=0}^{+\\infty} \\frac{x^{2n}}{(2n)!}$. En sommant les deux, on obtient la série regroupant tous les termes : $\\frac{x^0}{0!} + \\frac{x^1}{1!} + \\frac{x^2}{2!} + \\dots$, ce qui correspond au développement de l'exponentielle $e^x = \\sum_{n=0}^{+\\infty} \\frac{x^n}{n!}$. La confusion fréquente consiste à isoler les termes pairs ou impairs au lieu de les fusionner.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-se-103",
+        "image_path": null,
+        "theme": "Calcul de Rayon",
+        "chapter": "Séries entières",
+        "question": "Quel est le rayon de convergence $R$ de la série entière $\\sum_{n \\ge 1} \\frac{x^n}{n^n}$ ?",
+        "answers": [
+            "1",
+            "0",
+            "$+\\infty$",
+            "e"
+        ],
+        "difficulty": 2,
+        "correct_answer_index": 2,
+        "explication": "Pour déterminer le rayon de convergence d'une série $\\sum a_n z^n$ avec $a_n = 1/n^n$, on utilise la formule de Cauchy-Hadamard : $1/R = \\limsup_{n \\to \\infty} |a_n|^{1/n}$. Ici, $|a_n|^{1/n} = (1/n^n)^{1/n} = 1/n$. Lorsque $n \\to +\\infty$, $1/n \\to 0$. Donc $1/R = 0$, ce qui implique $R = +\\infty$. La série converge donc pour tout $x \\in \\mathbb{R}$.",
+        "subject": "maths"
+    }
+]

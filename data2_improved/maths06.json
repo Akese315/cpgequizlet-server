@@ -1,0 +1,1592 @@
+[
+    {
+        "uuid": "math-sfn-001",
+        "image_path": null,
+        "theme": "Convergence simple",
+        "question": "Dans le cadre de l'étude des suites de fonctions, soit $(f_n)_{n \\in \\mathbb{N}}$ une suite de fonctions définies sur $I$ et à valeurs dans $\\mathbb{R}$. Par définition, que signifie la convergence simple de $(f_n)$ vers $f$ sur $I$ ?",
+        "answers": [
+            "Pour tout $x \\in I$, la suite numérique $(f_n(x))_{n \\in \\mathbb{N}}$ converge vers $f(x)$.",
+            "Il existe un rang $n_0$ tel que pour tout $x \\in I$, $|f_n(x) - f(x)| \\le \\epsilon$.",
+            "Pour tout $\\epsilon > 0$, il existe $N$ tel que pour tout $n \\ge N$, $\\sup_{x \\in I} |f_n(x) - f(x)| \\le \\epsilon$.",
+            "La suite $(f_n(x))$ converge uniformément vers une fonction $f$ continue."
+        ],
+        "difficulty": 1,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "La convergence simple est une convergence point par point : on fixe $x$ et on étudie la limite de la suite numérique. La réponse 2 définit la convergence uniforme (où $n_0$ est indépendant de $x$), et la réponse 3 est une reformulation de la convergence uniforme."
+    },
+    {
+        "uuid": "math-sfn-002",
+        "image_path": null,
+        "theme": "Convergence simple",
+        "question": "Considérons la suite de fonctions $f_n : [0, 1] \\to \\mathbb{R}$ définie par $f_n(x) = x^n$. Quelle est sa limite simple $f$ sur l'intervalle $[0, 1]$ ?",
+        "answers": [
+            "$f(x) = 0$ pour tout $x \\in [0, 1]$",
+            "$f(x) = 0$ si $x \\in [0, 1[$ et $f(1) = 1$",
+            "$f(x) = 1$ pour tout $x \\in [0, 1]$",
+            "$f(x) = x$ pour tout $x \\in [0, 1]$"
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "explication": "Si $x \\in [0, 1[$, alors $\\lim_{n \\to +\\infty} x^n = 0$. Si $x = 1$, alors $f_n(1) = 1^n = 1$ pour tout $n$, donc la limite est $1$. C'est un exemple classique de limite simple discontinue alors que les $f_n$ sont continues."
+    },
+    {
+        "uuid": "math-sfn-003",
+        "image_path": null,
+        "theme": "Convergence uniforme",
+        "question": "Dans la définition formelle de la convergence uniforme d'une suite $(f_n)$ vers $f$ sur $I$, pour un $\\epsilon > 0$ donné, de quels paramètres dépend le rang $N$ tel que $\\forall n \\ge N, \\forall x \\in I, |f_n(x) - f(x)| \\le \\epsilon$ ?",
+        "answers": [
+            "$N$ dépend de $\\epsilon$ et de $x$.",
+            "$N$ dépend de $\\epsilon$ uniquement.",
+            "$N$ dépend de $x$ uniquement.",
+            "$N$ ne dépend ni de $\\epsilon$ ni de $x$."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "explication": "C'est là toute la subtilité : en convergence uniforme, $N$ est indépendant de $x$. On doit pouvoir trouver un rang global pour tout l'intervalle. Si $N$ dépend de $x$, on est en convergence simple."
+    },
+    {
+        "uuid": "math-sfn-004",
+        "image_path": null,
+        "theme": "Convergence uniforme",
+        "question": "Soit $f_n$ une suite de fonctions convergeant simplement vers $f$ sur $I$. La convergence de $(f_n)$ vers $f$ est uniforme sur $I$ si et seulement si la suite numérique définie par $u_n = \\dots$ tend vers $0$ quand $n \\to +\\infty$.",
+        "answers": [
+            "$\\int_I |f_n(t) - f(t)| dt$",
+            "$\\sup_{x \\in I} |f_n(x) - f(x)|$",
+            "$\\sum_{n=0}^{+\\infty} |f_n(x) - f(x)|$",
+            "$\\inf_{x \\in I} |f_n(x) - f(x)|$"
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "explication": "La borne supérieure (ou sup) de l'écart entre $f_n$ et $f$ représente le 'pire écart' sur tout l'intervalle. Si ce pire écart tend vers $0$, alors toute la fonction se rapproche uniformément de la limite."
+    },
+    {
+        "uuid": "math-sfn-005",
+        "image_path": null,
+        "theme": "Implications",
+        "question": "Parmi les assertions suivantes concernant les modes de convergence d'une suite de fonctions $(f_n)$ sur un intervalle $I$, laquelle est une implication toujours vraie ?",
+        "answers": [
+            "Convergence simple $\\implies$ Convergence uniforme",
+            "Convergence uniforme $\\implies$ Convergence simple",
+            "Convergence simple $\\implies$ Convergence normale",
+            "Convergence uniforme $\\implies$ Convergence simple et conservation de la continuité"
+        ],
+        "difficulty": 1,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "explication": "La convergence uniforme est une propriété beaucoup plus forte que la convergence simple. Si une suite converge uniformément, elle converge nécessairement simplement vers la même fonction limite."
+    },
+    {
+        "uuid": "math-sfn-006",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Soit $(f_n)$ une suite de fonctions continues sur un intervalle $I$. Si $(f_n)$ converge uniformément vers $f$ sur $I$, alors quelle propriété vérifie $f$ ?",
+        "answers": [
+            "$f$ est continue sur $I$.",
+            "$f$ est dérivable sur $I$.",
+            "$f$ est nécessairement constante sur $I$.",
+            "$f$ est intégrable au sens de Riemann sur tout segment de $I$."
+        ],
+        "difficulty": 1,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "C'est le théorème de transfert de la continuité : la limite uniforme de fonctions continues est continue. Notez que la dérivabilité (réponse 2) n'est pas garantie sans hypothèse sur les dérivées $f_n'$."
+    },
+    {
+        "uuid": "math-sfn-007",
+        "image_path": null,
+        "theme": "Pièges classiques",
+        "question": "Considérons $f_n(x) = x^n$ sur $[0, 1]$. On sait que $f_n \\to f$ simplement avec $f(x)=0$ sur $[0, 1[$ et $f(1)=1$. Pourquoi n'y a-t-il pas convergence uniforme sur $[0, 1]$ ?",
+        "answers": [
+            "Car les fonctions $f_n$ ne sont pas bornées sur $[0, 1]$.",
+            "Car la limite simple $f$ n'est pas continue sur $[0, 1]$.",
+            "Car la suite $(f_n)$ n'est pas dérivable.",
+            "Car $\\sup |f_n(x) - f(x)|$ ne dépend pas de $n$."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "explication": "Le théorème de continuité stipule que si $f_n$ est continue et $f_n \\to f$ uniformément, alors $f$ doit être continue. Ici, la limite $f$ est discontinue, donc la convergence ne peut pas être uniforme."
+    },
+    {
+        "uuid": "math-sfn-008",
+        "image_path": null,
+        "theme": "Double limite",
+        "question": "Le théorème de la double limite permet d'écrire $\\lim_{n \\to +\\infty} \\lim_{x \\to a} f_n(x) = \\lim_{x \\to a} \\lim_{n \\to +\\infty} f_n(x)$. Quelle est l'hypothèse cruciale pour autoriser cette inversion ?",
+        "answers": [
+            "La convergence normale de la suite $(f_n)$.",
+            "La convergence uniforme de $(f_n)$ au voisinage de $a$.",
+            "La convergence simple de $(f_n)$ sur tout l'intervalle.",
+            "La continuité des fonctions $f_n$ en $a$ uniquement."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "explication": "L'inversion des limites nécessite la convergence uniforme au voisinage du point considéré. Sans uniformité, on peut obtenir des résultats absurdes (ex: $f_n(x) = x/n$ vs autres formes)."
+    },
+    {
+        "uuid": "math-sfn-009",
+        "image_path": null,
+        "theme": "Intégration",
+        "question": "Soit $(f_n)$ une suite de fonctions continues convergeant uniformément vers $f$ sur un segment $[a, b]$. Quelle relation permet d'affirmer la convergence des intégrales ?",
+        "answers": [
+            "$\\lim_{n \\to +\\infty} \\int_a^b f_n(x) dx = \\int_a^b f(x) dx$",
+            "$\\int_a^b \\lim_{n \\to +\\infty} f_n(x) dx = \\sum_{n=0}^{+\\infty} f_n(x)$",
+            "$\\lim_{n \\to +\\infty} \\int_a^b f_n(x) dx = \\sup_{x \\in [a,b]} f(x)$",
+            "$\\int_a^b f_n(x) dx$ converge vers une constante indépendante de $f$."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "La convergence uniforme permet d'intervertir le signe somme (intégrale) et la limite : $\\lim \\int = \\int \\lim$. C'est un résultat puissant qui ne tient pas en convergence simple."
+    },
+    {
+        "uuid": "math-sfn-010",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Soit $(f_n)$ une suite de fonctions de classe $C^1$ sur un intervalle $I$. Pour que la limite simple $f$ soit de classe $C^1$ et que $f_n' \\to f'$, quelle condition sur $(f_n')$ est requise ?",
+        "answers": [
+            "La convergence simple de $(f_n')$ sur $I$.",
+            "La convergence uniforme de la suite $(f_n')$ sur tout segment de $I$.",
+            "La convergence uniforme de la suite $(f_n)$ sur $I$ seulement.",
+            "La nullité de la dérivée limite."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "explication": "Pour dériver sous le signe limite, il faut que la suite des dérivées $(f_n')$ converge uniformément. La convergence de $(f_n)$ seule ne suffit pas à garantir la dérivabilité de la limite ni le lien entre $f'$ et les $f_n'$."
+    },
+    {
+        "uuid": "math-sfn-011",
+        "image_path": null,
+        "theme": "Séries de fonctions",
+        "question": "La série de fonctions $\\sum u_n$ converge simplement sur $I$ si :",
+        "answers": [
+            "La suite $(u_n)$ converge vers 0 uniformément.",
+            "Pour tout $x \\in I$, la série numérique $\\sum u_n(x)$ converge.",
+            "La série $\\sum \\sup |u_n|$ converge."
+        ],
+        "difficulty": 1,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-012",
+        "image_path": null,
+        "theme": "Convergence normale",
+        "question": "Par définition, $\\sum u_n$ converge normalement sur $I$ si :",
+        "answers": [
+            "$\\sum |u_n(x)|$ converge pour tout $x$.",
+            "La série numérique $\\sum \\|u_n\\|_{\\infty}$ converge.",
+            "La somme $S(x)$ est bornée sur $I$."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-013",
+        "image_path": null,
+        "theme": "Hiérarchie des convergences",
+        "question": "Quel est l'ordre correct des modes de convergence pour les séries de fonctions (du plus fort au plus faible) ?",
+        "answers": [
+            "CVN $\\implies$ CVU $\\implies$ CVS",
+            "CVU $\\implies$ CVN $\\implies$ CVS",
+            "CVS $\\implies$ CVU $\\implies$ CVN"
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-014",
+        "image_path": null,
+        "theme": "Convergence uniforme",
+        "question": "Pour une série convergente simplement, la convergence uniforme est équivalente à :",
+        "answers": [
+            "La convergence uniforme vers 0 du reste $R_n$.",
+            "Le fait que $u_n$ soit continue.",
+            "La convergence absolue de la série."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-015",
+        "image_path": null,
+        "theme": "Continuité de la somme",
+        "question": "Si chaque $u_n$ est continue et $\\sum u_n$ converge uniformément sur tout segment de $I$, alors la somme $S$ est :",
+        "answers": [
+            "Dérivable sur $I$.",
+            "Continue sur $I$.",
+            "Uniformément continue sur $I$."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-016",
+        "image_path": null,
+        "theme": "Interversion Somme/Intégrale",
+        "question": "Quelle condition suffit pour écrire $\\int_a^b (\\sum_{n=0}^{+\\infty} u_n(t)) dt = \\sum_{n=0}^{+\\infty} \\int_a^b u_n(t) dt$ sur un segment $[a, b]$ ?",
+        "answers": [
+            "La convergence simple de $\\sum u_n$.",
+            "La convergence uniforme de $\\sum u_n$ sur $[a, b]$.",
+            "Le fait que $u_n$ soit décroissante."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-017",
+        "image_path": null,
+        "theme": "Dérivation terme à terme",
+        "question": "Pour dériver terme à terme une série de fonctions $\\sum u_n$, on demande la convergence uniforme de :",
+        "answers": [
+            "La série $\\sum u_n$.",
+            "La série des dérivées $\\sum u_n'$.",
+            "La série des dérivées secondes $\\sum u_n''$."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-018",
+        "image_path": null,
+        "theme": "Reste d'une série alternée",
+        "question": "Soit une série de fonctions $\\sum (-1)^n v_n(x)$ vérifiant le CSSA. Quelle majoration du reste $R_n(x)$ est correcte ?",
+        "answers": [
+            "$|R_n(x)| \\le v_{n+1}(x)$",
+            "$|R_n(x)| \\le \\sum_{k=n+1}^{+\\infty} v_k(x)$",
+            "$|R_n(x)| \\le v_n(x)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-019",
+        "image_path": null,
+        "theme": "Convergence normale",
+        "question": "La série $\\sum \\frac{\\sin(nx)}{n^2}$ converge normalement sur $\\mathbb{R}$. Pourquoi ?",
+        "answers": [
+            "Car $|\\frac{\\sin(nx)}{n^2}| \\le \\frac{1}{n^2}$ et $\\sum \\frac{1}{n^2}$ converge.",
+            "Car $\\sin(nx)$ tend vers 0.",
+            "Car la fonction est périodique."
+        ],
+        "difficulty": 1,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-020",
+        "image_path": null,
+        "theme": "Fonction Zeta",
+        "question": "Sur quel intervalle la fonction $\\zeta(x) = \\sum_{n=1}^{+\\infty} \\frac{1}{n^x}$ est-elle définie (convergence simple) ?",
+        "answers": [
+            "$]0, +\\infty[$",
+            "$]1, +\\infty[$",
+            "$\\mathbb{R}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-021",
+        "image_path": null,
+        "theme": "Exemple de cours",
+        "question": "Dans le cadre de l'étude des suites de fonctions, soit $f_n(x) = \\frac{nx}{1+nx}$ définie sur $[0, +\\infty[$. Quelle est la limite simple $f$ de cette suite ?",
+        "answers": [
+            "$f(x) = 1$ pour $x > 0$ et $f(0) = 0$.",
+            "$f(x) = 0$ pour tout $x \\in [0, +\\infty[$.",
+            "$f(x) = 1$ pour tout $x \\in [0, +\\infty[$.",
+            "$f(x) = x$ pour tout $x \\in [0, +\\infty[$."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "Pour $x=0$, $f_n(0) = 0/1 = 0$, donc la limite est $0$. Pour $x > 0$, on factorise par $nx$ au numérateur et dénominateur : $f_n(x) = \\frac{nx}{nx(1/(nx) + 1)} = \\frac{1}{1 + 1/(nx)}$. Lorsque $n \\to +\\infty$, $1/(nx) \\to 0$, donc $f_n(x) \\to 1$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-022",
+        "image_path": null,
+        "theme": "Bornes et CVU",
+        "question": "Soit $(f_n)_{n\\in\\mathbb{N}}$ une suite de fonctions bornées convergeant uniformément vers $f$ sur un intervalle $I$. Que peut-on affirmer concernant $f$ ?",
+        "answers": [
+            "La fonction $f$ est nécessairement continue sur $I$.",
+            "La fonction $f$ est nécessairement bornée sur $I$.",
+            "La fonction $f$ est nécessairement nulle en $+\\infty$.",
+            "La fonction $f$ est nécessairement dérivable sur $I$."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "explication": "Par convergence uniforme, pour $n$ assez grand, $|f_n(x) - f(x)| < \\epsilon$. En choisissant $\\epsilon = 1$, on a $|f(x)| < |f_n(x)| + 1$. Comme $f_n$ est bornée, $f$ est donc majorée par une constante. Attention : la convergence uniforme préserve la continuité, mais pas nécessairement la dérivabilité.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-023",
+        "image_path": null,
+        "theme": "Séries de Riemann",
+        "question": "La série de fonctions $\\sum_{n=1}^{+\\infty} \\frac{1}{n^x}$ converge normalement sur tout intervalle de la forme $[a, +\\infty[$ avec $a > 1$. Quel résultat fondamental cela permet-il de démontrer pour la fonction $\\zeta(x) = \\sum_{n=1}^{+\\infty} n^{-x}$ ?",
+        "answers": [
+            "La fonction $\\zeta$ est continue sur $]1, +\\infty[$.",
+            "La fonction $\\zeta$ est bornée sur $]1, +\\infty[$.",
+            "La fonction $\\zeta$ est nulle en $+\\infty$.",
+            "La fonction $\\zeta$ est lipschitzienne sur $]1, +\\infty[$."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "Le théorème de continuité des séries de fonctions stipule que si une série de fonctions continues converge normalement sur tout segment inclus dans l'intervalle, alors la somme est continue sur l'intervalle ouvert. Ici, pour tout $a > 1$, la série converge normalement sur $[a, +\\infty[$, donc $\\zeta$ est continue sur tout $[a, +\\infty[$, et donc sur $]1, +\\infty[$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-024",
+        "image_path": null,
+        "theme": "Contre-exemple CVU",
+        "question": "Pour démontrer qu'une suite de fonctions $(f_n)$ ne converge pas uniformément vers $f$ sur $I$, quelle condition est la plus efficace à utiliser ?",
+        "answers": [
+            "Il existe une suite $(x_n) \\in I^{\\mathbb{N}}$ telle que $|f_n(x_n) - f(x_n)|$ ne tend pas vers $0$.",
+            "La limite simple $f$ n'est pas continue sur $I$.",
+            "Il existe une suite $(x_n) \\in I^{\\mathbb{N}}$ telle que $x_n \\to +\\infty$.",
+            "La valeur maximale de $|f_n - f|$ est infinie pour tout $n$."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "La négation de la convergence uniforme $\\sup_{x \\in I} |f_n(x) - f(x)| \\to 0$ est : $\\exists \\epsilon > 0, \\forall N, \\exists n > N, \\sup_{x \\in I} |f_n(x) - f(x)| \\ge \\epsilon$. Cela revient à dire qu'il existe une suite de points $(x_n)$ où l'écart entre la fonction et sa limite ne tend pas vers 0.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-025",
+        "image_path": null,
+        "theme": "Interversion",
+        "question": "Soit $S(x) = \\sum_{n=1}^{+\\infty} \\frac{1}{x+n^2}$ pour $x > 0$. Sachant que la série converge normalement sur $\\mathbb{R}_+$, quelle est la valeur de $\\lim_{x \\to 0^+} S(x)$ ?",
+        "answers": [
+            "$\\sum_{n=1}^{+\\infty} \\frac{1}{n^2} = \\frac{\\pi^2}{6}$",
+            "$0$",
+            "$1$",
+            "$\\infty$ (divergence)"
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "Grâce à la convergence normale (et donc uniforme) sur $[0, A]$, on peut intervertir la limite et la somme : $\\lim_{x \\to 0^+} \\sum_{n=1}^{+\\infty} f_n(x) = \\sum_{n=1}^{+\\infty} \\lim_{x \\to 0^+} f_n(x) = \\sum_{n=1}^{+\\infty} \\frac{1}{n^2}$. On reconnaît la valeur de la fonction Zêta de Riemann en 2 : $\\zeta(2) = \\frac{\\pi^2}{6}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-026",
+        "image_path": null,
+        "theme": "Exercice type",
+        "question": "Soit $f_n(x) = n^2x(1-x^2)^n$ sur $[0, 1]$. La suite $(f_n)$ converge simplement vers $f=0$. On calcule $\\int_0^1 f_n(x) dx = \\frac{n^2}{2(n+1)} \\to +\\infty$ (ou une valeur non nulle). Peut-on conclure sur la convergence uniforme ?",
+        "answers": [
+            "Oui, la convergence est uniforme car la limite est nulle.",
+            "Non, car si elle était uniforme, on aurait $\\lim_{n \\to +\\infty} \\int_0^1 f_n(x) dx = \\int_0^1 f(x) dx = 0$, ce qui est faux.",
+            "Oui, car $f_n$ est une suite de fonctions positives.",
+            "On ne peut pas conclure sans étudier le maximum de $f_n$."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "explication": "Le théorème de convergence uniforme assure que sur un segment, $\\lim \\int f_n = \\int \\lim f_n$. Par contraposée, si $\\lim \\int f_n \\neq \\int \\lim f_n$, alors la convergence ne peut pas être uniforme. Ici, $\\int_0^1 f_n(x) dx$ diverge ou ne tend pas vers $0$, donc il n'y a pas CVU.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-027",
+        "image_path": null,
+        "theme": "Théorème de Dini",
+        "question": "Soit $(f_n)$ une suite de fonctions croissantes sur $[a, b]$ convergeant simplement vers une fonction $f$ continue sur $[a, b]$. La convergence est-elle uniforme ?",
+        "answers": [
+            "Oui, c'est le théorème de Dini.",
+            "Non, seulement la stricte croissance permet de conclure.",
+            "Seulement si $f_n$ sont également dérivables.",
+            "Non, la convergence uniforme n'est jamais garantie par la croissance."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "Le théorème de Dini est un résultat puissant : sur un segment, si une suite de fonctions monotones (croissantes ici) converge simplement vers une fonction continue, alors la convergence est uniforme. Attention : les hypothèses (segment, continuité de la limite, monotonie) sont cruciales.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-028",
+        "image_path": null,
+        "theme": "Séries de fonctions",
+        "question": "Pour la série $\\sum_{n=0}^{+\\infty} u_n(x)$ avec $u_n(x) = x^n(1-x)$ sur $[0, 1]$, quelle est la somme partielle $S_n(x) = \\sum_{k=0}^{n} u_k(x)$ ?",
+        "answers": [
+            "$S_n(x) = 1 - x^n$",
+            "$S_n(x) = 1 - x^{n+1}$",
+            "$S_n(x) = x - x^{n+1}$",
+            "$S_n(x) = (1-x)(1-x^n)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "explication": "Il s'agit d'une somme télescopique : $S_n(x) = \\sum_{k=0}^n (x^k - x^{k+1}) = (x^0 - x^1) + (x^1 - x^2) + \\dots + (x^n - x^{n+1})$. Tous les termes s'annulent sauf le premier ($1$) et le dernier ($-x^{n+1}$), d'où $S_n(x) = 1 - x^{n+1}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-029",
+        "image_path": null,
+        "theme": "Convergence uniforme",
+        "question": "Soit une série de fonctions $\\sum_{n=0}^{+\\infty} u_n(x)$ définie sur $I$. Si la série converge normalement sur $I$, peut-on en déduire qu'elle converge uniformément sur $I$ ?",
+        "answers": [
+            "Vrai, la convergence normale implique toujours la convergence uniforme.",
+            "Faux, la convergence uniforme est plus forte que la convergence normale.",
+            "Seulement si $I$ est un segment de $\\mathbb{R}$.",
+            "Seulement si la série est à termes positifs."
+        ],
+        "difficulty": 1,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "La convergence normale signifie $\\sum ||u_n||_{\\infty} < +\\infty$. Comme $|\\sum_{k=n}^m u_k(x)| \\le \\sum_{k=n}^m ||u_k||_{\\infty}$, le critère de Cauchy uniforme est vérifié, donc la série converge uniformément. La réciproque est fausse (ex: série alternée).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-030",
+        "image_path": null,
+        "theme": "Exemple peak",
+        "question": "Soit $f_n(x) = \\frac{nx}{1+n^2x^2}$ sur $\\mathbb{R}$. Quelle est la valeur du maximum de $f_n$ sur $\\mathbb{R}$ ?",
+        "answers": [
+            "$1/2$ atteint en $x = 1/n$",
+            "$1$ atteint en $x = 1/n$",
+            "$n/2$ atteint en $x = 1$",
+            "$0$ atteint en $x = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "On étudie la fonction $f_n(x)$. Sa dérivée est $f'_n(x) = n \\frac{1-n^2x^2}{(1+n^2x^2)^2}$. La dérivée s'annule en $x = 1/n$. On calcule $f_n(1/n) = \\frac{n(1/n)}{1+n^2(1/n^2)} = \\frac{1}{1+1} = 1/2$. C'est un exemple classique où la suite converge simplement vers 0 mais pas uniformément (car le maximum ne tend pas vers 0).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-031",
+        "image_path": null,
+        "theme": "Convergence uniforme",
+        "question": "Dans le cadre de l'étude des suites de fonctions sur $\\mathbb{R}$, la suite définie par $f_n(x) = \\frac{nx}{1+n^2x^2}$ converge-t-elle uniformément vers sa limite simple sur $\\mathbb{R}$ ?",
+        "answers": [
+            "Oui, car la limite simple est la fonction nulle sur $\\mathbb{R}$.",
+            "Non, car $\\|f_n - 0\\|_{\\infty} = 1/2$, ce qui ne tend pas vers $0$ lorsque $n \\to +\\infty$.",
+            "Oui, car pour tout $x \\neq 0$, $f_n(x) \\to 0$.",
+            "Non, car la suite n'est pas bornée."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "explication": "La limite simple est nulle. Pour étudier la convergence uniforme, on cherche $\\sup_{x \\in \\mathbb{R}} |f_n(x)|$. En dérivant $f_n$, on trouve un maximum en $x_n = 1/n$ tel que $f_n(1/n) = 1/2$. Puisque $\\lim_{n \\to +\\infty} \\|f_n - 0\\|_{\\infty} = 1/2 \\neq 0$, la convergence n'est pas uniforme sur $\\mathbb{R}$."
+    },
+    {
+        "uuid": "math-sfn-032",
+        "image_path": null,
+        "theme": "Convergence uniforme",
+        "question": "Soit la suite $f_n(x) = \\frac{nx}{1+n^2x^2}$. Sur l'intervalle $I = [1, +\\infty[$, cette suite converge-t-elle uniformément ?",
+        "answers": [
+            "Oui, car le maximum de $|f_n|$ sur cet intervalle est atteint en $x=1$ et tend vers $0$.",
+            "Non, car le maximum global sur $\\mathbb{R}$ reste $1/2$.",
+            "Seulement si on multiplie $f_n$ par $1/n$.",
+            "La suite diverge sur cet intervalle."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "Sur $[1, +\\infty[$, la fonction $f_n$ est décroissante (pour $n$ assez grand). Ainsi, $\\|f_n\\|_{\\infty, [1, +\\infty[} = |f_n(1)| = \\frac{n}{1+n^2}$. Comme cette quantité tend vers $0$ quand $n \\to +\\infty$, la convergence est uniforme."
+    },
+    {
+        "uuid": "math-sfn-033",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Soit $\\sum u_n$ une série de fonctions. Si $\\sum u_n$ converge simplement en un point et que la série des dérivées $\\sum u_n'$ converge uniformément sur un intervalle $I$, alors $(\\sum u_n)' = \\sum u_n'$. Il s'agit du théorème de :",
+        "answers": [
+            "Dérivation terme à terme des séries de fonctions.",
+            "Intégration par parties.",
+            "Théorème de convergence dominée de Lebesgue.",
+            "Théorème de la double limite."
+        ],
+        "difficulty": 1,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "Le théorème de dérivation terme à terme exige deux conditions : la convergence simple de la série des fonctions en au moins un point et la convergence uniforme de la série des dérivées. Le piège est d'oublier la convergence simple initiale."
+    },
+    {
+        "uuid": "math-sfn-034",
+        "image_path": null,
+        "theme": "Séries alternées",
+        "question": "La série de fonctions $\\sum_{n \\geq 0} (-1)^n u_n(x)$ avec $u_n(x) = \\frac{1}{n+x}$ converge uniformément sur $\\mathbb{R}_+$ grâce à :",
+        "answers": [
+            "La convergence normale, car $\\sum |u_n(x)|$ converge.",
+            "Le critère spécial des séries alternées (CSSA) et la majoration du reste $R_N(x) \\leq u_{N+1}(x)$.",
+            "Le théorème de la double limite.",
+            "Le test de d'Alembert appliqué uniformément."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "explication": "Le CSSA assure que $|R_N(x)| \\leq |u_{N+1}(x)|$. Ici, $\\sup_{x \\in \\mathbb{R}_+} |u_{N+1}(x)| = \\frac{1}{N+1}$, qui tend vers $0$ indépendamment de $x$. Cela démontre la convergence uniforme du reste vers $0$."
+    },
+    {
+        "uuid": "math-sfn-035",
+        "image_path": null,
+        "theme": "Interversion",
+        "question": "Pour justifier que $\\lim_{n \\to +\\infty} \\int_0^1 f_n(t) dt = \\int_0^1 \\lim_{n \\to +\\infty} f_n(t) dt$, quelle est la condition suffisante la plus simple à vérifier sur un segment ?",
+        "answers": [
+            "La convergence simple de $f_n$ vers $f$.",
+            "La convergence uniforme de $f_n$ vers $f$ sur le segment.",
+            "La convergence absolue de l'intégrale.",
+            "La continuité de $f_n$ uniquement."
+        ],
+        "difficulty": 1,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "explication": "La convergence uniforme sur un segment est une condition suffisante puissante pour intervertir limite et intégrale. La convergence simple seule ne suffit pas (contre-exemple classique : $f_n(x) = n x^n (1-x)$)."
+    },
+    {
+        "uuid": "math-sfn-036",
+        "image_path": null,
+        "theme": "Théorie",
+        "question": "Si $f_n \\to f$ uniformément sur $A$ et $f_n \\to f$ uniformément sur $B$, alors la suite $f_n$ converge-t-elle uniformément sur $A \\cup B$ ?",
+        "answers": [
+            "Vrai, car le $\\sup$ sur la réunion est le max des $\\sup$.",
+            "Faux, sauf si $A$ et $B$ sont disjoints.",
+            "Seulement si $A \\cap B$ est non vide.",
+            "Faux dans tous les cas."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "On a $\\sup_{x \\in A \\cup B} |f_n(x) - f(x)| = \\max(\\sup_{x \\in A} |f_n(x) - f(x)|, \\sup_{x \\in B} |f_n(x) - f(x)|)$. Si les deux termes tendent vers $0$, le max tend vers $0$."
+    },
+    {
+        "uuid": "math-sfn-037",
+        "image_path": null,
+        "theme": "Théorie",
+        "question": "Si $f_n \\to f$ et $g_n \\to g$ uniformément sur $I$, la suite somme $(f_n + g_n)$ converge-t-elle uniformément vers $f+g$ ?",
+        "answers": [
+            "Vrai, par inégalité triangulaire.",
+            "Faux, la somme ne préserve pas l'uniformité.",
+            "Vrai seulement si les fonctions sont continues.",
+            "Vrai seulement si $I$ est un segment."
+        ],
+        "difficulty": 1,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "Par l'inégalité triangulaire : $|(f_n+g_n) - (f+g)| \\leq |f_n-f| + |g_n-g|$. Le sup de la somme est inférieur ou égal à la somme des sup, ce qui garantit la convergence uniforme."
+    },
+    {
+        "uuid": "math-sfn-038",
+        "image_path": null,
+        "theme": "Théorie",
+        "question": "Si $f_n \\to f$ et $g_n \\to g$ uniformément sur $I$, le produit $(f_n g_n)$ converge-t-il toujours uniformément vers $fg$ sur $I$ ?",
+        "answers": [
+            "Oui, sans condition particulière.",
+            "Pas forcément, sauf si les suites $(f_n)$ et $(g_n)$ sont uniformément bornées.",
+            "Non, le produit ne converge jamais uniformément.",
+            "Oui, mais seulement si les fonctions sont dérivables."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "explication": "Sur un intervalle non borné, le produit de deux fonctions tendant uniformément vers $0$ peut ne pas tendre uniformément vers $0$ si elles ne sont pas bornées (exemple : $f_n(x) = 1/n$ et $g_n(x) = x$). La bornitude uniforme est requise."
+    },
+    {
+        "uuid": "math-sfn-039",
+        "image_path": null,
+        "theme": "Espace de fonctions",
+        "question": "L'espace $C_b^0(I, \\mathbb{R})$ des fonctions continues bornées sur $I$ muni de la norme de la convergence uniforme $\\|.\\|_{\\infty}$ est :",
+        "answers": [
+            "Un espace de Banach (il est complet).",
+            "Un espace de Hilbert (car muni d'un produit scalaire).",
+            "Un espace de dimension finie.",
+            "Un espace pré-hilbertien non complet."
+        ],
+        "difficulty": 4,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "La limite uniforme d'une suite de fonctions continues étant continue, et la limite uniforme de fonctions bornées étant bornée, l'espace est complet. C'est un résultat fondamental de l'analyse."
+    },
+    {
+        "uuid": "math-sfn-040",
+        "image_path": null,
+        "theme": "Séries de fonctions",
+        "question": "Si la série $\\sum u_n$ converge normalement sur $I$, que peut-on dire de la série $\\sum |u_n|$ ?",
+        "answers": [
+            "Elle converge uniformément sur $I$.",
+            "Elle ne converge que simplement.",
+            "Elle ne converge pas forcément.",
+            "Elle converge normalement."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "La convergence normale signifie que $\\sum \\|u_n\\|_{\\infty}$ converge dans $\\mathbb{R}$. Comme $\\|u_n(x)\\| \\leq \\|u_n\\|_{\\infty}$, par comparaison, la série des fonctions $\\sum u_n$ converge uniformément (et absolument) par le critère de Weierstrass."
+    },
+    {
+        "uuid": "math-sfn-041",
+        "image_path": null,
+        "theme": "Exemple $x^n$",
+        "question": "Sur quel intervalle la série $\\sum x^n$ converge-t-elle normalement ?",
+        "answers": [
+            "$]-1, 1[$",
+            "$[-a, a]$ avec $0 < a < 1$",
+            "$[0, 1]$"
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-042",
+        "image_path": null,
+        "theme": "Séries alternées",
+        "question": "Pour la série $\\sum \\frac{(-1)^n}{n} x^n$ sur $[0, 1]$, on a CVU mais pas CVN. Pourquoi pas CVN ?",
+        "answers": [
+            "Car $\\sum \\frac{1}{n}$ diverge (série harmonique).",
+            "Car la limite est discontinue.",
+            "Car $x^n$ tend vers 1."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-043",
+        "image_path": null,
+        "theme": "Equivalents",
+        "question": "L'équivalent de $\\zeta(x)$ quand $x \\to 1^+$ est :",
+        "answers": [
+            "$\\frac{1}{x-1}$",
+            "$\\ln(x-1)$",
+            "$e^x$"
+        ],
+        "difficulty": 4,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-044",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Pour montrer la continuité de la somme d'une série sur $]1, +\\infty[$, il suffit de montrer la CVU sur :",
+        "answers": [
+            "$]1, +\\infty[$",
+            "Tout segment $[a, b] \\subset ]1, +\\infty[$",
+            "Le point $\\{2\\}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-045",
+        "image_path": null,
+        "theme": "Interversion Somme/Lim",
+        "question": "Soit $u_n(x) = \\frac{1}{x^2+n^2}$. $\\lim_{x \\to +\\infty} \\sum_{n=1}^{+\\infty} u_n(x)$ est égale à :",
+        "answers": [
+            "$0$",
+            "$\\pi^2/6$",
+            "$+\\infty$"
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-046",
+        "image_path": null,
+        "theme": "Théorie",
+        "question": "Si $\\sum u_n$ est une série de fonctions de classe $C^1$ telle que $\\sum u_n'$ converge normalement sur $I$, que peut-on dire de la somme $S$ ?",
+        "answers": [
+            "Elle est de classe $C^1$ sur $I$.",
+            "Elle est seulement continue.",
+            "Elle est intégrable mais pas dérivable."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-047",
+        "image_path": null,
+        "theme": "Comparaison Série/Intégrale",
+        "question": "Soit $f(x) = \\sum_{n=1}^{+\\infty} \\frac{1}{n^x}$. L'encadrement par comparaison série-intégrale donne :",
+        "answers": [
+            "$\\int_1^{\\infty} t^{-x} dt \\le \\zeta(x) \\le 1 + \\int_1^{\\infty} t^{-x} dt$",
+            "$\\zeta(x) = \\int_1^{\\infty} t^{-x} dt$",
+            "$0 \\le \\zeta(x) \\le 1$"
+        ],
+        "difficulty": 4,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-048",
+        "image_path": null,
+        "theme": "Zeta et dérivation",
+        "question": "La dérivée de $\\zeta(x) = \\sum_{n=1}^{+\\infty} n^{-x}$ est :",
+        "answers": [
+            "$\\sum_{n=1}^{+\\infty} -\\ln(n) n^{-x}$",
+            "$\\sum_{n=1}^{+\\infty} -x n^{-x-1}$",
+            "$\\sum_{n=1}^{+\\infty} \\frac{1}{n^{x+1}}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-049",
+        "image_path": null,
+        "theme": "Exercice TD",
+        "question": "Soit $f_n(x) = (1 - x/n)^n \\mathbb{1}_{[0,n]}(x)$. Vers quelle fonction cette suite converge-t-elle simplement ?",
+        "answers": [
+            "$e^{-x}$",
+            "$e^x$",
+            "$1-x$"
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-050",
+        "image_path": null,
+        "theme": "Convergence uniforme",
+        "question": "La suite $f_n(x) = (1 - x/n)^n$ sur $[0, a]$ converge :",
+        "answers": [
+            "Uniformément vers $e^{-x}$.",
+            "Simplement seulement.",
+            "Vers $\\ln(x)$."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-051",
+        "image_path": null,
+        "theme": "Exercice TD",
+        "question": "Dans le cadre de l'étude des suites de fonctions sur $\\mathbb{R}$, considérons la suite $f_n(x) = \\sin(x + 1/n)$. Cette suite converge-t-elle uniformément vers $f(x) = \\sin(x)$ sur $\\mathbb{R}$ ?",
+        "answers": [
+            "Oui, car $\\sup_{x \\in \\mathbb{R}} |f_n(x) - f(x)| = |\\sin(1/n)| \\to 0$.",
+            "Non, à cause de la périodicité de la fonction sinus qui empêche la convergence.",
+            "Non, seulement sur les segments $[a, b] \\subset \\mathbb{R}$.",
+            "Oui, uniquement sur les ensembles bornés."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On utilise l'inégalité des accroissements finis ou la formule $\\sin(a+b)-\\sin(a) = 2\\sin(b/2)\\cos(a+b/2)$. Ici, $|f_n(x) - f(x)| = |\\sin(x+1/n) - \\sin(x)| = |2\\sin(1/2n)\\cos(x+1/2n)| \\le 2|\\sin(1/2n)| \\le 1/n$. Comme cette borne tend vers 0 indépendamment de $x$, la convergence est uniforme sur tout $\\mathbb{R}$."
+    },
+    {
+        "uuid": "math-sfn-052",
+        "image_path": null,
+        "theme": "Théorème de Dini (Hors-programme cité)",
+        "question": "Soit $(f_n)$ une suite de fonctions continues sur un segment $[a, b]$ convergeant simplement vers une fonction $f$ continue sur $[a, b]$. Si la suite $(f_n)$ est monotone en chaque point (i.e. $\\forall x, f_n(x) \\le f_{n+1}(x)$ ou $f_n(x) \\ge f_{n+1}(x)$), alors la convergence est nécessairement :",
+        "answers": [
+            "Uniforme sur $[a, b]$.",
+            "Normale sur $[a, b]$.",
+            "Nulle part possible sur $[a, b]$.",
+            "Uniforme seulement si la limite est constante."
+        ],
+        "difficulty": 4,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "C'est l'énoncé du théorème de Dini. La continuité de $f$ et le caractère monotone de la suite permettent de renforcer la convergence simple en convergence uniforme sur un compact."
+    },
+    {
+        "uuid": "math-sfn-053",
+        "image_path": null,
+        "theme": "Séries de fonctions",
+        "question": "Soit la série de fonctions $\\sum_{n=0}^{+\\infty} u_n(x)$ avec $u_n(x) = x^n(1-x)$ pour $x \\in [0, 1]$. Cette série converge-t-elle uniformément sur $[0, 1]$ ?",
+        "answers": [
+            "Non, car le reste $R_n(x) = \\sum_{k=n+1}^{+\\infty} (x^k - x^{k+1}) = x^{n+1}$ ne converge pas uniformément vers 0 sur $[0, 1[$.",
+            "Oui, car la fonction somme $S(x)=1$ pour $x \\in [0, 1[$ et $S(1)=0$ est continue.",
+            "Oui, car la convergence normale est vérifiée sur $[0, 1]$.",
+            "Non, car la série des normes infinies diverge."
+        ],
+        "difficulty": 4,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La série est une série télescopique : $S_n(x) = \\sum_{k=0}^n (x^k - x^{k+1}) = 1 - x^{n+1}$. La limite simple est $S(x)=1$ pour $x \\in [0, 1[$ et $S(1)=0$. Comme la limite est discontinue, la convergence ne peut pas être uniforme."
+    },
+    {
+        "uuid": "math-sfn-054",
+        "image_path": null,
+        "theme": "Séries de fonctions",
+        "question": "Pour la série $\\sum_{n=0}^{+\\infty} x^n(1-x)$, la convergence est-elle uniforme sur tout segment $[0, a]$ avec $0 \\le a < 1$ ?",
+        "answers": [
+            "Vrai, car le reste $R_n(x) = x^{n+1}$ est majoré par $a^{n+1}$ qui tend vers 0.",
+            "Faux, car le terme général ne tend pas uniformément vers 0.",
+            "Seulement pour $a < 0.5$ par application du critère de Cauchy.",
+            "Vrai, mais uniquement si la série est absolument convergente."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Sur $[0, a]$, $|R_n(x)| = |x^{n+1}| \\le a^{n+1}$. Comme $a < 1$, $a^{n+1} \\to 0$. La convergence du reste vers 0 uniformément sur $[0, a]$ prouve la convergence uniforme de la série."
+    },
+    {
+        "uuid": "math-sfn-055",
+        "image_path": null,
+        "theme": "Séries numériques vs fonctions",
+        "question": "La convergence normale d'une série de fonctions $\\sum f_n$ sur un intervalle $I$ implique-t-elle la convergence absolue de la série numérique $\\sum f_n(x)$ pour tout $x \\in I$ ?",
+        "answers": [
+            "Vrai, par définition de la convergence normale qui suppose la convergence de $\\sum ||f_n||_{\\infty}$.",
+            "Faux, elle n'implique que la convergence simple.",
+            "Seulement si $x=0$, car c'est le point d'accumulation.",
+            "Faux, elle n'implique la convergence que si la série est à termes positifs."
+        ],
+        "difficulty": 1,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par définition, $\\sum f_n$ converge normalement sur $I$ si $\\sum ||f_n||_{\\infty}$ converge. Comme $|f_n(x)| \\le ||f_n||_{\\infty}$, la série numérique $\\sum f_n(x)$ est absolument convergente pour tout $x \\in I$ par comparaison."
+    },
+    {
+        "uuid": "math-sfn-056",
+        "image_path": null,
+        "theme": "Exercice TD",
+        "question": "Soit $u_n(x) = \\frac{(-1)^n}{n!(x+n)}$ définie sur $\\mathbb{R}_+^*$. La série $\\sum_{n=0}^{+\\infty} u_n(x)$ définit une fonction $S(x)$. Quelle est la régularité de cette fonction ?",
+        "answers": [
+            "De classe $C^1$ sur tout intervalle $[a, +\\infty[$ avec $a > 0$.",
+            "Discontinue sur $\\mathbb{R}_+^*$.",
+            "Non définie pour $x > 10$ car la série diverge.",
+            "De classe $C^{\\infty}$ sur $]0, +\\infty[$."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "On utilise le théorème de dérivation des séries de fonctions. Les séries des dérivées $\\sum u_n'(x) = \\sum \\frac{(-1)^{n+1}}{n!(x+n)^2}$ convergent normalement sur tout intervalle $[a, +\\infty[$ ($a>0$) par comparaison avec une série géométrique ou de Riemann, ce qui assure que la somme est $C^1$."
+    },
+    {
+        "uuid": "math-sfn-057",
+        "image_path": null,
+        "theme": "Exercice peak",
+        "question": "Soit $f_n(x) = n^2x e^{-nx}$ pour $x \\in [0, +\\infty[$. Quelle est la limite simple de cette suite de fonctions ?",
+        "answers": [
+            "La fonction nulle : $f(x) = 0$ pour tout $x$.",
+            "La fonction $f(x) = 1/x$.",
+            "La fonction $f(x) = e^{-x}$.",
+            "La fonction diverge pour $x > 0$."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Si $x=0$, $f_n(0) = 0 \\to 0$. Si $x > 0$, par croissance comparée, $n^2x e^{-nx} = x \\frac{n^2}{e^{nx}} \\to 0$ lorsque $n \\to +\\infty$."
+    },
+    {
+        "uuid": "math-sfn-058",
+        "image_path": null,
+        "theme": "Intégration",
+        "question": "Avec $f_n(x) = n^2x e^{-nx}$, on calcule $\\int_0^{+\\infty} f_n(t) dt = 1$. Comme la limite simple est $f(x)=0$, que peut-on en déduire concernant la convergence de $(f_n)$ sur $[0, +\\infty[$ ?",
+        "answers": [
+            "La convergence ne peut pas être uniforme, sinon on aurait $\\lim_{n\\to\\infty} \\int f_n = \\int f = 0$.",
+            "Le théorème d'intégration terme à terme s'applique.",
+            "La fonction limite est discontinue.",
+            "Il y a convergence uniforme, mais l'intégrale est mal définie."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Si une suite de fonctions converge uniformément vers $f$ sur un intervalle, alors $\\lim \\int f_n = \\int f$. Ici, $1 \\ne 0$, donc la convergence ne peut pas être uniforme sur cet intervalle."
+    },
+    {
+        "uuid": "math-sfn-059",
+        "image_path": null,
+        "theme": "Sommes de Riemann",
+        "question": "La fonction $\\Gamma(x) = \\int_0^{+\\infty} t^{x-1} e^{-t} dt$ peut être vue comme limite de fonctions. D'après les théorèmes de continuité des intégrales à paramètres, elle est :",
+        "answers": [
+            "Continue sur $\\mathbb{R}_+^*$.",
+            "Continue seulement sur les entiers naturels.",
+            "Définie et continue uniquement sur $[0, 1]$.",
+            "Non continue car l'intégrale est impropre."
+        ],
+        "difficulty": 4,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "Par le théorème de continuité des intégrales à paramètres, la fonction $\\Gamma$ est continue sur tout intervalle $[a, b] \\subset ]0, +\\infty[$. Par conséquent, elle est continue sur tout $\\mathbb{R}_+^*$."
+    },
+    {
+        "uuid": "math-sfn-060",
+        "image_path": null,
+        "theme": "Géométrie",
+        "question": "La convergence uniforme de $(f_n)$ vers $f$ sur un ensemble $I$ signifie graphiquement que, pour tout $\\epsilon > 0$, il existe un rang $n_0$ tel que pour tout $n \\ge n_0$, le graphe de $f_n$ est contenu dans :",
+        "answers": [
+            "La bande de largeur $2\\epsilon$ centrée sur le graphe de $f$, i.e., $f(x) - \\epsilon \\le f_n(x) \\le f(x) + \\epsilon$.",
+            "La zone située à une distance $\\epsilon$ à droite de $x=0$.",
+            "Une zone infinie où le graphe de $f_n$ se confond avec $f$.",
+            "Un voisinage arbitrairement petit de l'origine."
+        ],
+        "difficulty": 1,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths",
+        "explication": "La définition $\\sup_{x \\in I} |f_n(x) - f(x)| < \\epsilon$ traduit exactement le fait que $f_n$ reste dans un \"tube\" de largeur $\\epsilon$ autour de $f$ pour $n$ assez grand."
+    },
+    {
+        "uuid": "math-sfn-061",
+        "image_path": null,
+        "theme": "Convergence normale",
+        "question": "Dans le cadre de l'étude de la convergence sur un intervalle $I$ non compact, est-il possible d'avoir convergence uniforme (CVU) sans avoir convergence normale (CVN) ?",
+        "answers": [
+            "Oui, la CVN est une condition suffisante mais pas nécessaire de la CVU.",
+            "Non, CVU et CVN sont strictement équivalentes sur tout intervalle.",
+            "Non, car la convergence normale implique toujours la convergence uniforme sur tout intervalle.",
+            "Oui, mais uniquement si la série est à termes positifs."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "La CVN est une condition plus forte que la CVU. Un exemple classique est la série $\\sum \\frac{(-1)^n}{n+x}$ sur $\\mathbb{R}^+$ : elle converge uniformément par le critère des séries alternées, mais ne converge pas normalement car la somme des valeurs absolues diverge (série harmonique)."
+    },
+    {
+        "uuid": "math-sfn-062",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Soit la série de fonctions définie par $f(x) = \\sum_{n=1}^{+\\infty} \\frac{1}{n^2+x^2}$ pour $x \\in \\mathbb{R}$. Quelle est la propriété de régularité de cette fonction ?",
+        "answers": [
+            "La fonction $f$ est continue sur $\\mathbb{R}$ par convergence normale.",
+            "La fonction $f$ est discontinue en $x=0$ car le terme général devient $1/n^2$.",
+            "La fonction n'est pas définie en $x=0$ car la série diverge.",
+            "La fonction est seulement continue par morceaux."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "Le terme général $u_n(x) = \\frac{1}{n^2+x^2}$ est majoré par $\\frac{1}{n^2}$ pour tout $x \\in \\mathbb{R}$. Comme $\\sum \\frac{1}{n^2}$ converge (série de Riemann), il y a convergence normale, donc convergence uniforme, et comme chaque $u_n$ est continue, la somme est continue sur $\\mathbb{R}$."
+    },
+    {
+        "uuid": "math-sfn-063",
+        "image_path": null,
+        "theme": "Convergence simple",
+        "question": "Pour la série de terme général $u_n(x) = \\frac{1}{n^x}$ (série de Riemann), sur quel domaine de $x$ la série converge-t-elle simplement ?",
+        "answers": [
+            "$x \\in ]1, +\\infty[$",
+            "$x \\in [1, +\\infty[$",
+            "$x \\in ]0, +\\infty[$",
+            "$x \\in \\mathbb{R}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "La série de Riemann $\\sum \\frac{1}{n^x}$ est une série à termes positifs. Elle converge si et seulement si l'exposant est strictement supérieur à 1. Pour $x \\le 1$, le terme général ne tend pas vers 0 assez vite (ou est égal à 1), ce qui entraîne la divergence."
+    },
+    {
+        "uuid": "math-sfn-064",
+        "image_path": null,
+        "theme": "Asymptotique",
+        "question": "Soit $f$ une fonction telle que $xf(x) \\to \\frac{\\pi^2}{6}$ quand $x \\to +\\infty$. Quel est le comportement asymptotique de $f(x)$ au voisinage de $+\\infty$ ?",
+        "answers": [
+            "$f(x) \\sim \\frac{\\pi^2}{6x}$",
+            "$f(x) \\sim \\frac{6}{\\pi^2 x}$",
+            "$f(x) \\sim \\frac{1}{x^2}$",
+            "$f(x) \\sim \\frac{\\pi^2}{6}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "Par définition de l'équivalent, si $g(x) \\to L$ (avec $L \\neq 0$), alors $g(x) \\sim L$. Ici, en posant $g(x) = xf(x)$, on a $xf(x) \\sim \\frac{\\pi^2}{6}$, d'où en divisant par $x$ : $f(x) \\sim \\frac{\\pi^2}{6x}$."
+    },
+    {
+        "uuid": "math-sfn-065",
+        "image_path": null,
+        "theme": "Double limite",
+        "question": "Soit une série de fonctions $\\sum u_n(x)$. Sous quelles conditions peut-on permuter la limite en $a$ et la somme infinie : $\\lim_{x \\to a} \\sum_{n=0}^{\\infty} u_n(x) = \\sum_{n=0}^{\\infty} \\lim_{x \\to a} u_n(x)$ ?",
+        "answers": [
+            "Si chaque $u_n$ a une limite en $a$, que la série converge simplement, et que la série converge uniformément sur un voisinage de $a$.",
+            "Il suffit que la série converge simplement sur l'intervalle.",
+            "Il faut impérativement que $a=0$ et que la série soit une série entière.",
+            "C'est toujours vrai pour les séries de fonctions continues."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "Le théorème de la double limite nécessite la convergence uniforme de la série sur un intervalle privé de $a$ (ou voisinage) pour garantir que l'on peut intervertir la limite et la somme. La simple convergence ne suffit pas."
+    },
+    {
+        "uuid": "math-sfn-066",
+        "image_path": null,
+        "theme": "Convergence uniforme",
+        "question": "Soit $f_n(x) = \\sqrt{x + \\frac{1}{n}}$ sur $[0, +\\infty[$. Étudier la convergence uniforme vers $f(x) = \\sqrt{x}$.",
+        "answers": [
+            "Il y a convergence uniforme sur $[0, +\\infty[$ car $|\\sqrt{x+1/n} - \\sqrt{x}| \\le \\sqrt{1/n}$.",
+            "Il n'y a pas convergence uniforme car la dérivée explose en 0.",
+            "Il y a convergence uniforme uniquement sur $[1, +\\infty[$.",
+            "La suite ne converge pas simplement vers $\\sqrt{x}$."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "En utilisant l'inégalité triangulaire inverse ou la quantité conjuguée, on montre que $|\\sqrt{x+1/n} - \\sqrt{x}| = \\frac{1/n}{\\sqrt{x+1/n} + \\sqrt{x}} \\le \\frac{1/n}{\\sqrt{1/n}} = \\sqrt{1/n}$. Le sup sur $\\mathbb{R}^+$ est donc $\\frac{1}{\\sqrt{n}}$, qui tend vers 0, assurant la CVU."
+    },
+    {
+        "uuid": "math-sfn-067",
+        "image_path": null,
+        "theme": "Séries de fonctions",
+        "question": "La série de terme général $u_n(x) = \\frac{x}{(1+x^2)^n}$ est une série géométrique. Sur quel domaine converge-t-elle simplement ?",
+        "answers": [
+            "Sur $\\mathbb{R}^*$ et en $x=0$ (donc $\\mathbb{R}$).",
+            "Uniquement sur $]-1, 1[$.",
+            "Sur $\\mathbb{R} \\setminus \\{-1, 1\\}$.",
+            "Elle diverge partout sauf en 0."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "C'est une série géométrique de raison $r = \\frac{1}{1+x^2}$. Pour $x \\neq 0$, $|r| < 1$, donc la série converge. Pour $x=0$, le terme général est nul, la série converge. Le domaine est donc $\\mathbb{R}$."
+    },
+    {
+        "uuid": "math-sfn-068",
+        "image_path": null,
+        "theme": "Convexité",
+        "question": "Si $(f_n)$ est une suite de fonctions convexes sur un intervalle $I$ et que $f_n$ converge simplement vers $f$, que peut-on dire de $f$ ?",
+        "answers": [
+            "$f$ est convexe.",
+            "$f$ est concave.",
+            "$f$ est affine.",
+            "On ne peut rien conclure sur la convexité de $f$."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "La convexité se définit par une inégalité portant sur trois points. Comme l'inégalité de convexité $f_n(tx + (1-t)y) \\le tf_n(x) + (1-t)f_n(y)$ est conservée par passage à la limite simple, la fonction limite $f$ reste convexe."
+    },
+    {
+        "uuid": "math-sfn-069",
+        "image_path": null,
+        "theme": "Calcul intégral",
+        "question": "Calculer l'intégrale $I_n = \\int_0^1 x^n(1-x) dx$ pour $n \\in \\mathbb{N}$.",
+        "answers": [
+            "$I_n = \\frac{1}{(n+1)(n+2)}$",
+            "$I_n = \\frac{1}{n+1} - \\frac{1}{n+2}$",
+            "$I_n = \\frac{1}{n(n+1)}$",
+            "$I_n = \\frac{1}{n^2+n}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "Il suffit de développer l'intégrale : $\\int_0^1 (x^n - x^{n+1}) dx = [\\frac{x^{n+1}}{n+1} - \\frac{x^{n+2}}{n+2}]_0^1 = \\frac{1}{n+1} - \\frac{1}{n+2}$. En réduisant au même dénominateur, on obtient $\\frac{n+2 - (n+1)}{(n+1)(n+2)} = \\frac{1}{(n+1)(n+2)}$."
+    },
+    {
+        "uuid": "math-sfn-070",
+        "image_path": null,
+        "theme": "Convergence uniforme",
+        "question": "Soit $f_n(x) = x^n(1-x)$ sur $[0, 1]$. Pour déterminer la convergence uniforme, on cherche le maximum de $f_n(x)$ sur $[0, 1]$. En quel point $x_n$ est-il atteint ?",
+        "answers": [
+            "$x_n = \\frac{n}{n+1}$",
+            "$x_n = 1/2$",
+            "$x_n = 1/n$",
+            "$x_n = \\frac{n+1}{n}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "On étudie la dérivée : $f_n'(x) = nx^{n-1} - (n+1)x^n = x^{n-1}(n - (n+1)x)$. La dérivée s'annule en $x = \\frac{n}{n+1}$. C'est un maximum global sur $[0,1]$ car $f_n(0)=f_n(1)=0$ et $f_n > 0$ sur $]0, 1[$."
+    },
+    {
+        "uuid": "math-sfn-071",
+        "image_path": null,
+        "theme": "Convergence uniforme",
+        "question": "La suite $f_n(x) = x^n(1-x)$ converge-t-elle uniformément sur $[0, 1]$ ?",
+        "answers": [
+            "Oui, car le max est $\\frac{1}{n+1} (\\frac{n}{n+1})^n \\approx \\frac{1}{en} \\to 0$.",
+            "Non, car le max est 1.",
+            "Oui, car la limite est 0 et les fonctions sont continues."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-072",
+        "image_path": null,
+        "theme": "Sommes partielles",
+        "question": "Pour la série $\\sum_{n=1}^{+\\infty} (f_{n+1} - f_n)$, la convergence de la série est équivalente à la convergence de :",
+        "answers": [
+            "La suite $(f_n)$.",
+            "La série $\\sum f_n$.",
+            "L'intégrale de $f_n$."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-073",
+        "image_path": null,
+        "theme": "Equivalents",
+        "question": "Pour $f(x) = \\sum_{n=1}^{+\\infty} \\frac{1}{1+n^2x}$, quel est l'équivalent en $0^+$ ?",
+        "answers": [
+            "$\\frac{\\pi}{2\\sqrt{x}}$",
+            "$\\frac{1}{x}$",
+            "$\\frac{\\pi^2}{6x}$"
+        ],
+        "difficulty": 5,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-074",
+        "image_path": null,
+        "theme": "Interversion",
+        "question": "Si $\\sum u_n$ converge uniformément sur $I$, peut-on toujours intervertir limite et somme en une borne de $I$ ?",
+        "answers": [
+            "Oui, si chaque $u_n$ admet une limite finie en cette borne.",
+            "Non, il faut la convergence normale.",
+            "Seulement si $I$ est fermé."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-075",
+        "image_path": null,
+        "theme": "Séries alternées",
+        "question": "La série $\\sum \\frac{(-1)^n}{\\sqrt{n}} \\sin(\\frac{x}{n})$ converge-t-elle uniformément sur tout segment de $\\mathbb{R}$ ?",
+        "answers": [
+            "Oui, car le terme général est dominé par $M/n^{3/2}$ sur un segment.",
+            "Non, car elle n'est pas alternée pour tout $x$.",
+            "Seulement sur $[0, 1]$."
+        ],
+        "difficulty": 4,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-076",
+        "image_path": null,
+        "theme": "Dérivation",
+        "question": "Pour dériver $\\sum u_n$ deux fois terme à terme, quelle condition suffit ?",
+        "answers": [
+            "CVU de $\\sum u_n''$ et convergence simple de $\\sum u_n$ et $\\sum u_n'$.",
+            "CVU de $\\sum u_n$ uniquement.",
+            "CVN de $\\sum u_n$."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-077",
+        "image_path": null,
+        "theme": "Piège CVN",
+        "question": "Si $\\|u_n\\|_{\\infty} = 1/n$, la série $\\sum u_n$ peut-elle converger uniformément ?",
+        "answers": [
+            "Oui, par exemple si elle est alternée et vérifie le CSSA.",
+            "Non, car la série harmonique diverge.",
+            "Seulement sur un ensemble fini."
+        ],
+        "difficulty": 4,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-078",
+        "image_path": null,
+        "theme": "Théorie",
+        "question": "Si $f_n$ sont de classe $C^1$ et $f_n'$ converge uniformément vers $g$, alors $f_n$ converge uniformément dès que :",
+        "answers": [
+            "La suite $(f_n(a))$ converge en au moins un point $a$.",
+            "La suite $(f_n)$ est bornée.",
+            "Les fonctions sont intégrables."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-079",
+        "image_path": null,
+        "theme": "Exercice TD",
+        "question": "Soit $S(x) = \\sum_{n=0}^{+\\infty} \\frac{(-1)^n}{n+x}$. Pour $x>0$, la relation entre $S(x+1)$ et $S(x)$ est :",
+        "answers": [
+            "$S(x+1) = \\frac{1}{x} - S(x)$",
+            "$S(x+1) = S(x) + \\frac{1}{x}$",
+            "$S(x+1) = -S(x)$"
+        ],
+        "difficulty": 4,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-080",
+        "image_path": null,
+        "theme": "Convergence uniforme",
+        "question": "Sur quel intervalle $f_n(x) = \\frac{1}{1+nx}$ converge-t-elle uniformément ?",
+        "answers": [
+            "Sur $[a, +\\infty[$ avec $a > 0$.",
+            "Sur $[0, 1]$.",
+            "Sur $]0, 1]$."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-081",
+        "image_path": null,
+        "theme": "Convergence normale",
+        "question": "La série $\\sum n x^n$ converge normalement sur :",
+        "answers": [
+            "$[-a, a]$ pour tout $a < 1$.",
+            "$]-1, 1[$.",
+            "$[0, 1]$."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-082",
+        "image_path": null,
+        "theme": "Séries de fonctions",
+        "question": "La série $\\sum \\frac{1}{n^2+x^2}$ converge uniformément sur $\\mathbb{R}$.",
+        "answers": [
+            "Vrai",
+            "Faux",
+            "Seulement sur les positifs."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-083",
+        "image_path": null,
+        "theme": "Séries de fonctions",
+        "question": "Si $\\sum u_n$ converge normalement sur $I$, la série $\\sum \\int_a^x u_n(t) dt$ converge :",
+        "answers": [
+            "Uniformément sur $I$.",
+            "Pas forcément.",
+            "Seulement en un point."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-084",
+        "image_path": null,
+        "theme": "Exemple peak",
+        "question": "Pour $f_n(x) = n x e^{-n x^2}$, la limite simple est nulle sur $[0, 1]$. L'intégrale $\\int_0^1 f_n$ tend-elle vers 0 ?",
+        "answers": [
+            "Non, elle tend vers 1/2.",
+            "Oui, car la limite est nulle.",
+            "L'intégrale n'existe pas."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-085",
+        "image_path": null,
+        "theme": "Zeta Riemann",
+        "question": "Quelle est la limite de $\\zeta(x)$ quand $x \\to +\\infty$ ?",
+        "answers": [
+            "1",
+            "0",
+            "$+\\infty$"
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-086",
+        "image_path": null,
+        "theme": "Convergence normale",
+        "question": "Si $\\sum u_n$ converge normalement, la série $\\sum u_n^2$ converge-t-elle normalement ?",
+        "answers": [
+            "Oui, car $|u_n^2| \\le \\|u_n\\|_{\\infty}^2$ et la convergence de $\\sum \\|u_n\\|_{\\infty}$ entraîne celle de $\\sum \\|u_n\\|_{\\infty}^2$ (le terme général tend vers 0).",
+            "Non, jamais.",
+            "Seulement si $u_n$ est positive."
+        ],
+        "difficulty": 4,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-087",
+        "image_path": null,
+        "theme": "Continuité",
+        "question": "Soit $f(x) = \\sum_{n=1}^{+\\infty} \\frac{1}{n^2+x^2}$. Quel est le signe de $f'(x)$ pour $x > 0$ ?",
+        "answers": [
+            "Négatif.",
+            "Positif.",
+            "Nul."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-088",
+        "image_path": null,
+        "theme": "Convergence simple",
+        "question": "La série $\\sum \\frac{\\cos(nx)}{n}$ converge simplement sur :",
+        "answers": [
+            "$\\mathbb{R} \\setminus 2\\pi\\mathbb{Z}$",
+            "$\\mathbb{R}$",
+            "$]0, \\pi[$"
+        ],
+        "difficulty": 4,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-089",
+        "image_path": null,
+        "theme": "Convergence uniforme",
+        "question": "La série $\\sum \\frac{\\cos(nx)}{n}$ converge-t-elle uniformément sur $[a, 2\\pi-a]$ ($a>0$) ?",
+        "answers": [
+            "Oui, par la transformation d'Abel (ou résultat de cours admis).",
+            "Non, car elle ne converge pas normalement.",
+            "Seulement si on remplace $n$ par $n^2$."
+        ],
+        "difficulty": 4,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-090",
+        "image_path": null,
+        "theme": "Differentiabilité",
+        "question": "La fonction $f(x) = \\sum_{n=1}^{+\\infty} \\frac{e^{-n\\sqrt{x}}}{n^2}$ est de classe $C^1$ sur :",
+        "answers": [
+            "$]0, +\\infty[$",
+            "$[0, +\\infty[$",
+            "$\\mathbb{R}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-091",
+        "image_path": null,
+        "theme": "Differentiabilité",
+        "question": "Dans le cadre de l'étude de la régularité des sommes de séries de fonctions, pourquoi la fonction $f(x) = \\sum_{n=1}^{+\\infty} \\frac{e^{-n\\sqrt{x}}}{n^2}$ n'est-elle pas dérivable en $x=0$ ?",
+        "answers": [
+            "Car la série des dérivées diverge au voisinage de 0, avec des termes en $\\frac{-1}{n\\sqrt{x}}$.",
+            "Car la fonction n'est pas continue en 0.",
+            "Car la série de fonctions ne converge pas en 0.",
+            "Car l'exponentielle est une fonction non dérivable en 0."
+        ],
+        "difficulty": 4,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "Le théorème de dérivation terme à terme nécessite la convergence uniforme de la série des dérivées. Ici, $u_n'(x) = -\\frac{e^{-n\\sqrt{x}}}{2n\\sqrt{x}}$. En 0, le terme général $u_n'(x)$ se comporte comme $\\frac{-1}{2n\\sqrt{x}}$. La série des dérivées diverge donc par comparaison avec la série harmonique $\\sum 1/n$ au voisinage de $0^+$, empêchant la dérivabilité en ce point.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-092",
+        "image_path": null,
+        "theme": "Exemple de cours",
+        "question": "Soit $f_n(x) = \\frac{nx}{1+n^2x^2}$ définie sur $\\mathbb{R}$. Quel est le domaine maximal de convergence uniforme de cette suite de fonctions vers sa limite simple $f(x) = 0$ ?",
+        "answers": [
+            "Tout intervalle de la forme $]-\\infty, -a] \\cup [a, +\\infty[$ avec $a > 0$.",
+            "$\\mathbb{R}$ tout entier.",
+            "L'intervalle $]0, 1[$.",
+            "La convergence est uniforme uniquement sur les compacts contenant 0."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "On calcule $f_n'(x) = \\frac{n(1-n^2x^2)}{(1+n^2x^2)^2}$. Le maximum de $|f_n(x)|$ est atteint en $x = \\pm 1/n$ et vaut $1/2$. Comme $\\sup_{x \\in I} |f_n(x) - 0| = 1/2 \\not\\to 0$ dès que $I$ contient 0, la convergence n'est pas uniforme au voisinage de 0. Elle l'est sur tout compact ne contenant pas 0, donc sur les intervalles fermés de la forme $[a, +\\infty[$ ou $]-\\infty, -a]$ avec $a>0$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-093",
+        "image_path": null,
+        "theme": "Séries de fonctions",
+        "question": "La série de fonctions $\\sum_{n=0}^{+\\infty} \\frac{x^n}{n!}$ converge normalement sur quel domaine ?",
+        "answers": [
+            "Tout segment $[a, b] \\subset \\mathbb{R}$.",
+            "$\\mathbb{R}$ tout entier.",
+            "$[-1, 1]$ uniquement.",
+            "La série ne converge normalement nulle part."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "La convergence normale nécessite que $\\sum \\sup |u_n(x)|$ converge. Sur $\\mathbb{R}$, le sup est infini. Sur un segment $[a, b]$, on peut majorer $|x^n/n!|$ par $\\max(|a|^n, |b|^n)/n!$. La série $\\sum M^n/n!$ étant convergente pour tout $M$, la série des fonctions converge normalement sur tout segment. Elle ne converge pas normalement sur $\\mathbb{R}$ car le sup n'est pas défini (ou vaut $+\\infty$).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-094",
+        "image_path": null,
+        "theme": "Théorie",
+        "question": "Soit $(f_n)$ une suite de fonctions définie sur $I$ telle que $f_0 = 0$. Si la série $\\sum_{n=0}^{+\\infty} (f_{n+1}-f_n)$ converge normalement sur $I$, alors $(f_n)$ converge :",
+        "answers": [
+            "Uniformément sur $I$ vers une fonction limite $f$.",
+            "Simplement sur $I$ mais pas nécessairement uniformément.",
+            "Vers une fonction discontinue même si les $f_n$ sont continues.",
+            "La suite $(f_n)$ ne converge pas en général."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "On reconnaît la somme télescopique : la somme partielle au rang $N$ de la série est $\\sum_{n=0}^{N} (f_{n+1}-f_n) = f_{N+1} - f_0 = f_{N+1}$. Si la série converge normalement, elle converge en particulier uniformément. Ainsi, la suite des sommes partielles $(f_n)$ converge uniformément vers une fonction $f$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-095",
+        "image_path": null,
+        "theme": "Fonction Zeta",
+        "question": "Considérant la fonction $\\zeta(s) = \\sum_{n=1}^{+\\infty} \\frac{1}{n^s}$ pour $s \\in ]1, +\\infty[$, quel est son degré de régularité ?",
+        "answers": [
+            "Elle est de classe $C^{\\infty}$ sur $]1, +\\infty[$.",
+            "Elle est seulement $C^1$ car la série des dérivées ne converge que pour $s > 2$.",
+            "Elle est de classe $C^0$ uniquement.",
+            "Elle n'est pas dérivable sur $]1, +\\infty[$."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "La série des dérivées successives $\\sum \\frac{(-\\ln n)^k}{n^s}$ converge normalement sur tout intervalle $[a, +\\infty[$ avec $a > 1$ grâce à la croissance comparée de $n^s$ par rapport aux logarithmes. Par le théorème de dérivation terme à terme des séries de fonctions, $\\zeta$ est donc $C^{\\infty}$ sur tout intervalle $[a, +\\infty[$, et donc sur $]1, +\\infty[$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-096",
+        "image_path": null,
+        "theme": "Convergence uniforme",
+        "question": "Soit $\\sum u_n$ une série de fonctions. Quelle condition est nécessaire à la convergence uniforme de la série ?",
+        "answers": [
+            "La suite des termes généraux $u_n$ doit converger uniformément vers la fonction nulle sur $I$.",
+            "La suite des termes généraux $u_n$ doit être bornée.",
+            "Il suffit que $\\sum u_n$ converge simplement.",
+            "La série $\\sum u_n$ doit converger normalement."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "Pour qu'une série $\\sum u_n$ converge uniformément, il est nécessaire que le terme général $u_n$ tende uniformément vers 0. En effet, si $S_n$ est la somme partielle, $u_n = S_n - S_{n-1}$. Si $S_n$ converge uniformément vers $S$, alors $u_n$ converge uniformément vers $S-S=0$. La réciproque est fausse (ex: série harmonique alternée).",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-097",
+        "image_path": null,
+        "theme": "Intégration terme à terme",
+        "question": "Calculer l'intégrale $I = \\int_0^1 \\left(\\sum_{n=0}^{+\\infty} \\frac{x^n}{n!}\\right) dx$.",
+        "answers": [
+            "$e - 1$",
+            "$e$",
+            "$1 - 1/e$",
+            "$e + 1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "La série $\\sum x^n/n!$ converge normalement (donc uniformément) sur $[0, 1]$ vers $e^x$. On peut donc intervertir somme et intégrale : $\\sum \\int_0^1 \\frac{x^n}{n!} dx = \\sum [\\frac{x^{n+1}}{(n+1)!}]_0^1 = \\sum_{n=0}^{+\\infty} \\frac{1}{(n+1)!} = \\sum_{k=1}^{+\\infty} \\frac{1}{k!} = e^1 - 1 = e - 1$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-098",
+        "image_path": null,
+        "theme": "Séries de fonctions",
+        "question": "La série de fonctions $\\sum_{n=1}^{+\\infty} u_n(x)$ avec $u_n(x) = \\frac{x}{n^2+x^2}$ converge-t-elle normalement sur $\\mathbb{R}_+$ ?",
+        "answers": [
+            "Non, car $\\sup_{x \\in \\mathbb{R}_+} |u_n(x)| = 1/(2n)$ et la série $\\sum 1/(2n)$ diverge.",
+            "Oui, car le dénominateur est quadratique en $n$.",
+            "Oui, car $u_n(x) \\leq 1/n^2$.",
+            "Non, car le terme général ne tend pas vers 0."
+        ],
+        "difficulty": 4,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "On cherche le maximum de $|u_n(x)|$. La dérivée $u_n'(x) = \\frac{n^2-x^2}{(n^2+x^2)^2}$ s'annule en $x=n$. La valeur du sup est donc $u_n(n) = \\frac{n}{n^2+n^2} = \\frac{1}{2n}$. La série des sup diverge (série harmonique), donc la convergence normale n'est pas acquise sur $\\mathbb{R}_+$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-099",
+        "image_path": null,
+        "theme": "Convergence uniforme",
+        "question": "La série $\\sum_{n=1}^{+\\infty} \\frac{x}{n^2+x^2}$ converge-t-elle uniformément sur tout segment $[a, b] \\subset \\mathbb{R}$ ?",
+        "answers": [
+            "Vrai, car sur un segment, $|u_n(x)|$ est majoré par un terme général d'une série convergente indépendante de $x$.",
+            "Faux, la convergence n'est uniforme nulle part.",
+            "Seulement si le segment est inclus dans $[0, 1]$.",
+            "Faux, car elle diverge pour certaines valeurs de $x$."
+        ],
+        "difficulty": 3,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "Sur un segment borné $[-M, M]$, on a $|u_n(x)| = \\frac{|x|}{n^2+x^2} \\leq \\frac{M}{n^2}$. Comme $\\sum M/n^2$ converge, la série converge normalement (donc uniformément) sur tout segment de $\\mathbb{R}$.",
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-sfn-100",
+        "image_path": null,
+        "theme": "Bilan",
+        "question": "Quelle condition minimale garantit que la somme $S(x) = \\sum_{n=0}^{+\\infty} u_n(x)$ est une fonction bornée sur $I$, si chaque $u_n$ est bornée ?",
+        "answers": [
+            "La convergence normale de la série sur $I$.",
+            "La convergence simple suffit.",
+            "Il faut que $\\sum u_n(x)$ soit une série à termes positifs.",
+            "Il faut que $I$ soit un compact."
+        ],
+        "difficulty": 2,
+        "chapter": "Suites et Séries de Fonctions",
+        "correct_answer_index": 0,
+        "explication": "La convergence normale implique que $\\sum |u_n(x)|$ est majorée uniformément par une somme convergente $M = \\sum M_n$ (où $M_n = \\sup |u_n|$). Ainsi, $|S(x)| \\leq \\sum |u_n(x)| \\leq \\sum M_n = M$. La convergence normale assure donc que la fonction somme est bornée.",
+        "subject": "maths"
+    }
+]

@@ -1,0 +1,1652 @@
+[
+    {
+        "uuid": "son-001",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/6/62/Longitudinal_wave.svg",
+        "theme": "ondes",
+        "question": "Dans le cadre de la mécanique des fluides, quelle est la nature physique d'une onde sonore se propageant dans un fluide au repos ?",
+        "answers": [
+            "Une onde transversale de cisaillement nécessitant un milieu élastique solide",
+            "Une onde longitudinale de compression-dilatation liée à la compressibilité du milieu",
+            "Une onde de torsion de la structure moléculaire sans transfert de matière",
+            "Une onde électromagnétique induite par le mouvement des molécules"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "Dans un fluide, les forces de rappel ne sont pas liées à un cisaillement (impossible car le fluide n'a pas de résistance statique au cisaillement), mais à la variation locale de pression. Les molécules oscillent autour d'une position d'équilibre parallèlement à la direction de propagation : c'est une onde longitudinale.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-002",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lors de l'établissement de l'équation d'onde, comment l'approximation acoustique définit-elle la surpression $P_1$ par rapport à la pression d'équilibre $P_0$ ?",
+        "answers": [
+            "$P_1 \\gg P_0$ (hypothèse de non-linéarité forte)",
+            "$P_1 \\sim P_0$ (hypothèse de perturbation d'ordre 1)",
+            "$P_1 \\ll P_0$ (hypothèse de linéarité acoustique)",
+            "$P_1 = \\gamma P_0$ (hypothèse de Laplace)"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "explication": "L'approximation acoustique repose sur le fait que les perturbations (pression, masse volumique, vitesse) sont très faibles devant les valeurs à l'équilibre. Cela permet de linéariser les équations de la mécanique des fluides en négligeant les termes d'ordre supérieur ou égal à 2 (ex: $P_1^2$ ou $v_1^2$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-003",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'unité de l'impédance acoustique caractéristique $Z_c$ dans le système international ?",
+        "answers": [
+            "$kg \\cdot m^{-2} \\cdot s^{-1}$",
+            "$Pa \\cdot s \\cdot m^{-1}$",
+            "$kg \\cdot m^{-3} \\cdot s$",
+            "Toutes ces réponses sont cohérentes car elles sont équivalentes"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 3,
+        "explication": "L'impédance acoustique est définie par $Z_c = \\frac{p_1}{v_1} = \\rho_0 c$. En analyse dimensionnelle : $[P] / [v] = (M L^{-1} T^{-2}) / (L T^{-1}) = M L^{-2} T^{-1} = kg \\cdot m^{-2} \\cdot s^{-1}$. Sachant que $1 Pa = 1 kg \\cdot m^{-1} \\cdot s^{-2}$, alors $Pa \\cdot s \\cdot m^{-1} = (kg \\cdot m^{-1} \\cdot s^{-2}) \\cdot s \\cdot m^{-1} = kg \\cdot m^{-2} \\cdot s^{-1}$. Les expressions sont bien équivalentes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-004",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude des ondes sonores, quelle force volumique est généralement négligée devant les forces de pression lors de l'établissement de l'équation du mouvement ?",
+        "answers": [
+            "La force de gradient de pression",
+            "La pesanteur",
+            "La force d'inertie",
+            "La force de rappel élastique"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "La force de pesanteur $\\rho \\vec{g}$ est négligeable devant le gradient de pression $\\vec{grad}(P)$ pour les ondes sonores classiques, car les variations de pression acoustique sont très rapides et prédominantes sur la variation hydrostatique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-005",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'expression du PFD linéarisé est $\\rho_0 \\frac{\\partial \\vec{v}_1}{\\partial t} = -\\vec{grad}(P_1)$. Quels termes ont été négligés lors de la linéarisation ?",
+        "answers": [
+            "Le terme convectif $(\\vec{v}_1 \\cdot \\vec{grad})\\vec{v}_1$ et le terme de viscosité $\\eta \\Delta \\vec{v}_1$",
+            "Uniquement le terme convectif $(\\vec{v}_1 \\cdot \\vec{grad})\\vec{v}_1$",
+            "Uniquement le terme de viscosité $\\eta \\Delta \\vec{v}_1$",
+            "Le terme de pesanteur $\\rho_0 \\vec{g}$ uniquement"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "explication": "Le terme convectif est d'ordre 2 en $\\vec{v}_1$ (donc négligeable dans l'approximation acoustique) et le terme de viscosité est négligé dans le modèle du fluide parfait, souvent admis en acoustique classique pour les fréquences usuelles.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-006",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'équation de conservation de la masse (équation de continuité) linéarisée au premier ordre pour un fluide ?",
+        "answers": [
+            "$\\frac{\\partial \\rho_1}{\\partial t} + \\rho_0 \\text{div}(\\vec{v}_1) = 0$",
+            "$\\frac{\\partial \\rho_0}{\\partial t} + \\rho_1 \\text{div}(\\vec{v}_1) = 0$",
+            "$\\text{div}(\\rho_1 \\vec{v}_1) = 0$",
+            "$\\rho_0 \\frac{\\partial \\text{div}(\\vec{v}_1)}{\\partial t} + \\rho_1 = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "explication": "L'équation locale de conservation de la masse est $\\frac{\\partial \\rho}{\\partial t} + \\text{div}(\\rho \\vec{v}) = 0$. En posant $\\rho = \\rho_0 + \\rho_1$ et $\\vec{v} = \\vec{v}_1$, et en conservant uniquement les termes d'ordre 1, on obtient $\\frac{\\partial \\rho_1}{\\partial t} + \\rho_0 \\text{div}(\\vec{v}_1) = 0$ (car $\\rho_0$ est constant).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-007",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pourquoi considère-t-on la transformation thermodynamique comme isentropique lors du passage d'une onde sonore ?",
+        "answers": [
+            "Parce que le fluide est un isolant thermique parfait",
+            "Car les variations de pression sont trop lentes pour permettre des échanges thermiques",
+            "Car les vibrations sont assez rapides pour que le milieu n'ait pas le temps d'échanger de la chaleur par conduction",
+            "Parce que la transformation est isotherme dans les fluides"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "explication": "Le transfert thermique par conduction est un phénomène lent. Pour les ondes sonores (haute fréquence), le temps caractéristique de la vibration est beaucoup plus court que le temps caractéristique de diffusion thermique. La transformation est donc adiabatique réversible, c'est-à-dire isentropique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-008",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la relation correcte pour le coefficient de compressibilité isentropique $\\chi_s$ utilisé en acoustique ?",
+        "answers": [
+            "$\\chi_s = \\frac{1}{\\rho_0} \\left(\\frac{\\partial \\rho}{\\partial P}\\right)_s$",
+            "$\\chi_s = -\\frac{1}{V} \\left(\\frac{\\partial V}{\\partial P}\\right)_s$",
+            "Les deux expressions sont rigoureusement équivalentes",
+            "Aucune des deux, car $\\chi_s$ dépend uniquement de la température"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "explication": "Comme $\\rho = m/V$, on a $\\frac{d\\rho}{\\rho} = -\\frac{dV}{V}$. Par conséquent, $\\frac{1}{\\rho} (\\frac{\\partial \\rho}{\\partial P})_s = -\\frac{1}{V} (\\frac{\\partial V}{\\partial P})_s$. Les deux définitions sont donc strictement équivalentes.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-009",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'expression de la célérité $c$ du son dans un fluide en fonction de sa masse volumique $\\rho_0$ et de son coefficient de compressibilité isentropique $\\chi_s$ ?",
+        "answers": [
+            "$c = \\sqrt{\\rho_0 \\chi_s}$",
+            "$c = \\frac{1}{\\sqrt{\\rho_0 \\chi_s}}$",
+            "$c = \\sqrt{\\frac{\\chi_s}{\\rho_0}}$",
+            "$c = \\frac{\\rho_0}{\\chi_s}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "La célérité est donnée par $c^2 = \\frac{1}{\\rho_0 \\chi_s}$. En combinant l'équation de conservation de la masse, le PFD linéarisé et la relation thermodynamique $d\\rho = \\rho_0 \\chi_s dP$, on montre que le milieu obéit à l'équation de d'Alembert avec $1/c^2 = \\rho_0 \\chi_s$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-010",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour un gaz parfait, quelle est l'expression correcte de la célérité de Laplace ?",
+        "answers": [
+            "$c = \\sqrt{\\frac{RT}{M}}$",
+            "$c = \\sqrt{\\frac{\\gamma RT}{M}}$",
+            "$c = \\sqrt{\\frac{\\gamma P_0}{\\rho_0}}$",
+            "Les expressions $c = \\sqrt{\\frac{\\gamma RT}{M}}$ et $c = \\sqrt{\\frac{\\gamma P_0}{\\rho_0}}$ sont toutes deux exactes"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 3,
+        "explication": "Pour un gaz parfait, on a la relation d'état $P_0 = \\frac{\\rho_0 RT}{M}$. En injectant cela dans $c = \\sqrt{\\frac{\\gamma P_0}{\\rho_0}}$, on obtient bien $c = \\sqrt{\\frac{\\gamma RT}{M}}$. Les deux formes sont donc valides et couramment utilisées.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-011",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude acoustique d'une salle, quelle est la valeur conventionnelle retenue pour la célérité du son $c$ dans l'air à $20^{\\circ}C$ ?",
+        "answers": [
+            "$3,00 \\times 10^8 \\, m/s$ (vitesse de la lumière)",
+            "$1500 \\, m/s$ (vitesse du son dans l'eau)",
+            "$340 \\, m/s$ (valeur usuelle)",
+            "$3,40 \\times 10^3 \\, m/s$ (erreur de puissance de dix)"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La célérité du son dans l'air à température ambiante ($20^{\\circ}C$) est d'environ $340 \\, m/s$. Ne pas confondre avec la célérité de la lumière ($3 \\times 10^8 \\, m/s$) ou la célérité du son dans les milieux liquides, beaucoup plus élevée."
+    },
+    {
+        "uuid": "son-012",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Soit un gaz parfait de masse molaire $M$ et d'exposant adiabatique $\\gamma$. Comment évolue la célérité du son $c = \\sqrt{\\frac{\\gamma R T}{M}}$ si la température absolue $T$ double ?",
+        "answers": [
+            "Elle est multipliée par $2$",
+            "Elle est multipliée par $\\sqrt{2}$",
+            "Elle est divisée par $\\sqrt{2}$",
+            "Elle reste constante car $c$ dépend uniquement de la pression"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La célérité du son dans un gaz parfait est donnée par $c = \\sqrt{\\frac{\\gamma R T}{M}}$. Comme $c \\propto \\sqrt{T}$, si $T$ est multiplié par $2$, $c$ est multiplié par $\\sqrt{2}$."
+    },
+    {
+        "uuid": "son-013",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lors d'une étude de propagation acoustique, quelle valeur est la plus proche de la célérité du son dans l'eau liquide ?",
+        "answers": [
+            "$340 \\, m/s$ (vitesse dans l'air)",
+            "$1500 \\, m/s$",
+            "$5000 \\, m/s$ (vitesse dans les solides métalliques)",
+            "$150 \\, m/s$ (ordre de grandeur sous-estimé)"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le milieu étant beaucoup plus rigide (incompressible) que l'air, la célérité du son dans l'eau est nettement supérieure à celle dans l'air, environ $1500 \\, m/s$."
+    },
+    {
+        "uuid": "son-014",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'approximation acoustique linéaire, quelle équation différentielle régit la propagation de la surpression $P_1(t, z)$ dans un fluide au repos ?",
+        "answers": [
+            "L'équation de diffusion : $\\frac{\\partial P_1}{\\partial t} = D \\Delta P_1$",
+            "L'équation de d'Alembert : $\\Delta P_1 - \\frac{1}{c^2} \\frac{\\partial^2 P_1}{\\partial t^2} = 0$",
+            "L'équation de Poisson : $\\Delta P_1 = -f$",
+            "L'équation de Schrödinger"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La propagation des ondes sonores dans un milieu fluide homogène et sans pertes est décrite par l'équation d'onde classique (d'Alembert), traduisant la linéarisation des équations de la mécanique des fluides."
+    },
+    {
+        "uuid": "son-015",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'expression du vecteur de Poynting acoustique $\\vec{\\Pi}$, représentant la densité de flux de puissance acoustique, est :",
+        "answers": [
+            "$\\vec{\\Pi} = P_1 \\vec{v}_1$",
+            "$\\vec{\\Pi} = \\frac{P_1}{\\vec{v}_1}$",
+            "$\\vec{\\Pi} = \\rho_0 P_1 \\vec{v}_1$",
+            "$\\vec{\\Pi} = \\frac{1}{2} P_1 \\vec{v}_1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Par définition, le vecteur de Poynting acoustique est le produit de la surpression scalaire par le vecteur vitesse particulaire : $\\vec{\\Pi} = P_1 \\vec{v}_1$. Il est analogue au vecteur de Poynting électromagnétique $\\vec{E} \\wedge \\vec{H}$."
+    },
+    {
+        "uuid": "son-016",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'unité physique du vecteur de Poynting acoustique dans le système international ?",
+        "answers": [
+            "$J \\cdot m^{-3}$ (énergie volumique)",
+            "$W \\cdot m^{-2}$ (puissance surfacique)",
+            "$N \\cdot m^{-1}$ (raideur)",
+            "$W \\cdot m^{-3}$ (puissance volumique)"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le vecteur de Poynting représente un flux d'énergie par unité de surface et par unité de temps, soit une puissance par unité de surface : des $W \\cdot m^{-2}$."
+    },
+    {
+        "uuid": "son-017",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'énergie volumique cinétique $e_c$ d'une particule de fluide dans une onde sonore est donnée par :",
+        "answers": [
+            "$e_c = \\frac{1}{2} \\rho_0 v_1^2$",
+            "$e_c = \\rho_0 v_1^2$ (oubli du facteur $1/2$)",
+            "$e_c = \\frac{1}{2} P_1 v_1$ (confusion avec l'intensité)",
+            "$e_c = \\frac{1}{2} \\frac{v_1^2}{\\rho_0}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'énergie cinétique d'un élément de volume de fluide est $dE_c = \\frac{1}{2} dm \\, v^2$. En divisant par le volume, on obtient $e_c = \\frac{1}{2} \\rho_0 v_1^2$."
+    },
+    {
+        "uuid": "son-018",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'énergie volumique potentielle élastique $e_p$ associée à la compression du fluide est donnée par (avec $\\chi_s$ la compressibilité isentropique) :",
+        "answers": [
+            "$e_p = \\frac{1}{2} \\chi_s P_1^2$",
+            "$e_p = \\frac{1}{2} \\rho_0 P_1^2$ (dimensionnellement incorrect)",
+            "$e_p = \\chi_s P_1^2$ (oubli du facteur $1/2$)",
+            "$e_p = \\frac{1}{2} \\frac{P_1^2}{\\chi_s}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'énergie potentielle élastique emmagasinée par une variation de pression est analogue à celle d'un ressort : $e_p = \\frac{1}{2} \\frac{P_1^2}{K}$, où $K$ est le module de compressibilité. Avec $\\chi_s = 1/K$, on retrouve $e_p = \\frac{1}{2} \\chi_s P_1^2$."
+    },
+    {
+        "uuid": "son-019",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une Onde Plane Progressive (OPP) se propageant dans un fluide, quel est le rapport entre la densité d'énergie cinétique $e_c$ et la densité d'énergie potentielle $e_p$ ?",
+        "answers": [
+            "$e_c = 2 e_p$",
+            "$e_c = e_p$",
+            "$e_c = \\frac{1}{2} e_p$",
+            "Le rapport dépend de la fréquence de l'onde"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans une OPP, la relation de structure $P_1 = \\rho_0 c v_1$ permet de montrer que les densités d'énergie cinétique et potentielle sont égales, une propriété caractéristique des ondes progressives dans les milieux linéaires."
+    },
+    {
+        "uuid": "son-020",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'intensité acoustique $\\mathcal{I}$, mesurée par les sonomètres, est définie comme :",
+        "answers": [
+            "La valeur instantanée maximale du vecteur de Poynting $\\Pi_{max}$",
+            "La moyenne temporelle de la norme du vecteur de Poynting $\\langle \\Pi \\rangle$",
+            "L'intégrale spatiale de la surpression $P_1$ sur le front d'onde",
+            "La valeur efficace du carré de la surpression : $\\langle P_1^2 \\rangle$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'intensité acoustique est la puissance moyenne transmise par unité de surface, soit la moyenne temporelle sur une période (ou un temps long) du vecteur de Poynting acoustique."
+    },
+    {
+        "uuid": "son-021",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'acoustique physiologique, quelle est la valeur de référence normalisée $\\mathcal{I}_0$ permettant de définir le niveau sonore $L = 10 \\log_{10}(\\mathcal{I}/\\mathcal{I}_0)$ ?",
+        "answers": [
+            "$10^{-12} \\text{ W}\\cdot\\text{m}^{-2}$",
+            "$1,0 \\text{ W}\\cdot\\text{m}^{-2}$",
+            "$10^{-6} \\text{ W}\\cdot\\text{m}^{-2}$",
+            "$10^{-16} \\text{ W}\\cdot\\text{m}^{-2}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La valeur $\\mathcal{I}_0 = 10^{-12} \\text{ W}\\cdot\\text{m}^{-2}$ correspond au seuil d'audibilité conventionnel à $1 \\text{ kHz}$. Les autres valeurs sont des distracteurs basés sur des unités inadaptées ou des erreurs d'ordres de grandeur."
+    },
+    {
+        "uuid": "son-022",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Considérant une source sonore dont l'intensité acoustique $\\mathcal{I}$ est multipliée par un facteur $100$, de combien augmente le niveau sonore $L$ exprimé en dB ?",
+        "answers": [
+            "10 dB",
+            "20 dB",
+            "40 dB",
+            "100 dB"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La variation du niveau sonore est $\\Delta L = 10 \\log_{10}(\\mathcal{I}_2/\\mathcal{I}_1)$. Avec $\\mathcal{I}_2 = 100 \\mathcal{I}_1$, on obtient $\\Delta L = 10 \\log_{10}(100) = 10 \\times 2 = 20 \\text{ dB}$. L'erreur classique est de confondre le facteur 100 avec une multiplication du dB par 100."
+    },
+    {
+        "uuid": "son-023",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est, dans les conditions standards, la gamme de fréquences audibles par l'oreille humaine moyenne ?",
+        "answers": [
+            "$20 \\text{ Hz}$ à $20 \\text{ kHz}$",
+            "$2 \\text{ Hz}$ à $2 \\text{ kHz}$",
+            "$200 \\text{ Hz}$ à $200 \\text{ kHz}$",
+            "$20 \\text{ Hz}$ à $20 \\text{ MHz}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le spectre audible humain s'étend conventionnellement de $20 \\text{ Hz}$ (infrasons) à $20 \\text{ kHz}$ (ultrasons). En dehors de ces bornes, les vibrations ne sont généralement pas perçues comme des sons par l'audition humaine."
+    },
+    {
+        "uuid": "son-024",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une OPPH se propageant selon les $+x$ dans un fluide de masse volumique $\\rho_0$ et de célérité $c$, quelle est la relation complexe entre la surpression acoustique $\\underline{P}_1$ et la vitesse particulaire $\\underline{v}_1$ ?",
+        "answers": [
+            "$\\underline{P}_1 = \\rho_0 c \\underline{v}_1$",
+            "$\\underline{P}_1 = -\\rho_0 c \\underline{v}_1$",
+            "$\\underline{P}_1 = \\frac{c}{\\rho_0} \\underline{v}_1$",
+            "$\\underline{P}_1 = \\rho_0 c^2 \\underline{v}_1$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Pour une onde progressant dans le sens $+x$, la relation est $\\underline{P}_1 = Z_c \\underline{v}_1$ avec $Z_c = \\rho_0 c$ l'impédance acoustique caractéristique du milieu. Le signe dépend du sens de propagation (le signe $-$ apparaîtrait pour une onde se propageant vers les $-x$)."
+    },
+    {
+        "uuid": "son-025",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude d'une OPPH, comment sont corrélées temporellement la surpression $P_1(x,t)$ et la vitesse particulaire $v_1(x,t)$ ?",
+        "answers": [
+            "En quadrature de phase",
+            "En opposition de phase",
+            "En phase",
+            "Déphasées de $\\pi/4$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Pour une onde plane progressive, $P_1 = \\rho_0 c v_1$. Puisque $\\rho_0$ et $c$ sont des constantes réelles positives, $P_1$ et $v_1$ sont proportionnelles et donc rigoureusement en phase."
+    },
+    {
+        "uuid": "son-026",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Soit $\\xi(x,t)$ le déplacement d'une particule fluide. Quelle est la relation cinématique liant la vitesse particulaire $v_1$ et $\\xi$ ?",
+        "answers": [
+            "$v_1 = \\frac{\\partial \\xi}{\\partial t}$",
+            "$v_1 = \\frac{\\partial \\xi}{\\partial x}$",
+            "$v_1 = c \\xi$",
+            "$v_1 = \\frac{1}{c} \\frac{\\partial \\xi}{\\partial t}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Par définition, la vitesse particulaire est la dérivée temporelle du déplacement d'une particule fluide par rapport à sa position d'équilibre : $v_1 = \\partial \\xi / \\partial t$."
+    },
+    {
+        "uuid": "son-027",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une OPPH de pulsation $\\omega$, quel est le déphasage $\\phi$ de la vitesse $v_1$ par rapport au déplacement $\\xi$ tel que $\\underline{v}_1 = A e^{j\\omega t}$ et $\\underline{\\xi} = B e^{j(\\omega t + \\phi)}$ ?",
+        "answers": [
+            "$0$",
+            "$\\pi/2$",
+            "$-\\pi/2$",
+            "$\\pi$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Si $\\xi(t) = \\xi_0 \\cos(\\omega t)$, alors $v_1 = \\partial \\xi / \\partial t = -\\omega \\xi_0 \\sin(\\omega t) = \\omega \\xi_0 \\cos(\\omega t + \\pi/2)$. En notation complexe, $\\underline{v}_1 = j\\omega \\underline{\\xi}$. Le multiplicateur $j = e^{j\\pi/2}$ montre que la vitesse est en avance de $\\pi/2$ sur le déplacement, soit le déplacement en retard de $\\pi/2$ sur la vitesse."
+    },
+    {
+        "uuid": "son-028",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'approximation acoustique (ou linéarisation des équations) est valide sous quelle condition portant sur l'amplitude $\\xi_0$ et la longueur d'onde $\\lambda$ ?",
+        "answers": [
+            "$\\xi_0 \\ll \\lambda$",
+            "$\\xi_0 \\gg \\lambda$",
+            "$\\xi_0 = \\lambda$",
+            "$\\xi_0 \\ll 2\\pi \\lambda$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'approximation acoustique repose sur le fait que les variations de masse volumique et de vitesse sont faibles devant les valeurs à l'équilibre. Cela se traduit par une amplitude de déplacement très petite devant la longueur d'onde spatiale, soit $\\xi_0 \\ll \\lambda$ (ou $\\xi_0 k \\ll 1$)."
+    },
+    {
+        "uuid": "son-029",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'expression temporelle moyenne de l'intensité acoustique $\\mathcal{I}$ pour une OPPH en fonction de l'amplitude de vitesse $v_1^0$ ?",
+        "answers": [
+            "$\\mathcal{I} = \\rho_0 c (v_1^0)^2$",
+            "$\\mathcal{I} = \\frac{1}{2} \\rho_0 c (v_1^0)^2$",
+            "$\\mathcal{I} = \\frac{1}{2} \\frac{(v_1^0)^2}{\\rho_0 c}$",
+            "$\\mathcal{I} = \\rho_0 c \\frac{v_1^0}{\\sqrt{2}}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'intensité est la valeur moyenne du flux d'énergie : $\\langle P_1 v_1 \\rangle$. Comme $P_1 = \\rho_0 c v_1$, on a $\\langle \\rho_0 c v_1^2 \\rangle = \\rho_0 c \\langle v_1^2 \\rangle$. Pour un signal sinusoïdal $v_1(t) = v_1^0 \\cos(\\omega t)$, la valeur moyenne de $\\cos^2$ est $1/2$. D'où $\\mathcal{I} = \\frac{1}{2} \\rho_0 c (v_1^0)^2$."
+    },
+    {
+        "uuid": "son-030",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde sphérique divergente possède une surpression de la forme $\\underline{P}_1(r,t) = \\frac{A}{r} e^{j(\\omega t - kr)}$. Comment évolue l'intensité acoustique $\\mathcal{I}$ en fonction de la distance $r$ ?",
+        "answers": [
+            "Elle évolue en $1/r$",
+            "Elle évolue en $1/r^2$",
+            "Elle reste constante",
+            "Elle évolue en $1/\\sqrt{r}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'intensité est proportionnelle au carré de l'amplitude de la pression ($\\mathcal{I} \\propto |P_1|^2$). Puisque $|P_1| \\propto 1/r$, l'intensité décroît en $1/r^2$. C'est le résultat classique de la conservation de l'énergie sur une surface sphérique de plus en plus grande ($4\\pi r^2$)."
+    },
+    {
+        "uuid": "son-031",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pourquoi l'intensité d'une onde sphérique diminue-t-elle en $1/r^2$ ?",
+        "answers": [
+            "À cause de la viscosité du fluide",
+            "À cause de la conservation de la puissance totale sur des sphères de plus en plus grandes",
+            "À cause de la dispersion chromatique"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-032",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le TD 21 (Ex 1), pour $P_1^0 = 10^{-2}$ Pa dans l'air, quel est l'ordre de grandeur de $v_1^0$ ?",
+        "answers": [
+            "$2,4 \\cdot 10^{-5} m/s$",
+            "$340 m/s$",
+            "$1 mm/s$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-033",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le TD 21 (Ex 1), l'amplitude du mouvement $\\xi_0$ pour un son de 1000 Hz et $P_1^0 = 10^{-2}$ Pa est environ :",
+        "answers": [
+            "4 mm",
+            "4 nm",
+            "4 $\\mu$m"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-034",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle équation exprime la conservation de l'énergie acoustique (Cours III.9 / TD Ex 1.9) ?",
+        "answers": [
+            "$\\text{div}(\\vec{\\Pi}) + \\frac{\\partial e}{\\partial t} = 0$",
+            "$\\text{div}(\\vec{v}_1) + \\frac{\\partial \\rho_1}{\\partial t} = 0$",
+            "$\\Delta P_1 - \\frac{1}{c^2} \\frac{\\partial^2 P_1}{\\partial t^2} = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-035",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans un tuyau fermé en $x=0$, quelle est la condition aux limites pour la vitesse particulaire ?",
+        "answers": [
+            "$v_1(0,t) = V_{max}$",
+            "$v_1(0,t) = 0$",
+            "$\\frac{\\partial v_1}{\\partial x}(0,t) = 0$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-036",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Standing_wave_2.gif",
+        "theme": "ondes",
+        "question": "Une onde stationnaire est la superposition de deux ondes progressives :",
+        "answers": [
+            "De même fréquence se propageant dans le même sens",
+            "De fréquences différentes se propageant dans le même sens",
+            "De même fréquence se propageant en sens inverses"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-037",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le TD 21 (Ex 2), pour un tuyau fermé en $x=0$, l'onde réfléchie de pression est :",
+        "answers": [
+            "En phase avec l'onde incidente ($\\psi = 0$)",
+            "En opposition de phase ($\\psi = \\pi$)",
+            "En quadrature ($\\psi = \\pi/2$)"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-038",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'expression de la surpression totale $P_1(x,t)$ pour une onde stationnaire dans un tuyau fermé en $x=0$ ?",
+        "answers": [
+            "$P_1(x,t) = 2 P_1^0 \\cos(\\omega t) \\cos(kx)$",
+            "$P_1(x,t) = 2 P_1^0 \\sin(\\omega t) \\sin(kx)$",
+            "$P_1(x,t) = P_1^0 \\cos(\\omega t - kx)$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-039",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans une onde stationnaire pure, quelle est la valeur moyenne temporelle du vecteur de Poynting $\\langle \\Pi \\rangle$ ?",
+        "answers": [
+            "Maximale aux ventres",
+            "Nulle partout",
+            "Constante et non nulle"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-040",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour un tuyau de longueur $L$ fermé aux deux extrémités, quelles sont les fréquences propres $f_n$ ?",
+        "answers": [
+            "$f_n = n \\frac{c}{L}$",
+            "$f_n = n \\frac{c}{2L}$",
+            "$f_n = (2n+1) \\frac{c}{4L}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-041",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude d'un tuyau sonore fermé aux deux extrémités de longueur $L = 20$ cm, quelle est la fréquence du mode fondamental $f_1$ sachant que la célérité du son est $c = 340$ m/s ?",
+        "answers": [
+            "$170$ Hz",
+            "$850$ Hz",
+            "$425$ Hz",
+            "$340$ Hz"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour un tuyau fermé aux deux extrémités, la condition aux limites impose des nœuds de déplacement aux deux bouts. La longueur $L$ doit être un multiple de demi-longueurs d'onde : $L = n \frac{\\lambda}{2}$. Le fondamental correspond à $n=1$, soit $\\lambda_1 = 2L = 0,4$ m. La fréquence est $f_1 = \\frac{c}{\\lambda_1} = \\frac{340}{0,4} = 850$ Hz."
+    },
+    {
+        "uuid": "son-042",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans une onde acoustique plane progressive, quelle est la relation de phase entre la surpression acoustique $p$ et la vitesse particulaire $v$ ?",
+        "answers": [
+            "Un ventre de vibration pour $v$ correspond à un ventre de pression",
+            "Un ventre de vibration pour $v$ correspond à un nœud de pression",
+            "La vitesse et la pression sont toujours en phase",
+            "Il n'existe aucune relation de phase entre ces deux grandeurs"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "D'après la relation d'Euler linéarisée $\\rho_0 \\frac{\\partial \\vec{v}}{\\partial t} = -\\vec{grad} p$, pour une onde plane progressive, on montre que $p = \\pm Z_c v$ où $Z_c = \\rho_0 c$ est l'impédance acoustique. Pour une onde stationnaire, les ventres de vitesse correspondent aux nœuds de pression, et inversement, par déphasage de $\\pi/2$ spatial et temporel."
+    },
+    {
+        "uuid": "son-043",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La relation $c = \\frac{1}{\\sqrt{\\rho_0 \\chi_s}}$ exprime la célérité du son dans un fluide. Comment nomme-t-on cette formule qui corrige l'erreur d'Isaac Newton ?",
+        "answers": [
+            "Formule d'Isaac Newton",
+            "Formule de Laplace",
+            "Relation de dispersion",
+            "Loi d'état du gaz parfait"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Newton supposait une transformation isotherme ($c = \\sqrt{P_0/\\rho_0}$), ce qui sous-estimait la valeur expérimentale. Laplace a corrigé cela en montrant que la propagation est adiabatique (rapide), introduisant le coefficient $\\gamma$ : $c = \\sqrt{\\frac{\\gamma P_0}{\\rho_0}} = \\frac{1}{\\sqrt{\\rho_0 \\chi_s}}$."
+    },
+    {
+        "uuid": "son-044",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude d'une onde acoustique stationnaire dans un tuyau, comment se répartit l'énergie volumique totale moyenne $\\langle e \\rangle$ ?",
+        "answers": [
+            "Elle est dépendante de la position $x$ (nœuds et ventres)",
+            "Elle est uniforme dans tout le tuyau",
+            "Elle est nulle partout",
+            "Elle est maximale uniquement au centre du tuyau"
+        ],
+        "difficulty": 4,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'énergie volumique moyenne est la somme des énergies cinétique et potentielle moyennes. Pour une onde stationnaire, là où la vitesse particulaire est maximale (ventre de vitesse), la pression est nulle (nœud de pression) et inversement. La somme des deux termes conduit à une densité d'énergie indépendante de $x$."
+    },
+    {
+        "uuid": "son-045",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Que traduit physiquement le fait que la puissance acoustique moyenne $\\langle \\Pi \\rangle$ est nulle pour une onde stationnaire ?",
+        "answers": [
+            "Il n'y a pas d'énergie dans le tuyau",
+            "Il n'y a pas de transfert global d'énergie à travers le milieu",
+            "L'onde s'est amortie instantanément par frottements",
+            "La pression moyenne est nulle dans tout le tuyau"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Une onde stationnaire est la superposition de deux ondes progressives de même amplitude se propageant en sens inverse. Le flux d'énergie net est nul car l'énergie transmise vers la droite est exactement compensée par l'énergie transmise vers la gauche."
+    },
+    {
+        "uuid": "son-046",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la définition rigoureuse d'une surface d'onde pour une onde sonore ?",
+        "answers": [
+            "La surface où la vitesse particulaire est nulle",
+            "La surface où la phase de l'onde est constante à un instant $t$ donné",
+            "La surface géométrique délimitant le tuyau",
+            "La surface où la surpression est maximale"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par définition, une surface d'onde est le lieu des points où la phase du signal $\\phi(t, \\vec{r}) = \\omega t - \\vec{k} \\cdot \\vec{r} + \\phi_0$ est identique à un instant $t$ donné. C'est donc la surface où l'état de perturbation est le même."
+    },
+    {
+        "uuid": "son-047",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cas d'une propagation tridimensionnelle, quel opérateur vectoriel remplace la dérivée seconde spatiale $\\frac{\\partial^2}{\\partial x^2}$ dans l'équation de d'Alembert ?",
+        "answers": [
+            "Le gradient $\\vec{grad}$",
+            "La divergence $div$",
+            "Le Laplacien scalaire $\\Delta$",
+            "Le rotationnel $\\vec{rot}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "L'équation de propagation scalaire (pour la pression ou le potentiel des vitesses) se généralise en trois dimensions par l'opérateur Laplacien : $\\Delta p - \\frac{1}{c^2} \\frac{\\partial^2 p}{\\partial t^2} = 0$, avec $\\Delta = \\frac{\\partial^2}{\\partial x^2} + \\frac{\\partial^2}{\\partial y^2} + \\frac{\\partial^2}{\\partial z^2}$."
+    },
+    {
+        "uuid": "son-048",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "En utilisant la loi de Laplace $PV^\\gamma = cste$, comment exprime-t-on le coefficient de compressibilité isentropique $\\chi_s = -\\frac{1}{V} (\\frac{\\partial V}{\\partial P})_s$ ?",
+        "answers": [
+            "$\\chi_s = \\frac{1}{P_0}$",
+            "$\\chi_s = \\frac{1}{\\gamma P_0}$",
+            "$\\chi_s = \\frac{\\gamma}{P_0}$",
+            "$\\chi_s = \\frac{1}{\\gamma^2 P_0}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "En différentiant $PV^\\gamma = K$, on obtient $V^\\gamma dP + P \\gamma V^{\\gamma-1} dV = 0$. D'où $\\frac{dV}{dP} = -\\frac{V^\\gamma}{\\gamma P V^{\\gamma-1}} = -\\frac{V}{\\gamma P}$. Le coefficient de compressibilité est donc $\\chi_s = -\\frac{1}{V} (-\\frac{V}{\\gamma P}) = \\frac{1}{\\gamma P_0}$."
+    },
+    {
+        "uuid": "son-049",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour l'air, considéré comme un gaz diatomique à température ambiante, quelle est la valeur conventionnelle du coefficient adiabatique $\\gamma = C_p / C_v$ ?",
+        "answers": [
+            "$1,0$",
+            "$1,4$",
+            "$1,67$",
+            "$1,2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour un gaz parfait diatomique, les degrés de liberté sont au nombre de 5 (3 de translation et 2 de rotation). On a alors $C_v = \\frac{5}{2}R$ et $C_p = \\frac{7}{2}R$, ce qui donne $\\gamma = 7/5 = 1,4$."
+    },
+    {
+        "uuid": "son-050",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans une onde acoustique plane, le vecteur d'onde $\\vec{k}$ caractérise la propagation. Quelle est sa direction par rapport au mouvement des particules ?",
+        "answers": [
+            "Il est perpendiculaire à la direction de vibration",
+            "Il est colinéaire à la direction de propagation de l'onde",
+            "Il est colinéaire à la direction de vibration des particules",
+            "Il n'a pas de direction définie"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'onde acoustique est une onde longitudinale : la vibration du milieu (vitesse particulaire) se fait selon la direction de propagation. Le vecteur $\\vec{k}$, qui porte la direction de propagation, est donc colinéaire à la direction de vibration des particules."
+    },
+    {
+        "uuid": "son-051",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude de la propagation d'une onde plane progressive harmonique (OPPH), quelle est la relation de dispersion liant la pulsation $\\omega$, le nombre d'onde $k$ et la célérité $c$ ?",
+        "answers": [
+            "$\\omega = k/c$",
+            "$\\omega = kc$",
+            "$k = \\omega c$",
+            "$\\omega = c/k$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "La célérité $c$ est définie par le rapport de la distance sur le temps, soit $\\lambda/T$. Comme $\\omega = 2\\pi/T$ et $k = 2\\pi/\\lambda$, on obtient $c = \\omega/k$, donc $\\omega = kc$. Les autres propositions sont des erreurs de dimension ou d'inversion des grandeurs.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-052",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une OPPH se propageant dans la direction des $x$ décroissants (onde rétrograde), quelle est la relation entre la surpression acoustique $p$ et la vitesse particulaire $v$ ?",
+        "answers": [
+            "$p = \\rho_0 c v$",
+            "$p = -\\rho_0 c v$",
+            "$p = \\rho_0 c^2 v$",
+            "$p = -\\frac{v}{\\rho_0 c}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "Pour une onde se propageant vers les $x$ croissants, $p = \\rho_0 c v$. Pour une onde rétrograde ($x$ décroissants), la relation d'impédance change de signe : $p/v = -Z_c = -\\rho_0 c$. C'est un point crucial pour le calcul des coefficients de réflexion.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-053",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la valeur typique du niveau d'intensité sonore $L_{dB}$ associé à une conversation humaine normale à une distance de 1 mètre ?",
+        "answers": [
+            "20 dB",
+            "60 dB",
+            "100 dB",
+            "140 dB"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "Le niveau de 60 dB correspond au bruit ambiant d'une conversation normale. 20 dB est un chuchotement, 100 dB est proche du seuil de danger ou d'un environnement très bruyant (type usine).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-054",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle valeur de niveau d'intensité sonore correspond au seuil de douleur pour l'oreille humaine moyenne ?",
+        "answers": [
+            "80 dB",
+            "120 dB",
+            "160 dB",
+            "180 dB"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "Le seuil de douleur est classiquement situé à 120 dB. Au-delà, l'exposition prolongée, voire instantanée à des niveaux supérieurs, provoque des lésions irréversibles de l'audition.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-055",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une OPPH se propageant vers les $x$ croissants, si la surpression s'écrit $P_1(x,t) = P_1^0 \\cos(\\omega t - kx)$, quelle est l'expression de la vitesse particulaire $v_1(x,t)$ ?",
+        "answers": [
+            "$v_1 = \\frac{P_1^0}{\\rho_0 c} \\sin(\\omega t - kx)$",
+            "$v_1 = \\frac{P_1^0}{\\rho_0 c} \\cos(\\omega t - kx)$",
+            "$v_1 = \\rho_0 c P_1^0 \\cos(\\omega t - kx)$",
+            "$v_1 = -\\frac{P_1^0}{\\rho_0 c} \\cos(\\omega t - kx)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "Dans une onde plane progressive, la pression et la vitesse particulaire sont en phase. Le rapport d'amplitude est donné par l'impédance caractéristique $Z_c = p/v = \\rho_0 c$. Donc $v_1 = P_1 / (\\rho_0 c)$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-056",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le modèle de l'acoustique linéaire, quelle est l'expression de la force volumique exercée par le champ de pression sur une tranche de fluide ?",
+        "answers": [
+            "$\\vec{f}_v = -\\vec{grad}(P_1)$",
+            "$\\vec{f}_v = -\\vec{grad}(P_0 + P_1)$",
+            "$\\vec{f}_v = \\rho_0 \\vec{g}$",
+            "$\\vec{f}_v = P_1 \\vec{S}$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "explication": "La force résultante des pressions sur un élément de volume est donnée par $-\\iiint \\vec{grad}(p) d\\tau$. La force volumique est donc $-\\vec{grad}(p)$. Comme $\\vec{grad}(P_0) = 0$ (pression statique uniforme), on ne garde que la variation $P_1$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-057",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lors de la linéarisation des équations de la mécanique des fluides, quelle hypothèse permet d'écrire $\\rho \\frac{D\\vec{v}}{Dt} \\approx \\rho_0 \\frac{\\partial \\vec{v}}{\\partial t}$ ?",
+        "answers": [
+            "L'approximation acoustique (perturbations du premier ordre)",
+            "L'hypothèse de fluide incompressible",
+            "L'hypothèse d'une transformation isotherme",
+            "L'absence totale de mouvement"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "explication": "L'approximation acoustique consiste à négliger les termes d'ordre 2 (produits de perturbations comme $\\rho_1 v_1$ ou $v_1 \\cdot \\nabla v_1$). Ainsi, la dérivée particulaire se réduit à la dérivée temporelle, et $\\rho \\approx \\rho_0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-058",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lors de l'étude d'une sphère pulsante (onde sphérique) dans un milieu infini, comment évolue la puissance acoustique moyenne rayonnée $\\mathcal{P}$ à travers une sphère de rayon $r$ ?",
+        "answers": [
+            "Elle décroît en $1/r^2$",
+            "Elle est constante (indépendante de $r$)",
+            "Elle croît linéairement avec $r$",
+            "Elle décroît en $1/r$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "Par conservation de l'énergie, en l'absence de dissipation thermique ou visqueuse dans le milieu, la puissance totale traversant une surface fermée entourant la source est constante, indépendamment du rayon $r$ de la sphère de mesure.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-059",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La relation liant la variation de masse volumique $\\rho_1$ à la surpression $P_1$, soit $\\rho_1 = \\rho_0 \\chi_s P_1$, est une forme de :",
+        "answers": [
+            "Loi de Laplace",
+            "Équation d'état thermodynamique linéarisée",
+            "Loi de conservation de la masse",
+            "Relation de dispersion"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "Cette équation est obtenue en linéarisant l'équation d'état du fluide autour de l'équilibre $(P_0, \\rho_0)$. Le coefficient $\\chi_s$ est la compressibilité isentropique du fluide. Elle relie les variables thermodynamiques entre elles.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-060",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre d'une onde acoustique stationnaire dans un tube, que se passe-t-il au niveau d'un nœud de pression ?",
+        "answers": [
+            "La pression acoustique $P_1$ est nulle à tout instant",
+            "La pression acoustique $P_1$ est maximale",
+            "La vitesse particulaire $v_1$ est nulle à tout instant",
+            "L'amplitude de l'onde est doublée"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "explication": "Par définition, un nœud de pression est un point où l'amplitude de la pression acoustique est nulle. À cet endroit, la pression totale reste égale à la pression ambiante $P_0$. Notez qu'en un nœud de pression, la vitesse particulaire est, elle, un ventre de vitesse.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-061",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude d'une onde acoustique stationnaire dans un tube, quelle est la distance séparant deux nœuds consécutifs de pression ?",
+        "answers": [
+            "$\\lambda$",
+            "$\\lambda/2$",
+            "$\\lambda/4$",
+            "$2\\lambda$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "La pression acoustique pour une onde stationnaire s'écrit sous la forme $p(x,t) = P_{max} \\cos(kx + \\phi_1) \\cos(\\omega t + \\phi_2)$. Les nœuds de pression correspondent aux zéros de la fonction spatiale $\\cos(kx + \\phi_1)$. L'écart entre deux zéros consécutifs d'une fonction cosinus de période spatiale $\\lambda = 2\\pi/k$ est toujours $\\lambda/2$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-062",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une onde sonore se propageant dans un milieu fluide, à quelle grandeur physique l'oreille humaine est-elle principalement sensible en termes de perception énergétique ?",
+        "answers": [
+            "La surpression instantanée $p_1(t)$",
+            "L'intensité acoustique moyenne $\\mathcal{I}$",
+            "La vitesse particulaire $v_1(t)$",
+            "Le déplacement particulaire $\\xi(t)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "L'oreille humaine n'est pas sensible à la pression instantanée (trop rapide, moyennée par le système auditif) ni directement à la vitesse particulaire. Elle réagit à la puissance transportée par l'onde par unité de surface, définie par l'intensité acoustique moyenne $\\mathcal{I} = \\langle p_1 v_1 \\rangle$, qui est corrélée à la sensation de volume sonore.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-063",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'acoustique physiologique, un son dont le niveau sonore augmente de 3 dB voit son intensité acoustique $\\mathcal{I}$ subir quelle transformation ?",
+        "answers": [
+            "Elle est multipliée par 3",
+            "Elle est multipliée par 2 (environ)",
+            "Elle augmente de 3%",
+            "Elle est élevée au carré"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "Le niveau sonore est défini par $L = 10 \\log_{10}(\\mathcal{I}/\\mathcal{I}_0)$. Si $\\Delta L = 3$ dB, alors $\\Delta L = 10 \\log_{10}(\\mathcal{I}_2/\\mathcal{I}_1) = 3$. Donc $\\mathcal{I}_2/\\mathcal{I}_1 = 10^{0,3} \\approx 1,995 \\approx 2$. Une augmentation de 3 dB correspond donc à un doublement de l'intensité.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-064",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans l'expression de la célérité du son $c = 1/\\sqrt{\\rho_0 \\chi_s}$, quelle est la dimension physique du coefficient de compressibilité isentropique $\\chi_s$ ?",
+        "answers": [
+            "$Pa$",
+            "$Pa^{-1}$",
+            "$m^2 \\cdot s^{-1}$",
+            "Sans dimension"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "La compressibilité est définie par $\\chi_s = -\\frac{1}{V} (\\frac{\\partial V}{\\partial P})_s$. Comme elle relie une variation relative de volume (sans dimension) à une variation de pression ($Pa$), son unité est l'inverse d'une pression, soit $Pa^{-1}$ (ou $m \\cdot s^2 \\cdot kg^{-1}$).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-065",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans la démonstration de l'équation d'onde, le théorème de Schwarz est utilisé pour justifier quelle manipulation ?",
+        "answers": [
+            "L'interversion des dérivées partielles $\\frac{\\partial^2 f}{\\partial t \\partial x} = \\frac{\\partial^2 f}{\\partial x \\partial t}$",
+            "Le passage de la forme intégrale à la forme locale",
+            "La linéarisation des équations de la mécanique des fluides",
+            "La séparation des variables temporelles et spatiales"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "explication": "Le théorème de Schwarz (ou théorème de Clairaut) garantit que si les dérivées secondes sont continues, l'ordre des dérivations partielles est indifférent. Cela est crucial pour passer de $\\frac{\\partial}{\\partial x} (\\frac{\\partial p}{\\partial t})$ à $\\frac{\\partial}{\\partial t} (\\frac{\\partial p}{\\partial x})$ lors de l'établissement de l'équation de d'Alembert.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-066",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lors de la vérification de la validité de l'approximation acoustique (onde sonore plane), quel est l'ordre de grandeur typique du rapport entre la vitesse particulaire $v_1$ et la célérité du son $c$ ?",
+        "answers": [
+            "$10^{-2}$",
+            "$10^{-6}$ à $10^{-7}$",
+            "$0,5$",
+            "$10$ (onde de choc)"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "L'approximation acoustique suppose que les perturbations sont faibles. Pour un son audible courant, la surpression $p_1$ est très inférieure à la pression atmosphérique $P_0$. Le rapport $v_1/c = p_1/(\\rho_0 c^2)$ est alors extrêmement faible, typiquement de l'ordre de $10^{-6}$ à $10^{-7}$ pour des niveaux sonores usuels.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-067",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde acoustique plane se propageant selon le vecteur d'onde $\\vec{k} = k \\vec{u}_x$ possède des surfaces d'onde de quelle nature géométrique ?",
+        "answers": [
+            "Des plans perpendiculaires à $\\vec{u}_x$, soit parallèles à $(Oyz)$",
+            "Des cylindres d'axe $(Ox)$",
+            "Des sphères centrées sur l'origine",
+            "Des paraboloïdes de révolution"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "explication": "Par définition, une onde est plane si la phase $\\phi = \\omega t - \\vec{k} \\cdot \\vec{r} + \\phi_0$ est constante sur un plan. Ici, $\\vec{k} \\cdot \\vec{r} = kx$. La condition $kx = cste$ impose $x = cste$, ce qui définit les plans parallèles au plan $(Oyz)$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-068",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pourquoi privilégie-t-on la notation complexe $\\underline{P}_1 = P_1^0 e^{j(\\omega t - kx)}$ pour traiter les ondes dans les systèmes linéaires ?",
+        "answers": [
+            "La dérivation temporelle $\\frac{\\partial}{\\partial t}$ devient une simple multiplication par $j\\omega$",
+            "Elle transforme les équations différentielles en équations algébriques",
+            "Elle permet de calculer directement des produits de fonctions non linéaires",
+            "Elle évite de prendre en compte les conditions aux limites"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "explication": "La notation complexe transforme les opérateurs différentiels linéaires en simples opérateurs algébriques. En particulier, $\\frac{\\partial}{\\partial t} \\to j\\omega$ et $\\frac{\\partial}{\\partial x} \\to -jk$. Cela simplifie considérablement la résolution des équations de propagation et l'étude des interfaces.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-069",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lors du passage d'une onde acoustique entre deux milieux de caractéristiques $(\\rho_1, c_1)$ et $(\\rho_2, c_2)$, quelle est la condition pour qu'il n'y ait aucune réflexion à l'interface ?",
+        "answers": [
+            "Les densités doivent être nulles",
+            "Les impédances acoustiques doivent être égales : $Z_1 = Z_2$",
+            "La somme des impédances doit valoir la pression incidente",
+            "Les célérités doivent être infinies"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "Le coefficient de réflexion en pression est donné par $R = (Z_2 - Z_1)/(Z_2 + Z_1)$ avec $Z = \\rho c$. Pour qu'il n'y ait pas de réflexion ($R=0$), il est impératif que $Z_1 = Z_2$. C'est le principe de l'adaptation d'impédance.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-070",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le modèle de la paroi oscillante (fluide au contact d'un solide en mouvement), quelle condition aux limites impose-t-on sur la vitesse du fluide ?",
+        "answers": [
+            "La vitesse du fluide est nulle (condition de paroi fixe)",
+            "La vitesse du fluide est égale à celle de la paroi (condition de non-glissement)",
+            "La vitesse du fluide est maximale à la paroi",
+            "La vitesse du fluide est égale à la célérité du son"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "Dans un fluide visqueux (et même en acoustique parfaite dans ce cadre), la condition aux limites à l'interface fluide-solide est la continuité de la vitesse normale : la particule de fluide au contact de la paroi suit rigoureusement le mouvement de celle-ci, soit $\\vec{v}_{fluide} \\cdot \\vec{n} = \\vec{v}_{paroi} \\cdot \\vec{n}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-071",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Lors de l'étude de la propagation d'une onde acoustique plane dans un milieu viscoélastique modélisé par des termes dissipatifs, comment évolue l'amplitude de la surpression $P_1$ avec la distance $x$ ?",
+        "answers": [
+            "Elle reste constante car l'énergie est conservée",
+            "Elle décroît exponentiellement selon $\\exp(-\\alpha x)$",
+            "Elle décroît en $1/r^2$ par effet de divergence géométrique",
+            "Elle croît linéairement à cause de la viscosité"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "Dans un milieu dissipatif, l'équation de d'Alembert est modifiée par un terme de frottement (souvent lié à la viscosité). La solution devient $\\underline{P}(x,t) = P_0 e^{-\\alpha x} e^{j(\\omega t - kx)}$, où $\\alpha$ est le coefficient d'atténuation. La décroissance en $1/r^2$ concerne l'intensité pour une source sphérique, et non l'amplitude dans un modèle de dissipation plane."
+    },
+    {
+        "uuid": "son-072",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pourquoi qualifie-t-on l'équation de d'Alembert $\\Delta p - \\frac{1}{c^2}\\frac{\\partial^2 p}{\\partial t^2} = 0$ d'équation linéaire ?",
+        "answers": [
+            "Parce qu'elle ne contient que des dérivées premières spatiales",
+            "Parce que toute combinaison linéaire de solutions est également solution",
+            "Parce que le milieu de propagation est homogène et infini",
+            "Parce qu'elle décrit des ondes se propageant en ligne droite"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "La linéarité d'une équation aux dérivées partielles signifie que l'opérateur différentiel agit linéairement sur la fonction. Mathématiquement, si $f_1$ et $f_2$ sont solutions, alors $a f_1 + b f_2$ l'est aussi. C'est ce qui fonde le principe de superposition."
+    },
+    {
+        "uuid": "son-073",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'interférence de deux ondes sonores de même pulsation, le principe de superposition s'applique-t-il directement aux intensités acoustiques $\\mathcal{I}$ ?",
+        "answers": [
+            "Oui, l'intensité totale est la somme des intensités",
+            "Non, on additionne les surpressions complexes $\\underline{P}_1 + \\underline{P}_2$ avant de calculer l'intensité",
+            "Oui, à condition que les ondes soient incohérentes",
+            "Non, il faut obligatoirement utiliser les puissances acoustiques"
+        ],
+        "difficulty": 4,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "L'intensité acoustique n'est pas une grandeur linéaire : $\\mathcal{I} \\propto \\langle p^2 \\rangle$. On ne peut sommer les intensités que pour des ondes incohérentes (moyenne temporelle des termes croisés nulle). Pour des ondes cohérentes, il faut sommer les surpressions instantanées (ou complexes) avant d'élever au carré."
+    },
+    {
+        "uuid": "son-074",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une onde stationnaire pure dans une colonne d'air, on observe des points fixes où la surpression acoustique $P_1(x,t)$ reste nulle quel que soit l'instant $t$. Comment appelle-t-on ces points ?",
+        "answers": [
+            "Des ventres de pression",
+            "Des nœuds temporels",
+            "Des nœuds de pression (ou nœuds spatiaux)",
+            "Des points d'équilibre thermodynamique"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "explication": "Dans une onde stationnaire $P_1(x,t) = A \\cos(kx + \\phi) \\cos(\\omega t + \\psi)$, les nœuds spatiaux correspondent aux valeurs de $x$ où $\\cos(kx + \\phi) = 0$. À ces positions, la pression acoustique est nulle en permanence. Les ventres correspondent aux extréma de l'amplitude."
+    },
+    {
+        "uuid": "son-075",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "En acoustique linéaire, si l'on note $\\rho_0$ la masse volumique au repos et $\\rho_1$ la perturbation, quelle est l'expression de la masse volumique totale ?",
+        "answers": [
+            "$\\rho = \\rho_0 + \\rho_1$",
+            "$\\rho = \\rho_0 \\rho_1$",
+            "$\\rho = \\rho_0 (1 + P_1)$",
+            "$\\rho = \\rho_0 + P_1 / c^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "explication": "Par définition de l'acoustique linéaire, les grandeurs totales sont la somme d'une valeur à l'équilibre et d'une perturbation petite. Ainsi, $\\rho(x,t) = \\rho_0 + \\rho_1(x,t)$. La relation avec la pression est donnée par l'équation d'état : $\\rho_1 = P_1 / c^2$."
+    },
+    {
+        "uuid": "son-076",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cas d'un tuyau d'orgue ouvert aux deux extrémités de longueur $L$, quelles sont les fréquences propres possibles ?",
+        "answers": [
+            "$f_n = n \\frac{c}{2L}$ avec $n \\in \\mathbb{N}^*$",
+            "$f_n = n \\frac{c}{4L}$ avec $n$ impair",
+            "$f_n = (2n+1) \\frac{c}{2L}$",
+            "$f_n = n \\frac{c}{L}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "explication": "Pour un tuyau ouvert aux deux extrémités, les extrémités sont des ventres de pression (nœuds de vitesse). Cela impose $L = n \\frac{\\lambda}{2}$, soit $\\lambda = \\frac{2L}{n}$. Avec $c = f \\lambda$, on obtient $f_n = n \\frac{c}{2L}$. Le tuyau fermé d'un côté imposerait des fréquences en $n \\frac{c}{4L}$."
+    },
+    {
+        "uuid": "son-077",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour un gaz parfait monoatomique (comme l'hélium ou l'argon), quelle est la valeur théorique du coefficient adiabatique $\\gamma$ ?",
+        "answers": [
+            "1,40",
+            "1,67",
+            "1,33",
+            "1,00"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "Le coefficient $\\gamma = C_p / C_v$. Pour un gaz monoatomique, les degrés de liberté sont uniquement les 3 translations, donc $U = \\frac{3}{2}nRT$. On trouve $C_v = \\frac{3}{2}R$ et $C_p = \\frac{5}{2}R$, ce qui donne $\\gamma = 5/3 \\approx 1,67$. $1,4$ est la valeur pour l'air (diatomique)."
+    },
+    {
+        "uuid": "son-078",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est l'expression de l'énergie volumique moyenne $\\langle e \\rangle$ d'une onde plane progressive harmonique (OPPH) se propageant dans un fluide ?",
+        "answers": [
+            "$\\frac{1}{2} \\rho_0 (v_1^0)^2$",
+            "$\\frac{1}{4} \\rho_0 (v_1^0)^2$",
+            "$\\rho_0 (v_1^0)^2$",
+            "$\\frac{1}{2} \\rho_0 (c v_1^0)^2$"
+        ],
+        "difficulty": 4,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "explication": "L'énergie volumique totale est la somme de l'énergie cinétique moyenne $\\langle e_c \\rangle = \\frac{1}{2} \\rho_0 \\langle v_1^2 \\rangle$ et de l'énergie potentielle élastique $\\langle e_p \\rangle$. Pour une OPPH, il y a équipartition de l'énergie : $\\langle e_c \\rangle = \\langle e_p \\rangle$. Comme $\\langle v_1^2 \\rangle = \\frac{1}{2}(v_1^0)^2$, on obtient $\\langle e \\rangle = 2 \\times \\frac{1}{2} \\rho_0 \\times \\frac{1}{2}(v_1^0)^2 = \\frac{1}{2} \\rho_0 (v_1^0)^2$."
+    },
+    {
+        "uuid": "son-079",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude énergétique, la relation locale $\\omega \\underline{P}_1 = k Z_c \\underline{v}_1$ (où $Z_c$ est l'impédance acoustique) est fondamentale pour établir :",
+        "answers": [
+            "L'équation de d'Alembert",
+            "Le bilan de puissance acoustique (flux d'énergie)",
+            "La loi de Laplace",
+            "L'équation d'état des gaz parfaits"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "explication": "Cette relation lie la surpression et la vitesse particulaire. Elle permet de calculer l'intensité acoustique complexe $\\underline{\\mathcal{I}} = \\frac{1}{2} \\underline{P}_1 \\underline{v}_1^*$, dont la partie réelle donne la puissance moyenne transportée par l'onde à travers une surface."
+    },
+    {
+        "uuid": "son-080",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le modèle de l'acoustique linéaire dans l'air, comment varie la célérité du son $c$ avec la fréquence de l'onde ?",
+        "answers": [
+            "Elle augmente proportionnellement à la fréquence",
+            "Elle diminue avec la fréquence",
+            "Elle reste constante (milieu non dispersif)",
+            "Elle dépend de l'amplitude de la source"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "explication": "L'air, dans les conditions usuelles de l'acoustique linéaire, est un milieu non dispersif. La célérité est donnée par $c = \\sqrt{\\gamma RT / M}$, elle dépend donc uniquement des propriétés thermodynamiques du milieu et non des caractéristiques de l'onde (fréquence ou longueur d'onde)."
+    },
+    {
+        "uuid": "son-081",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "La pression atmosphérique standard $P_0$ est d'environ :",
+        "answers": [
+            "$10^5 Pa$",
+            "$10^3 Pa$",
+            "$1 Pa$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-082",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le terme $\\rho_0 \\text{div}(\\vec{v}_1)$ dans l'équation de conservation de la masse représente :",
+        "answers": [
+            "La création de matière",
+            "Le flux de masse sortant du volume élémentaire",
+            "La variation de la température"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-083",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le TD Ex 1.4, on calcule $\\frac{\\partial P_1}{\\partial x}$. Si $P_1 = P_1^0 \\cos(\\omega t - kx)$, alors :",
+        "answers": [
+            "$\\frac{\\partial P_1}{\\partial x} = k P_1^0 \\sin(\\omega t - kx)$",
+            "$\\frac{\\partial P_1}{\\partial x} = -k P_1^0 \\sin(\\omega t - kx)$",
+            "$\\frac{\\partial P_1}{\\partial x} = -k^2 P_1^0 \\cos(\\omega t - kx)$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-084",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "L'approximation $\\rho_1 \\ll \\rho_0$ est équivalente à :",
+        "answers": [
+            "$P_1 \\ll 1/\\chi_s$",
+            "$v_1 \\ll c$",
+            "Les deux sont liées par l'approximation acoustique"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-085",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans une onde stationnaire, les ventres de pression sont situés aux positions $x$ telles que :",
+        "answers": [
+            "$\\cos(kx) = 0$",
+            "$\\cos(kx) = \\pm 1$",
+            "$\\sin(kx) = \\pm 1$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-086",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la longueur d'onde $\\lambda$ d'un son de 1 kHz dans l'air ?",
+        "answers": [
+            "34 cm",
+            "3,4 m",
+            "3,4 cm"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-087",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le vecteur de Poynting moyen pour une onde plane progressive harmonique est $\\vec{\\mathcal{I}} = \\mathcal{I} \\vec{u}_x$. Quelle est la direction de $\\vec{u}_x$ ?",
+        "answers": [
+            "Perpendiculaire aux plans d'onde",
+            "Parallèle aux plans d'onde",
+            "N'importe laquelle"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-088",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une onde sphérique, l'amplitude de la surpression $P_1^0(r)$ décroît en :",
+        "answers": [
+            "$1/r$",
+            "$1/r^2$",
+            "Elle est constante"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-089",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Comment appelle-t-on une onde dont l'amplitude dépend de la direction (angle) ?",
+        "answers": [
+            "Onde isotrope",
+            "Onde anisotrope",
+            "Onde plane"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-090",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la relation fondamentale entre $c, \\gamma, P_0$ et $\\rho_0$ ?",
+        "answers": [
+            "$c^2 = \\frac{\\gamma P_0}{\\rho_0}$",
+            "$c^2 = \\frac{P_0}{\\gamma \\rho_0}$",
+            "$c^2 = \\gamma P_0 \\rho_0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "son-091",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une onde sonore se propageant dans un milieu homogène non dispersif, si on double la fréquence $f$ de la source, comment évolue sa longueur d'onde $\\lambda$ ?",
+        "answers": [
+            "Doublée",
+            "Divisée par 2",
+            "Inchangée",
+            "Multipliée par 4"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La célérité $c$ de l'onde est liée à la fréquence $f$ et la longueur d'onde $\\lambda$ par la relation $c = \\lambda \\cdot f$. Comme le milieu est non dispersif, $c$ est constant. Ainsi, si $f$ est multiplié par 2, alors $\\lambda = c/f$ est nécessairement divisé par 2."
+    },
+    {
+        "uuid": "son-092",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'étude énergétique d'une OPPH (Onde Plane Progressive Harmonique) acoustique, on définit la densité volumique d'énergie totale $e$ par $e = 2 e_c$. Justifiez cette relation.",
+        "answers": [
+            "C'est une définition arbitraire simplificatrice",
+            "Car pour une OPPH, en moyenne temporelle, $e_c = e_p$, donc $e = e_c + e_p = 2 e_c$",
+            "Car l'énergie potentielle acoustique est négligeable devant l'énergie cinétique",
+            "Car le fluide est incompressible"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour une OPPH, il y a équipartition de l'énergie entre le mode cinétique (lié à la vitesse des particules) et le mode potentiel (lié à la surpression). Ainsi, les densités d'énergie moyenne vérifient $\\langle e_c \\rangle = \\langle e_p \\rangle$, ce qui conduit à $\\langle e \\rangle = \\langle e_c \\rangle + \\langle e_p \\rangle = 2 \\langle e_c \\rangle$."
+    },
+    {
+        "uuid": "son-093",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Le niveau d'intensité acoustique est défini par $L = 10 \\log_{10}(\\mathcal{I} / \\mathcal{I}_0)$. Un son de $0 dB$ correspond à une intensité acoustique $\\mathcal{I}$ égale à :",
+        "answers": [
+            "$0 W/m^2$",
+            "$10^{-12} W/m^2$",
+            "$1 W/m^2$",
+            "$10^{12} W/m^2$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par définition, le seuil d'audibilité est $\\mathcal{I}_0 = 10^{-12} W/m^2$. Pour $L = 0 dB$, on a $0 = 10 \\log_{10}(\\mathcal{I} / \\mathcal{I}_0)$, ce qui implique $\\log_{10}(\\mathcal{I} / \\mathcal{I}_0) = 0$, donc $\\mathcal{I} / \\mathcal{I}_0 = 1$ et $\\mathcal{I} = \\mathcal{I}_0$."
+    },
+    {
+        "uuid": "son-094",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le modèle du fluide parfait (sans viscosité ni conduction thermique), comment se comporte une OPPH lors de sa propagation ?",
+        "answers": [
+            "Elle est amortie exponentiellement",
+            "Elle est non amortie",
+            "Elle est dispersive",
+            "Elle subit une réflexion totale"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Dans un fluide parfait, les équations de conservation de la masse et de la quantité de mouvement ne comportent pas de termes dissipatifs (pas de viscosité $\\eta$ ni de conductivité $\\lambda_{th}$). L'amplitude de l'onde reste donc constante lors de la propagation."
+    },
+    {
+        "uuid": "son-095",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'acoustique, que représente le flux du vecteur densité de puissance acoustique (vecteur de Poynting acoustique) $\\vec{\\Pi} = p \\vec{v}$ à travers une surface fermée ?",
+        "answers": [
+            "La variation de la masse du fluide",
+            "La puissance acoustique sortante à travers la surface",
+            "La force de pression totale exercée sur la surface",
+            "La variation d'entropie du système"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Par analogie avec l'électromagnétisme, le vecteur $\\vec{\\Pi} = p\\vec{v}$ représente le flux d'énergie par unité de surface et de temps. Son flux à travers une surface fermée $\\oint_{\\Sigma} p \\vec{v} \\cdot d\\vec{S}$ correspond donc à la puissance acoustique totale traversant cette surface."
+    },
+    {
+        "uuid": "son-096",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une OPPH se propageant selon $\\vec{u}_x$, le rapport $\\underline{P}_1 / \\underline{v}_1$ est égal à $\\rho_0 c$ (impédance caractéristique). Que signifie le fait que ce rapport soit réel ?",
+        "answers": [
+            "Il n'y a pas de propagation",
+            "Les deux grandeurs (pression et vitesse) vibrent en phase",
+            "L'onde est stationnaire",
+            "L'onde est fortement amortie"
+        ],
+        "difficulty": 3,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Si le rapport $\\underline{P}_1 / \\underline{v}_1$ est un nombre réel positif, cela signifie que $\\underline{P}_1$ et $\\underline{v}_1$ possèdent le même argument. Ils sont donc en phase : leurs maxima et minima coïncident spatialement et temporellement."
+    },
+    {
+        "uuid": "son-097",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Pour une colonne d'air fermée aux deux extrémités (tube de Kundt), la fréquence fondamentale $f_1$ dépend de la longueur $L$ du tube par $f_1 = c / (2L)$. Si $L$ double, comment évolue cette fréquence ?",
+        "answers": [
+            "Elle double",
+            "Elle est divisée par 2",
+            "Elle reste inchangée",
+            "Elle est multipliée par $\\sqrt{2}$"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La relation $f_1 = c / (2L)$ montre que la fréquence fondamentale est inversement proportionnelle à la longueur du résonateur. Si $L$ est multiplié par 2, $f_1$ est divisé par 2."
+    },
+    {
+        "uuid": "son-098",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Quelle est la valeur approximative de l'impédance acoustique caractéristique $Z_c = \\rho_0 c$ de l'air dans les conditions usuelles ($T = 20^{\\circ}C, P = 1 atm$) ?",
+        "answers": [
+            "$400 kg \\cdot m^{-2} \\cdot s^{-1}$",
+            "$1,2 kg \\cdot m^{-2} \\cdot s^{-1}$",
+            "$340 kg \\cdot m^{-2} \\cdot s^{-1}$",
+            "$4000 kg \\cdot m^{-2} \\cdot s^{-1}$"
+        ],
+        "difficulty": 4,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Avec une masse volumique de l'air $\\rho_0 \\approx 1,2 kg/m^3$ et une célérité $c \\approx 340 m/s$, le produit $Z_c = \\rho_0 c \\approx 408 SI$. La valeur standard retenue est souvent $400 kg \\cdot m^{-2} \\cdot s^{-1}$."
+    },
+    {
+        "uuid": "son-099",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Une onde sonore se propageant dans un milieu solide (milieu élastique) peut présenter plusieurs types de polarisations. Lesquelles ?",
+        "answers": [
+            "Seulement longitudinale",
+            "Seulement transversale",
+            "Longitudinale ou transversale",
+            "Uniquement des ondes de surface"
+        ],
+        "difficulty": 2,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Contrairement aux fluides qui ne supportent que les ondes longitudinales (pression), les solides possèdent un module de cisaillement non nul. Cela permet la propagation d'ondes longitudinales (compression) et d'ondes transversales (cisaillement) avec des vitesses de phase différentes."
+    },
+    {
+        "uuid": "son-100",
+        "image_path": null,
+        "theme": "ondes",
+        "question": "Dans le cadre de l'acoustique linéaire (premier ordre), quelle expression représente correctement l'accélération d'une particule de fluide ?",
+        "answers": [
+            "$\\frac{\\partial \\vec{v}_1}{\\partial t}$",
+            "$(\\vec{v}_1 \\cdot \\vec{grad})\\vec{v}_1$",
+            "$\\frac{d\\vec{v}_1}{dt}$ (dérivée particulaire)",
+            "$\\vec{grad}(\\vec{v}_1)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Les ondes sonores",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "L'accélération est $\\frac{D\\vec{v}}{Dt} = \\frac{\\partial \\vec{v}}{\\partial t} + (\\vec{v} \\cdot \\vec{grad})\\vec{v}$. En acoustique linéaire, on ne garde que les termes du premier ordre. Comme $\\vec{v} = \\vec{v}_1$ est un terme petit (ordre 1), le terme convectif $(\\vec{v}_1 \\cdot \\vec{grad})\\vec{v}_1$ est de l'ordre 2 et est négligé."
+    }
+]

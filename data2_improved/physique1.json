@@ -1,0 +1,1682 @@
+[
+    {
+        "uuid": "slci-001",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Dans le cadre de l'étude des systèmes asservis, quelle est la définition rigoureuse d'un système linéaire au sens du principe de superposition ?",
+        "answers": [
+            "La sortie $s(t)$ est proportionnelle au carré de l'entrée $e(t)$, soit $s(t) = k \\cdot e(t)^2$.",
+            "La réponse à une combinaison linéaire d'entrées $\\alpha e_1(t) + \\beta e_2(t)$ est égale à la somme des réponses pondérées $\\alpha s_1(t) + \\beta s_2(t)$.",
+            "Le système est régi par une équation différentielle dont les coefficients dépendent explicitement du temps.",
+            "La sortie est nécessairement une fonction sinusoïdale quelle que soit l'entrée appliquée."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le principe de superposition est la pierre angulaire de la linéarité. Il implique que si $e_1 \rightarrow s_1$ et $e_2 \rightarrow s_2$, alors pour tout scalaire $\\alpha, \\beta$, l'entrée $\\alpha e_1 + \\beta e_2$ produit la sortie $\\alpha s_1 + \\beta s_2$. La réponse 1 décrit un système non-linéaire (quadratique)."
+    },
+    {
+        "uuid": "slci-002",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Que signifie le terme 'invariant' (ou stationnaire) pour un système SLCI ?",
+        "answers": [
+            "Le système possède une inertie physique telle qu'il ne peut pas être déplacé dans l'espace.",
+            "La valeur de la sortie reste constante quel que soit le signal d'entrée appliqué.",
+            "Un décalage temporel $\\tau$ de l'entrée $e(t-\\tau)$ produit le même décalage en sortie $s(t-\\tau)$ sans modifier la forme du signal.",
+            "Les coefficients de l'équation différentielle régissant le système sont des fonctions du temps $t$."
+        ],
+        "correct_answer_index": 2,
+        "explication": "L'invariance temporelle signifie que le comportement du système ne dépend pas de l'instant où l'on applique l'entrée. Si le système répond $s(t)$ à $e(t)$, il répondra $s(t-\\tau)$ à $e(t-\\tau)$. La réponse 4 définit un système variant dans le temps."
+    },
+    {
+        "uuid": "slci-003",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Selon le critère de BIBO (Bounded Input, Bounded Output), comment définit-on la stabilité d'un système linéaire ?",
+        "answers": [
+            "Le système est immobile mécaniquement, sa position est fixe dans le repère galiléen.",
+            "Pour toute entrée $e(t)$ bornée (c'est-à-dire $|e(t)| < M$), la sortie $s(t)$ reste également bornée.",
+            "La valeur de la sortie $s(t)$ est à tout instant identique à celle de l'entrée $e(t)$.",
+            "Le système comporte une boucle de rétroaction positive rendant la sortie divergente."
+        ],
+        "correct_answer_index": 1,
+        "explication": "La stabilité BIBO assure que si l'excitation est finie, la réponse le sera aussi. Un système instable, comme un intégrateur pur, peut avoir une sortie qui tend vers l'infini pour une entrée bornée (ex: échelon sur un intégrateur)."
+    },
+    {
+        "uuid": "slci-004",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Quelle est la correspondance opérationnelle de la dérivation temporelle $\\frac{d}{dt}$ dans le domaine de Laplace (variable de Laplace $p$, conditions initiales nulles) ?",
+        "answers": [
+            "La multiplication par $\\frac{1}{p}$ (intégration).",
+            "L'élévation au carré de la variable de Laplace soit $p^2$.",
+            "La multiplication par la variable de Laplace $p$.",
+            "La substitution par la pulsation complexe $j\\omega^2$."
+        ],
+        "correct_answer_index": 2,
+        "explication": "Par définition de la transformée de Laplace, $\\mathcal{L}\\{\\frac{df}{dt}\\} = pF(p) - f(0^-)$. Avec des conditions initiales nulles, l'opérateur $\\frac{d}{dt}$ devient simplement la multiplication par $p$. L'intégration correspond à la division par $p$."
+    },
+    {
+        "uuid": "slci-005",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Un système de premier ordre régi par l'équation $a\\frac{ds}{dt} + bs = e(t)$ est asymptotiquement stable si et seulement si :",
+        "answers": [
+            "$a$ et $b$ sont de signes opposés.",
+            "$a$ et $b$ sont de même signe (non nuls).",
+            "$a$ est strictement nul.",
+            "$b$ est strictement nul."
+        ],
+        "correct_answer_index": 1,
+        "explication": "La fonction de transfert est $H(p) = \\frac{1/b}{1 + (a/b)p}$. Le pôle est en $p = -b/a$. Pour la stabilité, il faut que le pôle soit dans le demi-plan gauche du plan complexe, donc $-b/a < 0$, ce qui implique que $a$ et $b$ doivent être de même signe."
+    },
+    {
+        "uuid": "slci-006",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Pour un système du second ordre régi par $a\\frac{d^2s}{dt^2} + b\\frac{ds}{dt} + cs = e(t)$ (avec $a>0$), quelle est la condition nécessaire et suffisante de stabilité ?",
+        "answers": [
+            "$a, b$ et $c$ doivent être strictement positifs.",
+            "Le discriminant $b^2 - 4ac$ doit être strictement supérieur à 0.",
+            "Le coefficient d'amortissement $b$ doit être nul.",
+            "Les coefficients $a$ et $c$ doivent être de signes opposés."
+        ],
+        "correct_answer_index": 0,
+        "explication": "Le polynôme caractéristique est $ap^2 + bp + c = 0$. Pour qu'un polynôme du second degré ait des racines à partie réelle strictement négative (stabilité), il faut que tous ses coefficients soient de même signe (condition de Routh-Hurwitz pour l'ordre 2)."
+    },
+    {
+        "uuid": "slci-007",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Quelle est l'expression correcte de la fonction de transfert harmonique $\\underline{H}(j\\omega)$ pour un système linéaire, où $\\underline{E}$ et $\\underline{S}$ sont les amplitudes complexes ?",
+        "answers": [
+            "$\\underline{H}(j\\omega) = \\underline{E} \\cdot \\underline{S}$",
+            "$\\underline{H}(j\\omega) = \\frac{\\underline{E}}{\\underline{S}}$",
+            "$\\underline{H}(j\\omega) = \\frac{\\underline{S}}{\\underline{E}}$",
+            "$\\underline{H}(j\\omega) = \\underline{S} - \\underline{E}$"
+        ],
+        "correct_answer_index": 2,
+        "explication": "La fonction de transfert est définie comme le rapport de la transformée de la sortie sur la transformée de l'entrée. En régime harmonique, il s'agit du rapport des amplitudes complexes : $\\underline{H}(j\\omega) = \\frac{\\underline{S}(j\\omega)}{\\underline{E}(j\\omega)}$."
+    },
+    {
+        "uuid": "slci-008",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 3,
+        "question": "Dans le cas d'un retard pur défini par $s(t) = e(t - \\tau)$, le système peut-il être décrit par une équation différentielle linéaire à coefficients constants d'ordre fini ?",
+        "answers": [
+            "Oui, c'est un système d'ordre 1.",
+            "Oui, mais c'est un système d'ordre infini.",
+            "Non, le retard pur ne peut pas être représenté par une équation différentielle linéaire à coefficients constants.",
+            "Seulement si le retard $\\tau$ est très petit devant la constante de temps du système."
+        ],
+        "correct_answer_index": 2,
+        "explication": "Un retard pur $\\tau$ correspond en Laplace à un terme $e^{-p\\tau}$. Il n'existe pas d'équation différentielle linéaire à coefficients constants (qui impliquerait une fonction de transfert sous forme de fraction rationnelle) permettant de représenter ce comportement, car $e^{-p\\tau}$ est une fonction transcendante."
+    },
+    {
+        "uuid": "slci-009",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Soit la fonction de transfert $H(p) = \\frac{1}{2+p}$. Ce système est-il stable ?",
+        "answers": [
+            "Oui, car le pôle est en $p = -2$, ce qui est situé dans le demi-plan gauche du plan complexe.",
+            "Non, car le pôle est positif.",
+            "Oui, car le système est d'ordre 1 et ne présente pas de terme en $p^2$.",
+            "Non, car le terme constant du dénominateur est supérieur à 1."
+        ],
+        "correct_answer_index": 0,
+        "explication": "La stabilité d'un système est déterminée par la position de ses pôles. Ici, le pôle est la racine de $p+2=0$, soit $p=-2$. Comme la partie réelle est négative, le système est stable."
+    },
+    {
+        "uuid": "slci-010",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Soit la fonction de transfert $H(p) = \\frac{1}{2-p}$. Ce système est-il stable ?",
+        "answers": [
+            "Oui, le système est stable car le gain statique est défini.",
+            "Non, car le pôle est situé en $p = +2$, ce qui est dans le demi-plan droit du plan complexe.",
+            "Stable uniquement pour les hautes fréquences, là où $p$ devient grand.",
+            "On ne peut pas conclure sans connaître l'entrée du système."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le pôle est la racine de $2-p=0$, soit $p=2$. Un pôle à partie réelle positive (ici $+2$) rend le système instable, car la réponse temporelle comportera un terme en $e^{+2t}$ qui diverge lorsque $t \rightarrow \\infty$."
+    },
+    {
+        "uuid": "slci-011",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Considérons un système régi par sa fonction de transfert $H(p) = \\frac{1-p}{1+3p+4p^2}$. Quel est le verdict de stabilité pour ce système linéaire ?",
+        "answers": [
+            "Instable car le numérateur possède un zéro à partie réelle positive.",
+            "Stable car tous les coefficients du dénominateur sont strictement positifs.",
+            "Instable car le discriminant du dénominateur est négatif.",
+            "Stable car le degré du numérateur est inférieur au degré du dénominateur."
+        ],
+        "difficulty": 3,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "Pour un système linéaire, la stabilité dépend uniquement des pôles (racines du dénominateur). Selon le critère de Routh, si tous les coefficients du polynôme caractéristique sont de même signe et non nuls, le système est stable. Ici, $1, 3$ et $4$ sont positifs : les racines ont donc une partie réelle négative. Le numérateur ($1-p$) influe sur le comportement temporel (zéro à droite) mais pas sur la stabilité intrinsèque.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-012",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Pour un système du second ordre de forme canonique $\\frac{K}{1 + \\frac{2z}{\\omega_0}p + \\frac{p^2}{\\omega_0^2}}$, si le discriminant $\\Delta$ de l'équation caractéristique est strictement négatif, quel est le régime transitoire ?",
+        "answers": [
+            "Régime apériodique.",
+            "Régime critique.",
+            "Régime pseudo-périodique.",
+            "Régime permanent."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 2,
+        "explication": "Si $\\Delta < 0$, les racines sont complexes conjuguées. La réponse temporelle fait intervenir des fonctions sinus et cosinus multipliées par une exponentielle décroissante, ce qui définit un régime pseudo-périodique. $\\Delta = 0$ correspond au régime critique et $\\Delta > 0$ au régime apériodique.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-013",
+        "image_path": "https://upload.wikimedia.org/wikipedia/commons/0/00/Step_response_damping.svg",
+        "theme": "Automatique",
+        "question": "Sur un graphique de réponse indicielle, quelle caractéristique visuelle permet d'identifier formellement un système linéaire instable ?",
+        "answers": [
+            "Une courbe qui converge vers une valeur finie différente de zéro.",
+            "Une courbe dont l'amplitude augmente indéfiniment avec le temps.",
+            "Une courbe qui reste bloquée à une valeur constante nulle.",
+            "Une courbe présentant un dépassement important avant de se stabiliser."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "Un système stable possède une réponse impulsionnelle qui tend vers zéro, ou une réponse indicielle qui converge vers une valeur finie. Si le système est instable, au moins un pôle a une partie réelle positive, ce qui provoque une divergence exponentielle de la sortie vers l'infini.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-014",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Soit l'équation différentielle $\\tau^2\\frac{d^2s}{dt^2} + \\tau(1-k)\\frac{ds}{dt} + s(t) = e(t)$. Quelle condition nécessaire et suffisante sur $k$ assure la stabilité asymptotique ?",
+        "answers": [
+            "$k \\geq 1$",
+            "$k < 1$",
+            "$k > 1$",
+            "$k = 0$"
+        ],
+        "difficulty": 3,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "D'après le critère de Routh-Hurwitz pour un polynôme du second ordre $ap^2+bp+c$, il faut que tous les coefficients soient de même signe. Ici, les coefficients sont $\\tau^2$, $\\tau(1-k)$ et $1$. Comme $\\tau^2 > 0$ et $1 > 0$, il faut impérativement $\\tau(1-k) > 0$, soit $1-k > 0$, donc $k < 1$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-015",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Quelle est l'unité de la variable de Laplace $p$ utilisée dans l'étude des systèmes linéaires ?",
+        "answers": [
+            "Sans dimension.",
+            "Rad/s.",
+            "Secondes ($s$).",
+            "Hertz ($Hz$)."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 2,
+        "explication": "La variable $p$ est associée à l'opérateur de dérivation $d/dt$. Comme l'unité de $d/dt$ est $s^{-1}$, l'unité de $p$ est le $s^{-1}$ (ou rad/s dans le cadre de la transformée de Laplace).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-016",
+        "image_path": null,
+        "theme": "Circuits électriques",
+        "question": "Pour la modélisation d'un moteur à courant continu sous forme de fonction de transfert, si l'entrée $e(t)$ est la tension d'induit $u(t)$, quelle est la sortie $s(t)$ classique ?",
+        "answers": [
+            "Le couple moteur $C_m(t)$.",
+            "La vitesse angulaire $\\omega(t)$ de l'arbre.",
+            "La température des enroulements.",
+            "Le flux magnétique total $\\Phi$."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "Dans les exercices classiques de SI/Automatique, le moteur est considéré comme un actionneur convertissant une tension électrique en un mouvement mécanique de rotation. On étudie donc la relation entre la tension d'entrée et la vitesse de sortie.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-017",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Si la solution de l'équation homogène $s_h(t)$ d'un système linéaire tend vers $0$ quand $t \\to +\\infty$, comment qualifie-t-on le système ?",
+        "answers": [
+            "Instable.",
+            "Asymptotiquement stable.",
+            "Invariant.",
+            "Linéaire."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "La définition de la stabilité asymptotique est justement que le régime transitoire (solution homogène) s'éteigne avec le temps. Si la réponse ne tend pas vers zéro (soit elle converge vers une constante non nulle, soit elle diverge, soit elle oscille), le système n'est pas asymptotiquement stable.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-018",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Que se passe-t-il physiquement si un système est instable ?",
+        "answers": [
+            "La sortie diverge mathématiquement vers l'infini, causant en pratique la destruction ou la saturation du système.",
+            "Le système ne peut pas être modélisé par une équation différentielle.",
+            "La sortie reste bloquée à sa valeur initiale indéfiniment.",
+            "Le système oscille de manière parfaitement sinusoïdale."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 0,
+        "explication": "Mathématiquement, une instabilité implique que la solution croît exponentiellement. Physiquement, aucun système réel ne peut diverger jusqu'à l'infini : il finit par atteindre ses limites technologiques (saturation des alimentations, butées mécaniques, destruction des composants).",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-019",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Soit l'équation $4\\frac{d^2s}{dt^2} + \\frac{ds}{dt} - 3s = e(t)$. Pourquoi ce système est-il instable ?",
+        "answers": [
+            "Car le coefficient du terme d'ordre 0 (coefficient de $s$) est négatif.",
+            "Car le discriminant est nul.",
+            "Car l'équation est du second ordre.",
+            "Car le coefficient de la dérivée seconde est positif."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 0,
+        "explication": "Pour qu'un système soit stable, tous les coefficients du polynôme caractéristique $4p^2 + p - 3 = 0$ doivent être de même signe. Ici, le signe varie (positif, positif, négatif), ce qui implique nécessairement l'existence d'au moins une racine à partie réelle positive.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-020",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Quelle est la forme de la solution homogène $s_h(t)$ pour un système du second ordre en régime critique ($\\Delta = 0$ et racine double $r_0$) ?",
+        "answers": [
+            "$s_h(t) = A e^{r_0 t}$",
+            "$s_h(t) = (A + Bt) e^{r_0 t}$",
+            "$s_h(t) = A \\cos(\\omega_0 t + \\phi)$",
+            "$s_h(t) = A e^{r_1 t} + B e^{r_2 t}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "Pour une équation différentielle du second ordre avec racine double $r_0$, la solution de l'équation homogène n'est pas seulement $A e^{r_0 t}$, car il manque un degré de liberté pour satisfaire les conditions initiales. On doit multiplier par $t$ pour obtenir la solution générale : $(A + Bt) e^{r_0 t}$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-021",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Dans le cadre de l'étude d'un oscillateur harmonique régi par l'équation différentielle $\\frac{d^2s}{dt^2} + 0,5\\frac{ds}{dt} + 25s = 50$, quelle est la valeur de la pulsation propre $\\omega_0$ ?",
+        "answers": [
+            "$25 \\text{ rad/s}$",
+            "$5 \\text{ rad/s}$",
+            "$0,5 \\text{ rad/s}$",
+            "$50 \\text{ rad/s}$"
+        ],
+        "difficulty": 3,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La forme canonique d'un oscillateur est $\\ddot{s} + 2z\\omega_0\\dot{s} + \\omega_0^2s = E$. Ici, par identification, $\\omega_0^2 = 25$, donc $\\omega_0 = \\sqrt{25} = 5 \\text{ rad/s}$. L'erreur classique est de confondre la valeur du terme constant avec la pulsation propre sans extraire la racine carrée."
+    },
+    {
+        "uuid": "slci-022",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Pour l'équation différentielle $\\frac{d^2s}{dt^2} + 0,5\\frac{ds}{dt} + 25s = 50$, le système est-il stable ?",
+        "answers": [
+            "Non, car $0,5$ est trop faible pour assurer la stabilité.",
+            "Oui, car les coefficients du polynôme caractéristique sont tous strictement positifs.",
+            "Non, car le second membre $50$ induit une divergence.",
+            "Impossible à déterminer sans connaître les conditions initiales $s(0)$ et $\\dot{s}(0)$."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour un système linéaire à coefficients constants, une condition nécessaire (et suffisante pour l'ordre 2) de stabilité est que tous les coefficients du polynôme caractéristique soient strictement positifs. Ici, $1, 0,5, 25 > 0$, donc le système est stable. Le second membre définit le régime permanent mais n'affecte pas la stabilité interne."
+    },
+    {
+        "uuid": "slci-023",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Comment nomme-t-on, en automatique, le rapport $\\underline{H}(p) = \\frac{\\mathcal{L}[s(t)]}{\\mathcal{L}[e(t)]}$ où $p$ est la variable de Laplace ?",
+        "answers": [
+            "L'impédance de transfert.",
+            "La fonction de transfert (ou transmittance opérationnelle).",
+            "Le gain statique.",
+            "La réponse indicielle."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La fonction de transfert est le rapport de la transformée de Laplace de la sortie sur celle de l'entrée, avec des conditions initiales nulles. L'impédance est un cas particulier (tension/courant), tandis que le gain statique est la valeur de cette fonction pour $p=0$."
+    },
+    {
+        "uuid": "slci-024",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Un système linéaire invariant dans le temps (SLIT) présente la propriété d'invariance. Si la réponse à $e(t)$ est $s(t)$, quelle est la réponse à une entrée retardée $e(t-\\tau)$ ?",
+        "answers": [
+            "$s(t)$",
+            "$s(t) - \\tau$",
+            "$s(t - \\tau)$",
+            "$\\tau \\cdot s(t)$"
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Par définition, un système invariant dans le temps réagit de la même manière quel que soit le moment où l'entrée est appliquée. Un retard $\\tau$ sur l'entrée entraîne strictement le même retard sur la sortie."
+    },
+    {
+        "uuid": "slci-025",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Si un système linéaire d'ordre 2 possède des pôles complexes conjugués de partie réelle strictement négative, quel est son comportement en régime libre ?",
+        "answers": [
+            "Stable et apériodique.",
+            "Stable et pseudo-périodique.",
+            "Instable car les pôles ne sont pas réels.",
+            "Stable et critique."
+        ],
+        "difficulty": 3,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La partie réelle négative assure la stabilité (convergence vers 0). La présence d'une partie imaginaire non nulle entraîne des oscillations autour de la position d'équilibre, ce qui caractérise un régime pseudo-périodique."
+    },
+    {
+        "uuid": "slci-026",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Dans l'étude d'un système, on observe que la réponse à une excitation est une sinusoïde dont l'amplitude augmente indéfiniment au cours du temps. Le système est :",
+        "answers": [
+            "Stable.",
+            "Instable.",
+            "En régime critique.",
+            "En régime permanent."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un système est dit instable si, pour une excitation bornée, la réponse diverge. Une amplitude croissante vers l'infini est la signature directe d'une instabilité (pôles à partie réelle positive)."
+    },
+    {
+        "uuid": "slci-027",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Dans l'équation caractéristique $\\frac{d^2s}{dt^2} + 2z\\omega_0\\frac{ds}{dt} + \\omega_0^2s = 0$, si le système est stable et converge, quel est le signe du coefficient d'amortissement $z$ ?",
+        "answers": [
+            "Nul.",
+            "Négatif.",
+            "Positif.",
+            "Imaginaire pur."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Le terme d'amortissement $2z\\omega_0$ est responsable de la dissipation de l'énergie. Pour que le système soit stable (convergent), il faut que $z > 0$. Si $z < 0$, le système pompe de l'énergie et diverge (instabilité)."
+    },
+    {
+        "uuid": "slci-028",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Considérons un circuit RC série dont la fonction de transfert est $H(p) = \\frac{1}{1+RCp}$. Ce système est-il stable ?",
+        "answers": [
+            "Oui, car le pôle est réel négatif ($p = -1/RC$).",
+            "Non, car le gain statique est trop faible.",
+            "Non, car le système est d'ordre 1.",
+            "Indéterminé sans valeur numérique de R et C."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "La stabilité d'un système linéaire se lit sur ses pôles (racines du dénominateur). Ici, le pôle est $p = -1/(RC)$. Comme $R>0$ et $C>0$, le pôle est strictement négatif, ce qui garantit la stabilité du système."
+    },
+    {
+        "uuid": "slci-029",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Soit $H(p) = \\frac{1-p+2p^2}{4+p-p^2}$. Le système est-il stable ?",
+        "answers": [
+            "Stable.",
+            "Instable car le dénominateur possède une racine positive.",
+            "Stable car le numérateur est de degré 2.",
+            "Neutre car il y a des termes en $p^2$."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le dénominateur est $D(p) = -p^2 + p + 4$. Pour qu'un polynôme de degré 2 soit stable, tous les coefficients doivent être de même signe. Ici, le coefficient de $p^2$ est $-1$ et le terme constant est $4$, ce qui implique au moins une racine positive (instabilité)."
+    },
+    {
+        "uuid": "slci-030",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Quelle est la dimension physique du paramètre $z$ (souvent noté $\\beta$) dans l'équation $\\frac{d^2s}{dt^2} + 2z\\omega_0\\frac{ds}{dt} + \\omega_0^2s = 0$ ?",
+        "answers": [
+            "Temps ($s$).",
+            "Fréquence ($rad/s$).",
+            "Sans dimension.",
+            "Vitesse ($m/s$)."
+        ],
+        "difficulty": 3,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Le coefficient d'amortissement $z$ est un facteur multiplicatif sans dimension. Il permet de quantifier le taux d'amortissement par rapport à l'amortissement critique."
+    },
+    {
+        "uuid": "slci-031",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Dans le cadre de l'analyse fréquentielle d'un SLCI, un signal harmonique d'entrée $e(t) = E_m \\cos(\\omega t + \\phi)$ est associé à quelle amplitude complexe $\\underline{E}$ ?",
+        "answers": [
+            "$E_m e^{j\\phi}$",
+            "$E_m e^{j\\omega t}$",
+            "$\\cos(\\phi)$",
+            "$j E_m \\phi$"
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Par définition, l'amplitude complexe $\\underline{S}$ associée à $s(t) = S_m \\cos(\\omega t + \\phi)$ est $\\underline{S} = S_m e^{j\\phi}$. Le terme $e^{j\\omega t}$ est le terme temporel dépendant du temps, et non l'amplitude complexe qui est indépendante de $t$."
+    },
+    {
+        "uuid": "slci-032",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Lorsqu'un SLCI (Système Linéaire Continu Invariant) est soumis à une entrée harmonique de pulsation $\\omega$, quelle est la nature du signal de sortie en régime permanent ?",
+        "answers": [
+            "Un signal à la pulsation $2\\omega$",
+            "Un signal à la pulsation $\\omega / 2$",
+            "Un signal harmonique de même pulsation $\\omega$",
+            "Un signal apériodique sans pulsation définie"
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La propriété fondamentale des SLCI est que la réponse en régime permanent à une excitation harmonique est un signal sinusoïdal de même pulsation $\\omega$, mais dont l'amplitude et la phase sont modifiées par la fonction de transfert complexe $\\underline{H}(j\\omega)$."
+    },
+    {
+        "uuid": "slci-033",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Pour un système du second ordre régi par l'équation caractéristique $r^2 + 2z\\omega_0 r + \\omega_0^2 = 0$, quelle condition sur le discriminant réduit $\\Delta' = z^2 - 1$ correspond au régime apériodique ?",
+        "answers": [
+            "$\\Delta' = 0$ (critique)",
+            "$\\Delta' > 0$ (amortissement fort)",
+            "$\\Delta' < 0$ (pseudo-périodique)",
+            "Le système est instable"
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Le régime est apériodique quand les deux racines du polynôme caractéristique sont réelles et distinctes, ce qui impose $\\Delta > 0$, soit $z > 1$. Si $\\Delta < 0$, les racines sont complexes conjuguées, entraînant des oscillations (régime pseudo-périodique)."
+    },
+    {
+        "uuid": "slci-034",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Quelle condition nécessaire et suffisante sur les pôles (racines du dénominateur) de la fonction de transfert $H(p)$ garantit la stabilité asymptotique d'un système ?",
+        "answers": [
+            "Leurs parties réelles doivent être toutes strictement positives.",
+            "Leurs parties réelles doivent être nulles.",
+            "Leurs parties réelles doivent être toutes strictement négatives.",
+            "Leur partie imaginaire doit être nulle."
+        ],
+        "difficulty": 4,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La stabilité asymptotique exige que la réponse impulsionnelle tende vers zéro quand $t \\to \\infty$. Cela nécessite que tous les pôles $p_i$ soient situés dans le demi-plan gauche du plan complexe, soit $\\text{Re}(p_i) < 0$."
+    },
+    {
+        "uuid": "slci-035",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Un système modélisé par l'équation $s(t) = 3 e(t) + 2$ est-il un système linéaire au sens des SLCI ?",
+        "answers": [
+            "Oui, car il s'agit d'une fonction affine.",
+            "Non, car il ne vérifie pas le principe de superposition (l'image de zéro n'est pas nulle).",
+            "Oui, car la pente est constante.",
+            "Non, seulement si $e(t) > 0$."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Pour qu'un système soit linéaire, il doit vérifier le principe de superposition : $S(0) = 0$ si $E(0) = 0$. Ici, $s(0) = 2$ pour $e(0) = 0$. C'est un système affine, mais non linéaire au sens de l'automatique."
+    },
+    {
+        "uuid": "slci-036",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Que désigne l'acronyme anglais 'LTI' dans la littérature scientifique concernant les systèmes ?",
+        "answers": [
+            "Low Temperature Input",
+            "Linear Time Invariant",
+            "Long Term Integration",
+            "Linear Thermal Induction"
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "LTI signifie 'Linear Time Invariant'. 'Linear' pour la superposition et 'Time Invariant' pour signifier que les paramètres du système ne varient pas au cours du temps."
+    },
+    {
+        "uuid": "slci-037",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Considérons l'équation différentielle $a s''(t) + b s'(t) + c s(t) = e(t)$ avec $a, c > 0$ et $b=0$. Quelle est la nature de la stabilité de ce système ?",
+        "answers": [
+            "Stable asymptotiquement.",
+            "Instable (divergent).",
+            "Stabilité marginale (oscillations entretenues).",
+            "Amorti."
+        ],
+        "difficulty": 4,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Si $b=0$, l'équation devient $s''(t) + \\omega_0^2 s(t) = e(t)/a$ avec $\\omega_0^2 = c/a$. Les racines sont purement imaginaires ($\\pm j\\omega_0$). Il n'y a pas d'amortissement, le système oscille indéfiniment sans diverger ni converger : c'est la stabilité marginale."
+    },
+    {
+        "uuid": "slci-038",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Soit la fonction de transfert $H(p) = \\frac{p}{-1+p}$. Ce système est-il stable ?",
+        "answers": [
+            "Oui, car le numérateur est stable.",
+            "Non, car il possède un pôle à partie réelle positive ($p=1$).",
+            "Oui, car $H(p)$ est une fraction rationnelle.",
+            "Indéterminé sans le gain."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La stabilité est dictée par les pôles (dénominateur). Ici, $p-1=0 \\implies p=1$. Comme la partie réelle est positive ($1 > 0$), le système est instable (la réponse contient un terme en $e^{t}$)."
+    },
+    {
+        "uuid": "slci-039",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Pour vérifier la stabilité d'un SLCI à partir de sa fonction de transfert $H(p) = \\frac{N(p)}{D(p)}$, quels éléments faut-il impérativement analyser ?",
+        "answers": [
+            "Les racines du polynôme numérateur $N(p)$.",
+            "Les racines du polynôme dénominateur $D(p)$.",
+            "La valeur du gain statique $H(0)$.",
+            "Le comportement de $H(p)$ quand $p \\to \\infty$."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La stabilité d'un système est intrinsèque et ne dépend que de ses pôles, c'est-à-dire les racines du dénominateur $D(p)$ de la fonction de transfert. Le numérateur influence uniquement la réponse transitoire et le gain, mais pas la stabilité."
+    },
+    {
+        "uuid": "slci-040",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Si la relation entrée-sortie est $s(t) = e(t)^2$, comment qualifie-t-on ce système ?",
+        "answers": [
+            "Linéaire.",
+            "Non-linéaire.",
+            "Invariant temporel.",
+            "Continu."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'opération d'élévation au carré est une fonction non-linéaire. Le principe de superposition n'est pas respecté : $(e_1 + e_2)^2 \\neq e_1^2 + e_2^2$ en général."
+    },
+    {
+        "uuid": "slci-041",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Dans le cadre de l'étude d'un système asservi, on considère l'équation différentielle régissant la sortie $s(t)$ en fonction de l'entrée $e(t)$ : $4\\tau^2 \\frac{d^2s}{dt^2} + 5\\tau \\frac{ds}{dt} + s(t) = e(t)$. Quel est l'ordre de ce système ?",
+        "answers": [
+            "1, car il n'y a qu'une seule constante de temps.",
+            "2, car il s'agit d'une équation différentielle du second ordre.",
+            "3, car il y a trois termes à gauche de l'égalité.",
+            "4, en raison de la présence du terme $4\\tau^2$."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "L'ordre d'un système linéaire invariant est défini par le degré de la dérivée la plus élevée dans l'équation différentielle. Ici, le terme en $\\frac{d^2s}{dt^2}$ impose un ordre 2."
+    },
+    {
+        "uuid": "slci-042",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Pour l'équation $4\\tau^2 s'' + 5\\tau s' + s = e$, le système est-il stable pour $\\tau > 0$ ?",
+        "answers": [
+            "Oui, car tous les coefficients du polynôme caractéristique sont de même signe (positifs).",
+            "Non, car le coefficient du terme en $s''$ est $4\\tau^2$ et non $1$.",
+            "Cela dépend de l'entrée $e(t)$, la stabilité est une propriété intrinsèque de l'entrée.",
+            "Non, il faut obligatoirement $\\tau < 1$ pour assurer la stabilité."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 0,
+        "explication": "Pour un système du second ordre de la forme $as'' + bs' + cs = e$, la condition nécessaire et suffisante de stabilité est que $a, b$ et $c$ soient de même signe. Avec $\\tau > 0$, les coefficients $4\\tau^2$, $5\\tau$ et $1$ sont strictement positifs."
+    },
+    {
+        "uuid": "slci-043",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Lors de la résolution de l'équation caractéristique $ar^2 + br + c = 0$ associée à un système linéaire du second ordre, quelle est l'expression du discriminant $\\Delta$ permettant de déterminer la nature des racines ?",
+        "answers": [
+            "$\\Delta = b - 4ac$, car il s'agit d'une équation simplifiée.",
+            "$\\Delta = b^2 - 4ac$, conformément au cours d'algèbre.",
+            "$\\Delta = b^2 + 4ac$, car les coefficients d'amortissement sont souvent ajoutés.",
+            "$\\Delta = \\sqrt{b^2 - 4ac}$, car le discriminant doit toujours être positif."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "Le discriminant d'une équation du second ordre de la forme $ar^2 + br + c = 0$ est par définition $b^2 - 4ac$. Les autres propositions sont des erreurs classiques de manipulation algébrique."
+    },
+    {
+        "uuid": "slci-044",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Dans l'étude de la réponse temporelle d'un système stable, que devient l'effet du régime transitoire lorsque le temps $t$ tend vers l'infini ?",
+        "answers": [
+            "Il augmente avec le temps, provoquant une divergence du signal.",
+            "Il reste constant, car le système conserve la mémoire de son état initial.",
+            "Il disparaît (tend vers 0), permettant au système de rejoindre son régime permanent.",
+            "Il est toujours nul dès l'instant initial $t=0$."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 2,
+        "explication": "Par définition, un système stable est un système dont la réponse impulsionnelle tend vers 0 lorsque $t \\to \\infty$. Le régime transitoire est le terme qui s'annule pour laisser place au régime permanent."
+    },
+    {
+        "uuid": "slci-045",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Soit la fonction de transfert en boucle fermée $H(p) = \\frac{1+p}{1-3p+4p^2}$. Le système est-il stable ?",
+        "answers": [
+            "Oui, car le polynôme est du second degré.",
+            "Non, car les coefficients du dénominateur ne sont pas tous de même signe.",
+            "Oui, car le terme en $p^2$ est positif, assurant une racine réelle positive.",
+            "Instable à cause du $1$ au numérateur, qui introduit un zéro instable."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "Le critère de Routh (ou simplement le signe des coefficients pour un système d'ordre 2) impose que tous les coefficients du dénominateur soient de même signe. Ici, le coefficient $-3$ contredit cette règle, signifiant qu'au moins une racine possède une partie réelle positive."
+    },
+    {
+        "uuid": "slci-046",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Le système défini par la relation entrée-sortie $s(t) = e(t) \\cdot \\sin(t)$ est-il invariant ?",
+        "answers": [
+            "Oui, car la relation est linéaire.",
+            "Non, car il dépend explicitement du temps via le facteur $\\sin(t)$.",
+            "Oui, si $e(t)$ est un signal constant.",
+            "Non, car le produit avec une fonction sinusoïdale rend le système instable."
+        ],
+        "difficulty": 3,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "Un système est invariant (ou stationnaire) si ses paramètres ne dépendent pas explicitement du temps. Ici, la présence de $\\sin(t)$ signifie que la réponse dépend de l'instant où l'entrée est appliquée."
+    },
+    {
+        "uuid": "slci-047",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Lors de l'étude d'un système du second ordre $as'' + bs' + cs = e$, quelle est la racine double $r_0$ lorsque le régime est critique ($\\Delta = 0$) ?",
+        "answers": [
+            "$r_0 = -b/a$, ce qui correspond à la fréquence propre.",
+            "$r_0 = -b/2a$, obtenue en annulant le discriminant.",
+            "$r_0 = -2b/a$, facteur classique des systèmes amortis.",
+            "$r_0 = \\sqrt{c/a}$, correspondant au pôle dominant."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "Pour une équation $ar^2 + br + c = 0$, si $\\Delta = 0$, les racines sont confondues en $r_0 = -b / (2a)$. C'est le cas de l'amortissement critique."
+    },
+    {
+        "uuid": "slci-048",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Si la réponse indicielle d'un système présente une croissance exponentielle sans oscillation, comment qualifie-t-on ce système ?",
+        "answers": [
+            "Stable apériodique : le système revient vers 0 sans osciller.",
+            "Instable apériodique : le système diverge sans osciller.",
+            "Stable pseudo-périodique : le système converge avec oscillations.",
+            "Instable oscillant : le système diverge avec des oscillations."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "Une croissance exponentielle signifie que la sortie tend vers l'infini (instabilité). L'absence d'oscillation indique un régime apériodique (racines réelles)."
+    },
+    {
+        "uuid": "slci-049",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "En régime sinusoïdal forcé, que vaut le déphasage $\\phi$ si la réponse complexe $\\underline{S_m}$ est un imaginaire pur positif ?",
+        "answers": [
+            "$0$ radians (en phase avec l'entrée).",
+            "$\\pi$ radians (en opposition de phase).",
+            "$\\pi/2$ radians (en avance de phase).",
+            "$-\\pi/2$ radians (en retard de phase)."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 2,
+        "explication": "Un nombre complexe imaginaire pur positif s'écrit sous la forme $j|S_m| = |S_m|e^{j\\pi/2}$. L'argument est donc $\\pi/2$."
+    },
+    {
+        "uuid": "slci-050",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Pour le système régi par $s'' + 0,5s' + 25s = 50$, quelle est la valeur de la sortie $s(t)$ en régime permanent ($t \\to \\infty$) ?",
+        "answers": [
+            "50, car c'est la valeur de l'entrée.",
+            "25, car c'est le gain statique du système.",
+            "2, obtenu en annulant les dérivées dans l'équation différentielle.",
+            "0, car le système est stable."
+        ],
+        "difficulty": 3,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 2,
+        "explication": "En régime permanent, les dérivées $s''$ et $s'$ sont nulles. L'équation devient $0 + 0 + 25s_{perm} = 50$, d'où $s_{perm} = 50/25 = 2$."
+    },
+    {
+        "uuid": "slci-051",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 4,
+        "question": "Dans le cadre de l'étude d'un système du second ordre sous forme canonique de fonction de transfert $H(p) = \\frac{K}{1 + \\frac{2z}{\\omega_0}p + \\frac{p^2}{\\omega_0^2}}$, si le facteur de qualité est $Q = 10$, quel est le régime transitoire observé ?",
+        "answers": [
+            "Apériodique ($z > 1$)",
+            "Critique ($z = 1$)",
+            "Pseudo-périodique ($z < 1$)",
+            "Divergent ($z < 0$)"
+        ],
+        "correct_answer_index": 2,
+        "explication": "Le facteur de qualité $Q$ est lié à l'amortissement par la relation $Q = \\frac{1}{2z}$. Pour $Q = 10$, on obtient $z = 0,05$. Comme $z < 1$, le système présente des pôles complexes conjugués, ce qui induit des oscillations amorties : on est en régime pseudo-périodique."
+    },
+    {
+        "uuid": "slci-052",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Parmi les composants suivants, lequel introduit une dynamique temporelle dans un circuit, se traduisant par un terme en $p$ dans la fonction de transfert ?",
+        "answers": [
+            "Une résistance pure",
+            "Un condensateur ou une bobine",
+            "Un fil de connexion idéal",
+            "Un interrupteur mécanique"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le comportement d'un condensateur ($i = C \\frac{du}{dt}$) ou d'une bobine ($u = L \\frac{di}{dt}$) fait intervenir une dérivée temporelle, qui devient une multiplication par $p$ dans le domaine de Laplace. Les résistances sont des éléments statiques (proportionnels)."
+    },
+    {
+        "uuid": "slci-053",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Un thermocouple transforme une température $T(t)$ en une tension électrique $u(t)$. Peut-on le modéliser comme un système automatique ?",
+        "answers": [
+            "Oui, c'est un système avec une entrée et une sortie.",
+            "Non, car les grandeurs ne sont pas de même nature physique.",
+            "Seulement si la tension $u(t)$ est alternative.",
+            "Non, c'est uniquement un capteur, pas un système."
+        ],
+        "correct_answer_index": 0,
+        "explication": "En automatique, un système est défini comme une entité qui transforme une grandeur d'entrée en une grandeur de sortie. Peu importe la nature physique de ces grandeurs (température, tension, pression), le modèle mathématique de la chaîne de transmission reste identique."
+    },
+    {
+        "uuid": "slci-054",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Quelle est la réponse impulsionnelle $h(t)$ d'un système stable du premier ordre de fonction de transfert $H(p) = \\frac{K}{1+\\tau p}$ ?",
+        "answers": [
+            "Une droite croissante $K \\cdot t$",
+            "Une exponentielle décroissante $\\frac{K}{\\tau} e^{-t/\\tau}$",
+            "Une sinusoïde amortie",
+            "Une fonction constante $K$"
+        ],
+        "correct_answer_index": 1,
+        "explication": "La réponse impulsionnelle est la transformée de Laplace inverse de la fonction de transfert $H(p)$. Pour un premier ordre, on a $H(p) = \\frac{K/\\tau}{p + 1/\\tau}$, dont l'inverse est bien une exponentielle décroissante."
+    },
+    {
+        "uuid": "slci-055",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Dans le cadre de la transformée de Laplace utilisée pour résoudre les équations différentielles linéaires, quelle variable complexe fréquentielle utilise-t-on couramment ?",
+        "answers": [
+            "$x$",
+            "$p$",
+            "$t$",
+            "$s$"
+        ],
+        "correct_answer_index": 1,
+        "explication": "En CPGE, bien que la notation $s$ soit fréquente dans les ouvrages anglo-saxons, la notation $p$ (variable de Laplace) est le standard conventionnel en France pour l'automatique des systèmes linéaires."
+    },
+    {
+        "uuid": "slci-056",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Un système dit « continu » traite des signaux de quelle nature ?",
+        "answers": [
+            "Des signaux échantillonnés (discrets)",
+            "Des signaux codés sur des bits (numériques)",
+            "Des signaux analogiques (fonctions continues du temps)",
+            "Des signaux binaires uniquement"
+        ],
+        "correct_answer_index": 2,
+        "explication": "Un système continu est défini par des équations différentielles où la variable temps $t$ appartient à un intervalle réel continu. Ses entrées et sorties sont donc des fonctions continues du temps."
+    },
+    {
+        "uuid": "slci-057",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "À quoi correspond le polynôme caractéristique d'une équation différentielle linéaire à coefficients constants ?",
+        "answers": [
+            "Au spectre de l'entrée du système",
+            "À l'équation homogène associée (sans second membre)",
+            "Au régime permanent (solution particulière)",
+            "Au gain statique du système"
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le polynôme caractéristique est obtenu en remplaçant la dérivée $n$-ième par la variable $p^n$ dans l'équation différentielle homogène (c'est-à-dire le membre de gauche égalé à zéro). Ses racines déterminent la stabilité du système."
+    },
+    {
+        "uuid": "slci-058",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 4,
+        "question": "Soit l'équation $ar^2 + br + c = 0$ avec $a, b, c > 0$. Que peut-on dire des racines $r_1$ et $r_2$ ?",
+        "answers": [
+            "Elles ont une partie réelle positive (instable)",
+            "Elles ont une partie réelle négative (stable)",
+            "Elles ont une partie réelle nulle (oscillations entretenues)",
+            "Elles sont nécessairement réelles"
+        ],
+        "correct_answer_index": 1,
+        "explication": "D'après les relations entre coefficients et racines (ou le critère de Routh), si tous les coefficients d'un polynôme du second degré sont de même signe, les parties réelles des racines sont strictement négatives, garantissant la stabilité asymptotique."
+    },
+    {
+        "uuid": "slci-059",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "La solution générale $s(t) = A e^{r_1 t} + B e^{r_2 t}$ (avec $r_1, r_2$ réels distincts et négatifs) correspond à quel régime ?",
+        "answers": [
+            "Pseudo-périodique",
+            "Apériodique",
+            "Critique",
+            "Instable"
+        ],
+        "correct_answer_index": 1,
+        "explication": "La forme exponentielle réelle indique l'absence d'oscillations. Lorsque les racines du polynôme caractéristique sont réelles et distinctes, le système se comporte comme une somme de deux premiers ordres : c'est un régime apériodique."
+    },
+    {
+        "uuid": "slci-060",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 4,
+        "question": "Soit un système du second ordre. Si l'on note $\\beta$ le coefficient d'amortissement tel que $\\beta > 1$, quel est le régime du système ?",
+        "answers": [
+            "Apériodique (car $z > 1$)",
+            "Pseudo-périodique (car $z < 1$)",
+            "Instable (car $z < 0$)",
+            "Oscillant (car $\\beta > 0$)"
+        ],
+        "correct_answer_index": 0,
+        "explication": "Dans la forme $H(p) = \\frac{K}{1 + 2z\\frac{p}{\\omega_0} + \\frac{p^2}{\\omega_0^2}}$, si $\\beta$ est le coefficient d'amortissement et que $\\beta > 1$ (avec $z = \\beta$), alors $z > 1$. Le système possède deux pôles réels négatifs distincts, ce qui définit un régime apériodique."
+    },
+    {
+        "uuid": "slci-061",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Dans le cadre de l'étude des non-linéarités d'un système asservi, comment appelle-t-on le phénomène où la sortie cesse de croître linéairement avec l'entrée pour atteindre une valeur limite ?",
+        "answers": [
+            "La linéarité, qui garantit la proportionnalité.",
+            "L'invariance temporelle, liée à la stationnarité.",
+            "La saturation, phénomène de butée physique du signal.",
+            "La stabilité, qui définit la convergence de la sortie."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "La saturation est une non-linéarité classique où l'actionneur (amplificateur, moteur) atteint sa limite physique de fonctionnement (tension d'alimentation). Elle empêche le système de suivre linéairement l'entrée au-delà d'un certain seuil."
+    },
+    {
+        "uuid": "slci-062",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Dans la fonction de transfert harmonique $\\underline{H}(j\\omega)$, que représente le symbole $j$ dans l'expression complexe ?",
+        "answers": [
+            "La densité de courant électrique $j$ en $A \\cdot m^{-2}$.",
+            "L'unité imaginaire définie par $j^2 = -1$.",
+            "Une constante de temps caractéristique du système.",
+            "Le retard pur dans la réponse impulsionnelle."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "En physique et automatique, $j$ est l'unité imaginaire (notée $i$ en mathématiques). Elle permet de manipuler les amplitudes et les phases sous forme complexe : $\\underline{H}(j\\omega) = G(\\omega)e^{j\\phi(\\omega)}$."
+    },
+    {
+        "uuid": "slci-063",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Quelle est l'unité internationale de la pulsation propre $\\omega_0$ utilisée dans les équations différentielles d'un système du second ordre ?",
+        "answers": [
+            "Le Hertz ($Hz$), unité de fréquence $f$.",
+            "Le radian par seconde ($rad \\cdot s^{-1}$).",
+            "La seconde ($s$), unité de temps.",
+            "Le radian ($rad$), unité d'angle."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La pulsation est définie par $\\omega_0 = 2\\pi f$. Son unité est le $rad \\cdot s^{-1}$. Confondre avec le Hertz ($s^{-1}$) est une erreur fréquente : le facteur $2\\pi$ est indispensable pour le passage à la pulsation."
+    },
+    {
+        "uuid": "slci-064",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Considérons la réponse temporelle $s(t) = (A + Bt)e^{r_0 t}$. Si $r_0 > 0$, quelle est la nature de la stabilité du système ?",
+        "answers": [
+            "Stable, car la réponse reste finie.",
+            "Instable, car $s(t)$ tend vers l'infini avec le temps.",
+            "Oscillant, du fait de la présence de $t$.",
+            "Critique, à la limite de la stabilité."
+        ],
+        "difficulty": 3,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "Un système linéaire est stable si tous les pôles de sa fonction de transfert ont une partie réelle strictement négative. Ici, le terme $e^{r_0 t}$ avec $r_0 > 0$ provoque une divergence exponentielle vers l'infini, caractéristique d'un système instable."
+    },
+    {
+        "uuid": "slci-065",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Lors de l'étude d'un circuit électrique, nous obtenons l'équation différentielle suivante : $(R_1+R_2)C \\frac{ds}{dt} + s(t) = R_2 C \\frac{de}{dt}$. Quel est l'ordre de ce système ?",
+        "answers": [
+            "Second ordre, car il y a deux résistances.",
+            "Premier ordre, car l'ordre maximal de dérivation est 1.",
+            "Ordre 0, car il n'y a pas d'intégrale.",
+            "Non-linéaire, car il y a des constantes."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "L'ordre d'un système linéaire est donné par le degré de la dérivée la plus élevée dans l'équation différentielle. Ici, la dérivée maximale est de degré 1, c'est donc un système du premier ordre."
+    },
+    {
+        "uuid": "slci-066",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Pour l'équation $(R_1+R_2)C s' + s = R_2 C e'$, quelle est la valeur de la constante de temps $\\tau$ du système ?",
+        "answers": [
+            "$\\tau = R_1 C$, constante de charge usuelle.",
+            "$\\tau = (R_1 + R_2)C$, coefficient devant le terme dérivé $s'$.",
+            "$\\tau = R_2 C$, constante liée à l'entrée.",
+            "$\\tau = \\frac{C}{R_1 + R_2}$, par analyse dimensionnelle."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La forme canonique d'un premier ordre est $\\tau s' + s = K e$. En identifiant les termes, on voit que le coefficient devant $s'$ est bien la constante de temps, soit $\\tau = (R_1 + R_2)C$."
+    },
+    {
+        "uuid": "slci-067",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Un système linéaire est dit BIBO-stable (Bounded-Input, Bounded-Output). Cela signifie que sa sortie reste bornée si l'entrée est :",
+        "answers": [
+            "Nulle, quel que soit le système.",
+            "Bornée, c'est-à-dire qu'elle ne dépasse pas une valeur finie.",
+            "Sinusoïdale, pour vérifier la réponse en fréquence.",
+            "Positive, pour éviter les inversions de signe."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La définition fondamentale de la stabilité BIBO (Bounded-Input, Bounded-Output) assure qu'à toute entrée bornée, le système répond par une sortie bornée. Si une entrée bornée conduit à une sortie divergente, le système est instable."
+    },
+    {
+        "uuid": "slci-068",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "En analyse fréquentielle, que représente physiquement l'argument $\\phi = \\arg(\\underline{H}(j\\omega))$ ?",
+        "answers": [
+            "Le gain en décibels du système.",
+            "Le déphasage de la sortie par rapport à l'entrée.",
+            "La fréquence de coupure à $-3dB$.",
+            "L'atténuation du signal d'entrée."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique",
+        "explication": "La fonction de transfert complexe $\\underline{H}(j\\omega)$ s'écrit sous forme polaire $H(\\omega)e^{j\\phi(\\omega)}$. Le module $H(\\omega)$ est le gain, et l'argument $\\phi(\\omega)$ est le déphasage (retard ou avance) de la sortie par rapport à l'entrée."
+    },
+    {
+        "uuid": "slci-069",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Pour un système du second ordre de forme canonique $\\frac{1}{\\omega_0^2}s'' + \\frac{2z}{\\omega_0}s' + s = Ke$, que qualifie-t-on de régime critique lorsque le coefficient d'amortissement $z = 1$ ?",
+        "answers": [
+            "Un régime où la sortie diverge rapidement.",
+            "Un régime où le système oscille de façon amortie.",
+            "Un régime apériodique limite, retour à l'équilibre sans oscillation.",
+            "Un régime oscillatoire pur sans amortissement."
+        ],
+        "difficulty": 3,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 2,
+        "subject": "physique",
+        "explication": "Le régime critique ($z=1$) correspond à la transition entre le régime pseudo-périodique ($z<1$) et le régime apériodique ($z>1$). C'est le cas où le retour à l'équilibre est le plus rapide sans aucun dépassement."
+    },
+    {
+        "uuid": "slci-070",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Lors de l'observation d'une réponse indicielle, vous visualisez des oscillations dont l'amplitude diminue au cours du temps. Comment qualifier le système ?",
+        "answers": [
+            "Stable et pseudo-périodique, car il y a retour à une valeur finale finie avec oscillations.",
+            "Instable, car il existe des oscillations.",
+            "Stable et apériodique, car le signal finit par se stabiliser.",
+            "Purement harmonique, car le signal est sinusoïdal."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 0,
+        "subject": "physique",
+        "explication": "Le retour à une valeur d'équilibre (stabilité) avec des oscillations montre qu'il s'agit d'un système amorti, donc pseudo-périodique. S'il n'y avait aucune oscillation, on parlerait de régime apériodique."
+    },
+    {
+        "uuid": "slci-071",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 4,
+        "question": "Dans le cadre de l'étude de la stabilité d'un système linéaire invariant (SLI), considérons une fonction de transfert purement intégratrice $H(p) = \\frac{1}{p}$. Quelle est la nature de ce système lors de l'application d'un échelon unitaire en entrée ?",
+        "answers": [
+            "Stable au sens de Lyapunov.",
+            "Instable (pôle nul, la réponse temporelle à un échelon diverge linéairement vers l'infini).",
+            "Asymptotiquement stable.",
+            "Un système dérivateur pur de gain unité."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le système possède un pôle en $p=0$. Pour un système linéaire, la stabilité asymptotique nécessite que tous les pôles aient une partie réelle strictement négative. Ici, la sortie pour un échelon $E(p)=1/p$ est $S(p)=1/p^2$, soit $s(t)=t$ en temporel, qui diverge quand $t \\to \\infty$."
+    },
+    {
+        "uuid": "slci-072",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "En automatique, la définition fondamentale de la stabilité d'un système est dite 'BIBO'. Que signifie l'acronyme anglais BIBO ?",
+        "answers": [
+            "Big In, Big Out (entrée grande, sortie grande).",
+            "Bounded Input, Bounded Output (toute entrée bornée produit une sortie bornée).",
+            "Basic Input, Binary Output (entrée de base, sortie binaire).",
+            "Boosted Input, Balanced Output (entrée amplifiée, sortie équilibrée)."
+        ],
+        "correct_answer_index": 1,
+        "explication": "La stabilité BIBO est le critère standard : un système est stable si, pour toute entrée $e(t)$ telle que $|e(t)| < M$, la sortie $s(t)$ reste également bornée ($|s(t)| < N$). C'est la condition nécessaire et suffisante pour éviter les comportements divergents."
+    },
+    {
+        "uuid": "slci-073",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 3,
+        "question": "Considérons l'équation caractéristique d'un système linéaire associée à ses pôles. Quelle condition sur la partie réelle $\\text{Re}(p_i)$ des pôles garantit l'instabilité du système ?",
+        "answers": [
+            "Toutes les parties réelles sont négatives.",
+            "Au moins une racine possède une partie réelle strictement positive.",
+            "La partie réelle de toutes les racines est rigoureusement nulle.",
+            "Les racines sont complexes conjuguées avec une partie réelle indifférente."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Un système est instable dès qu'il existe au moins un pôle dans le demi-plan complexe droit (partie réelle positive). La réponse impulsionnelle contiendra alors un terme en $e^{\\alpha t}$ avec $\\alpha > 0$, entraînant une divergence exponentielle."
+    },
+    {
+        "uuid": "slci-074",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Pour un système stable, après un temps suffisamment long ($t \\gg \\tau$), comment se comporte la solution homogène $s_h(t)$ devant la solution particulière $s_p(t)$ ?",
+        "answers": [
+            "Elle reste égale à la solution particulière en régime permanent.",
+            "Elle devient négligeable car elle tend vers 0 (régime transitoire amorti).",
+            "Elle devient dominante et dicte le comportement asymptotique.",
+            "Elle devient infinie du fait de l'accumulation d'énergie."
+        ],
+        "correct_answer_index": 1,
+        "explication": "La solution totale est $s(t) = s_h(t) + s_p(t)$. Pour un système stable, les pôles ont une partie réelle négative, donc $s_h(t)$ contient des termes en $e^{-t/\\tau}$ qui s'annulent. Il ne reste en régime permanent que la réponse forcée $s_p(t)$."
+    },
+    {
+        "uuid": "slci-075",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Soit un système régi par une équation différentielle dont le polynôme caractéristique est $P(p) = \\tau p + (1-k)$. Pour quelle valeur de $k$ le système est-il instable ?",
+        "answers": [
+            "Pour $k < 1$ (si $\\tau > 0$).",
+            "Pour $k > 1$ (si $\\tau > 0$).",
+            "Pour $k = 0$.",
+            "Pour $k = 1$."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le pôle est en $p = -(1-k)/\\tau$. Pour que le système soit stable, il faut que le pôle soit strictement négatif, soit $-(1-k)/\\tau < 0$. Si $\\tau > 0$, alors $1-k > 0$, donc $k < 1$. Si $k > 1$, le pôle devient positif et le système diverge."
+    },
+    {
+        "uuid": "slci-076",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Pour un système du second ordre d'équation caractéristique $ap^2 + bp + c = 0$, que signifie la condition $b^2 - 4ac = 0$ ?",
+        "answers": [
+            "Le discriminant est strictement positif (pôles réels distincts).",
+            "Le discriminant est nul, correspondant au régime critique.",
+            "Le discriminant est négatif (pôles complexes conjugués).",
+            "Le système est instable car il explose immédiatement."
+        ],
+        "correct_answer_index": 1,
+        "explication": "Le discriminant $\\Delta = b^2 - 4ac$ détermine la nature des pôles. Si $\\Delta = 0$, on obtient une racine réelle double. C'est la limite entre le régime apériodique ($\\Delta > 0$) et le régime pseudo-périodique ($\\Delta < 0$). On appelle cela le régime critique."
+    },
+    {
+        "uuid": "slci-077",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Dans le passage de la représentation temporelle à la représentation fréquentielle, par quoi remplace-t-on l'opérateur de dérivation $\\frac{d}{dt}$ ?",
+        "answers": [
+            "Par la variable de Laplace $p$ sans condition.",
+            "Par la fréquence de coupure $\\omega_c$.",
+            "Par le produit $j\\omega$ dans le cadre de la réponse harmonique.",
+            "Par le gain statique $K$ du système."
+        ],
+        "correct_answer_index": 2,
+        "explication": "La transformée de Fourier associe $\\frac{d}{dt}$ à $j\\omega$. Attention : $p$ est la variable de Laplace ($p = \\sigma + j\\omega$). En régime harmonique, on se place sur l'axe imaginaire pur, d'où le remplacement par $j\\omega$."
+    },
+    {
+        "uuid": "slci-078",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Un système stable peut-il présenter des oscillations dans sa réponse temporelle ?",
+        "answers": [
+            "Non, un système stable est toujours monotone.",
+            "Oui, si elles sont amorties (régime pseudo-périodique).",
+            "Oui, si elles augmentent en amplitude au cours du temps.",
+            "Seulement s'il est non-linéaire (exemple : cycle limite)."
+        ],
+        "correct_answer_index": 1,
+        "explication": "La stabilité ne garantit pas l'absence d'oscillations. Si les pôles sont complexes conjugués avec une partie réelle négative, le système présentera des oscillations dont l'amplitude décroît exponentiellement vers 0 (régime pseudo-périodique amorti)."
+    },
+    {
+        "uuid": "slci-079",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 2,
+        "question": "Pour la fonction de transfert $H(p) = \\frac{1}{p^2+2p+1}$, quelles sont les racines du dénominateur ?",
+        "answers": [
+            "$p = -1$ (racine double).",
+            "$p = 1$ (racine double).",
+            "$p = 0$ et $p = -2$.",
+            "$p = -1 + j$ et $p = -1 - j$."
+        ],
+        "correct_answer_index": 0,
+        "explication": "Le dénominateur est $p^2 + 2p + 1$. Il s'agit d'une identité remarquable $(p+1)^2$. Les pôles sont donc solutions de $(p+1)^2 = 0$, soit $p = -1$ avec une multiplicité de 2."
+    },
+    {
+        "uuid": "slci-080",
+        "image_path": null,
+        "theme": "Automatique",
+        "chapter": "Stabilité des systèmes linéaires",
+        "subject": "physique",
+        "difficulty": 1,
+        "question": "Au vu des pôles trouvés ($p = -1$ double), comment qualifier le système $H(p) = \\frac{1}{p^2+2p+1}$ ?",
+        "answers": [
+            "Stable (les parties réelles sont strictement négatives).",
+            "Instable (il existe une racine positive).",
+            "Critique oscillant (les pôles sont imaginaires purs).",
+            "Divergent (les pôles sont nuls)."
+        ],
+        "correct_answer_index": 0,
+        "explication": "Puisque la partie réelle des pôles ($Re(p) = -1$) est strictement négative, le système est asymptotiquement stable. Le régime temporel correspondant à ce type de pôle est un régime apériodique critique."
+    },
+    {
+        "uuid": "slci-081",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Dans l'étude de la réponse indicielle d'un système du second ordre, si le signal converge vers sa valeur finale sans présenter de dépassement ni d'oscillation, quel est le régime transitoire observé ?",
+        "answers": [
+            "Pseudo-périodique (correspond à des pôles complexes conjugués).",
+            "Apériodique ou critique (correspond à des pôles réels).",
+            "Instable (correspond à un pôle à partie réelle positive).",
+            "Sinusoïdal pur (correspond à un amortissement nul)."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "Le régime sans oscillation correspond à un facteur d'amortissement $z \\geq 1$. Pour $z > 1$, le système est apériodique, et pour $z = 1$, il est critique. Les oscillations n'apparaissent que si $z < 1$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-082",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Pour un Système Linéaire et Invariant (SLI) de réponse impulsionnelle $h(t)$, si l'on applique une entrée décalée $e(t - t_0)$, quel est le décalage temporel de la sortie $s(t)$ ?",
+        "answers": [
+            "Le décalage est de $t_0 / 2$ par conservation de l'énergie.",
+            "Le décalage est de $2 t_0$ par effet de propagation.",
+            "La sortie est décalée de $t_0$, soit $s(t-t_0)$, par propriété d'invariance temporelle.",
+            "Il n'y a aucun décalage car le système est linéaire."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 2,
+        "explication": "Par définition, un système est invariant temporellement si un décalage de l'entrée d'une durée $t_0$ entraîne un décalage identique de la sortie, sans modification de sa forme.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-083",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Dans l'expression d'un signal harmonique $s(t) = S_m \\cos(\\omega t + \\phi)$, quelle notation désigne l'amplitude maximale du signal ?",
+        "answers": [
+            "$\\omega$, qui représente la pulsation en $\\text{rad.s}^{-1}$.",
+            "$\\phi$, qui représente la phase à l'origine en $\\text{rad}$.",
+            "$S_m$, qui représente la valeur crête du signal.",
+            "$j$, qui est l'unité imaginaire permettant la notation complexe."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 2,
+        "explication": "Par convention, $S_m$ (ou $A$) désigne l'amplitude maximale (l'écart entre la valeur moyenne et la valeur extrême). $\\omega$ est la pulsation et $\\phi$ la phase.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-084",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Dans le cadre de l'étude fréquentielle d'un SLCI, comment détermine-t-on le gain statique $K$ à partir de la fonction de transfert $H(p)$ ?",
+        "answers": [
+            "En étudiant le comportement asymptotique pour $p \\to \\infty$.",
+            "En calculant la limite de la fonction de transfert quand $p \\to 0$.",
+            "En posant $p = 1$, ce qui normalise la fonction.",
+            "En évaluant $H(j\\omega)$ pour $\\omega = 1$."
+        ],
+        "difficulty": 3,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "Le gain statique caractérise le comportement du système en régime permanent pour une entrée échelon. Comme $p$ est associé à la dérivation dans le domaine temporel, le régime permanent ($d/dt = 0$) correspond à $p=0$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-085",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Pour le système de fonction de transfert $H(p) = \\frac{1}{1+3p+4p^2}$, quelle est la valeur du gain statique $K$ ?",
+        "answers": [
+            "1, obtenu en posant $p=0$ dans l'expression.",
+            "3, coefficient du terme en $p$.",
+            "4, coefficient du terme en $p^2$.",
+            "0, car le dénominateur tend vers l'infini."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 0,
+        "explication": "Le gain statique est $H(0) = \\frac{1}{1+3(0)+4(0)^2} = \\frac{1}{1} = 1$. Il ne faut pas confondre le gain statique avec les coefficients du dénominateur.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-086",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Un système dont le comportement est régi par l'équation différentielle $\\frac{ds}{dt} = e(t)$ est qualifié de :",
+        "answers": [
+            "Dérivateur, car $s(t) = \\dot{e}(t)$.",
+            "Intégrateur, car $s(t) = \\int e(t) dt$.",
+            "Amplificateur, car il multiplie l'entrée par un gain constant.",
+            "Filtre passe-bas, car il atténue les hautes fréquences."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "Si $\\dot{s} = e$, alors par intégration, $s(t) = \\int_{0}^{t} e(\\tau) d\\tau + s(0)$. C'est la fonction d'un intégrateur pur.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-087",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Un intégrateur pur (de fonction de transfert $H(p) = 1/p$) est-il strictement stable au sens BIBO (Bounded Input, Bounded Output) ?",
+        "answers": [
+            "Oui, car il s'agit d'un système linéaire.",
+            "Non, car une entrée bornée (échelon) produit une sortie non bornée (rampe).",
+            "Seulement si l'entrée est nulle, ce qui est trivial.",
+            "Oui, car sa réponse impulsionnelle est une fonction échelon."
+        ],
+        "difficulty": 4,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "La stabilité BIBO exige que toute entrée bornée produise une sortie bornée. Pour un intégrateur, l'entrée $e(t) = u(t)$ (bornée) produit $s(t) = t \\cdot u(t)$, qui tend vers l'infini quand $t \\to \\infty$. Il n'est donc pas stable BIBO.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-088",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Dans l'expression d'un signal sinusoïdal $s(t) = S_m \\cos(\\omega t + \\phi)$, que représente le terme $\\phi$ ?",
+        "answers": [
+            "La pulsation du signal, exprimée en $\\text{rad.s}^{-1}$.",
+            "La phase à l'origine, qui définit l'état du signal à $t=0$.",
+            "L'amplitude maximale du signal.",
+            "La période temporelle du signal."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "explication": "Dans la phase $\\Phi(t) = \\omega t + \\phi$, $\\phi$ correspond à la valeur de la phase à l'instant $t=0$. C'est une constante déterminée par les conditions initiales.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-089",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Pour un système du second ordre de fonction de transfert standard $H(p) = \\frac{K}{1 + \\frac{2z}{\\omega_0}p + \\frac{p^2}{\\omega_0^2}}$, quelle est la valeur du facteur d'amortissement $z$ correspondant au régime critique ?",
+        "answers": [
+            "$z = 1$",
+            "$z = 0,5$ (correspond au facteur de qualité $Q=1$)",
+            "$z = 0$",
+            "$z = \\sqrt{2} / 2$"
+        ],
+        "difficulty": 3,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 0,
+        "explication": "Le régime critique sépare les régimes oscillatoires ($z < 1$) des régimes apériodiques ($z > 1$). Il est atteint pour $z = 1$.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-090",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Soit l'équation caractéristique d'un système du second ordre $p^2 + 2z\\omega_0 p + \\omega_0^2 = 0$. Si $z > 1$, quel est le signe du discriminant $\\Delta$ ?",
+        "answers": [
+            "Positif, indiquant deux pôles réels distincts.",
+            "Nul, indiquant un pôle double.",
+            "Négatif, indiquant deux pôles complexes conjugués.",
+            "Indéterminé sans la connaissance de $\\omega_0$."
+        ],
+        "difficulty": 3,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 0,
+        "explication": "Le discriminant est $\\Delta = (2z\\omega_0)^2 - 4(\\omega_0^2) = 4\\omega_0^2(z^2 - 1)$. Si $z > 1$, alors $z^2 > 1$ donc $\\Delta > 0$. Les racines sont réelles.",
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-091",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Un système instable est-il utile pour réaliser un asservissement de position précis ?",
+        "answers": [
+            "Oui.",
+            "Non, il faut absolument le stabiliser.",
+            "Seulement s'il est très rapide.",
+            "Oui, pour gagner du temps."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-092",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "La réponse harmonique est l'étude du système en régime :",
+        "answers": [
+            "Transitoire.",
+            "Permanent sinusoïdal.",
+            "Libre.",
+            "Initial."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-093",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Le pôle d'un système est une valeur de $p$ qui :",
+        "answers": [
+            "Annule le numérateur.",
+            "Annule le dénominateur.",
+            "Vaut toujours 0.",
+            "Est imaginaire pure."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-094",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Un système avec un pôle à partie réelle positive est :",
+        "answers": [
+            "Stable.",
+            "Instable.",
+            "Critique.",
+            "Lent."
+        ],
+        "difficulty": 3,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-095",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "L'ordre d'une équation différentielle est donné par :",
+        "answers": [
+            "Le nombre de termes.",
+            "La dérivée la plus haute.",
+            "La valeur de la sortie.",
+            "Le signe des coefficients."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-096",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Si $s(t) = e(t-3)$, c'est un retard de :",
+        "answers": [
+            "3 secondes.",
+            "-3 secondes.",
+            "0 seconde.",
+            "3 Hertz."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-097",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "L'équation $\\tau s' + s = e$ possède une solution homogène de la forme :",
+        "answers": [
+            "$A e^{-t/\\tau}$",
+            "$A e^{t/\\tau}$",
+            "$A \\sin(t/\\tau)$",
+            "$A t$"
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 0,
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-098",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Si $\\tau < 0$, le système $\\tau s' + s = e$ est :",
+        "answers": [
+            "Stable.",
+            "Instable.",
+            "Oscillant.",
+            "Impossible."
+        ],
+        "difficulty": 2,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-099",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "Le signal acoustique en sortie d'un haut-parleur est-il de même nature que la tension électrique d'entrée ?",
+        "answers": [
+            "Oui.",
+            "Non.",
+            "Seulement si le son est pur.",
+            "Oui, car ce sont deux ondes."
+        ],
+        "difficulty": 1,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    },
+    {
+        "uuid": "slci-100",
+        "image_path": null,
+        "theme": "Automatique",
+        "question": "La 'linéarité' implique-t-elle que le système est 'invariant' ?",
+        "answers": [
+            "Oui, toujours.",
+            "Non, ce sont deux propriétés indépendantes.",
+            "Seulement pour les systèmes continus.",
+            "Oui, selon la loi d'Ohm."
+        ],
+        "difficulty": 3,
+        "chapter": "Stabilité des systèmes linéaires",
+        "correct_answer_index": 1,
+        "subject": "physique"
+    }
+]

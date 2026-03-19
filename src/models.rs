@@ -19,6 +19,7 @@ pub struct Quizs {
     pub correct_answer_index: i32,
     pub subject: String,
     pub user_id: String,
+    pub explication: Option<String>,
 }
 
 #[derive(Insertable)]
@@ -54,6 +55,7 @@ pub struct NewQuiz {
     pub subject: String,
     pub chapter: String,
     pub user_id: String,
+    pub explication: Option<String>,
 }
 
 #[derive(Insertable)]
@@ -97,6 +99,7 @@ pub struct UploadQuizForm {
     pub chapter: Text<String>,
     pub user_id: Text<String>,
     pub user_token: Text<String>,
+    pub explication: Option<Text<String>>,
 }
 
 #[derive(Deserialize)]
@@ -116,6 +119,7 @@ pub struct JsonQuiz {
     pub correct_answer_index: i32,
     pub image_path: Option<String>,
     pub chapter: String,
+    pub explication: Option<String>,
 }
 
 #[derive(Deserialize)]

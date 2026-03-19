@@ -33,6 +33,7 @@ diesel::table! {
         subject -> Varchar,
         #[max_length = 36]
         user_id -> Varchar,
+        explication -> Nullable<Text>,
     }
 }
 
