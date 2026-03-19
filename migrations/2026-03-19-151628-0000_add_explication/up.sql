@@ -1,0 +1,1 @@
+ALTER TABLE quizs ADD COLUMN explication TEXT;
