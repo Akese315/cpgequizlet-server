@@ -1,0 +1,512 @@
+[
+    {
+        "uuid": "c01-def-cine",
+        "image_path": null,
+        "theme": "Modélisation des systèmes",
+        "question": "Quelle est la définition exacte de la cinématique dans le cadre de la mécanique ?",
+        "answers": [
+            "C'est l'étude des mouvements, indépendamment de leurs causes.",
+            "C'est l'étude des forces provoquant le mouvement des solides.",
+            "C'est l'étude des déformations des matériaux sous contrainte.",
+            "C'est l'étude des énergies cinétiques et potentielles d'un système."
+        ],
+        "explication": "La cinématique est strictement l'étude des mouvements, indépendamment de leurs causes[cite: 2, 3]. L'étude des causes (forces) relève de la dynamique[cite: 8], tandis que l'étude des déformations relève de la résistance des matériaux.",
+        "difficulty": 1,
+        "chapter": "Cinématique",
+        "correct_answer_index": 0,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c02-grandeurs-cine",
+        "image_path": null,
+        "theme": "Modélisation des systèmes",
+        "question": "Quelles sont les grandeurs physiques fondamentales utilisées en cinématique ?",
+        "answers": [
+            "La longueur, l'angle, le temps et la masse.",
+            "La longueur, la vitesse et l'accélération.",
+            "La longueur, l'angle et le temps.",
+            "La force, le temps et la position."
+        ],
+        "explication": "En cinématique, on n'étudie pas les causes du mouvement, donc la masse et la force sont exclues. Les grandeurs fondamentales sont la longueur, l'angle et le temps[cite: 13]. L'intégration de la masse fait basculer le modèle dans la dynamique[cite: 14].",
+        "difficulty": 2,
+        "chapter": "Cinématique",
+        "correct_answer_index": 2,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c03-def-cylindree",
+        "image_path": null,
+        "theme": "Modélisation des systèmes",
+        "question": "Dans le contexte des systèmes mécaniques, comment définit-on la cylindrée ?",
+        "answers": [
+            "La distance parcourue entre les deux positions extrêmes d'un piston.",
+            "Le volume de fluide refoulé par tour de l'arbre moteur.",
+            "Le diamètre intérieur du cylindre contenant le piston.",
+            "Le rapport entre la course et l'alésage du cylindre."
+        ],
+        "explication": "La cylindrée est le volume de fluide refoulé par tour de l'arbre moteur[cite: 10]. La distance entre les positions extrêmes correspond à la course[cite: 9], un piège classique de vocabulaire.",
+        "difficulty": 2,
+        "chapter": "Cinématique",
+        "correct_answer_index": 1,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c04-vecteur-rotation",
+        "image_path": null,
+        "theme": "Vecteurs et repères",
+        "question": "Quelles sont les caractéristiques du vecteur rotation $\\vec{\\Omega}_{1/0}$ associé au mouvement d'un solide 1 par rapport à 0 ?",
+        "answers": [
+            "Sa direction est l'axe de rotation, sa norme est la vitesse angulaire en rad/s, son signe donne le sens.",
+            "Sa direction est la tangente au mouvement, sa norme est la vitesse en m/s, son signe donne le sens.",
+            "Sa direction est perpendiculaire à l'axe, sa norme est en rad/s, son origine est le centre de gravité.",
+            "Il n'a qu'une norme et un sens, car la direction dépend du point d'application."
+        ],
+        "explication": "Au mouvement $1/0$, on associe un vecteur rotation dont la direction est l'axe de rotation [cite: 18], la norme en $[rad/s]$ est l'intensité de la vitesse de rotation [cite: 19], et le signe donne le sens du mouvement[cite: 20]. Attention, ce n'est pas un vecteur vitesse linéaire.",
+        "difficulty": 2,
+        "chapter": "Cinématique",
+        "correct_answer_index": 0,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c05-mvt-rotation-vitesse",
+        "image_path": null,
+        "theme": "Cinématique du solide",
+        "question": "Pour un solide en mouvement de rotation pure autour d'un axe fixe, quelle affirmation concernant le champ des vitesses est vraie ?",
+        "answers": [
+            "Toutes les vitesses des points du solide sont identiques.",
+            "Les vitesses des points situés sur l'axe de rotation sont maximales.",
+            "Les vitesses des points de l'axe sont nulles et la norme de la vitesse des autres points est proportionnelle à la distance à l'axe.",
+            "Le vecteur vitesse est toujours parallèle au vecteur rotation."
+        ],
+        "explication": "Dans un mouvement de rotation, les vitesses des points de l'axe sont nulles[cite: 29]. La norme de la vitesse est proportionnelle à la distance à l'axe de rotation et à la vitesse angulaire[cite: 35, 36]. De plus, les vitesses sont perpendiculaires au rayon et à l'axe[cite: 34].",
+        "difficulty": 2,
+        "chapter": "Cinématique",
+        "correct_answer_index": 2,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c06-mvt-translation-vect",
+        "image_path": null,
+        "theme": "Cinématique du solide",
+        "question": "Lequel de ces énoncés caractérise un mouvement de translation stricte d'un solide 1 par rapport à 0 ?",
+        "answers": [
+            "Le vecteur rotation est nul $\\vec{\\Omega}_{1/0}=\\vec{0}$ et le champ des vitesses est uniforme.",
+            "Les trajectoires des points sont obligatoirement des droites.",
+            "Le vecteur rotation est constant mais non nul, et les bases varient.",
+            "Le Centre Instantané de Rotation (CIR) se trouve au centre de gravité du solide."
+        ],
+        "explication": "Pour un mouvement de translation, le vecteur rotation est nul ($\\vec{\\Omega}_{1/0}=\\vec{0}$) [cite: 39] et le champ des vecteurs vitesse est uniforme[cite: 42]. Les trajectoires peuvent être courbes (translation circulaire). Le CIR est à l'infini[cite: 41], pas au centre de gravité.",
+        "difficulty": 3,
+        "chapter": "Cinématique",
+        "correct_answer_index": 0,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c07-chaines-solides",
+        "image_path": null,
+        "theme": "Architecture des mécanismes",
+        "question": "Dans un mécanisme, quelle est la différence fondamentale entre une chaîne ouverte et une chaîne fermée ?",
+        "answers": [
+            "En chaîne ouverte, une seule liaison est motrice ; en chaîne fermée, toutes les liaisons sont motrices.",
+            "En chaîne ouverte, les paramètres sont indépendants (chaque liaison est motrice) ; en chaîne fermée, les paramètres sont dépendants (une seule liaison est motrice).",
+            "Une chaîne ouverte est toujours hyperstatique, tandis qu'une chaîne fermée est isostatique.",
+            "Il n'y a pas de différence cinématique, c'est uniquement une différence technologique."
+        ],
+        "explication": "Dans une chaîne ouverte, les paramètres sont indépendants et chaque liaison est motrice[cite: 44]. Dans une chaîne fermée, les paramètres sont dépendants, ce qui signifie qu'une seule liaison est motrice pour imposer le mouvement global[cite: 45].",
+        "difficulty": 3,
+        "chapter": "Cinématique",
+        "correct_answer_index": 1,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c08-formule-bour",
+        "image_path": null,
+        "theme": "Dérivation vectorielle",
+        "question": "Quelle est l'expression correcte de la formule de Bour (dérivation vectorielle) pour un vecteur $\\vec{AB}$ exprimé dans une base 1 par rapport à une base 0 ?",
+        "answers": [
+            "$\\frac{d[\\vec{AB}]_{0}}{dt} = \\frac{d[\\vec{AB}]_{1}}{dt} + \\vec{\\Omega}_{1/0} \\wedge \\vec{AB}$",
+            "$\\frac{d[\\vec{AB}]_{0}}{dt} = \\frac{d[\\vec{AB}]_{1}}{dt} - \\vec{\\Omega}_{1/0} \\wedge \\vec{AB}$",
+            "$\\frac{d[\\vec{AB}]_{0}}{dt} = \\vec{\\Omega}_{1/0} \\wedge \\frac{d[\\vec{AB}]_{1}}{dt}$",
+            "$\\frac{d[\\vec{AB}]_{0}}{dt} = \\frac{d[\\vec{AB}]_{1}}{dt} \\cdot \\vec{\\Omega}_{1/0}$"
+        ],
+        "explication": "La formule de Bour, ou relation de dérivation vectorielle, s'écrit : $\\frac{d[\\vec{AB}]_{0}}{dt} = \\frac{d[\\vec{AB}]_{1}}{dt} + \\vec{\\Omega}_{1/0} \\wedge \\vec{AB}$[cite: 55]. C'est un outil fondamental pour dériver un vecteur défini dans un repère mobile.",
+        "difficulty": 3,
+        "chapter": "Cinématique",
+        "correct_answer_index": 0,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c09-derivee-vecteur-unitaire",
+        "image_path": null,
+        "theme": "Dérivation vectorielle",
+        "question": "Comment calcule-t-on graphiquement ou intuitivement la dérivée d'un vecteur de norme constante (comme un vecteur unitaire $\\vec{x}_1$) en rotation plane ?",
+        "answers": [
+            "C'est le vecteur nul car sa norme ne change pas.",
+            "C'est le vecteur colinéaire au vecteur initial, multiplié par l'accélération angulaire.",
+            "C'est le vecteur se trouvant à $+90^{\\circ}$ multiplié par la valeur scalaire de la vitesse de rotation.",
+            "C'est le produit scalaire entre le vecteur de base et le vecteur rotation."
+        ],
+        "explication": "La dérivée d'un vecteur de norme constante (par exemple un vecteur unitaire) est le vecteur se trouvant à $+90^{\\circ}$ multiplié par la valeur scalaire de la vitesse de rotation[cite: 64]. Une erreur classique est de penser que la dérivée est nulle parce que la norme est constante : seul l'allongement est nul, la rotation crée une variation de direction.",
+        "difficulty": 2,
+        "chapter": "Cinématique",
+        "correct_answer_index": 2,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c10-equiprojectivite",
+        "image_path": null,
+        "theme": "Torseurs",
+        "question": "Quelle est la définition d'un champ équiprojectif, propriété fondamentale des torseurs ?",
+        "answers": [
+            "$\\vec{U}(A) \\wedge \\vec{AB} = \\vec{U}(B) \\wedge \\vec{AB}$",
+            "$\\vec{U}(A) \\cdot \\vec{AB} = \\vec{U}(B) \\cdot \\vec{AB}$",
+            "$\\vec{U}(A) + \\vec{AB} = \\vec{U}(B)$",
+            "$\\vec{U}(A) \\cdot \\vec{U}(B) = ||\\vec{AB}||^2$"
+        ],
+        "explication": "On dit qu'un champ est équiprojectif si $\\vec{U}(A) \\cdot \\vec{AB} = \\vec{U}(B) \\cdot \\vec{AB}$[cite: 102]. Cela signifie physiquement que les deux vecteurs vitesse en $A$ et $B$ ont la même projection sur la droite $(AB)$[cite: 104], traduisant l'indéformabilité du solide.",
+        "difficulty": 3,
+        "chapter": "Cinématique",
+        "correct_answer_index": 1,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c11-varignon",
+        "image_path": null,
+        "theme": "Torseurs",
+        "question": "En cinématique des solides indéformables, quelle relation relie le vecteur vitesse de deux points distincts $A$ et $B$ d'un même solide ?",
+        "answers": [
+            "Relation de Chasles : $\\vec{V}_{1/0}(B) = \\vec{V}_{1/0}(A) + \\vec{AB}$",
+            "Relation de Bour : $\\vec{V}_{1/0}(B) = \\frac{d\\vec{AB}}{dt}$",
+            "Relation de Varignon : $\\vec{V}_{1/0}(B) = \\vec{V}_{1/0}(A) + \\vec{BA} \\wedge \\vec{\\Omega}_{1/0}$",
+            "Relation d'équiprojectivité : $\\vec{V}_{1/0}(B) = \\vec{V}_{1/0}(A) \\cdot \\vec{\\Omega}_{1/0}$"
+        ],
+        "explication": "La relation liant les vitesses de deux points d'un même solide est la relation de Varignon : $\\vec{V}_{1/0}(B) = \\vec{V}_{1/0}(A) + \\vec{BA} \\wedge \\vec{\\Omega}_{1/0}$[cite: 111]. Elle permet de transporter le moment du torseur cinématique d'un point à un autre.",
+        "difficulty": 2,
+        "chapter": "Cinématique",
+        "correct_answer_index": 2,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c12-elements-torseur",
+        "image_path": null,
+        "theme": "Torseurs",
+        "question": "Quels sont les éléments de réduction d'un torseur cinématique $\\mathcal{V}_{1/0}$ en un point $A$ ?",
+        "answers": [
+            "Résultante = Force, Moment = Couple",
+            "Résultante = Vecteur Vitesse, Moment = Vecteur Rotation",
+            "Résultante = Vecteur Rotation $\\vec{\\Omega}_{1/0}$, Moment = Vecteur Vitesse $\\vec{V}_{1/0}(A)$",
+            "Résultante = Accélération, Moment = Vitesse angulaire"
+        ],
+        "explication": "Pour un torseur cinématique, la résultante est le vecteur rotation $\\vec{\\Omega}_{1/0}$ (qui est invariant en tout point) [cite: 115], et le moment est le vecteur vitesse $\\vec{V}_{1/0}(A)$ (qui dépend du point de réduction)[cite: 117]. Une confusion fréquente est d'inverser résultante et moment.",
+        "difficulty": 2,
+        "chapter": "Cinématique",
+        "correct_answer_index": 2,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c13-torseur-couple",
+        "image_path": null,
+        "theme": "Torseurs",
+        "question": "Qu'est-ce qu'un torseur cinématique qualifié de « torseur couple » ?",
+        "answers": [
+            "Un torseur dont le moment est nul et la résultante non nulle.",
+            "Un torseur dont la résultante est nulle ($\\vec{\\Omega}_{1/0}=\\vec{0}$) et le moment est non nul.",
+            "Un torseur modélisant obligatoirement une liaison rotule.",
+            "Un torseur dont la résultante et le moment sont colinéaires."
+        ],
+        "explication": "Un torseur couple a une résultante nulle et un moment non nul. En cinématique, cela correspond à $\\vec{\\Omega}_{1/0}=\\vec{0}$ et $\\vec{V}_{1/0} \\neq \\vec{0}$, ce qui caractérise un mouvement de translation stricte (comme une glissière)[cite: 119, 140]. L'inverse (résultante non nulle, moment nul) est un glisseur[cite: 118, 140].",
+        "difficulty": 3,
+        "chapter": "Cinématique",
+        "correct_answer_index": 1,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c14-ddl-liaisons",
+        "image_path": null,
+        "theme": "Liaisons mécaniques",
+        "question": "Combien de degrés de liberté (ddl) possède la liaison \"libre\" ?",
+        "answers": [
+            "0 ddl",
+            "3 ddl",
+            "6 ddl",
+            "Une infinité"
+        ],
+        "explication": "La liaison complète n'admet aucun degré de liberté [cite: 124], tandis que la liaison libre en admet 6 (3 translations indépendantes et 3 rotations indépendantes dans l'espace)[cite: 125].",
+        "difficulty": 1,
+        "chapter": "Cinématique",
+        "correct_answer_index": 2,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c15-liaison-equivalente-serie",
+        "image_path": null,
+        "theme": "Liaisons mécaniques",
+        "question": "Comment calcule-t-on le torseur cinématique équivalent de deux liaisons disposées en série entre un solide 0 et un solide 2, via une pièce intermédiaire 1 ?",
+        "answers": [
+            "On fait l'intersection des torseurs cinématiques.",
+            "On somme les torseurs des actions mécaniques (statiques).",
+            "On somme les torseurs cinématiques : $\\mathcal{V}_{2/0} = \\mathcal{V}_{2/1} + \\mathcal{V}_{1/0}$",
+            "On égalise les torseurs cinématiques : $\\mathcal{V}_{2/0} = \\mathcal{V}_{2/1} = \\mathcal{V}_{1/0}$"
+        ],
+        "explication": "La liaison équivalente entre des liaisons en série se détermine par la somme des torseurs cinématiques : $\\mathcal{V}_{2/0\\ eq} = \\mathcal{V}_{2/1} + \\mathcal{V}_{1/0}$[cite: 127, 128]. Égaliser les torseurs cinématiques s'applique aux liaisons en parallèle[cite: 133, 134].",
+        "difficulty": 3,
+        "chapter": "Cinématique",
+        "correct_answer_index": 2,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c16-liaison-equivalente-parallele",
+        "image_path": null,
+        "theme": "Liaisons mécaniques",
+        "question": "Pour des liaisons disposées en parallèle entre deux solides 1 et 0, quelle relation est vraie pour les torseurs ?",
+        "answers": [
+            "Les torseurs cinématiques s'additionnent : $\\mathcal{V}_{1/0} = \\sum \\mathcal{V}_i$.",
+            "Les torseurs cinématiques sont tous égaux : $\\mathcal{V}_{1/0\\ eq} = \\mathcal{V}_{1} = \\mathcal{V}_{2}$.",
+            "Les torseurs des actions mécaniques sont tous égaux.",
+            "On ne peut pas calculer de liaison équivalente en parallèle."
+        ],
+        "explication": "En parallèle, le mouvement global doit respecter les contraintes de chaque liaison simultanément. Ainsi, on peut égaler les torseurs cinématiques : $\\mathcal{V}_{1/0\\ eq} = \\mathcal{V}_{2/1} = \\mathcal{V}_{1/0}$ [cite: 133, 134] (les vitesses sont identiques sur toutes les branches). Du point de vue statique, ce sont les actions mécaniques qui s'additionnent[cite: 130, 132].",
+        "difficulty": 3,
+        "chapter": "Cinématique",
+        "correct_answer_index": 1,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c17-axe-central",
+        "image_path": null,
+        "theme": "Torseurs",
+        "question": "Qu'appelle-t-on \"Axe central\" d'un torseur à résultante non nulle ?",
+        "answers": [
+            "La droite passant par l'origine du repère global.",
+            "La droite sur laquelle le moment s'annule obligatoirement.",
+            "La droite de même direction que la résultante, sur laquelle le moment est colinéaire à la résultante (moment central minimum).",
+            "L'axe de symétrie du mécanisme."
+        ],
+        "explication": "Pour un torseur à résultante non nulle, l'axe central est une droite de même direction que la résultante[cite: 137]. Sur cette droite, le moment est colinéaire à la résultante et sa norme est minimale ; il est appelé moment central[cite: 138].",
+        "difficulty": 4,
+        "chapter": "Cinématique",
+        "correct_answer_index": 2,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c18-contact-plan",
+        "image_path": null,
+        "theme": "Modélisation des systèmes",
+        "question": "Par quelle liaison usuelle modélise-t-on un contact surfacique plan ?",
+        "answers": [
+            "Une liaison pivot.",
+            "Une liaison plane (ou appui plan).",
+            "Une liaison encastrement.",
+            "Une liaison sphère-plan."
+        ],
+        "explication": "Un contact plan entre deux solides est naturellement modélisé par une liaison plane (souvent appelée appui plan)[cite: 149]. Elle autorise deux translations dans le plan et une rotation autour de la normale au plan.",
+        "difficulty": 1,
+        "chapter": "Cinématique",
+        "correct_answer_index": 1,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c19-contact-cylindre-revolution",
+        "image_path": null,
+        "theme": "Modélisation des systèmes",
+        "question": "Quelle liaison modélise théoriquement un contact cylindrique de révolution parfait (sans arrêts axiaux) ?",
+        "answers": [
+            "Liaison pivot.",
+            "Liaison glissière.",
+            "Liaison pivot glissant.",
+            "Liaison cylindre-plan."
+        ],
+        "explication": "Un contact cylindrique de révolution modélise une liaison pivot glissant[cite: 151], qui autorise une translation selon l'axe du cylindre et une rotation autour de ce même axe. Si des butées axiales étaient ajoutées, cela deviendrait un pivot.",
+        "difficulty": 2,
+        "chapter": "Cinématique",
+        "correct_answer_index": 2,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c20-vecteur-pivotement",
+        "image_path": null,
+        "theme": "Cinématique du contact",
+        "question": "Lors du contact entre deux surfaces (solide 2 sur solide 1) de normale $\\vec{n}$, comment définit-on le vecteur de pivotement $\\vec{\\Omega}_{piv 2/1}$ ?",
+        "answers": [
+            "C'est la composante du vecteur rotation $\\vec{\\Omega}_{2/1}$ contenue dans le plan tangent.",
+            "C'est la composante du vecteur rotation $\\vec{\\Omega}_{2/1}$ selon la normale au contact $\\vec{n}$.",
+            "C'est la vitesse linéaire de glissement au point de contact.",
+            "C'est la dérivée du vecteur de roulement."
+        ],
+        "explication": "Le vecteur de pivotement $\\vec{\\Omega}_{piv 2/1}$ est la composante de la rotation $\\vec{\\Omega}_{2/1}$ selon la normale $\\vec{n}$ au plan tangent de contact[cite: 163]. À l'inverse, le vecteur de roulement $\\vec{\\Omega}_{roul 2/1}$ est la composante contenue dans le plan de contact[cite: 163, 164].",
+        "difficulty": 3,
+        "chapter": "Cinématique",
+        "correct_answer_index": 1,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c21-rsg-vitesse",
+        "image_path": null,
+        "theme": "Cinématique du contact",
+        "question": "Que traduit cinématiquement l'hypothèse de Roulement Sans Glissement (RSG) au point de contact $I$ entre deux solides 2 et 1 ?",
+        "answers": [
+            "Le vecteur rotation est nul $\\vec{\\Omega}_{2/1} = \\vec{0}$.",
+            "La vitesse du point $I$ appartenant à 2 par rapport à 1 est nulle : $\\vec{V}_{2/1}(I) = \\vec{0}$.",
+            "L'accélération du point de contact est nulle.",
+            "Les deux solides sont en translation rectiligne uniforme."
+        ],
+        "explication": "En cas de roulement sans glissement (RSG), la vitesse de glissement est nulle au point de contact $I$. Cela s'écrit $\\vec{V}_{2/1}(I) = \\vec{0}$[cite: 170]. Attention, le vecteur rotation globale $\\vec{\\Omega}_{2/1}$ n'est pas nul, c'est ce qui permet le roulement.",
+        "difficulty": 3,
+        "chapter": "Cinématique",
+        "correct_answer_index": 1,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c22-guidage-roulement-avantage",
+        "image_path": null,
+        "theme": "Conception mécanique",
+        "question": "Quel est le principal avantage d'un guidage par roulements à billes comparé à un contact direct ?",
+        "answers": [
+            "Un encombrement très réduit et un montage simple.",
+            "Une fabrication plus simple et un coût minimal.",
+            "Un très bon rendement dû à la réduction drastique des frottements.",
+            "L'absence totale de pièces mobiles."
+        ],
+        "explication": "Le guidage par roulement a pour avantage principal un bon rendement [cite: 182] grâce à la substitution du glissement par du roulement. Ses inconvénients sont au contraire l'encombrement et la complexité de montage [cite: 185], contrairement au contact direct dont la fabrication est simple[cite: 180].",
+        "difficulty": 2,
+        "chapter": "Cinématique",
+        "correct_answer_index": 2,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c23-rapport-train-simple",
+        "image_path": null,
+        "theme": "Transmission de puissance",
+        "question": "Pour un train d'engrenages simple à axes parallèles, quelle est la formule du rapport de transmission cinématique $r$ entre l'entrée $e$ et la sortie $s$ ?",
+        "answers": [
+            "$r = \\frac{\\omega_s}{\\omega_e} = (-1)^n \\frac{\\prod Z_{menantes}}{\\prod Z_{menees}}$",
+            "$r = \\frac{\\omega_s}{\\omega_e} = (-1)^n \\frac{\\prod Z_{menees}}{\\prod Z_{menantes}}$",
+            "$r = \\frac{\\omega_s}{\\omega_e} = \\frac{D_{menees}}{D_{menantes}}$",
+            "$r = \\omega_s \\cdot \\omega_e$"
+        ],
+        "explication": "Le rapport de transmission $r$ est le rapport de la vitesse de sortie sur la vitesse d'entrée ($\\frac{\\omega_s}{\\omega_e}$)[cite: 200, 203]. Il se calcule par $(-1)^n \\frac{\\prod Z_{menantes}}{\\prod Z_{menees}}$, où $n$ est le nombre de contacts extérieurs[cite: 200, 201]. Une erreur fréquente est d'inverser menantes (numérateur) et menées (dénominateur).",
+        "difficulty": 3,
+        "chapter": "Cinématique",
+        "correct_answer_index": 0,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c24-train-epicycloidal-avantage",
+        "image_path": null,
+        "theme": "Transmission de puissance",
+        "question": "Lequel de ces éléments constitue un avantage typique du train épicycloïdal ?",
+        "answers": [
+            "Son coût de fabrication très faible.",
+            "L'absence totale d'hyperstatisme.",
+            "Des arbres d'entrée et de sortie coaxiaux, un faible encombrement et une bonne répartition des efforts.",
+            "L'impossibilité de glissement entre les dentures."
+        ],
+        "explication": "Les avantages du train épicycloïdal sont : entrée et sortie coaxiales, bonne répartition des efforts donc bonne durée de vie, faible encombrement[cite: 222]. Le coût et l'hyperstatisme sont au contraire ses principaux inconvénients[cite: 222].",
+        "difficulty": 2,
+        "chapter": "Cinématique",
+        "correct_answer_index": 2,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c25-formule-willis",
+        "image_path": null,
+        "theme": "Transmission de puissance",
+        "question": "Lorsqu'on étudie un train épicycloïdal, comment lève-t-on la difficulté liée à la mobilité de l'axe des satellites pour trouver le rapport global ?",
+        "answers": [
+            "On applique le théorème de l'énergie cinétique.",
+            "On se place dans le repère du porte-satellite (où l'axe des satellites est fixe) et on écrit le rapport de transmission comme pour un train simple, avant de repasser au bâti.",
+            "On dérive la relation de position par rapport au temps.",
+            "On suppose toujours que la couronne extérieure est fixe."
+        ],
+        "explication": "La méthode classique (souvent appelée méthode de Willis) consiste à se placer dans le repère du porte-satellite[cite: 224]. Dans ce repère relatif, les axes des roues sont fixes, on peut donc écrire la formule du train simple[cite: 225]. Ensuite, on utilise la composition des mouvements (ex: $\\omega_{1/3} = \\omega_{1/0} - \\omega_{3/0}$) pour repasser dans le repère du bâti 0[cite: 226].",
+        "difficulty": 4,
+        "chapter": "Cinématique",
+        "correct_answer_index": 1,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c26-fermeture-geometrique",
+        "image_path": null,
+        "theme": "Résolution de problèmes",
+        "question": "Pour déterminer la loi entrée-sortie en position d'un mécanisme (comme un bielle-manivelle), quelle est la première étape de la démarche géométrique ?",
+        "answers": [
+            "Calculer les dérivées des angles d'Euler.",
+            "Isoler chaque solide et faire le bilan des actions mécaniques.",
+            "Écrire une relation de Chasles entre les points caractéristiques des liaisons en parcourant la chaîne fermée (équation de fermeture).",
+            "Appliquer la relation de Varignon au centre de gravité."
+        ],
+        "explication": "La démarche commence par la fermeture géométrique : on écrit une relation de Chasles entre les points caractéristiques en parcourant la chaîne fermée (ex: $\\vec{AB} + \\vec{BC} + ... + \\vec{DA} = \\vec{0}$)[cite: 231, 233]. Ensuite, on projette cette relation dans une base pour obtenir des équations scalaires[cite: 234].",
+        "difficulty": 2,
+        "chapter": "Cinématique",
+        "correct_answer_index": 2,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c27-fermeture-cinematique-eq",
+        "image_path": null,
+        "theme": "Résolution de problèmes",
+        "question": "Dans une fermeture cinématique spatiale (3D), combien d'équations scalaires l'équation torsorielle $\\mathcal{V}_{n/0} = \\mathcal{V}_{n/n-1} + ... + \\mathcal{V}_{1/0}$ fournit-elle au maximum ?",
+        "answers": [
+            "2 équations scalaires.",
+            "3 équations scalaires.",
+            "6 équations scalaires.",
+            "Une infinité."
+        ],
+        "explication": "Une équation torsorielle exprime l'égalité de deux torseurs. Un torseur cinématique est composé de 2 vecteurs 3D (la résultante et le moment). L'égalité donne donc 2 équations vectorielles, soit $2 \\times 3 = 6$ équations scalaires en tout[cite: 264].",
+        "difficulty": 3,
+        "chapter": "Cinématique",
+        "correct_answer_index": 2,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c28-vis-ecrou",
+        "image_path": null,
+        "theme": "Transmission de puissance",
+        "question": "Quelle est la relation cinématique (rapport de transmission) entre la vitesse de translation $V$ et la vitesse de rotation $\\omega$ pour un système vis-écrou parfait ?",
+        "answers": [
+            "$V = R \\cdot \\omega$",
+            "$V = \\frac{pas}{2\\pi} \\cdot \\omega$",
+            "$V = pas \\cdot \\omega$",
+            "$\\omega = V \\cdot pas$"
+        ],
+        "explication": "Pour un système de transformation de mouvement vis-écrou (liaison hélicoïdale), la loi entrée/sortie s'écrit $V = \\frac{pas}{2\\pi} \\omega$[cite: 248]. $V = R \\omega$ correspond à un système pignon-crémaillère ou une roue[cite: 248].",
+        "difficulty": 2,
+        "chapter": "Cinématique",
+        "correct_answer_index": 1,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c29-accouplement-role",
+        "image_path": null,
+        "theme": "Technologie des mécanismes",
+        "question": "Quel est le rôle principal d'un accouplement mécanique (comme un joint de Cardan ou de Oldham) ?",
+        "answers": [
+            "Augmenter le couple moteur d'un rapport constant.",
+            "Relier deux arbres en rotation comportant éventuellement des défauts d'alignement angulaires ou radiaux.",
+            "Freiner progressivement un arbre en rotation.",
+            "Transformer un mouvement de rotation en mouvement de translation."
+        ],
+        "explication": "Un accouplement sert à relier deux arbres en rotation comportant éventuellement des défauts d'alignement angulaires ou radiaux[cite: 249, 250]. Ils appartiennent à la famille des transmetteurs, mais sans changer nécessairement la nature du mouvement ou son intensité globale (rapport 1 en moyenne).",
+        "difficulty": 2,
+        "chapter": "Cinématique",
+        "correct_answer_index": 1,
+        "subject": "SI"
+    },
+    {
+        "uuid": "c30-homocinetique",
+        "image_path": null,
+        "theme": "Technologie des mécanismes",
+        "question": "Un joint de transmission simple comme le Cardan est généralement \"hétérocinétique\". Que cela signifie-t-il ?",
+        "answers": [
+            "La vitesse angulaire de sortie est rigoureusement identique à la vitesse d'entrée à chaque instant.",
+            "La vitesse angulaire de sortie fluctue au cours d'un tour par rapport à la vitesse d'entrée.",
+            "Il ne peut transmettre le mouvement que dans un seul sens.",
+            "Il dissipe beaucoup d'énergie thermique."
+        ],
+        "explication": "Un joint est dit homocinétique si la vitesse de sortie est égale à l'entrée à tout instant[cite: 269, 270]. Un Cardan simple est hétérocinétique s'il est utilisé seul avec un angle : la vitesse de sortie fluctue (bien que la vitesse moyenne reste égale)[cite: 268]. Il faut un double Cardan monté correctement pour restaurer l'homocinétisme[cite: 268].",
+        "difficulty": 3,
+        "chapter": "Cinématique",
+        "correct_answer_index": 1,
+        "subject": "SI"
+    }
+]

@@ -1,0 +1,802 @@
+[
+    {
+        "uuid": "math-001",
+        "image_path": null,
+        "theme": "Analyse",
+        "question": "Soit $f:[a,b] \\rightarrow \\mathbb{R}$ une fonction continue. On suppose que $y \\in [f(a), f(b)]$. Quelle conclusion permet de tirer le Théorème des Valeurs Intermédiaires (TVI) ?",
+        "answers": [
+            "Il existe un unique $c \\in [a,b]$ tel que $f(c)=y$.",
+            "Il existe au moins un $c \\in [a,b]$ tel que $f(c)=y$.",
+            "Pour tout $c \\in [a,b]$, $f(c)$ est compris entre $f(a)$ et $f(b)$."
+        ],
+        "explication": "Le TVI garantit l'existence d'au moins une solution à l'équation $f(x)=y$ sur l'intervalle $[a,b]$ dès lors que $f$ est continue[cite: 3, 4]. L'unicité n'est garantie que si la fonction est, en plus, strictement monotone (Théorème de la bijection). L'hypothèse de continuité est cruciale ici car elle assure que la fonction ne 'saute' aucune valeur entre $f(a)$ et $f(b)$.",
+        "difficulty": 1,
+        "chapter": "Analyse",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-002",
+        "image_path": null,
+        "theme": "Analyse",
+        "question": "Pour appliquer le Théorème de Rolle à une fonction $f$ sur $[a,b]$, quelles sont les hypothèses de régularité nécessaires ?",
+        "answers": [
+            "Continue sur $[a,b]$ et dérivable sur $[a,b]$.",
+            "Dérivable sur $]a,b[$.",
+            "Continue sur $[a,b]$ et dérivable sur $]a,b[$, avec $f(a)=f(b)$."
+        ],
+        "explication": "Le Théorème de Rolle nécessite trois conditions : la continuité sur le segment fermé $[a,b]$, la dérivabilité sur l'ouvert $]a,b[$, et l'égalité des valeurs aux bornes $f(a)=f(b)$[cite: 5, 6, 9]. Si ces conditions sont réunies, il existe $c \\in ]a,b[$ tel que $f'(c)=0$[cite: 7]. Un piège classique est d'oublier de vérifier la continuité aux bornes.",
+        "difficulty": 2,
+        "chapter": "Analyse",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-003",
+        "image_path": null,
+        "theme": "Suites",
+        "question": "D'après le théorème de Bolzano-Weierstrass, quelle propriété possède toute suite bornée dans $\\mathbb{R}^n$ ?",
+        "answers": [
+            "Elle est convergente.",
+            "Elle admet une sous-suite convergente.",
+            "Elle est stationnaire."
+        ],
+        "explication": "Le théorème de Bolzano-Weierstrass stipule que de toute suite bornée dans $\\mathbb{R}^n$, on peut extraire une sous-suite (ou suite extraite) qui converge[cite: 24, 25]. Attention : la suite elle-même n'est pas forcément convergente (pensez à $(-1)^n$), mais elle possède des valeurs d'adhérence.",
+        "difficulty": 2,
+        "chapter": "Analyse",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-004",
+        "image_path": null,
+        "theme": "Logique",
+        "question": "Dans une récurrence forte pour un prédicat $P_n$ à partir du rang $n_0$, quelle est l'hypothèse de l'étape d'hérédité ?",
+        "answers": [
+            "On suppose $P_n$ vraie pour un certain $n$.",
+            "On suppose $P_n$ et $P_{n+1}$ vraies.",
+            "On suppose $P_k$ vraie pour tout $k \\in [|n_0, n|]$."
+        ],
+        "explication": "Contrairement à la récurrence simple qui ne suppose que le rang immédiatement précédent, la récurrence forte suppose que la propriété est vraie pour TOUS les rangs depuis l'initialisation jusqu'au rang $n$ pour démontrer $P_{n+1}$[cite: 38, 41]. C'est indispensable pour des suites définies par des relations complexes comme la suite de Fibonacci ou la décomposition en facteurs premiers.",
+        "difficulty": 2,
+        "chapter": "Logique",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-005",
+        "image_path": null,
+        "theme": "Polynômes",
+        "question": "Soit $A, B$ et $C$ trois polynômes. Si $A | BC$ et $A \\wedge B = 1$, que peut-on conclure d'après le théorème de Gauss ?",
+        "answers": [
+            "$B | C$",
+            "$A | C$",
+            "$C | A$"
+        ],
+        "explication": "Le théorème de Gauss pour les polynômes indique que si un polynôme $A$ divise un produit $BC$ et qu'il est premier avec le premier facteur $B$ (c'est-à-dire $A \\wedge B = 1$), alors il divise nécessairement le second facteur $C$[cite: 62, 63, 64].",
+        "difficulty": 2,
+        "chapter": "Polynômes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-006",
+        "image_path": null,
+        "theme": "Suites de fonctions",
+        "question": "Si une suite de fonctions continues $(f_n)$ converge uniformément vers $f$ sur un intervalle $I$, que peut-on dire de $f$ ?",
+        "answers": [
+            "$f$ est seulement bornée.",
+            "$f$ est dérivable.",
+            "$f$ est continue sur $I$."
+        ],
+        "explication": "Le théorème de la convergence uniforme stipule que la limite uniforme d'une suite de fonctions continues est elle-même continue[cite: 16, 17, 138]. Ce résultat est fondamental car la convergence simple ne suffit pas à préserver la continuité (ex: $x^n$ sur $[0,1]$).",
+        "difficulty": 3,
+        "chapter": "Analyse",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-007",
+        "image_path": null,
+        "theme": "Séries entières",
+        "question": "Soit $\\sum a_n z^n$ une série entière. Si $\\left|\\frac{a_{n+1}}{a_n}\\right| \\rightarrow l \\in \\mathbb{R} \\cup \\{+\\infty\\}$, quel est le rayon de convergence $R$ ?",
+        "answers": [
+            "$R = l$",
+            "$R = \\frac{1}{l}$ (avec les conventions usuelles)",
+            "$R = \\sqrt{l}$"
+        ],
+        "explication": "La règle de d'Alembert pour les séries entières énonce que si le rapport des coefficients successifs converge vers $l$, alors le rayon de convergence est l'inverse de cette limite, soit $R = 1/l$[cite: 102, 104, 105]. Si $l=0$, $R=+\\infty$ et si $l=+\\infty$, $R=0$[cite: 106, 108].",
+        "difficulty": 2,
+        "chapter": "Série entière",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-008",
+        "image_path": null,
+        "theme": "Algèbre linéaire",
+        "question": "Une application linéaire $u \\in L(E,F)$ est injective si et seulement si :",
+        "answers": [
+            "$Ker(u) = \\{0\\}$",
+            "$Im(u) = F$",
+            "$rg(u) = dim(E)$"
+        ],
+        "explication": "Par définition et propriété fondamentale du noyau, l'injectivité d'une application linéaire est caractérisée par le fait que seul le vecteur nul est envoyé sur le vecteur nul de l'espace d'arrivée, soit $Ker(u) = \\{0_E\\}$[cite: 49, 50].",
+        "difficulty": 1,
+        "chapter": "Application linéaire",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-009",
+        "image_path": null,
+        "theme": "Séries numériques",
+        "question": "Quelles sont les conditions pour qu'une série alternée $\\sum (-1)^n u_n$ converge d'après le critère spécial des séries alternées (CSSA) ?",
+        "answers": [
+            "$(u_n)$ est décroissante.",
+            "$(u_n)$ tend vers 0.",
+            "$(u_n)$ est une suite réelle décroissante qui converge vers 0."
+        ],
+        "explication": "Le CSSA impose deux conditions cumulatives sur la suite $(u_n)$ : elle doit être décroissante et tendre vers 0[cite: 283, 286, 288]. Si ces conditions sont vérifiées, la série alternée converge[cite: 289]. Le piège est d'oublier la décroissance.",
+        "difficulty": 2,
+        "chapter": "Série numérique",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-010",
+        "image_path": null,
+        "theme": "Espaces Euclidiens",
+        "question": "Soient $x$ et $y$ deux vecteurs d'un espace euclidien. L'inégalité de Cauchy-Schwarz s'écrit :",
+        "answers": [
+            "$\\|x+y\\| \\le \\|x\\| + \\|y\\|$",
+            "$|(x|y)| \\le \\|x\\| \\cdot \\|y\\|$",
+            "$(x|y)^2 \\le \\|x+y\\|^2$"
+        ],
+        "explication": "L'inégalité de Cauchy-Schwarz stipule que la valeur absolue du produit scalaire de deux vecteurs est toujours inférieure ou égale au produit de leurs normes euclidiennes[cite: 328, 330]. L'égalité a lieu si et seulement si les vecteurs sont colinéaires[cite: 331].",
+        "difficulty": 2,
+        "chapter": "Espace Euclidiens",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-011",
+        "image_path": null,
+        "theme": "Intégration",
+        "question": "D'après le théorème fondamental du calcul intégral, si $f$ est continue sur $I$ et $a \\in I$, l'application $x \\mapsto \\int_a^x f(t)dt$ est :",
+        "answers": [
+            "La dérivée de $f$.",
+            "L'unique primitive de $f$ sur $I$ s'annulant en $a$.",
+            "Une fonction en escalier."
+        ],
+        "explication": "Pour une fonction $f$ continue, l'intégrale à borne variable définit une fonction qui est non seulement une primitive de $f$ (sa dérivée est $f$), mais c'est l'unique primitive qui prend la valeur 0 au point $a$[cite: 205, 206].",
+        "difficulty": 2,
+        "chapter": "Intégration",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-012",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "Le théorème de Cayley-Hamilton affirme que pour toute matrice carrée $A$ :",
+        "answers": [
+            "$A$ est diagonalisable.",
+            "$A$ est inversible si son polynôme caractéristique ne s'annule pas.",
+            "$A$ annule son propre polynôme caractéristique : $\\chi_A(A) = 0$."
+        ],
+        "explication": "Le théorème de Cayley-Hamilton est un résultat majeur d'algèbre linéaire indiquant qu'en remplaçant l'indéterminée $X$ par la matrice $A$ dans son polynôme caractéristique, on obtient la matrice nulle[cite: 372, 373]. Cela permet notamment d'exprimer $A^n$ ou $A^{-1}$ comme des combinaisons linéaires des puissances inférieures de $A$.",
+        "difficulty": 3,
+        "chapter": "Algèbre",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-013",
+        "image_path": null,
+        "theme": "Probabilités",
+        "question": "Soit $X$ une variable aléatoire réelle d'espérance finie avec $X \\ge 0$. Quelle est l'inégalité de Markov pour $a > 0$ ?",
+        "answers": [
+            "$P(X \\ge a) \\le \\frac{V(X)}{a^2}$",
+            "$P(X \\ge a) \\le \\frac{E(X)}{a}$",
+            "$P(|X-E(X)| \\ge a) \\le \\frac{E(X)}{a}$"
+        ],
+        "explication": "L'inégalité de Markov donne une borne supérieure sur la probabilité qu'une variable aléatoire positive dépasse un seuil $a$. Elle est égale à l'espérance de la variable divisée par $a$[cite: 469, 470, 471]. C'est la base de l'inégalité de Bienaymé-Tchebychev.",
+        "difficulty": 2,
+        "chapter": "Dénombrabilité",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-014",
+        "image_path": null,
+        "theme": "Analyse",
+        "question": "Quelle condition de domination est requise dans le théorème de convergence dominée de Lebesgue pour une suite $(f_n)$ ?",
+        "answers": [
+            "$\\|f_n\\|_\\infty$ doit être bornée.",
+            "$\\forall n, |f_n| \\le \\varphi$ où $\\varphi$ est une fonction intégrable.",
+            "$\\sum f_n$ doit converger normalement."
+        ],
+        "explication": "Le théorème de convergence dominée nécessite que la suite de fonctions soit dominée par une unique fonction $\\varphi$ qui soit intégrable sur l'intervalle considéré[cite: 20, 21, 91, 92]. Cette condition assure que l'on peut intervertir la limite et l'intégrale[cite: 94].",
+        "difficulty": 3,
+        "chapter": "Analyse",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-015",
+        "image_path": null,
+        "theme": "Polynômes",
+        "question": "Le théorème de D'Alembert-Gauss énonce que :",
+        "answers": [
+            "Tout polynôme de $K[X]$ est scindé.",
+            "Tout polynôme non constant de $\\mathbb{C}[X]$ possède au moins une racine dans $\\mathbb{C}$.",
+            "Un polynôme de degré $n$ a exactement $n$ racines réelles."
+        ],
+        "explication": "Le théorème fondamental de l'algèbre (D'Alembert-Gauss) affirme que le corps des complexes $\\mathbb{C}$ est algébriquement clos : tout polynôme non constant y admet au moins une racine[cite: 56, 57]. Par récurrence, cela implique qu'il y est scindé.",
+        "difficulty": 2,
+        "chapter": "Polynômes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-016",
+        "image_path": null,
+        "theme": "Intégrales généralisées",
+        "question": "L'intégrale de Riemann $\\int_1^{+\\infty} \\frac{1}{x^\\alpha} dx$ converge si et seulement si :",
+        "answers": [
+            "$\\alpha < 1$",
+            "$\\alpha \\ge 1$",
+            "$\\alpha > 1$"
+        ],
+        "explication": "Il s'agit d'une intégrale de référence (Riemann) au voisinage de $+\\infty$. La convergence est assurée si et seulement si l'exposant $\\alpha$ est strictement supérieur à 1[cite: 230, 232, 233]. Si $\\alpha \\le 1$, l'intégrale diverge[cite: 234].",
+        "difficulty": 1,
+        "chapter": "Intégrales généralisées",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-017",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "Une matrice carrée réelle $A$ est diagonalisable dans une base orthonormale si et seulement si :",
+        "answers": [
+            "Elle est inversible.",
+            "Elle est symétrique.",
+            "Son déterminant est non nul."
+        ],
+        "explication": "D'après le théorème spectral, les matrices symétriques réelles sont exactement celles qui sont diagonalisables dans une base orthonormée (pour le produit scalaire canonique)[cite: 385, 386].",
+        "difficulty": 3,
+        "chapter": "Algèbre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-018",
+        "image_path": null,
+        "theme": "Séries de fonctions",
+        "question": "La convergence normale d'une série de fonctions $\\sum u_n$ sur $I$ implique :",
+        "answers": [
+            "La convergence uniforme et la convergence simple.",
+            "Seulement la convergence simple.",
+            "La dérivabilité de la somme."
+        ],
+        "explication": "La convergence normale est la forme de convergence la plus forte : elle implique la convergence uniforme (par l'inégalité triangulaire sur la norme infini), qui elle-même implique la convergence simple[cite: 154, 155].",
+        "difficulty": 2,
+        "chapter": "Série",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-019",
+        "image_path": null,
+        "theme": "Probabilités",
+        "question": "Quelle est la relation entre l'espérance d'une variable aléatoire $X$ à valeurs dans $\\mathbb{N}$ et sa fonction génératrice $G_X$ ?",
+        "answers": [
+            "$E(X) = G_X(0)$",
+            "$E(X) = G_X'(1)$",
+            "$E(X) = G_X(1)$"
+        ],
+        "explication": "Si $X$ admet une espérance finie, sa fonction génératrice est dérivable en 1 et l'espérance est donnée par la valeur de la dérivée en ce point : $E(X) = G_X'(1)$[cite: 478, 479, 480]. Note : le document contient une petite erreur de transcription en écrivant $E(X)=G_X(1)$ mais le théorème standard et la logique des séries entières confirment la dérivée.",
+        "difficulty": 3,
+        "chapter": "Dénombrabilité",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-020",
+        "image_path": null,
+        "theme": "Déterminants",
+        "question": "Si $f$ est un endomorphisme d'un espace de dimension $n$ et $\\lambda$ un scalaire, alors $det(\\lambda f)$ est égal à :",
+        "answers": [
+            "$\\lambda det(f)$",
+            "$\\lambda^n det(f)$",
+            "$n \\lambda det(f)$"
+        ],
+        "explication": "Le déterminant est une forme $n$-linéaire. Lorsqu'on multiplie l'endomorphisme par $\\lambda$, chaque colonne de sa matrice représentative est multipliée par $\\lambda$. Par linéarité par rapport à chaque colonne (il y en a $n$), on sort $\\lambda^n$[cite: 321, 323].",
+        "difficulty": 2,
+        "chapter": "Déterminant",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-021",
+        "image_path": null,
+        "theme": "Analyse",
+        "question": "Le théorème des accroissements finis (TAF) affirme que pour $f$ continue sur $[a,b]$ et dérivable sur $]a,b[$, il existe $c \\in ]a,b[$ tel que :",
+        "answers": [
+            "$f'(c) = 0$",
+            "$f'(c) = \\frac{f(b)-f(a)}{b-a}$",
+            "$f(b)-f(a) = f'(c)$"
+        ],
+        "explication": "Le TAF est une généralisation du théorème de Rolle. Il stipule qu'il existe un point $c$ où la pente de la tangente ($f'(c)$) est égale à la pente de la corde reliant $(a, f(a))$ et $(b, f(b))$[cite: 8, 10, 11].",
+        "difficulty": 1,
+        "chapter": "Analyse",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-022",
+        "image_path": null,
+        "theme": "Probabilités",
+        "question": "Pour deux variables indépendantes $X$ et $Y$ ayant une espérance, que vaut $E(XY)$ ?",
+        "answers": [
+            "$E(X) + E(Y)$",
+            "$E(X) \\cdot E(Y)$",
+            "$E(X) \\cdot E(Y) + Cov(X,Y)$"
+        ],
+        "explication": "L'indépendance de deux variables aléatoires est une condition suffisante pour que l'espérance de leur produit soit égale au produit de leurs espérances[cite: 454, 455, 456]. Si elles n'étaient pas indépendantes, il faudrait ajouter la covariance.",
+        "difficulty": 2,
+        "chapter": "Dénombrabilité",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-023",
+        "image_path": null,
+        "theme": "Algèbre linéaire",
+        "question": "Qu'est-ce qu'une famille orthonormale dans un espace euclidien ?",
+        "answers": [
+            "Une famille dont tous les vecteurs sont de norme 1.",
+            "Une famille de vecteurs orthogonaux deux à deux et de norme 1.",
+            "Une famille génératrice de l'espace."
+        ],
+        "explication": "Une famille est dite orthonormale si elle combine deux propriétés : l'orthogonalité (les produits scalaires croisés sont nuls) et la normalité (chaque vecteur a une norme égale à 1)[cite: 345].",
+        "difficulty": 1,
+        "chapter": "Espace Euclidiens",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-024",
+        "image_path": null,
+        "theme": "Analyse",
+        "question": "Le théorème de Heine stipule que toute fonction continue sur un compact est :",
+        "answers": [
+            "Dérivable.",
+            "Uniformément continue.",
+            "Constante."
+        ],
+        "explication": "C'est un résultat puissant qui transforme la continuité locale (en chaque point) en continuité uniforme sur tout le domaine, à condition que celui-ci soit un compact (fermé borné dans $\\mathbb{R}^n$)[cite: 30, 31].",
+        "difficulty": 3,
+        "chapter": "Analyse",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-025",
+        "image_path": null,
+        "theme": "Algèbre",
+        "question": "Le théorème de la base incomplète permet de :",
+        "answers": [
+            "Calculer le rang d'une matrice.",
+            "Compléter toute famille libre en une base de l'espace vectoriel.",
+            "Réduire le nombre de vecteurs d'une famille génératrice."
+        ],
+        "explication": "Le théorème de la base incomplète affirme que si l'on a une famille libre d'un espace vectoriel $E$, on peut toujours lui adjoindre des vecteurs (choisis dans une famille génératrice donnée) pour former une base de $E$[cite: 383, 384].",
+        "difficulty": 2,
+        "chapter": "Algèbre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-026",
+        "image_path": null,
+        "theme": "Séries entières",
+        "question": "Si $x \\in ]-R, R[$, la somme d'une série entière $S(x) = \\sum a_n x^n$ est :",
+        "answers": [
+            "Continue.",
+            "De classe $C^1$.",
+            "De classe $C^\\infty$."
+        ],
+        "explication": "Sur l'intervalle ouvert de convergence, la somme d'une série entière possède une régularité maximale : elle est de classe $C^\\infty$. Le document mentionne spécifiquement la continuité [cite: 111] et le caractère $C^1$ par dérivation terme à terme[cite: 113], mais par itération, elle est indéfiniment dérivable.",
+        "difficulty": 2,
+        "chapter": "Série entière",
+        "correct_answer_index": 2,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-027",
+        "image_path": null,
+        "theme": "Intégration",
+        "question": "Quel est le résultat de la formule de Taylor avec reste intégral (Taylor-Laplace) pour $f \\in C^{n+1}$ ?",
+        "answers": [
+            "$f(b) = \\sum_{k=0}^n \\frac{f^{(k)}(a)}{k!}(b-a)^k + \\int_a^b \\frac{(b-t)^n}{n!}f^{(n+1)}(t)dt$",
+            "$f(b) = \\sum_{k=0}^n \\frac{f^{(k)}(a)}{k!}(b-a)^k + \\frac{(b-a)^{n+1}}{(n+1)!}f^{(n+1)}(c)$",
+            "$f(b) = \\int_a^b f(t)dt$"
+        ],
+        "explication": "La formule de Taylor-Laplace donne une expression exacte de l'erreur entre la fonction et son polynôme de Taylor sous forme d'une intégrale faisant intervenir la dérivée $n+1$-ième[cite: 128, 131, 207, 209].",
+        "difficulty": 3,
+        "chapter": "Série entière",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-028",
+        "image_path": null,
+        "theme": "Espaces vectoriels normés",
+        "question": "Dans un espace vectoriel de dimension finie, que peut-on dire des normes ?",
+        "answers": [
+            "Elles sont toutes égales.",
+            "Elles sont toutes équivalentes.",
+            "Seule la norme euclidienne est utilisée."
+        ],
+        "explication": "C'est un théorème de structure fondamental en dimension finie : peu importe la norme choisie ($||.||_1, ||.||_2, ||.||_\\infty$), elles définissent toutes la même topologie, les mêmes ouverts et les mêmes notions de convergence[cite: 363].",
+        "difficulty": 3,
+        "chapter": "Espace-vectoriel",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-029",
+        "image_path": null,
+        "theme": "Probabilités",
+        "question": "La loi faible des grands nombres concerne la convergence de la moyenne $S_n/n$. Vers quoi converge-t-elle en probabilité ?",
+        "answers": [
+            "Vers 0.",
+            "Vers l'espérance $m$ de la loi.",
+            "Vers la variance $V$."
+        ],
+        "explication": "La loi faible des grands nombres stipule que pour une suite de variables indépendantes et de même loi ayant une espérance $m$, la moyenne arithmétique des $n$ premiers résultats converge en probabilité vers l'espérance $m$ quand $n$ tend vers l'infini[cite: 474, 477].",
+        "difficulty": 2,
+        "chapter": "Dénombrabilité",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-030",
+        "image_path": null,
+        "theme": "Algèbre linéaire",
+        "question": "Le théorème de représentation de Riesz dans un espace euclidien $E$ affirme que toute forme linéaire $f$ :",
+        "answers": [
+            "Est nulle.",
+            "S'écrit sous la forme $f(x) = (a|x)$ pour un unique vecteur $a \\in E$.",
+            "Est une rotation."
+        ],
+        "explication": "Ce théorème établit un pont entre l'espace dual $E^*$ et l'espace $E$ lui-même. Chaque forme linéaire (application vers les scalaires) peut être identifiée de manière unique à un vecteur de l'espace via le produit scalaire[cite: 348, 349].",
+        "difficulty": 4,
+        "chapter": "Espace Euclidiens",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-031",
+        "image_path": null,
+        "theme": "Analyse",
+        "question": "Si deux suites $(u_n)$ et $(v_n)$ sont adjacentes, que peut-on conclure ?",
+        "answers": [
+            "Elles sont bornées.",
+            "Elles convergent vers la même limite réelle.",
+            "Leur différence est constante."
+        ],
+        "explication": "Deux suites sont adjacentes si l'une est croissante, l'autre décroissante, et que leur différence tend vers 0. Le théorème des suites adjacentes garantit alors qu'elles sont convergentes et possèdent la même limite[cite: 26, 27].",
+        "difficulty": 2,
+        "chapter": "Analyse",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-032",
+        "image_path": null,
+        "theme": "Polynômes",
+        "question": "L'existence de la division euclidienne pour deux polynômes $A$ et $B$ ($B \\ne 0$) garantit un couple unique $(Q, R)$ tel que :",
+        "answers": [
+            "$A = BQ + R$ avec $deg(R) \\le deg(B)$",
+            "$A = BQ + R$ avec $deg(R) < deg(B)$",
+            "$A = BQ + R$ avec $R = 0$"
+        ],
+        "explication": "La condition stricte sur le degré du reste ($deg(R) < deg(B)$) est ce qui assure l'unicité du quotient et du reste dans la division euclidienne des polynômes[cite: 52, 53, 55].",
+        "difficulty": 1,
+        "chapter": "Polynômes",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-033",
+        "image_path": null,
+        "theme": "Matrices",
+        "question": "Toute matrice carrée complexe est :",
+        "answers": [
+            "Diagonalisable.",
+            "Trigonalisable.",
+            "Symétrique."
+        ],
+        "explication": "Dans $\\mathbb{C}$, tout polynôme est scindé. Comme le polynôme caractéristique d'une matrice complexe est toujours scindé sur $\\mathbb{C}$, la matrice est nécessairement trigonalisable[cite: 381, 382]. Elle n'est pas forcément diagonalisable (ex: blocs de Jordan).",
+        "difficulty": 2,
+        "chapter": "Algèbre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-034",
+        "image_path": null,
+        "theme": "Calcul différentiel",
+        "question": "D'après la règle de la chaîne, si $g(t) = f(x_1(t), ..., x_p(t))$, alors $g'(t)$ vaut :",
+        "answers": [
+            "$\\sum_{i=1}^p \\frac{\\partial f}{\\partial x_i}$",
+            "$\\sum_{i=1}^p x_i'(t) \\frac{\\partial f}{\\partial x_i}(x_1(t), ..., x_p(t))$",
+            "$f'(x_i(t)) \\cdot x_i'(t)$"
+        ],
+        "explication": "La dérivée d'une composée de fonctions de plusieurs variables fait intervenir les dérivées partielles de la fonction externe multipliées par les dérivées des fonctions internes, le tout sommé sur toutes les variables[cite: 492, 493, 494].",
+        "difficulty": 3,
+        "chapter": "Fonctions vectorielles",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-035",
+        "image_path": null,
+        "theme": "Probabilités",
+        "question": "Le théorème de transfert permet de calculer l'espérance de $f(X)$. Quelle est la formule ?",
+        "answers": [
+            "$E(f(X)) = f(E(X))$",
+            "$E(f(X)) = \\sum_{x \\in X(\\Omega)} f(x) P(X=x)$",
+            "$E(f(X)) = \\sum P(X=x)$"
+        ],
+        "explication": "Le théorème de transfert est un outil majeur car il permet de calculer l'espérance d'une fonction d'une variable aléatoire sans connaître la loi de $f(X)$, en utilisant directement la loi de $X$[cite: 443, 444, 446]. L'égalité $E(f(X))=f(E(X))$ est fausse en général (inégalité de Jensen si $f$ est convexe).",
+        "difficulty": 2,
+        "chapter": "Dénombrabilité",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-036",
+        "image_path": null,
+        "theme": "Intégrales à paramètre",
+        "question": "Soit $g(x) = \\int_I f(x,t)dt$. Pour que $g$ soit de classe $C^1$, quelle condition de domination sur la dérivée partielle est requise sur tout segment $K$ ?",
+        "answers": [
+            "$|f(x,t)| \\le \\varphi(t)$ intégrable.",
+            "$|\\frac{\\partial f}{\\partial x}(x,t)| \\le \\varphi(t)$ intégrable.",
+            "$\\frac{\\partial f}{\\partial x}$ doit être constante."
+        ],
+        "explication": "Pour dériver sous le signe intégrale (Théorème de Leibniz), il est impératif d'avoir une hypothèse de domination sur la dérivée partielle $\\frac{\\partial f}{\\partial x}$ par une fonction intégrable ne dépendant pas de $x$[cite: 266, 272, 275].",
+        "difficulty": 4,
+        "chapter": "Intégrales à paramètre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-037",
+        "image_path": null,
+        "theme": "Algèbre linéaire",
+        "question": "Si $F$ est un sous-espace stable par un endomorphisme $u$, que peut-on dire du polynôme caractéristique $\\chi_{u_{|F}}$ de la restriction ?",
+        "answers": [
+            "Il est égal à $\\chi_u$.",
+            "Il divise $\\chi_u$.",
+            "Il est premier avec $\\chi_u$."
+        ],
+        "explication": "C'est une propriété classique de la réduction : si on écrit la matrice de $u$ dans une base adaptée à $F$, elle est triangulaire par blocs. Le déterminant (polynôme caractéristique) est alors le produit des déterminants des blocs diagonaux, d'où la divisibilité[cite: 392].",
+        "difficulty": 3,
+        "chapter": "Algèbre",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-038",
+        "image_path": null,
+        "theme": "Séries numériques",
+        "question": "Soit $\\sum w_n$ le produit de Cauchy de deux séries absolument convergentes $\\sum u_n$ et $\\sum v_n$. Alors $\\sum w_n$ est :",
+        "answers": [
+            "Divergente.",
+            "Absolument convergente et sa somme est le produit des sommes.",
+            "Semi-convergente."
+        ],
+        "explication": "Le théorème de Cauchy garantit que le produit de deux séries absolument convergentes est une série absolument convergente, et que la somme de la série produit est égale au produit des sommes des deux séries initiales[cite: 298, 300, 301].",
+        "difficulty": 3,
+        "chapter": "Série numérique",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-039",
+        "image_path": null,
+        "theme": "Probabilités",
+        "question": "D'après le théorème des probabilités totales, si $(A_i)_{i \\in I}$ est un système quasi complet d'événements, alors $P(B) =$ :",
+        "answers": [
+            "$\\sum_{i \\in I} P(A_i)$",
+            "$\\sum_{i \\in I} P(A_i) P(B|A_i)$",
+            "$\\prod_{i \\in I} P(B|A_i)$"
+        ],
+        "explication": "Le théorème des probabilités totales permet de 'découper' le calcul de la probabilité d'un événement $B$ en fonction de sa réalisation au travers de différents cas mutuellement exclusifs et dont la réunion couvre presque tout l'univers[cite: 432, 439, 440].",
+        "difficulty": 2,
+        "chapter": "Dénombrabilité",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-040",
+        "image_path": null,
+        "theme": "Analyse",
+        "question": "Le théorème des gendarmes s'applique pour déterminer la convergence d'une suite :",
+        "answers": [
+            "Croissante et majorée.",
+            "Encadrée par deux suites convergeant vers la même limite.",
+            "Dont le terme général tend vers 0."
+        ],
+        "explication": "Si une suite est coincée entre deux autres suites qui 'se rejoignent' en une même limite $l$, alors par 'pincement', la suite du milieu converge aussi vers $l$[cite: 28, 29].",
+        "difficulty": 1,
+        "chapter": "Analyse",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-041",
+        "image_path": null,
+        "theme": "Analyse",
+        "question": "Quelle est la conclusion du théorème de la limite monotone pour une suite réelle ?",
+        "answers": [
+            "Toute suite monotone converge.",
+            "Toute suite monotone et bornée est convergente.",
+            "Toute suite bornée est convergente."
+        ],
+        "explication": "Une suite monotone ne converge pas nécessairement (ex: $n$ tend vers l'infini). Il faut impérativement qu'elle soit bornée pour garantir sa convergence vers une limite finie (sa borne supérieure si elle croît, inférieure si elle décroît)[cite: 14, 15].",
+        "difficulty": 1,
+        "chapter": "Analyse",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-042",
+        "image_path": null,
+        "theme": "Algèbre linéaire",
+        "question": "L'inégalité de Bienaymé-Tchebychev permet de majorer la probabilité d'écart à l'espérance par :",
+        "answers": [
+            "$P(|X-E(X)| \\ge \\epsilon) \\le \\frac{V(X)}{\\epsilon^2}$",
+            "$P(|X-E(X)| \\ge \\epsilon) \\le \\frac{E(X)}{\\epsilon}$",
+            "$P(X \\ge \\epsilon) \\le \\frac{V(X)}{\\epsilon}$"
+        ],
+        "explication": "Cette inégalité découle de celle de Markov appliquée à la variable aléatoire $(X-E(X))^2$. Elle donne une borne de dispersion liée à la variance[cite: 471, 472, 473].",
+        "difficulty": 2,
+        "chapter": "Dénombrabilité",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-043",
+        "image_path": null,
+        "theme": "Calcul intégral",
+        "question": "D'après le théorème de l'inégalité des accroissements finis, si $|f'| \\le M$ sur un intervalle $I$, alors :",
+        "answers": [
+            "$|f(y)-f(x)| \\le M$",
+            "$|f(y)-f(x)| \\le M|y-x|$",
+            "$f(y)-f(x) = M(y-x)$"
+        ],
+        "explication": "C'est la version 'inégalité' du TAF. Si la vitesse de variation de la fonction (sa dérivée) est bornée par $M$, alors l'accroissement de la fonction est contrôlé par $M$ fois l'écart entre les points[cite: 210].",
+        "difficulty": 1,
+        "chapter": "Intégration",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-044",
+        "image_path": null,
+        "theme": "Séries entières",
+        "question": "Que peut-on dire du rayon de convergence de la série dérivée $\\sum n a_n x^{n-1}$ par rapport à celui de la série initiale $\\sum a_n x^n$ ?",
+        "answers": [
+            "Il est plus petit.",
+            "Il est identique.",
+            "Il est égal à $R-1$."
+        ],
+        "explication": "La dérivation terme à terme (tout comme l'intégration) ne modifie pas le rayon de convergence d'une série entière[cite: 113, 121].",
+        "difficulty": 2,
+        "chapter": "Série entière",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-045",
+        "image_path": null,
+        "theme": "Intégration",
+        "question": "Le théorème de convergence des sommes de Riemann pour une fonction $f$ continue par morceaux affirme que $\\frac{b-a}{n} \\sum_{k=0}^{n-1} f(a+k \\frac{b-a}{n})$ converge vers :",
+        "answers": [
+            "$f(b)-f(a)$",
+            "$\\int_a^b f(t)dt$",
+            "0"
+        ],
+        "explication": "Les sommes de Riemann constituent une approximation de l'aire sous la courbe par des rectangles. Quand le pas de la subdivision tend vers 0 (soit $n \\to +\\infty$), la somme converge vers l'intégrale de la fonction[cite: 200].",
+        "difficulty": 2,
+        "chapter": "Intégration",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-046",
+        "image_path": null,
+        "theme": "Analyse",
+        "question": "Si une suite de fonctions $(f_n)$ converge uniformément sur tout segment de $I$ vers $f$, et si chaque $f_n$ est continue, alors $f$ est :",
+        "answers": [
+            "Continue sur $I$.",
+            "Dérivable sur $I$.",
+            "Uniformément continue."
+        ],
+        "explication": "La continuité étant une propriété locale, la convergence uniforme sur tout segment (convergence compacte) suffit pour garantir la continuité de la limite sur l'intervalle $I$ tout entier[cite: 157].",
+        "difficulty": 3,
+        "chapter": "Série",
+        "correct_answer_index": 0,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-047",
+        "image_path": null,
+        "theme": "Algèbre linéaire",
+        "question": "Le théorème de la signature affirme qu'il existe une unique application $\\epsilon: \\mathfrak{S}_n \\to \\{-1, 1\\}$ telle que pour toute transposition $\\tau$ :",
+        "answers": [
+            "$\\epsilon(\\tau) = 1$",
+            "$\\epsilon(\\tau) = -1$",
+            "$\\epsilon(\\tau) = 0$"
+        ],
+        "explication": "La signature est l'unique morphisme de groupes de $\\mathfrak{S}_n$ vers $\\{-1, 1\\}$ qui associe $-1$ à chaque transposition (échange de deux éléments)[cite: 306, 307, 308]. C'est un élément clé pour définir le déterminant.",
+        "difficulty": 2,
+        "chapter": "Déterminant",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-048",
+        "image_path": null,
+        "theme": "Séries numériques",
+        "question": "Que peut-on dire d'une série absolument convergente ?",
+        "answers": [
+            "Elle diverge.",
+            "Elle est convergente.",
+            "Elle converge si et seulement si ses termes sont positifs."
+        ],
+        "explication": "Dans un espace complet comme $\\mathbb{R}$ ou $\\mathbb{C}$, la convergence absolue (convergence de la série des modules) implique la convergence de la série elle-même[cite: 153, 296, 297]. La réciproque est fausse (ex: séries semi-convergentes).",
+        "difficulty": 1,
+        "chapter": "Série",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-049",
+        "image_path": null,
+        "theme": "Algèbre linéaire",
+        "question": "Un projeté orthogonal $p(x)$ sur un convexe fermé $C$ d'un espace de Hilbert est caractérisé par l'inégalité obtuse :",
+        "answers": [
+            "$\\|x-p(x)\\| = 0$",
+            "$\\forall z \\in C, \\langle z-p(x), x-p(x) \\rangle \\le 0$",
+            "$\\langle p(x), x \\rangle = 0$"
+        ],
+        "explication": "Le théorème du projecteur sur un convexe fermé stipule que $p(x)$ est l'unique point de $C$ minimisant la distance à $x$. Cette propriété est équivalente à ce que l'angle entre le vecteur $p(x)z$ et le vecteur $p(x)x$ soit obtus pour tout $z$ dans $C$[cite: 358, 359, 360].",
+        "difficulty": 4,
+        "chapter": "Espace Euclidiens",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    },
+    {
+        "uuid": "math-050",
+        "image_path": null,
+        "theme": "Probabilités",
+        "question": "La variance d'une somme de variables aléatoires $V(\\sum X_k)$ est égale à la somme des variances $\\sum V(X_k)$ si :",
+        "answers": [
+            "Les variables sont quelconques.",
+            "Les variables sont deux à deux décorrélées (covariance nulle).",
+            "Les variables sont positives."
+        ],
+        "explication": "La formule générale de la variance d'une somme inclut les covariances croisées. Si les variables sont décorrélées deux à deux (ce qui est le cas si elles sont indépendantes), alors les termes de covariance s'annulent[cite: 467, 468].",
+        "difficulty": 2,
+        "chapter": "Dénombrabilité",
+        "correct_answer_index": 1,
+        "subject": "maths"
+    }
+]

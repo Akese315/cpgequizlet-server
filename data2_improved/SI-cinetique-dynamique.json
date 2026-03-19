@@ -1,0 +1,480 @@
+{
+    "quizs": [
+        {
+            "uuid": "q001",
+            "image_path": null,
+            "theme": "Cinétique",
+            "question": "Quel est l'objectif principal de la cinétique en mécanique ?",
+            "answers": [
+                "Effectuer des bilans d'énergie dans des systèmes en mouvement.",
+                "Déterminer les efforts intérieurs dans un solide déformable.",
+                "Étudier exclusivement les systèmes à l'équilibre statique.",
+                "Calculer les accélérations induites par des forces extérieures."
+            ],
+            "explication": "La cinétique est un domaine de la mécanique qui consiste à effectuer des bilans d'énergie dans des systèmes en mouvement[cite: 8]. Son aboutissement est l'application du théorème de l'énergie cinétique[cite: 9]. L'étude des systèmes à l'équilibre relève de la statique, et l'étude des efforts déformables relève de la résistance des matériaux.",
+            "difficulty": 1,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q002",
+            "image_path": null,
+            "theme": "Torseur cinétique",
+            "question": "Comment appelle-t-on également la résultante cinétique $\\vec{p}_{S/R}$ en physique ?",
+            "answers": [
+                "La quantité d'accélération.",
+                "Le moment cinétique.",
+                "La quantité de mouvement.",
+                "L'énergie cinétique."
+            ],
+            "explication": "La résultante cinétique du mouvement d'un solide S par rapport à un repère R, notée $\\vec{p}_{S/R}$, est appelée quantité de mouvement en physique[cite: 17, 18]. La quantité d'accélération correspond à la résultante dynamique[cite: 73].",
+            "difficulty": 1,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q003",
+            "image_path": null,
+            "theme": "Torseur cinétique",
+            "question": "Parmi les expressions suivantes, quelle est la définition exacte du moment cinétique $\\vec{\\sigma}_{A,S/R}$ ?",
+            "answers": [
+                "$\\int_{V} \\vec{V}_{P\\in S/R} \\, dm$",
+                "$\\int_{V} \\vec{AP} \\wedge \\vec{\\Gamma}_{P\\in S/R} \\, dm$",
+                "$\\int_{V} \\vec{AP} \\wedge \\vec{V}_{P\\in S/R} \\, dm$",
+                "$m \\cdot \\vec{V}_{G\\in S/R}$"
+            ],
+            "explication": "Le moment cinétique $\\vec{\\sigma}_{A,S/R}$ exprimé au point A est défini par l'intégrale $\\int_{V} \\vec{AP} \\wedge \\vec{V}_{P\\in S/R} \\, dm$[cite: 14]. L'expression avec l'accélération $\\vec{\\Gamma}$ correspond au moment dynamique[cite: 73].",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q004",
+            "image_path": null,
+            "theme": "Torseur cinétique",
+            "question": "Quelle est l'expression simplifiée de la résultante cinétique $\\vec{p}_{S/R}$ pour un solide de masse $m$ et de centre de gravité $G$ ?",
+            "answers": [
+                "$\\vec{p}_{S/R} = m \\cdot \\vec{\\Gamma}_{G\\in S/R}$",
+                "$\\vec{p}_{S/R} = m \\cdot \\vec{AG} \\wedge \\vec{V}_{A\\in S/R}$",
+                "$\\vec{p}_{S/R} = [I]_{G,S} \\cdot \\vec{\\Omega}_{S/R}$",
+                "$\\vec{p}_{S/R} = m \\cdot \\vec{V}_{G\\in S/R}$"
+            ],
+            "explication": "La résultante cinétique se simplifie et s'écrit $\\vec{p}_{S/R} = m \\cdot \\vec{V}_{G\\in S/R}$[cite: 36, 41]. L'expression avec l'accélération correspond à la résultante dynamique[cite: 80].",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 3,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q005",
+            "image_path": null,
+            "theme": "Torseur cinétique",
+            "question": "Comment s'écrit le moment cinétique au centre de gravité $G$ d'un solide $S$ ?",
+            "answers": [
+                "$\\vec{\\sigma}_{G,S/R} = m \\cdot \\vec{V}_{G\\in S/R}$",
+                "$\\vec{\\sigma}_{G,S/R} = [I]_{G,S} \\cdot \\vec{\\Omega}_{S/R}$",
+                "$\\vec{\\sigma}_{G,S/R} = \\vec{0}$",
+                "$\\vec{\\sigma}_{G,S/R} = m \\cdot \\vec{AG} \\wedge \\vec{V}_{A\\in S/R} + [I]_{G,S} \\cdot \\vec{\\Omega}_{S/R}$"
+            ],
+            "explication": "En $G$, centre de gravité (ou d'inertie), le moment cinétique se simplifie grandement et devient $\\vec{\\sigma}_{G,S/R} = [I]_{G,S} \\cdot \\vec{\\Omega}_{S/R}$[cite: 48, 49]. Le terme lié à la vitesse du point de réduction s'annule car le point de réduction est confondu avec le centre de gravité.",
+            "difficulty": 3,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q006",
+            "image_path": null,
+            "theme": "Torseur cinétique",
+            "question": "Quelle propriété fondamentale possède la résultante cinétique $\\vec{p}_{S/R}$ au sein de son torseur ?",
+            "answers": [
+                "Elle dépend du point de réduction choisi.",
+                "Elle est toujours nulle si le solide est en rotation.",
+                "Elle est invariante par changement de point.",
+                "Elle est égale à la dérivée temporelle du moment cinétique."
+            ],
+            "explication": "Le torseur cinétique possédant les propriétés mathématiques des torseurs, sa résultante $\\vec{p}_{S/R}$ est invariante par changement de point[cite: 43, 44].",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q007",
+            "image_path": null,
+            "theme": "Torseur cinétique",
+            "question": "Si un solide $S$ est en translation pure par rapport au repère $R$, que devient son torseur cinétique en un point quelconque $A$ ?",
+            "answers": [
+                "Son moment cinétique devient nul : $\\vec{\\sigma}_{A,S/R} = \\vec{0}$.",
+                "Sa résultante cinétique devient nulle.",
+                "Son moment cinétique s'écrit $\\vec{\\sigma}_{A,S/R} = m \\cdot \\vec{AG} \\wedge \\vec{V}_{A\\in S/R}$.",
+                "Il se réduit à un torseur couple."
+            ],
+            "explication": "Si le mouvement de $S/R$ est une translation, alors le vecteur rotation $\\vec{\\Omega}_{S/R} = \\vec{0}$[cite: 51]. L'expression générale du moment cinétique $\\vec{\\sigma}_{A,S/R} = m \\cdot \\vec{AG} \\wedge \\vec{V}_{A\\in S/R} + [I]_{A,S} \\cdot \\vec{\\Omega}_{S/R}$ [cite: 36] perd son second terme, et il reste $\\vec{\\sigma}_{A,S/R} = m \\cdot \\vec{AG} \\wedge \\vec{V}_{A\\in S/R}$[cite: 51].",
+            "difficulty": 3,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q008",
+            "image_path": null,
+            "theme": "Cinématique et Torseurs",
+            "question": "Soit un torseur cinétique connu en un point $A$. Quelle est la formule correcte (relation de Varignon) pour déterminer le moment cinétique en un point $B$ ?",
+            "answers": [
+                "$\\vec{\\sigma}_{B,S/R} = \\vec{\\sigma}_{A,S/R} + \\vec{AB} \\wedge \\vec{p}_{S/R}$",
+                "$\\vec{\\sigma}_{B,S/R} = \\vec{\\sigma}_{A,S/R} + \\vec{BA} \\wedge \\vec{p}_{S/R}$",
+                "$\\vec{\\sigma}_{B,S/R} = \\vec{\\sigma}_{A,S/R} + \\vec{BA} \\wedge \\vec{\\Omega}_{S/R}$",
+                "$\\vec{\\sigma}_{B,S/R} = \\vec{BA} \\wedge (m \\cdot \\vec{V}_{G\\in S/R})$"
+            ],
+            "explication": "Le moment satisfait à la relation de changement de point de torseur (relation de Varignon) qui s'écrit : $\\vec{\\sigma}_{B,S/R} = \\vec{\\sigma}_{A,S/R} + \\vec{BA} \\wedge \\vec{p}_{S/R}$[cite: 45, 46]. Une erreur classique est de se tromper de sens sur le vecteur position (utiliser $\\vec{AB}$ au lieu de $\\vec{BA}$).",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q009",
+            "image_path": null,
+            "theme": "Dynamique",
+            "question": "Que permet d'étudier la dynamique par rapport à la cinétique pure ?",
+            "answers": [
+                "Uniquement la géométrie des trajectoires indépendamment du temps.",
+                "Les efforts intérieurs pour vérifier la résistance des matériaux.",
+                "L'évolution d'actions mécaniques dans des systèmes en mouvements, en faisant intervenir des accélérations.",
+                "Les bilans d'énergies sans tenir compte des accélérations."
+            ],
+            "explication": "La dynamique est un domaine de la mécanique qui consiste à étudier l'évolution d'actions mécaniques dans des systèmes en mouvements, faisant intervenir des accélérations (phénomènes d'inertie et évolutions temporelles)[cite: 69, 70].",
+            "difficulty": 1,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q010",
+            "image_path": null,
+            "theme": "Torseur dynamique",
+            "question": "Comment nomme-t-on la résultante dynamique $R_{d(S/R)}$ en physique ?",
+            "answers": [
+                "La quantité de mouvement.",
+                "La quantité d'accélération.",
+                "La force d'inertie.",
+                "L'action réciproque."
+            ],
+            "explication": "La résultante dynamique du mouvement de $S/R$, notée $R_{d(S/R)}$, est aussi appelée quantité d'accélération en physique[cite: 73].",
+            "difficulty": 1,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q011",
+            "image_path": null,
+            "theme": "Torseur dynamique",
+            "question": "Quelle est l'expression simplifiée de la résultante dynamique $\\vec{R}_{d(S/R)}$ pour un solide homogène ?",
+            "answers": [
+                "$m \\cdot \\vec{V}_{G\\in S/R}$",
+                "$m \\cdot \\vec{\\Gamma}_{G\\in S/R}$",
+                "$[I]_{G,S} \\cdot \\vec{\\Omega}_{S/R}$",
+                "$\\int_{V} \\vec{\\Gamma}_{P\\in S/R} \\, dm$"
+            ],
+            "explication": "Bien que la définition générale soit intégrale [cite: 73], la forme simplifiée de la résultante dynamique pour un solide homogène est $\\vec{R}_{d(S/R)} = m \\cdot \\vec{\\Gamma}_{G\\in S/R}$[cite: 79, 80].",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q012",
+            "image_path": null,
+            "theme": "Torseur dynamique",
+            "question": "Quelle est l'unité dans le système international (SI) du moment dynamique $\\delta_{A,S/R}$ ?",
+            "answers": [
+                "Newton (N)",
+                "Joule (J)",
+                "Newton-mètre (N.m)",
+                "Kilogramme-mètre carré par seconde (kg.m²/s)"
+            ],
+            "explication": "Le moment dynamique s'exprime en N.m (Newton-mètre)[cite: 80]. À titre de comparaison, la résultante dynamique s'exprime en Newton (N)[cite: 80].",
+            "difficulty": 1,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q013",
+            "image_path": null,
+            "theme": "Torseur dynamique",
+            "question": "Comment relier le moment dynamique $\\vec{\\delta}_{A,S/R}$ au torseur cinétique dans le cas général en un point quelconque $A$ ?",
+            "answers": [
+                "$\\vec{\\delta}_{A,S/R} = [\\frac{d\\vec{\\sigma}_{A,S/R}}{dt}]_{R}$",
+                "$\\vec{\\delta}_{A,S/R} = [\\frac{d\\vec{\\sigma}_{A,S/R}}{dt}]_{R} + m \\cdot \\vec{V}_{A\\in S/R} \\wedge \\vec{V}_{G\\in S/R}$",
+                "$\\vec{\\delta}_{A,S/R} = [\\frac{d\\vec{p}_{S/R}}{dt}]_{R} \\wedge \\vec{AG}$",
+                "$\\vec{\\delta}_{A,S/R} = m \\cdot \\vec{AG} \\wedge \\vec{\\Gamma}_{G\\in S/R}$"
+            ],
+            "explication": "L'expression simplifiée du moment dynamique relie le moment cinétique par la relation : $\\vec{\\delta}_{A,S/R} = [\\frac{d\\vec{\\sigma}_{A,S/R}}{dt}]_{R} + m \\cdot \\vec{V}_{A\\in S/R} \\wedge \\vec{V}_{G\\in S/R}$[cite: 80]. Le terme complémentaire s'annule seulement si $A$ est fixe ou si $A$ est confondu avec $G$.",
+            "difficulty": 3,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q014",
+            "image_path": null,
+            "theme": "Torseur dynamique",
+            "question": "Dans quel cas le moment dynamique est-il simplement égal à la dérivée temporelle du moment cinétique : $\\vec{\\delta}_{A,S/R} = [\\frac{d\\vec{\\sigma}_{A,S/R}}{dt}]_{R}$ ?",
+            "answers": [
+                "Uniquement si le solide est en translation.",
+                "Si le point de réduction $A$ est confondu avec le centre de gravité $G$ ou si $A$ est fixe dans le repère $R$.",
+                "Dans tous les cas, c'est la définition fondamentale du moment dynamique.",
+                "Uniquement si le repère $R$ n'est pas galiléen."
+            ],
+            "explication": "La formule générale du moment dynamique contient le terme $+ m \\cdot \\vec{V}_{A\\in S/R} \\wedge \\vec{V}_{G\\in S/R}$[cite: 80]. Ce terme s'annule en $G$ (car le produit vectoriel d'un vecteur par lui-même est nul) [cite: 88, 89] ou en un point $A$ fixe par rapport à $R$ (car $\\vec{V}_{A\\in S/R} = \\vec{0}$)[cite: 90].",
+            "difficulty": 3,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q015",
+            "image_path": null,
+            "theme": "Modélisation",
+            "question": "Pour simplifier les calculs dynamiques, quelle astuce mathématique (formule de Bour) est indispensable pour dériver un vecteur $\\vec{u}$ appartenant à un repère mobile $R_1$ par rapport à un repère fixe $R_0$ ?",
+            "answers": [
+                "$[\\frac{d\\vec{u}}{dt}]_{R_0} = [\\frac{d\\vec{u}}{dt}]_{R_1} + \\vec{u} \\wedge \\vec{\\Omega}_{R_1/R_0}$",
+                "$[\\frac{d\\vec{u}}{dt}]_{R_0} = [\\frac{d\\vec{u}}{dt}]_{R_1} + \\vec{\\Omega}_{R_1/R_0} \\wedge \\vec{u}$",
+                "$[\\frac{d\\vec{u}}{dt}]_{R_0} = \\vec{\\Omega}_{R_1/R_0} \\wedge \\vec{u}$",
+                "$[\\frac{d\\vec{u}}{dt}]_{R_0} = [\\frac{d\\vec{u}}{dt}]_{R_1} - \\vec{\\Omega}_{R_1/R_0} \\wedge \\vec{u}$"
+            ],
+            "explication": "La formule de dérivation de vecteur (formule de Bour) s'écrit : $[\\frac{d\\vec{u}}{dt}]_{R_0} = [\\frac{d\\vec{u}}{dt}]_{R_1} + \\vec{\\Omega}_{R_1/R_0} \\wedge \\vec{u}$[cite: 99, 100]. L'ordre dans le produit vectoriel est crucial pour respecter le signe.",
+            "difficulty": 4,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q016",
+            "image_path": null,
+            "theme": "Principe Fondamental de la Dynamique",
+            "question": "Quelle est l'écriture torseorielle correcte du Principe Fondamental de la Dynamique (PFD) pour un système isolé dans un référentiel Galiléen $R_g$ ?",
+            "answers": [
+                "$\\{\\mathcal{T}_{Sys\\rightarrow \\bar{S}ys}\\}_{A} = \\{\\mathcal{D}_{Sys/R_g}\\}_{A}$",
+                "$\\{\\mathcal{T}_{\\bar{S}ys\\rightarrow Sys}\\}_{A} = \\{\\mathcal{C}_{Sys/R_g}\\}_{A}$",
+                "$\\{\\mathcal{T}_{\\bar{S}ys\\rightarrow Sys}\\}_{A} = \\{\\mathcal{D}_{Sys/R_g}\\}_{A}$",
+                "$\\{\\mathcal{D}_{Sys/R_g}\\}_{A} = \\vec{0}$"
+            ],
+            "explication": "Le PFD stipule qu'à tout instant $t$, le torseur des actions mécaniques extérieures exercées sur le système est égal au torseur dynamique du système dans le référentiel galiléen : $\\{\\mathcal{T}_{\\bar{S}ys\\rightarrow Sys}\\}_{A} = \\{\\mathcal{D}_{Sys/R_g}\\}_{A}$[cite: 103].",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q017",
+            "image_path": null,
+            "theme": "Principe Fondamental de la Dynamique",
+            "question": "Lors de l'application du PFD en un point A, quelle est la règle concernant ce point de réduction ?",
+            "answers": [
+                "Il doit obligatoirement être le centre de gravité.",
+                "Il doit être un point fixe du mécanisme.",
+                "Il peut être quelconque, mais doit être le même pour tous les torseurs de l'équation.",
+                "On peut sommer des torseurs exprimés en des points différents."
+            ],
+            "explication": "Dans le PFD, le point de réduction $A$ est un point quelconque, mais il doit être le même pour tous les torseurs (actions mécaniques et torseur dynamique)[cite: 103, 105]. On le choisit astucieusement (centre d'inertie, point fixe) pour simplifier les calculs[cite: 105, 113].",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q018",
+            "image_path": null,
+            "theme": "Principe Fondamental de la Dynamique",
+            "question": "Combien d'équations différentielles l'application du PFD fournit-elle au maximum dans l'espace (problème 3D) ?",
+            "answers": [
+                "1",
+                "3",
+                "6",
+                "12"
+            ],
+            "explication": "Le PFD écrit sous forme de torseurs (qui possèdent 6 composantes : 3 pour la résultante, 3 pour le moment) donne 6 équations différentielles[cite: 107].",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q019",
+            "image_path": null,
+            "theme": "Principe Fondamental de la Dynamique",
+            "question": "Comment s'énonce le théorème de la résultante dynamique ?",
+            "answers": [
+                "$m \\cdot \\vec{V}_{G\\in Sys/R_g} = \\vec{R}_{Sys\\rightarrow Sys}$",
+                "$m \\cdot \\vec{\\Gamma}_{G\\in Sys/R_g} = \\vec{R}_{\\bar{S}ys\\rightarrow Sys}$",
+                "$\\vec{\\delta}_{A,Sys/R_g} = \\vec{M}_{A,\\bar{S}ys\\rightarrow Sys}$",
+                "$\\vec{R}_{d(Sys/R_g)} = \\vec{0}$"
+            ],
+            "explication": "Le théorème de la résultante dynamique stipule que $m \\cdot \\vec{\\Gamma}_{G\\in Sys/R_g} = \\vec{R}_{\\bar{S}ys\\rightarrow Sys}$, où $\\vec{R}_{\\bar{S}ys\\rightarrow Sys}$ est la résultante des forces extérieures[cite: 112].",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q020",
+            "image_path": null,
+            "theme": "Liaisons mécaniques",
+            "question": "Que postule le théorème des actions réciproques (ou actions mutuelles) ?",
+            "answers": [
+                "$\\vec{R}_{S_1\\rightarrow S_2} = \\vec{R}_{S_2\\rightarrow S_1}$",
+                "$\\{\\mathcal{T}_{S_1\\rightarrow S_2}\\} = \\{\\mathcal{T}_{S_2\\rightarrow S_1}\\}$",
+                "$\\{\\mathcal{T}_{S_1\\rightarrow S_2}\\} = -\\{\\mathcal{T}_{S_2\\rightarrow S_1}\\}$",
+                "Le moment en tout point est nul entre deux solides en contact."
+            ],
+            "explication": "Soit $S_1$ et $S_2$ deux systèmes distincts, le théorème des actions réciproques (ou mutuelles) est : $\\{\\mathcal{T}_{S_1\\rightarrow S_2}\\} = -\\{\\mathcal{T}_{S_2\\rightarrow S_1}\\}$[cite: 119, 120]. C'est la généralisation de la 3ème loi de Newton aux torseurs.",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q021",
+            "image_path": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rolling_Friction.svg",
+            "theme": "Modélisation",
+            "question": "Dans l'application du cylindre sur le plan incliné, quelle condition cinématique est posée en hypothèse pour le point de contact $I$ ?",
+            "answers": [
+                "Le glissement est parfait (sans frottement).",
+                "Le roulement s'effectue sans glissement.",
+                "Le point de contact est confondu avec le centre de gravité.",
+                "Le plan incliné est mobile."
+            ],
+            "explication": "L'énoncé précise qu'on considère que le roulement s'effectue sans glissement[cite: 123]. Cela implique que la vitesse de glissement au point de contact est nulle : $\\vec{V}_{I\\in S/R} = \\vec{0}$[cite: 152].",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q022",
+            "image_path": null,
+            "theme": "Cinématique",
+            "question": "Dans l'étude du cylindre sur plan incliné, comment calcule-t-on la vitesse de son centre d'inertie $G$, sachant que la condition de roulement sans glissement s'applique en $I$ ?",
+            "answers": [
+                "$\\vec{V}_{G\\in S/R} = \\vec{IG} \\wedge \\vec{\\Omega}_{S/R}$",
+                "$\\vec{V}_{G\\in S/R} = \\vec{V}_{I\\in S/R} + \\vec{GI} \\wedge \\vec{\\Omega}_{S/R}$",
+                "$\\vec{V}_{G\\in S/R} = \\vec{GI} \\cdot \\dot{\\theta}$",
+                "$\\vec{V}_{G\\in S/R} = R \\cdot \\dot{\\theta} \\cdot \\vec{y}_1$"
+            ],
+            "explication": "On utilise la formule de distribution des vitesses (équiprojectivité ou Varignon cinématique) : $\\vec{V}_{G\\in S/R} = \\vec{V}_{I\\in S/R} + \\vec{GI} \\wedge \\vec{\\Omega}_{S/R}$[cite: 152]. Comme $\\vec{V}_{I\\in S/R} = \\vec{0}$ (roulement sans glissement)[cite: 152], cela permet de lier la vitesse de translation à la vitesse de rotation.",
+            "difficulty": 3,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q023",
+            "image_path": null,
+            "theme": "Modélisation",
+            "question": "Dans la matrice d'inertie $[I]_{G,S}$ du cylindre donnée dans l'application, que vaut le moment d'inertie par rapport à l'axe de rotation principal $z$ (élément de la matrice en 3ème ligne, 3ème colonne) ?",
+            "answers": [
+                "$m(\\frac{R^2}{4} + \\frac{l^2}{12})$",
+                "$m \\cdot R^2$",
+                "$m \\frac{R^2}{2}$",
+                "$0$"
+            ],
+            "explication": "D'après la matrice d'inertie fournie dans le cours, le moment d'inertie du cylindre plein autour de son axe principal est $m\\frac{R^2}{2}$[cite: 148]. C'est la valeur classique pour un cylindre homogène de masse $m$ et rayon $R$.",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q024",
+            "image_path": null,
+            "theme": "Torseur cinétique",
+            "question": "Pour obtenir la matrice d'inertie du cylindre au point de contact $I$ (décalée du centre de gravité $G$), quel théorème est utilisé dans le cours ?",
+            "answers": [
+                "Le théorème de Pythagore.",
+                "Le théorème du moment dynamique.",
+                "Le théorème des actions réciproques.",
+                "Le théorème de Huygens."
+            ],
+            "explication": "Pour décaler la matrice d'inertie du point $G$ vers le point $I$, le cours applique le théorème de Huygens : $[I]_{I,S} = [I]_{G,S} + m\\vec{IG} \\wedge (\\vec{u} \\wedge \\vec{IG})$[cite: 155].",
+            "difficulty": 3,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 3,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q025",
+            "image_path": null,
+            "theme": "Statique",
+            "question": "Dans le graphe de structure de l'application, quelles sont les actions mécaniques extérieures modélisées sur le cylindre ?",
+            "answers": [
+                "Uniquement la pesanteur.",
+                "La pesanteur et l'action d'un moteur de propulsion.",
+                "La pesanteur et la réaction du support au niveau du contact.",
+                "La réaction du support, la pesanteur, et la résistance de l'air."
+            ],
+            "explication": "Le bilan des actions mécaniques extérieures (BAME) identifie deux actions : la réaction du support $\\{\\mathcal{T}_{Sol\\rightarrow S}\\}$ modélisée par une composante normale $N$ et tangentielle $T$ (frottement), et l'action de la pesanteur modélisée en $G$[cite: 186, 187, 189, 190].",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q026",
+            "image_path": null,
+            "theme": "Dynamique",
+            "question": "Lors de la résolution de l'exercice du cylindre, pourquoi l'application du théorème du moment dynamique au point de contact $I$ est-elle astucieuse ?",
+            "answers": [
+                "Parce que le point $I$ est le centre de gravité.",
+                "Parce qu'elle annule le moment de l'action de contact (support) qui s'applique en $I$, simplifiant l'équation.",
+                "Parce que la résultante dynamique est toujours nulle en ce point.",
+                "Parce que la matrice d'inertie en $I$ est diagonale."
+            ],
+            "explication": "L'application du moment dynamique en $I$ est stratégique car le moment de la réaction du support $\\vec{M}_{I, Sol\\rightarrow S}$ y est nul (le point d'application est $I$)[cite: 187]. Il ne reste dans l'équation que le moment de la pesanteur $\\vec{M}_{I, pesanteur\\rightarrow S} = \\vec{IG} \\wedge -mg\\vec{y}$[cite: 195], ce qui permet de trouver l'accélération sans avoir à déterminer les efforts normaux et tangentiels.",
+            "difficulty": 4,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q027",
+            "image_path": null,
+            "theme": "Dynamique",
+            "question": "Dans l'équation de mouvement obtenue pour le cylindre ($\\ddot{\\theta} = \\frac{2g\\sin(\\alpha)}{3R}$), l'accélération angulaire est constante. Quelle est la nature du mouvement de rotation induit ?",
+            "answers": [
+                "Mouvement uniforme.",
+                "Mouvement sinusoïdal amorti.",
+                "Mouvement uniformément accéléré.",
+                "Mouvement chaotique."
+            ],
+            "explication": "L'équation différentielle fournit $\\ddot{\\theta} = constante$ (les termes $g$, $\\alpha$, et $R$ sont constants)[cite: 196, 198]. Un mouvement dont l'accélération est constante est un mouvement uniformément accéléré[cite: 197].",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q028",
+            "image_path": null,
+            "theme": "Modélisation",
+            "question": "D'après la conclusion de l'expérience et du calcul sur le cylindre sur le plan incliné, de quels paramètres le temps de descente $t_1$ dépend-il ?",
+            "answers": [
+                "De la masse du cylindre et de la longueur du plan.",
+                "De la longueur du plan, de la gravité et de l'angle d'inclinaison.",
+                "Du diamètre du cylindre, de sa masse et de l'angle d'inclinaison.",
+                "De la résistance de l'air et de la masse du cylindre."
+            ],
+            "explication": "L'expression finale du temps est $t_1 = \\sqrt{\\frac{3L}{g\\sin(\\alpha)}}$[cite: 204]. Le cours précise explicitement que ce temps ne dépend ni de la masse $m$, ni du rayon (ou diamètre) $R$ du cylindre[cite: 202].",
+            "difficulty": 3,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        }
+    ]
+}

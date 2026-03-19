@@ -1,0 +1,259 @@
+{
+    "quizs": [
+        {
+            "uuid": "q-tdm-001",
+            "image_path": null,
+            "theme": "Modélisation cinématique",
+            "question": "Qu'appelle-t-on le nombre cyclomatique $\\mu$ dans l'étude d'un mécanisme ?",
+            "answers": [
+                "Le nombre de pièces du mécanisme",
+                "Le nombre de chaînes fermées indépendantes à parcourir pour décrire le graphe des liaisons",
+                "Le nombre total de liaisons mécaniques du système",
+                "Le degré d'hyperstatisme global"
+            ],
+            "explication": "Le nombre de cycles $\\mu$, ou nombre cyclomatique, est défini comme le nombre de chaînes fermées indépendantes à parcourir pour décrire un graphe des liaisons[cite: 20, 21]. Il représente physiquement le nombre de boucles indépendantes dans l'architecture du mécanisme.",
+            "difficulty": 2,
+            "chapter": "Théorie des mécanismes",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q-tdm-002",
+            "image_path": null,
+            "theme": "Graphe des liaisons",
+            "question": "Quelle est la relation correcte liant le nombre de cycles $\\mu$, le nombre de liaisons $N_L$ et le nombre de pièces $N_P$ ?",
+            "answers": [
+                "$\\mu = N_P - N_L + 1$",
+                "$\\mu = N_L + N_P - 1$",
+                "$\\mu = N_L - N_P + 1$",
+                "$\\mu = N_L - N_P - 1$"
+            ],
+            "explication": "La formule issue de la théorie des graphes est $\\mu = N_L - N_P + 1$[cite: 25]. On peut retrouver cette logique géométriquement : ajouter un arc (une liaison) à un système existant augmente $\\mu$ de 1 [cite: 40], tandis qu'ajouter simultanément un arc et un sommet (une pièce) ne crée pas de nouvelle boucle fermée et ne change donc pas $\\mu$[cite: 41].",
+            "difficulty": 3,
+            "chapter": "Théorie des mécanismes",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q-tdm-003",
+            "image_path": null,
+            "theme": "Cinématique des mécanismes",
+            "question": "Que représente physiquement le degré de mobilité $m$ d'un mécanisme ?",
+            "answers": [
+                "Le nombre d'équations statiques indépendantes",
+                "Le nombre de pièces en mouvement par rapport au bâti",
+                "Le nombre de contraintes de montage du mécanisme",
+                "Le nombre de mouvements indépendants possibles"
+            ],
+            "explication": "Le degré de mobilité $m$ (avec $m \\ge 0$) désigne le nombre, entier naturel, de mouvements indépendants possibles au sein du mécanisme[cite: 8, 9]. Concrètement, cela représente le nombre de paramètres cinématiques qu'il est nécessaire de fixer ou de piloter pour que le mécanisme ne bouge plus[cite: 10].",
+            "difficulty": 2,
+            "chapter": "Théorie des mécanismes",
+            "correct_answer_index": 3,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q-tdm-004",
+            "image_path": null,
+            "theme": "Cinématique des mécanismes",
+            "question": "Comment qualifie-t-on une mobilité qui ne participe pas directement à la loi d'entrée-sortie d'un système ?",
+            "answers": [
+                "Une mobilité utile",
+                "Un degré de statisme",
+                "Une mobilité interne",
+                "Un paramètre invariant"
+            ],
+            "explication": "On appelle mobilité interne ce qui ne participe pas directement de la loi entrée-sortie[cite: 12]. À l'inverse, la mobilité utile est celle qui participe directement à cette loi de transmission[cite: 11]. Un exemple classique de mobilité interne est la rotation d'une roulette ou d'un galet sur son propre axe.",
+            "difficulty": 2,
+            "chapter": "Théorie des mécanismes",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q-tdm-005",
+            "image_path": null,
+            "theme": "Théorie des mécanismes",
+            "question": "Dans l'approche globale cinématique, quelle relation lie l'indice de mobilité $(m - h)$ au nombre d'inconnues cinématiques $I_c$ et d'équations $E_c$ ?",
+            "answers": [
+                "$m - h = E_c - I_c$",
+                "$m - h = I_c - E_c$",
+                "$m + h = I_c + E_c$",
+                "$m - h = E_s - I_s$"
+            ],
+            "explication": "La formule d'approche globale en cinématique est $m - h = I_c - E_c$[cite: 25]. Cette relation fondamentale permet de faire le bilan de l'indice de mobilité à partir du nombre total d'inconnues cinématiques des liaisons ($I_c$) et du nombre d'équations cinématiques fournies par les boucles fermées ($E_c$).",
+            "difficulty": 3,
+            "chapter": "Théorie des mécanismes",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q-tdm-006",
+            "image_path": null,
+            "theme": "Modélisation cinématique",
+            "question": "Comment détermine-t-on le nombre d'équations scalaires cinématiques $E_c$ d'un mécanisme ?",
+            "answers": [
+                "$E_c = 6(N_P - 1)$",
+                "$E_c = I_c - m$",
+                "$E_c = 6\\mu$",
+                "$E_c = 6 \\times N_L$"
+            ],
+            "explication": "Dans l'approche cinématique, chaque cycle indépendant (chaîne fermée, $\\mu$) génère une fermeture géométrique vectorielle, qui se traduit par 6 équations scalaires. On a donc $E_c = 6\\mu$[cite: 25]. L'expression $6(N_P - 1)$ correspond quant à elle au nombre d'équations en statique/dynamique ($E_s$)[cite: 25].",
+            "difficulty": 3,
+            "chapter": "Théorie des mécanismes",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q-tdm-007",
+            "image_path": null,
+            "theme": "Théorie des mécanismes",
+            "question": "Que peut-on affirmer si l'indice de mobilité d'un mécanisme vérifie $m - h > 0$ ?",
+            "answers": [
+                "Le mécanisme est isostatique",
+                "Il y a des contraintes de montage sévères",
+                "Le mécanisme est bloqué",
+                "Il y a nécessairement des mouvements possibles"
+            ],
+            "explication": "Si l'indice de mobilité vérifie $m - h > 0$, alors il y a des mouvements dans le mécanisme[cite: 14]. Cela signifie mathématiquement qu'il y a plus d'inconnues cinématiques que d'équations pour les contraindre, laissant ainsi des degrés de liberté effectifs.",
+            "difficulty": 2,
+            "chapter": "Théorie des mécanismes",
+            "correct_answer_index": 3,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q-tdm-008",
+            "image_path": null,
+            "theme": "Théorie des mécanismes",
+            "question": "Quelle est l'interprétation d'un indice de mobilité strictement négatif ($m - h < 0$) ?",
+            "answers": [
+                "Il y a des contraintes de montage",
+                "Le système est parfaitement isostatique",
+                "Le mécanisme est en mouvement perpétuel",
+                "Il n'y a aucune information exploitable"
+            ],
+            "explication": "Si $m - h < 0$, alors le mécanisme présente des contraintes de montage[cite: 16]. Le système est structurellement hyperstatique, ce qui signifie que le nombre d'équations de contraintes dépasse les degrés de liberté apportés par les liaisons. Un assemblage parfait nécessite alors des pièces avec une géométrie exacte sans défaut.",
+            "difficulty": 3,
+            "chapter": "Théorie des mécanismes",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q-tdm-009",
+            "image_path": null,
+            "theme": "Statique et Hyperstatisme",
+            "question": "Comment définit-on précisément le degré de statisme $h$ (ou hyperstatisme) d'un mécanisme ?",
+            "answers": [
+                "Le nombre total de liaisons considérées comme parfaites",
+                "Le nombre de ddl manquant pour garantir un montage du mécanisme sans contraintes",
+                "Le nombre de mouvements utiles en sortie du mécanisme",
+                "La somme des mobilités internes du système"
+            ],
+            "explication": "On appelle degré de statisme (ou d'hyperstatisme) $h \\ge 0$ d'un mécanisme le nombre entier naturel représentant le nombre de degrés de liberté (ddl) manquants pour garantir un montage sans contraintes[cite: 44]. Mathématiquement, il exprime le nombre d'équations de la statique ne servant pas à la résolution directe des actions mécaniques[cite: 48].",
+            "difficulty": 3,
+            "chapter": "Théorie des mécanismes",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q-tdm-010",
+            "image_path": null,
+            "theme": "Conception et Hyperstatisme",
+            "question": "Quel est l'un des principaux avantages à concevoir un mécanisme isostatique ($h=0$) plutôt qu'hyperstatique ?",
+            "answers": [
+                "Il offre une bien plus grande rigidité structurelle",
+                "Il nécessite des tolérances géométriques très fines",
+                "Il est plus économique et facilement montable",
+                "Il élimine toutes les mobilités internes"
+            ],
+            "explication": "Un mécanisme isostatique présente l'avantage d'être économique et facilement montable[cite: 59]. En effet, l'absence de contraintes de surabondance permet d'assembler les pièces même avec de légers défauts de fabrication. En contrepartie, son inconvénient est d'être plus « souple ». À l'inverse, l'hyperstatisme favorise la rigidité mais rend le mécanisme coûteux[cite: 59].",
+            "difficulty": 2,
+            "chapter": "Théorie des mécanismes",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q-tdm-011",
+            "image_path": null,
+            "theme": "Statique et Hyperstatisme",
+            "question": "Dans un système hyperstatique sans aucune sollicitation extérieure, que peut-on affirmer concernant les actions mécaniques (AM) transmissibles dans les liaisons parfaites ?",
+            "answers": [
+                "Elles sont obligatoirement toutes nulles",
+                "Il existe des AM de liaisons parfaites non-nulles",
+                "Elles sont égales au poids des pièces",
+                "Elles ne dépendent que des mobilités internes"
+            ],
+            "explication": "Un mécanisme est dit hyperstatique si, en l'absence de sollicitations extérieures, il existe des AM des liaisons parfaites non-nulles[cite: 50]. Ces actions mécaniques internes « de contrainte » ou « de montage » naissent du fait de forcer l'assemblage de pièces géométriquement imparfaites sur des liaisons surabondantes. Dans un cas isostatique, ces AM seraient nulles[cite: 49].",
+            "difficulty": 4,
+            "chapter": "Théorie des mécanismes",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q-tdm-012",
+            "image_path": null,
+            "theme": "Conception mécanique",
+            "question": "Parmi les solutions techniques suivantes, laquelle N'EST PAS une méthode classique pour remédier à l'hyperstatisme ?",
+            "answers": [
+                "L'utilisation d'accouplements mécaniques (joint de Cardan, Oldham)",
+                "L'introduction de jeux dans les guidages",
+                "L'utilisation de cales de réglage lors du montage",
+                "La suppression d'une pièce pour la remplacer par un solide indéformable"
+            ],
+            "explication": "La suppression d'une pièce modifierait totalement l'architecture et la fonction du système. Les remédiations réelles du constructeur incluent : la présence de jeux dans un guidage, l'introduction d'un solide intermédiaire, l'utilisation d'accouplements mécaniques (joint de Oldham, Cardan), l'ajout de cales de réglage, ou encore l'imposition de cotations géométriques fines et coûteuses[cite: 63, 64, 65, 66, 67].",
+            "difficulty": 3,
+            "chapter": "Théorie des mécanismes",
+            "correct_answer_index": 3,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q-tdm-013",
+            "image_path": null,
+            "theme": "Modélisation",
+            "question": "En modélisation des mécanismes, comment qualifie-t-on les grandeurs constantes telles que les dimensions (a, b, R, L) ?",
+            "answers": [
+                "Les paramètres du mouvement",
+                "Les mobilités internes",
+                "Les paramètres caractéristiques ou invariants",
+                "Les variables cinématiques"
+            ],
+            "explication": "On appelle paramètres caractéristiques, ou invariants, les grandeurs qui restent constantes telles que les dimensions géométriques : a, b, c, R, L...[cite: 5, 6]. À l'inverse, les grandeurs qui évoluent au cours du temps ($\\lambda$, x, $\\gamma$) sont appelées les paramètres du mouvement ou les variables[cite: 5].",
+            "difficulty": 1,
+            "chapter": "Théorie des mécanismes",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q-tdm-014",
+            "image_path": null,
+            "theme": "Modélisation dynamique",
+            "question": "Dans l'approche globale dynamique/statique, quelle est la formule correcte reliant l'indice de mobilité $(m - h)$ au nombre d'équations et d'inconnues statiques ?",
+            "answers": [
+                "$m - h = E_s - I_s$",
+                "$m - h = I_s - E_s$",
+                "$m - h = 6(N_P - 1) + I_s$",
+                "$m - h = E_c - I_c$"
+            ],
+            "explication": "La formule de l'approche globale en dynamique ou statique est $m - h = E_s - I_s$[cite: 25]. Attention à ne pas confondre avec l'approche cinématique où l'ordre est inversé ($m - h = I_c - E_c$). Ici, $E_s$ représente le nombre d'équations issues du Principe Fondamental de la Statique/Dynamique et $I_s$ le nombre d'inconnues des actions mécaniques de liaison.",
+            "difficulty": 4,
+            "chapter": "Théorie des mécanismes",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q-tdm-015",
+            "image_path": null,
+            "theme": "Étude de cas : Vis-écrou",
+            "question": "Dans l'exemple du système vis-écrou modélisé par 3 liaisons (pivot, glissière, hélicoïdale), on trouve un indice de mobilité $m-h = -3$ et une mobilité $m = 1$. Quelle est la valeur de l'hyperstatisme $h$ et l'une des solutions proposées pour rendre le modèle isostatique ?",
+            "answers": [
+                "$h = 4$ ; on remplace la liaison glissière par une liaison sphère-plan",
+                "$h = 2$ ; on supprime la liaison pivot",
+                "$h = 3$ ; on remplace la liaison hélicoïdale par une liaison ponctuelle",
+                "$h = 4$ ; on ajoute une liaison encastrement supplémentaire"
+            ],
+            "explication": "À partir de $m - h = -3$ et $m = 1$, on déduit que l'hyperstatisme est $h = m - (-3) = 1 + 3 = 4$[cite: 75, 76, 77]. Pour pallier ces 4 degrés d'hyperstatisme et rendre le mécanisme isostatique en modélisation, le document propose de remplacer la liaison glissière par une liaison sphère-plan de normale $\\vec{y}$[cite: 81, 82].",
+            "difficulty": 4,
+            "chapter": "Théorie des mécanismes",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        }
+    ]
+}

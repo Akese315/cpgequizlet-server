@@ -1,0 +1,1364 @@
+{
+    "quizs": [
+        {
+            "uuid": "q001",
+            "image_path": null,
+            "theme": "Transformée de Laplace",
+            "question": "Quelle est la transformée de Laplace d'une impulsion unitaire $\\delta(t)$ ?",
+            "answers": [
+                "$1$",
+                "$\\frac{1}{p}$",
+                "$\\frac{1}{p^2}$",
+                "$p$"
+            ],
+            "explication": "Le tableau des transformées de Laplace indique que l'impulsion unitaire (ou de Dirac) a pour transformée 1[cite: 22].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q002",
+            "image_path": null,
+            "theme": "Transformée de Laplace",
+            "question": "Quelle est la transformée de Laplace d'un échelon unitaire $u(t)$ ?",
+            "answers": [
+                "$1$",
+                "$\\frac{1}{p}$",
+                "$\\frac{1}{p^2}$",
+                "$\\frac{1}{p^3}$"
+            ],
+            "explication": "L'échelon unitaire a pour transformée de Laplace $\\frac{1}{p}$[cite: 22].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q003",
+            "image_path": null,
+            "theme": "Transformée de Laplace",
+            "question": "Quelle est la transformée de Laplace d'une rampe unitaire $t.u(t)$ ?",
+            "answers": [
+                "$\\frac{1}{p}$",
+                "$\\frac{1}{p^2}$",
+                "$\\frac{1}{p^3}$",
+                "$p^2$"
+            ],
+            "explication": "La rampe unitaire a pour transformée $\\frac{1}{p^2}$[cite: 22].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q004",
+            "image_path": null,
+            "theme": "Transformée de Laplace",
+            "question": "Comment s'exprime la transformée de Laplace d'une fonction retardée $f(t-\\tau)$ ?",
+            "answers": [
+                "$F(p) - \\tau$",
+                "$\\tau F(p)$",
+                "$e^{-\\tau p}F(p)$",
+                "$e^{\\tau p}F(p)$"
+            ],
+            "explication": "Le retard pur d'une fonction causale se traduit par une multiplication par $e^{-\\tau p}$ dans le domaine de Laplace[cite: 22].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q005",
+            "image_path": null,
+            "theme": "Transformée de Laplace",
+            "question": "Quelle est l'expression du théorème de la valeur finale pour un système stable ?",
+            "answers": [
+                "$\\lim_{t\\to\\infty} f(t) = \\lim_{p\\to 0} F(p)$",
+                "$\\lim_{t\\to\\infty} f(t) = \\lim_{p\\to 0} pF(p)$",
+                "$\\lim_{t\\to\\infty} f(t) = \\lim_{p\\to \\infty} pF(p)$",
+                "$\\lim_{t\\to\\infty} f(t) = \\lim_{p\\to \\infty} F(p)$"
+            ],
+            "explication": "Le théorème de la valeur finale stipule que $\\lim_{t\\to\\infty} f(t) = \\lim_{p\\to 0} pF(p)$, sous condition de stabilité[cite: 31].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q006",
+            "image_path": null,
+            "theme": "Transformée de Laplace",
+            "question": "Quelle est l'expression du théorème de la valeur initiale ?",
+            "answers": [
+                "$\\lim_{t\\to 0^+} f(t) = \\lim_{p\\to 0} pF(p)$",
+                "$\\lim_{t\\to 0^+} f(t) = \\lim_{p\\to \\infty} pF(p)$",
+                "$\\lim_{t\\to 0^+} f(t) = \\lim_{p\\to \\infty} F(p)$",
+                "$\\lim_{t\\to 0^+} f(t) = \\lim_{p\\to 0} F(p)$"
+            ],
+            "explication": "Le théorème de la valeur initiale s'écrit $\\lim_{t\\to 0^+} f(t) = \\lim_{p\\to \\infty} pF(p)$[cite: 34].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q007",
+            "image_path": null,
+            "theme": "Modélisation",
+            "question": "Quelle est la forme canonique de la fonction de transfert d'un système du premier ordre ?",
+            "answers": [
+                "$H(p) = \\frac{K}{p}$",
+                "$H(p) = \\frac{K}{1+\\tau p}$",
+                "$H(p) = \\frac{1}{1+K p}$",
+                "$H(p) = K(1+\\tau p)$"
+            ],
+            "explication": "La forme canonique d'un 1er ordre est $\\frac{K}{1+\\tau p}$ où $K$ est le gain statique et $\\tau$ la constante de temps[cite: 19, 20].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q008",
+            "image_path": null,
+            "theme": "Systèmes linéaires",
+            "question": "Que représente le paramètre $K$ dans la fonction de transfert $\\frac{K}{1+\\tau p}$ ?",
+            "answers": [
+                "La constante de temps",
+                "Le gain statique",
+                "L'amortissement",
+                "La pulsation de coupure"
+            ],
+            "explication": "Le paramètre $K$ est le gain statique, il n'a pas forcément la même unité que l'entrée[cite: 20].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q009",
+            "image_path": null,
+            "theme": "Systèmes linéaires",
+            "question": "Pour un système du 1er ordre, à quel pourcentage de la valeur finale correspond le temps $t = \\tau$ lors d'une réponse à un échelon ?",
+            "answers": [
+                "5%",
+                "50%",
+                "63%",
+                "95%"
+            ],
+            "explication": "À $t = \\tau$, la réponse atteint $0,63 K E_0$, soit environ 63% de la valeur finale[cite: 17].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q010",
+            "image_path": null,
+            "theme": "Systèmes linéaires",
+            "question": "Pour un système du 1er ordre, comment s'évalue approximativement le temps de réponse à 5% ($t_{r5\\%}$) ?",
+            "answers": [
+                "$t_{r5\\%} = \\tau$",
+                "$t_{r5\\%} = 2\\tau$",
+                "$t_{r5\\%} = 3\\tau$",
+                "$t_{r5\\%} = 5\\tau$"
+            ],
+            "explication": "Le temps de réponse à 5% d'un système du 1er ordre correspond à la bande des 5%, qui est atteinte à $t = 3\\tau$[cite: 18, 23].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q011",
+            "image_path": null,
+            "theme": "Modélisation",
+            "question": "Quelle est la forme canonique de la fonction de transfert d'un système du deuxième ordre ?",
+            "answers": [
+                "$H(p) = \\frac{K}{1+\\tau_1 p+\\tau_2 p^2}$",
+                "$H(p) = \\frac{K}{1 + \\frac{2z}{\\omega_0}p + \\frac{1}{\\omega_0^2}p^2}$",
+                "$H(p) = \\frac{K}{(1+\\tau p)^2}$",
+                "$H(p) = \\frac{1}{1 + z\\omega_0 p + \\omega_0^2 p^2}$"
+            ],
+            "explication": "La forme canonique d'un 2ème ordre fait apparaître le gain statique $K$, l'amortissement $z$ et la pulsation propre non amortie $\\omega_0$ : $\\frac{K}{1 + \\frac{2z}{\\omega_0}p + \\frac{1}{\\omega_0^2}p^2}$[cite: 71, 73, 75, 77].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q012",
+            "image_path": null,
+            "theme": "Systèmes linéaires",
+            "question": "Pour un système du 2ème ordre, quelle est la condition pour obtenir un régime pseudo-périodique ?",
+            "answers": [
+                "$z > 1$",
+                "$z = 1$",
+                "$z < 1$",
+                "$z = 0$"
+            ],
+            "explication": "Le régime est dit pseudo-périodique (avec des oscillations amorties) lorsque le facteur d'amortissement $z$ est strictement inférieur à 1[cite: 80].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q013",
+            "image_path": null,
+            "theme": "Systèmes linéaires",
+            "question": "Quel régime correspond à un facteur d'amortissement $z = 1$ ?",
+            "answers": [
+                "Régime apériodique",
+                "Régime critique",
+                "Régime pseudo-périodique",
+                "Régime harmonique"
+            ],
+            "explication": "La valeur $z=1$ définit le régime critique, frontière entre oscillations et absence d'oscillation[cite: 79].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q014",
+            "image_path": null,
+            "theme": "Systèmes linéaires",
+            "question": "Pour un système du 2ème ordre, que se passe-t-il si $z > 1$ ?",
+            "answers": [
+                "Le système oscille indéfiniment",
+                "Le système présente des oscillations amorties",
+                "Le système est en régime apériodique",
+                "Le système est instable"
+            ],
+            "explication": "Si $z > 1$, le système est en régime apériodique (réponse sans dépassement, produit de deux 1er ordres)[cite: 78, 264].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q015",
+            "image_path": null,
+            "theme": "Systèmes linéaires",
+            "question": "Comment s'appelle le paramètre $\\omega_0$ dans l'équation d'un 2ème ordre ?",
+            "answers": [
+                "Pulsation de coupure",
+                "Pulsation propre non amortie",
+                "Pseudo-pulsation",
+                "Pulsation de résonance"
+            ],
+            "explication": "Le paramètre $\\omega_0$ s'appelle la pulsation propre non amortie, exprimée en rad/s[cite: 77].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q016",
+            "image_path": null,
+            "theme": "Systèmes linéaires",
+            "question": "Pour un système du 2ème ordre peu amorti, comment exprime-t-on la pseudo-période $T_p$ ?",
+            "answers": [
+                "$T_p = \\frac{2\\pi}{\\omega_0}$",
+                "$T_p = \\frac{2\\pi}{\\omega_0 \\sqrt{1-z^2}}$",
+                "$T_p = \\frac{\\pi}{\\omega_0 \\sqrt{1-z^2}}$",
+                "$T_p = 2\\pi \\omega_0 z$"
+            ],
+            "explication": "L'abaque montre que la pseudo-période $T_p$ correspond à $\\frac{2\\pi}{\\omega_0 \\sqrt{1-z^2}}$[cite: 67, 85].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q017",
+            "image_path": null,
+            "theme": "Systèmes linéaires",
+            "question": "Pour quelle valeur de $z$ le premier dépassement d'un 2ème ordre est-il exactement de 5% ($D_{1\\%} = 5\\%$) ?",
+            "answers": [
+                "$z = 0,43$",
+                "$z = 0,5$",
+                "$z = 0,69$",
+                "$z = 0,707$"
+            ],
+            "explication": "Le dépassement est de 5% pour un amortissement $z = 0,69$[cite: 49].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q018",
+            "image_path": null,
+            "theme": "Systèmes linéaires",
+            "question": "Comment détermine-t-on les pôles d'une fonction de transfert $H(p)$ ?",
+            "answers": [
+                "Ce sont les racines du numérateur",
+                "Ce sont les racines du dénominateur",
+                "C'est la limite quand $p \\to 0$",
+                "C'est la limite quand $p \\to \\infty$"
+            ],
+            "explication": "On appelle pôles les racines du dénominateur de la fonction de transfert[cite: 61].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q019",
+            "image_path": null,
+            "theme": "Systèmes linéaires",
+            "question": "Que représentent les zéros d'une fonction de transfert ?",
+            "answers": [
+                "Les valeurs pour lesquelles le système s'arrête",
+                "Les racines du numérateur",
+                "Les racines du dénominateur",
+                "Les retards purs du système"
+            ],
+            "explication": "Les zéros sont les racines du numérateur de la fonction de transfert[cite: 64].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q020",
+            "image_path": null,
+            "theme": "Modélisation",
+            "question": "Dans l'expression de la FT en forme canonique, à quoi correspond la 'classe' $\\alpha$ du système ?",
+            "answers": [
+                "Le degré total du dénominateur",
+                "Le degré total du numérateur",
+                "La puissance de $p$ en facteur au dénominateur",
+                "Le nombre de zéros complexes"
+            ],
+            "explication": "La classe correspond à la puissance du terme $p^\\alpha$ mis en facteur au dénominateur[cite: 52, 56].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q021",
+            "image_path": null,
+            "theme": "Modélisation",
+            "question": "Que représente l'ordre 'n' d'un système à partir de sa fonction de transfert ?",
+            "answers": [
+                "La puissance du terme $p$ isolé au dénominateur",
+                "Le degré du polynôme au numérateur",
+                "Le degré du polynôme au dénominateur",
+                "Le nombre de variables d'état"
+            ],
+            "explication": "L'ordre 'n' correspond au degré global du dénominateur de la fonction de transfert[cite: 52, 57].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q022",
+            "image_path": null,
+            "theme": "Architecture",
+            "question": "Dans le schéma d'un système asservi, à quoi sert la chaîne de retour ?",
+            "answers": [
+                "A fournir la puissance au système",
+                "A mesurer la sortie pour la comparer à la consigne",
+                "A amplifier l'écart",
+                "A convertir le signal numérique en analogique"
+            ],
+            "explication": "La grandeur de sortie est asservie grâce à une boucle de retour équipée d'un capteur pour la mesure[cite: 97, 98, 99, 113].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q023",
+            "image_path": null,
+            "theme": "Architecture",
+            "question": "Comment nomme-t-on la fonction de transfert en boucle fermée (FTBF) d'un système de chaîne directe $D(p)$ et retour $R(p)$ ?",
+            "answers": [
+                "$\\frac{D(p)}{1 - D(p)R(p)}$",
+                "$\\frac{D(p)}{1 + D(p)R(p)}$",
+                "$\\frac{R(p)}{1 + D(p)R(p)}$",
+                "$D(p) \\times R(p)$"
+            ],
+            "explication": "La FTBF s'exprime par la relation $\\frac{S}{E} = \\frac{D}{1+DR}$[cite: 124].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q024",
+            "image_path": null,
+            "theme": "Architecture",
+            "question": "Comment calcule-t-on la fonction de transfert en boucle ouverte (FTBO) ?",
+            "answers": [
+                "$D(p) + R(p)$",
+                "$\\frac{D(p)}{R(p)}$",
+                "$D(p) \\times R(p)$",
+                "$\\frac{1}{1 + D(p)R(p)}$"
+            ],
+            "explication": "La FTBO est le produit de la chaîne directe et de la chaîne de retour : $FTBO = DR$[cite: 124].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q025",
+            "image_path": null,
+            "theme": "Architecture",
+            "question": "Quelle est la caractéristique d'un système suiveur (ou de poursuite) ?",
+            "answers": [
+                "L'entrée (consigne) est constante",
+                "L'entrée (consigne) varie au cours du temps",
+                "Il n'a pas de capteur",
+                "Le système est instable"
+            ],
+            "explication": "On parle de système suiveur ou de poursuite lorsque l'entrée varie[cite: 116].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q026",
+            "image_path": null,
+            "theme": "Architecture",
+            "question": "Un système dont l'entrée est constante dans le temps est appelé :",
+            "answers": [
+                "Système suiveur",
+                "Système régulé",
+                "Système apériodique",
+                "Système pseudo-périodique"
+            ],
+            "explication": "On parle de système régulé lorsque l'entrée (la consigne) est constante[cite: 117].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q027",
+            "image_path": null,
+            "theme": "Stabilité",
+            "question": "À quelle condition mathématique sur ses pôles un système est-il stable (stabilité au sens Entrée Bornée / Sortie Bornée) ?",
+            "answers": [
+                "Tous ses pôles ont une partie réelle strictement positive",
+                "Tous ses pôles ont une partie imaginaire nulle",
+                "Tous ses pôles ont une partie réelle strictement négative",
+                "Son pôle dominant est positif"
+            ],
+            "explication": "Un système est stable au sens EBSB si tous les pôles de sa fonction de transfert sont à partie réelle strictement négative[cite: 155].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q028",
+            "image_path": null,
+            "theme": "Stabilité",
+            "question": "Quel effet engendrent des pôles complexes conjugués sur la réponse temporelle ?",
+            "answers": [
+                "Ils ralentissent la réponse sans dépasser",
+                "Ils font apparaître des oscillations",
+                "Ils rendent systématiquement le système instable",
+                "Ils n'ont aucun effet temporel"
+            ],
+            "explication": "Les pôles complexes conjugués font apparaître des oscillations dans la réponse temporelle[cite: 156].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q029",
+            "image_path": null,
+            "theme": "Stabilité",
+            "question": "Qu'appelle-t-on le 'pôle dominant' d'un système ?",
+            "answers": [
+                "Le pôle complexe qui a la plus grande partie imaginaire",
+                "Le pôle réel le plus grand en valeur absolue",
+                "Le pôle qui a une contribution significative par rapport aux autres sur la réponse",
+                "La racine du numérateur"
+            ],
+            "explication": "On appelle pôle dominant le pôle qui a une contribution significative par rapport aux autres sur la réponse (généralement le plus proche de l'axe imaginaire)[cite: 157].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q030",
+            "image_path": null,
+            "theme": "Stabilité",
+            "question": "Dans le plan complexe, où se situent les pôles d'un système instable ?",
+            "answers": [
+                "Dans le demi-plan gauche (partie réelle négative)",
+                "Sur l'axe imaginaire (partie réelle nulle)",
+                "Dans le demi-plan droit (partie réelle positive)",
+                "Ils dépendent du gain statique"
+            ],
+            "explication": "D'après la figure de stabilité, les systèmes dont les pôles sont dans le demi-plan droit ($Re > 0$) sont instables[cite: 153, 154, 155].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q031",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "Quelle est la définition mathématique du gain en décibels $G_{dB}(\\omega)$ ?",
+            "answers": [
+                "$G_{dB}(\\omega) = 10 \\log |H(j\\omega)|$",
+                "$G_{dB}(\\omega) = 20 \\log |H(j\\omega)|$",
+                "$G_{dB}(\\omega) = 20 \\log(\\text{Re}(H(j\\omega)))$",
+                "$G_{dB}(\\omega) = 20 \\log(\\text{Im}(H(j\\omega)))$"
+            ],
+            "explication": "Le gain en décibels s'exprime par la formule $G_{dB}(\\omega) = 20 \\log |H(j\\omega)|$[cite: 259].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q032",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "Comment la phase $\\varphi(\\omega)$ se calcule-t-elle à partir de la fonction de transfert harmonique $H(j\\omega)$ ?",
+            "answers": [
+                "$\\varphi(\\omega) = \\text{Re}(H(j\\omega))$",
+                "$\\varphi(\\omega) = \\text{Im}(H(j\\omega))$",
+                "$\\varphi(\\omega) = |H(j\\omega)|$",
+                "$\\varphi(\\omega) = \\arg(H(j\\omega))$"
+            ],
+            "explication": "La phase est définie par l'argument du nombre complexe $H(j\\omega)$, soit $\\varphi(\\omega) = \\arg(H(j\\omega))$[cite: 261].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 3,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q033",
+            "image_path": null,
+            "theme": "Stabilité",
+            "question": "Quelles sont les coordonnées du 'point critique' dans le diagramme de Bode ?",
+            "answers": [
+                "(0 dB, 0°)",
+                "(1 dB, -90°)",
+                "(0 dB, -180°)",
+                "(-20 dB, -90°)"
+            ],
+            "explication": "Le point critique est défini en Bode par une phase de -180° et un gain de 0 dB (correspondant au point -1 dans le plan complexe)[cite: 125].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q034",
+            "image_path": null,
+            "theme": "Stabilité",
+            "question": "Comment calcule-t-on la marge de phase $M_\\varphi$ ?",
+            "answers": [
+                "$M_\\varphi = \\varphi(\\omega_{0dB}) + 180^{\\circ}$",
+                "$M_\\varphi = \\varphi(\\omega_{0dB}) - 180^{\\circ}$",
+                "$M_\\varphi = -180^{\\circ} - \\varphi(\\omega_{0dB})$",
+                "$M_\\varphi = 180^{\\circ} - \\varphi(\\omega_{-180^{\\circ}})$"
+            ],
+            "explication": "La marge de phase est la distance à -180° à la pulsation où le gain est nul : $M_\\varphi = \\varphi(\\omega_{0dB}) + 180^{\\circ}$[cite: 129].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q035",
+            "image_path": null,
+            "theme": "Stabilité",
+            "question": "Comment calcule-t-on la marge de gain $M_G$ ?",
+            "answers": [
+                "$M_G = G_{dB}(\\omega_{-180^{\\circ}})$",
+                "$M_G = -G_{dB}(\\omega_{-180^{\\circ}})$",
+                "$M_G = G_{dB}(\\omega_{0dB})$",
+                "$M_G = -G_{dB}(\\omega_{0dB})$"
+            ],
+            "explication": "La marge de gain mesure l'écart au point critique à la pulsation où la phase vaut -180° : $M_G = -G_{dB}(\\omega_{-180^{\\circ}})$[cite: 131].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q036",
+            "image_path": null,
+            "theme": "Stabilité",
+            "question": "Quelle condition doit être vérifiée pour que la marge de gain soit définie de manière pertinente ?",
+            "answers": [
+                "$\\omega_{-180^{\\circ}} < \\omega_{0dB}$",
+                "$\\omega_{-180^{\\circ}} = \\omega_{0dB}$",
+                "$\\omega_{-180^{\\circ}} > \\omega_{0dB}$",
+                "Le système doit être de classe 0"
+            ],
+            "explication": "Il est stipulé que $\\omega_{-180^{\\circ}} > \\omega_{0dB}$ obligatoirement, sinon $M_G$ n'est pas définie (cas des instabilités croisées)[cite: 132].",
+            "difficulty": 4,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q037",
+            "image_path": null,
+            "theme": "Stabilité",
+            "question": "Pourquoi les systèmes purs de 1er et 2nd ordre sont-ils qualifiés de 'toujours stables' en boucle fermée unitaire (gain positif) ?",
+            "answers": [
+                "Car leur marge de gain est infinie et marge de phase positive",
+                "Car ils n'ont pas de pôles",
+                "Car le gain statique est nul",
+                "Car leur marge de phase est négative"
+            ],
+            "explication": "Ils sont toujours stables car leur phase ne traverse jamais -180° (asymptote à -90° ou -180°), donnant $M_\\varphi \\ge 0$ et $M_G = +\\infty$[cite: 133].",
+            "difficulty": 4,
+            "chapter": "asservissement",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q038",
+            "image_path": null,
+            "theme": "Stabilité",
+            "question": "Quelles sont typiquement les valeurs minimales exigées par un CdCF pour les marges de phase et de gain ?",
+            "answers": [
+                "$M_\\varphi \\ge 10^{\\circ}$ et $M_G \\ge 45 \\text{ dB}$",
+                "$M_\\varphi \\ge 45^{\\circ}$ et $M_G \\ge 10 \\text{ dB}$",
+                "$M_\\varphi \\ge 90^{\\circ}$ et $M_G \\ge 3 \\text{ dB}$",
+                "$M_\\varphi \\ge 180^{\\circ}$ et $M_G \\ge 0 \\text{ dB}$"
+            ],
+            "explication": "Un cahier des charges typique exige $M_\\varphi \\ge 45^{\\circ}$ et $M_G \\ge 10 \\text{ dB}$ pour assurer une robustesse correcte[cite: 141].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q039",
+            "image_path": null,
+            "theme": "Précision",
+            "question": "Comment calcule-t-on l'erreur statique $\\epsilon_s$ pour une entrée en échelon d'un système stable ?",
+            "answers": [
+                "$\\epsilon_s = \\lim_{p\\to 0} p \\frac{1}{1+FTBO(p)} E(p)$",
+                "$\\epsilon_s = \\lim_{p\\to \\infty} p \\frac{1}{1+FTBO(p)} E(p)$",
+                "$\\epsilon_s = \\lim_{p\\to 0} \\frac{FTBO(p)}{1+FTBO(p)} E(p)$",
+                "$\\epsilon_s = \\lim_{p\\to 0} p FTBF(p) E(p)$"
+            ],
+            "explication": "Par le théorème de la valeur finale, l'erreur statique est la limite de $p\\cdot\\epsilon(p)$ en 0, avec $\\epsilon(p) = \\frac{1}{1+FTBO(p)} E(p)$[cite: 165].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q040",
+            "image_path": null,
+            "theme": "Précision",
+            "question": "Que vaut l'erreur statique à un échelon $E_0$ pour un système dont la FTBO est de classe 0 (gain $K$) ?",
+            "answers": [
+                "$\\epsilon_{se} = 0$",
+                "$\\epsilon_{se} = E_0$",
+                "$\\epsilon_{se} = \\frac{E_0}{1+K}$",
+                "$\\epsilon_{se} = \\infty$"
+            ],
+            "explication": "Le tableau indique que pour une FTBO de classe $\\alpha=0$, l'erreur à l'échelon est $\\frac{E_0}{1+K}$[cite: 177, 248].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q041",
+            "image_path": null,
+            "theme": "Précision",
+            "question": "Que vaut l'erreur statique à un échelon pour un système dont la FTBO est de classe $\\ge 1$ ?",
+            "answers": [
+                "$\\epsilon_{se} = 0$",
+                "$\\epsilon_{se} = \\frac{E_0}{K}$",
+                "$\\epsilon_{se} = \\infty$",
+                "Elle dépend du gain statique"
+            ],
+            "explication": "Si le système possède au moins un intégrateur (classe $\\alpha \\ge 1$), l'erreur statique à l'échelon est nulle[cite: 179, 244].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q042",
+            "image_path": null,
+            "theme": "Précision",
+            "question": "Pour une entrée en rampe (vitesse $V_0$), quelle est l'erreur d'un système de classe 0 ?",
+            "answers": [
+                "0",
+                "$\\frac{V_0}{K}$",
+                "$\\infty$",
+                "$\\frac{V_0}{1+K}$"
+            ],
+            "explication": "Un système de classe 0 ne peut pas suivre une rampe sans diverger, son erreur de traînage est infinie[cite: 185, 252].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q043",
+            "image_path": null,
+            "theme": "Précision",
+            "question": "Pour une entrée en rampe (vitesse $V_0$), que vaut l'erreur de traînage d'un système de classe 1 ?",
+            "answers": [
+                "0",
+                "$\\frac{V_0}{1+K}$",
+                "$\\infty$",
+                "$\\frac{V_0}{K_v}$ (avec $K_v$ le gain)"
+            ],
+            "explication": "Pour une classe 1, l'erreur à une rampe est constante et vaut $\\frac{V_0}{K_{FTBO}}$[cite: 186, 253].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 3,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q044",
+            "image_path": null,
+            "theme": "Précision",
+            "question": "Combien d'intégrateurs (classe du système) faut-il au minimum pour avoir une erreur de traînage (rampe) nulle ?",
+            "answers": [
+                "1",
+                "2",
+                "3",
+                "0"
+            ],
+            "explication": "Il faut une classe $\\alpha_2 \\ge 2$ pour annuler l'erreur à une rampe[cite: 202, 236, 238].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q045",
+            "image_path": null,
+            "theme": "Perturbations",
+            "question": "Que faut-il placer dans la chaîne pour éliminer l'influence en régime permanent d'une perturbation en échelon ?",
+            "answers": [
+                "Un gain élevé en aval de la perturbation",
+                "Un correcteur proportionnel dérivé",
+                "Un intégrateur en amont de la perturbation",
+                "Un intégrateur en aval de la perturbation"
+            ],
+            "explication": "Un intégrateur placé en amont de la perturbation élimine l'influence d'une perturbation en échelon[cite: 216].",
+            "difficulty": 4,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q046",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "Dans le diagramme de Bode d'un système du 1er ordre, que vaut la pente de l'asymptote du gain en haute fréquence ?",
+            "answers": [
+                "-20 dB/dec",
+                "-40 dB/dec",
+                "+20 dB/dec",
+                "0 dB/dec"
+            ],
+            "explication": "Le comportement asymptotique d'un 1er ordre $\\frac{K}{1+\\tau p}$ est une pente de -20 dB/dec en hautes fréquences[cite: 274, 297].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q047",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "Quelle est la phase asymptotique en haute fréquence d'un système du 1er ordre ?",
+            "answers": [
+                "0°",
+                "-45°",
+                "-90°",
+                "-180°"
+            ],
+            "explication": "La phase d'un 1er ordre tend vers -90° lorsque $\\omega \\to \\infty$[cite: 262, 302, 305].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q048",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "A quelle pulsation correspond l'intersection des asymptotes (cassure) pour un 1er ordre $\\frac{K}{1+\\tau p}$ ?",
+            "answers": [
+                "$\\omega = \\tau$",
+                "$\\omega = \\frac{1}{\\tau}$",
+                "$\\omega = K$",
+                "$\\omega = \\frac{K}{\\tau}$"
+            ],
+            "explication": "La pulsation de cassure correspond à $\\omega_{c} = \\frac{1}{\\tau}$[cite: 220].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q049",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "Dans le diagramme de Bode d'un système du 2ème ordre, que vaut la pente asymptotique en haute fréquence ?",
+            "answers": [
+                "-20 dB/dec",
+                "-40 dB/dec",
+                "-60 dB/dec",
+                "+40 dB/dec"
+            ],
+            "explication": "En hautes fréquences, le terme en $p^2$ domine, générant une pente de -40 dB/dec[cite: 283].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q050",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "Quelle est la phase asymptotique en haute fréquence d'un système du 2ème ordre ?",
+            "answers": [
+                "-90°",
+                "-180°",
+                "-270°",
+                "+90°"
+            ],
+            "explication": "La phase d'un 2ème ordre tend vers -180° aux hautes fréquences[cite: 263].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q051",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "À quelle condition un système du 2ème ordre présente-t-il une résonance dans le diagramme de Bode ?",
+            "answers": [
+                "$z > 1$",
+                "$z < 1$",
+                "$z < 0,707$ (soit $\\frac{\\sqrt{2}}{2}$)",
+                "$z = 0$"
+            ],
+            "explication": "Il y a résonance (pic de gain) si et seulement si $z < \\frac{\\sqrt{2}}{2} \\approx 0,707$[cite: 224].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q052",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "Comment exprime-t-on la pulsation de résonance $\\omega_r$ ?",
+            "answers": [
+                "$\\omega_r = \\omega_0$",
+                "$\\omega_r = \\omega_0 \\sqrt{1-z^2}$",
+                "$\\omega_r = \\omega_0 \\sqrt{1-2z^2}$",
+                "$\\omega_r = \\frac{\\omega_0}{z}$"
+            ],
+            "explication": "La pulsation pour laquelle le pic de résonance a lieu est $\\omega_r = \\omega_0\\sqrt{1-2z^2}$[cite: 228].",
+            "difficulty": 4,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q053",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "Dans le domaine fréquentiel, quelle bande passante caractérise la rapidité du système asservi (FTBF) ?",
+            "answers": [
+                "La bande passante à $0 \\text{ dB}$",
+                "La bande passante à $-3 \\text{ dB}$",
+                "La bande passante à $+3 \\text{ dB}$",
+                "La marge de phase"
+            ],
+            "explication": "La rapidité est caractérisée par la bande passante à -3dB pour la FTBF ($BP_{-3dB} = [0, \\omega_{-3dB}]$)[cite: 258].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q054",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "Quelle grandeur de la FTBO permet d'estimer rapidement la bande passante à -3dB de la FTBF ?",
+            "answers": [
+                "La pulsation de coupure à $0 \\text{ dB}$ ($\\omega_{0dB}$)",
+                "La pulsation de résonance",
+                "La constante de temps",
+                "La marge de gain"
+            ],
+            "explication": "Pour obtenir une bonne approximation de la rapidité, on peut utiliser $BP_{0dB}$ pour la FTBO[cite: 258].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q055",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "Quelle est la caractéristique du diagramme de Bode en gain d'un pur intégrateur $H(p) = \\frac{K}{p}$ ?",
+            "answers": [
+                "Une droite horizontale de valeur $K$",
+                "Une droite de pente $+20 \\text{ dB/dec}$ passant par $0 \\text{ dB}$ en $K$",
+                "Une droite de pente $-20 \\text{ dB/dec}$ passant par $0 \\text{ dB}$ à $\\omega = K$",
+                "Une parabole inversée"
+            ],
+            "explication": "Un intégrateur présente une pente constante de -20 dB/dec[cite: 271, 274].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q056",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "Quelle est la phase constante d'un intégrateur $H(p) = \\frac{K}{p}$ ?",
+            "answers": [
+                "$0^{\\circ}$",
+                "$-90^{\\circ}$",
+                "$+90^{\\circ}$",
+                "$-180^{\\circ}$"
+            ],
+            "explication": "Un intégrateur a une phase de -90° sur tout le spectre de fréquences[cite: 279, 290].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q057",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "Dans Bode, comment se trace un dérivateur pur $H(p) = Kp$ en gain ?",
+            "answers": [
+                "Pente de $-20 \\text{ dB/dec}$",
+                "Pente de $+20 \\text{ dB/dec}$",
+                "Pente de $-40 \\text{ dB/dec}$",
+                "Pente de $0 \\text{ dB/dec}$"
+            ],
+            "explication": "Un dérivateur introduit une augmentation constante du gain avec une pente de +20 dB/dec[cite: 284].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q058",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Dans un correcteur Proportionnel $C(p) = K$, que se passe-t-il si l'on augmente le gain $K$ ?",
+            "answers": [
+                "On améliore la stabilité et la précision",
+                "On dégrade la stabilité mais on améliore la précision",
+                "On dégrade la précision et la stabilité",
+                "La phase du système est augmentée de $90^{\\circ}$"
+            ],
+            "explication": "L'augmentation du gain proportionnel améliore la précision mais dégrade la stabilité car cela transalte la courbe de gain vers le haut sans changer la phase[cite: 320, 321, 322].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q059",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Comment varie la phase de la FTBO lorsqu'on modifie uniquement le gain $K$ d'un correcteur Proportionnel ?",
+            "answers": [
+                "Elle augmente",
+                "Elle diminue",
+                "Elle reste inchangée",
+                "Elle subit une rotation de $180^{\\circ}$"
+            ],
+            "explication": "La phase du diagramme de Bode reste inchangée lorsqu'on modifie le correcteur proportionnel $K$[cite: 322].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q060",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Quelle est l'expression mathématique d'un correcteur Intégral pur ?",
+            "answers": [
+                "$C(p) = K_p$",
+                "$C(p) = \\tau_i p$",
+                "$C(p) = \\frac{1}{\\tau_i p}$",
+                "$C(p) = K(1 + \\tau_i p)$"
+            ],
+            "explication": "Le correcteur intégral s'écrit $C(p) = \\frac{1}{\\tau_i p}$[cite: 336].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q061",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Quel est le principal avantage d'utiliser un correcteur Intégral pur ou PI vis-à-vis d'une entrée en échelon ?",
+            "answers": [
+                "Il augmente les marges de stabilité",
+                "Il annule l'erreur statique en régime permanent",
+                "Il augmente la bande passante",
+                "Il filtre les bruits de haute fréquence"
+            ],
+            "explication": "L'action intégrale augmente la classe de la FTBO, annulant ainsi l'écart statique d'une entrée en échelon[cite: 335, 337, 346].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q062",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Quel est l'inconvénient majeur d'un correcteur Intégral sur la phase du système ?",
+            "answers": [
+                "Il apporte une avance de phase de $+90^{\\circ}$",
+                "Il la rend infinie",
+                "Il diminue la phase de $90^{\\circ}$ et dégrade donc la stabilité",
+                "Il n'a aucun impact"
+            ],
+            "explication": "Un correcteur intégral diminue la phase de 90° et rend donc souvent le système instable[cite: 339].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q063",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Quelle est l'expression classique d'un correcteur Proportionnel Intégral (PI) ?",
+            "answers": [
+                "$C(p) = \\frac{K}{1+\\tau p}$",
+                "$C(p) = \\frac{K(1+\\tau_i p)}{\\tau_i p}$",
+                "$C(p) = K(1+\\tau_d p)$",
+                "$C(p) = K\\frac{1+\\tau_d p}{1+a\\tau_d p}$"
+            ],
+            "explication": "Le correcteur PI se met sous la forme $K(1+\\tau_i p)/(\\tau_i p)$[cite: 342].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q064",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Quel est l'effet d'un correcteur PI sur le gain en basses fréquences ?",
+            "answers": [
+                "Il diminue le gain",
+                "Il rend le gain constant",
+                "Il augmente le gain aux basses fréquences",
+                "Il coupe les basses fréquences"
+            ],
+            "explication": "Un correcteur PI possède un pôle à l'origine (intégrateur), ce qui augmente fortement le gain aux basses fréquences[cite: 345].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q065",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Quelle est la forme d'un correcteur à avance de phase (PD réel) ?",
+            "answers": [
+                "$C(p) = K\\frac{1+\\tau_d p}{1+a\\tau_d p}$ avec $a<1$",
+                "$C(p) = K\\frac{1+\\tau_i p}{1+a\\tau_i p}$ avec $a>1$",
+                "$C(p) = K(1+\\tau_d p)$",
+                "$C(p) = \\frac{K}{p}$"
+            ],
+            "explication": "Le correcteur à avance de phase est $K\\frac{1+\\tau_d p}{1+a\\tau_d p}$ avec $a<1$[cite: 349].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q066",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Quel est le but principal de l'utilisation d'un correcteur à avance de phase ?",
+            "answers": [
+                "Annuler l'erreur statique",
+                "Filtrer les bruits hautes fréquences",
+                "Augmenter la stabilité et la rapidité",
+                "Augmenter le gain en basses fréquences"
+            ],
+            "explication": "Le correcteur à avance de phase ajoute de la phase, ce qui augmente la marge de phase (stabilité) et élargit la bande passante (rapidité)[cite: 348, 349, 350].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q067",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Dans un correcteur à avance de phase, comment calcule-t-on le déphasage maximal apporté ($\\sin \\varphi_{max}$) en fonction de $a$ ?",
+            "answers": [
+                "$\\sin \\varphi_{max} = \\frac{1+a}{1-a}$",
+                "$\\sin \\varphi_{max} = \\frac{1-a}{1+a}$",
+                "$\\sin \\varphi_{max} = \\frac{a}{1+a}$",
+                "$\\sin \\varphi_{max} = \\sqrt{a}$"
+            ],
+            "explication": "L'angle de phase max s'obtient par la relation $\\sin \\varphi_{max} = \\frac{1-a}{1+a}$[cite: 358, 377].",
+            "difficulty": 4,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q068",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "A quelle pulsation $\\omega_{max}$ place-t-on idéalement le maximum de phase d'un correcteur à avance de phase ?",
+            "answers": [
+                "A la pulsation de résonance",
+                "A la pulsation $\\omega_{0dB}$ désirée",
+                "A l'origine (0 rad/s)",
+                "A la pulsation où la phase est de $-180^{\\circ}$"
+            ],
+            "explication": "On cherche à régler $\\tau_d$ pour que le pic de phase coïncide avec la pulsation de coupure $\\omega_{0dB}$ ($=\\omega_{max}$) pour maximiser la marge de phase[cite: 378].",
+            "difficulty": 4,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q069",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Comment calcule-t-on la constante de temps $\\tau_d$ d'un correcteur à avance de phase pour centrer l'action sur $\\omega_{max}$ ?",
+            "answers": [
+                "$\\tau_d = \\frac{1}{a \\omega_{max}}$",
+                "$\\tau_d = \\frac{1}{\\omega_{max} \\sqrt{a}}$",
+                "$\\tau_d = \\frac{\\sqrt{a}}{\\omega_{max}}$",
+                "$\\tau_d = a \\omega_{max}$"
+            ],
+            "explication": "La formule pour centrer l'avance de phase est $\\tau_d = \\frac{1}{\\omega_{max}\\sqrt{a}}$[cite: 378].",
+            "difficulty": 5,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q070",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Parmi ses actions, sur quelle plage de fréquences le correcteur PID agit-il comme un correcteur dérivé ?",
+            "answers": [
+                "Basses fréquences",
+                "Fréquences intermédiaires",
+                "Hautes fréquences",
+                "Sur l'ensemble du spectre"
+            ],
+            "explication": "Le correcteur PID se comporte comme un correcteur dérivé pour les hautes fréquences[cite: 381].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q071",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Quelle est l'action principale du PID dans les basses fréquences ?",
+            "answers": [
+                "Action proportionnelle",
+                "Action intégrale",
+                "Action dérivée",
+                "Il coupe les basses fréquences"
+            ],
+            "explication": "Le PID se comporte comme un correcteur intégral pour les basses fréquences, assurant la précision[cite: 381].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q072",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Un correcteur à retard de phase (Pl réel) s'écrit $K\\frac{1+\\tau_i p}{1+a\\tau_i p}$. Quelle est la condition sur $a$ ?",
+            "answers": [
+                "$a < 1$",
+                "$a = 1$",
+                "$a > 1$",
+                "$a = 0$"
+            ],
+            "explication": "Pour un correcteur à retard de phase, la constante $a$ doit être strictement supérieure à 1[cite: 404].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q073",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Quel est l'effet d'un correcteur à retard de phase sur la FTBO en basses fréquences ?",
+            "answers": [
+                "Il diminue le gain",
+                "Il augmente le gain",
+                "Il ajoute de l'avance de phase",
+                "Il supprime les pôles dominants"
+            ],
+            "explication": "Ce correcteur augmente le gain de la FTBO aux basses fréquences, modifiant positivement la précision[cite: 400, 405].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q074",
+            "image_path": null,
+            "theme": "Correcteurs",
+            "question": "Quelle est la stratégie classique recommandée pour régler plusieurs correcteurs (PI et avance de phase) ?",
+            "answers": [
+                "Régler la stabilité puis la précision",
+                "Commencer par la rapidité et la précision avec le Pl, puis la stabilité avec l'avance de phase",
+                "Mettre les gains au maximum d'emblée",
+                "Compenser les zéros dominants en premier"
+            ],
+            "explication": "La méthodologie classique consiste à régler d'abord la rapidité et la précision (correcteur PI/Pl) puis assurer la stabilité avec l'avance de phase[cite: 410].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q075",
+            "image_path": null,
+            "theme": "Architecture",
+            "question": "Afin de réaliser un retour unitaire virtuel pour analyser un asservissement réel, comment adapte-t-on le gain d'adaptation $K_{IHM}$ ?",
+            "answers": [
+                "$K_{IHM} = 1$",
+                "$K_{IHM} = K_{capt} / K_{red}$",
+                "$K_{IHM} = K_{capt} \\times K_{red}$",
+                "$K_{IHM} = 0$"
+            ],
+            "explication": "Pour que l'erreur s'annule quand la sortie vaut la consigne, on fixe $K_{IHM} = K_{capt} / K_{red}$[cite: 119].",
+            "difficulty": 4,
+            "chapter": "asservissement",
+            "correct_answer_index": 1,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q076",
+            "image_path": null,
+            "theme": "Analyse temporelle",
+            "question": "Lorsqu'on trace la réponse à un échelon d'un premier ordre, comment retrouver graphiquement la constante de temps $\\tau$ ?",
+            "answers": [
+                "Abscisse du premier dépassement",
+                "Intersection de la tangente à l'origine avec l'axe des temps",
+                "Intersection de la tangente à l'origine avec l'asymptote horizontale",
+                "Le temps où le signal vaut 95% de sa valeur"
+            ],
+            "explication": "La pente initiale vaut $K E_0 / \\tau$. La tangente à l'origine croise l'asymptote $K E_0$ au point d'abscisse $t = \\tau$[cite: 16, 29].",
+            "difficulty": 2,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q077",
+            "image_path": null,
+            "theme": "Modélisation",
+            "question": "Pour obtenir le modèle expérimental du bloc moteur seul dans un asservissement saturé, que doit-on faire ?",
+            "answers": [
+                "Faire saturer le saturateur",
+                "Annuler le retour capteur",
+                "Mettre un échelon nul",
+                "Désactiver le correcteur intégral"
+            ],
+            "explication": "Pour identifier le bloc moteur, on fait saturer le saturateur, on attaque alors le bloc avec une grandeur constante[cite: 121].",
+            "difficulty": 3,
+            "chapter": "asservissement",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q078",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "Si $G_{dB}(\\omega) < 0 \\text{ dB}$, comment caractérise-t-on le signal de sortie par rapport à l'entrée ?",
+            "answers": [
+                "Il y a amplification",
+                "Il y a déphasage positif",
+                "Il y a atténuation",
+                "Le signal est saturé"
+            ],
+            "explication": "Un gain en dB négatif correspond à un module $|H(j\\omega)| < 1$, donc une atténuation de l'amplitude du signal[cite: 414, 418].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q079",
+            "image_path": null,
+            "theme": "Analyse fréquentielle",
+            "question": "À quoi correspond $0 \\text{ dB}$ en gain linaire ?",
+            "answers": [
+                "Un gain linaire de 0",
+                "Une atténuation totale",
+                "Une amplification de 1 (entrée = sortie en amplitude)",
+                "Un gain de 10"
+            ],
+            "explication": "Si $20 \\log |H| = 0$, alors $|H| = 1$. L'amplitude de sortie est égale à l'amplitude d'entrée[cite: 414].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "q080",
+            "image_path": null,
+            "theme": "Analyse temporelle",
+            "question": "Quelle est l'unité de la constante de temps $\\tau$ et de la pseudo-période $T_p$ dans le Système International ?",
+            "answers": [
+                "Le Hertz (Hz)",
+                "Le Radian par seconde (rad/s)",
+                "La Seconde (s)",
+                "Sans dimension"
+            ],
+            "explication": "Les grandeurs temporelles $\\tau$ et $T_p$ s'expriment en secondes[cite: 68, 85].",
+            "difficulty": 1,
+            "chapter": "asservissement",
+            "correct_answer_index": 2,
+            "subject": "engineering"
+        }
+    ]
+}

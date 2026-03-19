@@ -10,8 +10,8 @@ pub fn read_quiz_datas(dir_path: &str) -> Vec<crate::models::JsonQuiz> {
                         serde_json::from_str::<Vec<crate::models::JsonQuiz>>(&contents)
                     {
                         all_quizzes.extend(quizzes);
-                    } else {
-                        println!("Failed to parse JSON in file: {:?}", path);
+                    } else if let Err(e) = serde_json::from_str::<Vec<crate::models::JsonQuiz>>(&contents) {
+                        println!("Failed to parse JSON in file {}: {:?}", path.display(), e);
                     }
                 }
             }

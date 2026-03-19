@@ -1,0 +1,228 @@
+{
+    "quizs": [
+        {
+            "uuid": "dyn_001",
+            "image_path": null,
+            "theme": "Généralités et Cinématique",
+            "question": "Quelle est la différence fondamentale entre la cinématique, la cinétique et la dynamique en mécanique des systèmes ?",
+            "answers": [
+                "La cinématique n'étudie pas la masse, la cinétique étudie la répartition des masses, et la dynamique étudie les mouvements et leurs causes.",
+                "La cinématique étudie les forces, la cinétique étudie les vitesses, et la dynamique étudie les accélérations.",
+                "Il n'y a aucune différence entre cinématique et cinétique, seule la dynamique introduit la notion de temps."
+            ],
+            "explication": "La cinématique s'intéresse uniquement aux grandeurs de géométrie et de temps (longueur, angle, temps) sans prendre en compte la masse[cite: 3]. La cinétique ajoute la masse et se définit comme l'étude de la répartition des masses[cite: 2, 3]. Enfin, la dynamique est l'étude des mouvements et de leurs causes, impliquant longueur, angle, temps et masse[cite: 2, 3]. Le piège classique est de confondre cinématique (purement descriptif) et cinétique (qui lie géométrie et masse sans encore parler de forces).",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "dyn_002",
+            "image_path": null,
+            "theme": "Inertie",
+            "question": "Que traduit physiquement le moment d'inertie d'un solide autour d'un axe, et comment évolue-t-il par rapport à la répartition de la masse ?",
+            "answers": [
+                "Il traduit l'inertie en rotation : plus la masse est éloignée de l'axe, plus le moment d'inertie est grand.",
+                "Il traduit l'inertie en translation : plus la masse est proche du centre de gravité, plus il est élevé.",
+                "Il traduit l'énergie statique : il est constant quelle que soit la position de l'axe de rotation."
+            ],
+            "explication": "Le moment d'inertie est l'inertie en rotation[cite: 22].  Pour une même masse globale, plus la matière est éloignée de l'axe, plus le moment d'inertie est grand[cite: 29]. Intuitivement, plus ce moment d'inertie est grand, plus il sera difficile de mettre le solide en mouvement de rotation autour de cet axe, ou de l'arrêter[cite: 30]. La masse, en revanche, caractérise l'inertie en translation[cite: 11].",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "dyn_003",
+            "image_path": null,
+            "theme": "Matrice d'inertie",
+            "question": "Soit un solide $S$ et sa matrice d'inertie calculée en un point $A$. Que traduisent les termes non diagonaux de cette matrice ?",
+            "answers": [
+                "Ce sont les produits d'inertie qui traduisent une asymétrie dans la répartition de la masse.",
+                "Ce sont les moments d'inertie principaux liés au centre de gravité.",
+                "Ce sont les moments cinétiques du solide projetés sur les axes de la base."
+            ],
+            "explication": "Dans la matrice d'inertie, les termes non diagonaux (D, E, F) sont appelés les produits d'inertie[cite: 52]. Ils traduisent une asymétrie dans la répartition de la masse autour des axes[cite: 52]. En revanche, les termes diagonaux (A, B, C) sont les moments d'inertie qui traduisent la répartition de la masse autour de chaque axe principal[cite: 45, 51].",
+            "difficulty": 3,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "dyn_004",
+            "image_path": null,
+            "theme": "Matrice d'inertie et symétries",
+            "question": "Si un solide possède un plan de symétrie $(A, \\vec{x}, \\vec{y})$, quelle est la conséquence directe sur sa matrice d'inertie au point $A$ dans la base $(\\vec{x}, \\vec{y}, \\vec{z})$ ?",
+            "answers": [
+                "Les produits d'inertie liés à la direction normale $\\vec{z}$ s'annulent ($D=0$ et $E=0$).",
+                "La matrice devient entièrement diagonale.",
+                "Le moment d'inertie $C$ selon l'axe $\\vec{z}$ devient nul."
+            ],
+            "explication": "Si le plan $(A, \\vec{x}, \\vec{y})$ est un plan de symétrie, l'axe normal est $\\vec{z}$. Les termes croisés impliquant la variable $z$ s'annulent par symétrie lors de l'intégration. Ainsi, les produits d'inertie $D = \\int yz \\, dm$ et $E = \\int xz \\, dm$ sont nuls[cite: 44, 48, 70]. La matrice conserve une forme avec potentiellement le terme $F$ non nul[cite: 70]. Seule l'existence de deux plans de symétrie ou d'un axe de symétrie de révolution rendrait la matrice complètement diagonale[cite: 68, 69, 70].",
+            "difficulty": 3,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "dyn_005",
+            "image_path": null,
+            "theme": "Théorème de Huygens",
+            "question": "Soit un solide indéformable $S$ de masse $m$ et de centre de masse $G$. On souhaite calculer son moment d'inertie autour d'un axe $\\Delta = (A, \\vec{u})$ distant de $d$ par rapport à l'axe parallèle passant par $G$. Quelle est l'expression du théorème de Huygens scalaire ?",
+            "answers": [
+                "$I_{(A,\\vec{u}),S} = I_{(G,\\vec{u}),S} + m d^2$",
+                "$I_{(A,\\vec{u}),S} = I_{(G,\\vec{u}),S} + m d$",
+                "$I_{(A,\\vec{u}),S} = I_{(G,\\vec{u}),S} - m d^2$"
+            ],
+            "explication": "Le théorème de Huygens scalaire stipule que le moment d'inertie d'un solide autour d'un axe ne passant pas par G est égal au moment d'inertie par rapport à un axe parallèle passant par G, augmenté de $md^2$[cite: 37, 38]. L'erreur classique est de soustraire $md^2$ : le moment d'inertie est TOUJOURS minimal lorsqu'il est calculé par rapport à un axe passant par le centre de masse $G$.",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "dyn_006",
+            "image_path": null,
+            "theme": "Torseur Cinétique",
+            "question": "L'expression du moment cinétique en un point quelconque $A$ est $\\vec{\\sigma}_{S/R}(A) = \\overline{I}_{A,S} \\cdot \\vec{\\Omega}_{S/R} + \\vec{AG} \\wedge m\\vec{V}_{S/R}(A)$. Comment cette expression se simplifie-t-elle si le point de calcul est le centre d'inertie $G$ ?",
+            "answers": [
+                "$\\vec{\\sigma}_{S/R}(G) = \\overline{I}_{G,S} \\cdot \\vec{\\Omega}_{S/R}$",
+                "$\\vec{\\sigma}_{S/R}(G) = \\vec{0}$",
+                "$\\vec{\\sigma}_{S/R}(G) = m\\vec{V}_{S/R}(G)$"
+            ],
+            "explication": "Dans l'expression générale en $A$, le terme $\\vec{AG} \\wedge m\\vec{V}_{S/R}(A)$ est un terme correctif[cite: 83]. Si on choisit $A = G$, le vecteur $\\vec{GG}$ est le vecteur nul. L'expression se réduit alors de façon remarquable à $\\vec{\\sigma}_{S/R}(G) = \\overline{I}_{G,S} \\cdot \\vec{\\Omega}_{S/R}$[cite: 91, 92]. C'est une propriété fondamentale souvent exploitée en concours pour minimiser les calculs.",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "dyn_007",
+            "image_path": null,
+            "theme": "Torseur Dynamique",
+            "question": "Quelle est l'expression générale reliant le moment dynamique en un point $A$ au moment cinétique en ce même point ?",
+            "answers": [
+                "$\\vec{\\delta}_{S/R}(A) = \\frac{d}{dt}[\\vec{\\sigma}_{S/R}(A)]_{/R} + \\vec{V}_{/R}(A) \\wedge m\\vec{V}_{S/R}(G)$",
+                "$\\vec{\\delta}_{S/R}(A) = \\frac{d}{dt}[\\vec{\\sigma}_{S/R}(A)]_{/R} + \\vec{AG} \\wedge m\\vec{A}_{S/R}(G)$",
+                "$\\vec{\\delta}_{S/R}(A) = \\frac{d}{dt}[\\vec{\\sigma}_{S/R}(A)]_{/R}$ pour tout point $A$"
+            ],
+            "explication": "L'expression générale est $\\vec{\\delta}_{S/R}(A) = \\frac{d}{dt}[\\vec{\\sigma}_{S/R}(A)]_{/R} + \\vec{V}_{/R}(A) \\wedge m\\vec{V}_{S/R}(G)$[cite: 108]. Le piège récurrent consiste à oublier le second terme correctif. Ce terme s'annule uniquement dans deux cas très précis : soit $A = G$ (car $\\vec{V}_{S/R}(G) \\wedge \\vec{V}_{S/R}(G) = \\vec{0}$) [cite: 110, 111], soit $A$ est un point immobile par rapport à $R$ (donc $\\vec{V}_{/R}(A) = \\vec{0}$)[cite: 112, 113].",
+            "difficulty": 4,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "dyn_008",
+            "image_path": null,
+            "theme": "Méthodologie de calcul",
+            "question": "Pour simplifier le calcul d'un moment dynamique, quelle stratégie de choix de point faut-il privilégier si l'on dispose d'un point $A$ fixe dans le référentiel $R$ ?",
+            "answers": [
+                "Calculer le torseur cinétique en $A$, puis le dériver car $\\vec{V}_{/R}(A) = \\vec{0}$.",
+                "Calculer systématiquement le torseur dynamique en $G$ puis utiliser la formule de changement de point (BABAR).",
+                "Le choix du point n'a aucune influence sur la complexité des calculs."
+            ],
+            "explication": "Si le point $A$ est fixe dans le repère de dérivation $R$, alors $\\vec{V}_{/R}(A) = \\vec{0}$[cite: 158]. La formule complexe du moment dynamique se simplifie radicalement : le chemin consistant à calculer le moment cinétique en $A$ puis à le dériver (relation 7 avec $\\vec{V}_{/R}(A)=\\vec{0}$) est souvent bien plus direct et simple que de passer par l'accélération de $G$ (relations 1 puis 2 puis 3) qui génère des calculs longs et sources d'erreurs[cite: 157, 158].",
+            "difficulty": 3,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "dyn_009",
+            "image_path": null,
+            "theme": "Énergie cinétique",
+            "question": "L'énergie cinétique d'un solide $S$ en mouvement dans un repère $R$ se calcule grâce à l'outil torsoriel. Quelle est la définition exacte ?",
+            "answers": [
+                "C'est la moitié du comoment des torseurs cinétique et cinématique.",
+                "C'est la moitié du produit scalaire entre la résultante dynamique et la vitesse du centre de gravité.",
+                "C'est le comoment du torseur dynamique et du torseur cinématique."
+            ],
+            "explication": "L'énergie cinétique d'un solide $S$ en mouvement dans un repère $R$ est égale à la moitié du comoment des torseurs cinétique et cinématique[cite: 126, 127]. Elle s'écrit $E_{cS/R} = \\frac{1}{2} \\mathcal{C}(S/R) \\odot \\mathcal{V}(S/R) = \\frac{1}{2} \\vec{\\sigma}_{S/R} \\odot \\vec{V}_{S/R}$[cite: 128]. Confondre avec le torseur dynamique est une erreur classique ; le comoment torseur dynamique / cinématique est lié à la notion de puissance.",
+            "difficulty": 3,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "dyn_010",
+            "image_path": null,
+            "theme": "Inertie équivalente",
+            "question": "Que représente concrètement la notion de 'moment d'inertie équivalent' ramené sur un axe moteur dans un mécanisme constitué de plusieurs solides ?",
+            "answers": [
+                "Le moment d'inertie d'un solide fictif qui, entraîné seul par le moteur, développerait la même énergie cinétique que l'ensemble du système en mouvement.",
+                "La somme algébrique stricte de tous les moments d'inertie de tous les solides du mécanisme.",
+                "Le rapport entre l'énergie cinétique maximale et la vitesse de rotation de l'effecteur."
+            ],
+            "explication": "Le moment d'inertie équivalent $I_{eq}$ correspond à une simplification de modélisation[cite: 165]. Il représente le moment d'inertie d'un solide fictif qui, lorsqu'il est entraîné par l'axe moteur à la vitesse $\\omega_{moteur}$, développe la même énergie cinétique totale que l'ensemble des solides réels du mécanisme en mouvement[cite: 166]. On l'obtient en écrivant l'énergie cinétique totale et en factorisant par $\\frac{1}{2} \\omega_{moteur}^2$[cite: 163, 166].",
+            "difficulty": 3,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "dyn_011",
+            "image_path": null,
+            "theme": "PFD",
+            "question": "Que stipule le Principe Fondamental de la Dynamique (PFD) concernant l'égalité des torseurs ?",
+            "answers": [
+                "Dans un référentiel galiléen, le torseur dynamique d'un système matériel est égal au torseur des actions mécaniques extérieures exercées sur lui.",
+                "Le torseur cinétique d'un système est proportionnel au torseur des actions mécaniques extérieures.",
+                "La somme des efforts intérieurs est égale à la masse que multiplie l'accélération du centre de gravité."
+            ],
+            "explication": "Le PFD énonce qu'il existe au moins un référentiel galiléen $R_g$ tel que, pour tout ensemble matériel $\\Sigma$, le torseur dynamique associé au mouvement par rapport à ce repère est égal au torseur des actions mécaniques extérieures exercées sur $\\Sigma$[cite: 170]. Mathématiquement : $\\mathcal{D}(\\Sigma/R_g) = \\mathcal{T}_{ext \\to \\Sigma}$[cite: 171]. Les efforts intérieurs n'apparaissent pas dans le PFD global d'un système.",
+            "difficulty": 2,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "dyn_012",
+            "image_path": null,
+            "theme": "Équilibrage",
+            "question": "Quelles sont les deux conditions strictement nécessaires pour qu'un rotor en mouvement autour d'un axe fixe soit 'équilibré dynamiquement' ?",
+            "answers": [
+                "Son centre de masse est sur l'axe de rotation ET l'axe de rotation est un axe principal d'inertie.",
+                "Son centre de masse est sur l'axe de rotation ET sa vitesse angulaire est constante.",
+                "L'axe de rotation est horizontal ET la somme des efforts sur les paliers est nulle à l'arrêt."
+            ],
+            "explication": "L'équilibrage dynamique garantit que les actions mécaniques transmises dans les liaisons sont indépendantes de la position angulaire[cite: 189]. Pour qu'un solide soit équilibré dynamiquement autour d'un axe fixe, il faut obligatoirement deux choses : 1) Son centre de masse doit être sur l'axe de rotation (ce qui assure déjà l'équilibrage statique) [cite: 191, 193], et 2) l'axe de rotation doit être un axe principal d'inertie (ce qui annule les produits d'inertie responsables du 'balourd' dynamique)[cite: 194].",
+            "difficulty": 4,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "dyn_013",
+            "image_path": null,
+            "theme": "Puissance et Rendement",
+            "question": "La puissance des interefforts caractérise l'action d'un solide 1 sur un solide 2. Quelle est la particularité fondamentale de cette puissance concernant le référentiel ?",
+            "answers": [
+                "Elle ne dépend pas du repère de calcul.",
+                "Elle est toujours nulle dans un référentiel galiléen.",
+                "Elle nécessite obligatoirement de connaître le repère absolu pour être définie."
+            ],
+            "explication": "On appelle puissance des interefforts la puissance de l'action mécanique d'un solide 1 sur un solide 2 dans leur mouvement relatif $2/1$[cite: 200, 201, 202]. Sa caractéristique majeure, très utile en modélisation cinématique des chaînes, est qu'elle ne dépend pas du repère d'étude[cite: 203].",
+            "difficulty": 3,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        },
+        {
+            "uuid": "dyn_014",
+            "image_path": null,
+            "theme": "Théorème de la Puissance Cinétique",
+            "question": "Quelle est la principale limite d'utilisation du Théorème de la Puissance Cinétique (TPC) par rapport à l'application du PFD classique ?",
+            "answers": [
+                "Contrairement au PFD, le TPC ne permet pas de déterminer les actions mécaniques qui ne travaillent pas (dont la puissance est nulle).",
+                "Le TPC n'est valable qu'en statique, contrairement au PFD.",
+                "Le TPC exige de négliger systématiquement les frottements."
+            ],
+            "explication": "Le TPC lie la dérivée de l'énergie cinétique à la somme des puissances extérieures et intérieures[cite: 221]. Une action mécanique qui ne travaille pas (comme l'effort normal dans un glissement sans frottement) génère une puissance nulle[cite: 213, 214]. Par conséquent, elle 'disparaît' de l'équation scalaire du TPC. Contrairement au PFD qui offre 6 équations et révèle tous les efforts, une action qui ne travaille pas ne peut donc pas être déterminée avec le TPC[cite: 219].",
+            "difficulty": 3,
+            "chapter": "Dynamique et énergétique",
+            "correct_answer_index": 0,
+            "subject": "engineering"
+        }
+    ]
+}

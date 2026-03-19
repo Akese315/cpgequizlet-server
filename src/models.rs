@@ -111,14 +111,23 @@ pub struct QuizParams {
 
 #[derive(Deserialize)]
 pub struct JsonQuiz {
+    #[serde(default)]
     pub theme: String,
+    #[serde(default)]
     pub question: String,
+    #[serde(default)]
     pub answers: Vec<String>,
+    #[serde(default)]
     pub difficulty: i32,
+    #[serde(default)]
     pub subject: String,
+    #[serde(default)]
     pub correct_answer_index: i32,
+    #[serde(default)]
     pub image_path: Option<String>,
+    #[serde(default)]
     pub chapter: String,
+    #[serde(default)]
     pub explication: Option<String>,
 }
 
